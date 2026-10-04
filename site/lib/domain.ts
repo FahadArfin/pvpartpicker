@@ -33,7 +33,11 @@ export function checkCompatibility(products: Product[], settings: BuildSettings)
       else add('unknown', 'PV input current', 'Verify string allocation, short-circuit current, and each MPPT input limit before connecting panels.');
     }
   }
-  if (!inverters.length) add('unknown', 'Choose an inverter', 'Add an inverter to check electrical compatibility.');
+  if (!inverters.length&&!products.some(p=>p.category==='kits')) add('unknown', 'Choose an inverter', 'Add an inverter to check electrical compatibility.');
+  for(const controller of products.filter(p=>p.category==='charging')) add('unknown','Charge controller & battery','Confirm the controller’s battery operating range, chemistry/charging profile, maximum PV Voc and input current, and charge-current limits. Listed nominal voltage and amperage alone do not establish a match.',controller.documentation||controller.sourceUrl);
+  if(products.some(p=>p.category==='module-electronics')) add('unknown','Module electronics & shutdown','Verify the exact module/inverter pairing, electrical limits, transmitter or gateway, shutdown protocol, and complete manufacturer-supported combination. An optimizer or shutdown device alone does not establish system compliance.');
+  if(products.some(p=>p.category==='monitoring')) add('unknown','Monitoring & load control','Verify sensor ranges, communication protocols, transfer topology, supported equipment, and installation requirements for smart panels and load controls.');
+  if(products.some(p=>p.category==='kits')) add('unknown','Bundled equipment','Review the kit’s included models and quantities. Integrated inverter/battery ratings and component compatibility are not established by the bundle title; avoid counting included parts twice.');
   const mount = products.find(p => p.category === 'mounting'); if (mount && panels.length) add('unknown', 'Mounting fit & structure', 'Check panel frame thickness, dimensions, clamp zones, roof attachment, and wind/snow requirements.', mount.sourceUrl);
   if (products.some(p => ['wiring', 'electrical'].includes(p.category))) add('unknown', 'Wiring & protection', 'Wire lengths, ampacity, voltage ratings, connectors, disconnects, and protection need installation-specific verification.');
   return results;

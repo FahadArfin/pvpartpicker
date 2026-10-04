@@ -1,6 +1,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { load } from 'cheerio';
-import { retailers, parseProductPage, mergeProducts, robotsAllows, classify } from '../lib/retailers.ts';
+import { retailers, parseProductPage, mergeProducts, robotsAllows, classify, categorizeProduct } from '../lib/retailers.ts';
+import {categories} from '../lib/types.ts';
 const directory = new URL('../data/', import.meta.url); await mkdir(directory, { recursive: true });
 const observedAt = new Date().toISOString(); const maxPages = Math.min(80, Number(process.env.COLLECT_MAX_PAGES || 24));
 const progressFile = new URL('collection-progress.json', directory); let progress = {}; try { progress = JSON.parse(await readFile(progressFile, 'utf8')); } catch {}
@@ -53,10 +54,10 @@ async function source(retailer) {
         for (const url of locs(xml)) { if (new URL(url).origin !== retailer.origin) continue; if (/sitemapindex/i.test(xml) && /\.xml|xmlsitemap/.test(url)) queue.push(url); else if (!/category|blog|learn|\?/.test(new URL(url).pathname)) urls.add(url); }
         if (urls.size > 400) break;
       }
-      const priority = [...urls].filter(url => /eg4|panel|pv-wire|battery-cable|lug|rail|mount|ground|conduit|junction|busbar|breaker|fuse|disconnect|emporia/i.test(url));
+      const priority = [...urls].filter(url => /eg4|panel|pv-wire|battery-cable|lug|rail|mount|ground|conduit|junction|busbar|breaker|fuse|disconnect|emporia|mppt|charge-controller|smartsolar|bluesolar|rapid-shutdown|optimizer|transmitter|tigo|transfer/i.test(url));
       const ordered = priority.sort((a, b) => Number(/6000xp|lifepower4|flexboss|18kpv|ll-s/i.test(b)) - Number(/6000xp|lifepower4|flexboss|18kpv|ll-s/i.test(a)));
       // Round-robin categories prevents a panel-only sitemap from starving mounting/electrical.
-      const chosen = retailer.id==='signature-solar' ? ['https://signaturesolar.com/eg4-6000xp-off-grid-inverter-split-phase/','https://signaturesolar.com/eg4-18kpv-hybrid-inverter-eg4-18kpv-12lv-48v-split-phase-120-240vac-ul1741-cec/','https://signaturesolar.com/eg4-flexboss21-16kw-ac-hybrid-inverter-w32y/'] : []; const buckets = ['6000xp|lifepower4|flexboss|18kpv|ll-s', 'lug|pv-wire|battery-cable|mc4', 'rail|mount|clamp', 'conduit|junction|busbar|breaker|fuse|disconnect|grounding', 'panel', 'battery', 'inverter', 'emporia|monitor|gridboss'].map(pattern => ordered.filter(u => new RegExp(pattern, 'i').test(u)));
+      const chosen = retailer.id==='signature-solar' ? ['https://signaturesolar.com/eg4-6000xp-off-grid-inverter-split-phase/','https://signaturesolar.com/eg4-18kpv-hybrid-inverter-eg4-18kpv-12lv-48v-split-phase-120-240vac-ul1741-cec/','https://signaturesolar.com/eg4-flexboss21-16kw-ac-hybrid-inverter-w32y/'] : []; const buckets = ['6000xp|lifepower4|flexboss|18kpv|ll-s', 'charge-controller|smartsolar|bluesolar|mppt100', 'rapid-shutdown|optimizer|transmitter|ts4|tigo', 'lug|pv-wire|battery-cable|mc4', 'rail|mount|clamp', 'conduit|junction|busbar|breaker|fuse|disconnect|grounding', 'panel', 'battery', 'inverter', 'emporia|monitor|gridboss|transfer|cerbo|shunt', 'solar-kit|power-station|solar-generator'].map(pattern => ordered.filter(u => new RegExp(pattern, 'i').test(u)));
       for (let i = 0; chosen.length < maxPages && i < 40; i++) for (const b of buckets) { const u = b[i]; if (u && !chosen.includes(u)) chosen.push(u); if (chosen.length >= maxPages) break; }
       for (const url of chosen) { try { collect(await request(url), url); } catch (e) { if (/source_rejected|bot_challenge/.test(e.message)) throw e; } }
     }
@@ -71,11 +72,11 @@ const result = { generatedAt: observedAt, products: catalog, reports };
 const path = new URL('catalog.json', directory);
 if (!process.argv.includes('--publish')) {
   let previous; try { previous = JSON.parse(await readFile(path, 'utf8')); } catch {}
-  if (previous) { result.products = mergeProducts([...previous.products, ...catalog]); result.reports = [...previous.reports.filter(r => !reports.some(n => n.retailerId === r.retailerId)), ...reports]; }
+  if (previous) { result.products = mergeProducts([...previous.products.map(categorizeProduct), ...catalog]); result.reports = [...previous.reports.filter(r => !reports.some(n => n.retailerId === r.retailerId)), ...reports]; }
   await writeFile(path, JSON.stringify(result, null, 2));
 } else {
   if (!process.env.PV_API_ORIGIN || !process.env.PV_COLLECTOR_TOKEN) throw new Error('PV_API_ORIGIN and PV_COLLECTOR_TOKEN are required for publishing.');
   for (let i = 0; i < Math.max(1,catalog.length); i += 15) { const response = await fetch(new URL('/api/ingest', process.env.PV_API_ORIGIN), { method: 'POST', headers: { Authorization: `Bearer ${process.env.PV_COLLECTOR_TOKEN}`, 'Content-Type': 'application/json' }, body: JSON.stringify({ products: catalog.slice(i, i + 15), reports: i === 0 ? reports : [] }) }); if (!response.ok) throw new Error(`Ingestion failed ${response.status}: ${(await response.text()).slice(0, 300)}`); }
   const response = await fetch(new URL('/api/process-alerts', process.env.PV_API_ORIGIN), { method: 'POST', headers: { Authorization: `Bearer ${process.env.PV_COLLECTOR_TOKEN}` } }); if (!response.ok) throw new Error(`Alert processing failed ${response.status}`);
 }
-console.log(JSON.stringify({ products: result.products.length, categories: Object.fromEntries(['panels','mounting','wiring','batteries','inverters','electrical','accessories'].map(c => [c, result.products.filter(p => p.category === c).length])), reports }));
+console.log(JSON.stringify({ products: result.products.length, categories: Object.fromEntries(categories.map(c => [c.id, result.products.filter(p => p.category === c.id).length])), reports }));
