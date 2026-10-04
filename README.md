@@ -6,7 +6,9 @@ A solar equipment catalog and system builder for US shoppers. Compare actual ret
 
 ## Features
 
-- Seven equipment categories with search, specification/brand/condition filters, comparisons, and source-attributed product photography.
+- Twelve equipment categories with search, specification/brand/condition filters, comparisons, and source-attributed product photography.
+- Dedicated all-in-one batteries category with station bundles, selected-variant capacity and explicit DC-only labels.
+- Research-backed `/tiers` board for 20 station, battery, panel and inverter models, with sources, trade-offs, use-case filtering and an eligible-offer price-value view. See [ranking methodology](docs/tier-list-methodology.md).
 - Guided system builder with quantities, retailer selection, pallet-aware purchase totals, documented voltage/current checks, saved builds, and read-only sharing.
 - ChatGPT sign-in, moderated community ratings/comments, target-price alerts, website notifications, and opt-in email delivery through Resend.
 - D1-backed offers and append-only observations. Price graphs contain real observations only, including their original package quantities.

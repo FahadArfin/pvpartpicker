@@ -1,0 +1,789 @@
+[
+  {
+    "id": "e3800",
+    "name": "Pecron E3800LFP",
+    "category": "all-in-one",
+    "tier": "S",
+    "cohort": "Home backup",
+    "productIds": [
+      "shopsolar-46266467025036"
+    ],
+    "denominator": 3.84,
+    "headline": "Excellent capacity value for a 120V backup setup.",
+    "strengths": [
+      "Large battery and dual solar inputs suit extended essential-load backup.",
+      "Hands-on testing supports strong charging and surge performance."
+    ],
+    "limits": [
+      "A single unit is 120V; 240V requires a second station and connection box.",
+      "Heavy to move; keeping the inverter active consumes stored energy."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://www.pecron.com/products/pecron-e3800lfp-portable-power-station-4200w-3840wh",
+        "kind": "Manufacturer",
+        "note": "3,840Wh, 4,200W output and up to 3,000W PV input; 3+2-year warranty terms."
+      },
+      {
+        "label": "The Solar Lab hands-on review",
+        "url": "https://www.thesolarlab.com/review/pecron-e3800",
+        "kind": "Hands-on review",
+        "note": "Reviewer measured about 84% efficiency and approximately 21W AC standby draw. Short-term tests do not establish lifetime reliability."
+      },
+      {
+        "label": "Owner discussion",
+        "url": "https://www.reddit.com/r/Pecron/comments/1vi40nv/deciding_between_f5000flp_vs_e38000lfp_for_home/",
+        "kind": "Owner report",
+        "note": "Owners compare standby consumption and appliance starting loads. Individual reports are anecdotal and configuration-dependent."
+      }
+    ],
+    "specs": [
+      "3.84 kWh",
+      "4,200W / 120V",
+      "3,000W solar"
+    ],
+    "reviewedAt": "2026-10-04"
+  },
+  {
+    "id": "f5000",
+    "name": "Pecron F5000LFP",
+    "category": "all-in-one",
+    "tier": "A",
+    "cohort": "Home backup",
+    "productIds": [
+      "shopsolar-50042005848204"
+    ],
+    "denominator": 5.12,
+    "headline": "A compelling 240V option if weight and standby draw fit your use.",
+    "strengths": [
+      "Integrated 120/240V output avoids buying two stations.",
+      "Large solar input and battery heating make it versatile."
+    ],
+    "limits": [
+      "Reviewer measured approximately 52W AC standby draw; small intermittent loads deserve attention.",
+      "Very heavy; fan noise under load and no 240V AC charging input."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://www.pecron.com/products/pecron-f5000lfp-portable-power-station",
+        "kind": "Manufacturer",
+        "note": "5,120Wh with 7,200W at 240V; the 120V output limit differs. Check current warranty and shipping terms."
+      },
+      {
+        "label": "The Solar Lab hands-on review",
+        "url": "https://www.thesolarlab.com/review/pecron-f5000lfp",
+        "kind": "Hands-on review",
+        "note": "About 84% efficiency in this test. Strong charging and output results were accompanied by high standby consumption and noise."
+      },
+      {
+        "label": "Owner discussion",
+        "url": "https://www.reddit.com/r/Pecron/comments/1vi40nv/deciding_between_f5000flp_vs_e38000lfp_for_home/",
+        "kind": "Owner report",
+        "note": "Owner concerns about some motor startup loads differ from the review results; verify the actual appliance surge requirement."
+      }
+    ],
+    "specs": [
+      "5.12 kWh",
+      "7,200W / 240V",
+      "6,400W solar"
+    ],
+    "reviewedAt": "2026-10-04"
+  },
+  {
+    "id": "c2000",
+    "name": "Anker SOLIX C2000 Gen 2",
+    "category": "all-in-one",
+    "tier": "S",
+    "cohort": "Portable / RV",
+    "productIds": [
+      "shopsolar-44718464598156"
+    ],
+    "denominator": 2.048,
+    "headline": "A strong balance of portability, output and ease of use.",
+    "strengths": [
+      "Much easier to move than the larger home-backup stations.",
+      "Hands-on review found efficient output, quiet operation and useful app controls."
+    ],
+    "limits": [
+      "800W solar input and roughly 4kWh expansion ceiling limit large off-grid setups.",
+      "120V only. A TT-30 receptacle does not mean 30A continuous output."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://www.ankersolix.com/products/c2000-gen2",
+        "kind": "Manufacturer",
+        "note": "2,048Wh, 2,400W continuous AC and 800W solar input; expandable with the specified BP2000 Gen 2."
+      },
+      {
+        "label": "The Solar Lab hands-on review",
+        "url": "https://www.thesolarlab.com/review/anker-solix-c2000-gen-2",
+        "kind": "Hands-on review",
+        "note": "Approximately 89% efficiency and 18W AC standby draw in this test. Advertised 9W draw applies to a different operating state."
+      },
+      {
+        "label": "Owner discussion",
+        "url": "https://www.reddit.com/r/AnkerSOLIXCommunity/comments/1tvacpg/c2000_gen_2_does_solar_need_to_be_more_than_the/",
+        "kind": "Owner report",
+        "note": "An owner asks about solar contribution in time-of-use mode with a large continuous load; review operating modes before relying on savings."
+      }
+    ],
+    "specs": [
+      "2.048 kWh",
+      "2,400W / 120V",
+      "800W solar"
+    ],
+    "reviewedAt": "2026-10-04"
+  },
+  {
+    "id": "f3800",
+    "name": "Anker SOLIX F3800",
+    "category": "all-in-one",
+    "tier": "B",
+    "cohort": "Home backup",
+    "productIds": [],
+    "denominator": 3.84,
+    "headline": "Capable backup hardware, with important original-model solar limits.",
+    "strengths": [
+      "Single-unit split-phase output and supported home integration accessories.",
+      "Wheels and expandable storage help with larger backup projects."
+    ],
+    "limits": [
+      "Original F3800 has tighter solar voltage constraints than F3800 Plus.",
+      "Home integration accessories cost extra; do not confuse bundle prices with the base unit."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://www.ankersolix.com/products/f3800",
+        "kind": "Manufacturer",
+        "note": "3,840Wh and 6,000W split-phase output; up to 2,400W solar with suitable input configuration."
+      },
+      {
+        "label": "The Solar Lab hands-on review",
+        "url": "https://www.thesolarlab.com/review/anker-f3800-vs-ecoflow-delta-pro-3",
+        "kind": "Hands-on review",
+        "note": "Hands-on comparison highlights output and expansion strengths. Choice depends on appliances and existing ecosystem."
+      },
+      {
+        "label": "The Solar Lab hands-on review",
+        "url": "https://www.thesolarlab.com/review/anker-solix-f3800-plus-review",
+        "kind": "Hands-on review",
+        "note": "Reviewer describes solar-input limitations of the original F3800 and improvements in the distinct Plus model."
+      }
+    ],
+    "specs": [
+      "3.84 kWh",
+      "6,000W / 120–240V",
+      "2,400W solar"
+    ],
+    "reviewedAt": "2026-10-04"
+  },
+  {
+    "id": "f3800-plus",
+    "name": "Anker SOLIX F3800 Plus",
+    "category": "all-in-one",
+    "tier": "A",
+    "cohort": "Home backup",
+    "productIds": [],
+    "denominator": 3.84,
+    "headline": "The better F3800 choice when solar charging is central.",
+    "strengths": [
+      "Wider solar charging flexibility than the original model.",
+      "Split-phase output and supported expansion/home controls."
+    ],
+    "limits": [
+      "Fastest generator charging requires specific accessories and expansion batteries.",
+      "Large and heavy; use the exact Plus manual when sizing the array.",
+      "240V output is unavailable while charging through 120V AC, according to the manufacturer."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://www.ankersolix.com/products/f3800-plus",
+        "kind": "Manufacturer",
+        "note": "Documents 3,840Wh, 6,000W output and dual 11–165V PV inputs up to 3,200W. 240V output cannot be used while charging via 120V AC; generator input ratings depend on configuration."
+      },
+      {
+        "label": "The Solar Lab hands-on review",
+        "url": "https://www.thesolarlab.com/review/anker-solix-f3800-plus-review",
+        "kind": "Hands-on review",
+        "note": "Hands-on impressions note improved solar input and quiet operation; deeper testing was pending in this article. This is not a long-term reliability study."
+      }
+    ],
+    "specs": [
+      "3.84 kWh",
+      "6,000W / 120–240V",
+      "3,200W solar"
+    ],
+    "reviewedAt": "2026-10-04"
+  },
+  {
+    "id": "delta-pro-3",
+    "name": "EcoFlow DELTA Pro 3",
+    "category": "all-in-one",
+    "tier": "A",
+    "cohort": "Home backup",
+    "productIds": [],
+    "denominator": 4.096,
+    "headline": "Strong ecosystem fit for expandable home backup.",
+    "strengths": [
+      "Expandable storage with an established range of integration accessories.",
+      "Flexible solar inputs suit a wider array than low-voltage-only stations."
+    ],
+    "limits": [
+      "Check output modes and supported accessories for simultaneous household loads.",
+      "About 103 lb; total integration cost exceeds the station price."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://us.ecoflow.com/products/delta-pro-3-portable-power-station",
+        "kind": "Manufacturer",
+        "note": "4,096Wh, 4,000W rated output and up to 2,600W solar input."
+      },
+      {
+        "label": "The Solar Lab hands-on review",
+        "url": "https://www.thesolarlab.com/review/anker-f3800-vs-ecoflow-delta-pro-3",
+        "kind": "Hands-on review",
+        "note": "Hands-on comparison praises the ecosystem and design, while noting lower inverter output than F3800."
+      }
+    ],
+    "specs": [
+      "4.096 kWh",
+      "4,000W rated AC",
+      "2,600W solar"
+    ],
+    "reviewedAt": "2026-10-04",
+    "image": "https://us.ecoflow.com/cdn/shop/files/ecoflow-ecoflow-delta-pro-3-portable-power-station-ul9540-certificated-dp3-delta-pro-3-1179495742.png?v=1762761450"
+  },
+  {
+    "id": "jackery-2000-v2",
+    "name": "Jackery Explorer 2000 v2",
+    "category": "all-in-one",
+    "tier": "B",
+    "cohort": "Portable / RV",
+    "productIds": [
+      "shopsolar-44425430171788"
+    ],
+    "denominator": 2.042,
+    "headline": "Easy to carry and efficient; a lighter-duty solar companion.",
+    "strengths": [
+      "Hands-on review found efficient output and low standby consumption.",
+      "Compact form and built-in light are useful for occasional backup and camping."
+    ],
+    "limits": [
+      "400W solar input is restrictive for daily replenishment.",
+      "Battery is not expandable; the 2000 Plus is a different product."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://www.jackery.com/products/explorer-2000-v2-portable-power-station",
+        "kind": "Manufacturer",
+        "note": "2,042Wh LFP storage and 2,200W continuous output; exact v2 specifications."
+      },
+      {
+        "label": "The Solar Lab hands-on review",
+        "url": "https://www.thesolarlab.com/review/jackery-explorer-2000-v2-review",
+        "kind": "Hands-on review",
+        "note": "Reviewer measured about 90% efficiency and 17W standby consumption. Notes low solar input and no expansion."
+      }
+    ],
+    "specs": [
+      "2.042 kWh",
+      "2,200W / 120V",
+      "400W solar"
+    ],
+    "reviewedAt": "2026-10-04"
+  },
+  {
+    "id": "ac200l",
+    "name": "BLUETTI AC200L",
+    "category": "all-in-one",
+    "tier": "B",
+    "cohort": "Portable / RV",
+    "productIds": [],
+    "denominator": 2.048,
+    "headline": "Useful expansion and solar charging, with mixed review evidence.",
+    "strengths": [
+      "Expandable battery storage and 1,200W solar input.",
+      "TechRadar hands-on testing describes quiet operation and useful port selection."
+    ],
+    "limits": [
+      "Heavy for its capacity, with proprietary input cables.",
+      "A separate reviewer reported a BMS/system failure in one older unit; that is not a population failure rate."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://www.bluettipower.com/products/ac200l",
+        "kind": "Manufacturer",
+        "note": "2,048Wh, 2,400W continuous output and 1,200W solar input. Power Lifting is not extra continuous output for every appliance."
+      },
+      {
+        "label": "TechRadar AC200L test",
+        "url": "https://www.techradar.com/pro/bluetti-ac200l-power-station-review",
+        "kind": "Hands-on review",
+        "note": "Positive functional test; the tested UK version has region-specific socket differences."
+      },
+      {
+        "label": "The Solar Lab hands-on review",
+        "url": "https://www.thesolarlab.com/review/bluetti-power-station-redemption",
+        "kind": "Hands-on review",
+        "note": "Reported failure of one older AC200L after testing. Included as conflicting evidence, not a claim about every unit or newer BLUETTI models."
+      }
+    ],
+    "specs": [
+      "2.048 kWh",
+      "2,400W rated AC",
+      "1,200W solar"
+    ],
+    "reviewedAt": "2026-10-04",
+    "image": "https://checkout.bluettipower.com/cdn/shop/files/AC200L-_-_1.png?v=1769652767"
+  },
+  {
+    "id": "lifepower-v2",
+    "name": "EG4 LifePower4 V2 48V",
+    "category": "batteries",
+    "tier": "A",
+    "cohort": "Server rack",
+    "productIds": [
+      "santan-solar-eg4-lifepower4v2-48v-100ah"
+    ],
+    "denominator": 5.12,
+    "headline": "A cost-conscious rack battery with useful ecosystem integration.",
+    "strengths": [
+      "Modular rack format and communication with supported equipment.",
+      "Hands-on review found good build quality and protective features."
+    ],
+    "limits": [
+      "No integrated display; a rack and installation hardware can add cost.",
+      "Match inverter protocol and firmware, not just nominal voltage."
+    ],
+    "sources": [
+      {
+        "label": "The Solar Lab hands-on review",
+        "url": "https://www.thesolarlab.com/review/eg4-48v-100ah-v2-lifepower4-battery-review",
+        "kind": "Hands-on review",
+        "note": "Month-long use and tests support build quality/value; efficiency dipped near its limit. Review prices and coupon offers are historical."
+      },
+      {
+        "label": "Owner discussion",
+        "url": "https://www.reddit.com/r/SolarDIY/comments/1evfoqf",
+        "kind": "Owner report",
+        "note": "A mixed V1/V2 setup owner reported state-of-charge configuration issues. This is an installation anecdote, not a fault rate."
+      }
+    ],
+    "specs": [
+      "5.12 kWh",
+      "51.2V nominal",
+      "Server rack"
+    ],
+    "reviewedAt": "2026-10-04"
+  },
+  {
+    "id": "sok-n",
+    "name": "SOK SK48V100N",
+    "category": "batteries",
+    "tier": "B",
+    "cohort": "Server rack",
+    "productIds": [
+      "shopsolar-57002915496076"
+    ],
+    "denominator": 5.12,
+    "headline": "A practical rack option; exact-model evidence is still limited.",
+    "strengths": [
+      "Manufacturer documents LFP storage in a compact server-rack format.",
+      "A direct alternative when the documented inverter protocol fits."
+    ],
+    "limits": [
+      "Do not transfer SK48V100 predecessor reviews to the N revision.",
+      "Limited independent long-term evidence in this research set; confirm service and warranty route."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://us.sokbattery.com/product-page/sk48v100n-48v100ah-server-rack-lifepo4-battery",
+        "kind": "Manufacturer",
+        "note": "Exact SK48V100N specification and current commercial terms."
+      },
+      {
+        "label": "Owner discussion",
+        "url": "https://www.reddit.com/r/SolarDIY/comments/1pviusp/new_sk48v100n_battery_any_good/",
+        "kind": "Owner report",
+        "note": "Community discussion asks about this newer revision. Questions and purchase intentions are not verified long-term owner outcomes."
+      }
+    ],
+    "specs": [
+      "5.12 kWh",
+      "51.2V nominal",
+      "Server rack"
+    ],
+    "reviewedAt": "2026-10-04"
+  },
+  {
+    "id": "pytes-v16",
+    "name": "Pytes V16",
+    "category": "batteries",
+    "tier": "A",
+    "cohort": "Large stationary",
+    "productIds": [
+      "shopsolar-46980566188172"
+    ],
+    "denominator": 16.077,
+    "headline": "A well-documented outdoor option for a larger installation.",
+    "strengths": [
+      "Manufacturer documents IP66 enclosure and self-heating.",
+      "Large storage per enclosure reduces the number of separate modules."
+    ],
+    "limits": [
+      "Very heavy; placement and handling are major parts of the installation.",
+      "Rank is provisional from documentation; long-term independent V16 evidence is limited here."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://www.pytesusa.com/V-Series/v16.html",
+        "kind": "Manufacturer",
+        "note": "Manufacturer describes outdoor enclosure, self-heating, fire suppression and supported scaling."
+      },
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://www.pytesusa.com/public/upload/20251114/4e258ed8872b51d854b22c94a2443d57.pdf",
+        "kind": "Manufacturer",
+        "note": "Manual lists 16.077kWh, 51.2V, 314Ah and approximately 130kg. Certificates apply to documented configurations."
+      }
+    ],
+    "specs": [
+      "16.077 kWh",
+      "51.2V nominal",
+      "IP66 / heated"
+    ],
+    "reviewedAt": "2026-10-04"
+  },
+  {
+    "id": "ruixu-16",
+    "name": "RUiXU Lithi2-16",
+    "category": "batteries",
+    "tier": "A",
+    "cohort": "Large stationary",
+    "productIds": [
+      "santan-solar-lithi2-16"
+    ],
+    "denominator": 16.07,
+    "headline": "Large-capacity value with practical installation trade-offs.",
+    "strengths": [
+      "Manufacturer documents self-heating, wheels and a service inspection port.",
+      "Large capacity in one enclosure simplifies some modular setups."
+    ],
+    "limits": [
+      "Approximately 302 lb; delivery and placement need planning.",
+      "IP55 with recommended outdoor shelter; manufacturer-hosted reviews are a selected sample."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://www.ruixubattery.com/product-page/lithi2-16-battery-bank",
+        "kind": "Manufacturer",
+        "note": "16.07kWh, 51.2V, self-heating and IP55. Several hosted owner reviews describe successful EG4 setups and difficult handling; reports are not independently verified."
+      }
+    ],
+    "specs": [
+      "16.07 kWh",
+      "51.2V nominal",
+      "IP55 / heated"
+    ],
+    "reviewedAt": "2026-10-04"
+  },
+  {
+    "id": "cs600",
+    "name": "Canadian Solar CS6W-600TB-AG",
+    "category": "panels",
+    "tier": "A",
+    "cohort": "Large-format bifacial",
+    "productIds": [
+      "shopsolar-52726482010252",
+      "shopsolar-52726482043020"
+    ],
+    "denominator": 600,
+    "headline": "A strong modern panel when its dimensions fit the project.",
+    "strengths": [
+      "N-type TOPCon bifacial design and published degradation warranty.",
+      "High front-side STC power with detailed electrical documentation."
+    ],
+    "limits": [
+      "Large, heavy glass-glass module; check roof layout and clamp requirements.",
+      "Bifacial gain depends on installation. Value uses 600W front-side rating only."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://www.canadiansolar.com/wp-content/uploads/sites/3/2026/01/CS-Datasheet-TOPBiHiKu6_CS6W-TB-AG_v2.0C2_F68_D1_NA.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact CS6W family datasheet: N-type TOPCon, 12-year product and 30-year performance warranty subject to applicable terms. Documentary assessment, not a field test."
+      }
+    ],
+    "specs": [
+      "600W front STC",
+      "TOPCon / bifacial",
+      "Large format"
+    ],
+    "reviewedAt": "2026-10-04"
+  },
+  {
+    "id": "cs680",
+    "name": "Canadian Solar CS7N-680TB-AG",
+    "category": "panels",
+    "tier": "A",
+    "cohort": "Large-format bifacial",
+    "productIds": [
+      "shopsolar-61670049054860",
+      "shopsolar-61670049087628"
+    ],
+    "denominator": 680,
+    "headline": "Strong ground-mount candidate; size and input current matter.",
+    "strengths": [
+      "High front-side STC output in a documented TOPCon bifacial module.",
+      "Pallet purchases can improve equipment cost per watt."
+    ],
+    "limits": [
+      "Large commercial-style dimensions may be awkward on a residential roof.",
+      "High module current requires an MPPT fit check; rear-side gain is not guaranteed."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://static.csisolar.com/wp-content/uploads/sites/9/2023/09/28105102/CS-Datasheet-TOPBiHiKu7-TOPCon_CS7N-TB-AG_v1.6_EN-1.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact CS7N-680TB-AG electrical data and dimensions; use front-side 680W for value. No independent long-term field test included here."
+      }
+    ],
+    "specs": [
+      "680W front STC",
+      "TOPCon / bifacial",
+      "Large format"
+    ],
+    "reviewedAt": "2026-10-04"
+  },
+  {
+    "id": "aptos460",
+    "name": "Aptos DNA-120-BF10-460W",
+    "category": "panels",
+    "tier": "B",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 460,
+    "headline": "A manageable bifacial option, with exact SKU confirmation needed.",
+    "strengths": [
+      "Published dimensions and electrical data for the BF10 model.",
+      "Smaller front-side power class can be easier to place than 680W modules."
+    ],
+    "limits": [
+      "This BF10 datasheet specifies SE-PERC; do not assume every newer panel is TOPCon.",
+      "Retailer title omits full model; confirm DNA-120-BF10-460W before buying. Price stays excluded until that match is verified."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://www.aptossolar.com/wp-content/uploads/2025/12/DNA-120-BF10-460W_Datasheet_WRef.11182025-1.pdf",
+        "kind": "Manufacturer",
+        "note": "BF10-460W is bifacial SE-PERC with published dimensions. This document does not establish that the retailer listing is that exact revision."
+      }
+    ],
+    "specs": [
+      "460W front STC",
+      "SE-PERC / bifacial",
+      "Confirm exact SKU"
+    ],
+    "reviewedAt": "2026-10-04"
+  },
+  {
+    "id": "used-cs300",
+    "name": "Used Canadian Solar CS6X-300P",
+    "category": "panels",
+    "tier": "C",
+    "cohort": "Used / surplus",
+    "productIds": [],
+    "denominator": 300,
+    "headline": "A budget project option when used-panel risks are acceptable.",
+    "strengths": [
+      "Lower upfront equipment price can suit a noncritical DIY project.",
+      "Reuse can stretch an equipment budget when space is plentiful."
+    ],
+    "limits": [
+      "Used condition, cosmetic wear and remaining output vary.",
+      "Original nameplate watts are not measured remaining watts; excluded from new-equipment value tiers."
+    ],
+    "sources": [
+      {
+        "label": "SanTan used-panel listing",
+        "url": "https://www.santansolar.com/product/used-canadian-solar-300w-solar-panel/",
+        "kind": "Retailer",
+        "note": "Retailer identifies used condition and cosmetic wear. Verify tested output, exact serial/model, return terms and freight; this is not a lifetime comparison."
+      }
+    ],
+    "specs": [
+      "300W nameplate",
+      "Used / surplus",
+      "Output varies"
+    ],
+    "reviewedAt": "2026-10-04"
+  },
+  {
+    "id": "6000xp",
+    "name": "EG4 6000XP",
+    "category": "inverters",
+    "tier": "S",
+    "cohort": "Off-grid",
+    "productIds": [
+      "eg4-6000xp"
+    ],
+    "denominator": 6000,
+    "headline": "A strong off-grid choice with built-in solar charging.",
+    "strengths": [
+      "Integrated MPPTs and split-phase output simplify a dedicated off-grid setup.",
+      "Hands-on review found useful integration and responsive sales/technical support."
+    ],
+    "limits": [
+      "Cannot export to the grid.",
+      "Battery bank, balance-of-system hardware and installation are additional costs."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://eg4electronics.com/wp-content/uploads/2024/09/EG4-6000XP-System-Wiring-Diagrams.pdf",
+        "kind": "Manufacturer",
+        "note": "6,000W output and off-grid operation; diagram explicitly states no utility sell-back."
+      },
+      {
+        "label": "The Solar Lab hands-on review",
+        "url": "https://www.thesolarlab.com/review/eg4-6000xp-off-grid-inverter-review",
+        "kind": "Hands-on review",
+        "note": "Reviewer liked integrated protection and measured around 50W idle draw; display usability was a drawback."
+      },
+      {
+        "label": "Owner discussion",
+        "url": "https://www.reddit.com/r/SolarDIY/comments/1evfoqf",
+        "kind": "Owner report",
+        "note": "Owner discussion shows how operating modes and mixed battery revisions affect real installations; not all apparent problems are hardware failures."
+      }
+    ],
+    "specs": [
+      "6,000W AC",
+      "48V battery system",
+      "No grid export"
+    ],
+    "reviewedAt": "2026-10-04"
+  },
+  {
+    "id": "18kpv",
+    "name": "EG4 18kPV",
+    "category": "inverters",
+    "tier": "A",
+    "cohort": "Hybrid",
+    "productIds": [
+      "eg4-18kpv"
+    ],
+    "denominator": 12000,
+    "headline": "Broad hybrid capabilities for a planned stationary system.",
+    "strengths": [
+      "Documented grid export, off-grid operation and multiple MPPTs.",
+      "Integrated design and published system configurations aid planning."
+    ],
+    "limits": [
+      "18kPV is the PV class, not 18kW AC output: rated AC output is 12kW.",
+      "Permitted configurations, battery firmware and local interconnection need verification."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://eg4electronics.com/wp-content/uploads/2024/04/EG4-18KPV-12LV-Spec-Sheet.pdf",
+        "kind": "Manufacturer",
+        "note": "Documents 12kW output, 48V battery system, hybrid modes and warranty terms."
+      },
+      {
+        "label": "EG4 owner/support discussion",
+        "url": "https://forum.eg4electronics.com/community/inverters/max-18kpv-combined-output/",
+        "kind": "Owner report",
+        "note": "Discussion clarifies the 12kW generation limit; grid pass-through is a different rating."
+      }
+    ],
+    "specs": [
+      "12,000W AC",
+      "48V battery system",
+      "Hybrid"
+    ],
+    "reviewedAt": "2026-10-04"
+  },
+  {
+    "id": "flexboss21",
+    "name": "EG4 FlexBOSS21",
+    "category": "inverters",
+    "tier": "A",
+    "cohort": "Hybrid",
+    "productIds": [
+      "eg4-flexboss21"
+    ],
+    "denominator": 12000,
+    "headline": "Flexible hybrid expansion with a clearly defined output envelope.",
+    "strengths": [
+      "Three MPPTs and supported GridBOSS integration.",
+      "High PV utilization potential in the documented system design."
+    ],
+    "limits": [
+      "16kW conditional AC output is not the 12kW battery-only output rating.",
+      "Add GridBOSS and other equipment to the full project budget; documentary ranking is provisional."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://eg4electronics.com/wp-content/uploads/2024/10/EG4-FlexBoss21-Spec-Sheet.pdf",
+        "kind": "Manufacturer",
+        "note": "Datasheet specifies 16kW conditional output, 12kW battery-only output, 90A pass-through and 21kW recommended PV array."
+      }
+    ],
+    "specs": [
+      "12kW battery-only",
+      "16kW conditional",
+      "Hybrid"
+    ],
+    "reviewedAt": "2026-10-04"
+  },
+  {
+    "id": "solark15",
+    "name": "Sol-Ark 15K-2P",
+    "category": "inverters",
+    "tier": "A",
+    "cohort": "Hybrid",
+    "productIds": [
+      "shopsolar-45212532572300"
+    ],
+    "denominator": 12000,
+    "headline": "A capable whole-home platform with a higher equipment budget.",
+    "strengths": [
+      "200A grid pass-through, three MPPTs and published battery partners.",
+      "Manufacturer provides installer resources and monitoring tools."
+    ],
+    "limits": [
+      "15kW AC rating differs from the 12kW battery-only rating.",
+      "Equipment price and commissioning cost need a full-system comparison. Support features are documented, not independently mystery-shopped here."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://sol-ark.com/residential-energy-solutions/whole-home-15k-2p-hybrid-inverter/",
+        "kind": "Manufacturer",
+        "note": "Manufacturer states 15kW AC, 12kW AC from batteries, 200A pass-through and three MPPTs; verify exact model and battery configuration."
+      }
+    ],
+    "specs": [
+      "12kW battery-only",
+      "200A pass-through",
+      "Hybrid"
+    ],
+    "reviewedAt": "2026-10-04"
+  }
+]

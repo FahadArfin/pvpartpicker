@@ -7,8 +7,8 @@ import {categories} from '../lib/types';
 import type {Product} from '../lib/types';
 import {bestOffer,costForQuantity,money} from '../lib/domain';
 
-const icons={panels:Sun,mounting:Wrench,wiring:Cable,batteries:Battery,inverters:Zap,electrical:Box,accessories:Plug,charging:Zap,'module-electronics':ShieldCheck,monitoring:Gauge,kits:PackageOpen};
-const specKeys=['watts','face','technology','voltage','capacityKwh','formFactor','inverterType','gauge','mountType','controllerType','chargeCurrentA','moduleFunction','monitorType','kitType'];
+const icons={panels:Sun,mounting:Wrench,wiring:Cable,batteries:Battery,inverters:Zap,electrical:Box,accessories:Plug,charging:Zap,'module-electronics':ShieldCheck,monitoring:Gauge,kits:PackageOpen,'all-in-one':Battery};
+const specKeys=['watts','face','technology','voltage','capacityKwh','formFactor','inverterType','gauge','mountType','controllerType','chargeCurrentA','moduleFunction','monitorType','kitType','stationType','outputWatts'];
 function specs(product:Product){return Object.entries(product.specs).filter(([k])=>specKeys.includes(k)).slice(0,3).map(([k,v])=>k==='watts'?`${v} W`:k==='voltage'?`${v} V`:k==='capacityKwh'?`${v} kWh`:k==='chargeCurrentA'?`${v} A`:String(v));}
 function pricing(product:Product){const current=bestOffer(product);const last=[...product.offers].sort((a,b)=>a.price/a.packQuantity-b.price/b.packQuantity)[0];return {current,offer:current||last};}
 

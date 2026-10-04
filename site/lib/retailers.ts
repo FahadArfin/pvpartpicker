@@ -14,6 +14,13 @@ export function classify(title: string): Category | null {
   // Classify the main equipment, not an optional variant cable/panel or a feature.
   const base = title.split(/\s—\s/)[0].toLowerCase();
   const t = base.split(/\s(?:for|with|including|featuring)\s/)[0];
+  const stationModel = /^(?:pecron\s*(?:e(?:1000|1500|2000|2400|3600|3800)|f(?:1000|3000|5000))\s*lfp|anker\s*(?:solix\s*)?(?:c(?:1000|2000)|f(?:2000|2600|3000|3800)|s2000)\b|ecoflow\s+delta\b|bluetti\s+(?:ac200l|apex\s*300|elite\s*\d+)\b|jackery\s+explorer\s+\d+)/.test(t);
+  // Inspect the main sale item before optional additions and feature columns.
+  // A cycle count such as "4,000+" does not turn an expansion battery into a station.
+  const subject=t.split(/\+|\|/)[0];
+  const stationAccessory=/cable|adapter|carrying|cover|\bcase\b|replacement|battery only|extra battery|expansion battery|solar panel/.test(subject);
+  const inverterModule=/inverter/.test(subject)&&!/power station|solar generator/.test(subject);
+  if ((/portable power station|solar generator|power bank/.test(subject) || stationModel) && !stationAccessory && !inverterModule) return 'all-in-one';
   if (/\b(?:kit|bundle)\b/.test(base)&&/\bkwh\b.*(?:storage|array)|storage.*array|inverter.*battery|battery.*inverter/.test(base)) return 'kits';
   if (/wirebox|wire box/.test(t)) return 'electrical';
   if (/rapid[ -]?shutdown|pv optimizer|module.level.*optimizer|\bts4[- ]|\brss transmitter|\brsd[- ]|tigo.*(?:\btap\b|\bcca\b|cloud connect)/.test(t)) return 'module-electronics';
@@ -63,6 +70,16 @@ export function extractSpecs(title: string, category: Category, properties: Reco
   if (category === 'charging') { specs.controllerType=/dc[ -]?dc/i.test(title)?'DC-DC charger':/mppt/i.test(title)?'MPPT':/pwm/i.test(title)?'PWM':'Solar controller';numeric('chargeCurrentA',/\b([\d.]+)\s*a(?:mp(?:s|ere)?)?\b/i); }
   if (category === 'module-electronics') specs.moduleFunction=/optimi[sz]er/i.test(title)?(/rapid[ -]?shutdown/i.test(title)?'Optimizer + rapid shutdown':'Optimizer'):/transmitter/i.test(title)?'Shutdown transmitter':/\btap\b|\bcca\b|cloud connect/i.test(title)?'Shutdown gateway / access point':'Rapid shutdown';
   if (category === 'monitoring') specs.monitorType=/smart panel|gridboss|energy management|transfer|system controller|\bats\b/i.test(title)?'System / load control':/smart plug/i.test(title)?'Smart plug':/shunt|battery monitor/i.test(title)?'Battery monitor':/sensor/i.test(title)?'Sensor':/dongle|gateway|cerbo|logger/i.test(title)?'Gateway / communications':'Energy monitor / meter';
+  if (category === 'all-in-one') {
+    specs.stationType=/\bdc portable power station|\btrail\b|\bexplorer\s*\d+d\b|dc-only/i.test(title)?'DC-only station (no AC inverter)':'Integrated power station';
+    const main=title.split(/\s—\s/)[0],whPattern=/\b([\d,]+(?:\.\d+)?)\s*wh\b/i;
+    const selectedWh=selected.match(whPattern),selectedKwh=selected.match(/\b([\d.]+)\s*kwh\b/i),mainWh=main.match(whPattern);
+    if(selectedWh) specs.capacityKwh=Number(selectedWh[1].replace(/,/g,''))/1000;
+    else if(selectedKwh) specs.capacityKwh=Number(selectedKwh[1]);
+    else if(mainWh) specs.capacityKwh=Number(mainWh[1].replace(/,/g,''))/1000;
+    // Generic W figures may describe bundled panels or input. Do not infer AC output.
+    delete specs.watts;delete specs.voltage;
+  }
   if (category === 'kits') specs.kitType=/power station|solar generator|power bank/i.test(title)?'Portable power':'Solar system kit';
   if (/all[ -]?black|black/i.test(title)) specs.color = 'Black'; else if (/silver/i.test(title)) specs.color = 'Silver';
   if (category === 'mounting') specs.mountType = /ground/i.test(title) ? 'Ground' : /roof|rail/i.test(title) ? 'Roof' : 'Hardware';
@@ -71,7 +88,7 @@ export function extractSpecs(title: string, category: Category, properties: Reco
   return specs;
 }
 export function extractPackQuantity(title: string, category: Category): number | null {
-  if(category==='kits') return 1; // The sale unit is the complete kit/station bundle.
+  if(category==='kits'||category==='all-in-one') return 1; // The sale unit is the complete kit/station bundle.
   // A mixed bundle is one sale unit; quantities of included plugs/sensors are not monitor counts.
   if (category !== 'panels' && /\bwith\b|\bbundle\b|\bkit\b/i.test(title)) return 1;
   const selected = title.split(/\s—\s/).slice(1).join(' ');
@@ -85,9 +102,9 @@ export function extractPackQuantity(title: string, category: Category): number |
 export function categorizeProduct(product: Omit<Product,'offers'> & {offers?:Product['offers']}): Product {
   const category=classify(product.name)||product.category;
   const specs={...product.specs};
-  if(category!==product.category) for(const key of ['face','cellType','technology','formFactor','chemistry','inverterType','acOutput','gridForming','mountType','gauge','lengthFt']) delete specs[key];
+  if(category!==product.category) for(const key of ['face','cellType','technology','formFactor','chemistry','inverterType','acOutput','gridForming','mountType','gauge','lengthFt','kitType','stationType','watts','voltage','capacityKwh']) delete specs[key];
   const offers=product.offers||[]; // D1 stores product metadata separately from offers.
-  return {...product,category,specs:{...specs,...extractSpecs(product.name,category)},offers:category==='kits'?offers.map(o=>({...o,packQuantity:1})):offers};
+  return {...product,category,specs:{...specs,...extractSpecs(product.name,category)},offers:category==='kits'||category==='all-in-one'?offers.map(o=>({...o,packQuantity:1})):offers};
 }
 function flatten(value: any): any[] { if (Array.isArray(value)) return value.flatMap(flatten); if (!value || typeof value !== 'object') return []; return [value, ...flatten(value['@graph']), ...flatten(value.itemListElement?.map((i: any) => i.item || i)), ...flatten(value.hasVariant)]; }
 export function parseProductPage(html: string, retailer: Retailer, url: string, observedAt: string): Product[] {
