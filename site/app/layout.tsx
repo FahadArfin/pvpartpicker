@@ -1,0 +1,32 @@
+import type { Metadata } from "next";
+import "./globals.css";
+import {PVProvider} from '../components/pv-provider';
+import {getCatalog} from '../lib/storage';
+import {getChatGPTUser} from './chatgpt-auth';
+export const dynamic='force-dynamic';
+
+export const metadata: Metadata = {
+  title: {default:'PVPartPicker — Build your solar system',template:'%s · PVPartPicker'},
+  description: 'Compare solar panels, batteries, inverters, mounting, and electrical parts. Build your system and track real retailer prices.',
+  other: {
+    "codex-preview": "development",
+  },
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+  },
+};
+
+export default async function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  const[catalog,user]=await Promise.all([getCatalog(),getChatGPTUser()]);
+  const products=catalog.products.map(p=>({...p,description:p.description.slice(0,240),images:p.images.slice(0,1)}));
+  return (
+    <html lang="en">
+      <body><PVProvider products={products} reports={catalog.reports} user={user?{displayName:user.displayName,email:user.email}:null}>{children}</PVProvider></body>
+    </html>
+  );
+}

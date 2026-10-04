@@ -1,0 +1,4 @@
+'use client';
+import {useState} from 'react';
+import {api} from '../../components/pv-provider';
+export default function Page(){const[done,setDone]=useState(false),[error,setError]=useState('');async function stop(){try{await api('unsubscribe?token='+encodeURIComponent(new URL(location.href).searchParams.get('token')||''),{method:'POST',body:'{}'});setDone(true);}catch(e){setError((e as Error).message);}}return <main className="page-container"><section className="auth-empty"><h1 style={{fontSize:25}}>{done?'Price alert disabled':'Unsubscribe from this alert'}</h1><p>{done?'You will no longer receive notifications for this price alert.':'Disable both email and website notifications for this price alert.'}</p>{error&&<p className="error-message">{error}</p>}{!done&&<button className="button dark" onClick={stop}>Disable price alert</button>}</section></main>;}

@@ -1,0 +1,5 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {applyOverride,sendQueuedEmails} from '../lib/overrides.ts';
+test('documented corrections survive later source metadata',()=>{const result=applyOverride({specs:{watts:440}} as any,{specs:{voc:49},documentation:'https://manufacturer.test/manual'});assert.equal(result.specs.voc,49);assert.equal(result.specs.watts,440);assert.equal(result.documentation,'https://manufacturer.test/manual');});
+test('a failed email increments its attempt and does not block later deliveries',async()=>{const updates:any[]=[];let calls=0;const delivered=await sendQueuedEmails([{id:'a',attempts:0,token:'t'},{id:'b',attempts:0,token:'t'}],{RESEND_API_KEY:'test',EMAIL_FROM:'test@test.test',SITE_ORIGIN:'https://test.test'},async(id,status)=>{updates.push({id,status});},async()=>{if(++calls===1)throw new Error('timeout');return new Response('',{status:200});});assert.deepEqual(updates,[{id:'a',status:'pending'},{id:'b',status:'sent'}]);assert.equal(delivered,1);});

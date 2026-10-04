@@ -1,0 +1,16 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { costForQuantity, freshOffers, checkCompatibility, alertCrossed, validateBuild } from '../lib/domain.ts';
+import type { Product, Offer } from '../lib/types.ts';
+const now = '2026-10-04T20:00:00Z';
+const offer: Offer = { id: 'o', retailerId: 'ss', retailer: 'Shop', url: 'https://signaturesolar.com/panel', price: 3000, packQuantity: 30, currency: 'USD', stock: 'in_stock', observedAt: now, condition: 'new' };
+function product(category: Product['category'], specs: Product['specs']): Product { return { id: category, name: category, brand: 'EG4', category, specs, description: '', image: '', images: [], sourceUrl: 'https://eg4electronics.com', offers: [offer], verifiedAt: now }; }
+test('pallet arithmetic includes minimum purchase and extra units', () => { assert.deepEqual(costForQuantity(offer, 31), { packs: 2, purchasedUnits: 60, extraUnits: 29, subtotal: 6000 }); });
+test('stale, unavailable, and unknown-stock listings never become best offers', () => { assert.equal(freshOffers([offer, { ...offer, id: 'old', observedAt: '2025-01-01' }, { ...offer, id: 'out', stock: 'out_of_stock' }], Date.parse(now)).length, 1); });
+test('missing voltage evidence does not become compatible', () => { const result = checkCompatibility([product('inverters', {}), product('batteries', {})], { purpose: 'offgrid', mount: 'roof' }); assert.ok(result.some(x => x.status === 'unknown')); assert.ok(!result.some(x => x.title === 'Battery voltage' && x.status === 'match')); });
+test('high-voltage battery fails low-voltage inverter range', () => { const result = checkCompatibility([product('inverters', { batteryMinV: 40, batteryMaxV: 60 }), product('batteries', { voltage: 400 })], { purpose: 'offgrid', mount: 'roof' }); assert.ok(result.some(x => x.status === 'mismatch' && x.title === 'Battery voltage')); });
+test('cold corrected string voltage exceeds inverter limit', () => { const result = checkCompatibility([product('panels', { voc: 50, vocTempCoefficient: -0.25 }), product('inverters', { maxPvVoltage: 500 })], { purpose: 'offgrid', mount: 'roof', series: 10, parallel: 1, minimumTemperature: -20 }); assert.ok(result.some(x => x.status === 'mismatch' && x.title === 'Cold-weather PV voltage')); });
+test('alerts notify only on a fresh in-stock crossing and rearm above target', () => { assert.equal(alertCrossed(200, 190, 195, true), true); assert.equal(alertCrossed(190, 190, 195, true), false); assert.equal(alertCrossed(null, 190, 195, false), false); });
+test('build validation rejects duplicates, unsafe quantities, and invalid purpose', () => { assert.throws(() => validateBuild({ name: 'test', lines: [{ productId: 'x', quantity: -1 }], settings: { purpose: 'offgrid', mount: 'roof' } })); assert.throws(() => validateBuild({ name: 'test', lines: [{ productId: 'x', quantity: 1 }, { productId: 'x', quantity: 2 }], settings: { purpose: 'offgrid', mount: 'roof' } })); });
+
+test('grid tied purpose rejects documented off-grid inverter',()=>{assert.ok(checkCompatibility([product('inverters',{inverterType:'Off-grid'})],{purpose:'gridtie',mount:'roof'}).some(c=>c.title==='System purpose'&&c.status==='mismatch'));});

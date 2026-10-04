@@ -1,0 +1,31 @@
+name: Collect retailer prices
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: retailer-price-collection
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: site
+    env:
+      PV_API_ORIGIN: ${{ vars.PV_API_ORIGIN }}
+      PV_COLLECTOR_TOKEN: ${{ secrets.PV_COLLECTOR_TOKEN }}
+      COLLECT_MAX_PAGES: 24
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - run: npm ci --no-audit --no-fund
+      - name: Collect and publish observations
+        run: node --experimental-strip-types scripts/collect-catalog.mjs --publish

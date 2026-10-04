@@ -1,0 +1,15 @@
+.superpowers/
+.env*
+.dev.vars*
+*.log
+*.tsbuildinfo
+site/.dev.vars*
+site/data/collection-progress.json
+site/data/collection-errors.json
+site/test-results/
+site/playwright-report/
+site/data/probe-*.html
+
+site/.playwright-cli/
+site/output/
+site/data/collection-progress*.json

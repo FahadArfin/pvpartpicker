@@ -1,0 +1,98 @@
+import { load } from 'cheerio';
+import type { Category, Product, Specs } from './types.ts';
+export interface Retailer { id: string; name: string; origin: string; seeds?: string[]; }
+export const retailers: Retailer[] = [
+  { id: 'signature-solar', name: 'Signature Solar', origin: 'https://signaturesolar.com', seeds: ['/', '/solar-panels/', '/solar-inverters/', '/batteries/', '/solar-mounting/', '/wiring-and-connectors/'] },
+  { id: 'current-connected', name: 'Current Connected', origin: 'https://www.currentconnected.com', seeds: ['/product-category/solar-panels/', '/product-category/inverters/', '/product-category/batteries/', '/product-category/solar-components/'] },
+  { id: 'santan-solar', name: 'SanTan Solar', origin: 'https://www.santansolar.com' },
+  { id: 'shopsolar', name: 'ShopSolar', origin: 'https://shopsolarkits.com' },
+  { id: 'naz', name: 'NAZ Solar Electric', origin: 'https://www.solar-electric.com' },
+  { id: 'renogy', name: 'Renogy', origin: 'https://www.renogy.com' },
+  { id: 'emporia', name: 'Emporia Energy', origin: 'https://shop.emporiaenergy.com' },
+];
+export function classify(title: string): Category | null {
+  const t = title.toLowerCase();
+  if (/load center|electrical panel|breaker panel/.test(t)) return 'electrical';
+  if (/cable|wire\b|wiring|\blug\b|\blugs\b|mc4|connector|ferrule/.test(t)) return 'wiring';
+  if (/solar panel|pv module|bifacial|photovoltaic/.test(t) && !/kit|bundle|mount|bracket|clamp/.test(t)) return 'panels';
+  if (/conduit|junction|combiner|disconnect|grounding|ground rod|busbar|bus bar|breaker|fuse|isolator|surge protect|electrical box/.test(t)) return 'electrical';
+  if (/lcd|screen kit|battery base|battery stand|battery cover|battery tray/.test(t)) return 'accessories';
+  if (/smart panel|gridboss|monitor|sensor|smart plug|dongle|gateway|shunt|meter|cerbo|communication|display|adapter|control/.test(t)) return 'accessories';
+  if (/lifepo4|lifpo4|lfp48|\b\d+\s*(?:kwh|ah)\b/.test(t) && !/inverter|kit|bundle|cable/.test(t)) return 'batteries';
+  if (/rail|mount|clamp|flashing|bracket|roof hook/.test(t) && !/wall.?mount.*battery|battery.*wall.?mount/.test(t)) return 'mounting';
+  if (/battery|batteries|lifepo4|lithium/.test(t) && !/inverter|solar kit|solar system|bundle/.test(t)) return 'batteries';
+  if (/inverter|multiplus|quattro|microinverter/.test(t) && !/bundle|solar kit|solar system/.test(t)) return 'inverters';
+  if (/solar panel|pv module|bifacial|photovoltaic|mono.*\d+\s*w/.test(t) && !/kit|bundle/.test(t)) return 'panels';
+  return null;
+}
+export function slug(text: string) { return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 120); }
+export function canonicalId(title: string, category: Category, fallback: string) {
+  if (!/bundle|\bkit\b|pallet|used|refurb|open.?box|scratch|b-stock|\b\d+\s*(?:pack|pcs)\b|\bx\s*[2-9]\b/i.test(title)) {
+    if (category === 'inverters' && /\beg4\b/i.test(title)) { for (const model of ['6000xp', '12000xp', '18kpv', '12kpv', 'flexboss21', 'flexboss18']) if (title.toLowerCase().replace(/\s/g, '').includes(model)) return 'eg4-' + model; }
+    if (category === 'batteries' && /eg4/i.test(title) && /lifepower4/i.test(title) && /v2/i.test(title)) return 'eg4-lifepower4-v2';
+    if (category === 'batteries' && /eg4/i.test(title) && /ll-s/i.test(title)) return 'eg4-ll-s';
+  }
+  return slug(fallback);
+}
+export function robotsAllows(text: string, path: string, agent = 'PVPartPickerBot') {
+  const groups: { agents: string[]; rules: { allow: boolean; pattern: string }[] }[] = []; let group = { agents: [] as string[], rules: [] as { allow: boolean; pattern: string }[] };
+  for (const line of text.split(/\r?\n/)) { const m = line.replace(/#.*/, '').trim().match(/^([^:]+):\s*(.*)$/); if (!m) continue; const k = m[1].toLowerCase(), v = m[2].trim(); if (k === 'user-agent') { if (group.rules.length) { groups.push(group); group = { agents: [], rules: [] }; } group.agents.push(v.toLowerCase()); } else if (['allow', 'disallow'].includes(k) && v) group.rules.push({ allow: k === 'allow', pattern: v }); } groups.push(group);
+  const specific = groups.filter(g => g.agents.some(a => a !== '*' && agent.toLowerCase().includes(a))); const selected = specific.length ? specific : groups.filter(g => g.agents.includes('*'));
+  const matches = selected.flatMap(g => g.rules).filter(r => { const end = r.pattern.endsWith('$'); const p = end ? r.pattern.slice(0, -1) : r.pattern; return new RegExp('^' + p.split('*').map(x => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('.*') + (end ? '$' : '')).test(path); }).sort((a, b) => b.pattern.replace(/\*/g, '').length - a.pattern.replace(/\*/g, '').length || Number(b.allow) - Number(a.allow));
+  return matches[0]?.allow ?? true;
+}
+export function extractSpecs(title: string, category: Category, properties: Record<string, unknown> = {}): Specs {
+  const selected = title.split(/\s—\s/).slice(1).join(' ');
+  const specs: Specs = {}; const numeric = (key: string, pattern: RegExp) => { const m = selected.match(pattern) || title.match(pattern); if (m) specs[key] = Number(m[1].replace(/,/g, '')); };
+  numeric('watts', /\b([\d,]+)\s*(?:w|watts?)\b/i); numeric('voltage', /\b([\d.]+)\s*v(?:dc|ac)?\b/i); numeric('capacityKwh', /\b([\d.]+)\s*kwh\b/i); numeric('capacityAh', /\b([\d.]+)\s*ah\b/i);
+  if (category === 'panels') { if (/bifacial/i.test(title)) specs.face = 'Bifacial'; else if (/monofacial/i.test(title)) specs.face = 'Monofacial'; if (/n[ -]?type/i.test(title)) specs.cellType = 'N-type'; if (/p[ -]?type/i.test(title)) specs.cellType = 'P-type'; for (const tech of ['TOPCon', 'HPBC', 'IBC', 'PERC', 'HJT']) if (new RegExp('\\b' + tech + '\\b', 'i').test(title)) specs.technology = tech; }
+  if (category === 'batteries') { if (/server|rack/i.test(title)) specs.formFactor = 'Server rack'; else if (/wall/i.test(title)) specs.formFactor = 'Wall mounted'; else if (/standing|cabinet/i.test(title)) specs.formFactor = 'Floor standing'; if (/lifepo4/i.test(title)) specs.chemistry = 'LiFePO4'; }
+  if (category === 'inverters') { if (/microinverter/i.test(title)) specs.inverterType = 'Microinverter'; else if (/hybrid/i.test(title)) specs.inverterType = 'Hybrid'; else if (/off[ -]?grid/i.test(title)) specs.inverterType = 'Off-grid'; else if (/grid[ -]?tie/i.test(title)) specs.inverterType = 'Grid-tie'; if (/split[ -]?phase|120\s*\/\s*240/i.test(title)) specs.acOutput = '120/240V split-phase'; if (/grid[ -]?forming/i.test(title)) specs.gridForming = true; }
+  if (/all[ -]?black|black/i.test(title)) specs.color = 'Black'; else if (/silver/i.test(title)) specs.color = 'Silver';
+  if (category === 'mounting') specs.mountType = /ground/i.test(title) ? 'Ground' : /roof|rail/i.test(title) ? 'Roof' : 'Hardware';
+  if (category === 'wiring') { const awg = title.match(/([\d/]+)\s*awg/i); if (awg) specs.gauge = awg[1] + ' AWG'; const feet = title.match(/([\d.]+)\s*(?:ft|feet)/i); if (feet) specs.lengthFt = Number(feet[1]); }
+  for (const [key, value] of Object.entries(properties).slice(0, 35)) { if (key.length < 70 && ['string', 'number'].includes(typeof value)) specs[key] = String(value).slice(0, 180); }
+  return specs;
+}
+export function extractPackQuantity(title: string, category: Category): number | null {
+  // A mixed bundle is one sale unit; quantities of included plugs/sensors are not monitor counts.
+  if (category !== 'panels' && /\bwith\b|\bbundle\b|\bkit\b/i.test(title)) return 1;
+  const selected = title.split(/\s—\s/).slice(1).join(' ');
+  const pattern = /(?:pallet\s*(?:of|with)?\s*(?:panels\s*[-:]?\s*)?|pack\s*of|quantity[:\s]+)\s*\(?\s*(\d+)|\b(\d+)\s*(?:(?:solar\s*)?panels?\b|pack\b|pcs\b|pieces?\b)|\b(\d+)\s*x\s*\d+\s*w\b/i;
+  const m = selected.match(pattern) || title.match(pattern);
+  if (m) { const count=Number(m[1]||m[2]||m[3]); return count>0 && count<=10000 ? count : null; }
+  return /pallet|multi.?pack/i.test(title) ? null : 1;
+}
+function flatten(value: any): any[] { if (Array.isArray(value)) return value.flatMap(flatten); if (!value || typeof value !== 'object') return []; return [value, ...flatten(value['@graph']), ...flatten(value.itemListElement?.map((i: any) => i.item || i)), ...flatten(value.hasVariant)]; }
+export function parseProductPage(html: string, retailer: Retailer, url: string, observedAt: string): Product[] {
+  const $ = load(html); const nodes: any[] = []; $('script[type="application/ld+json"]').each((_, e) => { try { nodes.push(...flatten(JSON.parse($(e).text()))); } catch {} }); const output: Product[] = [];
+  if (!nodes.some(n=>n['@type']==='Product') && retailer.id==='signature-solar') {
+    try { const match=html.match(/var\s+BCData\s*=\s*(\{[\s\S]*?\});/);const attributes=match?JSON.parse(match[1]).product_attributes:null;
+      if(attributes?.price?.without_tax?.currency==='USD')nodes.push({'@type':'Product',name:$('meta[property="og:title"]').attr('content')||$('h1').first().text()||$('title').first().text(),description:$('meta[property="og:description"]').attr('content')||'',sku:attributes.sku,image:$('meta[property="og:image"]').attr('content'),offers:{'@type':'Offer',price:attributes.price.without_tax.value,priceCurrency:'USD',url,availability:attributes.instock===true?'https://schema.org/InStock':attributes.instock===false?'https://schema.org/OutOfStock':''}});
+    }catch{}
+  }
+  for (const n of nodes) {
+    if (![].concat(n['@type'] || []).some(t => String(t).toLowerCase() === 'product')) continue;
+    const title = String(n.name || '').trim(); const category = classify(title); if (!category) continue;
+    const offers = Array.isArray(n.offers) ? n.offers : n.offers ? [n.offers] : [];
+    for (const o of offers) {
+      if (o['@type'] === 'AggregateOffer' || o.priceCurrency !== 'USD') continue;
+      const price = Number(String(o.price ?? o.priceSpecification?.price ?? '').replace(/[$,]/g, '')); if (!Number.isFinite(price) || price <= 0 || price > 1000000) continue;
+      let offerUrl: URL; try { offerUrl = new URL(o.url || url, url); } catch { continue; } if (offerUrl.origin !== retailer.origin) continue;
+      const sku = String(o.sku || n.sku || n.productID || slug(title)); const offerId = slug(retailer.id + '-' + sku + (offers.length>1 && !o.sku ? '-'+offerUrl.href : ''));
+      const packQuantity = extractPackQuantity(title,category);
+      if (!packQuantity || packQuantity > 10000) continue;
+      const rawImages = [n.image].flat().filter(Boolean).map((x: any) => typeof x === 'object' ? x.url : x).filter((x: unknown) => typeof x === 'string' && /^https:\/\//.test(x as string));
+      const properties: Record<string, unknown> = {}; for (const p of [n.additionalProperty].flat().filter(Boolean)) if (p.name && p.value !== undefined) properties[String(p.name)] = p.value;
+      $('table tr').each((_, e) => { const cells = $(e).find('td,th'); if (cells.length === 2) { const k = $(cells[0]).text().replace(/\s+/g, ' ').trim(), v = $(cells[1]).text().replace(/\s+/g, ' ').trim(); if (k && v && k.length < 70 && v.length < 160) properties[k] = v; } });
+      const description = load(String(n.description || ''))('body').text().replace(/\s+/g, ' ').trim().slice(0, 6500);
+      const id = canonicalId(title, category, retailer.id + '-' + sku);
+      const specs = extractSpecs(title, category, properties);
+      const p: Product = { id, name: title, brand: typeof n.brand === 'string' ? n.brand : n.brand?.name || title.match(/^(EG4|Victron|Renogy|Emporia|IronRidge|APsystems|ZNShine|Aptos|Canadian Solar|Growatt|SOK|Pytes|Sol-Ark)/i)?.[0] || 'See manufacturer', category, description, image: rawImages[0] || $('meta[property="og:image"]').attr('content') || '', images: rawImages, sourceUrl: url, specs, offers: [{ id: offerId, retailerId: retailer.id, retailer: retailer.name, url: offerUrl.href, price, currency: 'USD', packQuantity, stock: /outofstock|soldout|discontinued/i.test(o.availability || '') ? 'out_of_stock' : /instock|limitedavailability/i.test(o.availability || '') ? 'in_stock' : 'unknown', observedAt, sku, condition: /used|refurbished/i.test(n.itemCondition || title) ? 'used' : 'new' }], verifiedAt: observedAt };
+      if (id === 'eg4-6000xp') { p.documentation = 'https://eg4electronics.com/wp-content/uploads/2024/04/EG4-6000XP-Manual.pdf'; p.specs = { ...specs, batteryMinV: 46.4, batteryMaxV: 60, batteryChemistry: 'Lithium', maxPvVoltage: 500, maxMpptCurrent: 17, inverterType: 'Off-grid', acOutput: '120/240V split-phase', outputWatts: 6000, mpptCount: 2, specificationSource: p.documentation }; }
+      output.push(p);
+    }
+  }
+  return output;
+}
+export function mergeProducts(products: Product[]): Product[] { const map = new Map<string, Product>(); for (const p of products) { const existing = map.get(p.id); if (!existing) map.set(p.id, p); else { const offers = new Map(existing.offers.map(o => [o.id, o])); for (const o of p.offers) offers.set(o.id, o); existing.offers = [...offers.values()]; if (!existing.image && p.image) existing.image = p.image; if (p.description.length > existing.description.length) existing.description = p.description; existing.specs = { ...existing.specs, ...p.specs }; existing.verifiedAt = existing.verifiedAt>p.verifiedAt?existing.verifiedAt:p.verifiedAt; } } return [...map.values()].map(p=>p.id==='eg4-6000xp'?{...p,documentation:'https://eg4electronics.com/wp-content/uploads/2024/04/EG4-6000XP-Manual.pdf',specs:{...p.specs,batteryMinV:46.4,batteryMaxV:60,maxPvVoltage:500,maxMpptCurrent:17,inverterType:'Off-grid',specificationSource:'https://eg4electronics.com/wp-content/uploads/2024/04/EG4-6000XP-Manual.pdf'}}:p); }
