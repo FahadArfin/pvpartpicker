@@ -1,5 +1,5 @@
 'use client';
-import Link from 'next/link';
+import Link from './site-link';
 import {CheckCircle2,AlertTriangle,HelpCircle,Plus,Minus,Trash2,Bookmark,Link2,ArrowRight} from 'lucide-react';
 import {usePV,ProductImage,api} from './pv-provider';
 import {categories} from '../lib/types';

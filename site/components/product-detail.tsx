@@ -1,6 +1,6 @@
 'use client';
 import {useEffect,useState} from 'react';
-import Link from 'next/link';
+import Link from './site-link';
 import {Bell,Plus,ArrowUpRight,ChevronRight,X,Star} from 'lucide-react';
 import {ResponsiveContainer,LineChart,Line,XAxis,YAxis,Tooltip,CartesianGrid,Legend} from 'recharts';
 import type {Product,Observation} from '../lib/types';

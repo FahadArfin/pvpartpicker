@@ -1,5 +1,5 @@
 import {database,getCatalog} from '../../../lib/storage';
-import Link from 'next/link';
+import Link from '../../../components/site-link';
 import {notFound} from 'next/navigation';
 import {bestOffer,costForQuantity,money} from '../../../lib/domain';
 import type {Build} from '../../../lib/types';

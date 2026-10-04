@@ -1,6 +1,6 @@
 'use client';
 import {useMemo,useState} from 'react';
-import Link from 'next/link';
+import Link from './site-link';
 import {Search,SlidersHorizontal,Sun,Battery,Zap,Cable,Wrench,Box,Plug,ArrowUpRight,Plus,Check,X} from 'lucide-react';
 import {usePV,ProductImage,BuildSummary} from './pv-provider';
 import {categories} from '../lib/types';

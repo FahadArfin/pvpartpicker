@@ -1,6 +1,6 @@
 'use client';
 import {useEffect,useState} from 'react';
-import Link from 'next/link';
+import Link from './site-link';
 import {TrendingDown} from 'lucide-react';
 import {api,usePV} from './pv-provider';
 import {ProductCard} from './catalog-workspace';

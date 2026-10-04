@@ -1,6 +1,6 @@
 'use client';
 import React,{createContext,useContext,useEffect,useState} from 'react';
-import Link from 'next/link';
+import Link from './site-link';
 import {Sun,Bell,Bookmark,Menu,X,ArrowRight,Plus} from 'lucide-react';
 import type {Build,Product,CollectionReport} from '../lib/types';
 import {bestOffer,costForQuantity,money} from '../lib/domain';
@@ -13,8 +13,8 @@ export function usePV(){const value=useContext(ctx);if(!value)throw new Error('P
 export async function api(path:string,options?:RequestInit):Promise<any>{const r=await fetch('/api/'+path,{...options,headers:{'Content-Type':'application/json',...options?.headers}});const d:any=await r.json();if(!r.ok)throw new Error(d.error||'Please try again.');return d;}
 export function PVProvider({products,reports,user,children}:{products:Product[];reports:CollectionReport[];user:User;children:React.ReactNode}){
  const[build,setBuild]=useState<Build>(initial),[ready,setReady]=useState(false),[notice,setNotice]=useState(''),[compare,setCompare]=useState<string[]>([]),[menu,setMenu]=useState(false);
- useEffect(()=>{try{const v=localStorage.getItem('pvpartpicker-draft');if(v){const p=JSON.parse(v);if(Array.isArray(p.lines)&&p.settings)setBuild(p);}}catch{}setReady(true);},[]);
- useEffect(()=>{if(ready)localStorage.setItem('pvpartpicker-draft',JSON.stringify(build));},[build,ready]);
+ useEffect(()=>{try{const v=localStorage.getItem('pvpartpicker-draft');if(v){const p=JSON.parse(v);if(Array.isArray(p.lines)&&p.settings)setBuild(p);}const c=localStorage.getItem('pvpartpicker-compare');if(c){const ids=JSON.parse(c);if(Array.isArray(ids))setCompare(ids.filter(id=>products.some(p=>p.id===id)).slice(0,4));}}catch{}setReady(true);},[]);
+ useEffect(()=>{if(ready){localStorage.setItem('pvpartpicker-draft',JSON.stringify(build));localStorage.setItem('pvpartpicker-compare',JSON.stringify(compare));}},[build,compare,ready]);
  useEffect(()=>registerPVTools(products,build,setBuild),[products,build]);
  useEffect(()=>{if(!notice)return;const t=setTimeout(()=>setNotice(''),6500);return()=>clearTimeout(t);},[notice]);
  const add=(id:string,offerId?:string)=>{setBuild(b=>({...b,lines:b.lines.some(l=>l.productId===id)?b.lines.map(l=>l.productId===id?{...l,quantity:Math.min(10000,l.quantity+1),...(offerId?{offerId}:{})}:l):[...b.lines,{productId:id,quantity:1,...(offerId?{offerId}:{})}]}));setNotice('Added to your build.');};
