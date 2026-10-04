@@ -2,7 +2,7 @@
 import {useEffect,useRef} from 'react';
 import {Sun,Battery,Zap,Cable,Wrench,Box,Plug,ShieldCheck,Gauge,PackageOpen,Plus,Check,ArrowUpRight,ArrowRight,X,Package} from 'lucide-react';
 import Link from './site-link';
-import {usePV,ProductImage} from './pv-provider';
+import {usePV,ProductImage,WatchButton} from './pv-provider';
 import {categories} from '../lib/types';
 import type {Product} from '../lib/types';
 import {bestOffer,costForQuantity,money} from '../lib/domain';
@@ -20,7 +20,7 @@ export function PartRow({product,active,onInspect,onOpen}:{product:Product;activ
    <strong>{product.name}</strong><span>{product.brand}<i/> {specs(product).join(' · ')||categories.find(c=>c.id===product.category)?.label}</span>
   </button>
   <div className="part-price"><strong>{offer?money(offer.price/offer.packQuantity):'Unpriced'}</strong><span>{current?'In stock':'Last observed'}{offer&&offer.packQuantity>1?` · ${offer.packQuantity}-pack`:''}</span></div>
-  <label className={'part-compare '+(selected?'selected':'')} title="Compare part"><input type="checkbox" checked={selected} onChange={()=>{if(!selected&&compare.length>=4){notify('Compare up to four parts. Remove one to add another.');return;}setCompare(c=>selected?c.filter(id=>id!==product.id):[...c,product.id]);}}/><span><Check size={13}/></span><span className="sr-only">Compare {product.name}</span></label>
+  <WatchButton product={product}/><label className={'part-compare '+(selected?'selected':'')} title="Compare part"><input type="checkbox" checked={selected} onChange={()=>{if(!selected&&compare.length>=4){notify('Compare up to four parts. Remove one to add another.');return;}setCompare(c=>selected?c.filter(id=>id!==product.id):[...c,product.id]);}}/><span><Check size={13}/></span><span className="sr-only">Compare {product.name}</span></label>
   <button className={'equip-button '+(quantity?'has-part':'')} onClick={()=>add(product.id,offer?.id)} aria-label={'Add '+product.name+' to build'} title={quantity?`In build: ${quantity}. Add one more.`:'Add to your build'}>{quantity?<><Check size={14}/><span key={quantity} className="equip-count">{quantity}</span></>:<><Plus size={15}/><span>Equip</span></>}</button>
  </article>;
 }
@@ -34,7 +34,7 @@ function PartPreview({product}:{product:Product}){
    <div className="inspection-price"><div><small>{current?'Current unit price':'Last observed unit price'}</small><strong>{offer?money(offer.price/offer.packQuantity):'Unpriced'}</strong></div><span className={current?'stock-dot':'muted'}>{current?'In stock':'Check stock'}</span></div>
    {offer&&<><div className="purchase-note"><Package size={15}/><span>{offer.packQuantity>1?`${money(offer.price)} purchase · ${offer.packQuantity} units`:`${money(offer.price)} single-unit purchase`}<small>{offer.retailer} · {offer.condition==='used'?'Used / refurbished':'New'}</small></span></div><p className="inspection-date">Observed {new Date(offer.observedAt).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'})} · {product.offers.length} {product.offers.length===1?'offer':'offers'}</p></>}
    <button className="button dark full inspection-equip" onClick={()=>add(product.id,offer?.id)}><Plus size={16}/>{quantity?'Equip one more':'Equip this part'}{quantity>0&&<span>×{quantity}</span>}</button>
-   <Link className="inspection-details" href={'/products/'+product.id}>View specs & price history <ArrowUpRight size={15}/></Link>
+   <WatchButton product={product} compact={false}/><Link className="inspection-details" href={'/products/'+product.id}>View specs & price history <ArrowUpRight size={15}/></Link>
   </div>
  </div>;
 }

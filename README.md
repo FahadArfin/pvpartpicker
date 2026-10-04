@@ -49,3 +49,5 @@ npm run build
 See [collector documentation](docs/collector.md) for coverage, matching, scheduling, and recovery. See [deployment documentation](docs/deployment.md) for runtime configuration and validation limits. Database schema changes use new Drizzle migrations; do not edit an already applied migration.
 
 This is a shopping and preliminary compatibility tool. Missing manufacturer evidence remains unverified. It does not certify an installation or provide engineered electrical, roof, utility-interconnection, or permitting designs. Shipping, freight, and tax are determined at retailer checkout.
+
+Watch lists: save parts with the eye icon, sync signed-in lists, and set target-price alerts from `/watchlist`. The price-drop radar supports rolling daily/weekly/monthly/latest views, dollar/percentage sorting and minimum-savings filters. See [watch-list and drop rules](docs/watchlists-price-drops.md).

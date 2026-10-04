@@ -1,5 +1,6 @@
-import { sqliteTable, text, real, integer, index, uniqueIndex } from 'drizzle-orm/sqlite-core';
+import { sqliteTable, text, real, integer, index, uniqueIndex, primaryKey } from 'drizzle-orm/sqlite-core';
 export const products = sqliteTable('products', { id: text('id').primaryKey(), json: text('json').notNull(), updatedAt: text('updated_at').notNull() });
+export const watchlist = sqliteTable('watchlist', {userId:text('user_id').notNull(),productId:text('product_id').notNull(),createdAt:text('created_at').notNull()},t=>[primaryKey({columns:[t.userId,t.productId]})]);
 export const offers = sqliteTable('offers', { id: text('id').primaryKey(), productId: text('product_id').notNull(), json: text('json').notNull(), updatedAt: text('updated_at').notNull() }, t => [index('offers_product_idx').on(t.productId)]);
 export const observations = sqliteTable('observations', { id: text('id').primaryKey(), offerId: text('offer_id').notNull(), price: real('price').notNull(), packQuantity: integer('pack_quantity').notNull().default(1), stock: text('stock').notNull(), observedAt: text('observed_at').notNull() }, t => [index('observations_offer_time_idx').on(t.offerId, t.observedAt)]);
 export const builds = sqliteTable('builds', { id: text('id').primaryKey(), userId: text('user_id').notNull(), json: text('json').notNull(), shareId: text('share_id').unique(), updatedAt: text('updated_at').notNull() }, t => [index('builds_user_idx').on(t.userId)]);

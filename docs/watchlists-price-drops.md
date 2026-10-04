@@ -1,0 +1,11 @@
+# Watch lists and price-drop radar
+
+The eye icon saves a product from the inventory, inspector, product details, tier picks and drop results. `/watchlist` lists saved products, fresh unit pricing, recorded reductions, category/search controls, savings sorting and target-alert actions. Guests use browser storage; signed-in users use a user-scoped D1 watchlist. Guest entries merge on sign-in after successful server saves. Corrupt device storage can recover; failed account writes are reported. Lists are capped at 500 entries with atomic insert capacity checks.
+
+Watching is a saved list, not an automatic email subscription. Existing target-price alerts provide notifications; email depends on the site's sender configuration. Target alert quantities include package minimums. No email or notification is created simply by pressing Watch.
+
+`/deals` supports rolling daily (24-hour), weekly (7-day), monthly (30-day) windows and latest changes in 30 days. Window views compare each fresh offer to its highest eligible recorded package price during that window; Latest compares with its most recent different eligible price. Unchanged checks do not erase a recent drop. Current stock must be confirmed in stock, USD, and checked within 24 hours. Historical package sizes must match the current stored package. In-stock observations only are eligible; no history is interpolated. A window with little history exposes its first observation and count.
+
+Savings are per unit, with total minimum purchase shown for multi-packs. Sorting supports dollars, percentage and time of last price change. Minimum dollar/percentage filters can be combined with category, search and watched-only filters. For products with multiple retailer reductions, watch-list percentage sorting uses the greatest percentage reduction; dollar sorting uses the greatest dollar reduction. SQL aggregation avoids truncating a month of history. Database failures show an error and retry, not a misleading empty-deals state.
+
+Validation covers unit/package arithmetic, exclusions, rolling SQL windows, latest drop retention, multi-retailer percentage ranking, bounded watch import and capacity, and browser guest/account flows and responsive controls. Browser sorting scenarios use intercepted test fixtures only; they do not write invented prices to production.

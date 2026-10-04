@@ -4,6 +4,8 @@ import { validateBuild, bestOffer, costForQuantity } from '../../../lib/domain';
 import { validateIngestion } from '../../../lib/ingestion';
 import { processAlerts } from '../../../lib/alerts';
 import type { Product, CollectionReport } from '../../../lib/types';
+import {buildDrops,dropPeriod,dropQuery,normalizeWatchIds,watchInsertSql} from '../../../lib/price-drops';
+import type {DropCandidate} from '../../../lib/price-drops';
 export const dynamic = 'force-dynamic';
 function json(value: unknown, status = 200) { return Response.json(value, { status, headers: { 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff' } }); }
 async function body(request: Request) { if (!request.headers.get('content-type')?.includes('application/json')) throw new Error('JSON required.'); if(Number(request.headers.get('content-length'))>600000)throw new Error('Request is too large.'); const text = await request.text(); if (text.length > 600000) throw new Error('Request is too large.'); return JSON.parse(text); }
@@ -15,7 +17,12 @@ async function handle(request: Request, method: string) {
     const user = await getChatGPTUser(); const isAdmin = Boolean(user && runtime().ADMIN_EMAIL && user.email.toLowerCase() === runtime().ADMIN_EMAIL?.toLowerCase());
     if (action === 'me' && method === 'GET') return json({ user: user ? { displayName: user.displayName, email: user.email } : null, isAdmin, emailConfigured: Boolean(runtime().RESEND_API_KEY && runtime().EMAIL_FROM) });
     if (action === 'catalog' && method === 'GET') return json(await getCatalog());
-    if(action==='deals'&&method==='GET'){const catalog=await getCatalog();let records:any[]=[];try{records=(await database().prepare('SELECT offer_id,price,observed_at FROM observations WHERE observed_at>=? ORDER BY observed_at DESC LIMIT 20000').bind(new Date(Date.now()-30*86400000).toISOString()).all()).results;}catch{}const drops:any[]=[];for(const p of catalog.products)for(const o of p.offers){if(o.stock!=='in_stock'||Date.now()-Date.parse(o.observedAt)>86400000)continue;const prior=records.find(r=>r.offer_id===o.id&&r.observed_at<o.observedAt);if(prior&&prior.price>o.price)drops.push({productId:p.id,offerId:o.id,previous:prior.price/o.packQuantity,current:o.price/o.packQuantity});}return json({drops:drops.slice(0,100)});}
+    if(action==='deals'&&method==='GET'){
+      const {period,days}=dropPeriod(url.searchParams.get('period')),now=Date.now(),since=new Date(now-days*86400000).toISOString();
+      const catalog=await getCatalog();if(catalog.storage!=='database')throw new Error('Database history is unavailable. Please try again later.');
+      const records=await database().prepare(dropQuery(period==='latest')).bind(since).all<DropCandidate>();
+      return json({drops:buildDrops(catalog.products,records.results,now),period,since,checkedAt:new Date(now).toISOString()});
+    }
     if (action === 'history' && method === 'GET') {
       const productId = url.searchParams.get('productId'); const days = Number(url.searchParams.get('days') || 90); if (![30,90,365].includes(days)) throw new Error('Invalid history period.'); const p = (await getCatalog()).products.find(p => p.id === productId); if (!p) return json({ error: 'Product not found.' },404);
       const since = new Date(Date.now() - days * 86400000).toISOString(); let points: unknown[] = [];
@@ -50,7 +57,20 @@ async function handle(request: Request, method: string) {
       return json({ inserted,quarantined });
     }
     if (!user) return json({ error:'Sign in with ChatGPT to continue.' },401);
-    const db = database(); if (method !== 'GET') await rateLimit(user.userId,action);
+    const db = database(); if (method !== 'GET') await rateLimit(user.userId,action,action==='watchlist'?180:40);
+    if(action==='watchlist'){
+      if(method==='GET'){const rows=await db.prepare('SELECT product_id AS productId,created_at AS createdAt FROM watchlist WHERE user_id=? ORDER BY created_at DESC,product_id LIMIT 500').bind(user.userId).all<{productId:string;createdAt:string}>();return json({items:rows.results});}
+      if(method==='DELETE'&&id){if(id.length>180)throw new Error('Invalid product.');await db.prepare('DELETE FROM watchlist WHERE user_id=? AND product_id=?').bind(user.userId,id).run();return json({removed:true});}
+      if(method==='POST'){
+        const data=await body(request),ids=normalizeWatchIds(data.productIds),catalog=await getCatalog();
+        if(ids.some(id=>!catalog.products.some(p=>p.id===id)))throw new Error('A selected product is no longer available.');
+        const existing=await db.prepare('SELECT product_id FROM watchlist WHERE user_id=? LIMIT 501').bind(user.userId).all<{product_id:string}>();
+        if(new Set([...existing.results.map(r=>r.product_id),...ids]).size>500)throw new Error('Your watch list can hold up to 500 products.');
+        const stamp=new Date().toISOString();for(let start=0;start<ids.length;start+=50)await db.batch(ids.slice(start,start+50).map(id=>db.prepare(watchInsertSql).bind(user.userId,id,stamp,user.userId)));
+        const saved=await db.prepare('SELECT product_id FROM watchlist WHERE user_id=? LIMIT 500').bind(user.userId).all<{product_id:string}>();if(ids.some(id=>!saved.results.some(r=>r.product_id===id)))throw new Error('Your watch list filled while saving. Reload it and remove a product to make room.');
+        return json({saved:true});
+      }
+    }
     if (action === 'builds') {
       if (method === 'GET') { const rows = await db.prepare('SELECT id,json,share_id AS shareId,updated_at AS updatedAt FROM builds WHERE user_id=? ORDER BY updated_at DESC LIMIT 100').bind(user.userId).all<any>(); return json({ builds:rows.results.map(r => ({...JSON.parse(r.json),id:r.id,shareId:r.shareId,updatedAt:r.updatedAt})) }); }
       if (method === 'DELETE' && id) { const result = await db.prepare('DELETE FROM builds WHERE id=? AND user_id=?').bind(id,user.userId).run(); return result.meta.changes ? json({deleted:true}) : json({error:'Build not found.'},404); }
