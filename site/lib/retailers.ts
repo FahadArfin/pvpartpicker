@@ -82,11 +82,12 @@ export function extractPackQuantity(title: string, category: Category): number |
 }
 // Reclassify old stored metadata without changing IDs, prices, or observation dates.
 // Owner specification corrections are applied after this normalization in storage.
-export function categorizeProduct(product: Product): Product {
+export function categorizeProduct(product: Omit<Product,'offers'> & {offers?:Product['offers']}): Product {
   const category=classify(product.name)||product.category;
   const specs={...product.specs};
   if(category!==product.category) for(const key of ['face','cellType','technology','formFactor','chemistry','inverterType','acOutput','gridForming','mountType','gauge','lengthFt']) delete specs[key];
-  return {...product,category,specs:{...specs,...extractSpecs(product.name,category)},offers:category==='kits'?product.offers.map(o=>({...o,packQuantity:1})):product.offers};
+  const offers=product.offers||[]; // D1 stores product metadata separately from offers.
+  return {...product,category,specs:{...specs,...extractSpecs(product.name,category)},offers:category==='kits'?offers.map(o=>({...o,packQuantity:1})):offers};
 }
 function flatten(value: any): any[] { if (Array.isArray(value)) return value.flatMap(flatten); if (!value || typeof value !== 'object') return []; return [value, ...flatten(value['@graph']), ...flatten(value.itemListElement?.map((i: any) => i.item || i)), ...flatten(value.hasVariant)]; }
 export function parseProductPage(html: string, retailer: Retailer, url: string, observedAt: string): Product[] {

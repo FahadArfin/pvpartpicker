@@ -58,3 +58,9 @@ test('legacy catalog regrouping preserves saved part and offer identities and da
  assert.deepEqual(updated.offers,product.offers);assert.equal(updated.specs.gauge,undefined);
  assert.equal(updated.specs.manufacturerRating,'725W');assert.equal(product.category,'wiring');
 });
+test('database metadata can be regrouped before separately stored offers are attached',()=>{
+ const metadata={id:'stored-kit',name:'Jackery Portable Power Station',category:'batteries',specs:{}} as Omit<Product,'offers'>;
+ const updated=categorizeProduct(metadata);
+ assert.equal(updated.category,'kits');assert.deepEqual(updated.offers,[]);
+ assert.equal(updated.id,'stored-kit');
+});
