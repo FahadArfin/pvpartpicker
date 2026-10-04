@@ -1,5 +1,7 @@
 # PVPartPicker
 
+[Open the live website](https://pvpartpicker.fwad101.chatgpt.site).
+
 A solar equipment catalog and system builder for US shoppers. Compare actual retailer offers, minimum purchase quantities, observed price history, and documented equipment specifications.
 
 ## Features

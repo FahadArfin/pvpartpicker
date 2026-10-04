@@ -19,3 +19,7 @@ The bundled source snapshot provides catalog browsing if D1 cannot be read. Acco
 Checks cover package arithmetic, freshness, string limits, battery voltage evidence, ingestion bounds, model identity, variant parsing, robots policy, persistent correction merging, and isolated email failures. Browser/database acceptance covers saved builds, share reads, moderation, notifications, mobile overflow, and source-price rendering. These checks do not establish physical system suitability, actual email delivery, or exhaustive coverage of every retailer product.
 
 For another hosting provider, replace Sites environment/auth integration with a gateway that authenticates users and strips/spoof-protects identity headers. Do not put provider credentials into frontend bundles. The registered production project ID is not a secret.
+
+## Verified launch
+
+Public deployment succeeded on 2026-10-04. Production D1 seed/readback succeeded; anonymous writes and forged identity headers were rejected. GitHub Actions [run 37237915050](https://github.com/FahadArfin/pvpartpicker/actions/runs/37237915050) completed successfully and persisted new observations, growing the live catalog to 1,135 variants. Six adapters refreshed successfully; NAZ returned HTTP 403 from the GitHub runner and its previous observations were retained. Production browser tests exposed a beta-framework RSC link namespace issue, so the app uses standard anchor navigation with persistent draft/comparison state. Product links and comparison retention were verified after redeployment.
