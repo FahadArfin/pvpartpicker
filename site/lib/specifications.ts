@@ -100,9 +100,12 @@ const ratingKey=(label:string):string|undefined=>{
 };
 function usable(value:string){return value.length>0&&value.length<420&&!/^(?:n\/?a|none|not applicable|[-–—]+)$/i.test(value)&&!/(?:regular price|sale price|save \d+%|rated \d out of|shop now|buy now)/i.test(value);}
 const measured=new Set(['moduleEfficiency','cellEfficiency','cellCount','noctTemperature','nmotTemperature','pmaxTemperatureCoefficient','vocTemperatureCoefficient','iscTemperatureCoefficient','maxSystemVoltage','maxSeriesFuse','snowLoad','windLoad','voltage','operatingVoltage','capacityAh','capacityKwh','maxDischargeCurrent','peakDischargeCurrent','maxChargeCurrent','chargeVoltage','outputWatts','surgeWatts','acOutput','frequency','efficiency','maxPvVoltage','mpptVoltageRange','mpptCount','maxMpptCurrent','maxPvIsc','maxPvWatts','chargeCurrentA','acChargeWatts','chargeTime','ratedCurrent','ratedVoltage','poles','interruptRating','gauge','length','dimensions','weight','tilt','operatingTemperature','chargeTemperature','dischargeTemperature','humidity','altitude']);
-function validMeasurement(key:string,value:string){return !measured.has(key)||/^(?:[~<>≤≥±+−–—\-\s]*(?:(?:up to|max\.?|approximately)\s*)?\d|AWG\s*\d)/i.test(value);}
+function validMeasurement(key:string,value:string){
+ if(['outputWatts','surgeWatts','maxPvWatts','acChargeWatts'].includes(key)&&!(/^\d+(?:\.\d+)?$/.test(value)||/^[~<>≤≥±+−–—\-\s]*(?:(?:up to|max\.?|approximately)\s*)?\d+(?:\.\d+)?\s*k?w(?:atts?)?\b/i.test(value)))return false;
+ return !measured.has(key)||/^(?:[~<>≤≥±+−–—\-\s]*(?:(?:up to|max\.?|approximately)\s*)?\d|AWG\s*\d)/i.test(value);
+}
 function definition(label:string,value:string,category:Category){
- const l=normal(label);return definitions.find(d=>(!d.categories||d.categories.includes(category))&&d.match.test(l)&&(d.key!=='capacityAh'||/ah\b/i.test(value+' '+label))&&(d.key!=='capacityKwh'||/k?wh\b/i.test(value+' '+label)));
+ const l=normal(label);return definitions.find(d=>(!d.categories||d.categories.includes(category))&&d.match.test(l)&&(d.key!=='capacityAh'||/^\d+(?:\.\d+)?\s*ah\b/i.test(value)||(/\bah\b/i.test(label)&&/^\d+(?:\.\d+)?$/.test(value)))&&(d.key!=='capacityKwh'||/k?wh\b/i.test(value+' '+label)));
 }
 /** Converts two-column tables and independently labelled cells. Never parses marketing prose. */
 export function technicalRows(rows:string[][]):string[][]{

@@ -6,6 +6,17 @@ import type {Product} from '../lib/types.ts';
 const source='https://manufacturer.example/panel.pdf';
 const panel:Product={id:'175w',name:'100/175/200W N-Type Solar Panel — 175W / 1 Piece',brand:'Renogy',category:'panels',description:'200W panel marketing text '.repeat(100),specs:{watts:175,cellType:'N-type'},image:'',images:[],sourceUrl:'https://manufacturer.example/product?variant=175',offers:[],verifiedAt:'2026-10-05T00:00:00Z'};
 const field=(s:ReturnType<typeof buildSpecification>,key:string)=>s.groups.flatMap(g=>g.fields).find(f=>f.key===key);
+test('mixed energy and Ah capacity notation does not turn watt-hours into amp-hours',()=>{
+ const p={...panel,category:'all-in-one' as const,specs:{}};
+ const details=buildSpecification(p,{url:source,kind:'manual',rows:[['Capacity','3072Wh(51.2V60Ah)']]});
+ assert.equal(field(details,'capacityAh'),undefined);assert.equal(field(details,'capacityKwh')?.value,'3072Wh(51.2V60Ah)');
+});
+test('misaligned recovery rows with DC voltage/current cannot become AC output power',()=>{
+ const p={...panel,category:'all-in-one' as const,specs:{}};
+ const details=buildSpecification(p,{url:source,kind:'manual',rows:[['AC Output','12V-5A 12V-5A'],['Maximum PV input power','120 V'],['Surge Power','50 A']]});
+ assert.equal(field(details,'outputWatts'),undefined);assert.equal(field(details,'maxPvWatts'),undefined);assert.equal(field(details,'surgeWatts'),undefined);
+ const actual=buildSpecification(p,{url:source,kind:'manual',rows:[['AC Output','3600 W at 120 V']]});assert.equal(field(actual,'outputWatts')?.value,'3600 W at 120 V');
+});
 test('exact panel sheet data gives STC ratings without inventing NOCT electrical values',()=>{
  const s=buildSpecification(panel,{url:source,kind:'datasheet',model:'RSP175DC',rows:[['Maximum Power at STC','175 W'],['Optimum Operating Voltage (Vmp)','20.88 V'],['Optimum Operating Current (Imp)','8.38 A'],['Open Circuit Voltage (Voc)','24.48 V'],['Short Circuit Current (Isc)','8.88 A'],['Module Efficiency','20.6 %'],['Nominal Operating Cell Temperature (NOCT)','45 ± 2 °C'],['Temperature Coefficient of Voc','-0.26 %/°C'],['Weight','9.6 kg']]} );
  assert.equal(s.panelRatings?.stc.voc,'24.48 V');assert.equal(s.panelRatings?.stc.pmax,'175 W');assert.equal(s.panelRatings?.noct.voc,undefined);

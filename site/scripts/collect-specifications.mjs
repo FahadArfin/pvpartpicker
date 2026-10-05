@@ -15,15 +15,16 @@ const reviewed=JSON.parse(await readFile(new URL('data/specification-reviewed.js
 const index={},audit={generatedAt:new Date().toISOString(),products:catalog.products.length,pages:Object.keys(sources).length,pageFailures:failures,downloadedDocuments:0,datasheetProducts:0,tableProducts:0,listingOnlyProducts:0,panelElectricalProducts:0,panelNoctProducts:0,categories:{},missing:[],excludedDocuments:[]};
 audit.manualProducts=0;audit.extractedDocuments=Object.keys(pdfs).length;
 try{const download=JSON.parse(await readFile(resolve(cache,'pdf-index.json'),'utf8'));audit.downloadedDocuments=download.documents.length;audit.documentDownloadFailures=download.failures;}catch{}
-try{audit.documentExtractionFailures=JSON.parse(await readFile(resolve(cache,'pdf-extraction-failures.json'),'utf8'));}catch{}
+try{audit.documentExtractionFailures=JSON.parse(await readFile(resolve(cache,'pdf-extraction-failures.json'),'utf8')).filter(f=>!pdfs[f.url.split('?')[0]]);}catch{}
+try{audit.recoveredDocuments=JSON.parse(await readFile(resolve(cache,'recovery-pass.json'),'utf8'));}catch{}
 const norm=s=>String(s).toUpperCase().replace(/[^A-Z0-9]/g,'');
 const n=s=>Number(String(s).replace(/,/g,'').match(/\d+(?:\.\d+)?/)?.[0]);
 const technicalLabel=/^(?:model|sku|nominal|rated|maximum|max\b|capacity|chemistry|communication|dimensions?|weight|operating|temperature|module|cell|open circuit|short circuit|optimum|number of|charge|discharge|mppt|ac output|ip rating|material|efficiency|voltage|current|cycle|solar|front glass|frame|connector|warranty)/i;
 for(const original of catalog.products){
  const p=categorizeProduct(original),base=p.sourceUrl.split('?')[0],source=sources[base];
- const evidence=[];
+ const evidence=[];let rejectedVariant=false;
  const manual=reviewed.filter(r=>(r.productIds?.includes(p.id)||r.productUrl===base)&&(r.watts===undefined||r.watts===p.specs.watts));
- evidence.push(...manual.map(r=>({url:r.url,kind:'datasheet',model:r.model,label:r.label,checkedAt:r.checkedAt,rows:r.rows})));
+ evidence.push(...manual.map(r=>({url:r.url,kind:r.kind||'datasheet',model:r.model,label:r.label,checkedAt:r.checkedAt,rows:r.rows})));
  const rows=source?technicalRows(source.rows):[];
  // The current page's model is stronger evidence than a loose brand / watt match.
  const modelRow=rows.find(r=>/^(?:model|model number|sku|part number)\s*:?$/i.test(r[0]));
@@ -54,12 +55,13 @@ for(const original of catalog.products){
   const gauge=rows.find(r=>/^(?:wire gauge|gauge|wire size)$/i.test(r[0]));const length=rows.find(r=>/^(?:length|wire length|cable length)$/i.test(r[0])&&/ft|feet/i.test(r[1]));
   const feet=length?Number(length[1].match(/(\d+(?:\.\d+)?)\s*(?:ft|feet)\b/i)?.[1]):undefined;
   const differentWire=p.category==='wiring'&&((p.specs.gauge&&gauge&&n(p.specs.gauge)!==n(gauge[1]))||(p.specs.lengthFt&&feet&&Math.abs(Number(p.specs.lengthFt)-feet)>.5));
-  if(!differentBattery&&!differentWire)evidence.push({url:p.sourceUrl,kind:new URL(base).hostname.includes('renogy')||new URL(base).hostname.includes('emporia')?'manufacturer':'retailer',label:'Product technical table',checkedAt:source.checkedAt,rows});
+  rejectedVariant=differentBattery||differentWire;
+  if(!rejectedVariant)evidence.push({url:p.sourceUrl,kind:new URL(base).hostname.includes('renogy')||new URL(base).hostname.includes('emporia')?'manufacturer':'retailer',label:'Product technical table',checkedAt:source.checkedAt,rows});
  }
  const details=buildSpecification(p,evidence);index[p.id]=details;
  const technicalSources=new Set([...details.groups.filter(g=>g.title!=='Identity').flatMap(g=>g.fields.filter(f=>f.kind!=='listing').map(f=>f.source)),...Object.values(details.panelRatings?.sources||{})]);
  const sheet=details.sources.some(s=>s.kind==='datasheet'&&technicalSources.has(s.url)),manualDoc=details.sources.some(s=>s.kind==='manual'&&technicalSources.has(s.url)),table=details.sources.some(s=>(s.kind==='manufacturer'||s.kind==='retailer')&&technicalSources.has(s.url));
- if(sheet)audit.datasheetProducts++;if(manualDoc)audit.manualProducts++;if(table)audit.tableProducts++;if(!sheet&&!manualDoc&&!table){audit.listingOnlyProducts++;audit.missing.push({productId:p.id,name:p.name,url:p.sourceUrl,category:p.category});}
+ if(sheet)audit.datasheetProducts++;if(manualDoc)audit.manualProducts++;if(table)audit.tableProducts++;if(!sheet&&!manualDoc&&!table){audit.listingOnlyProducts++;const reason=!source?'Source page has not been collected.':rejectedVariant||details.notes.some(n=>n.includes('variant'))?'The shared page table describes a different variant; those ratings were excluded.':!rows.length?'No readable technical table was found on the collected page. Specifications may be in images, downloads, or interactive sections.':'The collected page has no recognized technical ratings for this exact item. Sales text and identity fields do not count as specifications.';audit.missing.push({productId:p.id,name:p.name,url:p.sourceUrl,category:p.category,reason});}
  if(details.panelRatings?.stc.voc)audit.panelElectricalProducts++;if(details.panelRatings?.noct.voc)audit.panelNoctProducts++;
  const cat=audit.categories[p.category]||{products:0,sheet:0,manual:0,table:0,listingOnly:0};cat.products++;cat.sheet+=Number(sheet);cat.manual+=Number(manualDoc);cat.table+=Number(table);cat.listingOnly+=Number(!sheet&&!manualDoc&&!table);audit.categories[p.category]=cat;
 }

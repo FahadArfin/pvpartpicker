@@ -519,5 +519,156 @@
         "250 A"
       ]
     ]
+  },
+  {
+    "productUrl": "https://shopsolarkits.com/products/pecron-f5000",
+    "url": "https://cdn.shopify.com/s/files/1/0509/5263/4556/files/PECRON_F5000_LFP_user_manual_100V_120V_V2-20260106.pdf?v=1770702093",
+    "kind": "manual",
+    "model": "F5000 LFP",
+    "label": "Pecron F5000 LFP US manual, specification page 2 (PDF page 3)",
+    "checkedAt": "2026-10-05T00:00:00Z",
+    "reviewNote": "Visually reviewed PDF page 3. Solar limit depends on the Power Kit. AC output is port specific. Bundle specs excluded in presentation.",
+    "rows": [
+      [
+        "Model",
+        "F5000 LFP"
+      ],
+      [
+        "Energy capacity",
+        "5120 Wh"
+      ],
+      [
+        "Nominal voltage",
+        "51.2 V"
+      ],
+      [
+        "Rated capacity",
+        "100 Ah"
+      ],
+      [
+        "Weight",
+        "56.2 kg (approximately)"
+      ],
+      [
+        "Dimensions",
+        "551 × 381 × 332 mm"
+      ],
+      [
+        "Rated AC output power",
+        "7200 W at 200–240 V; 3600 W at 100–120 V outlets"
+      ],
+      [
+        "AC output voltage",
+        "100–120 V / 200–240 V (port dependent)"
+      ],
+      [
+        "Maximum PV input voltage",
+        "180 VDC (30–180 V input range)"
+      ],
+      [
+        "Maximum MPPT input current",
+        "25 A per XT60 input"
+      ],
+      [
+        "Maximum PV input power",
+        "5800 W without Power Kit; 6400 W with Power Kit (3200 W per input)"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Cycle life",
+        "4000 cycles to >80% capacity at 0.5C / 0.5C, 25°C"
+      ],
+      [
+        "Expansion",
+        "Up to 6 EP3000-48V or FP5000-48V packs; 35.8 kWh maximum"
+      ],
+      [
+        "Operating temperature",
+        "0–45 °C"
+      ],
+      [
+        "Charging temperature",
+        "-20–45 °C with battery heating"
+      ],
+      [
+        "Altitude",
+        "3000 m"
+      ]
+    ]
+  },
+  {
+    "productUrl": "https://shopsolarkits.com/products/sungold-power-440w-mono-black-n-type-solar-panel",
+    "watts": 440,
+    "url": "https://sungoldpower.com/collections/solar-panel/products/440w-mono-black-perc-solar-panel",
+    "kind": "manufacturer",
+    "model": "SGN-440-SW5",
+    "label": "SunGoldPower SGN-440-SW5 manufacturer technical table",
+    "checkedAt": "2026-10-05T00:00:00Z",
+    "reviewNote": "Current N-type model. Older PERC SG-440WM sheet is a different revision and was not used. Pack quantities share per-panel ratings.",
+    "rows": [
+      [
+        "Model",
+        "SGN-440-SW5"
+      ],
+      [
+        "Maximum Power at STC",
+        "440 W"
+      ],
+      [
+        "Maximum Power Current (Imp)",
+        "13.15 A"
+      ],
+      [
+        "Maximum Power Voltage (Vmp)",
+        "33.48 V"
+      ],
+      [
+        "Short Circuit Current (Isc)",
+        "13.73 A"
+      ],
+      [
+        "Open Circuit Voltage (Voc)",
+        "39.03 V"
+      ],
+      [
+        "Cell Type",
+        "N-type monocrystalline (M10)"
+      ],
+      [
+        "Number of Cells",
+        "108 (2 × 54)"
+      ],
+      [
+        "Weight",
+        "46.30 lb"
+      ],
+      [
+        "Dimensions",
+        "67.80 × 44.65 × 1.38 inch"
+      ],
+      [
+        "Maximum System Voltage",
+        "1500 V"
+      ],
+      [
+        "Output cables",
+        "4 mm² (IEC), 12 AWG (UL)"
+      ],
+      [
+        "Product Warranty",
+        "12 years"
+      ],
+      [
+        "Power Warranty",
+        "30 years"
+      ],
+      [
+        "Operating Temperature",
+        "-40–85 °C"
+      ]
+    ]
   }
 ]
