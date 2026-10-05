@@ -8,6 +8,7 @@ import {categories} from '../lib/types';
 import type {Product} from '../lib/types';
 import {bestOffer,costForQuantity,money} from '../lib/domain';
 import {partColumns,partValue,productListName,productListVariant,type PartColumn} from '../lib/part-comparison';
+import {DealMarker} from './deal-marker';
 import {BundleTags} from './bundle-presentation';
 
 const icons={panels:Sun,mounting:Wrench,wiring:Cable,batteries:Battery,inverters:Zap,electrical:Box,accessories:Plug,charging:Zap,'module-electronics':ShieldCheck,monitoring:Gauge,kits:PackageOpen,'all-in-one':Battery};
@@ -21,7 +22,7 @@ export function PartRow({product,active,onInspect,onOpen,columns,builderMode=fal
   if((e.target as HTMLElement).closest('a,input,select,textarea,label,button:not(.part-inspect)'))return;
   window.location.assign('/products/'+encodeURIComponent(product.id)+(builderMode?'?builder=1':''));
  }}>
-  <div className="part-identity" role="cell"><span className="part-category-icon"><Icon size={19}/></span>
+  <div className="part-identity" role="cell"><span className="part-category-icon"><Icon size={19}/><DealMarker product={product}/></span>
   <button className="part-inspect" aria-label={'Inspect '+productListName(product)} aria-pressed={active} title={product.name+' · Click to preview. Double-click for details.'} onClick={onOpen} onKeyDown={e=>{if(e.key==='ArrowDown'||e.key==='ArrowUp'){const rows=Array.from(e.currentTarget.closest('.part-list')!.querySelectorAll<HTMLButtonElement>('.part-inspect'));const index=rows.indexOf(e.currentTarget);const next=rows[index+(e.key==='ArrowDown'?1:-1)];if(next){e.preventDefault();next.focus();}}}}>
    <strong>{productListName(product)}</strong><span title={productListVariant(product)}>{productListVariant(product)}</span>
   </button></div>

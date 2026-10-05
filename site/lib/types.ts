@@ -1,6 +1,6 @@
 export type Category = 'panels' | 'mounting' | 'wiring' | 'batteries' | 'all-in-one' | 'inverters' | 'charging' | 'module-electronics' | 'monitoring' | 'kits' | 'electrical' | 'accessories';
 export type Specs = Record<string, string | number | boolean>;
-export interface Offer { id: string; retailerId: string; retailer: string; url: string; price: number; currency: 'USD'; packQuantity: number; stock: 'in_stock' | 'out_of_stock' | 'unknown'; observedAt: string; sku?: string; shipping?: number; condition: 'new' | 'used'; }
+export interface Offer { id: string; retailerId: string; retailer: string; url: string; price: number; referencePrice?:number; currency: 'USD'; packQuantity: number; stock: 'in_stock' | 'out_of_stock' | 'unknown'; observedAt: string; sku?: string; shipping?: number; condition: 'new' | 'used'; }
 export interface SpecificationSource { url: string; kind: 'datasheet' | 'manual' | 'manufacturer' | 'retailer' | 'listing'; label: string; model?: string; checkedAt?: string; }
 export interface SpecificationField { key: string; label: string; value: string; source: string; kind?: SpecificationSource['kind']; }
 export interface ProductSpecification { summary: string; groups: {title: string; fields: SpecificationField[]}[]; sources: SpecificationSource[]; notes: string[]; panelRatings?: {stc: Record<string,string>; noct: Record<string,string>; noctLabel?: string; sources?: Record<string,string>}; }

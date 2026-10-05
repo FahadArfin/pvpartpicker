@@ -96,7 +96,7 @@ export function productListVariant(product:Product):string{
  const variant=product.name.split(/\s—\s/).slice(1).join(' · ');
  if(product.configuration?.kind==='combo')return product.configuration.selection;
  const color=product.specs.color;
- return clean((variant||[product.brand,color].filter(Boolean).join(' · ')).replace(/\p{Extended_Pictographic}|\uFE0F/gu,'').replace(/[（(](?:most chosen|best value|most popular)[）)]/gi,''));
+ return clean((variant||[product.brand,color].filter(Boolean).join(' · ')).replace(/\p{Extended_Pictographic}|\uFE0F/gu,'').replace(/[（(]\s*(?:most chosen|best\s*value|most popular)\s*[）)]/gi,'').replace(/\bbest\s*value\b/gi,''));
 }
 export function sortPartsByColumn(products:Product[],key:string,direction:'asc'|'desc'):Product[]{
  return [...products].sort((a,b)=>{

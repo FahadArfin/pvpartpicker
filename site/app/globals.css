@@ -260,3 +260,5 @@
 .bundle-image-caption{font-size:11px;color:var(--muted);text-align:center;margin-top:10px;line-height:1.5}
 @media(max-width:850px){.bundle-component-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.bundle-contents-source{align-items:flex-start;flex-direction:column;gap:10px}}
 @media(max-width:550px){.bundle-component-grid{grid-template-columns:1fr;gap:8px}.bundle-component-grid li{padding:12px}.bundle-contents .section-heading{align-items:flex-start;gap:10px;flex-wrap:wrap}.configuration-heading>span{margin-left:0}}
+
+.part-category-icon{position:relative}.deal-marker{display:inline-flex;align-items:center;justify-content:center;color:#ed6021;background:#fff2d9;border:1px solid #f5d192;border-radius:50%;width:22px;height:22px;flex-shrink:0}.part-category-icon .deal-marker{position:absolute;right:-6px;bottom:-6px;z-index:1;width:20px;height:20px;box-shadow:0 0 0 2px white}.deal-pick{color:#b96822;background:#fff7e9}.card-image-wrap>.deal-marker{position:absolute;left:10px;top:10px;z-index:2;width:28px;height:28px}
