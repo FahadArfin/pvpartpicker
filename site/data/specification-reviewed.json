@@ -464,5 +464,60 @@
       ]
     ],
     "reviewNote": "Visually transcribed the exact 680 W front-side row. Bifacial gain rows were excluded. The operating-condition column is NMOT, not NOCT. N-type cell family is stated on page 1."
+  },
+  {
+    "productIds": [
+      "eg4-18kpv"
+    ],
+    "url": "https://eg4electronics.com/wp-content/uploads/2024/04/EG4-18KPV-12LV-Spec-Sheet.pdf",
+    "model": "18KPV-12LV",
+    "label": "EG4 18kPV manufacturer specification sheet v1.4.3",
+    "checkedAt": "2026-10-05T00:00:00Z",
+    "rows": [
+      [
+        "Model",
+        "18KPV-12LV"
+      ],
+      [
+        "Rated AC output power",
+        "12000 W"
+      ],
+      [
+        "Nominal voltage",
+        "48 VDC"
+      ],
+      [
+        "Maximum PV input power",
+        "18000 W"
+      ],
+      [
+        "Maximum PV input voltage",
+        "600 VDC"
+      ],
+      [
+        "Independent MPPT trackers",
+        "3"
+      ],
+      [
+        "Number of MPPTs",
+        "3"
+      ],
+      [
+        "Maximum operating input current",
+        "25 A / 15 A / 15 A"
+      ],
+      [
+        "Maximum PV short circuit current",
+        "31 A / 19 A / 19 A"
+      ],
+      [
+        "MPPT voltage range",
+        "140–500 VDC"
+      ],
+      [
+        "Maximum charge current",
+        "250 A"
+      ]
+    ]
   }
 ]

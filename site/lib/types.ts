@@ -7,7 +7,7 @@ export interface ProductSpecification { summary: string; groups: {title: string;
 export type BundleComponentType = 'power-station' | 'panels' | 'batteries' | 'inverter' | 'mounting' | 'controls' | 'charging' | 'accessories';
 export interface BundleComponent {type:BundleComponentType;quantity?:number;detail:string;}
 export interface ProductConfiguration {kind:'combo'|'standalone';title:string;family:string;selection:string;type:string;components:BundleComponent[];}
-export interface Product { id: string; name: string; brand: string; category: Category; description: string; image: string; images: string[]; sourceUrl: string; documentation?: string; specification?: ProductSpecification; configuration?:ProductConfiguration; specs: Specs; offers: Offer[]; verifiedAt: string; }
+export interface Product { id: string; name: string; brand: string; category: Category; description: string; image: string; images: string[]; sourceUrl: string; documentation?: string; specification?: ProductSpecification; comparisonSpecs?:Record<string,{value:string;source?:string;note?:string}>; configuration?:ProductConfiguration; specs: Specs; offers: Offer[]; verifiedAt: string; }
 export interface BuildLine { productId: string; quantity: number; offerId?: string; }
 export interface BuildSettings { purpose: 'offgrid' | 'hybrid' | 'gridtie'; mount: 'roof' | 'ground'; series?: number; parallel?: number; minimumTemperature?: number; }
 export interface Build { id?: string; name: string; lines: BuildLine[]; settings: BuildSettings; shareId?: string; }

@@ -1,5 +1,5 @@
 'use client';
-import {productDisplayName} from '../lib/bundles';
+import {productListName,productListVariant} from '../lib/part-comparison';
 import Link from './site-link';
 import {CheckCircle2,AlertTriangle,HelpCircle,Plus,Minus,Trash2} from 'lucide-react';
 import {usePV,ProductImage} from './pv-provider';
@@ -27,7 +27,7 @@ export function BuildWorkspace(){
  function setting<K extends 'purpose'|'mount'>(key:K,value:BuildSettings[K]){setBuild(b=>({...b,settings:{...b.settings,[key]:value}}));}
  function qty(id:string,n:number){setBuild(b=>({...b,lines:b.lines.map(l=>l.productId===id?{...l,quantity:Math.max(1,Math.min(10000,n||1))}:l)}));}
  function selectedRow({l,p,cost}:typeof rows[number]){return <tr className="builder-selected-row" key={l.productId}>
-  <th scope="row" className="builder-selection"><Link className="row-link" href={'/products/'+l.productId}>{p&&<ProductImage product={p}/>}<span>{p?productDisplayName(p):'Unavailable product'}</span></Link></th>
+  <th scope="row" className="builder-selection"><Link className="row-link" href={'/products/'+l.productId}>{p&&<ProductImage product={p}/>}<span title={p?.name}>{p?productListName(p):'Unavailable product'}{p&&<small className="builder-part-variant">{productListVariant(p)}</small>}</span></Link></th>
   <td className="builder-quantity"><div className="quantity-control"><button aria-label={'Decrease quantity of '+(p?.name||'unavailable product')} disabled={l.quantity<=1} onClick={()=>qty(l.productId,l.quantity-1)}><Minus size={12}/></button><input aria-label={'Quantity for '+(p?.name||'unavailable product')} type="number" min="1" max="10000" value={l.quantity} onChange={e=>qty(l.productId,Number(e.target.value))}/><button aria-label={'Increase quantity of '+(p?.name||'unavailable product')} disabled={l.quantity>=10000} onClick={()=>qty(l.productId,l.quantity+1)}><Plus size={12}/></button></div>{cost&&cost.extraUnits>0&&<small>{cost.packs} packs · {cost.extraUnits} extra units</small>}</td>
   <td className="builder-retailer"><select aria-label={'Retailer for '+(p?.name||'unavailable product')} value={l.offerId||''} onChange={e=>setBuild(b=>({...b,lines:b.lines.map(line=>line.productId===l.productId?{...line,offerId:e.target.value||undefined}:line)}))}><option value="">Lowest current purchase cost</option>{p?.offers.map(o=><option key={o.id} value={o.id}>{o.retailer} · {money(o.price)} / {o.packQuantity}</option>)}</select></td>
   <td className="builder-cost">{cost?<strong>{money(cost.subtotal)}</strong>:<small>Needs a current offer</small>}</td>
