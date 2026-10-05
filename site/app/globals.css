@@ -166,6 +166,11 @@
 .ecosystem-heading h2{font-size:14px;margin:0;font-weight:650}
 .ecosystem-heading>span{font-size:12px;color:var(--muted)}
 .ecosystem-buttons{display:flex;flex-wrap:wrap;gap:6px}
+.ecosystem-mark{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;width:28px;height:28px;padding:3px;border-radius:4px;background:#fff;box-shadow:inset 0 0 0 1px #102b2110}
+.ecosystem-mark img{display:block;width:100%;height:100%;object-fit:contain}
+.ecosystem-mark-wide{width:58px;padding:4px}
+.ecosystem-mark-enphase{background:#f47920}
+.ecosystem-buttons button:focus-visible{outline:2px solid var(--green);outline-offset:3px}
 .ecosystem-buttons button{display:flex;align-items:center;gap:7px;padding:7px 10px;border:1px solid var(--line);border-radius:5px;background:white;color:var(--ink);font-size:12px;white-space:nowrap}
 .ecosystem-buttons button:hover{border-color:var(--green);background:var(--mint)}
 .ecosystem-buttons button[aria-pressed=true]{background:var(--green);border-color:var(--green);color:white}

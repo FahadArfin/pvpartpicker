@@ -17,7 +17,11 @@ export const ecosystems=[
  {id:'generac',label:'Generac',aliases:[]},
  {id:'franklin',label:'Franklin',aliases:['FranklinWH','Franklin WH','Franklin Whole Home']},
  {id:'renogy',label:'Renogy',aliases:['Renogy US']},
-];
+].map(ecosystem=>({
+ ...ecosystem,
+ logo:`/brands/${ecosystem.id}.${['enphase','tesla','franklin'].includes(ecosystem.id)?'svg':'png'}`,
+ logoWide:['growatt','franklin','tesla'].includes(ecosystem.id),
+}));
 function normalize(value:string) {return value.toLowerCase().replace(/[^a-z0-9]/g,'');}
 export function resolveEcosystem(value:string) {
  const key=normalize(value);
