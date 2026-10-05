@@ -1,8 +1,10 @@
 import foundations from '../data/guide-foundations.json';
+import solar4u from '../data/guide-solar4u.json';
 import {extendedLessons} from './guide-lessons';
+import {researchedGuides} from './guide-research';
 export type Source={label:string,url:string};
-export type GuideSection={title:string,paragraphs?:string[],bullets?:string[],formula?:string,columns?:string[],rows?:string[][],sources?:Source[]};
-export type GuideArticle={slug:string,title:string,topic:string,level:'Beginner'|'Experienced'|'All levels',kind:'Guide'|'News & analysis',summary:string,outcome?:string,reviewed:string,eventDate?:string,origin?:string,image?:string,sections:GuideSection[],sources:Source[],tool?:{label:string,href:string},quiz?:{question:string,options:string[],answer:number,explanation:string}};
+export type GuideSection={title:string,paragraphs?:string[],bullets?:string[],steps?:string[],callout?:string,formula?:string,columns?:string[],rows?:string[][],sources?:Source[]};
+export type GuideArticle={slug:string,title:string,topic:string,level:'Beginner'|'Experienced'|'All levels',kind:'Guide'|'News & analysis',summary:string,outcome?:string,reviewed:string,eventDate?:string,origin?:string,image?:string,adaptedFrom?:{project:string,commit:string,paths:string[],chapter:string,imported:string,referenceReviewed:string},sections:GuideSection[],sources:Source[],tool?:{label:string,href:string},quiz?:{question:string,options:string[],answer:number,explanation:string}};
 const source=(label:string,url:string):Source=>({label,url});
 const wiring=source('Victron · DC wiring and protection','https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/dc-wiring.html');
 const theory=source('Victron · Electrical theory','https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/theory.html');
@@ -88,7 +90,16 @@ const news:GuideArticle[]=[
  {title:'What to put in the purchasing brief',bullets:['Written model/revision and whether substitution needs approval.','Stock location, realistic lead time and delivery responsibility.','Local warranty contact and replacement-part availability.','Manufacturer compatibility evidence for replacement modules or batteries.','Observed price history, separated from assumptions about future trade policy.']},
  {title:'Avoid the shortcut',paragraphs:['A country label alone cannot prove quality, system compatibility or future price. Choose documented equipment and a complete service arrangement, and revisit source dates when policies or supply conditions change.']}])
 ];
-export const guideArticles:GuideArticle[]=[...(foundations as GuideArticle[]),...advanced,...news].map(a=>({...a,sections:extendedLessons[a.slug]?[...a.sections.slice(0,-2),...extendedLessons[a.slug],...a.sections.slice(-2)]:a.sections}));
+const curriculumTopics=['Foundations','Site and sunlight','Panels & technology','System design','Batteries & backup','Inverters & backup','Electrical design','Placement','Buying and ownership','Operation & maintenance'];
+const firstChapters=['solar-energy-path','electrical-language','component-map','load-audit'];
+export const guideArticles:GuideArticle[]=[...(foundations as GuideArticle[]),...advanced,...solar4u as GuideArticle[],...researchedGuides,...news].map(a=>({...a,sections:extendedLessons[a.slug]?[...a.sections.slice(0,-2),...extendedLessons[a.slug],...a.sections.slice(-2)]:a.sections})).sort((a,b)=>{
+ if(a.kind!==b.kind)return a.kind==='Guide'?-1:1;
+ if(a.kind!=='Guide')return 0;
+ const topic=curriculumTopics.indexOf(a.topic)-curriculumTopics.indexOf(b.topic);
+ if(topic)return topic;
+ if(a.topic==='Foundations')return firstChapters.indexOf(a.slug)-firstChapters.indexOf(b.slug);
+ return 0;
+});
 export const sectionId=(n:number)=>`section-${n+1}`;
 export function readMinutes(a:GuideArticle){return Math.max(3,Math.ceil(JSON.stringify(a.sections).split(/\s+/).length/180));}
 export type GuideEntry=Pick<GuideArticle,'slug'|'title'|'topic'|'level'|'kind'|'summary'|'reviewed'|'eventDate'>&{minutes:number};

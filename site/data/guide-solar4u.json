@@ -1,0 +1,1851 @@
+[
+  {
+    "slug": "electrical-language",
+    "title": "Electrical language and core formulas",
+    "topic": "Foundations",
+    "level": "Beginner",
+    "kind": "Guide",
+    "summary": "Use consistent electrical quantities and test conditions so watts, volt-amps, watt-hours, current, and nameplate boundary values are never mixed.",
+    "outcome": "Read labels and datasheets confidently by separating instantaneous power from stored or consumed energy.",
+    "reviewed": "2026-07-30",
+    "origin": "Adapted from Solar4U’s original technical chapters and professional reference notes. Manufacturer documents remain linked references; use the current manual for the exact equipment.",
+    "adaptedFrom": {
+      "project": "Solar4U",
+      "commit": "87a91d4db804dee461ce345d8b2f63669cd986c1",
+      "paths": [
+        "app/guides-page.tsx",
+        "app/professional-guide-data.ts"
+      ],
+      "chapter": "electrical-language",
+      "imported": "2026-10-05",
+      "referenceReviewed": "2026-07-30"
+    },
+    "sections": [
+      {
+        "title": "Voltage, current, power, and energy",
+        "bullets": [
+          "Voltage (V) is electrical potential.",
+          "Current (A) is the rate of charge flow.",
+          "Power (W) is the instantaneous rate of doing electrical work.",
+          "Energy (Wh or kWh) is power accumulated over time.",
+          "Resistance (ohms) turns part of that power into heat."
+        ],
+        "formula": "Power (W) = Voltage (V) x Current (A)"
+      },
+      {
+        "title": "Battery units",
+        "paragraphs": [
+          "Amp-hours describe charge capacity at a stated voltage. Watt-hours make unlike battery voltages easier to compare. Usable energy is lower than nameplate energy after reserve, depth-of-discharge limits, conversion loss, temperature, and aging."
+        ],
+        "formula": "Nominal energy (Wh) = battery voltage x amp-hours"
+      },
+      {
+        "title": "AC and DC are not interchangeable",
+        "bullets": [
+          "PV modules and batteries are DC sources.",
+          "Most household branch circuits and appliances use AC.",
+          "Breakers, switches, connectors, and fuses must carry an appropriate DC or AC rating for the circuit.",
+          "Open-circuit voltage and short-circuit current are test conditions, not the normal operating point."
+        ]
+      },
+      {
+        "title": "Design context",
+        "paragraphs": [
+          "A 100 W load describes a rate; running it for five hours consumes 500 Wh. That distinction prevents a common design mistake: choosing an inverter from energy consumption or choosing a battery from peak watts.",
+          "Datasheet values also belong to specific conditions. Module Voc and Isc are boundary test values, while Vmp and Imp describe the maximum-power operating point. Battery amp-hours only become comparable after multiplying by nominal voltage and applying the manufacturer’s usable-energy limits."
+        ]
+      },
+      {
+        "title": "Reference checklist",
+        "columns": [
+          "Field",
+          "Reference",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "Power",
+            "W = V × A",
+            "Instantaneous demand or generation."
+          ],
+          [
+            "Energy",
+            "Wh = W × h",
+            "Accumulated production or consumption."
+          ],
+          [
+            "Resistive loss",
+            "P = I²R",
+            "Doubling current produces four times the heating at the same resistance."
+          ]
+        ]
+      },
+      {
+        "title": "Same power, different current",
+        "paragraphs": [
+          "A 1,200 W inverter load is supplied from two possible battery voltages."
+        ],
+        "bullets": [
+          "12 V ideal current: 100 A",
+          "48 V ideal current: 25 A",
+          "Real current is higher after inverter loss"
+        ],
+        "callout": "The 48 V design carries one quarter of the current for the same power, which materially changes cable, fuse, busbar, and connection requirements."
+      },
+      {
+        "title": "Quantities belong to operating conditions",
+        "paragraphs": [
+          "A 5 kW inverter describes a rate of conversion; a 5 kWh battery describes stored energy. A motor can draw modest real power during normal operation but demand much higher current and apparent power during starting. A module’s Voc and Isc are boundary test values, while Vmp and Imp describe a maximum-power operating point under stated conditions.",
+          "Resistance creates voltage drop and heat. Because conductor heating follows current squared, raising DC bus voltage can materially reduce current for a fixed power transfer, but voltage class, shock protection, switching, and equipment compatibility also change."
+        ]
+      },
+      {
+        "title": "Do not interchange these values",
+        "columns": [
+          "Quantity",
+          "Unit",
+          "Design use"
+        ],
+        "rows": [
+          [
+            "Real power",
+            "W / kW",
+            "Continuous load and generation rate"
+          ],
+          [
+            "Apparent power",
+            "VA / kVA",
+            "AC conductor, inverter, transformer, and generator behavior"
+          ],
+          [
+            "Energy",
+            "Wh / kWh",
+            "Production, consumption, and autonomy"
+          ],
+          [
+            "Charge",
+            "Ah",
+            "Battery capacity only when voltage is stated"
+          ],
+          [
+            "Resistance",
+            "Ω",
+            "Voltage drop and heating"
+          ],
+          [
+            "Frequency",
+            "Hz",
+            "AC source and equipment compatibility"
+          ]
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Victron Energy · Wiring Unlimited — theory",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/theory.html"
+      },
+      {
+        "label": "U.S. Department of Energy · Photovoltaics",
+        "url": "https://www.energy.gov/cmei/systems/photovoltaics"
+      },
+      {
+        "label": "U.S. Department of Energy · Solar Photovoltaic System Design Basics",
+        "url": "https://www.energy.gov/cmei/systems/solar-photovoltaic-system-design-basics"
+      },
+      {
+        "label": "Victron Energy · Wiring Unlimited",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/index-en.html"
+      }
+    ]
+  },
+  {
+    "slug": "component-map",
+    "title": "Core components and compatibility",
+    "topic": "Foundations",
+    "level": "Beginner",
+    "kind": "Guide",
+    "summary": "Treat the balance of system as a compatibility chain: electrical ratings, environmental ratings, listings, terminals, communications, and current manufacturer instructions must align.",
+    "outcome": "Build a compatibility chain so every device accepts the voltage, current, power, environment, and battery chemistry presented to it.",
+    "reviewed": "2026-07-30",
+    "origin": "Adapted from Solar4U’s original technical chapters and professional reference notes. Manufacturer documents remain linked references; use the current manual for the exact equipment.",
+    "adaptedFrom": {
+      "project": "Solar4U",
+      "commit": "87a91d4db804dee461ce345d8b2f63669cd986c1",
+      "paths": [
+        "app/guides-page.tsx",
+        "app/professional-guide-data.ts"
+      ],
+      "chapter": "component-map",
+      "imported": "2026-10-05",
+      "referenceReviewed": "2026-07-30"
+    },
+    "sections": [
+      {
+        "title": "PV modules",
+        "bullets": [
+          "Voc: open-circuit voltage; use it for maximum-voltage checks after cold correction.",
+          "Vmp: voltage near maximum power; use it to check the MPPT operating window.",
+          "Isc: short-circuit current; use it when evaluating conductors and protection.",
+          "Imp: current near maximum power; useful for normal operating estimates.",
+          "Rigid monocrystalline modules are common for permanent arrays; flexible and folding modules trade durability or efficiency for portability."
+        ]
+      },
+      {
+        "title": "Controllers, batteries, and inverters",
+        "bullets": [
+          "MPPT controllers convert higher PV voltage into battery charging current and offer a wider array-design window than PWM controllers.",
+          "The battery BMS protects lithium cells, but it does not replace circuit protection, a disconnect, or a shunt-based energy monitor.",
+          "Pure-sine inverters are the normal choice for motors and electronics.",
+          "Continuous output, surge output, DC input range, charger behavior, neutral-ground configuration, and listed use must all match the project."
+        ]
+      },
+      {
+        "title": "Balance of system",
+        "bullets": [
+          "PV wire and weather-rated connectors",
+          "Combiner boxes where parallel strings require combining or individual protection",
+          "Busbars, lugs, shunts, disconnects, fuses, and breakers",
+          "Equipment grounding and bonding hardware",
+          "Conduit, cable support, labels, strain relief, and enclosures"
+        ],
+        "callout": "A collection of individually good products is not automatically a compatible system. Verify the complete chain before purchasing."
+      },
+      {
+        "title": "Design context",
+        "paragraphs": [
+          "Compatibility is a chain, not a checklist of brand names. Begin at the module datasheet and trace the worst-case voltage and current through connectors, conductors, combiners, controllers, busbars, batteries, inverters, panels, and loads.",
+          "Environmental ratings matter as much as electrical ratings. Indoor battery equipment may require a controlled location; rooftop connectors need sunlight and wet-location suitability; enclosures need the correct ingress and temperature rating; mounting hardware must be approved for the roof and module."
+        ]
+      },
+      {
+        "title": "Reference checklist",
+        "columns": [
+          "Field",
+          "Reference",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "Module",
+            "Voc / Vmp / Isc / Imp",
+            "Use the complete electrical label, not watts alone."
+          ],
+          [
+            "Controller",
+            "Input + output limits",
+            "Check cold Voc, MPPT window, input current, output current, and supported battery."
+          ],
+          [
+            "Inverter",
+            "Continuous + surge",
+            "Also verify waveform, phase, DC range, transfer behavior, and listings."
+          ]
+        ]
+      },
+      {
+        "title": "A hidden mismatch",
+        "paragraphs": [
+          "Eight 50 V Voc modules are proposed for a controller with a 250 V absolute PV limit."
+        ],
+        "bullets": [
+          "8S string at label conditions: 400 V",
+          "Cold weather increases Voc",
+          "Controller absolute limit: 250 V"
+        ],
+        "callout": "The products are incompatible even if array watts are below the controller’s advertised power. Reconfigure the strings or select different equipment."
+      },
+      {
+        "title": "Nameplate-to-nameplate compatibility",
+        "paragraphs": [
+          "Start at the module and trace maximum voltage, operating voltage, short-circuit current, operating current, power, connector family, conductor range, and environmental conditions through every device. Repeat the exercise from the battery toward the inverter and every charging source.",
+          "A component can be individually listed yet incompatible with the system around it. The approved battery list, module compatibility tool, racking/module listing, connector family, terminal conductor class, communication protocol, and firmware version can all be controlling constraints."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Victron Energy · Technical information and schematics",
+        "url": "https://www.victronenergy.com/support-and-downloads/technical-information"
+      },
+      {
+        "label": "UL Solutions · Energy Storage System Testing and Certification",
+        "url": "https://www.ul.com/services/energy-storage-system-testing-and-certification"
+      },
+      {
+        "label": "U.S. Department of Energy · Solar Photovoltaic System Design Basics",
+        "url": "https://www.energy.gov/cmei/systems/solar-photovoltaic-system-design-basics"
+      },
+      {
+        "label": "Victron Energy · Wiring Unlimited",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/index-en.html"
+      }
+    ]
+  },
+  {
+    "slug": "shade-and-mismatch",
+    "title": "Shade, mismatch, and module datasheets",
+    "topic": "Panels & technology",
+    "level": "All levels",
+    "kind": "Guide",
+    "summary": "Use I-V behavior, bypass-diode regions, time-resolved shade, string topology, and tracker assignment to diagnose nonlinear production loss.",
+    "outcome": "Treat shade and electrical mismatch as circuit-design problems, not only production losses.",
+    "reviewed": "2026-07-30",
+    "origin": "Adapted from Solar4U’s original technical chapters and professional reference notes. Manufacturer documents remain linked references; use the current manual for the exact equipment.",
+    "adaptedFrom": {
+      "project": "Solar4U",
+      "commit": "87a91d4db804dee461ce345d8b2f63669cd986c1",
+      "paths": [
+        "app/guides-page.tsx",
+        "app/professional-guide-data.ts"
+      ],
+      "chapter": "shade-mismatch",
+      "imported": "2026-10-05",
+      "referenceReviewed": "2026-07-30"
+    },
+    "sections": [
+      {
+        "title": "Read the module label",
+        "bullets": [
+          "Use Voc and its temperature coefficient for maximum string voltage.",
+          "Use Vmp to confirm the controller can track the string in hot conditions.",
+          "Use Isc and the required code/design multiplier for source-circuit conductors and protection.",
+          "Review maximum series-fuse rating, connector family, bifacial rating method, and maximum system voltage."
+        ]
+      },
+      {
+        "title": "Mismatch behavior",
+        "paragraphs": [
+          "Series-connected modules share current, while parallel strings share voltage. Mixing modules with unlike current in series or unlike voltage in parallel can pull the array away from each module's best operating point."
+        ],
+        "bullets": [
+          "Group similarly oriented and similarly shaded modules.",
+          "Avoid mixing electrical characteristics unless the effect has been modeled.",
+          "Use separate MPPT inputs for materially different roof faces where equipment permits.",
+          "Do not mate look-alike connectors from different manufacturers unless expressly listed as compatible."
+        ]
+      },
+      {
+        "title": "Bypass devices",
+        "paragraphs": [
+          "Module bypass diodes can reduce hot-spot risk and preserve some output during partial shade, but they do not make arbitrary mixed arrays safe or efficient."
+        ]
+      },
+      {
+        "title": "Design context",
+        "paragraphs": [
+          "Shade is electrical, spatial, and temporal. A narrow vent shadow crossing one cell group can activate bypass behavior and reshape the string’s current-voltage curve. A tree may affect only winter mornings or become worse as it grows.",
+          "Record shade by roof plane and time of year. Module-level electronics can reduce some mismatch effects and provide visibility, but they do not create sunlight and must be included in rapid-shutdown, mounting, thermal, communication, and compatibility planning."
+        ]
+      },
+      {
+        "title": "Reference checklist",
+        "columns": [
+          "Field",
+          "Reference",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "Mismatch",
+            "Current + voltage",
+            "Different modules and conditions move the shared operating point."
+          ],
+          [
+            "Bypass path",
+            "Cell-group level",
+            "Limits hot-spot stress but can reduce available module voltage."
+          ],
+          [
+            "Separate MPPT",
+            "Different planes",
+            "Useful for unlike azimuth, tilt, module type, or shade pattern."
+          ]
+        ]
+      },
+      {
+        "title": "Chimney shadow",
+        "paragraphs": [
+          "A south roof has one chimney shadow moving across the lower module row in winter."
+        ],
+        "bullets": [
+          "Affected window: 9–11 AM",
+          "One string crosses the shadow",
+          "Second string remains clear"
+        ],
+        "callout": "Rearranging strings or assigning the affected plane to another MPPT can outperform a visually neat wiring layout. Model the actual time pattern before buying optimizers."
+      },
+      {
+        "title": "Shade changes the circuit curve",
+        "paragraphs": [
+          "Series-connected modules share current. Partial shade can activate one or more bypass-diode regions, remove voltage contribution, and create multiple local power peaks. Parallel strings share operating voltage and can mismatch when orientation, temperature, module type, or irradiance differs.",
+          "Module-level electronics mitigate selected mismatch modes and add observability, but they do not restore missing irradiance. Treat chimneys, vents, trees, parapets, snow, and row-to-row shade as time-of-day and season-specific geometry."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "NREL · Best Practices for PV and Energy Storage O&M",
+        "url": "https://www.nrel.gov/docs/fy19osti/73822.pdf"
+      },
+      {
+        "label": "NLR · PVWatts V8 modeling inputs",
+        "url": "https://developer.nlr.gov/docs/solar/pvwatts/v8/"
+      },
+      {
+        "label": "Sandia PVPMC · PV Performance Modeling Collaborative",
+        "url": "https://pvpmc.sandia.gov/modeling-guide/"
+      }
+    ]
+  },
+  {
+    "slug": "drawings-and-expansion",
+    "title": "Draw the one-line and plan expansion",
+    "topic": "System design",
+    "level": "Experienced",
+    "kind": "Guide",
+    "summary": "Maintain separate one-line, site/roof plan, communications, shutdown-state, and as-built drawings with revision-controlled equipment schedules.",
+    "outcome": "A diagram is the working specification for installation, review, labeling, troubleshooting, and future changes.",
+    "reviewed": "2026-07-30",
+    "origin": "Adapted from Solar4U’s original technical chapters and professional reference notes. Manufacturer documents remain linked references; use the current manual for the exact equipment.",
+    "adaptedFrom": {
+      "project": "Solar4U",
+      "commit": "87a91d4db804dee461ce345d8b2f63669cd986c1",
+      "paths": [
+        "app/guides-page.tsx",
+        "app/professional-guide-data.ts"
+      ],
+      "chapter": "diagrams-expansion",
+      "imported": "2026-10-05",
+      "referenceReviewed": "2026-07-30"
+    },
+    "sections": [
+      {
+        "title": "Show every energy path",
+        "bullets": [
+          "Module and string configuration",
+          "Combiner, disconnect, controller, battery, inverter, distribution, grid, and generator connections",
+          "Conductor material, gauge, insulation, route, and length",
+          "Fuse or breaker rating and interrupting rating",
+          "Equipment and conductor grounding",
+          "Communication and monitoring links"
+        ]
+      },
+      {
+        "title": "Leave deliberate capacity",
+        "bullets": [
+          "Controller and inverter power cannot be expanded beyond published limits.",
+          "Provide physical service clearance and ventilation.",
+          "Reserve appropriate breaker positions and conduit capacity.",
+          "Plan busbar, rack, and battery communication expansion.",
+          "Document unused provisions so they are not mistaken for abandoned wiring."
+        ]
+      },
+      {
+        "title": "Revision discipline",
+        "paragraphs": [
+          "Date the drawing, record product model numbers and firmware, and update the diagram after any field change. A stale diagram is dangerous during troubleshooting."
+        ]
+      },
+      {
+        "title": "Design context",
+        "paragraphs": [
+          "A one-line diagram communicates electrical topology: sources, conversion equipment, conductors, disconnects, protection, grounding, distribution, and ratings. A site plan communicates physical placement, access, setbacks, pathways, equipment locations, and point of interconnection.",
+          "Draw future capacity as an explicit design case. Spare wall space does not guarantee spare electrical capacity. Expansion can change fault current, bus loading, conductor ampacity, controller limits, battery communication, rapid shutdown, and approvals."
+        ]
+      },
+      {
+        "title": "Reference checklist",
+        "columns": [
+          "Field",
+          "Reference",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "One-line",
+            "Electrical intent",
+            "Show ratings, conductor sizes, OCPD, grounding, and disconnects."
+          ],
+          [
+            "Site plan",
+            "Physical intent",
+            "Show property, roof/array, equipment, access, and routing."
+          ],
+          [
+            "Revision record",
+            "As-built truth",
+            "Date changes and preserve settings, photos, labels, and model numbers."
+          ]
+        ]
+      },
+      {
+        "title": "Future battery addition",
+        "paragraphs": [
+          "A grid-tied PV design may receive storage two years later."
+        ],
+        "bullets": [
+          "Reserve equipment-wall space",
+          "Document service and backed-up-load capacity",
+          "Choose a compatible architecture, not merely a larger conduit"
+        ],
+        "callout": "The drawing records the intended transition and the constraints that must be rechecked. It does not pre-approve future equipment."
+      },
+      {
+        "title": "What professionals expect to find",
+        "paragraphs": [
+          "The one-line identifies topology, ratings, conductors, protection, grounding, isolation, metering, and interconnection. The site and roof plans identify physical location, pathways, setbacks, equipment, attachments, access, and concealed routes. A controls drawing identifies BMS, inverter, gateway, CT, network, and emergency-control dependencies.",
+          "Expansion is a redesign. New modules, trackers, batteries, inverters, or backed-up loads can change voltage, current, fault current, bus loading, settings, approvals, listings, thermal conditions, grounding, and shutdown behavior."
+        ]
+      },
+      {
+        "title": "Drawing package",
+        "steps": [
+          "Equipment schedule with exact suffixes",
+          "Site/roof plan",
+          "Electrical one-line",
+          "String and MPPT schedule",
+          "Conductor and OCPD schedule",
+          "Grounding/bonding detail",
+          "Controls/communications diagram",
+          "Labels and shutdown notes",
+          "As-built revision and photo index"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Department of Energy · Permitting and Inspection for Rooftop Solar",
+        "url": "https://www.energy.gov/cmei/systems/permitting-and-inspection-rooftop-solar"
+      },
+      {
+        "label": "IronRidge · Pitched-roof design resources",
+        "url": "https://base.ironridge.com/pitched-roof-mounting/resources"
+      },
+      {
+        "label": "U.S. Department of Energy · Solar Photovoltaic System Design Basics",
+        "url": "https://www.energy.gov/cmei/systems/solar-photovoltaic-system-design-basics"
+      }
+    ]
+  },
+  {
+    "slug": "battery-chemistry",
+    "title": "Battery chemistry and BMS fundamentals",
+    "topic": "Batteries & backup",
+    "level": "All levels",
+    "kind": "Guide",
+    "summary": "Compare chemistries through voltage, energy, power, temperature, ventilation, failure behavior, controls, listing, and lifecycle—not marketing shorthand.",
+    "outcome": "Compare usable energy, cycle life, charging limits, temperature behavior, maintenance, ventilation, and failure response.",
+    "reviewed": "2026-07-30",
+    "origin": "Adapted from Solar4U’s original technical chapters and professional reference notes. Manufacturer documents remain linked references; use the current manual for the exact equipment.",
+    "adaptedFrom": {
+      "project": "Solar4U",
+      "commit": "87a91d4db804dee461ce345d8b2f63669cd986c1",
+      "paths": [
+        "app/guides-page.tsx",
+        "app/professional-guide-data.ts"
+      ],
+      "chapter": "battery-chemistry",
+      "imported": "2026-10-05",
+      "referenceReviewed": "2026-07-30"
+    },
+    "sections": [
+      {
+        "title": "LiFePO4",
+        "bullets": [
+          "High usable fraction and cycle life when operated within limits.",
+          "A BMS monitors cells and can stop charge or discharge during unsafe conditions.",
+          "Charging below the battery's allowed temperature can cause damage.",
+          "BMS current, contactor capability, communications, enclosure rating, and serviceability matter as much as capacity."
+        ]
+      },
+      {
+        "title": "AGM and flooded lead-acid",
+        "bullets": [
+          "Lead-acid usually provides less usable energy for a given nameplate capacity.",
+          "Repeated partial charging and deep discharge shorten life.",
+          "Flooded batteries require electrolyte maintenance and ventilation.",
+          "Chemistries, ages, capacities, and conditions should not be casually mixed in one bank."
+        ]
+      },
+      {
+        "title": "BMS versus system protection",
+        "paragraphs": [
+          "A BMS protects cells and the battery assembly. It does not replace a properly sized fuse close to the energy source, a service disconnect, conductor protection, or an accurate shunt monitor."
+        ],
+        "callout": "Follow the battery manufacturer's charging, temperature, torque, spacing, communication, and parallel-unit instructions."
+      },
+      {
+        "title": "Design context",
+        "paragraphs": [
+          "Chemistry changes voltage profile, usable depth, charge behavior, temperature limits, ventilation needs, mass, and failure modes. Product certification, installation instructions, compatible inverter/charger settings, and the complete energy-storage-system listing matter more than a chemistry nickname.",
+          "A BMS supervises cells and can interrupt charging or discharging, but it is not a substitute for external circuit protection, a service disconnect, correct conductor sizing, ventilation or spacing rules, or a whole-system shunt."
+        ]
+      },
+      {
+        "title": "Reference checklist",
+        "columns": [
+          "Field",
+          "Reference",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "LiFePO₄",
+            "Flat voltage curve",
+            "Use a shunt/BMS data rather than voltage alone for state of charge."
+          ],
+          [
+            "Lead-acid",
+            "Charge stages",
+            "Ventilation, temperature compensation, and depth of discharge affect service life."
+          ],
+          [
+            "ESS listing",
+            "System-level",
+            "UL 9540 evaluates the integrated storage system and referenced safety standards."
+          ]
+        ]
+      },
+      {
+        "title": "Cold garage battery",
+        "paragraphs": [
+          "A lithium battery is installed where winter temperature can fall below its permitted charge temperature."
+        ],
+        "bullets": [
+          "PV is available on a clear cold morning",
+          "Cells remain below charge threshold",
+          "BMS may block charging"
+        ],
+        "callout": "The system needs an approved environmental strategy—such as a conditioned location or manufacturer-supported heating—not a disabled temperature protection."
+      },
+      {
+        "title": "The integrated system matters",
+        "paragraphs": [
+          "Cell chemistry is only the first layer. Module construction, BMS, contactors, pre-charge, enclosure, thermal strategy, inverter compatibility, communications, external protection, installation location, fire separation, and integrated ESS certification determine how a residential storage system can be used.",
+          "A low-voltage open-loop battery and a 150-400 V closed-loop residential stack are not interchangeable approaches. High-voltage consumer ESS equipment is a qualified-person, compatibility-controlled system."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "UL Solutions · Energy Storage System Testing and Certification",
+        "url": "https://www.ul.com/services/energy-storage-system-testing-and-certification"
+      },
+      {
+        "label": "UL Solutions · Installation codes and ESS requirements",
+        "url": "https://www.ul.com/resources/installation-codes-and-requirements-energy-storage-systems-ess-faqs"
+      },
+      {
+        "label": "Victron Energy · Wiring Unlimited",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/index-en.html"
+      }
+    ],
+    "tool": {
+      "label": "Battery runtime calculator",
+      "href": "/guide/calculators?tool=battery"
+    }
+  },
+  {
+    "slug": "battery-bank-architecture",
+    "title": "12 V, 24 V, and 48 V bank architecture",
+    "topic": "Batteries & backup",
+    "level": "Experienced",
+    "kind": "Guide",
+    "summary": "Select 12, 24, 48, or high-voltage architecture from power, conductor, equipment, controls, serviceability, and hazard constraints.",
+    "outcome": "Higher DC voltage reduces current for the same power, but raises equipment, training, and fault-energy requirements.",
+    "reviewed": "2026-07-30",
+    "origin": "Adapted from Solar4U’s original technical chapters and professional reference notes. Manufacturer documents remain linked references; use the current manual for the exact equipment.",
+    "adaptedFrom": {
+      "project": "Solar4U",
+      "commit": "87a91d4db804dee461ce345d8b2f63669cd986c1",
+      "paths": [
+        "app/guides-page.tsx",
+        "app/professional-guide-data.ts"
+      ],
+      "chapter": "bank-architecture",
+      "imported": "2026-10-05",
+      "referenceReviewed": "2026-07-30"
+    },
+    "sections": [
+      {
+        "title": "Choose system voltage from power and architecture",
+        "formula": "Current = power / voltage",
+        "columns": [
+          "Voltage",
+          "Typical design context"
+        ],
+        "rows": [
+          [
+            "12 V",
+            "Small vehicle, marine, or portable loads"
+          ],
+          [
+            "24 V",
+            "Mid-sized cabin, workshop, or mobile system"
+          ],
+          [
+            "48 V",
+            "Larger inverter systems and longer high-power DC paths"
+          ]
+        ]
+      },
+      {
+        "title": "Series and parallel batteries",
+        "bullets": [
+          "Series adds voltage while amp-hour capacity remains the same.",
+          "Parallel adds amp-hour and current capability while voltage remains the same.",
+          "Only use configurations approved by the battery manufacturer.",
+          "Use balanced busbar connections and appropriately matched cable resistance.",
+          "Do not mix old and new batteries or incompatible BMS-controlled models."
+        ]
+      },
+      {
+        "title": "High-voltage batteries",
+        "paragraphs": [
+          "Some residential systems use battery voltages far above 48 V. These are not simply larger low-voltage DIY banks; they require purpose-built batteries, inverters, disconnects, connectors, procedures, and qualified design practices."
+        ]
+      },
+      {
+        "title": "Design context",
+        "paragraphs": [
+          "Higher battery voltage reduces current for the same power and often becomes practical as inverter size grows. It does not automatically make a system safer: voltage hazards, product ecosystem, series-battery restrictions, disconnects, and qualified-service requirements also change.",
+          "Parallel batteries should have intentionally balanced current paths. Equal-length, equal-gauge branch cables to rated busbars are easier to inspect and expand than a long daisy chain. Follow the exact battery manufacturer’s maximum series/parallel count and fuse requirements."
+        ]
+      },
+      {
+        "title": "Reference checklist",
+        "columns": [
+          "Field",
+          "Reference",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "1.2 kW at 12 V",
+            "≈100 A ideal",
+            "Before inverter loss and low-voltage conditions."
+          ],
+          [
+            "1.2 kW at 24 V",
+            "≈50 A ideal",
+            "Half the 12 V current."
+          ],
+          [
+            "1.2 kW at 48 V",
+            "≈25 A ideal",
+            "One quarter of the 12 V current."
+          ]
+        ]
+      },
+      {
+        "title": "Workshop upgrade",
+        "paragraphs": [
+          "A 12 V cabin system gains a 2.4 kW well pump and longer inverter run."
+        ],
+        "bullets": [
+          "12 V ideal full-load current: 200 A",
+          "48 V ideal full-load current: 50 A",
+          "Existing 12 V equipment cannot simply move to 48 V"
+        ],
+        "callout": "A 48 V redesign may reduce DC current, but requires a compatible inverter, controllers, DC loads/converters, battery architecture, protection, and revised drawings."
+      },
+      {
+        "title": "Balanced current paths",
+        "paragraphs": [
+          "Parallel batteries need deliberately balanced branch paths, compatible battery state, branch protection where required, rated busbars, and an aggregate current check. Equal-length and equal-gauge branches to common busbars are easier to inspect than casual daisy chains.",
+          "Series connections add voltage and impose manufacturer restrictions on battery count, midpoint connections, communications, and balancing. Never assume a nominally 12 V battery may be placed in series unless its current manual permits the exact configuration."
+        ]
+      },
+      {
+        "title": "Equal 4.8 kW transfer before losses",
+        "columns": [
+          "Bus",
+          "Approximate current",
+          "Design consequence"
+        ],
+        "rows": [
+          [
+            "12 V",
+            "400 A",
+            "Extremely high current and demanding fault protection"
+          ],
+          [
+            "24 V",
+            "200 A",
+            "Still a heavy high-current architecture"
+          ],
+          [
+            "48 V",
+            "100 A",
+            "Common residential/off-grid low-voltage class"
+          ],
+          [
+            "≈400 V",
+            "12 A",
+            "Closed-loop HV ESS; very different shock and service controls"
+          ]
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Victron Energy · Wiring Unlimited — battery bank wiring",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/battery-bank-wiring.html"
+      },
+      {
+        "label": "Victron Energy · Lithium Battery Smart installation",
+        "url": "https://www.victronenergy.com/media/pg/Lithium_Battery_Smart/en/installation.html"
+      },
+      {
+        "label": "Victron Energy · Wiring Unlimited",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/index-en.html"
+      },
+      {
+        "label": "UL Solutions · Energy Storage System Testing and Certification",
+        "url": "https://www.ul.com/services/energy-storage-system-testing-and-certification"
+      }
+    ],
+    "tool": {
+      "label": "Battery runtime calculator",
+      "href": "/guide/calculators?tool=battery"
+    }
+  },
+  {
+    "slug": "battery-monitoring",
+    "title": "Charging, monitoring, and cold weather",
+    "topic": "Batteries & backup",
+    "level": "All levels",
+    "kind": "Guide",
+    "summary": "Combine shunt measurements, BMS cell/protection data, charger status, temperature, state estimation, alarms, and firmware/settings records.",
+    "outcome": "Use a shunt and recorded trends to understand energy flow instead of relying only on instantaneous battery voltage.",
+    "reviewed": "2026-07-30",
+    "origin": "Adapted from Solar4U’s original technical chapters and professional reference notes. Manufacturer documents remain linked references; use the current manual for the exact equipment.",
+    "adaptedFrom": {
+      "project": "Solar4U",
+      "commit": "87a91d4db804dee461ce345d8b2f63669cd986c1",
+      "paths": [
+        "app/guides-page.tsx",
+        "app/professional-guide-data.ts"
+      ],
+      "chapter": "battery-monitoring",
+      "imported": "2026-10-05",
+      "referenceReviewed": "2026-07-30"
+    },
+    "sections": [
+      {
+        "title": "What to monitor",
+        "bullets": [
+          "State of charge and cumulative amp-hours",
+          "Charge and discharge current",
+          "Battery voltage under load and at rest",
+          "Cell or pack temperature",
+          "BMS alarms and high/low events",
+          "Daily minimum state of charge and recovery time"
+        ]
+      },
+      {
+        "title": "Charging profile",
+        "paragraphs": [
+          "Controller and inverter/charger setpoints must match the battery manufacturer's profile. Lithium and lead-acid batteries use different charging behavior; equalization intended for some lead-acid systems can damage lithium batteries."
+        ],
+        "bullets": [
+          "Confirm absorption, float, low-voltage cutoff, restart, and temperature compensation settings.",
+          "Coordinate every charging source: solar, alternator, grid, and generator.",
+          "Verify the maximum combined charge current."
+        ]
+      },
+      {
+        "title": "Cold climates",
+        "callout": "Do not charge a lithium battery below its permitted temperature. Use an approved heated battery, conditioned enclosure, or charging lockout rather than improvising."
+      },
+      {
+        "title": "Design context",
+        "paragraphs": [
+          "Charging settings are a system contract. Every charger—solar, inverter/charger, alternator, or generator—must use values permitted by the battery manufacturer, and their combined current must remain acceptable to the bank and BMS.",
+          "A shunt measures current crossing the battery boundary and integrates it over time. Accurate state-of-charge tracking depends on correct capacity, charge-efficiency, tail-current, and synchronization settings. Trend voltage, current, temperature, state of charge, and protection events together."
+        ]
+      },
+      {
+        "title": "Reference checklist",
+        "columns": [
+          "Field",
+          "Reference",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "Shunt position",
+            "Battery negative boundary",
+            "All system negative current must pass through it; only battery-side connections bypass it."
+          ],
+          [
+            "Charge sources",
+            "Aggregate current",
+            "Solar, grid, and alternator charging can overlap."
+          ],
+          [
+            "Cold charging",
+            "Manufacturer limit",
+            "Use a supported sensor/heater strategy and keep BMS protection active."
+          ]
+        ]
+      },
+      {
+        "title": "State-of-charge drift",
+        "paragraphs": [
+          "A monitor says 62%, while the BMS repeatedly reaches full charge earlier than expected."
+        ],
+        "bullets": [
+          "Incorrect programmed capacity",
+          "Small DC load bypasses shunt",
+          "Synchronization settings never satisfied"
+        ],
+        "callout": "Correct the wiring and monitor settings, then complete the manufacturer’s synchronization procedure. Do not recalibrate by guessing a percentage."
+      },
+      {
+        "title": "A BMS and a shunt answer different questions",
+        "paragraphs": [
+          "The BMS protects cells and reports internal limits. A correctly placed shunt measures every amp entering or leaving the battery boundary and supports whole-system energy accounting. Charger, inverter, gateway, and BMS logs provide additional context.",
+          "State-of-charge accuracy depends on correct capacity, charge efficiency, tail-current and synchronization settings, a complete current path through the shunt, and periodic achievement of the configured synchronization condition."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "Victron Energy · Wiring Unlimited — shunts and battery wiring",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/dc-wiring.html"
+      },
+      {
+        "label": "Victron Energy · Lithium Battery Smart installation",
+        "url": "https://www.victronenergy.com/media/pg/Lithium_Battery_Smart/en/installation.html"
+      },
+      {
+        "label": "Victron Energy · Wiring Unlimited",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/index-en.html"
+      },
+      {
+        "label": "NREL · Best Practices for PV and Energy Storage O&M",
+        "url": "https://www.nrel.gov/docs/fy19osti/73822.pdf"
+      }
+    ],
+    "tool": {
+      "label": "Battery runtime calculator",
+      "href": "/guide/calculators?tool=battery"
+    }
+  },
+  {
+    "slug": "commissioning",
+    "title": "Commissioning and initial power-on",
+    "topic": "Operation & maintenance",
+    "level": "Experienced",
+    "kind": "Guide",
+    "summary": "Commission by documented subsystem gates: records, visual/mechanical inspection, safe isolation, de-energized tests, controlled energization, functional tests, and a performance baseline.",
+    "outcome": "Energize one subsystem at a time with expected measurements, stop conditions, and a written record.",
+    "reviewed": "2026-07-30",
+    "origin": "Adapted from Solar4U’s original technical chapters and professional reference notes. Manufacturer documents remain linked references; use the current manual for the exact equipment.",
+    "adaptedFrom": {
+      "project": "Solar4U",
+      "commit": "87a91d4db804dee461ce345d8b2f63669cd986c1",
+      "paths": [
+        "app/guides-page.tsx",
+        "app/professional-guide-data.ts"
+      ],
+      "chapter": "commissioning",
+      "imported": "2026-10-05",
+      "referenceReviewed": "2026-07-30"
+    },
+    "sections": [
+      {
+        "title": "Pre-energization inspection",
+        "bullets": [
+          "Mechanical mounting complete and conductors supported",
+          "Polarity independently verified at every source and load",
+          "Open-circuit voltages compared with calculated values",
+          "Protection and disconnect ratings verified",
+          "Terminal torque recorded",
+          "Grounding/bonding inspected",
+          "Battery settings and firmware confirmed",
+          "Covers, barriers, labels, and clearances complete"
+        ]
+      },
+      {
+        "title": "Controlled sequence",
+        "paragraphs": [
+          "Use the sequence required by the installed equipment. A common battery system approach is to establish the DC battery bus and controller first, confirm configuration, enable PV input, then energize the inverter and test a small load. Hybrid and grid-interactive equipment may require a different manufacturer commissioning procedure."
+        ],
+        "bullets": [
+          "Pause after each source is enabled.",
+          "Record voltage, current, state, alarms, and temperature.",
+          "Start with a small predictable load.",
+          "Test shutdown and emergency disconnect behavior."
+        ]
+      },
+      {
+        "title": "Stop conditions",
+        "callout": "Stop immediately for reverse polarity, unexpected voltage, arcing, smoke, odor, rapid heating, swelling, repeated protection trips, or any reading outside the equipment's stated range."
+      },
+      {
+        "title": "Design context",
+        "paragraphs": [
+          "Commission by subsystem, not with one dramatic power-on. First complete visual, mechanical, polarity, continuity, insulation/grounding where applicable, and configuration checks with sources isolated. Then energize in the manufacturer’s sequence.",
+          "The baseline is part of the installation. Record firmware, settings, open-circuit voltages, battery voltage and state of charge, operating currents, temperatures, alarms, production, torque records, photographs, serial numbers, and the final as-built drawing."
+        ]
+      },
+      {
+        "title": "Reference checklist",
+        "columns": [
+          "Field",
+          "Reference",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "Pre-energization",
+            "Inspect + measure",
+            "Polarity, conductor identity, terminations, protection, grounding, and covers."
+          ],
+          [
+            "Controlled start",
+            "One subsystem",
+            "Observe state and alarms before enabling the next source or load."
+          ],
+          [
+            "Baseline",
+            "Saved evidence",
+            "Future troubleshooting needs known-good values."
+          ]
+        ]
+      },
+      {
+        "title": "First charge",
+        "paragraphs": [
+          "A new battery-based array is ready to energize."
+        ],
+        "bullets": [
+          "Battery/BMS first if the controller requires it",
+          "Confirm controller sees the correct battery voltage/profile",
+          "Close PV input only after configuration and polarity checks"
+        ],
+        "callout": "The precise order follows the product manuals. Pause immediately on unexpected voltage, smell, heat, noise, alarm, or communication state."
+      },
+      {
+        "title": "Baseline measurements become future evidence",
+        "paragraphs": [
+          "Capture model and serial numbers, firmware, settings, string map, polarity, Voc, insulation test where applicable, continuity/bonding results, battery voltage and state, operating current, irradiance, module temperature, inverter output, alarms, communications, torque records, photographs, and the as-built drawing.",
+          "The energization sequence is product-specific. A common battery-based controller may require battery/control power before PV, while other systems use different pre-charge and startup logic. Stop on unexpected voltage, polarity, sound, smell, heat, alarm, or communication state."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "NREL · Best Practices for PV and Energy Storage O&M",
+        "url": "https://www.nrel.gov/docs/fy19osti/73822.pdf"
+      },
+      {
+        "label": "Victron Energy · Wiring Unlimited",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/index-en.html"
+      },
+      {
+        "label": "Fluke · Absence-of-voltage testing",
+        "url": "https://www.fluke.com/en-us/learn/blog/electrical/absence-of-voltage-testing"
+      },
+      {
+        "label": "OSHA · Solar Energy: Lockout/Tagout",
+        "url": "https://www.osha.gov/green-jobs/solar/lockout-tagout"
+      }
+    ]
+  },
+  {
+    "slug": "troubleshooting",
+    "title": "Testing and troubleshooting",
+    "topic": "Operation & maintenance",
+    "level": "Experienced",
+    "kind": "Guide",
+    "summary": "Preserve logs and divide the system into safe, measurable boundaries before replacing parts or resetting evidence.",
+    "outcome": "Divide the system into sections and prove one energy path at a time instead of replacing parts at random.",
+    "reviewed": "2026-07-30",
+    "origin": "Adapted from Solar4U’s original technical chapters and professional reference notes. Manufacturer documents remain linked references; use the current manual for the exact equipment.",
+    "adaptedFrom": {
+      "project": "Solar4U",
+      "commit": "87a91d4db804dee461ce345d8b2f63669cd986c1",
+      "paths": [
+        "app/guides-page.tsx",
+        "app/professional-guide-data.ts"
+      ],
+      "chapter": "troubleshooting",
+      "imported": "2026-10-05",
+      "referenceReviewed": "2026-07-30"
+    },
+    "sections": [
+      {
+        "title": "A repeatable diagnostic order",
+        "bullets": [
+          "Read and record the exact alarm before clearing it.",
+          "Perform a visual and thermal inspection without touching energized conductors.",
+          "Verify source voltage and polarity.",
+          "Check fuses and breakers using an appropriate de-energized test.",
+          "Measure voltage at both sides of each connection under load.",
+          "Rebuild the operating chain one subsystem at a time."
+        ]
+      },
+      {
+        "title": "Common failure patterns",
+        "columns": [
+          "Symptom",
+          "Likely checks"
+        ],
+        "rows": [
+          [
+            "Controller off",
+            "Battery-side voltage, polarity, fuse, required startup order"
+          ],
+          [
+            "PV present but no charge",
+            "MPPT window, battery state, charge limits, disconnects, shade"
+          ],
+          [
+            "Inverter trips on startup",
+            "Surge, battery voltage sag, cable drop, BMS current limit"
+          ],
+          [
+            "Low production",
+            "Shade, orientation, soiling, clipping, failed string, monitoring data"
+          ],
+          [
+            "Hot terminal",
+            "Loose or poor crimp, undersized conductor, damaged terminal"
+          ]
+        ]
+      },
+      {
+        "title": "Know when to stop",
+        "paragraphs": [
+          "Burning odor, smoke, swelling batteries, arcing, damaged insulation, repeated unexplained trips, or uncertainty around service/grid conductors requires qualified help. Do not bypass a protective device to make a fault disappear."
+        ]
+      },
+      {
+        "title": "Design context",
+        "paragraphs": [
+          "Troubleshoot from evidence and boundaries. Capture the fault time, operating mode, weather, load, state of charge, temperatures, alarms, recent changes, and whether the problem is repeatable. Preserve logs before resets erase context.",
+          "Divide the system at safe test points: source, protection, conductor, conversion equipment, storage, distribution, and load. Compare measured values with the as-built baseline and manufacturer limits; change only one controlled variable at a time."
+        ]
+      },
+      {
+        "title": "Reference checklist",
+        "columns": [
+          "Field",
+          "Reference",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "No production",
+            "Irradiance → AC",
+            "Check source voltage, disconnects/OCPD, MPPT state, alarms, and grid status."
+          ],
+          [
+            "Low battery",
+            "Energy balance",
+            "Compare load, charge energy, temperature, settings, and actual capacity."
+          ],
+          [
+            "Hot connection",
+            "Stop + isolate",
+            "Do not normalize odor, discoloration, melting, or repeated trips."
+          ]
+        ]
+      },
+      {
+        "title": "Controller shows PV voltage but no charge",
+        "paragraphs": [
+          "The display reports 145 V PV and zero battery current on a sunny day."
+        ],
+        "bullets": [
+          "Battery may be full or charge-limited",
+          "PV input may be below start power under shade",
+          "BMS/temperature/communication may block charge"
+        ],
+        "callout": "Read controller state and alarms before disconnecting anything. Confirm battery acceptance and operating conditions, then follow the manufacturer’s diagnostic tree."
+      },
+      {
+        "title": "Evidence before intervention",
+        "paragraphs": [
+          "Record timestamp, irradiance, temperature, operating mode, state of charge, load, alarm history, firmware/settings, recent changes, and whether the fault repeats. Compare against commissioning baselines and peer strings or channels.",
+          "Use safe isolation and live-dead-live verification before connector, fuse, termination, insulation, or continuity work. Do not disconnect PV connectors under load, tighten a hot connection live, bypass a BMS, or increase fuse size to suppress repeated operation."
+        ]
+      },
+      {
+        "title": "Ground-fault alarm after rain",
+        "paragraphs": [
+          "An inverter reports a recurring insulation or ground-fault alarm after wet weather.",
+          "Qualified personnel isolate all sources, prove absence where required, disconnect sensitive electronics according to instructions, segment the circuit, perform appropriate insulation testing, and inspect pinches, boxes, connectors, backsheets, and water paths. Replace damaged or cross-mated connector pairs as complete approved assemblies."
+        ],
+        "bullets": [
+          "The alarm clears after drying.",
+          "One rooftop cable route crosses a sharp edge.",
+          "A connector pair was assembled from visually compatible but different manufacturers."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "NREL · Best Practices for PV and Energy Storage O&M",
+        "url": "https://www.nrel.gov/docs/fy19osti/73822.pdf"
+      },
+      {
+        "label": "Fluke · Basic electrical measurement guidance",
+        "url": "https://www.fluke.com/en-ie/learn/blog/electrical/basic-electrical-measurement-faq"
+      },
+      {
+        "label": "OSHA · Solar Energy: Electrical Safety",
+        "url": "https://www.osha.gov/green-jobs/solar/electrical"
+      },
+      {
+        "label": "Fluke · Absence-of-voltage testing",
+        "url": "https://www.fluke.com/en-us/learn/blog/electrical/absence-of-voltage-testing"
+      }
+    ]
+  },
+  {
+    "slug": "permits-and-inspection",
+    "title": "Permits, utility review, and inspection packet",
+    "topic": "Buying and ownership",
+    "level": "All levels",
+    "kind": "Guide",
+    "summary": "Build a revision-controlled submission set that satisfies electrical, structural, fire, building, utility, and manufacturer requirements for the actual jurisdiction.",
+    "outcome": "Treat approval as a design input. Requirements vary by address, equipment, system type, and the locally adopted code.",
+    "reviewed": "2026-07-30",
+    "origin": "Adapted from Solar4U’s original technical chapters and professional reference notes. Manufacturer documents remain linked references; use the current manual for the exact equipment.",
+    "adaptedFrom": {
+      "project": "Solar4U",
+      "commit": "87a91d4db804dee461ce345d8b2f63669cd986c1",
+      "paths": [
+        "app/guides-page.tsx",
+        "app/professional-guide-data.ts"
+      ],
+      "chapter": "permits",
+      "imported": "2026-10-05",
+      "referenceReviewed": "2026-07-30"
+    },
+    "sections": [
+      {
+        "title": "Ask before buying",
+        "bullets": [
+          "Which building, electrical, fire, zoning, or historic approvals apply?",
+          "Is utility interconnection required?",
+          "Which code editions and local amendments are enforced?",
+          "Are stamped structural or electrical documents required?",
+          "What setbacks, access pathways, rapid-shutdown, placard, and service-upgrade rules apply?",
+          "Which equipment listings and approved product directories are accepted?"
+        ]
+      },
+      {
+        "title": "Build the packet",
+        "bullets": [
+          "Site plan and array layout",
+          "Roof attachment or foundation detail",
+          "Single-line electrical diagram",
+          "Equipment datasheets and certifications",
+          "Conductor, raceway, voltage-drop, ampacity, and protection calculations",
+          "Battery location, capacity, chemistry, clearances, and emergency information",
+          "Placard schedule, shutdown procedure, and commissioning results"
+        ]
+      },
+      {
+        "title": "Inspection readiness",
+        "paragraphs": [
+          "Make every disconnect accessible and label it consistently with the drawings. Keep torque records, photographs of concealed work, manuals, and revised drawings available."
+        ],
+        "callout": "Statements such as 'off-grid never needs a permit' are unreliable. Confirm with the authority having jurisdiction for the actual installation."
+      },
+      {
+        "title": "Design context",
+        "paragraphs": [
+          "The authority having jurisdiction, fire/building officials, and utility may review different parts of the same project. Confirm the adopted code editions and local amendments before final design; permit requirements, fees, forms, setbacks, and inspection sequence vary by place.",
+          "A complete packet commonly includes a site plan, roof/array layout, structural information, one-line diagram, equipment specifications/listings, conductor and protection schedule, labels, rapid-shutdown approach where applicable, battery location, and interconnection documents."
+        ]
+      },
+      {
+        "title": "Reference checklist",
+        "columns": [
+          "Field",
+          "Reference",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "Permit",
+            "Before installation",
+            "Local building/electrical approval is normally required for rooftop work."
+          ],
+          [
+            "Inspection",
+            "Installed work",
+            "The as-built system must match approved documents or revisions."
+          ],
+          [
+            "Utility PTO",
+            "Before export",
+            "Permission to operate follows utility interconnection requirements."
+          ]
+        ]
+      },
+      {
+        "title": "Revision during installation",
+        "paragraphs": [
+          "The specified module is unavailable after permit approval."
+        ],
+        "bullets": [
+          "Replacement has different dimensions",
+          "Voc/Isc and clamp zones change",
+          "Array layout and calculations may change"
+        ],
+        "callout": "Submit the required revision and update the drawing/spec sheets before treating the replacement as equivalent. Keep the approved and as-built sets aligned."
+      },
+      {
+        "title": "The AHJ and utility review different boundaries",
+        "paragraphs": [
+          "Confirm adopted code editions, local amendments, forms, fees, structural criteria, fire access, battery requirements, inspection sequence, and utility interconnection rules before final design. A permit approval and utility permission to operate are separate gates.",
+          "The packet typically includes site/roof plans, structural notes, attachment schedule, module clamp zones, one-line, equipment schedule/listings, conductor and protection schedule, grounding/bonding, labels, rapid shutdown, battery location, manufacturer data, and interconnection documents."
+        ]
+      },
+      {
+        "title": "Revision control",
+        "steps": [
+          "Record jurisdiction and adopted editions.",
+          "Freeze exact equipment model suffixes.",
+          "Submit site, structural, electrical, and product documents.",
+          "Log reviewer comments and response revisions.",
+          "Record field changes before concealment.",
+          "Submit required revisions.",
+          "Preserve approved and as-built sets.",
+          "Obtain inspection and utility permission to operate."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Department of Energy · Permitting and Inspection for Rooftop Solar",
+        "url": "https://www.energy.gov/cmei/systems/permitting-and-inspection-rooftop-solar"
+      },
+      {
+        "label": "U.S. Department of Energy · SolarAPP+ overview",
+        "url": "https://www.energy.gov/cmei/systems/streamlining-solar-permitting-solarapp"
+      },
+      {
+        "label": "IronRidge · XR Flush Mount Installation Manual",
+        "url": "https://files.ironridge.com/pitched-roof-mounting/resources/brochures/IronRidge_Flush_Mount_Installation_Manual.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "maintenance",
+    "title": "Maintenance, records, and expansion",
+    "topic": "Operation & maintenance",
+    "level": "All levels",
+    "kind": "Guide",
+    "summary": "Use weather-aware performance trends, documented inspection, safe corrective work, configuration control, and an updated as-built record throughout the asset life.",
+    "outcome": "A quiet system still needs trend review, mechanical inspection, cleaning when warranted, and controlled change management.",
+    "reviewed": "2026-07-30",
+    "origin": "Adapted from Solar4U’s original technical chapters and professional reference notes. Manufacturer documents remain linked references; use the current manual for the exact equipment.",
+    "adaptedFrom": {
+      "project": "Solar4U",
+      "commit": "87a91d4db804dee461ce345d8b2f63669cd986c1",
+      "paths": [
+        "app/guides-page.tsx",
+        "app/professional-guide-data.ts"
+      ],
+      "chapter": "maintenance",
+      "imported": "2026-10-05",
+      "referenceReviewed": "2026-07-30"
+    },
+    "sections": [
+      {
+        "title": "Routine observations",
+        "bullets": [
+          "Compare monthly production with weather and prior years.",
+          "Review battery minimum/maximum state of charge and temperature.",
+          "Check logs for repeated trips, clipping, communication loss, or cell imbalance.",
+          "Inspect accessible cables, support, connectors, enclosures, corrosion, pests, and water entry.",
+          "Follow manufacturer schedules for torque or thermal inspection; do not invent retorque intervals."
+        ]
+      },
+      {
+        "title": "Cleaning and weather",
+        "bullets": [
+          "Clean only when soiling materially affects output.",
+          "Work when modules are cool and follow safe roof-access practices.",
+          "Avoid abrasive tools, pressure washing, and chemicals not approved by the module maker.",
+          "Use approved methods for snow; never strike or step on modules."
+        ]
+      },
+      {
+        "title": "Expansion is a redesign",
+        "paragraphs": [
+          "New panels, batteries, controllers, or inverters can change voltage, current, fault current, settings, protection, grounding, thermal loading, and approvals. Update calculations and drawings before making the change."
+        ],
+        "bullets": [
+          "Archive original and revised settings.",
+          "Recommission affected subsystems.",
+          "Update labels and the emergency shutdown plan."
+        ]
+      },
+      {
+        "title": "Design context",
+        "paragraphs": [
+          "Maintenance begins at design: accessible disconnects, supported wiring, replaceable equipment, good drainage, clear labels, monitoring, and preserved documentation reduce lifetime risk. Use the manufacturer’s schedule and site conditions rather than inventing a universal cleaning or retorque interval.",
+          "Normalize production for weather before declaring a fault. Trend monthly energy, inverter availability, clipping, battery state-of-charge extremes, temperature, alarms, and communication gaps. Inspect after severe weather and after any contractor works near the array or electrical equipment."
+        ]
+      },
+      {
+        "title": "Reference checklist",
+        "columns": [
+          "Field",
+          "Reference",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "Monthly",
+            "Trend review",
+            "Compare production, weather, alarms, battery range, and prior periods."
+          ],
+          [
+            "Periodic",
+            "Physical inspection",
+            "Look for wire movement, pests, corrosion, water entry, damage, and label condition."
+          ],
+          [
+            "After change",
+            "Recommission",
+            "Update settings, drawings, photos, labels, and baseline values."
+          ]
+        ]
+      },
+      {
+        "title": "Ten-percent production decline",
+        "paragraphs": [
+          "This spring’s output is below last spring’s total."
+        ],
+        "bullets": [
+          "Weather was cloudier",
+          "One inverter channel has repeated communication gaps",
+          "New tree growth shades the morning array"
+        ],
+        "callout": "Separate weather, availability, and shade effects before cleaning or replacing parts. Use monitoring channels and a safe inspection to locate the actual loss."
+      },
+      {
+        "title": "Design for maintenance before installation",
+        "paragraphs": [
+          "Accessible disconnects, supported conductors, drainage, service clearances, monitoring, replaceable equipment, readable labels, and preserved documentation determine whether later work can be safe and efficient.",
+          "Normalize production for weather and availability before declaring a fault. Track inverter clipping and derating, communications, battery state and temperature, repeated trips, peer-string differences, soiling, shade growth, storm damage, settlement, corrosion, water entry, pests, and failed wire support."
+        ]
+      },
+      {
+        "title": "Controlled change",
+        "steps": [
+          "Preserve the current baseline.",
+          "Review the proposed component and current manuals.",
+          "Repeat voltage/current/fault/protection/structural checks.",
+          "Obtain required approval.",
+          "Install and recommission the affected subsystem.",
+          "Update settings, labels, drawings, photos, and warranty records."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "NREL · Best Practices for PV and Energy Storage O&M",
+        "url": "https://www.nrel.gov/docs/fy19osti/73822.pdf"
+      },
+      {
+        "label": "NREL · O&M design and wire-management summary",
+        "url": "https://www.nrel.gov/docs/fy17osti/68281.pdf"
+      },
+      {
+        "label": "Victron Energy · Wiring Unlimited",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/index-en.html"
+      }
+    ]
+  },
+  {
+    "slug": "module-datasheet",
+    "title": "PV module anatomy and datasheet literacy",
+    "topic": "Panels & technology",
+    "level": "All levels",
+    "kind": "Guide",
+    "summary": "Read a module datasheet and installation manual together: electrical boundary values, temperature behavior, mechanical loads, clamp zones, connectors, dimensions, and warranty language all affect design.",
+    "outcome": "Read electrical, mechanical, temperature, connector, clamp-zone, load, and warranty fields as one product definition.",
+    "reviewed": "2026-07-30",
+    "origin": "Adapted from Solar4U’s original technical chapters and professional reference notes. Manufacturer documents remain linked references; use the current manual for the exact equipment.",
+    "adaptedFrom": {
+      "project": "Solar4U",
+      "commit": "87a91d4db804dee461ce345d8b2f63669cd986c1",
+      "paths": [
+        "app/guides-page.tsx",
+        "app/professional-guide-data.ts"
+      ],
+      "chapter": "module-datasheet",
+      "imported": "2026-10-05",
+      "referenceReviewed": "2026-07-30"
+    },
+    "sections": [
+      {
+        "title": "The module is an electrical and structural assembly",
+        "paragraphs": [
+          "Front glass, encapsulation, cells and interconnects, rear glass or backsheet, frame, junction box, bypass diodes, leads, seals, and connectors behave as a complete manufactured product. Cell technology and nameplate watts alone do not establish system fit."
+        ],
+        "bullets": [
+          "Use Pmax, Voc, Vmp, Isc, Imp, tolerance, temperature coefficients, and NMOT in the electrical model.",
+          "Use dimensions, weight, frame profile, cable length, connector family, design/test loads, and clamp zones in layout and structural review.",
+          "Read the installation manual and regional certification documents alongside the sales datasheet."
+        ]
+      },
+      {
+        "title": "A compatibility counterexample",
+        "paragraphs": [
+          "A module may appear to fit a microinverter by wattage while exceeding its maximum module Isc, or fit an MPPT at STC while exceeding absolute voltage after cold correction. Every relevant nameplate field must pass independently."
+        ],
+        "callout": "Maximum system voltage and maximum series-fuse rating are boundary values, not targets or automatic permission for a particular string."
+      },
+      {
+        "title": "Datasheet anatomy",
+        "paragraphs": [
+          "Pmax, Voc, Vmp, Isc, Imp, efficiency, tolerance, temperature coefficients, and NMOT describe electrical behavior under stated conditions. Maximum system voltage and maximum series-fuse rating are system constraints, not normal operating targets.",
+          "Dimensions, weight, frame profile, cable length, connector family, junction-box rating, fire classification, front/rear design loads, test loads, and approved clamp zones determine structural and layout compatibility. Product and performance warranties cover different obligations."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Department of Energy · Solar Photovoltaic System Design Basics",
+        "url": "https://www.energy.gov/cmei/systems/solar-photovoltaic-system-design-basics"
+      },
+      {
+        "label": "Sandia PVPMC · PV Performance Modeling Collaborative",
+        "url": "https://pvpmc.sandia.gov/modeling-guide/"
+      },
+      {
+        "label": "IronRidge · XR Flush Mount Installation Manual",
+        "url": "https://files.ironridge.com/pitched-roof-mounting/resources/brochures/IronRidge_Flush_Mount_Installation_Manual.pdf"
+      }
+    ],
+    "tool": {
+      "label": "Array and string calculator",
+      "href": "/guide/calculators?tool=array"
+    }
+  },
+  {
+    "slug": "roof-survey",
+    "title": "Roof survey and structural load path",
+    "topic": "Placement",
+    "level": "Experienced",
+    "kind": "Guide",
+    "summary": "Document roof covering, age, drainage, framing, decking, damage, roof zones, loads, obstructions, access, fire pathways, electrical routing, and reroof implications before choosing attachments.",
+    "outcome": "Document the roof, structure, weather exposure, drainage, access, and electrical route before selecting an attachment.",
+    "reviewed": "2026-07-30",
+    "origin": "Adapted from Solar4U’s original technical chapters and professional reference notes. Manufacturer documents remain linked references; use the current manual for the exact equipment.",
+    "adaptedFrom": {
+      "project": "Solar4U",
+      "commit": "87a91d4db804dee461ce345d8b2f63669cd986c1",
+      "paths": [
+        "app/guides-page.tsx",
+        "app/professional-guide-data.ts"
+      ],
+      "chapter": "roof-survey",
+      "imported": "2026-10-05",
+      "referenceReviewed": "2026-07-30"
+    },
+    "sections": [
+      {
+        "title": "Survey the building, not only the sunlight",
+        "bullets": [
+          "Roof age, covering type/manufacturer, condition, prior leaks, and reroof timeline",
+          "Deck thickness and condition, rafter/truss size and spacing, attic access, and load-path evidence",
+          "Slope, dimensions, roof zones, valleys, hips, ridges, parapets, drains, and obstructions",
+          "Locally adopted wind, exposure, topography, snow/drift, seismic, and dead-load criteria",
+          "Fire pathways, service access, module handling, fall protection, and rescue",
+          "Conduit route, attic penetrations, equipment location, and utility interface"
+        ]
+      },
+      {
+        "title": "What the structural drawing must show",
+        "paragraphs": [
+          "Trace module frame to clamp, rail or direct attachment, roof interface, fastener, decking or structural member, and building. Attachment spacing cannot be copied from a neighboring project."
+        ],
+        "callout": "Marketing wind/snow envelopes and generic span tables are not site-specific structural approval."
+      },
+      {
+        "title": "Survey the complete load and water path",
+        "paragraphs": [
+          "Record roof slope, covering manufacturer/type/condition, deck thickness, framing size and spacing, attic access, prior leaks, underlayment, valleys, hips, ridges, parapets, drains, snow-retention behavior, rooftop equipment, and the proposed conductor path.",
+          "Structural design depends on locally adopted wind, exposure, topography, building height and roof zones, snow and drift, seismic and dead-load combinations, module geometry and clamp zones, substrate capacity, and engineered attachment schedules."
+        ]
+      },
+      {
+        "title": "Survey deliverables",
+        "steps": [
+          "Scaled roof plan and photographs",
+          "Roof-covering and age record",
+          "Framing/deck evidence",
+          "Damage and leak notes",
+          "Obstruction, access, and fire-path dimensions",
+          "Site wind/snow/seismic criteria",
+          "Array and attachment concept",
+          "Electrical route and equipment locations",
+          "Reroof and warranty coordination notes"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "IronRidge · XR Flush Mount Installation Manual",
+        "url": "https://files.ironridge.com/pitched-roof-mounting/resources/brochures/IronRidge_Flush_Mount_Installation_Manual.pdf"
+      },
+      {
+        "label": "Unirac · SolarMount Installation Guide",
+        "url": "https://unirac.com/document/solarmount-install-guide/"
+      },
+      {
+        "label": "U.S. Department of Energy · Permitting and Inspection for Rooftop Solar",
+        "url": "https://www.energy.gov/cmei/systems/permitting-and-inspection-rooftop-solar"
+      }
+    ]
+  },
+  {
+    "slug": "roof-mounting-families",
+    "title": "Roof rails, rail-less systems, and attachment families",
+    "topic": "Placement",
+    "level": "Experienced",
+    "kind": "Guide",
+    "summary": "Compare rail-based, rail-less, asphalt-shingle, tile, standing-seam, and exposed-fastened systems by their exact load path and current evaluated assembly.",
+    "outcome": "Compare asphalt-shingle, tile, standing-seam, exposed-fastened metal, rail-based, and rail-less systems by their tested load and water paths.",
+    "reviewed": "2026-07-30",
+    "origin": "Adapted from Solar4U’s original technical chapters and professional reference notes. Manufacturer documents remain linked references; use the current manual for the exact equipment.",
+    "adaptedFrom": {
+      "project": "Solar4U",
+      "commit": "87a91d4db804dee461ce345d8b2f63669cd986c1",
+      "paths": [
+        "app/guides-page.tsx",
+        "app/professional-guide-data.ts"
+      ],
+      "chapter": "roof-systems",
+      "imported": "2026-10-05",
+      "referenceReviewed": "2026-07-30"
+    },
+    "sections": [
+      {
+        "title": "Roof-covering families",
+        "bullets": [
+          "Asphalt shingle: flashed rafter attachment, evaluated deck mount, or listed butyl attachment",
+          "Tile: profile-specific hook, replacement tile, knockout flashing, or standoff with underlayment detailing",
+          "Standing seam: tested nonpenetrating clamp matched to seam geometry, material, gauge, and clip system",
+          "Exposed-fastened metal: rib-crown bracket or structural attachment with specified fasteners and gasket compression"
+        ]
+      },
+      {
+        "title": "Rails versus rail-less",
+        "paragraphs": [
+          "Rails add layout tolerance, leveling, wire channels, and familiar module service, but introduce span, cantilever, splice, and thermal-break rules. Rail-less systems reduce long material and roof handling, but demand precise layout, module compatibility, controlled thermal movement, and a replacement strategy."
+        ],
+        "callout": "A sealant bead is not a substitute for the tested flashing, gasket, fastener, and drainage-plane sequence."
+      },
+      {
+        "title": "The roof interface controls the hardware",
+        "paragraphs": [
+          "Asphalt shingles may use flashed rafter attachments, evaluated deck mounts, or listed butyl systems. Tile roofs may use hooks, replacement tiles, knockout flashing, or standoffs that transfer load without bearing on fragile tile. Standing-seam clamps require the exact seam, material, gauge, clip spacing, roof-panel capacity, and tested clamp. Exposed-fastened metal attachments require the correct rib geometry, gasket compression, substrate, and fastener path.",
+          "Rail-based systems offer flexible module layout and serviceability but require span, cantilever, splice, thermal, and attachment design. Rail-less systems reduce long material but require precise layout, compatible modules, controlled thermal movement, and a replacement strategy."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "IronRidge · XR Flush Mount Installation Manual",
+        "url": "https://files.ironridge.com/pitched-roof-mounting/resources/brochures/IronRidge_Flush_Mount_Installation_Manual.pdf"
+      },
+      {
+        "label": "SnapNrack · Ultra Rail Installation Manual",
+        "url": "https://res.cloudinary.com/summitpoint/image/upload/v1772487360/SNR_Ultra_Rail_Installation_Manual_v_4_6_1_b751987632.pdf"
+      },
+      {
+        "label": "S-5! · PVKIT 2.0 Installation Guide",
+        "url": "https://f.hubspotusercontent00.net/hubfs/3482954/Resources/Product%20Documents/Solar/PVKIT%202.0/pvkit-2-0-installation.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "flat-roof-mounting",
+    "title": "Low-slope attached and ballasted arrays",
+    "topic": "Placement",
+    "level": "Experienced",
+    "kind": "Guide",
+    "summary": "Design attached or ballasted low-slope systems around roof reserve, wind zones, seismic restraint, membrane compatibility, drainage, pathways, parapets, and exact site ballast/attachment plans.",
+    "outcome": "Coordinate roof reserve, membrane, wind zones, seismic restraint, drainage, pathways, parapets, and the exact site ballast or attachment plan.",
+    "reviewed": "2026-07-30",
+    "origin": "Adapted from Solar4U’s original technical chapters and professional reference notes. Manufacturer documents remain linked references; use the current manual for the exact equipment.",
+    "adaptedFrom": {
+      "project": "Solar4U",
+      "commit": "87a91d4db804dee461ce345d8b2f63669cd986c1",
+      "paths": [
+        "app/guides-page.tsx",
+        "app/professional-guide-data.ts"
+      ],
+      "chapter": "flat-roof",
+      "imported": "2026-10-05",
+      "referenceReviewed": "2026-07-30"
+    },
+    "sections": [
+      {
+        "title": "Ballasted does not mean structure-free",
+        "bullets": [
+          "Wind-tunnel system and site-specific roof-zone design",
+          "Exact block quantity, density, location, clips, trays, and seismic components",
+          "Roof structural reserve, insulation/deck behavior, and concentrated loads",
+          "Membrane compatibility, slip sheets, drainage, access, and roof warranty",
+          "Parapets, row geometry, tilt, module size, fire pathways, and reroof strategy"
+        ]
+      },
+      {
+        "title": "Attached low-slope systems",
+        "paragraphs": [
+          "Positive attachments can reduce ballast but add membrane, flashing, substrate, fastener, pullout, thermal, and warranty requirements. Coordinate the roofing manufacturer and racking attachment documentation."
+        ],
+        "callout": "Never move, omit, or substitute ballast blocks outside the approved site plan."
+      },
+      {
+        "title": "Ballast is a site-specific structural schedule",
+        "paragraphs": [
+          "Roof zones, building height, exposure, parapets, module geometry, row spacing, tilt, seismic conditions, and wind-tunnel coefficients determine ballast. Structural reserve, insulation/deck behavior, membrane protection, slip sheets, drainage, roof warranty, and reroof plans must be coordinated.",
+          "Never move blocks for convenience, substitute block size/density, omit seismic or attachment components, or assume an interior-row layout applies at edges and corners. Attached systems introduce waterproofing and substrate/pullout requirements instead."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Department of Energy · Permitting and Inspection for Rooftop Solar",
+        "url": "https://www.energy.gov/cmei/systems/permitting-and-inspection-rooftop-solar"
+      }
+    ]
+  },
+  {
+    "slug": "ground-and-pole-mounts",
+    "title": "Fixed ground mounts and top-of-pole systems",
+    "topic": "Placement",
+    "level": "Experienced",
+    "kind": "Guide",
+    "summary": "Separate fixed ground and top-of-pole systems, then engineer utilities, soil, frost, drainage, corrosion, foundations, row geometry, bracing, hoisting, conductor movement, and maintenance access.",
+    "outcome": "Engineer foundations, soil, frost, drainage, corrosion, braces, row geometry, hoisting, conductor movement, and maintenance access.",
+    "reviewed": "2026-07-30",
+    "origin": "Adapted from Solar4U’s original technical chapters and professional reference notes. Manufacturer documents remain linked references; use the current manual for the exact equipment.",
+    "adaptedFrom": {
+      "project": "Solar4U",
+      "commit": "87a91d4db804dee461ce345d8b2f63669cd986c1",
+      "paths": [
+        "app/guides-page.tsx",
+        "app/professional-guide-data.ts"
+      ],
+      "chapter": "ground-pole",
+      "imported": "2026-10-05",
+      "referenceReviewed": "2026-07-30"
+    },
+    "sections": [
+      {
+        "title": "Fixed ground structures",
+        "bullets": [
+          "Utility locate, easements, setbacks, flood exposure, and access",
+          "Concrete pier, driven pile, helical pile, ground screw, grade beam, or ballast foundation",
+          "Soil/geotechnical assumptions, frost depth, groundwater, drainage, grading, and corrosion",
+          "Control lines, foundation tolerance, braces, rails/purlins, snow clearance, row spacing, trenching, and vegetation"
+        ]
+      },
+      {
+        "title": "Top-of-pole differences",
+        "paragraphs": [
+          "Pole mounts concentrate array wind and snow loads into a pole and footing. Select the head, beam, pole, footing, hoisting method, tilt positions, conductors, and wind-safe adjustment procedure as one manufacturer/engineered system."
+        ],
+        "callout": "Solar4U must never issue a universal pole diameter, footing diameter, depth, or concrete recipe."
+      },
+      {
+        "title": "The soil and foundation are part of the array",
+        "paragraphs": [
+          "Fixed ground mounts can use concrete piers, driven piles, helical piles, ground screws, grade beams, or ballast. Utility location, geotechnical assumptions, frost depth, groundwater, drainage, grading, corrosion, tolerances, snow clearance, trenching, vegetation, and equipment access belong in the design.",
+          "Top-of-pole mounts create a concentrated overturning moment and require an approved pole, head, footing, hoisting method, tilt hardware, wind-safe adjustment procedure, and conductor routing that tolerates every permitted position."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "IronRidge · Ground Mount Installation Manual",
+        "url": "https://files.ironridge.com/groundmounting/brochures/IronRidge_Ground_Mount_Installation_Manual.pdf"
+      },
+      {
+        "label": "Tamarack Solar · Ground Mount System Installation Manual",
+        "url": "https://tamaracksolar.com/wp-content/uploads/Tamarack-Solar-Ground-Mount-System-Installation-Manual.pdf"
+      },
+      {
+        "label": "MT Solar · Beam Series pole-mount manual",
+        "url": "https://www.mtsolar.us/wp-content/uploads/2025/02/MT-Solar-Beam-Series-Manual-0225.pdf"
+      }
+    ]
+  },
+  {
+    "slug": "solar-canopies",
+    "title": "Solar pergolas, carports, and canopies",
+    "topic": "Placement",
+    "level": "Experienced",
+    "kind": "Guide",
+    "summary": "Treat pergolas, carports, and solar canopies as occupied structures with engineered foundations, framing, clearance, impact protection, drainage, snow behavior, fire access, and coordinated electrical systems.",
+    "outcome": "Treat overhead solar as an occupied structure with engineered framing, drainage, impact protection, access, and coordinated electrical services.",
+    "reviewed": "2026-07-30",
+    "origin": "Adapted from Solar4U’s original technical chapters and professional reference notes. Manufacturer documents remain linked references; use the current manual for the exact equipment.",
+    "adaptedFrom": {
+      "project": "Solar4U",
+      "commit": "87a91d4db804dee461ce345d8b2f63669cd986c1",
+      "paths": [
+        "app/guides-page.tsx",
+        "app/professional-guide-data.ts"
+      ],
+      "chapter": "solar-canopies",
+      "imported": "2026-10-05",
+      "referenceReviewed": "2026-07-30"
+    },
+    "sections": [
+      {
+        "title": "Dual-use structure",
+        "bullets": [
+          "Foundations plus wind, snow, seismic, and overhead-module design",
+          "Vehicle and pedestrian clearance, accessibility, bollards, and impact zones",
+          "Shade-only versus genuinely weather-managed roof",
+          "Module joints, gaskets, gutters, downspouts, drip lines, and snow shedding",
+          "Fire access, emergency disconnects, equipment locations, grounding, lighting, EV rough-in, and conduit",
+          "Corrosion, thermal movement, maintenance access, and module replacement"
+        ]
+      },
+      {
+        "title": "Architectural modules and conventional modules",
+        "paragraphs": [
+          "Some canopy systems use purpose-designed glass modules and integrated water management. Ordinary framed modules mounted over a pergola do not automatically create a waterproof roof or approved overhead glazing system."
+        ],
+        "callout": "A canopy or pergola normally requires structural and building review beyond ordinary ground-rack approval."
+      },
+      {
+        "title": "A module array is not automatically a roof",
+        "paragraphs": [
+          "Determine whether the canopy provides shade only or a genuinely weather-managed enclosure. Module joints, seals, gutters, downspouts, thermal movement, snow shedding, drip lines, corrosion, lighting, EV equipment, conduit, grounding, accessibility, and emergency-disconnect placement must be designed together.",
+          "Vehicle clearances and bollards, pedestrian paths, fire access, foundations, wind/snow/seismic loads, overhead glass/module approval, and local building permits make a canopy materially different from ordinary ground racking."
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "label": "U.S. Department of Energy · Permitting and Inspection for Rooftop Solar",
+        "url": "https://www.energy.gov/cmei/systems/permitting-and-inspection-rooftop-solar"
+      },
+      {
+        "label": "U.S. Department of Energy · Solar Photovoltaic System Design Basics",
+        "url": "https://www.energy.gov/cmei/systems/solar-photovoltaic-system-design-basics"
+      }
+    ]
+  }
+]
