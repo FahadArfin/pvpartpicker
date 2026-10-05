@@ -24,6 +24,7 @@ export async function readCatalog(db:D1Database,initial:CatalogSnapshot,evidence
   for(const mapping of mappings.results){const target=productMap.get(mapping.product_id);if(!target)continue;for(const p of productMap.values()){if(p.id===target.id)continue;const offer=p.offers.find(o=>o.id===mapping.id);if(offer){p.offers=p.offers.filter(o=>o.id!==mapping.id);target.offers.push(offer);}}}
   const reports=new Map<string,CollectionReport>();
   for(const row of runs.results)for(const report of JSON.parse(row.json) as CollectionReport[])if(!reports.has(report.retailerId))reports.set(report.retailerId,report);
+  for(const report of initial.reports)if(!reports.has(report.retailerId))reports.set(report.retailerId,report);
   return {products:[...productMap.values()].filter(p=>p.offers.length>0),reports:reports.size?[...reports.values()]:initial.reports,generatedAt:runs.results[0]?.created_at||initial.generatedAt,storage:'database'};
  }catch{return {...enrichedInitial,storage:'snapshot_unavailable_database'};}
 }

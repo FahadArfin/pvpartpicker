@@ -267,3 +267,17 @@
 
 /* Expanded tier filters keep compact controls usable at intermediate widths. */
 .tier-context strong small{font-weight:400;margin-left:8px;color:#6c7769}.tier-format select{min-width:150px}.tier-control-bar>label{flex-shrink:0}@media(max-width:550px){.tier-format{width:100%}.tier-format select{width:100%;max-width:none}.tier-context strong small{display:inline-block;margin-left:5px}}
+/* Compact category facets stay visible above the inventory, including on phones. */
+.catalog-quick-filters{padding:13px 0 15px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:16px}
+.quick-filter-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:9px;font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.quick-filter-heading button{text-transform:none;letter-spacing:0;color:var(--green);font-size:12px;font-weight:500;text-decoration:underline;text-underline-offset:3px}
+.quick-filter-group{display:flex;align-items:baseline;gap:10px;margin-top:7px}
+.quick-filter-label{flex:0 0 106px;font-size:11px;font-weight:600;color:var(--muted)}
+.quick-filter-chips{display:flex;flex-wrap:wrap;gap:6px;min-width:0}
+.quick-filter-chips button{display:inline-flex;align-items:center;gap:7px;min-height:32px;border:1px solid var(--line);border-radius:999px;padding:5px 11px;background:var(--surface,#fff);font-size:12px;line-height:1.25;color:var(--ink);transition:background .12s,border-color .12s}
+.quick-filter-chips button small{font-size:10px;opacity:.65;font-variant-numeric:tabular-nums}
+.quick-filter-chips button:hover:not(:disabled){border-color:var(--green);background:#edf5f0}
+.quick-filter-chips button[aria-pressed=true]{background:var(--green,#1c6650);border-color:var(--green,#1c6650);color:white}
+.quick-filter-chips button:disabled{opacity:.42;cursor:not-allowed}
+.quick-filter-chips button:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+@media(max-width:720px){.quick-filter-group{display:block;margin-top:10px}.quick-filter-label{display:block;margin-bottom:5px}.quick-filter-chips{gap:5px}.quick-filter-chips button{min-height:36px;padding:7px 10px;font-size:11px}.quick-filter-heading{margin-bottom:4px}}

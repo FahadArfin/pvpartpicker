@@ -51,6 +51,12 @@ test('Shopify variants retain unknown stock and reject cross-origin offer URLs',
  const result=await scrapeSource({site:{...site,adapter:'shopify'},knownUrls:[]},h.hooks,async url=>({status:200,text:url.endsWith('/robots.txt')?'':feed}));
  assert.equal(result.status,'succeeded');assert.equal(h.saved[0].offers[0].stock,'unknown');assert.equal(h.saved[0].offers[0].sku,'123');
 });
+test('Shopify collection sources honor their configured feed rather than crawling the whole store',async()=>{
+ const h=makeHooks(),urls:string[]=[];
+ const feed=JSON.stringify({products:[{title:'10 AWG PV Wire 100 ft',handle:'wire',variants:[{id:123,price:'75',title:'Default Title',available:true}]}]});
+ await scrapeSource({site:{...site,adapter:'shopify',startPath:'/collections/solar-cable/products.json'},knownUrls:[]},h.hooks,async url=>{urls.push(url);return {status:200,text:url.endsWith('/robots.txt')?'':feed};});
+ assert.equal(urls[1],site.origin+'/collections/solar-cable/products.json?limit=250&page=1');assert.equal(h.saved[0].offers[0].price,75);
+});
 test('source redirects to another origin fail without contacting the destination',async()=>{
  const h=makeHooks();let n=0;const result=await scrapeSource({site,knownUrls:[]},h.hooks,async()=>{n++;return {status:302,location:'https://other-store.com/private',text:''};});
  assert.equal(result.status,'failed');assert.equal(n,1);assert.equal(h.saved.length,0);

@@ -9,7 +9,7 @@ const presentJob=(r:JobRow)=>({id:r.id,siteId:r.site_id,status:r.status,site:JSO
 export async function seedScraperSites(db:D1Database){
  if(seeded.has(db))return;
  const now=iso();await db.batch(retailers.map(r=>{
-  const site:ScraperSite={id:r.id,name:r.name,origin:r.origin,enabled:true,adapter:['renogy','shopsolar','emporia'].includes(r.id)?'shopify':r.id==='santan-solar'?'woocommerce':'sitemap',startPath:r.id==='signature-solar'?'/xmlsitemap.php?type=products&page=1':'/sitemap.xml',urls:[],schedule:'interval',frequencyMinutes:360,dailyTime:'06:17',weekdays:[0,1,2,3,4,5,6],delaySeconds:10,jitterSeconds:2,maxPages:24,usdConfirmed:true,feedPages:['renogy','santan-solar'].includes(r.id)?2:1};
+  const site:ScraperSite={id:r.id,name:r.name,origin:r.origin,enabled:true,adapter:r.adapter||(['renogy','shopsolar','emporia'].includes(r.id)?'shopify':r.id==='santan-solar'?'woocommerce':'sitemap'),startPath:r.startPath||(r.id==='signature-solar'?'/xmlsitemap.php?type=products&page=1':'/sitemap.xml'),urls:r.urls||[],schedule:'interval',frequencyMinutes:360,dailyTime:'06:17',weekdays:[0,1,2,3,4,5,6],delaySeconds:10,jitterSeconds:2,maxPages:24,usdConfirmed:true,feedPages:['renogy','santan-solar'].includes(r.id)?2:1};
   return db.prepare('INSERT OR IGNORE INTO scraper_sites (id,origin,json,next_at,updated_at) VALUES (?,?,?,?,?)').bind(r.id,r.origin,JSON.stringify(site),now,now);
  }));seeded.add(db);
 }

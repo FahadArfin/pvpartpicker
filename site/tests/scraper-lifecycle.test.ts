@@ -4,12 +4,15 @@ import {DatabaseSync} from 'node:sqlite';
 import {readFileSync,readdirSync} from 'node:fs';
 import {scraperDashboard,scraperOwnerAction,scraperWorkerAction,scraperJobEvents} from '../lib/scraper-service.ts';
 import {emptyProgress} from '../lib/scraper-config.ts';
+import {retailers} from '../lib/retailers.ts';
 function database(){
  const sql=new DatabaseSync(':memory:');for(const name of readdirSync(new URL('../drizzle/',import.meta.url)).filter(n=>n.endsWith('.sql')).sort())sql.exec(readFileSync(new URL('../drizzle/'+name,import.meta.url),'utf8'));
  const db={prepare(query:string){let args:any[]=[];const stmt=sql.prepare(query);const wrapper={bind(...values:any[]){args=values;return wrapper;},async all(){return {results:stmt.all(...args)};},async first(){return stmt.get(...args)||null;},async run(){return {meta:{changes:Number(stmt.run(...args).changes)}};}};return wrapper;},async batch(statements:any[]){sql.exec('BEGIN');try{const result=[];for(const s of statements)result.push(await s.run());sql.exec('COMMIT');return result;}catch(e){sql.exec('ROLLBACK');throw e;}}};return {db:db as unknown as D1Database,sql};
 }
 test('real SQLite queue deduplicates active runs, snapshots settings and honors pause/cancellation',async()=>{
- const {db,sql}=database();const first=await scraperDashboard(db);assert.equal(first.sites.length,7);
+ const {db,sql}=database();const first=await scraperDashboard(db);assert.equal(first.sites.length,retailers.length);
+ assert.equal(first.sites.find(s=>s.id==='windynation')?.startPath,'/collections/solar-cable/products.json');
+ assert.equal(first.sites.find(s=>s.id==='temco')?.adapter,'pages');
  for(const s of first.sites)await scraperOwnerAction(db,{action:'save',id:s.id,site:{...s,enabled:false}});
  const source={...first.sites[0],enabled:true,schedule:'manual',delaySeconds:30};await scraperOwnerAction(db,{action:'save',id:source.id,site:source});
  await scraperOwnerAction(db,{action:'queue',id:source.id});await scraperOwnerAction(db,{action:'queue',id:source.id});assert.equal((await scraperDashboard(db)).jobs.length,1);

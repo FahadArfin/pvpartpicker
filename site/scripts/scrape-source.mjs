@@ -35,7 +35,8 @@ export async function scrapeSource(job,{event,publish},transport=fetchSource){
    progress.planned=site.feedPages;await report();
    for(let page=1;page<=site.feedPages;page++){
     if(site.adapter==='shopify'){
-     const data=JSON.parse(await request(site.origin+`/products.json?limit=250&page=${page}`));if(!Array.isArray(data.products))throw new Error('Source is not a Shopify product feed');
+     const feed=new URL(/\/products\.json(?:\?|$)/.test(site.startPath)?site.startPath:'/products.json',site.origin);feed.searchParams.set('limit','250');feed.searchParams.set('page',String(page));
+     const data=JSON.parse(await request(feed.href));if(!Array.isArray(data.products))throw new Error('Source is not a Shopify product feed');
      for(const p of data.products)for(const v of p.variants||[]){const name=text(p.title)+(v.title&&v.title!=='Default Title'?' — '+v.title:'');if(!classify(name))continue;synthetic({'@type':'Product',name,description:p.body_html||'',image:p.images?.[0]?.src||'',sku:String(v.id),brand:p.vendor,offers:{'@type':'Offer',price:v.price,referencePrice:v.compare_at_price,priceCurrency:'USD',availability:v.available===true?'https://schema.org/InStock':v.available===false?'https://schema.org/OutOfStock':'',url:site.origin+`/products/${p.handle}?variant=${v.id}`}});}
     }else{
      const rows=JSON.parse(await request(site.origin+`/wp-json/wc/store/v1/products?per_page=100&page=${page}`));if(!Array.isArray(rows))throw new Error('Source is not a WooCommerce Store API feed');

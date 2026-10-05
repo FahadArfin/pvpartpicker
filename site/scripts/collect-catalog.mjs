@@ -31,9 +31,9 @@ async function source(retailer) {
     robots = await request(retailer.origin + '/robots.txt', true);
     if (!robotsAllows(robots, '/')) throw new Error('robots_disallows_site');
     const delays = [...robots.matchAll(/crawl-delay:\s*(\d+)/gi)].map(m => Number(m[1])); if (delays.some(d => d > 10)) { reports.push({ retailerId: retailer.id, retailer: retailer.name, status: 'policy_review', products: 0, checkedAt: observedAt, message: 'Requires slower adapter for published crawl delay.' }); return; }
-    if (['renogy', 'emporia', 'shopsolar'].includes(retailer.id)) {
+    if (retailer.adapter==='shopify'||['renogy', 'emporia', 'shopsolar'].includes(retailer.id)) {
       for (let page = 1; page <= (retailer.id === 'renogy' ? 2 : 1); page++) {
-        const feedUrl = `${retailer.origin}/products.json?limit=250&page=${page}`;
+        const feedUrl = `${retailer.origin}${retailer.startPath||'/products.json'}?limit=250&page=${page}`;
         const data = JSON.parse(await request(feedUrl));
         for (const p of data.products || []) for (const v of p.variants || []) {
           const name = serialize(p.title) + (v.title && v.title !== 'Default Title' ? ' — ' + v.title : ''); if (!classify(name)) continue;
@@ -41,6 +41,8 @@ async function source(retailer) {
           synthetic(name, p.body_html || '', p.images?.[0]?.src || '', String(v.id), v.price, v.available === true, url, p.vendor);
         }
       }
+    } else if(retailer.adapter==='pages') {
+      for(const url of (retailer.urls||[]).slice(0,maxPages))collect(await request(url),url);
     } else if (retailer.id === 'santan-solar') {
       for (let page = 1; page <= 2; page++) {
         const rows = JSON.parse(await request(`${retailer.origin}/wp-json/wc/store/v1/products?per_page=100&page=${page}`));

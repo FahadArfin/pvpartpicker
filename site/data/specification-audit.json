@@ -1,42 +1,42 @@
 {
-  "generatedAt": "2026-10-05T07:53:29.844Z",
-  "products": 1304,
+  "generatedAt": "2026-10-05T10:00:44.208Z",
+  "products": 1477,
   "pages": 648,
   "pageFailures": [],
   "downloadedDocuments": 410,
   "datasheetProducts": 91,
-  "tableProducts": 748,
-  "listingOnlyProducts": 510,
+  "tableProducts": 751,
+  "listingOnlyProducts": 680,
   "panelElectricalProducts": 128,
   "panelNoctProducts": 2,
   "categories": {
-    "wiring": {
-      "products": 147,
-      "sheet": 3,
-      "manual": 0,
-      "table": 82,
-      "listingOnly": 65
-    },
-    "mounting": {
-      "products": 89,
-      "sheet": 4,
-      "manual": 0,
-      "table": 39,
-      "listingOnly": 50
-    },
     "accessories": {
-      "products": 32,
+      "products": 59,
       "sheet": 1,
       "manual": 0,
       "table": 11,
-      "listingOnly": 20
+      "listingOnly": 47
+    },
+    "wiring": {
+      "products": 299,
+      "sheet": 3,
+      "manual": 0,
+      "table": 85,
+      "listingOnly": 214
+    },
+    "mounting": {
+      "products": 83,
+      "sheet": 4,
+      "manual": 0,
+      "table": 39,
+      "listingOnly": 44
     },
     "monitoring": {
-      "products": 73,
+      "products": 72,
       "sheet": 3,
       "manual": 0,
       "table": 23,
-      "listingOnly": 47
+      "listingOnly": 46
     },
     "batteries": {
       "products": 264,
@@ -74,11 +74,11 @@
       "listingOnly": 107
     },
     "electrical": {
-      "products": 69,
+      "products": 70,
       "sheet": 2,
       "manual": 0,
       "table": 40,
-      "listingOnly": 29
+      "listingOnly": 30
     },
     "charging": {
       "products": 73,
@@ -3665,6 +3665,1196 @@
       "url": "https://www.santansolar.com/product/eg4-flexboss21-lcd/",
       "category": "accessories",
       "reason": "The collected page has no recognized technical ratings for this exact item. Sales text and identity fields do not count as specifications."
+    },
+    {
+      "productId": "windynation-46459163279582",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 3 Feet Black",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=46459163279582",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-47495189364958",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 3 Feet Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=47495189364958",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326639276254",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 3 Ft. Black + 3 Ft. Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=43326639276254",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048280584414",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 6 Feet Black",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048280584414",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048280617182",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 6 Feet Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048280617182",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326639309022",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 5 Ft. Black + 5 Ft. Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=43326639309022",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048280649950",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 10 Feet Black",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048280649950",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048280682718",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 10 Feet Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048280682718",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326639341790",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 10 Ft. Black + 10 Ft. Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=43326639341790",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048280715486",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 20 Feet Black",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048280715486",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048280748254",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 20 Feet Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048280748254",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326639374558",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 15 Ft. Black + 15 Ft. Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=43326639374558",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048280781022",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 30 Feet Black",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048280781022",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048280813790",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 30 Feet Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048280813790",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326639407326",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 20 Ft. Black + 20 Ft. Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=43326639407326",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048280846558",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 40 Feet Black",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048280846558",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048280879326",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 40 Feet Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048280879326",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44085928362206",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 25 Ft. Black + 25 Ft. Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44085928362206",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44085928394974",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 50 Ft. Black",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44085928394974",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44085928427742",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 50 Ft. Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44085928427742",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326639440094",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 30 Ft. Black + 30 Ft. Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=43326639440094",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048280912094",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 60 Feet Black",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048280912094",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048280944862",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 60 Feet Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048280944862",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326639472862",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 40 Ft. Black + 40 Ft. Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=43326639472862",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048280977630",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 80 Feet Black",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048280977630",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048281010398",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 80 Feet Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048281010398",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326639505630",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 50 Ft. Black + 50 Ft. Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=43326639505630",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326639538398",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 60 Ft. Black + 60 Ft. Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=43326639538398",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326639571166",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 70 Ft. Black + 70 Ft. Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=43326639571166",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326639603934",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 80 Ft. Black + 80 Ft. Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=43326639603934",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326639636702",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 90 Ft. Black + 90 Ft. Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=43326639636702",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326639702238",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 100 Ft. Black +100 Ft. Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=43326639702238",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048281043166",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 100 Feet Black",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048281043166",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048281075934",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 100 Feet Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048281075934",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44085954085086",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 125 Ft. Black + 125 Ft. Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44085954085086",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048281108702",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 120 Feet Black",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048281108702",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048281141470",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 120 Feet Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048281141470",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048281174238",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 140 Feet Black",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048281174238",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048281207006",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 140 Feet Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048281207006",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326639735006",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 150 Ft. Black + 150 Ft. Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=43326639735006",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048281239774",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 160 Feet Black",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048281239774",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048281272542",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 160 Feet Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048281272542",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048281305310",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 180 Feet Black",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048281305310",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048281338078",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 180 Feet Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048281338078",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048281370846",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 200 Feet Black",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048281370846",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048281403614",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 200 Feet Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048281403614",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44085954117854",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 250 Ft. Black",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44085954117854",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44085954150622",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 250 Ft. Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44085954150622",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048281436382",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 300 Feet Black",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048281436382",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048281469150",
+      "name": "10 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 300 Feet Red",
+      "url": "https://www.windynation.com/products/10-gauge-solar-cable-black-red-solar-extension-cable?variant=44048281469150",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326579966174",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 3 Ft. Black + 3 Ft. Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=43326579966174",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048449470686",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 6 Feet Black",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048449470686",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048449503454",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 6 Feet Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048449503454",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326579998942",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 5 Ft. Black + 5 Ft. Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=43326579998942",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048449536222",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 10 Feet Black",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048449536222",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048449568990",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 10 Feet Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048449568990",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326580031710",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 10 Ft. Black + 10 Ft. Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=43326580031710",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048449601758",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 20 Feet Black",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048449601758",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048449634526",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 20 Feet Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048449634526",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326580064478",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 15 Ft. Black + 15 Ft. Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=43326580064478",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048449667294",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 30 Feet Black",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048449667294",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048449700062",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 30 Feet Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048449700062",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326580097246",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 20 Ft. Black + 20 Ft. Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=43326580097246",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048449732830",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 40 Feet Black",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048449732830",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048449765598",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 40 Feet Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048449765598",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44086010937566",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 25 Ft. Black + 25 Ft. Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44086010937566",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44086010970334",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 50 Ft. Black",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44086010970334",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44086011003102",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 50 Ft. Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44086011003102",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326580130014",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 30 Ft. Black + 30 Ft. Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=43326580130014",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048449798366",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 60 Feet Black",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048449798366",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048449831134",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 60 Feet Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048449831134",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326580162782",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 40 Ft. Black + 40 Ft. Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=43326580162782",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048449863902",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 80 Feet Black",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048449863902",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048449896670",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 80 Feet Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048449896670",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326580195550",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 50 Ft. Black + 50 Ft. Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=43326580195550",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048449929438",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 100 Feet Black",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048449929438",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048449962206",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 100 Feet Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048449962206",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326580228318",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 60 Ft. Black + 60 Ft. Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=43326580228318",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048449994974",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 120 Feet Black",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048449994974",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048450027742",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 120 Feet Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048450027742",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326580261086",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 70 Ft. Black + 70 Ft. Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=43326580261086",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048450060510",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 140 Feet Black",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048450060510",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048450093278",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 140 Feet Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048450093278",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326580293854",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 80 Ft. Black + 80 Ft. Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=43326580293854",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048450126046",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 160 Feet Black",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048450126046",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048450158814",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 160 Feet Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048450158814",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326580326622",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 90 Ft. Black + 90 Ft. Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=43326580326622",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048450224350",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 180 Feet Black",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048450224350",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048450257118",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 180 Feet Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048450257118",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326580359390",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 100 Ft. Black + 100 Ft. Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=43326580359390",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048450289886",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 200 Feet Black",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048450289886",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048450322654",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 200 Feet Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048450322654",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44086011035870",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 125 Ft. Black + 125 Ft. Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44086011035870",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44086011068638",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 250 Ft. Black",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44086011068638",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44086011101406",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 250 Ft. Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44086011101406",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43326580392158",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 150 Ft. Black + 150 Ft. Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=43326580392158",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048450355422",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 300 Feet Black",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048450355422",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048450388190",
+      "name": "8 Gauge (AWG) Solar Panel Extension Cable Wire with Solar Connectors — 300 Feet Red",
+      "url": "https://www.windynation.com/products/8-gauge-solar-cable-red-black-solar-panel-extension-cable?variant=44048450388190",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44085484486878",
+      "name": "500 Foot Spool 10 Gauge 10 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Black / None",
+      "url": "https://www.windynation.com/products/solar-panel-extension-cable-wire-by-the-spool-10-gauge-awg-8-gauge-awg?variant=44085484486878",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44085484552414",
+      "name": "500 Foot Spool 10 Gauge 10 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Black / Add 10 Pairs",
+      "url": "https://www.windynation.com/products/solar-panel-extension-cable-wire-by-the-spool-10-gauge-awg-8-gauge-awg?variant=44085484552414",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44085484585182",
+      "name": "500 Foot Spool 10 Gauge 10 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Black / Add 25 Pairs",
+      "url": "https://www.windynation.com/products/solar-panel-extension-cable-wire-by-the-spool-10-gauge-awg-8-gauge-awg?variant=44085484585182",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44184395088094",
+      "name": "500 Foot Spool 10 Gauge 10 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Black / Add 50 Pairs",
+      "url": "https://www.windynation.com/products/solar-panel-extension-cable-wire-by-the-spool-10-gauge-awg-8-gauge-awg?variant=44184395088094",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44085484617950",
+      "name": "500 Foot Spool 10 Gauge 10 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Red / None",
+      "url": "https://www.windynation.com/products/solar-panel-extension-cable-wire-by-the-spool-10-gauge-awg-8-gauge-awg?variant=44085484617950",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44085484683486",
+      "name": "500 Foot Spool 10 Gauge 10 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Red / Add 10 Pairs",
+      "url": "https://www.windynation.com/products/solar-panel-extension-cable-wire-by-the-spool-10-gauge-awg-8-gauge-awg?variant=44085484683486",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44085484716254",
+      "name": "500 Foot Spool 10 Gauge 10 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Red / Add 25 Pairs",
+      "url": "https://www.windynation.com/products/solar-panel-extension-cable-wire-by-the-spool-10-gauge-awg-8-gauge-awg?variant=44085484716254",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44184395120862",
+      "name": "500 Foot Spool 10 Gauge 10 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Red / Add 50 Pairs",
+      "url": "https://www.windynation.com/products/solar-panel-extension-cable-wire-by-the-spool-10-gauge-awg-8-gauge-awg?variant=44184395120862",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43352098930910",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 3 Ft. Black + 3 Ft. Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=43352098930910",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048390324446",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 6 Feet Black",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048390324446",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048390357214",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 6 Feet Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048390357214",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43352098963678",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 5 Ft. Black + 5 Ft. Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=43352098963678",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048390389982",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 10 Feet Black",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048390389982",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048390422750",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 10 Feet Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048390422750",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43352098996446",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 10 Ft. Black + 10 Ft. Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=43352098996446",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048390455518",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 20 Feet Black",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048390455518",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048390488286",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 20 Feet Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048390488286",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43352099029214",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 15 Ft. Black + 15 Ft. Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=43352099029214",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048390521054",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 30 Feet Black",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048390521054",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048390553822",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 30 Feet Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048390553822",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43352099061982",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 20 Ft. Black + 20 Ft. Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=43352099061982",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048390619358",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 40 Feet Black",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048390619358",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048390652126",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 40 Feet Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048390652126",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44086023782622",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 25 Ft. Black + 25 Ft. Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44086023782622",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44086023815390",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 50 Ft. Black",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44086023815390",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44086023848158",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 50 Ft. Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44086023848158",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43352099094750",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 30 Ft. Black + 30 Ft. Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=43352099094750",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048390684894",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 60 Feet Black",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048390684894",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048390717662",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 60 Feet Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048390717662",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43352099127518",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 40 Ft. Black + 40 Ft. Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=43352099127518",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048390750430",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 80 Feet Black",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048390750430",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048390783198",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 80 Feet Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048390783198",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43352099160286",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 50 Ft. Black + 50 Ft. Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=43352099160286",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048390815966",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 100 Feet Black",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048390815966",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048390848734",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 100 Feet Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048390848734",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43352099193054",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 60 Ft. Black + 60 Ft. Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=43352099193054",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048390881502",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 120 Feet Black",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048390881502",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048390914270",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 120 Feet Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048390914270",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43352099225822",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 70 Ft. Black + 70 Ft. Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=43352099225822",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048390979806",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 140 Feet Black",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048390979806",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048390947038",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 140 Feet Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048390947038",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43352099258590",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 80 Ft. Black + 80 Ft. Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=43352099258590",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048391012574",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 160 Feet Black",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048391012574",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048391045342",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 160 Feet Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048391045342",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43352099291358",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 90 Ft. Black + 90 Ft. Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=43352099291358",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048391078110",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 180 Feet Black",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048391078110",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048391110878",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 180 Feet Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048391110878",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43352099324126",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 100 Ft. Black + 100 Ft. Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=43352099324126",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048391143646",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 200 Feet Black",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048391143646",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048391176414",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 200 Feet Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048391176414",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44086023880926",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 125 Ft. Black + 125 Ft. Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44086023880926",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44086023913694",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 250 Ft. Black",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44086023913694",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44086023946462",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 250 Ft. Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44086023946462",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-43352099356894",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 150 Ft. Black + 150 Ft. Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=43352099356894",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048391209182",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 300 Feet Black",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048391209182",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44048391241950",
+      "name": "12 Gauge (AWG) Black + Red Solar Panel Extension Cable Wire with Solar Connectors — 300 Feet Red",
+      "url": "https://www.windynation.com/products/12-gauge-solar-cable-black-red-solar-extension-cable?variant=44048391241950",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44185457754334",
+      "name": "500 Foot Spool 8 Gauge 8 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Black / None",
+      "url": "https://www.windynation.com/products/500-foot-spool-8-gauge-8-awg-solar-panel-extension-cable-wire-black-or-red-pure-copper?variant=44185457754334",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44185457787102",
+      "name": "500 Foot Spool 8 Gauge 8 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Black / Add 10 Pairs",
+      "url": "https://www.windynation.com/products/500-foot-spool-8-gauge-8-awg-solar-panel-extension-cable-wire-black-or-red-pure-copper?variant=44185457787102",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44185457819870",
+      "name": "500 Foot Spool 8 Gauge 8 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Black / Add 25 Pairs",
+      "url": "https://www.windynation.com/products/500-foot-spool-8-gauge-8-awg-solar-panel-extension-cable-wire-black-or-red-pure-copper?variant=44185457819870",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44185457852638",
+      "name": "500 Foot Spool 8 Gauge 8 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Black / Add 50 Pairs",
+      "url": "https://www.windynation.com/products/500-foot-spool-8-gauge-8-awg-solar-panel-extension-cable-wire-black-or-red-pure-copper?variant=44185457852638",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44185457885406",
+      "name": "500 Foot Spool 8 Gauge 8 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Red / None",
+      "url": "https://www.windynation.com/products/500-foot-spool-8-gauge-8-awg-solar-panel-extension-cable-wire-black-or-red-pure-copper?variant=44185457885406",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44185457918174",
+      "name": "500 Foot Spool 8 Gauge 8 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Red / Add 10 Pairs",
+      "url": "https://www.windynation.com/products/500-foot-spool-8-gauge-8-awg-solar-panel-extension-cable-wire-black-or-red-pure-copper?variant=44185457918174",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44185457950942",
+      "name": "500 Foot Spool 8 Gauge 8 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Red / Add 25 Pairs",
+      "url": "https://www.windynation.com/products/500-foot-spool-8-gauge-8-awg-solar-panel-extension-cable-wire-black-or-red-pure-copper?variant=44185457950942",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-44185457983710",
+      "name": "500 Foot Spool 8 Gauge 8 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Red / Add 50 Pairs",
+      "url": "https://www.windynation.com/products/500-foot-spool-8-gauge-8-awg-solar-panel-extension-cable-wire-black-or-red-pure-copper?variant=44185457983710",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-45615569141982",
+      "name": "500 Foot Spool 12 Gauge 12 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Black / None",
+      "url": "https://www.windynation.com/products/500-foot-spool-12-gauge-12-awg-solar-panel-extension-cable-wire-black-or-red-pure-copper?variant=45615569141982",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-45615569174750",
+      "name": "500 Foot Spool 12 Gauge 12 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Black / Add 10 Pairs",
+      "url": "https://www.windynation.com/products/500-foot-spool-12-gauge-12-awg-solar-panel-extension-cable-wire-black-or-red-pure-copper?variant=45615569174750",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-45615569207518",
+      "name": "500 Foot Spool 12 Gauge 12 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Black / Add 25 Pairs",
+      "url": "https://www.windynation.com/products/500-foot-spool-12-gauge-12-awg-solar-panel-extension-cable-wire-black-or-red-pure-copper?variant=45615569207518",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-45615569240286",
+      "name": "500 Foot Spool 12 Gauge 12 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Black / Add 50 Pairs",
+      "url": "https://www.windynation.com/products/500-foot-spool-12-gauge-12-awg-solar-panel-extension-cable-wire-black-or-red-pure-copper?variant=45615569240286",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-45615569273054",
+      "name": "500 Foot Spool 12 Gauge 12 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Red / None",
+      "url": "https://www.windynation.com/products/500-foot-spool-12-gauge-12-awg-solar-panel-extension-cable-wire-black-or-red-pure-copper?variant=45615569273054",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-45615569305822",
+      "name": "500 Foot Spool 12 Gauge 12 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Red / Add 10 Pairs",
+      "url": "https://www.windynation.com/products/500-foot-spool-12-gauge-12-awg-solar-panel-extension-cable-wire-black-or-red-pure-copper?variant=45615569305822",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-45615569338590",
+      "name": "500 Foot Spool 12 Gauge 12 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Red / Add 25 Pairs",
+      "url": "https://www.windynation.com/products/500-foot-spool-12-gauge-12-awg-solar-panel-extension-cable-wire-black-or-red-pure-copper?variant=45615569338590",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
+    },
+    {
+      "productId": "windynation-45615569371358",
+      "name": "500 Foot Spool 12 Gauge 12 AWG Solar Panel Extension Cable Wire Black or Red Pure Copper — Red / Add 50 Pairs",
+      "url": "https://www.windynation.com/products/500-foot-spool-12-gauge-12-awg-solar-panel-extension-cable-wire-black-or-red-pure-copper?variant=45615569371358",
+      "category": "wiring",
+      "reason": "Exact variant gauge and length come from the source listing. A separate technical table has not been collected."
     }
   ],
   "excludedDocuments": [
