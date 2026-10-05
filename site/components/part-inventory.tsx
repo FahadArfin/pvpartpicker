@@ -1,8 +1,9 @@
 'use client';
 import {useEffect,useRef} from 'react';
-import {Sun,Battery,Zap,Cable,Wrench,Box,Plug,ShieldCheck,Gauge,PackageOpen,Plus,Check,ArrowUpRight,ArrowRight,X,Package} from 'lucide-react';
+import {Sun,Battery,Zap,Cable,Wrench,Box,Plug,ShieldCheck,Gauge,PackageOpen,Check,ArrowUpRight,ArrowRight,X,Package} from 'lucide-react';
 import Link from './site-link';
 import {usePV,ProductImage,WatchButton} from './pv-provider';
+import {BuildQuantity} from './build-quantity';
 import {categories} from '../lib/types';
 import type {Product} from '../lib/types';
 import {bestOffer,costForQuantity,money} from '../lib/domain';
@@ -13,7 +14,7 @@ function specs(product:Product){return Object.entries(product.specs).filter(([k]
 function pricing(product:Product){const current=bestOffer(product);const last=[...product.offers].sort((a,b)=>a.price/a.packQuantity-b.price/b.packQuantity)[0];return {current,offer:current||last};}
 
 export function PartRow({product,active,onInspect,onOpen}:{product:Product;active:boolean;onInspect:()=>void;onOpen:()=>void}){
- const {add,build,compare,setCompare,notify}=usePV();const {current,offer}=pricing(product);const Icon=icons[product.category];const quantity=build.lines.find(l=>l.productId===product.id)?.quantity||0;const selected=compare.includes(product.id);
+ const {build,compare,setCompare,notify}=usePV();const {current,offer}=pricing(product);const Icon=icons[product.category];const quantity=build.lines.find(l=>l.productId===product.id)?.quantity||0;const selected=compare.includes(product.id);
  return <article className={'part-row '+(active?'inspected ':'')+(quantity?'equipped':'')} onMouseEnter={onInspect} onFocus={onInspect}>
   <span className="part-category-icon"><Icon size={19}/></span>
   <button className="part-inspect" aria-label={'Inspect '+product.name} aria-pressed={active} onClick={onOpen} onKeyDown={e=>{if(e.key==='ArrowDown'||e.key==='ArrowUp'){const rows=Array.from(e.currentTarget.closest('.part-list')!.querySelectorAll<HTMLButtonElement>('.part-inspect'));const index=rows.indexOf(e.currentTarget);const next=rows[index+(e.key==='ArrowDown'?1:-1)];if(next){e.preventDefault();next.focus();}}}}>
@@ -21,19 +22,19 @@ export function PartRow({product,active,onInspect,onOpen}:{product:Product;activ
   </button>
   <div className="part-price"><strong>{offer?money(offer.price/offer.packQuantity):'Unpriced'}</strong><span>{current?'In stock':'Last observed'}{offer&&offer.packQuantity>1?` · ${offer.packQuantity}-pack`:''}</span></div>
   <WatchButton product={product}/><label className={'part-compare '+(selected?'selected':'')} title="Compare part"><input type="checkbox" checked={selected} onChange={()=>{if(!selected&&compare.length>=4){notify('Compare up to four parts. Remove one to add another.');return;}setCompare(c=>selected?c.filter(id=>id!==product.id):[...c,product.id]);}}/><span><Check size={13}/></span><span className="sr-only">Compare {product.name}</span></label>
-  <button className={'equip-button '+(quantity?'has-part':'')} onClick={()=>add(product.id,offer?.id)} aria-label={'Add '+product.name+' to build'} title={quantity?`In build: ${quantity}. Add one more.`:'Add to your build'}>{quantity?<><Check size={14}/><span key={quantity} className="equip-count">{quantity}</span></>:<><Plus size={15}/><span>Equip</span></>}</button>
+  <BuildQuantity product={product} offerId={offer?.id}/>
  </article>;
 }
 
 function PartPreview({product}:{product:Product}){
- const {add,build}=usePV();const {current,offer}=pricing(product);const quantity=build.lines.find(l=>l.productId===product.id)?.quantity||0;
+ const {build}=usePV();const {current,offer}=pricing(product);const quantity=build.lines.find(l=>l.productId===product.id)?.quantity||0;
  return <div className="part-preview">
   <div className="inspection-label"><span className="pulse-dot"/>PART INSPECTOR<span>{categories.find(c=>c.id===product.category)?.label}</span></div>
   <div className="inspection-image"><div className="inspection-grid"/><ProductImage key={product.id} product={product}/>{quantity>0&&<span className="equipped-badge"><Check size={12}/> In build ×{quantity}</span>}</div>
   <div className="inspection-content"><span className="brand-label">{product.brand}</span><h3>{product.name}</h3><div className="spec-pills">{specs(product).map((s,i)=><span key={i}>{s}</span>)}</div>
    <div className="inspection-price"><div><small>{current?'Current unit price':'Last observed unit price'}</small><strong>{offer?money(offer.price/offer.packQuantity):'Unpriced'}</strong></div><span className={current?'stock-dot':'muted'}>{current?'In stock':'Check stock'}</span></div>
    {offer&&<><div className="purchase-note"><Package size={15}/><span>{offer.packQuantity>1?`${money(offer.price)} purchase · ${offer.packQuantity} units`:`${money(offer.price)} single-unit purchase`}<small>{offer.retailer} · {offer.condition==='used'?'Used / refurbished':'New'}</small></span></div><p className="inspection-date">Observed {new Date(offer.observedAt).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'})} · {product.offers.length} {product.offers.length===1?'offer':'offers'}</p></>}
-   <button className="button dark full inspection-equip" onClick={()=>add(product.id,offer?.id)}><Plus size={16}/>{quantity?'Equip one more':'Equip this part'}{quantity>0&&<span>×{quantity}</span>}</button>
+   <div className="inspection-quantity"><span>Quantity in build</span><BuildQuantity product={product} offerId={offer?.id}/></div>
    <WatchButton product={product} compact={false}/><Link className="inspection-details" href={'/products/'+product.id}>View specs & price history <ArrowUpRight size={15}/></Link>
   </div>
  </div>;
@@ -48,5 +49,5 @@ function Loadout(){
 export function InventoryInspector({product,mobileOpen,onClose}:{product?:Product;mobileOpen:boolean;onClose:()=>void}){
  const dialog=useRef<HTMLDialogElement>(null);
  useEffect(()=>{const d=dialog.current;if(!d)return;const media=window.matchMedia('(max-width: 720px)');const sync=()=>{if(mobileOpen&&product&&media.matches){if(!d.open)d.showModal();}else if(d.open)d.close();};sync();media.addEventListener('change',sync);return()=>media.removeEventListener('change',sync);},[mobileOpen,product]);
- return <><aside className="inventory-inspector" aria-label="Product inspector">{product?<PartPreview product={product}/>:<div className="inspection-empty"><Sun size={28}/><p>Select a part to inspect it.</p></div>}<Loadout/><p className="inspector-hint">Hover to inspect. Equip to add to your build.<br/>Use ↑ ↓ to explore the list with your keyboard.</p></aside><dialog ref={dialog} className="mobile-inspector" aria-label="Product preview" onClose={onClose} onClick={e=>{if(e.target===e.currentTarget)onClose();}}><button autoFocus className="icon-button inspection-close" aria-label="Close product preview" onClick={onClose}><X size={20}/></button>{product&&<PartPreview product={product}/>}</dialog></>;
+ return <><aside className="inventory-inspector" aria-label="Product inspector">{product?<PartPreview product={product}/>:<div className="inspection-empty"><Sun size={28}/><p>Select a part to inspect it.</p></div>}<Loadout/><p className="inspector-hint">Hover to inspect. Use + or - to adjust your build.<br/>Use ↑ ↓ to explore the list with your keyboard.</p></aside><dialog ref={dialog} className="mobile-inspector" aria-label="Product preview" onClose={onClose} onClick={e=>{if(e.target===e.currentTarget)onClose();}}><button autoFocus className="icon-button inspection-close" aria-label="Close product preview" onClick={onClose}><X size={20}/></button>{product&&<PartPreview product={product}/>}</dialog></>;
 }

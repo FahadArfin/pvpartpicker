@@ -3,6 +3,7 @@ import {useEffect,useRef,useState} from 'react';
 import {ArrowUpRight,Battery,BookOpen,Check,Search,Sparkles,Sun,Trophy,Zap} from 'lucide-react';
 import Link from './site-link';
 import {ProductImage,usePV,WatchButton} from './pv-provider';
+import {BuildQuantity} from './build-quantity';
 import {money} from '../lib/domain';
 import {rankings,tierFamilies,tierPrice,valueTier,valueBands} from '../lib/tiers';
 import type {Ranking,RankedCategory,Tier} from '../lib/tiers';
@@ -13,7 +14,7 @@ const labels={S:'Standout for its use',A:'Strong choice',B:'Good with trade-offs
 const photoIds:Record<string,string[]>={f3800:['santan-solar-b179011f'],'f3800-plus':['santan-solar-b17901127'],aptos460:['shopsolar-51480113479820'],'used-cs300':['santan-solar-cs6x-300p-u']};
 const queries:Record<string,string>={c2000:'C2000',f3800:'F3800','f3800-plus':'F3800 Plus','sok-n':'SK48V100N',lifepower:'LifePower',lifepower4:'LifePower','lifepower-v2':'LifePower',cs600:'CS6W-600TB-AG',cs680:'CS7N-680TB-AG',aptos460:'Aptos 460', 'used-cs300':'Used Canadian 300',solark15:'Sol-Ark 15K'};
 export function TierWorkspace({initialId=''}:{initialId?:string}){
- const {products,add,compare,setCompare}=usePV();
+ const {products,compare,setCompare}=usePV();
  const initial=rankings.find(r=>r.id===initialId);
  const[category,setCategory]=useState<RankedCategory>(initial?.category||'all-in-one'),[mode,setMode]=useState<'editorial'|'value'>('editorial'),[cohort,setCohort]=useState('all'),[q,setQ]=useState(''),[selected,setSelected]=useState(initial?.id||'c2000'),[now,setNow]=useState<number|undefined>();
  const inspector=useRef<HTMLElement>(null);
@@ -44,7 +45,7 @@ export function TierWorkspace({initialId=''}:{initialId?:string}){
    <ProductImage key={'photo-'+entry.id} product={imageProduct} className="tier-product-photo"/>
    <h2>{entry.name}</h2><p className="tier-verdict">{entry.headline}</p><div className="spec-pills">{entry.specs.map(s=><span key={s}>{s}</span>)}</div>
    <div className="tier-current-price"><small>{current?'Best eligible unit price':'Base configuration pricing'}</small><strong>{current?money(current.unitPrice):now===undefined?'Checking…':'No current verified offer'}</strong>{current?<><span>{current.offer.retailer} · {current.metric.toFixed(entry.category==='panels'||entry.category==='inverters'?2:0)} {valueBands[entry.category].unit}</span><small>Checked {current.offer.observedAt.slice(0,16).replace('T',' ')} UTC</small>{current.offer.packQuantity>1&&<small>Purchase minimum: {money(current.purchasePrice)} for {current.offer.packQuantity} panels</small>}</>:<span>Bundles and unmatched revisions stay out of the price ranking.</span>}</div>
-   <div className="tier-actions">{matched?<><WatchButton product={matched} compact={false}/><button className="button dark small" onClick={()=>add(matched.id,current?.offer.id)}><Zap size={14}/>Equip build</button><Link href={'/products/'+(current?.product.id||matched.id)} className="button outline small">Prices & history <ArrowUpRight size={13}/></Link><button className="text-link small-text" disabled={!compare.includes(matched.id)&&compare.length>=4} onClick={()=>setCompare(c=>c.includes(matched.id)?c.filter(id=>id!==matched.id):c.length<4?[...c,matched.id]:c)}>{compare.includes(matched.id)?'✓ In comparison':'Add to comparison'}</button></>:<Link className="button outline small" href={'/?q='+encodeURIComponent(queries[entry.id]||entry.name)}>Find catalog variants <ArrowUpRight size={13}/></Link>}</div>
+   <div className="tier-actions">{matched?<><WatchButton product={matched} compact={false}/><BuildQuantity product={matched} offerId={current?.offer.id}/><Link href={'/products/'+(current?.product.id||matched.id)} className="button outline small">Prices & history <ArrowUpRight size={13}/></Link><button className="text-link small-text" disabled={!compare.includes(matched.id)&&compare.length>=4} onClick={()=>setCompare(c=>c.includes(matched.id)?c.filter(id=>id!==matched.id):c.length<4?[...c,matched.id]:c)}>{compare.includes(matched.id)?'✓ In comparison':'Add to comparison'}</button></>:<Link className="button outline small" href={'/?q='+encodeURIComponent(queries[entry.id]||entry.name)}>Find catalog variants <ArrowUpRight size={13}/></Link>}</div>
    <div className="tier-reasons"><h3>Why it earns its place</h3>{entry.strengths.map(s=><p key={s}><Check size={14}/><span>{s}</span></p>)}<h3>Know the trade-offs</h3>{entry.limits.map(s=><p key={s}><span className="tier-limit-dot">!</span><span>{s}</span></p>)}</div>
    <details className="tier-evidence" open key={'evidence-'+entry.id}><summary>Evidence & what people said <span>{entry.sources.length} sources</span></summary>{entry.sources.map((s,i)=><div key={s.url}><span className="tier-source-kind">{s.kind}</span><a href={s.url} target="_blank" rel="noreferrer">{i+1}. {s.label}<ArrowUpRight size={12}/></a><p>{s.note}</p></div>)}<small>Sources reviewed {entry.reviewedAt}. Reviewer affiliate links or sample units may influence coverage. Owner reports are anecdotal.</small></details>
   </>:<p className="tier-verdict">No ranked models match. Clear your search or choose another use case.</p>}</aside></div>
