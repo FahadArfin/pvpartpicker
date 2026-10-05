@@ -1,7 +1,6 @@
-import {database,getPageCatalog as getCatalog} from '../../../lib/storage';
-import Link from '../../../components/site-link';
+import {database} from '../../../lib/storage';
 import {notFound} from 'next/navigation';
-import {bestOffer,costForQuantity,money} from '../../../lib/domain';
-import type {Build} from '../../../lib/types';
+import {validateBuild} from '../../../lib/domain';
+import {SharedBuildView} from '../../../components/shared-build-view';
 export const metadata={title:'Shared solar build'};
-export default async function Page({params}:{params:Promise<{id:string}>}){const{id}=await params;if(!/^[a-f0-9-]{36}$/.test(id))notFound();const row=await database().prepare('SELECT json FROM builds WHERE share_id=?').bind(id).first<{json:string}>();if(!row)notFound();const build=JSON.parse(row.json) as Build;const catalog=await getCatalog();let total=0;return <main className="page-container"><div className="eyebrow">SHARED BUILD · READ ONLY</div><h1>{build.name}</h1><p>{build.settings.purpose} · {build.settings.mount} mounting. Prices reflect currently eligible offers.</p><section className="section-card table-scroll"><table className="data-table"><thead><tr><th>Part</th><th>Quantity</th><th>Equipment cost</th></tr></thead><tbody>{build.lines.map(l=>{const p=catalog.products.find(p=>p.id===l.productId);const o=p?bestOffer(l.offerId?{...p,offers:p.offers.filter(o=>o.id===l.offerId)}:p,l.quantity):null;const cost=o?costForQuantity(o,l.quantity).subtotal:null;if(cost)total+=cost;return <tr key={l.productId}><td><Link href={'/products/'+l.productId}>{p?.name||'Product unavailable'}</Link></td><td>{l.quantity}</td><td>{cost!==null?money(cost):'Needs a current offer'}</td></tr>;})}<tr><th>Priced equipment subtotal</th><td/><td><strong>{money(total)}</strong></td></tr></tbody></table><p className="inline-note">Shipping and tax excluded. A shared shopping list does not establish system compatibility or completeness.</p></section></main>;}
+export default async function Page({params}:{params:Promise<{id:string}>}){const{id}=await params;if(!/^[a-f0-9-]{36}$/.test(id))notFound();const row=await database().prepare('SELECT json FROM builds WHERE share_id=?').bind(id).first<{json:string}>();if(!row)notFound();return <SharedBuildView build={validateBuild(JSON.parse(row.json))}/>;}

@@ -1,0 +1,10 @@
+import Link from './site-link';
+import {BuildOpenAction} from './build-open-action';
+import {getPageCatalog} from '../lib/storage';
+import {bestOffer,costForQuantity,money} from '../lib/domain';
+import {purposeLabel} from '../lib/build-library';
+import type {Build} from '../lib/types';
+export async function SharedBuildView({build,community=false,description='',publishedAt}:{build:Build;community?:boolean;description?:string;publishedAt?:string}){
+ const catalog=await getPageCatalog();let total=0,missing=0;
+ return <main className="page-container"><Link className="back-link" href={community?'/community':'/build'}>{community?'Community builds':'System builder'}</Link><header className="page-intro"><div><div className="eyebrow">{community?'COMMUNITY BUILD':'SHARED BUILD'} · READ ONLY</div><h1>{build.name}</h1><p>{purposeLabel[build.settings.purpose]} · {build.settings.mount==='roof'?'Roof':'Ground'} mounting{publishedAt?' · Published '+new Date(publishedAt).toLocaleDateString():''}</p></div><BuildOpenAction target={build} label="Open a copy in builder" copy navigate className="button dark"/></header>{description&&<p>{description}</p>}<section className="section-card table-scroll"><table className="data-table"><thead><tr><th>Part</th><th>Quantity</th><th>Equipment cost</th></tr></thead><tbody>{build.lines.map(l=>{const p=catalog.products.find(p=>p.id===l.productId),o=p?bestOffer(l.offerId?{...p,offers:p.offers.filter(o=>o.id===l.offerId)}:p,l.quantity):null,cost=o?costForQuantity(o,l.quantity).subtotal:null;if(cost!==null)total+=cost;else missing++;return <tr key={l.productId}><td><Link href={'/products/'+l.productId}>{p?.name||'Product unavailable'}</Link></td><td>{l.quantity}</td><td>{cost!==null?money(cost):'Needs a current offer'}</td></tr>;})}<tr><th>Priced equipment subtotal</th><td/><td><strong>{money(total)}</strong></td></tr></tbody></table><p className="inline-note">{missing?`${missing} items need current offers. `:''}Prices reflect currently eligible offers. Shipping and tax excluded. A shared equipment list does not establish system compatibility or completeness.</p></section></main>;
+}

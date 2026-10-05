@@ -29,6 +29,13 @@
       "when": 1791157176301,
       "tag": "0003_watchlist",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1791163865932,
+      "tag": "0004_friendly_darkstar",
+      "breakpoints": true
     }
   ]
 }

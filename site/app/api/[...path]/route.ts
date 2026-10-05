@@ -6,6 +6,7 @@ import { processAlerts } from '../../../lib/alerts';
 import type { Product, CollectionReport } from '../../../lib/types';
 import {buildDrops,dropPeriod,dropQuery,normalizeWatchIds,watchInsertSql} from '../../../lib/price-drops';
 import type {DropCandidate} from '../../../lib/price-drops';
+import {listCommunityBuilds,getCommunityBuild,publishCommunityBuild,unpublishCommunityBuild} from '../../../lib/community-builds';
 export const dynamic = 'force-dynamic';
 function json(value: unknown, status = 200) { return Response.json(value, { status, headers: { 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff' } }); }
 async function body(request: Request) { if (!request.headers.get('content-type')?.includes('application/json')) throw new Error('JSON required.'); if(Number(request.headers.get('content-length'))>600000)throw new Error('Request is too large.'); const text = await request.text(); if (text.length > 600000) throw new Error('Request is too large.'); return JSON.parse(text); }
@@ -17,6 +18,11 @@ async function handle(request: Request, method: string) {
     const user = await getChatGPTUser(); const isAdmin = Boolean(user && runtime().ADMIN_EMAIL && user.email.toLowerCase() === runtime().ADMIN_EMAIL?.toLowerCase());
     if (action === 'me' && method === 'GET') return json({ user: user ? { displayName: user.displayName, email: user.email } : null, isAdmin, emailConfigured: Boolean(runtime().RESEND_API_KEY && runtime().EMAIL_FROM) });
     if (action === 'catalog' && method === 'GET') {const start=performance.now();const result=await getCatalog();const response=json(result);response.headers.set('Server-Timing',`catalog;dur=${(performance.now()-start).toFixed(1)}`);return response;}
+    if(action==='community'&&method==='GET'){
+      if(!id)return json({builds:await listCommunityBuilds(database())});
+      if(!/^[a-f0-9-]{36}$/.test(id))return json({error:'Community build not found.'},404);
+      const build=await getCommunityBuild(database(),id);return build?json(build):json({error:'Community build not found.'},404);
+    }
     if(action==='deals'&&method==='GET'){
       const {period,days}=dropPeriod(url.searchParams.get('period')),now=Date.now(),since=new Date(now-days*86400000).toISOString();
       const catalog=await getCatalog();if(catalog.storage!=='database')throw new Error('Database history is unavailable. Please try again later.');
@@ -58,6 +64,10 @@ async function handle(request: Request, method: string) {
     }
     if (!user) return json({ error:'Sign in with ChatGPT to continue.' },401);
     const db = database(); if (method !== 'GET') await rateLimit(user.userId,action,action==='watchlist'?180:40);
+    if(action==='community'){
+      if(method==='POST'){const data=await body(request);if(typeof data.buildId!=='string'||data.buildId.length>100)throw new Error('Select a saved build.');return json(await publishCommunityBuild(db,user.userId,data.buildId,data.description));}
+      if(method==='DELETE'&&id)return await unpublishCommunityBuild(db,user.userId,id)?json({withdrawn:true}):json({error:'Published build not found.'},404);
+    }
     if(action==='watchlist'){
       if(method==='GET'){const rows=await db.prepare('SELECT product_id AS productId,created_at AS createdAt FROM watchlist WHERE user_id=? ORDER BY created_at DESC,product_id LIMIT 500').bind(user.userId).all<{productId:string;createdAt:string}>();return json({items:rows.results});}
       if(method==='DELETE'&&id){if(id.length>180)throw new Error('Invalid product.');await db.prepare('DELETE FROM watchlist WHERE user_id=? AND product_id=?').bind(user.userId,id).run();return json({removed:true});}
@@ -72,7 +82,7 @@ async function handle(request: Request, method: string) {
       }
     }
     if (action === 'builds') {
-      if (method === 'GET') { const rows = await db.prepare('SELECT id,json,share_id AS shareId,updated_at AS updatedAt FROM builds WHERE user_id=? ORDER BY updated_at DESC LIMIT 100').bind(user.userId).all<any>(); return json({ builds:rows.results.map(r => ({...JSON.parse(r.json),id:r.id,shareId:r.shareId,updatedAt:r.updatedAt})) }); }
+      if (method === 'GET') { const rows = await db.prepare('SELECT b.id,b.json,b.share_id AS shareId,b.updated_at AS updatedAt,c.share_id AS communityShareId,c.description AS communityDescription FROM builds b LEFT JOIN community_builds c ON c.build_id=b.id WHERE b.user_id=? ORDER BY b.updated_at DESC LIMIT 100').bind(user.userId).all<any>(); const builds=rows.results.map(r=>({...validateBuild(JSON.parse(r.json)),id:r.id,shareId:r.shareId,updatedAt:r.updatedAt,communityShareId:r.communityShareId,communityDescription:r.communityDescription}));return id?(builds.find(b=>b.id===id)?json(builds.find(b=>b.id===id)):json({error:'Build not found.'},404)):json({builds}); }
       if (method === 'DELETE' && id) { const result = await db.prepare('DELETE FROM builds WHERE id=? AND user_id=?').bind(id,user.userId).run(); return result.meta.changes ? json({deleted:true}) : json({error:'Build not found.'},404); }
       if (method === 'POST') {
         const data = await body(request); const build = validateBuild(data); const products = (await getCatalog()).products;
