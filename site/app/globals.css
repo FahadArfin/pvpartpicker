@@ -183,3 +183,15 @@
  .ecosystem-buttons button{flex-shrink:0;min-height:40px;padding:8px 11px}
  .ecosystem-note{font-size:10px;margin-top:5px}
 }
+/* Technical product detail: compact, sourced measurements instead of marketing copy. */
+.product-specifications{max-width:1100px;margin:0 auto 36px}
+.spec-intro{padding:4px 0 20px}.spec-intro h2{font-size:22px;margin-bottom:7px}.spec-intro p{color:var(--muted);line-height:1.6;max-width:720px}
+.specification-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:16px 0}
+.specification-group{margin:0}.specification-group h3{font-size:15px;padding-bottom:13px;border-bottom:1px solid #e1e8df}
+.specification-group dl{margin-top:0}.specification-group dl>div{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:18px;padding:10px 0;border-bottom:1px solid #edf0eb;font-size:13px;line-height:1.55}
+.specification-group dl>div:last-child{border-bottom:0;padding-bottom:0}.specification-group dt{color:#647167}.specification-group dd{margin:0;font-weight:550;overflow-wrap:anywhere}
+.data-table.specification-ratings{min-width:0;width:100%}.specification-ratings th:first-child{width:48%}.specification-ratings tbody th{font-size:13px;font-weight:500;color:#45534a;text-align:left;padding:13px 16px;border-bottom:1px solid #e1e8df}.specification-ratings td{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.spec-unpublished{font-size:12px;font-weight:400;color:#7d887f}.spec-reference{font-size:10px;color:#2b765b;font-weight:500;white-space:nowrap;text-decoration:none}.spec-reference:hover{text-decoration:underline}
+.spec-conditions{display:flex;gap:24px;margin-top:15px;color:#738075;font-size:11px;line-height:1.6}.spec-conditions p{flex:1;margin:0}
+.spec-sources h3{display:flex;align-items:center;gap:8px;font-size:15px}.spec-sources ol{padding-left:20px}.spec-sources li{padding:8px 0;scroll-margin-top:90px}.spec-sources li>a{font-size:13px;display:inline-flex;align-items:center;gap:5px;color:#245f4d}.spec-sources li>span{display:block;margin-top:3px}.spec-notes{border-top:1px solid #e1e8df;padding:10px 0 0 16px;font-size:12px;color:#758075;line-height:1.5}.spec-notes li{padding:3px 0}
+@media(max-width:680px){.specification-groups{grid-template-columns:1fr}.spec-conditions{display:block}.spec-conditions p+p{margin-top:7px}.specification-group dl>div{gap:12px}.specification-ratings tbody th{padding:12px 8px;font-size:12px}.specification-ratings td{padding:12px 8px}.panel-ratings{padding:16px 12px}}

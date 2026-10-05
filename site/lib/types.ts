@@ -1,7 +1,10 @@
 export type Category = 'panels' | 'mounting' | 'wiring' | 'batteries' | 'all-in-one' | 'inverters' | 'charging' | 'module-electronics' | 'monitoring' | 'kits' | 'electrical' | 'accessories';
 export type Specs = Record<string, string | number | boolean>;
 export interface Offer { id: string; retailerId: string; retailer: string; url: string; price: number; currency: 'USD'; packQuantity: number; stock: 'in_stock' | 'out_of_stock' | 'unknown'; observedAt: string; sku?: string; shipping?: number; condition: 'new' | 'used'; }
-export interface Product { id: string; name: string; brand: string; category: Category; description: string; image: string; images: string[]; sourceUrl: string; documentation?: string; specs: Specs; offers: Offer[]; verifiedAt: string; }
+export interface SpecificationSource { url: string; kind: 'datasheet' | 'manual' | 'manufacturer' | 'retailer' | 'listing'; label: string; model?: string; checkedAt?: string; }
+export interface SpecificationField { key: string; label: string; value: string; source: string; kind?: SpecificationSource['kind']; }
+export interface ProductSpecification { summary: string; groups: {title: string; fields: SpecificationField[]}[]; sources: SpecificationSource[]; notes: string[]; panelRatings?: {stc: Record<string,string>; noct: Record<string,string>; noctLabel?: string; sources?: Record<string,string>}; }
+export interface Product { id: string; name: string; brand: string; category: Category; description: string; image: string; images: string[]; sourceUrl: string; documentation?: string; specification?: ProductSpecification; specs: Specs; offers: Offer[]; verifiedAt: string; }
 export interface BuildLine { productId: string; quantity: number; offerId?: string; }
 export interface BuildSettings { purpose: 'offgrid' | 'hybrid' | 'gridtie'; mount: 'roof' | 'ground'; series?: number; parallel?: number; minimumTemperature?: number; }
 export interface Build { id?: string; name: string; lines: BuildLine[]; settings: BuildSettings; shareId?: string; }
