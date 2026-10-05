@@ -349,7 +349,7 @@
     "name": "EG4 LifePower4 V2 48V",
     "category": "batteries",
     "tier": "A",
-    "cohort": "Server rack",
+    "cohort": "Home backup",
     "productIds": [
       "santan-solar-eg4-lifepower4v2-48v-100ah"
     ],
@@ -382,14 +382,17 @@
       "51.2V nominal",
       "Server rack"
     ],
-    "reviewedAt": "2026-10-04"
+    "reviewedAt": "2026-10-04",
+    "formats": [
+      "server-rack"
+    ]
   },
   {
     "id": "sok-n",
     "name": "SOK SK48V100N",
     "category": "batteries",
     "tier": "B",
-    "cohort": "Server rack",
+    "cohort": "Home backup",
     "productIds": [
       "shopsolar-57002915496076"
     ],
@@ -422,14 +425,17 @@
       "51.2V nominal",
       "Server rack"
     ],
-    "reviewedAt": "2026-10-04"
+    "reviewedAt": "2026-10-04",
+    "formats": [
+      "server-rack"
+    ]
   },
   {
     "id": "pytes-v16",
     "name": "Pytes V16",
     "category": "batteries",
     "tier": "A",
-    "cohort": "Large stationary",
+    "cohort": "Home backup",
     "productIds": [
       "shopsolar-46980566188172"
     ],
@@ -462,14 +468,17 @@
       "51.2V nominal",
       "IP66 / heated"
     ],
-    "reviewedAt": "2026-10-04"
+    "reviewedAt": "2026-10-04",
+    "formats": [
+      "standing"
+    ]
   },
   {
     "id": "ruixu-16",
     "name": "RUiXU Lithi2-16",
     "category": "batteries",
     "tier": "A",
-    "cohort": "Large stationary",
+    "cohort": "Home backup",
     "productIds": [
       "santan-solar-lithi2-16"
     ],
@@ -496,7 +505,10 @@
       "51.2V nominal",
       "IP55 / heated"
     ],
-    "reviewedAt": "2026-10-04"
+    "reviewedAt": "2026-10-04",
+    "formats": [
+      "standing"
+    ]
   },
   {
     "id": "cs600",
@@ -785,5 +797,4030 @@
       "Hybrid"
     ],
     "reviewedAt": "2026-10-04"
+  },
+  {
+    "id": "eg4-ll-s",
+    "name": "EG4 LL-S 48V 100Ah",
+    "category": "batteries",
+    "tier": "A",
+    "cohort": "Home backup",
+    "formats": [
+      "server-rack"
+    ],
+    "productIds": [],
+    "denominator": 5.12,
+    "headline": "Provisional: A modular rack option with clear installation and communications documentation.",
+    "strengths": [
+      "19-inch enclosure fits a modular battery bank.",
+      "LCD and published BMS / emergency-stop documentation simplify diagnostics."
+    ],
+    "limits": [
+      "Emergency-stop operation needs a supported inverter or additional ESS switch.",
+      "Do not assume different LL generations can communicate without wiring and firmware checks.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://eg4electronics.com/categories/batteries/eg4-ll-s-48v-100ah-lithium-iron-phosphate-battery",
+        "kind": "Manufacturer",
+        "note": "Manufacturer documentation supports this exact battery configuration and the listed capacity and mounting options. Capacity is storage, not AC output."
+      }
+    ],
+    "specs": [
+      "5.12kWh rated",
+      "51.2V nominal / 48V system",
+      "19-inch rack",
+      "100Ah LFP"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "eg4-wm314-indoor",
+    "name": "EG4 WallMount 314Ah Indoor",
+    "category": "batteries",
+    "tier": "A",
+    "cohort": "Home backup",
+    "formats": [
+      "standing",
+      "wall-mounted"
+    ],
+    "productIds": [
+      "shopsolar-45192132460684",
+      "santan-solar-eg4-16kw-indoor"
+    ],
+    "denominator": 16,
+    "headline": "Provisional: High capacity with documented floor or wall installation.",
+    "strengths": [
+      "200A continuous DC output supports larger correctly sized inverters.",
+      "Self-heating and automatic battery addressing."
+    ],
+    "limits": [
+      "314lb battery requires installation handling equipment.",
+      "IP20 enclosure is for indoor installation.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://eg4electronics.com/categories/batteries/eg4-wallmount-314ah-indoor-battery/",
+        "kind": "Manufacturer",
+        "note": "Manufacturer documentation supports this exact battery configuration and the listed capacity and mounting options. Capacity is storage, not AC output. Product-page image identifies this model or documented enclosure family; use the datasheet for connectors and mounting hardware."
+      }
+    ],
+    "specs": [
+      "16kWh rated",
+      "51.2V nominal",
+      "200A continuous DC",
+      "IP20 indoor"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://eg4electronics.com/wp-content/uploads/2025/11/EG4-WallMount-314Ah-Indoor-Battery-%E2%80%93-Front-1024x1024.webp"
+  },
+  {
+    "id": "eg4-wm314-aw",
+    "name": "EG4 WallMount 314Ah All Weather",
+    "category": "batteries",
+    "tier": "A",
+    "cohort": "Home backup",
+    "formats": [
+      "standing",
+      "wall-mounted"
+    ],
+    "productIds": [
+      "shopsolar-45858391261324",
+      "santan-solar-eg4-16kw-outdoor"
+    ],
+    "denominator": 16,
+    "headline": "Provisional: A weather-resistant high-capacity storage option.",
+    "strengths": [
+      "Self-heating for cold installations under the manual conditions.",
+      "Third-generation BMS with active balancing and Wi-Fi monitoring."
+    ],
+    "limits": [
+      "Outdoor installation still needs prescribed clearances and cable entry protection.",
+      "System listing and inverter compatibility must match the exact revision.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration.",
+      "Floor mounting still requires the wall attachment prescribed by the user manual."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://eg4electronics.com/categories/batteries/eg4-wallmount-314ah-all-weather-battery/",
+        "kind": "Manufacturer",
+        "note": "Manufacturer documentation supports this exact battery configuration and the listed capacity and mounting options. Capacity is storage, not AC output."
+      },
+      {
+        "label": "Manufacturer installation manual v1.0.3",
+        "url": "https://eg4electronics.com/wp-content/uploads/2025/04/EG4-Outdoor-314Ah-WallMount-Battery-User-Manual.pdf",
+        "kind": "Manufacturer",
+        "note": "Page 8 lists floor mount / wall attached. Standing/floor filtering includes this supported mounting method, not unrestricted freestanding use."
+      }
+    ],
+    "specs": [
+      "16kWh rated",
+      "51.2V nominal",
+      "200A BMS",
+      "IP67 enclosure"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "eg4-wm280-indoor",
+    "name": "EG4 WallMount 280Ah Indoor",
+    "category": "batteries",
+    "tier": "B",
+    "cohort": "Home backup",
+    "formats": [
+      "standing",
+      "wall-mounted"
+    ],
+    "productIds": [],
+    "denominator": 14.3,
+    "headline": "Provisional: A capable previous-capacity indoor option where still available.",
+    "strengths": [
+      "Documented 140A continuous discharge, with a 200A 30-minute rating.",
+      "Self-heating and integrated busbars."
+    ],
+    "limits": [
+      "Manufacturer says US availability is transitioning; verify distributor stock and support.",
+      "Heavy indoor-only installation; 314Ah revision is a different battery.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration.",
+      "Floor installation requires the prescribed bracket or wall attachment and installation clearances."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://eg4electronics.com/categories/batteries/eg4-wallmount-indoor-280ah-lithium-battery/",
+        "kind": "Manufacturer",
+        "note": "Manufacturer documentation supports this exact battery configuration and the listed capacity and mounting options. Capacity is storage, not AC output."
+      },
+      {
+        "label": "Current v1.1.8 manufacturer datasheet",
+        "url": "https://eg4electronics.com/wp-content/uploads/2024/04/EG4%C2%AE-Indoor-280Ah-Battery-Specifications-Sheet.pdf",
+        "kind": "Manufacturer",
+        "note": "Current datasheet specifies 140A maximum continuous charge/discharge and 200A discharge for 30 minutes. This supersedes the product-page 200A continuous claim; rating depends on supplied hardware and thermal conditions."
+      },
+      {
+        "label": "Manufacturer floor installation guide",
+        "url": "https://eg4electronics.com/wp-content/uploads/2024/04/EG4%C2%AE-Indoor-280Ah-Battery-Quick-Start-Guide.pdf",
+        "kind": "Manufacturer",
+        "note": "Manufacturer guide documents installation on a flat floor with the prescribed bracket / wall attachment. Standing/floor format does not mean the enclosure can be installed without restraint."
+      }
+    ],
+    "specs": [
+      "14.3kWh published",
+      "51.2V nominal",
+      "140A max continuous DC / 200A for 30min",
+      "280Ah LFP"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "eg4-wm280-aw",
+    "name": "EG4 PowerPro WallMount 280Ah All Weather",
+    "category": "batteries",
+    "tier": "B",
+    "cohort": "Home backup",
+    "formats": [
+      "standing",
+      "wall-mounted"
+    ],
+    "productIds": [],
+    "denominator": 14.3,
+    "headline": "Provisional: A previous-generation outdoor option with useful integration features.",
+    "strengths": [
+      "Weather-resistant quick connections and internal heater.",
+      "600A busbar arrangement aids parallel-bank wiring."
+    ],
+    "limits": [
+      "140A discharge ceiling differs from the 314Ah model.",
+      "Published cycle ratings are conditional and do not prove field lifetime.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration.",
+      "Floor installation requires the prescribed bracket or wall attachment and installation clearances."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://eg4electronics.com/categories/batteries/eg4-wallmount-all-weather-battery",
+        "kind": "Manufacturer",
+        "note": "Manufacturer documentation supports this exact battery configuration and the listed capacity and mounting options. Capacity is storage, not AC output."
+      },
+      {
+        "label": "Manufacturer floor installation guide",
+        "url": "https://eg4electronics.com/wp-content/uploads/2024/04/EG4-14.3kWh-PowerPro-WallMount-AW-Manual.pdf",
+        "kind": "Manufacturer",
+        "note": "Manufacturer guide documents installation on a flat floor with the prescribed bracket / wall attachment. Standing/floor format does not mean the enclosure can be installed without restraint."
+      }
+    ],
+    "specs": [
+      "14.3kWh published",
+      "51.2V nominal",
+      "140A max continuous discharge",
+      "IP65 enclosure"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "eg4-wm100-indoor",
+    "name": "EG4 WallMount 100Ah Indoor",
+    "category": "batteries",
+    "tier": "B",
+    "cohort": "Home backup",
+    "formats": [
+      "wall-mounted"
+    ],
+    "productIds": [
+      "shopsolar-43997612605580"
+    ],
+    "denominator": 5.12,
+    "headline": "Provisional: A small wall-mounted alternative to a rack battery.",
+    "strengths": [
+      "Slim enclosure for critical-load storage.",
+      "Quick-connect terminals and documented closed-loop support."
+    ],
+    "limits": [
+      "Conduit box and installation equipment can add cost.",
+      "A single module can restrict inverter power and runtime.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://eg4electronics.com/categories/batteries/eg4-wallmount-indoor-100ah-lithium-battery/",
+        "kind": "Manufacturer",
+        "note": "Manufacturer documentation supports this exact battery configuration and the listed capacity and mounting options. Capacity is storage, not AC output."
+      }
+    ],
+    "specs": [
+      "5.12kWh rated",
+      "51.2V nominal",
+      "100A continuous charge/discharge",
+      "100Ah LFP"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "ruixu-rack-100",
+    "name": "RUiXU RX-LFP48100",
+    "category": "batteries",
+    "tier": "A",
+    "cohort": "Home backup",
+    "formats": [
+      "server-rack"
+    ],
+    "productIds": [],
+    "denominator": 5.12,
+    "headline": "Provisional: A compact rack module with a documented communications ecosystem.",
+    "strengths": [
+      "CAN and RS485 inverter protocol choices.",
+      "Up to 32 parallel modules documented by the manufacturer."
+    ],
+    "limits": [
+      "Cabinet, busbars and correctly rated protection remain additional.",
+      "Do not substitute the heated -H revision without checking its manual.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://www.ruixubattery.com/product-page/rx-lfp48v100-19-rack-mounted-3u-module-ul1973-certified",
+        "kind": "Manufacturer",
+        "note": "Manufacturer documentation supports this exact battery configuration and the listed capacity and mounting options. Capacity is storage, not AC output. Product-page image identifies this model or documented enclosure family; use the datasheet for connectors and mounting hardware."
+      }
+    ],
+    "specs": [
+      "5.12kWh rated",
+      "51.2V nominal",
+      "19-inch / 3U",
+      "100Ah LFP"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://static.wixstatic.com/media/4a0432_9be0f8dbd81e47e1bfdd29ee33abffaa~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg"
+  },
+  {
+    "id": "sok-rack-pro",
+    "name": "SOK SK48V100PRO (legacy)",
+    "category": "batteries",
+    "tier": "B",
+    "cohort": "Home backup",
+    "formats": [
+      "server-rack"
+    ],
+    "productIds": [],
+    "denominator": 5.12,
+    "headline": "Provisional: A documented legacy rack battery for an existing compatible system.",
+    "strengths": [
+      "Detailed service and operating documentation.",
+      "CAN / RS485 communication and accessible diagnostics."
+    ],
+    "limits": [
+      "Discontinued listing: verify support and remaining-stock condition before purchase.",
+      "Do not substitute SK48V100N or NCBT pricing; different revisions.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://cdn.currentconnected.com/2023/08/21115913/SK48V100-PRO-Spec-Sheet-1.pdf",
+        "kind": "Manufacturer",
+        "note": "SOK support directs users to Current Connected owner manuals. OEM spec sheet supports the exact PRO revision, 5.12kWh, 51.2V and 100A continuous rating; distributor lists it as discontinued."
+      }
+    ],
+    "specs": [
+      "5.12kWh rated",
+      "51.2V nominal",
+      "100A continuous DC",
+      "19-inch rack"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "pytes-ebox-48100r",
+    "name": "Pytes E-BOX 48100R",
+    "category": "batteries",
+    "tier": "B",
+    "cohort": "Home backup",
+    "formats": [
+      "server-rack"
+    ],
+    "productIds": [],
+    "denominator": 5.12,
+    "headline": "Provisional: A documented rack platform with conditional throughput warranty terms.",
+    "strengths": [
+      "Modular 48V-class storage.",
+      "Published battery warranty gives explicit DC-output throughput conditions."
+    ],
+    "limits": [
+      "Do not treat nominal stored energy as delivered AC energy.",
+      "Older E-BOX revisions and newer V-series have different limits.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://www.pytesusa.com/public/upload/20231229/3b0c6bd3db537ce6c028f709c64da01c.pdf",
+        "kind": "Manufacturer",
+        "note": "Manufacturer E-Box warranty explicitly identifies E-Box 48100R and 5.12kWh rated capacity; OEM datasheet lists 51.2V / 100Ah. Warranty installation and throughput terms apply."
+      }
+    ],
+    "specs": [
+      "5.12kWh rated",
+      "51.2V nominal",
+      "100Ah LFP",
+      "Rack module"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "pytes-v5",
+    "name": "Pytes V5°",
+    "category": "batteries",
+    "tier": "A",
+    "cohort": "Home backup",
+    "formats": [
+      "server-rack"
+    ],
+    "productIds": [],
+    "denominator": 5.12,
+    "headline": "Provisional: A flexible rack module with manufacturer-supported enclosures.",
+    "strengths": [
+      "Rack, floor cabinet and wall enclosure accessories documented.",
+      "CAN / RS485 communications and self-heating."
+    ],
+    "limits": [
+      "A module photo is not a complete weather-resistant enclosure.",
+      "Cabinet and wall brackets are additional configurations.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://www.pytesusa.com/V-Series/v5.html",
+        "kind": "Manufacturer",
+        "note": "Manufacturer documentation supports this exact battery configuration and the listed capacity and mounting options. Capacity is storage, not AC output. Product-page image identifies this model or documented enclosure family; use the datasheet for connectors and mounting hardware."
+      }
+    ],
+    "specs": [
+      "5.12kWh rated",
+      "51.2V nominal",
+      "100Ah LFP",
+      "Self-heating"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.pytesusa.com/public/upload/20231117/23111G55420914.png"
+  },
+  {
+    "id": "pytes-v5-alpha-plus",
+    "name": "Pytes V5°α Plus",
+    "category": "batteries",
+    "tier": "A",
+    "cohort": "Home backup",
+    "formats": [
+      "server-rack"
+    ],
+    "productIds": [],
+    "denominator": 5.12,
+    "headline": "Provisional: Rack storage with remote monitoring and documented current limits.",
+    "strengths": [
+      "Integrated heater and remote updates.",
+      "Recommended 75A versus 100A maximum continuous operation is documented."
+    ],
+    "limits": [
+      "Inverter communication and firmware versions need confirmation.",
+      "Manufacturer certification text on older sheets can describe ongoing certification; verify current exact system listing.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://www.pytesusa.com/public/upload/20240829/108e9c075ddd8de9e37b49d0f3c8883f.pdf",
+        "kind": "Manufacturer",
+        "note": "Manufacturer documentation supports this exact battery configuration and the listed capacity and mounting options. Capacity is storage, not AC output."
+      }
+    ],
+    "specs": [
+      "5.12kWh rated",
+      "51.2V nominal",
+      "100A max continuous DC",
+      "Wi-Fi monitoring"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "pytes-v10-alpha",
+    "name": "Pytes V10α",
+    "category": "batteries",
+    "tier": "B",
+    "cohort": "Home backup",
+    "formats": [
+      "standing",
+      "wall-mounted"
+    ],
+    "productIds": [],
+    "denominator": 9.98,
+    "headline": "Provisional: A mid-size enclosure with flexible mounting, subject to datasheet confirmation.",
+    "strengths": [
+      "Manufacturer identifies 10.24kWh storage and wall / ground options.",
+      "Larger module reduces inter-module connections for the same bank size."
+    ],
+    "limits": [
+      "March 2026 datasheet says 9.98kWh rated; marketing page says 10.24kWh. Confirm the supplied revision.",
+      "Ground mount needs a separately purchased bracket; no catalog price is matched.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://www.pytesusa.com/public/upload/20260330/22025fa56ec944ae190e9a0623df9add.pdf",
+        "kind": "Manufacturer",
+        "note": "March 30, 2026 OEM V10α datasheet: 9.98kWh rated, 51.2V, 200Ah, 120A recommended continuous current, IP66 and wall/ground installation. Marketing-page figures differ; the datasheet rating is used here. Product-page image identifies this model or documented enclosure family; use the datasheet for connectors and mounting hardware."
+      }
+    ],
+    "specs": [
+      "9.98kWh rated (March 2026 sheet)",
+      "51.2V nominal / 200Ah",
+      "120A recommended continuous DC",
+      "Wall / ground mount"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.pytesusa.com/public/upload/20250818/250QQ61A49E.png"
+  },
+  {
+    "id": "bigbattery-nexus2",
+    "name": "BigBattery NEXUS 2",
+    "category": "batteries",
+    "tier": "A",
+    "cohort": "Home backup",
+    "formats": [
+      "standing"
+    ],
+    "productIds": [
+      "shopsolar-59077978226828"
+    ],
+    "denominator": 16.08,
+    "headline": "Provisional: A large floor-standing battery with a clear single-module identity.",
+    "strengths": [
+      "Integrated heater and CAN / RS485 ports.",
+      "7.6kW published continuous DC power and 12-year conditional warranty."
+    ],
+    "limits": [
+      "315lb enclosure needs planned handling and floor loading.",
+      "Official listing is on backorder; live value requires a confirmed in-stock offer.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://bigbattery.com/products/bigbattery-48v-nexus-16kwh-lifepo4-battery-off-grid-home/?banner=nexus-2-hp-main",
+        "kind": "Manufacturer",
+        "note": "Manufacturer documentation supports this exact battery configuration and the listed capacity and mounting options. Capacity is storage, not AC output. Product-page image identifies this model or documented enclosure family; use the datasheet for connectors and mounting hardware."
+      }
+    ],
+    "specs": [
+      "16.08kWh published",
+      "51.2V nominal",
+      "150A max continuous DC",
+      "IP54 indoor"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://bigbattery.com/wp-content/uploads/2026/09/Nexus-2-Main-image.webp"
+  },
+  {
+    "id": "bigbattery-ethos-2",
+    "name": "BigBattery ETHOS 10.24kWh (2 modules)",
+    "category": "batteries",
+    "tier": "A",
+    "cohort": "Modular storage",
+    "formats": [
+      "stackable"
+    ],
+    "productIds": [],
+    "denominator": 10.24,
+    "headline": "Provisional: A modular battery stack with an explicit two-module configuration.",
+    "strengths": [
+      "Capacity grows in 5.12kWh increments.",
+      "Manufacturer documents control-box, base and interconnect arrangement."
+    ],
+    "limits": [
+      "Bare module pricing is not complete-stack pricing.",
+      "Rank covers the battery stack only; inverter bundles are excluded.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://bigbattery.com/products/ethos-10-2kwh-2-module/",
+        "kind": "Manufacturer",
+        "note": "Official ETHOS two-module configuration and OEM user manual establish two 5.12kWh modules plus control box/base. No catalog ESS inverter bundle is treated as a battery-only price. Product-page image identifies this model or documented enclosure family; use the datasheet for connectors and mounting hardware."
+      }
+    ],
+    "specs": [
+      "10.24kWh configured stack",
+      "51.2V nominal",
+      "2 × 5.12kWh modules",
+      "Control box required"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://bigbattery.com/wp-content/uploads/2026/04/ETHOS-2stack-carousel.webp"
+  },
+  {
+    "id": "fortress-evault-max",
+    "name": "Fortress Power eVault MAX 18.5",
+    "category": "batteries",
+    "tier": "A",
+    "cohort": "Home backup",
+    "formats": [
+      "standing"
+    ],
+    "productIds": [],
+    "denominator": 18.5,
+    "headline": "Provisional: High capacity in a serviceable floor enclosure.",
+    "strengths": [
+      "Up to 20 units in parallel documented.",
+      "Top-access service design and closed-loop communications."
+    ],
+    "limits": [
+      "Around 500lb: verify exact revision weight and floor loading.",
+      "Older manuals and current pages differ in environmental and charging limits; use the supplied revision.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://www.fortresspower.com/products/evault-max-18-5kwh-lifepo-battery/",
+        "kind": "Manufacturer",
+        "note": "Manufacturer documentation supports this exact battery configuration and the listed capacity and mounting options. Capacity is storage, not AC output. Product-page image identifies this model or documented enclosure family; use the datasheet for connectors and mounting hardware."
+      }
+    ],
+    "specs": [
+      "18.5kWh rated",
+      "51.2V nominal",
+      "180A continuous discharge",
+      "Floor standing"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.fortresspower.com/wp-content/uploads/2025/06/600x900_evault_feature.jpg"
+  },
+  {
+    "id": "fortress-eboost16",
+    "name": "Fortress Power eBoost 16",
+    "category": "batteries",
+    "tier": "A",
+    "cohort": "Home backup",
+    "formats": [
+      "standing",
+      "wall-mounted"
+    ],
+    "productIds": [
+      "shopsolar-46450808717452",
+      "santan-solar-fp-eboost16kwh"
+    ],
+    "denominator": 16.077,
+    "headline": "Provisional: Large storage with documented floor and optional wall installation.",
+    "strengths": [
+      "180A charge / 250A discharge closed-loop specification.",
+      "Heated weather-resistant enclosure."
+    ],
+    "limits": [
+      "eWay and approved configuration requirements affect the installed cost.",
+      "Wall mounting uses a separate accessory; minimum bank sizing depends on inverter.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://www.fortresspower.com/products/eboost/",
+        "kind": "Manufacturer",
+        "note": "Manufacturer documentation supports this exact battery configuration and the listed capacity and mounting options. Capacity is storage, not AC output."
+      }
+    ],
+    "specs": [
+      "16.077kWh nominal",
+      "51.2V nominal",
+      "IP65 / heated",
+      "314Ah LFP"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "fortress-eforce96",
+    "name": "Fortress Power eForce 9.6",
+    "category": "batteries",
+    "tier": "A",
+    "cohort": "Modular storage",
+    "formats": [
+      "stackable"
+    ],
+    "productIds": [
+      "santan-solar-fp-eforce-9-6kwh"
+    ],
+    "denominator": 9.6,
+    "headline": "Provisional: A stackable DC storage platform with a detailed sizing matrix.",
+    "strengths": [
+      "Quick-connect vertical stacking.",
+      "Manufacturer publishes minimum module counts for individual inverters."
+    ],
+    "limits": [
+      "Base, control equipment and inverter are additional.",
+      "Extended warranty depends on certified installation, activation and throughput limits.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://www.fortresspower.com/products/eforce/",
+        "kind": "Manufacturer",
+        "note": "Manufacturer documentation supports this exact battery configuration and the listed capacity and mounting options. Capacity is storage, not AC output."
+      }
+    ],
+    "specs": [
+      "9.6kWh per module",
+      "48V DC class",
+      "IP65 enclosure",
+      "Up to 3-module vertical stack"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "fortress-eflex-max",
+    "name": "Fortress Power eFlex MAX 5.4",
+    "category": "batteries",
+    "tier": "A",
+    "cohort": "Home backup",
+    "formats": [
+      "standing",
+      "server-rack",
+      "wall-mounted"
+    ],
+    "productIds": [
+      "santan-solar-fp-eflexmax-5-4"
+    ],
+    "denominator": 5.374,
+    "headline": "Provisional: A versatile module with documented wall, floor and rack options.",
+    "strengths": [
+      "Supports standard 19-inch industrial racks or floor stands.",
+      "Recommended 60A continuous discharge and timed higher-current limits are clearly separated."
+    ],
+    "limits": [
+      "100A discharge is specified for 60 minutes; do not treat it as unlimited.",
+      "Mounting hardware and minimum battery counts affect total cost.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://www.fortresspower.com/wp-content/uploads/2025/07/FP_datasheet_eFlexMAX_2025.pdf",
+        "kind": "Manufacturer",
+        "note": "Manufacturer documentation supports this exact battery configuration and the listed capacity and mounting options. Capacity is storage, not AC output."
+      }
+    ],
+    "specs": [
+      "5.374kWh rated at 0.5C",
+      "51.2V nominal",
+      "105Ah LFP",
+      "IP65 enclosure"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "ecoworthy-cubix-pro-v2",
+    "name": "Eco-Worthy Cubix100 Pro V2",
+    "category": "batteries",
+    "tier": "B",
+    "cohort": "Home backup",
+    "formats": [
+      "server-rack"
+    ],
+    "productIds": [],
+    "denominator": 5.12,
+    "headline": "Provisional: A feature-rich rack option needing careful revision matching.",
+    "strengths": [
+      "Bluetooth / Wi-Fi and onboard display.",
+      "Manufacturer documents low-temperature charging and rapid shutdown features."
+    ],
+    "limits": [
+      "Catalog Pro titles do not establish V2 identity; no price match is assumed.",
+      "100A maximum discharge is temperature conditioned; warranty and compatibility claims require exact-system verification.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://www.eco-worthy.com/products/eco-worthy-cubix-100-pro-48v-100ah-server-rack-battery-bluetooth-wifi-low-temp-ready",
+        "kind": "Manufacturer",
+        "note": "Manufacturer documentation supports this exact battery configuration and the listed capacity and mounting options. Capacity is storage, not AC output. Product-page image identifies this model or documented enclosure family; use the datasheet for connectors and mounting hardware."
+      }
+    ],
+    "specs": [
+      "5.12kWh rated",
+      "51.2V nominal",
+      "100A max discharge (temperature limited)",
+      "3A active balancing"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.eco-worthy.com/cdn/shop/files/eco-worthy-cubix-100-pro-48v-100ah-server-rack-battery-bluetooth-wifi-low-temp-charge-10-years-warranty-lithium-battery-eco-worthy-3996703.jpg?v=1772802308"
+  },
+  {
+    "id": "pylontech-us5000",
+    "name": "Pylontech US5000",
+    "category": "batteries",
+    "tier": "A",
+    "cohort": "Home backup",
+    "formats": [
+      "server-rack"
+    ],
+    "productIds": [],
+    "denominator": 4.8,
+    "headline": "Provisional: A compact rack module with explicit usable-energy and current specifications.",
+    "strengths": [
+      "CAN / RS485 and up to 16 modules in one string.",
+      "95% depth-of-discharge specification separates rated from usable capacity."
+    ],
+    "limits": [
+      "Indoor IP20 module; approved rack / enclosure is additional.",
+      "100A normal rating differs from timed overload and peak ratings.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://en.pylontech.com.cn/products/c23/134.html",
+        "kind": "Manufacturer",
+        "note": "Manufacturer documentation supports this exact battery configuration and the listed capacity and mounting options. Capacity is storage, not AC output."
+      }
+    ],
+    "specs": [
+      "4.8kWh nominal / 4.56kWh usable",
+      "48V nominal",
+      "100A normal charge/discharge",
+      "19-inch rack"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "byd-hvs51",
+    "name": "BYD Battery-Box Premium HVS 5.1",
+    "category": "batteries",
+    "tier": "A",
+    "cohort": "High-voltage storage",
+    "formats": [
+      "stackable"
+    ],
+    "productIds": [],
+    "denominator": 5.12,
+    "headline": "Provisional: A compact high-voltage stack for an explicitly approved inverter.",
+    "strengths": [
+      "Two-module configuration is clearly defined.",
+      "Published usable energy, current and operating-voltage range."
+    ],
+    "limits": [
+      "Not a 48V battery; use the exact BYD inverter compatibility list.",
+      "BCU, base and installation costs are required; do not substitute HVS+ / HVM revisions.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://bydbatterybox.com/uploads/downloads/BBOX_HVS_Datasheet_EN_V1.0_240626_L-668f92b10b0a6.pdf",
+        "kind": "Manufacturer",
+        "note": "Manufacturer HVS datasheet: two 2.56kWh HVS modules, 5.12kWh usable, 204.8V nominal and 25A maximum output. The configuration includes required control equipment, not an inverter."
+      }
+    ],
+    "specs": [
+      "5.12kWh usable",
+      "204.8V nominal",
+      "2 × HVS modules",
+      "25A max output"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "ecoworthy-cubix100",
+    "name": "Eco-Worthy Cubix100",
+    "category": "batteries",
+    "tier": "B",
+    "cohort": "Home backup",
+    "formats": [
+      "server-rack"
+    ],
+    "productIds": [],
+    "denominator": 5.12,
+    "headline": "Provisional: A compact rack option with manufacturer documentation for the regional listing.",
+    "strengths": [
+      "Bluetooth / Wi-Fi monitoring.",
+      "Standard rack format for incremental storage expansion."
+    ],
+    "limits": [
+      "Canada source: confirm local certifications and the supplied revision for other markets.",
+      "Cubix100, Pro and Pro V2 are separate revisions; matching names alone do not qualify a price.",
+      "Documentation assessment; no independent comparative lifetime test is included. Battery and inverter must be approved for the intended configuration."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications / installation documentation",
+        "url": "https://ca.eco-worthy.com/collections/globofilter-best-selling-products-index/products/eco-worthy-51-2v-100ah-lifepo4-server-rack-battery-3u-size-with-bluetooth-wifi",
+        "kind": "Manufacturer",
+        "note": "Manufacturer documentation supports this exact battery configuration and the listed capacity and mounting options. Capacity is storage, not AC output. Product-page image identifies this model or documented enclosure family; use the datasheet for connectors and mounting hardware."
+      }
+    ],
+    "specs": [
+      "5.12kWh rated",
+      "51.2V nominal / 48V system",
+      "100Ah LFP",
+      "3U server rack"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://ca.eco-worthy.com/cdn/shop/files/eco-worthy-cubix100-48v-100ah-lifepo4-server-rack-battery-ul9540-ul1973-ul9540a-cec-listedlithium-battery-8135851.jpg?v=1786671973"
+  },
+  {
+    "id": "eg4-12000xp",
+    "name": "EG4 12000XP",
+    "category": "inverters",
+    "tier": "A",
+    "cohort": "Off-grid",
+    "productIds": [],
+    "denominator": 12000,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: Integrated split-phase power for a substantial off-grid system.",
+    "strengths": [
+      "Integrated solar charging.",
+      "Supported parallel expansion."
+    ],
+    "limits": [
+      "Cannot sell energy to the utility.",
+      "15kW revision requires PV assistance; battery-only circuitry remains limited to 12kW.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://eg4electronics.com/wp-content/uploads/2024/10/EG4-12000XP-Spec-Sheet.pdf",
+        "kind": "Manufacturer",
+        "note": "AC table explicitly states 12,000W without PV. Full-load range 0–45°C. IV-15000-XP-IN-01 reaches 15kW only with PV; original revision remains 12kW."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://eg4electronics.com/categories/inverters/eg4-12000xp/",
+        "kind": "Manufacturer",
+        "note": "Official 12000XP front photo; rear revision and 15kW update applicability require the model plate."
+      }
+    ],
+    "specs": [
+      "12,000W without PV at 0–45°C",
+      "48V battery",
+      "120/240V split-phase"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://eg4electronics.com/wp-content/uploads/2026/06/EG4-12000XP-All-In-One-Off-Grid-Inverter-Front.webp"
+  },
+  {
+    "id": "eg4-flexboss18",
+    "name": "EG4 FlexBOSS18",
+    "category": "inverters",
+    "tier": "A",
+    "cohort": "Hybrid",
+    "productIds": [],
+    "denominator": 10000,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: Useful hybrid flexibility with a defined battery output ceiling.",
+    "strengths": [
+      "GridBOSS integration.",
+      "Two solar MPPTs."
+    ],
+    "limits": [
+      "13kW conditional output differs from 10kW battery-only.",
+      "Gateway and batteries add cost.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://eg4electronics.com/wp-content/uploads/2024/12/EG4-FlexBOSS18-Hybrid-Inverter-Spec-Sheet.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact FlexBOSS18: 10kW continuous from battery; 13kW with PV assistance when grid connected. 18kW is PV input."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://eg4electronics.com/categories/inverters/eg4-flexboss18/",
+        "kind": "Manufacturer",
+        "note": "Official photo explicitly named FlexBOSS18; not FlexBOSS21."
+      }
+    ],
+    "specs": [
+      "10kW battery-only at 45°C",
+      "120/240V split-phase",
+      "90A grid bypass"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://eg4electronics.com/wp-content/uploads/2026/06/EG4-FlexBOSS18-All-In-One-Hybrid-Inverter-Front.webp"
+  },
+  {
+    "id": "solark-8k-2p-n",
+    "name": "Sol-Ark 8K-2P-N (legacy)",
+    "category": "inverters",
+    "tier": "B",
+    "cohort": "Hybrid",
+    "productIds": [],
+    "denominator": 0,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: A legacy split-phase platform requiring exact revision checks.",
+    "strengths": [
+      "Integrated solar MPPTs.",
+      "Published lithium/lead-acid support."
+    ],
+    "limits": [
+      "Manufacturer identifies this as a legacy model.",
+      "Battery-only continuous AC was not isolated in this datasheet; no $/W denominator.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://www.sol-ark.com/wp-content/uploads/2024/06/SK150-0006-002-8K-2P-N-ES-Datasheet.pdf",
+        "kind": "Manufacturer",
+        "note": "Spanish manufacturer datasheet identifies Sol-Ark-8K-48-ST / 8K-2P-N. Do not substitute newer Limitless ratings."
+      }
+    ],
+    "specs": [
+      "120/240V or 120/208V",
+      "48V battery",
+      "Legacy 8K-2P-N"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "solark-12k-2p-n",
+    "name": "Sol-Ark 12K-2P-N Essentials",
+    "category": "inverters",
+    "tier": "B",
+    "cohort": "Hybrid",
+    "productIds": [],
+    "denominator": 0,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: A documented hybrid option whose name overstates AC power.",
+    "strengths": [
+      "Two MPPTs.",
+      "Generator start and battery communications."
+    ],
+    "limits": [
+      "Current datasheet lists 9kW continuous AC, not 12kW AC.",
+      "Battery-only AC boundary varies in older manuals; denominator withheld.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://www.sol-ark.com/wp-content/uploads/2024/06/SK150-0003-002-12K-2P-N-EN-Datasheet.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact 12K-2P-N / Sol-Ark-12K-P: 9kW AC plus 3kW DC charging explains the 12K label. Does not independently specify battery-only AC."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://sol-ark.com/residential-energy-solutions/essentials-12k-2p-hybrid-inverter/",
+        "kind": "Manufacturer",
+        "note": "Official Essentials12K-2P-N photo; not Limitless12K."
+      }
+    ],
+    "specs": [
+      "9kW rated AC",
+      "48V battery",
+      "Derates above 45°C"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://sol-ark.com/wp-content/uploads/2025/10/12K-2P-N_Labeled.png"
+  },
+  {
+    "id": "solark-12k-2p-ll",
+    "name": "Sol-Ark Limitless 12K-2P-LL",
+    "category": "inverters",
+    "tier": "A",
+    "cohort": "Hybrid",
+    "productIds": [
+      "shopsolar-50513664770188"
+    ],
+    "denominator": 10000,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: A smaller whole-home platform with explicit backup ratings.",
+    "strengths": [
+      "Three MPPTs.",
+      "AC coupling and generator support."
+    ],
+    "limits": [
+      "10kW backup at 240V falls to 8.66kW at 208V.",
+      "Some PCS/CEC/SGIP listings remain pending in this revision.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://sol-ark.com/wp-content/uploads/2026/09/12K-LL_Datasheet_PS-00045_Rev_4_9Sept2026.pdf",
+        "kind": "Manufacturer",
+        "note": "Rev4 explicitly states 10kW continuous battery backup, 12kW grid output; exact 12K-2P-LL, distinct from Essentials."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://sol-ark.com/residential-energy-solutions/essentials-12k-2p-hybrid-inverter/",
+        "kind": "Manufacturer",
+        "note": "Official related-product image explicitly labeled Limitless12K-2P-LL; distinct from Essentials."
+      }
+    ],
+    "specs": [
+      "10kW battery backup at 240V",
+      "100A passthrough",
+      "Derates above 45°C"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://sol-ark.com/wp-content/uploads/2026/05/Limitless12K-2P-LL_Front-1.png"
+  },
+  {
+    "id": "victron-mp2-48-3000-120v",
+    "name": "Victron MultiPlus-II 48/3000/35-50 120V",
+    "category": "inverters",
+    "tier": "A",
+    "cohort": "Inverter / charger",
+    "productIds": [],
+    "denominator": 2400,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: Flexible low-power inverter/charger with published derating.",
+    "strengths": [
+      "PowerAssist.",
+      "Supported paired split-phase configuration."
+    ],
+    "limits": [
+      "One unit outputs 120V.",
+      "Solar requires separate charging equipment.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-MultiPlus-II-120V-EN.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact 48/3000/35-50 120V column: 3,000VA is not 3,000W; continuous watts are 2,400 at 25°C."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://www.victronenergy.com/inverters-chargers/multiplus-ii",
+        "kind": "Manufacturer",
+        "note": "Manufacturer uses this family front photo for listed120V models. Photo alone does not identify voltage or article-code suffix."
+      }
+    ],
+    "specs": [
+      "2,400W at 25°C",
+      "2,200W at 40°C",
+      "48V / 120V"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.victronenergy.com/upload/products/MultiPlus-II_nw.png"
+  },
+  {
+    "id": "victron-mp2-48-5000-120v",
+    "name": "Victron MultiPlus-II 48/5000/70-95 120V",
+    "category": "inverters",
+    "tier": "A",
+    "cohort": "Inverter / charger",
+    "productIds": [],
+    "denominator": 4000,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: A modular option with useful shore/grid load assistance.",
+    "strengths": [
+      "PowerAssist.",
+      "95A transfer switch."
+    ],
+    "limits": [
+      "One unit outputs 120V.",
+      "Separate MPPT/GX hardware increases system cost.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-MultiPlus-II-120V-EN.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact 48/5000/70-95 120V column: 5,000VA nameplate, 4,000W continuous at 25°C. Not the 230V /70-50 model."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://www.victronenergy.com/inverters-chargers/multiplus-ii",
+        "kind": "Manufacturer",
+        "note": "Manufacturer uses this family front photo for listed120V models. Photo alone does not identify voltage or article-code suffix."
+      }
+    ],
+    "specs": [
+      "4,000W at 25°C",
+      "3,700W at 40°C",
+      "48V / 120V"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.victronenergy.com/upload/products/MultiPlus-II_nw.png"
+  },
+  {
+    "id": "victron-quattro-48-5000-120v",
+    "name": "Victron Quattro 48/5000/70-100/100 120V",
+    "category": "inverters",
+    "tier": "A",
+    "cohort": "Inverter / charger",
+    "productIds": [],
+    "denominator": 4000,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: Dual AC sources suit generator and grid integration.",
+    "strengths": [
+      "Two independently controlled AC inputs.",
+      "PowerAssist."
+    ],
+    "limits": [
+      "One unit outputs 120V.",
+      "Solar charging hardware is separate.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-Quattro-3-10kVA-120V-EN.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact 120V 48/5000 column; 5,000VA differs from 4,000W continuous at 25°C."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://www.victronenergy.com/inverters-chargers/quattro",
+        "kind": "Manufacturer",
+        "note": "Official Quattro family front photo; exact120V power column remains determined by datasheet, not photo."
+      }
+    ],
+    "specs": [
+      "4,000W at 25°C",
+      "3,700W at 40°C",
+      "48V / dual AC inputs"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.victronenergy.com/upload/products/Quattro_nw.png"
+  },
+  {
+    "id": "victron-quattro-48-10000-120v",
+    "name": "Victron Quattro 48/10000/140-100/100 120V",
+    "category": "inverters",
+    "tier": "A",
+    "cohort": "Inverter / charger",
+    "productIds": [],
+    "denominator": 8000,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: Higher continuous power with dual-source control.",
+    "strengths": [
+      "Two AC inputs.",
+      "Supported paired split-phase operation."
+    ],
+    "limits": [
+      "One unit outputs 120V.",
+      "6,500W continuous at 40°C; size cooling and loads accordingly.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-Quattro-3-10kVA-120V-EN.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact 48/10000/140-100/100 120V: 10,000VA nameplate, 8,000W continuous at 25°C; not the 230V Quattro."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://www.victronenergy.com/inverters-chargers/quattro",
+        "kind": "Manufacturer",
+        "note": "Official Quattro family front photo; exact120V power column remains determined by datasheet, not photo."
+      }
+    ],
+    "specs": [
+      "8,000W at 25°C",
+      "6,500W at 40°C",
+      "48V / 120V"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.victronenergy.com/upload/products/Quattro_nw.png"
+  },
+  {
+    "id": "growatt-min6000-xh-us-v3",
+    "name": "Growatt MIN 6000TL-XH-US V3",
+    "category": "inverters",
+    "tier": "B",
+    "cohort": "Hybrid",
+    "productIds": [],
+    "denominator": 6000,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: Battery-ready US hardware with defined backup accessories.",
+    "strengths": [
+      "Three MPPTs.",
+      "Published supported HV batteries."
+    ],
+    "limits": [
+      "V3 requires SYN200-US for whole-home backup.",
+      "Output depends on battery configuration; 208V grid output is 5,200W.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://us.growatt.com/upload/file/MIN_3000-7600TL-XH-US_Datasheet_EN_202401.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact MIN6000TL-XH-US: 6,000W nominal backup. V2 uses ATS-US; V3 uses SYN200-US. AC and DC power columns are distinct."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://us.growatt.com/products/min-3000-11400tl-xh-us",
+        "kind": "Manufacturer",
+        "note": "Official MIN3000–7600TL-XH-US family photo; V3 connection unit/rear layout not verified by front photo."
+      }
+    ],
+    "specs": [
+      "6,000W nominal backup",
+      "240V backup",
+      "Derates above 45°C"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://us.growatt.com/upload/image/20220824/5b704433ede360112a868c9e26f77545.png"
+  },
+  {
+    "id": "growatt-min7600-xh-us-v3",
+    "name": "Growatt MIN 7600TL-XH-US V3",
+    "category": "inverters",
+    "tier": "B",
+    "cohort": "Hybrid",
+    "productIds": [
+      "shopsolar-52726482108556"
+    ],
+    "denominator": 7600,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: A US battery-ready inverter with compact system hardware.",
+    "strengths": [
+      "Three MPPTs.",
+      "Published APX/ARO/LG compatibility."
+    ],
+    "limits": [
+      "V3 requires SYN200-US for backup.",
+      "7,600W at 240V differs from 6,580W at 208V.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://us.growatt.com/upload/file/MIN_3000-7600TL-XH-US_Datasheet_EN_202401.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact MIN7600TL-XH-US: 7,600W nominal backup; 12,000VA is maximum backup apparent power, not continuous watts."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://us.growatt.com/products/min-3000-11400tl-xh-us",
+        "kind": "Manufacturer",
+        "note": "Official MIN3000–7600TL-XH-US family photo; V3 connection unit/rear layout not verified by front photo."
+      }
+    ],
+    "specs": [
+      "7,600W nominal backup",
+      "240V backup",
+      "Derates above 45°C"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://us.growatt.com/upload/image/20220824/5b704433ede360112a868c9e26f77545.png"
+  },
+  {
+    "id": "growatt-spf5000-es-230v",
+    "name": "Growatt SPF 5000 ES (230V regional)",
+    "category": "inverters",
+    "tier": "C",
+    "cohort": "Off-grid",
+    "productIds": [],
+    "denominator": 0,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: A regional off-grid alternative with US installation caveats.",
+    "strengths": [
+      "Integrated PV charging.",
+      "Supports parallel expansion."
+    ],
+    "limits": [
+      "230V single-phase; does not provide native US 120/240V split phase.",
+      "Manufacturer page documents CE rather than US interconnection; continuous W withheld pending table verification.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://en.growatt.com/products/spf-3000-5000-es-es-lite",
+        "kind": "Manufacturer",
+        "note": "Manufacturer family page identifies 230Vac; separate ES and ES Lite datasheets. No US certification or battery-only watts inferred."
+      }
+    ],
+    "specs": [
+      "230V single-phase",
+      "450Vdc PV class",
+      "SPF 5000 ES, not ES Lite"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://en.growatt.com/upload/image/20220823/8cb261a2a2505b1c21e019ff6f86cf2f.png"
+  },
+  {
+    "id": "schneider-xw-pro6848-na",
+    "name": "Schneider Electric XW Pro 6848 NA (865-6848-21)",
+    "category": "inverters",
+    "tier": "A",
+    "cohort": "Inverter / charger",
+    "productIds": [],
+    "denominator": 6800,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: A documented split-phase platform for an engineered system.",
+    "strengths": [
+      "Dedicated grid and generator inputs.",
+      "Published installation and configuration guides."
+    ],
+    "limits": [
+      "PV charge controllers and distribution hardware are separate.",
+      "Temperature derating and supported battery configuration affect output.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://solar.se.com/us/wp-content/uploads/sites/7/2021/10/XW-Pro-UL-Datasheet.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact 865-6848-21 / XW Pro6848NA120/240V: standalone continuous AC is 6,800W at 25°C and 6,000W at 40°C. The 120V-only configuration is 5,760W."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://solar.se.com/us/en/product/xw-pro-120-240v/?country=United_States",
+        "kind": "Manufacturer",
+        "note": "Official XW Pro120/240V page explicitly identifies part865-6848-21."
+      }
+    ],
+    "specs": [
+      "6,800W at 25°C; 6,000W at 40°C",
+      "48V battery",
+      "120/240V NA"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://solar.se.com/us/wp-content/uploads/sites/7/2021/08/Schneider-Electric-XW-Pro-Hybrid-Inverter-lbox-426x426-trans.png"
+  },
+  {
+    "id": "sma-si6048-us10",
+    "name": "SMA Sunny Island SI6048-US-10",
+    "category": "inverters",
+    "tier": "A",
+    "cohort": "Inverter / charger",
+    "productIds": [],
+    "denominator": 5750,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: An AC-coupled microgrid option with explicit rated watts.",
+    "strengths": [
+      "Generator support.",
+      "Published battery/BMS integration."
+    ],
+    "limits": [
+      "One unit is 120V; split phase requires two.",
+      "6kW is a three-hour rating, not the 5.75kW rated-power denominator.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://files.sma.de/downloads/SI6048US-DS-en-28.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact SI6048-US-10: rated 5,750W at 25°C; 6,000W at 25°C is limited to three hours."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://www.sma-america.com/products/battery-inverters/sunny-island-4548-us-6048-us",
+        "kind": "Manufacturer",
+        "note": "Official photo labeled Sunny Island4548-US/6048-US family; datasheet identifies exact6048-US-10 ratings."
+      }
+    ],
+    "specs": [
+      "5,750W rated at 25°C, PF=1",
+      "48V battery",
+      "120V / 60Hz"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.sma-america.com/fileadmin/_processed_/4/a/csm_Sunny-Island-4548-US-6048-US_33ab41ad55.png"
+  },
+  {
+    "id": "sma-sb77-us41",
+    "name": "SMA Sunny Boy SB7.7-1SP-US-41",
+    "category": "inverters",
+    "tier": "B",
+    "cohort": "Grid-tied",
+    "productIds": [],
+    "denominator": 7680,
+    "priceBasis": "grid-ac",
+    "headline": "Provisional: A string inverter for grid-connected solar generation.",
+    "strengths": [
+      "Three independent MPPT inputs.",
+      "Published 208V and 240V ratings."
+    ],
+    "limits": [
+      "Does not supply battery backup by itself.",
+      "Output falls to 6,650W at 208V.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://files.sma.de/downloads/SBxx-1SP-US-41-IA-xx-14.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact -41 generation SB7.7-1SP-US-41: rated 7,680W at 240V, not a rounded 7,700W."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://www.sma-america.com/products/solarinverters/sunny-boy-30-us-41-77-us-41",
+        "kind": "Manufacturer",
+        "note": "Official -41 series page uses this Sunny Boy US family photo; exact7.7 suffix remains a model-plate check."
+      }
+    ],
+    "specs": [
+      "7,680W at 240V",
+      "6,650W at 208V",
+      "600V maximum PV"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.sma-america.com/fileadmin/_processed_/7/7/csm_Sunny-Boy-3.0-US-7.0-US_11025070f2.png"
+  },
+  {
+    "id": "sungrow-sh50rs-regional",
+    "name": "Sungrow SH5.0RS (230V regional)",
+    "category": "inverters",
+    "tier": "C",
+    "cohort": "Hybrid",
+    "productIds": [],
+    "denominator": 5000,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: Regional hybrid hardware requiring a US applicability check.",
+    "strengths": [
+      "Two MPPTs.",
+      "Documented emergency output."
+    ],
+    "limits": [
+      "220/230/240V single-phase, not native US split phase.",
+      "US listing and local interconnection are not established by this UK datasheet.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://uk.sungrowpower.com/upload/file/20231106/EN_DS_20230718_SH3.0RS_SH3.6RS_SH4.0RS_SH5.0RS_SH6.0RS_Datasheet.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact SH5.0RS column, not SH5.0RS-20; 5,000W off-grid rating. Regional AC and certification limits apply."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://www.sungrowpower.com/us/en/products/residential-energy-storage-system/shrs-3-36-4-5-6",
+        "kind": "Manufacturer",
+        "note": "Official SH3.0–6.0RS family hero photo. A US-language webpage is not proof of US split-phase certification."
+      }
+    ],
+    "specs": [
+      "5,000W off-grid rated output",
+      "220/230/240V single-phase",
+      "High-voltage battery"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://official-oversears-file.sungrowpower.com/page-assets/2634dff5-5bd7-4d4b-ab3b-6ac12addc9de.png"
+  },
+  {
+    "id": "sungrow-sh60rs-regional",
+    "name": "Sungrow SH6.0RS (230V regional)",
+    "category": "inverters",
+    "tier": "C",
+    "cohort": "Hybrid",
+    "productIds": [],
+    "denominator": 6000,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: Regional storage integration with a documented backup envelope.",
+    "strengths": [
+      "Two MPPTs.",
+      "Fast documented backup transition."
+    ],
+    "limits": [
+      "Single-phase regional AC requires US engineering review.",
+      "Battery current/voltage and derating can reduce available output.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://uk.sungrowpower.com/upload/file/20231106/EN_DS_20230718_SH3.0RS_SH3.6RS_SH4.0RS_SH5.0RS_SH6.0RS_Datasheet.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact SH6.0RS column, not SH6.0RS-20; 6,000W off-grid rating. UK sheet does not establish US certification."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://www.sungrowpower.com/us/en/products/residential-energy-storage-system/shrs-3-36-4-5-6",
+        "kind": "Manufacturer",
+        "note": "Official SH3.0–6.0RS family hero photo. A US-language webpage is not proof of US split-phase certification."
+      }
+    ],
+    "specs": [
+      "6,000W off-grid rated output",
+      "220/230/240V single-phase",
+      "High-voltage battery"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://official-oversears-file.sungrowpower.com/page-assets/2634dff5-5bd7-4d4b-ab3b-6ac12addc9de.png"
+  },
+  {
+    "id": "goodwe-gw7600a-es",
+    "name": "GoodWe GW7600A-ES",
+    "category": "inverters",
+    "tier": "B",
+    "cohort": "Hybrid",
+    "productIds": [],
+    "denominator": 0,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: An Americas hybrid option for complex rooftop strings.",
+    "strengths": [
+      "Four MPPTs.",
+      "NEMA 4X enclosure."
+    ],
+    "limits": [
+      "Requires supported 80–495V lithium battery.",
+      "Backup table specifies 7,600VA; no conversion to continuous W denominator.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://en.goodwe.com/Ftp/EN/Downloads/Datasheet/GW_A-ES_Datasheet-EN.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact GW7600A-ES Americas column. Backup specification is apparent power; battery power is voltage-limited."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://us.goodwe.com/a-es-series-split-phase-hybrid-solar-inverter-for-north-america",
+        "kind": "Manufacturer",
+        "note": "Official A-ES US family photo; page lists GW7600A-ES and GW9600A-ES. Image does not establish connector revision."
+      }
+    ],
+    "specs": [
+      "7,600VA backup rating",
+      "120/240V / 60Hz",
+      "Four MPPTs"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://us.goodwe.com/Public/Uploads/uploadfile25/images/20240816/AES.png"
+  },
+  {
+    "id": "goodwe-gw9600a-es",
+    "name": "GoodWe GW9600A-ES",
+    "category": "inverters",
+    "tier": "B",
+    "cohort": "Hybrid",
+    "productIds": [],
+    "denominator": 0,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: More apparent-power headroom in the Americas A-ES platform.",
+    "strengths": [
+      "Four MPPTs.",
+      "Integrated AFCI."
+    ],
+    "limits": [
+      "Requires compatible high-voltage lithium battery.",
+      "9,600VA is not independently verified battery-only watts.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://en.goodwe.com/Ftp/EN/Downloads/Datasheet/GW_A-ES_Datasheet-EN.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact GW9600A-ES Americas column. Backup apparent power and short overload ratings are distinct."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://us.goodwe.com/a-es-series-split-phase-hybrid-solar-inverter-for-north-america",
+        "kind": "Manufacturer",
+        "note": "Official A-ES US family photo; page lists GW7600A-ES and GW9600A-ES. Image does not establish connector revision."
+      }
+    ],
+    "specs": [
+      "9,600VA backup rating",
+      "120/240V / 60Hz",
+      "Four MPPTs"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://us.goodwe.com/Public/Uploads/uploadfile25/images/20240816/AES.png"
+  },
+  {
+    "id": "fronius-primo60-us",
+    "name": "Fronius Primo 6.0-1 208-240",
+    "category": "inverters",
+    "tier": "B",
+    "cohort": "Grid-tied",
+    "productIds": [],
+    "denominator": 6000,
+    "priceBasis": "grid-ac",
+    "headline": "Provisional: A documented US string inverter for grid-connected PV.",
+    "strengths": [
+      "Two MPPTs.",
+      "Published US operating manual."
+    ],
+    "limits": [
+      "No battery backup inverter function.",
+      "SnapINverter lifecycle/remaining inventory requires checking.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://manuals.fronius.com/html/4204102116/en-US.html",
+        "kind": "Manufacturer",
+        "note": "Exact 208-240 Primo6.0-1; not the European 1,000V DC model. Manufacturer manual identifies 6,000W nominal output."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://www.fronius.com/en/help-center/solar-energy/products/solar-inverters/snapinverter-symo-primo-eco-/primo/fronius-primo-7-6-1-208-240-wlanlanweb-server",
+        "kind": "Manufacturer",
+        "note": "Official Primo US family hero image; exact208–240V nominal ratings are from US operating manual."
+      }
+    ],
+    "specs": [
+      "6,000W nominal AC",
+      "208/240V / 60Hz",
+      "Grid-tied"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.fronius.com/-/media/imported-media/100586-107495/102500-102595/102571.webp"
+  },
+  {
+    "id": "fronius-primo76-us",
+    "name": "Fronius Primo 7.6-1 208-240",
+    "category": "inverters",
+    "tier": "B",
+    "cohort": "Grid-tied",
+    "productIds": [],
+    "denominator": 7600,
+    "priceBasis": "grid-ac",
+    "headline": "Provisional: A higher-output US string inverter with clear nominal power.",
+    "strengths": [
+      "Two MPPTs.",
+      "Published configuration and service instructions."
+    ],
+    "limits": [
+      "Needs a separate storage inverter for battery backup.",
+      "Check SnapINverter discontinuation and remaining inventory.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://manuals.fronius.com/html/4204102116/en-US.html",
+        "kind": "Manufacturer",
+        "note": "Exact 208-240 Primo7.6-1; nominal output is 7,600W, distinct from regional Primo models."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://www.fronius.com/en/help-center/solar-energy/products/solar-inverters/snapinverter-symo-primo-eco-/primo/fronius-primo-7-6-1-208-240-wlanlanweb-server",
+        "kind": "Manufacturer",
+        "note": "Official Primo US family hero image on7.6-1 208–240 page; photo not a serial/model-plate check."
+      }
+    ],
+    "specs": [
+      "7,600W nominal AC",
+      "208/240V / 60Hz",
+      "Grid-tied"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.fronius.com/-/media/imported-media/100586-107495/102500-102595/102571.webp"
+  },
+  {
+    "id": "enphase-iq8plus-us",
+    "name": "Enphase IQ8PLUS-72-2-US",
+    "category": "inverters",
+    "tier": "B",
+    "cohort": "Microinverter",
+    "productIds": [],
+    "denominator": 0,
+    "priceBasis": "grid-ac",
+    "headline": "Provisional: Module-level conversion within the Enphase system.",
+    "strengths": [
+      "Per-module conversion.",
+      "Published module compatibility requirements."
+    ],
+    "limits": [
+      "Backup needs additional system hardware.",
+      "Continuous rating is VA; watts denominator withheld.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://enphase.com/sites/default/files/2021-10/IQ8-Series-DS-US.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact IQ8PLUS-72-2-US; 290VA continuous, distinct from peak output."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://enphase.com/installers/microinverters/iq8",
+        "kind": "Manufacturer",
+        "note": "Official IQ8+ US family photo; original -72-2-US rating is from datasheet. Do not use current MC4 -M-US store photo to prove this connector variant."
+      }
+    ],
+    "specs": [
+      "290VA continuous",
+      "240V / 60Hz",
+      "1.21A continuous"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://enphase.com/sites/default/files/styles/max_650x650/public/2022-12/IQ8%2B-US-Background%402x.png?itok=mZVzX8mI"
+  },
+  {
+    "id": "enphase-iq8m-us",
+    "name": "Enphase IQ8M-72-2-US",
+    "category": "inverters",
+    "tier": "B",
+    "cohort": "Microinverter",
+    "productIds": [],
+    "denominator": 0,
+    "priceBasis": "grid-ac",
+    "headline": "Provisional: Module-level conversion within the Enphase system.",
+    "strengths": [
+      "Per-module conversion.",
+      "Published module compatibility requirements."
+    ],
+    "limits": [
+      "Backup needs additional system hardware.",
+      "Continuous rating is VA; watts denominator withheld.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://enphase.com/sites/default/files/2021-10/IQ8-Series-DS-US.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact IQ8M-72-2-US; 325VA continuous, distinct from peak output."
+      }
+    ],
+    "specs": [
+      "325VA continuous",
+      "240V / 60Hz",
+      "1.35A continuous"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "enphase-iq8a-us",
+    "name": "Enphase IQ8A-72-2-US",
+    "category": "inverters",
+    "tier": "B",
+    "cohort": "Microinverter",
+    "productIds": [],
+    "denominator": 0,
+    "priceBasis": "grid-ac",
+    "headline": "Provisional: Module-level conversion within the Enphase system.",
+    "strengths": [
+      "Per-module conversion.",
+      "Published module compatibility requirements."
+    ],
+    "limits": [
+      "Backup needs additional system hardware.",
+      "Continuous rating is VA; watts denominator withheld.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://enphase.com/sites/default/files/2021-10/IQ8-Series-DS-US.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact IQ8A-72-2-US; 349VA continuous, distinct from peak output."
+      }
+    ],
+    "specs": [
+      "349VA continuous",
+      "240V / 60Hz",
+      "1.45A continuous"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "solaredge-se6000-energyhub",
+    "name": "SolarEdge Energy Hub SE6000H-USSNBBL14",
+    "category": "inverters",
+    "tier": "B",
+    "cohort": "Hybrid",
+    "productIds": [],
+    "denominator": 0,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: A DC-optimized platform with configuration-dependent backup.",
+    "strengths": [
+      "Optimizer-level monitoring.",
+      "Supported battery and backup integration."
+    ],
+    "limits": [
+      "Requires compatible optimizers, batteries and Backup Interface.",
+      "Single-inverter backup is 90% of table rating; exact battery-only W not verified.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer installation guide",
+        "url": "https://knowledge-center.solaredge.com/sites/kc/files/se-single-phase-energy-hub-high-power-installation-guide-na.pdf",
+        "kind": "Manufacturer",
+        "note": "Backup table footnote applies 90% for a single backup inverter; multiple-inverter and suffix exceptions cannot be transferred."
+      },
+      {
+        "label": "Manufacturer exact SKU ordering list",
+        "url": "https://marketing.solaredge.com/energybank_ordering_info",
+        "kind": "Manufacturer",
+        "note": "Lists SE6000H-USSNBBL14 Energy Hub configuration; not the USMN higher-power suffix."
+      }
+    ],
+    "specs": [
+      "6kW grid class",
+      "240V backup",
+      "USSN suffix"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "solaredge-se7600-energyhub",
+    "name": "SolarEdge Energy Hub SE7600H-USSNBBL14",
+    "category": "inverters",
+    "tier": "B",
+    "cohort": "Hybrid",
+    "productIds": [],
+    "denominator": 0,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: A DC-optimized platform with configuration-dependent backup.",
+    "strengths": [
+      "Optimizer-level monitoring.",
+      "Supported battery and backup integration."
+    ],
+    "limits": [
+      "Requires compatible optimizers, batteries and Backup Interface.",
+      "Single-inverter backup is 90% of table rating; exact battery-only W not verified.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer installation guide",
+        "url": "https://knowledge-center.solaredge.com/sites/kc/files/se-single-phase-energy-hub-high-power-installation-guide-na.pdf",
+        "kind": "Manufacturer",
+        "note": "Backup table footnote applies 90% for a single backup inverter; multiple-inverter and suffix exceptions cannot be transferred."
+      },
+      {
+        "label": "Manufacturer exact SKU ordering list",
+        "url": "https://marketing.solaredge.com/energybank_ordering_info",
+        "kind": "Manufacturer",
+        "note": "Lists SE7600H-USSNBBL14 Energy Hub configuration; not the USMN higher-power suffix."
+      }
+    ],
+    "specs": [
+      "7.6kW grid class",
+      "240V backup",
+      "USSN suffix"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "luxpower-lxp8-us",
+    "name": "LuxPower LXP-LB-US 8K",
+    "category": "inverters",
+    "tier": "B",
+    "cohort": "Hybrid",
+    "productIds": [],
+    "denominator": 0,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: Split-phase hybrid flexibility with published system controls.",
+    "strengths": [
+      "Two MPPTs.",
+      "Generator or smart-load port."
+    ],
+    "limits": [
+      "Published battery power is DC; battery-only AC watts withheld.",
+      "Derates above 45°C.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://luxpowertek.com/wp-content/uploads/2024/07/LXP-LB-US-8-10K-1.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact LXP-LB-US 8K column: rated UPS AC and battery charge/discharge DC power are separate. No inference that equal numerical DC/AC ratings prove battery-only AC."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://luxpowertek.com/product-history/",
+        "kind": "Manufacturer",
+        "note": "Official LXP-LB-US5–10K family photo, not European LXP-LB-EU image; exact8K column remains a datasheet boundary."
+      }
+    ],
+    "specs": [
+      "8000W rated UPS AC",
+      "48V battery",
+      "120/240V or 120/208V"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://luxpowertek.com/wp-content/uploads/2026/07/LXP-LB-US-5-10K-1.webp"
+  },
+  {
+    "id": "luxpower-lxp10-us",
+    "name": "LuxPower LXP-LB-US 10K",
+    "category": "inverters",
+    "tier": "B",
+    "cohort": "Hybrid",
+    "productIds": [],
+    "denominator": 0,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: Split-phase hybrid flexibility with published system controls.",
+    "strengths": [
+      "Two MPPTs.",
+      "Generator or smart-load port."
+    ],
+    "limits": [
+      "Published battery power is DC; battery-only AC watts withheld.",
+      "Derates above 45°C.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://luxpowertek.com/wp-content/uploads/2024/07/LXP-LB-US-8-10K-1.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact LXP-LB-US 10K column: rated UPS AC and battery charge/discharge DC power are separate. No inference that equal numerical DC/AC ratings prove battery-only AC."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://luxpowertek.com/product-history/",
+        "kind": "Manufacturer",
+        "note": "Official LXP-LB-US5–10K family photo, not European LXP-LB-EU image; exact10K column remains a datasheet boundary."
+      }
+    ],
+    "specs": [
+      "10000W rated UPS AC",
+      "48V battery",
+      "120/240V or 120/208V"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://luxpowertek.com/wp-content/uploads/2026/07/LXP-LB-US-5-10K-1.webp"
+  },
+  {
+    "id": "luxpower-lxp12-us",
+    "name": "LuxPower LXP-LB-US 12K",
+    "category": "inverters",
+    "tier": "B",
+    "cohort": "Hybrid",
+    "productIds": [],
+    "denominator": 0,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: Large hybrid integration with an explicit US voltage variant.",
+    "strengths": [
+      "Three MPPTs.",
+      "200A grid passthrough."
+    ],
+    "limits": [
+      "12kW battery charge/discharge column is DC; battery-only AC watts withheld.",
+      "Derates above 45°C; battery bank must meet current demand.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://luxpowertek.com/wp-content/uploads/2025/10/LXP-LB-US-12K-Datasheet.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact LXP-LB-US12K: 12kW UPS AC rating and 12kW battery DC rating are documented separately; not a proof of 12kW battery-only AC."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://luxpowertek.com/product-history/",
+        "kind": "Manufacturer",
+        "note": "Official photo labeled LXP-US12K in product history; current12K product page links exact LXP-LB-US12K documentation."
+      }
+    ],
+    "specs": [
+      "12,000W rated UPS AC",
+      "48V battery",
+      "120/240V or 120/208V"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://luxpowertek.com/wp-content/uploads/2026/07/LXP-US-12K.webp"
+  },
+  {
+    "id": "deye-sun8k-sg01lp1-us",
+    "name": "Deye SUN-8K-SG01LP1-US",
+    "category": "inverters",
+    "tier": "C",
+    "cohort": "Hybrid",
+    "productIds": [],
+    "denominator": 0,
+    "priceBasis": "battery-ac",
+    "headline": "Provisional: A split-phase reference requiring local approval and support checks.",
+    "strengths": [
+      "Two MPPTs.",
+      "Generator support."
+    ],
+    "limits": [
+      "US voltage naming alone does not establish utility approval or availability.",
+      "8kW rated AC is not separately identified as battery-only continuous output.",
+      "Documentation-only judgment; this is not a lifetime field test."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer documentation",
+        "url": "https://www.deyeinverter.com/product/split-phase-hybrid-inverter-1/sun5-6-7-6-8ksg01lp1us-58kw-single-phase-2-mppt-hybrid-inverter-lv-battery-supported-63.html",
+        "kind": "Manufacturer",
+        "note": "Exact SUN-8K-SG01LP1-US family column, not 230V EU or AM2 revision; active AC8kW distinguished from apparent8.8kVA. Official SUN5/6/7.6/8K-SG01LP1-US family photo; not proof of local utility approval or exact rear-label suffix."
+      }
+    ],
+    "specs": [
+      "8,000W rated active AC",
+      "120/240V or 208V / 60Hz",
+      "Low-voltage battery"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.deyeinverter.com/deyeinverter/2025/07/09/7.png"
+  },
+  {
+    "id": "delta-2",
+    "name": "EcoFlow DELTA 2",
+    "category": "all-in-one",
+    "tier": "B",
+    "cohort": "Portable / RV",
+    "productIds": [],
+    "denominator": 1.024,
+    "headline": "Provisional: A versatile older 1kWh station for portable essential loads.",
+    "strengths": [
+      "1,800W rated AC output accommodates larger intermittent loads.",
+      "500W solar input and an extra-battery connection offer flexible replenishment."
+    ],
+    "limits": [
+      "The 1.024kWh base battery limits sustained high-power runtime.",
+      "X-Boost's 2,200W figure is not the normal continuous inverter rating.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://us.ecoflow.com/products/delta-2-portable-power-station",
+        "kind": "Manufacturer",
+        "note": "US specifications list 1,024Wh, 1,800W continuous AC, LFP chemistry and 11–60V/15A/500W solar input."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://www.ecoflow.com/us/delta-2-portable-power-station",
+        "kind": "Manufacturer",
+        "note": "Exact EcoFlow DELTA 2 product metadata transparentImages URL; storefront URL currently redirects to DELTA 3, so that replacement image was excluded."
+      }
+    ],
+    "specs": [
+      "1,024Wh rated capacity",
+      "1,800W continuous AC",
+      "500W solar",
+      "LFP"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://websiteoss.ecoflow.com/website/upload/2022/8/23/1115522785_1661243588658.png"
+  },
+  {
+    "id": "delta-2-max",
+    "name": "EcoFlow DELTA 2 Max",
+    "category": "all-in-one",
+    "tier": "A",
+    "cohort": "Portable / RV",
+    "productIds": [],
+    "denominator": 2.048,
+    "headline": "Provisional: A flexible 2kWh station with two solar inputs.",
+    "strengths": [
+      "Two independent 500W solar inputs allow a documented 1,000W combined intake.",
+      "Supports up to two compatible extra batteries, with 2,400W continuous AC output."
+    ],
+    "limits": [
+      "About 50lb makes this a vehicle-portable option rather than a light carry.",
+      "The 3,400W X-Boost mode is separate from its 2,400W continuous rating.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://us.ecoflow.com/products/delta-2-max-portable-power-station",
+        "kind": "Manufacturer",
+        "note": "US specification table lists 2,048Wh, 2,400W AC, two 11–60V/15A/500W solar inputs and 50lb net weight. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      }
+    ],
+    "specs": [
+      "2,048Wh rated capacity",
+      "2,400W continuous AC",
+      "1,000W solar (2 × 500W)",
+      "LFP",
+      "50lb"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://us.ecoflow.com/cdn/shop/files/ecoflow-us-ecoflow-delta-2-max-portable-power-station-d2m-delta-2-max-portable-power-station-1182569251.png?v=1754036926"
+  },
+  {
+    "id": "delta-3-plus",
+    "name": "EcoFlow DELTA 3 Plus",
+    "category": "all-in-one",
+    "tier": "A",
+    "cohort": "Portable / RV",
+    "productIds": [],
+    "denominator": 1.024,
+    "headline": "Provisional: Strong solar intake in the 1kWh class.",
+    "strengths": [
+      "Two 500W MPPT inputs provide up to 1,000W solar charging.",
+      "Manufacturer specifies less than 10ms UPS switching and 1,800W rated AC output."
+    ],
+    "limits": [
+      "The 1.024kWh base capacity still calls for short high-power sessions.",
+      "This is DELTA 3 Plus; the base DELTA 3 has different solar specifications.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://us.ecoflow.com/products/delta-3-plus-portable-power-station",
+        "kind": "Manufacturer",
+        "note": "Official US page lists 1,024Wh, 1,800W rated AC, dual 500W MPPT solar inputs and less than 10ms UPS switching. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      }
+    ],
+    "specs": [
+      "1,024Wh rated capacity",
+      "1,800W continuous AC",
+      "1,000W solar (2 × 500W)",
+      "<10ms UPS"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://us.ecoflow.com/cdn/shop/files/ecoflow-us-ecoflow-delta-3-plus-portable-power-station-standalone-delta-3-plus-1179495741.png?v=1755573843"
+  },
+  {
+    "id": "delta-pro",
+    "name": "EcoFlow DELTA Pro",
+    "category": "all-in-one",
+    "tier": "A",
+    "cohort": "Home backup",
+    "productIds": [],
+    "denominator": 3.6,
+    "headline": "Provisional: Large expandable capacity for 120V essential-load backup.",
+    "strengths": [
+      "3.6kWh base battery and up to two extra batteries support longer backup use.",
+      "1,600W solar input accepts a wider voltage range than many smaller stations."
+    ],
+    "limits": [
+      "Approximately 99lb limits routine carrying.",
+      "A single US station does not itself supply split-phase 240V; that requires the appropriate two-unit system and accessories.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://us.ecoflow.com/products/delta-pro-solar-generator",
+        "kind": "Manufacturer",
+        "note": "Original DELTA Pro specifications list 3,600Wh, 3,600W AC output, 11–150V/15A/1,600W solar input and approximately 99lb weight."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://www.ecoflow.com/us/delta-pro-portable-power-station",
+        "kind": "Manufacturer",
+        "note": "Exact EcoFlow DELTA Pro product metadata transparentImages URL; selected standalone station asset instead of storefront solar-panel bundle cover."
+      }
+    ],
+    "specs": [
+      "3,600Wh rated capacity",
+      "3,600W continuous AC",
+      "1,600W solar",
+      "Original generation",
+      "99lb"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://websiteoss.ecoflow.com/website/upload/2022/3/7/DELTA%20PRO%20related_1646639685749.png"
+  },
+  {
+    "id": "river-2-pro",
+    "name": "EcoFlow RIVER 2 Pro",
+    "category": "all-in-one",
+    "tier": "B",
+    "cohort": "Compact / essentials",
+    "productIds": [],
+    "denominator": 0.768,
+    "headline": "Provisional: A portable essentials station with useful base capacity.",
+    "strengths": [
+      "768Wh capacity offers more stored energy than the smallest essentials units.",
+      "Supports AC, solar, vehicle and 100W USB-C charging, with app monitoring."
+    ],
+    "limits": [
+      "800W continuous AC output excludes larger cooking and heating loads.",
+      "The less-than-30ms EPS claim is slower than documented 10ms-class alternatives; confirm device tolerance.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://us.ecoflow.com/products/river-2-pro-portable-power-station",
+        "kind": "Manufacturer",
+        "note": "US specifications list 768Wh, 800W continuous AC, 11–50V/13A/220W solar and 100W USB-C input/output. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      }
+    ],
+    "specs": [
+      "768Wh rated capacity",
+      "800W continuous AC",
+      "220W solar",
+      "LFP",
+      "<30ms EPS"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://us.ecoflow.com/cdn/shop/products/ecoflow-us-ecoflow-river-2-pro-portable-power-station-30042784006217.png?v=1742453520"
+  },
+  {
+    "id": "river-3-plus",
+    "name": "EcoFlow RIVER 3 Plus",
+    "category": "all-in-one",
+    "tier": "A",
+    "cohort": "Compact / essentials",
+    "productIds": [],
+    "denominator": 0.286,
+    "headline": "Provisional: Compact backup with a documented fast UPS switch.",
+    "strengths": [
+      "600W continuous AC output is useful for computers and small essentials.",
+      "Supports less than 10ms UPS switching and compatible wire-free battery expansion."
+    ],
+    "limits": [
+      "286Wh base capacity is for modest loads and short outages.",
+      "The advertised 1,200W X-Boost mode is not its ordinary continuous AC rating.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://us.ecoflow.com/products/river-3-plus-portable-power-station",
+        "kind": "Manufacturer",
+        "note": "US specifications list 286Wh, 600W total rated AC, 220W solar, less than 10ms UPS and approximately 10.4lb. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      }
+    ],
+    "specs": [
+      "286Wh rated capacity",
+      "600W continuous AC",
+      "220W solar",
+      "<10ms UPS",
+      "10.4lb"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://us.ecoflow.com/cdn/shop/files/ecoflow-us-ecoflow-river-3-plus-portable-power-station-standalone-36158995398729.png?v=1764216261"
+  },
+  {
+    "id": "solix-c1000",
+    "name": "Anker SOLIX C1000",
+    "category": "all-in-one",
+    "tier": "B",
+    "cohort": "Portable / RV",
+    "productIds": [],
+    "denominator": 1.056,
+    "headline": "Provisional: An expandable original-generation portable station.",
+    "strengths": [
+      "1,800W rated inverter output and 600W solar intake suit varied portable loads.",
+      "A compatible expansion battery doubles rated storage to 2,112Wh."
+    ],
+    "limits": [
+      "20ms UPS switching is slower than the Gen 2's documented 10ms.",
+      "SurgePad's 2,400W figure is separate from the 1,800W continuous inverter rating.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://service.anker.com/article-description/Introduction-to-Anker-SOLIX-C1000",
+        "kind": "Manufacturer",
+        "note": "Anker's introduction lists 1,056Wh, 1,800W inverter-mode AC, 600W XT60 input, 20ms UPS and 2,112Wh with expansion."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://www.ankersolix.com/products/c1000",
+        "kind": "Manufacturer",
+        "note": "Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      }
+    ],
+    "specs": [
+      "1,056Wh rated capacity",
+      "1,800W continuous AC",
+      "600W solar",
+      "Original generation",
+      "20ms UPS"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://cdn.shopify.com/s/files/1/0854/3820/2186/files/cq5dam.web.1280.1280_6_-Photoroom1.png?v=1733921194"
+  },
+  {
+    "id": "solix-c1000-gen-2",
+    "name": "Anker SOLIX C1000 Gen 2",
+    "category": "all-in-one",
+    "tier": "A",
+    "cohort": "Portable / RV",
+    "productIds": [
+      "shopsolar-44475398783116"
+    ],
+    "denominator": 1.024,
+    "headline": "Provisional: Higher continuous output in a portable 1kWh package.",
+    "strengths": [
+      "2,000W continuous AC output and 600W solar input provide useful portable flexibility.",
+      "Manufacturer specifies 10ms UPS switching and a 24.9lb net weight."
+    ],
+    "limits": [
+      "1.024kWh base storage limits long high-power operation.",
+      "Fastest AC charging requires UltraFast mode in the app and the specified charging cable.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://www.ankersolix.com/c1000-gen2",
+        "kind": "Manufacturer",
+        "note": "US technical specifications list 1,024Wh, 2,000W continuous 120V AC, 11–60V/600W MPPT, 10ms UPS and 24.9lb."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://www.ankersolix.com/products/c1000-gen2",
+        "kind": "Manufacturer",
+        "note": "Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      }
+    ],
+    "specs": [
+      "1,024Wh rated capacity",
+      "2,000W continuous AC",
+      "600W solar",
+      "10ms UPS",
+      "24.9lb"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://cdn.shopify.com/s/files/1/0854/3820/2186/files/A17631A1_Product_Image_01_V1.png?v=1757296369"
+  },
+  {
+    "id": "solix-c800",
+    "name": "Anker SOLIX C800",
+    "category": "all-in-one",
+    "tier": "B",
+    "cohort": "Compact / essentials",
+    "productIds": [],
+    "denominator": 0.768,
+    "headline": "Provisional: A mid-size essentials station with 1,200W AC.",
+    "strengths": [
+      "768Wh rated storage and 1,200W AC output cover a broad range of small appliances.",
+      "300W solar charging offers more intake than many smaller compact units."
+    ],
+    "limits": [
+      "300W maximum solar input limits replenishment speed versus 500–600W alternatives.",
+      "This is C800 model A1753, not C800 Plus or C800X; accessory configurations differ.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://service.anker.com/article-description/Anker-SOLIX-C800-Portable-Power-Station-USER-GUIDE--A1753",
+        "kind": "Manufacturer",
+        "note": "Official A1753 user guide specifies 768Wh, 1,200W maximum AC output and 300W maximum solar charging at 11–60V."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://www.ankersolix.com/products/c800-refurbished",
+        "kind": "Manufacturer",
+        "note": "Official exact-model C800 refurbished listing og:image; image provenance does not change station specifications or claim an available new-unit offer."
+      }
+    ],
+    "specs": [
+      "768Wh rated capacity",
+      "1,200W continuous AC",
+      "300W solar",
+      "A1753"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://cdn.shopify.com/s/files/1/0854/3820/2186/files/1_1a902965-b8f6-4d56-bf9c-8b4af3e5b963.png?v=1733920409"
+  },
+  {
+    "id": "solix-f2000",
+    "name": "Anker SOLIX F2000 (PowerHouse 767)",
+    "category": "all-in-one",
+    "tier": "B",
+    "cohort": "Portable / RV",
+    "productIds": [],
+    "denominator": 2.048,
+    "headline": "Provisional: A wheeled 2kWh station for larger portable loads.",
+    "strengths": [
+      "2,048Wh rated capacity and 2,400W US AC output suit larger portable loads.",
+      "Up to 1,000W solar intake supports replenishment with a suitable array."
+    ],
+    "limits": [
+      "Large rolling-station format takes more vehicle and storage space than 1kWh units.",
+      "This is the US F2000/767 specification; regional AC output ratings differ.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://www.ankersolix.com/f2000",
+        "kind": "Manufacturer",
+        "note": "Official US F2000 overview explicitly lists 2,048Wh capacity, 2,400W AC output and a maximum 1,000W solar input. Official US F2000 page og:image; og:image:alt explicitly identifies A1780v2 (PowerHouse 767/F2000 model family)."
+      }
+    ],
+    "specs": [
+      "2,048Wh rated capacity",
+      "2,400W continuous AC",
+      "1,000W solar",
+      "PowerHouse 767"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://cdn.shopify.com/s/files/1/0493/9834/9974/files/20250307-174830.png?v=1741340947"
+  },
+  {
+    "id": "ac180",
+    "name": "BLUETTI AC180",
+    "category": "all-in-one",
+    "tier": "A",
+    "cohort": "Portable / RV",
+    "productIds": [],
+    "denominator": 1.152,
+    "headline": "Provisional: A balanced portable station for moderate appliance loads.",
+    "strengths": [
+      "1,800W continuous AC output and 1,152Wh storage fit varied essential loads.",
+      "500W solar input and built-in AC charging provide practical charging options."
+    ],
+    "limits": [
+      "35.3lb is substantial for a unit of this capacity.",
+      "This is the 1,152Wh AC180, not the larger-capacity AC180P; power-lifting mode is not the continuous rating.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://www.bluettipower.com/products/ac180",
+        "kind": "Manufacturer",
+        "note": "US comparison/specification table lists AC180 at 1,152Wh, four 120V outlets sharing 1,800W, 500W solar and 35.3lb. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      }
+    ],
+    "specs": [
+      "1,152Wh rated capacity",
+      "1,800W continuous AC",
+      "500W solar",
+      "LFP",
+      "35.3lb"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://checkout.bluettipower.com/cdn/shop/files/AC180_cb56a69e-aa02-41ce-b2ed-965b8afa3cef.png?v=1753176697"
+  },
+  {
+    "id": "ac70",
+    "name": "BLUETTI AC70",
+    "category": "all-in-one",
+    "tier": "A",
+    "cohort": "Compact / essentials",
+    "productIds": [],
+    "denominator": 0.768,
+    "headline": "Provisional: Useful solar intake for an essentials-size station.",
+    "strengths": [
+      "500W maximum solar intake offers strong replenishment relative to 768Wh storage.",
+      "Two 100W USB-C outputs and 1,000W AC output accommodate mixed device loads."
+    ],
+    "limits": [
+      "Only two AC outlets are provided.",
+      "The 2,000W lifting mode is not its 1,000W rated continuous output.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://checkout.bluettipower.com/products/ac70",
+        "kind": "Manufacturer",
+        "note": "US specifications list 768Wh, two 120V outlets sharing 1,000W, 12–58V/10A/500W solar and two 100W USB-C outputs. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      }
+    ],
+    "specs": [
+      "768Wh rated capacity",
+      "1,000W continuous AC",
+      "500W solar",
+      "LFP",
+      "22.5lb"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://checkout.bluettipower.com/cdn/shop/files/AC70_35fdd9e4-714c-4cde-b903-7e344c7e0c4b.png?v=1743142470"
+  },
+  {
+    "id": "ac60",
+    "name": "BLUETTI AC60 (Pioneer 50)",
+    "category": "all-in-one",
+    "tier": "B",
+    "cohort": "Compact / essentials",
+    "productIds": [],
+    "denominator": 0.403,
+    "headline": "Provisional: A documented weather-resistant compact design.",
+    "strengths": [
+      "Manufacturer specifies IP65 dust and water resistance for the AC60.",
+      "Compatible B80 batteries can expand the 403Wh base capacity."
+    ],
+    "limits": [
+      "Official standalone page currently labels this AC60/Pioneer 50 discontinued; check availability and support before buying.",
+      "600W continuous output and 200W solar are suited to small essentials rather than larger appliances.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://www.bluettipower.com/products/ac60",
+        "kind": "Manufacturer",
+        "note": "US AC60 page specifies 403Wh, 600W total 120V AC, 200W solar, IP65 protection and compatible B80 expansion; title labels it discontinued. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      }
+    ],
+    "specs": [
+      "403Wh rated capacity",
+      "600W continuous AC",
+      "200W solar",
+      "IP65",
+      "Discontinued model"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://checkout.bluettipower.com/cdn/shop/files/AC60-_-_1.png?v=1735357521"
+  },
+  {
+    "id": "ac200p",
+    "name": "BLUETTI AC200P",
+    "category": "all-in-one",
+    "tier": "B",
+    "cohort": "Portable / RV",
+    "productIds": [],
+    "denominator": 2,
+    "headline": "Provisional: A legacy 2kWh design with many output ports.",
+    "strengths": [
+      "2,000Wh capacity and 2,000W pure-sine-wave AC support sizable portable loads.",
+      "700W solar input and 17 output ports provide flexible off-grid connections."
+    ],
+    "limits": [
+      "The standard AC adapter is limited to 500W; charging is slower than newer built-in fast chargers.",
+      "Approximately 60.6lb and no app control make this a less convenient portable choice.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://www.bluettipower.com/products/bluetti-ac200p-2000wh-2000w-portable-power-station",
+        "kind": "Manufacturer",
+        "note": "US product page specifies 2,000Wh, 2,000W total AC, 700W maximum solar, 500W AC adapter, 17 outputs and approximately 60.6lb. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      }
+    ],
+    "specs": [
+      "2,000Wh rated capacity",
+      "2,000W continuous AC",
+      "700W solar",
+      "LFP",
+      "60.6lb"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://checkout.bluettipower.com/cdn/shop/files/AC200P_19bcdf75-f14e-4b8d-b838-856e0f611a07.png?v=1724396385"
+  },
+  {
+    "id": "ac200max",
+    "name": "BLUETTI AC200MAX",
+    "category": "all-in-one",
+    "tier": "B",
+    "cohort": "Portable / RV",
+    "productIds": [],
+    "denominator": 2.048,
+    "headline": "Provisional: Expandable storage with useful RV connections.",
+    "strengths": [
+      "The 120V TT-30 AC port and regulated 12V/30A DC output suit RV connections.",
+      "900W solar input and compatible expansion batteries add flexibility."
+    ],
+    "limits": [
+      "All AC outlets, including TT-30, share the 2,200W output limit.",
+      "The standard 500W AC adapter and 61.9lb weight trail newer portable convenience.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://www.bluettipower.com/products/ac200max-power-station",
+        "kind": "Manufacturer",
+        "note": "US specifications list 2,048Wh, 2,200W total AC, TT-30, 12V/30A regulated DC, 10–145V/15A/900W solar and 500W AC adapter. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      }
+    ],
+    "specs": [
+      "2,048Wh rated capacity",
+      "2,200W continuous AC",
+      "900W solar",
+      "120V TT-30",
+      "61.9lb"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://checkout.bluettipower.com/cdn/shop/files/200MAX_783bd502-1aa4-4d58-b8f3-8200b1840195.png?v=1723804063"
+  },
+  {
+    "id": "jackery-1000-v2",
+    "name": "Jackery Explorer 1000 v2",
+    "category": "all-in-one",
+    "tier": "B",
+    "cohort": "Portable / RV",
+    "productIds": [],
+    "denominator": 1.07,
+    "headline": "Provisional: A portable 1kWh option for moderate AC loads.",
+    "strengths": [
+      "1,070Wh rated storage and 1,500W continuous AC cover common portable essentials.",
+      "Two solar inputs support up to 400W combined intake."
+    ],
+    "limits": [
+      "The 1,500W continuous rating is below 1,800–2,000W alternatives in this capacity class.",
+      "Reaching 400W solar requires both DC inputs; one port is limited to 200W.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://www.jackery.com/products/jackery-explorer-1000-v2",
+        "kind": "Manufacturer",
+        "note": "US specifications list 1,070Wh, 1,500W rated AC and two 16–60V DC inputs, up to 10.5A per port and 400W combined. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      }
+    ],
+    "specs": [
+      "1,070Wh rated capacity",
+      "1,500W continuous AC",
+      "400W solar (2 ports)",
+      "LFP",
+      "JE-1000D"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.jackery.com/cdn/shop/files/E1000_v2.webp?v=1788767551"
+  },
+  {
+    "id": "jackery-1000-plus",
+    "name": "Jackery Explorer 1000 Plus",
+    "category": "all-in-one",
+    "tier": "A",
+    "cohort": "Portable / RV",
+    "productIds": [],
+    "denominator": 1.264,
+    "headline": "Provisional: Higher output and solar intake for portable appliance use.",
+    "strengths": [
+      "2,000W continuous AC output pairs with 1,264Wh rated storage.",
+      "Dual 400W solar inputs offer up to 800W combined replenishment."
+    ],
+    "limits": [
+      "Jackery's product page says the Battery Pack 1000 Plus is discontinued; confirm add-on availability before planning expansion.",
+      "Three AC outlets share the 2,000W total limit.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://faq.jackery.com/hc/en-us/articles/52303601965595-Explorer-1000-Plus-Basic-Information",
+        "kind": "Manufacturer",
+        "note": "US JE-1000C support table lists 1,264Wh, 2,000W total 120V AC and dual 12–60V/11A inputs at 400W per port, 800W total."
+      },
+      {
+        "label": "Manufacturer product and expansion status",
+        "url": "https://www.jackery.com/products/jackery-explorer-1000-plus-portable-power-station",
+        "kind": "Manufacturer",
+        "note": "Official page confirms 1,264Wh and 2,000W; states the Battery Pack 1000 Plus has been discontinued. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      }
+    ],
+    "specs": [
+      "1,264Wh rated capacity",
+      "2,000W continuous AC",
+      "800W solar (2 × 400W)",
+      "LFP",
+      "JE-1000C"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.jackery.com/cdn/shop/files/jackery-portable-power-station-explorer-1000-plus-8235297.webp?v=1787333664"
+  },
+  {
+    "id": "jackery-2000-plus",
+    "name": "Jackery Explorer 2000 Plus",
+    "category": "all-in-one",
+    "tier": "A",
+    "cohort": "Home backup",
+    "productIds": [],
+    "denominator": 2.0428,
+    "headline": "Provisional: Expandable 120V backup with substantial solar intake.",
+    "strengths": [
+      "3,000W continuous AC output supports larger essential appliances.",
+      "Dual 700W solar inputs provide up to 1,400W total solar charging."
+    ],
+    "limits": [
+      "The 2.0428kWh figure is the standalone station, excluding extra batteries.",
+      "A single US unit supplies 120V; 240V configurations require two stations and the correct connector.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://www.jackery.com/products/explorer-2000-plus-portable-power-station",
+        "kind": "Manufacturer",
+        "note": "Official US station specifications list 2,042.8Wh, 3,000W total AC and two 17.5–60V/12A inputs totaling 1,400W solar. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      },
+      {
+        "label": "Manufacturer US support specifications",
+        "url": "https://faq.jackery.com/hc/en-us/articles/52303609975579-Explorer-2000-Plus-Basic-Information",
+        "kind": "Manufacturer",
+        "note": "US support table confirms 2,042.8Wh, dual 700W solar inputs and approximately 27.9kg station weight."
+      }
+    ],
+    "specs": [
+      "2,042.8Wh rated capacity",
+      "3,000W continuous AC",
+      "1,400W solar (2 × 700W)",
+      "LFP",
+      "JE-2000C"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.jackery.com/cdn/shop/files/jackery-portable-power-station-explorer-2000-plus-1023537.webp?v=1781776463"
+  },
+  {
+    "id": "jackery-3000-pro",
+    "name": "Jackery Explorer 3000 Pro",
+    "category": "all-in-one",
+    "tier": "B",
+    "cohort": "Home backup",
+    "productIds": [],
+    "denominator": 3.024,
+    "headline": "Provisional: Large base storage with a documented NCM battery.",
+    "strengths": [
+      "3,024Wh base capacity and 3,000W continuous AC suit longer essential-load backup.",
+      "Dual 700W solar inputs provide up to 1,400W intake."
+    ],
+    "limits": [
+      "The battery is NCM lithium-ion, with a manufacturer cycle-life claim of 2,000 cycles to 70%; this differs from newer LFP models.",
+      "Approximately 29kg makes transport a significant consideration.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://www.jackery.com/pages/solar-generator-3000-pro-event%20",
+        "kind": "Manufacturer",
+        "note": "Official US launch/spec page lists 3,024Wh, 3,000W total 120V AC and 17.5–60V/12A inputs totaling 1,400W; US support identifies NCM chemistry."
+      },
+      {
+        "label": "Manufacturer US support specifications",
+        "url": "https://faq.jackery.com/hc/en-us/articles/52303575683483-Explorer-3000-Pro-Basic-Information",
+        "kind": "Manufacturer",
+        "note": "US support table identifies 3,024Wh, NCM chemistry, approximately 29kg and a claimed 2,000 cycles to 70% capacity."
+      },
+      {
+        "label": "Manufacturer product photo",
+        "url": "https://www.jackery.com/products/jackery-explorer-3000-pro-portable-power-station",
+        "kind": "Manufacturer",
+        "note": "Official exact-model Explorer 3000 Pro refurbished listing og:image; image provenance does not imply a new-unit price or availability."
+      }
+    ],
+    "specs": [
+      "3,024Wh rated capacity",
+      "3,000W continuous AC",
+      "1,400W solar (2 × 700W)",
+      "NCM lithium-ion",
+      "JE-3000A"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.jackery.com/cdn/shop/files/jackery-explorer-3000-pro-portable-power-station-refurbished-5058619.jpg?v=1754016920"
+  },
+  {
+    "id": "jackery-300-v2",
+    "name": "Jackery Explorer 300 v2",
+    "category": "all-in-one",
+    "tier": "B",
+    "cohort": "Compact / essentials",
+    "productIds": [],
+    "denominator": 0.288,
+    "headline": "Provisional: Lightweight power for electronics and small AC essentials.",
+    "strengths": [
+      "Approximately 8.1lb and a foldable handle support easy carrying.",
+      "300W continuous AC output and 100W USB-C serve small electronics and appliances."
+    ],
+    "limits": [
+      "288Wh storage and 300W AC suit short, low-power use.",
+      "The solar input is 100W maximum at 16–28V; the support page excludes 24V car charging.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://www.jackery.com/products/jackery-explorer-300-v2-portable-power-station",
+        "kind": "Manufacturer",
+        "note": "Official US product page specifies 288Wh, 300W continuous AC, 600W surge, 8.1lb and 100W USB-C; US support specifies 100W solar. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      },
+      {
+        "label": "Manufacturer US solar-input specifications",
+        "url": "https://faq.jackery.com/hc/en-us/articles/52303706895003-Explorer-300-V2-Basic-Information",
+        "kind": "Manufacturer",
+        "note": "JE-300C US support table lists 288Wh and a 16–28V/6A/100W solar input; does not support 24V car chargers."
+      }
+    ],
+    "specs": [
+      "288Wh rated capacity",
+      "300W continuous AC",
+      "100W solar",
+      "LFP",
+      "8.1lb"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.jackery.com/cdn/shop/files/jackery-portable-power-station-explorer-300-v2-8502568.webp?v=1787333288"
+  },
+  {
+    "id": "pecron-e1500lfp-v3",
+    "name": "Pecron E1500LFP V3 (XT60)",
+    "category": "all-in-one",
+    "tier": "A",
+    "cohort": "Portable / RV",
+    "productIds": [],
+    "denominator": 1.536,
+    "headline": "Provisional: An expandable portable station with strong documented input.",
+    "strengths": [
+      "2,200W continuous AC output pairs with 1,536Wh base storage.",
+      "Current V3 documentation lists 1,000W solar and a regulated 12V/30A XT60 output."
+    ],
+    "limits": [
+      "V3/XT60 specifications differ from older GX16 versions; verify the exact unit and manual before buying.",
+      "The current page retains an older solar FAQ; the V3 specification table is the source used here.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://www.pecron.com/products/pecron-e1500lfp-expandable-power-station-2200w-1536wh",
+        "kind": "Manufacturer",
+        "note": "Page title and V3 specification table list 1,536Wh, 2,200W AC, XT60 11–60V/20A/1,000W PV and 12V/30A DC output. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      }
+    ],
+    "specs": [
+      "1,536Wh rated capacity",
+      "2,200W continuous AC",
+      "1,000W solar",
+      "V3 / XT60",
+      "38.4lb"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.pecron.com/cdn/shop/files/E1500LFP_549.jpg?v=1784880822"
+  },
+  {
+    "id": "dji-power-1000",
+    "name": "DJI Power 1000",
+    "category": "all-in-one",
+    "tier": "A",
+    "cohort": "Portable / RV",
+    "productIds": [],
+    "denominator": 1.024,
+    "headline": "Provisional: High documented continuous output with DJI accessory support.",
+    "strengths": [
+      "Official US-compatible specification allows 2,200W continuous AC under stated laboratory conditions.",
+      "Two 140W USB-C outputs support high-power laptops and equipment."
+    ],
+    "limits": [
+      "Solar charging needs compatible DJI MPPT/adaptor accessories; the station does not have a conventional bare-panel MPPT input.",
+      "Its US bypass-mode AC limit is 1,440W, below the inverter-mode rating.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://www.dji.com/power-1000/specs",
+        "kind": "Manufacturer",
+        "note": "DYM1000L specifications list 1,024Wh, 2,200W continuous AC at 25°C, 1,440W bypass and two 140W USB-C outputs; product overview specifies 800W solar with accessories. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      },
+      {
+        "label": "Manufacturer solar charging configuration",
+        "url": "https://www.dji.com/power-1000",
+        "kind": "Manufacturer",
+        "note": "DJI specifies up to 800W solar charging through the Power Solar Panel Adapter Module (MPPT) and compatible charging accessories."
+      }
+    ],
+    "specs": [
+      "1,024Wh rated capacity",
+      "2,200W continuous AC",
+      "800W solar (accessories required)",
+      "Original generation",
+      "2 × 140W USB-C"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www-cdn.djiits.com/cms/uploads/a49f2c258bb2ca95ee5fb7b3038644ff@374*374.png"
+  },
+  {
+    "id": "dji-power-2000",
+    "name": "DJI Power 2000",
+    "category": "all-in-one",
+    "tier": "A",
+    "cohort": "Home backup",
+    "productIds": [],
+    "denominator": 2.048,
+    "headline": "Provisional: Expandable backup with substantial accessory-based charging.",
+    "strengths": [
+      "2,048Wh storage and 3,000W continuous output cover larger essential loads.",
+      "Supports up to ten compatible 2,048Wh expansion batteries for 22,528Wh total."
+    ],
+    "limits": [
+      "The advertised 1,800W solar capability requires the optional DJI 1.8kW Solar/Car Super Fast Charger.",
+      "The US DYM2000L is a 100–120V output model; do not substitute 220–240V regional specifications.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://www.dji.com/power-2000",
+        "kind": "Manufacturer",
+        "note": "Official page specifies 2,048Wh, sustained 3,000W AC, ten-battery expansion and 1,800W solar via the optional 1.8kW Solar/Car Super Fast Charger. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      },
+      {
+        "label": "Manufacturer regional output specifications",
+        "url": "https://www.dji.com/power-2000/specs",
+        "kind": "Manufacturer",
+        "note": "DYM2000L specification lists 2,048Wh capacity and 100–120V/25A AC output; DYM2000H is the separate 220–240V version."
+      }
+    ],
+    "specs": [
+      "2,048Wh rated capacity",
+      "3,000W continuous AC",
+      "1,800W solar (optional fast charger)",
+      "LFP",
+      "DYM2000L (US)"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www-cdn.djiits.com/cms/uploads/ed3ace21a20a5ccbabe322ddea486da8@374*374.png"
+  },
+  {
+    "id": "oupes-mega-1",
+    "name": "OUPES Mega 1",
+    "category": "all-in-one",
+    "tier": "A",
+    "cohort": "Portable / RV",
+    "productIds": [],
+    "denominator": 1.024,
+    "headline": "Provisional: A compact expandable option with useful solar input.",
+    "strengths": [
+      "2,000W continuous AC output and 800W solar intake support portable appliance use.",
+      "Compatible B2 batteries allow expansion beyond the 1,024Wh base capacity."
+    ],
+    "limits": [
+      "All four US AC outlets share the 2,000W output limit.",
+      "IP21 is limited protection; plan protected use and keep electrical connections dry.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://oupes.com/products/oupes-mega-1-home-backup-portable-power-station-2000w-1024wh",
+        "kind": "Manufacturer",
+        "note": "US specification table lists 1,024Wh, 2,000W continuous 120V AC, 800W solar with 18–75V/14A MPPT, 27.8lb and IP21. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      }
+    ],
+    "specs": [
+      "1,024Wh rated capacity",
+      "2,000W continuous AC",
+      "800W solar",
+      "LFP",
+      "27.8lb"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://oupes.com/cdn/shop/files/product-media-oupes-mega-1-portable-power-station-1.png?v=1765934582&width=2048"
+  },
+  {
+    "id": "oupes-mega-2",
+    "name": "OUPES Mega 2",
+    "category": "all-in-one",
+    "tier": "A",
+    "cohort": "Home backup",
+    "productIds": [],
+    "denominator": 2.048,
+    "headline": "Provisional: High solar intake for expandable essential-load backup.",
+    "strengths": [
+      "2,100W maximum solar input provides substantial replenishment potential.",
+      "2,500W continuous AC and compatible B2 expansion support backup and RV loads."
+    ],
+    "limits": [
+      "The US TT-30 outlet is 120V and shares the station's 2,500W total output limit.",
+      "2,100W PV requires a suitable array within the 18–140V MPPT range and 15A limit.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://oupes.com/products/oupes-mega-2-home-backup-portable-power-station-2500w-2048wh",
+        "kind": "Manufacturer",
+        "note": "Official US table lists 2,048Wh, 2,500W continuous AC, TT-30R, 2,100W solar, 18–140V/15A MPPT and up to four B2 batteries. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      }
+    ],
+    "specs": [
+      "2,048Wh rated capacity",
+      "2,500W continuous AC",
+      "2,100W solar",
+      "120V TT-30",
+      "LFP"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://oupes.com/cdn/shop/files/product-media-oupes-mega-2-portable-power-station-1.webp?v=1761806288&width=2048"
+  },
+  {
+    "id": "dabbsson-dbs2300",
+    "name": "Dabbsson DBS2300",
+    "category": "all-in-one",
+    "tier": "B",
+    "cohort": "Home backup",
+    "productIds": [],
+    "denominator": 2.33,
+    "headline": "Provisional: Useful base capacity with restrained standalone solar input.",
+    "strengths": [
+      "2,330Wh rated base capacity and 2,200W AC suit essential-load backup.",
+      "Supports compatible DBS3000B expansion batteries and app control."
+    ],
+    "limits": [
+      "Base-station solar is 600W; the page's 3,000W solar marketing includes two expansion batteries.",
+      "This is DBS2300, not DBS2300 Plus; shared promotional copy on the page requires care.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://www.dabbsson.com/products/dbs2300-portable-power-station",
+        "kind": "Manufacturer",
+        "note": "DBS2300 specification table lists 2,330Wh, 2,200W continuous 120V AC, 12–60V/12A/600W base PV and 8,330Wh with two DBS3000B batteries. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      }
+    ],
+    "specs": [
+      "2,330Wh rated capacity",
+      "2,200W continuous AC",
+      "600W solar (base station)",
+      "DBS2300 base unit",
+      "53lb"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.dabbsson.com/cdn/shop/files/dabbsson-dbs2300-portable-power-station-2330wh-2200w-438889.webp?v=1761884019&width=2048"
+  },
+  {
+    "id": "dabbsson-2000l",
+    "name": "Dabbsson 2000L",
+    "category": "all-in-one",
+    "tier": "A",
+    "cohort": "Portable / RV",
+    "productIds": [],
+    "denominator": 2.048,
+    "headline": "Provisional: A comparatively portable fixed-capacity 2kWh station.",
+    "strengths": [
+      "Manufacturer lists 2,048Wh storage at approximately 41lb.",
+      "2,200W continuous AC and 800W solar input provide versatile portable power."
+    ],
+    "limits": [
+      "Manufacturer comparison says battery expansion and parallel connection are not supported.",
+      "Power-Boost's 3,300W figure is separate from the 2,200W continuous output.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://www.dabbsson.com/products/2000l-portable-power-station",
+        "kind": "Manufacturer",
+        "note": "US specifications list 2,048Wh, 2,200W continuous 120V AC, 12–60V/20A/800W solar and 41lb; comparison marks expansion and parallel connection unsupported. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      }
+    ],
+    "specs": [
+      "2,048Wh rated capacity",
+      "2,200W continuous AC",
+      "800W solar",
+      "Fixed capacity",
+      "41lb"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.dabbsson.com/cdn/shop/files/dabbsson-2000l-portbale-home-backup-power-station-2048wh-2200w-5075084.jpg?v=1763506236&width=2048"
+  },
+  {
+    "id": "vtoman-flashspeed-1500",
+    "name": "VTOMAN FlashSpeed 1500",
+    "category": "all-in-one",
+    "tier": "B",
+    "cohort": "Portable / RV",
+    "productIds": [],
+    "denominator": 1.548,
+    "headline": "Provisional: Expandable storage for moderate portable AC loads.",
+    "strengths": [
+      "1,548Wh base storage can double with its compatible extra battery.",
+      "Integrated 1,500W AC input and two 100W USB-C outputs offer practical charging options."
+    ],
+    "limits": [
+      "1,500W continuous output is modest relative to its 41.4lb weight.",
+      "The 400W Anderson solar input requires 30–60V; the separate low-voltage DC input has a different limit.",
+      "Provisional rank based on manufacturer documentation, not hands-on testing or lifetime reliability evidence."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer specifications",
+        "url": "https://vtoman.com/products/vtoman-flashspeed-1500-power-station",
+        "kind": "Manufacturer",
+        "note": "Official FlashSpeed 1500 table lists 1,548Wh, 1,500W continuous 110V AC, 1,500W AC input, Anderson 30–60V/400W input and 41.4lb. Exact model product image URL exposed by the official US page's og:image metadata. Remote image only; no image binary downloaded."
+      }
+    ],
+    "specs": [
+      "1,548Wh rated capacity",
+      "1,500W continuous AC",
+      "400W solar (Anderson)",
+      "110V / 60Hz",
+      "LFP"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://vtoman.com/cdn/shop/files/FlashSpeed1500_ee35f860-c122-4506-aaf6-906fbb435beb.png?v=1770170069"
+  },
+  {
+    "id": "rec-pure-r-430",
+    "name": "REC REC430AA PURE-R",
+    "category": "panels",
+    "tier": "A",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 430,
+    "headline": "Provisional: Efficient HJT roof module with a favorable temperature coefficient.",
+    "strengths": [
+      "22.3% module efficiency suits constrained roof area.",
+      "Published -0.24%/°C power coefficient and 92% warranted year-25 output."
+    ],
+    "limits": [
+      "59.7V STC open-circuit voltage needs an inverter and cold-weather string check.",
+      "Extended ProTrust product/labor coverage requires certified installation and registration.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://www.recgroup.com/sites/default/files/2025-01/Web_DS_REC_Alpha_Pure-R_EN.pdf",
+        "kind": "Manufacturer",
+        "note": "May 2025 IEC/EN revision identifies RECxxxAA PURE-R; the 430W bin is 22.3%, 50.5V Vmp and 8.52A Imp. Bifacial cells behind a black backsheet do not establish a bifacial module rear-gain rating."
+      },
+      {
+        "label": "Manufacturer product photo provenance",
+        "url": "https://www.recgroup.com/en/rec-alpha-pure-r",
+        "kind": "Manufacturer",
+        "note": "Manufacturer HTML img src observed for REC Alpha Pure-R family front photo. Family illustration does not expose the 430W label; wattage/specification claims come from the exact REC430AA PURE-R datasheet."
+      }
+    ],
+    "specs": [
+      "430W front STC",
+      "22.3% module efficiency",
+      "HJT / black polymer backsheet",
+      "1730 × 1118 × 30 mm"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.recgroup.com/sites/default/files/2024-05/REC_Alpha_Pure_R_1.png"
+  },
+  {
+    "id": "rec-pure-rx-dc-470",
+    "name": "REC REC470AA PURE-RX-DC",
+    "category": "panels",
+    "tier": "A",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 470,
+    "headline": "Provisional: High-density HJT module with documented heat performance.",
+    "strengths": [
+      "22.6% module efficiency and 470W front-side rating.",
+      "-0.24%/°C power coefficient and published mechanical-load limits."
+    ],
+    "limits": [
+      "65.7V STC Voc requires particular attention to MLPE voltage limits.",
+      "ProTrust coverage depends on installer, registration and system-size terms.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://www.recgroup.com/sites/default/files/2025-02/Print_DS_REC%20Alpha%20Pure-RX_EN%20US.pdf",
+        "kind": "Manufacturer",
+        "note": "Retrieved US datasheet is UL EN June 2026 V7 and identifies RECxxxAA PURE-RX-DC. Exact 470W STC bin: 55.4V Vmp, 8.49A Imp, 65.7V Voc; standard product warranty 20 years, conditional ProTrust 25 years."
+      },
+      {
+        "label": "Manufacturer product photo provenance",
+        "url": "https://www.recgroup.com/en/rec-alpha-pure-rx",
+        "kind": "Manufacturer",
+        "note": "Manufacturer HTML img src observed for REC Alpha Pure-RX family front photo. It does not establish the 2026 PURE-RX-DC label or wattage; exact 470W electrical claims come from the cited DC-suffix datasheet."
+      }
+    ],
+    "specs": [
+      "470W front STC",
+      "22.6% module efficiency",
+      "HJT / black polymer backsheet",
+      "1728 × 1205 × 30 mm"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.recgroup.com/sites/default/files/2024-05/REC_Alpha_Pure_RX_1.png"
+  },
+  {
+    "id": "qcells-qtron-440",
+    "name": "Qcells Q.TRON BLK M-G2+ 440",
+    "category": "panels",
+    "tier": "A",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 440,
+    "headline": "Provisional: Compact Q.ANTUM NEO option with exact electrical documentation.",
+    "strengths": [
+      "22.5% minimum module efficiency in the 440W bin.",
+      "All-black module and published 25-year product/performance coverage."
+    ],
+    "limits": [
+      "13.20A STC Imp and 13.90A Isc must fit the chosen inverter input.",
+      "The AC version is separate hardware; this entry is the DC module.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://us.qcells.com/wp-content/uploads/2024/08/Qcells_Data_sheet_Q.TRON_BLK_M-G2_series_415-440_2024-08_Rev04_NA.pdf",
+        "kind": "Manufacturer",
+        "note": "August 2024 Rev04 North America sheet validates exact 440W bin, 33.33V Vmp, 39.88V Voc, 21.2kg and -0.30%/K Pmax coefficient."
+      },
+      {
+        "label": "Manufacturer product photo provenance",
+        "url": "https://us.qcells.com/complete-energy-solutions/solar-panel/",
+        "kind": "Manufacturer",
+        "note": "Manufacturer HTML image observed under the DC Q.TRON BLK section, alt Q.TRON BLK with EPEAT. Family front photograph, not the separate AC module photograph; 440W suffix is established by the exact M-G2+ datasheet."
+      }
+    ],
+    "specs": [
+      "440W front STC",
+      "≥22.5% module efficiency",
+      "Q.ANTUM NEO / 108 half cells",
+      "1722 × 1134 × 30 mm"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://us.qcells.com/wp-content/uploads/2026/06/qtron-front-epeat-standardized-scaled.webp"
+  },
+  {
+    "id": "qcells-qpeak-blk-415",
+    "name": "Qcells Q.PEAK DUO BLK ML-G10+ 415",
+    "category": "panels",
+    "tier": "B",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 415,
+    "headline": "Provisional: Documented earlier-generation roof option when price and layout fit.",
+    "strengths": [
+      "21.1% family maximum corresponds to the 415W top bin.",
+      "Manufacturer publishes 25-year product and performance coverage."
+    ],
+    "limits": [
+      "Lower power density than the newer 440W Q.TRON option can matter on a small roof.",
+      "Confirm legacy-model stock, exact + suffix and regional warranty before purchase.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://us.qcells.com/complete-energy-solutions/solar-panel/",
+        "kind": "Manufacturer",
+        "note": "Official catalog identifies Q.PEAK DUO BLK ML-G10+ separately from its AC variant: up to 415Wp, 21.1% and 25 years warranty. Archived December 2023 Rev06 official indexed datasheet lists 395–415W and Q.ANTUM DUO Z; its old PDF URL currently redirects to downloads."
+      }
+    ],
+    "specs": [
+      "415W front STC",
+      "21.1% module efficiency",
+      "Q.ANTUM DUO Z",
+      "25-year product / performance terms"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "ja-jam54d41-mb-440",
+    "name": "JA Solar JAM54D41-440/MB",
+    "category": "panels",
+    "tier": "A",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 440,
+    "headline": "Provisional: Compact TOPCon bifacial module with a clear front-side rating.",
+    "strengths": [
+      "22.5% STC efficiency at the exact 440W bin.",
+      "Dual-glass construction and documented 80% ±10% bifaciality."
+    ],
+    "limits": [
+      "Flush roof mounting can sharply reduce rear-side contribution.",
+      "13.18A front-side Imp rises with rear irradiance; check inverter current limits.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://www.jasolar.eu/fileadmin/data/products/4.0/JAM54D41_MB.pdf",
+        "kind": "Manufacturer",
+        "note": "Global-EN-20241105A official indexed PDF: 440W front STC, 33.37V Vmp, 39.38V Voc, 13.18A Imp, -0.290%/°C Pmax coefficient. Rear-irradiance illustrative output is excluded from the denominator."
+      },
+      {
+        "label": "Manufacturer product photo provenance",
+        "url": "https://www.jasolar.eu/produkte/jam54d41-mb",
+        "kind": "Manufacturer",
+        "note": "Manufacturer JAM54D41 MB product-page front photograph URL observed directly. The photographed 420-445W family includes the exact 440/MB datasheet model; photo does not expose a wattage label and is not used for LB variants."
+      }
+    ],
+    "specs": [
+      "440W front STC",
+      "22.5% module efficiency",
+      "N-type TOPCon / bifacial dual glass",
+      "1722 × 1134 × 30 mm"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.jasolar.eu/fileadmin/_processed_/c/7/csm_JAM_54_D41_MB_frontal_vorne_1_729c78ee6d.webp"
+  },
+  {
+    "id": "ja-jam54d41-lb-450",
+    "name": "JA Solar JAM54D41-450/LB/1500V",
+    "category": "panels",
+    "tier": "A",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 450,
+    "headline": "Provisional: A documented 450W candidate with region-specific electrical data.",
+    "strengths": [
+      "22.5% module efficiency in the official 450W electrical table.",
+      "Front STC voltage/current table supports precise string design."
+    ],
+    "limits": [
+      "LB and MB suffixes identify different revisions; do not substitute one datasheet for another.",
+      "Direct PDF retrieval returned 403; the electrical values were validated from the official indexed datasheet, and the installer should obtain the complete applicable sheet.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://www.jasolar.com/uploadfile/2024/0112/20240112034704258.pdf",
+        "kind": "Manufacturer",
+        "note": "January 2024 official JAM54D41 LB 1500V v1.3 indexed datasheet explicitly lists JAM54D41-450/LB/1500V at 450W, 22.5%, 32.82V Vmp and 13.71A Imp. Direct fetch was access-restricted; no warranty or rear-gain claim is inferred."
+      }
+    ],
+    "specs": [
+      "450W front STC",
+      "22.5% module efficiency",
+      "32.82V Vmp / 13.71A Imp",
+      "39.30V Voc / -0.300%/°C Pmax"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "jinko-tiger-neo-440",
+    "name": "Jinko Tiger Neo JKM440N-54HL4R-B",
+    "category": "panels",
+    "tier": "A",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 440,
+    "headline": "Provisional: All-black N-type option with exact 440W module data.",
+    "strengths": [
+      "22.02% module efficiency and -0.29%/°C power coefficient.",
+      "108-cell format with published mechanical-load ratings."
+    ],
+    "limits": [
+      "The cited datasheet is Australia-specific and does not establish US warranty coverage.",
+      "Verify the B suffix; BDV and V variants have different construction or voltage ratings.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://jinkosolar.com.au/wp-content/uploads/2022/12/JKM420-440N-54HL4R-B-F1.2C2-EN-for-AU-CEC.pdf",
+        "kind": "Manufacturer",
+        "note": "Exact 440W bin: 32.99V Vmp, 13.34A Imp, 39.57V Voc and 22kg. The sheet explicitly limits its 25-year product warranty to Australia; cited for capability, not universal regional terms."
+      }
+    ],
+    "specs": [
+      "440W front STC",
+      "22.02% module efficiency",
+      "N-type mono / all black",
+      "1762 × 1134 × 30 mm"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "jinko-tiger-neo-bdv-600",
+    "name": "Jinko Tiger Neo JKM600N-72HL4-BDV",
+    "category": "panels",
+    "tier": "A",
+    "cohort": "Large-format bifacial",
+    "productIds": [],
+    "denominator": 600,
+    "headline": "Provisional: High front-side output when large glass modules fit the site.",
+    "strengths": [
+      "23.23% module efficiency in the exact 600W bin.",
+      "N-type dual-glass bifacial construction with stated bifaciality."
+    ],
+    "limits": [
+      "2278mm length and 31kg weight affect transport and racking.",
+      "Bifacial gain depends on rear exposure; 600W excludes BNPI and illustrative rear gain.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://jinkosolar.com.au/wp-content/uploads/2026/06/JKM575-600N-72HL4-BDV-F9-OC-FF.pdf",
+        "kind": "Manufacturer",
+        "note": "Official F9-OC datasheet posted June 2026 distinguishes front STC 600W from BNPI 660W-class output; 44.45V Vmp, 13.50A Imp and 53.30V Voc. Power bifaciality 80% ±5%; regional warranty applicability must be checked."
+      }
+    ],
+    "specs": [
+      "600W front STC",
+      "23.23% module efficiency",
+      "N-type / bifacial dual glass",
+      "2278 × 1134 × 30 mm"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "longi-himo-x6-440",
+    "name": "LONGi Hi-MO X6 LR5-54HTH-440M",
+    "category": "panels",
+    "tier": "A",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 440,
+    "headline": "Provisional: Compact high-efficiency single-glass module.",
+    "strengths": [
+      "22.5% module efficiency in the 440W bin.",
+      "20.8kg construction and -0.290%/°C power coefficient are documented."
+    ],
+    "limits": [
+      "The cited Chinese revision has 15-year product and 25-year power terms; confirm the purchased market revision.",
+      "13.24A Imp and 14.30A Isc require an input-current fit check.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://static.longi.com/L_Gi_LE_PM_T_PMD_059_F130_LR_5_54_HTH_420_440_M_V1_30_30_and_15_V19_94d876e07a.pdf",
+        "kind": "Manufacturer",
+        "note": "20230926V19 official sheet validates LR5-54HTH-440M: 440W, 22.5%, 33.24V Vmp and 39.53V Voc. This regional sheet is single glass; no bifacial uplift is credited."
+      }
+    ],
+    "specs": [
+      "440W front STC",
+      "22.5% module efficiency",
+      "108 cells / single glass",
+      "1722 × 1134 × 30 mm"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "longi-himo-x10-500",
+    "name": "LONGi Hi-MO X10 LR7-54HVH-500M",
+    "category": "panels",
+    "tier": "A",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 500,
+    "headline": "Provisional: Very high module efficiency in a documented residential-sized format.",
+    "strengths": [
+      "24.50% module efficiency in the exact 500W bin.",
+      "HPBC 2.0 monofacial design with -0.260%/°C power coefficient."
+    ],
+    "limits": [
+      "14.83A Imp and 15.53A Isc can exceed some older MLPE input-current limits.",
+      "European IEC page does not establish US listing, current stock or an installed price advantage.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://wf-eu.longi.com/longi-solar-panels-datasheets/lr7-54hvh-480-505",
+        "kind": "Manufacturer",
+        "note": "Official LONGi European technical page exact LR7-54HVH-500M: 500W STC, 33.73V Vmp, 40.75V Voc, 21.6kg; 15-year product and 30-year performance terms shown. Page accessed October 5, 2026. Front-photo URL observed as an image link on the manufacturer LR7-54HVH 480-505W datasheet page. Family illustration has no visible 500W label; web image fetch was unavailable, so image delivery remains unverified."
+      }
+    ],
+    "specs": [
+      "500W front STC",
+      "24.50% module efficiency",
+      "HPBC 2.0 / monofacial",
+      "1800 × 1134 × 30 mm"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://eu-longi.b-cdn.net/Datasheet%20Assets/Panel%20Back%20Front%20Images/Panel_Front_54Cell_Black.avif"
+  },
+  {
+    "id": "trina-vertex-splus-450",
+    "name": "Trina Vertex S+ TSM-450NEG9R.28",
+    "category": "panels",
+    "tier": "A",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 450,
+    "headline": "Provisional: Efficient dual-glass roof module with a modest operating current.",
+    "strengths": [
+      "22.5% module efficiency in the 450W bin.",
+      "10.09A STC Imp and published 25/30-year product/power terms."
+    ],
+    "limits": [
+      "52.9V STC Voc requires a cold-weather voltage check.",
+      "Dual glass does not by itself establish a bifacial output rating for this exact suffix.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://static.trinasolar.com/sites/default/files/Datasheet_Vertex%20S%2B_NEG9R.28_EN_2024_C_web.pdf",
+        "kind": "Manufacturer",
+        "note": "TSM_EN_2024_C official sheet exact 450W bin: 44.6V Vmp, 10.09A Imp, 52.9V Voc, 21kg, -0.29%/°C Pmax. Family extends to 460W but denominator is the 450W bin."
+      }
+    ],
+    "specs": [
+      "450W front STC",
+      "22.5% module efficiency",
+      "N-type i-TOPCon / dual glass",
+      "1762 × 1134 × 30 mm"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "trina-vertex-splus-bifacial-450",
+    "name": "Trina Vertex S+ TSM-450NEG9RC.27",
+    "category": "panels",
+    "tier": "A",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 450,
+    "headline": "Provisional: Roof-sized bifacial dual-glass module with an explicit STC table.",
+    "strengths": [
+      "22.5% front-side efficiency at 450W.",
+      "80% ±5% power bifaciality and dual-glass construction."
+    ],
+    "limits": [
+      "Rear-side contribution depends on clearance, albedo and mounting.",
+      "52.9V Voc and rear-enhanced current must fit the chosen inverter.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://static.trinasolar.com/sites/default/files/250227_Datasheet_VertexS_NEG9RC.27_EN_2024_B_web.pdf",
+        "kind": "Manufacturer",
+        "note": "Official 2024_B datasheet posted February 2025: exact 450W STC bin, 44.6V Vmp and 10.09A Imp. The 499W BNPI figure and rear-gain examples are excluded from price-per-watt."
+      }
+    ],
+    "specs": [
+      "450W front STC",
+      "22.5% module efficiency",
+      "N-type i-TOPCon / bifacial dual glass",
+      "1762 × 1134 × 30 mm"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "cs-tophiku6-black-450",
+    "name": "Canadian Solar TOPHiKu6 CS6.1-54TM-450H",
+    "category": "panels",
+    "tier": "A",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 450,
+    "headline": "Provisional: All-black TOPCon roof module with detailed electrical data.",
+    "strengths": [
+      "22.0% module efficiency and -0.29%/°C power coefficient.",
+      "Published 30-year performance terms and roof-oriented format."
+    ],
+    "limits": [
+      "25-year product warranty applies only to specified rooftop regions and conditions.",
+      "The H suffix matters; other CS6.1 variants may have different construction.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://www.canadiansolar.com/wp-content/uploads/sites/3/2026/01/CS-Datasheet-TOPHiKu6_All-Black_CS6.1-54TM-H_v1.4C25_F23_D2_TX.pdf",
+        "kind": "Manufacturer",
+        "note": "April 2025 V1.4C25_F23_D2_TX official datasheet exact 450H bin: 33.0V Vmp, 13.66A Imp, 38.9V Voc, 23kg. Country-specific certifications and warranty terms require confirmation."
+      }
+    ],
+    "specs": [
+      "450W front STC",
+      "22.0% module efficiency",
+      "N-type TOPCon / all black",
+      "1800 × 1134 × 35 mm"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "cs-tophiku6-black-465",
+    "name": "Canadian Solar TOPHiKu6 CS6.1-54TM-465H",
+    "category": "panels",
+    "tier": "A",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 465,
+    "headline": "Provisional: The higher power bin in the same all-black rooftop footprint.",
+    "strengths": [
+      "22.8% module efficiency at the exact 465W bin.",
+      "Same 1800 × 1134mm footprint as lower family wattage bins."
+    ],
+    "limits": [
+      "13.85A Imp and 14.77A Isc require current compatibility.",
+      "Higher nameplate power alone does not establish a better installed cost or energy yield.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://www.canadiansolar.com/wp-content/uploads/sites/3/2026/01/CS-Datasheet-TOPHiKu6_All-Black_CS6.1-54TM-H_v1.4C25_F23_D2_TX.pdf",
+        "kind": "Manufacturer",
+        "note": "April 2025 V1.4C25_F23_D2_TX sheet explicitly lists CS6.1-54TM-465H at 465W STC, 22.8%, 33.6V Vmp and 13.85A Imp. Warranties and regional certificates have conditions; this bin is not substituted for a 450H offer."
+      }
+    ],
+    "specs": [
+      "465W front STC",
+      "22.8% module efficiency",
+      "N-type TOPCon / all black",
+      "33.6V Vmp / 39.5V Voc"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "silfab-prime-430-qd",
+    "name": "Silfab Prime SIL-430 QD",
+    "category": "panels",
+    "tier": "A",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 430,
+    "headline": "Provisional: Compact N-type option with manufacturer-published module efficiency.",
+    "strengths": [
+      "22.1% STC module efficiency.",
+      "1721mm roof format with published mechanical-load ratings."
+    ],
+    "limits": [
+      "N-type NTC branding should not be used to assume every Silfab model has the same cell technology.",
+      "Check installer, registration and regional conditions for warranty eligibility.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://silfabsolar.com/our-solar-panels/silfab-prime/sil-430-qd/",
+        "kind": "Manufacturer",
+        "note": "Official exact SIL-430 QD product page accessed October 5, 2026: 430W STC versus 321W NOCT, 22.1% module efficiency, 21kg, 1000V maximum system voltage and N-type NTC technology. Manufacturer HTML linked photo and img data-src observed in the product-panel section under SIL-430 QD. Photo represents this QD product page; it is not the visually different older BG family."
+      }
+    ],
+    "specs": [
+      "430W front STC",
+      "22.1% module efficiency",
+      "N-type NTC / triple black",
+      "1721 × 1133 × 35 mm"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://silfabsolar.com/wp-content/uploads/2023/09/Silfab-Prime-Background-16-BB-Black-108-QD-20230220-Flare-Web.png"
+  },
+  {
+    "id": "silfab-elite-430-bg",
+    "name": "Silfab Elite SIL-430 BG+",
+    "category": "panels",
+    "tier": "B",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 430,
+    "headline": "Provisional: Documented PERC-MWT module when its longer footprint works.",
+    "strengths": [
+      "21.4% module efficiency at 430W.",
+      "PERC MWT architecture and detailed electrical/mechanical data."
+    ],
+    "limits": [
+      "1957mm length can constrain small roof layouts.",
+      "-0.377%/°C power coefficient is less favorable in heat than several newer entries; warranty extension has registration conditions.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://silfabsolar.com/wp-content/uploads/2023/09/Silfab-SIL-430-BG-Data-Generic-20230906-Final.pdf",
+        "kind": "Manufacturer",
+        "note": "September 6, 2023 official sheet cover and footer identify SIL-430 BG+ despite the filename omitting the plus: 430W STC, 39.83V Vmp, 10.80A Imp, 47.96V Voc and 21.8kg. Product warranty 12 years extendable to 25 under registration/conditions; do not equate with SIL-430 QD."
+      }
+    ],
+    "specs": [
+      "430W front STC",
+      "21.4% module efficiency",
+      "PERC MWT / 138 half cells",
+      "1957 × 1029 × 35 mm"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "maxeon3-400-com",
+    "name": "Maxeon 3 SPR-MAX3-400-COM",
+    "category": "panels",
+    "tier": "A",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 400,
+    "headline": "Provisional: Compact high-efficiency Maxeon module with conditional long coverage.",
+    "strengths": [
+      "22.6% module efficiency in a 1690 × 1046mm footprint.",
+      "Published -0.27%/°C power coefficient and 19kg module weight."
+    ],
+    "limits": [
+      "75.4V STC Voc rules out some low-voltage MLPE and portable controllers.",
+      "Commercial silver-frame revision; 40-year coverage depends on country, registration and installation.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://sunpower.maxeon.com/int/sites/default/files/2022-05/sp_max3_104c_com_380-400_dc_ds_en_a4_544454.pdf",
+        "kind": "Manufacturer",
+        "note": "April 2022 544454 RevA official datasheet identifies SPR-MAX3-400-COM at 400W, 66.0V Vmp, 6.07A Imp and 75.4V Voc. Country-dependent registered 40-year panel coverage; otherwise stated 25-year terms apply."
+      }
+    ],
+    "specs": [
+      "400W front STC",
+      "22.6% module efficiency",
+      "104 Maxeon Gen 3 cells",
+      "1690 × 1046 × 40 mm"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "maxeon6-ac-440",
+    "name": "Maxeon 6 AC SPR-MAX6-440-E3-AC",
+    "category": "panels",
+    "tier": "B",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 440,
+    "headline": "Provisional: Integrated AC module suited to its documented 230V market.",
+    "strengths": [
+      "22.8% DC module efficiency at 440W STC.",
+      "Factory-integrated IQ7A microinverter provides module-level tracking."
+    ],
+    "limits": [
+      "440W is panel DC STC; the documented microinverter continuous output is 349VA.",
+      "This 230V/50Hz E3-AC revision is not a generic US split-phase or DC-input panel.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://sunpower.maxeon.com/int/sites/default/files/2022-03/sp_max6_66c_res_ac_ds_en_a4_544435.pdf",
+        "kind": "Manufacturer",
+        "note": "January 2022 544435 RevA official datasheet exact SPR-MAX6-440-E3-AC validates 440W DC, 22.8%, IQ7A at 230VAC/50Hz, 349VA continuous AC and 21.8kg. Conditional panel warranty differs from 25-year Enphase microinverter warranty."
+      }
+    ],
+    "specs": [
+      "440W front DC STC",
+      "22.8% module efficiency",
+      "66 Maxeon 6 cells / integrated IQ7A",
+      "349VA continuous AC / 230V 50Hz"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "mission-perc-410",
+    "name": "Mission Solar MSE410HT0B",
+    "category": "panels",
+    "tier": "B",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 410,
+    "headline": "Provisional: A documented PERC roof option with a manageable module format.",
+    "strengths": [
+      "21.0% efficiency in the exact 410W bin.",
+      "108 half-cell layout and published Type 1 module fire rating."
+    ],
+    "limits": [
+      "Earlier PERC generation has lower power density than newer 440W TOPCon options.",
+      "Confirm current stock and exact warranty revision; documentation does not establish availability.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://www.missionsolar.com/wp-content/uploads/2024/06/410W-PERC-V2.pdf",
+        "kind": "Manufacturer",
+        "note": "Official PERC V2 sheet posted June 2024 validates MSE410HT0B: 410W STC, 31.38V Vmp, 13.07A Imp, 37.41V Voc and -0.343%/°C Pmax coefficient. Product identification is kept separate from the newer MSX10 family."
+      }
+    ],
+    "specs": [
+      "410W front STC",
+      "21.0% module efficiency",
+      "P-PERC / 108 half cells",
+      "1723 × 1135 × 35 mm"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "mission-topcon-440",
+    "name": "Mission Solar MSX10-440HN0B",
+    "category": "panels",
+    "tier": "A",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 440,
+    "headline": "Provisional: Current documented TOPCon design in a compact roof format.",
+    "strengths": [
+      "22.5% module efficiency in the exact 440W electrical table.",
+      "N-type TOPCon monofacial construction and published 25/30-year warranties."
+    ],
+    "limits": [
+      "13.19A Imp and 13.9A Isc must fit the selected input.",
+      "Domestic-content or FEOC marketing does not establish eligibility for a particular project or incentive.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://www.missionsolar.com/wp-content/uploads/2026/09/C-MKTG-0050-Datasheet-for-MSX10-N-Type-108HC.pdf",
+        "kind": "Manufacturer",
+        "note": "C-MKTG-0050 version 5, June 16, 2026: MSX10-xxxHN0B with exact 440W bin, 33.37V Vmp, 39.62V Voc, 21.3kg and -0.29%/°C Pmax. 25-year workmanship and 30-year production warranty subject to terms."
+      },
+      {
+        "label": "Manufacturer product photo provenance",
+        "url": "https://www.missionsolar.com/product/435-450w-n-type-108hc/",
+        "kind": "Manufacturer",
+        "note": "Manufacturer HTML product image observed with alt Black solar panel viewed at an angle on the MSX10 N-Type 108HC 435-450W page. Family product photo includes the 440HN0B model range; exact suffix/electrical data come from the cited version-5 sheet."
+      }
+    ],
+    "specs": [
+      "440W front STC",
+      "22.5% module efficiency",
+      "N-type TOPCon / monofacial",
+      "1722 × 1134 × 35 mm"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://www.missionsolar.com/wp-content/uploads/2026/09/C-MKTG-0050-Datasheet-for-MSX10-N-Type-108HC-v5.webp"
+  },
+  {
+    "id": "aptos-mfn10-440",
+    "name": "Aptos DNA-108-MFN10-440W",
+    "category": "panels",
+    "tier": "A",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 440,
+    "headline": "Provisional: Compact N-type monofacial module with exact 440W data.",
+    "strengths": [
+      "22.53% efficiency for the 440W column.",
+      "All-black monofacial construction with stated 30-year product/performance terms."
+    ],
+    "limits": [
+      "Confirm the exact August 2026 revision and applicable warranty conditions.",
+      "The adjacent 445W column contains an apparent 455W typo; only the internally consistent 440W column is used here.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://www.aptossolar.com/wp-content/uploads/2026/08/DNA-108-MFN10-440W_Datasheet_08.04.2026.pdf",
+        "kind": "Manufacturer",
+        "note": "August 4, 2026 official sheet exact DNA-108-MFN10-440W column: 440W STC, 33.48V Vmp, 13.15A Imp, 39.03V Voc, 21kg, -0.29%/°C Pmax. Neighboring power-column typo is not propagated."
+      }
+    ],
+    "specs": [
+      "440W front STC",
+      "22.53% module efficiency",
+      "N-type / monofacial",
+      "1722 × 1134 × 35 mm"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "aptos-mf10-460",
+    "name": "Aptos DNA-120-MF10-460W",
+    "category": "panels",
+    "tier": "B",
+    "cohort": "Residential / general",
+    "productIds": [],
+    "denominator": 460,
+    "headline": "Provisional: A documented SE-PERC monofacial alternative.",
+    "strengths": [
+      "460W front-side STC with complete electrical data.",
+      "Published all-black split-cell construction and 30-year warranty terms."
+    ],
+    "limits": [
+      "21.26% module efficiency uses more area per watt than the newer MFN10 design.",
+      "SE-PERC technology differs from N-type MFN10; model suffixes should not be interchanged.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://www.aptossolar.com/wp-content/uploads/2026/08/DNA-120-MF10-460W_Datasheet_08.05.2026.pdf",
+        "kind": "Manufacturer",
+        "note": "August 5, 2026 official exact 460W column validates 460W STC, 21.26%, 35.10V Vmp, 13.13A Imp and 41.70V Voc. This MF10 module is selective-emitter PERC, not the MFN10 N-type model."
+      }
+    ],
+    "specs": [
+      "460W front STC",
+      "21.26% module efficiency",
+      "SE-PERC / monofacial",
+      "35.10V Vmp / 13.13A Imp"
+    ],
+    "reviewedAt": "2026-10-05"
+  },
+  {
+    "id": "renogy-n-type-rigid-200",
+    "name": "Renogy RSP200DC-US 200W N-Type rigid",
+    "category": "panels",
+    "tier": "B",
+    "cohort": "Portable / RV",
+    "productIds": [],
+    "denominator": 200,
+    "headline": "Provisional: A compact rigid-panel option for an RV roof.",
+    "strengths": [
+      "N-type 16-busbar cells in the selected 200W model.",
+      "Manufacturer explicitly supports appropriately configured 12V and 24V battery systems."
+    ],
+    "limits": [
+      "Advertised 25% refers to cell efficiency; the linked RSP200DC-G1 sheet states 20.7% module efficiency. Confirm the supplied revision.",
+      "A charge controller and correctly sized mounting/wiring remain necessary.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://www.renogy.com/products/renogy-n-type-solar-panel",
+        "kind": "Manufacturer",
+        "note": "Official US page accessed October 5, 2026 identifies selected 200W SKU RSP200DC-US, N-type 16BB cells and 12/24V system support. Its linked RSP200DC-G1 datasheet explicitly rates 200W at STC and 20.7% module efficiency; confirm revision before applying every electrical value."
+      },
+      {
+        "label": "Manufacturer linked RSP200DC-G1 datasheet",
+        "url": "https://cdn.shopify.com/s/files/1/0631/0137/0483/files/RSP200DC-G1_Datashhet.pdf?v=1757399512",
+        "kind": "Manufacturer",
+        "note": "Linked from the official selected 200W product page: RSP200DC, 200W STC, 20.7% module efficiency, 31.03V Vmp, 6.45A Imp and 37.44V Voc. G1 revision; current product label should be checked before purchase."
+      },
+      {
+        "label": "Manufacturer product photo provenance",
+        "url": "https://www.renogy.com/products/renogy-n-type-solar-panel?variant=43178667999347",
+        "kind": "Manufacturer",
+        "note": "Photo-only exact catalog match: renogy-43178667999347 is named 100/175/200W N-Type Solar Panel — 200W / 1 Piece and links this manufacturer variant. Reuses its observed manufacturer Shopify CDN photo; no catalog price, product binding, or other wattage image is inferred."
+      }
+    ],
+    "specs": [
+      "200W front STC",
+      "N-type / 16 busbars",
+      "20.7% module efficiency in linked G1 sheet",
+      "RSP200DC-US"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://cdn.shopify.com/s/files/1/0631/0137/0483/files/RNG-260901-M9-_1-34.jpg?v=1788857314"
+  },
+  {
+    "id": "renogy-solar-blanket-400",
+    "name": "Renogy RSP400SB-US 400W N-Type solar blanket",
+    "category": "panels",
+    "tier": "B",
+    "cohort": "Portable / RV",
+    "productIds": [],
+    "denominator": 400,
+    "headline": "Provisional: Foldable power for portable setups that need easy packing.",
+    "strengths": [
+      "N-type cells and foldable blanket form suit temporary deployment.",
+      "Manufacturer supports portable power stations and controller-managed battery charging."
+    ],
+    "limits": [
+      "400W is an STC rating; orientation, temperature and shade reduce field output.",
+      "400W version has no USB port; check exact voltage, adapter and controller compatibility.",
+      "No comparative hands-on evidence is included; this tier is a documentation assessment."
+    ],
+    "sources": [
+      {
+        "label": "Manufacturer datasheet / product documentation",
+        "url": "https://www.renogy.com/products/renogy-400w-solar-panel-blanket",
+        "kind": "Manufacturer",
+        "note": "Official US page accessed October 5, 2026 identifies selected 400W SKU RSP400SB-US and explicitly explains 1000W/m², 25°C, AM1.5 STC. 25% is a cell-efficiency claim; only the 200W variant has USB. Earlier RSP400SB/G3 revisions are not silently substituted."
+      },
+      {
+        "label": "Manufacturer product photo provenance",
+        "url": "https://www.renogy.com/products/renogy-400w-solar-panel-blanket?variant=43249909530739",
+        "kind": "Manufacturer",
+        "note": "Photo-only exact catalog match: renogy-43249909530739 is named 200/400W N-Type Portable Solar Panel Blanket — 400W and links this manufacturer variant. Reuses its observed manufacturer Shopify CDN photo; avoids the separate RPP200SB image and does not bind catalog prices."
+      }
+    ],
+    "specs": [
+      "400W front STC",
+      "N-type cells / foldable blanket",
+      "IP65 rating",
+      "RSP400SB-US"
+    ],
+    "reviewedAt": "2026-10-05",
+    "image": "https://cdn.shopify.com/s/files/1/0631/0137/0483/files/RNG-260901-M9-_1-61.jpg?v=1789987089"
   }
 ]

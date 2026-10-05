@@ -1,6 +1,6 @@
-# Solar tier lab - October 4, 2026 edition
+# Solar tier lab - October 5, 2026 edition
 
-Implemented `/tiers` with 20 selected exact models/revisions: eight integrated power stations, four standalone batteries, four PV modules, and four inverters. The existing portable-station listings move into `all-in-one`; stationary kits remain in `kits`. IDs and recorded offer dates/prices remain unchanged.
+`/tiers` now covers 124 exact models/revisions: 36 all-in-one batteries, 26 standalone solar batteries, 28 panels and 34 inverters. The October 5 expansion adds 104 documentation-based provisional assessments to the original 20 entries. New assessments include manufacturer evidence, specifications, strengths, limitations and model/region caveats; they are not comparative lab-test results or sales-popularity statistics.
 
 ## Evidence and editorial judgments
 
@@ -12,7 +12,7 @@ S/A/B/C are qualitative judgments for the stated application, considering docume
 
 Price tiers use explicitly reviewed base-configuration product IDs, fresh (24 hours), new, confirmed in-stock USD offers. Similar names, accessories, expansion batteries, bundles, unmatched revisions, unknown stock and expired observations do not qualify. If no offer qualifies, show Unpriced.
 
-Use rated kWh for batteries/stations, front-side STC watts for panels, and battery-only continuous AC output for inverters. Conditional inverter output and grid pass-through are excluded from the denominator. Pallet unit cost is displayed with the entire purchase minimum. Equip actions preserve the selected product and its matching offer ID.
+Use rated kWh for batteries/stations, front-side STC watts for panels, and battery-only continuous AC output for inverters. Conditional inverter output and grid pass-through are excluded from the denominator. Grid-only string/microinverters have no battery-only price metric and remain unpriced. Unknown battery-only AC watts use a zero denominator and cannot qualify for price value. VA ratings are never silently converted to watts. Pallet unit cost is displayed with the entire purchase minimum. Build quantity actions preserve the selected product and its matching offer ID.
 
 Published cost thresholds (S / A / B maximum; C above B):
 
@@ -30,3 +30,13 @@ The existing collector refreshes prices. Reload the page to receive new catalog 
 ## Validation
 
 Domain tests cover classification, bundle arithmetic, excluded stale/used/unavailable offers, exact configuration matching, panel power denominators, package purchase minimums and evidence coverage. Browser checks cover all four families, use-case/search filters, hover/click inspection, price mode, coherent product/offer equipment selection and mobile overflow. Live validation must confirm database-backed catalog storage and preserved real history.
+
+## Battery format filtering
+
+Supported mounting formats are explicit arrays, independent of use case: standing/floor, server rack, wall mounted and stackable. A model may support more than one format with required mounting hardware. Format, search (including specs) and use-case filters compose; switching family clears all filters. Counts show filtered versus researched models. Empty formats are omitted from the menu. Floor-mounted batteries may still require wall attachment or a separate stand; each evidence card records these conditions.
+
+## Expansion provenance
+
+Exact base-unit catalog IDs are attached only after checking model and capacity; ambiguous variants remain unpriced. Photos may identify the manufacturer model family, with this boundary noted in sources, and never qualify a model for pricing. Repeated source URLs are merged. Missing verified photos remain labeled rather than substituting a different generation. Price eligibility is memoized per category/catalog observation/time check so inspecting the larger board does not repeatedly scan offers.
+
+Current EG4 280Ah Indoor datasheet v1.1.8 overrides an outdated marketing-page current claim: 140A continuous and 200A for 30 minutes. The Pytes V10α March 2026 sheet says 9.98kWh rated despite a 10.24kWh marketing-page headline; the sheet value is retained, with the discrepancy disclosed.

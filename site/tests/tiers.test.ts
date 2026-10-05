@@ -1,10 +1,41 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {classify,extractSpecs,categorizeProduct,extractPackQuantity} from '../lib/retailers.ts';
-import {rankings,tierPrice,valueTier} from '../lib/tiers.ts';
+import {rankings,tierPrice,valueTier,filterRankings} from '../lib/tiers.ts';
 import type {Product} from '../lib/types.ts';
 import {checkCompatibility} from '../lib/domain.ts';
 const now=Date.parse('2026-10-04T23:00:00Z');
+test('battery format filtering composes with use case and search without mixing families',()=>{
+ const entries=[
+  {...rankings[0],id:'rack',category:'batteries' as const,name:'Rack Alpha',cohort:'Home backup',formats:['server-rack' as const]},
+  {...rankings[0],id:'floor',category:'batteries' as const,name:'Floor Alpha',cohort:'Home backup',formats:['standing' as const,'wall-mounted' as const]},
+  {...rankings[0],id:'stack',category:'batteries' as const,name:'Stack Beta',cohort:'Modular storage',formats:['stackable' as const]},
+  {...rankings[0],id:'station',formats:['standing' as const]},
+ ];
+ assert.deepEqual(filterRankings(entries,{category:'batteries',format:'server-rack'}).map(r=>r.id),['rack']);
+ assert.deepEqual(filterRankings(entries,{category:'batteries',format:'standing',cohort:'Home backup',query:'ALPHA'}).map(r=>r.id),['floor']);
+ assert.equal(filterRankings(entries,{category:'batteries',format:'stackable',query:'alpha'}).length,0);
+ assert.equal(filterRankings(entries,{category:'batteries',format:'all'}).length,3);
+ assert.equal(filterRankings(entries,{category:'all-in-one',format:'server-rack'}).length,1);
+});
+test('grid-only inverters cannot acquire a battery-only AC watt price rank',()=>{
+ const r={...rankings.find(r=>r.id==='6000xp')!,priceBasis:'grid-ac' as const};
+ const p={id:r.productIds[0],category:'inverters',offers:[{id:'new',price:900,packQuantity:1,condition:'new',stock:'in_stock',currency:'USD',observedAt:'2026-10-04T22:00:00Z'}]} as Product;
+ assert.equal(tierPrice(r,[p],now),undefined);
+});
+test('expanded research covers many exact models and explicit battery formats',()=>{
+ for(const category of ['all-in-one','batteries','panels','inverters']) assert.ok(rankings.filter(r=>r.category===category).length>=24,category);
+ for(const r of rankings.filter(r=>r.category==='batteries')) assert.ok(r.formats?.length,r.id);
+ assert.ok(rankings.filter(r=>r.formats?.includes('standing')).length>=5);
+ assert.ok(rankings.filter(r=>r.formats?.includes('server-rack')).length>=6);
+});
+test('floor filter retains documented EG4 floor installations with mounting conditions',()=>{
+ const floor=filterRankings(rankings,{category:'batteries',format:'standing'});
+ for(const id of ['eg4-wm314-aw','eg4-wm280-indoor','eg4-wm280-aw']){
+  const r=floor.find(r=>r.id===id);assert.ok(r,id);
+  assert.ok(r.limits.some(s=>/bracket|wall attachment/.test(s)),id);
+ }
+});
 test('standalone stations and combos remain separate without stealing expansion batteries or inverters',()=>{
  for(const name of ['Pecron E3800LFP','EcoFlow DELTA Pro 3 Portable Power Station','BLUETTI AC200L']) assert.equal(classify(name),'all-in-one',name);
  for(const name of ['PECRON F5000 LFP Portable Power Station — F5000 + 2 x EXP Batteries','Anker SOLIX C2000 Gen2 Portable Power Station — + 400W Solar Panel','Anker SOLIX F3800 Plus + Expansion Battery','Anker SOLIX F3800 Plus + Expansion Battery + 400W Solar Panel']) assert.equal(classify(name),'kits',name);
