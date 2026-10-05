@@ -16,7 +16,7 @@ async function handle(request: Request, method: string) {
     if (method !== 'GET' && request.headers.get('origin') && request.headers.get('origin') !== url.origin) return json({ error: 'Cross-origin write rejected.' }, 403);
     const user = await getChatGPTUser(); const isAdmin = Boolean(user && runtime().ADMIN_EMAIL && user.email.toLowerCase() === runtime().ADMIN_EMAIL?.toLowerCase());
     if (action === 'me' && method === 'GET') return json({ user: user ? { displayName: user.displayName, email: user.email } : null, isAdmin, emailConfigured: Boolean(runtime().RESEND_API_KEY && runtime().EMAIL_FROM) });
-    if (action === 'catalog' && method === 'GET') return json(await getCatalog());
+    if (action === 'catalog' && method === 'GET') {const start=performance.now();const result=await getCatalog();const response=json(result);response.headers.set('Server-Timing',`catalog;dur=${(performance.now()-start).toFixed(1)}`);return response;}
     if(action==='deals'&&method==='GET'){
       const {period,days}=dropPeriod(url.searchParams.get('period')),now=Date.now(),since=new Date(now-days*86400000).toISOString();
       const catalog=await getCatalog();if(catalog.storage!=='database')throw new Error('Database history is unavailable. Please try again later.');

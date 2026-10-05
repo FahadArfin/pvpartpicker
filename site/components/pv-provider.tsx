@@ -2,6 +2,7 @@
 import React,{createContext,useContext,useEffect,useState,useCallback,useRef} from 'react';
 import Link from './site-link';
 import {Sun,Bell,Bookmark,Menu,X,ArrowRight,Plus,Eye,EyeOff} from 'lucide-react';
+import type {PageCatalog} from '../lib/catalog-transport';
 import type {Build,Product,CollectionReport} from '../lib/types';
 import {bestOffer,costForQuantity,money} from '../lib/domain';
 import {registerPVTools} from '../lib/webmcp';
@@ -13,7 +14,8 @@ const initial:Build={name:'My solar build',lines:[],settings:{purpose:'offgrid',
 const ctx=createContext<Context|null>(null);
 export function usePV(){const value=useContext(ctx);if(!value)throw new Error('PV provider missing');return value;}
 export async function api(path:string,options?:RequestInit):Promise<any>{const r=await fetch('/api/'+path,{...options,headers:{'Content-Type':'application/json',...options?.headers}});const d:any=await r.json();if(!r.ok)throw new Error(d.error||'Please try again.');return d;}
-export function PVProvider({products,reports,user,children}:{products:Product[];reports:CollectionReport[];user:User;children:React.ReactNode}){
+export function PVProvider({catalogJson,user,children}:{catalogJson:string;user:User;children:React.ReactNode}){
+ const {products,reports}=React.useMemo(()=>JSON.parse(catalogJson) as PageCatalog,[catalogJson]);
  const[build,setBuild]=useState<Build>(initial),[ready,setReady]=useState(false),[notice,setNotice]=useState(''),[compare,setCompare]=useState<string[]>([]),[menu,setMenu]=useState(false);
  const[watchIds,setWatchIds]=useState<string[]>([]),[watchReady,setWatchReady]=useState(false),[watchError,setWatchError]=useState(''),[watchBusy,setWatchBusy]=useState<string[]>([]);
  const watchLocks=useRef(new Set<string>());
