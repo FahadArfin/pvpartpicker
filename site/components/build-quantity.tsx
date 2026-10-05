@@ -10,6 +10,6 @@ export function BuildQuantity({product,offerId,className='',returnToBuild=false}
  return <div className={'build-quantity '+(quantity?'has-part ':'')+className} role="group" aria-label={'Build quantity for '+product.name}>
   <button type="button" disabled={quantity===0} onClick={decrease} aria-label={'Remove one '+product.name+' from build'} title="Remove one from build"><Minus size={14}/></button>
   <output aria-live="polite" aria-atomic="true" aria-label={'Quantity of '+product.name+' in build'}>{quantity}</output>
-  <button type="button" disabled={quantity>=10000||(returnToBuild&&!draftReady)} onClick={()=>(returnToBuild?chooseForBuild:add)(product.id,quantity?undefined:offerId)} aria-label={'Add one '+product.name+' to build'} title="Add one to build"><Plus size={14}/></button>
+  <button type="button" disabled={quantity>=10000||(returnToBuild&&!draftReady)} onClick={()=>(returnToBuild?chooseForBuild:add)(product.id,offerId)} aria-label={'Add one '+product.name+' to build'} title="Add one to build"><Plus size={14}/></button>
  </div>;
 }

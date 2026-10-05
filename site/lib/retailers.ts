@@ -37,6 +37,7 @@ export function classify(title: string): Category | null {
   if (/\b(?:kit|bundle)\b/.test(base)&&/\bkwh\b.*(?:storage|array)|storage.*array|inverter.*battery|battery.*inverter/.test(base)) return 'kits';
   if (/wirebox|wire box/.test(t)) return 'electrical';
   if (/rapid[ -]?shutdown|pv optimizer|module.level.*optimizer|\bts4[- ]|\brss transmitter|\brsd[- ]|tigo.*(?:\btap\b|\bcca\b|cloud connect)/.test(t)) return 'module-electronics';
+  if (/pluggable.*(?:control )?display|controller.*(?:replacement )?display|smartsolar.*display|bluesolar.*display/.test(t)) return 'accessories';
   if (/charge controller|smartsolar|bluesolar|dc[ -]?dc.*charg|orion.*charg/.test(t) || /dc[ -]?dc/.test(t)&&/battery charger/.test(base)) return 'charging';
   if (/portable power station|solar generator|power bank|balcony solar|plug.?and.?play solar|solar.*\bkit\b|solar (?:power )?system/.test(t) && !/expansion battery|extra battery|replacement|carrying|cover|cable|adapter|mounting/.test(t)) return 'kits';
   if (/\b(?:kit|bundle)\b/.test(t) && /inverter.*battery|battery.*inverter|off.grid.*power/.test(t)) return 'kits';

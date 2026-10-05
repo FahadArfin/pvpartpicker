@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./part-comparison.css";
 import "./guide.css";
+import "./usability.css";
 import {PVProvider} from '../components/pv-provider';
 import {getChatGPTUser} from './chatgpt-auth';
 export const dynamic='force-dynamic';

@@ -7,7 +7,11 @@ type CatalogStorage=Pick<Storage,'getItem'|'setItem'>|null;
 function valid(value:unknown):value is BrowserCatalog{
  if(!value||typeof value!=='object')return false;
  const v=value as BrowserCatalog;
- return v.version===1&&Number.isFinite(v.expiresAt)&&Array.isArray(v.products)&&Array.isArray(v.reports)&&v.products.every(p=>p&&typeof p.id==='string'&&Array.isArray(p.offers)&&p.specs&&typeof p.specs==='object');
+ return v.version===1&&Number.isFinite(v.expiresAt)&&Array.isArray(v.products)&&Array.isArray(v.reports)&&v.products.every(p=>p&&typeof p.id==='string'&&typeof p.name==='string'&&typeof p.brand==='string'&&typeof p.category==='string'&&Array.isArray(p.offers)&&p.specs&&typeof p.specs==='object');
+}
+/** A recent fallback keeps browsing available. It does not refresh offer dates. */
+export function readRecentPageCatalog(storage:Pick<Storage,'getItem'>|null,now:()=>number=Date.now):PageCatalog|null{
+ try{const value:unknown=JSON.parse(storage?.getItem(pageCatalogKey)||'null');return valid(value)&&value.expiresAt>now()-30*60*1000&&value.expiresAt<=now()+catalogTtlMs?value:null;}catch{return null;}
 }
 export async function loadPageCatalog(storage:CatalogStorage,fetcher:typeof fetch=fetch,now:()=>number=Date.now):Promise<PageCatalog>{
  try{

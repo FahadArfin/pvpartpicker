@@ -1,4 +1,4 @@
-export const catalogTtlMs=30_000;
+export const catalogTtlMs=120_000;
 export interface CachedCatalog<T>{value:T;expiresAt:number;}
 
 // Public data only. Keep writes, ownership checks and alert evaluation uncached.
