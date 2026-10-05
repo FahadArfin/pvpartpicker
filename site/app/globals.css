@@ -46,3 +46,5 @@
 @media(max-width:1200px){.part-row{grid-template-columns:25px minmax(0,1fr) 91px 32px 19px 104px}.inventory-list-heading{grid-template-columns:minmax(0,1fr) 91px 171px}}
 @media(max-width:1000px){.part-row{grid-template-columns:minmax(0,1fr) 84px 30px 18px 104px}.inventory-list-heading{grid-template-columns:minmax(0,1fr) 84px 171px}}
 @media(max-width:720px){.part-row{grid-template-columns:minmax(0,1fr) 28px 24px 104px;gap:8px;min-height:106px}.part-row .part-inspect{grid-column:1/-1}.part-row .part-price{grid-column:1;text-align:left}.part-row .watch-button{grid-column:2}.part-row .part-compare{grid-column:3}.part-row .build-quantity{grid-column:4}.inventory-list-heading{display:none}.build-quantity button{min-height:38px}.build-quantity{min-height:38px}}
+
+.filter-hint { display: block; font-size: 11px; line-height: 1.5; font-weight: 400; color: var(--muted); }

@@ -18,6 +18,7 @@ export function classify(title: string): Category | null {
   // Inspect the main sale item before optional additions and feature columns.
   // A cycle count such as "4,000+" does not turn an expansion battery into a station.
   const subject=t.split(/\+|\|/)[0];
+  if (isBatteryCabinet(title)) return 'batteries';
   const stationAccessory=/cable|adapter|carrying|cover|\bcase\b|replacement|battery only|extra battery|expansion battery|solar panel/.test(subject);
   const inverterModule=/inverter/.test(subject)&&!/power station|solar generator/.test(subject);
   if ((/portable power station|solar generator|power bank/.test(subject) || stationModel) && !stationAccessory && !inverterModule) return 'all-in-one';
@@ -28,8 +29,8 @@ export function classify(title: string): Category | null {
   if (/portable power station|solar generator|power bank|balcony solar|plug.?and.?play solar|solar.*\bkit\b|solar (?:power )?system/.test(t) && !/expansion battery|extra battery|replacement|carrying|cover|cable|adapter|mounting/.test(t)) return 'kits';
   if (/\b(?:kit|bundle)\b/.test(t) && /inverter.*battery|battery.*inverter|off.grid.*power/.test(t)) return 'kits';
   if (/smart panel|gridboss|energy management|smart transfer|system controller|automatic transfer switch|\bats\b|battery monitor|energy monitor|home energy|smart plug|multimeter|watt meter|\bcerbo\b|\bshunt\b|\bdongle\b|\bgateway\b|data logger|remote control|communication adapter/.test(t)) return 'monitoring';
-  if (/lcd|screen kit|battery base|battery stand|battery cover|battery tray/.test(t)) return 'accessories';
-  if (/inverter|multiplus|quattro|microinverter/.test(t) && !/adapter|display|screen|cable|wire|bracket/.test(t)) return 'inverters';
+  if (/battery base|battery stand|battery cover|battery tray|inverter cover plate/.test(t) || /lcd|screen kit/.test(subject)&&!/inverter/.test(subject)) return 'accessories';
+  if (/inverter|multiplus|quattro|microinverter/.test(t) && !/adapter|screen kit|cable|wire|bracket|cover plate/.test(subject)) return 'inverters';
   if (/load center|electrical panel|breaker panel/.test(t)) return 'electrical';
   if (/cable|wire\b|wiring|\blug\b|\blugs\b|mc4|connector|ferrule/.test(t)) return 'wiring';
   if (/solar panel|pv module|bifacial|photovoltaic/.test(t) && !/kit|bundle|mount|bracket|clamp/.test(t)) return 'panels';
@@ -64,9 +65,17 @@ export function extractSpecs(title: string, category: Category, properties: Reco
   const selected = title.split(/\s—\s/).slice(1).join(' ');
   const specs: Specs = {}; const numeric = (key: string, pattern: RegExp) => { const m = selected.match(pattern) || title.match(pattern); if (m) specs[key] = Number(m[1].replace(/,/g, '')); };
   numeric('watts', /\b([\d,]+)\s*(?:w|watts?)\b/i); numeric('voltage', /\b([\d.]+)\s*v(?:dc|ac)?\b/i); numeric('capacityKwh', /\b([\d.]+)\s*kwh\b/i); numeric('capacityAh', /\b([\d.]+)\s*ah\b/i);
-  if (category === 'panels') { if (/bifacial/i.test(title)) specs.face = 'Bifacial'; else if (/monofacial/i.test(title)) specs.face = 'Monofacial'; if (/n[ -]?type/i.test(title)) specs.cellType = 'N-type'; if (/p[ -]?type/i.test(title)) specs.cellType = 'P-type'; for (const tech of ['TOPCon', 'HPBC', 'IBC', 'PERC', 'HJT']) if (new RegExp('\\b' + tech + '\\b', 'i').test(title)) specs.technology = tech; }
-  if (category === 'batteries') { if (/server|rack/i.test(title)) specs.formFactor = 'Server rack'; else if (/wall/i.test(title)) specs.formFactor = 'Wall mounted'; else if (/standing|cabinet/i.test(title)) specs.formFactor = 'Floor standing'; if (/lifepo4/i.test(title)) specs.chemistry = 'LiFePO4'; }
+  if (category === 'panels') { if (/bi[ -]?facial/i.test(title)) specs.face = 'Bifacial'; else if (/mono[ -]?facial/i.test(title)) specs.face = 'Monofacial'; if (/n[ -]?type/i.test(title)) specs.cellType = 'N-type'; if (/p[ -]?type/i.test(title)) specs.cellType = 'P-type'; if (/perovskite/i.test(title)) specs.cellType='Perovskite'; if (/back[ -]?contact/i.test(title)) specs.technology='Back contact'; for (const tech of ['TOPCon', 'HPBC', 'IBC', 'PERC', 'HJT', 'HBC', 'ABC', 'BC']) if (new RegExp('\\b' + tech + '\\b', 'i').test(title)) specs.technology = tech; }
+  if (category === 'batteries') { specs.batteryKind=isBatteryCabinet(title)?'Battery cabinets':'Battery modules'; if(specs.batteryKind==='Battery modules'){if (/stackable|stacking/i.test(title)) specs.formFactor='Stackable'; else if (/server|rack/i.test(title)) specs.formFactor = 'Server rack'; else if (/wall/i.test(title)) specs.formFactor = 'Wall mounted'; else if (/standing|cabinet/i.test(title)) specs.formFactor = 'Floor standing'; if (/lifepo4|lithium iron phosphate|\bLFP\b/i.test(title)) specs.chemistry = 'LiFePO4';} }
   if (category === 'inverters') { if (/microinverter/i.test(title)) specs.inverterType = 'Microinverter'; else if (/hybrid/i.test(title)) specs.inverterType = 'Hybrid'; else if (/off[ -]?grid/i.test(title)) specs.inverterType = 'Off-grid'; else if (/grid[ -]?tie/i.test(title)) specs.inverterType = 'Grid-tie'; if (/split[ -]?phase|120\s*\/\s*240/i.test(title)) specs.acOutput = '120/240V split-phase'; if (/grid[ -]?forming/i.test(title)) specs.gridForming = true; }
+  if (category === 'inverters') {
+    const output=extractInverterOutput(title);if(output!==undefined)specs.outputWatts=output;
+    const lowVoltage=title.match(/\b(12(?:\.8)?|24|25\.6|48|51\.2)\s*v\b/i);
+    const explicit=title.match(/\b(120|400)\s*v\s*(?:battery|dc|system)\b/i)||title.match(/(?:battery|dc|system)\s*(?:voltage\s*[:=]?\s*)?(120|400)\s*v\b/i);
+    if(lowVoltage||explicit)specs.systemVoltageV=Number((lowVoltage||explicit)![1]);
+  }
+  if (category === 'electrical') specs.electricalType=electricalType(title);
+  if (category === 'accessories') specs.accessoryType=accessoryType(title);
   if (category === 'charging') { specs.controllerType=/dc[ -]?dc/i.test(title)?'DC-DC charger':/mppt/i.test(title)?'MPPT':/pwm/i.test(title)?'PWM':'Solar controller';numeric('chargeCurrentA',/\b([\d.]+)\s*a(?:mp(?:s|ere)?)?\b/i); }
   if (category === 'module-electronics') specs.moduleFunction=/optimi[sz]er/i.test(title)?(/rapid[ -]?shutdown/i.test(title)?'Optimizer + rapid shutdown':'Optimizer'):/transmitter/i.test(title)?'Shutdown transmitter':/\btap\b|\bcca\b|cloud connect/i.test(title)?'Shutdown gateway / access point':'Rapid shutdown';
   if (category === 'monitoring') specs.monitorType=/smart panel|gridboss|energy management|transfer|system controller|\bats\b/i.test(title)?'System / load control':/smart plug/i.test(title)?'Smart plug':/shunt|battery monitor/i.test(title)?'Battery monitor':/sensor/i.test(title)?'Sensor':/dongle|gateway|cerbo|logger/i.test(title)?'Gateway / communications':'Energy monitor / meter';
@@ -87,6 +96,43 @@ export function extractSpecs(title: string, category: Category, properties: Reco
   for (const [key, value] of Object.entries(properties).slice(0, 35)) { if (key.length < 70 && ['string', 'number'].includes(typeof value)) specs[key] = String(value).slice(0, 180); }
   return specs;
 }
+function isBatteryCabinet(title:string) {
+ const main=title.split(/\s—\s|\|/)[0];
+ return /battery\s+(?:rack\s+)?cabinet|cabinet\s+(?:for\s+)?batter(?:y|ies)/i.test(main)&&!/\b[\d.,]+\s*(?:kwh|ah)\b|lifepo4|\bLFP\b|lithium/i.test(main);
+}
+function electricalType(title:string) {
+ const main=title.split(/\s—\s/)[0];
+ if(/combiner|junction|wirebox|wire box|load center|electrical panel|breaker panel|breaker box|bell box|electrical box/i.test(main))return 'Boxes & combiners';
+ if(/conduit/i.test(main))return 'Conduit';
+ if(/bus[ -]?bar/i.test(main))return 'Busbars';
+ if(/breaker/i.test(main))return 'Circuit breakers';
+ if(/fuse/i.test(main))return 'Fuses';
+ if(/ground(?:ing| rod)/i.test(main))return 'Grounding';
+ if(/surge/i.test(main))return 'Surge protection';
+ if(/disconnect|isolator/i.test(main))return 'Disconnects';
+ return 'Other electrical';
+}
+function accessoryType(title:string) {
+ const main=title.split(/\s—\s/)[0];
+ if(/\bEV\b.*charg|level 2.*charg/i.test(main))return 'EV charging';
+ if(/battery charg|chargeverter/i.test(main))return 'Battery chargers';
+ if(/battery base|battery stand|battery tray/i.test(main))return 'Battery bases & stands';
+ if(/mini split|heat pump|appliance/i.test(main))return 'Appliances';
+ if(/lcd|screen|display|control/i.test(main))return 'Displays & controls';
+ if(/cover|carrying|\bcase\b|bag/i.test(main))return 'Covers & carrying';
+ if(/adapter|communication|wifi|network|data module|\bhub\b/i.test(main))return 'Adapters & communications';
+ return 'Other accessories';
+}
+function extractInverterOutput(title:string):number|undefined {
+ const [main,...variants]=title.split(/\s—\s/);
+ const selected=variants.join(' ').match(/^\s*([\d,]+(?:\.\d+)?)\s*(kw|w)(?:\s|$)/i);
+ if(selected)return Number(selected[1].replace(/,/g,''))*(selected[2].toLowerCase()==='kw'?1000:1);
+ for(const match of main.matchAll(/\b([\d,]+(?:\.\d+)?)\s*(kw|watts?|w)\b/gi)) {
+  const before=main.slice(Math.max(0,match.index!-25),match.index).split(/[|;]/).at(-1)!,after=main.slice(match.index!+match[0].length,match.index!+match[0].length+24);
+  if(/surge|peak|solar input|pv input|mppt|solar array/i.test(before)||/^\s*(?:surge|peak|pv|solar|input|mppt)|^\s*[–—/-]\s*\d/i.test(after)||/[\d.]\s*(?:kw|w)?[–—/-]\s*$/i.test(before))continue;
+  return Number(match[1].replace(/,/g,''))*(match[2].toLowerCase()==='kw'?1000:1);
+ }
+}
 export function extractPackQuantity(title: string, category: Category): number | null {
   if(category==='kits'||category==='all-in-one') return 1; // The sale unit is the complete kit/station bundle.
   // A mixed bundle is one sale unit; quantities of included plugs/sensors are not monitor counts.
@@ -104,7 +150,27 @@ export function categorizeProduct(product: Omit<Product,'offers'> & {offers?:Pro
   const specs={...product.specs};
   if(category!==product.category) for(const key of ['face','cellType','technology','formFactor','chemistry','inverterType','acOutput','gridForming','mountType','gauge','lengthFt','kitType','stationType','watts','voltage','capacityKwh']) delete specs[key];
   const offers=product.offers||[]; // D1 stores product metadata separately from offers.
-  return {...product,category,specs:{...specs,...extractSpecs(product.name,category)},offers:category==='kits'||category==='all-in-one'?offers.map(o=>({...o,packQuantity:1})):offers};
+  const panelDetails:Specs={};
+  const extracted=extractSpecs(product.name,category);
+  if(category==='panels') {
+    // Read labeled product specs only: comparisons in marketing prose describe other modules.
+    for(const pattern of [/\bcell (?:type|technology)\s*:?\s*([^.;]{1,80})/gi,/\bpanel face\s*:?\s*([^.;]{1,40})/gi]) {
+      for(const match of (product.description||'').matchAll(pattern)) {
+        const parsed=extractSpecs(match[1],'panels');
+        for(const key of ['face','cellType','technology'])if(parsed[key]!==undefined)panelDetails[key]=parsed[key];
+      }
+    }
+    // Renogy explicitly identifies its 100W N-type series as monofacial.
+    // Apply only to that source product and wattage, never to every non-bifacial title.
+    if(/renogy-n-type-solar-panel(?:\?|$)/.test(product.sourceUrl)&&Number(extracted.watts??specs.watts)===100&&!/bifacial/i.test(product.name)) {
+      panelDetails.face='Monofacial';panelDetails.faceSource='https://www.renogy.com/pages/n-type-solar-panel';
+    }
+    // Model identity is explicit in the source SKU; SunPower's E20 disclosure identifies back-contact cells.
+    if(/^santan-solar-spr-e20-327(?:-|$)/.test(product.id)&&/sunpower/i.test(product.name)) {
+      panelDetails.technology='Back contact';panelDetails.technologySource='https://www.sec.gov/Archives/edgar/data/867773/000086777313000012/spwr_12302012x10-k.htm';
+    }
+  }
+  return {...product,category,specs:{...specs,...panelDetails,...extracted},offers:category==='kits'||category==='all-in-one'?offers.map(o=>({...o,packQuantity:1})):offers};
 }
 function flatten(value: any): any[] { if (Array.isArray(value)) return value.flatMap(flatten); if (!value || typeof value !== 'object') return []; return [value, ...flatten(value['@graph']), ...flatten(value.itemListElement?.map((i: any) => i.item || i)), ...flatten(value.hasVariant)]; }
 export function parseProductPage(html: string, retailer: Retailer, url: string, observedAt: string): Product[] {
