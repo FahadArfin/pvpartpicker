@@ -12,22 +12,21 @@ export function BuildWorkspace(){
  const {products,build,setBuild,saving,notify}=usePV();
  const selected=build.lines.map(l=>products.find(p=>p.id===l.productId)).filter(Boolean) as typeof products;
  const checks=checkCompatibility(selected,build.settings);
- let total=0,unpriced=0;
  const rows=build.lines.map(l=>{
   const p=products.find(p=>p.id===l.productId);
   const o=p?(l.offerId?bestOffer({...p,offers:p.offers.filter(o=>o.id===l.offerId)},l.quantity):bestOffer(p,l.quantity)):undefined;
   const cost=o?costForQuantity(o,l.quantity):undefined;
-  if(cost)total+=cost.subtotal;else unpriced++;
   return {l,p,o,cost};
  });
+ const total=rows.reduce((sum,row)=>sum+(row.cost?.subtotal??0),0);
+ const unpriced=rows.filter(row=>!row.cost).length;
  const watts=build.lines.reduce((s,l)=>s+Number(products.find(p=>p.id===l.productId&&p.category==='panels')?.specs.watts||0)*l.quantity,0);
  const kwh=build.lines.reduce((s,l)=>s+Number(products.find(p=>p.id===l.productId&&p.category==='batteries'&&p.specs.batteryKind!=='Battery cabinets')?.specs.capacityKwh||0)*l.quantity,0);
  const stationKwh=build.lines.reduce((s,l)=>s+Number(products.find(p=>p.id===l.productId&&p.category==='all-in-one')?.specs.capacityKwh||0)*l.quantity,0);
  function setting<K extends 'purpose'|'mount'>(key:K,value:BuildSettings[K]){setBuild(b=>({...b,settings:{...b.settings,[key]:value}}));}
  function qty(id:string,n:number){setBuild(b=>({...b,lines:b.lines.map(l=>l.productId===id?{...l,quantity:Math.max(1,Math.min(10000,n||1))}:l)}));}
- function selectedRow({l,p,cost}:typeof rows[number],label:string,category?:typeof categories[number]){return <tr className="builder-selected-row" key={l.productId}>
-  <th scope="row" className="builder-component"><span>{label}</span>{category&&<Link href={builderPickerHref(category.id)}>Add another</Link>}</th>
-  <td className="builder-selection"><Link className="row-link" href={'/products/'+l.productId}>{p&&<ProductImage product={p}/>}<span>{p?.name||'Unavailable product'}</span></Link></td>
+ function selectedRow({l,p,cost}:typeof rows[number]){return <tr className="builder-selected-row" key={l.productId}>
+  <th scope="row" className="builder-selection"><Link className="row-link" href={'/products/'+l.productId}>{p&&<ProductImage product={p}/>}<span>{p?.name||'Unavailable product'}</span></Link></th>
   <td className="builder-quantity"><div className="quantity-control"><button aria-label={'Decrease quantity of '+(p?.name||'unavailable product')} disabled={l.quantity<=1} onClick={()=>qty(l.productId,l.quantity-1)}><Minus size={12}/></button><input aria-label={'Quantity for '+(p?.name||'unavailable product')} type="number" min="1" max="10000" value={l.quantity} onChange={e=>qty(l.productId,Number(e.target.value))}/><button aria-label={'Increase quantity of '+(p?.name||'unavailable product')} disabled={l.quantity>=10000} onClick={()=>qty(l.productId,l.quantity+1)}><Plus size={12}/></button></div>{cost&&cost.extraUnits>0&&<small>{cost.packs} packs · {cost.extraUnits} extra units</small>}</td>
   <td className="builder-retailer"><select aria-label={'Retailer for '+(p?.name||'unavailable product')} value={l.offerId||''} onChange={e=>setBuild(b=>({...b,lines:b.lines.map(line=>line.productId===l.productId?{...line,offerId:e.target.value||undefined}:line)}))}><option value="">Lowest current purchase cost</option>{p?.offers.map(o=><option key={o.id} value={o.id}>{o.retailer} · {money(o.price)} / {o.packQuantity}</option>)}</select></td>
   <td className="builder-cost">{cost?<strong>{money(cost.subtotal)}</strong>:<small>Needs a current offer</small>}</td>
@@ -42,7 +41,7 @@ export function BuildWorkspace(){
   </div><p className="builder-filter-note">These choices narrow inverter and mount options when you choose a part. You can show all options in the picker.</p></section>
   <section className="builder-equipment" aria-labelledby="equipment-heading"><div className="builder-equipment-heading"><h2 id="equipment-heading">2. Pick your equipment</h2><span>{build.lines.length} selected {build.lines.length===1?'part':'parts'}</span></div>
    <a className={'builder-check-strip '+(checks.some(c=>c.status==='mismatch')?'has-mismatch':'')} href="#compatibility"><AlertTriangle size={16}/><span>{checks.some(c=>c.status==='mismatch')?'Compatibility mismatches need attention':'System needs verification'} <small>Review checks below</small></span></a>
-   <table className="builder-parts-table"><thead><tr><th>Component</th><th>Selection</th><th>Quantity</th><th>Retailer</th><th>Cost</th><th><span className="sr-only">Remove</span></th></tr></thead><tbody>{categories.map(c=>{const items=rows.filter(row=>row.p?.category===c.id);return items.length?items.map(row=>selectedRow(row,c.label,c)):<tr className="builder-empty-row" key={c.id}><th scope="row">{c.label}</th><td colSpan={5}><Link className="button outline small" href={builderPickerHref(c.id)}><Plus size={14}/>Choose {c.label.toLowerCase()}</Link></td></tr>;})}{rows.filter(row=>!row.p).map(row=>selectedRow(row,'Unavailable'))}</tbody></table>
+   <table className="builder-parts-table"><thead><tr><th scope="col">Selection</th><th scope="col">Quantity</th><th scope="col">Retailer</th><th scope="col">Cost</th><th scope="col"><span className="sr-only">Remove</span></th></tr></thead>{categories.map(c=>{const items=rows.filter(row=>row.p?.category===c.id);return <tbody key={c.id} aria-label={c.label}><tr className={'builder-category-row'+(items.length?' has-selections':'')}><th scope="rowgroup" colSpan={5}><div className="builder-category-heading"><div><h3>{c.label}</h3>{items.length>0&&<span>{items.length} {items.length===1?'product':'products'}</span>}</div><Link className={items.length?'builder-add-another':'button outline small'} href={builderPickerHref(c.id)}><Plus size={13}/>{items.length?'Add another':'Choose '+c.label.toLowerCase()}</Link></div></th></tr>{items.map(row=>selectedRow(row))}</tbody>;})}{rows.some(row=>!row.p)&&<tbody aria-label="Unavailable products"><tr className="builder-category-row has-selections"><th scope="rowgroup" colSpan={5}><div className="builder-category-heading"><h3>Unavailable products</h3></div></th></tr>{rows.filter(row=>!row.p).map(row=>selectedRow(row))}</tbody>}</table>
    <div className="builder-totals"><div className="builder-metrics"><span><strong>{watts?(watts/1000).toFixed(1):'—'}</strong> kW PV</span><span><strong>{kwh?kwh.toFixed(1):'—'}</strong> kWh DC storage</span>{stationKwh>0&&<span><strong>{stationKwh.toFixed(2)}</strong> kWh integrated stations</span>}</div><div className="builder-subtotal"><span>Equipment subtotal</span><strong>{money(total)}</strong></div></div>
    <p className="builder-price-note">{unpriced?`${unpriced} items need current prices. `:''}Package quantities included. Shipping and tax excluded. Totals cover selected equipment, not a complete installation.</p>
   </section>
