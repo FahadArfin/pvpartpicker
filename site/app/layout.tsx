@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./guide.css";
 import {serializePageCatalog} from '../lib/catalog-transport';
 import {PVProvider} from '../components/pv-provider';
 import {getPageCatalog as getCatalog} from '../lib/storage';

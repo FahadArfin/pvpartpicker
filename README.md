@@ -11,6 +11,7 @@ A solar equipment catalog and system builder for US shoppers. Compare actual ret
 - Research-backed `/tiers` board for 20 station, battery, panel and inverter models, with sources, trade-offs, use-case filtering and an eligible-offer price-value view. See [ranking methodology](docs/tier-list-methodology.md).
 - Guided system builder with quantities, retailer selection, pallet-aware purchase totals, documented voltage/current checks, saved builds, and read-only sharing.
 - Named build library with guest device saves, account saves, save-as-new versions, reopening, and opt-in community snapshots that other builders can copy. See [build library](docs/build-library.md).
+- Guide library with 18 beginner/technical articles, six dated product/policy news explainers and nine interactive calculators adapted from Solar4U. Search by topic and experience level; see [methods and provenance](docs/guide-library.md).
 - ChatGPT sign-in, moderated community ratings/comments, target-price alerts, website notifications, and opt-in email delivery through Resend.
 - D1-backed offers and append-only observations. Price graphs contain real observations only, including their original package quantities.
 - Owner administration for moderation, persistent specification corrections, retailer-model matching, collection health, and anomalous price/package changes.
