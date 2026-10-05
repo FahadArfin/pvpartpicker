@@ -221,7 +221,8 @@
 .tier-photo-missing{display:flex;flex-direction:column;align-items:center;gap:3px;padding:3px;color:var(--muted);text-align:center}
 .tier-photo-missing strong{font-size:10px;line-height:1.2;color:var(--ink)}
 .tier-photo-missing small{font-size:9px}
-.tier-name-tooltip{max-width:260px;text-align:center;line-height:1.5}
+.tier-name-tooltip{max-width:260px;padding:8px 12px;border-radius:7px;background:#173c32;color:#fff;text-align:center;line-height:1.5;box-shadow:0 3px 12px #173c3226}
+.tier-name-tooltip svg{fill:#173c32;background:#173c32}
 .tier-name-tooltip strong,.tier-name-tooltip span{display:block}
 .tier-name-tooltip span{font-size:10px;opacity:.75}
 @media(max-width:550px){.tier-display-switch{width:auto}.tier-board-images .tier-lane-items{gap:8px;padding:10px}.tier-board-images .tier-model{width:94px;padding:6px}.tier-model-art{height:76px}}
