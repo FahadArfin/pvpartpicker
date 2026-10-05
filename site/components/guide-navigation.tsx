@@ -1,6 +1,6 @@
 'use client';
 import {useEffect,useState} from 'react';
-import {BookOpen,Search,Calculator,ArrowUpRight} from 'lucide-react';
+import {BookOpen,Search} from 'lucide-react';
 import Link from './site-link';
 import type {GuideEntry} from '../lib/guide-content';
 const topicOrder=['Foundations','Site and sunlight','Panels & technology','System design','Batteries & backup','Inverters & backup','Electrical design','Placement','Buying and ownership','Operation & maintenance'];
@@ -20,7 +20,7 @@ export default function GuideNavigation({entries,currentSlug,sections}:{entries:
   <div className="guide-curriculum-title"><BookOpen size={17}/><strong>Table of contents</strong><button className="guide-contents-toggle" aria-expanded={expanded} aria-controls="guide-contents-body" onClick={()=>setExpanded(!expanded)}>{expanded?'Close':'Browse chapters'}</button></div>
   <div className={'guide-contents-body'+(expanded?' is-open':'')} id="guide-contents-body">
    <label className="guide-nav-search"><Search size={14}/><input aria-label="Search guide chapters" placeholder="Find a topic…" value={query} onChange={e=>{setQuery(e.target.value);setMode('chapters');}}/></label>
-   <div className="guide-nav-tools"><Link href="/guide/calculators"><Calculator size={14}/>Calculator workshop <ArrowUpRight size={12}/></Link><Link href="/guide?view=library">All articles & filters →</Link></div>
+   <div className="guide-nav-tools"><Link href="/guide?view=library">All articles & filters →</Link></div>
    <div className="guide-nav-modes" role="group" aria-label="Contents navigation"><button aria-pressed={mode==='chapters'} onClick={()=>setMode('chapters')}>Chapters</button><button aria-pressed={mode==='sections'} onClick={()=>setMode('sections')}>In this chapter</button></div>
    <nav aria-label="Guide chapters" hidden={mode!=='chapters'}>{groups.map(group=>{const items=matches.filter(e=>e.kind==='Guide'&&e.topic===group);return items.length?<details key={group+(query?'search':'')} open={query?true:group===selected?.topic}><summary>{group}<span>{items.length}</span></summary><ol>{items.map(chapter)}</ol></details>:null;})}
     {matches.some(e=>e.kind==='News & analysis')&&<details open={selected?.kind==='News & analysis'||!!query}><summary>News & analysis<span>{matches.filter(e=>e.kind==='News & analysis').length}</span></summary><ol>{matches.filter(e=>e.kind==='News & analysis').map(chapter)}</ol></details>}
