@@ -1,9 +1,10 @@
 'use client';
 import {useEffect,useRef,useState} from 'react';
-import {ArrowUpRight,Battery,BookOpen,Check,Search,Sparkles,Sun,Trophy,Zap} from 'lucide-react';
+import {ArrowUpRight,Battery,BookOpen,Check,Image as ImageIcon,Search,Sparkles,Sun,Trophy,Type,Zap} from 'lucide-react';
 import Link from './site-link';
 import {ProductImage,usePV,WatchButton} from './pv-provider';
 import {BuildQuantity} from './build-quantity';
+import {Tooltip,TooltipContent,TooltipProvider,TooltipTrigger} from './ui/tooltip';
 import {money} from '../lib/domain';
 import {rankings,tierFamilies,tierPrice,valueTier,valueBands} from '../lib/tiers';
 import type {Ranking,RankedCategory,Tier} from '../lib/tiers';
@@ -11,13 +12,15 @@ import type {Product} from '../lib/types';
 const icons={'all-in-one':Battery,batteries:Battery,panels:Sun,inverters:Zap};
 const tiers:Tier[]=['S','A','B','C'];
 const labels={S:'Standout for its use',A:'Strong choice',B:'Good with trade-offs',C:'Specialist / compromise'};
-const photoIds:Record<string,string[]>={f3800:['santan-solar-b179011f'],'f3800-plus':['santan-solar-b17901127'],aptos460:['shopsolar-51480113479820'],'used-cs300':['santan-solar-cs6x-300p-u']};
+// Photo-only matches do not qualify a bundle or revision for price rankings.
+const photoIds:Record<string,string[]>={f3800:['santan-solar-b179011f'],'f3800-plus':['santan-solar-b17901127'],aptos460:['shopsolar-51480113479820']};
 const queries:Record<string,string>={c2000:'C2000',f3800:'F3800','f3800-plus':'F3800 Plus','sok-n':'SK48V100N',lifepower:'LifePower',lifepower4:'LifePower','lifepower-v2':'LifePower',cs600:'CS6W-600TB-AG',cs680:'CS7N-680TB-AG',aptos460:'Aptos 460', 'used-cs300':'Used Canadian 300',solark15:'Sol-Ark 15K'};
 export function TierWorkspace({initialId=''}:{initialId?:string}){
  const {products,compare,setCompare}=usePV();
  const initial=rankings.find(r=>r.id===initialId);
  const[category,setCategory]=useState<RankedCategory>(initial?.category||'all-in-one'),[mode,setMode]=useState<'editorial'|'value'>('editorial'),[cohort,setCohort]=useState('all'),[q,setQ]=useState(''),[selected,setSelected]=useState(initial?.id||'c2000'),[now,setNow]=useState<number|undefined>();
  const inspector=useRef<HTMLElement>(null);
+ const [display,setDisplay]=useState<'images'|'names'>('images');
  useEffect(()=>{setNow(Date.now());const timer=setInterval(()=>setNow(Date.now()),60000);return()=>clearInterval(timer);},[]);
  const family=tierFamilies.find(f=>f.id===category)!;
  const familyEntries=rankings.filter(r=>r.category===category);
@@ -27,19 +30,39 @@ export function TierWorkspace({initialId=''}:{initialId?:string}){
  const entry=visible.find(r=>r.id===selected)||visible[0];
  const current=entry?price(entry):undefined;
  const matched=current?.product||(entry?products.find(p=>entry.productIds.includes(p.id)):undefined);
- const photo=entry?(current?.product||matched||products.find(p=>(photoIds[entry.id]||[]).includes(p.id))):undefined;
- const imageProduct=entry?(photo||{id:entry.id,name:entry.name,image:entry.image||''} as Product):undefined;
+ const imageFor=(r:Ranking,pricedProduct?:Product):Product=>{
+  const photo=(pricedProduct?.image?pricedProduct:undefined)
+   ||products.find(p=>r.productIds.includes(p.id)&&p.image)
+   ||products.find(p=>(photoIds[r.id]||[]).includes(p.id)&&p.image);
+  return {id:r.id,name:r.name,image:photo?.image||r.image||''} as Product;
+ };
+ const imageProduct=entry?imageFor(entry,current?.product):undefined;
  const inspect=(r:Ranking,clicked=false)=>{setSelected(r.id);if(clicked&&window.matchMedia('(max-width: 900px)').matches)requestAnimationFrame(()=>{inspector.current?.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth',block:'start'});inspector.current?.focus({preventScroll:true});});};
  const chooseFamily=(id:RankedCategory)=>{setCategory(id);setCohort('all');setQ('');setSelected(rankings.find(r=>r.category===id)!.id);};
  return <main className="tier-page page-container">
   <div className="tier-hero"><div><div className="eyebrow"><Trophy size={15}/> THE SOLAR TIER LAB</div><h1>Find your power picks.</h1><p>Research-backed tiers. Real price value. Every pick has a reason.</p></div><div className="tier-season"><Sparkles size={19}/><span>RESEARCH EDITION <strong>October 4, 2026</strong></span></div></div>
   <nav className="tier-family-nav" aria-label="Tier list categories">{tierFamilies.map(f=>{const Icon=icons[f.id];return <button key={f.id} aria-pressed={category===f.id} onClick={()=>chooseFamily(f.id)}><Icon size={17}/>{f.label}<small>{rankings.filter(r=>r.category===f.id).length}</small></button>;})}</nav>
-  <div className="tier-control-bar"><div className="tier-view-switch" role="group" aria-label="Ranking method"><button aria-pressed={mode==='editorial'} onClick={()=>setMode('editorial')}><Trophy size={14}/>Editorial tiers</button><button aria-pressed={mode==='value'} onClick={()=>setMode('value')}><Zap size={14}/>Price value</button></div><label className="tier-search"><Search size={16}/><span className="sr-only">Search ranked models</span><input value={q} placeholder="Find a ranked model…" onChange={e=>setQ(e.target.value)}/></label><label className="tier-cohort"><span className="sr-only">Filter by use case</span><select value={cohort} onChange={e=>setCohort(e.target.value)}><option value="all">All use cases</option>{[...new Set(familyEntries.map(r=>r.cohort))].map(c=><option key={c}>{c}</option>)}</select></label></div>
+  <div className="tier-control-bar"><div className="tier-view-switch" role="group" aria-label="Ranking method"><button aria-pressed={mode==='editorial'} onClick={()=>setMode('editorial')}><Trophy size={14}/>Editorial tiers</button><button aria-pressed={mode==='value'} onClick={()=>setMode('value')}><Zap size={14}/>Price value</button></div><div className="tier-view-switch tier-display-switch" role="group" aria-label="Tier display"><button aria-pressed={display==='images'} onClick={()=>setDisplay('images')}><ImageIcon size={14}/>Images</button><button aria-pressed={display==='names'} onClick={()=>setDisplay('names')}><Type size={14}/>Names</button></div><label className="tier-search"><Search size={16}/><span className="sr-only">Search ranked models</span><input value={q} placeholder="Find a ranked model…" onChange={e=>setQ(e.target.value)}/></label><label className="tier-cohort"><span className="sr-only">Filter by use case</span><select value={cohort} onChange={e=>setCohort(e.target.value)}><option value="all">All use cases</option>{[...new Set(familyEntries.map(r=>r.cohort))].map(c=><option key={c}>{c}</option>)}</select></label></div>
   <div className="tier-context"><strong>{family.label}</strong><span>{mode==='editorial'?family.description:'Equipment cost only, using fresh in-stock new base configurations. Price tiers do not measure quality or reliability.'}</span><Link href={'/?category='+category}>Browse every option <ArrowUpRight size={13}/></Link></div>
-  <div className="tier-layout"><section className="tier-board" aria-label={family.label+' '+(mode==='editorial'?'editorial tiers':'price value tiers')}>
-   {[...tiers,...(mode==='value'?['Unpriced']:[])].map(t=>{const items=visible.filter(r=>rank(r)===t);return <div className={'tier-lane tier-'+t.toLowerCase()} key={t}><div className="tier-letter"><strong>{t==='Unpriced'?'?':t}</strong><small>{t==='Unpriced'?'No eligible price':mode==='editorial'?labels[t as Tier]:t==='S'?'Lowest cost':t==='A'?'Good value':t==='B'?'Higher cost':'Premium cost'}</small></div><div className="tier-lane-items">{items.length?items.map(r=>{const p=price(r);return <button className={'tier-model '+(r.id===entry?.id?'selected':'')} key={r.id} aria-pressed={r.id===entry?.id} onMouseEnter={()=>inspect(r)} onFocus={()=>inspect(r)} onClick={()=>inspect(r,true)}><span className="tier-model-icon">{r.category==='panels'?<Sun size={18}/>:r.category==='inverters'?<Zap size={18}/>:<Battery size={18}/>}</span><span className="tier-model-name"><strong>{r.name}</strong><small>{r.cohort} · {r.specs[0]}</small></span><span className="tier-model-price"><strong>{p?money(p.unitPrice):now===undefined?'Checking…':'Unpriced'}</strong><small>{p?`${p.metric.toFixed(r.category==='panels'||r.category==='inverters'?2:0)} ${valueBands[r.category].unit}`:'Open evidence'}</small></span></button>;}):<p className="tier-lane-empty">{q||cohort!=='all'?'No matches in this tier.':'No researched picks in this tier.'}</p>}</div></div>;})}
+  <div className="tier-layout"><TooltipProvider delayDuration={150}><section className={'tier-board tier-board-'+display} aria-label={family.label+' '+(mode==='editorial'?'editorial tiers':'price value tiers')}>
+   {[...tiers,...(mode==='value'?['Unpriced']:[])].map(t=>{
+    const items=visible.filter(r=>rank(r)===t);
+    return <div className={'tier-lane tier-'+t.toLowerCase()} key={t}>
+     <div className="tier-letter"><strong>{t==='Unpriced'?'?':t}</strong><small>{t==='Unpriced'?'No eligible price':mode==='editorial'?labels[t as Tier]:t==='S'?'Lowest cost':t==='A'?'Good value':t==='B'?'Higher cost':'Premium cost'}</small></div>
+     <div className="tier-lane-items">{items.length?items.map(r=>{
+      const p=price(r),image=imageFor(r,p?.product);
+      return <Tooltip key={r.id}><TooltipTrigger asChild>
+       <button className={'tier-model '+(r.id===entry?.id?'selected':'')} aria-label={r.name} aria-pressed={r.id===entry?.id} onMouseEnter={()=>inspect(r)} onFocus={()=>inspect(r)} onClick={()=>inspect(r,true)}>
+        {display==='images'?<span className="tier-model-art">{image.image?<ProductImage key={image.image} product={image} className="tier-model-photo"/>:<span className="tier-photo-missing"><ImageIcon size={20}/><strong>{r.name}</strong><small>Photo pending</small></span>}</span>:<span className="tier-model-icon">{r.category==='panels'?<Sun size={18}/>:r.category==='inverters'?<Zap size={18}/>:<Battery size={18}/>}</span>}
+        {display==='names'&&<span className="tier-model-name"><strong>{r.name}</strong><small>{r.cohort} · {r.specs[0]}</small></span>}
+        <span className="tier-model-price"><strong>{p?money(p.unitPrice):now===undefined?'Checking…':'Unpriced'}</strong>{display==='names'&&<small>{p?`${p.metric.toFixed(r.category==='panels'||r.category==='inverters'?2:0)} ${valueBands[r.category].unit}`:'Open evidence'}</small>}</span>
+       </button>
+      </TooltipTrigger>{display==='images'&&<TooltipContent className="tier-name-tooltip" side="top" sideOffset={8}><strong>{r.name}</strong><span>{r.cohort}</span></TooltipContent>}</Tooltip>;
+     }):<p className="tier-lane-empty">{q||cohort!=='all'?'No matches in this tier.':'No researched picks in this tier.'}</p>}</div>
+    </div>;
+   })}
    <div className="tier-board-foot"><BookOpen size={16}/><p>{mode==='editorial'?'A tier is our editorial judgment for the stated use case. Documentation-only assessments are provisional.':'No coupons, bundles, used equipment, stale prices or unverified model matches. Pallet unit costs still require buying the entire pallet.'}</p></div>
-  </section>
+  </section></TooltipProvider>
   <aside className="tier-inspector" ref={inspector} tabIndex={-1} aria-label="Selected product evidence">{entry&&imageProduct?<>
    <div className="tier-inspector-heading"><span className={'tier-badge tier-'+String(rank(entry)).toLowerCase()}>{rank(entry)==='Unpriced'?'?':rank(entry)}</span><div><div className="eyebrow">{mode==='editorial'?'EDITORIAL PICK':'PRICE VALUE PICK'}</div><small>{entry.cohort}</small></div></div>
    <ProductImage key={'photo-'+entry.id} product={imageProduct} className="tier-product-photo"/>
