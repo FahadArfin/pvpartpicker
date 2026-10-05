@@ -278,6 +278,7 @@
 .quick-filter-chips button small{font-size:10px;opacity:.65;font-variant-numeric:tabular-nums}
 .quick-filter-chips button:hover:not(:disabled){border-color:var(--green);background:#edf5f0}
 .quick-filter-chips button[aria-pressed=true]{background:var(--green,#1c6650);border-color:var(--green,#1c6650);color:white}
+.quick-filter-chips button[aria-pressed=true]:hover:not(:disabled){background:var(--green,#1c6650);color:white}
 .quick-filter-chips button:disabled{opacity:.42;cursor:not-allowed}
 .quick-filter-chips button:focus-visible{outline:2px solid var(--green);outline-offset:3px}
 @media(max-width:720px){.quick-filter-group{display:block;margin-top:10px}.quick-filter-label{display:block;margin-bottom:5px}.quick-filter-chips{gap:5px}.quick-filter-chips button{min-height:36px;padding:7px 10px;font-size:11px}.quick-filter-heading{margin-bottom:4px}}
