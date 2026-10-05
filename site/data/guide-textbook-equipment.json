@@ -1,0 +1,2815 @@
+{
+  "module-datasheet": {
+    "reviewed": "2026-10-05",
+    "outcome": "Read an actual module datasheet, distinguish STC from the published NOCT table, and carry the correct values into a documented compatibility review.",
+    "sources": [
+      {
+        "label": "Trina Solar · TSM-NEG9R.28 APAC EN 2024_D datasheet",
+        "url": "https://static.trinasolar.com/sites/default/files/DT-M-0043%20APAC%20EN%20I%20210RVertexS%2B_NEG9R.28_430-460%202024_D_web.pdf"
+      },
+      {
+        "label": "California Energy Commission · 2026 equipment-list RFI: NOCT and NMOT distinction",
+        "url": "https://efiling.energy.ca.gov/GetDocument.aspx?DocumentContentId=107115&tn=269961"
+      },
+      {
+        "label": "Sandia PVPMC · DC module IV characteristics",
+        "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/"
+      },
+      {
+        "label": "Sandia PVPMC · Effective irradiance",
+        "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/effective-irradiance/"
+      },
+      {
+        "label": "Sandia PVPMC · NOCT cell-temperature model",
+        "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/cell-temperature/noct-cell-temperature/"
+      },
+      {
+        "label": "Sandia PVPMC · Sandia cell-temperature model",
+        "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/cell-temperature/sandia-cell-temperature-model/"
+      },
+      {
+        "label": "DOE · Photovoltaic performance and efficiency basics",
+        "url": "https://www.energy.gov/cmei/systems/solar-photovoltaic-performance-and-efficiency-basics"
+      },
+      {
+        "label": "Victron · SmartSolar MPPT 150/60–250/70 specifications",
+        "url": "https://www.victronenergy.com/media/pg/Manual_SmartSolar_MPPT_150-60_up_to_250-70/en/technical-specifications.html"
+      },
+      {
+        "label": "DOE · Photovoltaic technology basics",
+        "url": "https://www.energy.gov/cmei/systems/solar-photovoltaic-technology-basics"
+      }
+    ],
+    "sections": [
+      {
+        "title": "A datasheet is a set of boundary conditions",
+        "paragraphs": [
+          "A module is an electrical source whose voltage and current change with light, temperature and the load connected to it. Its headline watt number describes one specified test point. It is neither an everyday output guarantee nor an energy forecast. Read the model suffix, regional version and wattage column before copying anything: two products with a similar family name can have different cells, connectors or electrical characteristics.",
+          "This chapter follows Trina Solar TSM-440NEG9R.28 in the manufacturer’s TSM_APAC_EN_2024_D sheet covering 430–460 W. We preserve its labels and distinguish manufacturer data from our calculations. An order should be checked against the delivered nameplate and the applicable installation manual. An archived datasheet is valuable teaching evidence, but it does not establish that today’s seller supplies the identical regional configuration."
+        ],
+        "sources": [
+          {
+            "label": "Trina Solar · TSM-NEG9R.28 APAC EN 2024_D datasheet",
+            "url": "https://static.trinasolar.com/sites/default/files/DT-M-0043%20APAC%20EN%20I%20210RVertexS%2B_NEG9R.28_430-460%202024_D_web.pdf"
+          }
+        ],
+        "figures": [
+          {
+            "diagram": "iv-curve",
+            "caption": "Conceptual current–voltage curve: maximum power lies between the open-circuit and short-circuit endpoints. This is an original teaching diagram, not the Trina measured curve.",
+            "alt": "Current voltage curve marking Isc, Voc and the maximum power point."
+          }
+        ]
+      },
+      {
+        "title": "The real 440 W column: STC and the published NOCT table",
+        "paragraphs": [
+          "Standard test conditions use 1,000 W/m² irradiance, 25°C cell temperature and AM1.5 spectrum. Trina’s second electrical table is labeled NOCT and specifies 800 W/m², 20°C ambient temperature and 1 m/s wind. The sheet gives nominal operating cell temperature as 43°C ±2°C. Ambient and cell temperatures describe different quantities; do not read the 20°C ambient reference as a 20°C cell test.",
+          "These are the values for the 440 W column, not the maximum values across the product family. Trina publishes STC module efficiency but does not publish a separate NOCT efficiency row. A missing field remains missing. In particular, the 460 W headline and 23.0% family maximum do not become the 440 W module’s rating."
+        ],
+        "sources": [
+          {
+            "label": "Trina Solar · TSM-NEG9R.28 APAC EN 2024_D datasheet",
+            "url": "https://static.trinasolar.com/sites/default/files/DT-M-0043%20APAC%20EN%20I%20210RVertexS%2B_NEG9R.28_430-460%202024_D_web.pdf"
+          }
+        ],
+        "columns": [
+          "Quantity",
+          "STC: TSM-440NEG9R.28",
+          "NOCT table: same column"
+        ],
+        "rows": [
+          [
+            "Maximum power Pmax",
+            "440 W",
+            "337 W"
+          ],
+          [
+            "Maximum-power voltage Vmp",
+            "44.0 V",
+            "41.4 V"
+          ],
+          [
+            "Maximum-power current Imp",
+            "10.01 A",
+            "8.14 A"
+          ],
+          [
+            "Open-circuit voltage Voc",
+            "52.2 V",
+            "49.5 V"
+          ],
+          [
+            "Short-circuit current Isc",
+            "10.67 A",
+            "8.60 A"
+          ],
+          [
+            "Module efficiency",
+            "22.0%",
+            "Not published in this table"
+          ]
+        ]
+      },
+      {
+        "title": "Why all four electrical values matter",
+        "paragraphs": [
+          "Vmp and Imp describe the maximum-power operating point under the stated conditions. Multiplying them checks consistency: 44.0 ×10.01 =440.44 W, close to the rounded 440 W rating. Voc is measured at the voltage endpoint with essentially no external current. Isc is the current endpoint with essentially zero terminal voltage. Their product is not a usable power rating, because those two endpoints do not occur simultaneously. The NOCT check is 41.4×8.14 =336.996 W, consistent with the rounded 337 W table value. Small differences in these products reflect the displayed precision; they are not extra unrounded ratings.",
+          "For the same column, Voc × Isc =556.97 W. Comparing this impossible endpoint rectangle with actual maximum power gives an approximate fill factor of 440/556.97 =0.790. This is an interpretation exercise, not an additional product certification. A controller changes the operating voltage to find the useful point; it cannot deliver Voc and Isc at the same time. The conceptual figure shows why both endpoints have approximately zero output power."
+        ],
+        "sources": [
+          {
+            "label": "Sandia PVPMC · DC module IV characteristics",
+            "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/"
+          }
+        ],
+        "formula": "Electrical power at one operating point = voltage at that point × current at that point"
+      },
+      {
+        "title": "NOCT and NMOT are not interchangeable names",
+        "paragraphs": [
+          "NOCT means nominal operating cell temperature; NMOT means nominal module operating temperature. The California Energy Commission’s 2026 equipment-list discussion explains a central historical distinction: NOCT temperature testing used an open-circuited module, whereas NMOT uses a module under load. Extracting electrical energy changes the thermal balance. The procedures also differ beyond the three familiar environmental reference numbers.",
+          "Separate the measured nominal operating temperature from an electrical table evaluated at that temperature and irradiance. An electrical table can include Vmp and Imp even though the legacy temperature characterization itself used an open circuit. This Trina sheet says NOCT, so we do not rename its 337 W value NMOT, invent an unpublished NMOT column, or infer a fixed conversion. When comparing another manufacturer, record its term, procedure and mounting assumptions."
+        ],
+        "sources": [
+          {
+            "label": "California Energy Commission · 2026 equipment-list RFI: NOCT and NMOT distinction",
+            "url": "https://efiling.energy.ca.gov/GetDocument.aspx?DocumentContentId=107115&tn=269961"
+          }
+        ]
+      },
+      {
+        "title": "Temperature coefficients: signs and units first",
+        "paragraphs": [
+          "The sheet lists Pmax coefficient −0.29%/°C, Voc coefficient −0.24%/°C and Isc coefficient +0.04%/°C. Convert percentage to a fraction before multiplying: −0.24% becomes −0.0024 per degree. Warmer cells reduce this module’s voltage and maximum power in a first-order approximation; its short-circuit current increases slightly. A coefficient is a slope around reference conditions, not permission to operate beyond equipment limits.",
+          "Do not use the Pmax coefficient as a Vmp coefficient. This sheet does not publish a Vmp temperature coefficient, and deriving one by subtracting the Isc coefficient from the Pmax coefficient would mix maximum-power current with short-circuit current. A defensible hot-voltage study needs appropriate manufacturer data or a validated IV model. Label an approximation explicitly and preserve its limits."
+        ],
+        "sources": [
+          {
+            "label": "Trina Solar · TSM-NEG9R.28 APAC EN 2024_D datasheet",
+            "url": "https://static.trinasolar.com/sites/default/files/DT-M-0043%20APAC%20EN%20I%20210RVertexS%2B_NEG9R.28_430-460%202024_D_web.pdf"
+          },
+          {
+            "label": "Sandia PVPMC · Sandia cell-temperature model",
+            "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/cell-temperature/sandia-cell-temperature-model/"
+          }
+        ],
+        "columns": [
+          "Published coefficient",
+          "Fraction per °C",
+          "Primary use"
+        ],
+        "rows": [
+          [
+            "Pmax: −0.29%/°C",
+            "−0.0029",
+            "First-order power-temperature estimate"
+          ],
+          [
+            "Voc: −0.24%/°C",
+            "−0.0024",
+            "Cold open-circuit voltage estimate"
+          ],
+          [
+            "Isc: +0.04%/°C",
+            "+0.0004",
+            "Short-circuit current-temperature estimate"
+          ]
+        ]
+      },
+      {
+        "title": "Worked example: cold voltage before wattage",
+        "paragraphs": [
+          "Assume, for teaching only, a minimum cell temperature of −15°C, uniform identical modules, and the linear Voc coefficient. The 40°C difference below STC gives multiplier 1 +(−0.0024)×(−40) =1.096. A real design also checks tolerances, the selected weather method and jurisdictional requirements. This calculation isolates the temperature effect so that the logic is visible.",
+          "The Victron SmartSolar 150/60 manual distinguishes 150 V absolute maximum in cold conditions from 145 V startup and operating maximum. Two of these modules calculate below both figures under our assumption; three exceed even the absolute boundary. Their combined watts do not rescue the three-module string. This is a voltage screening example, not approval of a complete installation."
+        ],
+        "sources": [
+          {
+            "label": "Victron · SmartSolar MPPT 150/60–250/70 specifications",
+            "url": "https://www.victronenergy.com/media/pg/Manual_SmartSolar_MPPT_150-60_up_to_250-70/en/technical-specifications.html"
+          }
+        ],
+        "workedExample": {
+          "title": "Two versus three real Trina modules",
+          "givens": [
+            "Voc =52.2 V; coefficient =−0.24%/°C",
+            "Hypothetical minimum cell temperature −15°C",
+            "Comparison device: SmartSolar MPPT 150/60"
+          ],
+          "steps": [
+            "Correct one module: 52.2 ×1.096 =57.2112 V.",
+            "Two in series: 114.4224 V; three: 171.6336 V.",
+            "Compare each result with both documented voltage boundaries, then perform the remaining current, power and charging checks."
+          ],
+          "result": "Three in series fail the 150 V absolute-voltage screen; two leave voltage headroom under this temperature assumption.",
+          "discussion": "The site temperature, delivered-module tolerances and manufacturer sizing method can change the final acceptable configuration."
+        }
+      },
+      {
+        "title": "Power, area and the second rating",
+        "paragraphs": [
+          "Trina gives dimensions 1,762 ×1,134 mm. Converting first gives 1.762 ×1.134 =1.998108 m². At STC, incident reference power is about 1,998 W; 440/1,998.108 =22.02%, consistent with the rounded 22.0% efficiency. This check uses total module area, not an assumed cell-only area. It does not include inverter losses, shade, wiring or roof packing.",
+          "The published NOCT-to-STC power ratio is 337/440 =76.59%. That ratio is a comparison between two specified states; it is not an annual derate to apply to every sunny hour. A 440 W module could operate above or below 337 W as light and cell temperature change. Energy requires integrating changing power over time, so a weather-based production model is the next stage."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Photovoltaic performance and efficiency basics",
+            "url": "https://www.energy.gov/cmei/systems/solar-photovoltaic-performance-and-efficiency-basics"
+          }
+        ]
+      },
+      {
+        "title": "A simple thermal estimate and its limitation",
+        "paragraphs": [
+          "For an introductory open-rack approximation, assume ambient temperature 30°C, irradiance 1,000 W/m² and a linear rise based on the 43°C NOCT value: cell temperature ≈30 +(43−20)×1,000/800 =58.75°C. This deliberately simplified exercise fixes the wind and mounting behavior implicitly. It is unsuitable as a universal roof-temperature prediction.",
+          "At that assumed cell temperature and STC-level light, a first-order power estimate is 440×[1−0.0029×(58.75−25)] ≈396.94 W before other losses. Close roof mounting, wind, thermal transients, spectrum and angle of incidence can alter the result. Sandia’s temperature and effective-irradiance frameworks show why proper modeling separates these influences instead of hiding them in one unexplained percentage."
+        ],
+        "sources": [
+          {
+            "label": "Sandia PVPMC · NOCT cell-temperature model",
+            "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/cell-temperature/noct-cell-temperature/"
+          },
+          {
+            "label": "Sandia PVPMC · Effective irradiance",
+            "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/effective-irradiance/"
+          }
+        ],
+        "formula": "Illustrative power ≈ P_STC × irradiance/1,000 × [1 + γ_P × (Tcell−25)]"
+      },
+      {
+        "title": "Translate the datasheet into a parts review",
+        "paragraphs": [
+          "Keep electrical and mechanical limits in separate rows. A module’s maximum system voltage does not override an inverter’s lower PV-input limit. A maximum series-fuse rating is an upper bound associated with the module, not an instruction to install that fuse everywhere. Actual source-circuit protection depends on the array, conductors and receiving equipment.",
+          "Record dimensions, mass, connector manufacturer/family, approved mounting zones and load documentation next to the electrical data. The module’s mechanical test pressure is not the site’s allowable wind or snow pressure without the approved mounting configuration and design interpretation. Dual glass does not itself mean useful bifacial operation; rear production needs an explicit rating and appropriate site conditions. These checks stop a correct wattage comparison becoming an unsuitable purchase."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Photovoltaic technology basics",
+            "url": "https://www.energy.gov/cmei/systems/solar-photovoltaic-technology-basics"
+          }
+        ],
+        "bullets": [
+          "Preserve the exact model, wattage bin, region and datasheet revision.",
+          "Carry Voc and Isc into input-limit checks; carry Vmp and Imp into operating analysis.",
+          "Ask for missing coefficients rather than silently filling them.",
+          "Save the delivered nameplate and installation manual with the design record."
+        ],
+        "figures": [
+          {
+            "diagram": "module-anatomy",
+            "caption": "Conceptual construction layers. Cell architecture, rear light admission, connectors and approved frame support are separate product attributes; this is not a disassembly or mounting instruction.",
+            "alt": "Exploded module layers showing front glass, encapsulant, solar cells and rear glass or backsheet."
+          }
+        ]
+      },
+      {
+        "title": "Practice: diagnose the plausible-looking mistake",
+        "paragraphs": [
+          "A comparison spreadsheet lists the Trina 440 W module as 460 W, 23.0% efficient and 337 W NMOT output. Each entry looks plausible because the sheet contains similar numbers. The problem is provenance: the first two are family maxima from another wattage column and the third changes the manufacturer’s test label. Accuracy includes labels as well as digits.",
+          "Now consider a supplier proposing three modules on a 150 V controller because 3×44.0 =132 V. That multiplies the operating voltage and omits the cold open-circuit case. Ask for the complete temperature and tracker limits sheet. A designer should be able to reconstruct every selected value, assumption and rejection without depending on a sales conversation."
+        ],
+        "sources": [],
+        "exercise": {
+          "question": "Using the chapter’s −15°C assumption, what is cold Voc for four of the 440 W modules in series, and does 4×Vmp establish compatibility?",
+          "answer": "228.8448 V cold Voc; multiplying Vmp alone does not establish compatibility.",
+          "explanation": "Four ×52.2 ×1.096 =228.8448 V. Operating voltage, absolute open-circuit voltage, current, startup and equipment conditions remain distinct checks."
+        }
+      }
+    ]
+  },
+  "panel-technology": {
+    "reviewed": "2026-10-05",
+    "outcome": "Compare module technologies using the site, measured product specifications and total project value rather than treating acronyms as a ranking.",
+    "sources": [
+      {
+        "label": "DOE · Solar photovoltaic cell basics",
+        "url": "https://www.energy.gov/cmei/systems/solar-photovoltaic-cell-basics"
+      },
+      {
+        "label": "DOE · Photovoltaic technology basics",
+        "url": "https://www.energy.gov/cmei/systems/solar-photovoltaic-technology-basics"
+      },
+      {
+        "label": "DOE · Photovoltaic performance and efficiency basics",
+        "url": "https://www.energy.gov/cmei/systems/solar-photovoltaic-performance-and-efficiency-basics"
+      },
+      {
+        "label": "Trina Solar · TSM-NEG9R.28 APAC EN 2024_D datasheet",
+        "url": "https://static.trinasolar.com/sites/default/files/DT-M-0043%20APAC%20EN%20I%20210RVertexS%2B_NEG9R.28_430-460%202024_D_web.pdf"
+      },
+      {
+        "label": "Sandia PVPMC · Effective irradiance",
+        "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/effective-irradiance/"
+      },
+      {
+        "label": "Sandia PVPMC · Sandia cell-temperature model",
+        "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/cell-temperature/sandia-cell-temperature-model/"
+      },
+      {
+        "label": "Sandia PVPMC · DC module IV characteristics",
+        "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Start with the cell, then the module",
+        "paragraphs": [
+          "A photovoltaic cell converts part of the light reaching a semiconductor into electrical energy. Cells are interconnected and encapsulated to make a weather-resistant module; modules form an array. The cell’s laboratory conversion efficiency, a finished module’s efficiency, and a system’s annual energy yield are different measurements. A record cell can be useful research evidence without telling you the performance of a product you can purchase.",
+          "Technology comparison becomes manageable when each label answers one question. Identify semiconductor material, doping, contact architecture, front/rear collection and physical format separately. Then compare actual model data. A buyer who records only 'mono' and watts misses operating voltage, connector compatibility, roof fit, handling and warranty responsibility. Those constraints often determine which technology is useful at a particular site."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Solar photovoltaic cell basics",
+            "url": "https://www.energy.gov/cmei/systems/solar-photovoltaic-cell-basics"
+          },
+          {
+            "label": "DOE · Photovoltaic technology basics",
+            "url": "https://www.energy.gov/cmei/systems/solar-photovoltaic-technology-basics"
+          }
+        ],
+        "figures": [
+          {
+            "diagram": "module-anatomy",
+            "caption": "Original schematic of a module’s functional layers and electrical connections; layer thickness and internal circuit details vary by product.",
+            "alt": "Exploded module layers with cells, encapsulation, glass, frame and junction box."
+          }
+        ]
+      },
+      {
+        "title": "Decode labels without creating a false ladder",
+        "paragraphs": [
+          "Monocrystalline describes a silicon crystal structure; n-type and p-type describe semiconductor doping. PERC, TOPCon, heterojunction and back-contact terms describe aspects of cell design. Bifacial identifies intended collection from both faces. Glass-glass describes construction. None of these terms supplies the others automatically: the Trina teaching module is n-type TOPCon and dual-glass, but a useful rear-side rating cannot be inferred merely from those words.",
+          "Use an attribute matrix when reading brochures. A back-contact module could also be n-type and bifacial; a TOPCon module can have different frame formats or appearances. Consequently 'TOPCon versus bifacial' compares different axes. A good question is whether a specific module’s front-side density, thermal response, current envelope, rear collection and installation requirements suit the intended project."
+        ],
+        "sources": [
+          {
+            "label": "Trina Solar · TSM-NEG9R.28 APAC EN 2024_D datasheet",
+            "url": "https://static.trinasolar.com/sites/default/files/DT-M-0043%20APAC%20EN%20I%20210RVertexS%2B_NEG9R.28_430-460%202024_D_web.pdf"
+          }
+        ],
+        "columns": [
+          "Label",
+          "Question it answers",
+          "What it does not establish"
+        ],
+        "rows": [
+          [
+            "Monocrystalline",
+            "What silicon crystal structure?",
+            "Output in shade or warranty quality"
+          ],
+          [
+            "n-type / p-type",
+            "What doping approach?",
+            "A complete cell architecture"
+          ],
+          [
+            "PERC / TOPCon / HJT",
+            "What cell/contact structure?",
+            "Annual energy at this roof"
+          ],
+          [
+            "Back contact",
+            "Where are the electrical contacts?",
+            "Universal compatibility"
+          ],
+          [
+            "Bifacial",
+            "Can the rear collect useful light?",
+            "A fixed rear gain at every site"
+          ],
+          [
+            "Dual glass",
+            "What encapsulation construction?",
+            "Automatic bifacial production"
+          ]
+        ]
+      },
+      {
+        "title": "What efficiency buys when area is scarce",
+        "paragraphs": [
+          "Module efficiency expresses electrical output relative to incident reference light over the module area. It helps compare how much nameplate power fits within a constrained surface. It does not mean a higher-efficiency panel consumes less sunlight, and it does not tell you whether an inverter has enough tracker current. Panel dimensions should be compared alongside efficiency so the array can actually fit between site boundaries.",
+          "Use a hypothetical 24 m² of usable rectangles, not simply gross roof area. If candidate A occupies 2.0 m² at 440 W and candidate B occupies 2.5 m² at 540 W, their densities are 220 and 216 W/m². On a perfectly divisible surface, twelve A modules give 5.28 kW, while nine B modules give 4.86 kW and leave area unused. Actual packing, access and mounting can change that outcome."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Photovoltaic performance and efficiency basics",
+            "url": "https://www.energy.gov/cmei/systems/solar-photovoltaic-performance-and-efficiency-basics"
+          }
+        ],
+        "workedExample": {
+          "title": "Roof packing can reverse the per-module ranking",
+          "givens": [
+            "Fictional unobstructed usable area 24 m²",
+            "A: 440 W, 2.0 m²; B: 540 W, 2.5 m²"
+          ],
+          "steps": [
+            "Compute density: A 220 W/m², B 216 W/m².",
+            "Take whole modules: 12 A or 9 B under the simplified area assumption.",
+            "Compute nameplate totals: 5.28 kW A and 4.86 kW B."
+          ],
+          "result": "A supplies 420 W more nameplate power in this simplified packing example.",
+          "discussion": "Neither count is a roof layout. Dimensions, setbacks, row geometry, clamp zones and structural review determine the installable arrangement."
+        }
+      },
+      {
+        "title": "Bifacial opportunity is a site property",
+        "paragraphs": [
+          "Rear light comes from the surroundings and can be blocked by the mounting structure, neighboring rows or the module’s own position. A raised array above a reflective surface presents a different opportunity from closely mounted modules above dark roofing. An advertised gain percentage describes particular assumptions; it is not a free multiplier to add to the front-side rating.",
+          "Compare front-side STC watts first, then assess rear irradiance with a suitable site model. Keep the expected energy gain separate from the current assumptions used for equipment limits. A rear-gain brochure table may increase current as well as power, which can affect a tracker or connector even where the catalog’s main watt field shows only front-side watts. Geometry, albedo and rear shading belong in the model record."
+        ],
+        "sources": [
+          {
+            "label": "Sandia PVPMC · Effective irradiance",
+            "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/effective-irradiance/"
+          }
+        ]
+      },
+      {
+        "title": "Temperature: compare the published product, not a slogan",
+        "paragraphs": [
+          "A temperature coefficient tells you how a specified electrical quantity changes around reference conditions. For power, a coefficient closer to zero reduces the modeled power penalty as cells heat, all else equal. However, cells do not all operate at the same temperature: glass, encapsulation, mounting, wind and irradiance influence the thermal balance. A technology claim needs to be tied to an actual module and installation scenario.",
+          "Suppose two fictional 440 W modules have power coefficients −0.29%/°C and −0.35%/°C. At an assumed equal 65°C cell temperature and reference light, first-order power is 388.96 W versus 378.40 W, a difference of 10.56 W. That one-state difference does not establish annual benefit. The comparison requires the site’s distribution of temperature and irradiance, plus uncertainty about actual mounting."
+        ],
+        "sources": [
+          {
+            "label": "Sandia PVPMC · Sandia cell-temperature model",
+            "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/cell-temperature/sandia-cell-temperature-model/"
+          }
+        ],
+        "formula": "At a chosen temperature: P ≈ P_STC × [1 + γP × (Tcell−25)]"
+      },
+      {
+        "title": "Shade response depends on the internal circuit and the system",
+        "paragraphs": [
+          "Partial shading changes the module IV curve and can create multiple useful operating regions. Bypass diodes can allow affected cell groups to be bypassed; the exact topology determines the consequence. Half-cell, third-cut or other split-cell labels do not establish the same shade response across every module. A small shadow can therefore have effects that cannot be estimated merely from shaded area.",
+          "The receiving electronics matter as well. Independent trackers, optimizers and microinverters can change how module mismatch is managed, but they cannot recover light that never reaches the cells. Compare an actual obstruction pattern and approved electronics pairing. Ask for the internal layout and appropriate production modeling when persistent shade is material. Treat a demonstration video with one artificial shadow as a specific experiment, not a universal ranking."
+        ],
+        "sources": [
+          {
+            "label": "Sandia PVPMC · DC module IV characteristics",
+            "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/"
+          }
+        ]
+      },
+      {
+        "title": "Reliability and warranty are evidence questions",
+        "paragraphs": [
+          "Separate product warranty from performance warranty. One concerns defects or supplied workmanship under its terms; the other describes retained performance under specified conditions. A long performance term does not promise free roof labor, unrestricted shipping reimbursement or immediate replacement stock. Read transfer rules, exclusions, claim testing, seller responsibility and how a local owner submits a claim.",
+          "Construct a comparison record with the exact warranty document and regional supplier. Consider transport damage, replacement-module availability and whether the racking and electrical design can accept a future replacement with different dimensions or current. Avoid inferring field reliability solely from an efficiency record, cell acronym or factory-scale announcement. Tests, operating history and enforceable service arrangements address different aspects of ownership."
+        ],
+        "sources": [],
+        "bullets": [
+          "Ask which entity handles claims in your country.",
+          "Keep serial numbers, receipts, delivery inspection and commissioning records.",
+          "Check whether labor and transport are included or excluded.",
+          "Model degradation transparently instead of treating warranty minimums as a forecast."
+        ]
+      },
+      {
+        "title": "Mechanical construction changes the purchase",
+        "paragraphs": [
+          "A glass-glass product may offer a different handling and mounting experience from a glass-backsheet product. Weight and rigidity affect transport and installation; they do not eliminate requirements for approved supports. Larger modules can reduce module count but create awkward spans or difficult lifting. Frame depth, drainage, clamp ranges and cable exit positions are practical specification fields.",
+          "For the Trina teaching model, the manufacturer gives 1,762×1,134×30 mm and 21.0 kg. Those facts describe a particular sheet. They do not prove roof suitability. Do not turn a test-pressure number into an allowable roof load without the manufacturer’s mounting instructions and the designer’s load interpretation. Budget for suitable access, mounting and packaging instead of assuming the lowest dollars per watt means the lowest installed cost."
+        ],
+        "sources": [
+          {
+            "label": "Trina Solar · TSM-NEG9R.28 APAC EN 2024_D datasheet",
+            "url": "https://static.trinasolar.com/sites/default/files/DT-M-0043%20APAC%20EN%20I%20210RVertexS%2B_NEG9R.28_430-460%202024_D_web.pdf"
+          }
+        ]
+      },
+      {
+        "title": "Emerging materials: separate three kinds of evidence",
+        "paragraphs": [
+          "A laboratory cell record, a certified module and a commercially supported installation are different stages. Perovskite and tandem research explores routes to greater conversion efficiency; manufacturing uniformity and outdoor durability remain separate evaluation questions. An emerging product should be compared on a complete dataset, including environmental testing, warranty responsibility and compatible mounting, rather than on a research efficiency headline.",
+          "A procurement decision can still favor a mature module while leaving room to revisit new technology later. Record which uncertainty matters: limited roof area, difficult replacement, expected operating temperature or a demanding environment. Then identify evidence that would change the decision. This is more useful than permanently ranking all architectures, because individual products and local support evolve."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Solar photovoltaic cell basics",
+            "url": "https://www.energy.gov/cmei/systems/solar-photovoltaic-cell-basics"
+          }
+        ]
+      },
+      {
+        "title": "Practice a defensible shortlist",
+        "paragraphs": [
+          "Make two passes through candidate modules. First reject those that fail size, mounting, electrical or availability constraints. Then compare modeled energy, delivered cost, warranty and serviceability among the viable options. A rejected candidate can be excellent technology and still unsuitable for the project. Save reasons so the shortlist can be revisited if the site or inverter changes.",
+          "For a hypothetical purchase, one module costs $120 at 400 W and another $145 at 440 W. Delivered module prices are $0.30/W and about $0.330/W. If the second avoids an additional rail segment or fits more capacity on the roof, total installed value may differ. Conversely a higher density does not justify an unsupported energy claim. Distinguish verified product facts, modeled results and personal preferences in the comparison."
+        ],
+        "sources": [],
+        "exercise": {
+          "question": "Is a 23% dual-glass TOPCon module necessarily bifacial and the best choice for a shaded roof?",
+          "answer": "No. Rear collection requires a stated bifacial specification, and shade/site performance requires the actual module and system design.",
+          "explanation": "Efficiency, encapsulation, cell structure, rear collection and shade behavior answer different questions. Compare the attributes and the installation instead of combining the labels into a ranking."
+        }
+      }
+    ]
+  },
+  "mppt-envelope": {
+    "reviewed": "2026-10-05",
+    "outcome": "Build and audit a tracker-by-tracker limits sheet covering cold voltage, hot operation, source current, power and battery acceptance.",
+    "sources": [
+      {
+        "label": "Victron · SmartSolar MPPT 150/60–250/70 specifications",
+        "url": "https://www.victronenergy.com/media/pg/Manual_SmartSolar_MPPT_150-60_up_to_250-70/en/technical-specifications.html"
+      },
+      {
+        "label": "Trina Solar · TSM-NEG9R.28 APAC EN 2024_D datasheet",
+        "url": "https://static.trinasolar.com/sites/default/files/DT-M-0043%20APAC%20EN%20I%20210RVertexS%2B_NEG9R.28_430-460%202024_D_web.pdf"
+      },
+      {
+        "label": "Sandia PVPMC · DC module IV characteristics",
+        "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/"
+      },
+      {
+        "label": "Sandia PVPMC · Sandia cell-temperature model",
+        "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/cell-temperature/sandia-cell-temperature-model/"
+      },
+      {
+        "label": "Sandia PVPMC · Effective irradiance",
+        "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/effective-irradiance/"
+      },
+      {
+        "label": "Victron · Wiring Unlimited DC wiring",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/dc-wiring.html"
+      },
+      {
+        "label": "Victron · Inverter RS Smart Solar PIN482601000 specifications",
+        "url": "https://www.victronenergy.com/media/pg/Inverter_RS_Smart_Solar/en/technical-specifications.html"
+      }
+    ],
+    "sections": [
+      {
+        "title": "MPPT is a controller function, not a compatibility promise",
+        "paragraphs": [
+          "Maximum power point tracking adjusts the electrical operating point of a PV source to extract useful power under changing conditions. The receiving device still has limits. A solar battery charger usually converts array DC into battery charging DC, whereas a grid inverter converts DC into AC. The same acronym can appear on both, but their input ranges and startup behavior can be quite different.",
+          "Start with the exact input specification and a diagram of the proposed array. Count modules per series string and strings per tracker. Record which connector pairs are independent and which are internally parallel. A device with four sockets can have one tracker, two trackers or another topology; connector count alone does not resolve the question. This chapter is a compatibility review, not a cable assembly or energization procedure."
+        ],
+        "sources": [
+          {
+            "label": "Sandia PVPMC · DC module IV characteristics",
+            "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/"
+          }
+        ],
+        "figures": [
+          {
+            "diagram": "series-parallel",
+            "caption": "Series increases string voltage; parallel adds source current. Each tracker must be evaluated for its own assigned array.",
+            "alt": "Two series module strings connected in parallel, with voltage and current relationships marked."
+          }
+        ]
+      },
+      {
+        "title": "Turn the manual into a limits sheet",
+        "paragraphs": [
+          "For Victron SmartSolar MPPT 150/60, the published battery-output current is 60 A. Its name does not mean a 60 A PV-input allowance. The specification separately gives maximum PV short-circuit current 50 A, 150 V absolute maximum cold Voc, and 145 V startup/operating maximum. For a 48 V nominal battery system the nominal PV power is 3,440 W. Each describes a different boundary.",
+          "The same manual lists a startup requirement above battery voltage by 5 V and a subsequent minimum above battery voltage by 1 V. MC4 connector pairs on the covered models are internally parallel to a single tracker, with a stated 30 A per-connector maximum. These are model-family facts: do not transfer them to every MPPT, inverter or power station. Preserve all footnotes and revise the record when equipment changes."
+        ],
+        "sources": [
+          {
+            "label": "Victron · SmartSolar MPPT 150/60–250/70 specifications",
+            "url": "https://www.victronenergy.com/media/pg/Manual_SmartSolar_MPPT_150-60_up_to_250-70/en/technical-specifications.html"
+          }
+        ],
+        "columns": [
+          "Boundary",
+          "Review question"
+        ],
+        "rows": [
+          [
+            "Absolute PV Voc",
+            "Can the coldest relevant source voltage exceed it?"
+          ],
+          [
+            "Startup / operating maximum",
+            "Can the source operate within this separate boundary?"
+          ],
+          [
+            "Minimum startup / tracking voltage",
+            "Is there enough voltage under the documented conditions?"
+          ],
+          [
+            "Operating input current",
+            "What can the converter accept while tracking?"
+          ],
+          [
+            "PV short-circuit current",
+            "What source current is allowed under corrected conditions?"
+          ],
+          [
+            "Battery output current / power",
+            "Can output and battery acceptance handle the charging task?"
+          ]
+        ]
+      },
+      {
+        "title": "Cold Voc is usually the first series-count rejection",
+        "paragraphs": [
+          "Use the Trina TSM-440NEG9R.28 data from APAC EN 2024_D: Voc 52.2 V and coefficient −0.24%/°C. For a teaching minimum cell temperature −15°C, the linear corrected Voc is 52.2×[1+0.0024×40] =57.2112 V. A two-module string gives 114.4224 V; three give 171.6336 V. The latter already fails a 150 V absolute limit.",
+          "The minimum-temperature assumption must come from the actual design method, not from today’s weather or the average winter afternoon. The source can be open-circuit when the converter is not operating, so startup and shutdown deserve attention. Module tolerance and manufacturer methods may require more margin or a different calculation. Passing the simple arithmetic is a necessary screen, not a complete approval."
+        ],
+        "sources": [
+          {
+            "label": "Trina Solar · TSM-NEG9R.28 APAC EN 2024_D datasheet",
+            "url": "https://static.trinasolar.com/sites/default/files/DT-M-0043%20APAC%20EN%20I%20210RVertexS%2B_NEG9R.28_430-460%202024_D_web.pdf"
+          },
+          {
+            "label": "Sandia PVPMC · Sandia cell-temperature model",
+            "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/cell-temperature/sandia-cell-temperature-model/"
+          }
+        ],
+        "formula": "Voc,cold ≈ Ns × Voc,STC × [1 + βVoc × (Tmin−25)]",
+        "figures": [
+          {
+            "diagram": "temperature-voltage",
+            "caption": "Separate hypothetical illustration: Voc 50 V at 25°C and coefficient −0.25%/°C give 54.375 V at −10°C and 45 V at 65°C. These are not the Trina module’s ratings.",
+            "alt": "Hypothetical linear open-circuit voltage plot from 54.375 V at minus 10 degrees C to 45 V at 65 degrees C."
+          }
+        ]
+      },
+      {
+        "title": "Hot Vmp and startup cannot be substituted for cold checks",
+        "paragraphs": [
+          "A string may pass cold maximum voltage and still be too low to track or start under another condition. For a battery charger, the relevant battery voltage changes during charging. A '48 V' battery is a nominal class, not a fixed 48.0 V at the terminals. For an inverter, startup and MPPT range can be distinct fixed specifications with additional power requirements.",
+          "The Trina sheet publishes a NOCT Vmp of 41.4 V, but that is not a worst-case hot Vmp. It supplies no Vmp temperature coefficient. We therefore do not manufacture a precise 70°C rating for it. To teach the calculation separately, take a fictional module with Vmp 42.0 V and βVmp −0.35%/°C. At an assumed 70°C cell temperature, two in series give 70.77 V. Verify this against the chosen device’s actual charging or tracking requirements."
+        ],
+        "sources": [
+          {
+            "label": "Trina Solar · TSM-NEG9R.28 APAC EN 2024_D datasheet",
+            "url": "https://static.trinasolar.com/sites/default/files/DT-M-0043%20APAC%20EN%20I%20210RVertexS%2B_NEG9R.28_430-460%202024_D_web.pdf"
+          }
+        ],
+        "callout": "Missing Vmp-temperature data is a design input to resolve. A NOCT value and the Pmax coefficient do not automatically supply it."
+      },
+      {
+        "title": "Worked example: a fictional hot-voltage screen",
+        "paragraphs": [
+          "Assume the receiving battery’s relevant charging voltage is 56.8 V and use the documented SmartSolar startup margin solely for this example. The nominal startup threshold is then 61.8 V; after startup the stated minimum is 57.8 V. The hypothetical two-module hot Vmp result is above both. A single hypothetical module at that temperature is only 35.385 V and cannot meet those boundaries.",
+          "This comparison illustrates why series connection may be needed with a high-voltage battery. It does not authorize operation based on one calculated Vmp point: startup behavior is not identical to steady maximum-power operation, low light can change the curve, and the manufacturer’s sizing procedure controls. Record which criterion each calculation addresses so a pass on one line is not mistaken for a pass on all lines."
+        ],
+        "sources": [
+          {
+            "label": "Victron · SmartSolar MPPT 150/60–250/70 specifications",
+            "url": "https://www.victronenergy.com/media/pg/Manual_SmartSolar_MPPT_150-60_up_to_250-70/en/technical-specifications.html"
+          }
+        ],
+        "workedExample": {
+          "title": "Hot operation with explicitly fictional module data",
+          "givens": [
+            "Module Vmp 42.0 V; βVmp −0.35%/°C",
+            "Tcell 70°C; two in series",
+            "Hypothetical charging voltage 56.8 V"
+          ],
+          "steps": [
+            "Temperature multiplier =1−0.0035×45 =0.8425.",
+            "Two-module modeled Vmp =2×42.0×0.8425 =70.77 V.",
+            "Compare with example startup 56.8+5 =61.8 V and running minimum 56.8+1 =57.8 V."
+          ],
+          "result": "The hypothetical two-module string passes this simplified hot-voltage screen.",
+          "discussion": "The example does not claim a Trina Vmp coefficient, nor establish all-weather startup performance."
+        }
+      },
+      {
+        "title": "Parallel strings create a different set of limits",
+        "paragraphs": [
+          "Identical strings in parallel have approximately the same voltage and add current. For the real Trina STC column, two parallel strings have Imp 20.02 A and Isc 21.34 A before required source-current corrections. Adding a third string changes those to 30.03 A and 32.01 A. The module count in each string does not multiply string current as series count multiplies voltage.",
+          "Use the specified source-current method, including relevant irradiance, temperature, bifacial assumptions and jurisdictional requirements. A manufacturer’s operating-current ceiling may produce clipping while its permitted short-circuit-current boundary remains a separate constraint. Do not assume a converter that current-limits can accept unlimited source current. Connector and branch limits also remain independent of the converter’s total rating."
+        ],
+        "sources": [
+          {
+            "label": "Sandia PVPMC · Effective irradiance",
+            "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/effective-irradiance/"
+          },
+          {
+            "label": "Victron · Wiring Unlimited DC wiring",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/dc-wiring.html"
+          }
+        ]
+      },
+      {
+        "title": "Power oversizing and output clipping",
+        "paragraphs": [
+          "Extra nameplate PV can improve production away from peak conditions, but it can also create clipping when the receiver reaches output limits. Manufacturer permission to oversize power is not permission to exceed voltage, source current or connection ratings. Evaluate the actual allowed combination; a spreadsheet that checks only total watts misses the damaging boundary.",
+          "For a hypothetical eight-module 440 W array, total nameplate power is 3,520 W. That is 80 W above the SmartSolar 150/60’s published 3,440 W nominal allowance for a 48 V battery, but voltage and current determine whether any topology is viable. A two-series/four-parallel arrangement uses eight modules, while a four-series/two-parallel arrangement uses the same count and watts but very different voltage. The second arrangement fails our cold-voltage screen immediately."
+        ],
+        "sources": [
+          {
+            "label": "Victron · SmartSolar MPPT 150/60–250/70 specifications",
+            "url": "https://www.victronenergy.com/media/pg/Manual_SmartSolar_MPPT_150-60_up_to_250-70/en/technical-specifications.html"
+          }
+        ]
+      },
+      {
+        "title": "Tracker allocation and mismatch",
+        "paragraphs": [
+          "Modules on one tracker share an operating-voltage decision. Differing orientations, persistent shade or unlike module electrical characteristics can make the combined optimum more complicated. Do not divide an unsuitable mixed array into imaginary fractional trackers. A physical device’s documented tracker topology decides which combinations can be controlled independently.",
+          "Prepare a tracker schedule showing every string, module model, quantity, roof face and obstruction. Two trackers can make separate orientations easier to manage, but each still requires its own voltage and current checks. If an inverter has unequal tracker limits, allocating half the modules to each does not necessarily create equal headroom. Preserve the layout so later module replacement or expansion cannot silently invalidate the original calculation."
+        ],
+        "sources": [
+          {
+            "label": "Sandia PVPMC · DC module IV characteristics",
+            "url": "https://pvpmc.sandia.gov/modeling-guide/2-dc-module-iv/"
+          }
+        ]
+      },
+      {
+        "title": "The battery and thermal envelope complete the review",
+        "paragraphs": [
+          "Solar input can be within limits while charging output exceeds what the battery or BMS permits. Sum simultaneous chargers, and account for charge restrictions at low temperature or high state of charge. A controller preset is not a substitute for an approved battery charging profile or a functioning stop-charge signal.",
+          "Continuous output may also derate with ambient temperature or altitude. Cooling clearances and enclosure environment affect the usable charging envelope. Inverter RS Smart Solar documentation illustrates that integrated products can impose additional PV/battery relationships; its limits cannot be reduced to the small-controller startup rule. Treat each receiving model as its own system, with the full manual and compatible battery arrangement."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Inverter RS Smart Solar PIN482601000 specifications",
+            "url": "https://www.victronenergy.com/media/pg/Inverter_RS_Smart_Solar/en/technical-specifications.html"
+          }
+        ],
+        "bullets": [
+          "Review every input and output boundary in the same configuration.",
+          "Keep battery acceptance and total concurrent charging current visible.",
+          "Record temperature, altitude and installation assumptions.",
+          "Recalculate after module, wiring topology, firmware or battery changes."
+        ]
+      },
+      {
+        "title": "Practice: reject the right configuration for the right reason",
+        "paragraphs": [
+          "A proposed array has six identical Trina 440 W modules. Three-series/two-parallel and two-series/three-parallel both total 2,640 W. Under the chapter’s cold assumption, three-series gives 171.6336 V and fails a 150 V absolute maximum. Two-series gives 114.4224 V, while its three parallel strings have STC Isc 32.01 A before corrections.",
+          "The lesson is that total watts do not define compatibility. The two-series option has passed a voltage screen only; source-current corrections, connectors, protection, battery voltage, temperature and installation review remain. A good worksheet reports individual failures and missing inputs rather than a single green badge derived from one number."
+        ],
+        "sources": [],
+        "exercise": {
+          "question": "For four parallel strings of two Trina 440 W modules each, what are nameplate watts, STC Vmp and uncorrected STC Isc?",
+          "answer": "3,520 W; 88.0 V; 42.68 A.",
+          "explanation": "Eight ×440 gives power. Two series modules add Vmp; four parallel strings add Isc. Cold Voc and required current corrections are separate calculations."
+        }
+      }
+    ]
+  },
+  "inverter-architectures": {
+    "reviewed": "2026-10-05",
+    "outcome": "Choose an inverter topology by AC service, backup states, battery interfaces, performance limits and the approved complete system.",
+    "sources": [
+      {
+        "label": "DOE · Inverters and grid services",
+        "url": "https://www.energy.gov/cmei/systems/solar-integration-inverters-and-grid-services-basics"
+      },
+      {
+        "label": "DOE · Distributed energy resources and microgrids",
+        "url": "https://www.energy.gov/cmei/systems/solar-integration-distributed-energy-resources-and-microgrids-basics"
+      },
+      {
+        "label": "Victron · Inverter RS Smart Solar PIN482601000 specifications",
+        "url": "https://www.victronenergy.com/media/pg/Inverter_RS_Smart_Solar/en/technical-specifications.html"
+      },
+      {
+        "label": "Victron · Inverter RS Smart Solar datasheet",
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-Inverter-RS-Smart-Solar-EN.pdf"
+      },
+      {
+        "label": "EcoFlow · US DELTA Pro 3 product specifications",
+        "url": "https://www.ecoflow.com/us/delta-pro-3-portable-power-station"
+      },
+      {
+        "label": "DOE · Solar energy and storage basics",
+        "url": "https://www.energy.gov/cmei/systems/solar-integration-solar-energy-and-storage-basics"
+      },
+      {
+        "label": "Victron · Wiring Unlimited grounding and electrical safety",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/ground,-earth-and-electrical-safety.html"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Describe the job before the box",
+        "paragraphs": [
+          "An inverter converts DC electrical power into AC power, but that description alone leaves most purchasing questions unanswered. Does the project export PV to a utility, supply independent off-grid loads, charge a battery from AC, or maintain selected loads through an outage? Write those jobs down as operating states. The inverter’s role, required accessories and permitted connections follow from the states.",
+          "Start with a conceptual one-line diagram showing PV, storage, utility, generator and loads. Label which paths exist in normal operation and which remain available when the utility is absent. A product described as hybrid can still require a battery, transfer controller or other equipment before it supports a desired state. Marketing names do not replace a documented system architecture."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Inverters and grid services",
+            "url": "https://www.energy.gov/cmei/systems/solar-integration-inverters-and-grid-services-basics"
+          }
+        ],
+        "figures": [
+          {
+            "diagram": "inverter-topology",
+            "caption": "DC coupling brings PV through charge control to a DC battery bus; AC coupling uses a PV inverter and a separate bidirectional battery converter. Backup still needs compatible control and approved isolation.",
+            "alt": "Conceptual DC-coupled and AC-coupled solar battery systems with distinct conversion paths."
+          }
+        ]
+      },
+      {
+        "title": "Five architectures and their review questions",
+        "paragraphs": [
+          "A string inverter converts power from series-connected PV arrays; a microinverter performs conversion at an individual module. Optimizers condition module DC within a specified ecosystem. A hybrid combines multiple energy interfaces in a supported configuration. A standalone inverter/charger focuses on battery-to-AC conversion and AC charging, sometimes with external solar charging equipment.",
+          "These categories overlap in system capabilities. A microinverter-based array may participate in backup through an approved controller and storage system, but a conventional grid-connected installation typically depends on the utility reference. A standalone inverter may accept grid or generator power without being approved to export. Compare the complete supported configuration instead of assuming that one architecture name answers every backup question."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Distributed energy resources and microgrids",
+            "url": "https://www.energy.gov/cmei/systems/solar-integration-distributed-energy-resources-and-microgrids-basics"
+          }
+        ],
+        "columns": [
+          "Architecture",
+          "Useful comparison questions"
+        ],
+        "rows": [
+          [
+            "String PV inverter",
+            "Trackers, strings, shade, grid approval and replacement access"
+          ],
+          [
+            "Microinverter",
+            "Exact module match, AC branch limits and supported backup ecosystem"
+          ],
+          [
+            "Optimizer + inverter",
+            "Approved pairing, string rules and module-level electronics"
+          ],
+          [
+            "Hybrid inverter",
+            "Battery family, transfer control, export and island behavior"
+          ],
+          [
+            "Standalone inverter/charger",
+            "AC service, external PV charging, generator support and battery limits"
+          ]
+        ]
+      },
+      {
+        "title": "Grid following, grid forming and isolation",
+        "paragraphs": [
+          "Grid-following electronics synchronize to an existing AC reference. Grid-forming electronics can establish a reference under supported conditions. That capability matters during an outage, but it is only one part of backup. The local island must be isolated from the utility through the approved arrangement, and its sources and loads must remain coordinated.",
+          "Ask what happens if the battery is depleted at dawn, whether PV can restart the system, and whether every installed PV inverter remains active in the island. AC coupling can require particular frequency-control behavior or compatible equipment. Do not infer black start from the existence of an AC outlet. The operational sequence must be supported by the manufacturer and verified during appropriate commissioning."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Inverters and grid services",
+            "url": "https://www.energy.gov/cmei/systems/solar-integration-inverters-and-grid-services-basics"
+          },
+          {
+            "label": "DOE · Distributed energy resources and microgrids",
+            "url": "https://www.energy.gov/cmei/systems/solar-integration-distributed-energy-resources-and-microgrids-basics"
+          }
+        ]
+      },
+      {
+        "title": "AC voltage and phase are purchase constraints",
+        "paragraphs": [
+          "North American 120/240 V split phase, 230 V single phase and three-phase services differ. Battery nominal voltage and PV source voltage describe other interfaces entirely. A 48 V battery inverter does not produce 48 V household AC, and two unspecified 120 V outputs cannot automatically be combined into a suitable 240 V source.",
+          "Record output voltage, frequency, continuous current, permissible imbalance and supported parallel/phase configurations. Then map backed-up circuits to those constraints. A system could have sufficient total watts yet overload one leg or fail to supply a particular appliance voltage. Service and neutral/ground behavior belong to the actual transfer architecture; generic advice to add a bond or join outputs can be wrong."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Wiring Unlimited grounding and electrical safety",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/ground,-earth-and-electrical-safety.html"
+          }
+        ]
+      },
+      {
+        "title": "Real example: the name is not continuous watts",
+        "paragraphs": [
+          "Victron Inverter RS Smart Solar PIN482601000 documentation gives a 230 V output and continuous power that depends on DC voltage and ambient temperature. Its specification lists 4,800 W at 46 VDC rising to 5,300 W at 52 VDC at 25°C, then 4,500 W at 40°C and 3,000 W at 65°C. It also lists 9 kW for three seconds and 7 kW for four minutes. '48/6000' therefore does not mean 6,000 W continuously under every condition.",
+          "This is a European-voltage example, not a recommendation for a 120/240 V home. It demonstrates three distinct ratings: nominal model designation, usable continuous watts under stated conditions, and temporary peak capability. Other products must be read in the same way. Do not silently substitute the non-solar RS Smart manual, whose model and specifications differ."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Inverter RS Smart Solar PIN482601000 specifications",
+            "url": "https://www.victronenergy.com/media/pg/Inverter_RS_Smart_Solar/en/technical-specifications.html"
+          }
+        ],
+        "columns": [
+          "Published state",
+          "RS Smart Solar example"
+        ],
+        "rows": [
+          [
+            "25°C, 46 VDC",
+            "4,800 W continuous"
+          ],
+          [
+            "25°C, 52 VDC",
+            "5,300 W continuous"
+          ],
+          [
+            "40°C",
+            "4,500 W continuous"
+          ],
+          [
+            "65°C",
+            "3,000 W continuous"
+          ],
+          [
+            "Peak, short duration",
+            "9 kW for 3 seconds"
+          ],
+          [
+            "Peak, longer duration",
+            "7 kW for 4 minutes"
+          ]
+        ]
+      },
+      {
+        "title": "Worked example: watts, VA and battery current",
+        "paragraphs": [
+          "Real power in watts and apparent power in volt-amperes can differ for AC loads. A hypothetical load drawing 2,400 W at power factor 0.8 requires 3,000 VA. Both the inverter’s relevant watt and current/VA capabilities must suit the load. The simple arithmetic does not describe harmonic currents or every motor-starting behavior.",
+          "For a separate battery-current example, assume 4,000 W AC output, 92% conversion efficiency and 48 V at the inverter input. DC demand is about 90.58 A. At 44 V with the same assumed efficiency it rises to 98.81 A. This is why a battery’s nominal kWh cannot establish its ability to supply peak power. These are planning numbers, not conductor, fuse or BMS settings."
+        ],
+        "sources": [],
+        "workedExample": {
+          "title": "The same AC demand draws more current at lower DC voltage",
+          "givens": [
+            "Hypothetical AC demand 4,000 W",
+            "Assumed conversion efficiency 92%",
+            "Compare 48 V and 44 V input"
+          ],
+          "steps": [
+            "At 48 V: I =4,000/(0.92×48) =90.58 A.",
+            "At 44 V: I =4,000/(0.92×44) =98.81 A.",
+            "Review battery, BMS, branches and inverter input constraints using their actual operating limits."
+          ],
+          "result": "A 4 V input reduction increases modeled current by about 8.23 A.",
+          "discussion": "Efficiency varies with operating state; actual starting demand and voltage sag require equipment-specific review."
+        },
+        "formula": "DC current ≈ AC real power ÷ (DC operating voltage × efficiency)"
+      },
+      {
+        "title": "Battery interfaces are ecosystems",
+        "paragraphs": [
+          "Low-voltage battery compatibility includes operating range, charge/discharge current, BMS communication, control wiring and firmware. High-voltage storage often uses an explicitly approved family and battery controller. Neither is interchangeable merely because a capacity label matches. A communication plug that fits can still carry the wrong protocol or pin assignment.",
+          "Ask how stop-charge and stop-discharge decisions propagate. What happens if communication fails, a battery disconnects or one module is colder than the others? Confirm the documented fallback instead of assuming the inverter’s preset provides cell-level protection. Save compatibility evidence for the exact inverter, battery, BMS and firmware combination, including expansion limits and mandatory accessories."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Solar energy and storage basics",
+            "url": "https://www.energy.gov/cmei/systems/solar-integration-solar-energy-and-storage-basics"
+          }
+        ]
+      },
+      {
+        "title": "Generator and transfer behavior",
+        "paragraphs": [
+          "A generator adds another AC source with its own voltage, frequency, available power and starting behavior. An inverter/charger may need to limit charging while also passing power to loads. A hypothetical 5 kW generator does not automatically leave 5 kW for battery charging when loads already consume 3 kW; conversion and operating margins further affect the budget.",
+          "Document accepted sources, transfer ratings, minimum loading concerns and any automatic-start requirements. The supported neutral/ground arrangement and isolation boundaries depend on the equipment and installation. A portable power station’s AC charging port is not necessarily equivalent to a fixed inverter’s generator interface. Specify the intended behavior and have it checked in the designed system rather than adding an adapter based only on plug shape."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Wiring Unlimited grounding and electrical safety",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/ground,-earth-and-electrical-safety.html"
+          }
+        ]
+      },
+      {
+        "title": "Ownership: conversion losses, idle draw and service",
+        "paragraphs": [
+          "Efficiency is normally a curve, not a constant peak percentage. Compare the expected load distribution: many hours at low demand can make standby consumption meaningful. A hypothetical 20 W idle draw over 24 hours uses 0.48 kWh before appliances. A larger inverter chosen solely for rare peaks can therefore change the daily energy budget.",
+          "Also compare installation access, replacement procedures, local operation without internet, warranty responsibility and expected support. Module-level electronics distribute conversion equipment across the roof; a central inverter concentrates it elsewhere. Neither layout wins every service comparison. Ask what diagnostics remain available locally, how settings are exported and how a replacement restores approved utility parameters. Cloud dashboards should supplement the owner record."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Inverter RS Smart Solar datasheet",
+            "url": "https://www.victronenergy.com/upload/documents/Datasheet-Inverter-RS-Smart-Solar-EN.pdf"
+          }
+        ],
+        "bullets": [
+          "Compare continuous power at the intended temperature and voltage.",
+          "Separate surge magnitude from its permitted duration.",
+          "Confirm service voltage, phase and per-leg limits.",
+          "Budget accessories, idle energy and supported battery controls."
+        ]
+      },
+      {
+        "title": "Practice a four-state specification",
+        "paragraphs": [
+          "Write a table for grid available, grid failed with battery available, battery depleted, and system recovery. For each state list which sources and loads operate, what establishes the AC reference, and what limits power. If any row cannot be answered from the documentation, mark it unresolved before ordering. The exercise turns a vague 'whole-home backup' claim into a testable requirement.",
+          "Then build a hypothetical 2.8 kW running-load case with a brief 5 kW motor start. A 4 kW continuous inverter may meet running watts but still fail the start if its peak duration, battery pulse delivery or one-leg allowance is insufficient. The correct conclusion is conditional until the actual start profile and equipment ratings are available."
+        ],
+        "sources": [],
+        "exercise": {
+          "question": "Does a 10 kWh battery connected to an ordinary grid-following PV inverter guarantee that solar powers the house during an outage?",
+          "answer": "No. The supported storage interface, island-forming source, isolation/transfer equipment and recovery behavior must all be established.",
+          "explanation": "Energy capacity supplies one requirement. The system also needs an approved operating architecture that remains stable and isolated from the utility."
+        }
+      }
+    ]
+  },
+  "battery-backup": {
+    "reviewed": "2026-10-05",
+    "outcome": "Size a backup service around load energy, simultaneous power, reserve and recovery, then identify the equipment needed to deliver it.",
+    "sources": [
+      {
+        "label": "DOE · Solar energy and storage basics",
+        "url": "https://www.energy.gov/cmei/systems/solar-integration-solar-energy-and-storage-basics"
+      },
+      {
+        "label": "DOE · Distributed energy resources and microgrids",
+        "url": "https://www.energy.gov/cmei/systems/solar-integration-distributed-energy-resources-and-microgrids-basics"
+      },
+      {
+        "label": "DOE · Inverters and grid services",
+        "url": "https://www.energy.gov/cmei/systems/solar-integration-inverters-and-grid-services-basics"
+      },
+      {
+        "label": "Victron · Lithium NG 51.2 V/100 Ah technical data",
+        "url": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_51%2C2_V/en/technical-data.html"
+      },
+      {
+        "label": "EcoFlow · US DELTA Pro 3 product specifications",
+        "url": "https://www.ecoflow.com/us/delta-pro-3-portable-power-station"
+      },
+      {
+        "label": "Victron · Inverter RS Smart Solar PIN482601000 specifications",
+        "url": "https://www.victronenergy.com/media/pg/Inverter_RS_Smart_Solar/en/technical-specifications.html"
+      },
+      {
+        "label": "DOE · Homeowner’s guide to solar",
+        "url": "https://www.energy.gov/cmei/systems/homeowners-guide-solar"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Backup is a service with a duration",
+        "paragraphs": [
+          "Start by describing what must keep working and for how long. 'Back up the house' can mean lighting and refrigeration for one evening, essential circuits for two days, or every appliance at once. These are different energy and power requirements. A written service objective helps prevent a large purchase that still misses the one critical load.",
+          "Record outage duration, expected occupancy, season and acceptable load shedding. Identify truly critical equipment separately from comfort loads. Then decide whether the service must be automatic or can use deliberate manual switching. Do not assume a solar installation with storage automatically provides every desired outage mode; the inverter and isolation architecture control which loads are actually supplied."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Solar energy and storage basics",
+            "url": "https://www.energy.gov/cmei/systems/solar-integration-solar-energy-and-storage-basics"
+          },
+          {
+            "label": "DOE · Distributed energy resources and microgrids",
+            "url": "https://www.energy.gov/cmei/systems/solar-integration-distributed-energy-resources-and-microgrids-basics"
+          }
+        ],
+        "figures": [
+          {
+            "diagram": "energy-flow",
+            "caption": "PV DC passes through charge control to storage and through an inverter to AC loads. The diagram distinguishes watts now from accumulated watt-hours; protection and transfer details are omitted.",
+            "alt": "Sunlight, PV array, MPPT controller, battery and BMS, inverter, AC loads and optional grid shown in a conceptual energy path."
+          }
+        ]
+      },
+      {
+        "title": "Build a measured load ledger",
+        "paragraphs": [
+          "For each load, record running watts, daily operating time, duty cycle and starting behavior. Nameplate watts can be an upper bound or a simplified rating rather than typical consumption. Refrigeration, pumps and thermostatic appliances cycle. When practical, use an appropriate energy monitor or manufacturer consumption data to estimate the relevant period, and save how the estimate was made.",
+          "A hypothetical refrigerator using 0.9 kWh/day is easier to budget than assuming it runs at its compressor wattage continuously. A 60 W network device left on for 24 hours uses 1.44 kWh/day, which may exceed the refrigerator’s modeled energy. This surprises many planners because small continuous loads can dominate a long outage. Keep watts for simultaneous-power planning and kWh for endurance."
+        ],
+        "sources": [],
+        "columns": [
+          "Hypothetical daily load",
+          "Energy assumption",
+          "Planning consequence"
+        ],
+        "rows": [
+          [
+            "Refrigeration",
+            "0.90 kWh/day",
+            "Check starting demand separately"
+          ],
+          [
+            "Network equipment, 60 W continuous",
+            "1.44 kWh/day",
+            "Continuous load matters over time"
+          ],
+          [
+            "LED lighting, 40 W for 5 h",
+            "0.20 kWh/day",
+            "Time assumption must match occupancy"
+          ],
+          [
+            "Device charging",
+            "0.16 kWh/day",
+            "Small but include in total"
+          ],
+          [
+            "Total selected loads",
+            "2.70 kWh/day",
+            "Before conversion/standby allowances"
+          ]
+        ]
+      },
+      {
+        "title": "Energy, power and surge are three checks",
+        "paragraphs": [
+          "Battery kWh describes stored energy; inverter kW describes delivery rate; temporary surge describes short-lived demand. A 10 kWh system could theoretically supply 1 kW for ten hours before losses, yet its actual inverter may be unable to start a pump. Conversely a powerful inverter does not create enough stored energy to run a heater overnight.",
+          "List the worst plausible simultaneous running state, then investigate starting loads. Include per-leg constraints for split-phase systems and any load-management strategy. A motor’s starting demand cannot be safely inferred from its average daily kWh. Ask for a documented start profile or a suitable measurement by qualified personnel. Power and energy calculations should remain visibly separate in the worksheet."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Inverters and grid services",
+            "url": "https://www.energy.gov/cmei/systems/solar-integration-inverters-and-grid-services-basics"
+          }
+        ]
+      },
+      {
+        "title": "Usable capacity includes operating policy",
+        "paragraphs": [
+          "Nominal energy does not necessarily equal dispatchable energy. Manufacturer limits, configured state-of-charge windows, backup reserve, temperature, age and conversion losses can reduce available AC energy. If a product already quotes usable capacity, avoid subtracting the same internal allowance twice. Define the boundary of every energy number: cell nominal, battery terminal usable, or delivered AC.",
+          "For a fictional 10 kWh nominal bank, assume an owner-selected window from 100% to 20% state of charge and 90% DC-to-AC efficiency. Modeled delivered energy is 10×0.80×0.90 =7.2 kWh before separate inverter idle consumption. These assumptions are not universal battery settings. A reserve policy may intentionally leave stored energy unused for resilience or manufacturer compliance."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Solar energy and storage basics",
+            "url": "https://www.energy.gov/cmei/systems/solar-integration-solar-energy-and-storage-basics"
+          }
+        ],
+        "formula": "Modeled AC energy = nominal battery energy × available state-of-charge fraction × conversion efficiency"
+      },
+      {
+        "title": "Worked example: two days of essential service",
+        "paragraphs": [
+          "Use the hypothetical 2.70 kWh/day load ledger, a two-day outage, and an additional assumed 0.30 kWh/day for inverter/control consumption. The AC-side budget is 6.00 kWh. With an assumed 80% available battery window and 90% conversion efficiency, required nominal energy is 6/(0.80×0.90) =8.33 kWh.",
+          "This example assumes no solar replenishment and constant appliance behavior. It therefore makes the endurance calculation auditable without weather optimism. A prudent real study checks seasonal temperatures, aging and load uncertainty. Choose a configuration with the necessary power capability and approved battery/inverter pairing as well as energy; rounding capacity upward does not resolve an incompatible interface."
+        ],
+        "sources": [],
+        "workedExample": {
+          "title": "Essential-load energy budget with explicit losses",
+          "givens": [
+            "Selected loads 2.70 kWh/day",
+            "Assumed standby/control budget 0.30 kWh/day",
+            "Two days; 80% available window; 90% conversion efficiency"
+          ],
+          "steps": [
+            "AC demand =(2.70+0.30)×2 =6.00 kWh.",
+            "Nominal energy =6.00/(0.80×0.90) =8.33 kWh.",
+            "Review power, starting demand, aging and approved equipment configuration separately."
+          ],
+          "result": "The simplified no-recharge model calls for at least 8.33 kWh nominal before any additional design margin.",
+          "discussion": "All loads and loss allowances are hypothetical. This is not a guaranteed runtime or an installation specification."
+        }
+      },
+      {
+        "title": "Use a real battery to read the other constraints",
+        "paragraphs": [
+          "Victron Lithium NG 51.2 V/100 Ah technical data lists 5,120 Wh nominal energy at 25°C, 100 A maximum continuous discharge, and 200 A for ten seconds. Those are distinct facts. Two compatible parallel modules would total 10.24 kWh nominal, but the approved BMS, branch protection, inverter and temperature restrictions still determine usable power.",
+          "The same model requires a separately purchased Lynx Smart BMS NG and lists different charge/discharge temperature ranges. Do not budget only the blue battery boxes or assume any lithium inverter preset creates an approved system. This example is a reading lesson: the complete battery configuration and current manual must govern a purchase, especially when certification or regional approval is part of the project."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Lithium NG 51.2 V/100 Ah technical data",
+            "url": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_51%2C2_V/en/technical-data.html"
+          }
+        ]
+      },
+      {
+        "title": "Solar replenishment needs an outage weather scenario",
+        "paragraphs": [
+          "PV can extend backup when sufficient irradiance is available, but an outage may coincide with snow, smoke or storms. A yearly average production number is unsuitable for guaranteeing two days of outage recovery. Model a low-production case and specify what happens when the battery reaches its reserve. Load shedding, a generator or reduced service may be part of the plan.",
+          "For a fictional day with 3.0 kWh selected-load demand and only 1.2 kWh of usable solar charging energy, the storage balance falls by 1.8 kWh before any additional losses omitted from those boundaries. The next sunny day must cover concurrent loads and replenish that deficit. Count solar energy at a consistent measurement boundary to avoid treating DC array estimates as delivered battery or AC energy."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Solar energy and storage basics",
+            "url": "https://www.energy.gov/cmei/systems/solar-integration-solar-energy-and-storage-basics"
+          }
+        ]
+      },
+      {
+        "title": "Transfer, black start and recovery",
+        "paragraphs": [
+          "A backup system needs a supported way to isolate its island from the utility. It also needs a local source that forms the AC reference when appropriate. An ordinary grid-following PV inverter typically cannot energize a dead island on its own. Ask which inverter controls island behavior and whether existing PV is permitted to operate alongside it.",
+          "Document the empty-battery state and recovery sequence. Can PV charge a shut-down system without grid power? Is manual intervention needed? Does a generator supply both loads and charging? Are settings or alarms available without cloud connectivity? Commissioning should verify the approved sequence under controlled conditions. A photograph of a battery wall proves installation appearance, not outage behavior."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Distributed energy resources and microgrids",
+            "url": "https://www.energy.gov/cmei/systems/solar-integration-distributed-energy-resources-and-microgrids-basics"
+          }
+        ]
+      },
+      {
+        "title": "Compare promises using the same service boundary",
+        "paragraphs": [
+          "A portable unit may advertise days of backup under a particular bundle and load set, while a fixed system quote may include only essential circuits. Normalize the comparison to the same appliances, outage duration, weather assumption and reserve. EcoFlow’s US DELTA Pro 3 page illustrates the distinction between a base unit, expansion batteries and supported home-connection accessories; a bundle claim is not the base unit’s standalone endurance.",
+          "Make the installed-cost comparison include required transfer equipment, batteries, controls and commissioning. Also consider storage location, service access and realistic ownership costs. Financial value and resilience value are separate: a household can rationally value avoided inconvenience even when arbitrage savings do not repay the purchase. Keep that preference explicit instead of disguising it as certain bill savings."
+        ],
+        "sources": [
+          {
+            "label": "EcoFlow · US DELTA Pro 3 product specifications",
+            "url": "https://www.ecoflow.com/us/delta-pro-3-portable-power-station"
+          },
+          {
+            "label": "DOE · Homeowner’s guide to solar",
+            "url": "https://www.energy.gov/cmei/systems/homeowners-guide-solar"
+          }
+        ],
+        "bullets": [
+          "Compare delivered AC energy under the same load assumptions.",
+          "State whether solar or a generator replenishes storage.",
+          "Include reserve, standby draw and aging assumptions.",
+          "Require a documented outage and recovery operating sequence."
+        ]
+      },
+      {
+        "title": "Practice: which upgrade addresses the shortage?",
+        "paragraphs": [
+          "Suppose a fictional system has enough energy for essential loads over 24 hours but trips when a well pump starts. Adding another battery may help if discharge current or voltage sag is the bottleneck, yet it may do nothing if the inverter’s surge capability is inadequate. Identify the limiting interface before buying equipment.",
+          "Now suppose the same system starts every appliance but runs out after eight hours. More inverter wattage does not directly increase endurance. Reduce the energy ledger, add approved usable storage or provide reliable replenishment. The two cases look like 'backup failure' to an owner but require different engineering evidence and different purchases."
+        ],
+        "sources": [],
+        "exercise": {
+          "question": "A fictional 6 kWh usable DC battery serves a constant 500 W AC load at 90% efficiency, ignoring idle draw. What runtime does the simplified model predict?",
+          "answer": "10.8 hours.",
+          "explanation": "Delivered AC energy is 6×0.90 =5.4 kWh. Dividing by 0.5 kW gives 10.8 h; actual runtime changes with losses, temperature, aging and load behavior."
+        }
+      }
+    ]
+  },
+  "battery-chemistry": {
+    "reviewed": "2026-10-05",
+    "outcome": "Compare battery chemistries through operating windows, rate capability, life-test conditions, system controls and total ownership assumptions.",
+    "sources": [
+      {
+        "label": "DOE · Solar energy and storage basics",
+        "url": "https://www.energy.gov/cmei/systems/solar-integration-solar-energy-and-storage-basics"
+      },
+      {
+        "label": "DOE · Reducing cobalt reliance in lithium-ion batteries",
+        "url": "https://www.energy.gov/cmei/vehicles/articles/reducing-reliance-cobalt-lithium-ion-batteries"
+      },
+      {
+        "label": "DOE · 2022 grid storage cost and performance assessment",
+        "url": "https://www.energy.gov/cmei/2022-grid-energy-storage-technology-cost-and-performance-assessment"
+      },
+      {
+        "label": "Victron · Lithium NG 51.2 V/100 Ah technical data",
+        "url": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_51%2C2_V/en/technical-data.html"
+      },
+      {
+        "label": "Victron · Lithium NG operating instructions",
+        "url": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_51%2C2_V/en/operation.html"
+      },
+      {
+        "label": "Victron · Gel and AGM battery datasheet",
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-GEL-and-AGM-Batteries-EN.pdf"
+      },
+      {
+        "label": "Victron · Capacity and Peukert exponent",
+        "url": "https://www.victronenergy.com/media/pg/SmartShunt/en/battery-capacity-and-peukert-exponent.html"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Chemistry is one layer of the storage system",
+        "paragraphs": [
+          "A rechargeable battery stores energy through reversible electrochemical processes. Its chemistry affects voltage behavior, thermal response, energy density and aging, but an installed battery is more than its cells. Packaging, BMS controls, protection, cooling or heating, firmware and compatible conversion equipment determine what the owner can use.",
+          "Distinguish a cell family from a product and from a complete energy-storage system. LFP is lithium iron phosphate and belongs to the lithium-ion family; NMC refers to nickel-manganese-cobalt cathode compositions, which can vary. Lead-acid includes different constructions. A claim about one chemistry cannot replace the current manual for a particular battery, especially for temperature, current and charging restrictions."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Solar energy and storage basics",
+            "url": "https://www.energy.gov/cmei/systems/solar-integration-solar-energy-and-storage-basics"
+          },
+          {
+            "label": "DOE · Reducing cobalt reliance in lithium-ion batteries",
+            "url": "https://www.energy.gov/cmei/vehicles/articles/reducing-reliance-cobalt-lithium-ion-batteries"
+          }
+        ],
+        "figures": [
+          {
+            "diagram": "battery-bank",
+            "caption": "Two hypothetical 51.2 V/100 Ah modules with BMS blocks feed branch protection and shared DC distribution. Chemistry must be evaluated within the complete approved product system.",
+            "alt": "Two hypothetical battery modules with BMS and protection feeding shared DC distribution."
+          }
+        ]
+      },
+      {
+        "title": "Lead-acid constructions are not identical",
+        "paragraphs": [
+          "Flooded lead-acid, AGM and gel products organize electrolyte and maintenance differently. AGM means absorbent glass mat; gel immobilizes electrolyte in a gel. A sealed or valve-regulated description does not mean fault conditions can never release gas. Environmental, ventilation and charging instructions still apply to the actual product.",
+          "Victron’s Gel and AGM datasheet rates its deep-cycle capacities at a 20-hour discharge, or 0.05C. Its table shows reduced effective capacity at faster discharge. A 100 Ah rating therefore does not promise 100 Ah at every current. For an inverter supplying constant power, current rises as battery voltage declines, making simplistic nominal-voltage arithmetic especially limited. Compare the relevant discharge curve and endpoint rather than nominal amp-hours alone."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Gel and AGM battery datasheet",
+            "url": "https://www.victronenergy.com/upload/documents/Datasheet-GEL-and-AGM-Batteries-EN.pdf"
+          }
+        ]
+      },
+      {
+        "title": "Lithium-ion families: useful questions, limited stereotypes",
+        "paragraphs": [
+          "Different lithium-ion cathode systems trade material composition, voltage, specific energy and behavior. DOE’s cobalt discussion identifies nickel, manganese and cobalt among the transition metals used in common cathodes. LFP uses iron phosphate instead of that particular cathode blend. The names are useful for organizing candidates, but they do not tell you every property of the finished battery.",
+          "Avoid blanket statements such as 'all lithium lasts this many cycles' or 'this chemistry cannot fail.' The product’s operating limits, testing and installed protection matter. Compare energy available at the intended temperature, discharge current, allowed state-of-charge range, enclosure and service arrangements. If space or weight is constrained, measure the actual system footprint and mass including mandatory accessories rather than comparing only cell-level density claims."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Reducing cobalt reliance in lithium-ion batteries",
+            "url": "https://www.energy.gov/cmei/vehicles/articles/reducing-reliance-cobalt-lithium-ion-batteries"
+          }
+        ]
+      },
+      {
+        "title": "Read a real LFP operating window",
+        "paragraphs": [
+          "Victron Lithium NG 51.2 V/100 Ah specifies 5.12 kWh nominal at 25°C, with its stated capacity condition limiting discharge current to no more than 1C. The technical data distinguishes discharge −20°C to +50°C from charging +5°C to +50°C. Those values are model-specific; a generic claim that LFP can charge at 0°C would be wrong for this example.",
+          "A heater, insulation or temperature sensor is relevant only within the approved system and control behavior. Ambient temperature may differ from cell temperature, especially during cold starts or heat soak. Ask what actually stops charging outside limits and whether all chargers obey that decision. Do not solve a cold-charge restriction by disabling a protective alarm or applying another battery’s settings."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Lithium NG 51.2 V/100 Ah technical data",
+            "url": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_51%2C2_V/en/technical-data.html"
+          }
+        ]
+      },
+      {
+        "title": "C-rate connects amp-hours to current",
+        "paragraphs": [
+          "C-rate expresses current relative to nominal amp-hour capacity. For a hypothetical 100 Ah battery, 0.5C is 50 A and 1C is 100 A. It is a rate convention, not a guarantee of one-hour delivered energy at every condition. Voltage, endpoint, efficiency and the manufacturer’s test procedure still determine the energy obtained.",
+          "For the real 51.2 V/100 Ah NG module, the published continuous discharge limit is 100 A and the pulse limit is 200 A for ten seconds. At nominal voltage their arithmetic products are 5.12 kW and 10.24 kW DC, but those products do not establish usable AC power or permission to maintain pulse demand longer. The BMS and inverter can impose further restrictions."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Lithium NG 51.2 V/100 Ah technical data",
+            "url": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_51%2C2_V/en/technical-data.html"
+          }
+        ],
+        "columns": [
+          "Fictional 100 Ah example",
+          "Current",
+          "Interpretation"
+        ],
+        "rows": [
+          [
+            "0.05C",
+            "5 A",
+            "Slow-discharge rating context"
+          ],
+          [
+            "0.5C",
+            "50 A",
+            "Rate relative to nominal Ah"
+          ],
+          [
+            "1C",
+            "100 A",
+            "Not automatically one hour of guaranteed service"
+          ],
+          [
+            "2C",
+            "200 A",
+            "Duration and temperature need explicit ratings"
+          ]
+        ]
+      },
+      {
+        "title": "Worked example: equal nominal Ah is an unequal comparison",
+        "paragraphs": [
+          "Take two fictional batteries labeled 100 Ah. A is nominally 12 V and B is nominally 51.2 V. Their simple nominal energies are 1.20 kWh and 5.12 kWh respectively. Comparing their prices per Ah obscures more than a fourfold energy difference. First normalize voltage and energy, then consider the usable fraction at the intended load.",
+          "For another purely illustrative comparison, assume a 5 kWh lead-acid bank is operated within a 50% window and a 5 kWh lithium bank within an 80% window, with equal 90% conversion efficiency. The modeled AC energies are 2.25 and 3.60 kWh. These are chosen teaching assumptions, not recommended discharge limits for either chemistry. Product instructions and life objectives decide the actual windows."
+        ],
+        "sources": [],
+        "workedExample": {
+          "title": "Normalize nominal capacity and chosen usage policy",
+          "givens": [
+            "Fictional banks each 5 kWh nominal",
+            "Assumed available fractions 50% and 80%",
+            "Assumed conversion efficiency 90%"
+          ],
+          "steps": [
+            "First bank: 5×0.50×0.90 =2.25 kWh AC.",
+            "Second bank: 5×0.80×0.90 =3.60 kWh AC.",
+            "Compare cost per modeled AC kWh while keeping power, temperature and life constraints separate."
+          ],
+          "result": "Equal nominal kWh can deliver different planned service when the chosen operating windows differ.",
+          "discussion": "The assumed windows are not chemistry-wide limits or installation settings."
+        }
+      },
+      {
+        "title": "Cycle life must carry its test conditions",
+        "paragraphs": [
+          "Cycle-life claims require depth of discharge, temperature, rate, endpoint and the definition of end of life. A partial daily cycle is not automatically one full equivalent cycle. A product may reach a capacity-retention threshold yet still operate; whether it meets the owner’s service requirement is another question.",
+          "The NG example lists cycle counts at several depths of discharge with capacity at least 80% of nominal as its stated criterion. That is useful manufacturer evidence, not a calendar-life guarantee or a promise of identical field performance. Avoid converting cycles directly into years without a dispatch schedule, temperature history and calendar-aging assumptions. A rarely cycled backup bank can still age while waiting."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Lithium NG operating instructions",
+            "url": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_51%2C2_V/en/operation.html"
+          }
+        ]
+      },
+      {
+        "title": "Charging and state of charge are chemistry-dependent",
+        "paragraphs": [
+          "Lead-acid charging behavior and lithium charging behavior differ, and individual product profiles also differ. Equalization intended for a particular lead-acid application must not be copied into a lithium system. Nominal voltage is insufficient for selecting charge voltage, temperature compensation or termination criteria.",
+          "A battery monitor estimates stored charge from measurements and configured assumptions. Voltage alone can be a poor state-of-charge indicator across a flat portion of a discharge curve, and load-induced voltage changes complicate interpretation. Use the battery/BMS information and a suitable measurement arrangement. A generic monitor preset cannot determine the true capacity of an aged battery or establish that cell protection is functioning."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Capacity and Peukert exponent",
+            "url": "https://www.victronenergy.com/media/pg/SmartShunt/en/battery-capacity-and-peukert-exponent.html"
+          }
+        ]
+      },
+      {
+        "title": "Ownership and cost: separate present price from lifetime service",
+        "paragraphs": [
+          "Compare installed cost, required controls, usable energy, planned throughput, standby losses and replacement assumptions. DOE’s storage assessment treats cost and performance together rather than reducing ownership to the cell purchase price. A low initial price can suit infrequent backup use, while a different product may suit frequent cycling; neither conclusion follows from chemistry alone.",
+          "For a fictional $3,000 battery subsystem delivering an assumed 6,000 kWh lifetime AC throughput, battery-only cost is $0.50 per delivered kWh before financing, maintenance and other equipment. If throughput is only 3,000 kWh, the figure doubles. These are sensitivity calculations, not an energy price forecast. Resilience value may justify a purchase even where simple energy economics do not."
+        ],
+        "sources": [
+          {
+            "label": "DOE · 2022 grid storage cost and performance assessment",
+            "url": "https://www.energy.gov/cmei/2022-grid-energy-storage-technology-cost-and-performance-assessment"
+          }
+        ],
+        "bullets": [
+          "Compare current product ratings at the intended load and temperature.",
+          "Keep cycle-test conditions and calendar assumptions visible.",
+          "Include BMS, heating, mounting and replacement costs.",
+          "Plan documented end-of-life handling through appropriate local channels."
+        ]
+      },
+      {
+        "title": "Practice: identify the missing evidence",
+        "paragraphs": [
+          "A supplier says a battery has '6,000 cycles' and 'cold-weather capability.' Ask what depth of discharge, capacity-retention threshold and temperature conditions support the cycle number. Ask whether cold-weather capability refers to discharge, storage or charging, and whether heating is integral or optional. These follow-ups convert an ambiguous claim into a usable equipment record.",
+          "Also examine certification wording. A datasheet may distinguish cell tests from complete battery or system certification, and may show pending entries. Do not upgrade 'pending' to 'certified' in a catalog. The regional authority and approved installation configuration determine what evidence is acceptable for the project."
+        ],
+        "sources": [],
+        "exercise": {
+          "question": "A 200 Ah battery has a published 0.5C continuous charge limit. What current does that imply, and does it prove charging is allowed at −5°C?",
+          "answer": "100 A; it does not establish permission to charge at −5°C.",
+          "explanation": "0.5×200 =100 A. Temperature permission, cell sensing and charging control are separate product-specific conditions."
+        }
+      }
+    ]
+  },
+  "battery-bank-architecture": {
+    "reviewed": "2026-10-05",
+    "outcome": "Distinguish series, parallel and proprietary battery expansion, and review sharing, protection, communication and failure states as one architecture.",
+    "sources": [
+      {
+        "label": "Victron · Wiring Unlimited battery-bank wiring",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/battery-bank-wiring.html"
+      },
+      {
+        "label": "Victron · Wiring Unlimited electrical theory",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/theory.html"
+      },
+      {
+        "label": "Victron · Wiring Unlimited DC wiring",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/dc-wiring.html"
+      },
+      {
+        "label": "Victron · Lithium NG system design and BMS selection",
+        "url": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_51%2C2_V/en/system-design-and-bms-selection-guide.html"
+      },
+      {
+        "label": "Victron · Lithium NG 51.2 V/100 Ah technical data",
+        "url": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_51%2C2_V/en/technical-data.html"
+      },
+      {
+        "label": "Victron · Lithium NG 12.8 V technical data",
+        "url": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_12%2C8_V/en/technical-data.html"
+      },
+      {
+        "label": "Victron · SmartShunt measurement boundaries",
+        "url": "https://www.victronenergy.com/media/pg/SmartShunt/en/installation.html"
+      },
+      {
+        "label": "Victron · Lithium NG operating instructions",
+        "url": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_51%2C2_V/en/operation.html"
+      }
+    ],
+    "sections": [
+      {
+        "title": "A bank has electrical and control architecture",
+        "paragraphs": [
+          "A battery bank combines modules to obtain a useful system voltage and capacity, but the drawing must include more than plus and minus signs. Protection, disconnects, busbars, BMS controls, monitoring and communication determine how the bank behaves. Count the physical modules, series positions, parallel branches and control domains independently.",
+          "Start with an approved arrangement for the exact battery product. Arithmetic can explain what an ideal connection would do, but it cannot grant permission to make that connection. A drop-in pack with an internal BMS may prohibit series operation; a proprietary high-voltage tower may require a dedicated controller and a specified module count. Similar nominal energies do not make architectures interchangeable."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Wiring Unlimited battery-bank wiring",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/battery-bank-wiring.html"
+          }
+        ],
+        "figures": [
+          {
+            "diagram": "battery-bank",
+            "caption": "Two hypothetical 51.2 V/100 Ah modules in parallel feed protected shared DC distribution. Nominal energy is 10.24 kWh; usable AC energy and delivery power need separate checks.",
+            "alt": "Two hypothetical 51.2 V batteries and BMS blocks feeding branch protection and shared DC distribution to an inverter."
+          }
+        ]
+      },
+      {
+        "title": "Series adds voltage, parallel adds amp-hour capacity",
+        "paragraphs": [
+          "In an ideal series connection, the same current passes through each battery. Voltages add while amp-hour capacity remains that of the matched string. In an ideal parallel connection, terminal voltage stays approximately the same and capacities add. Energy increases when either connection adds identical batteries, but the inverter interface changes differently.",
+          "For four fictional 12.8 V/100 Ah modules, an approved 4S arrangement would be 51.2 V/100 Ah, or 5.12 kWh nominal. A 1S4P arrangement would be 12.8 V/400 Ah, also 5.12 kWh. A 2S2P arrangement would be 25.6 V/200 Ah. None is automatically compatible with the same inverter, and no arrangement is authorized until the manufacturer’s series/parallel rules are checked."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Wiring Unlimited electrical theory",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/theory.html"
+          }
+        ],
+        "columns": [
+          "Four fictional matched modules",
+          "Nominal voltage",
+          "Nominal capacity",
+          "Nominal energy"
+        ],
+        "rows": [
+          [
+            "4S1P",
+            "51.2 V",
+            "100 Ah",
+            "5.12 kWh"
+          ],
+          [
+            "2S2P",
+            "25.6 V",
+            "200 Ah",
+            "5.12 kWh"
+          ],
+          [
+            "1S4P",
+            "12.8 V",
+            "400 Ah",
+            "5.12 kWh"
+          ]
+        ]
+      },
+      {
+        "title": "Real example: nominal voltage does not imply series permission",
+        "paragraphs": [
+          "Victron’s Lithium NG system-design table distinguishes its 12.8 V, 25.6 V and 51.2 V product families. For a 48 V-class system, its examples use four 12.8 V units per string, two 25.6 V units per string, or parallel 51.2 V modules. The 51.2 V modules are not a general invitation to build a higher-voltage series bank.",
+          "The same documentation specifies limits per BMS and supported control arrangements. Keep the current exact model manual because capability can differ from another NG or older Smart family. A configuration table in a general wiring book is not a product approval. This example is useful precisely because apparently similar blue battery modules can require different permitted series counts."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Lithium NG system design and BMS selection",
+            "url": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_51%2C2_V/en/system-design-and-bms-selection-guide.html"
+          },
+          {
+            "label": "Victron · Lithium NG 12.8 V technical data",
+            "url": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_12%2C8_V/en/technical-data.html"
+          }
+        ]
+      },
+      {
+        "title": "Higher voltage changes current, not the load’s energy",
+        "paragraphs": [
+          "For a given DC power, increasing operating voltage reduces current. A hypothetical 3,000 W DC demand needs about 234.4 A at 12.8 V, 117.2 A at 25.6 V or 58.6 A at 51.2 V. The energy consumed over one hour is still 3 kWh before other losses. Voltage choice affects interface current, conductor losses and available equipment, not the appliance’s fundamental energy need.",
+          "This relationship is helpful for selecting a system class, but it is not a conductor sizing method. Real voltage varies and the system has conversion losses, starting loads and terminal constraints. A lower-current architecture still needs suitable DC-rated protection and safe isolation. High-voltage battery products introduce their own handling and approved-system requirements; do not assemble a higher-voltage pack by analogy."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Wiring Unlimited electrical theory",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/theory.html"
+          }
+        ],
+        "formula": "At a chosen operating point, current = DC power ÷ DC voltage"
+      },
+      {
+        "title": "Parallel current sharing is a resistance problem",
+        "paragraphs": [
+          "Identical nominal batteries do not necessarily share current equally. Branch cable length, contact resistance, internal resistance and state of charge all matter. A branch with a lower total resistance can carry more current. Equal-looking cables are insufficient if terminal quality or hardware differs. The design should provide documented, reasonably balanced paths within the manufacturer’s arrangement.",
+          "Use a deliberately simple model: two equal-voltage sources have total branch resistances of 4 and 6 milliohms feeding a 100 A demand. Ignoring dynamic battery behavior, currents divide inversely with resistance: the lower-resistance branch takes about 60 A and the other 40 A. This model illustrates sensitivity; actual batteries, BMSs and voltage changes make the problem more complex. Equal sharing should be verified rather than assumed."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Wiring Unlimited battery-bank wiring",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/battery-bank-wiring.html"
+          }
+        ],
+        "workedExample": {
+          "title": "A small resistance difference creates unequal sharing",
+          "givens": [
+            "Fictional equal source voltages",
+            "Branch resistances 0.004 Ω and 0.006 Ω",
+            "Total discharge 100 A"
+          ],
+          "steps": [
+            "Relative conductances are 250 and 166.67 siemens.",
+            "Lower-resistance branch fraction =250/(250+166.67) =0.60.",
+            "Current split is approximately 60 A and 40 A."
+          ],
+          "result": "A 2 milliohm difference produces a 20 A current imbalance in this simplified model.",
+          "discussion": "The example is explanatory; actual bank behavior requires approved design and appropriate measurements."
+        }
+      },
+      {
+        "title": "Branch protection and common protection do different jobs",
+        "paragraphs": [
+          "A parallel branch may receive fault current from other batteries as well as deliver current outward. A main protective device near the inverter cannot automatically protect every source-to-busbar segment. The protection drawing must identify what energizes each conductor and where a fault can be supplied from.",
+          "Battery fault interruption needs suitable DC voltage and interrupt capacity, not only an ampere label. Busbar and disconnect ratings must cover the actual system arrangement. A BMS may stop ordinary operation, but it does not universally replace source-circuit fault protection. Keep device coordination and unprotected conductor lengths in the qualified design review rather than choosing a fuse from normal inverter watts alone."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Wiring Unlimited DC wiring",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/dc-wiring.html"
+          }
+        ]
+      },
+      {
+        "title": "BMS domains, communication and failure states",
+        "paragraphs": [
+          "A battery management system monitors relevant cell conditions and initiates permitted control actions. Some products have internal switching; others rely on an external BMS and compliant chargers/loads. The control path is part of the architecture. A monitoring screen that displays cell voltage does not prove that a stop-charge signal reaches every charger.",
+          "Ask what happens if one parallel module disconnects while the inverter continues at full power. The remaining modules may see increased demand. Ask which communication device reports total bank current and how firmware updates preserve compatibility. Document minimum operating module count, loss-of-communication behavior and recovery. These are practical expansion questions, not edge cases to leave until commissioning."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Lithium NG system design and BMS selection",
+            "url": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_51%2C2_V/en/system-design-and-bms-selection-guide.html"
+          }
+        ]
+      },
+      {
+        "title": "Expansion changes capacity and the design assumptions",
+        "paragraphs": [
+          "Adding identical approved modules can increase nominal energy, but it also changes potential source fault current, charging demand and the consequences of a branch opening. Existing busbars, enclosure, protection and BMS configuration need review. A plan to 'add batteries later' should name the supported expansion range and the checks triggered by expansion.",
+          "Avoid casually combining unlike chemistry, capacity, age or firmware. Some manufacturers permit particular combinations under conditions; others restrict them. The answer comes from the exact product instructions. State-of-charge matching and balancing before connection can also be product requirements, but this chapter does not prescribe an assembly sequence. Have the installer follow the relevant manual and save the resulting configuration."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Lithium NG operating instructions",
+            "url": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_51%2C2_V/en/operation.html"
+          }
+        ]
+      },
+      {
+        "title": "Measurement boundaries and midpoint questions",
+        "paragraphs": [
+          "A bank monitor should measure the intended net current, not an arbitrary branch. If a load or charger bypasses the measurement boundary, its charge movement is omitted from the estimate. Conversely a branch meter can be useful for diagnosing sharing without representing the entire bank. Label both roles clearly on the diagram.",
+          "Series midpoint monitoring can reveal imbalance for architectures where the manufacturer supports it. It does not authorize drawing an auxiliary load from the midpoint or interconnecting midpoints. An added partial-voltage load can unbalance a series string. Use approved conversion equipment for a lower-voltage load, and follow the battery product’s specific rules rather than treating a convenient midpoint as a free power tap."
+        ],
+        "sources": [
+          {
+            "label": "Victron · SmartShunt measurement boundaries",
+            "url": "https://www.victronenergy.com/media/pg/SmartShunt/en/installation.html"
+          },
+          {
+            "label": "Victron · Wiring Unlimited battery-bank wiring",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/battery-bank-wiring.html"
+          }
+        ],
+        "bullets": [
+          "Label every series string and parallel branch.",
+          "Name the approved BMS and communication arrangement.",
+          "Show branch and system protection separately.",
+          "Keep the whole-bank measurement boundary visible.",
+          "Revisit fault, thermal and current-sharing assumptions after expansion."
+        ]
+      },
+      {
+        "title": "Practice: distinguish energy expansion from voltage conversion",
+        "paragraphs": [
+          "An owner has a fictional 51.2 V/100 Ah module and wants twice the backup duration at the same power. An approved second parallel module would double nominal Ah and energy while retaining the nominal voltage. Series connection would instead raise voltage and could exceed inverter limits or violate the battery manual. The desired service points toward a compatible architecture, not arbitrary wiring.",
+          "For another example, four fictional 12.8 V modules in 4S supply a 48 V-class inverter only if series operation and the full operating range are approved. A nominal sum near 48 V is insufficient: charge and discharge endpoints, BMS control and source protection need their own checks."
+        ],
+        "sources": [],
+        "exercise": {
+          "question": "Two fictional 51.2 V/100 Ah batteries are approved for parallel use. What nominal bank energy results, and is 200 A continuous guaranteed?",
+          "answer": "10.24 kWh nominal. A 200 A continuous system capability is not guaranteed by capacity arithmetic alone.",
+          "explanation": "51.2×200 Ah =10,240 Wh. Module current limits, sharing, BMS, branches, busbars, inverter and temperature can restrict bank current."
+        }
+      }
+    ]
+  },
+  "battery-monitoring": {
+    "reviewed": "2026-10-05",
+    "outcome": "Explain how a shunt-based monitor estimates state of charge, establish its measurement boundary, and interpret drift, synchronization and disagreement.",
+    "sources": [
+      {
+        "label": "Victron · SmartShunt operation and synchronization",
+        "url": "https://www.victronenergy.com/media/pg/SmartShunt/en/operation.html"
+      },
+      {
+        "label": "Victron · SmartShunt configuration",
+        "url": "https://www.victronenergy.com/media/pg/SmartShunt/en/configuration.html"
+      },
+      {
+        "label": "Victron · SmartShunt measurement boundaries",
+        "url": "https://www.victronenergy.com/media/pg/SmartShunt/en/installation.html"
+      },
+      {
+        "label": "Victron · SmartShunt features and settings",
+        "url": "https://www.victronenergy.com/media/pg/SmartShunt/en/all-features-and-settings.html"
+      },
+      {
+        "label": "Victron · Capacity and Peukert exponent",
+        "url": "https://www.victronenergy.com/media/pg/SmartShunt/en/battery-capacity-and-peukert-exponent.html"
+      },
+      {
+        "label": "Victron · Lithium NG system design and BMS selection",
+        "url": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_51%2C2_V/en/system-design-and-bms-selection-guide.html"
+      },
+      {
+        "label": "Victron · Wiring Unlimited electrical theory",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/theory.html"
+      }
+    ],
+    "sections": [
+      {
+        "title": "The percentage is an estimate with a history",
+        "paragraphs": [
+          "Battery voltage and current can be measured directly at a stated boundary. State of charge is an estimate of how much usable charge remains relative to a capacity model. A percentage display looks precise, but its accuracy depends on measurement, configured capacity and the reference history. A monitor starting from an incorrect reference can faithfully count current and still display the wrong percentage.",
+          "Distinguish a standalone shunt monitor from a battery’s BMS and from an inverter dashboard. They may use different boundaries and algorithms. None should be treated as automatically correct merely because it reports more decimal places. The aim is a consistent, documented view of the bank, with known uncertainty and alarms that reach the owner."
+        ],
+        "sources": [
+          {
+            "label": "Victron · SmartShunt operation and synchronization",
+            "url": "https://www.victronenergy.com/media/pg/SmartShunt/en/operation.html"
+          }
+        ],
+        "figures": [
+          {
+            "diagram": "meter-boundaries",
+            "caption": "Site meters track PV, loads, storage and utility flows at distinct boundaries. The same boundary discipline applies to the DC bank monitor described in this chapter.",
+            "alt": "PV production, AC site bus, house loads, grid meter and battery system, with a site energy-balance equation."
+          }
+        ]
+      },
+      {
+        "title": "What the shunt actually measures",
+        "paragraphs": [
+          "A shunt is a calibrated low-resistance element. A monitor measures its small voltage difference and infers current. The current direction distinguishes charge from discharge according to the monitor’s convention. A voltage-sense connection supplies another quantity. Current integration then estimates amp-hours entering and leaving over time.",
+          "A conceptual arrangement places the shunt between the battery return and the rest of the monitored system. All relevant chargers and loads must cross that boundary. The exact product installation manual governs connections; this teaching description is not a terminal-by-terminal wiring procedure. A bypassing DC load is a measurement error even when the inverter’s own reading is perfect."
+        ],
+        "sources": [
+          {
+            "label": "Victron · SmartShunt measurement boundaries",
+            "url": "https://www.victronenergy.com/media/pg/SmartShunt/en/installation.html"
+          },
+          {
+            "label": "Victron · Wiring Unlimited electrical theory",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/theory.html"
+          }
+        ]
+      },
+      {
+        "title": "Coulomb counting: an accessible calculation",
+        "paragraphs": [
+          "For constant current, amp-hours equal amperes multiplied by hours. A fictional 10 A discharge for three hours removes 30 Ah at the measurement boundary. Relative to an assumed 100 Ah usable capacity model, that represents 30 percentage points before model adjustments. Variable current is handled by integrating many measurements over time.",
+          "Amp-hours are not energy unless voltage is also considered. At a constant assumed 51.2 V, 30 Ah corresponds to 1.536 kWh; at another voltage the energy differs. A monitor can track both charge and energy, but a nominal-voltage conversion is still an approximation. Use Wh or kWh when comparing an AC load’s energy requirement, and retain Ah when discussing battery charge accounting."
+        ],
+        "sources": [],
+        "formula": "Charge movement Ah = integral of current A over time h; energy Wh = integral of voltage V × current A over time h"
+      },
+      {
+        "title": "Worked example: net charge is not gross charger output",
+        "paragraphs": [
+          "Assume a fictional charger supplies 20 A to the DC system while loads consume 5 A, all within the measurement boundary. Net battery charge is 15 A. Over two hours, a simplified count adds 30 Ah, before any charge-efficiency adjustment. An inverter-only meter could miss the DC loads and report a different story.",
+          "Now assume the 5 A load bypasses the shunt. The monitor could count 20 A and overestimate stored charge by 10 Ah over those two hours. On an assumed 100 Ah bank, that is a ten-percentage-point discrepancy from a single missing path. The problem is topology, so changing the capacity setting to make the percentage look right would conceal the cause."
+        ],
+        "sources": [],
+        "workedExample": {
+          "title": "Find the missing current path",
+          "givens": [
+            "Hypothetical charger 20 A",
+            "Hypothetical DC load 5 A",
+            "Duration 2 h; 100 Ah capacity model"
+          ],
+          "steps": [
+            "Actual net battery current =20−5 =15 A.",
+            "Actual charge movement =15×2 =30 Ah.",
+            "If the load bypasses the shunt, counted movement =20×2 =40 Ah."
+          ],
+          "result": "The bypass creates a 10 Ah overestimate, or ten percentage points in this simplified bank model.",
+          "discussion": "Actual monitors include charging-efficiency and other model corrections; this exercise isolates the boundary error."
+        }
+      },
+      {
+        "title": "Capacity, charge efficiency and rate effects",
+        "paragraphs": [
+          "The capacity setting should describe the appropriate bank and rating context. A new battery’s nominal rating may differ from an aged battery’s effective capacity, and lead-acid capacity can depend strongly on discharge rate. Changing capacity alters the percentage model; it does not restore chemically lost capacity.",
+          "Victron’s SmartShunt documentation separates capacity, Peukert exponent and charge-efficiency considerations. Peukert behavior addresses rate-dependent available capacity, especially for lead-acid applications. Charging also requires more charge input than may later be recovered. Use manufacturer-supported settings for the actual battery, and keep changes recorded. Tuning a display solely to match an expected runtime is not a substitute for diagnosing missing current, voltage or synchronization."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Capacity and Peukert exponent",
+            "url": "https://www.victronenergy.com/media/pg/SmartShunt/en/battery-capacity-and-peukert-exponent.html"
+          }
+        ]
+      },
+      {
+        "title": "Synchronization anchors the estimate",
+        "paragraphs": [
+          "A current-integrating estimate accumulates small errors. Synchronization provides a known reference, commonly full charge when the specified conditions are met. Victron’s SmartShunt uses charged voltage, tail current and detection time for automatic synchronization. Those conditions must represent the actual battery and charger behavior, not merely the monitor’s factory defaults.",
+          "An intermittent solar charger can have low current because a cloud reduces available power, not because the bank is full. Similarly, a voltage threshold alone can be misleading during charging. The conditions are considered together. Manually setting 100% changes the estimate; it does not add energy. Document why a manual synchronization is justified instead of using it to dismiss an inconvenient reading."
+        ],
+        "sources": [
+          {
+            "label": "Victron · SmartShunt operation and synchronization",
+            "url": "https://www.victronenergy.com/media/pg/SmartShunt/en/operation.html"
+          },
+          {
+            "label": "Victron · SmartShunt configuration",
+            "url": "https://www.victronenergy.com/media/pg/SmartShunt/en/configuration.html"
+          }
+        ]
+      },
+      {
+        "title": "A flat voltage curve and a loaded terminal",
+        "paragraphs": [
+          "Voltage is useful evidence, but it must be interpreted with chemistry, temperature and load. Under discharge, terminal voltage includes internal and connection effects. After a load stops, voltage may recover. Some lithium batteries have a relatively flat voltage region that offers limited resolution for state-of-charge estimation. A snapshot voltage cannot replace a complete charge-accounting model.",
+          "Consider a fictional bank dropping from 51 V to 48 V when a large load starts, then recovering when it stops. That observation can reflect operating current and voltage sag rather than an instantaneous loss of a large fraction of stored energy. Investigate current, terminal drops and BMS information. Do not recalibrate the monitor from one transient voltage value."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Wiring Unlimited electrical theory",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/theory.html"
+          }
+        ]
+      },
+      {
+        "title": "BMS data and shunt data can disagree for valid reasons",
+        "paragraphs": [
+          "A BMS may monitor cells and its internal current path while an external shunt measures the whole bank boundary. Multiple battery modules can have individual estimates that differ from the bank display. A dashboard might select one source of state-of-charge data without clearly exposing the choice. Record which device is authoritative for each value.",
+          "Compare readings under a stable, known operating condition with consistent units and time stamps. Ask whether all branches are included, whether capacity totals match, and when each estimate last synchronized. An unexplained mismatch should be investigated before altering protection settings. BMS stop-charge or stop-discharge functions protect cells; a separate monitor’s attractive percentage does not override those limits."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Lithium NG system design and BMS selection",
+            "url": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_51%2C2_V/en/system-design-and-bms-selection-guide.html"
+          }
+        ]
+      },
+      {
+        "title": "Alarms and trends should support decisions",
+        "paragraphs": [
+          "Monitor low voltage, low state of charge, temperature and abnormal behavior according to the actual system. A local app alarm may be visible only while connected, whereas a gateway may provide remote notifications. Verify delivery using the supported method and know what remains available without internet. An alarm configured in software is not proof that the owner will receive it.",
+          "Save daily charge/discharge energy, minimum voltage, deepest discharge and synchronization history where available. Trends can reveal a growing standby load, a charging shortfall or changing capacity assumptions. Compare like periods and record firmware or setting changes. One unusually low percentage is less informative than a repeatable pattern with load and temperature context."
+        ],
+        "sources": [
+          {
+            "label": "Victron · SmartShunt features and settings",
+            "url": "https://www.victronenergy.com/media/pg/SmartShunt/en/all-features-and-settings.html"
+          }
+        ],
+        "columns": [
+          "Symptom",
+          "Possible evidence to review"
+        ],
+        "rows": [
+          [
+            "Percentage drifts over days",
+            "Synchronization history and measured current offset"
+          ],
+          [
+            "Charge reported despite little recovery",
+            "Capacity model, charge efficiency and boundary"
+          ],
+          [
+            "Inverter and monitor disagree",
+            "Different paths, units, time stamps or selected data sources"
+          ],
+          [
+            "Unexpected voltage sag",
+            "Load current, connections and battery/BMS limits"
+          ],
+          [
+            "No alarm received",
+            "Actual delivery path and connection state"
+          ]
+        ]
+      },
+      {
+        "title": "Practice: diagnose before recalibrating",
+        "paragraphs": [
+          "A fictional 200 Ah bank has a constant unmeasured 0.2 A discharge. Over seven days that removes 0.2×24×7 =33.6 Ah, or 16.8% of the configured capacity. The monitor’s percentage can therefore drift significantly even though the missed load looks tiny. A zero-current calibration should follow the manual and a verified zero-current condition, not merely a quiet-looking dashboard.",
+          "Build a handover note naming the battery capacity model, monitor, measurement boundary, synchronization settings and alarm paths. This makes troubleshooting reproducible for the next owner or technician. Monitoring is most valuable when it connects a reading to an action: reduce loads, investigate a charger, schedule maintenance or revise an endurance assumption."
+        ],
+        "sources": [],
+        "exercise": {
+          "question": "A fictional monitor misses a 1 A load for 48 h on a 200 Ah bank. How large is the charge-accounting error?",
+          "answer": "48 Ah, or 24 percentage points of the configured 200 Ah capacity.",
+          "explanation": "1 A×48 h =48 Ah; 48/200 =0.24. This is a boundary/accounting example, not a measured battery capacity test."
+        }
+      }
+    ]
+  },
+  "all-in-one-buying-guide": {
+    "reviewed": "2026-10-05",
+    "outcome": "Compare portable and fixed integrated products using complete input/output envelopes, usable storage, supported expansion and installed accessories.",
+    "sources": [
+      {
+        "label": "EcoFlow · US DELTA Pro 3 product specifications",
+        "url": "https://www.ecoflow.com/us/delta-pro-3-portable-power-station"
+      },
+      {
+        "label": "EcoFlow · US DELTA Pro 3 user manual",
+        "url": "https://manuals.ecoflow.com/us/product/delta-pro-3-portable-power-station?lang=en_US"
+      },
+      {
+        "label": "Victron · Inverter RS Smart Solar PIN482601000 specifications",
+        "url": "https://www.victronenergy.com/media/pg/Inverter_RS_Smart_Solar/en/technical-specifications.html"
+      },
+      {
+        "label": "Victron · Inverter RS Smart Solar datasheet",
+        "url": "https://www.victronenergy.com/upload/documents/Datasheet-Inverter-RS-Smart-Solar-EN.pdf"
+      },
+      {
+        "label": "Victron · SmartSolar MPPT 150/60–250/70 specifications",
+        "url": "https://www.victronenergy.com/media/pg/Manual_SmartSolar_MPPT_150-60_up_to_250-70/en/technical-specifications.html"
+      },
+      {
+        "label": "DOE · Inverters and grid services",
+        "url": "https://www.energy.gov/cmei/systems/solar-integration-inverters-and-grid-services-basics"
+      },
+      {
+        "label": "DOE · Distributed energy resources and microgrids",
+        "url": "https://www.energy.gov/cmei/systems/solar-integration-distributed-energy-resources-and-microgrids-basics"
+      },
+      {
+        "label": "DOE · Solar energy and storage basics",
+        "url": "https://www.energy.gov/cmei/systems/solar-integration-solar-energy-and-storage-basics"
+      },
+      {
+        "label": "EcoFlow · US DELTA Pro 3 detailed port and capacity specifications",
+        "url": "https://us.ecoflow.com/collections/whole-home-backup-power-solutions/products/ecoflow-delta-pro-3-smart-generator-4000-transfer-switch"
+      }
+    ],
+    "sections": [
+      {
+        "title": "All-in-one describes packaging, not the service",
+        "paragraphs": [
+          "A portable power station can combine storage, solar charging, AC conversion and user outlets in one case. A fixed integrated inverter can combine solar charging and conversion while requiring separately purchased batteries and transfer equipment. Both may be called all-in-one even though their included functions differ. Begin by listing what is physically included and what the desired service still needs.",
+          "Define intended loads, voltage, outage duration and connection method. A camping outlet, selected household appliances and an automatically backed-up electrical panel are different use cases. Integration can simplify ownership, but the complete system must still have compatible inputs, sufficient energy and an approved way to connect to the intended loads. A large number on the package is not a system diagram."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Inverters and grid services",
+            "url": "https://www.energy.gov/cmei/systems/solar-integration-inverters-and-grid-services-basics"
+          }
+        ],
+        "figures": [
+          {
+            "diagram": "inverter-topology",
+            "caption": "Integrated products package some of these DC or AC conversion blocks together; the actual supported topology and backup arrangement remain product-specific.",
+            "alt": "Separate conceptual DC-coupled and AC-coupled solar storage conversion paths."
+          }
+        ]
+      },
+      {
+        "title": "Use watts and watt-hours in different columns",
+        "paragraphs": [
+          "Rated AC watts describe delivery power. Battery Wh describe energy. Solar-input watts describe a charging ceiling. Temporary boost or surge figures describe another operating mode and may not be equivalent to normal voltage-regulated output. Putting these values in a single 'size' column hides the reason a product might fail a particular load.",
+          "EcoFlow’s US DELTA Pro 3 product page lists a 4,000 W rated AC output, a 4 kWh-class base storage unit and up to 2,600 W combined solar input, with supported expansion and home-connection accessories. Its X-Boost marketing figure is distinct from the normal rated output. Use the current US manual to determine what a particular appliance can receive; other regional variants can have different AC specifications."
+        ],
+        "sources": [
+          {
+            "label": "EcoFlow · US DELTA Pro 3 product specifications",
+            "url": "https://www.ecoflow.com/us/delta-pro-3-portable-power-station"
+          }
+        ],
+        "columns": [
+          "Shopping field",
+          "What it answers"
+        ],
+        "rows": [
+          [
+            "Battery energy Wh/kWh",
+            "How much energy is stored under the stated rating"
+          ],
+          [
+            "Normal rated AC W",
+            "What continuous output is allowed under conditions"
+          ],
+          [
+            "Surge / special boost",
+            "What temporary or altered mode is supported"
+          ],
+          [
+            "PV input V / A / W",
+            "Which solar array can be connected"
+          ],
+          [
+            "AC input / pass-through",
+            "How simultaneous charging and loads are handled"
+          ],
+          [
+            "Expansion / home connection",
+            "What additional equipment is supported and required"
+          ]
+        ]
+      },
+      {
+        "title": "Each solar port has its own envelope",
+        "paragraphs": [
+          "The US DELTA Pro 3 manual describes a high-PV input of 30–150 V, up to 15 A and 1,600 W, and a low-PV input of 11–60 V, up to 20 A and 1,000 W. The 2,600 W combined headline does not mean either port accepts 2,600 W or that their voltage ranges are interchangeable. Preserve each port’s limits and specified cable/adapter arrangement.",
+          "Before ordering panels, calculate cold Voc for each proposed string and assess the operating/current boundaries. A panel sold as '400 W' can have a very different voltage/current profile from another 400 W panel. A physically fitting adapter changes connector form; it does not change source voltage or create more input allowance. Resolve any oversizing permission and source-current treatment in the exact manual."
+        ],
+        "sources": [
+          {
+            "label": "EcoFlow · US DELTA Pro 3 user manual",
+            "url": "https://manuals.ecoflow.com/us/product/delta-pro-3-portable-power-station?lang=en_US"
+          },
+          {
+            "label": "EcoFlow · US DELTA Pro 3 detailed port and capacity specifications",
+            "url": "https://us.ecoflow.com/collections/whole-home-backup-power-solutions/products/ecoflow-delta-pro-3-smart-generator-4000-transfer-switch"
+          }
+        ]
+      },
+      {
+        "title": "Worked example: the same four fictional panels, two proposals",
+        "paragraphs": [
+          "Take fictional modules rated 400 W, Voc 40 V, Vmp 33 V, Imp about 12.12 A and Isc 13 A. Assume βVoc −0.25%/°C and minimum cell temperature −10°C. Cold Voc per module is 40×[1+0.0025×35] =43.5 V. Four in series reach 174 V, above the 150 V high-port boundary.",
+          "Two in series and two parallel produce 87 V cold Voc, but operating current is about 24.24 A and uncorrected Isc is 26 A. That does not fit a simplistic 15 A port comparison, and permission to attach a larger-current source must not be assumed from current limiting. This example is intentionally fictional and rejects naive watt matching; it is not a recommended DELTA Pro 3 array."
+        ],
+        "sources": [],
+        "workedExample": {
+          "title": "A 1,600 W nameplate array can fail in more than one way",
+          "givens": [
+            "Four fictional 400 W modules",
+            "Voc40 V, Vmp33 V, Isc13 A",
+            "βVoc−0.25%/°C; Tmin−10°C"
+          ],
+          "steps": [
+            "Cold multiplier =1.0875; module cold Voc =43.5 V.",
+            "4S proposal gives 174 V and exceeds the example 150 V boundary.",
+            "2S2P gives 87 V but doubles source current; verify explicit source-current permission instead of declaring it acceptable."
+          ],
+          "result": "Matching 1,600 W nameplate to 1,600 W input does not establish a compatible array.",
+          "discussion": "Actual panel data, corrections and the receiver’s documented source-current rules govern a real purchase."
+        }
+      },
+      {
+        "title": "Runtime uses delivered energy and standby consumption",
+        "paragraphs": [
+          "Take the DELTA Pro 3’s listed 4.096 kWh nominal capacity, then assume 80% available battery window and 90% DC-to-AC efficiency. The modeled AC energy is 2.949 kWh before separate idle consumption. A steady 300 W load would then have about 9.83 hours in this simplified model. That does not reproduce a manufacturer runtime test, because both the window and conversion efficiency are chosen assumptions.",
+          "At low loads, idle consumption and control behavior can matter proportionally more. Devices that sleep automatically or disable outlets under low demand may interact poorly with intermittently cycling appliances. Read the supported operating settings and test the intended loads under safe conditions. A large storage number does not establish uninterrupted service for every appliance."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Solar energy and storage basics",
+            "url": "https://www.energy.gov/cmei/systems/solar-integration-solar-energy-and-storage-basics"
+          },
+          {
+            "label": "EcoFlow · US DELTA Pro 3 detailed port and capacity specifications",
+            "url": "https://us.ecoflow.com/collections/whole-home-backup-power-solutions/products/ecoflow-delta-pro-3-smart-generator-4000-transfer-switch"
+          }
+        ]
+      },
+      {
+        "title": "Integrated fixed equipment may include no battery",
+        "paragraphs": [
+          "Victron Inverter RS Smart Solar combines a 48 V-class inverter with high-voltage PV charging, yet it requires a suitable external battery system. Its published solar specification includes a 120 V startup figure, unlike the small SmartSolar charger’s battery-relative startup rule. The integrated package therefore cannot be evaluated by borrowing another Victron model’s limits.",
+          "Use its exact PIN482601000 manual and datasheet rather than the non-solar RS Smart documentation. Continuous AC output, solar charging power, battery input range and temporary peak output are separate fields. For a purchase, also include the compatible BMS, protective distribution, monitoring and any additional AC charging arrangement specified for the desired operating states. 'Built-in MPPT' does not imply every home-backup function is included."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Inverter RS Smart Solar PIN482601000 specifications",
+            "url": "https://www.victronenergy.com/media/pg/Inverter_RS_Smart_Solar/en/technical-specifications.html"
+          },
+          {
+            "label": "Victron · Inverter RS Smart Solar datasheet",
+            "url": "https://www.victronenergy.com/upload/documents/Datasheet-Inverter-RS-Smart-Solar-EN.pdf"
+          }
+        ]
+      },
+      {
+        "title": "Pass-through, transfer time and UPS expectations",
+        "paragraphs": [
+          "Some integrated products can supply loads while taking AC input. The allowed combined behavior can depend on input limits, battery condition and the product’s operating mode. Do not add headline charging and output wattages together and assume the unit can sustain both. Read pass-through and simultaneous-operation limits in the manual.",
+          "A quoted transfer time is not by itself proof of compatibility with sensitive equipment. A server, medical appliance or other critical load may need a specified UPS arrangement with verified behavior. Test or obtain approval for the actual load and operating mode. Distinguish a consumer emergency-power function from the intended uninterrupted-service requirement; the label on a product page cannot settle the application."
+        ],
+        "sources": [
+          {
+            "label": "EcoFlow · US DELTA Pro 3 product specifications",
+            "url": "https://www.ecoflow.com/us/delta-pro-3-portable-power-station"
+          }
+        ]
+      },
+      {
+        "title": "Home connection and expansion are complete-system purchases",
+        "paragraphs": [
+          "A unit’s household connection can require an inlet, a transfer switch or a manufacturer control panel. These are different from directly plugging an appliance into the unit. The product’s supported connection method and the local electrical requirements must be reviewed. Improvised receptacle backfeeding is not a substitute for an approved isolation arrangement.",
+          "Expansion batteries can add energy without increasing the base inverter’s AC power. Combining multiple units may require particular accessories and supported phase behavior. Record the exact base unit, expansion model, cable, control panel and firmware combination. Check maximum supported expansion, minimum operating configuration and what happens if an expansion module is unavailable. Budget every required component rather than comparing the cheapest bare unit with a complete installed system."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Distributed energy resources and microgrids",
+            "url": "https://www.energy.gov/cmei/systems/solar-integration-distributed-energy-resources-and-microgrids-basics"
+          }
+        ]
+      },
+      {
+        "title": "Portability, environment and repairability",
+        "paragraphs": [
+          "Consider actual mass, lifting access, storage space, airflow, moisture exposure and operating temperatures. An IP rating on one internal component does not necessarily describe the entire product under every connector condition. A portable case is not automatically suitable for unattended outdoor operation in rain, nor does a fixed unit automatically tolerate a hot sealed cupboard.",
+          "Ask who handles repairs, whether batteries are replaceable through an approved service route, how warranty transport works and what local controls remain without cloud service. Save the manual and settings export if supported. A tightly integrated package may simplify setup but tie several functions to one repair event. That tradeoff can be acceptable; make it visible in the ownership comparison."
+        ],
+        "sources": [],
+        "bullets": [
+          "Compare a complete bill of materials for the intended service.",
+          "Check every solar port separately with exact module data.",
+          "Separate added capacity from added inverter output.",
+          "Verify supported charging/load combinations and recovery behavior.",
+          "Include environmental conditions and service responsibility."
+        ]
+      },
+      {
+        "title": "Practice: normalize two quotations",
+        "paragraphs": [
+          "A fictional $2,000 quote includes a base power station only; a $3,200 quote includes the base unit, expansion battery and approved household transfer equipment. The lower headline price cannot be treated as lower cost for the same service until the omitted components are priced. Likewise, a package claiming multiple days of backup should identify the loads and storage configuration behind that duration.",
+          "Make a side-by-side record of usable-energy assumptions, normal AC output, surge conditions, PV envelopes, complete accessories and connection responsibility. Mark every unresolved value as unresolved instead of treating missing data as unlimited capability. This discipline makes an integrated product easier to buy, because fewer components are visible but the system boundaries remain real."
+        ],
+        "sources": [],
+        "exercise": {
+          "question": "A fictional 2 kWh expansion battery is added to a 3 kW base inverter. Does its normal AC rating become 5 kW?",
+          "answer": "No. Added storage energy does not automatically increase inverter power.",
+          "explanation": "Wh/kWh measure energy. W/kW measure power. A higher output requires a documented supported converter configuration, not adding the numbers."
+        }
+      }
+    ]
+  },
+  "dc-wiring-protection": {
+    "reviewed": "2026-10-05",
+    "outcome": "Separate voltage-drop, ampacity, fault interruption, isolation and bonding checks, and assemble the evidence a qualified electrical design needs.",
+    "sources": [
+      {
+        "label": "Victron · Wiring Unlimited electrical theory",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/theory.html"
+      },
+      {
+        "label": "Victron · Wiring Unlimited DC wiring",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/dc-wiring.html"
+      },
+      {
+        "label": "Victron · Wiring Unlimited grounding and electrical safety",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/ground,-earth-and-electrical-safety.html"
+      },
+      {
+        "label": "Victron · Wiring Unlimited battery-bank wiring",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/battery-bank-wiring.html"
+      },
+      {
+        "label": "Victron · SmartSolar MPPT 150/60–250/70 specifications",
+        "url": "https://www.victronenergy.com/media/pg/Manual_SmartSolar_MPPT_150-60_up_to_250-70/en/technical-specifications.html"
+      },
+      {
+        "label": "Trina Solar · TSM-NEG9R.28 APAC EN 2024_D datasheet",
+        "url": "https://static.trinasolar.com/sites/default/files/DT-M-0043%20APAC%20EN%20I%20210RVertexS%2B_NEG9R.28_430-460%202024_D_web.pdf"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Several independent checks protect one current path",
+        "paragraphs": [
+          "A conductor can carry normal load current, lose voltage, dissipate heat and experience a fault. These are different conditions. Cable sizing, protective devices, disconnects, terminations and bonding work together, but no single rating proves the whole path acceptable. A parts comparison should expose the conditions instead of reducing them to one cable gauge and one fuse number.",
+          "This chapter teaches the physics and the review record. It does not choose construction details for a particular installation. Applicable electrical rules vary by location and adopted edition, and manufacturer instructions constrain assemblies. Use a qualified designer or installer to resolve the actual circuit, temperature, routing, terminal and fault conditions before installation or energization."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Wiring Unlimited DC wiring",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/dc-wiring.html"
+          }
+        ],
+        "figures": [
+          {
+            "diagram": "dc-protection",
+            "caption": "A DC source feeds fault-rated protection, a suitable disconnect and a DC load. Current, voltage and interrupt ratings answer separate questions; complete wiring details are omitted.",
+            "alt": "DC source, fuse or breaker, disconnect and load blocks, with separate current, voltage and interrupt-rating explanations."
+          }
+        ]
+      },
+      {
+        "title": "Resistance causes both voltage loss and heat",
+        "paragraphs": [
+          "Ohm’s law gives voltage drop equal to current multiplied by resistance. Resistive heating is current squared multiplied by resistance. For a fixed conductor resistance, doubling current doubles drop but quadruples heat. Long runs and high-current battery circuits therefore deserve explicit loss calculations rather than guesses based on visual cable thickness.",
+          "Resistance depends on material, cross-section, length and temperature; connections add resistance too. In a two-conductor circuit, account for both outgoing and return paths. A one-way distance quoted by a site owner is not necessarily the full current path. Use a documented conductor resistance at relevant conditions, with separate attention to contacts and terminal behavior."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Wiring Unlimited electrical theory",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/theory.html"
+          }
+        ],
+        "formula": "Voltage drop ΔV = I×Rpath; resistive power loss = I²×Rpath"
+      },
+      {
+        "title": "Worked example: an explicitly fictional cable",
+        "paragraphs": [
+          "Assume a 48 V operating system, 30 A current and 40 ft one-way cable length. For teaching, use a fictional documented resistance value 0.40 Ω per 1,000 ft at the assumed condition. The 80 ft round trip gives 0.032 Ω, a drop of 0.96 V and 28.8 W heating. The drop is 2.0% of the assumed 48 V.",
+          "At 60 A on the same path, drop becomes 1.92 V while heating becomes 115.2 W. Neither result establishes permissible ampacity or terminal suitability. This exercise is useful because a modest percentage can coexist with meaningful heat, and a voltage-drop calculation cannot replace a corrected ampacity review."
+        ],
+        "sources": [],
+        "workedExample": {
+          "title": "One cable path, two load currents",
+          "givens": [
+            "Fictional resistance 0.40 Ω/1,000 ft",
+            "40 ft one-way, two-conductor path",
+            "48 V operating voltage; compare 30 A and 60 A"
+          ],
+          "steps": [
+            "Path resistance =80×0.40/1,000 =0.032 Ω.",
+            "At 30 A: drop0.96 V; loss28.8 W.",
+            "At 60 A: drop1.92 V; loss115.2 W."
+          ],
+          "result": "Doubling current doubles voltage drop and quadruples resistive heating.",
+          "discussion": "No cable gauge, ampacity or protective-device approval is implied by these fictional resistance inputs."
+        }
+      },
+      {
+        "title": "Ampacity asks whether the conductor can carry the load",
+        "paragraphs": [
+          "Ampacity concerns allowable current under the actual installation conditions. Material, insulation, ambient temperature, bundling, raceway conditions and terminal temperature ratings can influence the result. The relevant correction method comes from the adopted requirements and equipment instructions. A catalog’s free-air rating may not describe a bundled run in a hot location.",
+          "Keep two worksheet lines: modeled loss and corrected ampacity. A conductor could meet a chosen loss target yet fail ampacity, or meet ampacity yet create unacceptable drop for equipment operation. The latter can cause undervoltage shutdown or inaccurate charging behavior. This separation also prevents a larger fuse from being chosen merely to stop nuisance trips without resolving the conductor and equipment limits."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Wiring Unlimited DC wiring",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/dc-wiring.html"
+          }
+        ]
+      },
+      {
+        "title": "Fault interruption is different from normal amperes",
+        "paragraphs": [
+          "A protective device’s normal current rating is not its interrupt capacity. Interrupt capacity concerns the fault current it can safely clear under its rated conditions. Battery sources can supply substantial fault current, including contribution from multiple parallel modules. A suitable ampere number with the wrong DC voltage or interrupt capability is not a suitable device.",
+          "DC arcs behave differently from AC interruption, so an AC-rated breaker cannot be assumed suitable for a DC battery circuit. Follow the device’s specified polarity and application conditions where relevant. Coordination considers sources, conductors, holders, terminal equipment and downstream devices. A BMS may limit or disconnect normal operation, but its presence does not universally remove the need for external source protection."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Wiring Unlimited DC wiring",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/dc-wiring.html"
+          },
+          {
+            "label": "Victron · Wiring Unlimited battery-bank wiring",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/battery-bank-wiring.html"
+          }
+        ]
+      },
+      {
+        "title": "PV-source protection has different source behavior",
+        "paragraphs": [
+          "A PV source and a battery source have different fault-current behavior. Parallel PV strings can feed a faulted branch, and correction rules can apply to source-current calculations. Protection requirements depend on the topology and receiving equipment, not simply on module nameplate watts. Review the maximum-series-fuse rating from the actual module instructions in context.",
+          "For the Trina teaching datasheet, the listed maximum series-fuse rating is 25 A. That is a module limit, not a universal recommendation to place a 25 A fuse on every string. Likewise a controller’s PV short-circuit-current allowance does not directly select a fuse. The designer must establish required protection and its coordination with corrected conductor ampacity and equipment ratings."
+        ],
+        "sources": [
+          {
+            "label": "Trina Solar · TSM-NEG9R.28 APAC EN 2024_D datasheet",
+            "url": "https://static.trinasolar.com/sites/default/files/DT-M-0043%20APAC%20EN%20I%20210RVertexS%2B_NEG9R.28_430-460%202024_D_web.pdf"
+          },
+          {
+            "label": "Victron · SmartSolar MPPT 150/60–250/70 specifications",
+            "url": "https://www.victronenergy.com/media/pg/Manual_SmartSolar_MPPT_150-60_up_to_250-70/en/technical-specifications.html"
+          }
+        ]
+      },
+      {
+        "title": "Disconnects and busbars are rated interfaces",
+        "paragraphs": [
+          "A disconnect must suit the DC voltage, current, duty, polarity if specified, and environment. A fuse holder is not automatically a load-break switch. A connector is not automatically a load-break disconnect. Identify the manufacturer’s intended function and operating restrictions instead of assuming anything removable can safely interrupt current.",
+          "A busbar combines current paths and termination requirements. Its rating, enclosure, accessible live parts and permissible lug arrangements matter. Count simultaneous incoming and outgoing currents and the load after a branch fails. A polished copper bar or a photograph cannot establish continuous thermal performance. Preserve model numbers and approved hardware rather than building a design around appearance."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Wiring Unlimited DC wiring",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/dc-wiring.html"
+          }
+        ]
+      },
+      {
+        "title": "Terminations can dominate a short circuit’s losses",
+        "paragraphs": [
+          "A short heavy cable can have low resistance while a poor termination adds a concentrated hot spot. Contact preparation, matching lugs, approved crimp tooling and specified torque are therefore part of electrical performance. More torque is not inherently better: over-tightening can damage the connection, while under-tightening can leave inadequate contact pressure.",
+          "For a fictional contact resistance of 1 milliohm at 100 A, heating is 100²×0.001 =10 W concentrated near the joint. The example is not a temperature prediction; cooling and geometry determine temperature. It shows why a cable loss calculation that ignores terminations can miss a significant issue. Use the equipment’s exact assembly requirements and appropriate inspection rather than treating cable cross-section as the whole answer."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Wiring Unlimited electrical theory",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/theory.html"
+          }
+        ]
+      },
+      {
+        "title": "Bonding, grounding and transfer arrangements",
+        "paragraphs": [
+          "Bonding connects required exposed conductive parts into the intended fault path. Grounding references a system to earth according to its design. Adding an earth rod does not automatically repair a missing equipment bonding connection. Module and racking bonding should use the evaluated combination of clamps, splices, lugs and hardware.",
+          "Neutral-to-ground behavior can change with service topology and inverter transfer design. A generic instruction to add or remove a neutral bond can be wrong for another system. The one-line diagram and equipment instructions must resolve it. Keep battery DC, PV DC and AC boundaries visible, and ask the designer how isolation, fault detection and protective devices behave in every supported operating state."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Wiring Unlimited grounding and electrical safety",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/ground,-earth-and-electrical-safety.html"
+          }
+        ],
+        "columns": [
+          "Check",
+          "Evidence to preserve"
+        ],
+        "rows": [
+          [
+            "Loss",
+            "Resistance, route length, current and voltage assumptions"
+          ],
+          [
+            "Ampacity",
+            "Applicable corrections and terminal limits"
+          ],
+          [
+            "Protection",
+            "Device voltage, amperes, interrupt rating and coordination"
+          ],
+          [
+            "Isolation",
+            "Disconnect duty, ratings, polarity and environment"
+          ],
+          [
+            "Bonding / grounding",
+            "Approved hardware and actual system arrangement"
+          ]
+        ]
+      },
+      {
+        "title": "Practice: interpret the number without approving the design",
+        "paragraphs": [
+          "A fictional continuous load is 40 A and a simplified exercise applies a 125% factor, giving 50 A. That arithmetic alone does not select a 50 A protective device. The applicable circuit rule may differ, and the device must still fit voltage, interrupt capacity, conductors, terminals and equipment. A calculator should state the factor as an assumption and report conflicts visibly.",
+          "Save the actual design, manufacturer instructions, assembly records and commissioning evidence. If a cable, battery count or inverter changes, revisit affected fault and current assumptions. A reversible parts substitution can have broad electrical consequences even when its connector fits. Good documentation makes that impact visible before the new component is energized."
+        ],
+        "sources": [],
+        "exercise": {
+          "question": "A fictional conductor path has 0.01 Ω resistance and carries 50 A. What are drop and resistive loss, and do they establish ampacity?",
+          "answer": "0.5 V drop and 25 W loss; neither establishes ampacity.",
+          "explanation": "ΔV =50×0.01. Loss =50²×0.01. Permissible current under actual thermal and installation conditions is a separate check."
+        }
+      }
+    ]
+  },
+  "connectors-and-terminations": {
+    "reviewed": "2026-10-05",
+    "outcome": "Specify a traceable connector and termination assembly, distinguish mating approval from shape, and understand why small contact errors create concentrated heat.",
+    "sources": [
+      {
+        "label": "Stäubli · PV connector cross-connection statement",
+        "url": "https://www.staubli.com/global/en/electrical-connectors/industries/renewable-energy/cross-connection.html"
+      },
+      {
+        "label": "Stäubli · MC4 intermateability matrix, April 2024",
+        "url": "https://www.staubli.com/content/dam/ecs/pictures/solar-photovoltaics/Staubli-MC4-%20Intermateability-en-20240404.pdf"
+      },
+      {
+        "label": "Stäubli · MC4-Evo 2 MA298 assembly instructions",
+        "url": "https://www.staubli.com/content/dam/spot/PV_MA298-en.pdf"
+      },
+      {
+        "label": "Victron · Wiring Unlimited electrical theory",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/theory.html"
+      },
+      {
+        "label": "Victron · Wiring Unlimited DC wiring",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/dc-wiring.html"
+      },
+      {
+        "label": "Trina Solar · TSM-NEG9R.28 APAC EN 2024_D datasheet",
+        "url": "https://static.trinasolar.com/sites/default/files/DT-M-0043%20APAC%20EN%20I%20210RVertexS%2B_NEG9R.28_430-460%202024_D_web.pdf"
+      }
+    ],
+    "sections": [
+      {
+        "title": "A connection is a complete assembly",
+        "paragraphs": [
+          "A PV connection includes a cable, metal contact, housing, seal, mating counterpart and the process used to assemble them. A battery termination includes conductor, lug, crimp, terminal surface and fastening hardware. Each interface can have its own compatibility and rating conditions. Buying a familiar-looking plastic body or copper lug is only part of the task.",
+          "Start by recording the exact component identifiers and approved combination. Manufacturer documentation should cover the cable cross-section and diameter, contact type, tooling and mating arrangement. A seller’s 'compatible' label is weaker evidence than an applicable approval. This chapter teaches procurement and inspection questions; the product’s full instructions and qualified personnel govern assembly and service."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Wiring Unlimited DC wiring",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/dc-wiring.html"
+          }
+        ],
+        "figures": [
+          {
+            "diagram": "module-anatomy",
+            "caption": "The module’s rear junction box and external connection are part of a wider assembly. Record the actual supplied connector family rather than inferring it from the module’s appearance.",
+            "alt": "Conceptual module layers with rear junction box and bypass-diode labeling."
+          }
+        ]
+      },
+      {
+        "title": "MC4 is a product family, not a universal shape",
+        "paragraphs": [
+          "MC4 and MC4-Evo are Stäubli trademarks. Their familiar external form is frequently used as shorthand for PV connectors, which can obscure different manufacturers and product families. Two connector halves may physically engage without a documented electrical, mechanical or environmental approval for the pair.",
+          "Stäubli’s cross-connection statement rejects treating another brand’s shape or a claimed 'MC4-compatible' description as permission to mate it with Stäubli products. The relevant question is the exact permitted pair. Its intermateability matrix also shows why the nuanced answer is documentation-based: particular pairings within the manufacturer’s families can have stated approvals, rather than every connector being either universally interchangeable or universally incompatible."
+        ],
+        "sources": [
+          {
+            "label": "Stäubli · PV connector cross-connection statement",
+            "url": "https://www.staubli.com/global/en/electrical-connectors/industries/renewable-energy/cross-connection.html"
+          },
+          {
+            "label": "Stäubli · MC4 intermateability matrix, April 2024",
+            "url": "https://www.staubli.com/content/dam/ecs/pictures/solar-photovoltaics/Staubli-MC4-%20Intermateability-en-20240404.pdf"
+          }
+        ]
+      },
+      {
+        "title": "Identify what the module actually ships with",
+        "paragraphs": [
+          "The Trina TSM-NEG9R.28 APAC EN 2024_D datasheet lists TS4 Plus/TS4 connectors. That does not mean every regional or ordered variant has that same connector, nor that an MC4 extension can be selected by appearance. Confirm the delivered module’s label, supplied connector identification and order configuration before procuring extension leads.",
+          "If an interface needs to change, use a documented manufacturer-approved solution and qualified installation process. Cutting off factory connectors can affect warranty and certification conditions; an arbitrary adapter creates another connection whose ratings must be checked. Save an interface schedule listing module output, extension lead, branch connector and receiving device. This makes mismatches easier to catch before installation."
+        ],
+        "sources": [
+          {
+            "label": "Trina Solar · TSM-NEG9R.28 APAC EN 2024_D datasheet",
+            "url": "https://static.trinasolar.com/sites/default/files/DT-M-0043%20APAC%20EN%20I%20210RVertexS%2B_NEG9R.28_430-460%202024_D_web.pdf"
+          }
+        ]
+      },
+      {
+        "title": "Cable compatibility has two dimensions",
+        "paragraphs": [
+          "Conductor cross-section affects the contact/crimp fit, while the insulated cable’s outside diameter affects the seal and housing. The same nominal cross-section can appear with different insulation thicknesses and conductor construction. A cable that fits through the housing can still be outside the approved range. Conversely a rated contact can be paired with an unsuitable seal.",
+          "Stäubli MA298 provides configuration-specific assembly requirements for MC4-Evo 2 components. Use the relevant revision and exact part variant; do not borrow stripping lengths, crimp settings or torque from another connector. The educational takeaway is to specify the approved cable and complete contact/body/seal assembly, not to reproduce a generic field-assembly recipe that hides product variation."
+        ],
+        "sources": [
+          {
+            "label": "Stäubli · MC4-Evo 2 MA298 assembly instructions",
+            "url": "https://www.staubli.com/content/dam/spot/PV_MA298-en.pdf"
+          }
+        ],
+        "columns": [
+          "Assembly field",
+          "Why it matters"
+        ],
+        "rows": [
+          [
+            "Cable conductor size and construction",
+            "Contact and crimp suitability"
+          ],
+          [
+            "Insulated outside diameter",
+            "Seal range and environmental protection"
+          ],
+          [
+            "Contact part number",
+            "Electrical interface and permitted tooling"
+          ],
+          [
+            "Housing / seal variant",
+            "Cable fit and mating arrangement"
+          ],
+          [
+            "Counterpart identifier",
+            "Documented mating approval"
+          ],
+          [
+            "Tool and process revision",
+            "Repeatable assembly and inspection"
+          ]
+        ]
+      },
+      {
+        "title": "Resistance is small until current squares it",
+        "paragraphs": [
+          "A connection may add only milliohms, yet the heating is concentrated in a small volume. Resistive loss is I²R. As current rises, heating rises with its square. This explains why an imperfect connection can be a thermal problem even when the whole array’s voltage-drop percentage looks acceptable.",
+          "Use a fictional comparison at 12 A. A 1 milliohm contact dissipates 0.144 W; a degraded 20 milliohm contact dissipates 2.88 W, twenty times as much. At 24 A, the latter would dissipate 11.52 W. These calculations do not predict connector temperature or establish a threshold; geometry and cooling matter. They demonstrate why connection quality and permitted current are inseparable."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Wiring Unlimited electrical theory",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/theory.html"
+          }
+        ],
+        "workedExample": {
+          "title": "A milliohm problem at the contact",
+          "givens": [
+            "Fictional contact resistances 0.001 Ω and 0.020 Ω",
+            "Compare 12 A and 24 A"
+          ],
+          "steps": [
+            "At 12 A and0.001 Ω: loss=12²×0.001=0.144 W.",
+            "At 12 A and0.020 Ω: loss=2.88 W.",
+            "At 24 A and0.020 Ω: loss=11.52 W."
+          ],
+          "result": "Doubling current quadruples heating in the same hypothetical resistive contact.",
+          "discussion": "This is a physics exercise, not an acceptable-contact-resistance specification or a temperature prediction."
+        }
+      },
+      {
+        "title": "Tooling and process create repeatability",
+        "paragraphs": [
+          "The metal crimp, contact retention and sealing system each need the approved tools and checks. A contact squeezed until it looks tight is not necessarily a documented crimp. Similarly, a generic ratcheting tool may not have the right die geometry for the selected contact. Tooling, calibration or condition, and installer training belong in the quality plan.",
+          "Ask the supplier or installer for the applicable assembly instruction, compatible tool identification and inspection record. Avoid inventing universal torque values or stripping lengths in a purchasing guide. For battery lugs, the equipment’s terminal hardware and fastening requirements also matter. A reusable assembly record is more valuable than a photograph that cannot reveal internal crimp quality."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Wiring Unlimited DC wiring",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/dc-wiring.html"
+          },
+          {
+            "label": "Stäubli · MC4-Evo 2 MA298 assembly instructions",
+            "url": "https://www.staubli.com/content/dam/spot/PV_MA298-en.pdf"
+          }
+        ]
+      },
+      {
+        "title": "Environmental sealing is conditional",
+        "paragraphs": [
+          "An environmental rating applies to specified conditions, often including correct cable seals and fully mated assemblies. It is not permission to leave an unmated connector in water or contamination. Routing and strain can also affect the interface. The manufacturer’s cable-management and environmental instructions must be followed for the selected parts.",
+          "MA298 emphasizes protecting unmated connectors and avoiding contaminated or damaged components. Do not assume dust, moisture or an imperfect seal is corrected by pushing harder. Keep the assembly clean and traceable through transport and installation, and use the specified protective accessories. An external enclosure rating on a junction box does not extend automatically to every added adapter or field-made lead."
+        ],
+        "sources": [
+          {
+            "label": "Stäubli · MC4-Evo 2 MA298 assembly instructions",
+            "url": "https://www.staubli.com/content/dam/spot/PV_MA298-en.pdf"
+          }
+        ]
+      },
+      {
+        "title": "A connector is not necessarily a switching device",
+        "paragraphs": [
+          "PV connectors and battery terminations can remain energized under conditions that are not obvious from a dashboard. A PV source can produce voltage in light even when the inverter is off. Disconnecting a connector under load can create an arc; a locking feature does not make it a load-break switch.",
+          "Follow the complete manufacturer isolation and service procedure through qualified personnel. This chapter does not give a live-disconnection sequence or suggest probing exposed contacts. For purchasing, identify which component is the approved disconnect and which is a fixed mating interface. That distinction prevents an owner from assuming a removable connection is intended as the normal operating switch."
+        ],
+        "sources": [
+          {
+            "label": "Stäubli · MC4-Evo 2 MA298 assembly instructions",
+            "url": "https://www.staubli.com/content/dam/spot/PV_MA298-en.pdf"
+          },
+          {
+            "label": "Victron · Wiring Unlimited DC wiring",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/dc-wiring.html"
+          }
+        ]
+      },
+      {
+        "title": "Battery lugs: a different interface, the same discipline",
+        "paragraphs": [
+          "Match lug conductor size and stud hole to the intended cable and equipment. Copper appearance, hole fit and a broad 'high current' claim do not establish the whole assembly’s suitability. Equipment terminal material, hardware stack, current and thermal limits matter. Use approved fastening and crimp requirements for the actual system.",
+          "A fictional 1 milliohm termination at 100 A dissipates 10 W. That illustrates why a battery joint can become a concentrated loss point even beside a short large conductor. More tightening is not inherently safer: over-tightening can damage the fastening or terminal. The specified torque and hardware arrangement aim for the correct mechanical contact, not the maximum force an installer can apply."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Wiring Unlimited electrical theory",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/theory.html"
+          },
+          {
+            "label": "Victron · Wiring Unlimited DC wiring",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/dc-wiring.html"
+          }
+        ],
+        "bullets": [
+          "Keep connector and lug model identifiers in the bill of materials.",
+          "Require documented mating and cable compatibility.",
+          "Record tooling and the applicable assembly instructions.",
+          "Inspect damage, contamination and cable strain using the specified method.",
+          "Use the approved disconnect rather than treating a connector as a switch."
+        ]
+      },
+      {
+        "title": "Practice: audit an extension lead",
+        "paragraphs": [
+          "A seller offers an extension labeled 'MC4 compatible, 30 A.' Your module’s order documentation says TS4 Plus, and the lead provides no cable-diameter or counterpart details. The stated amperes do not resolve mating approval, seal compatibility or the complete rating conditions. Ask for exact manufacturer and part numbers, approved cable data and the relevant assembly documentation.",
+          "An interface schedule can then show a supported connection or mark it unresolved. Do not treat unresolved fields as approval simply because other shoppers report that the pieces fit. Visual engagement can prove mechanical insertion in one instance; it does not establish long-term electrical or environmental performance. The review should be reproducible from documents rather than anecdote."
+        ],
+        "sources": [],
+        "exercise": {
+          "question": "A fictional contact has resistance 5 milliohms and carries 20 A. What heat does the simple model predict, and does a matching shape establish mating approval?",
+          "answer": "2 W; matching shape does not establish mating approval.",
+          "explanation": "20²×0.005 =2 W. Approved counterpart, cable, contact, seal, tools and rating conditions are separate evidence."
+        }
+      }
+    ]
+  },
+  "permits-and-inspection": {
+    "reviewed": "2026-10-05",
+    "outcome": "Map permitting, utility interconnection, inspection and commissioning as separate milestones, and prepare a traceable owner handover record.",
+    "sources": [
+      {
+        "label": "DOE · Permitting and inspection for rooftop solar",
+        "url": "https://www.energy.gov/cmei/systems/permitting-and-inspection-rooftop-solar"
+      },
+      {
+        "label": "DOE · Homeowner’s guide to solar",
+        "url": "https://www.energy.gov/cmei/systems/homeowners-guide-solar"
+      },
+      {
+        "label": "DOE · Consumer solar installation process",
+        "url": "https://www.energy.gov/cmei/systems/articles/walk-me-through-it-step-step-guide-consumers-going-solar"
+      },
+      {
+        "label": "SolarAPP+ · Site-specific field inspections",
+        "url": "https://help.gosolarapp.org/article/51-how-do-inspections-work-if-no-planset-is-submitted"
+      },
+      {
+        "label": "SolarAPP+ · Inspector checklist access",
+        "url": "https://help.gosolarapp.org/article/57-how-do-inspectors-access-the-inspection-checklist"
+      },
+      {
+        "label": "Victron · Wiring Unlimited grounding and electrical safety",
+        "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/ground,-earth-and-electrical-safety.html"
+      },
+      {
+        "label": "Trina Solar · TSM-NEG9R.28 APAC EN 2024_D datasheet",
+        "url": "https://static.trinasolar.com/sites/default/files/DT-M-0043%20APAC%20EN%20I%20210RVertexS%2B_NEG9R.28_430-460%202024_D_web.pdf"
+      },
+      {
+        "label": "Victron · Lithium NG 51.2 V/100 Ah technical data",
+        "url": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_51%2C2_V/en/technical-data.html"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Approval is a sequence of evidence",
+        "paragraphs": [
+          "A solar-plus-storage project moves through design, permits, installation, inspection, utility processes where applicable, commissioning and owner handover. Each stage answers a different question. A permit accepts a proposed configuration under a process; an inspection checks relevant installed conditions; commissioning verifies specified behavior; utility permission governs interconnection or operation as required.",
+          "Record the milestones and responsible parties before ordering major equipment. The relevant authority having jurisdiction, utility and adopted standards depend on the site. This chapter is a project-management and documentation guide, not a legal determination or a substitute for local design review. Do not treat a generic national checklist as the final requirements for a particular address."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Permitting and inspection for rooftop solar",
+            "url": "https://www.energy.gov/cmei/systems/permitting-and-inspection-rooftop-solar"
+          },
+          {
+            "label": "DOE · Consumer solar installation process",
+            "url": "https://www.energy.gov/cmei/systems/articles/walk-me-through-it-step-step-guide-consumers-going-solar"
+          }
+        ],
+        "figures": [
+          {
+            "diagram": "commissioning",
+            "caption": "Design records, equipment identity, inspection and functional checks build a handover evidence chain. No single stage proves every other stage complete.",
+            "alt": "Commissioning evidence steps from documentation and inspection through functional checks to owner handover."
+          }
+        ]
+      },
+      {
+        "title": "Find the actual authorities and requirements",
+        "paragraphs": [
+          "Identify the local building and electrical permitting authority, utility interconnection contact and any additional site constraints. The adopted electrical, building and fire requirements may use different editions or amendments. Storage can trigger additional considerations beyond a PV-only project. Ask what submittal route applies and who is responsible for providing the evidence.",
+          "Keep a requirements register with source, date checked, applicable equipment and unresolved questions. A contractor’s experience in a neighboring town can be useful but does not establish this jurisdiction’s exact process. Similarly, a web article’s description of common practice cannot guarantee your site is eligible for a streamlined route. Confirm directly through current official project channels."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Homeowner’s guide to solar",
+            "url": "https://www.energy.gov/cmei/systems/homeowners-guide-solar"
+          }
+        ],
+        "columns": [
+          "Party / process",
+          "Question to resolve"
+        ],
+        "rows": [
+          [
+            "Local permitting authority",
+            "Which permits, adopted editions and submission route apply?"
+          ],
+          [
+            "Utility",
+            "What interconnection and operating permission is required?"
+          ],
+          [
+            "Designer / installer",
+            "Who owns calculations, drawings and revisions?"
+          ],
+          [
+            "Equipment supplier",
+            "Which exact models, approvals and manuals apply?"
+          ],
+          [
+            "Owner",
+            "What service objective, access and handover are required?"
+          ]
+        ]
+      },
+      {
+        "title": "The plan set is a controlled configuration",
+        "paragraphs": [
+          "The equipment schedule, electrical one-line, array layout and structural information should describe the same project. Model numbers, battery counts, tracker allocation and transfer topology must agree across documents. A plan set that lists one inverter while the quote lists another is an unresolved design discrepancy, not harmless paperwork.",
+          "Use revision identifiers and preserve superseded drawings so changes are visible. Record the basis for module cold voltage, current corrections, conductor/protection choices and mounting loads through the qualified design process. The owner should understand which configuration is being approved, while technical construction details remain in the responsible designer’s documents. This makes later substitutions and inspections easier to reconcile."
+        ],
+        "sources": [
+          {
+            "label": "SolarAPP+ · Site-specific field inspections",
+            "url": "https://help.gosolarapp.org/article/51-how-do-inspections-work-if-no-planset-is-submitted"
+          }
+        ]
+      },
+      {
+        "title": "Module and storage certificates have boundaries",
+        "paragraphs": [
+          "A module datasheet can list standards or test claims, but their scope and the approved installation still matter. A mechanical test load is not automatically a site-specific allowable roof pressure. Module/racking compatibility, clamp zones, attachment and structural load paths require the proper manufacturer and design evidence.",
+          "Battery documentation can distinguish cell-level testing, battery certification and complete-system approval. The Victron NG teaching data illustrates why wording matters: some entries may be marked pending, and a listed combination may depend on the named BMS. Do not convert a pending test into a certification or assume a cell test approves any assembled home-storage system. Ask for the evidence acceptable to the actual authority."
+        ],
+        "sources": [
+          {
+            "label": "Trina Solar · TSM-NEG9R.28 APAC EN 2024_D datasheet",
+            "url": "https://static.trinasolar.com/sites/default/files/DT-M-0043%20APAC%20EN%20I%20210RVertexS%2B_NEG9R.28_430-460%202024_D_web.pdf"
+          },
+          {
+            "label": "Victron · Lithium NG 51.2 V/100 Ah technical data",
+            "url": "https://www.victronenergy.com/media/pg/Lithium_NG_battery_51%2C2_V/en/technical-data.html"
+          }
+        ]
+      },
+      {
+        "title": "Streamlined permitting still leads to field inspection",
+        "paragraphs": [
+          "DOE describes SolarAPP+ as a platform that can automate eligible solar and solar-plus-storage permitting for participating authorities. Eligibility, project scope and local adoption matter. Streamlining a plan review does not remove the need to install the approved configuration or pass the relevant inspection process.",
+          "SolarAPP+ guidance describes project-specific inspection checklists and how inspectors access them. The useful principle is that installed equipment and values are compared with the accepted project record. Whether the project uses a traditional plan set or an eligible automated route, substitutions must be handled through the applicable revision process. An automatically generated approval is not permission to install arbitrary equipment."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Permitting and inspection for rooftop solar",
+            "url": "https://www.energy.gov/cmei/systems/permitting-and-inspection-rooftop-solar"
+          },
+          {
+            "label": "SolarAPP+ · Site-specific field inspections",
+            "url": "https://help.gosolarapp.org/article/51-how-do-inspections-work-if-no-planset-is-submitted"
+          },
+          {
+            "label": "SolarAPP+ · Inspector checklist access",
+            "url": "https://help.gosolarapp.org/article/57-how-do-inspectors-access-the-inspection-checklist"
+          }
+        ]
+      },
+      {
+        "title": "Worked example: a substitution creates linked questions",
+        "paragraphs": [
+          "Take a hypothetical approved array with two modules per series string and four parallel strings on a specified tracker. Before delivery, the supplier proposes a different 440 W model. Its wattage is identical, but its Voc, Isc, dimensions and connector family differ. The substitute cannot be treated as equivalent merely because total watts remain unchanged.",
+          "The review must check cold voltage, tracker/connector current, mounting fit, bonding, labeling and any certification or approval changes. If the accepted design changes, the responsible party should determine the required revision and resubmission route. This example organizes review scope; it does not decide whether a particular authority allows the substitution without a revised permit."
+        ],
+        "sources": [],
+        "workedExample": {
+          "title": "A same-wattage replacement is a configuration change",
+          "givens": [
+            "Hypothetical approved 2S4P array",
+            "Original and proposed modules both rated 440 W",
+            "Different Voc, Isc, dimensions and connector family"
+          ],
+          "steps": [
+            "Compare the exact delivered model with the approved equipment schedule.",
+            "Recalculate affected electrical limits and review mechanical/connection compatibility.",
+            "Ask the responsible designer and authority which document revision and approval steps apply.",
+            "Keep the final accepted revision with delivery and inspection records."
+          ],
+          "result": "Identical watts do not establish an interchangeable module.",
+          "discussion": "The actual revision requirement depends on the authority, approved plan and equipment change."
+        }
+      },
+      {
+        "title": "Inspection and commissioning ask different questions",
+        "paragraphs": [
+          "Inspection can check the installation against applicable requirements and accepted documents. Commissioning adds functional evidence: correct equipment identity, supported settings, communication, monitoring and operation under the planned states. A passed inspection is valuable, but it is not a complete runtime test of every backup scenario or a guarantee of annual production.",
+          "Define commissioning acceptance criteria before installation. For a backup project, they can include the manufacturer-approved outage, recovery and load-service behavior under controlled conditions. For monitoring, verify consistent measurement boundaries and alarm delivery. Qualified personnel should perform electrical and functional tests under the relevant procedures. An owner should receive the results and unresolved issues, rather than only a screenshot of a green dashboard."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Wiring Unlimited grounding and electrical safety",
+            "url": "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/ground,-earth-and-electrical-safety.html"
+          }
+        ]
+      },
+      {
+        "title": "Utility permission is its own milestone",
+        "paragraphs": [
+          "The utility interconnection process can include application, review, metering or settings and permission to operate. The details vary. A system may be physically complete while that permission remains outstanding. Make the quote and schedule clear about who submits documents, follows up and resolves utility-required changes.",
+          "For non-export or backup arrangements, do not assume that blocking export eliminates every utility or local approval requirement. The actual configuration and governing process determine the answer. Keep exported-power controls, accepted utility parameters and operating instructions in the handover record where applicable. A local inspection certificate and utility permission should be recorded separately so neither is accidentally presented as the other."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Consumer solar installation process",
+            "url": "https://www.energy.gov/cmei/systems/articles/walk-me-through-it-step-step-guide-consumers-going-solar"
+          }
+        ]
+      },
+      {
+        "title": "Owner handover preserves the project’s meaning",
+        "paragraphs": [
+          "Request the final equipment schedule, serial numbers, approved drawings, permits, inspection records, operating permission if required, manuals, warranty documents and commissioning results. Include contact details for service responsibility and the supported shutdown/recovery instructions prepared for the owner. The owner should know which alarms require action and how to obtain qualified support.",
+          "Save configuration and monitoring access using appropriate secure methods; do not put passwords or secret keys into a public guide or repository. Record what works locally without cloud service. If the system is sold with the property, transferability of warranty and monitoring accounts should be addressed. A thorough handover turns a completed installation into an understandable maintainable asset."
+        ],
+        "sources": [
+          {
+            "label": "DOE · Homeowner’s guide to solar",
+            "url": "https://www.energy.gov/cmei/systems/homeowners-guide-solar"
+          }
+        ],
+        "bullets": [
+          "Final accepted drawings and exact equipment identities.",
+          "Permit, inspection and utility milestones recorded separately.",
+          "Manufacturer manuals, warranty terms and service contacts.",
+          "Commissioning results, approved settings and unresolved limitations.",
+          "Owner instructions for supported operation and recovery."
+        ]
+      },
+      {
+        "title": "Practice: build an evidence matrix",
+        "paragraphs": [
+          "For each promised outcome, write the evidence needed to establish it. 'Panels installed' may be supported by delivery and inspection records; 'backup keeps the refrigerator running' requires appropriate architecture and functional evidence; 'grid export enabled' needs the applicable utility acceptance and settings. A single completed checkbox cannot prove all three.",
+          "A hypothetical project has a permit, installed equipment and an inverter reporting production, but no recorded final inspection or utility operating permission. Report the known milestones honestly and identify the missing records. Do not call it fully approved from the production display alone. The same discipline applies to maintenance changes: an equipment replacement should be compared with the accepted configuration and documented through the responsible process."
+        ],
+        "sources": [],
+        "exercise": {
+          "question": "Does a passed building/electrical inspection automatically prove utility permission to operate and successful empty-battery recovery?",
+          "answer": "No. Utility authorization and the relevant functional recovery test are separate evidence.",
+          "explanation": "Inspection, interconnection and commissioning address different requirements. Keep each milestone and its supporting record visible."
+        }
+      }
+    ]
+  }
+}

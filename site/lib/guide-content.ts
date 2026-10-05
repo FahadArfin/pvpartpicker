@@ -2,8 +2,13 @@ import foundations from '../data/guide-foundations.json';
 import solar4u from '../data/guide-solar4u.json';
 import {extendedLessons} from './guide-lessons';
 import {researchedGuides} from './guide-research';
+import textbookFoundations from '../data/guide-textbook-foundations.json';
+import textbookEquipment from '../data/guide-textbook-equipment.json';
+import textbookInstallation from '../data/guide-textbook-installation.json';
+import {newTextbookChapters} from './guide-textbook-new';
 export type Source={label:string,url:string};
-export type GuideSection={title:string,paragraphs?:string[],bullets?:string[],steps?:string[],callout?:string,formula?:string,columns?:string[],rows?:string[][],sources?:Source[]};
+export type GuideFigure={diagram:string,caption:string,alt:string};
+export type GuideSection={title:string,paragraphs?:string[],bullets?:string[],steps?:string[],callout?:string,formula?:string,columns?:string[],rows?:string[][],sources?:Source[],figures?:GuideFigure[],workedExample?:{title:string,givens?:string[],steps:string[],result:string,discussion?:string},exercise?:{question:string,answer:string,explanation:string}};
 export type GuideArticle={slug:string,title:string,topic:string,level:'Beginner'|'Experienced'|'All levels',kind:'Guide'|'News & analysis',summary:string,outcome?:string,reviewed:string,eventDate?:string,origin?:string,image?:string,adaptedFrom?:{project:string,commit:string,paths:string[],chapter:string,imported:string,referenceReviewed:string},sections:GuideSection[],sources:Source[],tool?:{label:string,href:string},quiz?:{question:string,options:string[],answer:number,explanation:string}};
 const source=(label:string,url:string):Source=>({label,url});
 const wiring=source('Victron · DC wiring and protection','https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/dc-wiring.html');
@@ -59,7 +64,7 @@ const advanced:GuideArticle[]=[
 ];
 const briefing=(slug:string,title:string,topic:string,summary:string,sources:Source[],eventDate:string|undefined,sections:GuideSection[]):GuideArticle=>({slug,title,topic,summary,sources,eventDate,sections,level:'All levels',kind:'News & analysis',reviewed:'2026-10-04',origin:'PVPartPicker editorial briefing. Facts are attributed; implications and buying questions are our analysis.'});
 const news:GuideArticle[]=[
- briefing('china-export-rebates','China’s solar export rebates changed in 2026. What should a buyer watch?', 'Policy & geopolitics','Separate an exporter tax-policy change from a retailer price forecast, and compare delivered offers.',[china],'2026-01-09',[
+ briefing('china-export-rebates','China’s solar export rebates changed in 2026. What should a buyer watch?', 'Policy & geopolitics','Separate an exporter tax-policy change from a retailer price forecast, and compare delivered offers.',[china],'2026-01-08',[
  {title:'What the official notice says',paragraphs:['Announcement 2026 No. 2 was dated January 8 and published January 9. It removes VAT export rebates for the listed photovoltaic products from April 1, 2026. For listed battery products, the rebate falls from 9% to 6% during April–December 2026 and is scheduled to end January 1, 2027. The annex lists and export declaration date determine applicability. This is a paraphrase of the official Chinese notice, not customs advice.'],sources:[china]},
  {title:'Our analysis: policy is one input to landed cost',paragraphs:['A rebate reduction does not mathematically require an identical percentage increase at your checkout. Inventory purchased earlier, supplier margins, exchange rates, shipping, destination duties and retailer competition can change how costs are passed through. A fixed retail-price prediction would need evidence from actual offers.','Compare the same regional model and package quantity over time. Separate observed prices from policy forecasts. A cheap overseas quote can omit transport, destination charges, warranty logistics or a local compliance requirement; a domestic warehouse offer can reflect older landed inventory.']},
  {title:'Practical buying questions',bullets:['Is stock already in a domestic warehouse, or is the order importing new supply?','Which delivery charges and import responsibilities are included in the written quote?','How long is the price valid, and who covers damage or warranty return freight?','Does a change on the history chart reflect the same model and package size?']},
@@ -92,7 +97,9 @@ const news:GuideArticle[]=[
 ];
 const curriculumTopics=['Foundations','Site and sunlight','Panels & technology','System design','Batteries & backup','Inverters & backup','Electrical design','Placement','Buying and ownership','Operation & maintenance'];
 const firstChapters=['solar-energy-path','electrical-language','component-map','load-audit'];
-export const guideArticles:GuideArticle[]=[...(foundations as GuideArticle[]),...advanced,...solar4u as GuideArticle[],...researchedGuides,...news].map(a=>({...a,sections:extendedLessons[a.slug]?[...a.sections.slice(0,-2),...extendedLessons[a.slug],...a.sections.slice(-2)]:a.sections})).sort((a,b)=>{
+type TextbookExpansion=Pick<GuideArticle,'sections'|'sources'|'outcome'|'reviewed'>;
+const textbook:Record<string,TextbookExpansion>={...textbookFoundations,...textbookEquipment,...textbookInstallation} as Record<string,TextbookExpansion>;
+export const guideArticles:GuideArticle[]=[...(foundations as GuideArticle[]),...advanced,...solar4u as GuideArticle[],...researchedGuides,...newTextbookChapters,...news].map(a=>textbook[a.slug]?{...a,...textbook[a.slug],origin:"Original PVPartPicker expanded teaching material, informed by the cited manufacturer, research and public-agency references. Worked examples state their assumptions.",image:undefined,quiz:undefined}:{...a,sections:extendedLessons[a.slug]?[...a.sections.slice(0,-2),...extendedLessons[a.slug],...a.sections.slice(-2)]:a.sections}).sort((a,b)=>{
  if(a.kind!==b.kind)return a.kind==='Guide'?-1:1;
  if(a.kind!=='Guide')return 0;
  const topic=curriculumTopics.indexOf(a.topic)-curriculumTopics.indexOf(b.topic);
@@ -101,6 +108,7 @@ export const guideArticles:GuideArticle[]=[...(foundations as GuideArticle[]),..
  return 0;
 });
 export const sectionId=(n:number)=>`section-${n+1}`;
-export function readMinutes(a:GuideArticle){return Math.max(3,Math.ceil(JSON.stringify(a.sections).split(/\s+/).length/180));}
+export function guideWordCount(a:Pick<GuideArticle,'sections'>){return a.sections.flatMap(s=>[s.title,...(s.paragraphs??[]),...(s.bullets??[]),...(s.steps??[]),s.callout??'',s.formula??'',...(s.rows?.flat()??[]),...(s.figures?.map(f=>f.caption)??[]),s.workedExample?.title??'',...(s.workedExample?.givens??[]),...(s.workedExample?.steps??[]),s.workedExample?.result??'',s.workedExample?.discussion??'',s.exercise?.question??'',s.exercise?.answer??'',s.exercise?.explanation??'']).join(' ').trim().split(/\s+/).filter(Boolean).length;}
+export function readMinutes(a:GuideArticle){return Math.max(3,Math.ceil(guideWordCount(a)/180));}
 export type GuideEntry=Pick<GuideArticle,'slug'|'title'|'topic'|'level'|'kind'|'summary'|'reviewed'|'eventDate'>&{minutes:number};
 export const guideEntries:GuideEntry[]=guideArticles.map(({slug,title,topic,level,kind,summary,reviewed,eventDate,...rest})=>({slug,title,topic,level,kind,summary,reviewed,eventDate,minutes:readMinutes({slug,title,topic,level,kind,summary,reviewed,...rest})}));

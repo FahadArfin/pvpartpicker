@@ -1,0 +1,56 @@
+[
+  {
+    "id": "santan-solar-tsm-425ne09rc-05-n",
+    "name": "Trina 425 W module",
+    "caption": "A catalog example of a rigid module. It is not the 440 W datasheet example used in this lesson.",
+    "articles": [
+      "module-datasheet",
+      "panel-technology",
+      "panels-and-strings",
+      "roof-mounting"
+    ],
+    "image": "https://www.santansolar.com/wp-content/uploads/ChatGPT-Image-Jun-9-2026-03_59_10-PM.png",
+    "sourceUrl": "https://www.santansolar.com/product/trina-425w-black-bifacial-144-half-cell-solar-panel/",
+    "credit": "SanTan Solar"
+  },
+  {
+    "id": "eg4-6000xp",
+    "name": "EG4 6000XP",
+    "caption": "A separate inverter/charger illustrates why battery energy and inverter output must be specified independently.",
+    "articles": [
+      "inverter-architectures",
+      "equipment-compatibility",
+      "ac-dc-coupling"
+    ],
+    "image": "https://cdn11.bigcommerce.com/s-bi8c0htqsn/products/3698/images/4079/6000XP00010_1_updatedwhite__32468.1758054079.386.513.jpg?c=1",
+    "sourceUrl": "https://signaturesolar.com/eg4-6000xp-off-grid-inverter-split-phase/",
+    "credit": "Signature Solar"
+  },
+  {
+    "id": "shopsolar-44718464598156",
+    "name": "Anker SOLIX C2000 Gen 2",
+    "caption": "An integrated station packages storage and conversion together. Check the exact regional manual and included bundle.",
+    "articles": [
+      "all-in-one-buying-guide",
+      "battery-backup",
+      "battery-chemistry"
+    ],
+    "image": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/Screenshot_2026-07-06_at_11.36.23_AM.png?v=1783364899",
+    "sourceUrl": "https://shopsolarkits.com/products/anker-solix-c2000-gen-2-portable-power-station?variant=44718464598156",
+    "credit": "ShopSolar"
+  },
+  {
+    "id": "emporia-46101868642559",
+    "name": "Emporia Vue 3 with flexible sensors",
+    "caption": "A monitoring example: sensor placement defines what is measured. Installation and circuit compatibility require the manufacturer instructions.",
+    "articles": [
+      "battery-monitoring",
+      "handover-and-monitoring",
+      "read-production-and-battery-logs",
+      "flexible-loads-and-ev"
+    ],
+    "image": "https://cdn.shopify.com/s/files/1/0311/1151/2109/files/Vue_3_with_Rogowskis-03.png?v=1725554157",
+    "sourceUrl": "https://shop.emporiaenergy.com/products/vue-3-with-flexible-sensors?variant=46101868642559",
+    "credit": "Emporia Energy"
+  }
+]

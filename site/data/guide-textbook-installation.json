@@ -1,0 +1,2264 @@
+{
+  "roof-mounting": {
+    "reviewed": "2026-10-05",
+    "outcome": "Explain a rooftop array's structural, weatherproofing, electrical and access interfaces, and prepare a roof proposal whose unresolved approvals are explicit.",
+    "sources": [
+      {
+        "label": "IronRidge · XR Flush Mount installation manual, version 5.2 (2026)",
+        "url": "https://files.ironridge.com/pitched-roof-mounting/resources/brochures/IronRidge_Flush_Mount_Installation_Manual.pdf"
+      },
+      {
+        "label": "S-5! · Clamp-to-seam identification and tested load results",
+        "url": "https://clamptoseam.s-5.com/results/"
+      },
+      {
+        "label": "DOE · Permitting and inspection for rooftop solar",
+        "url": "https://www.energy.gov/cmei/systems/permitting-and-inspection-rooftop-solar"
+      },
+      {
+        "label": "OSHA · Solar energy fall hazards (United States)",
+        "url": "https://www.osha.gov/green-jobs/solar/falls"
+      }
+    ],
+    "sections": [
+      {
+        "title": "A rooftop array is a chain of interfaces",
+        "paragraphs": [
+          "The module rectangle is the visible part of a rooftop system. Its support begins at an approved interface on the module frame, continues through clamps or direct attachments into rails or other members, and then through the roof attachment into the building. Each link must resist the forces passed to it. A strong rail cannot compensate for an attachment that misses its intended structural member, and a well-fastened attachment cannot rescue a module supported outside its approved zones.",
+          "Begin a review by drawing this chain and naming the exact products at each interface. Distinguish what is known from what merely looks plausible in a layout. A roof photograph can establish visible obstructions and covering type, but hidden decking condition, rafter dimensions and previous alterations require other evidence. The goal of early planning is a coherent proposal that an installer and structural reviewer can assess."
+        ],
+        "figures": [
+          {
+            "diagram": "roof-load-path",
+            "caption": "Conceptual load path from module to building. The drawing supplies no fastening dimensions or approved span.",
+            "alt": "Arrows pass from solar module through clamp, rail, attachment and roof structure."
+          }
+        ]
+      },
+      {
+        "title": "Gravity is only one loading direction",
+        "paragraphs": [
+          "Modules and mounting hardware add permanent weight. Snow can add variable downward loading, while wind can create uplift and horizontal forces. Those forces depend on the building, surrounding exposure, roof geometry and array location. Roof-edge and corner regions may need different treatment from the interior. Counting panel mass therefore answers only a small part of the structural question.",
+          "A useful beginner habit is to separate demand from capacity. Demand is the force the design must accommodate under its governing combinations; capacity is what the specified assembly can support under its evaluated conditions. A module's published mechanical test value is not automatically the allowable load of the complete roof installation. Ask the designer which adopted building-code edition and site inputs govern the project, rather than copying a load table from another address."
+        ]
+      },
+      {
+        "title": "Water needs a continuous route",
+        "paragraphs": [
+          "A roof works as a layered water-management system. Adding a penetration changes that system locally, so flashing, seals and their relationship to the covering must follow the selected roof and mounting details. A visible bead of sealant is not evidence that water entering upslope will drain correctly. Conversely, a nonpenetrating clamp on a metal seam still requires a compatible seam and a roof that can transfer the load.",
+          "Record covering material, installation age, previous leaks and proposed roof replacement. Discuss sequencing with the roofer: installing an array shortly before replacement can add removal, storage and reinstallation costs. Clarify responsibility for roof damage and workmanship, including who attends if a leak is reported after commissioning. The useful deliverable is a documented interface and service responsibility, not a generic promise that all solar mounts are waterproof."
+        ]
+      },
+      {
+        "title": "Module fit and mounting compatibility are separate",
+        "paragraphs": [
+          "The IronRidge XR manual illustrates why product combinations matter: its compatibility, attachment and bonding provisions belong to a specific evaluated system. Use the manual revision applicable to the purchased parts, together with the module installation instructions. Frame depth, clamp engagement, permissible support location, rail span, splice position and cantilever are related decisions. Changing module format late in procurement can change more than the wattage.",
+          "For standing-seam metal, S-5!'s clamp-to-seam tool organizes tested combinations by actual roof profile and other identifying details. A name such as standing seam does not specify one universal clamp. Trace the load beyond the seam into roof panels, clips and supporting members. Before ordering, request a parts schedule that identifies the full assembly and marks substitutions requiring renewed review."
+        ],
+        "sources": [
+          {
+            "label": "IronRidge · XR Flush Mount installation manual, version 5.2 (2026)",
+            "url": "https://files.ironridge.com/pitched-roof-mounting/resources/brochures/IronRidge_Flush_Mount_Installation_Manual.pdf"
+          },
+          {
+            "label": "S-5! · Clamp-to-seam identification and tested load results",
+            "url": "https://clamptoseam.s-5.com/results/"
+          }
+        ]
+      },
+      {
+        "title": "Reserve access before filling the roof",
+        "paragraphs": [
+          "Draw skylights, vents, roof hatches, drains, equipment and locally required access areas before arranging modules. Distinguish fire-service access, installer work space and future maintenance access; they can overlap but have different reasons. A convenient route for carrying equipment must also form part of a planned safe work method. OSHA's US solar fall-hazard guidance highlights roof edges, skylights and lifting panels as specific concerns, and distinguishes installation from maintenance requirements.",
+          "For a planning model, use exclusions whose dimensions and reasons are recorded. Do not present a universal setback number as a code rule for every jurisdiction. Confirm requirements with the authority having jurisdiction and the project designer. A layout that preserves access may use fewer modules but make inspection, repair and roof maintenance practicable. These provisions belong in the first drawing, because they are expensive to recover after the roof is filled."
+        ],
+        "sources": [
+          {
+            "label": "OSHA · Solar energy fall hazards (United States)",
+            "url": "https://www.osha.gov/green-jobs/solar/falls"
+          },
+          {
+            "label": "DOE · Permitting and inspection for rooftop solar",
+            "url": "https://www.energy.gov/cmei/systems/permitting-and-inspection-rooftop-solar"
+          }
+        ]
+      },
+      {
+        "title": "Worked example: weight describes one question",
+        "workedExample": {
+          "title": "Twelve hypothetical modules on a usable roof plane",
+          "givens": [
+            "12 modules, each 23 kg and 2.0 m².",
+            "Mounting assembly mass assumed 48 kg total.",
+            "Ignore snow, wind, seismic forces and the roof's own existing loads; this is only mass bookkeeping."
+          ],
+          "steps": [
+            "Module mass is 12 × 23 = 276 kg; total added mass is 276 + 48 = 324 kg.",
+            "Module surface area is 12 × 2.0 = 24 m².",
+            "An average over that module area is 324 ÷ 24 = 13.5 kg/m², equivalent to about 0.132 kN/m² under standard gravity.",
+            "Record the result as an average added permanent load estimate, then ask the designer to resolve attachment reactions and all other governing loads."
+          ],
+          "result": "The estimate is 324 kg total, not a structural approval.",
+          "discussion": "The weight is carried at discrete support points. Dividing by area does not establish local roof capacity or predict wind uplift. A broader roof-area average would produce a smaller number without reducing the actual attachment forces."
+        }
+      },
+      {
+        "title": "A reviewable roof record",
+        "paragraphs": [
+          "Organize the proposal around evidence that remains useful after installation. A future technician should be able to identify a mount, module and roof detail without reconstructing the design from sales emails. Keep drawing revisions tied to the actual bill of materials and record any site change that affects an interface."
+        ],
+        "columns": [
+          "Record",
+          "What it resolves",
+          "Who confirms it"
+        ],
+        "rows": [
+          [
+            "Roof condition and structure",
+            "Remaining life and supporting members",
+            "Roofer / structural reviewer"
+          ],
+          [
+            "Exact module and mounting revisions",
+            "Approved support and attachment interfaces",
+            "Installer / manufacturers"
+          ],
+          [
+            "Layout exclusions",
+            "Access, obstructions and local requirements",
+            "Designer / local authority"
+          ],
+          [
+            "As-built photographs and assembly records",
+            "What was installed beneath the modules",
+            "Installer"
+          ],
+          [
+            "Warranty and service responsibility",
+            "Who responds to roof or mounting problems",
+            "Owner / contractor"
+          ]
+        ]
+      },
+      {
+        "title": "Mistakes that create false confidence",
+        "paragraphs": [
+          "A polished three-dimensional view can hide every important roof interface. Treat its clean appearance as communication quality rather than structural evidence. Likewise, a permit application that names a mounting family but omits the actual attachment leaves a material question unresolved. Ask for the drawing and calculation package associated with the selected configuration.",
+          "Avoid distributing a total load equally over an arbitrary number of mounts to choose attachment spacing. Real reactions depend on the support arrangement and loading. Avoid mixing torque values between hardware generations or treating every bonding device as reusable. When parts change, ask which documentation changes with them. This is also why a photographic completion record should include hidden interfaces before modules obscure them."
+        ]
+      },
+      {
+        "title": "Exercise: identical arrays, different evidence",
+        "exercise": {
+          "question": "Two houses fit the same twelve-module layout. One has asphalt shingles and rafters; the other has standing-seam metal. Can the first house's attachment detail approve the second?",
+          "answer": "No. The geometric pattern can be reused as a starting point, but the roof attachment and load path must be verified for each building.",
+          "explanation": "The covering, structural interfaces, tested hardware combinations and site demands differ. Reusing the pattern is a layout decision; reusing an unsupported attachment detail would skip the evidence needed to establish compatibility."
+        },
+        "paragraphs": [
+          "Before proceeding, summarize the covering and condition, identify the intended attachment family, and list the open structural and access questions. These are the inputs that turn a roof sketch into a useful installation discussion."
+        ]
+      }
+    ]
+  },
+  "ground-mounting": {
+    "reviewed": "2026-10-05",
+    "outcome": "Calculate simple row geometry, distinguish it from annual shading losses, and prepare site and foundation questions for a ground array.",
+    "sources": [
+      {
+        "label": "IronRidge · Ground Mount system documentation",
+        "url": "https://www.ironridge.com/ground-based/"
+      },
+      {
+        "label": "IronRidge · Ground screw compatibility and site limits",
+        "url": "https://www.ironridge.com/ground-based/ground-screws/"
+      },
+      {
+        "label": "Sandia · PV Performance Modeling Collaborative guide",
+        "url": "https://pvpmc.sandia.gov/modeling-guide/"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Ground mounting exchanges one constraint for several others",
+        "paragraphs": [
+          "A ground array avoids placing modules on a building roof, but it occupies land and introduces foundation, access and trenching questions. Start with a site plan that includes boundaries, buildings, vegetation, drainage, slopes and the route to the electrical equipment. Mark uncertainty about buried services before deciding where posts or trenches belong. The clean rectangular area visible in a satellite image may contain easements, seasonal wet ground or future uses that make it unsuitable.",
+          "Separate the project into layout, structure and electrical route. Layout asks where modules and access fit. Structure asks how forces reach suitable ground. The route asks how energy reaches conversion equipment without incompatible distances or installation conditions. Solving one does not solve the others. Early comparison should preserve multiple locations long enough to understand the trade between sunlight, foundation practicality and total installed cost."
+        ],
+        "figures": [
+          {
+            "diagram": "ground-spacing",
+            "caption": "Level-ground row geometry: footprint, gap and pitch are distinct quantities. This sketch is not a foundation design.",
+            "alt": "Two tilted rows show panel rise, horizontal footprint, open gap and complete row pitch."
+          }
+        ]
+      },
+      {
+        "title": "Define the three spacing quantities",
+        "paragraphs": [
+          "A tilted row has a horizontal projection called its footprint. The open distance from the back of one footprint to the front of the next is the clear gap. Row pitch is measured between equivalent points on adjacent rows and includes both footprint and gap. If a tool labels a slider spacing, find out which quantity it changes before comparing its result with another drawing.",
+          "For a table of modules, use the entire sloped table length in the relevant cross-section rather than one module's dimension. Two stacked modules at the same tilt approximately double that length, before accounting for their gap. The low-edge clearance above ground is another quantity. Equal clearances in neighboring rows cancel in the simplest shadow construction; unequal clearances or sloping terrain require a different geometry. Label all of these inputs rather than allowing a pleasing visual scale to imply measurements."
+        ]
+      },
+      {
+        "title": "A shadow picture is a geometric observation",
+        "paragraphs": [
+          "Low sun elevation makes a longer shadow from a given height. Solar azimuth determines where that shadow falls in plan view. An aligned cross-section describes the special case when the sun points perpendicular to the row; it does not capture every morning and afternoon. Terrain and external obstructions complicate both the length and direction of shadows.",
+          "A single date and time can show a design problem, but an unshaded view cannot establish all-year performance. Annual energy modeling combines many operating conditions, irradiance, temperatures and electrical behavior. Sandia's PV performance modeling resources provide a framework for keeping geometry and energy calculations distinct. If a preview does not calculate energy, describe its output as a shade visualization. Do not translate a shaded surface percentage directly into the same percentage of energy loss without an appropriate electrical and time-series model."
+        ],
+        "sources": [
+          {
+            "label": "Sandia · PV Performance Modeling Collaborative guide",
+            "url": "https://pvpmc.sandia.gov/modeling-guide/"
+          }
+        ]
+      },
+      {
+        "title": "Choose a shading objective before optimizing panel count",
+        "paragraphs": [
+          "There is no single row spacing that is best for every project. A spacious layout may reduce winter self-shading while using more land and wiring; a denser one may increase total generation per site despite some shade. A household that values winter backup may rank those layouts differently from a project seeking maximum annual generation. Establish the success measure first.",
+          "Compare alternatives using the same weather data, terrain assumptions, module configuration and loss model. Include usable land, total module count and the annual or seasonal energy outcome. Explain any assumed solar-position window used for a geometric screening rule. A rule based on winter noon should be labeled winter-noon screening, not all-day no shading. Keep room for vegetation management and equipment access in both alternatives so a dense energy model does not hide an impractical site."
+        ]
+      },
+      {
+        "title": "Foundations need soil evidence",
+        "paragraphs": [
+          "Posts may be supported by concrete, driven foundations or an approved ground-screw arrangement. Suitability depends on actual ground conditions and loading rather than the general attractiveness of a foundation type. Soil variability, rock, corrosion exposure, frost and groundwater can affect the solution. Request the evidence required by the foundation designer and manufacturer, including any testing and acceptance criteria.",
+          "IronRidge's ground-screw guidance separates screw-manufacturer installation instructions from assembly of the supported array. Its ground-mount system documentation describes a specific racking family; it does not authorize arbitrary foundation substitution. A screw that installs easily is not thereby proven adequate for pullout or lateral demands. Record rejected locations and test results alongside accepted ones, because moving a post to avoid an obstruction can also change the structural arrangement."
+        ],
+        "sources": [
+          {
+            "label": "IronRidge · Ground Mount system documentation",
+            "url": "https://www.ironridge.com/ground-based/"
+          },
+          {
+            "label": "IronRidge · Ground screw compatibility and site limits",
+            "url": "https://www.ironridge.com/ground-based/ground-screws/"
+          }
+        ]
+      },
+      {
+        "title": "Worked example: a level-ground screening calculation",
+        "workedExample": {
+          "title": "A 2 m sloped table at 30°",
+          "givens": [
+            "Table length in the north–south cross-section: 2.00 m.",
+            "Tilt: 30°; design screening sun elevation: 20°.",
+            "Level ground, equal low-edge height, rows aligned with the sun's cross-section; ignore external shade and finite-width effects."
+          ],
+          "steps": [
+            "Rise = 2.00 × sin(30°) = 1.00 m.",
+            "Horizontal footprint = 2.00 × cos(30°) = 1.73 m.",
+            "Clear gap for this instant = 1.00 ÷ tan(20°) = 2.75 m.",
+            "Pitch = footprint + gap = 1.73 + 2.75 = 4.48 m.",
+            "Label the drawing with this date/time geometry and send denser and wider alternatives for energy modeling."
+          ],
+          "result": "About 4.48 m pitch avoids the modeled row shadow at the assumed aligned 20° sun elevation.",
+          "discussion": "It does not guarantee all-day winter clearance, a particular annual yield, or a valid foundation. A lower sun angle increases the calculated gap; a two-module-high table changes the rise and footprint."
+        }
+      },
+      {
+        "title": "Compare complete site alternatives",
+        "paragraphs": [
+          "A site-selection table should identify the source of each estimate and leave genuinely unknown values visible. A shorter cable route can be valuable, but it should not erase severe shade or drainage difficulties. Keep capital cost and operating burden in the same comparison."
+        ],
+        "columns": [
+          "Question",
+          "Evidence to collect",
+          "Why it changes the choice"
+        ],
+        "rows": [
+          [
+            "Sun and external shade",
+            "Measured horizon / site survey",
+            "Affects available irradiance"
+          ],
+          [
+            "Terrain and drainage",
+            "Levels and seasonal observations",
+            "Changes geometry and erosion risk"
+          ],
+          [
+            "Foundation suitability",
+            "Design assumptions and field testing",
+            "Controls structural feasibility"
+          ],
+          [
+            "Cable route",
+            "Measured path and installation conditions",
+            "Affects installed cost and electrical design"
+          ],
+          [
+            "Access and vegetation",
+            "Maintenance route and management plan",
+            "Affects lifetime operation"
+          ]
+        ]
+      },
+      {
+        "title": "Common mistakes and practical ownership",
+        "paragraphs": [
+          "Measuring pitch from an aerial view while entering gap into a calculator creates an inconsistent comparison. So does evaluating one alternative with mature trees and another with no vegetation. Use dimensions that can be checked on site and distinguish existing conditions from proposed changes.",
+          "Plan how a technician reaches every row without walking on modules or damaging conductors. Consider mowers, grazing animals or other site activity only when their interaction with cables and equipment is resolved. A perimeter fence or landscape plan may change access and shade. Do not assume a ground array is inherently easy to maintain: its wiring remains electrical equipment, and wind damage, erosion or vegetation can require qualified inspection. Record the final row map and underground route as part of the owner handover."
+        ]
+      },
+      {
+        "title": "Exercise: what changed when tilt increased?",
+        "exercise": {
+          "question": "A table remains 2 m long but its tilt rises from 30° to 45°. At the same aligned 20° sun elevation, does its smaller horizontal footprint guarantee a smaller row pitch?",
+          "answer": "No. Its rise increases enough to lengthen the required shadow gap.",
+          "explanation": "At 45°, footprint and rise are each about 1.414 m. The gap is 1.414 ÷ tan(20°) ≈ 3.89 m, so pitch is approximately 5.30 m. Tilt improves some light-capture conditions while changing land use; it must be compared through the full objective."
+        },
+        "paragraphs": [
+          "Keep the screening calculation with the assumptions, then compare the resulting layouts through the site, structure and electrical questions. An explicit uncertainty is more useful than an unexplained recommended spacing."
+        ]
+      }
+    ]
+  },
+  "roof-survey": {
+    "reviewed": "2026-10-05",
+    "outcome": "Build a dimensioned roof evidence pack that identifies measurement uncertainty, shade, roof condition, structure and future access before procurement.",
+    "sources": [
+      {
+        "label": "DOE · Permitting and inspection for rooftop solar",
+        "url": "https://www.energy.gov/cmei/systems/permitting-and-inspection-rooftop-solar"
+      },
+      {
+        "label": "OSHA · Solar energy fall hazards (United States)",
+        "url": "https://www.osha.gov/green-jobs/solar/falls"
+      },
+      {
+        "label": "IronRidge · XR Flush Mount installation manual, version 5.2 (2026)",
+        "url": "https://files.ironridge.com/pitched-roof-mounting/resources/brochures/IronRidge_Flush_Mount_Installation_Manual.pdf"
+      },
+      {
+        "label": "Sandia · PV Performance Modeling Collaborative guide",
+        "url": "https://pvpmc.sandia.gov/modeling-guide/"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Survey the questions as well as the roof",
+        "paragraphs": [
+          "A useful roof survey connects a proposed array to a real building. It captures dimensions, orientation, pitch, covering, obstructions, shade and the evidence needed to review structure. It also records information that cannot be established safely or reliably from the available view. An unverified measurement should stay marked as unverified rather than becoming a precise-looking number in a drawing.",
+          "Plan the survey around decisions. Module fit needs usable dimensions. Annual production needs orientation and shade. Mounting needs the roof interface and structural arrangement. Roof replacement planning needs condition and remaining-life information. The survey does not have to answer every engineering question itself, but it must make those questions visible and assign them to someone able to resolve them. This approach helps avoid ordering a module format that only fits in an inaccurate aerial image."
+        ],
+        "figures": [
+          {
+            "diagram": "roof-load-path",
+            "caption": "The roof survey must describe visible covering and the hidden structural interfaces behind it. This conceptual section is not a roof-access plan.",
+            "alt": "Solar mounting components are shown over a roof covering and supporting building structure."
+          }
+        ]
+      },
+      {
+        "title": "Dimensions need a datum and a method",
+        "paragraphs": [
+          "Choose a consistent reference corner or line for each roof plane. Record overall usable dimensions and the position of every obstruction relative to that datum. Give the measurement method and realistic uncertainty. A satellite image, laser measurement, construction drawing and physical survey can disagree for understandable reasons; identify which controls each quantity.",
+          "Distinguish sloped roof distance from horizontal projection. A roof plane with horizontal run R and pitch angle θ has sloped distance R ÷ cos θ in that direction. Confusing those distances can either understate or overstate usable space depending on what the layout expects. Label units and whether dimensions describe a horizontal plan or the roof surface. An apparently generous fit with only a few centimeters spare deserves explicit field confirmation before equipment is purchased."
+        ]
+      },
+      {
+        "title": "Roof condition changes the installation sequence",
+        "paragraphs": [
+          "Record covering type, approximate age, known repairs, leaks and evidence of deterioration. Include gutters, drains, flashing, valleys and previous penetrations because the array must coexist with their water-management role. The owner may know recurring problems that a single dry-weather visit cannot reveal. Ask the roofer to assess matters outside the surveyor's expertise.",
+          "If the roof will need replacement during the planned ownership period, compare replacement before installation with later module removal and reinstallation. Keep reroofing cost, solar work cost and lost production distinct. A longer module performance warranty does not extend the life of the roof beneath it. Document the roof warranty's requirements for attachments and who retains responsibility for the weatherproofing interface after construction. These decisions can change the project more than a small gain in rated module watts."
+        ]
+      },
+      {
+        "title": "Structure is more than finding rafters",
+        "paragraphs": [
+          "Roof attachments need an approved load path, but confirming where a rafter appears is only the beginning. Supporting-member size, span, spacing, condition and alterations can affect review. Roof coverings or access limitations may hide these features. Construction drawings may be outdated, so distinguish original drawings from observed conditions.",
+          "Prepare a structural evidence list for the qualified reviewer rather than choosing attachment spacing from a photograph. Include proposed module dimensions and mass, mounting family and array location. Site wind, snow and other governing loads must be assessed using the locally adopted requirements. If the reviewer requests further investigation, update the evidence pack and revision history. A plausible rail span from a manufacturer's table cannot establish the capacity of the existing roof structure by itself."
+        ]
+      },
+      {
+        "title": "Shade requires time and direction",
+        "paragraphs": [
+          "Record roof-plane azimuth and tilt, and identify nearby trees, buildings, chimneys and parapets that can block sunlight. Distinguish permanent objects from proposed vegetation management or future development. An obstruction may shade the array only in a particular season or time window, so photographs should include date, time and viewpoint.",
+          "A shade survey should support the energy model's inputs. Explain whether the estimate comes from measured horizon data, a documented model or a simple visual screen. The location of one shadow does not directly quantify annual loss. Electrical mismatch and module configuration can change the effect of partial shade, while microinverters or optimizers cannot recover sunlight that never reaches the cells. Keep the loss-model assumptions with the shade record so later equipment changes can be reviewed consistently."
+        ],
+        "sources": [
+          {
+            "label": "Sandia · PV Performance Modeling Collaborative guide",
+            "url": "https://pvpmc.sandia.gov/modeling-guide/"
+          }
+        ]
+      },
+      {
+        "title": "Worked example: a fit that needs field confirmation",
+        "workedExample": {
+          "title": "Eight modules across a fictional roof plane",
+          "givens": [
+            "Usable width estimated from an aerial image: 9.20 m, uncertainty ±0.15 m.",
+            "Eight modules each 1.10 m wide; seven intermodule gaps assumed 0.02 m.",
+            "The usable width already excludes all proposed access and obstruction zones; no edge clearance is being prescribed."
+          ],
+          "steps": [
+            "Nominal occupied width = 8 × 1.10 + 7 × 0.02 = 8.94 m.",
+            "Nominal spare width = 9.20 − 8.94 = 0.26 m.",
+            "At the lower estimate, spare width is 9.05 − 8.94 = 0.11 m.",
+            "Check the selected mounting tolerances and confirmed exclusion dimensions before treating the eight-column arrangement as buildable."
+          ],
+          "result": "The drawing suggests eight modules may fit, but the 0.26 m nominal margin is comparable with survey uncertainty.",
+          "discussion": "A better measurement can settle the issue. Reducing nominal gaps below approved values to rescue a layout changes the assembly rather than improving the survey."
+        }
+      },
+      {
+        "title": "Access and routing belong in the survey",
+        "paragraphs": [
+          "Identify installer access, safe lifting arrangements, future maintenance routes and applicable fire-service pathways. OSHA's US guidance identifies skylights and roof edges as fall hazards; a building feature visible in a photograph should not be assumed safe to stand on. A qualified site team chooses the actual protection and access method.",
+          "Also sketch the cable and equipment route. Show where wiring leaves the roof and where conversion or storage equipment could be located. Check that proposed locations preserve manufacturer clearances and owner access. A distant convenient wall can change wiring design and cost; an attic location can create temperature and serviceability questions. Keep this route conceptual until the electrical designer resolves its installation conditions."
+        ],
+        "sources": [
+          {
+            "label": "OSHA · Solar energy fall hazards (United States)",
+            "url": "https://www.osha.gov/green-jobs/solar/falls"
+          }
+        ]
+      },
+      {
+        "title": "The roof evidence pack",
+        "columns": [
+          "Item",
+          "Minimum useful record",
+          "Uncertainty to flag"
+        ],
+        "rows": [
+          [
+            "Geometry",
+            "Datum, dimensions, pitch, azimuth, method",
+            "Aerial scale / hidden edge"
+          ],
+          [
+            "Covering",
+            "Material, age, repairs, photographs",
+            "Unseen leakage or warranty conditions"
+          ],
+          [
+            "Structure",
+            "Drawings and observed members",
+            "Unknown condition or alterations"
+          ],
+          [
+            "Shade",
+            "Obstruction map and dated evidence",
+            "Seasonal foliage / future development"
+          ],
+          [
+            "Access and route",
+            "Exclusions, lifting and cable concepts",
+            "Unconfirmed local requirements"
+          ]
+        ],
+        "paragraphs": [
+          "Label drawing versions so a contractor can tell whether a module swap, roof repair or new obstruction was incorporated. Preserve original survey evidence separately from the final proposed layout. A record of how the layout was derived makes future reconfiguration much easier than a lone polished rendering."
+        ]
+      },
+      {
+        "title": "Mistakes and an explained exercise",
+        "paragraphs": [
+          "Avoid recording spurious precision, assuming every roof plane faces the same direction, or measuring an obstruction's center while ignoring its footprint. Do not count a required pathway as spare space when calculating maximum module quantity. A roof survey is complete when its evidence and open questions are usable, not when every cell in a spreadsheet contains a number."
+        ],
+        "exercise": {
+          "question": "A layout says twelve modules fit because the roof measures 30 m² and the modules total 24 m². What evidence is missing?",
+          "answer": "The actual dimensioned arrangement and exclusions, plus mounting, structural and access evidence.",
+          "explanation": "Area alone ignores rectangular packing, setbacks, obstructions and support zones. Two roofs with equal area can have very different usable shapes. A fit claim needs measured dimensions and a specific layout before the separate approval questions are considered."
+        }
+      }
+    ]
+  },
+  "roof-mounting-families": {
+    "reviewed": "2026-10-05",
+    "outcome": "Compare rail, rail-less, tile and metal-roof attachment families through their actual interfaces, approvals and service implications.",
+    "sources": [
+      {
+        "label": "IronRidge · XR Flush Mount installation manual, version 5.2 (2026)",
+        "url": "https://files.ironridge.com/pitched-roof-mounting/resources/brochures/IronRidge_Flush_Mount_Installation_Manual.pdf"
+      },
+      {
+        "label": "S-5! · Clamp-to-seam identification and tested load results",
+        "url": "https://clamptoseam.s-5.com/results/"
+      },
+      {
+        "label": "Unirac · RM10 installation guide (retrieved 2026-10-05)",
+        "url": "https://unirac.com/document/rm10-install-guide/"
+      }
+    ],
+    "sections": [
+      {
+        "title": "A mounting family is a design approach",
+        "paragraphs": [
+          "Rail-based, rail-less and direct-to-metal-roof systems describe how modules are supported, not a universal approval for a roof. Begin with the covering and supporting building, then examine the manufacturer's documented assembly. The most useful comparison asks what connects to what, what can be adjusted, and which conditions the evidence covers.",
+          "A rail-based system bridges roof attachments with members that support module clamps. A rail-less approach locates modules through shorter or direct support components. A standing-seam arrangement may use approved seam clamps with rails or approved direct module interfaces. These descriptions help organize questions, but the actual product still controls compatible frame dimensions, fasteners, bonding devices and support locations. A shorter parts list can reduce some work while placing tighter demands on roof geometry or module positioning."
+        ],
+        "figures": [
+          {
+            "diagram": "roof-load-path",
+            "caption": "Compare families by following each interface. Some systems omit a long rail but still require a verified load path.",
+            "alt": "Module support transfers through mounting hardware into the roof and supporting members."
+          }
+        ]
+      },
+      {
+        "title": "Rails provide alignment, within limits",
+        "paragraphs": [
+          "Rails can offer practical alignment and attachment flexibility. Their span, cantilever, splice placement and thermal movement provisions still impose limits. A long member is not an invitation to place attachments wherever they are convenient. Different rail profiles may be suitable for different load conditions, and their appearance alone does not establish interchangeable capacity.",
+          "Ask how an installer will preserve module support zones while locating roof attachments. The module manual and racking manual must agree at that interface. Record permitted orientations and the exact clamp family. IronRidge's XR manual version 5.2 is one example of documentation that separates compatibility, hardware and assembly provisions. This chapter does not carry its torque or span values into unrelated systems; values belong to the exact parts and applicable design package."
+        ],
+        "sources": [
+          {
+        "label": "IronRidge · XR Flush Mount installation manual, version 5.2 (2026)",
+            "url": "https://files.ironridge.com/pitched-roof-mounting/resources/brochures/IronRidge_Flush_Mount_Installation_Manual.pdf"
+          }
+        ]
+      },
+      {
+        "title": "Rail-less systems move the coordination problem",
+        "paragraphs": [
+          "Removing long rails changes logistics and alignment, but it does not remove structural or bonding requirements. A roof-plane irregularity that a rail system accommodates through approved adjustments may require another solution in a direct support system. Assess how the selected product deals with uneven surfaces, module gaps, frame tolerances and cable support.",
+          "A useful quotation should identify the product's actual installation details and the module compatibility evidence. Compare labor assumptions and future module replacement, not just kilograms of aluminum. Ask whether removing one module disturbs neighboring modules or a bonding path, and which pieces are single-use. A savings claim based on ideal installation conditions may not hold on a roof with substantial variation. Price the complete assembly and its documented work method rather than treating rail-less as automatically cheaper."
+        ]
+      },
+      {
+        "title": "Asphalt shingles and tile manage water differently",
+        "paragraphs": [
+          "A composition-shingle attachment must integrate with the roof's water-shedding layers. A tile-roof solution may use hooks, replacement pieces or another approved approach, but brittle covering and the relationship to underlying waterproofing introduce different details. The tile itself should not be assumed to be the structural support simply because it is the visible surface.",
+          "For each option, ask how the roof interface is flashed or sealed and what remains accessible after installation. Collect details that show the intended structural connection, roof-covering treatment and module support. Repairs to old tile, replacement stock and workmanship responsibility can materially affect cost. Avoid adapting a shingle detail to tile by adding sealant. Let the selected product and roofing instructions establish the detail, and resolve conflicts before hardware arrives."
+        ]
+      },
+      {
+        "title": "Metal roofing needs the actual profile",
+        "paragraphs": [
+          "Standing-seam clamps and exposed-fastener brackets address different interfaces. A seam clamp engages a specific seam geometry; an exposed-fastener attachment follows its own fastening and sealing details. Identifying a roof merely as metal omits information such as panel profile, material, thickness, attachment arrangement and condition.",
+          "S-5!'s clamp-to-seam resource explicitly organizes roof identification and tested holding information. Match the actual roof and clamp, including differences between clamp variants, rather than extrapolating from a similar photograph. Continue the structural review into the roof-panel clips and building. A nonpenetrating module attachment can still overload another link in that chain. Also ask how the assembly accommodates roof movement and material compatibility; these are ownership questions as well as installation questions."
+        ],
+        "sources": [
+          {
+            "label": "S-5! · Clamp-to-seam identification and tested load results",
+            "url": "https://clamptoseam.s-5.com/results/"
+          }
+        ]
+      },
+      {
+        "title": "Bonding is an assembly property",
+        "paragraphs": [
+          "Many modern mounting systems use evaluated clamp or other interfaces to create the required equipment bonding path. That path depends on the specified combination and installation. A metal-to-metal appearance does not prove continuity under the evaluated conditions, and removing a module can alter the path in some systems.",
+          "Keep mechanical compatibility and electrical bonding evidence together but distinct. Determine how rails, splices, modules and any separated array sections are connected in the documented design. Ask which hardware may be reused after service and which must be replaced. The Unirac RM10 manual offers a concrete example of maintenance documentation addressing temporary bonding during module removal. It is evidence for that assembly, not a blanket instruction for every rooftop family."
+        ],
+        "sources": [
+          {
+            "label": "Unirac · RM10 installation guide (retrieved 2026-10-05)",
+            "url": "https://unirac.com/document/rm10-install-guide/"
+          }
+        ]
+      },
+      {
+        "title": "Worked example: compare installed scope",
+        "workedExample": {
+          "title": "Two hypothetical mounting offers",
+          "givens": [
+            "Both offers support the same reviewed 16-module layout.",
+            "Offer A: hardware $1,400, labor $1,600, approved roof-interface work $400.",
+            "Offer B: hardware $1,050, labor $1,750, approved roof-interface work $650.",
+            "No difference in electrical equipment or roof condition is assumed."
+          ],
+          "steps": [
+            "A installed mounting subtotal = $1,400 + $1,600 + $400 = $3,400.",
+            "B subtotal = $1,050 + $1,750 + $650 = $3,450.",
+            "B saves $350 in hardware but adds $400 elsewhere.",
+            "Compare replacement procedures and documentary completeness before deciding whether a $50 difference matters."
+          ],
+          "result": "The lower hardware price does not produce the lower complete mounting subtotal.",
+          "discussion": "The example makes no general claim about rail or rail-less labor. Actual scope, roof and installer experience determine the quotation; require equivalent approved assemblies before comparing costs."
+        }
+      },
+      {
+        "title": "Comparison worksheet",
+        "columns": [
+          "Family / interface",
+          "Questions that select the actual product",
+          "Evidence to keep"
+        ],
+        "rows": [
+          [
+            "Rail based",
+            "Span, adjustment, module support and splice limits",
+            "Design output and current manual"
+          ],
+          [
+            "Rail less",
+            "Roof tolerance, module spacing and replacement access",
+            "Compatibility and service procedure"
+          ],
+          [
+            "Standing seam",
+            "Exact profile and clamp; roof-panel load path",
+            "Roof identification and tested combination"
+          ],
+          [
+            "Tile attachment",
+            "Underlying structure and waterproofing treatment",
+            "Approved roof-interface detail"
+          ],
+          [
+            "Low-slope support",
+            "Ballast / attachment and membrane interface",
+            "Project-specific engineering package"
+          ]
+        ],
+        "paragraphs": [
+          "The families overlap: a metal-roof system can use rails, and a low-slope system can be partly attached. Describe an option through its interfaces instead of forcing it into a single sales label. This also makes the bill of materials easier to review when a supplier proposes a substitution."
+        ]
+      },
+      {
+        "title": "Mistakes and an explained exercise",
+        "paragraphs": [
+          "Avoid mixing hardware generations, copying a torque number from another product, or accepting a compatibility statement that omits the exact module model. Check whether decorative skirts or critter guards change an approved installation detail. Ask about roof warranties and replacement work before considering the comparison complete."
+        ],
+        "exercise": {
+          "question": "A supplier says a seam clamp fits because it can be tightened onto the roof profile. Is that enough to select it?",
+          "answer": "No. Physical fit needs tested compatibility and a verified load path for the actual roof.",
+          "explanation": "A clamp can appear to grip while lacking evaluated holding evidence for that profile. The panel, clips and supporting building must also transmit the array's loads. Fit is a useful screening observation, not the final acceptance criterion."
+        }
+      }
+    ]
+  },
+  "flat-roof-mounting": {
+    "reviewed": "2026-10-05",
+    "outcome": "Compare ballasted, attached and hybrid low-slope systems without confusing average roof load, local reactions or software assumptions with approval.",
+    "sources": [
+      {
+        "label": "Unirac · RM10 installation guide (retrieved 2026-10-05)",
+        "url": "https://unirac.com/document/rm10-install-guide/"
+      },
+      {
+        "label": "Unirac · U-Builder product and engineering assumptions (retrieved 2026-10-05)",
+        "url": "https://design.unirac.com/designassumptions"
+      },
+      {
+        "label": "OSHA · Solar energy fall hazards (United States)",
+        "url": "https://www.osha.gov/green-jobs/solar/falls"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Low slope is not a single roof type",
+        "paragraphs": [
+          "A low-slope roof is a layered assembly: structure, deck, insulation and covering work together to carry loads and manage water. A mounting design must identify that actual assembly rather than assume that a flat-looking surface can support any ballast tray. Record slope, roof height, parapets, drainage, membrane, insulation and proposed array position.",
+          "Ballasted systems use added mass and their evaluated aerodynamic arrangement to resist specified demands. Attached systems transfer forces through specified roof connections. Hybrid arrangements combine these approaches. The choice depends on project evidence, roof capacity and the permitted product configuration. Each creates different concentrated reactions and weatherproofing interfaces. This chapter explains how to review those choices; it does not prescribe ballast quantities, anchor spacing or a membrane detail for an unidentified roof."
+        ],
+        "figures": [
+          {
+            "diagram": "roof-load-path",
+            "caption": "This pitched-roof example teaches a force path through module, rail and structure. A ballasted low-slope roof uses different interfaces that need their own review.",
+            "alt": "A pitched-roof section shows a module, clamp, rail, flashed attachment and rafter carrying gravity and uplift."
+          }
+        ]
+      },
+      {
+        "title": "Ballast is an engineered arrangement",
+        "paragraphs": [
+          "Ballast quantity depends on the selected system, array geometry, roof and site conditions. Moving blocks from one bay to another can change local resistance and loading even if total mass remains constant. Perimeter locations can have different demands from interior locations. A copied ballast count from a neighboring building has no reliable meaning without matching the governing assumptions.",
+          "Unirac's RM10 guide points users to project-specific loading and ballast calculations. Its system details are not interchangeable with RM10 EVO or another manufacturer's assembly. Confirm the actual product, model and applicable document revision. Record block dimensions and measured or verified mass as required by the design, because the number of blocks alone does not state the load. Treat missing or moved ballast as a configuration issue requiring the documented review process."
+        ],
+        "sources": [
+          {
+            "label": "Unirac · RM10 installation guide (retrieved 2026-10-05)",
+            "url": "https://unirac.com/document/rm10-install-guide/"
+          }
+        ]
+      },
+      {
+        "title": "Average weight can conceal local pressure",
+        "paragraphs": [
+          "The building sees both total added load and the way that load reaches it. A small contact pad can apply concentrated pressure to insulation or other roof layers, while supporting structural members receive load through the deck. Dividing total ballast by the entire building's area can make the average appear reassuringly low without reducing a heavily loaded local region.",
+          "Ask the structural reviewer to assess the actual array footprint, support reactions and load combinations. Ask the roofing team about allowable contact conditions, protective pads and membrane compatibility. Roof-layer compression or displacement can affect drainage and support over time. The design should distinguish whole-building capacity, local roof-deck behavior and the covering/insulation interface. A roof that passes one of these questions may still need changes to address another."
+        ]
+      },
+      {
+        "title": "Wind and sliding depend on assumptions",
+        "paragraphs": [
+          "A manufacturer's design tool usually works within specified limits for building geometry, roof slope, exposure, roof material and array configuration. Those boundaries are part of the result. Unirac's U-Builder assumptions page also identifies cases needing site-specific engineering, including open structures such as carports. A result from an enclosed-building workflow cannot simply be transferred to a canopy.",
+          "Capture inputs, software output and any limitations alongside the project drawings. Ask how site conditions were established, especially roof height, wind design inputs and friction or membrane assumptions. An attractive automatic ballast map is only as credible as the entered conditions and applicability. If a parapet, obstruction or row arrangement changes, identify whether the tool must be rerun. Use the locally adopted code edition and designer's approved project assumptions."
+        ],
+        "sources": [
+          {
+            "label": "Unirac · U-Builder product and engineering assumptions (retrieved 2026-10-05)",
+            "url": "https://design.unirac.com/designassumptions"
+          }
+        ]
+      },
+      {
+        "title": "Protect drainage and maintenance access",
+        "paragraphs": [
+          "Modules, supports and ballast must coexist with drains, scuppers and paths for inspection. Existing ponding or uneven surfaces require attention before the array is installed. A layout that prevents a technician from clearing a drain can create an avoidable operating problem. Preserve access to rooftop mechanical equipment as well as to the solar equipment.",
+          "Plan temporary construction loading too. Stacking ballast in one convenient delivery spot produces a different local load from its final distributed arrangement. The approved handling plan should account for access, lifting and roof protection. OSHA's US solar guidance identifies fall hazards around roof edges and skylights; a low pitch does not make an unprotected edge harmless. Document the actual access method and responsible site team rather than treating an overhead pathway line as a complete safety plan."
+        ],
+        "sources": [
+          {
+            "label": "OSHA · Solar energy fall hazards (United States)",
+            "url": "https://www.osha.gov/green-jobs/solar/falls"
+          }
+        ]
+      },
+      {
+        "title": "Worked example: identical mass, different pressure",
+        "workedExample": {
+          "title": "Illustrative ballast bookkeeping",
+          "givens": [
+            "A fictional array has 800 kg of ballast plus 400 kg of modules and hardware.",
+            "Array footprint: 80 m²; roof area: 400 m².",
+            "One hypothetical support carries 60 kg over 0.10 m²; ignore load redistribution and all design combinations."
+          ],
+          "steps": [
+            "Total mass = 800 + 400 = 1,200 kg.",
+            "Average over the array footprint = 1,200 ÷ 80 = 15 kg/m².",
+            "Average over the entire roof = 1,200 ÷ 400 = 3 kg/m².",
+            "The hypothetical local contact pressure represented as mass per area is 60 ÷ 0.10 = 600 kg/m², approximately 5.9 kPa under standard gravity."
+          ],
+          "result": "The same system has very different averages depending on the chosen area; none establishes roof capacity.",
+          "discussion": "The local illustration shows why the footprint and support contact deserve review. The simplified 60 kg assumption is not an actual reaction calculation, permissible insulation pressure or a ballast recommendation."
+        }
+      },
+      {
+        "title": "Compare the complete alternatives",
+        "columns": [
+          "Approach",
+          "Primary interface to review",
+          "Operating implications"
+        ],
+        "rows": [
+          [
+            "Ballasted",
+            "Mass, local pressure, sliding and uplift resistance",
+            "Ballast position and roof contact inspections"
+          ],
+          [
+            "Attached",
+            "Anchor load path and waterproofing",
+            "Attachment and roof-interface service"
+          ],
+          [
+            "Hybrid",
+            "Combined ballast and anchor arrangement",
+            "Both sets of interfaces need records"
+          ]
+        ],
+        "paragraphs": [
+          "Compare complete installed scope including roof preparation, lifting, protective interfaces, engineering and future roof work. One design may reduce penetrations but increase mass; another may reduce ballast while introducing roof-interface work. State those consequences in the proposal instead of ranking every ballasted installation above or below every attached one."
+        ]
+      },
+      {
+        "title": "Mistakes that change the evaluated configuration",
+        "paragraphs": [
+          "Do not add arbitrary blocks to cure uncertainty, assume every membrane has the same friction behavior, or interchange roof pads because their size matches. Do not increase tilt or attach decorative elements without checking the system's approved configuration. The assembled aerodynamic shape may be part of its evaluation.",
+          "Module replacement is another design event. Dimensions, frame profile and support zones may affect both mounting and bonding. Keep a service record that identifies which clamps or bonding components require replacement after removal. Photographs of completed bays, drainage clearance and ballast placement provide a baseline for later inspection. Routine owner observations can flag displaced parts; corrective work belongs to personnel who can follow the system's documented procedure."
+        ]
+      },
+      {
+        "title": "Exercise: a software result outside its scope",
+        "exercise": {
+          "question": "A ballasted design tool produces a map for an enclosed warehouse. Can its map approve the same array on an open-sided parking canopy?",
+          "answer": "No. The building assumptions and wind behavior differ, and the product's applicability must be checked.",
+          "explanation": "U-Builder's published assumptions identify open structures as requiring site-specific engineering. A software output does not override its own limitations. The correct next step is a canopy-specific design review, not copying the warehouse ballast quantities."
+        },
+        "paragraphs": [
+          "Save the applicable assumptions with the output. A credible low-slope proposal shows how total load, local interface, drainage and system applicability were resolved together."
+        ]
+      }
+    ]
+  },
+  "ground-and-pole-mounts": {
+    "reviewed": "2026-10-05",
+    "outcome": "Select a ground or pole mounting concept using geometry, foundation evidence, access, corrosion and service requirements rather than panel count alone.",
+    "sources": [
+      {
+        "label": "IronRidge · Ground Mount system documentation",
+        "url": "https://www.ironridge.com/ground-based/"
+      },
+      {
+        "label": "IronRidge · Ground screw compatibility and site limits",
+        "url": "https://www.ironridge.com/ground-based/ground-screws/"
+      },
+      {
+        "label": "Sandia · PV Performance Modeling Collaborative guide",
+        "url": "https://pvpmc.sandia.gov/modeling-guide/"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Choose the structure around the site's job",
+        "paragraphs": [
+          "A multi-post ground rack spreads a table across several supports. A pole-mounted table concentrates its forces into a smaller set of supports, often one principal pole. Fixed and adjustable versions add different mechanisms and operating responsibilities. These labels describe concepts; the actual manufacturer determines permissible modules, table dimensions, tilt positions and structural conditions.",
+          "Start with the intended use. A remote pump, a small off-grid property and a larger residential array may value access, space and seasonal adjustment differently. Write the useful generation objective, available land, cable route and maintenance capability. A mount that physically holds the desired module count may still be unsuitable because of wind loading, foundation demands, actuator service or an inaccessible adjustment mechanism. Keep the supporting structure and energy objective in the same decision."
+        ],
+        "figures": [
+          {
+            "diagram": "ground-spacing",
+            "caption": "Module-table geometry affects shadows and forces. This conceptual view does not size a post or pole.",
+            "alt": "Tilted module rows show rise and the separation required for one simplified solar position."
+          }
+        ]
+      },
+      {
+        "title": "Follow forces from table to ground",
+        "paragraphs": [
+          "Downward weight, wind uplift and horizontal forces travel through module interfaces, rails or table members, braces, posts and foundations. A high table or large cantilever can create substantial moments even when module mass seems modest. A pole mount's compact visible footprint does not imply a small underground foundation.",
+          "A structural design resolves forces using site inputs and approved configurations. Avoid sizing a footing from panel weight or copying a pole diameter from a photograph. The pole, connection, foundation and soil must work together. Record the manufacturer's required materials and details, because nominally similar pipe and tubing may have different properties. When the module format changes, review table dimensions and mechanical compatibility as well as the electrical design."
+        ]
+      },
+      {
+        "title": "Soil testing establishes the missing interface",
+        "paragraphs": [
+          "The foundation interacts with real ground, which may vary over a small property. Fill, rock, soft layers, groundwater, frost and corrosion can all matter. The foundation designer determines what investigation and acceptance evidence the project needs. An apparently firm surface does not describe the material carrying uplift or lateral loads below it.",
+          "For screw foundations, distinguish installation observations from acceptance criteria. Ease of installation, torque or depth may be relevant only within the selected manufacturer's documented method and project design. IronRidge's ground-screw information directs users to the screw manufacturer's installation instructions as well as its own array assembly manual. Use the approved combination and keep the required field records. Moving a foundation to avoid a rock or buried service must be reviewed for its effect on the arrangement."
+        ],
+        "sources": [
+          {
+            "label": "IronRidge · Ground screw compatibility and site limits",
+            "url": "https://www.ironridge.com/ground-based/ground-screws/"
+          }
+        ]
+      },
+      {
+        "title": "Tilt adjustment is an operating commitment",
+        "paragraphs": [
+          "An adjustable table can change orientation seasonally, but its available positions and locking method are product-specific. Evaluate how personnel reach and move it, what loads may be present during adjustment, and whether the owner can reliably follow the documented process. A promised production gain depends on the positions actually used.",
+          "Compare fixed and adjustable alternatives with the same weather and system model. A mechanical feature adds value when its modeled benefit exceeds its cost and operating burden for the project. Do not assume that following the sun or increasing winter tilt produces a universal percentage gain. Shade, latitude, weather, module configuration and controls all influence the result. For moving systems, include inspection and replacement access for the mechanism, not just space for the module surface."
+        ]
+      },
+      {
+        "title": "Corrosion, vegetation and cable routing",
+        "paragraphs": [
+          "Ground structures encounter soil contact, moisture and sometimes salt or agricultural exposure. Document the manufacturer's material and corrosion provisions for the actual environment. The cable route must accommodate support, protection, ground clearance and any movement of an adjustable table. A hinge that moves easily can still strain an incorrectly managed conductor.",
+          "Lay out maintenance access before selecting the final row density. Consider drainage, erosion, vegetation management and the equipment used on the property. Tall grass can obstruct access and contribute shade; mowing can damage unprotected wiring. Buried routes need a recorded location and applicable design details. Keep the foundation layout and electrical route together so excavation, inspection and future servicing can be coordinated without guessing where equipment or services were installed."
+        ]
+      },
+      {
+        "title": "Worked example: why a taller table changes the question",
+        "workedExample": {
+          "title": "An illustrative horizontal force on two mounting heights",
+          "givens": [
+            "Hypothetical horizontal resultant force: 2.0 kN.",
+            "Case A resultant height: 1.0 m above the reference support point.",
+            "Case B height: 2.5 m; same force and no other loads.",
+            "This statics example omits actual wind coefficients, load combinations and foundation response."
+          ],
+          "steps": [
+            "Moment in A = force × height = 2.0 × 1.0 = 2.0 kN·m.",
+            "Moment in B = 2.0 × 2.5 = 5.0 kN·m.",
+            "B has 2.5 times the moment about this point under the stated assumptions.",
+            "Ask the structural designer to evaluate the complete elevated configuration, rather than selecting the foundation from equal panel mass."
+          ],
+          "result": "The same simplified force can create a much larger moment when applied higher.",
+          "discussion": "This arithmetic explains a lever arm. It does not predict design wind force, select pole diameter, specify concrete or establish any allowable load. Real support reactions and soil behavior require the project design."
+        }
+      },
+      {
+        "title": "Selection worksheet",
+        "columns": [
+          "Decision",
+          "Evidence to request",
+          "What to compare"
+        ],
+        "rows": [
+          [
+            "Table and module compatibility",
+            "Approved model, orientation and clamp zones",
+            "Actual dimensions and supported count"
+          ],
+          [
+            "Foundation system",
+            "Site investigation and acceptance plan",
+            "Complete installed scope"
+          ],
+          [
+            "Fixed or adjustable",
+            "Approved positions and work method",
+            "Modeled benefit and service burden"
+          ],
+          [
+            "Materials and environment",
+            "Corrosion provisions and exclusions",
+            "Expected exposure"
+          ],
+          [
+            "Electrical route and access",
+            "Dimensioned route and servicing plan",
+            "Distance, installation and maintainability"
+          ]
+        ],
+        "paragraphs": [
+          "Use the worksheet to compare configurations that achieve the same goal. A supplier's price for a table alone is not equivalent to a price that includes foundations, excavation, erection and engineering. Keep exclusions visible and ask how weather or ground conditions affect the quotation."
+        ]
+      },
+      {
+        "title": "Common mistakes and maintenance handover",
+        "paragraphs": [
+          "Do not treat a pole mount as a way to avoid foundation engineering, assume all ground screws are interchangeable, or use a higher adjustment position without reviewing the approved limits. Do not confuse a module's mechanical test load with capacity of the pole and soil assembly.",
+          "At handover, save the approved table configuration, foundation map, field acceptance records and photographs of buried work. Include adjustment instructions only for the exact installed product and clarify who is authorized to operate or service it. After erosion, flooding, impact or unusual movement, the appropriate response is inspection and review. Tightening a visibly loose part without identifying why it moved can obscure a developing foundation or connection problem."
+        ]
+      },
+      {
+        "title": "Exercise: compact footprint versus complete cost",
+        "exercise": {
+          "question": "A pole mount occupies less visible ground than a four-post rack. Does that prove it will require less foundation work?",
+          "answer": "No. Concentrated forces and moments can require a substantial pole and foundation.",
+          "explanation": "Visible footprint does not express the force distribution or soil response. Compare the designed foundation quantities and installation work for each approved configuration. Fewer posts can be useful for access, but they are not a universal cost or capacity advantage."
+        },
+        "paragraphs": [
+          "The best next step is a documented site and configuration review that connects expected energy, support geometry, foundation evidence and maintainable routing."
+        ]
+      }
+    ]
+  },
+  "solar-canopies": {
+    "reviewed": "2026-10-05",
+    "outcome": "Write a solar-canopy brief that integrates structural design, occupied space, drainage, electrical routes and the actual solar value.",
+    "sources": [
+      {
+        "label": "Schletter · SunRide carport manufacturer announcement",
+        "url": "https://www.schletter-group.com/news/optimum-use-of-parking-space-schletter-launches-new-carport-system-on-the-market/"
+      },
+      {
+        "label": "Unirac · U-Builder product and engineering assumptions (retrieved 2026-10-05)",
+        "url": "https://design.unirac.com/designassumptions"
+      },
+      {
+        "label": "NREL · PV and energy storage O&M best practices, third edition (2018), NREL/TP-7A40-73822",
+        "url": "https://www.nlr.gov/docs/fy19osti/73822.pdf"
+      }
+    ],
+    "sections": [
+      {
+        "title": "A canopy is an occupied-space project",
+        "paragraphs": [
+          "A solar canopy combines an elevated support structure with photovoltaic equipment while preserving a use underneath. That use may be parking, a walkway or another outdoor activity. The project therefore has at least two success measures: useful solar generation and a space that functions properly for its users. A panel layout that produces energy but obstructs vehicles or drains onto a walkway fails the broader brief.",
+          "Begin with the existing use and its constraints. Record vehicle routes, required clearance, pedestrian access, accessibility needs, lighting, drainage and buried services. Then identify the solar objective and electrical destination. A canopy may be attractive where roof area is unavailable or shade for parked vehicles has value, but its new structure and foundations must be included in the installed scope. It should not be priced as a roof array with a few extra posts."
+        ]
+      },
+      {
+        "title": "An open structure needs its own loading review",
+        "paragraphs": [
+          "A canopy does not share all of an enclosed building's wind conditions. Airflow can interact with both sides of an elevated surface, while column positions and cantilevers determine the structural arrangement. Height, spans and local site conditions matter. Counting module mass or borrowing a rooftop mounting rule leaves the major questions unanswered.",
+          "Use a canopy system and site-specific structural package appropriate to the actual project. Schletter's SunRide announcement illustrates a commercial canopy approach with project planning and structural documentation; it does not supply a generic foundation design for every site. Unirac's U-Builder assumptions separately flag open structures such as carports for site-specific engineering. Record the locally adopted requirements and the designer's load assumptions, including module and support compatibility, rather than transferring an enclosed-roof software output."
+        ],
+        "sources": [
+          {
+            "label": "Schletter · SunRide carport manufacturer announcement",
+            "url": "https://www.schletter-group.com/news/optimum-use-of-parking-space-schletter-launches-new-carport-system-on-the-market/"
+          },
+          {
+            "label": "Unirac · U-Builder product and engineering assumptions (retrieved 2026-10-05)",
+            "url": "https://design.unirac.com/designassumptions"
+          }
+        ]
+      },
+      {
+        "title": "Clearance is three-dimensional",
+        "paragraphs": [
+          "A parking plan must preserve vehicle movement, door opening, pedestrian routes and clearance under the lowest relevant part of the structure. A nominal canopy height may refer to a point that is not the lowest beam, equipment enclosure or cable route. Sloped ground can reduce clearance locally. Record the vehicle envelope and actual finished levels.",
+          "Column positions can affect turning and parking even when the bays look generous in plan view. Consider impact exposure and the appropriate protection as part of the project design. Future changes such as taller fleet vehicles or altered parking aisles should be captured in the brief. A canopy that is difficult to use can lose practical value despite excellent energy production. Compare proposed alternatives using drawings that show both solar geometry and the occupied space."
+        ]
+      },
+      {
+        "title": "Waterproof shelter must be an explicit scope",
+        "paragraphs": [
+          "A row of ordinary framed PV modules is not automatically a continuous waterproof roof. Module gaps, mounting interfaces and penetrations need an approved weather-management arrangement if dry shelter is part of the promise. Ask whether the system includes gutters, seals or another documented method and how that method is maintained.",
+          "Show where rainwater discharges and how snow or debris may affect use beneath the canopy. Runoff concentrated at one edge can create a different site problem from the existing open parking area. Drainage should coordinate with finished ground levels and pedestrian routes. Keep solar and shelter warranties distinct, including responsibility for water leaks. If a design provides shade but allows some rainfall through the module gaps, state that clearly in the brief and quotation rather than allowing the word canopy to imply dry parking."
+        ]
+      },
+      {
+        "title": "Electrical integration and EV charging are separate decisions",
+        "paragraphs": [
+          "Generation may serve nearby loads, storage or permitted grid export depending on the electrical architecture and utility agreement. An EV charger beneath the canopy is a separate load with its own capacity and operating schedule. Solar nameplate power does not prove that vehicles can charge at their full rating at every moment.",
+          "Draw a conceptual boundary map showing PV, conversion equipment, optional storage, chargers and the building or utility interface. Ask how cable routes are protected from weather, impact and maintenance activity. Controls may coordinate charging with available solar or site demand, but the actual supported behavior needs documentation. A midday generation surplus and evening vehicle charging are different time patterns; an annual energy balance alone cannot establish that the canopy continuously powers all charging without grid imports."
+        ],
+        "figures": [
+          {
+            "diagram": "inverter-topology",
+            "caption": "Generic DC and AC coupling paths help define a canopy's electrical integration. This is not a canopy construction or wiring drawing.",
+            "alt": "PV connects either to a DC bus with storage or through a PV inverter into an AC bus with separate battery conversion."
+          }
+        ]
+      },
+      {
+        "title": "Worked example: daily solar and vehicle energy",
+        "workedExample": {
+          "title": "A fictional workplace canopy",
+          "givens": [
+            "PV system: 20 kW DC; assumed daily equivalent full-power hours: 4.",
+            "Assumed aggregate energy factor: 0.80 after modeled losses.",
+            "Four vehicles each need 12 kWh that day; no storage is included.",
+            "This is a daily energy screen, not a charger power or service-capacity design."
+          ],
+          "steps": [
+            "Estimated daily AC solar energy = 20 × 4 × 0.80 = 64 kWh.",
+            "Vehicle energy request = 4 × 12 = 48 kWh.",
+            "Daily energy surplus before other site loads = 64 − 48 = 16 kWh.",
+            "Review arrival times, charge rates, solar profile and other site loads to determine actual simultaneous imports or curtailment."
+          ],
+          "result": "The assumed daily solar energy exceeds vehicle demand, but timing and power limits remain unresolved.",
+          "discussion": "Four 7 kW chargers would request 28 kW if operating together, which exceeds the 20 kW DC nameplate even before conversion and weather effects. Energy sufficiency over a day is not a guarantee of instantaneous charger supply."
+        }
+      },
+      {
+        "title": "Compare solar and non-solar scope",
+        "columns": [
+          "Scope",
+          "Evidence to keep",
+          "Reason"
+        ],
+        "rows": [
+          [
+            "Structure and foundations",
+            "Site-specific drawings and acceptance records",
+            "Elevated occupied-space loading"
+          ],
+          [
+            "Vehicle / pedestrian function",
+            "Clearances, routes and protection design",
+            "Usable space below"
+          ],
+          [
+            "Shelter and drainage",
+            "Water-management details and warranty",
+            "Actual weather protection"
+          ],
+          [
+            "PV and electrical integration",
+            "Module support and one-line design",
+            "Approved generation and routing"
+          ],
+          [
+            "Charging and controls",
+            "Service/load study and supported modes",
+            "Timing and capacity"
+          ],
+          [
+            "Inspection and maintenance",
+            "Access plan and service responsibility",
+            "Lifetime operation"
+          ]
+        ],
+        "paragraphs": [
+          "Keep the cost of the new canopy structure visible. If shade or shelter has value, assess it explicitly instead of forcing all value into electricity savings. This creates a more honest comparison with roof or ground alternatives."
+        ]
+      },
+      {
+        "title": "Mistakes and long-term access",
+        "paragraphs": [
+          "Avoid calculating payback from panel cost alone, assuming every module is approved for overhead occupancy, or accepting a waterproof promise without the corresponding assembly details. Do not let charging equipment or decorative additions create unreviewed wind, clearance or routing changes.",
+          "Plan how modules, drainage components and lighting are inspected or replaced above an active parking area. Service may require temporary closures and suitable access equipment. A contract should explain responsibility for these arrangements. Keep photographs and serial records where a future operator can find them. An attractive opening-day canopy remains an asset only if its structure, occupied space and electrical equipment can be maintained without improvising access over vehicles and pedestrians."
+        ]
+      },
+      {
+        "title": "Exercise: energy versus simultaneous demand",
+        "exercise": {
+          "question": "The example produces 64 kWh per day. Can four vehicles therefore always charge at 7 kW each directly from the canopy?",
+          "answer": "No. Their combined 28 kW demand and charging times must be compared with actual available AC solar power.",
+          "explanation": "Daily kWh integrate power over time. A daily energy surplus can coexist with imports during charging and export or curtailment at another time. Chargers, controls, storage and utility capacity determine the supported operation."
+        },
+        "paragraphs": [
+          "Finish the brief with both the solar success measure and the occupied-space requirements. The quotation can then describe a complete canopy project rather than an isolated module purchase."
+        ]
+      }
+    ]
+  },
+  "commissioning": {
+    "reviewed": "2026-10-05",
+    "outcome": "Prepare subsystem commissioning gates, acceptance evidence and owner handover records while reserving electrical tests and energization for qualified personnel using the exact manuals.",
+    "sources": [
+      {
+        "label": "Victron · SmartSolar MPPT 150/60–250/70 installation manual",
+        "url": "https://www.victronenergy.com/media/pg/Manual_SmartSolar_MPPT_150-60_up_to_250-70/en/installation.html"
+      },
+      {
+        "label": "Enphase · Commissioning an off-grid system, TEB-00203-1.0-EN (November 2024, US)",
+        "url": "https://enphase.com/download/commissioning-grid-enphase-energy-system-using-enphase-installer-app-tech-brief"
+      },
+      {
+        "label": "OSHA · Solar energy lockout/tagout (United States)",
+        "url": "https://www.osha.gov/green-jobs/solar/lockout-tagout"
+      },
+      {
+        "label": "OSHA · Solar energy electrical hazards (United States)",
+        "url": "https://www.osha.gov/green-jobs/solar/electrical"
+      },
+      {
+        "label": "NREL · PV and energy storage O&M best practices, third edition (2018), NREL/TP-7A40-73822",
+        "url": "https://www.nlr.gov/docs/fy19osti/73822.pdf"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Commissioning proves a defined configuration",
+        "paragraphs": [
+          "Commissioning checks whether the installed system corresponds to its design and performs the required functions. It is not simply the first moment an inverter displays power. Define the configuration, operating modes and acceptance criteria before the test day. A grid-connected array, a battery backup system and an off-grid system require different evidence because their intended functions differ.",
+          "Use subsystem gates. Records and mechanical completion precede electrical verification; verified configuration precedes controlled energization; operating checks precede handover. Each gate has an expected result, an accountable person and a record. This chapter teaches how to prepare and interpret that process. It is not a live-testing, switching or energization procedure. Qualified personnel must use the exact installed equipment manuals, approved design and applicable jurisdictional requirements."
+        ],
+        "figures": [
+          {
+            "diagram": "commissioning",
+            "caption": "Commissioning gates proceed from records and inspection to controlled functional validation and a saved baseline. The diagram contains no switching sequence.",
+            "alt": "A staged flow shows documentation, mechanical review, electrical verification, functional tests and handover."
+          }
+        ]
+      },
+      {
+        "title": "Freeze the design and reconcile the installation",
+        "paragraphs": [
+          "Collect current drawings, approved equipment lists, manufacturer manuals, protection settings, firmware requirements and inspection status. Reconcile serial numbers and installed models with those documents. A substituted module, battery or transfer device should trigger review before tests begin; otherwise the team may be validating a configuration that was never designed.",
+          "Keep an as-built string and circuit map. Record labels, conductor identities, module allocation, battery configuration and communications connections. Document work hidden behind modules or covers, including the relevant assembly and torque records. Missing paperwork is not just administrative inconvenience: it can prevent interpreting a measurement or tracing an alarm. Resolve conflicting design revisions so every participant knows which expected values and operating modes apply."
+        ]
+      },
+      {
+        "title": "Mechanical and environmental readiness",
+        "paragraphs": [
+          "Inspect the installation against the selected manuals and approved drawings. This includes support, access, cable management, enclosure suitability, barriers, equipment clearances and environmental conditions. Confirm the roof or foundation work has reached its required acceptance point. Protect the working area from unrelated activity during commissioning.",
+          "Battery and inverter placement can affect airflow, temperatures and service access. A neat equipment wall does not establish correct clearances or compatible enclosures. Verify the physical installation before interpreting software status as readiness. If a component is missing, damaged or improperly supported, record it and stop the dependent tests. Commissioning should expose unresolved installation issues rather than create a persuasive screenshot while the physical configuration remains incomplete."
+        ]
+      },
+      {
+        "title": "Electrical verification needs a planned safety boundary",
+        "paragraphs": [
+          "PV can generate DC whenever illuminated, batteries store energy, and utility or generator sources may remain available elsewhere in the system. A front-panel off state does not establish safe isolation of every source. OSHA's US electrical and lockout/tagout resources identify the need to control electrical hazards and all relevant energy sources during service. The project team determines the applicable work procedures and authorized personnel.",
+          "The test plan identifies which verification activities apply to the installed equipment and how they can be performed without damaging it. Continuity, polarity, insulation and other checks are not interchangeable. Some equipment must be disconnected or handled differently for particular tests. Record instruments, method, conditions and results under the qualified team's procedure. Do not improvise a high-voltage insulation test across connected electronics because a generic checklist includes the words insulation resistance."
+        ],
+        "sources": [
+          {
+            "label": "OSHA · Solar energy lockout/tagout (United States)",
+            "url": "https://www.osha.gov/green-jobs/solar/lockout-tagout"
+          },
+          {
+            "label": "OSHA · Solar energy electrical hazards (United States)",
+            "url": "https://www.osha.gov/green-jobs/solar/electrical"
+          }
+        ]
+      },
+      {
+        "title": "Startup order is product-specific",
+        "paragraphs": [
+          "Some battery charge controllers depend on seeing the battery before PV for automatic voltage recognition. Victron's SmartSolar MPPT 150/60–250/70 installation documentation specifies its connection process and exceptions. That is evidence for those models, not a universal solar startup recipe. Proprietary storage, hybrid conversion and grid-interactive systems can have different requirements.",
+          "Commissioning may also require installer training, supported devices and the manufacturer's application workflow. Enphase's November 2024 US off-grid technical brief lists specific prerequisite devices and training for that architecture. Use the correct regional guide and firmware requirements. At each permitted stage, compare actual state with the expected result and documented stop criteria. Unexpected readings, alarms, odor, heating or physical damage call for stopping through the site's safe procedure and resolving the cause before progression."
+        ],
+        "sources": [
+          {
+            "label": "Victron · SmartSolar MPPT 150/60–250/70 installation manual",
+            "url": "https://www.victronenergy.com/media/pg/Manual_SmartSolar_MPPT_150-60_up_to_250-70/en/installation.html"
+          },
+          {
+            "label": "Enphase · Commissioning an off-grid system, TEB-00203-1.0-EN (November 2024, US)",
+            "url": "https://enphase.com/download/commissioning-grid-enphase-energy-system-using-enphase-installer-app-tech-brief"
+          }
+        ]
+      },
+      {
+        "title": "Worked example: an acceptance result with conditions",
+        "workedExample": {
+          "title": "Interpreting a fictional low-load power check",
+          "givens": [
+            "A controlled test uses a known 1.0 kW AC load for 15 minutes.",
+            "Metered AC energy during the interval: 0.247 kWh.",
+            "Test plan allows a ±5% interval-energy tolerance for this particular calibrated setup.",
+            "The example says nothing about safe connection, protection or switching."
+          ],
+          "steps": [
+            "Expected energy = 1.0 kW × 0.25 h = 0.250 kWh.",
+            "Difference = 0.247 − 0.250 = −0.003 kWh.",
+            "Relative difference = −0.003 ÷ 0.250 × 100 = −1.2%.",
+            "Record the load, measurement boundary, interval, meter and conditions; classify this one check as within the assumed tolerance."
+          ],
+          "result": "The interval-energy result passes the fictional criterion; it does not establish every backup function.",
+          "discussion": "Surge starting, phase balance, transfer, depletion recovery and charging are separate functions. The ±5% value is invented for this example and must not be treated as a universal commissioning standard."
+        }
+      },
+      {
+        "title": "Functional validation follows the project brief",
+        "columns": [
+          "Function",
+          "Expected evidence",
+          "Question it answers"
+        ],
+        "rows": [
+          [
+            "Normal solar operation",
+            "Power and energy at stated conditions",
+            "Is conversion operating as designed?"
+          ],
+          [
+            "Metering and controls",
+            "Consistent boundary and direction",
+            "Are controls using valid measurements?"
+          ],
+          [
+            "Supported backup mode",
+            "Approved functional-test record",
+            "Do designated loads and isolation work?"
+          ],
+          [
+            "Recovery behavior",
+            "Documented return from tested conditions",
+            "Does the system resume correctly?"
+          ],
+          [
+            "Owner controls and alarms",
+            "Demonstrated instructions and contacts",
+            "Can the owner operate and report issues?"
+          ]
+        ],
+        "paragraphs": [
+          "An outage test must follow the manufacturer-approved method and authorized site procedure. Do not create an outage by improvised connections or unsafe switching. Identify which functions are demonstrated and which remain deferred, with the conditions required to complete them."
+        ]
+      },
+      {
+        "title": "Save a baseline and close the handover",
+        "paragraphs": [
+          "Record operating conditions with measurements. Solar power without irradiance, temperature and system state is difficult to compare later. Battery state, available charge acceptance and export limits can explain production restrictions. Keep firmware, settings, alarms, meter directions and the completed test record alongside photographs and final drawings.",
+          "Give the owner documented operating controls, emergency information, service contacts, warranties and monitoring access. Confirm that required inspection and utility permission have been obtained before the relevant operation. A technically functioning installation and authorization to export are separate matters. Handover should list accepted functions, unresolved items and responsibilities. Do not mark an unperformed recovery or backup test as passed simply because normal grid-connected production looks reasonable."
+        ]
+      },
+      {
+        "title": "Mistakes and an explained exercise",
+        "paragraphs": [
+          "Avoid universal power-on sequences, changing several settings at once, undocumented firmware updates during diagnosis, and accepting a green communications icon as proof of electrical function. Keep commissioning evidence tied to the exact installed configuration so later changes can be reviewed."
+        ],
+        "exercise": {
+          "question": "The app reports all devices online and solar output is visible. Does that prove the selected backup circuits work during an outage?",
+          "answer": "No. Communications and normal production are only part of commissioning.",
+          "explanation": "Backup needs the documented isolation, transfer, supported-load and recovery behavior. Its approved functional validation is separate from a network-status check and should appear explicitly in the acceptance record."
+        }
+      }
+    ]
+  },
+  "troubleshooting": {
+    "reviewed": "2026-10-05",
+    "outcome": "Organize safe observations, separate energy-flow and monitoring faults, and produce a reproducible service report instead of changing settings blindly.",
+    "sources": [
+      {
+        "label": "Victron · Inverter RS Smart Solar MPPT troubleshooting",
+        "url": "https://www.victronenergy.com/media/pg/Inverter_RS_Smart_Solar/en/mppt-rs-troubleshooting.html"
+      },
+      {
+        "label": "OSHA · Solar energy electrical hazards (United States)",
+        "url": "https://www.osha.gov/green-jobs/solar/electrical"
+      },
+      {
+        "label": "OSHA · Solar energy lockout/tagout (United States)",
+        "url": "https://www.osha.gov/green-jobs/solar/lockout-tagout"
+      },
+      {
+        "label": "NREL · PV and energy storage O&M best practices, third edition (2018), NREL/TP-7A40-73822",
+        "url": "https://www.nlr.gov/docs/fy19osti/73822.pdf"
+      },
+      {
+        "label": "Sandia · PV Performance Modeling Collaborative guide",
+        "url": "https://pvpmc.sandia.gov/modeling-guide/"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Define the symptom before naming a failed part",
+        "paragraphs": [
+          "A useful symptom states what happened, when it happened, where it was observed and what was expected. Solar production was low is incomplete. The inverter showed 0 W at noon while the monitoring app had current data and the system recorded a particular alarm is more useful. Distinguish measured behavior from the interpretation that a panel, inverter or battery has failed.",
+          "Begin with operating context: date, weather, recent changes, grid state, load demand, battery state and any export restriction. Several legitimate controls can reduce solar output. A full battery in a nonexporting system may leave nowhere for available generation to go. A communications outage can remove an app's graph while local equipment continues working. The first objective is to separate these possibilities using safe, documented observations rather than replacing the most visible component."
+        ],
+        "figures": [
+          {
+            "diagram": "meter-boundaries",
+            "caption": "Reconcile PV, house, battery and grid measurements at consistent boundaries. The drawing is a diagnostic concept, not a live-test circuit.",
+            "alt": "PV production, house consumption, battery exchange and grid exchange connect to an AC site bus."
+          }
+        ]
+      },
+      {
+        "title": "Establish what can be observed safely",
+        "paragraphs": [
+          "Owners can usually collect visible indicators, alarm codes, app timestamps, bill data and externally accessible operating information according to the owner manual. Opening enclosures, handling connectors, probing circuits or defeating protection changes the work into electrical service. The applicable qualified-personnel procedure must govern that work.",
+          "OSHA's US solar resources emphasize electrical energy and the control of all relevant sources during service. PV, batteries, utility and generators can remain hazardous in different ways. A dark screen or switched-off inverter does not prove every connected circuit is deenergized. If there is smoke, swelling, arcing, unusual odor, rapid heating or physical damage, follow the documented emergency process and obtain appropriate assistance. Do not repeatedly restart a system showing an unresolved protection fault merely to recover the graph."
+        ],
+        "sources": [
+          {
+            "label": "OSHA · Solar energy electrical hazards (United States)",
+            "url": "https://www.osha.gov/green-jobs/solar/electrical"
+          },
+          {
+            "label": "OSHA · Solar energy lockout/tagout (United States)",
+            "url": "https://www.osha.gov/green-jobs/solar/lockout-tagout"
+          }
+        ]
+      },
+      {
+        "title": "Check the measurement before the conclusion",
+        "paragraphs": [
+          "Identify the measurement boundary. Module DC rating, inverter AC output, house consumption and utility net import are different quantities. A net-export graph near zero can coexist with substantial solar production if the home consumes that production. A battery charging rate can differ from total inverter output because energy is split among paths.",
+          "Check timestamps, sample intervals, units and whether data are instantaneous or accumulated. A stale app value may be a communications symptom. Compare local status and approved monitoring displays where the owner manual permits it. Recent meter or current-transformer work can change reported direction or accounting, so capture what changed and refer it to the installer. Do not rearrange measurement hardware based only on an implausible app animation. A credible diagnosis starts with a known boundary and fresh data."
+        ]
+      },
+      {
+        "title": "Compare conditions, not just dates",
+        "paragraphs": [
+          "A cloudy day, hotter modules, seasonal shade and different battery state can explain changes in production. A fair comparison holds relevant conditions sufficiently similar or uses a suitable weather-normalized model. Even two clear-looking days can differ in irradiance and operating temperatures. A single midday screenshot cannot establish annual underperformance.",
+          "For a sustained concern, collect interval or daily records with weather context and the known operating constraints. Look for onset, persistence and whether every subsystem changed together. One tracker or module group behaving differently from comparable peers can narrow the service investigation. A whole-site reduction following a settings change suggests another path. Sandia's performance modeling framework is useful for understanding why raw power and normalized performance are separate concepts. Keep modeled expectations labeled as estimates rather than guaranteed outputs."
+        ],
+        "sources": [
+          {
+            "label": "Sandia · PV Performance Modeling Collaborative guide",
+            "url": "https://pvpmc.sandia.gov/modeling-guide/"
+          }
+        ]
+      },
+      {
+        "title": "A fault code is a route into the exact manual",
+        "paragraphs": [
+          "Record the complete error code, affected model, firmware and circumstances. Manufacturers can use similar words for different conditions, so the device and manual matter. Victron's Inverter RS Smart Solar troubleshooting documentation illustrates model-specific checks for charging and input conditions. It should not be copied as the diagnostic procedure for a different controller or proprietary battery.",
+          "Ask what evidence the authorized technician needs to distinguish source, conversion, storage, control and communications issues. Preserve alarm history before a reset or update can erase it. If a documented setting change is appropriate, record the prior value, new value, reason and result. Changing battery type, current limit and control mode simultaneously produces ambiguous evidence and can create a new problem. Treat each intervention as a controlled diagnostic step within the equipment's permitted procedure."
+        ],
+        "sources": [
+          {
+            "label": "Victron · Inverter RS Smart Solar MPPT troubleshooting",
+            "url": "https://www.victronenergy.com/media/pg/Inverter_RS_Smart_Solar/en/mppt-rs-troubleshooting.html"
+          }
+        ]
+      },
+      {
+        "title": "Worked example: production did not disappear",
+        "workedExample": {
+          "title": "Reconciling a fictional sunny interval",
+          "givens": [
+            "Inverter AC solar output: 3.0 kW.",
+            "House loads: 1.8 kW; battery charging at the same AC-accounted boundary: 1.2 kW.",
+            "Net grid exchange shown as 0 kW.",
+            "Ignore measurement error and conversion losses already outside the stated boundary."
+          ],
+          "steps": [
+            "Accounted uses = 1.8 + 1.2 = 3.0 kW.",
+            "Net surplus = 3.0 − 3.0 = 0 kW.",
+            "Zero export is consistent with all solar output being used onsite.",
+            "Check the app's measurement labels and whether the reported production value is fresh before declaring a generation fault."
+          ],
+          "result": "The zero grid-export reading does not indicate zero solar production.",
+          "discussion": "In a real system, DC battery readings and AC inverter readings require conversion-boundary reconciliation. Small residuals can reflect timing or measurement error; a large unexplained residual warrants installer review, not an invented flow."
+        }
+      },
+      {
+        "title": "Symptom worksheet",
+        "columns": [
+          "Observed symptom",
+          "Safe evidence to collect",
+          "Question for qualified service"
+        ],
+        "rows": [
+          [
+            "App stops updating",
+            "Last timestamp, network changes, local status",
+            "Communications failure or equipment shutdown?"
+          ],
+          [
+            "Lower daily energy",
+            "Weather, shade and operating history",
+            "Expected variation or sustained loss?"
+          ],
+          [
+            "No battery discharge",
+            "State of charge, reserve, mode and alarms",
+            "Control restriction or battery/inverter fault?"
+          ],
+          [
+            "One group differs from peers",
+            "Dated group records and configuration map",
+            "Shade, mismatch, communication or hardware?"
+          ],
+          [
+            "Repeated alarm or trip",
+            "Exact code, timing and recent changes",
+            "Cause and safe correction before restart?"
+          ]
+        ],
+        "paragraphs": [
+          "The table organizes evidence, not diagnoses. Several causes can produce the same symptom. A technician should be able to read the report and determine what further checks are justified without guessing what the owner changed."
+        ]
+      },
+      {
+        "title": "Build a service report that can be reproduced",
+        "paragraphs": [
+          "Include system identifiers, a concise symptom, first occurrence, current status and the recent-change log. Attach relevant screenshots with timestamps, settings exported through supported tools, and the commissioning baseline. State which observations are from local equipment and which are from remote monitoring. Save the data securely without sharing credentials.",
+          "Describe the impact: total outage, reduced charging, missing monitoring or another specific limitation. Explain whether the condition is persistent or intermittent and whether a documented owner action changed it. Follow up after repair by verifying the original symptom under the agreed conditions. A replaced component or cleared alarm is not itself proof of resolution if the fault returns or the intended backup function remains untested."
+        ]
+      },
+      {
+        "title": "Mistakes and an explained exercise",
+        "paragraphs": [
+          "Avoid testing by swapping random connectors, repeatedly resetting protection, or applying another model's settings. Avoid diagnosing annual production from one instant, and do not count a communications repair as a verified generation repair without checking the actual symptom."
+        ],
+        "exercise": {
+          "question": "The battery is full, the system is configured for zero export, household load is 500 W, and solar output sits near 500 W in bright sun. Is the inverter necessarily faulty?",
+          "answer": "No. The stated conditions provide a plausible control-based explanation for limiting generation.",
+          "explanation": "With little load and no permitted export or storage acceptance, available solar energy may be curtailed. Confirm the actual modes and fresh readings using supported information. A fault remains possible, but the observation alone does not prove one."
+        }
+      }
+    ]
+  },
+  "maintenance": {
+    "reviewed": "2026-10-05",
+    "outcome": "Create a condition- and manual-based maintenance plan with production monitoring, safe ownership observations, event-triggered inspections and evidence after corrective work.",
+    "sources": [
+      {
+        "label": "NREL · PV and energy storage O&M best practices, third edition (2018), NREL/TP-7A40-73822",
+        "url": "https://www.nlr.gov/docs/fy19osti/73822.pdf"
+      },
+      {
+        "label": "Unirac · RM10 installation guide (retrieved 2026-10-05)",
+        "url": "https://unirac.com/document/rm10-install-guide/"
+      },
+      {
+        "label": "OSHA · Solar energy fall hazards (United States)",
+        "url": "https://www.osha.gov/green-jobs/solar/falls"
+      },
+      {
+        "label": "OSHA · Solar energy lockout/tagout (United States)",
+        "url": "https://www.osha.gov/green-jobs/solar/lockout-tagout"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Maintenance preserves function over time",
+        "paragraphs": [
+          "Solar equipment is installed outdoors and can remain in service for many years. Operation and maintenance therefore cover more than cleaning glass. Monitoring detects loss of function; preventive work addresses known needs; corrective work resolves faults; documentation connects today's condition with the installed design. A useful plan specifies what is observed, by whom, how often and what triggers a response.",
+          "NREL's third-edition PV and storage O&M guide provides a broad framework for predictable maintenance and asset records. Its 2018 publication date should remain visible: it is an enduring reference, not evidence that every current device uses the same service interval. Exact manufacturer instructions, site conditions and contracts determine equipment-specific requirements. A household plan can be simpler than a utility-scale one while retaining the same principles of responsibility, evidence and safe access."
+        ],
+        "sources": [
+          {
+            "label": "NREL · PV and energy storage O&M best practices, third edition (2018), NREL/TP-7A40-73822",
+            "url": "https://www.nlr.gov/docs/fy19osti/73822.pdf"
+          }
+        ],
+        "figures": [
+          {
+            "diagram": "commissioning",
+            "caption": "After corrective work, use the affected commissioning gates to verify function and save an updated baseline.",
+            "alt": "Documentation, qualified verification, configuration, function tests, baseline and handover form an evidence sequence."
+          }
+        ]
+      },
+      {
+        "title": "Build the plan from the installed configuration",
+        "paragraphs": [
+          "List modules, mounting, inverters, storage, transfer equipment, monitoring and any generator. Record manuals, serial numbers, warranties and service contacts. Identify which owner activities are permitted and which tasks require qualified personnel. A device marketed as maintenance-free can still require observation, environmental clearance and fault response; the label should not erase the plan.",
+          "Set schedules from the exact manuals and site risk rather than a universal calendar. A coastal environment, heavy vegetation, roof drainage problems or a remote site may justify different observation and service arrangements. Include contractual responsibilities and access requirements. A plan that specifies inspection without identifying how the roof or canopy can be reached safely is incomplete. Keep the current configuration record available to whoever performs the next service visit."
+        ]
+      },
+      {
+        "title": "Monitor energy with meaningful comparisons",
+        "paragraphs": [
+          "Review production and alarms often enough to notice a sustained problem before it becomes a long period of lost energy. Confirm the monitoring data are fresh and complete. A missing graph can indicate communications failure rather than generation failure, while a plausible graph can conceal an issue if the wrong boundary is displayed.",
+          "Compare expected performance with weather and known operating limits. Seasonal changes, shading, module temperature, battery reserve and export controls affect outcomes. Establish a response criterion that fits the available model and data quality. Do not promise an arbitrary daily output as a maintenance acceptance standard. Preserve records of onset and recovery so a technician can distinguish gradual loss, a sudden event and a control change. Monitoring is most useful when someone is explicitly responsible for reviewing it and acting on meaningful findings."
+        ]
+      },
+      {
+        "title": "Inspect interfaces and surroundings",
+        "paragraphs": [
+          "Safe external observations can identify new shade, damaged visible equipment, blocked access, drainage issues or apparent movement. Qualified inspections examine the system's required mechanical and electrical interfaces according to its manuals. Mounting, cable support, enclosures and protective devices should be considered alongside modules and inverter status.",
+          "Module removal is a service operation, not ordinary owner maintenance. Unirac's RM10 documentation addresses bonding-path continuity during that assembly's maintenance, illustrating why removal can affect more than physical support. Use the exact installed system procedure rather than generalizing those details. Keep the repair record tied to approved replacement components and any required new single-use hardware. A module with similar watts but different frame, connector or electrical properties can require a wider compatibility review."
+        ],
+        "sources": [
+          {
+            "label": "Unirac · RM10 installation guide (retrieved 2026-10-05)",
+            "url": "https://unirac.com/document/rm10-install-guide/"
+          }
+        ]
+      },
+      {
+        "title": "Cleaning is a cost and condition decision",
+        "paragraphs": [
+          "Soiling can reduce available light, but the value of cleaning depends on actual contamination, natural rainfall, lost generation, access cost and the module's permitted method. Establish whether the performance data and observations indicate a meaningful issue before commissioning routine work. A universal monthly cleaning prescription ignores climate and economics.",
+          "Follow the module manufacturer's cleaning and handling instructions. Avoid improvised chemicals, tools or work methods that can damage surfaces, seals or wiring. Roof access and electrical equipment remain hazards even when the task sounds like washing. OSHA's US solar fall guidance distinguishes maintenance work from construction, so the service team must choose the applicable protection and method. The owner should not climb onto a roof or walk on modules to recover a speculative amount of energy."
+        ],
+        "sources": [
+          {
+            "label": "OSHA · Solar energy fall hazards (United States)",
+            "url": "https://www.osha.gov/green-jobs/solar/falls"
+          }
+        ]
+      },
+      {
+        "title": "Worked example: an illustrative cleaning decision",
+        "workedExample": {
+          "title": "Compare estimated recovered energy with service cost",
+          "givens": [
+            "Expected production during the affected three-month period: 3,000 kWh.",
+            "Assumed persistent soiling loss: 4%, based on an adequate site assessment.",
+            "Recovered energy value: $0.18/kWh; quoted compliant cleaning service: $140.",
+            "Ignore future effects and other reasons for service; all values are hypothetical."
+          ],
+          "steps": [
+            "Potential recovered energy = 3,000 × 0.04 = 120 kWh.",
+            "Value = 120 × $0.18 = $21.60.",
+            "Compare $21.60 estimated energy value with $140 service cost.",
+            "Reassess the loss estimate and non-energy requirements instead of assuming the cleaning pays for itself."
+          ],
+          "result": "The modeled short-period energy benefit alone is below the cleaning cost.",
+          "discussion": "A larger or longer-lasting loss changes the arithmetic. Inspection, warranty requirements or particular contamination may provide other reasons for service. The example supplies no cleaning technique and does not prove that the assumed 4% loss is real."
+        }
+      },
+      {
+        "title": "Battery and generator maintenance have their own manuals",
+        "paragraphs": [
+          "Storage monitoring should include supported alarms, operating environment, reserve and unusual behavior. Different chemistries and products have different service needs; do not transfer an instruction from a flooded lead-acid battery to a sealed LFP system. Treat swelling, heat, odor or physical damage through the documented emergency and service process.",
+          "If backup includes a generator, include its specific service schedule, safe siting and fuel-management responsibilities. A battery app's reminder is useful only if someone responds. Likewise, a successful short outage test does not establish that fuel and service will support a prolonged outage. Any functional test involving transfer or recovery must follow the approved system method. Maintenance planning should support the backup objective with actual responsibilities rather than the assumption that an automatic system needs no attention."
+        ]
+      },
+      {
+        "title": "Events trigger inspections beyond the calendar",
+        "columns": [
+          "Trigger",
+          "Record to collect",
+          "Response to arrange"
+        ],
+        "rows": [
+          [
+            "Severe weather or flooding",
+            "Date, accessible observations, alarms",
+            "Appropriate safety and damage assessment"
+          ],
+          [
+            "New sustained energy loss",
+            "Fresh data and operating conditions",
+            "Qualified diagnostic review"
+          ],
+          [
+            "Roof or landscaping work",
+            "Work scope and configuration changes",
+            "Interface / shade review"
+          ],
+          [
+            "Component replacement",
+            "Exact models, parts and settings",
+            "Compatibility and functional verification"
+          ],
+          [
+            "Network or firmware change",
+            "Prior state and change record",
+            "Monitoring and supported-mode check"
+          ]
+        ],
+        "paragraphs": [
+          "Do not postpone an obvious damage concern because the annual visit is months away. Conversely, do not perform intrusive work simply because a generic calendar says inspection. Match the response to the trigger, manuals and personnel."
+        ]
+      },
+      {
+        "title": "Mistakes and an explained exercise",
+        "paragraphs": [
+          "Avoid treating monitoring as maintenance when nobody reviews it, scheduling cleaning without a loss assessment, or assuming a warranty eliminates the need for records. Keep proof of corrective work and confirm the original problem was resolved under appropriate conditions. Update the baseline when the approved configuration changes."
+        ],
+        "exercise": {
+          "question": "After reroofing, the same modules are reinstalled and the app shows generation. Is the original maintenance record sufficient?",
+          "answer": "No. Reinstallation changes mounting and roof interfaces and requires updated as-built and acceptance evidence.",
+          "explanation": "Normal generation does not prove weatherproofing, attachment, bonding or supported operating modes. Keep the reinstall records, approved parts and relevant verification with the ongoing service file."
+        }
+      }
+    ]
+  },
+  "china-export-rebates": {
+    "reviewed": "2026-10-05",
+    "outcome": "Read the verified Chinese export-rebate timeline and compare complete current offers without turning a tax-policy change into an unsupported retail-price forecast.",
+    "sources": [
+      {
+        "label": "China MOF / State Taxation Administration · Announcement 2026 No. 2 (official Shanghai mirror, Chinese)",
+        "url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/jckss/202601/t479001.html"
+      }
+    ],
+    "sections": [
+      {
+        "title": "The verified notice and its scope",
+        "paragraphs": [
+          "China's Ministry of Finance and State Taxation Administration issued Announcement 2026 No. 2 dated January 8, 2026. The official Shanghai tax-authority mirror, published January 12, says VAT export rebates for the listed photovoltaic and other products are canceled from April 1, 2026. For listed battery products, the rebate falls from 9% to 6% for April–December 2026 and is scheduled to be canceled from January 1, 2027.",
+          "The notice defines applicability through product annexes and the export date on the customs declaration. This is a paraphrase of the accessible official Chinese text, checked October 5, 2026; it is not a classification decision for a particular shipment. The original central-government URL was unavailable during this review, so no separate January 9 publication assertion is treated as verified here."
+        ],
+        "sources": [
+          {
+            "label": "China MOF / State Taxation Administration · Announcement 2026 No. 2 (official Shanghai mirror, Chinese)",
+            "url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/jckss/202601/t479001.html"
+          }
+        ],
+        "figures": [
+          {
+            "diagram": "cash-flow",
+            "caption": "An exporter policy change is one input to a buyer's cost chain; the diagram does not forecast prices.",
+            "alt": "Cost and cash-flow stages connect equipment purchase, installed cost and later benefits."
+          }
+        ]
+      },
+      {
+        "title": "Keep tax policy separate from retail incidence",
+        "paragraphs": [
+          "Our analysis: a change in an exporter's tax treatment can affect its economics, but it does not mechanically determine the amount added to a household's invoice. Supplier margins, contracts, inventory, freight, exchange rates, destination duties and retailer competition can change how an upstream cost is passed through. A reduction of three percentage points in a rebate is not evidence of a three-percent retail increase.",
+          "The buyer also faces a different boundary from the exporter. A domestic-warehouse price can reflect stock imported earlier, while a direct-import quotation may carry different delivery and customs responsibilities. Compare those boundaries before interpreting a price chart. The notice establishes a policy timeline; actual dated offers establish what a particular seller is charging."
+        ]
+      },
+      {
+        "title": "Timeline without a fabricated price forecast",
+        "columns": [
+          "Verified policy period",
+          "Listed PV products",
+          "Listed battery products"
+        ],
+        "rows": [
+          [
+            "From April 1, 2026",
+            "VAT export rebate canceled",
+            "VAT export rebate 6% through December 31"
+          ],
+          [
+            "From January 1, 2027",
+            "Cancellation continues under the notice",
+            "VAT export rebate scheduled to be canceled"
+          ]
+        ],
+        "paragraphs": [
+          "Product classification and later amendments require current official review. The table summarizes the notice rather than asserting that every item called solar equipment or battery has the same treatment. Nor does it establish destination-country duties. Have the responsible importer or customs adviser resolve the exact product and shipment."
+        ]
+      },
+      {
+        "title": "Worked example: compare delivered offers",
+        "workedExample": {
+          "title": "A fictional overseas quote and local-warehouse quote",
+          "givens": [
+            "Overseas equipment quote: $2,800; transport $450; other verified import charges assumed $300.",
+            "Local warehouse equipment: $3,400; delivery $100.",
+            "Equivalent models and quantities; ignore installation and tax not already included."
+          ],
+          "steps": [
+            "Overseas total = $2,800 + $450 + $300 = $3,550.",
+            "Local total = $3,400 + $100 = $3,500.",
+            "Local is $50 lower at the stated boundary.",
+            "Compare stock, lead time, warranty responsibility and return freight before choosing."
+          ],
+          "result": "The lower equipment-only offer is not the lower delivered offer.",
+          "discussion": "The example does not estimate duties or rebate pass-through. Its import-charge input is fictional and must be replaced by a verified shipment-specific amount."
+        }
+      },
+      {
+        "title": "What a useful price observation records",
+        "paragraphs": [
+          "Record exact model, regional version, wattage or capacity, quantity, condition, seller, stock location and date. Identify whether delivery and taxes are included. A pallet-normalized price and a single-module delivered price are different offers. Changes in package size can create an apparent trend that is merely a change in the denominator.",
+          "Ask whether the seller can hold the quoted price, what triggers revision and who bears import responsibility. Preserve a dated written quotation instead of relying on a promotional screenshot with unspecified stock. If policy is offered as the reason for a price rise, distinguish the seller's explanation from independent evidence of the amount passed through."
+        ]
+      },
+      {
+        "title": "Practical mistakes and remaining uncertainty",
+        "paragraphs": [
+          "Avoid applying the rebate rate directly to checkout, assuming all batteries fall within one annex category, or panic-buying a mismatched product to beat a date. A cheap incompatible module or storage pack can create costs larger than a plausible policy-related difference.",
+          "No retail-price forecast is established by this review. We also do not independently verify the treatment of a specific shipment. The useful decision is whether a complete documented offer meets the project's timing, compatibility and service needs. Recheck official changes and fresh offers when the actual order is made."
+        ]
+      },
+      {
+        "title": "Exercise: percentage points versus a price claim",
+        "exercise": {
+          "question": "A listed battery rebate changes from 9% to 6%. A seller says this proves your final invoice must rise exactly 3%. Is that conclusion supported?",
+          "answer": "No. The policy change is three percentage points, while retail pricing depends on a different cost boundary and commercial behavior.",
+          "explanation": "Even a verified upstream tax change does not specify its pass-through to an individual retail offer. Compare dated equivalent delivered quotations and the contract terms rather than substituting the rebate-rate difference for an observed price change."
+        }
+      }
+    ]
+  },
+  "sodium-storage-2026": {
+    "reviewed": "2026-10-05",
+    "outcome": "Distinguish CATL's verified announcement and delivery plans from confirmed regional availability, and evaluate future sodium storage using system-level evidence.",
+    "sources": [
+      {
+        "label": "CATL · TENER Sodium launch announcement, June 22, 2026",
+        "url": "https://www.catl.com/en/news/6861.html"
+      }
+    ],
+    "sections": [
+      {
+        "title": "What CATL announced",
+        "paragraphs": [
+          "On June 22, 2026, CATL announced TENER Sodium, describing it as a field-validated sodium-ion energy-storage system. The announcement says first deliveries in China were planned for September 2026 and international deliveries for June 2027, with expected cumulative shipments of 1 GWh by the end of 2026. These are company statements and forward-looking delivery information; this review does not independently confirm completed shipments.",
+          "The announced platform is industrial storage, including rated modular capacity above 30 MWh. It is not evidence of a residential 48 V rack battery available in the reader's region. The official launch page was checked October 5, 2026. The company's description of field validation is reported with attribution, not converted into an independently verified performance result."
+        ],
+        "sources": [
+          {
+            "label": "CATL · TENER Sodium launch announcement, June 22, 2026",
+            "url": "https://www.catl.com/en/news/6861.html"
+          }
+        ],
+        "figures": [
+          {
+            "diagram": "battery-bank",
+            "caption": "Two hypothetical 51.2 V, 100 Ah batteries illustrate energy and discharge-power boundaries. They do not depict CATL's sodium platform or establish cross-chemistry compatibility.",
+            "alt": "Two protected 51.2 V battery branches feed shared DC distribution, retaining voltage and adding amp-hour capacity."
+          }
+        ]
+      },
+      {
+        "title": "Chemistry is one layer of the product",
+        "paragraphs": [
+          "Our analysis: a different ion chemistry can broaden future storage choices, but buyers still need a complete product and supported architecture. Cell performance, pack behavior and delivered system performance are different boundaries. The enclosure, management, conversion equipment, thermal controls and service arrangement affect what usable energy and power reach the load.",
+          "Avoid carrying an industrial headline into a residential compatibility table. A proprietary high-voltage platform cannot be treated as a replacement for a low-voltage pack solely because both store kilowatt-hours. Approved voltage ranges, communication, firmware, protection and regional installation evidence remain necessary. Chemistry does not waive these interfaces."
+        ]
+      },
+      {
+        "title": "Use an evidence ladder",
+        "columns": [
+          "Evidence stage",
+          "What it establishes",
+          "What it does not establish"
+        ],
+        "rows": [
+          [
+            "Official announcement",
+            "The company made the stated claim",
+            "Independent test or completed delivery"
+          ],
+          [
+            "Documented shipments",
+            "Units reached identified customers",
+            "Availability in every market"
+          ],
+          [
+            "Regional model and manual",
+            "A specific intended installation",
+            "Compatibility with arbitrary inverters"
+          ],
+          [
+            "System test and certification evidence",
+            "Defined results and scope",
+            "Universal safety or lifetime"
+          ],
+          [
+            "Complete supported offer",
+            "Actual price, stock and service",
+            "Guaranteed future product economics"
+          ]
+        ],
+        "paragraphs": [
+          "A product can advance along this ladder unevenly. Production capacity and a signed order are useful context, but neither is identical to installed customer operation. Track those milestones separately instead of using one word such as commercial to imply every stage is complete."
+        ]
+      },
+      {
+        "title": "Worked example: usable energy still matters",
+        "workedExample": {
+          "title": "Compare two fictional future storage offers",
+          "givens": [
+            "Offer A: 12 kWh nominal, assumed 80% usable fraction, 92% delivery efficiency.",
+            "Offer B: 10 kWh nominal, assumed 95% usable fraction, 95% delivery efficiency.",
+            "No chemistry advantage is assumed; both must separately meet power and compatibility needs."
+          ],
+          "steps": [
+            "A modeled delivered energy = 12 × 0.80 × 0.92 = 8.83 kWh.",
+            "B = 10 × 0.95 × 0.95 = 9.03 kWh.",
+            "At an assumed average 0.6 kW load, arithmetic runtime is 14.7 h for A and 15.0 h for B.",
+            "Replace every assumed factor with documented system evidence before buying."
+          ],
+          "result": "The larger nominal label does not necessarily deliver more usable energy.",
+          "discussion": "These numbers are invented teaching inputs, not CATL specifications or predictions about sodium-ion versus LFP."
+        }
+      },
+      {
+        "title": "Ask what the test actually measures",
+        "paragraphs": [
+          "Published performance needs conditions: temperature, load rate, usable window, measurement boundary and auxiliary demand. A cell-level cycle claim does not establish a full system's annual throughput or service costs. Similarly, a comparative efficiency claim requires the baseline and the operating conditions that produced it.",
+          "For a future available product, request the regional datasheet, installation manual, approved conversion pairing and warranty conditions. Ask whether promised cold-weather behavior covers charging, discharging or both, and which limits change with temperature. A useful comparison records uncertainty instead of assigning sodium-ion a universal safety, cost or lifetime rank from one announcement."
+        ]
+      },
+      {
+        "title": "What to watch after the launch",
+        "paragraphs": [
+          "Follow confirmed delivery reports, customer operating evidence and regional documentation. CATL's announced international date is June 2027; do not label the product globally delivered in 2026 merely because its launch event occurred in Europe. If Chinese deliveries are reported, identify their source and scope before treating them as verified.",
+          "A buyer who needs backup now should compare actual available supported systems against the cost of waiting. The opportunity cost is project-specific. Waiting may be reasonable for a flexible research project, but it should not be justified by a fabricated future rack-battery price. Keep emerging technology on a watchlist until it becomes an actionable, documented regional offer."
+        ]
+      },
+      {
+        "title": "Exercise: launch versus household compatibility",
+        "exercise": {
+          "question": "A manufacturer announces a 30 MWh-class sodium storage platform. Does that establish a drop-in replacement for an existing 48 V home battery?",
+          "answer": "No. Capacity scale and chemistry do not establish the voltage, interface or approved residential architecture.",
+          "explanation": "A replacement requires the exact regional product, supported battery/inverter pairing, electrical limits and installation evidence. The verified launch is meaningful industrial news, but the household purchasing question remains unresolved."
+        }
+      }
+    ]
+  },
+  "back-contact-commercial-scale": {
+    "reviewed": "2026-10-05",
+    "outcome": "Read LONGi's verified commercial announcement as an attributed scale claim, then compare exact modules by fit, interfaces and modeled value.",
+    "sources": [
+      {
+        "label": "LONGi · Reported 60 GW back-contact milestone, June 15, 2026",
+        "url": "https://www.longi.com/en/news/60gw-bc-commercial-milestone/"
+      }
+    ],
+    "sections": [
+      {
+        "title": "The milestone is reported by LONGi",
+        "paragraphs": [
+          "LONGi's June 15, 2026 announcement says its back-contact technology platform exceeded a cumulative 60 GW in commercial sales and shipments. The page also gives future shipment targets. This review verifies that the company published those statements; it does not independently audit the cumulative total or treat the targets as completed deliveries.",
+          "The distinction matters because sales, shipments, manufacturing capacity and installed operation are different measures. A company-reported scale milestone can indicate commercial activity without proving a universal performance advantage. The official announcement was checked October 5, 2026. Its future targets remain forecasts even when a later reading date is close to their stated deadline."
+        ],
+        "sources": [
+          {
+            "label": "LONGi · Reported 60 GW back-contact milestone, June 15, 2026",
+            "url": "https://www.longi.com/en/news/60gw-bc-commercial-milestone/"
+          }
+        ],
+        "figures": [
+          {
+            "diagram": "module-anatomy",
+            "caption": "Cell architecture is one part of the module; glass, encapsulation, frame and junction box remain product-level choices. This drawing does not show LONGi's specific cell design.",
+            "alt": "An exploded generic module shows glass, encapsulation, cells, rear layer, frame and rear junction box."
+          }
+        ]
+      },
+      {
+        "title": "Architecture and module format answer different questions",
+        "paragraphs": [
+          "Our analysis: back contact is a cell-architecture category. Monocrystalline describes crystal structure; n-type describes semiconductor doping; bifacial describes useful rear-side light collection. A module can carry several of these descriptions simultaneously. Do not compare them as if they were mutually exclusive product families.",
+          "Even within one architecture, dimensions, front-side rating, current, temperature coefficients and mechanical support requirements can differ. The product label is a shortlist tool, not a substitute for the exact regional datasheet. A laboratory cell efficiency and a saleable module's rated efficiency also have different boundaries. Compare the delivered product that can actually be purchased and installed."
+        ]
+      },
+      {
+        "title": "A commercial headline has several evidence boundaries",
+        "columns": [
+          "Claim or measure",
+          "Useful meaning",
+          "Limit"
+        ],
+        "rows": [
+          [
+            "Cumulative sales and shipments",
+            "Company-reported commercial activity",
+            "Not independently audited here"
+          ],
+          [
+            "Future target",
+            "Management expectation",
+            "Not completed delivery"
+          ],
+          [
+            "Cell architecture",
+            "A design category",
+            "Not complete module specification"
+          ],
+          [
+            "Exact module datasheet",
+            "Defined ratings and dimensions",
+            "Not site-specific annual yield"
+          ],
+          [
+            "Project energy model",
+            "Estimated local behavior",
+            "Depends on inputs and assumptions"
+          ]
+        ],
+        "paragraphs": [
+          "Scale can broaden sourcing opportunities, but it does not guarantee that a particular wattage bin is stocked locally. Check distributor stock, regional certifications, warranty responsibility and current delivery timing independently of the platform-wide number."
+        ]
+      },
+      {
+        "title": "Worked example: density and packing",
+        "workedExample": {
+          "title": "Two fictional candidate module formats",
+          "givens": [
+            "A: 440 W over 2.0 m²; B: 550 W over 2.6 m².",
+            "A dimensioned roof layout fits 12 A modules or 9 B modules after verified exclusions.",
+            "No difference in annual yield factors is assumed; this is nameplate bookkeeping."
+          ],
+          "steps": [
+            "A power density = 440 ÷ 2.0 = 220 W/m².",
+            "B density = 550 ÷ 2.6 ≈ 212 W/m².",
+            "Installed DC rating for A = 12 × 440 = 5,280 W.",
+            "B rating = 9 × 550 = 4,950 W."
+          ],
+          "result": "The smaller fictional module creates the larger installed DC rating in this layout.",
+          "discussion": "These are invented formats, not LONGi specifications. Electrical limits, mounting, actual energy yield and delivered cost still need review; architecture alone cannot determine the result."
+        }
+      },
+      {
+        "title": "Check electrical and mounting interfaces",
+        "paragraphs": [
+          "A higher rated wattage may bring a different voltage, current or physical format. Recheck cold open-circuit voltage, hot operating voltage, tracker current and connector compatibility when swapping models. An inverter's total power allowance does not remove its per-input limits.",
+          "For mounting, compare frame depth, clamp zones, dimensions, mass and the evaluated module/racking combination. A rear junction-box arrangement can affect routing, and a different format can change rail or attachment design. The buyer should preserve the exact datasheet and manual revision behind the proposal. A module substitution is a system review event, even if a salesperson presents it as the same panel with more watts."
+        ]
+      },
+      {
+        "title": "Where evidence can improve the decision",
+        "paragraphs": [
+          "Look for independent or appropriately documented field performance under relevant conditions, reliability evidence and warranty terms. Distinguish accelerated tests, laboratory records and long-term field operation. Each can inform a decision, but they establish different things and should retain their conditions.",
+          "Do not infer a universal shade-recovery, degradation or temperature ranking from the back-contact label. Compare the actual module and installation. If a supplier claims more annual energy, request the model, baseline, site assumptions and uncertainty. A narrow roof can give efficiency particular value; a spacious site may place more weight on complete installed cost and maintainability. State the project's objective before deciding what premium is worthwhile."
+        ]
+      },
+      {
+        "title": "Mistakes and an explained exercise",
+        "paragraphs": [
+          "Avoid paying for an acronym without confirming stock and interfaces, treating shipment targets as completed production, or comparing module watts while ignoring area and packing. LONGi's announcement provides commercial context; the final shortlist still requires exact products and complete offers."
+        ],
+        "exercise": {
+          "question": "A manufacturer reports 60 GW of back-contact commercial activity. Does that prove its available module will produce more annual energy on your roof than every TOPCon alternative?",
+          "answer": "No. The scale claim and site-specific energy comparison are different evidence.",
+          "explanation": "Annual energy depends on actual module ratings, fit, temperature, shade, electrical configuration and system losses. Compare supported available products through the same site model and cost boundary."
+        }
+      }
+    ]
+  },
+  "anker-e10-system-brief": {
+    "reviewed": "2026-10-05",
+    "outcome": "Separate the E10's manufacturer-rated continuous output, temporary output, battery quantity and transfer configuration before comparing a complete US backup offer.",
+    "sources": [
+      {
+        "label": "Anker SOLIX · E10 US specifications and qualification footnotes (retrieved 2026-10-05)",
+        "url": "https://www.ankersolix.com/e10-whole-home-backup-solution"
+      }
+    ],
+    "sections": [
+      {
+        "title": "The live US page provides configuration-specific ratings",
+        "paragraphs": [
+          "Anker's official US E10 page, checked October 5, 2026, lists 120/240 V split-phase output and 7,680 W (32 A) maximum continuous output with battery. Its marketing text rounds this to 7.6 kW. The 10,000 W turbo rating requires two batteries and is limited to 90 minutes; the page's qualification says duration is stated at 30°C and varies with temperature.",
+          "The page marks January 12, 2026 in its commercial-availability claim. It lists two 4,500 W PV inputs, each with a 30–450 V DC range and 15 A operating-current figure. The official FAQ says E10 and Power Dock do not feed electricity back to the grid. These are manufacturer specifications and claims, not independent test results; the exact manual and current regional configuration control a purchase."
+        ],
+        "sources": [
+          {
+            "label": "Anker SOLIX · E10 US specifications and qualification footnotes (retrieved 2026-10-05)",
+            "url": "https://www.ankersolix.com/e10-whole-home-backup-solution"
+          }
+        ],
+        "figures": [
+          {
+            "diagram": "inverter-topology",
+            "caption": "Generic AC and DC coupling concepts help organize E10 questions. The drawing is not the E10 wiring or approved accessory configuration.",
+            "alt": "Separate diagrams compare PV entering a DC bus with PV entering an AC bus through its own inverter."
+          }
+        ]
+      },
+      {
+        "title": "Temporary output and energy capacity are different",
+        "paragraphs": [
+          "Our analysis: turbo output is a conditional power capability, while battery capacity limits energy available over time. A system can meet a brief high demand yet exhaust its stored energy quickly under a large continuous load. Conversely, a large battery expansion can provide long runtime without increasing every inverter or per-leg limit.",
+          "Write the exact power-module and battery count beside every quoted rating. Ask how temperature, battery state, firmware and load imbalance affect supported operation. An expansion headline that combines several units is not the rating of the smallest bundle. Compare your measured running and starting requirements with the documented configuration."
+        ]
+      },
+      {
+        "title": "Do not confuse service rating with inverter output",
+        "columns": [
+          "Quantity",
+          "What it describes",
+          "Question to resolve"
+        ],
+        "rows": [
+          [
+            "7,680 W continuous",
+            "One module's published power rating",
+            "Actual supported configuration and limits"
+          ],
+          [
+            "10,000 W turbo",
+            "Conditional temporary output",
+            "Battery count, temperature and duration"
+          ],
+          [
+            "Battery kWh",
+            "Stored-energy quantity",
+            "Usable window and load runtime"
+          ],
+          [
+            "200 A Power Dock headline",
+            "Transfer/service interface rating",
+            "Installed architecture and circuit handling"
+          ],
+          [
+            "PV input allowance",
+            "Solar receiving interface",
+            "Each input's voltage and current envelope"
+          ]
+        ],
+        "paragraphs": [
+          "A 200 A transfer interface does not create 200 A of battery inverter output. A whole-home connection can still need load management. Compare the supply capability with simultaneous loads, rather than reading the panel-interface rating as unlimited backup power."
+        ]
+      },
+      {
+        "title": "Worked example: runtime from an assumed usable boundary",
+        "workedExample": {
+          "title": "A fictional 12 kWh storage configuration",
+          "givens": [
+            "Assumed nominal storage: 12 kWh.",
+            "Assumed usable fraction 90%, delivery efficiency 92%.",
+            "Average backed-up load: 0.8 kW; no solar or generator contribution.",
+            "The factors are teaching assumptions, not measured E10 performance."
+          ],
+          "steps": [
+            "Modeled AC energy = 12 × 0.90 × 0.92 = 9.94 kWh.",
+            "Arithmetic runtime = 9.94 ÷ 0.8 ≈ 12.4 hours.",
+            "At a 2.0 kW average load, the same modeled energy lasts about 5.0 hours.",
+            "Check starting loads and continuous output separately from runtime."
+          ],
+          "result": "A capacity number only becomes a runtime estimate after load and usable-energy assumptions are stated.",
+          "discussion": "Weather, auxiliaries, reserve and changing loads can alter the result. A days-of-backup claim is incomplete without its daily load and recharge conditions."
+        }
+      },
+      {
+        "title": "The accessory architecture is part of the price",
+        "paragraphs": [
+          "Manual transfer, automatic whole-home transfer and portable use have different equipment and installation scopes. Confirm which accessory arrangement supports the promised modes, including any existing solar interaction. An approved transfer arrangement and circuit design must isolate the utility as required; the conceptual diagram here supplies no installation instructions.",
+          "Include batteries, transfer equipment, controls, cabling, approved installation, permitting and any necessary service work in the quotation. If a generator is included, its outdoor placement, fuel availability and specific maintenance responsibilities belong to the project. Infinite backup language cannot remove the practical limits of fuel, weather, service and equipment availability."
+        ]
+      },
+      {
+        "title": "Verify solar and ownership promises",
+        "paragraphs": [
+          "A total PV watt figure does not replace cold-voltage and per-input current checks. Ask the installer to document the exact module/string configuration using the current E10 manual, especially when reusing an existing array or considering AC coupling. The no-grid-export FAQ also matters to the economic model: do not assume the battery system earns export revenue merely because it is connected to the home.",
+          "Ask what operation, monitoring and recovery remain available when internet service fails. Keep the separate warranty terms for each component and clarify the regional service route. This review does not independently validate surge claims, transfer performance, lifetime retention or a savings percentage. Those claims require their specific conditions and relevant supporting evidence."
+        ]
+      },
+      {
+        "title": "Exercise: interpreting a large interface rating",
+        "exercise": {
+          "question": "A quote includes a 200 A Power Dock and one E10 power module. Does that mean the batteries can continuously supply the full 200 A household service?",
+          "answer": "No. Transfer-interface rating and inverter output are different quantities.",
+          "explanation": "The published continuous power for one E10 is 7,680 W, subject to its exact configuration and limits. The service interface describes another part of the architecture. Supported loads, imbalance and load management must be reviewed separately."
+        }
+      }
+    ]
+  },
+  "residential-credit-2026": {
+    "reviewed": "2026-10-05",
+    "outcome": "Remove unsupported new-project tax-credit assumptions from a 2026 US residential cost model and distinguish prior eligible credits from new expenditures.",
+    "sources": [
+      {
+        "label": "IRS · Form 5695 instructions (2025), cutoff and completion rules",
+        "url": "https://www.irs.gov/instructions/i5695"
+      }
+    ],
+    "sections": [
+      {
+        "title": "The current IRS instruction changes the starting assumption",
+        "paragraphs": [
+          "The IRS's 2025 Form 5695 instructions state that the residential clean energy credit cannot be claimed for expenditures made after December 31, 2025. The same instructions say costs are generally treated as paid when original installation is completed, with specific rules for construction or reconstruction. They also address carrying an unused eligible prior credit into 2026.",
+          "These statements concern the US residential credit discussed in those instructions. They do not determine every commercial, state, local or utility incentive. Checked October 5, 2026, the instructions are the primary source for this briefing. A prepayment or purchase date should not be treated as establishing eligibility for an installation completed later. Obtain project-specific tax advice and current forms when determining an actual claim."
+        ],
+        "sources": [
+          {
+            "label": "IRS · Form 5695 instructions (2025), cutoff and completion rules",
+            "url": "https://www.irs.gov/instructions/i5695"
+          }
+        ],
+        "figures": [
+          {
+            "diagram": "cash-flow",
+            "caption": "Upfront cost uses only verified eligible benefits. Prior-credit carryforward and new-project eligibility are separate questions.",
+            "alt": "Equipment, delivery, installation and verified benefits feed a project cost and lifetime-value model."
+          }
+        ]
+      },
+      {
+        "title": "Our analysis: fix the model before comparing quotes",
+        "paragraphs": [
+          "A calculator that automatically subtracts 30% from every new 2026 residential purchase can materially understate upfront cost. The error can make a marginal project appear financially attractive and distort comparisons among equipment configurations. Start a new-project baseline with unverified benefits set to zero; add each one only after documenting its eligibility and timing.",
+          "Keep incentives in separate rows rather than hiding them in a net price. Record the program, jurisdiction, eligible cost boundary, applicant, completion or other trigger, amount and expected receipt date. This makes later rule changes reviewable. A contractor's net-price marketing number is not itself evidence that the buyer qualifies for the stated benefit."
+        ]
+      },
+      {
+        "title": "Three questions with different answers",
+        "columns": [
+          "Question",
+          "Evidence needed",
+          "Model treatment"
+        ],
+        "rows": [
+          [
+            "New 2026 residential expenditure",
+            "Current eligibility and completion rules",
+            "No automatic legacy 30% subtraction"
+          ],
+          [
+            "Unused prior eligible credit",
+            "Prior return and current carryforward guidance",
+            "Separate tax item, not new-project discount"
+          ],
+          [
+            "Other incentive",
+            "Specific state / utility / other program rules",
+            "Add only verified applicable benefit"
+          ]
+        ],
+        "paragraphs": [
+          "Avoid moving a favorable rule from one category into another. A prior credit carryforward can remain relevant to a tax return without making a new installation eligible. Likewise, a utility rebate may have a different cost boundary or interact with other tax treatment. Each claim needs its own source and documentation."
+        ]
+      },
+      {
+        "title": "Worked example: the old assumption changes payback",
+        "workedExample": {
+          "title": "A fictional $24,000 new residential project",
+          "givens": [
+            "Complete installed cost: $24,000.",
+            "Estimated annual net bill benefit: $1,600.",
+            "No verified incentive assumed; no financing, degradation or replacement costs modeled.",
+            "The comparison is simple payback arithmetic, not an investment forecast."
+          ],
+          "steps": [
+            "Without an incentive, simple payback = $24,000 ÷ $1,600 = 15.0 years.",
+            "A mistaken automatic 30% subtraction would remove $7,200 and show a $16,800 cost.",
+            "That mistaken cost gives $16,800 ÷ $1,600 = 10.5 years.",
+            "Correct the eligibility input before debating small differences in panel or inverter price."
+          ],
+          "result": "The unsupported assumption shortens this fictional payback by 4.5 years.",
+          "discussion": "Real analysis should include changing tariffs, financing, maintenance and replacements. The example does not determine tax eligibility or promise annual savings."
+        }
+      },
+      {
+        "title": "Completion evidence and timing belong in the file",
+        "paragraphs": [
+          "Maintain the contract, invoices, completion and acceptance records, equipment details and relevant program correspondence. Distinguish a deposit, shipment, mechanical installation, electrical completion and utility authorization rather than assuming they are the same date. The applicable program or tax rule determines which milestone matters.",
+          "Ask the responsible adviser to resolve ambiguous timing and mixed-use or ownership questions. A guide cannot settle an individual return from a quotation alone. Keep the resulting conclusion and its source date with the cost model. If a contractor revises completion timing or substitutes equipment, revisit any incentive whose eligibility depends on those facts."
+        ]
+      },
+      {
+        "title": "Compare value without inventing a benefit",
+        "paragraphs": [
+          "A project can still provide energy savings, supported backup or another valued function when an assumed credit is removed. Evaluate those outcomes honestly. Backup value should not be silently counted as a cash saving unless the model explains how it is valued; an owner may reasonably value resilience separately from bill payback.",
+          "Compare complete costs and realistic tariff-based benefits across supported configurations. Export compensation, self-consumption and storage losses affect annual savings, while battery reserve can trade savings against outage readiness. Keep financial forecasts labeled as scenarios. Uncertain incentives, future tariff escalation and speculative resale value should be visible assumptions rather than hidden reasons a payback looks short."
+        ]
+      },
+      {
+        "title": "Mistakes and an explained exercise",
+        "paragraphs": [
+          "Avoid recycling an outdated eligibility deadline, accepting a promise that a deposit preserves the credit, or confusing an unused prior credit with a new-project subsidy. Recheck the current IRS and program sources at the actual decision and filing stages. This briefing supplies evidence for the model's baseline, while actual tax treatment remains individual."
+        ],
+        "exercise": {
+          "question": "An owner has an unused eligible 2025 residential credit to carry forward. Does that alone establish a 30% credit for a separate solar system completed in 2026?",
+          "answer": "No. Carryforward and eligibility of new expenditures are separate questions.",
+          "explanation": "The prior credit arises from previously eligible costs. It does not override the current cutoff for new expenditures. Keep the carryforward in the tax record and assess the new project's cost model under its own applicable rules."
+        }
+      }
+    ]
+  },
+  "supply-chain-resilience": {
+    "reviewed": "2026-10-05",
+    "outcome": "Read IEA's supply-chain concentration findings as scenario analysis and evaluate sourcing, substitutions and service resilience beyond a country-of-assembly label.",
+    "sources": [
+      {
+        "label": "IEA · Energy Technology Perspectives 2026, executive summary",
+        "url": "https://www.iea.org/reports/energy-technology-perspectives-2026/executive-summary"
+      },
+      {
+        "label": "IEA · ETP2026 supply-chain report release",
+        "url": "https://www.iea.org/news/strengthening-supply-chains-can-improve-resilience-and-reduce-economic-security-risks-for-key-energy-technologies"
+      }
+    ],
+    "sections": [
+      {
+        "title": "The verified report is broader than final assembly",
+        "paragraphs": [
+          "The IEA released Energy Technology Perspectives 2026 on March 26, 2026. Its executive summary describes concentrated clean-energy supply chains and finds that each analyzed key chain has at least one step where supply outside China could meet less than one-quarter of demand outside China. The report distinguishes materials and intermediate stages from final manufacturing.",
+          "These are findings from IEA analysis with stated methods and scenarios, not a prediction that a specific retailer will lose stock. The release notice and executive summary were checked October 5, 2026. Production capacity, ownership, location and actual available output are different quantities; the report's concentration analysis should retain its scope when applied to a household purchasing question."
+        ],
+        "sources": [
+          {
+            "label": "IEA · Energy Technology Perspectives 2026, executive summary",
+            "url": "https://www.iea.org/reports/energy-technology-perspectives-2026/executive-summary"
+          },
+          {
+            "label": "IEA · ETP2026 supply-chain report release",
+            "url": "https://www.iea.org/news/strengthening-supply-chains-can-improve-resilience-and-reduce-economic-security-risks-for-key-energy-technologies"
+          }
+        ],
+        "figures": [
+          {
+            "diagram": "module-anatomy",
+            "caption": "A module contains several material and component layers. This anatomy sketch is not a geographic supply-chain map.",
+            "alt": "A generic module's glass, encapsulation, cell, rear-layer, frame and junction-box components are separated."
+          }
+        ]
+      },
+      {
+        "title": "Our analysis: a country label leaves questions open",
+        "paragraphs": [
+          "A module assembled locally may still depend on imported cells, wafers or other inputs. An imported finished product may have a well-established local service arrangement. These observations do not rank all domestic or foreign products; they show why origin and support must be examined at the relevant stage.",
+          "Ask what the origin claim actually covers: final assembly, cells, major materials, ownership or a specific program's definition. Keep those answers distinct. A label can be truthful at one boundary while being incomplete for a resilience question. The buyer's immediate concerns include stock, approved substitutions and service, while broader industrial policy examines manufacturing stages and diversification."
+        ]
+      },
+      {
+        "title": "Map the evidence behind sourcing claims",
+        "columns": [
+          "Claim",
+          "Evidence to request",
+          "Limit to preserve"
+        ],
+        "rows": [
+          [
+            "Locally assembled",
+            "Exact model and assembly location",
+            "Does not establish upstream origin"
+          ],
+          [
+            "Available now",
+            "Seller, warehouse and dated stock",
+            "Not a promise of future replacement"
+          ],
+          [
+            "Diversified supply",
+            "Actual approved alternative sources",
+            "Must retain compatibility"
+          ],
+          [
+            "Long warranty",
+            "Responsible entity and claim process",
+            "Not proof of rapid local repair"
+          ],
+          [
+            "Supply-chain resilience",
+            "Stages, assumptions and contingency plan",
+            "Not a universal country-based ranking"
+          ]
+        ],
+        "paragraphs": [
+          "Use the same evidence standard for every supplier. A marketing badge is a starting question, while a traceable product record and credible service plan support a purchasing decision."
+        ]
+      },
+      {
+        "title": "Worked example: a replacement premium",
+        "workedExample": {
+          "title": "Two fictional supported offers",
+          "givens": [
+            "Offer A installed cost: $10,000; Offer B: $10,600.",
+            "B includes a documented local replacement arrangement that would avoid an assumed $350 freight charge and $150 service coordination cost in one hypothetical event.",
+            "No difference in failure probability, energy output or warranty coverage is assumed."
+          ],
+          "steps": [
+            "Upfront premium = $10,600 − $10,000 = $600.",
+            "Avoided cost in the hypothetical event = $350 + $150 = $500.",
+            "One such event would not fully offset the $600 premium in direct costs.",
+            "Evaluate response time and uncertainty separately; do not invent a failure probability to force a favorable result."
+          ],
+          "result": "A support premium can have practical value, but its cash value depends on actual events and terms.",
+          "discussion": "The example ranks neither manufacturing country nor supplier. It demonstrates how to separate purchase price, contingency cost and noncash service value."
+        }
+      },
+      {
+        "title": "Substitution readiness is a system question",
+        "paragraphs": [
+          "A replacement module with matching watts may have different dimensions, current, voltage, connector or support zones. A replacement battery with matching nominal voltage may lack approved communication or usable limits. Supply flexibility is useful only when the alternate remains compatible with the complete system.",
+          "Keep exact models, manuals and the commissioning record. Ask the installer which substitutions would require updated mounting, string calculations, firmware or approvals. For proprietary ecosystems, understand expansion and replacement dependencies. A warehouse full of nominally similar products is not evidence that a future compatible replacement exists. An honest contingency plan identifies what is approved now and what would need renewed review later."
+        ]
+      },
+      {
+        "title": "Do not turn scenarios into retail forecasts",
+        "paragraphs": [
+          "The IEA uses scenarios and assumptions to explore concentration, industrial competitiveness and possible disruption effects. A modeled consequence of removing a major supplier is not proof that such a disruption will occur or that a certain module's price will rise by a fixed amount. Apply the analysis as a reason to ask better procurement questions.",
+          "Separate observed offers from speculation. Record lead times, price validity, import responsibilities and warranty logistics in the contract. Reassess when a concrete event changes availability or terms. Buying excessive incompatible spares in response to a broad headline can create its own cost and storage problems; determine actual service requirements and supported contingencies."
+        ]
+      },
+      {
+        "title": "Mistakes and an explained exercise",
+        "paragraphs": [
+          "Avoid equating final assembly with a fully independent supply chain, treating a warranty's duration as a service-response guarantee, or assuming every source within one country has the same quality. The practical outcome is a supported product and reviewable contingency plan rather than an unsupported geopolitical score."
+        ],
+        "exercise": {
+          "question": "A panel is assembled in your country. Does that prove an upstream export disruption elsewhere cannot affect its future supply?",
+          "answer": "No. Its intermediate components and materials may depend on suppliers in other locations.",
+          "explanation": "A supply chain has multiple stages. Resilience requires understanding those dependencies and compatible alternatives. The final assembly label establishes one stage only, while the IEA report examines concentration across several stages."
+        }
+      }
+    ]
+  }
+}
