@@ -19,3 +19,9 @@ All normalization runs for both stored and snapshot products, and is reused by t
 - [Renogy's nominal system example](https://ca.renogy.com/content/manual/UM_12V%20200Ah%20Core%20Series%20Battery_A0_Specification.pdf) explicitly pairs 48V and 51.2V.
 - [EcoFlow Power Kits](https://www.ecoflow.com/us/ecoflow-power-kits/series?activeTab=bundles) describes stackable batteries.
 - [DOE perovskite research](https://www.energy.gov/cmei/systems/perovskite-solar-cells) supplies the material context; no new perovskite listings or prices were invented.
+
+## Ecosystem browsing
+
+A compact ecosystem toggle row groups exact manufacturer aliases across categories (for example Victron Energy, EG4 Electronics and EcoFlow US). Counts refer to catalog listings, not guaranteed availability. Choosing a brand opens All categories; subsequent category selection preserves the ecosystem. The builder picker keeps its requested equipment category. Search, unit-price, condition, stock and sorting filters continue to apply. Ecosystem and category are encoded in the URL for reloads and product-page links. Reset filters clears the ecosystem too.
+
+All requested brands are selectable, including those with zero current catalog entries. Zero-entry brands show an explicit unlisted state; no products or prices are fabricated. Renogy is included because it also spans existing catalog categories. Third-party titles that mention brand compatibility are not included automatically. Brand membership is not a model-level compatibility verdict.

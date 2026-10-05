@@ -159,3 +159,27 @@
  .builder-toggles button{font-size:10px;padding:7px 8px}
  .builder-filter-note{font-size:10px;margin-top:8px}
 }
+
+/* Ecosystems stay compact and use the same controls as the catalog. */
+.ecosystem-picker{margin:0 0 20px;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ecosystem-heading{display:flex;align-items:baseline;gap:12px;margin-bottom:10px}
+.ecosystem-heading h2{font-size:14px;margin:0;font-weight:650}
+.ecosystem-heading>span{font-size:12px;color:var(--muted)}
+.ecosystem-buttons{display:flex;flex-wrap:wrap;gap:6px}
+.ecosystem-buttons button{display:flex;align-items:center;gap:7px;padding:7px 10px;border:1px solid var(--line);border-radius:5px;background:white;color:var(--ink);font-size:12px;white-space:nowrap}
+.ecosystem-buttons button:hover{border-color:var(--green);background:var(--mint)}
+.ecosystem-buttons button[aria-pressed=true]{background:var(--green);border-color:var(--green);color:white}
+.ecosystem-buttons small{font-size:10px;opacity:.75;font-variant-numeric:tabular-nums}
+.ecosystem-buttons .ecosystem-unlisted:not([aria-pressed=true]){color:var(--muted);border-style:dashed}
+.ecosystem-note{font-size:11px;color:var(--muted);line-height:1.5;margin:9px 0 0}
+.product-ecosystem-link{display:flex;align-items:center;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+.product-ecosystem-link .brand-label{margin:0}
+.product-ecosystem-link>a{display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--green);text-decoration:underline;text-underline-offset:3px}
+@media(max-width:720px){
+ .ecosystem-picker{margin-bottom:14px;padding:12px 0;min-width:0}
+ .ecosystem-heading{gap:8px;flex-wrap:wrap;margin-bottom:9px}
+ .ecosystem-heading>span{font-size:11px}
+ .ecosystem-buttons{flex-wrap:nowrap;overflow-x:auto;padding-bottom:7px;scrollbar-width:thin}
+ .ecosystem-buttons button{flex-shrink:0;min-height:40px;padding:8px 11px}
+ .ecosystem-note{font-size:10px;margin-top:5px}
+}
