@@ -7,6 +7,8 @@ import {BuildQuantity} from './build-quantity';
 import {categories} from '../lib/types';
 import type {Product} from '../lib/types';
 import {bestOffer,costForQuantity,money} from '../lib/domain';
+import {productDisplayName} from '../lib/bundles';
+import {BundleTags} from './bundle-presentation';
 
 const icons={panels:Sun,mounting:Wrench,wiring:Cable,batteries:Battery,inverters:Zap,electrical:Box,accessories:Plug,charging:Zap,'module-electronics':ShieldCheck,monitoring:Gauge,kits:PackageOpen,'all-in-one':Battery};
 const specKeys=['watts','face','technology','voltage','capacityKwh','formFactor','inverterType','gauge','mountType','controllerType','chargeCurrentA','moduleFunction','monitorType','kitType','stationType','outputWatts'];
@@ -21,8 +23,8 @@ export function PartRow({product,active,onInspect,onOpen,builderMode=false}:{pro
   window.location.assign('/products/'+encodeURIComponent(product.id)+(builderMode?'?builder=1':''));
  }}>
   <span className="part-category-icon"><Icon size={19}/></span>
-  <button className="part-inspect" aria-label={'Inspect '+product.name} aria-pressed={active} title="Click to preview. Double-click for specs and price history." onClick={onOpen} onKeyDown={e=>{if(e.key==='ArrowDown'||e.key==='ArrowUp'){const rows=Array.from(e.currentTarget.closest('.part-list')!.querySelectorAll<HTMLButtonElement>('.part-inspect'));const index=rows.indexOf(e.currentTarget);const next=rows[index+(e.key==='ArrowDown'?1:-1)];if(next){e.preventDefault();next.focus();}}}}>
-   <strong>{product.name}</strong><span>{product.brand}<i/> {specs(product).join(' · ')||categories.find(c=>c.id===product.category)?.label}</span>
+  <button className="part-inspect" aria-label={'Inspect '+productDisplayName(product)} aria-pressed={active} title="Click to preview. Double-click for specs and price history." onClick={onOpen} onKeyDown={e=>{if(e.key==='ArrowDown'||e.key==='ArrowUp'){const rows=Array.from(e.currentTarget.closest('.part-list')!.querySelectorAll<HTMLButtonElement>('.part-inspect'));const index=rows.indexOf(e.currentTarget);const next=rows[index+(e.key==='ArrowDown'?1:-1)];if(next){e.preventDefault();next.focus();}}}}>
+   <strong>{productDisplayName(product)}</strong><BundleTags product={product}/><span>{product.brand}<i/> {specs(product).join(' · ')||categories.find(c=>c.id===product.category)?.label}</span>
   </button>
   <div className="part-price"><strong>{offer?money(offer.price/offer.packQuantity):'Unpriced'}</strong><span>{current?'In stock':'Last observed'}{offer&&offer.packQuantity>1?` · ${offer.packQuantity}-pack`:''}</span></div>
   <WatchButton product={product}/><label className={'part-compare '+(selected?'selected':'')} title="Compare part"><input type="checkbox" checked={selected} onChange={()=>{if(!selected&&compare.length>=4){notify('Compare up to four parts. Remove one to add another.');return;}setCompare(c=>selected?c.filter(id=>id!==product.id):[...c,product.id]);}}/><span><Check size={13}/></span><span className="sr-only">Compare {product.name}</span></label>
@@ -35,9 +37,9 @@ function PartPreview({product,builderMode=false}:{product:Product;builderMode?:b
  return <div className="part-preview">
   <div className="inspection-label"><span className="pulse-dot"/>PART INSPECTOR<span>{categories.find(c=>c.id===product.category)?.label}</span></div>
   <div className="inspection-image"><div className="inspection-grid"/><ProductImage key={product.id} product={product}/>{quantity>0&&<span className="equipped-badge"><Check size={12}/> In build ×{quantity}</span>}</div>
-  <div className="inspection-content"><span className="brand-label">{product.brand}</span><h3>{product.name}</h3><div className="spec-pills">{specs(product).map((s,i)=><span key={i}>{s}</span>)}</div>
-   <div className="inspection-price"><div><small>{current?'Current unit price':'Last observed unit price'}</small><strong>{offer?money(offer.price/offer.packQuantity):'Unpriced'}</strong></div><span className={current?'stock-dot':'muted'}>{current?'In stock':'Check stock'}</span></div>
-   {offer&&<><div className="purchase-note"><Package size={15}/><span>{offer.packQuantity>1?`${money(offer.price)} purchase · ${offer.packQuantity} units`:`${money(offer.price)} single-unit purchase`}<small>{offer.retailer} · {offer.condition==='used'?'Used / refurbished':'New'}</small></span></div><p className="inspection-date">Observed {new Date(offer.observedAt).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'})} · {product.offers.length} {product.offers.length===1?'offer':'offers'}</p></>}
+  <div className="inspection-content"><span className="brand-label">{product.brand}</span><h3>{productDisplayName(product)}</h3><BundleTags product={product}/><div className="spec-pills">{specs(product).map((s,i)=><span key={i}>{s}</span>)}</div>
+   <div className="inspection-price"><div><small>{product.category==='kits'?(current?'Current bundle price':'Last observed bundle price'):current?'Current unit price':'Last observed unit price'}</small><strong>{offer?money(offer.price/offer.packQuantity):'Unpriced'}</strong></div><span className={current?'stock-dot':'muted'}>{current?'In stock':'Check stock'}</span></div>
+   {offer&&<><div className="purchase-note"><Package size={15}/><span>{offer.packQuantity>1?`${money(offer.price)} purchase · ${offer.packQuantity} units`:`${money(offer.price)} ${product.category==='kits'?'whole-bundle':'single-unit'} purchase`}<small>{offer.retailer} · {offer.condition==='used'?'Used / refurbished':'New'}</small></span></div><p className="inspection-date">Observed {new Date(offer.observedAt).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'})} · {product.offers.length} {product.offers.length===1?'offer':'offers'}</p></>}
    <div className="inspection-quantity"><span>Quantity in build</span><BuildQuantity product={product} offerId={offer?.id} returnToBuild={builderMode}/></div>
    <WatchButton product={product} compact={false}/><Link className="inspection-details" href={'/products/'+product.id+(builderMode?'?builder=1':'')}>View specs & price history <ArrowUpRight size={15}/></Link>
   </div>

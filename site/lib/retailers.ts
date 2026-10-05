@@ -1,5 +1,6 @@
 import { load } from 'cheerio';
 import type { Category, Product, Specs } from './types.ts';
+import {describeConfiguration} from './bundles.ts';
 export interface Retailer { id: string; name: string; origin: string; seeds?: string[]; }
 export const retailers: Retailer[] = [
   { id: 'signature-solar', name: 'Signature Solar', origin: 'https://signaturesolar.com', seeds: ['/', '/solar-panels/', '/solar-inverters/', '/batteries/', '/solar-mounting/', '/wiring-and-connectors/'] },
@@ -11,9 +12,14 @@ export const retailers: Retailer[] = [
   { id: 'emporia', name: 'Emporia Energy', origin: 'https://shop.emporiaenergy.com' },
 ];
 export function classify(title: string): Category | null {
+  const configuration=describeConfiguration(title);
+  if(configuration?.kind==='combo')return 'kits';
+  if(configuration?.kind==='standalone')return configuration.type==='Inverter'?'inverters':'all-in-one';
   // Classify the main equipment, not an optional variant cable/panel or a feature.
   const base = title.split(/\s—\s/)[0].toLowerCase();
   const t = base.split(/\s(?:for|with|including|featuring)\s/)[0];
+  if(/\btilt kit\b/i.test(t))return 'mounting';
+  if(/\bmicroinverter\b/i.test(t)&&!/\b(?:kit|bundle)\b/i.test(base))return 'inverters';
   const stationModel = /^(?:pecron\s*(?:e(?:1000|1500|2000|2400|3600|3800)|f(?:1000|3000|5000))\s*lfp|anker\s*(?:solix\s*)?(?:c(?:1000|2000)|f(?:2000|2600|3000|3800)|s2000)\b|ecoflow\s+delta\b|bluetti\s+(?:ac200l|apex\s*300|elite\s*\d+)\b|jackery\s+explorer\s+\d+)/.test(t);
   // Inspect the main sale item before optional additions and feature columns.
   // A cycle count such as "4,000+" does not turn an expansion battery into a station.
@@ -89,7 +95,11 @@ export function extractSpecs(title: string, category: Category, properties: Reco
     // Generic W figures may describe bundled panels or input. Do not infer AC output.
     delete specs.watts;delete specs.voltage;
   }
-  if (category === 'kits') specs.kitType=/power station|solar generator|power bank/i.test(title)?'Portable power':'Solar system kit';
+  if (category === 'kits') {
+    specs.kitType=describeConfiguration(title,'kits')?.type||'Other equipment kits';
+    // A panel's watts or the station's internal storage are not whole-bundle ratings.
+    delete specs.watts;delete specs.voltage;delete specs.capacityKwh;delete specs.capacityAh;
+  }
   if (/all[ -]?black|black/i.test(title)) specs.color = 'Black'; else if (/silver/i.test(title)) specs.color = 'Silver';
   if (category === 'mounting') specs.mountType = /ground/i.test(title) ? 'Ground' : /roof|rail/i.test(title) ? 'Roof' : 'Hardware';
   if (category === 'wiring') { const awg = title.match(/([\d/]+)\s*awg/i); if (awg) specs.gauge = awg[1] + ' AWG'; const feet = title.match(/([\d.]+)\s*(?:ft|feet)/i); if (feet) specs.lengthFt = Number(feet[1]); }
@@ -152,6 +162,8 @@ export function categorizeProduct(product: Omit<Product,'offers'> & {offers?:Pro
   const offers=product.offers||[]; // D1 stores product metadata separately from offers.
   const panelDetails:Specs={};
   const extracted=extractSpecs(product.name,category);
+  const configuration=describeConfiguration(product.name,category);
+  if(category==='kits')for(const key of ['watts','voltage','capacityKwh','capacityAh','outputWatts','stationType'])delete specs[key];
   if(category==='panels') {
     // Read labeled product specs only: comparisons in marketing prose describe other modules.
     for(const pattern of [/\bcell (?:type|technology)\s*:?\s*([^.;]{1,80})/gi,/\bpanel face\s*:?\s*([^.;]{1,40})/gi]) {
@@ -170,7 +182,7 @@ export function categorizeProduct(product: Omit<Product,'offers'> & {offers?:Pro
       panelDetails.technology='Back contact';panelDetails.technologySource='https://www.sec.gov/Archives/edgar/data/867773/000086777313000012/spwr_12302012x10-k.htm';
     }
   }
-  return {...product,category,specs:{...specs,...panelDetails,...extracted},offers:category==='kits'||category==='all-in-one'?offers.map(o=>({...o,packQuantity:1})):offers};
+  return {...product,category,configuration,specs:{...specs,...panelDetails,...extracted},offers:category==='kits'||category==='all-in-one'?offers.map(o=>({...o,packQuantity:1})):offers};
 }
 function flatten(value: any): any[] { if (Array.isArray(value)) return value.flatMap(flatten); if (!value || typeof value !== 'object') return []; return [value, ...flatten(value['@graph']), ...flatten(value.itemListElement?.map((i: any) => i.item || i)), ...flatten(value.hasVariant)]; }
 export function parseProductPage(html: string, retailer: Retailer, url: string, observedAt: string): Product[] {

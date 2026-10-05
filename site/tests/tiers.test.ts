@@ -5,8 +5,9 @@ import {rankings,tierPrice,valueTier} from '../lib/tiers.ts';
 import type {Product} from '../lib/types.ts';
 import {checkCompatibility} from '../lib/domain.ts';
 const now=Date.parse('2026-10-04T23:00:00Z');
-test('integrated stations and their bundles have a separate category, without stealing expansion batteries or inverters',()=>{
- for(const name of ['Pecron E3800LFP','PECRON F5000 LFP Portable Power Station — F5000 + 2 x EXP Batteries','Anker SOLIX C2000 Gen2 Portable Power Station — + 400W Solar Panel','Anker SOLIX F3800 Plus + Expansion Battery','Anker SOLIX F3800 Plus + Expansion Battery + 400W Solar Panel','EcoFlow DELTA Pro 3 Portable Power Station','BLUETTI AC200L']) assert.equal(classify(name),'all-in-one',name);
+test('standalone stations and combos remain separate without stealing expansion batteries or inverters',()=>{
+ for(const name of ['Pecron E3800LFP','EcoFlow DELTA Pro 3 Portable Power Station','BLUETTI AC200L']) assert.equal(classify(name),'all-in-one',name);
+ for(const name of ['PECRON F5000 LFP Portable Power Station — F5000 + 2 x EXP Batteries','Anker SOLIX C2000 Gen2 Portable Power Station — + 400W Solar Panel','Anker SOLIX F3800 Plus + Expansion Battery','Anker SOLIX F3800 Plus + Expansion Battery + 400W Solar Panel']) assert.equal(classify(name),'kits',name);
  assert.equal(classify('PECRON F5000LFP 48V Expansion Battery 5,120Wh | Battery Only'),'batteries');
  assert.equal(classify('Anker SOLIX BP2000 Expansion Battery Gen 2 for C2000'),'batteries');
  assert.equal(classify('Anker SOLIX High-Voltage Solar Charging Cable For F3800'),'wiring');
@@ -44,7 +45,7 @@ test('station detection respects the main equipment noun and ignores cycle-life 
  assert.equal(classify('MC4 to 8mm Solar Generator Adapter Cable | 12AWG | 3ft'),'wiring');
  assert.equal(classify('EcoFlow DELTA PRO [ULTRA-X] Inverter | 12kW–36kW Output'),'inverters');
  assert.equal(classify('Anker SOLIX F3000 Expansion Battery | 3,072Wh LiFePO4 | 4,000+ Cycles'),'batteries');
- assert.equal(classify('Anker SOLIX F3800 + Expansion Battery + 400W Solar Panel'),'all-in-one');
+ assert.equal(classify('Anker SOLIX F3800 + Expansion Battery + 400W Solar Panel'),'kits');
  assert.equal(classify('NUE SunCase 605 Portable Power Station 540Wh | LiFePO4 Battery'),'all-in-one');
 });
 test('selected DC station variants use their own capacity and disclose no AC inverter',()=>{

@@ -1,4 +1,5 @@
 import type {Category,Product} from './types.ts';
+import {bundleComponentLabels} from './bundles.ts';
 
 export const catalogFilters:Record<Category,[string,string][]>= {
  panels:[['watts','Rated power'],['face','Panel face'],['cellType','Cell type'],['technology','Cell technology'],['color','Color']],
@@ -7,7 +8,7 @@ export const catalogFilters:Record<Category,[string,string][]>= {
  inverters:[['voltage','System voltage'],['outputWatts','Rated output power'],['inverterType','Inverter type'],['acOutput','AC output']],
  charging:[['controllerType','Controller type'],['chargeCurrentA','Listed charge current (A)'],['voltage','Listed voltage (V)']],
  'module-electronics':[['moduleFunction','Module function']],monitoring:[['monitorType','Equipment function']],
- 'all-in-one':[['capacityKwh','Listed storage (kWh)'],['stationType','System format']],kits:[['kitType','System format']],
+ 'all-in-one':[['capacityKwh','Listed storage (kWh)'],['stationType','System format']],kits:[['kitType','Bundle type'],['bundleComponent','Includes equipment']],
  electrical:[['electricalType','Subcategory']],accessories:[['accessoryType','Subcategory']],
 };
 
@@ -60,6 +61,7 @@ function attribute(product:Product,key:string):unknown {
 function ranges(category:Category,key:string) {return category==='panels'&&key==='watts'?panelPower:category==='inverters'&&key==='outputWatts'?inverterPower:undefined;}
 export function matchesAttribute(product:Product,key:string,value:string):boolean {
  if(!value)return true;
+ if(key==='bundleComponent')return product.configuration?.components.some(c=>c.type===value)||false;
  const raw=attribute(product,key),range=ranges(product.category,key)?.find(r=>r.value===value);
  if(range) {
   if(raw===undefined||raw===null||raw==='')return false;
@@ -71,6 +73,7 @@ export function matchesAttribute(product:Product,key:string,value:string):boolea
  return raw!==undefined&&String(raw)===value;
 }
 export function getFilterOptions(category:Category,key:string,products:Product[]):{value:string;label:string;count:number}[] {
+ if(key==='bundleComponent')return Object.entries(bundleComponentLabels).map(([value,label])=>({value,label,count:products.filter(p=>matchesAttribute(p,key,value)).length}));
  const grouped=ranges(category,key);
  let choices:{value:string;label:string}[];
  if(grouped)choices=grouped;

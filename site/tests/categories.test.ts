@@ -18,7 +18,7 @@ test('module electronics stay together even when their titles mention cables or 
  assert.equal(classify('Tigo TAP Access Point'),'module-electronics');
 });
 test('complete systems and monitoring equipment do not inflate panel and battery counts',()=>{
- assert.equal(classify('Anker SOLIX S2000 Portable Power Station 2,010Wh — + 400W Solar Panel'),'all-in-one');
+ assert.equal(classify('Anker SOLIX S2000 Portable Power Station 2,010Wh — + 400W Solar Panel'),'kits');
  assert.equal(classify('EG4 6000XP Off Grid Solar Kit with 48V Battery'),'kits');
  assert.equal(classify('Fortress 12KW | 16KWH Storage | 12KW Array | Tigo Rapid Shutdown | Kit'),'kits');
  assert.equal(classify('Emporia Vue 3 Home Energy Monitor with 4 Pack Smart Plugs'),'monitoring');
@@ -47,7 +47,7 @@ test('new equipment gets useful listed specs without guessing voltage ranges or 
 test('complete system prices count whole sale bundles rather than included panel packs',()=>{
  const product={id:'kit-1',name:'Anker Solar Generator + 410W Solar Panel (pack of 2 RIGID)',category:'panels',specs:{},offers:[{id:'kit-offer',price:3200,packQuantity:2,observedAt:'2026-10-01T00:00:00Z'}]} as unknown as Product;
  const updated=categorizeProduct(product);
- assert.equal(updated.category,'all-in-one');assert.equal(updated.offers[0].packQuantity,1);
+ assert.equal(updated.category,'kits');assert.equal(updated.offers[0].packQuantity,1);
  assert.equal(updated.offers[0].price,3200);assert.equal(updated.offers[0].observedAt,product.offers[0].observedAt);
  assert.equal(product.offers[0].packQuantity,2);
 });
