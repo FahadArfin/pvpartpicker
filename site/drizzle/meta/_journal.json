@@ -36,6 +36,13 @@
       "when": 1791163865932,
       "tag": "0004_friendly_darkstar",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1791182214326,
+      "tag": "0005_square_synch",
+      "breakpoints": true
     }
   ]
 }

@@ -22,4 +22,4 @@ export async function loadPageCatalog(storage:CatalogStorage,fetcher:typeof fetc
  try{storage?.setItem(pageCatalogKey,JSON.stringify(value));}catch{}
  return value;
 }
-export function needsPageCatalog(path:string){return !(/^\/guide(?:\/|$)/.test(path)||path==='/learn'||path==='/unsubscribe');}
+export function needsPageCatalog(path:string){return !(/^\/guide(?:\/|$)/.test(path)||path==='/learn'||path==='/unsubscribe'||path==='/price-scraper');}

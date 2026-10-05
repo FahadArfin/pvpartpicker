@@ -7,6 +7,7 @@ import type { Product, CollectionReport } from '../../../lib/types';
 import {buildDrops,dropPeriod,dropQuery,normalizeWatchIds,watchInsertSql} from '../../../lib/price-drops';
 import type {DropCandidate} from '../../../lib/price-drops';
 import {listCommunityBuilds,getCommunityBuild,publishCommunityBuild,unpublishCommunityBuild} from '../../../lib/community-builds';
+import {scraperDashboard,scraperOwnerAction,scraperWorkerAction,scraperJobEvents,registeredRetailers} from '../../../lib/scraper-service';
 export const dynamic = 'force-dynamic';
 function json(value: unknown, status = 200) { return Response.json(value, { status, headers: { 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff' } }); }
 async function body(request: Request) { if (!request.headers.get('content-type')?.includes('application/json')) throw new Error('JSON required.'); if(Number(request.headers.get('content-length'))>600000)throw new Error('Request is too large.'); const text = await request.text(); if (text.length > 600000) throw new Error('Request is too large.'); return JSON.parse(text); }
@@ -50,21 +51,31 @@ async function handle(request: Request, method: string) {
     }
     if (action === 'share' && method === 'GET') { if (!id || !/^[a-f0-9-]{36}$/.test(id)) return json({ error:'Shared build not found.' },404); const row = await database().prepare('SELECT json FROM builds WHERE share_id=?').bind(id).first<{json:string}>(); return row ? json(JSON.parse(row.json)) : json({ error:'Shared build not found.' },404); }
     if (action === 'unsubscribe' && method === 'POST') { const token = url.searchParams.get('token'); if (!token || !/^[a-f0-9-]{36}$/.test(token)) return json({ error:'Invalid unsubscribe link.' },400); await database().prepare('UPDATE alerts SET active=0, email_enabled=0 WHERE token=?').bind(token).run(); return json({ unsubscribed:true }); }
+    if(action==='scraper'){
+      if(id==='worker'){
+        if(method!=='POST'||!collector(request))return json({error:'Collector authentication required.'},401);
+        return json(await scraperWorkerAction(database(),await body(request)));
+      }
+      if(!isAdmin)return json({error:user?'Price Scraper is available to the site owner only.':'Sign in with the owner account to manage scraping.'},user?403:401);
+      if(method==='GET')return json(id==='run'?await scraperJobEvents(database(),url.searchParams.get('id')||''):await scraperDashboard(database(),url.searchParams.get('siteId')||undefined));
+      if(method==='POST'){await rateLimit(user!.userId,'scraper',120);return json(await scraperOwnerAction(database(),await body(request)));}
+      return json({error:'Unsupported scraper operation.'},405);
+    }
     if (['ingest','process-alerts'].includes(action)) {
       if (method !== 'POST' || !collector(request)) return json({ error:'Collector authentication required.' },401);
       if (action === 'process-alerts') return json(await processAlerts());
       catalogMutation=true;invalidatePublicCatalog();
-      const data = validateIngestion(await body(request)); const db = database(); let inserted = 0, quarantined = 0;
+      const db = database(); const configured=await registeredRetailers(db); const data = validateIngestion(await body(request),[...configured,...(configured.length?[]:(await import('../../../lib/retailers')).retailers)]); let inserted = 0, quarantined = 0;
       for (const p of data.products) {
-        const statements: D1PreparedStatement[] = []; const { offers, ...metadata } = p;
+        const statements: D1PreparedStatement[] = []; const observationIndexes:number[]=[]; const { offers, ...metadata } = p;
         statements.push(db.prepare('INSERT INTO products (id,json,updated_at) VALUES (?,?,?) ON CONFLICT(id) DO UPDATE SET json=excluded.json, updated_at=excluded.updated_at WHERE excluded.updated_at>=products.updated_at').bind(p.id,JSON.stringify(metadata),p.verifiedAt));
         for (const o of offers) {
           const prior = await db.prepare('SELECT json FROM offers WHERE id=?').bind(o.id).first<{json:string}>();
           if (prior) { const old = JSON.parse(prior.json); if (old.packQuantity !== o.packQuantity || Math.abs(o.price-old.price)/old.price > 0.8) { await db.prepare("INSERT OR IGNORE INTO quarantine (id,json,reason,status,created_at) VALUES (?,?,?,'pending',?)").bind(o.id+':'+o.observedAt,JSON.stringify({productId:p.id,offer:o}),'Package changed or price moved more than 80%',new Date().toISOString()).run();quarantined++; continue; } }
           statements.push(db.prepare('INSERT INTO offers (id,product_id,json,updated_at) VALUES (?,?,?,?) ON CONFLICT(id) DO UPDATE SET product_id=excluded.product_id,json=excluded.json,updated_at=excluded.updated_at WHERE excluded.updated_at>=offers.updated_at').bind(o.id,p.id,JSON.stringify(o),o.observedAt));
-          statements.push(db.prepare('INSERT OR IGNORE INTO observations (id,offer_id,price,pack_quantity,stock,observed_at) VALUES (?,?,?,?,?,?)').bind(o.id+':'+o.observedAt,o.id,o.price,o.packQuantity,o.stock,o.observedAt)); inserted++;
+          statements.push(db.prepare('INSERT OR IGNORE INTO observations (id,offer_id,price,pack_quantity,stock,observed_at) VALUES (?,?,?,?,?,?)').bind(o.id+':'+o.observedAt,o.id,o.price,o.packQuantity,o.stock,o.observedAt)); observationIndexes.push(statements.length-1);
         }
-        await db.batch(statements);
+        const result=await db.batch(statements);inserted+=observationIndexes.reduce((sum,index)=>sum+(result[index].meta.changes||0),0);
       }
       if (data.reports.length || quarantined) await db.prepare('INSERT INTO collection_runs (id,json,created_at) VALUES (?,?,?)').bind(crypto.randomUUID(),JSON.stringify(data.reports.length ? data.reports : [{retailerId:'quarantine',retailer:'Validation',status:'quarantined',products:quarantined,checkedAt:new Date().toISOString(),message:'Large price or package change requires review.'}]),new Date().toISOString()).run();
       return json({ inserted,quarantined });

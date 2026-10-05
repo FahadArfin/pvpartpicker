@@ -1,4 +1,5 @@
 import { sqliteTable, text, real, integer, index, uniqueIndex, primaryKey } from 'drizzle-orm/sqlite-core';
+import {sql} from 'drizzle-orm';
 export const products = sqliteTable('products', { id: text('id').primaryKey(), json: text('json').notNull(), updatedAt: text('updated_at').notNull() });
 export const watchlist = sqliteTable('watchlist', {userId:text('user_id').notNull(),productId:text('product_id').notNull(),createdAt:text('created_at').notNull()},t=>[primaryKey({columns:[t.userId,t.productId]})]);
 export const offers = sqliteTable('offers', { id: text('id').primaryKey(), productId: text('product_id').notNull(), json: text('json').notNull(), updatedAt: text('updated_at').notNull() }, t => [index('offers_product_idx').on(t.productId)]);
@@ -14,3 +15,6 @@ export const productOverrides = sqliteTable('product_overrides', { id: text('id'
 export const offerMappings = sqliteTable('offer_mappings', { id: text('id').primaryKey(), productId: text('product_id').notNull(), source: text('source').notNull(), updatedAt: text('updated_at').notNull() });
 export const jobState = sqliteTable('job_state', { id: text('id').primaryKey(), value: text('value').notNull() });
 export const quarantine = sqliteTable('quarantine', { id:text('id').primaryKey(),json:text('json').notNull(),reason:text('reason').notNull(),status:text('status').notNull().default('pending'),createdAt:text('created_at').notNull() });
+export const scraperSites=sqliteTable('scraper_sites',{id:text('id').primaryKey(),origin:text('origin').notNull().unique(),json:text('json').notNull(),nextAt:text('next_at'),updatedAt:text('updated_at').notNull()});
+export const scraperJobs=sqliteTable('scraper_jobs',{id:text('id').primaryKey(),siteId:text('site_id').notNull(),status:text('status').notNull(),config:text('config').notNull(),progress:text('progress').notNull(),queuedAt:text('queued_at').notNull(),startedAt:text('started_at'),finishedAt:text('finished_at'),leaseToken:text('lease_token'),leaseUntil:text('lease_until'),cancelRequested:integer('cancel_requested').notNull().default(0)},t=>[index('scraper_jobs_time_idx').on(t.queuedAt),uniqueIndex('scraper_jobs_active_idx').on(t.siteId).where(sql`${t.status} IN ('queued','running')`)]);
+export const scraperEvents=sqliteTable('scraper_events',{id:text('id').primaryKey(),jobId:text('job_id').notNull(),json:text('json').notNull(),createdAt:text('created_at').notNull()},t=>[index('scraper_events_job_idx').on(t.jobId,t.createdAt)]);
