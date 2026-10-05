@@ -8,6 +8,7 @@ import {buildDrops,dropPeriod,dropQuery,normalizeWatchIds,watchInsertSql} from '
 import type {DropCandidate} from '../../../lib/price-drops';
 import {listCommunityBuilds,getCommunityBuild,publishCommunityBuild,unpublishCommunityBuild} from '../../../lib/community-builds';
 import {scraperDashboard,scraperOwnerAction,scraperWorkerAction,scraperJobEvents,registeredRetailers} from '../../../lib/scraper-service';
+import {calculatorApi} from '../../../lib/calculator-api';
 export const dynamic = 'force-dynamic';
 function json(value: unknown, status = 200) { return Response.json(value, { status, headers: { 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff' } }); }
 async function body(request: Request) { if (!request.headers.get('content-type')?.includes('application/json')) throw new Error('JSON required.'); if(Number(request.headers.get('content-length'))>600000)throw new Error('Request is too large.'); const text = await request.text(); if (text.length > 600000) throw new Error('Request is too large.'); return JSON.parse(text); }
@@ -17,6 +18,7 @@ async function handle(request: Request, method: string) {
   try {
     const url = new URL(request.url), paths = url.pathname.replace(/^\/api\//, '').split('/'), action = paths[0], id = paths[1];
     if (method !== 'GET' && request.headers.get('origin') && request.headers.get('origin') !== url.origin) return json({ error: 'Cross-origin write rejected.' }, 403);
+    if(action==='solar-calculator'&&method==='GET')return calculatorApi(request);
     // This response has no account data and does not depend on auth headers.
     if(action==='catalog'&&method==='GET'&&url.searchParams.get('view')==='summary'){
       const start=performance.now(),result=await getCatalogSummary();

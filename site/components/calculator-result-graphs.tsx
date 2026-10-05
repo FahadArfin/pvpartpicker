@@ -1,0 +1,25 @@
+'use client';
+import CalculatorChart from './calculator-chart';
+import ConductorExplorer from './conductor-explorer';
+import {verifiedControllers} from '../lib/solar4u/controller-catalog.mjs';
+import type {CalculatorId,Values,Report} from '../lib/guide-calculators';
+export default function CalculatorResultGraphs({id,values:v,report:r,material}:{id:CalculatorId;values:Values;report:Report;material:'copper'|'aluminum'}){
+ if(id==='voltage'||id==='cable')return <ConductorExplorer key={id+material} voltage={v.voltage} currentA={v.currentA} lengthFt={v.lengthFt} targetPercent={id==='cable'?v.maxDropPercent:3} material={material} enteredResistance={id==='voltage'?v.ohmsPerKft:undefined}/>;
+ if(id==='battery'){
+  const loads=Array.from({length:8},(_,i)=>(i+1)*Math.max(2000,v.loadWatts*2)/8),usable=Number(r.raw.usableKwh);
+  return <><CalculatorChart title="How load changes battery runtime" unit="Runtime · hours" xTitle="Constant AC load · W" labels={loads.map(l=>String(Math.round(l)))} series={[{name:'Delivered-energy runtime',color:'#7554b3',values:loads.map(l=>usable*1000/l)}]}/><p className="calc-footnote">Same usable energy and efficiency in every case. Inverter idle draw, changing efficiency and startup loads are excluded; the chart does not establish output capability.</p></>;
+ }
+ if(id==='fuse')return <><CalculatorChart title="Compare current and protection assumptions" unit="A" bars labels={['Load','125% minimum','Example device','Corrected ampacity']} series={[{name:'Current / rating',color:'#dd8829',values:[v.continuousCurrentA,Number(r.raw.minimumAmps),Number(r.raw.recommendedAmps),v.conductorAmpacityA]}]}/><p className="calc-footnote">A device rating above the entered corrected ampacity fails this planning comparison. Device type, DC voltage and interrupt rating remain separate checks.</p></>;
+ if(id==='array'){
+  const temperatures=Array.from({length:11},(_,i)=>-60+i*10),voc=v.panelVoc*v.seriesCount;
+  return <><CalculatorChart title="Cold weather raises string open-circuit voltage" unit="V" xTitle="Design cell temperature · °C" labels={temperatures.map(String)} series={[{name:'Conservative maximum Voc',color:'#087e8b',values:temperatures.map(t=>voc*(1+Math.abs(v.tempCoefficientPercent)/100*Math.max(0,25-t)))},{name:'STC string Voc',color:'#dd8829',values:temperatures.map(()=>voc),dashed:true}]}/><p className="calc-footnote">This maximum-voltage check retains STC Voc above 25°C. It does not model hot operating Vmp or substitute for the inverter’s absolute voltage limit.</p></>;
+ }
+ if(id==='controller')return <><CalculatorChart title="Cold Voc versus controller input ceiling" unit="V" xTitle="Controller model · SmartSolar MPPT" bars labels={verifiedControllers.map(c=>c.model.replace('SmartSolar MPPT ','').replace(' VE.Can',''))} series={[{name:'Your cold Voc',color:'#087e8b',values:verifiedControllers.map(()=>Number((r.raw.array as {coldVoc:number}).coldVoc))},{name:'Absolute input ceiling',color:'#dd8829',values:verifiedControllers.map(c=>c.maxColdVocV)}]}/><p className="calc-footnote">Cold Voc must stay below the ceiling. Passing this chart alone does not establish compatibility; review PV current, hot Vmp, charging voltage and the model’s power limits below.</p></>;
+ if(id==='tou'){
+  const shifted=Number(r.raw.shiftableKwh),recharge=Number(r.raw.rechargeKwh),avoided=v.dailyUsageKwh*(v.onPeakSharePercent*v.peakRate+v.midPeakSharePercent*v.midPeakRate)/100;
+  const unchanged=(v.dailyUsageKwh-shifted)*v.offPeakRate;
+  return <><CalculatorChart title="Daily electricity cost · shifting scenario" unit="USD / day" bars labels={['Without shifting','With battery shifting']} series={[{name:'Energy charge only',color:'#7554b3',values:[avoided+unchanged,recharge*v.offPeakRate+unchanged]}]}/><CalculatorChart title="Energy shifted and battery capacity" unit="kWh" bars labels={['Delivered per day','Recharge per day','Shifting capacity','Backup capacity']} series={[{name:'Energy / nominal capacity',color:'#087e8b',values:[shifted,recharge,Number(r.raw.touBatteryKwh),Number(r.raw.emergencyBatteryKwh)]}]}/><p className="calc-footnote">Recharge exceeds delivered energy because of losses. Capacity bars include your reserve and discharge-efficiency assumptions. Backup capacity assumes a fully charged battery.</p></>;
+ }
+ if(id==='payback'&&r.cash)return <><CalculatorChart title="25-year cumulative cash-flow scenario" unit="USD · undiscounted" xTitle="Year after installation" labels={['0',...r.cash.map(c=>String(c.year))]} series={[{name:'Cumulative net cash flow',color:'#087e8b',values:[-Number(r.raw.netCost),...r.cash.map(c=>c.cumulativeSavings)]},{name:'Break-even',color:'#dd8829',values:Array(26).fill(0),dashed:true}]}/><p className="calc-footnote">The curve starts with the upfront net cost. Crossing zero is modeled break-even; degradation, rate escalation and annual maintenance are included, while financing and replacements are excluded.</p></>;
+ return null;
+}

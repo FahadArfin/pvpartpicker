@@ -55,8 +55,8 @@ export const moduleDefaults = {
 };
 export const pvArrayFields = [
   field("capacityKw", "Array nameplate", "kW", 0, 1000),
-  field("tilt", "Tilt from horizontal", "°", 0, 90, 1),
-  field("azimuth", "Azimuth from north", "°", 0, 360, 1),
+  field("tilt", "Tilt from horizontal", "°", 0, 90, 0.1),
+  field("azimuth", "Azimuth from north", "°", 0, 360, 0.1),
 ];
 const wiring =
   "https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/dc-wiring.html";
