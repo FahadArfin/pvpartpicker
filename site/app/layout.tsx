@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./guide.css";
-import {serializePageCatalog} from '../lib/catalog-transport';
 import {PVProvider} from '../components/pv-provider';
-import {getPageCatalog as getCatalog} from '../lib/storage';
 import {getChatGPTUser} from './chatgpt-auth';
 export const dynamic='force-dynamic';
 
@@ -24,10 +22,10 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const[catalog,user]=await Promise.all([getCatalog(),getChatGPTUser()]);
+  const user=await getChatGPTUser();
   return (
     <html lang="en">
-      <body><PVProvider catalogJson={serializePageCatalog(catalog)} user={user?{displayName:user.displayName,email:user.email}:null}>{children}</PVProvider></body>
+      <body><PVProvider user={user?{displayName:user.displayName,email:user.email}:null}>{children}</PVProvider></body>
     </html>
   );
 }

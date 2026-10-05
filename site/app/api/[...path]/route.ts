@@ -1,5 +1,5 @@
 import { getChatGPTUser } from '../../chatgpt-auth';
-import { database, runtime, getCatalog, rateLimit } from '../../../lib/storage';
+import { database, runtime, getCatalog, getPublicCatalog, getCatalogSummary, invalidatePublicCatalog, rateLimit } from '../../../lib/storage';
 import { validateBuild, bestOffer, costForQuantity } from '../../../lib/domain';
 import { validateIngestion } from '../../../lib/ingestion';
 import { processAlerts } from '../../../lib/alerts';
@@ -12,9 +12,15 @@ function json(value: unknown, status = 200) { return Response.json(value, { stat
 async function body(request: Request) { if (!request.headers.get('content-type')?.includes('application/json')) throw new Error('JSON required.'); if(Number(request.headers.get('content-length'))>600000)throw new Error('Request is too large.'); const text = await request.text(); if (text.length > 600000) throw new Error('Request is too large.'); return JSON.parse(text); }
 function collector(request: Request) { const secret = runtime().COLLECTOR_TOKEN; const given = request.headers.get('authorization'); if (!secret || !given || given.length !== secret.length + 7) return false; let mismatch = 0; const expected = 'Bearer ' + secret; for (let i = 0; i < expected.length; i++) mismatch |= expected.charCodeAt(i) ^ given.charCodeAt(i); return mismatch === 0; }
 async function handle(request: Request, method: string) {
+  let catalogMutation=false;
   try {
     const url = new URL(request.url), paths = url.pathname.replace(/^\/api\//, '').split('/'), action = paths[0], id = paths[1];
     if (method !== 'GET' && request.headers.get('origin') && request.headers.get('origin') !== url.origin) return json({ error: 'Cross-origin write rejected.' }, 403);
+    // This response has no account data and does not depend on auth headers.
+    if(action==='catalog'&&method==='GET'&&url.searchParams.get('view')==='summary'){
+      const start=performance.now(),result=await getCatalogSummary();
+      return new Response(result.body,{headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':`public, max-age=${Math.max(0,Math.floor((result.expiresAt-Date.now())/1000))}, must-revalidate`,'X-Content-Type-Options':'nosniff','Server-Timing':`catalog;dur=${(performance.now()-start).toFixed(1)}`}});
+    }
     const user = await getChatGPTUser(); const isAdmin = Boolean(user && runtime().ADMIN_EMAIL && user.email.toLowerCase() === runtime().ADMIN_EMAIL?.toLowerCase());
     if (action === 'me' && method === 'GET') return json({ user: user ? { displayName: user.displayName, email: user.email } : null, isAdmin, emailConfigured: Boolean(runtime().RESEND_API_KEY && runtime().EMAIL_FROM) });
     if (action === 'catalog' && method === 'GET') {const start=performance.now();const result=await getCatalog();const response=json(result);response.headers.set('Server-Timing',`catalog;dur=${(performance.now()-start).toFixed(1)}`);return response;}
@@ -25,12 +31,12 @@ async function handle(request: Request, method: string) {
     }
     if(action==='deals'&&method==='GET'){
       const {period,days}=dropPeriod(url.searchParams.get('period')),now=Date.now(),since=new Date(now-days*86400000).toISOString();
-      const catalog=await getCatalog();if(catalog.storage!=='database')throw new Error('Database history is unavailable. Please try again later.');
+      const catalog=await getPublicCatalog();if(catalog.storage!=='database')throw new Error('Database history is unavailable. Please try again later.');
       const records=await database().prepare(dropQuery(period==='latest')).bind(since).all<DropCandidate>();
       return json({drops:buildDrops(catalog.products,records.results,now),period,since,checkedAt:new Date(now).toISOString()});
     }
     if (action === 'history' && method === 'GET') {
-      const productId = url.searchParams.get('productId'); const days = Number(url.searchParams.get('days') || 90); if (![30,90,365].includes(days)) throw new Error('Invalid history period.'); const p = (await getCatalog()).products.find(p => p.id === productId); if (!p) return json({ error: 'Product not found.' },404);
+      const productId = url.searchParams.get('productId'); const days = Number(url.searchParams.get('days') || 90); if (![30,90,365].includes(days)) throw new Error('Invalid history period.'); const p = (await getPublicCatalog()).products.find(p => p.id === productId); if (!p) return json({ error: 'Product not found.' },404);
       const since = new Date(Date.now() - days * 86400000).toISOString(); let points: unknown[] = [];
       try { const rows = await database().prepare('SELECT o.offer_id AS offerId, o.price, o.pack_quantity AS packQuantity, o.stock, o.observed_at AS observedAt FROM observations o JOIN offers f ON f.id=o.offer_id WHERE COALESCE((SELECT product_id FROM offer_mappings WHERE id=f.id),f.product_id)=? AND o.observed_at>=? ORDER BY o.observed_at LIMIT 5000').bind(p.id,since).all(); points = rows.results; } catch {}
       if (!points.length) points = p.offers.filter(o => o.observedAt >= since).map(o => ({ offerId:o.id,price:o.price,packQuantity:o.packQuantity,stock:o.stock,observedAt:o.observedAt }));
@@ -47,6 +53,7 @@ async function handle(request: Request, method: string) {
     if (['ingest','process-alerts'].includes(action)) {
       if (method !== 'POST' || !collector(request)) return json({ error:'Collector authentication required.' },401);
       if (action === 'process-alerts') return json(await processAlerts());
+      catalogMutation=true;invalidatePublicCatalog();
       const data = validateIngestion(await body(request)); const db = database(); let inserted = 0, quarantined = 0;
       for (const p of data.products) {
         const statements: D1PreparedStatement[] = []; const { offers, ...metadata } = p;
@@ -109,11 +116,13 @@ async function handle(request: Request, method: string) {
     }
     if (action === 'admin') {
       if (!isAdmin) return json({error:'Administrator access required.'},403);
+      if(method==='POST'){catalogMutation=true;invalidatePublicCatalog();}
       if (method === 'GET') return json({quarantine:(await db.prepare("SELECT id,json,reason FROM quarantine WHERE status='pending' ORDER BY created_at LIMIT 100").all()).results.map((r:any)=>({...r,...JSON.parse(r.json)})),reports:(await getCatalog()).reports,reviews:(await db.prepare("SELECT id,product_id AS productId,author,rating,body,status FROM reviews WHERE status='pending' ORDER BY created_at LIMIT 100").all()).results, email:{configured:Boolean(runtime().RESEND_API_KEY&&runtime().EMAIL_FROM),pending:(await db.prepare("SELECT COUNT(*) AS count FROM notifications WHERE email_status='pending'").first<{count:number}>())?.count||0,failed:(await db.prepare("SELECT COUNT(*) AS count FROM notifications WHERE email_status='failed'").first<{count:number}>())?.count||0}});
       if (method === 'POST') { const d=await body(request); if (d.action==='moderate' && ['approved','rejected'].includes(d.status)) { await db.prepare('UPDATE reviews SET status=? WHERE id=?').bind(d.status,d.id).run(); return json({updated:true}); } if (d.action==='specs') { const p=(await getCatalog()).products.find(p=>p.id===d.id); if (!p || !d.specs || typeof d.specs!=='object' || JSON.stringify(d.specs).length>10000 || typeof d.source!=='string' || !d.source.startsWith('https://')) throw new Error('Valid product specifications and an HTTPS source are required.'); await db.prepare('INSERT INTO product_overrides (id,json,updated_at) VALUES (?,?,?) ON CONFLICT(id) DO UPDATE SET json=excluded.json,updated_at=excluded.updated_at').bind(p.id,JSON.stringify({specs:{...p.specs,...d.specs,specificationSource:d.source},documentation:d.source}),new Date().toISOString()).run(); return json({updated:true}); } if(d.action==='map'){const catalog=await getCatalog();const target=catalog.products.find(p=>p.id===d.productId);const current=catalog.products.find(p=>p.offers.some(o=>o.id===d.offerId));if(!target||!current||typeof d.source!=='string'||!d.source.startsWith('https://'))throw new Error('Select an offer, target model, and verification URL.');if(target.category!==current.category)throw new Error('Product categories must match.');await db.prepare('INSERT INTO offer_mappings (id,product_id,source,updated_at) VALUES (?,?,?,?) ON CONFLICT(id) DO UPDATE SET product_id=excluded.product_id,source=excluded.source,updated_at=excluded.updated_at').bind(d.offerId,target.id,d.source,new Date().toISOString()).run();return json({updated:true});}if(d.action==='quarantine'&&['approved','rejected'].includes(d.status)){const q=await db.prepare("SELECT json FROM quarantine WHERE id=? AND status='pending'").bind(d.id).first<{json:string}>();if(!q)throw new Error('Candidate not found.');if(d.status==='approved'){const candidate=JSON.parse(q.json),o=candidate.offer;await db.batch([db.prepare('UPDATE offers SET json=?,updated_at=? WHERE id=? AND updated_at<=?').bind(JSON.stringify(o),o.observedAt,o.id,o.observedAt),db.prepare('INSERT OR IGNORE INTO observations (id,offer_id,price,pack_quantity,stock,observed_at) VALUES (?,?,?,?,?,?)').bind(o.id+':'+o.observedAt,o.id,o.price,o.packQuantity,o.stock,o.observedAt)]);}await db.prepare('UPDATE quarantine SET status=? WHERE id=?').bind(d.status,d.id).run();return json({updated:true});}throw new Error('Unknown administration action.'); }
     }
     return json({error:'Not found.'},404);
   } catch (error) { const message=error instanceof Error?error.message:'Unexpected error.'; const unavailable=/Database|D1|SQLITE|no such table/.test(message); return json({error:unavailable?'This service is temporarily unavailable. Your input has been preserved.':message},unavailable?503:/Too many/.test(message)?429:400); }
+  finally{if(catalogMutation)invalidatePublicCatalog();}
 }
 export const GET = (r:Request) => handle(r,'GET');
 export const POST = (r:Request) => handle(r,'POST');

@@ -1,6 +1,8 @@
 import { env } from 'cloudflare:workers';
 import {cache} from 'react';
 import {readCatalog} from './catalog-reader';
+import {createCatalogCache} from './catalog-cache';
+import {serializePageCatalog} from './catalog-transport';
 import {categorizeProduct} from './retailers';
 import snapshot from '../data/catalog.json';
 import specifications from '../data/specifications.json';
@@ -16,8 +18,17 @@ export async function getCatalog(){
  try{return await readCatalog(database(),initial,evidence);}
  catch{return {...initial,storage:'snapshot_unavailable_database'};}
 }
-// Request-scoped only: prices and overrides are read afresh on the next request.
-export const getPageCatalog=cache(getCatalog);
+const publicCatalog=createCatalogCache(getCatalog,c=>c.storage==='database');
+export const invalidatePublicCatalog=()=>publicCatalog.invalidate();
+export const getPublicCatalog=async()=>(await publicCatalog.get()).value;
+export const getPageCatalog=cache(getPublicCatalog);
+// Serialize once per cached public catalog rather than once for every page.
+const summaryBodies=new WeakMap<object,string>();
+export async function getCatalogSummary(){
+ const record=await publicCatalog.get();let body=summaryBodies.get(record);
+ if(!body){const catalog=JSON.parse(serializePageCatalog(record.value));body=JSON.stringify({...catalog,version:1,expiresAt:record.expiresAt});summaryBodies.set(record,body);}
+ return {body,expiresAt:record.expiresAt};
+}
 export async function rateLimit(userId: string, scope: string, limit = 40) {
   const db = database(), hour = Math.floor(Date.now() / 3600000), id = `${scope}:${userId}:${hour}`;
   await db.prepare('INSERT INTO rate_limits (id, count, expires_at) VALUES (?, 1, ?) ON CONFLICT(id) DO UPDATE SET count = count + 1').bind(id, (hour + 2) * 3600000).run();

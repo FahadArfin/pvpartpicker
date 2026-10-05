@@ -3,7 +3,7 @@ import {useState} from 'react';
 import Link from './site-link';
 import {Eye,Bell,Search,TrendingDown,Plus,ArrowUpRight,RefreshCw} from 'lucide-react';
 import {usePV,WatchButton,ProductImage} from './pv-provider';
-import {AlertModal} from './product-detail';
+import {AlertModal} from './alert-modal';
 import {usePriceDrops} from './use-price-drops';
 import {freshOffers,money} from '../lib/domain';
 import {categories} from '../lib/types';
