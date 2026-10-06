@@ -4,6 +4,7 @@ import {usePathname,useRouter} from 'next/navigation';
 import Link from './site-link';
 import {SiteNavigation} from './site-navigation';
 import {usePageTransition} from './use-page-transition';
+import {navigatePage} from '../lib/page-navigation';
 import {Sun,Bell,Bookmark,Menu,X,ArrowRight,Plus,Eye,EyeOff} from 'lucide-react';
 import type {PageCatalog} from '../lib/catalog-transport';
 import {loadPageCatalog,readRecentPageCatalog,needsPageCatalog} from '../lib/catalog-client';
@@ -78,7 +79,7 @@ export function PVProvider({user,children}:{user:User;children:React.ReactNode})
   // Persist before leaving the picker, including the native fallback path.
   try{localStorage.setItem('pvpartpicker-draft',JSON.stringify(next));}
   catch{setNotice('Could not save your draft on this device. Please enable browser storage and try again.');return;}
-  setBuild(next);router.push('/build');
+  setBuild(next);navigatePage('/build',()=>router.push('/build'));
  };
  const save=async(options?:{asNew?:boolean;name?:string})=>{
   if(!ready||saveLock.current)return;saveLock.current=true;setSaving(true);
