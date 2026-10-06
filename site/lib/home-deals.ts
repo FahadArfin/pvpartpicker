@@ -14,8 +14,9 @@ export function homeDeals(products:Product[],drops:PriceDrop[]):HomeDeal[]{
  }
  return result;
 }
-// Pixel targets allow swipe/manual scrolling and wrapping without clone links.
-export function nextDealOffset(current:number,maximum:number,step:number,direction:1|-1){
- if(maximum<=0)return 0;
- return direction===1?(current>=maximum-2?0:Math.min(maximum,current+step)):(current<=2?maximum:Math.max(0,current-step));
+// Fixed pixels per second, independent of display refresh rate. Cap long frames
+// so resuming a background tab cannot jump across several products.
+export function advanceTicker(position:number,loopWidth:number,elapsedMs:number){
+ if(loopWidth<=0)return 0;
+ return (position+Math.min(Math.max(elapsedMs,0),64)*0.022)%loopWidth;
 }
