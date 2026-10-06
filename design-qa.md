@@ -69,3 +69,19 @@ The design contract and reference are documented in `site/docs/design-system.md`
 - Scoped the new layout in app/home.css; preserved shared theme tokens and saved-build page styling. Updated the design contract for future work.
 - Browser verification: desktop and 390px home layouts in both themes; no horizontal overflow; all four equipment photos loaded; search for EG4 6000XP opened /parts with category=all and the requested query; browser error log empty. Inspected the complete desktop composition. [Final night preview](site/docs/design-system/home-refined-night.png).
 - Validation: 197 tests, TypeScript and final production Worker build passed.
+
+
+## Circular home implementation — October 6, 2026
+
+- Source visual truth: `site/docs/design-system/circular-home-reference.png` (1487×1058).
+- Implementation: `site/docs/design-system/circular-home-day.png` (1487×1058), `circular-home-mobile.png` (390×844). CSS viewport equals image pixels (1× density); both full views inspected. Source and desktop implementation were opened together in the same comparison input. Focused region comparison was unnecessary for this sparse layout; heading, search, circles, header and footer are all legible at full size.
+- State: anonymous home, day; phone inspected in both themes. Live draft unchanged.
+- Typography: existing Inter/system sans stack retained; OS fallback is slightly narrower than generated lettering. Hierarchy, copy, line lengths and button labels match the intended composition.
+- Layout: centered search and labeled circular shortcuts, minimal header/footer, no sidebar on Home. Phones retain all three shortcuts in one row, with 76px circles and no document overflow.
+- Tokens: shared warm day/navy night palette intentionally retained; blue is more muted than mock art to match approved low-glare palette. Toggle correctly shows day unchecked and night checked, unlike the generated reference.
+- Assets: no raster illustration needed. Existing Lucide SolarPanel, Tag, FolderClosed and Grid2X2 provide sharp library icons rather than approximated artwork. SolarPanel differs slightly from the generated glyph.
+- Interaction evidence: search submitted EG4 6000XP to `/parts?category=all&q=EG4+6000XP`; inner navigation restored. View Builds opened the saved/community collection with existing device draft. Theme persisted across full-page navigation. Links for Parts, Price Drops, Builds and Guide have correct destinations. Browser error log empty after search/build checks.
+- Comparison history: first full-view comparison found no actionable P0/P1/P2 differences. No visual repair iteration required. P3: exact generated letterforms and decorative sun accent are not reproduced; existing type/icon assets are deliberate shared-system choices.
+- Validation: 197 tests passed, TypeScript passed, production Worker build passed. The generic Sites build wrapper could not resolve its npm binary on Windows; the repository's `npm.cmd run build` succeeded on the same source.
+- Sales-strip concept is a separate, unimplemented reference with illustrative prices.
+- final result: passed

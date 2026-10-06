@@ -24,6 +24,10 @@ export function SiteNavigation({path}:{path:string}) {
     sync();window.addEventListener('pv:catalog-change',sync);
     return () => window.removeEventListener('pv:catalog-change',sync);
   },[path]);
+  if(path==='/') return <header className="home-header">
+    <Link className="home-brand" href="/" aria-label="PVPartPicker home"><Grid2X2 size={29} strokeWidth={1.7} aria-hidden="true"/><span>PV<b>Part</b>Picker</span></Link>
+    <nav className="home-header-links" aria-label="Home navigation"><Link href="/guide">Guide</Link>{user?<Link href="/account">My account</Link>:<a href="/signin-with-chatgpt?return_to=%2Faccount" target="_top">Sign in</a>}<ThemeToggle/></nav>
+  </header>;
   const navigation = <>
     <Link className="rail-brand" href="/" aria-label="PVPartPicker home"><Grid2X2 size={23}/><span>PV<b>Part</b>Picker</span></Link>
     <nav className="rail-primary" aria-label="Main navigation">{links.map(({href,label,icon:Icon})=><Link key={href} href={href} aria-current={(href==='/'?path==='/':(path===href||path.startsWith(href+'/')||(href==='/builds'&&path.startsWith('/community'))))?'page':undefined} onClick={()=>setOpen(false)}><Icon size={17}/><span>{label}</span>{href==='/build'&&draftReady&&build.lines.length>0&&<small>{build.lines.length}</small>}{href==='/watchlist'&&watchIds.length>0&&<small>{watchIds.length}</small>}</Link>)}</nav>
