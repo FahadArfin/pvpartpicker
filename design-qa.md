@@ -61,3 +61,11 @@ The design contract and reference are documented in `site/docs/design-system.md`
 - Added /builds with Saved builds and Community builds collections. Saved builds reuse the existing guarded open action, and device builds remain available if account retrieval fails. Community content reuses the existing workspace.
 - Browser checks: all three home actions, legacy filtered builder redirect, saved device build reopening in System Builder, saved-build search/clear, community empty state, desktop and 390px phone home in both themes. Home and saved collections had no document-level phone overflow. Authenticated account retrieval was not exercised in the signed-out QA session.
 - Validation: 197 tests passed, TypeScript and final production Worker build passed. [Home preview](site/docs/design-system/home-night.png).
+
+## Home composition refinement — October 5, 2026
+
+- Replaced the three equal action cards with an introduction, cross-category search and a compact current-draft workbench. Browse Parts, Price Drops and View Builds remain grouped near the top.
+- Added four small representative catalog photos, links to every other equipment category, a guide feature and focused calculator/watch-list links. Photos carry example-model titles; no live prices, fabricated statistics or catalog-loading dependency were added. Images have fixed dimensions, lazy loading and an icon fallback.
+- Scoped the new layout in app/home.css; preserved shared theme tokens and saved-build page styling. Updated the design contract for future work.
+- Browser verification: desktop and 390px home layouts in both themes; no horizontal overflow; all four equipment photos loaded; search for EG4 6000XP opened /parts with category=all and the requested query; browser error log empty. Inspected the complete desktop composition. [Final night preview](site/docs/design-system/home-refined-night.png).
+- Validation: 197 tests, TypeScript and final production Worker build passed.
