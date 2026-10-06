@@ -1,6 +1,6 @@
 'use client';
 import React,{createContext,useContext,useEffect,useState,useCallback,useRef} from 'react';
-import {usePathname} from 'next/navigation';
+import {usePathname,useRouter} from 'next/navigation';
 import Link from './site-link';
 import {SiteNavigation} from './site-navigation';
 import {Sun,Bell,Bookmark,Menu,X,ArrowRight,Plus,Eye,EyeOff} from 'lucide-react';
@@ -21,15 +21,20 @@ const ctx=createContext<Context|null>(null);
 export function usePV(){const value=useContext(ctx);if(!value)throw new Error('PV provider missing');return value;}
 export async function api(path:string,options?:RequestInit):Promise<any>{const r=await fetch('/api/'+path,{...options,headers:{'Content-Type':'application/json',...options?.headers}});const d:any=await r.json();if(!r.ok)throw new Error(d.error||'Please try again.');return d;}
 export function PVProvider({user,children}:{user:User;children:React.ReactNode}){
- const path=usePathname()||'/',needsCatalog=needsPageCatalog(path);
+ const path=usePathname()||'/',needsCatalog=needsPageCatalog(path),router=useRouter();
  const[catalog,setCatalog]=useState<PageCatalog>({products:[],reports:[]}),[catalogReady,setCatalogReady]=useState(false),[catalogError,setCatalogError]=useState(''),[catalogAttempt,setCatalogAttempt]=useState(0);
  const{products,reports}=catalog;
  useEffect(()=>{
-  if(!needsCatalog)return;let live=true;setCatalogError('');
+  if(!needsCatalog)return;let live=true,timer:ReturnType<typeof setTimeout>|undefined;setCatalogError('');
   let storage:Storage|null=null;try{storage=sessionStorage;}catch{}
   const recent=readRecentPageCatalog(storage);if(recent){setCatalog(recent);setCatalogReady(true);}
-  loadPageCatalog(storage).then(data=>{if(live){setCatalog(data);setCatalogReady(true);}}).catch(e=>{if(live)setCatalogError((e as Error).message);});
-  return()=>{live=false;};
+  const refresh=()=>{
+   if(document.hidden)return;
+   clearTimeout(timer);
+   loadPageCatalog(storage).then(data=>{if(live){setCatalog(data);setCatalogReady(true);setCatalogError('');timer=setTimeout(refresh,Math.max(30000,(data.expiresAt||Date.now()+120000)-Date.now()));}}).catch(e=>{if(live){setCatalogError((e as Error).message);timer=setTimeout(refresh,30000);}});
+  };
+  refresh();document.addEventListener('visibilitychange',refresh);
+  return()=>{live=false;clearTimeout(timer);document.removeEventListener('visibilitychange',refresh);};
  },[needsCatalog,catalogAttempt]);
  useEffect(()=>{if(catalogReady)performance.mark('pv-catalog-ready');},[catalogReady]);
  const[build,setBuild]=useState<Build>(initial),[ready,setReady]=useState(false),[notice,setNotice]=useState(''),[compare,setCompare]=useState<string[]>([]);
@@ -68,10 +73,10 @@ export function PVProvider({user,children}:{user:User;children:React.ReactNode})
  const chooseForBuild=(id:string,offerId?:string)=>{
   if(!ready||draftWriteBlocked.current){setNotice('Recover your device draft before choosing equipment.');return;}
   const next=addBuildPart(build,id,offerId);
-  // This site uses full page navigation. Persist before leaving the picker.
+  // Persist before leaving the picker, including the native fallback path.
   try{localStorage.setItem('pvpartpicker-draft',JSON.stringify(next));}
   catch{setNotice('Could not save your draft on this device. Please enable browser storage and try again.');return;}
-  setBuild(next);window.location.assign('/build');
+  setBuild(next);router.push('/build');
  };
  const save=async(options?:{asNew?:boolean;name?:string})=>{
   if(!ready||saveLock.current)return;saveLock.current=true;setSaving(true);

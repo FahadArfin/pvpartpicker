@@ -2,6 +2,7 @@
 import {useEffect,useRef} from 'react';
 import {Sun,Battery,Zap,Cable,Wrench,Box,Plug,ShieldCheck,Gauge,PackageOpen,Check,ArrowUpRight,ArrowRight,X,Package} from 'lucide-react';
 import Link from './site-link';
+import {useRouter} from 'next/navigation';
 import {usePV,ProductImage,WatchButton} from './pv-provider';
 import {BuildQuantity} from './build-quantity';
 import {categories} from '../lib/types';
@@ -16,11 +17,11 @@ function specs(product:Product){return partColumns[product.category].map(c=>({la
 function pricing(product:Product){const current=bestOffer(product);const last=[...product.offers].sort((a,b)=>a.price/a.packQuantity-b.price/b.packQuantity)[0];return {current,offer:current||last};}
 
 export function PartRow({product,active,onInspect,onOpen,columns,builderMode=false,selectedOfferId}:{columns:PartColumn[];product:Product;active:boolean;onInspect:()=>void;onOpen:()=>void;builderMode?:boolean;selectedOfferId?:string}){
- const {build,compare,setCompare,notify}=usePV();const {current,offer}=pricing(product);const Icon=icons[product.category];const quantity=build.lines.find(l=>l.productId===product.id)?.quantity||0;const selected=compare.includes(product.id);
+ const {build,compare,setCompare,notify}=usePV();const router=useRouter();const {current,offer}=pricing(product);const Icon=icons[product.category];const quantity=build.lines.find(l=>l.productId===product.id)?.quantity||0;const selected=compare.includes(product.id);
  return <article role="row" className={'part-row '+(active?'inspected ':'')+(quantity?'equipped':'')} onMouseEnter={onInspect} onFocus={onInspect} onDoubleClick={e=>{
   // A second click on the part opens its details; action controls stay separate.
   if((e.target as HTMLElement).closest('a,input,select,textarea,label,button:not(.part-inspect)'))return;
-  window.location.assign('/products/'+encodeURIComponent(product.id)+(builderMode?'?builder=1':''));
+  router.push('/products/'+encodeURIComponent(product.id)+(builderMode?'?builder=1':''));
  }}>
   <div className="part-identity" role="cell"><span className="part-category-icon"><ProductImage product={product}/><DealMarker product={product}/></span>
   <button className="part-inspect" aria-label={'Inspect '+productListName(product)} aria-pressed={active} title={product.name+' · Click to preview. Double-click for details.'} onClick={onOpen} onKeyDown={e=>{if(e.key==='ArrowDown'||e.key==='ArrowUp'){const rows=Array.from(e.currentTarget.closest('.part-list')!.querySelectorAll<HTMLButtonElement>('.part-inspect'));const index=rows.indexOf(e.currentTarget);const next=rows[index+(e.key==='ArrowDown'?1:-1)];if(next){e.preventDefault();next.focus();}}}}>

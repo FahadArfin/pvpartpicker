@@ -5,5 +5,5 @@ export default async function Calculators({searchParams}:{searchParams:Promise<{
  const {tool,article:slug}=await searchParams;
  const entry=guideEntries.find(e=>e.slug===slug);
  const article=entry?{slug:entry.slug,title:entry.title}:slug==='library'?{slug:'library',title:'All articles & filters'}:undefined;
- return <CalculatorWorkshop initialTool={tool} article={article}/>;
+ return <CalculatorWorkshop key={(tool||'pv')+':'+(article?.slug||'')} initialTool={tool} article={article}/>;
 }

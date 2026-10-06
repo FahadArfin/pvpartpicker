@@ -29,3 +29,16 @@ test('disabled browser storage still loads; invalid or unsuccessful responses do
  await assert.rejects(loadPageCatalog(null,async()=>Response.json({error:'offline'},{status:503})),/Could not load/);
  await assert.rejects(loadPageCatalog(null,async()=>Response.json({version:2,products:[]})),/Invalid catalog/);
 });
+
+test('hover warming and navigation share a request, preserve expiry, and retry after failure',async()=>{
+ const {createPageCatalogLoader}=await import('../lib/catalog-client.ts');
+ let calls=0,release!:(r:Response)=>void;
+ const loader=createPageCatalogLoader(async()=>{calls++;return new Promise<Response>(resolve=>{release=resolve;});},()=>1000);
+ const stored=new Map<string,string>();const storage={getItem:(key:string)=>stored.get(key)||null,setItem:(key:string,value:string)=>{stored.set(key,value);}};
+ const warm=loader(storage),visible=loader(storage);assert.equal(calls,1);
+ release(Response.json({version:1,expiresAt:1500,products:[],reports:[]}));
+ const [a,b]=await Promise.all([warm,visible]);assert.equal(a,b);assert.equal(a.expiresAt,1500);
+ await loader(storage);assert.equal(calls,1);
+ let retries=0;const recovery=createPageCatalogLoader(async()=>{if(++retries===1)throw Error('offline');return Response.json({version:1,expiresAt:1500,products:[],reports:[]});},()=>1000);
+ await assert.rejects(recovery(null),/Could not load/);await recovery(null);assert.equal(retries,2);
+});
