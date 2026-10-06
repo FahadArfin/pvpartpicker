@@ -85,3 +85,15 @@ The design contract and reference are documented in `site/docs/design-system.md`
 - Validation: 197 tests passed, TypeScript passed, production Worker build passed. The generic Sites build wrapper could not resolve its npm binary on Windows; the repository's `npm.cmd run build` succeeded on the same source.
 - Sales-strip concept is a separate, unimplemented reference with illustrative prices.
 - final result: passed
+
+
+## Five home shortcuts and automatic price drops — October 6, 2026
+
+- User approved the sales-strip concept and Tier Lists/Watch List additions. The simple hero and shared theme tokens remain intact.
+- Evidence: `site/docs/design-system/home-deals-live-data.png` shows the actual local empty-history state. `home-deals-qa-day.png` and `home-deals-qa-mobile.png` use an isolated localhost-only fixture feed with explicit QA names to test populated behavior; they are not real offers. No fixture code or data is part of the deployed app.
+- Desktop 1487×1058 and phone 390×844 inspected, with day/night modes. All five shortcuts readable; phone wraps 3+2 with no document horizontal overflow. Populated entries preserve product, retailer, unit prices, pack purchase cost and checked date; manual controls stay reachable.
+- Automatic motion observed at 449px then 898px; Pause retained 898px across more than one interval, Next advanced to 1347px. Reduced-motion emulation hides automatic-play control and retains manual navigation. Browser errors: none.
+- Actual API returned no verified recent drops; honest empty state shown. Home does not load the page catalog; bounded feed adds only 12 enriched, distinct products at most. Stale and out-of-stock offers continue to be excluded by existing drop eligibility.
+- 200 tests passed (including feed size/dedup/order, pack semantics, empty ineligible offers, and carousel wrap/bounds); TypeScript and production Worker build passed.
+- Existing font/icon/token choices retained. No new image artwork, fonts, libraries or oversized card panels. No P0/P1/P2 visual findings. Runtime failure messaging and hover/focus/hidden-tab pause were inspected in code; reduced-motion, auto-play, explicit pause and manual motion were browser-checked.
+- final result: passed

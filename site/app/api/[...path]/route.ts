@@ -4,6 +4,7 @@ import { validateBuild, bestOffer, costForQuantity } from '../../../lib/domain';
 import { validateIngestion } from '../../../lib/ingestion';
 import { processAlerts } from '../../../lib/alerts';
 import type { Product, CollectionReport } from '../../../lib/types';
+import {homeDeals} from '../../../lib/home-deals';
 import {buildDrops,dropPeriod,dropQuery,normalizeWatchIds,watchInsertSql} from '../../../lib/price-drops';
 import type {DropCandidate} from '../../../lib/price-drops';
 import {listCommunityBuilds,getCommunityBuild,publishCommunityBuild,unpublishCommunityBuild} from '../../../lib/community-builds';
@@ -33,10 +34,12 @@ async function handle(request: Request, method: string) {
       const build=await getCommunityBuild(database(),id);return build?json(build):json({error:'Community build not found.'},404);
     }
     if(action==='deals'&&method==='GET'){
-      const {period,days}=dropPeriod(url.searchParams.get('period')),now=Date.now(),since=new Date(now-days*86400000).toISOString();
+      const home=url.searchParams.get('view')==='home';
+      const {period,days}=dropPeriod(home?'latest':url.searchParams.get('period')),now=Date.now(),since=new Date(now-days*86400000).toISOString();
       const catalog=await getPublicCatalog();if(catalog.storage!=='database')throw new Error('Database history is unavailable. Please try again later.');
       const records=await database().prepare(dropQuery(period==='latest')).bind(since).all<DropCandidate>();
-      return json({drops:buildDrops(catalog.products,records.results,now),period,since,checkedAt:new Date(now).toISOString()});
+      const drops=buildDrops(catalog.products,records.results,now);
+      return json({drops:home?homeDeals(catalog.products,drops):drops,period,since,checkedAt:new Date(now).toISOString()});
     }
     if (action === 'history' && method === 'GET') {
       const productId = url.searchParams.get('productId'); const days = Number(url.searchParams.get('days') || 90); if (![30,90,365].includes(days)) throw new Error('Invalid history period.'); const p = (await getPublicCatalog()).products.find(p => p.id === productId); if (!p) return json({ error: 'Product not found.' },404);
