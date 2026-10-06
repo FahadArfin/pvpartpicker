@@ -32,8 +32,8 @@ test('mount toggles exclude the other mount system, not general hardware or othe
 
 test('builder picker links carry the explicit return-to-build context',async()=>{
  const {builderPickerHref}=await import('../lib/build-flow.ts');
- assert.equal(builderPickerHref('panels'),'/?category=panels&builder=1');
- assert.equal(builderPickerHref('module-electronics'),'/?category=module-electronics&builder=1');
+ assert.equal(builderPickerHref('panels'),'/parts?category=panels&builder=1');
+ assert.equal(builderPickerHref('module-electronics'),'/parts?category=module-electronics&builder=1');
 });
 
 test('choosing a part preserves the draft settings and existing selected offer',async()=>{

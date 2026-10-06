@@ -16,6 +16,12 @@ A practical solar parts workbench inspired by the clarity of PCPartPicker. The p
 - The catalog's bottom build tray shows the current build and equipment subtotal. It accounts for retailer pack quantities and identifies unpriced items. Comparison selection can coexist above/below it without covering controls.
 - Product details, builder, guide, calculators, tiers, watch list, account and administration use the same shell and tokens. Preserve article diagrams and genuine product images.
 
+## Entry pages and navigation
+
+- `/` is the lightweight home page: Browse Parts, Price Drops, and View Builds are the primary actions. Keep its content useful and compact, without decorative hero artwork or catalog-loading dependencies.
+- `/parts` owns the catalog. Old root query links redirect there with filters and builder context intact. New catalog links must use `/parts`.
+- `/builds` brings saved device/account builds and community builds into one collection view. `/build` remains the active System Builder. Reuse `BuildOpenAction` so opening another build preserves the existing draft confirmation and save flow.
+
 ## Canonical implementation
 
 | Responsibility | Source |

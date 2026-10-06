@@ -32,5 +32,5 @@ export function matchesEcosystem(product:Pick<Product,'brand'>,id:string) {
 }
 export function ecosystemHref(brand:string) {
  const ecosystem=resolveEcosystem(brand);
- return ecosystem?`/?ecosystem=${ecosystem.id}&category=all`:undefined;
+ return ecosystem?`/parts?ecosystem=${ecosystem.id}&category=all`:undefined;
 }

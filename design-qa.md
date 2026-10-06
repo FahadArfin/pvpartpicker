@@ -53,3 +53,11 @@ The design contract and reference are documented in `site/docs/design-system.md`
 - Corrected a conflicting thumb translation from the generic switch utility styles by using the same Radix primitive directly with theme-specific styling.
 - Measured day token contrast: primary text/surface 9.77:1; muted text/canvas 5.11:1; muted text/raised surface 4.62:1; muted text/rail 4.66:1; accent/selected surface 4.85:1; white/action 5.89:1. This is a targeted palette check, not a full accessibility audit.
 - Validation: 195 existing tests passed, TypeScript passed, production Worker build passed. [Final day preview](site/docs/design-system/catalog-soft-day.png).
+
+## Home and build collections — October 5, 2026
+
+- Added a compact home page with Browse Parts, Price Drops and View Builds; category shortcuts, planning resources and a current-draft link use the shared day/night theme. The home page does not request the product catalog.
+- Moved the catalog to /parts. Regression tests cover root catalog bookmarks retaining encoded searches, filters and builder context. Updated internal category, ecosystem, builder and empty-state links.
+- Added /builds with Saved builds and Community builds collections. Saved builds reuse the existing guarded open action, and device builds remain available if account retrieval fails. Community content reuses the existing workspace.
+- Browser checks: all three home actions, legacy filtered builder redirect, saved device build reopening in System Builder, saved-build search/clear, community empty state, desktop and 390px phone home in both themes. Home and saved collections had no document-level phone overflow. Authenticated account retrieval was not exercised in the signed-out QA session.
+- Validation: 197 tests passed, TypeScript and final production Worker build passed. [Home preview](site/docs/design-system/home-night.png).
