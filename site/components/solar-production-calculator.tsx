@@ -4,7 +4,7 @@ import {calculatorDefinitions,type Report,type Values} from '../lib/guide-calcul
 import {solarProduction,type SolarArray} from '../lib/solar-production';
 import CalculatorChart from './calculator-chart';
 const months=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-const colors=['#087e8b','#dd8829','#7354b0','#c64e72'];
+const colors=['var(--chart-1)','var(--chart-2)','var(--chart-3)','var(--chart-4)'];
 type Face={capacityKw:string;tilt:string;azimuth:string};
 type Locality={id:number;label:string;latitude:number;longitude:number};
 export default function SolarProductionCalculator(){
@@ -38,9 +38,9 @@ export default function SolarProductionCalculator(){
  <div className="guide-calculator-actions"><button className="button outline" onClick={()=>{invalidate();searchRevision.current++;locationRequest.current?.abort();setSearching(false);setSearchError('');setDraft(defaults());setMultiple(false);setFaces([{capacityKw:'5',tilt:'35',azimuth:'180'},{capacityKw:'5',tilt:'30',azimuth:'90'}]);setQuery('');setLocations([]);}}>Reset example</button><span>Instant estimates update as you edit. Azimuth is measured clockwise from north; tilt is measured from horizontal.</span></div>
  {local.error&&<p className="guide-input-error" role="alert">{local.error}</p>}
  {report&&<section className="guide-results"><div className="guide-results-heading"><h3>Your production estimate</h3><button className="text-link" onClick={exportResult}>Download result ↓</button></div><div className="guide-result-stats" aria-live="polite">{report.stats.map(s=><div key={s.label}><span>{s.label}</span><strong>{s.value} <small>{s.unit}</small></strong></div>)}</div><div className="calc-provider"><strong>{String(report.raw.provider)}</strong><button className="button dark" disabled={loading||!local.values} onClick={()=>void getClimate()}>{loading?'Reading climate data…':'Get PVGIS climate estimate'}</button></div><p className="guide-result-notice">{report.notice}</p><p className="calc-footnote">PVGIS sends coordinates and array parameters to EU JRC. Editing any input restores the current instant estimate. Peak sun hours affect the instant model only.</p>{climateError&&<p className="guide-input-error" role="alert">{climateError}</p>}
- <CalculatorChart title="Monthly solar production" labels={months} unit="kWh / month" xTitle="Month · long-term modeled average" bars series={[{name:'Total solar production',values:report.monthly!,color:'#087e8b'}]}/>
+ <CalculatorChart title="Monthly solar production" labels={months} unit="kWh / month" xTitle="Month · long-term modeled average" bars series={[{name:'Total solar production',values:report.monthly!,color:'var(--chart-1)'}]}/>
  {multiple&&<CalculatorChart title="Compare roof faces" labels={months} unit="kWh / month" xTitle="Month" series={(report.raw.arrays as {monthlyKwh:number[]}[]).map((a,i)=>({name:'Roof face '+(i+1),values:a.monthlyKwh,color:colors[i%colors.length]}))}/>}
- {local.values&&<CalculatorChart title="Explore tilt · instant-model sensitivity" labels={tiltLabels.map(String)} unit="Annual kWh" xTitle="Tilt from horizontal · °" series={[{name:'All faces at the same test tilt',color:'#dd8829',values:tiltLabels.map(tilt=>Number(solarProduction({...local.values!,tilt},local.arrays?.map(a=>({...a,tilt}))).raw.annualKwh))}]}/>}
+ {local.values&&<CalculatorChart title="Explore tilt · instant-model sensitivity" labels={tiltLabels.map(String)} unit="Annual kWh" xTitle="Tilt from horizontal · °" series={[{name:'All faces at the same test tilt',color:'var(--chart-2)',values:tiltLabels.map(tilt=>Number(solarProduction({...local.values!,tilt},local.arrays?.map(a=>({...a,tilt}))).raw.annualKwh))}]}/>}
  <p className="calc-footnote">The tilt sensitivity chart always uses Solar4U’s simplified model. It holds directions, capacity and the sun-hours assumption fixed; it is not a PVGIS optimization study.</p></section>}
  </div>;
 }

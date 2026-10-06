@@ -4,35 +4,35 @@
 .comparison-layout .catalog-results{min-width:0}
 .inventory-inspector[hidden]{display:none}
 .inventory-preview-toggle{white-space:nowrap}
-.inventory-preview-toggle[aria-pressed=true]{background:#eaf2de;border-color:#9eb575}
-.part-table-scroll{overflow-x:auto;max-width:100%;border:1px solid #dfe5de;border-radius:8px;background:white;scrollbar-width:thin;overscroll-behavior-x:contain}
-.part-table-scroll:focus-visible{outline:2px solid #759b31;outline-offset:3px}
+.inventory-preview-toggle[aria-pressed=true]{background:var(--surface-alt);border-color:var(--line)}
+.part-table-scroll{overflow-x:auto;max-width:100%;border:1px solid var(--line);border-radius:8px;background:var(--surface-alt);scrollbar-width:thin;overscroll-behavior-x:contain}
+.part-table-scroll:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .part-table{min-width:var(--part-min)}
 .part-table .inventory-list-heading,.part-table .part-row{display:grid;grid-template-columns:var(--part-grid);align-items:center;gap:12px;padding:12px 14px}
-.part-table .inventory-list-heading{background:#f4f7f0;border-bottom:1px solid #dfe5de;font-size:10px;letter-spacing:0;color:#6d7f65;font-weight:600;min-height:44px}
+.part-table .inventory-list-heading{background:var(--surface-alt);border-bottom:1px solid var(--line);font-size:10px;letter-spacing:0;color:var(--muted);font-weight:600;min-height:44px}
 .part-table .inventory-list-heading>div{min-width:0;line-height:1.5}
 .part-table .inventory-list-heading>div:nth-last-child(2){text-align:right}
 .part-table .inventory-list-heading>div:last-child{text-align:center;font-size:9px;font-weight:400}
 .part-table .inventory-list-heading button{display:flex;gap:5px;align-items:center;background:none;border:0;padding:0;font:inherit;color:inherit;text-align:left;cursor:pointer;min-height:24px}
-.part-table .inventory-list-heading button:hover{color:#284b34}
-.part-table .inventory-list-heading button:focus-visible{outline:2px solid #759b31;outline-offset:4px;border-radius:2px}
+.part-table .inventory-list-heading button:hover{color:var(--text)}
+.part-table .inventory-list-heading button:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:2px}
 .part-table .part-list{border:0;border-radius:0;overflow:visible}
 .part-table .part-row{min-height:76px;box-shadow:none}
-.part-table .part-row.inspected{box-shadow:inset 3px 0 #759b31}
+.part-table .part-row.inspected{box-shadow:none}
 .part-identity{display:flex;align-items:center;gap:10px;min-width:0}
 .part-identity .part-category-icon{flex-shrink:0;width:26px;height:31px}
 .part-identity .part-inspect{flex:1;min-width:0}
 .part-table .part-inspect strong{font-size:13px;line-height:1.5;font-weight:650}
-.part-table .part-inspect>span{font-size:10px;line-height:1.5;color:#7a8873;max-width:100%}
-.part-spec-cell{font-size:11px;font-variant-numeric:tabular-nums;color:#42553b;line-height:1.55;min-width:0;overflow-wrap:anywhere}
-.part-spec-cell.missing{color:#acb5a6}
+.part-table .part-inspect>span{font-size:10px;line-height:1.5;color:var(--muted);max-width:100%}
+.part-spec-cell{font-size:11px;font-variant-numeric:tabular-nums;color:var(--text);line-height:1.55;min-width:0;overflow-wrap:anywhere}
+.part-spec-cell.missing{color:var(--muted)}
 .part-spec-label{display:none}
 .part-actions{display:flex;align-items:center;justify-content:flex-end;gap:5px}
 .part-actions .watch-button{flex-shrink:0}
 .part-actions .part-compare{width:20px;flex-shrink:0}
 .part-actions .build-quantity{width:104px;flex-shrink:0}
-.part-table-note{font-size:10px;color:#87937e;margin:11px 0 20px;line-height:1.6}
-.builder-part-variant{display:block;font-size:10px;font-weight:400;color:#7a8873;line-height:1.6;margin-top:4px}
+.part-table-note{font-size:10px;color:var(--muted);margin:11px 0 20px;line-height:1.6}
+.builder-part-variant{display:block;font-size:10px;font-weight:400;color:var(--muted);line-height:1.6;margin-top:4px}
 .part-table .part-price strong{font-size:14px}
 @media(max-width:1100px){.catalog-layout.comparison-layout{grid-template-columns:minmax(0,1fr)}.catalog-layout.comparison-layout.with-preview{grid-template-columns:minmax(0,1fr) 260px}.comparison-layout .toolbar-controls{flex-wrap:wrap}.comparison-layout .inventory-list-heading{display:grid}.part-identity .part-category-icon{display:grid}}
 @media(max-width:720px){
@@ -45,8 +45,8 @@
  .part-table .part-identity{grid-column:1/-1}
  .part-table .part-inspect strong{font-size:14px;-webkit-line-clamp:2}
  .part-table .part-inspect>span{font-size:10px}
- .part-spec-cell{font-size:12px;background:#f6f8f2;border-radius:4px;padding:8px 10px}
- .part-spec-label{display:block;font-size:9px;color:#87927d;line-height:1.5;margin-bottom:3px}
+ .part-spec-cell{font-size:12px;background:var(--surface-alt);border-radius:4px;padding:8px 10px}
+ .part-spec-label{display:block;font-size:9px;color:var(--muted);line-height:1.5;margin-bottom:3px}
  .part-table .part-price{grid-column:1;text-align:left;margin-top:3px}
  .part-table .part-actions{grid-column:2;justify-content:flex-end;margin-top:3px}
  .part-table .part-actions .watch-button,.part-table .part-actions .part-compare,.part-table .part-actions .build-quantity{grid-column:auto}
