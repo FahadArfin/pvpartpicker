@@ -25,3 +25,15 @@ Phone circles are 44px, with visible labels. Measure bottom trays, comparison co
 ![Desktop home](beta-floating-qa/home-night.png)
 ![320px Guide](beta-floating-qa/phone-guide-night.png)
 ![390px Parts with stacked controls](beta-floating-qa/phone-parts-day.png)
+
+## Tier inspector update - October 6, 2026
+
+Opening `/tiers` starts with no selected model and a full-width board. Selecting a model expands a 360px details column over 300ms (320px at narrower desktop widths). Close returns the board to full width and keyboard focus to the selected model. Changing category or filtering the selected model out clears the panel instead of automatically choosing another result. Explicit `?model=` links still open their requested model.
+
+On phones the panel expands below the board, then scrolls into view and receives focus after the layout settles. Hidden panels are inert and excluded from the accessibility tree. Reduced motion disables the transition and uses immediate scrolling.
+
+Validation: 222 tests, TypeScript and Worker build passed. Built Worker checks covered initial full width, click selection, measured intermediate animation widths, Close and Enter keyboard activation, category reset, explicit model links, 1440px night and 320/390px day/night phone layouts, collapsed zero-height mobile slot, and reduced motion. No product, draft or watch state was changed.
+
+![Full-width tier board](tier-inspector-qa/closed-night.png)
+![Selected tier product](tier-inspector-qa/open-night.png)
+![Phone product details](tier-inspector-qa/mobile-open-day.png)

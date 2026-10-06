@@ -6,6 +6,7 @@ import "./usability.css";
 import "./theme.css";
 import "./home.css";
 import "./mobile.css";
+import "./tier-inspection.css";
 import "./floating-sections.css";
 import {themeBootstrap} from '../lib/theme';
 import {PVProvider} from '../components/pv-provider';
