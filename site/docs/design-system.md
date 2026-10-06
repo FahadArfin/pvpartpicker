@@ -15,6 +15,7 @@ A practical solar parts workbench inspired by the clarity of PCPartPicker. The p
 - Filters sit in a compact toolbar. Frequently used category filters are understated tabs. The full filter dialog retains advanced refinements. Do not remove existing filters to simplify appearance.
 - The catalog's bottom build tray shows the current build and equipment subtotal. It accounts for retailer pack quantities and identifies unpriced items. Comparison selection can coexist above/below it without covering controls.
 - Product details, builder, guide, calculators, tiers, watch list, account and administration use the same shell and tokens. Preserve article diagrams and genuine product images.
+- Builder equipment uses a separate Component column, followed by Selection, Quantity, Retailer and Cost. Put blue filled Choose/Add another actions at the left of the Selection column, beside the category. Name each category once per group, including when multiple products are selected. Preserve grouped products, quantities, offer choice and costs. On phones, category and pick action share a compact two-column row; selected products reflow below.
 
 ## Entry pages and navigation
 

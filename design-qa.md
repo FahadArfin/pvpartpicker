@@ -122,3 +122,11 @@ Validated the production Worker locally: Guide in night/day, Parts with 12 categ
 `/builds` now presents the owner-requested Start Your Build, Open Saved Builds, and Popular Builds actions. Existing builder is at `/build`, saved collections at `/builds/saved`, and the community collection at `/builds/community`. Home and primary navigation use the Builds label. Old collection query URLs redirect. Landing navigation preserves drafts and makes no catalog request. Popular Builds uses real community submissions; no popularity scores are invented.
 
 Verified production Worker locally in both themes, desktop and 390px/320px widths: all three destinations, reopening the existing saved audit draft, legacy community bookmark redirect, community empty state without errors, and no horizontal document overflow. Existing 205 tests, typecheck and Worker build passed. Preview files are under `output/builds-landing/`.
+
+## Builder choose actions - October 6, 2026
+
+Owner requested PCPartPicker-style Component and Selection columns with highlighted pick actions on the left. Each category now appears once, with its blue Choose/Add another action beside it at the start of Selection. Selected products retain quantity, retailer, cost and removal controls. The shared design guide records this arrangement for future changes.
+
+Local production Worker QA covered an empty build, two products grouped under Solar panels, choosing a part and returning to the build, adding another part, quantity increase and retailer selection. The existing audit draft remained intact; a product without a current offer continued to show its honest price status. Desktop night/day, 800px tablet, 390px phone and 320px bounds were checked. A pre-existing direction-control overflow at 320px was corrected; final client/document widths both measured 305px. Browser error logs were empty. Local screenshots under `output/builder-left-choose/` may include the isolated local retailer QA label; production catalog data was not changed.
+
+205 tests and typecheck passed. The final production Worker build and whitespace check passed after the narrow-screen CSS repair.
