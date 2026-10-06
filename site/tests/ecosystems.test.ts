@@ -23,7 +23,7 @@ test('an ecosystem includes its products across equipment categories',()=>{
 });
 
 test('product ecosystem links open all categories and safely reject unknown brands',()=>{
- assert.equal(ecosystemHref('EG4 Electronics'),'/?ecosystem=eg4&category=all');
- assert.equal(ecosystemHref('Renogy'),'/?ecosystem=renogy&category=all');
+ assert.equal(ecosystemHref('EG4 Electronics'),'/parts?ecosystem=eg4&category=all');
+ assert.equal(ecosystemHref('Renogy'),'/parts?ecosystem=renogy&category=all');
  assert.equal(ecosystemHref('Not a supported ecosystem'),undefined);
 });

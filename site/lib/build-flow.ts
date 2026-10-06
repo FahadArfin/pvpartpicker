@@ -1,6 +1,6 @@
 import type {Build,BuildSettings,Category,Product} from './types.ts';
 
-export function builderPickerHref(category:Category){return `/?category=${category}&builder=1`;}
+export function builderPickerHref(category:Category){return `/parts?category=${category}&builder=1`;}
 
 export function matchesBuildPreferences(product:Product,settings:BuildSettings):boolean {
  if(product.category==='inverters'){
