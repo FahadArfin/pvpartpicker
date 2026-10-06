@@ -10,7 +10,7 @@ import {bestOffer, costForQuantity, money} from '../lib/domain';
 const icons = {panels:Sun,mounting:Wrench,wiring:Cable,batteries:Battery,'all-in-one':Battery,inverters:Zap,charging:Plug,'module-electronics':ShieldCheck,monitoring:Gauge,kits:PackageOpen,electrical:Box,accessories:SlidersHorizontal};
 const links = [
   {href:'/',label:'Home',icon:Home}, {href:'/parts',label:'Parts',icon:Grid2X2},
-  {href:'/build',label:'My build',icon:Wrench}, {href:'/builds',label:'View builds',icon:FolderOpen},
+  {href:'/build',label:'My build',icon:Wrench}, {href:'/builds',label:'Builds',icon:FolderOpen},
   {href:'/deals',label:'Price drops',icon:TrendingDown}, {href:'/watchlist',label:'Watch list',icon:Eye},
   {href:'/tiers',label:'Tier lists',icon:Layers}, {href:'/guide',label:'Guide',icon:BookOpen},
 ];

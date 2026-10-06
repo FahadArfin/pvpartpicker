@@ -7,7 +7,8 @@ test('home renders without catalog loading, including campaign-only links',()=>{
   assert.equal(legacyCatalogDestination({}),null);
   assert.equal(legacyCatalogDestination({utm_source:'newsletter'}),null);
   assert.equal(needsPageCatalog('/'),false);
-  for(const path of ['/parts','/build','/builds','/community','/deals'])assert.equal(needsPageCatalog(path),true);
+  assert.equal(needsPageCatalog('/builds'),false);
+  for(const path of ['/parts','/build','/builds/saved','/builds/community','/community','/deals'])assert.equal(needsPageCatalog(path),true);
 });
 test('old catalog bookmarks retain builder context, filters and encoded searches',()=>{
   const result=legacyCatalogDestination({category:'panels',builder:'1','f.panelFace':'Bifacial',q:'A&B + 48V',stock:'1'});
