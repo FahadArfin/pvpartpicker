@@ -10,7 +10,7 @@ export interface ProductConfiguration {kind:'combo'|'standalone';title:string;fa
 export interface Product { id: string; name: string; brand: string; category: Category; description: string; image: string; images: string[]; sourceUrl: string; documentation?: string; specification?: ProductSpecification; connectionSpecs?:Record<string,SpecificationField>; comparisonSpecs?:Record<string,{value:string;source?:string;note?:string}>; configuration?:ProductConfiguration; specs: Specs; offers: Offer[]; verifiedAt: string; }
 export interface BuildLine { productId: string; quantity: number; offerId?: string; }
 export interface PVArray {id:string;panelId:string;receiverId?:string;receiverUnit:number;tracker:number;series:number;parallel:number;batteryId?:string;}
-export interface BuildSettings { purpose: 'offgrid' | 'hybrid' | 'gridtie'; mount: 'roof' | 'ground'; series?: number; parallel?: number; minimumTemperature?: number; maximumCellTemperature?:number; pvArrays?:PVArray[]; }
+export interface BuildSettings { analytics?:import("./build-analytics").AnalyticsSettings; purpose: 'offgrid' | 'hybrid' | 'gridtie'; mount: 'roof' | 'ground'; series?: number; parallel?: number; minimumTemperature?: number; maximumCellTemperature?:number; pvArrays?:PVArray[]; }
 export interface Build { id?: string; name: string; lines: BuildLine[]; settings: BuildSettings; shareId?: string; }
 export interface Compatibility { status: 'match' | 'mismatch' | 'unknown'; title: string; detail: string; source?: string; }
 export interface Observation { packQuantity?:number; offerId: string; price: number; stock: string; observedAt: string; }

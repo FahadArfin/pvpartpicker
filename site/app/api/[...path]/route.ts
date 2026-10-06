@@ -9,6 +9,7 @@ import {buildDrops,dropPeriod,dropQuery,normalizeWatchIds,watchInsertSql} from '
 import type {DropCandidate} from '../../../lib/price-drops';
 import {listCommunityBuilds,getCommunityBuild,publishCommunityBuild,unpublishCommunityBuild} from '../../../lib/community-builds';
 import {scraperDashboard,scraperOwnerAction,scraperWorkerAction,scraperJobEvents,registeredRetailers} from '../../../lib/scraper-service';
+import {publicBuildCopy} from '../../../lib/build-analytics';
 import {calculatorApi} from '../../../lib/calculator-api';
 import {buildPriceHistory,buildHistoryQuery,validateHistoryRequest} from '../../../lib/build-price-history';
 import type {Observation} from '../../../lib/types';
@@ -22,7 +23,7 @@ async function handle(request: Request, method: string) {
   try {
     const url = new URL(request.url), paths = url.pathname.replace(/^\/api\//, '').split('/'), action = paths[0], id = paths[1];
     if (method !== 'GET' && request.headers.get('origin') && request.headers.get('origin') !== url.origin) return json({ error: 'Cross-origin write rejected.' }, 403);
-    if(action==='solar-calculator'&&method==='GET')return calculatorApi(request);
+    if(action==='solar-calculator'&&['GET','POST'].includes(method))return calculatorApi(request);
     // This response has no account data and does not depend on auth headers.
     if(action==='catalog'&&method==='GET'&&url.searchParams.get('view')==='summary'){
       const start=performance.now(),result=await getCatalogSummary();
@@ -72,7 +73,7 @@ async function handle(request: Request, method: string) {
       const own = user ? await database().prepare('SELECT id, rating, body, status FROM reviews WHERE product_id=? AND user_id=?').bind(productId,user.userId).first() : null;
       return json({ reviews: rows.results, own });
     }
-    if (action === 'share' && method === 'GET') { if (!id || !/^[a-f0-9-]{36}$/.test(id)) return json({ error:'Shared build not found.' },404); const row = await database().prepare('SELECT json FROM builds WHERE share_id=?').bind(id).first<{json:string}>(); return row ? json(JSON.parse(row.json)) : json({ error:'Shared build not found.' },404); }
+    if (action === 'share' && method === 'GET') { if (!id || !/^[a-f0-9-]{36}$/.test(id)) return json({ error:'Shared build not found.' },404); const row = await database().prepare('SELECT json FROM builds WHERE share_id=?').bind(id).first<{json:string}>(); return row ? json(publicBuildCopy(JSON.parse(row.json))) : json({ error:'Shared build not found.' },404); }
     if (action === 'unsubscribe' && method === 'POST') { const token = url.searchParams.get('token'); if (!token || !/^[a-f0-9-]{36}$/.test(token)) return json({ error:'Invalid unsubscribe link.' },400); await database().prepare('UPDATE alerts SET active=0, email_enabled=0 WHERE token=?').bind(token).run(); return json({ unsubscribed:true }); }
     if(action==='scraper'){
       if(id==='worker'){

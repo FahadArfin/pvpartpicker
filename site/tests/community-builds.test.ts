@@ -33,3 +33,17 @@ test('only an owner can publish or withdraw, and withdrawn links stop being acce
  sql.prepare('UPDATE builds SET json=? WHERE id=?').run(JSON.stringify({...build,lines:[]}),'mine');
  await assert.rejects(publishCommunityBuild(db,'owner','mine',''),/part/i);sql.close();
 });
+test('publishing and reading community snapshots exclude private analytics while private saves retain them',async()=>{
+ const {analyticsDefaults}=await import('../lib/build-analytics.ts');
+ const {publishCommunityBuild,getCommunityBuild}=await import('../lib/community-builds.ts');const {db,sql}=fixture();
+ const privateBuild={...build,settings:{...build.settings,analytics:{...analyticsDefaults,location:{latitude:42.88,longitude:-78.88,label:'Private address'},annualUsageKwh:12345}}};
+ sql.prepare('UPDATE builds SET json=? WHERE id=?').run(JSON.stringify(privateBuild),'mine');
+ const published=await publishCommunityBuild(db,'owner','mine','A test setup');
+ const raw=sql.prepare('SELECT json FROM community_builds').get() as {json:string};
+ assert.ok(!raw.json.includes('Private address'));assert.ok(!raw.json.includes('analytics'));
+ assert.equal((await getCommunityBuild(db,published.shareId))?.build.settings.analytics,undefined);
+ assert.ok((sql.prepare('SELECT json FROM builds WHERE id=?').get('mine') as {json:string}).json.includes('Private address'));
+ // Read-time sanitization also protects older snapshots if they contain private settings.
+ sql.prepare('UPDATE community_builds SET json=?').run(JSON.stringify(privateBuild));
+ assert.equal((await getCommunityBuild(db,published.shareId))?.build.settings.analytics,undefined);sql.close();
+});

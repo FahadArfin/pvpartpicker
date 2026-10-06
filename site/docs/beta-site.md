@@ -49,3 +49,12 @@ Validation: 226 tests, TypeScript and Worker build; 1440px night desktop preview
 ![Compact sidebar history](product-prices-qa/preview-night.png)
 ![Specifications beside price history](product-prices-qa/detail-night.png)
 ![Phone price history](product-prices-qa/detail-phone-day.png)
+
+## Build analytics - October 6, 2026
+
+The builder now has Equipment / Analytics report tabs. Analytics derives installed panel capacity, accepts address search or map/coordinate selection, and automatically updates monthly production from the Solar4U/PVGIS service. It includes annual energy, self-use/export savings, bill offset, installed cost, incentives, simple payback, 25-year cash flow and NPV. Private build saves retain inputs; shared/community copies omit analytics settings. See [methodology and service limits](build-analytics.md).
+
+Validation: 234 tests, TypeScript and built Worker; live public-landmark address/PVGIS checks, map interaction, quantity and roof updates, private device reopen, financial-only recalculation, offline fallback/retry, invalid fields, and 320/390px day/night layouts. Native export handoff, physical printing and authenticated cloud workflows remain unverified.
+
+![Desktop analytics](beta-analytics-qa/desktop-night.png)
+![Phone analytics](beta-analytics-qa/phone-day.png)

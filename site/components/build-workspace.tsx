@@ -1,5 +1,5 @@
 'use client';
-import {useEffect,useRef,useState} from 'react';
+import {lazy,Suspense,useEffect,useRef,useState} from 'react';
 import {productListName,productListVariant} from '../lib/part-comparison';
 import Link from './site-link';
 import {CheckCircle2,AlertTriangle,HelpCircle,Plus,Minus,Trash2} from 'lucide-react';
@@ -14,6 +14,8 @@ import {builderPickerHref} from '../lib/build-flow';
 import {bestOffer,costForQuantity,money} from '../lib/domain';
 import {buildCompatibility,buildProgress,normalizeBuildQuantity} from '../lib/build-ux';
 
+const BuildAnalyticsReport=lazy(()=>import('./build-analytics-report'));
+
 function QuantityControl({quantity,name,onChange}:{quantity:number;name:string;onChange:(quantity:number)=>void}){
  const [text,setText]=useState(String(quantity)),focused=useRef(false);
  useEffect(()=>{if(!focused.current)setText(String(quantity));},[quantity]);
@@ -24,6 +26,7 @@ function QuantityControl({quantity,name,onChange}:{quantity:number;name:string;o
 export function BuildWorkspace(){
  const {products:catalog,build,setBuild,saving,notify}=usePV();
  const connections=useConnectionProducts(build,catalog),products=connections.products;
+ const [tab,setTab]=useState<'equipment'|'analytics'>('equipment');
  const [cleared,setCleared]=useState<{previous:Build;empty:Build}|null>(null);
 
  const checks=buildCompatibility({...build,settings:{...build.settings,pvArrays:build.settings.pvArrays||[]}},products),progress=buildProgress(build,products);
@@ -48,7 +51,12 @@ export function BuildWorkspace(){
   <td className="builder-remove"><button className="icon-button" aria-label={'Remove '+(p?.name||'unavailable product')} onClick={()=>setBuild(b=>({...b,lines:b.lines.filter(line=>line.productId!==l.productId)}))}><Trash2 size={15}/></button></td>
  </tr>;}
  return <main className="page-container builder-page">
-  <header className="builder-heading"><div><div className="eyebrow">SYSTEM BUILDER</div><h1>Choose your parts.</h1><p>A place for every part of your solar system.</p></div><BuildLibraryToolbar/></header>
+  <header className="builder-heading"><div><div className="eyebrow">SYSTEM BUILDER</div><h1>{tab==='analytics'?'Your build report.':'Choose your parts.'}</h1><p className={tab==='analytics'?'analytics-build-name':undefined}>{tab==='analytics'?build.name:'A place for every part of your solar system.'}</p></div><BuildLibraryToolbar/></header>
+  <div className="builder-report-tabs" role="tablist" aria-label="Build workspace" onKeyDown={e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)){e.preventDefault();const next=e.key==='Home'?'equipment':e.key==='End'?'analytics':tab==='equipment'?'analytics':'equipment';setTab(next);document.getElementById('build-tab-'+next)?.focus();}}}>
+   <button id="build-tab-equipment" role="tab" aria-selected={tab==='equipment'} tabIndex={tab==='equipment'?0:-1} aria-controls="build-equipment-panel" onClick={()=>setTab('equipment')}>Equipment</button>
+   <button id="build-tab-analytics" role="tab" aria-selected={tab==='analytics'} tabIndex={tab==='analytics'?0:-1} aria-controls="build-analytics-panel" onClick={()=>setTab('analytics')}>Analytics report</button>
+  </div>
+  {tab==='analytics'?<div id="build-analytics-panel" role="tabpanel" aria-labelledby="build-tab-analytics"><Suspense fallback={<p className="inline-note" role="status">Loading your analytics report…</p>}><BuildAnalyticsReport key={build.id||'draft'} products={products}/></Suspense></div>:<div id="build-equipment-panel" role="tabpanel" aria-labelledby="build-tab-equipment">
   <section className="builder-direction" aria-labelledby="direction-heading"><div className="builder-direction-heading"><h2 id="direction-heading">1. Set your direction</h2><Link className="text-link small-text" href="/guide">Need a hand?</Link></div><div className="builder-direction-controls">
    <label className="field builder-name">Build name<input maxLength={100} value={build.name} onChange={e=>setBuild(b=>({...b,name:e.target.value}))}/></label>
    <div className="builder-preference"><span>System purpose</span><div className="builder-toggles" role="group" aria-label="System purpose">{([['offgrid','Off-grid'],['hybrid','Hybrid / backup'],['gridtie','Grid-tied']] as const).map(([value,label])=><button key={value} aria-pressed={build.settings.purpose===value} onClick={()=>setting('purpose',value)}>{label}</button>)}</div></div>
@@ -65,5 +73,6 @@ export function BuildWorkspace(){
   <BuildConnectionMap {...connections}/>
   <section className="section-card builder-compatibility" id="compatibility-notes"><h2>Compatibility notes</h2><p className="inline-note">Connection calculations are shown above. These additional checks cover operating modes, control systems and installation requirements. A passed numerical check does not establish a complete, approved installation.</p>{checks.filter(c=>!build.settings.pvArrays?.length||["System purpose","Battery communication & certification","Module electronics & shutdown","Monitoring & load control","Bundled equipment","Integrated power station","DC-only output","Mounting fit & structure","Wiring & protection","Choose an inverter"].includes(c.title)).map((c,i)=>{const Icon=c.status==='match'?CheckCircle2:c.status==='mismatch'?AlertTriangle:HelpCircle;return <div className={'compatibility-item status-'+c.status} key={i}><Icon size={19}/><div><strong>{c.title} · {c.status==='unknown'?'Needs verification':c.status==='match'?'Documented check passed':'Mismatch'}</strong><p>{c.detail}</p>{c.source&&<a className="text-link small-text" href={c.source} target="_blank" rel="noreferrer">Source documentation</a>}</div></div>;})}</section>
   <div className="builder-footer"><span>Save named versions in My builds. Sign in to keep account builds across devices.</span><div className="flex-actions">{cleared&&build===cleared.empty&&<button className="button outline small" disabled={saving} onClick={()=>{setBuild(cleared.previous);setCleared(null);notify('Cleared draft restored.');}}>Undo clear</button>}<button className="reset-filters" disabled={saving||!build.lines.length} onClick={()=>{const empty={...build,id:undefined,shareId:undefined,lines:[],settings:{...build.settings,pvArrays:[],series:undefined,parallel:undefined}};setCleared({previous:build,empty});setBuild(empty);notify('Draft cleared. Use Undo clear to restore it. Saved builds are unchanged.');}}>Clear draft</button></div></div>
+ </div>}
  </main>;
 }
