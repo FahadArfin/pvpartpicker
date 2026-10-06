@@ -5,6 +5,7 @@ import "./guide.css";
 import "./usability.css";
 import "./theme.css";
 import "./home.css";
+import "./mobile.css";
 import {themeBootstrap} from '../lib/theme';
 import {PVProvider} from '../components/pv-provider';
 import {getChatGPTUser} from './chatgpt-auth';

@@ -57,6 +57,7 @@ export function TierWorkspace({initialId=''}:{initialId?:string}){
       return <Tooltip key={r.id}><TooltipTrigger asChild>
        <button className={'tier-model '+(r.id===entry?.id?'selected':'')} aria-label={r.name} aria-pressed={r.id===entry?.id} onClick={()=>inspect(r,true)}>
         {display==='images'?<span className="tier-model-art">{image.image?<ProductImage key={image.image} product={image} className="tier-model-photo"/>:<span className="tier-photo-missing"><ImageIcon size={20}/><strong>{r.name}</strong><small>Photo pending</small></span>}</span>:<span className="tier-model-icon">{r.category==='panels'?<Sun size={18}/>:r.category==='inverters'?<Zap size={18}/>:<Battery size={18}/>}</span>}
+        {display==='images'&&image.image&&<span className="tier-mobile-name" aria-hidden="true">{r.name}</span>}
         {display==='names'&&<span className="tier-model-name"><strong>{r.name}</strong><small>{r.cohort} · {r.specs[0]}</small></span>}
         <span className="tier-model-price"><strong>{p?money(p.unitPrice):now===undefined?'Checking…':'Unpriced'}</strong>{display==='names'&&<small>{p?`${p.metric.toFixed(r.category==='panels'||r.category==='inverters'?2:0)} ${valueBands[r.category].unit}`:'Open evidence'}</small>}</span>
        </button>

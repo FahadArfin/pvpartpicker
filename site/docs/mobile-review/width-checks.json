@@ -1,0 +1,288 @@
+[
+  {
+    "route": "/",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "route": "/parts",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "route": "/products/renogy-43232667795571",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "route": "/builds",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "route": "/builds/saved",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "route": "/builds/community",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "route": "/deals",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "route": "/watchlist",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "route": "/compare",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "route": "/guide",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "route": "/guide/calculators?tool=voltage",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "route": "/account",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "route": "/price-scraper",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "route": "/",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "route": "/parts",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "route": "/products/renogy-43232667795571",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "route": "/builds",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "route": "/builds/saved",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "route": "/builds/community",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "route": "/deals",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "route": "/watchlist",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "route": "/compare",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "route": "/guide",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "route": "/guide/calculators?tool=voltage",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "route": "/account",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "route": "/price-scraper",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "theme": "day",
+    "route": "/",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "theme": "day",
+    "route": "/parts",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "theme": "day",
+    "route": "/products/renogy-43232667795571",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "theme": "day",
+    "route": "/builds",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "theme": "day",
+    "route": "/builds/saved",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "theme": "day",
+    "route": "/builds/community",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "theme": "day",
+    "route": "/deals",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "theme": "day",
+    "route": "/watchlist",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "theme": "day",
+    "route": "/compare",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "theme": "day",
+    "route": "/guide",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "theme": "day",
+    "route": "/guide/calculators?tool=voltage",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "theme": "day",
+    "route": "/account",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "theme": "day",
+    "route": "/price-scraper",
+    "scroll": 305,
+    "width": 305
+  },
+  {
+    "theme": "night",
+    "route": "/",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "theme": "night",
+    "route": "/parts",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "theme": "night",
+    "route": "/products/renogy-43232667795571",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "theme": "night",
+    "route": "/builds",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "theme": "night",
+    "route": "/builds/saved",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "theme": "night",
+    "route": "/builds/community",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "theme": "night",
+    "route": "/deals",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "theme": "night",
+    "route": "/watchlist",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "theme": "night",
+    "route": "/compare",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "theme": "night",
+    "route": "/guide",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "theme": "night",
+    "route": "/guide/calculators?tool=voltage",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "theme": "night",
+    "route": "/account",
+    "scroll": 375,
+    "width": 375
+  },
+  {
+    "theme": "night",
+    "route": "/price-scraper",
+    "scroll": 375,
+    "width": 375
+  }
+]
