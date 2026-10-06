@@ -16,6 +16,7 @@ A practical solar parts workbench inspired by the clarity of PCPartPicker. The p
 - The catalog's bottom build tray shows the current build and equipment subtotal. It accounts for retailer pack quantities and identifies unpriced items. Comparison selection can coexist above/below it without covering controls.
 - Product details, builder, guide, calculators, tiers, watch list, account and administration use the same shell and tokens. Preserve article diagrams and genuine product images.
 - Builder equipment uses a separate Component column, followed by Selection, Quantity, Retailer and Cost. Put blue filled Choose/Add another actions at the left of the Selection column, beside the category. Name each category once per group, including when multiple products are selected. Preserve grouped products, quantities, offer choice and costs. On phones, category and pick action share a compact two-column row; selected products reflow below.
+- Below builder equipment, show a restrained Build price history section with a colored part legend, stacked purchase-cost chart, 30/90/365-day controls and accessible daily table. Use the current build quantities and chosen offers across historical dates, including pack minimums. Never invent history or treat missing prices as zero. Label partial coverage as a tracked subtotal; daily gaps stay visible. Fetch all selected parts in one bounded request when the section approaches the viewport, and lazy-load chart code.
 
 ## Entry pages and navigation
 

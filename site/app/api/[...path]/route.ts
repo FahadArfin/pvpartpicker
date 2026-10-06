@@ -10,6 +10,8 @@ import type {DropCandidate} from '../../../lib/price-drops';
 import {listCommunityBuilds,getCommunityBuild,publishCommunityBuild,unpublishCommunityBuild} from '../../../lib/community-builds';
 import {scraperDashboard,scraperOwnerAction,scraperWorkerAction,scraperJobEvents,registeredRetailers} from '../../../lib/scraper-service';
 import {calculatorApi} from '../../../lib/calculator-api';
+import {buildPriceHistory,buildHistoryQuery,validateHistoryRequest} from '../../../lib/build-price-history';
+import type {Observation} from '../../../lib/types';
 export const dynamic = 'force-dynamic';
 function json(value: unknown, status = 200) { return Response.json(value, { status, headers: { 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff' } }); }
 async function body(request: Request) { if (!request.headers.get('content-type')?.includes('application/json')) throw new Error('JSON required.'); if(Number(request.headers.get('content-length'))>600000)throw new Error('Request is too large.'); const text = await request.text(); if (text.length > 600000) throw new Error('Request is too large.'); return JSON.parse(text); }
@@ -24,6 +26,17 @@ async function handle(request: Request, method: string) {
     if(action==='catalog'&&method==='GET'&&url.searchParams.get('view')==='summary'){
       const start=performance.now(),result=await getCatalogSummary();
       return new Response(result.body,{headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':`public, max-age=${Math.max(0,Math.floor((result.expiresAt-Date.now())/1000))}, must-revalidate`,'X-Content-Type-Options':'nosniff','Server-Timing':`catalog;dur=${(performance.now()-start).toFixed(1)}`}});
+    }
+    if(action==='build-history'&&method==='POST'){
+      const {lines,days}=validateHistoryRequest(await body(request));
+      const now=Date.now(),catalog=await getPublicCatalog();
+      if(catalog.storage!=='database')throw new Error('Recorded price history is unavailable. Please try again.');
+      const selections=new Map(lines.map(l=>[l.productId,l])),products=catalog.products.filter(p=>selections.has(p.id));
+      const offerIds=products.flatMap(p=>p.offers.filter(o=>o.currency==='USD'&&(!selections.get(p.id)?.offerId||selections.get(p.id)?.offerId===o.id)).map(o=>o.id));
+      const since=new Date(Math.floor(now/86400000)*86400000-days*86400000).toISOString();
+      const records=offerIds.length?await database().prepare(buildHistoryQuery).bind(JSON.stringify(offerIds),since,new Date(now).toISOString()).all<Observation>():{results:[]};
+      if(records.results.length>50000)throw new Error('This selection has too many history records. Choose a shorter period or fewer parts.');
+      return json(buildPriceHistory(lines,products,records.results,days,now));
     }
     const user = await getChatGPTUser(); const isAdmin = Boolean(user && runtime().ADMIN_EMAIL && user.email.toLowerCase() === runtime().ADMIN_EMAIL?.toLowerCase());
     if (action === 'me' && method === 'GET') return json({ user: user ? { displayName: user.displayName, email: user.email } : null, isAdmin, emailConfigured: Boolean(runtime().RESEND_API_KEY && runtime().EMAIL_FROM) });
