@@ -33,3 +33,11 @@ The local built Worker verifies a single document across Home, Guide and Parts n
 ## Future work
 
 Collect real-user p50/p75 navigation timings before changing the database or adding a service worker. R2 is object storage; moving current database queries there would not fix document reloads. Keep authentication and live price data out of broad persistent page caches. If the catalog grows substantially, measure parse/render cost and consider paginated queries and row virtualization before increasing cache lifetimes.
+
+## Smooth page transitions
+
+The owner requested softer page changes after accepting the faster navigation. `usePageTransition` animates only the committed main content for 160ms, with opacity .76 to 1 and a 4px upward settle. It does not wait for an exit animation, fetch extra data, wrap/remount content or animate the navigation/header. On the first catalog navigation it waits for catalog readiness rather than animating a temporary loading placeholder. Initial document loads and hidden tabs skip the effect. Ordinary typing, price filters, quantities and calculator input updates do not restart it.
+
+The built Worker was checked in day/night themes and at 390px. Browser instrumentation confirmed the MAIN target, 160ms duration, correct destination heading and clean completed opacity/transform. Home/Guide/catalog/category navigation, mobile menu, Back and rapid Batteries-to-Inverters clicks were checked. Search typing did not add an animation. Emulating reduced motion kept the animation count unchanged while Guide opened, with no remaining entry effect. Console errors were empty. Existing 203 tests, typecheck and production build passed.
+
+Implementation uses [Element.animate](https://developer.mozilla.org/en-US/docs/Web/API/Element/animate) with cancellation and the [reduced-motion media preference](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion). Changing that preference during an animation cancels it. Browsers without the animation API retain immediate navigation.
