@@ -115,3 +115,10 @@ Owner requested reclaiming the persistent site rail and limiting categories to P
 Validated the production Worker locally: Guide in night/day, Parts with 12 categories and 36 loaded rows, Batteries category selection, builder-context category URLs and destination, System Builder, Watch list, and 390px/320px phone widths. The narrow header was tightened after discovering 8px overflow; final 320px viewport has a 305px document/client width with no page overflow. Navigation rows scroll independently and reveal active links on route/category changes and resize. Build/watch counts, theme toggle, account/scraper access and full-width catalog tray remain available. No catalog values or saved data changed.
 
 205 existing tests passed; final typecheck and Worker build passed. Visual evidence: `output/horizontal-navigation/guide-night.png` and `guide-phone.png` (local untracked QA artifacts).
+
+
+## Builds landing - October 6, 2026
+
+`/builds` now presents the owner-requested Start Your Build, Open Saved Builds, and Popular Builds actions. Existing builder is at `/build`, saved collections at `/builds/saved`, and the community collection at `/builds/community`. Home and primary navigation use the Builds label. Old collection query URLs redirect. Landing navigation preserves drafts and makes no catalog request. Popular Builds uses real community submissions; no popularity scores are invented.
+
+Verified production Worker locally in both themes, desktop and 390px/320px widths: all three destinations, reopening the existing saved audit draft, legacy community bookmark redirect, community empty state without errors, and no horizontal document overflow. Existing 205 tests, typecheck and Worker build passed. Preview files are under `output/builds-landing/`.

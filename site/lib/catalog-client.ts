@@ -43,4 +43,4 @@ export function createPageCatalogLoader(fetcher:typeof fetch=fetch,now:()=>numbe
  finally{if(pending===active)pending=undefined;}
  };
 }
-export function needsPageCatalog(path:string){return path!=='/'&&!(/^\/guide(?:\/|$)/.test(path)||path==='/learn'||path==='/unsubscribe'||path==='/price-scraper');}
+export function needsPageCatalog(path:string){return path!=='/'&&path!=='/builds'&&!(/^\/guide(?:\/|$)/.test(path)||path==='/learn'||path==='/unsubscribe'||path==='/price-scraper');}

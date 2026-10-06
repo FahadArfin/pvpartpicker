@@ -8,7 +8,7 @@ import {navigatePage} from '../lib/page-navigation';
 const shortcuts=[
   {href:'/parts',label:'Browse Parts',icon:SolarPanel,primary:true},
   {href:'/deals',label:'Price Drops',icon:Tag,primary:false},
-  {href:'/builds',label:'View Builds',icon:FolderClosed,primary:false},
+  {href:'/builds',label:'Builds',icon:FolderClosed,primary:false},
   {href:'/tiers',label:'Tier Lists',icon:Layers,primary:false},
   {href:'/watchlist',label:'Watch List',icon:Eye,primary:false},
   {href:'/guide',label:'Guide',icon:BookOpen,primary:false},
