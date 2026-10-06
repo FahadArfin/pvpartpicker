@@ -1,6 +1,7 @@
 'use client';
 import {useEffect, useState} from 'react';
 import {Moon, Sun} from 'lucide-react';
+import {Switch} from 'radix-ui';
 import {normalizeTheme, themeStorageKey, type Theme} from '../lib/theme';
 
 export function ThemeToggle() {
@@ -18,9 +19,13 @@ export function ThemeToggle() {
     window.addEventListener('storage', sync);
     return () => window.removeEventListener('storage', sync);
   }, []);
-  const next = theme === 'dark' ? 'light' : 'dark';
-  return <button className="theme-toggle" aria-label={`Switch to ${next === 'light' ? 'day' : 'night'} mode`} title={`Switch to ${next === 'light' ? 'day' : 'night'} mode`} onClick={() => {
-    apply(next);
-    try { localStorage.setItem(themeStorageKey, next); } catch { /* A blocked preference store must not block the page. */ }
-  }}>{theme === 'dark' ? <Sun size={17}/> : <Moon size={17}/>}<span>{theme === 'dark' ? 'Day mode' : 'Night mode'}</span></button>;
+  return <div className="theme-control">
+    <span className="theme-mode" data-active={theme === 'light'} aria-hidden="true"><Sun size={16}/><span className="theme-mode-label">Day</span></span>
+    <Switch.Root className="theme-switch" data-slot="switch" aria-label="Night mode" checked={theme === 'dark'} onCheckedChange={(checked) => {
+      const next = checked ? 'dark' : 'light';
+      apply(next);
+      try { localStorage.setItem(themeStorageKey, next); } catch { /* A blocked preference store must not block the page. */ }
+    }}><Switch.Thumb data-slot="switch-thumb"/></Switch.Root>
+    <span className="theme-mode" data-active={theme === 'dark'} aria-hidden="true"><Moon size={16}/><span className="theme-mode-label">Night</span></span>
+  </div>;
 }
