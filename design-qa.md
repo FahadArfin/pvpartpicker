@@ -106,3 +106,12 @@ The design contract and reference are documented in `site/docs/design-system.md`
 - Screenshots: home-ticker-qa-day.png and home-ticker-qa-mobile.png contain explicitly labelled localhost QA fixtures, not real offers. They verify the populated layout and whole-package pricing. Production data remains unchanged; when no eligible drops exist, a short status line is shown.
 - Validation: 200 tests passed, TypeScript passed, production Worker build passed, git diff whitespace check passed. Tests cover frame-rate independence, seamless wrap, zero-width and elapsed-time bounds alongside existing feed tests.
 - final result: passed
+
+
+## Horizontal navigation revision - October 6, 2026
+
+Owner requested reclaiming the persistent site rail and limiting categories to Parts. Inner pages now use a full-width brand/tools row and horizontal primary navigation. Parts alone includes a separate horizontal category row. Home keeps its approved circular shortcuts; Guide keeps its contextual table of contents.
+
+Validated the production Worker locally: Guide in night/day, Parts with 12 categories and 36 loaded rows, Batteries category selection, builder-context category URLs and destination, System Builder, Watch list, and 390px/320px phone widths. The narrow header was tightened after discovering 8px overflow; final 320px viewport has a 305px document/client width with no page overflow. Navigation rows scroll independently and reveal active links on route/category changes and resize. Build/watch counts, theme toggle, account/scraper access and full-width catalog tray remain available. No catalog values or saved data changed.
+
+205 existing tests passed; final typecheck and Worker build passed. Visual evidence: `output/horizontal-navigation/guide-night.png` and `guide-phone.png` (local untracked QA artifacts).
