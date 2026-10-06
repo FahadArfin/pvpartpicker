@@ -2,7 +2,8 @@
 
 Read `site/docs/design-system.md` before changing any user interface. The user approved **Night Inventory (Design 1)** on 2026-10-05. Its reference image is `site/docs/design-system/night-inventory-reference.png`.
 
-- Keep the shared left navigation, compact comparison tables, small product photographs, restrained blue controls, and persistent day/night toggle. Avoid decorative heroes, gradients, game HUDs, large category graphics, and unnecessary cards.
+- Home (`/`) now uses the owner-approved minimal circular-button layout; see `site/docs/design-system/circular-home-reference.png`. Preserve its simple header and open space. The sales-strip concept is unapproved and must not be implemented automatically.
+- On inner pages, keep the shared left navigation, compact comparison tables, small product photographs, restrained blue controls, and persistent day/night toggle. Avoid decorative heroes, gradients, game HUDs, large category graphics, and unnecessary cards.
 - Use semantic tokens from `site/app/theme.css`. New routes must work in **both** themes and at mobile widths. Do not introduce hardcoded page colors or a separate page theme. White product-image mats and original educational diagrams are documented exceptions.
 - The root layout and PVProvider own the application shell and theme startup. Reuse them. See the design document for components, spacing, and interaction rules.
 - Retain real catalog data, source attribution, uncertainty labels, price freshness, pack-aware costs, accessibility, and current application behavior. The mockup's example products and prices are not data sources.
