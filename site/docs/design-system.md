@@ -72,7 +72,7 @@ Intentional exceptions: real product photos and brand marks can sit on white ima
 - Keep +/- quantity controls, watch buttons, comparison selections, hover/click preview, explicit product-details links, and build return behavior.
 - Prices, products and specifications in the reference image are illustrative. Use the real catalog. Never replace missing electrical specifications with fabricated values to match a mockup.
 - Keep uncertainty/source labels, data freshness, compatibility caveats, and retailer pack minimums visible where decisions depend on them.
-- Avoid decorative transitions; honor reduced motion. No new icon library or font download is necessary for this theme.
+- Page navigation uses the owner-requested subtle 160ms content entry (opacity .76 to 1, 4px to 0). Animate only the committed main page; the navigation and header stay still. `usePageTransition` in PVProvider preserves mounted state, adds no exit wait, and skips initial load, hidden tabs and reduced motion. Category destinations also transition; search/filter/quantity/calculator edits do not. Cancel interrupted motion and clear its effect after completion. Avoid additional decorative transitions. No new icon library or font download is necessary for this theme.
 
 ## Acceptance for future changes
 
