@@ -2,6 +2,7 @@
 import {ArrowRight,BookOpen,Eye,FolderClosed,Layers,Search,SolarPanel,Tag} from 'lucide-react';
 import Link from './site-link';
 import {HomePriceDrops} from './home-price-drops';
+import {useRouter} from 'next/navigation';
 
 const shortcuts=[
   {href:'/parts',label:'Browse Parts',icon:SolarPanel,primary:true},
@@ -13,11 +14,15 @@ const shortcuts=[
 ];
 
 export function HomeWorkspace() {
+  const router=useRouter();
   return <><main className="home-simple" aria-labelledby="home-title">
     <div className="home-simple-content">
       <h1 id="home-title">Build your solar system.</h1>
       <p className="home-simple-intro">Find parts. Compare prices. Put it all together.</p>
-      <form className="home-simple-search" action="/parts" role="search" aria-label="Find solar equipment">
+      <form className="home-simple-search" action="/parts" role="search" aria-label="Find solar equipment" onSubmit={event=>{
+        event.preventDefault();const data=new FormData(event.currentTarget);
+        router.push('/parts?'+new URLSearchParams({category:'all',q:String(data.get('q')||'')}).toString());
+      }}>
         <Search size={24} aria-hidden="true"/>
         <input type="hidden" name="category" value="all"/>
         <input type="search" name="q" aria-label="Search solar equipment" placeholder="Search solar parts…" maxLength={100}/>
