@@ -12,6 +12,8 @@ Hover/focus waits 150ms before warming the full route; pointer-down warms immedi
 
 Query-dependent catalog/calculator/tier views and product details have identity keys so persistent navigation cannot retain a previous destination's local state.
 
+Live verification caught a redundant HTML fetch-preload: it made a second catalog request alongside the shared fetch loader. Remove those native catalog preload elements; intent warming goes through the shared loader exclusively. This preserves request sharing on both cold and warm page displays.
+
 ## Measurements and verification
 
 Baseline production version 41 in the in-app browser: a direct Guide load took 1,089ms to the load event (790ms TTFB). Following Guide to Parts used a new document: 277ms load, then a 792ms catalog request (173KiB encoded); catalog ready at 1,188ms. These are individual observations, not percentile benchmarks.
