@@ -97,3 +97,12 @@ The design contract and reference are documented in `site/docs/design-system.md`
 - 200 tests passed (including feed size/dedup/order, pack semantics, empty ineligible offers, and carousel wrap/bounds); TypeScript and production Worker build passed.
 - Existing font/icon/token choices retained. No new image artwork, fonts, libraries or oversized card panels. No P0/P1/P2 visual findings. Runtime failure messaging and hover/focus/hidden-tab pause were inspected in code; reduced-motion, auto-play, explicit pause and manual motion were browser-checked.
 - final result: passed
+
+## Slim home deals ticker — October 6, 2026
+
+- Replaced the separate latest-price-drops section with a single compact row along the bottom of Home. No visible heading, divider, or card panel. Five circular shortcuts remain unchanged.
+- Continuous motion runs at 22 pixels/second and wraps seamlessly. Tiny Pause/Play and All deals controls remain available. Keyboard focus, hover, hidden tabs, manual pointer interaction and reduced-motion settings stop automatic movement.
+- Browser QA: 1487×1058 desktop and 390×844 mobile in day/night themes; no document horizontal overflow. Motion advanced from 269px to 290px, then explicit Pause held at 291px across checks. Reduced motion retained position 0, removed visual duplicate content, and hid automatic-play controls. Duplicate links are excluded from the accessibility tree and tab order. Browser error log empty.
+- Screenshots: home-ticker-qa-day.png and home-ticker-qa-mobile.png contain explicitly labelled localhost QA fixtures, not real offers. They verify the populated layout and whole-package pricing. Production data remains unchanged; when no eligible drops exist, a short status line is shown.
+- Validation: 200 tests passed, TypeScript passed, production Worker build passed, git diff whitespace check passed. Tests cover frame-rate independence, seamless wrap, zero-width and elapsed-time bounds alongside existing feed tests.
+- final result: passed
