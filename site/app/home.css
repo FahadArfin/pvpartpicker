@@ -1,4 +1,4 @@
-/* Approved simple home; inner routes retain the Night Inventory rail. */
+/* Approved simple home; inner routes use the compact Night Inventory horizontal header. */
 .home-header{height:80px;padding:0 clamp(24px,4.2vw,64px);display:flex;align-items:center;justify-content:space-between;gap:24px}
 .home-brand{display:inline-flex;align-items:center;gap:11px;color:var(--text);font-size:26px;font-weight:700;letter-spacing:-1px;white-space:nowrap}
 .home-brand b{color:var(--accent);font-weight:700}
