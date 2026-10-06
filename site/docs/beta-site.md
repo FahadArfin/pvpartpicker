@@ -37,3 +37,15 @@ Validation: 222 tests, TypeScript and Worker build passed. Built Worker checks c
 ![Full-width tier board](tier-inspector-qa/closed-night.png)
 ![Selected tier product](tier-inspector-qa/open-night.png)
 ![Phone product details](tier-inspector-qa/mobile-open-day.png)
+
+## Always-visible product prices - October 6, 2026
+
+Part previews now include a compact 30/90/365-day retailer price-history chart below the current price. Double-click still opens the product page, which now displays retailer offers and full history beside specifications. Section links scroll to existing content; prices and specifications no longer require tab selection. Reviews load near the viewport and retain their existing moderated submission flow.
+
+Preview history waits 180ms to skip brief hovers. A 40-entry, five-minute session cache coalesces simultaneous loads and lets product pages reuse preview data. Product changes hide the previous graph immediately. Failed requests have a retry action. Historical pack sizes determine unit-price graphs; bundles use the selected package cost. Single checks are shown as points with a limited-history label. No observations or trends are invented.
+
+Validation: 226 tests, TypeScript and Worker build; 1440px night desktop preview and double-click navigation, chart/specifications visible without tab clicks, 320/390px day phone layouts and preview dialog, no page overflow, history-period changes, temporary offline failure and successful retry. Local theme and preview preference restored; draft and watch data untouched.
+
+![Compact sidebar history](product-prices-qa/preview-night.png)
+![Specifications beside price history](product-prices-qa/detail-night.png)
+![Phone price history](product-prices-qa/detail-phone-day.png)

@@ -1,0 +1,40 @@
+/* Price evidence is visible beside specifications, never behind a detail tab. */
+.product-detail-page .product-detail-top{grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);gap:28px}
+.product-detail-page .product-detail-top .product-image{height:280px;padding:18px}
+.product-detail-page .product-detail-title{margin:8px 0 12px}
+.product-section-nav{display:flex;gap:22px;flex-wrap:wrap;margin:24px 0;border-bottom:1px solid var(--line);padding:12px 0;font-size:12px}
+.product-section-nav a{color:var(--accent);text-decoration:underline;text-underline-offset:4px}
+.product-detail-body{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.4fr);gap:28px;align-items:start}
+.product-prices{grid-column:2;grid-row:1;min-width:0}.product-specs-column{grid-column:1;grid-row:1;min-width:0}
+.product-detail-page #product-prices,.product-detail-page #product-specs,.product-detail-page #product-history,.product-detail-page #product-reviews{scroll-margin-top:115px}
+.product-specs-column .specification-groups{grid-template-columns:minmax(0,1fr)}
+.product-specs-column .spec-conditions{display:block}.product-specs-column .spec-conditions p+p{margin-top:8px}
+.product-specs-column .section-card{padding:16px}.product-specs-column .specification-ratings th,.product-specs-column .specification-ratings td{padding:10px 7px;font-size:11px;white-space:normal;overflow-wrap:anywhere}
+.product-specs-column .specification-ratings th:first-child{width:44%}
+.product-specs-column .spec-intro h2{font-size:20px}.product-specs-column .spec-intro p{font-size:12px}
+.product-price-history{min-width:0}.product-price-history .section-heading{gap:8px;align-items:start}
+.product-price-history select{width:100px;flex-shrink:0;font-size:11px;padding:6px 8px}
+.price-history-plot{min-width:0;min-height:300px}.price-history-status{min-height:300px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;text-align:center;color:var(--muted);font-size:12px;margin:0}
+.price-history-note{font-size:11px;color:var(--muted);line-height:1.5;margin:10px 0}
+.product-price-history .history-chart{height:300px;width:100%;min-width:0}
+.product-price-history.compact{border-top:1px solid var(--line);padding-top:14px;margin:14px 0}
+.product-price-history.compact h2{font-size:12px;margin:0}.product-price-history.compact .section-heading{margin-bottom:8px;align-items:center}
+.product-price-history.compact .price-history-plot,.product-price-history.compact .price-history-status{min-height:165px}
+.product-price-history.compact .history-chart{height:165px}.product-price-history.compact .price-history-note{font-size:9px;margin-bottom:0}
+.product-price-history.compact select{width:82px;font-size:10px;min-height:30px}
+.inventory-inspector .inspection-image .product-image{height:145px}
+.inventory-inspector .inspection-content{padding:16px}.inventory-inspector .inspection-image{padding:14px 16px}
+.product-reviews{margin-top:24px}
+@media(max-width:1000px){
+ .product-detail-body{grid-template-columns:minmax(0,1fr);gap:20px}
+ .product-prices,.product-specs-column{grid-column:1;grid-row:auto}
+ .product-specs-column .specification-groups{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:720px){
+ .product-detail-page .product-detail-top{grid-template-columns:minmax(0,1fr);gap:18px}
+ .product-detail-page .product-detail-top .product-image{height:190px}
+ .product-section-nav{gap:14px;font-size:11px}
+ .product-specs-column .specification-groups{grid-template-columns:minmax(0,1fr)}
+ .product-price-history select{min-height:44px}.product-price-history.compact select{min-height:44px}
+ .product-price-history .history-chart{height:240px}.price-history-plot,.price-history-status{min-height:240px}
+}

@@ -7,6 +7,7 @@ import "./theme.css";
 import "./home.css";
 import "./mobile.css";
 import "./tier-inspection.css";
+import "./product-prices.css";
 import "./floating-sections.css";
 import {themeBootstrap} from '../lib/theme';
 import {PVProvider} from '../components/pv-provider';
