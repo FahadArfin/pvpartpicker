@@ -22,12 +22,12 @@ export function PartRow({product,active,onInspect,onOpen,columns,builderMode=fal
   if((e.target as HTMLElement).closest('a,input,select,textarea,label,button:not(.part-inspect)'))return;
   window.location.assign('/products/'+encodeURIComponent(product.id)+(builderMode?'?builder=1':''));
  }}>
-  <div className="part-identity" role="cell"><span className="part-category-icon"><Icon size={19}/><DealMarker product={product}/></span>
+  <div className="part-identity" role="cell"><span className="part-category-icon"><ProductImage product={product}/><DealMarker product={product}/></span>
   <button className="part-inspect" aria-label={'Inspect '+productListName(product)} aria-pressed={active} title={product.name+' · Click to preview. Double-click for details.'} onClick={onOpen} onKeyDown={e=>{if(e.key==='ArrowDown'||e.key==='ArrowUp'){const rows=Array.from(e.currentTarget.closest('.part-list')!.querySelectorAll<HTMLButtonElement>('.part-inspect'));const index=rows.indexOf(e.currentTarget);const next=rows[index+(e.key==='ArrowDown'?1:-1)];if(next){e.preventDefault();next.focus();}}}}>
    <strong>{productListName(product)}</strong><span title={productListVariant(product)}>{productListVariant(product)}</span>
   </button><Link className="part-details-link" href={'/products/'+encodeURIComponent(product.id)+(builderMode?'?builder=1':'')} aria-label={'View specs and history for '+productListName(product)} title="Open specifications & price history"><ArrowUpRight size={16}/></Link></div>
   {columns.map(c=>{const v=partValue(product,c.key);return <div className={'part-spec-cell'+(v.value==='—'?' missing':'')} role="cell" key={c.key} title={[v.value,c.help,v.note,v.source].filter(Boolean).join('\n')}><span className="part-spec-label">{c.label}</span><span>{v.value}</span></div>;})}
-  <div role="cell" className="part-price"><strong>{offer?money(offer.price/offer.packQuantity):'Unpriced'}</strong><span>{current?'In stock':'Last observed'}{offer&&offer.packQuantity>1?` · ${offer.packQuantity}-pack`:''}</span></div>
+  <div role="cell" className="part-price"><strong>{offer?money(offer.price/offer.packQuantity):'Unpriced'}</strong><span>{offer?.retailer||'No current offer'}{!current&&offer?' · Last observed':''}{offer&&offer.packQuantity>1?` · ${offer.packQuantity}-pack`:''}</span></div>
   <div className="part-actions" role="cell"><WatchButton product={product}/><label className={'part-compare '+(selected?'selected':'')} title="Compare part"><input type="checkbox" checked={selected} onChange={()=>{if(!selected&&compare.length>=4){notify('Compare up to four parts. Remove one to add another.');return;}setCompare(c=>selected?c.filter(id=>id!==product.id):[...c,product.id]);}}/><span><Check size={13}/></span><span className="sr-only">Compare {product.name}</span></label>
   <BuildQuantity product={product} offerId={selectedOfferId} returnToBuild={builderMode}/></div>
  </article>;
