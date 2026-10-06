@@ -3,6 +3,7 @@ import {useEffect,useRef} from 'react';
 import {Sun,Battery,Zap,Cable,Wrench,Box,Plug,ShieldCheck,Gauge,PackageOpen,Check,ArrowUpRight,ArrowRight,X,Package} from 'lucide-react';
 import Link from './site-link';
 import {useRouter} from 'next/navigation';
+import {navigatePage} from '../lib/page-navigation';
 import {usePV,ProductImage,WatchButton} from './pv-provider';
 import {BuildQuantity} from './build-quantity';
 import {categories} from '../lib/types';
@@ -21,7 +22,7 @@ export function PartRow({product,active,onInspect,onOpen,columns,builderMode=fal
  return <article role="row" className={'part-row '+(active?'inspected ':'')+(quantity?'equipped':'')} onMouseEnter={onInspect} onFocus={onInspect} onDoubleClick={e=>{
   // A second click on the part opens its details; action controls stay separate.
   if((e.target as HTMLElement).closest('a,input,select,textarea,label,button:not(.part-inspect)'))return;
-  router.push('/products/'+encodeURIComponent(product.id)+(builderMode?'?builder=1':''));
+  const href='/products/'+encodeURIComponent(product.id)+(builderMode?'?builder=1':'');navigatePage(href,()=>router.push(href));
  }}>
   <div className="part-identity" role="cell"><span className="part-category-icon"><ProductImage product={product}/><DealMarker product={product}/></span>
   <button className="part-inspect" aria-label={'Inspect '+productListName(product)} aria-pressed={active} title={product.name+' · Click to preview. Double-click for details.'} onClick={onOpen} onKeyDown={e=>{if(e.key==='ArrowDown'||e.key==='ArrowUp'){const rows=Array.from(e.currentTarget.closest('.part-list')!.querySelectorAll<HTMLButtonElement>('.part-inspect'));const index=rows.indexOf(e.currentTarget);const next=rows[index+(e.key==='ArrowDown'?1:-1)];if(next){e.preventDefault();next.focus();}}}}>

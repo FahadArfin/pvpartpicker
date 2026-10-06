@@ -3,6 +3,7 @@ import {ArrowRight,BookOpen,Eye,FolderClosed,Layers,Search,SolarPanel,Tag} from 
 import Link from './site-link';
 import {HomePriceDrops} from './home-price-drops';
 import {useRouter} from 'next/navigation';
+import {navigatePage} from '../lib/page-navigation';
 
 const shortcuts=[
   {href:'/parts',label:'Browse Parts',icon:SolarPanel,primary:true},
@@ -21,7 +22,8 @@ export function HomeWorkspace() {
       <p className="home-simple-intro">Find parts. Compare prices. Put it all together.</p>
       <form className="home-simple-search" action="/parts" role="search" aria-label="Find solar equipment" onSubmit={event=>{
         event.preventDefault();const data=new FormData(event.currentTarget);
-        router.push('/parts?'+new URLSearchParams({category:'all',q:String(data.get('q')||'')}).toString());
+        const href='/parts?'+new URLSearchParams({category:'all',q:String(data.get('q')||'')}).toString();
+        navigatePage(href,()=>router.push(href));
       }}>
         <Search size={24} aria-hidden="true"/>
         <input type="hidden" name="category" value="all"/>

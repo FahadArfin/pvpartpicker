@@ -3,6 +3,7 @@ import {useEffect,useRef,type AnchorHTMLAttributes} from 'react';
 import {useRouter} from 'next/navigation';
 import {appDestination,allowsPrefetch,createPrefetchBudget} from '../lib/navigation-policy';
 import {loadPageCatalog,needsPageCatalog} from '../lib/catalog-client';
+import {navigatePage} from '../lib/page-navigation';
 const budget=createPrefetchBudget();
 
 // next/link's dynamic navigation namespace has broken exports in this beta build.
@@ -35,6 +36,6 @@ export default function SiteLink(props:AnchorHTMLAttributes<HTMLAnchorElement>){
    props.onClick?.(e);cancel();
    if(e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||props.download!==undefined||(props.target&&props.target!=='_self'))return;
    const href=appDestination(props.href,location.href);if(!href)return;
-   e.preventDefault();router.push(href);
+   e.preventDefault();navigatePage(href,()=>router.push(href));
   }}/>;
 }
