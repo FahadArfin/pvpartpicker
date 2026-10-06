@@ -6,11 +6,13 @@ import {CheckCircle2,AlertTriangle,HelpCircle,Plus,Minus,Trash2} from 'lucide-re
 import {usePV,ProductImage} from './pv-provider';
 import {BuildLibraryToolbar} from './build-library-toolbar';
 import {BuildPriceHistory} from './build-price-history';
+import {BuildConnectionMap} from './build-connection-map';
+import {useConnectionProducts} from './use-connection-products';
 import {categories} from '../lib/types';
 import type {Build,BuildSettings} from '../lib/types';
 import {builderPickerHref} from '../lib/build-flow';
 import {bestOffer,costForQuantity,money} from '../lib/domain';
-import {buildCompatibility,buildProgress,normalizeBuildQuantity,parseStringSetting,type StringSetting} from '../lib/build-ux';
+import {buildCompatibility,buildProgress,normalizeBuildQuantity} from '../lib/build-ux';
 
 function QuantityControl({quantity,name,onChange}:{quantity:number;name:string;onChange:(quantity:number)=>void}){
  const [text,setText]=useState(String(quantity)),focused=useRef(false);
@@ -19,18 +21,12 @@ function QuantityControl({quantity,name,onChange}:{quantity:number;name:string;o
  return <div className="quantity-control"><button aria-label={'Decrease quantity of '+name} disabled={normalizeBuildQuantity(text,quantity)<=1} onClick={()=>commit(Math.max(1,normalizeBuildQuantity(text,quantity)-1))}><Minus size={12}/></button><input aria-label={'Quantity for '+name} title="Whole units; quantity is applied when you leave this field" type="number" min="1" max="10000" step="1" value={text} onFocus={()=>{focused.current=true;}} onChange={e=>setText(e.target.value)} onBlur={()=>{focused.current=false;commit(normalizeBuildQuantity(text,quantity));}}/><button aria-label={'Increase quantity of '+name} disabled={normalizeBuildQuantity(text,quantity)>=10000} onClick={()=>commit(Math.min(10000,normalizeBuildQuantity(text,quantity)+1))}><Plus size={12}/></button></div>;
 }
 
-function StringInput({setting,label,value,onChange}:{setting:StringSetting;label:string;value?:number;onChange:(value:number|undefined,error?:string)=>void}){
- const [text,setText]=useState(value===undefined?'':String(value)),focused=useRef(false);
- useEffect(()=>{if(!focused.current)setText(value===undefined?'':String(value));},[value]);
- const parsed=parseStringSetting(setting,text),errorId='string-error-'+setting;
- return <label className="field">{label}<input type="number" min={setting==='minimumTemperature'?-70:1} max={setting==='minimumTemperature'?60:200} step={setting==='minimumTemperature'?'any':1} value={text} aria-invalid={Boolean(parsed.error)} aria-describedby={parsed.error?errorId:undefined} onFocus={()=>{focused.current=true;}} onBlur={()=>{focused.current=false;}} onChange={e=>{setText(e.target.value);const next=parseStringSetting(setting,e.target.value);onChange(next.value,next.error);}}/>{parsed.error&&<small id={errorId} className="builder-input-error">{parsed.error}</small>}</label>;
-}
-
 export function BuildWorkspace(){
- const {products,build,setBuild,saving,notify}=usePV();
- const [cleared,setCleared]=useState<{previous:Build;empty:Build}|null>(null),[stringErrors,setStringErrors]=useState<{identity?:string;values:Partial<Record<StringSetting,string>>}>({values:{}});
+ const {products:catalog,build,setBuild,saving,notify}=usePV();
+ const connections=useConnectionProducts(build,catalog),products=connections.products;
+ const [cleared,setCleared]=useState<{previous:Build;empty:Build}|null>(null);
 
- const checks=buildCompatibility(build,products,stringErrors.identity===build.id&&Object.values(stringErrors.values).some(Boolean)),progress=buildProgress(build,products);
+ const checks=buildCompatibility({...build,settings:{...build.settings,pvArrays:build.settings.pvArrays||[]}},products),progress=buildProgress(build,products);
  const rows=build.lines.map(l=>{
   const p=products.find(p=>p.id===l.productId);
   const o=p?(l.offerId?bestOffer({...p,offers:p.offers.filter(o=>o.id===l.offerId)},l.quantity):bestOffer(p,l.quantity)):undefined;
@@ -66,7 +62,8 @@ export function BuildWorkspace(){
    <p className="builder-price-note">{unpriced?`${unpriced} items need current prices. `:''}Package quantities included. Shipping and tax excluded. Totals cover selected equipment, not a complete installation.</p>
   </section>
   <BuildPriceHistory lines={build.lines}/>
-  <section className="section-card builder-compatibility" id="compatibility"><h2>3. Review compatibility</h2><p className="inline-note">Checks use documented specifications. Items needing verification keep the system unverified. Global string inputs describe one panel model and one inverter; assign every MPPT separately for the final design.</p><details><summary className="small-text">Enter PV string details for voltage checks</summary><div className="form-grid" style={{marginTop:18}}>{([['series','Panels per series string'],['parallel','Parallel strings per MPPT'],['minimumTemperature','Minimum ambient temperature (°C)']] as const).map(([key,label])=><StringInput key={(build.id||'draft')+key} setting={key} label={label} value={build.settings[key]} onChange={(value,error)=>{setStringErrors(current=>({identity:build.id,values:{...(current.identity===build.id?current.values:{}),[key]:error}}));setBuild(b=>({...b,settings:{...b.settings,[key]:value}}));}}/>)}</div></details>{checks.map((c,i)=>{const Icon=c.status==='match'?CheckCircle2:c.status==='mismatch'?AlertTriangle:HelpCircle;return <div className={'compatibility-item status-'+c.status} key={i}><Icon size={19}/><div><strong>{c.title} · {c.status==='unknown'?'Needs verification':c.status==='match'?'Documented check passed':'Mismatch'}</strong><p>{c.detail}</p>{c.source&&<a className="text-link small-text" href={c.source} target="_blank" rel="noreferrer">Source documentation</a>}</div></div>;})}</section>
-  <div className="builder-footer"><span>Save named versions in My builds. Sign in to keep account builds across devices.</span><div className="flex-actions">{cleared&&build===cleared.empty&&<button className="button outline small" disabled={saving} onClick={()=>{setBuild(cleared.previous);setCleared(null);notify('Cleared draft restored.');}}>Undo clear</button>}<button className="reset-filters" disabled={saving||!build.lines.length} onClick={()=>{const empty={...build,id:undefined,shareId:undefined,lines:[]};setCleared({previous:build,empty});setBuild(empty);notify('Draft cleared. Use Undo clear to restore it. Saved builds are unchanged.');}}>Clear draft</button></div></div>
+  <BuildConnectionMap {...connections}/>
+  <section className="section-card builder-compatibility" id="compatibility-notes"><h2>Compatibility notes</h2><p className="inline-note">Connection calculations are shown above. These additional checks cover operating modes, control systems and installation requirements. A passed numerical check does not establish a complete, approved installation.</p>{checks.filter(c=>!build.settings.pvArrays?.length||["System purpose","Battery communication & certification","Module electronics & shutdown","Monitoring & load control","Bundled equipment","Integrated power station","DC-only output","Mounting fit & structure","Wiring & protection","Choose an inverter"].includes(c.title)).map((c,i)=>{const Icon=c.status==='match'?CheckCircle2:c.status==='mismatch'?AlertTriangle:HelpCircle;return <div className={'compatibility-item status-'+c.status} key={i}><Icon size={19}/><div><strong>{c.title} · {c.status==='unknown'?'Needs verification':c.status==='match'?'Documented check passed':'Mismatch'}</strong><p>{c.detail}</p>{c.source&&<a className="text-link small-text" href={c.source} target="_blank" rel="noreferrer">Source documentation</a>}</div></div>;})}</section>
+  <div className="builder-footer"><span>Save named versions in My builds. Sign in to keep account builds across devices.</span><div className="flex-actions">{cleared&&build===cleared.empty&&<button className="button outline small" disabled={saving} onClick={()=>{setBuild(cleared.previous);setCleared(null);notify('Cleared draft restored.');}}>Undo clear</button>}<button className="reset-filters" disabled={saving||!build.lines.length} onClick={()=>{const empty={...build,id:undefined,shareId:undefined,lines:[],settings:{...build.settings,pvArrays:[],series:undefined,parallel:undefined}};setCleared({previous:build,empty});setBuild(empty);notify('Draft cleared. Use Undo clear to restore it. Saved builds are unchanged.');}}>Clear draft</button></div></div>
  </main>;
 }

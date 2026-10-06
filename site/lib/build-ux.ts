@@ -1,6 +1,7 @@
 import {checkCompatibility,validateBuild} from './domain.ts';
 import {categories} from './types.ts';
 import type {Build,BuildSettings,Category,Compatibility,Product} from './types.ts';
+import {connectionMap} from './connection-map.ts';
 
 export function normalizeBuildQuantity(text:string,previous:number):number{
  const value=text.trim()?Number(text):NaN;
@@ -56,6 +57,11 @@ export function buildCompatibility(build:Build,products:Product[],invalidStringI
    return {title:'System purpose',status:mismatch?'mismatch':'unknown',detail:mismatch?`${p.name} does not support the selected hybrid / backup purpose.`:`Review ${p.name}'s operating modes and required equipment.`,source:p.documentation||p.sourceUrl};
   });
   checks=[...purposeChecks,...checks.filter(c=>c.title!=='System purpose')];
+ }
+ if(build.settings.pvArrays!==undefined){
+  const map=connectionMap(build,products),replaced=new Set(['Cold-weather PV voltage','MPPT operating current','PV string voltage','PV input current','Battery voltage','Charge controller & battery']);
+  const assignments:Compatibility[]=map.allocations.map(a=>({status:a.status,title:'PV panel allocation',detail:`${a.panel.name}: ${a.used} assigned / ${a.quantity} selected. ${a.remaining>0?a.remaining+' panels still need an input assignment.':a.remaining<0?'More panels are assigned than selected.':'All selected panels have an assignment.'}`}));
+  return [...checks.filter(c=>!replaced.has(c.title)),...map.checks,...assignments];
  }
  const panels=selected.filter(p=>p.category==='panels'),inverters=selected.filter(p=>p.category==='inverters');
  if(!panels.length||!inverters.length)return checks;

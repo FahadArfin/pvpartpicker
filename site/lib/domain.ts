@@ -11,7 +11,18 @@ export function validateBuild(value: unknown): Build {
   for (const l of b.lines) { if (!l || typeof l.productId !== 'string' || l.productId.length > 180 || !Number.isInteger(l.quantity) || l.quantity < 1 || l.quantity > 10000 || ids.has(l.productId) || (l.offerId !== undefined && (typeof l.offerId !== 'string' || l.offerId.length > 200))) throw new Error('Invalid or duplicate build item.'); ids.add(l.productId); }
   for (const k of ['series', 'parallel'] as const) if (b.settings[k] !== undefined && (!Number.isInteger(b.settings[k]) || b.settings[k]! < 1 || b.settings[k]! > 200)) throw new Error('String counts must be between 1 and 200.');
   if (b.settings.minimumTemperature !== undefined && (!Number.isFinite(b.settings.minimumTemperature) || b.settings.minimumTemperature < -70 || b.settings.minimumTemperature > 60)) throw new Error('Minimum temperature must be between -70 and 60°C.');
-  return { name: b.name.trim(), lines: b.lines.map(l => ({ productId: l.productId, quantity: l.quantity, ...(l.offerId ? { offerId: l.offerId } : {}) })), settings: { purpose: b.settings.purpose, mount: b.settings.mount, ...(b.settings.series ? { series: b.settings.series } : {}), ...(b.settings.parallel ? { parallel: b.settings.parallel } : {}), ...(b.settings.minimumTemperature !== undefined ? { minimumTemperature: b.settings.minimumTemperature } : {}) } };
+  if(b.settings.maximumCellTemperature!==undefined&&(!Number.isFinite(b.settings.maximumCellTemperature)||b.settings.maximumCellTemperature<25||b.settings.maximumCellTemperature>100))throw new Error('Maximum cell temperature must be between 25 and 100°C.');
+  if(b.settings.pvArrays!==undefined){
+   if(!Array.isArray(b.settings.pvArrays)||b.settings.pvArrays.length>100)throw new Error('Use at most 100 PV array assignments.');
+   const arrayIds=new Set<string>();
+   for(const a of b.settings.pvArrays){
+    if(!a||typeof a.id!=='string'||!a.id||a.id.length>180||arrayIds.has(a.id)||typeof a.panelId!=='string'||!a.panelId||a.panelId.length>180)throw new Error('Invalid or duplicate PV array assignment.');
+    arrayIds.add(a.id);
+    for(const k of ['receiverId','batteryId'] as const)if(a[k]!==undefined&&(typeof a[k]!=='string'||!a[k]||a[k]!.length>180))throw new Error('Invalid connection product.');
+    for(const k of ['series','parallel','tracker','receiverUnit'] as const)if(!Number.isInteger(a[k])||a[k]<1||a[k]>(k==='receiverUnit'?10000:200))throw new Error('Invalid PV string or input count.');
+   }
+  }
+  return { name: b.name.trim(), lines: b.lines.map(l => ({ productId: l.productId, quantity: l.quantity, ...(l.offerId ? { offerId: l.offerId } : {}) })), settings: { purpose: b.settings.purpose, mount: b.settings.mount, ...(b.settings.series ? { series: b.settings.series } : {}), ...(b.settings.parallel ? { parallel: b.settings.parallel } : {}), ...(b.settings.minimumTemperature !== undefined ? { minimumTemperature: b.settings.minimumTemperature } : {}),...(b.settings.maximumCellTemperature!==undefined?{maximumCellTemperature:b.settings.maximumCellTemperature}:{}),...(b.settings.pvArrays!==undefined?{pvArrays:b.settings.pvArrays.map(a=>({id:a.id,panelId:a.panelId,receiverUnit:a.receiverUnit,tracker:a.tracker,series:a.series,parallel:a.parallel,...(a.receiverId?{receiverId:a.receiverId}:{}),...(a.batteryId?{batteryId:a.batteryId}:{})}))}:{}) } };
 }
 export function checkCompatibility(products: Product[], settings: BuildSettings): Compatibility[] {
   const results: Compatibility[] = []; const inverters = products.filter(p => p.category === 'inverters'); const batteries = products.filter(p => p.category === 'batteries' && p.specs.batteryKind !== 'Battery cabinets'); const panels = products.filter(p => p.category === 'panels');
