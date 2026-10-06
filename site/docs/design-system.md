@@ -34,24 +34,26 @@ Use CSS tokens; do not duplicate hex values in page styles. Legacy `--ink`, `--g
 
 | Token | Night | Day | Purpose |
 | --- | --- | --- | --- |
-| `--background` | #171e27 | #f4f6f8 | Page canvas |
-| `--surface` | #1c2530 | #ffffff | Tables, inputs, panels |
-| `--surface-alt` | #222d3a | #eef2f6 | Headers, secondary surfaces |
-| `--surface-raised` | #263240 | #e6ecf3 | Hover, dialogs, feedback |
-| `--text` | #e4eaf2 | #223043 | Primary text |
-| `--muted` | #a8b5c5 | #58687b | Labels and supporting text |
-| `--line` | #344151 | #d3dce6 | Quiet boundaries |
-| `--accent` | #71b0ff | #205da0 | Links, focus, selected borders |
-| `--accent-solid` | #286bb4 | #205fa8 | Filled actions with `--on-accent` text |
-| `--accent-soft` | #243c57 | #e5effc | Selected rows |
+| `--background` | #171e27 | #eeede8 | Page canvas |
+| `--surface` | #1c2530 | #f6f5f0 | Tables, inputs, panels |
+| `--surface-alt` | #222d3a | #e7e7e1 | Headers, secondary surfaces |
+| `--surface-raised` | #263240 | #e0e3df | Hover, dialogs, feedback |
+| `--text` | #e4eaf2 | #354044 | Primary text |
+| `--muted` | #a8b5c5 | #5c6566 | Labels and supporting text |
+| `--line` | #344151 | #d0d4cf | Quiet boundaries |
+| `--accent` | #71b0ff | #3d667f | Links, focus, selected borders |
+| `--accent-solid` | #286bb4 | #416981 | Filled actions with `--on-accent` text |
+| `--accent-soft` | #243c57 | #dce6e8 | Selected rows |
 
 Use `--success`, `--warning`, `--danger` and their `-soft` backgrounds for statuses, with text labels. Use `--chart-1` through `--chart-8` for charts. Do not reuse a light link color as a filled button background.
+
+Day mode uses a warm off-white canvas and surfaces, soft gray borders, charcoal text and muted blue actions to reduce glare. Preserve readable text contrast rather than fading text. Keep the switch thumb white for contrast against its track.
 
 Typography uses the existing Inter/system sans stack. Typical sizes: title 27–28px, body 14px, row name 12px, specs 11px, metadata 10–11px. Numbers use tabular alignment. Borders 1px; corners usually 4–6px. Avoid oversized headings, pill-shaped everything, heavy shadows, and gradients.
 
 ## Theme behavior
 
-Default is night, matching the selected reference. The day/night button persists `pvpartpicker-theme` in local storage. A tiny synchronous document-head script applies the preference before painting, including full-page navigation. Storage failure falls back safely; changing mode still works on the current page. Storage events synchronize open tabs. Dark/light are the two supported choices, not an automatic system mode.
+Default is night, matching the selected reference. The day/night sliding switch has a stable accessible name, "Night mode": checked means night, unchecked means day. Sun/Day and Moon/Night labels show its direction; phone layouts retain both icons. It supports keyboard input and persists `pvpartpicker-theme` in local storage. A tiny synchronous document-head script applies the preference before painting, including full-page navigation. Storage failure falls back safely; changing mode still works on the current page. Storage events synchronize open tabs. Dark/light are the two supported choices, not an automatic system mode.
 
 Intentional exceptions: real product photos and brand marks can sit on white image mats for legibility; source diagrams keep their authored colors. These are content assets, not independent page palettes. Print uses a light canvas.
 

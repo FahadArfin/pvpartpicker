@@ -44,3 +44,12 @@ Focused independent code review rechecked all reported fixes and returned no pen
 Account, admin and scraper were visually checked in their signed-out states. Their shared CSS and scraper-specific styles were migrated, but an authenticated owner session and scraping jobs were not exercised for this theme change. No live price collection, authentication, publishing of community builds, electrical calculations, or source-data backfill behavior was changed. Existing local stale/unknown catalog values were left intact.
 
 The design contract and reference are documented in `site/docs/design-system.md` and required by root `AGENTS.md` for future UI work.
+
+## Day/night switch refinement — October 5, 2026
+
+- Replaced the action-style theme button with a labeled Radix sliding switch: Day/sun on the left, Night/moon on the right. Its accessible name remains "Night mode" and checked means night. Mobile retains both icons.
+- Softened day mode throughout the shared shell with warm off-white surfaces, softer boundaries, charcoal text and muted blue actions. The approved night palette is retained.
+- Inspected the compiled catalog at desktop and 390 × 844 in both modes, plus the Guide in day mode. Verified click and Space input, visible keyboard focus, reload and navigation persistence, thumb containment and no mobile horizontal overflow. Browser error log was empty.
+- Corrected a conflicting thumb translation from the generic switch utility styles by using the same Radix primitive directly with theme-specific styling.
+- Measured day token contrast: primary text/surface 9.77:1; muted text/canvas 5.11:1; muted text/raised surface 4.62:1; muted text/rail 4.66:1; accent/selected surface 4.85:1; white/action 5.89:1. This is a targeted palette check, not a full accessibility audit.
+- Validation: 195 existing tests passed, TypeScript passed, production Worker build passed. [Final day preview](site/docs/design-system/catalog-soft-day.png).
