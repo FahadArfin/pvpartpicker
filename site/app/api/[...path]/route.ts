@@ -12,6 +12,7 @@ import {scraperDashboard,scraperOwnerAction,scraperWorkerAction,scraperJobEvents
 import {calculatorApi} from '../../../lib/calculator-api';
 import {buildPriceHistory,buildHistoryQuery,validateHistoryRequest} from '../../../lib/build-price-history';
 import type {Observation} from '../../../lib/types';
+import {connectionEvidence,connectionRequest} from '../../../lib/connection-map';
 export const dynamic = 'force-dynamic';
 function json(value: unknown, status = 200) { return Response.json(value, { status, headers: { 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff' } }); }
 async function body(request: Request) { if (!request.headers.get('content-type')?.includes('application/json')) throw new Error('JSON required.'); if(Number(request.headers.get('content-length'))>600000)throw new Error('Request is too large.'); const text = await request.text(); if (text.length > 600000) throw new Error('Request is too large.'); return JSON.parse(text); }
@@ -37,6 +38,10 @@ async function handle(request: Request, method: string) {
       const records=offerIds.length?await database().prepare(buildHistoryQuery).bind(JSON.stringify(offerIds),since,new Date(now).toISOString()).all<Observation>():{results:[]};
       if(records.results.length>50000)throw new Error('This selection has too many history records. Choose a shorter period or fewer parts.');
       return json(buildPriceHistory(lines,products,records.results,days,now));
+    }
+    if(action==='build-connections'&&method==='POST'){
+      const ids=new Set(connectionRequest(await body(request))),catalog=await getPublicCatalog();
+      return json({products:catalog.products.filter(p=>ids.has(p.id)).map(p=>({id:p.id,connectionSpecs:connectionEvidence(p)}))});
     }
     const user = await getChatGPTUser(); const isAdmin = Boolean(user && runtime().ADMIN_EMAIL && user.email.toLowerCase() === runtime().ADMIN_EMAIL?.toLowerCase());
     if (action === 'me' && method === 'GET') return json({ user: user ? { displayName: user.displayName, email: user.email } : null, isAdmin, emailConfigured: Boolean(runtime().RESEND_API_KEY && runtime().EMAIL_FROM) });
