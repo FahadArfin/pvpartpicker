@@ -11,6 +11,7 @@ import type {Report} from '../lib/guide-calculators';
 import type {Product} from '../lib/types';
 import {money} from '../lib/domain';
 import type {AddressResult} from '../lib/analytics-location';
+import {analyticsReadTool,registerTools,browserToolRegistry} from '../lib/webmcp';
 const LocationMap=lazy(()=>import('./analytics-location-map'));
 const climateCache=new Map<string,{expires:number;report:Report}>();
 const number=(n:number,digits=0)=>n.toLocaleString('en-US',{maximumFractionDigits:digits});
@@ -68,6 +69,9 @@ export default function BuildAnalyticsReport({products}:{products:Product[]}) {
  let financial:ReturnType<typeof analyticsFinancials>|undefined,settingsError='';
  try{validateAnalytics(s);if(report?.monthly)financial=analyticsFinancials(report.monthly,s,inputs.equipmentCost,inputs.unpriced===0,build.settings.purpose);}catch(e){settingsError=(e as Error).message;}
  const isClimate=Boolean(currentClimate?.report),issues=invalid.length>0||Boolean(settingsError);
+ const agentReport=useRef<Record<string,unknown>>({});
+ agentReport.current={status:issues?'invalid':!production?'needs-location-or-capacity':currentClimate?.loading?'loading':currentClimate?.error?'fallback':'ready',capacityKw:capacity,provider:report?.raw.provider,notice:report?.notice,error:settingsError||currentClimate?.error,invalidFields:invalid,settings:s,report:issues?null:financial};
+ useEffect(()=>registerTools([analyticsReadTool(()=>agentReport.current)],browserToolRegistry(),message=>console.warn(message)),[]);
  const field=(key:keyof typeof analyticsRanges,label:string,step=1,hint?:string)=>{const [min,max]=analyticsRanges[key];return <NumberField key={key} label={label} value={s[key]??0} min={min} max={max} step={step} hint={hint} onChange={n=>update({[key]:n})} onValidity={validity}/>;};
  function download(){if(!financial||issues)return;const content=JSON.stringify({buildName:build.name,generatedAt:new Date().toISOString(),settings:s,capacityKw:capacity,equipmentCost:inputs.equipmentCost,unpriced:inputs.unpriced,provider:report?.raw,report:financial,notice:'Long-term estimated monthly production, not a forecast. Monthly load is uniform; self-consumption is an assumption. USD nominal cash flow; not a battery dispatch or tax calculation.'},null,2);const url=URL.createObjectURL(new Blob([content],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='pvpartpicker-build-analytics.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
  return <section className="build-analytics" aria-labelledby="analytics-heading">

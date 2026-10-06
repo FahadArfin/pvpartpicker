@@ -1,5 +1,6 @@
 'use client';
 import {lazy,Suspense,useEffect,useRef,useState} from 'react';
+import {useSearchParams} from 'next/navigation';
 import {productListName,productListVariant} from '../lib/part-comparison';
 import Link from './site-link';
 import {CheckCircle2,AlertTriangle,HelpCircle,Plus,Minus,Trash2} from 'lucide-react';
@@ -27,6 +28,8 @@ export function BuildWorkspace(){
  const {products:catalog,build,setBuild,saving,notify}=usePV();
  const connections=useConnectionProducts(build,catalog),products=connections.products;
  const [tab,setTab]=useState<'equipment'|'analytics'>('equipment');
+ const search=useSearchParams(),requestedTab=search?.get('tab');
+ useEffect(()=>{if(requestedTab==='analytics'||requestedTab==='equipment')setTab(requestedTab);},[requestedTab]);
  const [cleared,setCleared]=useState<{previous:Build;empty:Build}|null>(null);
 
  const checks=buildCompatibility({...build,settings:{...build.settings,pvArrays:build.settings.pvArrays||[]}},products),progress=buildProgress(build,products);

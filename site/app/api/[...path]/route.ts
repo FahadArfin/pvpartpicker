@@ -24,6 +24,11 @@ async function handle(request: Request, method: string) {
     const url = new URL(request.url), paths = url.pathname.replace(/^\/api\//, '').split('/'), action = paths[0], id = paths[1];
     if (method !== 'GET' && request.headers.get('origin') && request.headers.get('origin') !== url.origin) return json({ error: 'Cross-origin write rejected.' }, 403);
     if(action==='solar-calculator'&&['GET','POST'].includes(method))return calculatorApi(request);
+    if(action==='products'&&method==='GET'){
+      if(paths.length!==2||!id||id.length>180||!/^[a-zA-Z0-9_-]+$/.test(id))return json({error:'Product not found.'},404);
+      const product=(await getPublicCatalog()).products.find(p=>p.id===id);
+      return product?json({product}):json({error:'Product not found.'},404);
+    }
     // This response has no account data and does not depend on auth headers.
     if(action==='catalog'&&method==='GET'&&url.searchParams.get('view')==='summary'){
       const start=performance.now(),result=await getCatalogSummary();

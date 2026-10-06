@@ -13,3 +13,5 @@ Read `site/docs/design-system.md` before changing any user interface. The user a
 - Use the repository-root Git checkout, not the nested `site/.git`. Respect existing user edits and running servers. The user's standing delivery preference is to commit features to `FahadArfin/pvpartpicker` and publish the validated version to the existing Sites project; do not claim publication before terminal deployment success.
 
 Implementation lives in `site/`. The `output/` directory contains local preview/release artifacts and is not the canonical source.
+
+Browser-agent integration uses native `document.modelContext` WebMCP. Read `site/docs/webmcp.md` when extending it. Preserve closed schemas, current-state getters, owned abort cleanup, same UI/API permissions, saved-build identity, deadline-aware catalog reuse and opt-in private analytics. Do not expose scraper/admin/publish/purchase operations as agent shortcuts.
