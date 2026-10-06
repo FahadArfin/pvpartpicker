@@ -26,7 +26,7 @@ export function SiteNavigation({path}:{path:string}) {
   },[path]);
   if(path==='/') return <header className="home-header">
     <Link className="home-brand" href="/" aria-label="PVPartPicker home"><Grid2X2 size={29} strokeWidth={1.7} aria-hidden="true"/><span>PV<b>Part</b>Picker</span></Link>
-    <nav className="home-header-links" aria-label="Home navigation"><Link href="/guide">Guide</Link>{user?<Link href="/account">My account</Link>:<a href="/signin-with-chatgpt?return_to=%2Faccount" target="_top">Sign in</a>}<ThemeToggle/></nav>
+    <nav className="home-header-links" aria-label="Home navigation">{user?<Link href="/account">My account</Link>:<a href="/signin-with-chatgpt?return_to=%2Faccount" target="_top">Sign in</a>}<ThemeToggle/></nav>
   </header>;
   const navigation = <>
     <Link className="rail-brand" href="/" aria-label="PVPartPicker home"><Grid2X2 size={23}/><span>PV<b>Part</b>Picker</span></Link>
