@@ -19,6 +19,7 @@ A practical solar parts workbench inspired by the clarity of PCPartPicker. The p
 ## Entry pages and navigation
 
 - `/` is the lightweight home page: Browse Parts, Price Drops, and View Builds are the primary actions. Keep its content useful and compact, without decorative hero artwork or catalog-loading dependencies.
+- Home composition uses a clear introduction and search alongside a compact current-draft panel, four representative equipment photographs, secondary category links, and a guide feature. Its scoped styling lives in `app/home.css`. Keep all three primary actions visible near the top; avoid returning to three large, identical action cards. Category photographs are examples sourced from existing catalog records, not recommendations or live offers.
 - `/parts` owns the catalog. Old root query links redirect there with filters and builder context intact. New catalog links must use `/parts`.
 - `/builds` brings saved device/account builds and community builds into one collection view. `/build` remains the active System Builder. Reuse `BuildOpenAction` so opening another build preserves the existing draft confirmation and save flow.
 
