@@ -1,5 +1,5 @@
 'use client';
-import {useState} from 'react';
+import {useEffect,useState} from 'react';
 import Link from './site-link';
 import {productListName} from '../lib/part-comparison';
 import {TrendingDown,Search,ArrowUpRight,RefreshCw,Eye,Plus} from 'lucide-react';
@@ -12,6 +12,7 @@ import type {DropPeriod,DropSort} from '../lib/price-drops';
 const periods:{id:DropPeriod;label:string}[]=[{id:'day',label:'Daily'},{id:'week',label:'Weekly'},{id:'month',label:'Monthly'},{id:'latest',label:'Latest'}];
 export function DealsWorkspace(){
  const{products,watchIds,add}=usePV();const[period,setPeriod]=useState<DropPeriod>('day'),[sort,setSort]=useState<DropSort>('dollars'),[minDollars,setMinDollars]=useState(''),[minPercent,setMinPercent]=useState(''),[category,setCategory]=useState(''),[q,setQ]=useState(''),[watchedOnly,setWatchedOnly]=useState(false),[limit,setLimit]=useState(36);
+ useEffect(()=>{if(new URLSearchParams(location.search).get('period')==='latest'){setPeriod('latest');setSort('latest');}},[]);
  const {drops,loading,error,checkedAt,retry}=usePriceDrops(period),productMap=new Map(products.map(p=>[p.id,p]));
  const visible=selectDrops(drops,{sort,minDollars:Number(minDollars)||0,minPercent:Number(minPercent)||0}).filter(d=>{const p=productMap.get(d.productId);return p&&(!category||p.category===category)&&(!watchedOnly||watchIds.includes(p.id))&&(!q||(p.name+' '+p.brand+' '+d.retailer).toLowerCase().includes(q.toLowerCase()));});
  const choose=(id:DropPeriod)=>{setPeriod(id);setLimit(36);if(id==='latest')setSort('latest');};

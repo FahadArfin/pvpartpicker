@@ -1,15 +1,18 @@
 "use client";
-import {ArrowRight,FolderClosed,Search,SolarPanel,Tag} from 'lucide-react';
+import {ArrowRight,Eye,FolderClosed,Layers,Search,SolarPanel,Tag} from 'lucide-react';
 import Link from './site-link';
+import {HomePriceDrops} from './home-price-drops';
 
 const shortcuts=[
   {href:'/parts',label:'Browse Parts',icon:SolarPanel,primary:true},
   {href:'/deals',label:'Price Drops',icon:Tag,primary:false},
   {href:'/builds',label:'View Builds',icon:FolderClosed,primary:false},
+  {href:'/tiers',label:'Tier Lists',icon:Layers,primary:false},
+  {href:'/watchlist',label:'Watch List',icon:Eye,primary:false},
 ];
 
 export function HomeWorkspace() {
-  return <main className="home-simple" aria-labelledby="home-title">
+  return <><main className="home-simple" aria-labelledby="home-title">
     <div className="home-simple-content">
       <h1 id="home-title">Build your solar system.</h1>
       <p className="home-simple-intro">Find parts. Compare prices. Put it all together.</p>
@@ -24,5 +27,5 @@ export function HomeWorkspace() {
       </nav>
       <Link className="home-simple-guide" href="/guide">New to solar? Start with the guide<ArrowRight size={18} aria-hidden="true"/></Link>
     </div>
-  </main>;
+  </main><HomePriceDrops/></>;
 }
