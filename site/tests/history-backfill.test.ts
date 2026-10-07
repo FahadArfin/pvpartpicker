@@ -17,7 +17,7 @@ test('durable queue claims once, paces every request, resumes expired leases and
  now+=1000000;a=await backfillAction(db,{action:'claim'},now);assert.ok(a.job);
  await backfillAction(db,{action:'finish',lease:a.lease,id:a.job.id,status:'complete',rows:2},now);
  await backfillAction(db,{action:'seed'},now);assert.equal((await backfillAction(db,{action:'claim'},now) as any).done,true);
- const status:any=await backfillAction(db,{action:'status'},now);assert.equal(status.counts.complete,1);assert.equal(status.importedRows,2);sql.close();
+ const status:any=await backfillAction(db,{action:'status'},now);assert.equal(status.counts.complete,1);assert.equal(status.importedRows,0);assert.equal(status.recent[0].rows,2);sql.close();
 });
 test('source refusal pauses the whole queue and scheduled runs cannot silently resume it',async()=>{
  const {db,sql}=fixture();await backfillAction(db,{action:'seed'},1000);const a:any=await backfillAction(db,{action:'claim'},1000);
@@ -29,6 +29,7 @@ test('timestamp import is retry-safe, rejects conflicts/ambiguous variants and l
  const source={id:'b'.repeat(64),label:'Drop.solar · Signature Solar',url:'https://drop.solar/products/ss-11059',precision:'timestamp',startDate:'2025-11-09T16:46:12.010Z',endDate:'2026-06-18T01:16:25.401Z'};
  const payload={source,dropProduct,rows:[{offerId:o.id,name:p.name,link:o.url,packQuantity:1,date:source.startDate,price:4199}]};
  assert.equal((await importHistory(db,payload)).inserted,1);assert.equal((await importHistory(db,payload)).inserted,0);
+ assert.equal((await backfillAction(db,{action:'status'})).importedRows,1);
  assert.equal((sql.prepare('SELECT stock FROM observations').get() as any).stock,'unknown');assert.equal((sql.prepare('SELECT json FROM offers').get() as any).json,JSON.stringify(o));
  await assert.rejects(importHistory(db,{...payload,rows:[{...payload.rows[0],price:123}]}),/conflict/i);
  sql.prepare('INSERT INTO offers VALUES(?,?,?,?)').run('ss-2',p.id,JSON.stringify({...o,id:'ss-2',packQuantity:2}),'today');
