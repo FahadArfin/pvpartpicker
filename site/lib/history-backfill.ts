@@ -24,10 +24,12 @@ export async function backfillAction(db:D1Database,d:any,now=Date.now()):Promise
  if(d.action==='status'){
   const counts=await db.prepare("SELECT json_extract(value,'$.status') AS status,COUNT(*) AS n,SUM(json_extract(value,'$.rows')) AS rows FROM job_state WHERE id LIKE 'drop-history-job:%' GROUP BY json_extract(value,'$.status')").all<{status:string;n:number;rows:number}>();
   const recent=await db.prepare("SELECT value FROM job_state WHERE id LIKE 'drop-history-job:%' AND json_extract(value,'$.status') NOT IN ('pending') ORDER BY json_extract(value,'$.finishedAt') DESC LIMIT 100").all<{value:string}>();
-  return {counts:Object.fromEntries(counts.results.map(r=>[r.status,r.n])),importedRows:counts.results.reduce((n,r)=>n+(r.rows||0),0),paused:!!s.c.paused,reason:s.c.reason,nextRequestAt:new Date(s.c.nextAt).toISOString(),recent:recent.results.map(r=>{const j=JSON.parse(r.value);return {productId:j.p.id,name:j.p.name,retailer:j.o.retailer,status:j.status,rows:j.rows,reason:j.reason,sourceUrl:j.sourceUrl};})};
+  const imported=await db.prepare("SELECT COUNT(*) AS n FROM observations o JOIN history_sources s ON s.id=o.source_id WHERE json_extract(s.json,'$.precision')='timestamp' AND json_extract(s.json,'$.url') LIKE 'https://drop.solar/products/%'").first<{n:number}>();
+  return {counts:Object.fromEntries(counts.results.map(r=>[r.status,r.n])),importedRows:imported?.n||0,paused:!!s.c.paused,reason:s.c.reason,nextRequestAt:new Date(s.c.nextAt).toISOString(),recent:recent.results.map(r=>{const j=JSON.parse(r.value);return {productId:j.p.id,name:j.p.name,retailer:j.o.retailer,status:j.status,rows:j.rows,reason:j.reason,sourceUrl:j.sourceUrl};})};
  }
  if(d.action==='claim'){
   if(s.c.paused)return {paused:true,reason:s.c.reason};if(s.c.lease&&(s.c.until||0)>now)return {busy:true};
+  if(s.c.nextAt>now+300000)return {deferred:true,nextRequestAt:new Date(s.c.nextAt).toISOString()};
   const row=await db.prepare("SELECT value FROM job_state WHERE id LIKE 'drop-history-job:%' AND json_extract(value,'$.status')='pending' ORDER BY CASE WHEN json_extract(value,'$.p.category')='inverters' THEN 0 WHEN json_extract(value,'$.p.category')='batteries' THEN 1 ELSE 2 END,id LIMIT 1").first<{value:string}>();
   if(!row)return {done:true};const job=JSON.parse(row.value) as Job,lease=crypto.randomUUID();await swap(db,s.raw,{...s.c,lease,until:now+300000,jobId:job.id});return {lease,job};
  }

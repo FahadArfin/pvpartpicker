@@ -26,7 +26,9 @@ export async function runBackfill({api,request,now=Date.now,sleep=ms=>new Promis
    if(robots===undefined){const r=await get('/robots.txt');if(r.status!==200&&r.status!==404)throw pauseError('Cannot verify Drop.solar robots policy (HTTP '+r.status+')');robots=r.status===200?r.body:'';
     const crawl=[...robots.matchAll(/^\s*crawl-delay\s*:\s*([\d.]+)/gim)].map(m=>Number(m[1])*1000);if(crawl.length)delay=Math.max(delay,...crawl);if(delay>900000)throw pauseError('Published crawl delay exceeds the bounded worker budget; owner review required');
    }
-   const lookup=await get('/api/url-lookup',{method:'POST',body:JSON.stringify({url:job.url})});if(lookup.status!==200)throw Error('URL lookup failed (HTTP '+lookup.status+')');
+   const lookup=await get('/api/url-lookup',{method:'POST',body:JSON.stringify({url:job.url})});
+   if([400,404].includes(lookup.status)){await api('finish',{lease,id:job.id,status:'not_found',reason:'Source lookup does not support this retailer URL (HTTP '+lookup.status+')'});processed++;continue;}
+   if(lookup.status!==200)throw Error('URL lookup failed (HTTP '+lookup.status+')');
    const found=JSON.parse(lookup.body).found;if(!found){await api('finish',{lease,id:job.id,status:'not_found',reason:'No Drop.solar page for this retailer URL'});processed++;continue;}
    const path=dropPagePath(found);if(!path)throw Error('Unexpected URL lookup response');sourceUrl='https://drop.solar'+path;
    const page=await get(path);if(page.status!==200)throw Error('Product page failed (HTTP '+page.status+')');
