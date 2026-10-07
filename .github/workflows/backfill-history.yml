@@ -1,0 +1,41 @@
+name: Backfill attributed price history
+on:
+  schedule:
+    - cron: '43 * * * *'
+  workflow_dispatch:
+    inputs:
+      seed:
+        description: Add current retailer URLs to the durable queue
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: drop-solar-history-backfill
+  cancel-in-progress: false
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    defaults:
+      run:
+        working-directory: site
+    env:
+      PV_API_ORIGIN: ${{ vars.PV_API_ORIGIN }}
+      PV_COLLECTOR_TOKEN: ${{ secrets.PV_COLLECTOR_TOKEN }}
+      SEED_QUEUE: ${{ inputs.seed }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - run: npm ci --no-audit --no-fund
+      - name: Resume history queue at no more than one request per 30 seconds
+        run: |
+          if [ "$SEED_QUEUE" = "true" ]; then
+            node --experimental-strip-types scripts/drop-history-worker.mjs --seed
+          else
+            node --experimental-strip-types scripts/drop-history-worker.mjs
+          fi

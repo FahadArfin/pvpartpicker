@@ -1,6 +1,7 @@
 import {retailers} from './retailers.ts';
 import {validateScraperSite,nextScrapeAt,emptyProgress,validateProgress,publicSourceUrl} from './scraper-config.ts';
 import type {ScraperSite,ScraperProgress} from './scraper-config.ts';
+import {backfillAction} from './history-backfill.ts';
 interface SiteRow{id:string;json:string;next_at:string|null;updated_at:string;}
 interface JobRow{id:string;site_id:string;status:string;config:string;progress:string;queued_at:string;started_at:string|null;finished_at:string|null;lease_token:string|null;lease_until:string|null;cancel_requested:number;}
 const iso=()=>new Date().toISOString();
@@ -30,7 +31,7 @@ export async function scraperDashboard(db:D1Database,siteId?:string){
    db.prepare("SELECT o.price,o.pack_quantity AS packQuantity,o.stock,o.observed_at AS observedAt,json_extract(f.json,'$.url') AS url,json_extract(p.json,'$.name') AS name,p.id AS productId FROM observations o JOIN offers f ON f.id=o.offer_id LEFT JOIN products p ON p.id=f.product_id WHERE json_extract(f.json,'$.retailerId')=? ORDER BY o.observed_at DESC LIMIT 100").bind(siteId).all()
   ]);detail={targets:targets.results,observations:observations.results};
  }
- return {sites:sourceRows.map(r=>({...JSON.parse(r.json),nextAt:r.next_at,updatedAt:r.updated_at,stats:counts.results.find((c:any)=>c.siteId===r.id)||{offers:0,oldest:null,latest:null}})),jobs:jobs.results.map(presentJob),heartbeat:heartbeat?JSON.parse(heartbeat.value):null,legacy:legacy.results.map(r=>({createdAt:r.createdAt,reports:JSON.parse(r.json)})),detail,now:iso()};
+ return {sites:sourceRows.map(r=>({...JSON.parse(r.json),nextAt:r.next_at,updatedAt:r.updated_at,stats:counts.results.find((c:any)=>c.siteId===r.id)||{offers:0,oldest:null,latest:null}})),jobs:jobs.results.map(presentJob),heartbeat:heartbeat?JSON.parse(heartbeat.value):null,legacy:legacy.results.map(r=>({createdAt:r.createdAt,reports:JSON.parse(r.json)})),detail,historyBackfill:await backfillAction(db,{action:'status'}),now:iso()};
 }
 export async function scraperOwnerAction(db:D1Database,d:any){
  await seedScraperSites(db);

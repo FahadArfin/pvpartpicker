@@ -17,6 +17,7 @@ import {buildPriceHistory,buildHistoryQuery,validateHistoryRequest} from '../../
 import type {Observation} from '../../../lib/types';
 import {connectionEvidence,connectionRequest} from '../../../lib/connection-map';
 import {importHistory} from '../../../lib/historical-import';
+import {backfillAction} from '../../../lib/history-backfill';
 export const dynamic = 'force-dynamic';
 function json(value: unknown, status = 200) { return Response.json(value, { status, headers: { 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff' } }); }
 async function body(request: Request) { if (!request.headers.get('content-type')?.includes('application/json')) throw new Error('JSON required.'); if(Number(request.headers.get('content-length'))>600000)throw new Error('Request is too large.'); const text = await request.text(); if (text.length > 600000) throw new Error('Request is too large.'); return JSON.parse(text); }
@@ -53,6 +54,12 @@ async function handle(request: Request, method: string) {
       return json({products:catalog.products.filter(p=>ids.has(p.id)).map(p=>({id:p.id,connectionSpecs:connectionEvidence(p)}))});
     }
     const user = await getChatGPTUser(); const isAdmin = Boolean(user && runtime().ADMIN_EMAIL && user.email.toLowerCase() === runtime().ADMIN_EMAIL?.toLowerCase());
+    if(action==='history-backfill'){
+      if(!isAdmin&&!collector(request))return json({error:'Owner or collector authentication required.'},401);
+      if(method==='GET')return json(await backfillAction(database(),{action:'status'}));
+      if(method!=='POST')return json({error:'Unsupported backfill operation.'},405);
+      return json(await backfillAction(database(),await body(request)));
+    }
     if(action==='history-import'){
       if(method!=='POST'||(!isAdmin&&!collector(request)))return json({error:'Owner or collector authentication required.'},401);
       return json(await importHistory(database(),await body(request)));
