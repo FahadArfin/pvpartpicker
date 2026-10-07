@@ -1,3 +1,4 @@
+import {addressApi} from './analytics-location.ts';
 import {readClimate,searchLocations,type SolarArray} from './solar-production.ts';
 import type {Values} from './guide-calculators.ts';
 const cache=new Map<string,{expires:number;value:unknown}>();
@@ -5,6 +6,8 @@ const pending=new Map<string,Promise<unknown>>();
 const requests=new Map<string,{until:number;count:number}>();
 export async function calculatorApi(request:Request){
  const url=new URL(request.url),kind=url.searchParams.get('kind');
+ if(kind==='address')return addressApi(request);
+ if(request.method!=='GET')return Response.json({error:'Use GET for climate estimates.'},{status:405,headers:{'Cache-Control':'no-store'}});
  const json=(value:unknown,status=200)=>Response.json(value,{status,headers:{'Cache-Control':status===200?'public, max-age=3600':'no-store','X-Content-Type-Options':'nosniff'}});
  if(!['climate','location'].includes(kind??'')||url.search.length>5000)return json({error:'Invalid calculator request.'},400);
  const key=url.search,now=Date.now(),cached=cache.get(key);if(cached&&cached.expires>now)return json(cached.value);

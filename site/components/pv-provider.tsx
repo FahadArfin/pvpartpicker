@@ -10,14 +10,15 @@ import type {PageCatalog} from '../lib/catalog-transport';
 import {loadPageCatalog,readRecentPageCatalog,needsPageCatalog} from '../lib/catalog-client';
 import type {Build,Product,CollectionReport} from '../lib/types';
 import {bestOffer,costForQuantity,money} from '../lib/domain';
-import {registerPVTools} from '../lib/webmcp';
+import {createPVTools,createToolCatalog,registerTools,browserToolRegistry} from '../lib/webmcp';
 import {addBuildPart} from '../lib/build-flow';
 import {normalizeWatchIds} from '../lib/price-drops';
+import {commitWatchChange} from '../lib/watch-state';
 import {restoreBuildDraft,replaceStoredDraft} from '../lib/build-ux';
 import {validateBuild} from '../lib/domain';
 import {deviceBuildsKey,readDeviceBuilds,saveDeviceBuild,isDeviceBuild,applySavedBuildIdentity} from '../lib/build-library';
 type User={displayName:string;email:string}|null;
-interface Context{products:Product[];reports:CollectionReport[];user:User;build:Build;draftReady:boolean;saving:boolean;setBuild:React.Dispatch<React.SetStateAction<Build>>;replaceDraft:(target:Build)=>void;add:(id:string,offerId?:string)=>void;chooseForBuild:(id:string,offerId?:string)=>void;save:(options?:{asNew?:boolean;name?:string})=>Promise<string|undefined>;notify:(s:string)=>void;compare:string[];setCompare:React.Dispatch<React.SetStateAction<string[]>>;watchIds:string[];watchReady:boolean;watchError:string;watchBusy:string[];toggleWatch:(id:string)=>Promise<void>;reloadWatch:()=>Promise<void>;}
+interface Context{products:Product[];reports:CollectionReport[];user:User;build:Build;draftReady:boolean;saving:boolean;setBuild:React.Dispatch<React.SetStateAction<Build>>;replaceDraft:(target:Build)=>void;add:(id:string,offerId?:string)=>void;chooseForBuild:(id:string,offerId?:string)=>void;save:(options?:{asNew?:boolean;name?:string})=>Promise<string|undefined>;notify:(s:string)=>void;compare:string[];setCompare:React.Dispatch<React.SetStateAction<string[]>>;watchIds:string[];watchReady:boolean;watchError:string;watchBusy:string[];toggleWatch:(id:string)=>Promise<boolean>;reloadWatch:()=>Promise<void>;}
 const initial:Build={name:'My solar build',lines:[],settings:{purpose:'offgrid',mount:'roof'}};
 const ctx=createContext<Context|null>(null);
 export function usePV(){const value=useContext(ctx);if(!value)throw new Error('PV provider missing');return value;}
@@ -44,32 +45,32 @@ export function PVProvider({user,children}:{user:User;children:React.ReactNode})
  const[draftIssue,setDraftIssue]=useState('');const draftWriteBlocked=useRef(false);
  const[saving,setSaving]=useState(false);const saveLock=useRef(false);
  const[watchIds,setWatchIds]=useState<string[]>([]),[watchReady,setWatchReady]=useState(false),[watchError,setWatchError]=useState(''),[watchBusy,setWatchBusy]=useState<string[]>([]);
- const watchLocks=useRef(new Set<string>());
+ const watchLocks=useRef(new Set<string>()),watchVersion=useRef(0),currentWatchIds=useRef<string[]>([]);
+ const applyWatchIds=(ids:string[])=>{currentWatchIds.current=ids;setWatchIds(ids);};
  const reloadWatch=useCallback(async()=>{
-  if(user&&needsCatalog&&!catalogReady)return;
+  if((user&&needsCatalog&&!catalogReady)||watchLocks.current.size)return;const version=++watchVersion.current;
   setWatchReady(false);setWatchError('');
   try{
    let guest:string[]=[];try{const stored=localStorage.getItem('pvpartpicker-watchlist');if(stored)guest=normalizeWatchIds(JSON.parse(stored));}catch{localStorage.setItem('pvpartpicker-watchlist','[]');setNotice('Could not read your device watch list. You can start a new list.');}
-   if(user){const result=await api('watchlist'),cloud:string[]=result.items.map((i:{productId:string})=>i.productId);const imported=guest.filter(id=>!cloud.includes(id)&&products.some(p=>p.id===id)).slice(0,Math.max(0,500-cloud.length));if(imported.length)await api('watchlist',{method:'POST',body:JSON.stringify({productIds:imported})});setWatchIds([...imported,...cloud]);try{localStorage.setItem('pvpartpicker-watchlist',JSON.stringify(guest.filter(id=>!imported.includes(id)&&!cloud.includes(id))));}catch{} }
-   else setWatchIds(guest);
-   setWatchReady(true);
-  }catch(e){setWatchError((e as Error).message);}
+   if(user){const result=await api('watchlist');if(version!==watchVersion.current)return;const cloud:string[]=result.items.map((i:{productId:string})=>i.productId);const imported=guest.filter(id=>!cloud.includes(id)&&products.some(p=>p.id===id)).slice(0,Math.max(0,500-cloud.length));if(imported.length)await api('watchlist',{method:'POST',body:JSON.stringify({productIds:imported})});if(version!==watchVersion.current)return;applyWatchIds([...imported,...cloud]);try{localStorage.setItem('pvpartpicker-watchlist',JSON.stringify(guest.filter(id=>!imported.includes(id)&&!cloud.includes(id))));}catch{} }
+   else applyWatchIds(guest);
+   if(version===watchVersion.current)setWatchReady(true);
+  }catch(e){if(version===watchVersion.current)setWatchError((e as Error).message);}
  },[user,products,catalogReady,needsCatalog]);
  useEffect(()=>{reloadWatch();},[reloadWatch]);
  useEffect(()=>{if(user)return;const changed=(e:StorageEvent)=>{if(e.key==='pvpartpicker-watchlist')reloadWatch();};window.addEventListener('storage',changed);return()=>window.removeEventListener('storage',changed);},[user,reloadWatch]);
- const toggleWatch=async(id:string)=>{
-  if(!watchReady||watchLocks.current.has(id))return;
-  const removing=watchIds.includes(id);if(!removing&&watchIds.length>=500){setNotice('Your watch list can hold up to 500 products.');return;}
-  watchLocks.current.add(id);setWatchBusy(ids=>[...ids,id]);
-  try{if(user)await api(removing?'watchlist/'+encodeURIComponent(id):'watchlist',{method:removing?'DELETE':'POST',...(removing?{}:{body:JSON.stringify({productIds:[id]})})});
+ const toggleWatch=async(id:string,watched?:boolean)=>{
+  if(!watchReady||watchLocks.current.has(id))return false;
+  const removing=watched===undefined?currentWatchIds.current.includes(id):!watched;if(watched!==undefined&&currentWatchIds.current.includes(id)===watched)return true;if(!removing&&currentWatchIds.current.length>=500){setNotice('Your watch list can hold up to 500 products.');return false;}
+  watchVersion.current++;watchLocks.current.add(id);setWatchBusy(ids=>[...ids,id]);
+  try{await commitWatchChange(currentWatchIds,id,!removing,async()=>{if(user)await api(removing?'watchlist/'+encodeURIComponent(id):'watchlist',{method:removing?'DELETE':'POST',...(removing?{}:{body:JSON.stringify({productIds:[id]})})});
    else{const stored=normalizeWatchIds(JSON.parse(localStorage.getItem('pvpartpicker-watchlist')||'[]'));const next=removing?stored.filter(p=>p!==id):[id,...stored.filter(p=>p!==id)];if(next.length>500)throw new Error('Your watch list can hold up to 500 products.');localStorage.setItem('pvpartpicker-watchlist',JSON.stringify(next));}
-   setWatchIds(ids=>removing?ids.filter(p=>p!==id):[id,...ids.filter(p=>p!==id)]);setWatchError('');setNotice(removing?'Removed from your watch list.':user?'Added to your watch list.':'Added to your watch list on this device.');
-  }catch(e){setWatchError((e as Error).message);setNotice('Could not save your watch list: '+(e as Error).message);}finally{watchLocks.current.delete(id);setWatchBusy(ids=>ids.filter(p=>p!==id));}
+   },setWatchIds);setWatchError('');setNotice(removing?'Removed from your watch list.':user?'Added to your watch list.':'Added to your watch list on this device.');return true;
+  }catch(e){setWatchError((e as Error).message);setNotice('Could not save your watch list: '+(e as Error).message);return false;}finally{watchLocks.current.delete(id);setWatchBusy(ids=>ids.filter(p=>p!==id));}
  };
  useEffect(()=>{try{const v=localStorage.getItem('pvpartpicker-draft');if(v)setBuild(restoreBuildDraft(v));}catch{draftWriteBlocked.current=true;setDraftIssue('Could not restore your device draft. Its stored data has been kept.');}try{const c=localStorage.getItem('pvpartpicker-compare');if(c){const ids=JSON.parse(c);if(Array.isArray(ids))setCompare(ids.filter(id=>typeof id==='string').slice(0,4));}}catch{}setReady(true);},[]);
  useEffect(()=>{if(catalogReady)setCompare(ids=>ids.filter(id=>products.some(p=>p.id===id)));},[catalogReady,products]);
  useEffect(()=>{if(ready){try{if(!draftWriteBlocked.current)localStorage.setItem('pvpartpicker-draft',JSON.stringify(build));localStorage.setItem('pvpartpicker-compare',JSON.stringify(compare));}catch{setNotice('Could not keep your draft on this device. Enable browser storage or save it to your account.');}}},[build,compare,ready]);
- useEffect(()=>{if(catalogReady)return registerPVTools(products,build,setBuild);},[products,build,catalogReady]);
  useEffect(()=>{if(!notice)return;const t=setTimeout(()=>setNotice(''),6500);return()=>clearTimeout(t);},[notice]);
  const replaceDraft=(target:Build)=>{const next=replaceStoredDraft(localStorage,target,draftWriteBlocked.current);draftWriteBlocked.current=false;setDraftIssue('');setBuild(next);};
  const add=(id:string,offerId?:string)=>{setBuild(b=>addBuildPart(b,id,offerId));setNotice('Added to your build.');};
@@ -92,6 +93,18 @@ export function PVProvider({user,children}:{user:User;children:React.ReactNode})
    setNotice(user?'Build saved privately to your account.':'Build saved on this device. Find it in My builds.');return id;
   }catch(e){setNotice((e as Error).message);return undefined;}finally{saveLock.current=false;setSaving(false);}
  };
+ // Register once; handlers read committed session state rather than render snapshots.
+ const toolState=useRef({path,build,compare,watchIds,draftReady:ready,watchReady,authenticated:Boolean(user),catalogReady,catalog,toggleWatch});
+ toolState.current={path,build,compare,watchIds,draftReady:ready&&!draftWriteBlocked.current,watchReady,authenticated:Boolean(user),catalogReady,catalog,toggleWatch};
+ useEffect(()=>registerTools(createPVTools({
+  state:()=>({...toolState.current,watchIds:currentWatchIds.current,path:window.location.pathname+window.location.search}),
+  catalog:createToolCatalog(()=>toolState.current.catalog,async()=>{let storage:Storage|null=null;try{storage=sessionStorage;}catch{}return loadPageCatalog(storage);},data=>{toolState.current.catalog=data;toolState.current.catalogReady=true;setCatalog(data);setCatalogReady(true);}),
+  request:(path,options)=>api(path,{...options,signal:options?.signal?AbortSignal.any([options.signal,AbortSignal.timeout(20000)]):AbortSignal.timeout(20000)}),
+  updateBuild:fn=>{if(!toolState.current.draftReady)throw new Error('Resolve draft loading/recovery first.');const current=toolState.current.build,next={...current,...validateBuild(fn(current))};localStorage.setItem('pvpartpicker-draft',JSON.stringify(next));toolState.current.build=next;setBuild(next);setNotice('Draft updated.');return next;},
+  setCompare:ids=>{if(!toolState.current.draftReady)throw new Error('Wait for device state to load.');localStorage.setItem('pvpartpicker-compare',JSON.stringify(ids));toolState.current.compare=ids;setCompare(ids);},
+  setWatch:async(id,watched)=>{if(currentWatchIds.current.includes(id)===watched)return;const ok=await toolState.current.toggleWatch(id,watched);if(!ok)throw new Error('Watch change was not saved. Check the visible error or retry.');toolState.current.watchIds=currentWatchIds.current;},
+  navigate:href=>navigatePage(href,()=>router.push(href))
+ }),browserToolRegistry(),message=>console.warn(message)),[]);
  return <ctx.Provider value={{products,reports,user,build,draftReady:ready,saving,setBuild,replaceDraft,add,chooseForBuild,save,notify:setNotice,compare,setCompare,watchIds,watchReady,watchError,watchBusy,toggleWatch,reloadWatch}}><a className="skip-link" href="#main-content">Skip to main content</a><SiteNavigation path={path}/><div ref={pageContent} id="main-content" className={path==='/'?'home-content-shell':undefined} tabIndex={-1}>{draftIssue&&<div className="workspace-recovery" role="alert"><p>{draftIssue}</p><button className="button outline small" onClick={()=>{try{const raw=localStorage.getItem('pvpartpicker-draft');if(raw)localStorage.setItem('pvpartpicker-draft-recovery',raw);localStorage.setItem('pvpartpicker-draft',JSON.stringify(initial));draftWriteBlocked.current=false;setBuild(initial);setDraftIssue('');setNotice('New draft started. The previous data is retained in device recovery storage.');}catch{setNotice('Could not access device storage. Enable it and try again.');}}}>Start a recoverable new draft</button></div>}{needsCatalog&&catalogReady&&catalogError&&<div className="workspace-recovery" role="status"><p>Showing recently cached parts. Prices have not been refreshed: {catalogError}</p><button className="button outline small" onClick={()=>setCatalogAttempt(n=>n+1)}>Retry current prices</button></div>}{needsCatalog&&!catalogReady&&!path.startsWith('/products/')?<main className="page-container catalog-loading" aria-busy={!catalogError}><h1>{path==='/build'?'System builder':'Your solar workspace'}</h1>{catalogError?<div role="alert"><p>{catalogError}</p><button className="button dark" onClick={()=>setCatalogAttempt(n=>n+1)}>Try again</button></div>:<><p role="status">Loading current parts and prices…</p><div className="catalog-loading-rows" aria-hidden="true"><span/><span/><span/></div></>}</main>:children}</div>{path==='/'?<footer className="home-footer"><Link href="/">PVPartPicker</Link><span>Made for your next build.</span></footer>:<footer className="site-footer"><Link className="footer-brand" href="/">☀ PVPartPicker</Link><span>Prices are observed, not guaranteed. Check retailer shipping, tax, and availability.</span><Link href="/guide">Guide</Link><Link href="/admin">Administration</Link><Link href="/price-scraper">Price Scraper</Link></footer>}{compare.length>0&&<div className="compare-dock"><span><strong>{compare.length}</strong> parts selected</span><Link className="button dark small" href="/compare">Compare parts <ArrowRight size={14}/></Link><button aria-label="Clear comparison" className="icon-button" onClick={()=>setCompare([])}><X size={16}/></button></div>}{notice&&<div className={'toast'+(compare.length?' above-compare':'')} role="status">{notice}<button className="icon-button" onClick={()=>setNotice('')} aria-label="Dismiss message"><X size={15}/></button></div>}</ctx.Provider>;
 }
 export function ProductImage({product,className=''}:{product:Product;className?:string}){const[failed,setFailed]=useState(false);return <div className={'product-image '+className}>{product.image&&!failed?<img src={product.image} alt={product.name} loading="lazy" decoding="async" referrerPolicy="no-referrer" onError={()=>setFailed(true)}/>:<div className="image-fallback"><Sun size={30}/><span>Image unavailable</span></div>}</div>;}

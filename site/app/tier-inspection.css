@@ -1,0 +1,18 @@
+/* The board owns the full width until the visitor selects a researched model. */
+.tier-layout{--tier-panel-width:360px;grid-template-columns:minmax(0,1fr) 0px;column-gap:0;transition:grid-template-columns .3s ease,column-gap .3s ease}
+.tier-layout.has-selection{grid-template-columns:minmax(0,1fr) var(--tier-panel-width);column-gap:24px}
+.tier-inspector-slot{min-width:0;overflow:clip;position:sticky;top:100px;opacity:0;visibility:hidden;transform:translateX(12px);transition:opacity .25s ease,transform .3s ease,visibility .3s}
+.has-selection .tier-inspector-slot{opacity:1;visibility:visible;transform:none}
+.tier-inspector-slot .tier-inspector{position:relative;top:auto;width:var(--tier-panel-width);min-width:0}
+.tier-inspector-close{position:absolute;top:8px;right:8px;width:44px;height:44px;display:grid;place-items:center;background:var(--surface-alt);border-radius:6px}
+.tier-inspector-heading{padding-right:28px}.tier-inspector-close:hover{background:var(--surface-raised)}
+.tier-model.selected,.tier-board-images .tier-model.selected{border-color:var(--accent);background:var(--accent-soft)}
+@media(max-width:1100px){.tier-layout{--tier-panel-width:320px}.tier-layout.has-selection{column-gap:16px}}
+@media(max-width:900px){
+ .tier-layout,.tier-layout.has-selection{grid-template-columns:minmax(0,1fr);column-gap:0;row-gap:0}
+ .tier-inspector-slot{position:static;display:grid;grid-template-rows:0fr;transform:translateY(10px);transition:grid-template-rows .3s ease,opacity .25s ease,transform .3s ease,visibility .3s}
+ .has-selection .tier-inspector-slot{grid-template-rows:1fr;margin-top:16px}
+ .tier-inspector-slot .tier-inspector{width:100%;min-height:0;overflow:hidden}
+ .tier-layout:not(.has-selection) .tier-inspector{padding:0;border:0}
+}
+@media(prefers-reduced-motion:reduce){.tier-layout,.tier-inspector-slot{transition:none;transform:none}}
