@@ -23,6 +23,9 @@ test('retailer identity refuses parent variants, used items, changed packages, b
  assert.equal(dropIdentity(p,o,{...product,name:product.name.replace('21','18')}),false);
  for(const suffix of [' | x2',' | Quantity 2',' | 2 Units',' ×2',' | x10',' | 10 Units',' ×10',' | Pair of inverters'])assert.equal(dropIdentity(p,o,{...product,name:product.name+suffix}),false);
  assert.equal(dropIdentity({...p,category:'kits'},o,product),false);
+ assert.ok(dropIdentity(p,o,{...product,name:'EG4 FlexBOSS21 48V Hybrid All-in-One Inverter, 12kW-16kW AC Output, UL 1741 &amp; UL 9540 Solar Inverter'}));
+ assert.ok(dropIdentity({...p,name:'Solar lug & cable',category:'wiring'},o,{...product,name:'Solar lug &amp; cable'}));
+ assert.equal(dropIdentity(p,o,{...product,name:'EG4 FlexBOSS21 48V Hybrid All-in-One Inverter, 12kW-16kW AC Output, UL 1741 &amp; UL 9540 Solar Inverter | x10'}),false);
  const pallet={...product,name:'Peimar 450W Solar Panel · 31 Panels Pallet'},panel:any={...p,category:'panels',name:pallet.name};assert.ok(dropIdentity(panel,{...o,packQuantity:31},pallet));assert.equal(dropIdentity(panel,{...o,packQuantity:30},pallet),false);
  assert.equal(historyUrl(o.url+'?utm_source=test'),historyUrl(o.url));
  assert.notEqual(historyUrl(o.url+'?variant=1'),historyUrl(o.url));

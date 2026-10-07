@@ -8,7 +8,7 @@ export function historyUrl(value:string){
  u.searchParams.sort();return u.href;}catch{return '';}
 }
 export function dropPagePath(value:string){return /^\/products\/[a-zA-Z0-9_-]{1,100}$/.test(value)?value:'';}
-const name=(s:string)=>s.normalize('NFKC').replace(/\s+[—-]\s+Default Title$/i,'').replace(/[™®]/g,'').replace(/[^a-z0-9]+/gi,' ').trim().toLowerCase();
+const name=(s:string)=>s.replace(/&(?:amp|quot|apos|lt|gt|nbsp);/gi,m=>({'&amp;':'&','&quot;':'"','&apos;':"'",'&lt;':'<','&gt;':'>','&nbsp;':' '}[m.toLowerCase()]!)).normalize('NFKC').replace(/\s+[—-]\s+Default Title$/i,'').replace(/[™®]/g,'').replace(/[^a-z0-9]+/gi,' ').trim().toLowerCase();
 export function dropIdentity(p:Pick<Product,'id'|'name'|'category'>,o:Offer,d:DropProduct){
  if(o.currency!=='USD'||o.condition!=='new'||!historyUrl(o.url)||historyUrl(o.url)!==historyUrl(d.productUrl)||p.category==='kits')return false;
  // Multipacks require an explicit count and the entire unchanged listing title.
@@ -19,6 +19,8 @@ export function dropIdentity(p:Pick<Product,'id'|'name'|'category'>,o:Offer,d:Dr
  if(name(p.name)===name(d.name))return true;
  // Reviewed standalone EG4 inverter aliases, never an accessory or an adjacent model.
  const model=p.name.match(/^EG4\s+(6000XP|12000XP|18kPV|12kPV|FlexBOSS18|FlexBOSS21)\b/i)?.[1];
+ const reviewedTitles:Record<string,string>={flexboss21:'EG4 FlexBOSS21 48V Hybrid All-in-One Inverter, 12kW-16kW AC Output, UL 1741 & UL 9540 Solar Inverter'};
+ if(p.category==='inverters'&&model&&reviewedTitles[model.toLowerCase()]&&name(d.name)===name(reviewedTitles[model.toLowerCase()]))return true;
  return p.category==='inverters'&&!!model&&new RegExp('^EG4\\s+'+model+'\\s+(?:\\d+(?:\\.\\d+)?\\s*kW\\s+)?(?:(?:AC|hybrid|off-grid)\\s+)*inverter(?:\\s*\\|\\s*\\d+(?:\\.\\d+)?\\s*(?:kW|W)\\s+(?:PV input|AC output))*$','i').test(d.name.replace(/\s+/g,' ').trim());
 }
 /** Decode only Next.js JSON string fragments; never execute scripts from a fetched page. */
