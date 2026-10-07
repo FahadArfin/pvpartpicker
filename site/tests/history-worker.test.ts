@@ -1,5 +1,10 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import {runBackfill,withWorkerCheckIn} from '../scripts/drop-history-worker.mjs';
+import {runBackfill,withWorkerCheckIn,sleepWithCheckIn} from '../scripts/drop-history-worker.mjs';
+test('long published crawl-delay waits check in every minute without shortening the delay',async()=>{
+ const waits:number[]=[];let checks=0;
+ await sleepWithCheckIn(135000,async(ms:number)=>{waits.push(ms);},async()=>{checks++;});
+ assert.deepEqual(waits,[60000,60000,15000]);assert.equal(checks,3);
+});
 test('worker reports start and terminal outcome without hiding errors',async()=>{
  const calls:any[]=[];const api=async(a:string,d:any)=>{calls.push({a,...d});};
  await withWorkerCheckIn(api,async()=>{},'https://github.com/FahadArfin/pvpartpicker/actions/runs/123');
@@ -33,4 +38,16 @@ test('unsupported lookup URLs finish as not found instead of backing off the who
 test('a late waking worker confirms ownership and stops before another source request',async()=>{
  let now=0,requests=0,permits=0;const api=async(action:string)=>{if(action==='claim')return {lease:'lease',job:{id:'job',url:'https://signaturesolar.com/item',p:{},o:{}}};if(action==='permit')return {waitMs:permits++?30000:0};if(action==='confirm'){if(now>300000)throw Error('Active backfill lease required');return {waitMs:0};}if(action==='finish')throw Error('Active backfill lease required');return {};};
  await assert.rejects(runBackfill({api,now:()=>now,sleep:async(ms:number)=>{now+=ms+(ms?600000:0);},request:async()=>{requests++;return {status:404,body:''};},budgetMs:1200000,log:()=>{}}),/lease/);assert.equal(requests,1);
+});
+test('continuous mode waits through cooldown instead of exiting and keeps source pacing',async()=>{
+ let now=0,done=false,claims=0;const requests:number[]=[],actions:string[]=[];
+ const api=async(action:string)=>{actions.push(action);if(action==='claim'){claims++;return done?{done:true}:now<360000?{deferred:true,nextRequestAt:new Date(360000).toISOString()}:{lease:'lease',job:{id:'job',url:'https://example.test',p:{},o:{}}};}if(action==='permit')return {waitMs:requests.length?30000:0};if(action==='confirm')return {waitMs:0};if(action==='finish'){done=true;return {};}};
+ const result=await runBackfill({api,continuous:true,now:()=>now,sleep:async(ms:number)=>{assert.ok(ms<=60000);now+=ms;},request:async(path:string)=>{requests.push(now);return {status:path==='/robots.txt'?404:200,body:'{"found":null}'};},budgetMs:600000,log:()=>{}});
+ assert.deepEqual(requests,[360000,390000]);assert.equal(result.continuation,false);assert.ok(claims>2);
+});
+test('continuous mode signals handoff at deadline, never handoff on source refusal',async()=>{
+ let now=0;const result=await runBackfill({api:async()=>({busy:true}),continuous:true,now:()=>now,sleep:async(ms:number)=>{now+=ms;},request:async()=>{throw Error('Busy worker must not fetch');},budgetMs:180000,log:()=>{}});
+ assert.equal(result.continuation,true);
+ const paused=await runBackfill({api:async()=>({paused:true}),continuous:true,now:()=>0,sleep:async()=>{},request:async()=>{throw Error('Paused worker must not fetch');},budgetMs:180000,log:()=>{}});
+ assert.equal(paused.continuation,false);
 });

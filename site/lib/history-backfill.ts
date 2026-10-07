@@ -25,7 +25,7 @@ export async function backfillAction(db:D1Database,d:any,now=Date.now()):Promise
   }
   for(let i=0;i<inserts.length;i+=100)await db.batch(inserts.slice(i,i+100));return backfillAction(db,{action:'status'},now);
  }
- const s=(await state(db))!;
+ let s=(await state(db))!;
  if(d.action==='status'){
   const counts=await db.prepare("SELECT json_extract(value,'$.status') AS status,COUNT(*) AS n,SUM(json_extract(value,'$.rows')) AS rows FROM job_state WHERE id LIKE 'drop-history-job:%' GROUP BY json_extract(value,'$.status')").all<{status:string;n:number;rows:number}>();
   const recent=await db.prepare("SELECT value FROM job_state WHERE id LIKE 'drop-history-job:%' AND json_extract(value,'$.status') NOT IN ('pending') ORDER BY json_extract(value,'$.finishedAt') DESC LIMIT 100").all<{value:string}>();
@@ -38,6 +38,13 @@ export async function backfillAction(db:D1Database,d:any,now=Date.now()):Promise
  }
  if(d.action==='claim'){
   if(s.c.paused)return {paused:true,reason:s.c.reason};if(s.c.lease&&(s.c.until||0)>now)return {busy:true};
+  // Recover the old HTTP-400 retry gap only when its exact timestamp proves
+  // it was our obsolete one-hour retry policy, never a reserved source delay.
+  if(s.c.nextAt>now+300000&&!s.c.lease&&s.c.lastRequestAt===undefined){
+   const legacy=await db.prepare("SELECT value FROM job_state WHERE id LIKE 'drop-history-job:%' AND json_extract(value,'$.status')='pending' AND json_extract(value,'$.reason')='URL lookup failed (HTTP 400)' AND json_extract(value,'$.attempts') BETWEEN 1 AND 2 ORDER BY json_extract(value,'$.finishedAt') DESC LIMIT 1").first<{value:string}>();
+   const at=legacy?Date.parse(JSON.parse(legacy.value).finishedAt):NaN;
+   if(Number.isFinite(at)&&s.c.nextAt===at+3600000){await swap(db,s.raw,{nextAt:Math.max(now,at+30000)});return backfillAction(db,{action:'claim'},now);}
+  }
   if(s.c.nextAt>now+300000)return {deferred:true,nextRequestAt:new Date(s.c.nextAt).toISOString()};
   const row=await db.prepare("SELECT value FROM job_state WHERE id LIKE 'drop-history-job:%' AND json_extract(value,'$.status')='pending' ORDER BY CASE WHEN json_extract(value,'$.p.category')='inverters' THEN 0 WHEN json_extract(value,'$.p.category')='batteries' THEN 1 ELSE 2 END,id LIMIT 1").first<{value:string}>();
   if(!row)return {done:true};const job=JSON.parse(row.value) as Job,lease=crypto.randomUUID();await swap(db,s.raw,{...s.c,lease,until:now+300000,jobId:job.id});return {lease,job};
@@ -63,6 +70,6 @@ export async function backfillAction(db:D1Database,d:any,now=Date.now()):Promise
  const attempts=job.attempts+1,status=d.status==='retry'?(attempts<3?'pending':'failed'):d.status;
  const sourceUrl=typeof d.sourceUrl==='string'&&/^https:\/\/drop\.solar\/products\/[a-zA-Z0-9_-]{1,100}$/.test(d.sourceUrl)?d.sourceUrl:undefined;
  // The lease is checked atomically with the result write. Retried imports deduplicate at observation level.
- await db.batch([db.prepare('UPDATE job_state SET value=? WHERE id=? AND EXISTS(SELECT 1 FROM job_state WHERE id=? AND value=?)').bind(JSON.stringify({...job,status,attempts,rows:job.rows+(d.rows||0),reason:d.reason||undefined,sourceUrl,finishedAt:new Date(now).toISOString()}),d.id,controlId,s.raw),db.prepare('UPDATE job_state SET value=? WHERE id=? AND value=?').bind(JSON.stringify({nextAt:Math.max(s.c.nextAt,status==='pending'?now+3600000:0),lastRequestAt:s.c.lastRequestAt}),controlId,s.raw)]);
+ await db.batch([db.prepare('UPDATE job_state SET value=? WHERE id=? AND EXISTS(SELECT 1 FROM job_state WHERE id=? AND value=?)').bind(JSON.stringify({...job,status,attempts,rows:job.rows+(d.rows||0),reason:d.reason||undefined,sourceUrl,finishedAt:new Date(now).toISOString()}),d.id,controlId,s.raw),db.prepare('UPDATE job_state SET value=? WHERE id=? AND value=?').bind(JSON.stringify({nextAt:Math.max(s.c.nextAt,status==='pending'?now+30000:0),lastRequestAt:s.c.lastRequestAt}),controlId,s.raw)]);
  return {status};
 }

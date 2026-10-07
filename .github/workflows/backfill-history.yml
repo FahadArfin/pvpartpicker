@@ -10,13 +10,14 @@ on:
         default: false
 permissions:
   contents: read
+  actions: write
 concurrency:
   group: drop-solar-history-backfill
   cancel-in-progress: false
 jobs:
   backfill:
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 360
     defaults:
       run:
         working-directory: site
@@ -33,9 +34,22 @@ jobs:
           cache-dependency-path: site/package-lock.json
       - run: npm ci --no-audit --no-fund
       - name: Resume history queue at no more than one request per 30 seconds
+        id: worker
         run: |
           if [ "$SEED_QUEUE" = "true" ]; then
-            node --experimental-strip-types scripts/drop-history-worker.mjs --seed
+            node --experimental-strip-types scripts/drop-history-worker.mjs --seed --continuous
           else
-            node --experimental-strip-types scripts/drop-history-worker.mjs
+            node --experimental-strip-types scripts/drop-history-worker.mjs --continuous
           fi
+      - name: Hand off unfinished work immediately before the runner limit
+        if: success() && steps.worker.outputs.continue == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'backfill-history.yml',
+              ref: context.payload.repository.default_branch,
+              inputs: {seed: 'false'}
+            });

@@ -6,7 +6,7 @@ export interface BackfillStatus {
  active:{productId?:string;name?:string;retailer?:string;until:string;requestAt:string|null}|null;
  recent:{productId:string;name:string;retailer:string;status:string;rows:number;reason?:string;sourceUrl?:string;finishedAt?:string}[];
 }
-type Activity=Pick<BackfillStatus,'queue'|'paused'|'now'|'worker'|'active'|'lastRequestAt'>;
+type Activity=Pick<BackfillStatus,'queue'|'paused'|'now'|'worker'|'active'|'lastRequestAt'|'nextRequestAt'>;
 // Status reflects a server snapshot. The UI labels its refresh time separately.
 export function backfillDisplay(d:Activity){
  const now=Date.parse(d.now),active=d.active&&Date.parse(d.active.until)>now;
@@ -21,5 +21,6 @@ export function backfillDisplay(d:Activity){
  if(!d.worker)return {label:'Awaiting check-in',tone:'muted'};
  if(d.worker.phase==='failed')return {label:'Worker error',tone:'danger'};
  if(now-Date.parse(d.worker.at)>2*3600000)return {label:'Check-in overdue',tone:'warning'};
- return {label:'Between runs',tone:'muted'};
+ if(d.worker.phase==='started')return {label:d.nextRequestAt&&Date.parse(d.nextRequestAt)>now?'Waiting for cooldown':'Worker connected',tone:'muted'};
+ return {label:'Awaiting restart',tone:'muted'};
 }

@@ -56,6 +56,29 @@ test('budget exit releases only the owned reservation without losing pacing or p
  await backfillAction(db,{action:'release',lease:c.lease},1001);
  const s=await backfillAction(db,{action:'status'},1001);assert.equal(s.active,null);assert.equal(s.queue.remaining,1);assert.equal(s.nextRequestAt,new Date(91000).toISOString());sql.close();
 });
+test('transient retries retain 30-second pacing without an artificial hourly gap',async()=>{
+ const {db,sql}=fixture();await backfillAction(db,{action:'seed'},1000);const c:any=await backfillAction(db,{action:'claim'},1000);
+ await backfillAction(db,{action:'finish',lease:c.lease,id:c.job.id,status:'retry',reason:'Network timeout'},1000);
+ assert.equal((await backfillAction(db,{action:'status'},1000)).nextRequestAt,new Date(31000).toISOString());sql.close();
+});
+test('old unsupported-lookup retry delay is recovered without shortening unrelated source slots',async()=>{
+ const {db,sql}=fixture();await backfillAction(db,{action:'seed'},1000);const c:any=await backfillAction(db,{action:'claim'},1000);
+ sql.prepare('UPDATE job_state SET value=? WHERE id=?').run(JSON.stringify({...c.job,status:'pending',attempts:1,reason:'URL lookup failed (HTTP 400)',finishedAt:new Date(1000).toISOString()}),c.job.id);
+ sql.prepare('UPDATE job_state SET value=? WHERE id=?').run(JSON.stringify({nextAt:3601000}),'drop-history-control');
+ assert.ok((await backfillAction(db,{action:'claim'},32000)).job);
+ const control=JSON.parse((sql.prepare('SELECT value FROM job_state WHERE id=?').get('drop-history-control') as any).value);
+ sql.prepare('UPDATE job_state SET value=? WHERE id=?').run(JSON.stringify({nextAt:3602000}),'drop-history-control');
+ assert.equal((await backfillAction(db,{action:'claim'},32000)).deferred,true);assert.ok(control.lease);sql.close();
+});
+test('legacy retry migration cannot overwrite a competing lease acquired before reread',async()=>{
+ const {db,sql}=fixture();await backfillAction(db,{action:'seed'},1000);const c:any=await backfillAction(db,{action:'claim'},1000);
+ sql.prepare('UPDATE job_state SET value=? WHERE id=?').run(JSON.stringify({...c.job,status:'pending',attempts:1,reason:'URL lookup failed (HTTP 400)',finishedAt:new Date(1000).toISOString()}),c.job.id);
+ sql.prepare('UPDATE job_state SET value=? WHERE id=?').run(JSON.stringify({nextAt:3601000}),'drop-history-control');
+ const original=db.prepare.bind(db);let reads=0;
+ const guarded={...db,prepare(q:string){const stmt=original(q);if(q==='SELECT value FROM job_state WHERE id=?'){const first=stmt.first.bind(stmt);stmt.first=async()=>{if(++reads===2)sql.prepare('UPDATE job_state SET value=? WHERE id=?').run(JSON.stringify({nextAt:32000,lease:'competing-worker',until:400000,jobId:c.job.id}),'drop-history-control');return first();};}return stmt;}} as D1Database;
+ assert.equal((await backfillAction(guarded,{action:'claim'},32000)).busy,true);
+ assert.equal(JSON.parse((sql.prepare('SELECT value FROM job_state WHERE id=?').get('drop-history-control') as any).value).lease,'competing-worker');sql.close();
+});
 test('timestamp import is retry-safe, rejects conflicts/ambiguous variants and leaves live offers untouched',async()=>{
  const {db,sql,p,o}=fixture();const dropProduct={id:'ss-11059',name:p.name,productUrl:o.url};
  const source={id:'b'.repeat(64),label:'Drop.solar · Signature Solar',url:'https://drop.solar/products/ss-11059',precision:'timestamp',startDate:'2025-11-09T16:46:12.010Z',endDate:'2026-06-18T01:16:25.401Z'};
