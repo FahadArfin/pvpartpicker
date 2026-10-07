@@ -3,6 +3,7 @@ import {lazy,Suspense,useEffect,useMemo,useState} from 'react';
 import type {Product,Observation} from '../lib/types';
 import {createProductHistoryLoader,productHistoryPoints} from '../lib/product-price-history';
 import {money} from '../lib/domain';
+import {historySourcesNote} from '../lib/drop-history';
 const Chart=lazy(()=>import('./price-history-chart'));
 const loadHistory=createProductHistoryLoader();
 export function ProductPriceHistory({product,compact=false}:{product:Product;compact?:boolean}){
@@ -25,7 +26,7 @@ export function ProductPriceHistory({product,compact=false}:{product:Product;com
    {error?<div className="price-history-status" role="alert"><p>{error}</p><button className="button outline small" onClick={()=>setAttempt(a=>a+1)}>Try again</button></div>:!observations?<p className="price-history-status" role="status">Loading recorded prices…</p>:points.length?<Suspense fallback={<p className="price-history-status" role="status">Loading price chart…</p>}><Chart data={points} product={product} compact={compact}/></Suspense>:<p className="price-history-status">No recorded prices in this period.</p>}
   </div>
   {observations&&!error&&<p className="price-history-note">{points.length===1?'One recorded check; a trend needs more observations. ':''}{points.length?'Recorded checks only. Shipping and tax excluded.':'History will appear after retailer checks are collected.'}{!compact&&points.length>1&&' Lines connect recorded checks; prices between checks may change.'}</p>}
-  {observations?.some(o=>o.sourceId)&&<p className="price-history-note">Includes a <a href={observations.find(o=>o.sourceId)?.sourceUrl} target="_blank" rel="noreferrer">community-shared Signature Solar archive</a>. Dates have day precision; time and stock were not recorded. Historical prices are not current offers.</p>}
+  {[...new Map(observations?.filter(o=>o.sourceId).map(o=>[o.sourceUrl,o])||[]).values()].map(o=><p className="price-history-note" key={o.sourceUrl}>Includes <a href={o.sourceUrl} target="_blank" rel="noreferrer">{o.sourceLabel||'attributed historical records'}</a>. {historySourcesNote(o.precision||'day')} Historical prices are not current offers.</p>)}
   {!compact&&observations&&<details onToggle={e=>setRecordsOpen(e.currentTarget.open)}><summary className="small-text">View recorded observations</summary>{recordsOpen&&<div className="table-scroll"><table className="data-table"><thead><tr><th>Observed (UTC)</th><th>Retailer</th><th>Package price</th><th>Pack size</th><th>Stock</th><th>Source</th></tr></thead><tbody>{observations.map((p,i)=><tr key={i}><td>{p.precision==='day'?p.observedAt.slice(0,10)+' (day only)':p.observedAt.slice(0,16).replace('T',' ')}</td><td>{product.offers.find(o=>o.id===p.offerId)?.retailer||'Unmatched offer'}</td><td>{money(p.price)}</td><td>{p.packQuantity??product.offers.find(o=>o.id===p.offerId)?.packQuantity??'Unknown'}</td><td>{p.stock.replaceAll('_',' ')}</td><td>{p.sourceLabel||'PVPartPicker retailer check'}</td></tr>)}</tbody></table></div>}</details>}
  </section>;
 }
