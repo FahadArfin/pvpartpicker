@@ -1,6 +1,13 @@
 import type {Observation,Product} from './types.ts';
 
 export type HistoryPoint={date:string;time:number;[key:string]:string|number};
+export function historyTick(time:number,start:number,end:number){
+ const iso=new Date(time).toISOString(),span=end-start;
+ const crossYear=new Date(start).getUTCFullYear()!==new Date(end).getUTCFullYear();
+ if(span<86400000)return (crossYear?iso.slice(5,10)+' ':'')+iso.slice(11,span<3600000?19:16);
+ if(crossYear)return iso.slice(0,span>90*86400000?7:10);
+ return span<86400000?iso.slice(11,span<3600000?19:16):iso.slice(5,10);
+}
 /** Historical pack sizes, not today's pack size, determine the plotted unit cost. */
 export function productHistoryPoints(product:Product,observations:Observation[]):HistoryPoint[]{
  const points=new Map<string,HistoryPoint>();
@@ -10,6 +17,8 @@ export function productHistoryPoints(product:Product,observations:Observation[])
   const pack=observation.packQuantity??offer.packQuantity;
   if(!Number.isFinite(pack)||pack<=0)continue;
   const point=points.get(observation.observedAt)||{date:observation.observedAt,time};
+  // The shared tooltip must retain the warning if any series has a day-only record.
+  point.dayOnly=point.dayOnly===1||observation.precision==='day'?1:0;
   point[offer.id]=observation.price/(product.category==='kits'?1:pack);
   points.set(observation.observedAt,point);
  }

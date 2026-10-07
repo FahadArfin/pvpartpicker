@@ -1,6 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {createProductHistoryLoader,productHistoryPoints} from '../lib/product-price-history.ts';
+import {createProductHistoryLoader,productHistoryPoints,historyTick} from '../lib/product-price-history.ts';
+test('long history labels include the year and archive points retain day precision',()=>{
+ const start=Date.parse('2024-06-03'),end=Date.parse('2026-10-07');assert.equal(historyTick(start,start,end),'2024-06');
+ assert.equal(historyTick(Date.parse('2025-01-02'),Date.parse('2024-12-25'),Date.parse('2025-01-05')),'2025-01-02');
+ assert.equal(historyTick(Date.parse('2027-01-01T00:00Z'),Date.parse('2026-12-31T23:00Z'),Date.parse('2027-01-01T01:00Z')),'01-01 00:00');
+ assert.equal(historyTick(Date.parse('2026-10-01'),Date.parse('2026-09-01'),Date.parse('2026-10-05')),'10-01');
+ const p:any={id:'p',category:'panels',offers:[{id:'a',packQuantity:1}]};const points=productHistoryPoints(p,[{offerId:'a',price:100,stock:'unknown',observedAt:'2025-01-02T00:00:00.000Z',precision:'day'}]);assert.equal(points[0].dayOnly,1);
+ const mixed=productHistoryPoints({...p,offers:[...p.offers,{id:'b',packQuantity:1}]},[{offerId:'a',price:100,stock:'unknown',observedAt:'2025-01-02T00:00:00.000Z',precision:'day'},{offerId:'b',price:110,stock:'in_stock',observedAt:'2025-01-02T00:00:00.000Z'}]);assert.equal(mixed[0].dayOnly,1);
+});
 import type {Product,Observation} from '../lib/types.ts';
 const product={category:'panels',offers:[{id:'a',packQuantity:4},{id:'b',packQuantity:1}]} as Product;
 const check=(offerId:string,price:number,observedAt:string,packQuantity?:number):Observation=>({offerId,price,observedAt,packQuantity,stock:'in_stock'});
