@@ -24,6 +24,38 @@ test('source refusal pauses the whole queue and scheduled runs cannot silently r
  await backfillAction(db,{action:'pause',lease:a.lease,reason:'HTTP 403'},1000);
  assert.equal((await backfillAction(db,{action:'claim'},500000) as any).paused,true);sql.close();
 });
+test('progress excludes pre-queue review, tracks source attempts and expires active reservations',async()=>{
+ const {db,sql,p,o}=fixture();
+ sql.prepare('INSERT INTO offers VALUES(?,?,?,?)').run('review',p.id,JSON.stringify({...o,id:'review',url:'https://signaturesolar.com/bundle/',condition:'used'}),'today');
+ let s:any=await backfillAction(db,{action:'seed'},1000);
+ assert.deepEqual(s.queue,{total:1,checked:0,remaining:1,preReview:1});
+ const claim:any=await backfillAction(db,{action:'claim'},1000);
+ await backfillAction(db,{action:'permit',lease:claim.lease},1000);
+ await backfillAction(db,{action:'confirm',lease:claim.lease},1000);
+ s=await backfillAction(db,{action:'status'},1001);assert.equal(s.active.name,p.name);assert.equal(s.lastRequestAt,new Date(1000).toISOString());
+ assert.equal((await backfillAction(db,{action:'status'},400000)).active,null);
+ await backfillAction(db,{action:'finish',lease:claim.lease,id:claim.job.id,status:'unmatched',reason:'Review'},2000);
+ s=await backfillAction(db,{action:'status'},3000);
+ assert.deepEqual(s.queue,{total:1,checked:1,remaining:0,preReview:1});assert.equal(s.active,null);assert.equal(s.lastRequestAt,new Date(1000).toISOString());
+ assert.equal(s.recent[0].finishedAt,new Date(2000).toISOString());sql.close();
+});
+test('worker check-in survives completion and refuses untrusted workflow links',async()=>{
+ const {db,sql}=fixture();const runUrl='https://github.com/FahadArfin/pvpartpicker/actions/runs/123';
+ await backfillAction(db,{action:'heartbeat',phase:'started',runUrl},1000);
+ await backfillAction(db,{action:'seed'},1000);const claim:any=await backfillAction(db,{action:'claim'},1000);
+ await backfillAction(db,{action:'finish',lease:claim.lease,id:claim.job.id,status:'complete'},2000);
+ await backfillAction(db,{action:'heartbeat',phase:'finished',runUrl},3000);
+ const s:any=await backfillAction(db,{action:'status'},3000);assert.deepEqual(s.worker,{at:new Date(3000).toISOString(),phase:'finished',runUrl});
+ await assert.rejects(backfillAction(db,{action:'heartbeat',phase:'started',runUrl:'https://evil.test'},3000),/workflow/i);
+ await assert.rejects(backfillAction(db,{action:'heartbeat',phase:'other'},3000),/phase/i);sql.close();
+});
+test('budget exit releases only the owned reservation without losing pacing or pending work',async()=>{
+ const {db,sql}=fixture();await backfillAction(db,{action:'seed'},1000);const c:any=await backfillAction(db,{action:'claim'},1000);
+ await backfillAction(db,{action:'permit',lease:c.lease,delayMs:60000},1000);
+ await assert.rejects(backfillAction(db,{action:'release',lease:'wrong'},1001),/lease/);
+ await backfillAction(db,{action:'release',lease:c.lease},1001);
+ const s=await backfillAction(db,{action:'status'},1001);assert.equal(s.active,null);assert.equal(s.queue.remaining,1);assert.equal(s.nextRequestAt,new Date(91000).toISOString());sql.close();
+});
 test('timestamp import is retry-safe, rejects conflicts/ambiguous variants and leaves live offers untouched',async()=>{
  const {db,sql,p,o}=fixture();const dropProduct={id:'ss-11059',name:p.name,productUrl:o.url};
  const source={id:'b'.repeat(64),label:'Drop.solar · Signature Solar',url:'https://drop.solar/products/ss-11059',precision:'timestamp',startDate:'2025-11-09T16:46:12.010Z',endDate:'2026-06-18T01:16:25.401Z'};
