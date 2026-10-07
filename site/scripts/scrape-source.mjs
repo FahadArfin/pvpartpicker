@@ -46,7 +46,7 @@ export async function scrapeSource(job,{event,publish},transport=fetchSource){
      const rows=JSON.parse(await request(site.origin+`/wp-json/wc/store/v1/products?per_page=100&page=${page}`));if(!Array.isArray(rows))throw new Error('Source is not a WooCommerce Store API feed');
      if(!rows.length){discoveryNext=0;break;}
      finalPage=rows.length<100;
-     for(const p of rows){if(p.type==='variable'||p.prices?.currency_code!=='USD')continue;synthetic({'@type':'Product',name:text(p.name),description:p.description||p.short_description||'',image:p.images?.[0]?.src||'',sku:p.sku||String(p.id),brand:p.brands?.[0]?.name,offers:{'@type':'Offer',price:Number(p.prices?.price)/10**Number(p.prices?.currency_minor_unit??2),priceCurrency:'USD',availability:p.is_in_stock===true?'https://schema.org/InStock':p.is_in_stock===false?'https://schema.org/OutOfStock':'',url:p.permalink}});}
+     for(const p of rows){if(p.type==='variable'||p.prices?.currency_code!=='USD')continue;synthetic({'@type':'Product',name:text(p.name),description:p.description||p.short_description||'',image:p.images?.[0]?.src||'',sku:p.sku||String(p.id),brand:p.brands?.[0]?.name,offers:{'@type':'Offer',price:Number(p.prices?.price)/10**Number(p.prices?.currency_minor_unit??2),referencePrice:Number(p.prices?.regular_price)/10**Number(p.prices?.currency_minor_unit??2),priceCurrency:'USD',availability:p.is_in_stock===true?'https://schema.org/InStock':p.is_in_stock===false?'https://schema.org/OutOfStock':'',url:p.permalink}});}
     }discoveryNext=finalPage||page>=1999?0:page;await report();if(finalPage)break;
    }
   }else{
