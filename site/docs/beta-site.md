@@ -1,3 +1,7 @@
+# Beta promotion — October 6, 2026
+
+The owner approved promoting the beta features to production with the floating bottom section dock removed. Home retains its original six circular shortcuts in normal document flow; inner pages use the existing header/Menu. The navigation experiment below is historical and superseded. Publish to the existing production identity and verify it before retiring the private beta.
+
 # Floating shortcuts beta
 
 Requested October 6, 2026. Experiment branch: `codex/beta-floating-shortcuts`. Production stays on main. Do not promote this design until the owner approves it.
