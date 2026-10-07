@@ -169,3 +169,10 @@ Final built-Worker browser QA used 16 actual Renogy RSP100DC panels, one EG4 18k
 - Browser checked All history selected, rendered chart and readable controls in Night mode and Day mode at 390 × 844. No document-wide horizontal overflow; the retailer table retains its intentional internal scroll.
 - Archived observations show day precision, source attribution and unknown stock; current offers remain unchanged. SQLite tests verify replay deduplication and rejected mismatched packages, dates and source metadata.
 - SQLite dashboard checks assert 39 source seeds, 30 enabled defaults, nine paused review sources, and preservation of owner edits.
+
+# Builds banner navigation — October 6, 2026
+
+- My Build is nested under Builds in the shared header, alongside Saved Builds and Popular Builds; the primary row has seven sections. Removed the duplicate collection tabs from the saved/community page body.
+- Built Worker at 127.0.0.1:5191: Builds landing → My Build → Saved Builds → Popular Builds links were exercised. Builds remains selected in the main row, with the current child underlined in the banner. Guide has no Builds banner.
+- Day desktop and Night phone layouts inspected. At the phone viewport (375 CSS pixels), document scrollWidth equals clientWidth; the three banner links remain reachable. Mobile Menu groups all three child links beneath Builds, navigation closes the dialog, and Escape returns focus to its trigger.
+- Existing tests, typecheck and production build passed. Account-authenticated saved builds and community backend functionality are unchanged and were not part of this navigation check.

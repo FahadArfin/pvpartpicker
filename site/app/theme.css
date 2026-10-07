@@ -64,6 +64,7 @@ input[type=checkbox]{accent-color:var(--accent-solid)}
 .workspace-primary small{font-size:10px;min-width:17px;text-align:center;background:var(--surface-raised);padding:2px 4px;border-radius:3px;font-variant-numeric:tabular-nums}
 .workspace-categories{border-top:1px solid var(--line);gap:2px;background:var(--surface)}
 .workspace-categories a{font-size:11px;gap:6px;padding:9px 10px;min-height:40px}
+.workspace-builds small{font-size:10px;color:var(--muted);font-variant-numeric:tabular-nums}
 .workspace-account{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:0;background:transparent;color:var(--muted);font-size:12px;min-height:36px;padding:4px;white-space:nowrap;cursor:pointer}.workspace-account:hover{color:var(--text)}
 .theme-control{display:inline-flex;align-items:center;gap:8px;min-height:44px;white-space:nowrap}
 .theme-mode{display:inline-flex;align-items:center;gap:5px;color:var(--muted);font-size:12px}.theme-mode[data-active="true"]{color:var(--text)}
