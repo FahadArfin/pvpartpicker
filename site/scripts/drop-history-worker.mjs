@@ -42,13 +42,18 @@ export async function runBackfill({api,request,now=Date.now,sleep=ms=>new Promis
    await api('finish',{lease,id:job.id,status:'complete',sourceUrl,rows:inserted});log({productId:job.p.id,retailer:job.o.retailer,status:'complete',inserted});processed++;
   }catch(e){
    if(e.pause){await api('pause',{lease,reason:e.message});log({paused:true,reason:e.message});return;}
-   if(e.budget){log({deferred:true});return;}
+   if(e.budget){await api('release',{lease});log({deferred:true});return;}
    // Identity/parser failures are review items, not permission to guess or hammer the source.
    const review=/identity|ambiguous|conflict|history|timestamp/i.test(e.message);
    await api('finish',{lease,id:job.id,status:review?'unmatched':'retry',sourceUrl,rows:inserted,reason:e.message.slice(0,500)});log({productId:job.p?.id,status:review?'unmatched':'retry',reason:e.message.slice(0,200)});if(!review)return;processed++;
   }
  }
  log({processed,budgetReached:now()+60000>=deadline});
+}
+export async function withWorkerCheckIn(api,work,runUrl){
+ await api('heartbeat',{phase:'started',runUrl});
+ try{await work();}catch(e){await api('heartbeat',{phase:'failed',runUrl}).catch(()=>{});throw e;}
+ await api('heartbeat',{phase:'finished',runUrl});
 }
 async function main(){
  const args=process.argv.slice(2),option=k=>args[args.indexOf(k)+1];let token=process.env.PV_COLLECTOR_TOKEN||process.env.COLLECTOR_TOKEN;
@@ -58,9 +63,10 @@ async function main(){
  if(args.includes('--status')){console.log(await api('status'));return;}if(args.includes('--seed'))console.log(await api('seed'));
  const minutes=args.includes('--minutes')?Number(option('--minutes')):45,maxJobs=args.includes('--max-jobs')?Number(option('--max-jobs')):10000;
  if(!Number.isFinite(minutes)||minutes<1||minutes>45||!Number.isInteger(maxJobs)||maxJobs<1)throw Error('Invalid worker budget');
- await runBackfill({api,budgetMs:minutes*60000,maxJobs,request:async(path,options)=>{
+ const runUrl=process.env.GITHUB_REPOSITORY==='FahadArfin/pvpartpicker'&&/^\d{1,30}$/.test(process.env.GITHUB_RUN_ID||'')?'https://github.com/FahadArfin/pvpartpicker/actions/runs/'+process.env.GITHUB_RUN_ID:undefined;
+ await withWorkerCheckIn(api,()=>runBackfill({api,budgetMs:minutes*60000,maxJobs,request:async(path,options)=>{
   const r=await fetch('https://drop.solar'+path,{...options,redirect:'error',headers:{'User-Agent':'PVPartPickerBot/1.0 (+https://github.com/FahadArfin/pvpartpicker)','Content-Type':'application/json'},signal:AbortSignal.timeout(25000)});
   const reader=r.body?.getReader();let size=0,body='';if(reader){const decoder=new TextDecoder();while(true){const chunk=await reader.read();if(chunk.done)break;size+=chunk.value.length;if(size>8_000_000){await reader.cancel();throw Error('Source page too large');}body+=decoder.decode(chunk.value,{stream:true});}body+=decoder.decode();}return {status:r.status,body};
- }});console.log(await api('status'));
+ }}),runUrl);console.log(await api('status'));
 }
 if(process.argv[1]&&import.meta.url===pathToFileURL(process.argv[1]).href)main().catch(e=>{console.error(e.message);process.exitCode=1;});
