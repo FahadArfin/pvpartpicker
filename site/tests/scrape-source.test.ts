@@ -57,6 +57,20 @@ test('Shopify collection sources honor their configured feed rather than crawlin
  await scrapeSource({site:{...site,adapter:'shopify',startPath:'/collections/solar-cable/products.json'},knownUrls:[]},h.hooks,async url=>{urls.push(url);return {status:200,text:url.endsWith('/robots.txt')?'':feed};});
  assert.equal(urls[1],site.origin+'/collections/solar-cable/products.json?limit=250&page=1');assert.equal(h.saved[0].offers[0].price,75);
 });
+test('feed budgets resume beyond the first pages and reset only at the end of the catalog',async()=>{
+ for(const adapter of ['shopify','woocommerce']){
+  const h=makeHooks(),pages:number[]=[];
+  const transport=async(url:string)=>{if(url.endsWith('/robots.txt'))return {status:200,text:''};const page=Number(new URL(url).searchParams.get('page'));pages.push(page);const rows=page===7?[]:Array.from({length:adapter==='shopify'?250:100},(_,i)=>adapter==='shopify'?{title:'400W Solar Panel',handle:'panel',variants:[{id:page*1000+i,price:'100'}]}:{id:page*1000+i,name:'400W Solar Panel',type:'simple',permalink:site.origin+'/panel',prices:{currency_code:'USD',price:'10000'}});return {status:200,text:JSON.stringify(adapter==='shopify'?{products:rows}:rows)};};
+  const first=await scrapeSource({site:{...site,adapter,feedPages:2},discoveryOffset:4},h.hooks,transport);
+  assert.deepEqual(pages,[5,6]);assert.equal(first.discoveryNext,6);pages.length=0;
+  const end=await scrapeSource({site:{...site,adapter,feedPages:2},discoveryOffset:6},h.hooks,transport);
+  assert.deepEqual(pages,[7]);assert.equal(end.discoveryNext,0);
+ }
+});
+test('a short final feed page immediately resets so small stores refresh every run',async()=>{
+ const h=makeHooks();const result=await scrapeSource({site:{...site,adapter:'shopify',feedPages:4}},h.hooks,async url=>({status:200,text:url.endsWith('/robots.txt')?'':JSON.stringify({products:[{title:'400W Solar Panel',handle:'panel',variants:[{id:1,price:'100'}]}]})}));
+ assert.equal(result.discoveryNext,0);assert.equal(result.progress.requests,2);
+});
 test('source redirects to another origin fail without contacting the destination',async()=>{
  const h=makeHooks();let n=0;const result=await scrapeSource({site,knownUrls:[]},h.hooks,async()=>{n++;return {status:302,location:'https://other-store.com/private',text:''};});
  assert.equal(result.status,'failed');assert.equal(n,1);assert.equal(h.saved.length,0);

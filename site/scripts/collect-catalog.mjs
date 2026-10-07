@@ -43,10 +43,10 @@ async function source(retailer) {
       }
     } else if(retailer.adapter==='pages') {
       for(const url of (retailer.urls||[]).slice(0,maxPages))collect(await request(url),url);
-    } else if (retailer.id === 'santan-solar') {
+    } else if (retailer.adapter==='woocommerce'||retailer.id === 'santan-solar') {
       for (let page = 1; page <= 2; page++) {
         const rows = JSON.parse(await request(`${retailer.origin}/wp-json/wc/store/v1/products?per_page=100&page=${page}`));
-        for (const p of rows) { if (!classify(serialize(p.name)) || p.type === 'variable') continue; synthetic(serialize(p.name), p.description || p.short_description, p.images?.[0]?.src || '', p.sku || String(p.id), Number(p.prices?.price) / 10 ** Number(p.prices?.currency_minor_unit ?? 2), p.is_in_stock, p.permalink, p.brands?.[0]?.name); }
+        for (const p of rows) { if (!classify(serialize(p.name)) || p.type === 'variable'||p.prices?.currency_code!=='USD') continue; synthetic(serialize(p.name), p.description || p.short_description, p.images?.[0]?.src || '', p.sku || String(p.id), Number(p.prices?.price) / 10 ** Number(p.prices?.currency_minor_unit ?? 2), p.is_in_stock, p.permalink, p.brands?.[0]?.name); }
       }
     } else {
       const rootSitemap = retailer.id === 'signature-solar' ? '/xmlsitemap.php?type=products&page=1' : '/sitemap.xml';
@@ -68,7 +68,7 @@ async function source(retailer) {
     console.log(JSON.stringify({ retailer: retailer.name, products: products.length, checked }));
   } catch (e) { reports.push({ retailerId: retailer.id, retailer: retailer.name, status: 'unavailable', products: products.length, checkedAt: observedAt, message: e.message }); all.push(...products); console.log(JSON.stringify({ retailer: retailer.name, error: e.message, products: products.length })); }
 }
-const filter = process.env.COLLECT_RETAILERS?.split(','); await Promise.all(retailers.filter(r => !filter || filter.includes(r.id)).map(source));
+const filter = process.env.COLLECT_RETAILERS?.split(','); await Promise.all(retailers.filter(r => r.enabled!==false&&!(r.adapter==='shopify'&&r.usdConfirmed===false)&&(!filter || filter.includes(r.id))).map(source));
 const catalog = mergeProducts(all);
 const result = { generatedAt: observedAt, products: catalog, reports };
 const path = new URL('catalog.json', directory);

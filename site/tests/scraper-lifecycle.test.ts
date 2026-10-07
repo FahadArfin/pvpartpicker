@@ -22,6 +22,14 @@ test('real SQLite queue deduplicates active runs, snapshots settings and honors 
  await scraperWorkerAction(db,{action:'finish',id:j.id,lease:j.lease,status:'succeeded',progress:emptyProgress()});assert.equal((await scraperDashboard(db)).jobs[0].status,'cancelled');
  await scraperOwnerAction(db,{action:'queue',id:source.id});await scraperOwnerAction(db,{action:'save',id:source.id,site:{...source,enabled:false}});assert.equal((await scraperDashboard(db)).jobs.filter(j=>j.status==='queued').length,0);sql.close();
 });
+test('expanded retailer seeds include verified feeds, pause review sources, and preserve owner settings',async()=>{
+ const {db,sql}=database();const initial=await scraperDashboard(db);
+ assert.equal(initial.sites.length,39);assert.equal(initial.sites.filter(s=>s.enabled).length,30);
+ assert.equal(initial.sites.find(s=>s.id==='rich-solar')?.adapter,'shopify');assert.equal(initial.sites.find(s=>s.id==='rich-solar')?.frequencyMinutes,1440);
+ assert.equal(initial.sites.find(s=>s.id==='anker-solix')?.enabled,false);assert.equal(initial.sites.find(s=>s.id==='anker-solix')?.nextAt,null);
+ const owner=initial.sites.find(s=>s.id==='rich-solar')!;await scraperOwnerAction(db,{action:'save',id:owner.id,site:{...owner,delaySeconds:60,enabled:false}});
+ const after=await scraperDashboard(db);assert.equal(after.sites.find(s=>s.id===owner.id)?.delaySeconds,60);assert.equal(after.sites.find(s=>s.id===owner.id)?.enabled,false);sql.close();
+});
 test('lost claim responses recover the same allocation; finish retries preserve history and discovery cursor',async()=>{
  const {db,sql}=database();const initial=await scraperDashboard(db);
  for(const s of initial.sites)await scraperOwnerAction(db,{action:'save',id:s.id,site:{...s,enabled:false}});

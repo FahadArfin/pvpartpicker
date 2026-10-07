@@ -33,15 +33,21 @@ export async function scrapeSource(job,{event,publish},transport=fetchSource){
   if(delay>300)throw new Error('Published crawl delay exceeds the supported 300-second limit. Pause this source for policy review.');
   if(site.adapter==='shopify'||site.adapter==='woocommerce'){
    progress.planned=site.feedPages;await report();
-   for(let page=1;page<=site.feedPages;page++){
+   const firstPage=discoveryNext+1;
+   for(let page=firstPage;page<firstPage+site.feedPages;page++){
+    let finalPage=false;
     if(site.adapter==='shopify'){
      const feed=new URL(/\/products\.json(?:\?|$)/.test(site.startPath)?site.startPath:'/products.json',site.origin);feed.searchParams.set('limit','250');feed.searchParams.set('page',String(page));
      const data=JSON.parse(await request(feed.href));if(!Array.isArray(data.products))throw new Error('Source is not a Shopify product feed');
+     if(!data.products.length){discoveryNext=0;break;}
+     finalPage=data.products.length<250;
      for(const p of data.products)for(const v of p.variants||[]){const name=text(p.title)+(v.title&&v.title!=='Default Title'?' — '+v.title:'');if(!classify(name))continue;synthetic({'@type':'Product',name,description:p.body_html||'',image:p.images?.[0]?.src||'',sku:String(v.id),brand:p.vendor,offers:{'@type':'Offer',price:v.price,referencePrice:v.compare_at_price,priceCurrency:'USD',availability:v.available===true?'https://schema.org/InStock':v.available===false?'https://schema.org/OutOfStock':'',url:site.origin+`/products/${p.handle}?variant=${v.id}`}});}
     }else{
      const rows=JSON.parse(await request(site.origin+`/wp-json/wc/store/v1/products?per_page=100&page=${page}`));if(!Array.isArray(rows))throw new Error('Source is not a WooCommerce Store API feed');
+     if(!rows.length){discoveryNext=0;break;}
+     finalPage=rows.length<100;
      for(const p of rows){if(p.type==='variable'||p.prices?.currency_code!=='USD')continue;synthetic({'@type':'Product',name:text(p.name),description:p.description||p.short_description||'',image:p.images?.[0]?.src||'',sku:p.sku||String(p.id),brand:p.brands?.[0]?.name,offers:{'@type':'Offer',price:Number(p.prices?.price)/10**Number(p.prices?.currency_minor_unit??2),priceCurrency:'USD',availability:p.is_in_stock===true?'https://schema.org/InStock':p.is_in_stock===false?'https://schema.org/OutOfStock':'',url:p.permalink}});}
-    }await report();
+    }discoveryNext=finalPage||page>=1999?0:page;await report();if(finalPage)break;
    }
   }else{
    const known=[...new Set([...site.urls,...(job.knownUrls||[])])],discovered=[];

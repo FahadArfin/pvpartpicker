@@ -162,3 +162,10 @@ Final built-Worker browser QA used 16 actual Renogy RSP100DC panels, one EG4 18k
 - Tier photo captions visible at320px; product detail photo190px; watch sign-in label/arrow grouped. Main catalog/compare controls do not overlap: compare bar64px, tray above it66px at320px.
 - Day and night screenshots inspected, transient loading/crossfade shots replaced. Browser error logs empty. Test local draft/watch/compare/theme storage restored exactly.
 - 222 tests passed, TypeScript and production Worker build passed. Physical Android/iOS, screen-reader certification and owner/account authenticated interactions were not tested. All screenshot claims are viewport/browser evidence.
+# Retailer coverage and historical prices — October 6, 2026
+
+- Product history offers 30/90/365 days and All history without hiding the chart behind a tab.
+- Built Worker: `/api/history?productId=eg4-6000xp&days=0` returned real observations; unauthenticated `/api/history-import` returned 401.
+- Browser checked All history selected, rendered chart and readable controls in Night mode and Day mode at 390 × 844. No document-wide horizontal overflow; the retailer table retains its intentional internal scroll.
+- Archived observations show day precision, source attribution and unknown stock; current offers remain unchanged. SQLite tests verify replay deduplication and rejected mismatched packages, dates and source metadata.
+- SQLite dashboard checks assert 39 source seeds, 30 enabled defaults, nine paused review sources, and preservation of owner edits.
