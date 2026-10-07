@@ -20,6 +20,10 @@
   .mobile-navigation-dialog nav a{display:flex;align-items:center;gap:9px;padding:12px 9px;border:1px solid var(--line);border-radius:4px;min-height:48px;font-size:13px}
   .mobile-navigation-dialog nav a[aria-current=page]{background:var(--accent-soft);border-color:var(--accent)}
   .mobile-navigation-dialog nav a svg{flex-shrink:0;color:var(--accent)}.mobile-navigation-dialog nav small{margin-left:auto;color:var(--muted)}
+  .mobile-navigation-group{grid-column:1/-1}
+  .mobile-navigation-dialog .mobile-build-navigation{margin:8px 0 0 14px;padding-left:10px;border-left:2px solid var(--line)}
+  .workspace-builds{display:flex;padding:0 12px}
+  .workspace-builds a{min-height:44px;font-size:12px}
   .mobile-navigation-tools{display:flex;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line);margin-top:16px;padding-top:8px}
   .mobile-navigation-tools a{display:flex;align-items:center;min-height:44px;font-size:13px;color:var(--accent)}
   [data-slot="dialog-close"]{width:44px;height:44px;top:6px!important;right:6px!important;display:flex;align-items:center;justify-content:center}

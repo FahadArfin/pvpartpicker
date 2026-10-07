@@ -1,6 +1,6 @@
 'use client';
 import {useEffect, useState, useRef} from 'react';
-import {Home, FolderOpen, Battery, BookOpen, Box, Cable, CircleUserRound, Eye, Gauge, Grid2X2, Layers, Menu, PackageOpen, Plug, ShieldCheck, SlidersHorizontal, Sun, TrendingDown, Wrench, Zap} from 'lucide-react';
+import {Home, FolderOpen, Battery, BookOpen, Box, Cable, CircleUserRound, Eye, Gauge, Grid2X2, Layers, Menu, PackageOpen, Plug, ShieldCheck, SlidersHorizontal, Sun, TrendingDown, Users, Wrench, Zap} from 'lucide-react';
 import {Dialog,DialogContent,DialogTitle,DialogDescription} from './ui/dialog';
 import Link from './site-link';
 import {usePV} from './pv-provider';
@@ -11,17 +11,24 @@ import {bestOffer, costForQuantity, money} from '../lib/domain';
 const icons = {panels:Sun,mounting:Wrench,wiring:Cable,batteries:Battery,'all-in-one':Battery,inverters:Zap,charging:Plug,'module-electronics':ShieldCheck,monitoring:Gauge,kits:PackageOpen,electrical:Box,accessories:SlidersHorizontal};
 const links = [
   {href:'/',label:'Home',icon:Home}, {href:'/parts',label:'Parts',icon:Grid2X2},
-  {href:'/build',label:'My build',icon:Wrench}, {href:'/builds',label:'Builds',icon:FolderOpen},
+  {href:'/builds',label:'Builds',icon:FolderOpen},
   {href:'/deals',label:'Price drops',icon:TrendingDown}, {href:'/watchlist',label:'Watch list',icon:Eye},
   {href:'/tiers',label:'Tier lists',icon:Layers}, {href:'/guide',label:'Guide',icon:BookOpen},
+];
+const buildLinks = [
+  {href:'/build',label:'My Build',icon:Wrench},
+  {href:'/builds/saved',label:'Saved Builds',icon:FolderOpen},
+  {href:'/builds/community',label:'Popular Builds',icon:Users},
 ];
 export function SiteNavigation({path}:{path:string}) {
   const {build,watchIds,user,draftReady} = usePV();
   const [category,setCategory] = useState('panels'), [builder,setBuilder] = useState(false);
   const header=useRef<HTMLElement>(null);
   const [menuOpen,setMenuOpen]=useState(false),menuTrigger=useRef<HTMLButtonElement>(null);
-  const active=(href:string)=>href==='/'?path==='/':path===href||path.startsWith(href+'/')||(href==='/parts'&&path.startsWith('/products/'))||(href==='/builds'&&path.startsWith('/community'));
+  const inBuilds=path==='/build'||path==='/builds'||path.startsWith('/builds/')||path==='/community'||path.startsWith('/community/')||path.startsWith('/share/');
+  const active=(href:string)=>href==='/'?path==='/':path===href||path.startsWith(href+'/')||(href==='/parts'&&path.startsWith('/products/'))||(href==='/builds'&&inBuilds)||(href==='/builds/community'&&(path==='/community'||path.startsWith('/community/')));
   const current=links.find(l=>active(l.href));
+  const buildNavigation=(mobile=false)=><nav className={mobile?'mobile-build-navigation':'workspace-categories workspace-builds'} aria-label={mobile?'Builds in mobile navigation':'Builds navigation'}>{buildLinks.map(({href,label,icon:Icon})=><Link key={href} href={href} aria-current={active(href)?'page':undefined} onClick={()=>setMenuOpen(false)}><Icon size={15} aria-hidden="true"/><span>{label}</span>{href==='/build'&&draftReady&&build.lines.length>0&&<small>{build.lines.length}</small>}</Link>)}</nav>;
   useEffect(()=>{setMenuOpen(false);},[path]);
   useEffect(()=>{const media=window.matchMedia('(min-width:721px)');const close=()=>{if(media.matches)setMenuOpen(false);};media.addEventListener('change',close);return()=>media.removeEventListener('change',close);},[]);
   useEffect(() => {
@@ -50,8 +57,9 @@ export function SiteNavigation({path}:{path:string}) {
       <div className="workspace-tools"><Link className="workspace-scraper" href="/price-scraper" aria-current={path==='/price-scraper'?'page':undefined}>Price scraper</Link><ThemeToggle/>{user?<Link className="workspace-account" href="/account" aria-label="My account"><CircleUserRound size={17} aria-hidden="true"/><span>My account</span></Link>:<a className="workspace-account" href="/signin-with-chatgpt?return_to=%2Faccount" target="_top">Sign in</a>}</div>
     </div>
     <div className="workspace-mobile-bar"><span>{current?current.label:path==='/price-scraper'?'Price scraper':path.startsWith('/account')?'My account':'Your solar workspace'}</span><button ref={menuTrigger} aria-label="Open navigation menu" aria-haspopup="dialog" aria-expanded={menuOpen} onClick={()=>setMenuOpen(true)}><Menu size={18} aria-hidden="true"/>Menu</button></div>
-    <Dialog open={menuOpen} onOpenChange={setMenuOpen}><DialogContent className="build-dialog mobile-navigation-dialog" onCloseAutoFocus={e=>{e.preventDefault();menuTrigger.current?.focus();}}><DialogTitle>Navigate PVPartPicker</DialogTitle><DialogDescription className="sr-only">Choose a section of your solar workspace.</DialogDescription><nav aria-label="Mobile navigation">{links.map(({href,label,icon:Icon})=><Link key={href} href={href} aria-current={active(href)?'page':undefined} onClick={()=>setMenuOpen(false)}><Icon size={19} aria-hidden="true"/><span>{label}</span>{href==='/build'&&draftReady&&build.lines.length>0&&<small>{build.lines.length}</small>}{href==='/watchlist'&&watchIds.length>0&&<small>{watchIds.length}</small>}</Link>)}</nav><div className="mobile-navigation-tools"><Link href="/price-scraper" onClick={()=>setMenuOpen(false)}>Price scraper</Link><Link href="/account" onClick={()=>setMenuOpen(false)}>My account</Link></div></DialogContent></Dialog>
-    <nav className="workspace-primary" aria-label="Main navigation">{links.map(({href,label,icon:Icon})=><Link key={href} href={href} aria-current={active(href)?'page':undefined}><Icon size={16} aria-hidden="true"/><span>{label}</span>{href==='/build'&&draftReady&&build.lines.length>0&&<small>{build.lines.length}</small>}{href==='/watchlist'&&watchIds.length>0&&<small>{watchIds.length}</small>}</Link>)}</nav>
+    <Dialog open={menuOpen} onOpenChange={setMenuOpen}><DialogContent className="build-dialog mobile-navigation-dialog" onCloseAutoFocus={e=>{e.preventDefault();menuTrigger.current?.focus();}}><DialogTitle>Navigate PVPartPicker</DialogTitle><DialogDescription className="sr-only">Choose a section of your solar workspace.</DialogDescription><nav aria-label="Mobile navigation">{links.map(({href,label,icon:Icon})=>{const link=<Link href={href} aria-current={active(href)?'page':undefined} onClick={()=>setMenuOpen(false)}><Icon size={19} aria-hidden="true"/><span>{label}</span>{href==='/watchlist'&&watchIds.length>0&&<small>{watchIds.length}</small>}</Link>;return href==='/builds'?<div key={href} className="mobile-navigation-group">{link}{buildNavigation(true)}</div>:<div key={href}>{link}</div>;})}</nav><div className="mobile-navigation-tools"><Link href="/price-scraper" onClick={()=>setMenuOpen(false)}>Price scraper</Link><Link href="/account" onClick={()=>setMenuOpen(false)}>My account</Link></div></DialogContent></Dialog>
+    <nav className="workspace-primary" aria-label="Main navigation">{links.map(({href,label,icon:Icon})=><Link key={href} href={href} aria-current={active(href)?'page':undefined}><Icon size={16} aria-hidden="true"/><span>{label}</span>{href==='/watchlist'&&watchIds.length>0&&<small>{watchIds.length}</small>}</Link>)}</nav>
+    {inBuilds&&buildNavigation()}
     {path==='/parts'&&<nav className="workspace-categories" aria-label="Part categories">{categories.map(c=>{const Icon=icons[c.id];return <Link key={c.id} href={'/parts?category='+c.id+(builder?'&builder=1':'')} aria-current={category===c.id?'page':undefined}><Icon size={15} aria-hidden="true"/><span>{c.label}</span></Link>;})}</nav>}
   </header>;
 }
