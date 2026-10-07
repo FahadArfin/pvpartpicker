@@ -176,3 +176,10 @@ Final built-Worker browser QA used 16 actual Renogy RSP100DC panels, one EG4 18k
 - Built Worker at 127.0.0.1:5191: Builds landing → My Build → Saved Builds → Popular Builds links were exercised. Builds remains selected in the main row, with the current child underlined in the banner. Guide has no Builds banner.
 - Day desktop and Night phone layouts inspected. At the phone viewport (375 CSS pixels), document scrollWidth equals clientWidth; the three banner links remain reachable. Mobile Menu groups all three child links beneath Builds, navigation closes the dialog, and Escape returns focus to its trigger.
 - Existing tests, typecheck and production build passed. Account-authenticated saved builds and community backend functionality are unchanged and were not part of this navigation check.
+
+# Sales alongside price drops — October 6, 2026
+
+- `/deals` defaults to Sales, with Price drops retaining Daily/Weekly/Monthly/Latest. Existing query links initialize the recorded-drop view; returning through the header restores default Sales.
+- Built Worker inspected in the browser: view switching, query reset, day/night and 390 × 844 phone layout. Phone document width and scrollWidth both 375 CSS pixels. Local old offers correctly produce an empty Sales state; populated production rows must be verified after publication.
+- Tests verify retailer reference comparisons without invented observations, per-unit/full-package costs, median daily history with at least seven days, repeated checks, even samples, archive/stock/pack exclusions, tracked-basis precedence and immediate invalidation of stale/changed offers. WooCommerce regular prices retain correct currency units.
+- Review found and resolved catalog-refresh and same-route query-state issues. Production API counts and populated-row screenshots are release evidence in ignored `output/`; authenticated account writes are unchanged.

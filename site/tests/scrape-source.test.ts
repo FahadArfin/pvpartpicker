@@ -4,6 +4,11 @@ import {scrapeSource} from '../scripts/scrape-source.mjs';
 const site={id:'test-solar',name:'Solar Store',origin:'https://solar-store.com',enabled:true,adapter:'pages',startPath:'/sitemap.xml',urls:['https://solar-store.com/panel'],schedule:'manual',frequencyMinutes:360,dailyTime:'06:17',weekdays:[0],delaySeconds:0,jitterSeconds:0,maxPages:5,feedPages:1};
 const html='<script type="application/ld+json">'+JSON.stringify({'@type':'Product',name:'400W Solar Panel',sku:'pv400',offers:{'@type':'Offer',price:'120',priceCurrency:'USD',availability:'https://schema.org/InStock'}})+'</script>';
 const makeHooks=()=>{const events:any[]=[],saved:any[]=[];return {events,saved,hooks:{event:async (_p:any,e:any)=>{if(e)events.push(e);return {cancel:false};},publish:async (products:any[])=>{saved.push(...products);return {inserted:products.length,quarantined:0};}}};};
+test('WooCommerce retains the published regular price in the same currency units',async()=>{
+ const h=makeHooks(),feed=JSON.stringify([{id:1,name:'400W Solar Panel',type:'simple',permalink:site.origin+'/panel',is_in_stock:true,prices:{currency_code:'USD',currency_minor_unit:2,price:'12000',regular_price:'18000'}}]);
+ await scrapeSource({site:{...site,adapter:'woocommerce'},knownUrls:[]},h.hooks,async url=>({status:200,text:url.endsWith('/robots.txt')?'':feed}));
+ assert.equal(h.saved[0].offers[0].price,120);assert.equal(h.saved[0].offers[0].referencePrice,180);
+});
 test('job records real request events and publishes parsed USD prices with the registered source identity',async()=>{
  const h=makeHooks();const result=await scrapeSource({site,knownUrls:[]},h.hooks,async url=>({status:200,text:url.endsWith('/robots.txt')?'User-agent: *\nAllow: /':html}));
  assert.equal(result.status,'succeeded');assert.equal(result.progress.requests,2);assert.equal(h.saved[0].offers[0].price,120);assert.equal(h.saved[0].offers[0].retailerId,site.id);assert.equal(h.events.length,2);

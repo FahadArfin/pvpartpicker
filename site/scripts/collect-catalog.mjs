@@ -26,7 +26,7 @@ async function source(retailer) {
     if (/verify you are human|cf-chl-|captcha-container/i.test(text)) throw new Error('bot_challenge_no_bypass'); return text;
   };
   const collect = (html, url) => { products.push(...parseProductPage(html, retailer, url, observedAt)); checked++; };
-  const synthetic = (name, description, image, sku, price, stock, url, brand) => collect('<script type="application/ld+json">' + JSON.stringify({ '@type': 'Product', name, description, image, sku, brand, offers: { '@type': 'Offer', price, priceCurrency: 'USD', availability: 'https://schema.org/' + (stock ? 'InStock' : 'OutOfStock'), url } }).replace(/<\//g, '<\\/') + '</script>', url);
+  const synthetic = (name, description, image, sku, price, stock, url, brand, referencePrice) => collect('<script type="application/ld+json">' + JSON.stringify({ '@type': 'Product', name, description, image, sku, brand, offers: { '@type': 'Offer', price, referencePrice, priceCurrency: 'USD', availability: 'https://schema.org/' + (stock ? 'InStock' : 'OutOfStock'), url } }).replace(/<\//g, '<\\/') + '</script>', url);
   try {
     robots = await request(retailer.origin + '/robots.txt', true);
     if (!robotsAllows(robots, '/')) throw new Error('robots_disallows_site');
@@ -38,7 +38,7 @@ async function source(retailer) {
         for (const p of data.products || []) for (const v of p.variants || []) {
           const name = serialize(p.title) + (v.title && v.title !== 'Default Title' ? ' — ' + v.title : ''); if (!classify(name)) continue;
           const url = `${retailer.origin}/products/${p.handle}?variant=${v.id}`;
-          synthetic(name, p.body_html || '', p.images?.[0]?.src || '', String(v.id), v.price, v.available === true, url, p.vendor);
+          synthetic(name, p.body_html || '', p.images?.[0]?.src || '', String(v.id), v.price, v.available === true, url, p.vendor, v.compare_at_price);
         }
       }
     } else if(retailer.adapter==='pages') {
@@ -46,7 +46,7 @@ async function source(retailer) {
     } else if (retailer.adapter==='woocommerce'||retailer.id === 'santan-solar') {
       for (let page = 1; page <= 2; page++) {
         const rows = JSON.parse(await request(`${retailer.origin}/wp-json/wc/store/v1/products?per_page=100&page=${page}`));
-        for (const p of rows) { if (!classify(serialize(p.name)) || p.type === 'variable'||p.prices?.currency_code!=='USD') continue; synthetic(serialize(p.name), p.description || p.short_description, p.images?.[0]?.src || '', p.sku || String(p.id), Number(p.prices?.price) / 10 ** Number(p.prices?.currency_minor_unit ?? 2), p.is_in_stock, p.permalink, p.brands?.[0]?.name); }
+        for (const p of rows) { if (!classify(serialize(p.name)) || p.type === 'variable'||p.prices?.currency_code!=='USD') continue; synthetic(serialize(p.name), p.description || p.short_description, p.images?.[0]?.src || '', p.sku || String(p.id), Number(p.prices?.price) / 10 ** Number(p.prices?.currency_minor_unit ?? 2), p.is_in_stock, p.permalink, p.brands?.[0]?.name, Number(p.prices?.regular_price) / 10 ** Number(p.prices?.currency_minor_unit ?? 2)); }
       }
     } else {
       const rootSitemap = retailer.id === 'signature-solar' ? '/xmlsitemap.php?type=products&page=1' : '/sitemap.xml';

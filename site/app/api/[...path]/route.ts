@@ -7,6 +7,8 @@ import type { Product, CollectionReport } from '../../../lib/types';
 import {homeDeals} from '../../../lib/home-deals';
 import {buildDrops,dropPeriod,dropQuery,normalizeWatchIds,watchInsertSql} from '../../../lib/price-drops';
 import type {DropCandidate} from '../../../lib/price-drops';
+import {buildSales,saleHistoryQuery} from '../../../lib/sales';
+import type {SaleBaseline} from '../../../lib/sales';
 import {listCommunityBuilds,getCommunityBuild,publishCommunityBuild,unpublishCommunityBuild} from '../../../lib/community-builds';
 import {scraperDashboard,scraperOwnerAction,scraperWorkerAction,scraperJobEvents,registeredRetailers} from '../../../lib/scraper-service';
 import {publicBuildCopy} from '../../../lib/build-analytics';
@@ -63,6 +65,12 @@ async function handle(request: Request, method: string) {
       const build=await getCommunityBuild(database(),id);return build?json(build):json({error:'Community build not found.'},404);
     }
     if(action==='deals'&&method==='GET'){
+      if(url.searchParams.get('view')==='sales'){
+        const now=Date.now(),today=Math.floor(now/86400000)*86400000;
+        const catalog=await getPublicCatalog();if(catalog.storage!=='database')throw new Error('Sale comparisons are unavailable. Please try again later.');
+        const records=await database().prepare(saleHistoryQuery).bind(new Date(today-30*86400000).toISOString(),new Date(today).toISOString()).all<SaleBaseline>();
+        return json({sales:buildSales(catalog.products,records.results,now),checkedAt:new Date(now).toISOString()});
+      }
       const home=url.searchParams.get('view')==='home';
       const {period,days}=dropPeriod(home?'latest':url.searchParams.get('period')),now=Date.now(),since=new Date(now-days*86400000).toISOString();
       const catalog=await getPublicCatalog();if(catalog.storage!=='database')throw new Error('Database history is unavailable. Please try again later.');
