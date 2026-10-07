@@ -13,7 +13,7 @@ export interface PVArray {id:string;panelId:string;receiverId?:string;receiverUn
 export interface BuildSettings { analytics?:import("./build-analytics").AnalyticsSettings; purpose: 'offgrid' | 'hybrid' | 'gridtie'; mount: 'roof' | 'ground'; series?: number; parallel?: number; minimumTemperature?: number; maximumCellTemperature?:number; pvArrays?:PVArray[]; }
 export interface Build { id?: string; name: string; lines: BuildLine[]; settings: BuildSettings; shareId?: string; }
 export interface Compatibility { status: 'match' | 'mismatch' | 'unknown'; title: string; detail: string; source?: string; }
-export interface Observation { packQuantity?:number; offerId: string; price: number; stock: string; observedAt: string; }
+export interface Observation { packQuantity?:number; offerId: string; price: number; stock: string; observedAt: string; sourceId?:string;sourceLabel?:string;sourceUrl?:string;precision?:'day'; }
 export interface CollectionReport { retailerId: string; retailer: string; status: string; products: number; checkedAt: string; message?: string; }
 export const categories: { id: Category; label: string; singular: string; description: string }[] = [
   { id: 'panels', label: 'Solar panels', singular: 'panel', description: 'Find the right watts, cell technology, and finish.' },

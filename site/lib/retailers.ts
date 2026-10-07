@@ -1,7 +1,8 @@
 import { load } from 'cheerio';
 import type { Category, Product, Specs } from './types.ts';
 import {describeConfiguration} from './bundles.ts';
-export interface Retailer { id: string; name: string; origin: string; seeds?: string[]; adapter?:'shopify'|'pages';startPath?:string;urls?:string[]; }
+import additionalRetailers from '../data/retailer-sources.json' with {type:'json'};
+export interface Retailer { id: string; name: string; origin: string; seeds?: string[]; adapter?:'shopify'|'woocommerce'|'sitemap'|'pages';startPath?:string;urls?:string[];enabled?:boolean;usdConfirmed?:boolean;sourceNotes?:string;frequencyMinutes?:number; }
 export const retailers: Retailer[] = [
   { id: 'signature-solar', name: 'Signature Solar', origin: 'https://signaturesolar.com', seeds: ['/', '/solar-panels/', '/solar-inverters/', '/batteries/', '/solar-mounting/', '/wiring-and-connectors/'] },
   { id: 'current-connected', name: 'Current Connected', origin: 'https://www.currentconnected.com', seeds: ['/product-category/solar-panels/', '/product-category/inverters/', '/product-category/batteries/', '/product-category/solar-components/'] },
@@ -16,6 +17,7 @@ export const retailers: Retailer[] = [
    'https://temcoindustrial.com/temco-10-awg-solar-pv-wire-50-ft-black-50-ft-red-bare-copper-made-in-usa/',
    'https://temcoindustrial.com/temco-wc0240-welding-cable-1-awg-50-ft-red/',
   ] },
+  ...additionalRetailers as Retailer[],
 ];
 export function classify(title: string): Category | null {
   const configuration=describeConfiguration(title);

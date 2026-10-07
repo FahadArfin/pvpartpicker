@@ -14,6 +14,7 @@ import {calculatorApi} from '../../../lib/calculator-api';
 import {buildPriceHistory,buildHistoryQuery,validateHistoryRequest} from '../../../lib/build-price-history';
 import type {Observation} from '../../../lib/types';
 import {connectionEvidence,connectionRequest} from '../../../lib/connection-map';
+import {importHistory} from '../../../lib/historical-import';
 export const dynamic = 'force-dynamic';
 function json(value: unknown, status = 200) { return Response.json(value, { status, headers: { 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff' } }); }
 async function body(request: Request) { if (!request.headers.get('content-type')?.includes('application/json')) throw new Error('JSON required.'); if(Number(request.headers.get('content-length'))>600000)throw new Error('Request is too large.'); const text = await request.text(); if (text.length > 600000) throw new Error('Request is too large.'); return JSON.parse(text); }
@@ -50,6 +51,10 @@ async function handle(request: Request, method: string) {
       return json({products:catalog.products.filter(p=>ids.has(p.id)).map(p=>({id:p.id,connectionSpecs:connectionEvidence(p)}))});
     }
     const user = await getChatGPTUser(); const isAdmin = Boolean(user && runtime().ADMIN_EMAIL && user.email.toLowerCase() === runtime().ADMIN_EMAIL?.toLowerCase());
+    if(action==='history-import'){
+      if(method!=='POST'||(!isAdmin&&!collector(request)))return json({error:'Owner or collector authentication required.'},401);
+      return json(await importHistory(database(),await body(request)));
+    }
     if (action === 'me' && method === 'GET') return json({ user: user ? { displayName: user.displayName, email: user.email } : null, isAdmin, emailConfigured: Boolean(runtime().RESEND_API_KEY && runtime().EMAIL_FROM) });
     if (action === 'catalog' && method === 'GET') {const start=performance.now();const result=await getCatalog();const response=json(result);response.headers.set('Server-Timing',`catalog;dur=${(performance.now()-start).toFixed(1)}`);return response;}
     if(action==='community'&&method==='GET'){
@@ -66,9 +71,10 @@ async function handle(request: Request, method: string) {
       return json({drops:home?homeDeals(catalog.products,drops):drops,period,since,checkedAt:new Date(now).toISOString()});
     }
     if (action === 'history' && method === 'GET') {
-      const productId = url.searchParams.get('productId'); const days = Number(url.searchParams.get('days') || 90); if (![30,90,365].includes(days)) throw new Error('Invalid history period.'); const p = (await getPublicCatalog()).products.find(p => p.id === productId); if (!p) return json({ error: 'Product not found.' },404);
-      const since = new Date(Date.now() - days * 86400000).toISOString(); let points: unknown[] = [];
-      try { const rows = await database().prepare('SELECT o.offer_id AS offerId, o.price, o.pack_quantity AS packQuantity, o.stock, o.observed_at AS observedAt FROM observations o JOIN offers f ON f.id=o.offer_id WHERE COALESCE((SELECT product_id FROM offer_mappings WHERE id=f.id),f.product_id)=? AND o.observed_at>=? ORDER BY o.observed_at LIMIT 5000').bind(p.id,since).all(); points = rows.results; } catch {}
+      const productId = url.searchParams.get('productId'); const days = Number(url.searchParams.get('days') || 90); if (![0,30,90,365].includes(days)) throw new Error('Invalid history period.'); const p = (await getPublicCatalog()).products.find(p => p.id === productId); if (!p) return json({ error: 'Product not found.' },404);
+      const since = days?new Date(Date.now() - days * 86400000).toISOString():'1970-01-01T00:00:00.000Z'; let points: unknown[] = [];
+      const rows = await database().prepare("SELECT o.offer_id AS offerId, o.price, o.pack_quantity AS packQuantity, o.stock, o.observed_at AS observedAt, o.source_id AS sourceId, json_extract(s.json,'$.label') AS sourceLabel, json_extract(s.json,'$.url') AS sourceUrl, json_extract(s.json,'$.precision') AS precision FROM observations o JOIN offers f ON f.id=o.offer_id LEFT JOIN history_sources s ON s.id=o.source_id WHERE COALESCE((SELECT product_id FROM offer_mappings WHERE id=f.id),f.product_id)=? AND o.observed_at>=? ORDER BY o.observed_at LIMIT 5001").bind(p.id,since).all(); points = rows.results;
+      if(points.length>5000)throw new Error('Too many historical records. Choose a shorter period.');
       if (!points.length) points = p.offers.filter(o => o.observedAt >= since).map(o => ({ offerId:o.id,price:o.price,packQuantity:o.packQuantity,stock:o.stock,observedAt:o.observedAt }));
       return json({ observations: points, offers: p.offers });
     }
