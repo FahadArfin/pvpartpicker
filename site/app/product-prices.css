@@ -46,4 +46,9 @@
 .model-purchase-tabs span{font-variant-numeric:tabular-nums;opacity:.8;}
 .model-best-offer{background:var(--accent-soft);}
 .model-purchase-options select{width:100%;max-width:100%;}
+.model-deal-highlight{display:flex;align-items:center;gap:10px;border-left:3px solid var(--accent);background:var(--accent-soft);padding:12px;margin-bottom:14px;font-size:12px;}
+.model-deal-highlight>svg{flex-shrink:0;}.model-deal-highlight>div{min-width:0;flex:1;}.model-deal-highlight strong,.model-deal-highlight span{display:block;}.model-deal-highlight span{margin-top:4px;line-height:1.5;}.model-deal-highlight>a{flex-shrink:0;display:inline-flex;align-items:center;gap:4px;}
+.model-option-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(110px,auto) 32px;gap:12px;align-items:center;padding:10px 8px;border-bottom:1px solid var(--line);font-size:12px;}
+.model-option-row.selected{background:var(--accent-soft);border-left:2px solid var(--accent);}.model-option-row>div{min-width:0;}.model-option-row a{overflow-wrap:anywhere;}.model-option-row small{display:block;font-size:10px;line-height:1.5;color:var(--muted);margin-top:4px;}.model-option-price{text-align:right;font-variant-numeric:tabular-nums;}.model-show-options{margin-top:10px;}.model-watch-all{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:16px;}
+@media(max-width:720px){.model-deal-highlight{flex-wrap:wrap;}.model-deal-highlight>div{flex-basis:calc(100% - 32px);}.model-option-row{grid-template-columns:minmax(0,1fr) 44px;gap:8px;}.model-option-price{grid-column:1;text-align:left;}.model-option-row>.watch-button{grid-column:2;grid-row:1 / span 2;}.model-deal-highlight>a,.model-show-options,.model-watch-all>a{min-height:44px;display:inline-flex;align-items:center;}}
 @media(max-width:720px){.model-purchase-options{margin-top:16px;}.model-view-toggle .button,.model-purchase-tabs .button{min-height:44px;}.model-purchase-options .section-heading{flex-wrap:wrap;}}

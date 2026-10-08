@@ -141,6 +141,7 @@ async function handle(request: Request, method: string) {
     if(action==='watchlist'){
       if(method==='GET'){const rows=await db.prepare('SELECT product_id AS productId,created_at AS createdAt FROM watchlist WHERE user_id=? ORDER BY created_at DESC,product_id LIMIT 500').bind(user.userId).all<{productId:string;createdAt:string}>();return json({items:rows.results});}
       if(method==='DELETE'&&id){if(id.length>180)throw new Error('Invalid product.');await db.prepare('DELETE FROM watchlist WHERE user_id=? AND product_id=?').bind(user.userId,id).run();return json({removed:true});}
+      if(method==='DELETE'&&!id){const ids=normalizeWatchIds((await body(request)).productIds);for(let start=0;start<ids.length;start+=50)await db.batch(ids.slice(start,start+50).map(productId=>db.prepare('DELETE FROM watchlist WHERE user_id=? AND product_id=?').bind(user.userId,productId)));return json({removed:true});}
       if(method==='POST'){
         const data=await body(request),ids=normalizeWatchIds(data.productIds),catalog=await getCatalog();
         if(ids.some(id=>!catalog.products.some(p=>p.id===id)))throw new Error('A selected product is no longer available.');
