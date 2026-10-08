@@ -29,3 +29,13 @@ export function watchedModelPackages(products:Product[],watchIds:string[]){
  for(const id of watchIds){const p=byId.get(id);if(!p)continue;const key=p.modelIdentity?p.modelIdentity.modelId+'|'+p.modelIdentity.packageKey:'listing:'+id;const group=groups.get(key);if(group)group.ids.push(id);else groups.set(key,{product:p,ids:[id]});}
  return [...groups.values()];
 }
+
+/** Reviewed models group packages; unknown listings deliberately stay separate. */
+export function watchedModelGroups(products:Product[],watchIds:string[]){
+ const groups=new Map<string,{id:string;name:string;packages:ReturnType<typeof watchedModelPackages>}>();
+ for(const row of watchedModelPackages(products,watchIds)){
+  const id=row.product.modelIdentity?.modelId||'listing:'+row.product.id;
+  const group=groups.get(id);if(group)group.packages.push(row);else groups.set(id,{id,name:row.product.modelIdentity?.name||row.product.name,packages:[row]});
+ }
+ return [...groups.values()];
+}

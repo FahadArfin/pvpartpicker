@@ -1,10 +1,12 @@
 import {ArrowRight,FolderOpen,Users,Wrench} from 'lucide-react';
 import Link from './site-link';
 
+import {BuildPlanningExamples} from './build-planning-examples';
+
 const actions=[
-  {id:'start',label:'Start Your Build',href:'/build',icon:Wrench,description:'Choose your equipment and put your solar system together.'},
-  {id:'saved',label:'Open Saved Builds',href:'/builds/saved',icon:FolderOpen,description:'Pick up a setup you saved on this device or in your account.'},
-  {id:'community',label:'Popular Builds',href:'/builds/community',icon:Users,description:'Explore community-made systems and open a copy to make your own.'},
+  {id:'start',label:'Current build',href:'/build',icon:Wrench,description:'Choose your equipment and put your solar system together.'},
+  {id:'saved',label:'Saved builds',href:'/builds/saved',icon:FolderOpen,description:'Pick up a setup you saved on this device or in your account.'},
+  {id:'community',label:'Community builds',href:'/builds/community',icon:Users,description:'Explore community-made systems and open a copy to make your own.'},
 ];
 
 export function BuildsLanding(){
@@ -17,5 +19,6 @@ export function BuildsLanding(){
         <ArrowRight size={18} aria-hidden="true"/>
       </Link>)}
     </nav>
+    <BuildPlanningExamples/>
   </main>;
 }

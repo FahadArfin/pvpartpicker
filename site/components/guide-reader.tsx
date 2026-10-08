@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element -- Local compressed guide artwork. */
 import Link from './site-link';
+import GuideReadingPosition from './guide-reading-position';
 import GuideNavigation from './guide-navigation';
 import GuideLessonSection from './guide-section';
 import GuideProductExamples,{hasGuideProductExamples} from './guide-product-examples';
@@ -16,6 +17,7 @@ export default function GuideReader({article:a,home=false}:{article:GuideArticle
   <GuideViewNavigation view="articles" articleHref={home?'/guide':'/guide/'+a.slug} calculatorHref={calculatorHref}/>
   <div className="guide-manual-layout"><GuideNavigation entries={guideEntries} currentSlug={a.slug} sections={sections}/><div className="guide-reader-main">
    <nav className="guide-reader-pager" aria-label="Chapter navigation">{previous?<Link href={'/guide/'+previous.slug}>← Previous</Link>:<span>Start here</span>}<span>{index+1} / {chapters.length} {a.kind==='Guide'?'chapters':'briefings'}</span>{next?<Link href={'/guide/'+next.slug}>Next →</Link>:<Link href="/guide?view=library">All articles →</Link>}</nav>
+   <GuideReadingPosition key={a.slug} slug={a.slug} sections={sections.map(s=>s.id)}/>
    <article className="guide-prose" aria-labelledby="guide-chapter-title">
     <header className="guide-article-header"><div className="guide-row-tags"><span>{a.topic}</span><span>{a.level}</span><span>{readMinutes(a)} min read</span></div><ChapterTitle id="guide-chapter-title" className="guide-chapter-title">{a.title}</ChapterTitle><p className="guide-lead">{a.summary}</p><p className="guide-date">Editorial research review <time dateTime={a.reviewed}>{a.reviewed}</time>{a.adaptedFrom&&<> · Adapted <time dateTime={a.adaptedFrom.imported}>{a.adaptedFrom.imported}</time></>}{a.eventDate&&<> · Announcement <time dateTime={a.eventDate}>{a.eventDate}</time></>}</p>{a.outcome&&<p className="guide-outcome"><strong>You’ll learn:</strong> {a.outcome}</p>}</header>
     {calculatorTool&&<Link className="guide-related-tool" href={calculatorHref}><span><strong>Put this chapter into practice</strong><small>{calculatorTool.label}</small></span><span aria-hidden="true">Open calculator →</span></Link>}

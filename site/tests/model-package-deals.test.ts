@@ -1,5 +1,5 @@
 import test from 'node:test';import assert from 'node:assert/strict';
-import {modelPackageDeals,watchedModelPackages} from '../lib/model-package-deals.ts';
+import {modelPackageDeals,watchedModelPackages,watchedModelGroups} from '../lib/model-package-deals.ts';
 import type {Product,Offer} from '../lib/types.ts';
 const now=Date.parse('2026-10-08T12:00:00Z');
 const offer=(id:string,price:number,extra:Partial<Offer>={}):Offer=>({id,price,retailer:'Retailer',retailerId:'retailer',url:'https://example.com/'+id,currency:'USD',packQuantity:1,condition:'new',stock:'in_stock',observedAt:new Date(now).toISOString(),...extra});
@@ -32,4 +32,10 @@ test('a cheaper used offer cannot hide a new-vs-new bundle saving',()=>{
  const report=modelPackageDeals(unit,[unit,bundle],now);
  assert.equal(report.rows[0].offer?.id,'bundle-used');assert.equal(report.rows[0].belowUnit,undefined);
  assert.equal(report.cheaperBundle?.offer?.id,'bundle-new');assert.equal(report.cheaperBundle?.purchasePrice,849);assert.equal(report.cheaperBundle?.belowUnit,50);
+});
+
+test('model watch counts agree across distinct packages without merging unknown identities',()=>{
+ const unit=product('unit','unit',[]),bundle=product('bundle','bundle',[]),unknown={...unit,id:'unknown',modelIdentity:undefined};
+ const groups=watchedModelGroups([unit,bundle,unknown],['unit','bundle','unknown','missing']);
+ assert.equal(groups.length,2);assert.deepEqual(groups[0].packages.map(p=>p.product.id),['unit','bundle']);assert.equal(groups[1].id,'listing:unknown');
 });

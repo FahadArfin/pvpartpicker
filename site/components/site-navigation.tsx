@@ -12,16 +12,16 @@ const icons = {panels:Sun,mounting:Wrench,wiring:Cable,batteries:Battery,'all-in
 const links = [
   {href:'/',label:'Home',icon:Home}, {href:'/parts',label:'Parts',icon:Grid2X2},
   {href:'/builds',label:'Builds',icon:FolderOpen},
-  {href:'/deals',label:'Price drops',icon:TrendingDown}, {href:'/watchlist',label:'Watch list',icon:Eye},
+  {href:'/deals',label:'Deals',icon:TrendingDown}, {href:'/watchlist',label:'Watch list',icon:Eye},
   {href:'/tiers',label:'Tier lists',icon:Layers}, {href:'/guide',label:'Guide',icon:BookOpen},
 ];
 const buildLinks = [
-  {href:'/build',label:'My Build',icon:Wrench},
-  {href:'/builds/saved',label:'Saved Builds',icon:FolderOpen},
-  {href:'/builds/community',label:'Popular Builds',icon:Users},
+  {href:'/build',label:'Current build',icon:Wrench},
+  {href:'/builds/saved',label:'Saved builds',icon:FolderOpen},
+  {href:'/builds/community',label:'Community builds',icon:Users},
 ];
 export function SiteNavigation({path}:{path:string}) {
-  const {build,watchIds,user,draftReady} = usePV();
+  const {build,user,draftReady} = usePV();
   const [category,setCategory] = useState('panels'), [builder,setBuilder] = useState(false);
   const header=useRef<HTMLElement>(null);
   const [menuOpen,setMenuOpen]=useState(false),menuTrigger=useRef<HTMLButtonElement>(null);
@@ -57,8 +57,8 @@ export function SiteNavigation({path}:{path:string}) {
       <div className="workspace-tools"><Link className="workspace-scraper" href="/price-scraper" aria-current={path==='/price-scraper'?'page':undefined}>Price scraper</Link><ThemeToggle/>{user?<Link className="workspace-account" href="/account" aria-label="My account"><CircleUserRound size={17} aria-hidden="true"/><span>My account</span></Link>:<a className="workspace-account" href="/signin-with-chatgpt?return_to=%2Faccount" target="_top">Sign in</a>}</div>
     </div>
     <div className="workspace-mobile-bar"><span>{current?current.label:path==='/price-scraper'?'Price scraper':path.startsWith('/account')?'My account':'Your solar workspace'}</span><button ref={menuTrigger} aria-label="Open navigation menu" aria-haspopup="dialog" aria-expanded={menuOpen} onClick={()=>setMenuOpen(true)}><Menu size={18} aria-hidden="true"/>Menu</button></div>
-    <Dialog open={menuOpen} onOpenChange={setMenuOpen}><DialogContent className="build-dialog mobile-navigation-dialog" onCloseAutoFocus={e=>{e.preventDefault();menuTrigger.current?.focus();}}><DialogTitle>Navigate PVPartPicker</DialogTitle><DialogDescription className="sr-only">Choose a section of your solar workspace.</DialogDescription><nav aria-label="Mobile navigation">{links.map(({href,label,icon:Icon})=>{const link=<Link href={href} aria-current={active(href)?'page':undefined} onClick={()=>setMenuOpen(false)}><Icon size={19} aria-hidden="true"/><span>{label}</span>{href==='/watchlist'&&watchIds.length>0&&<small>{watchIds.length}</small>}</Link>;return href==='/builds'?<div key={href} className="mobile-navigation-group">{link}{buildNavigation(true)}</div>:<div key={href}>{link}</div>;})}</nav><div className="mobile-navigation-tools"><Link href="/price-scraper" onClick={()=>setMenuOpen(false)}>Price scraper</Link><Link href="/account" onClick={()=>setMenuOpen(false)}>My account</Link></div></DialogContent></Dialog>
-    <nav className="workspace-primary" aria-label="Main navigation">{links.map(({href,label,icon:Icon})=><Link key={href} href={href} aria-current={active(href)?'page':undefined}><Icon size={16} aria-hidden="true"/><span>{label}</span>{href==='/watchlist'&&watchIds.length>0&&<small>{watchIds.length}</small>}</Link>)}</nav>
+    <Dialog open={menuOpen} onOpenChange={setMenuOpen}><DialogContent className="build-dialog mobile-navigation-dialog" onCloseAutoFocus={e=>{e.preventDefault();menuTrigger.current?.focus();}}><DialogTitle>Navigate PVPartPicker</DialogTitle><DialogDescription className="sr-only">Choose a section of your solar workspace.</DialogDescription><nav aria-label="Mobile navigation">{links.map(({href,label,icon:Icon})=>{const link=<Link href={href} aria-current={active(href)?'page':undefined} onClick={()=>setMenuOpen(false)}><Icon size={19} aria-hidden="true"/><span>{label}</span></Link>;return href==='/builds'?<div key={href} className="mobile-navigation-group">{link}{buildNavigation(true)}</div>:<div key={href}>{link}</div>;})}</nav><div className="mobile-navigation-tools"><Link href="/price-scraper" onClick={()=>setMenuOpen(false)}>Price scraper</Link><Link href="/account" onClick={()=>setMenuOpen(false)}>My account</Link></div></DialogContent></Dialog>
+    <nav className="workspace-primary" aria-label="Main navigation">{links.map(({href,label,icon:Icon})=><Link key={href} href={href} aria-current={active(href)?'page':undefined}><Icon size={16} aria-hidden="true"/><span>{label}</span></Link>)}</nav>
     {inBuilds&&buildNavigation()}
     {path==='/parts'&&<nav className="workspace-categories" aria-label="Part categories">{categories.map(c=>{const Icon=icons[c.id];return <Link key={c.id} href={'/parts?category='+c.id+(builder?'&builder=1':'')} aria-current={category===c.id?'page':undefined}><Icon size={15} aria-hidden="true"/><span>{c.label}</span></Link>;})}</nav>}
   </header>;
@@ -66,6 +66,7 @@ export function SiteNavigation({path}:{path:string}) {
 
 export function CatalogBuildTray() {
   const {build,products,draftReady,compare}=usePV();
+  if(!draftReady||!build.lines.length)return null;
   let subtotal=0,unpriced=0;
   for(const line of build.lines){const p=products.find(p=>p.id===line.productId);const offer=p?(line.offerId?p.offers.find(o=>o.id===line.offerId&&bestOffer({...p,offers:[o]},line.quantity)):bestOffer(p,line.quantity)):undefined;const cost=offer?costForQuantity(offer,line.quantity):null;if(cost)subtotal+=cost.subtotal;else unpriced++;}
   return <div className={'catalog-build-tray'+(compare.length?' with-comparison':'')}><Wrench size={17}/><div><strong>{draftReady?build.name:'My solar build'}</strong><small>{draftReady?`${build.lines.length} selected parts`:'Loading build…'}{unpriced>0?` · ${unpriced} need current prices`:''}</small></div><div className="tray-subtotal"><small>Equipment subtotal</small><strong>{draftReady?money(subtotal):'—'}</strong></div><Link className="button dark small" href="/build">View build</Link></div>;

@@ -3,8 +3,8 @@ import CalculatorChart from './calculator-chart';
 import ConductorExplorer from './conductor-explorer';
 import {verifiedControllers} from '../lib/solar4u/controller-catalog.mjs';
 import type {CalculatorId,Values,Report} from '../lib/guide-calculators';
-export default function CalculatorResultGraphs({id,values:v,report:r,material}:{id:CalculatorId;values:Values;report:Report;material:'copper'|'aluminum'}){
- if(id==='voltage'||id==='cable')return <ConductorExplorer key={id+material} voltage={v.voltage} currentA={v.currentA} lengthFt={v.lengthFt} targetPercent={id==='cable'?v.maxDropPercent:3} material={material} enteredResistance={id==='voltage'?v.ohmsPerKft:undefined}/>;
+export default function CalculatorResultGraphs({id,values:v,report:r,material,conductorSettings}:{id:CalculatorId;values:Values;report:Report;material:'copper'|'aluminum';conductorSettings?:{gauge:string;temperatureC:number;manualResistance:boolean}}){
+ if(id==='voltage'||id==='cable')return <ConductorExplorer key={id+material} voltage={v.voltage} currentA={v.currentA} lengthFt={v.lengthFt} targetPercent={id==='cable'?v.maxDropPercent:3} material={material} enteredResistance={id==='voltage'?v.ohmsPerKft:undefined} unifiedSettings={conductorSettings}/>;
  if(id==='battery'){
   const loads=Array.from({length:8},(_,i)=>(i+1)*Math.max(2000,v.loadWatts*2)/8),usable=Number(r.raw.usableKwh);
   return <><CalculatorChart title="How load changes battery runtime" unit="Runtime · hours" xTitle="Constant AC load · W" labels={loads.map(l=>String(Math.round(l)))} series={[{name:'Delivered-energy runtime',color:'var(--chart-3)',values:loads.map(l=>usable*1000/l)}]}/><p className="calc-footnote">Same usable energy and efficiency in every case. Inverter idle draw, changing efficiency and startup loads are excluded; the chart does not establish output capability.</p></>;

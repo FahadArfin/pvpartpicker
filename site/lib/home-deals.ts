@@ -1,9 +1,11 @@
+import type {SaleOffer} from './sales.ts';
 import type {Product} from './types.ts';
 import {selectDrops,type PriceDrop} from './price-drops.ts';
 import {productListName} from './part-comparison.ts';
-export interface HomeDeal extends PriceDrop {name:string;image:string;condition:'new'|'used'}
+type DisplayPrice=Pick<PriceDrop,'productId'|'offerId'|'retailer'|'previous'|'current'|'dollars'|'percent'|'purchasePrice'|'packQuantity'|'observedAt'|'changedAt'>;
+export interface HomeDeal extends DisplayPrice {name:string;image:string;condition:'new'|'used';saleBasis?:'retailer'|'history'}
 // One listing per product, latest reduction first; no catalog payload in Home.
-export function homeDeals(products:Product[],drops:PriceDrop[]):HomeDeal[]{
+export function homeDeals(products:Product[],drops:DisplayPrice[]):HomeDeal[]{
  const productsById=new Map(products.map(p=>[p.id,p])),seen=new Set<string>();
  const result:HomeDeal[]=[];
  for(const drop of selectDrops(drops,{sort:'latest'})){
@@ -19,4 +21,11 @@ export function homeDeals(products:Product[],drops:PriceDrop[]):HomeDeal[]{
 export function advanceTicker(position:number,loopWidth:number,elapsedMs:number){
  if(loopWidth<=0)return 0;
  return (position+Math.min(Math.max(elapsedMs,0),64)*0.022)%loopWidth;
+}
+
+/** Reuse the bounded display projection; sale references never become history. */
+export function homeSales(products:Product[],sales:SaleOffer[]):HomeDeal[]{
+ const result=homeDeals(products,sales.map(({productId,offerId,retailer,previous,current,dollars,percent,purchasePrice,packQuantity,observedAt,changedAt})=>({productId,offerId,retailer,previous,current,dollars,percent,purchasePrice,packQuantity,observedAt,changedAt})));
+ const bases=new Map(sales.map(s=>[s.offerId,s.basis]));
+ return result.map(d=>({...d,saleBasis:bases.get(d.offerId)}));
 }

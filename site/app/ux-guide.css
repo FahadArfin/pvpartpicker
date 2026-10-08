@@ -1,0 +1,48 @@
+.guide-phone-chapter{display:none}
+.guide-resume-reading{font-size:12px;margin-bottom:10px}
+.guide-contents-dialog{max-height:85dvh;display:flex;flex-direction:column}
+.guide-contents-dialog .guide-contents-body{display:block;overflow-y:auto;overscroll-behavior:contain;margin-top:8px;font-size:13px}
+.guide-contents-dialog ol{list-style:none;margin:0;padding:0}
+.guide-contents-dialog li a{display:flex;gap:10px;padding:10px 4px;color:var(--text);border-bottom:1px solid var(--line)}
+.guide-contents-dialog details summary{cursor:pointer;padding:10px 0;color:var(--text)}
+.guide-contents-dialog details summary span{float:right;color:var(--muted)}
+.guide-current-outline[hidden]{display:none}
+.calculator-example-context{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:12px 0;font-size:12px}
+.calculator-example-context>span,.calculator-example-context p{color:var(--muted);width:100%;margin:0}
+.calculator-near-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:10px 0 14px}
+.calculator-near-summary>div{display:flex;flex-direction:column;gap:4px;min-width:0}
+.calculator-near-summary span{font-size:11px;color:var(--muted)}
+.calculator-near-summary strong{font-size:17px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.calculator-advanced{border-top:1px solid var(--line);padding:10px 0;margin:10px 0}
+.calculator-advanced summary{cursor:pointer;font-size:13px;color:var(--text)}
+.calculator-advanced[open] summary{margin-bottom:12px}
+.conductor-scroll-hint{display:none}
+@media(max-width:760px){
+ .guide-field-manual .guide-manual-bar,.guide-workshop .guide-manual-bar{padding-bottom:8px;margin-bottom:8px}
+ .guide-field-manual .guide-manual-bar .eyebrow,.guide-workshop .guide-manual-bar .eyebrow{display:none}
+ .guide-field-manual .guide-manual-bar h1,.guide-workshop .guide-manual-bar h1{font-size:21px;margin:0}
+ .guide-field-manual .guide-manual-layout{gap:10px}
+ .guide-field-manual .guide-desktop-contents{display:none!important}
+ .guide-field-manual .guide-curriculum{padding:8px 10px}
+ .guide-field-manual .guide-curriculum-title strong{font-size:12px}
+ .guide-phone-chapter{display:flex;justify-content:space-between;gap:12px;font-size:12px;margin-top:5px;color:var(--muted)}
+ .guide-phone-chapter small{flex-shrink:0}
+ .guide-field-manual .guide-reader-pager{padding-bottom:8px;margin-bottom:10px}
+ .guide-field-manual .guide-reader-main .guide-chapter-title{font-size:24px;margin:10px 0}
+ .guide-field-manual .guide-reader-main .guide-article-header{margin-bottom:16px}
+ .guide-field-manual .guide-prose .guide-outcome{padding:8px 10px;margin:10px 0}
+ .guide-workshop .guide-workshop-intro{margin:8px 0;padding-bottom:0}
+ .guide-workshop .guide-workshop-intro h2{font-size:20px;margin:0 0 6px}
+ .guide-workshop .guide-workshop-intro>.guide-lead{display:none}
+ .guide-workshop .guide-tool-main{padding:12px}
+ .guide-workshop .guide-tool-main>header h2{font-size:20px}
+ .guide-workshop .guide-tool-main>header p{font-size:12px;margin:6px 0}
+ .guide-workshop .calculator-near-summary{gap:8px;padding:10px 0}
+ .guide-workshop .calculator-near-summary strong{font-size:15px}
+ .guide-workshop .guide-input-grid{gap:10px}
+ .guide-workshop .guide-input-grid label>small{font-size:10px}
+ .conductor-scroll-hint{display:block;color:var(--accent);font-size:12px;margin:8px 0}
+ .calc-segmented{flex-wrap:wrap}
+ .calc-segmented button{min-height:44px}
+ .guide-contents-dialog .guide-nav-search input{font-size:16px;min-height:44px}
+}
