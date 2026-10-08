@@ -23,13 +23,14 @@ export async function runBackfill({api,request,now=Date.now,sleep=ms=>new Promis
    await sleep(wait);
    // A suspended process must revalidate its lease before touching the external source.
    let confirmed=await api('confirm',{lease});while(confirmed.waitMs>0){await sleep(confirmed.waitMs);confirmed=await api('confirm',{lease});}
-   lastRequest=now();const result=await request(path,options);
+   lastRequest=now();let result;
+   try{result=await request(path,options);}catch(e){throw Error('Drop.solar connection failed at '+path+': '+e.message);}
    if([401,403,429].includes(result.status)||/captcha|verify you are human|just a moment|cf-chl-/i.test(result.body.slice(0,20000)))throw pauseError('Drop.solar refused requests (HTTP '+result.status+'); owner review required');
-   if(result.status>=500)throw pauseError('Drop.solar is unavailable (HTTP '+result.status+'); owner review required');
+   if(result.status>=500)throw Error('Drop.solar HTTP '+result.status+' at '+path);
    return result;
   };
   try{
-   if(robots===undefined){const r=await get('/robots.txt');if(r.status!==200&&r.status!==404)throw pauseError('Cannot verify Drop.solar robots policy (HTTP '+r.status+')');robots=r.status===200?r.body:'';
+   if(robots===undefined){let r;try{r=await get('/robots.txt');}catch(e){if(!e.pause&&!e.budget)e.setup=true;throw e;}if(r.status!==200&&r.status!==404)throw pauseError('Cannot verify Drop.solar robots policy (HTTP '+r.status+')');robots=r.status===200?r.body:'';
     const crawl=[...robots.matchAll(/^\s*crawl-delay\s*:\s*([\d.]+)/gim)].map(m=>Number(m[1])*1000);if(crawl.length)delay=Math.max(delay,...crawl);if(delay>900000)throw pauseError('Published crawl delay exceeds the bounded worker budget; owner review required');
    }
    const lookup=await get('/api/url-lookup',{method:'POST',body:JSON.stringify({url:job.url})});
@@ -49,9 +50,12 @@ export async function runBackfill({api,request,now=Date.now,sleep=ms=>new Promis
   }catch(e){
    if(e.pause){await api('pause',{lease,reason:e.message});log({paused:true,reason:e.message});return {continuation:false};}
    if(e.budget){await api('release',{lease});log({deferred:true});return {continuation:continuous};}
+   if(e.setup){await api('setup_error',{lease,reason:e.message.slice(0,500)});log({setupError:true,reason:e.message.slice(0,200)});if(!continuous)return {continuation:false};await sleep(60000);continue;}
    // Identity/parser failures are review items, not permission to guess or hammer the source.
    const review=/identity|ambiguous|conflict|history|timestamp/i.test(e.message);
-   await api('finish',{lease,id:job.id,status:review?'unmatched':'retry',sourceUrl,rows:inserted,reason:e.message.slice(0,500)});log({productId:job.p?.id,status:review?'unmatched':'retry',reason:e.message.slice(0,200)});if(!review){if(continuous)continue;return {continuation:false};}processed++;
+   // Record the failed listing once and move on. Do not repeatedly block the
+   // queue behind a broken page or timeout; imports remain retry-safe later.
+   await api('finish',{lease,id:job.id,status:review?'unmatched':'failed',sourceUrl,rows:inserted,reason:e.message.slice(0,500)});log({productId:job.p?.id,retailer:job.o?.retailer,status:review?'unmatched':'failed',reason:e.message.slice(0,200)});processed++;
   }
  }
  log({processed,budgetReached:now()+60000>=deadline});
@@ -69,7 +73,7 @@ async function main(){
  const args=process.argv.slice(2),option=k=>args[args.indexOf(k)+1];let token=process.env.PV_COLLECTOR_TOKEN||process.env.COLLECTOR_TOKEN;
  if(!token&&args.includes('--env-file')){const env=await readFile(option('--env-file'),'utf8');token=env.match(/^COLLECTOR_TOKEN\s*=\s*(.+)$/m)?.[1]?.trim().replace(/^(["'])(.*)\1$/,'$2');}
  const origin=process.env.PV_API_ORIGIN||'https://pvpartpicker.fwad101.chatgpt.site';if(!['https://pvpartpicker.fwad101.chatgpt.site','http://127.0.0.1:5191'].includes(origin)||!token)throw Error('Configure the existing PV API origin and collector credential');
- const api=async(action,data={})=>{const r=await fetch(origin+'/api/'+(action==='import'?'history-import':'history-backfill'),{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+token},body:JSON.stringify(action==='import'?data:{action,...data}),signal:AbortSignal.timeout(90000)});const result=await r.json();if(!r.ok)throw Error(result.error||'Backfill API failed');return result;};
+ const api=async(action,data={})=>{const r=await fetch(origin+'/api/'+(action==='import'?'history-import':'history-backfill'),{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+token},body:JSON.stringify(action==='import'?data:{action,...data}),signal:AbortSignal.timeout(90000)});const result=await r.json();if(!r.ok)throw Object.assign(Error(result.error||'Backfill API failed'),{transient:r.status>=500});return result;};
  if(args.includes('--status')){console.log(await api('status'));return;}if(args.includes('--seed'))console.log(await api('seed'));
  const continuous=args.includes('--continuous'),minutes=args.includes('--minutes')?Number(option('--minutes')):continuous?350:45,maxJobs=args.includes('--max-jobs')?Number(option('--max-jobs')):10000;
  if(!Number.isFinite(minutes)||minutes<1||minutes>350||!Number.isInteger(maxJobs)||maxJobs<1)throw Error('Invalid worker budget');
@@ -82,10 +86,10 @@ async function main(){
   await checkHeartbeat();
   return api(action,data);
  };
- const result=await withWorkerCheckIn(api,()=>runBackfill({api:checkedApi,continuous,budgetMs:minutes*60000,maxJobs,sleep:ms=>sleepWithCheckIn(ms,chunk=>new Promise(r=>setTimeout(r,chunk)),checkHeartbeat),request:async(path,options)=>{
+ const result=await withWorkerCheckIn(api,async()=>{await api('recover');return runBackfill({api:checkedApi,continuous,budgetMs:minutes*60000,maxJobs,sleep:ms=>sleepWithCheckIn(ms,chunk=>new Promise(r=>setTimeout(r,chunk)),checkHeartbeat),request:async(path,options)=>{
   const r=await fetch('https://drop.solar'+path,{...options,redirect:'error',headers:{'User-Agent':'PVPartPickerBot/1.0 (+https://github.com/FahadArfin/pvpartpicker)','Content-Type':'application/json'},signal:AbortSignal.timeout(25000)});
   const reader=r.body?.getReader();let size=0,body='';if(reader){const decoder=new TextDecoder();while(true){const chunk=await reader.read();if(chunk.done)break;size+=chunk.value.length;if(size>8_000_000){await reader.cancel();throw Error('Source page too large');}body+=decoder.decode(chunk.value,{stream:true});}body+=decoder.decode();}return {status:r.status,body};
- }}),runUrl);
+ }});},runUrl);
  const status=await api('status');console.log(status);
  if(process.env.GITHUB_OUTPUT)await appendFile(process.env.GITHUB_OUTPUT,'continue='+Boolean(result?.continuation&&!status.paused&&status.queue?.remaining>0)+'\n');
 }

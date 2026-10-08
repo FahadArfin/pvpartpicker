@@ -24,6 +24,32 @@ test('source refusal pauses the whole queue and scheduled runs cannot silently r
  await backfillAction(db,{action:'pause',lease:a.lease,reason:'HTTP 403'},1000);
  assert.equal((await backfillAction(db,{action:'claim'},500000) as any).paused,true);sql.close();
 });
+
+test('failed listings retain their error and timestamp while the next listing stays available at the normal pace',async()=>{
+ const {db,sql,p,o}=fixture();sql.prepare('INSERT INTO offers VALUES(?,?,?,?)').run('ss-2',p.id,JSON.stringify({...o,id:'ss-2',url:'https://signaturesolar.com/second/'}),'today');
+ await backfillAction(db,{action:'seed'},1000);const c=await backfillAction(db,{action:'claim'},1000);
+ await backfillAction(db,{action:'permit',lease:c.lease},1000);await backfillAction(db,{action:'confirm',lease:c.lease},1000);
+ await backfillAction(db,{action:'finish',lease:c.lease,id:c.job.id,status:'failed',reason:'Drop.solar HTTP 500 at /api/url-lookup'},1000);
+ const s=await backfillAction(db,{action:'status'},1000);assert.equal(s.paused,false);assert.equal(s.queue.remaining,1);assert.equal(s.counts.failed,1);assert.equal(s.recent[0].reason,'Drop.solar HTTP 500 at /api/url-lookup');assert.equal(s.recent[0].finishedAt,new Date(1000).toISOString());
+ const next=await backfillAction(db,{action:'claim'},1000);assert.notEqual(next.job.id,c.job.id);assert.equal((await backfillAction(db,{action:'permit',lease:next.lease},1000)).waitMs,30000);sql.close();
+});
+
+test('recovery unpauses only the obsolete server-error pause and preserves refusal pauses and live leases',async()=>{
+ const {db,sql}=fixture();await backfillAction(db,{action:'seed'},1000);let c=await backfillAction(db,{action:'claim'},1000);
+ await backfillAction(db,{action:'pause',lease:c.lease,reason:'Drop.solar is unavailable (HTTP 500); owner review required'},1000);
+ const r=await backfillAction(db,{action:'recover'},32000);assert.equal(r.recovered,true);assert.equal((await backfillAction(db,{action:'status'},32000)).paused,false);
+ c=await backfillAction(db,{action:'claim'},32000);await backfillAction(db,{action:'recover'},33000);
+ assert.equal((await backfillAction(db,{action:'claim'},33000)).busy,true);
+ await backfillAction(db,{action:'pause',lease:c.lease,reason:'Drop.solar refused requests (HTTP 429); owner review required'},33000);
+ assert.equal((await backfillAction(db,{action:'recover'},34000)).recovered,false);assert.equal((await backfillAction(db,{action:'status'},34000)).paused,true);sql.close();
+});
+
+test('robots setup error persists a cooldown and reason while keeping the listing pending',async()=>{
+ const {db,sql}=fixture();await backfillAction(db,{action:'seed'},1000);const c=await backfillAction(db,{action:'claim'},1000);
+ await assert.rejects(backfillAction(db,{action:'setup_error',lease:'wrong',reason:'HTTP 500 at /robots.txt'},1000),/lease/);
+ await backfillAction(db,{action:'setup_error',lease:c.lease,reason:'HTTP 500 at /robots.txt'},1000);
+ const s=await backfillAction(db,{action:'status'},1000);assert.equal(s.paused,false);assert.equal(s.active,null);assert.equal(s.queue.remaining,1);assert.equal(s.counts.failed,undefined);assert.equal(s.reason,'HTTP 500 at /robots.txt');assert.equal(s.nextRequestAt,new Date(61000).toISOString());sql.close();
+});
 test('progress excludes pre-queue review, tracks source attempts and expires active reservations',async()=>{
  const {db,sql,p,o}=fixture();
  sql.prepare('INSERT INTO offers VALUES(?,?,?,?)').run('review',p.id,JSON.stringify({...o,id:'review',url:'https://signaturesolar.com/bundle/',condition:'used'}),'today');

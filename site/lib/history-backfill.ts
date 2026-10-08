@@ -6,7 +6,7 @@ interface Job {id:string;url:string;p:Pick<Product,'id'|'name'|'category'>;o:Off
 async function state(db:D1Database){const r=await db.prepare('SELECT value FROM job_state WHERE id=?').bind(controlId).first<{value:string}>();return r?{raw:r.value,c:JSON.parse(r.value) as Control}:null;}
 async function swap(db:D1Database,raw:string,c:Control){const r=await db.prepare('UPDATE job_state SET value=? WHERE id=? AND value=?').bind(JSON.stringify(c),controlId,raw).run();if(!r.meta.changes)throw Error('Backfill lease changed; retry later');}
 export async function backfillAction(db:D1Database,d:any,now=Date.now()):Promise<any>{
- if(!d||!['seed','status','claim','permit','confirm','finish','pause','heartbeat','release'].includes(d.action))throw Error('Unknown historical backfill action');
+ if(!d||!['seed','status','claim','permit','confirm','finish','pause','heartbeat','release','recover','setup_error'].includes(d.action))throw Error('Unknown historical backfill action');
  await db.prepare('INSERT OR IGNORE INTO job_state(id,value) VALUES(?,?)').bind(controlId,JSON.stringify({nextAt:0})).run();
  if(d.action==='heartbeat'){
   if(!['started','finished','failed'].includes(d.phase))throw Error('Invalid worker phase');
@@ -26,6 +26,13 @@ export async function backfillAction(db:D1Database,d:any,now=Date.now()):Promise
   for(let i=0;i<inserts.length;i+=100)await db.batch(inserts.slice(i,i+100));return backfillAction(db,{action:'status'},now);
  }
  let s=(await state(db))!;
+ if(d.action==='recover'){
+  // Migrate only our legacy server-error pause. Refusals, policy pauses and
+  // an active worker remain untouched; recovery uses the same CAS as leases.
+  const legacy=s.c.paused&&/^Drop\.solar is unavailable \(HTTP 5\d\d\); owner review required$/.test(s.c.reason||'');
+  if(!legacy||s.c.lease&&(s.c.until||0)>now)return {recovered:false};
+  await swap(db,s.raw,{nextAt:Math.max(s.c.nextAt,now),lastRequestAt:s.c.lastRequestAt});return {recovered:true};
+ }
  if(d.action==='status'){
   const counts=await db.prepare("SELECT json_extract(value,'$.status') AS status,COUNT(*) AS n,SUM(json_extract(value,'$.rows')) AS rows FROM job_state WHERE id LIKE 'drop-history-job:%' GROUP BY json_extract(value,'$.status')").all<{status:string;n:number;rows:number}>();
   const recent=await db.prepare("SELECT value FROM job_state WHERE id LIKE 'drop-history-job:%' AND json_extract(value,'$.status') NOT IN ('pending') ORDER BY json_extract(value,'$.finishedAt') DESC LIMIT 100").all<{value:string}>();
@@ -50,8 +57,12 @@ export async function backfillAction(db:D1Database,d:any,now=Date.now()):Promise
   if(!row)return {done:true};const job=JSON.parse(row.value) as Job,lease=crypto.randomUUID();await swap(db,s.raw,{...s.c,lease,until:now+300000,jobId:job.id});return {lease,job};
  }
  if(typeof d.lease!=='string'||d.lease!==s.c.lease||(s.c.until||0)<=now)throw Error('Active historical backfill lease required');
+ if(d.action==='setup_error'){
+  if(typeof d.reason!=='string'||!d.reason.includes('/robots.txt')||d.reason.length>500)throw Error('Robots setup error required');
+  await swap(db,s.raw,{nextAt:Math.max(s.c.nextAt,now+60000),lastRequestAt:s.c.lastRequestAt,reason:d.reason});return {retrying:true};
+ }
  if(d.action==='release'){
-  await swap(db,s.raw,{nextAt:s.c.nextAt,lastRequestAt:s.c.lastRequestAt});return {released:true};
+  await swap(db,s.raw,{...s.c,lease:undefined,until:undefined,jobId:undefined,slotAt:undefined});return {released:true};
  }
  if(d.action==='permit'){
   const delay=d.delayMs??0;if(!Number.isFinite(delay)||delay<0||delay>3600000)throw Error('Invalid backfill request delay');
