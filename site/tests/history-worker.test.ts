@@ -25,6 +25,25 @@ test('403 blocks the source globally without trying more URLs',async()=>{
  await runBackfill({api:async(action:string)=>{actions.push(action);return action==='claim'?{lease:'lease',job:{id:'job'}}:action==='permit'?{waitMs:0}:{};},request:async()=>{requests++;return {status:403,body:''};},now:()=>0,sleep:async()=>{},budgetMs:120000,log:()=>{}});
  assert.equal(requests,1);assert.ok(actions.includes('pause'));assert.equal(actions.includes('finish'),false);
 });
+
+test('server errors are recorded and the next listing runs without a queue pause or retry delay',async()=>{
+ let now=0,next=0,finished=0;const actions:string[]=[],times:number[]=[],results:any[]=[];
+ const api=async(a:string,d:any)=>{actions.push(a);if(a==='claim')return finished===2?{done:true}:{lease:'lease',job:{id:'job'+finished,url:'https://example.test/'+finished,p:{id:'p'+finished},o:{}}};if(a==='permit')return {waitMs:Math.max(0,next-now)};if(a==='confirm'){next=now+30000;return {waitMs:0};}if(a==='finish'){results.push(d);finished++;return {};}};
+ await runBackfill({api,continuous:true,now:()=>now,sleep:async(ms:number)=>{now+=ms;},request:async(path:string)=>{times.push(now);return {status:path==='/robots.txt'?404:finished===0?500:200,body:'{"found":null}'};},budgetMs:600000,log:()=>{}});
+ assert.deepEqual(times,[0,30000,60000]);assert.equal(actions.includes('pause'),false);assert.deepEqual(results.map(x=>x.status),['failed','not_found']);assert.match(results[0].reason,/500.*url-lookup/);
+});
+
+test('a network timeout is recorded as a failed listing rather than retried in place',async()=>{
+ const actions:string[]=[];let done=false,finished:any;
+ await runBackfill({api:async(a:string,d:any)=>{actions.push(a);if(a==='claim')return done?{done:true}:{lease:'lease',job:{id:'job',p:{}}};if(a==='permit')return {waitMs:0};if(a==='finish'){finished=d;done=true;return {}; }return {};},request:async(path:string)=>{if(path==='/robots.txt')return {status:404,body:''};throw Error('fetch failed');},now:()=>0,sleep:async()=>{},budgetMs:120000,log:()=>{}});
+ assert.equal(finished.status,'failed');assert.match(finished.reason,/fetch failed/);assert.equal(actions.includes('pause'),false);
+});
+
+test('a robots setup outage records a recoverable error without failing unrelated listings',async()=>{
+ let now=0;const actions:string[]=[],paths:string[]=[];
+ await runBackfill({api:async(a:string)=>{actions.push(a);if(a==='claim')return {lease:'lease',job:{id:'job',p:{}}};if(a==='permit')return {waitMs:0};return {};},request:async(path:string)=>{paths.push(path);return {status:500,body:''};},continuous:true,now:()=>now,sleep:async(ms:number)=>{now+=ms;},budgetMs:180000,log:()=>{}});
+ assert.ok(actions.includes('setup_error'));assert.equal(actions.includes('finish'),false);assert.equal(actions.includes('pause'),false);assert.deepEqual(paths,['/robots.txt','/robots.txt']);
+});
 test('budget exit releases its reserved request without making the source request',async()=>{
  let now=0;const actions:string[]=[];
  await runBackfill({api:async(action:string)=>{actions.push(action);return action==='claim'?{lease:'lease',job:{id:'job'}}:action==='permit'?{waitMs:300000}:{};},request:async()=>{throw Error('No source request allowed');},now:()=>now,sleep:async(ms:number)=>{now+=ms;},budgetMs:120000,log:()=>{}});
