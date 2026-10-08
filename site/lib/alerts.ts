@@ -1,8 +1,11 @@
 import { database, runtime, getCatalog } from './storage';
+import { buildModelCatalog,type ModelRegistry } from './model-identity';
+import modelRegistry from '../data/model-identities.json';
 import {sendQueuedEmails} from './overrides';
 import { bestOffer, costForQuantity, money, alertCrossed } from './domain';
 export async function processAlerts() {
-  const db = database(), configuration = runtime(), catalog = await getCatalog();
+  const db = database(), configuration = runtime(), rawCatalog = await getCatalog();
+  const catalog = {...rawCatalog, products:buildModelCatalog(rawCatalog.products,modelRegistry as ModelRegistry)};
   const cursor=(await db.prepare("SELECT value FROM job_state WHERE id='alerts-cursor'").first<{value:string}>())?.value || '';
   let rows = await db.prepare('SELECT * FROM alerts WHERE active = 1 AND id > ? ORDER BY id LIMIT 500').bind(cursor).all<any>(); if(!rows.results.length && cursor) rows=await db.prepare('SELECT * FROM alerts WHERE active = 1 ORDER BY id LIMIT 500').all<any>(); let generated = 0;
   for (const a of rows.results) {

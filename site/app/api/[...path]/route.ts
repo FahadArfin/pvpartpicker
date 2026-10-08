@@ -1,5 +1,6 @@
 import { getChatGPTUser } from '../../chatgpt-auth';
-import { database, runtime, getCatalog, getPublicCatalog, getCatalogSummary, invalidatePublicCatalog, rateLimit } from '../../../lib/storage';
+import { database, runtime, getCatalog, getPublicCatalog, getModelCatalog, getCatalogSummary, invalidatePublicCatalog, rateLimit } from '../../../lib/storage';
+import {modelHistoryQuery} from '../../../lib/model-identity';
 import { validateBuild, bestOffer, costForQuantity } from '../../../lib/domain';
 import { validateIngestion } from '../../../lib/ingestion';
 import { processAlerts } from '../../../lib/alerts';
@@ -30,7 +31,7 @@ async function handle(request: Request, method: string) {
     if(action==='solar-calculator'&&['GET','POST'].includes(method))return calculatorApi(request);
     if(action==='products'&&method==='GET'){
       if(paths.length!==2||!id||id.length>180||!/^[a-zA-Z0-9_-]+$/.test(id))return json({error:'Product not found.'},404);
-      const product=(await getPublicCatalog()).products.find(p=>p.id===id);
+      const product=(await getModelCatalog()).products.find(p=>p.id===id);
       return product?json({product}):json({error:'Product not found.'},404);
     }
     // This response has no account data and does not depend on auth headers.
@@ -40,10 +41,10 @@ async function handle(request: Request, method: string) {
     }
     if(action==='build-history'&&method==='POST'){
       const {lines,days}=validateHistoryRequest(await body(request));
-      const now=Date.now(),catalog=await getPublicCatalog();
+      const now=Date.now(),catalog=await getModelCatalog();
       if(catalog.storage!=='database')throw new Error('Recorded price history is unavailable. Please try again.');
       const selections=new Map(lines.map(l=>[l.productId,l])),products=catalog.products.filter(p=>selections.has(p.id));
-      const offerIds=products.flatMap(p=>p.offers.filter(o=>o.currency==='USD'&&(!selections.get(p.id)?.offerId||selections.get(p.id)?.offerId===o.id)).map(o=>o.id));
+      const offerIds=[...new Set(products.flatMap(p=>p.offers.filter(o=>o.currency==='USD'&&(!selections.get(p.id)?.offerId||selections.get(p.id)?.offerId===o.id)).map(o=>o.id)))];
       const since=new Date(Math.floor(now/86400000)*86400000-days*86400000).toISOString();
       const records=offerIds.length?await database().prepare(buildHistoryQuery).bind(JSON.stringify(offerIds),since,new Date(now).toISOString()).all<Observation>():{results:[]};
       if(records.results.length>50000)throw new Error('This selection has too many history records. Choose a shorter period or fewer parts.');
@@ -86,11 +87,12 @@ async function handle(request: Request, method: string) {
       return json({drops:home?homeDeals(catalog.products,drops):drops,period,since,checkedAt:new Date(now).toISOString()});
     }
     if (action === 'history' && method === 'GET') {
-      const productId = url.searchParams.get('productId'); const days = Number(url.searchParams.get('days') || 90); if (![0,30,90,365].includes(days)) throw new Error('Invalid history period.'); const p = (await getPublicCatalog()).products.find(p => p.id === productId); if (!p) return json({ error: 'Product not found.' },404);
+      const productId = url.searchParams.get('productId'); const days = Number(url.searchParams.get('days') || 90); if (![0,30,90,365].includes(days)) throw new Error('Invalid history period.'); const p = (await getModelCatalog()).products.find(p => p.id === productId); if (!p) return json({ error: 'Product not found.' },404);
       const since = days?new Date(Date.now() - days * 86400000).toISOString():'1970-01-01T00:00:00.000Z'; let points: unknown[] = [];
-      const rows = await database().prepare("SELECT o.offer_id AS offerId, o.price, o.pack_quantity AS packQuantity, o.stock, o.observed_at AS observedAt, o.source_id AS sourceId, json_extract(s.json,'$.label') AS sourceLabel, json_extract(s.json,'$.url') AS sourceUrl, json_extract(s.json,'$.precision') AS precision FROM observations o JOIN offers f ON f.id=o.offer_id LEFT JOIN history_sources s ON s.id=o.source_id WHERE COALESCE((SELECT product_id FROM offer_mappings WHERE id=f.id),f.product_id)=? AND o.observed_at>=? ORDER BY o.observed_at LIMIT 5001").bind(p.id,since).all(); points = rows.results;
+      const rows = await database().prepare(modelHistoryQuery).bind(JSON.stringify(p.offers.map(o=>o.id)),since).all<{offerId:string}>(); points = rows.results;
       if(points.length>5000)throw new Error('Too many historical records. Choose a shorter period.');
-      if (!points.length) points = p.offers.filter(o => o.observedAt >= since).map(o => ({ offerId:o.id,price:o.price,packQuantity:o.packQuantity,stock:o.stock,observedAt:o.observedAt }));
+      const recorded=new Set(rows.results.map(o=>o.offerId));
+      points.push(...p.offers.filter(o => !recorded.has(o.id)&&o.observedAt >= since).map(o => ({ offerId:o.id,price:o.price,packQuantity:o.packQuantity,stock:o.stock,observedAt:o.observedAt })));
       return json({ observations: points, offers: p.offers });
     }
     if (action === 'reviews' && method === 'GET') {
@@ -153,7 +155,7 @@ async function handle(request: Request, method: string) {
       if (method === 'GET') { const rows = await db.prepare('SELECT b.id,b.json,b.share_id AS shareId,b.updated_at AS updatedAt,c.share_id AS communityShareId,c.description AS communityDescription FROM builds b LEFT JOIN community_builds c ON c.build_id=b.id WHERE b.user_id=? ORDER BY b.updated_at DESC LIMIT 100').bind(user.userId).all<any>(); const builds=rows.results.map(r=>({...validateBuild(JSON.parse(r.json)),id:r.id,shareId:r.shareId,updatedAt:r.updatedAt,communityShareId:r.communityShareId,communityDescription:r.communityDescription}));return id?(builds.find(b=>b.id===id)?json(builds.find(b=>b.id===id)):json({error:'Build not found.'},404)):json({builds}); }
       if (method === 'DELETE' && id) { const result = await db.prepare('DELETE FROM builds WHERE id=? AND user_id=?').bind(id,user.userId).run(); return result.meta.changes ? json({deleted:true}) : json({error:'Build not found.'},404); }
       if (method === 'POST') {
-        const data = await body(request); const build = validateBuild(data); const products = (await getCatalog()).products;
+        const data = await body(request); const build = validateBuild(data); const products = (await getModelCatalog()).products;
         if (build.lines.some(l => !products.some(p => p.id === l.productId && (!l.offerId || p.offers.some(o=>o.id===l.offerId))))) throw new Error('A selected product or retailer offer is no longer available.');
         let buildId = data.id; if (buildId) { const own = await db.prepare('SELECT id FROM builds WHERE id=? AND user_id=?').bind(buildId,user.userId).first(); if (!own) return json({error:'Build not found.'},404); } else { const count = await db.prepare('SELECT COUNT(*) AS count FROM builds WHERE user_id=?').bind(user.userId).first<{count:number}>(); if ((count?.count || 0)>=100) throw new Error('Maximum 100 saved builds.'); buildId=crypto.randomUUID(); }
         await db.prepare('INSERT INTO builds (id,user_id,json,updated_at) VALUES (?,?,?,?) ON CONFLICT(id) DO UPDATE SET json=excluded.json,updated_at=excluded.updated_at').bind(buildId,user.userId,JSON.stringify(build),new Date().toISOString()).run(); return json({...build,id:buildId});

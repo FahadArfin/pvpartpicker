@@ -18,8 +18,9 @@ export function ProductPriceHistory({product,compact=false}:{product:Product;com
  },[key,product.id,days,compact]);
  const observations=result.key===key?result.observations:undefined,error=result.key===key?result.error:undefined;
  const points=useMemo(()=>productHistoryPoints(product,observations||[]),[product,observations]);
+ const bundled=product.modelIdentity?.kind==='bundle'||product.category==='kits';
  return <section className={'product-price-history'+(compact?' compact':' section-card')} aria-label={'Price history for '+product.name}>
-  <div className="section-heading"><div><h2>{compact?'Price history':'Recorded price history'}</h2>{!compact&&<p className="inline-note">{product.category==='kits'?'USD per selected bundle':'USD per unit · package minimums apply'}</p>}</div>
+  <div className="section-heading"><div><h2>{compact?'Price history':'Recorded price history'}</h2>{!compact&&<p className="inline-note">{bundled?'USD per selected bundle':'USD per unit · package minimums apply'}{product.modelIdentity?' · '+product.modelIdentity.packageLabel:''}</p>}</div>
    <select aria-label={compact?'Preview history period':'History period'} value={days} onChange={e=>setDays(Number(e.target.value))}>{[30,90,365,0].map(d=><option key={d} value={d}>{d?d+" days":"All history"}</option>)}</select>
   </div>
   <div className="price-history-plot" aria-busy={!observations&&!error}>
