@@ -201,3 +201,10 @@ Final built-Worker browser QA used 16 actual Renogy RSP100DC panels, one EG4 18k
 - Release: PR #31 merged as ff962352682039fe279937d51473ed0555ec74f2; both GitHub CI checks passed. Sites version 65 deployment appgdep_6ac73ec21af88191a8fa490361524011 succeeded at 06:57 UTC. Eleven live routes returned HTTP 200 and all 69 served JS/CSS asset hashes matched the validated local artifact.
 - Live Deals showed 1,988 sale offers. Solar panels plus a $100 purchase budget reduced results to 9. Phone document/client widths both 375px; the navigation and filter controls remain within viewport. Screenshots are in the audit after/ folder (capture helper appends .png).
 - Backfill remained unpaused after deployment: 530 checked, 3,404 remaining at 06:57 UTC, active run 37739363761. These are queue progress counts, not successful imported-product counts; identity mismatches continue to be recorded and skipped by the unchanged backfill.
+
+# Softer day palette - October 8, 2026
+
+- Shared light tokens now use warm stone canvas, parchment panels, sage-gray secondary surfaces and muted blue controls. Night tokens and authored image/diagram colors are unchanged. Future-page guidance updated in design-system.md.
+- Primary, muted and link text tested against all five day surfaces: minimum 4.70:1; white filled-button text also exceeds 4.5:1.
+- Built Worker Home inspected at desktop width; Guide inspected at 390x844 in both day and night. Mobile document/client width both 375px. Toggle changes palette correctly. Screenshot: output/day-home.png.
+- 321 tests passed; typecheck and final production build passed. No scraper, data, workflow or runtime changes.
