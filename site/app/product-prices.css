@@ -38,3 +38,12 @@
  .product-price-history select{min-height:44px}.product-price-history.compact select{min-height:44px}
  .product-price-history .history-chart{height:240px}.price-history-plot,.price-history-status{min-height:240px}
 }
+.model-purchase-options{margin-top:20px;border-top:1px solid var(--line);padding-top:16px;}
+.model-purchase-options .section-heading{margin-bottom:10px;gap:10px;}
+.model-purchase-tabs,.model-view-toggle{display:flex;gap:6px;flex-wrap:wrap;}
+.model-purchase-tabs{margin-bottom:12px;}
+.results-toolbar .model-view-toggle{display:flex;flex-direction:row;flex-wrap:nowrap;gap:6px;flex-shrink:0;}
+.model-purchase-tabs span{font-variant-numeric:tabular-nums;opacity:.8;}
+.model-best-offer{background:var(--accent-soft);}
+.model-purchase-options select{width:100%;max-width:100%;}
+@media(max-width:720px){.model-purchase-options{margin-top:16px;}.model-view-toggle .button,.model-purchase-tabs .button{min-height:44px;}.model-purchase-options .section-heading{flex-wrap:wrap;}}

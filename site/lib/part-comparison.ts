@@ -71,6 +71,7 @@ export function partValue(product:Product,key:string):PartValue{
 function clean(text:string){return text.replace(/®|™/g,'').replace(/\s+/g,' ').trim();}
 /** A display name only: retailer titles and selected SKU identifiers are preserved. */
 export function productListName(product:Product):string{
+ if(product.modelIdentity)return product.modelIdentity.name;
  const title=clean(product.name),main=title.split(/\s—\s/)[0];
  const model=raw(product,'model')?.value;
  if(model&&!/^(?:[\d-]+$|description$|model$|n\/?a|none|default|not|pre[ -]?assembled)/i.test(model)&&model.length<55&&!/[,;]|\s\/\s/.test(model))return clean(product.brand+' '+model).replace(/^(\S+)\s+\1\b/i,'$1');
@@ -93,6 +94,7 @@ export function productListName(product:Product):string{
  return base;
 }
 export function productListVariant(product:Product):string{
+ if(product.modelIdentity)return product.modelIdentity.packageLabel;
  const variant=product.name.split(/\s—\s/).slice(1).join(' · ');
  if(product.configuration?.kind==='combo')return product.configuration.selection;
  const color=product.specs.color;

@@ -3,6 +3,8 @@ import {cache} from 'react';
 import {readCatalog} from './catalog-reader';
 import {createCatalogCache} from './catalog-cache';
 import {serializePageCatalog} from './catalog-transport';
+import {buildModelCatalog,type ModelRegistry} from './model-identity';
+import modelRegistry from '../data/model-identities.json';
 import {categorizeProduct} from './retailers';
 import snapshot from '../data/catalog.json';
 import specifications from '../data/specifications.json';
@@ -21,12 +23,18 @@ export async function getCatalog(){
 const publicCatalog=createCatalogCache(getCatalog,c=>c.storage==='database');
 export const invalidatePublicCatalog=()=>publicCatalog.invalidate();
 export const getPublicCatalog=async()=>(await publicCatalog.get()).value;
-export const getPageCatalog=cache(getPublicCatalog);
+const modelCatalogs=new WeakMap<object,Awaited<ReturnType<typeof getPublicCatalog>>>();
+export async function getModelCatalog(){
+ const raw=await getPublicCatalog();let view=modelCatalogs.get(raw);
+ if(!view){view={...raw,products:buildModelCatalog(raw.products,modelRegistry as ModelRegistry)};modelCatalogs.set(raw,view);}
+ return view;
+}
+export const getPageCatalog=cache(getModelCatalog);
 // Serialize once per cached public catalog rather than once for every page.
 const summaryBodies=new WeakMap<object,string>();
 export async function getCatalogSummary(){
  const record=await publicCatalog.get();let body=summaryBodies.get(record);
- if(!body){const catalog=JSON.parse(serializePageCatalog(record.value));body=JSON.stringify({...catalog,version:1,expiresAt:record.expiresAt});summaryBodies.set(record,body);}
+ if(!body){const catalog=JSON.parse(serializePageCatalog({...record.value,products:buildModelCatalog(record.value.products,modelRegistry as ModelRegistry)}));body=JSON.stringify({...catalog,version:1,expiresAt:record.expiresAt});summaryBodies.set(record,body);}
  return {body,expiresAt:record.expiresAt};
 }
 export async function rateLimit(userId: string, scope: string, limit = 40) {

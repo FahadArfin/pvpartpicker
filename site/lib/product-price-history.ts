@@ -19,7 +19,7 @@ export function productHistoryPoints(product:Product,observations:Observation[])
   const point=points.get(observation.observedAt)||{date:observation.observedAt,time};
   // The shared tooltip must retain the warning if any series has a day-only record.
   point.dayOnly=point.dayOnly===1||observation.precision==='day'?1:0;
-  point[offer.id]=observation.price/(product.category==='kits'?1:pack);
+  point[offer.id]=observation.price/(product.category==='kits'||product.modelIdentity?.kind==='bundle'?1:pack);
   points.set(observation.observedAt,point);
  }
  return [...points.values()].sort((a,b)=>a.time-b.time);
