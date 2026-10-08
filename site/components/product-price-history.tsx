@@ -4,6 +4,7 @@ import type {Product,Observation} from '../lib/types';
 import {createProductHistoryLoader,productHistoryPoints} from '../lib/product-price-history';
 import {money} from '../lib/domain';
 import {historySourcesNote} from '../lib/drop-history';
+import {historyCoverage} from '../lib/ux-product';
 const Chart=lazy(()=>import('./price-history-chart'));
 const loadHistory=createProductHistoryLoader();
 export function ProductPriceHistory({product,compact=false}:{product:Product;compact?:boolean}){
@@ -18,11 +19,13 @@ export function ProductPriceHistory({product,compact=false}:{product:Product;com
  },[key,product.id,days,compact]);
  const observations=result.key===key?result.observations:undefined,error=result.key===key?result.error:undefined;
  const points=useMemo(()=>productHistoryPoints(product,observations||[]),[product,observations]);
+ const coverage=useMemo(()=>historyCoverage(points,product.offers.map(o=>o.id)),[points,product.offers]);
  const bundled=product.modelIdentity?.kind==='bundle'||product.category==='kits';
  return <section className={'product-price-history'+(compact?' compact':' section-card')} aria-label={'Price history for '+product.name}>
   <div className="section-heading"><div><h2>{compact?'Price history':'Recorded price history'}</h2>{!compact&&<p className="inline-note">{bundled?'USD per selected bundle':'USD per unit · package minimums apply'}{product.modelIdentity?' · '+product.modelIdentity.packageLabel:''}</p>}</div>
    <select aria-label={compact?'Preview history period':'History period'} value={days} onChange={e=>setDays(Number(e.target.value))}>{[30,90,365,0].map(d=><option key={d} value={d}>{d?d+" days":"All history"}</option>)}</select>
   </div>
+  {coverage&&<div className="history-coverage" aria-label="Recorded history coverage"><p><strong>{coverage.days} {coverage.days===1?'day':'days'} with recorded prices</strong> · {coverage.first}{coverage.last!==coverage.first?' to '+coverage.last:''}</p>{!compact&&<p>Observed range: <strong>{money(coverage.low)}–{money(coverage.high)}</strong>{coverage.unchanged&&points.length>1?' · No price difference in these recorded checks.':''}</p>}</div>}
   <div className="price-history-plot" aria-busy={!observations&&!error}>
    {error?<div className="price-history-status" role="alert"><p>{error}</p><button className="button outline small" onClick={()=>setAttempt(a=>a+1)}>Try again</button></div>:!observations?<p className="price-history-status" role="status">Loading recorded prices…</p>:points.length?<Suspense fallback={<p className="price-history-status" role="status">Loading price chart…</p>}><Chart data={points} product={product} compact={compact}/></Suspense>:<p className="price-history-status">No recorded prices in this period.</p>}
   </div>

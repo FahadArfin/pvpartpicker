@@ -1,6 +1,8 @@
 import type {Build,BuildSettings,Category,Product} from './types.ts';
 
 export function builderPickerHref(category:Category){return `/parts?category=${category}&builder=1`;}
+/** Keep addition context in navigation without persisting UI state in the build. */
+export function builderReturnHref(productId:string){return '/build?tab=equipment&added='+encodeURIComponent(productId);}
 
 export function matchesBuildPreferences(product:Product,settings:BuildSettings):boolean {
  if(product.category==='inverters'){

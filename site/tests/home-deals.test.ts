@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {homeDeals,advanceTicker} from '../lib/home-deals.ts';
+import {homeDeals,homeSales,advanceTicker} from '../lib/home-deals.ts';
 import {buildDrops,type PriceDrop} from '../lib/price-drops.ts';
 import type {Product} from '../lib/types.ts';
 const now=Date.now(),stamp=new Date(now).toISOString();
@@ -24,4 +24,9 @@ test('ticker scrolls continuously at the same speed across refresh rates and wra
  assert.ok(advanceTicker(999,1000,64)<1);assert.equal(advanceTicker(10,0,16),0);
  assert.equal(advanceTicker(10,1000,10000),advanceTicker(10,1000,64));
  assert.equal(advanceTicker(10,1000,-10),10);
+});
+
+test('sale fallback keeps advertised references distinct from recorded drops',()=>{
+ const rows=homeSales([p],[{...drops[0],basis:'retailer',sampleDays:0}]);
+ assert.equal(rows[0].saleBasis,'retailer');assert.equal(rows[0].purchasePrice,300);assert.equal('firstObservedAt' in rows[0],false);
 });

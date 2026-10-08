@@ -5,7 +5,7 @@ import { validateBuild, bestOffer, costForQuantity } from '../../../lib/domain';
 import { validateIngestion } from '../../../lib/ingestion';
 import { processAlerts } from '../../../lib/alerts';
 import type { Product, CollectionReport } from '../../../lib/types';
-import {homeDeals} from '../../../lib/home-deals';
+import {homeDeals,homeSales} from '../../../lib/home-deals';
 import {buildDrops,dropPeriod,dropQuery,normalizeWatchIds,watchInsertSql} from '../../../lib/price-drops';
 import type {DropCandidate} from '../../../lib/price-drops';
 import {buildSales,saleHistoryQuery} from '../../../lib/sales';
@@ -19,6 +19,9 @@ import type {Observation} from '../../../lib/types';
 import {connectionEvidence,connectionRequest} from '../../../lib/connection-map';
 import {importHistory} from '../../../lib/historical-import';
 import {backfillAction} from '../../../lib/history-backfill';
+import {comparisonRequest} from '../../../lib/comparison-request';
+import {buildSpecification} from '../../../lib/specifications';
+import {comparisonEvidence} from '../../../lib/part-comparison';
 export const dynamic = 'force-dynamic';
 function json(value: unknown, status = 200) { return Response.json(value, { status, headers: { 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff' } }); }
 async function body(request: Request) { if (!request.headers.get('content-type')?.includes('application/json')) throw new Error('JSON required.'); if(Number(request.headers.get('content-length'))>600000)throw new Error('Request is too large.'); const text = await request.text(); if (text.length > 600000) throw new Error('Request is too large.'); return JSON.parse(text); }
@@ -49,6 +52,11 @@ async function handle(request: Request, method: string) {
       const records=offerIds.length?await database().prepare(buildHistoryQuery).bind(JSON.stringify(offerIds),since,new Date(now).toISOString()).all<Observation>():{results:[]};
       if(records.results.length>50000)throw new Error('This selection has too many history records. Choose a shorter period or fewer parts.');
       return json(buildPriceHistory(lines,products,records.results,days,now));
+    }
+    // Read-only comparison evidence: bounded to the four selected public products.
+    if(action==='comparison-specs'&&method==='POST'){
+      const ids=new Set(comparisonRequest(await body(request))),catalog=await getModelCatalog();
+      return json({products:catalog.products.filter(p=>ids.has(p.id)).map(p=>{const product={...p,specification:p.specification??buildSpecification(p)};return {id:p.id,specification:product.specification,comparisonSpecs:comparisonEvidence(product),connectionSpecs:connectionEvidence(product)};})});
     }
     if(action==='build-connections'&&method==='POST'){
       const ids=new Set(connectionRequest(await body(request))),catalog=await getPublicCatalog();
@@ -84,7 +92,12 @@ async function handle(request: Request, method: string) {
       const catalog=await getPublicCatalog();if(catalog.storage!=='database')throw new Error('Database history is unavailable. Please try again later.');
       const records=await database().prepare(dropQuery(period==='latest')).bind(since).all<DropCandidate>();
       const drops=buildDrops(catalog.products,records.results,now);
-      return json({drops:home?homeDeals(catalog.products,drops):drops,period,since,checkedAt:new Date(now).toISOString()});
+      if(home&&!drops.length){
+        const today=Math.floor(now/86400000)*86400000;
+        const baselines=await database().prepare(saleHistoryQuery).bind(new Date(today-30*86400000).toISOString(),new Date(today).toISOString()).all<SaleBaseline>();
+        return json({drops:homeSales(catalog.products,buildSales(catalog.products,baselines.results,now)),feed:'sales',checkedAt:new Date(now).toISOString()});
+      }
+      return json({drops:home?homeDeals(catalog.products,drops):drops,feed:'drops',period,since,checkedAt:new Date(now).toISOString()});
     }
     if (action === 'history' && method === 'GET') {
       const productId = url.searchParams.get('productId'); const days = Number(url.searchParams.get('days') || 90); if (![0,30,90,365].includes(days)) throw new Error('Invalid history period.'); const p = (await getModelCatalog()).products.find(p => p.id === productId); if (!p) return json({ error: 'Product not found.' },404);
