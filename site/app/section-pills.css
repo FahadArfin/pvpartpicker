@@ -20,3 +20,12 @@
 .tier-method-details>summary{cursor:pointer;color:var(--text);font-weight:600;font-size:12px}
 .tier-method-details .tier-method-content{grid-template-columns:minmax(0,1fr)}
 @media(max-width:720px){.workspace-topline{margin-bottom:16px}.tier-method>.tier-method-content{grid-template-columns:minmax(0,1fr);gap:12px}}
+
+/* Parts categories use the same named icon pills within one scrollable header row. */
+.workspace-categories.workspace-part-categories{display:flex;gap:10px;padding-top:10px;padding-bottom:10px;align-items:center;scroll-padding-inline:16px}
+.workspace-part-categories.workspace-part-categories>a{flex:0 0 auto;min-height:60px;gap:12px;padding:4px 18px 4px 4px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--text);font-size:13px;font-weight:650;white-space:nowrap}
+.workspace-part-categories.workspace-part-categories>a[aria-current=page]{border-color:var(--accent);background:var(--surface);color:var(--text)}
+.workspace-part-categories>a[aria-current=page] .section-pill-icon{background:var(--accent-solid);color:var(--on-accent)}
+.workspace-part-categories.workspace-part-categories>a:hover{border-color:var(--accent);background:var(--accent-soft)}
+.workspace-part-categories>a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media(max-width:720px){.workspace-categories.workspace-part-categories{gap:8px}.workspace-part-categories.workspace-part-categories>a{min-height:48px;padding-right:12px;font-size:12px;gap:8px}}

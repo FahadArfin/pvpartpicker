@@ -296,3 +296,9 @@ Removed the repeated visible Builds heading and intro while retaining an accessi
 - Preserved recorded-drop period explanations, watch target alerts, category/filter controls and price/source details. No scraper, workflow or backfill settings changed.
 - Verification: 334 tests passed; typecheck and production build passed. Built Worker browser checks at 1440px and 320px in both themes passed for /tiers, /watchlist and /deals, with no horizontal overflow. Verified price-value/unpriced lane, watch view switch, sales/drop controls and detailed methodology disclosure.
 - Screenshots: output/trim-{tiers,watchlist,deals}-{day,night}-{1440,320}.png; output/trim-tier-simple.png. Local catalog freshness is not production data proof.
+
+## October 9 — Parts category pill navigation
+
+- Parts-only header categories now use named rounded pills with circular icons and accent-selected state, matching the Builds/section controls.
+- One horizontal scroll row, 60px desktop / 48px phone touch targets; selected category automatically stays visible. Existing SiteLink URLs and builder query handling retained.
+- 334 tests, typecheck and production build passed. Browser checked all 12 icons, rounded shape, both themes at 1440px and 320px, no page overflow, navigation to Accessories and automatic active-link reveal. No category row on Builds. Screenshots output/part-pills-{day,night}-{1440,320}.png.

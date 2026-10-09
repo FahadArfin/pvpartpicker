@@ -106,3 +106,5 @@ Owner simplification: Builds landing omits decorative introductions. The expande
 Owner revision: collapsed example cards use uniform desktop/phone heights with aligned bottom controls; expansion grows naturally. Remove the visible build-count/sort line and budget explanation above the cards.
 
 Shared section controls: Deals views, Watch List all/fresh views, Tier List families and Guide Articles/Calculators use named pill controls enclosing a circular icon, matching Builds. Active icons use the shared accent tokens. Keep semantic button/link state, visible labels, keyboard focus, compact secondary filters and wrapping phone layouts.
+
+Parts category header uses the shared named circular-icon pill style in a single horizontal scroll row, including phones. Keep category navigation scoped to /parts and reveal the selected category without scrolling the page.
