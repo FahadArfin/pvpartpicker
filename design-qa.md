@@ -241,3 +241,8 @@ Removed the repeated visible Builds heading and intro while retaining an accessi
 - Verified Current, Saved and Community navigation on built Worker; active Saved icon, labeled links, preserved landing pills and no duplicate row.
 - Reviewed night desktop and day 375px screenshots: output/build-icons-night.png and output/build-icons-mobile.png. Phone targets are 44px and no overflow. Local community API returned its existing unavailable state; navigation still worked.
 - 326 tests, typecheck and build passed.
+
+## Named build pills correction
+- Restored visible names beside the circular icons across Current, Saved and Community subsections; retained active icon styling and landing pills.
+- Checked night desktop and day 320px phone navigation, all destinations and visible labels. Final phone spacing accommodates Community builds. Screenshots: output/named-icons-night.png and output/named-icons-mobile.png.
+- 326 tests, typecheck and final build passed.

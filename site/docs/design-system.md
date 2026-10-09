@@ -99,4 +99,4 @@ Builds landing navigation: hide the small workspace-builds subnavigation on exac
 
 Build examples use open comparison rows: build name and purpose first, large labeled solar/storage figures, product photographs with quantities and model names, then an aligned equipment subtotal and Customize this build action. Keep source details expandable and preserve pack-aware prices and draft confirmation. On phones, stack the price/action below the equipment.
 
-Owner refinement: build subsection header navigation uses circular icon-only links (wrench, folder, community) with accessible names, hover titles and an active outline/fill. Keep the labeled pills on the Builds landing page and text labels in the mobile Menu. Minimum touch target is 44px.
+Owner correction: build subsection header navigation uses named pill links enclosing circular icons (wrench, folder, community), matching the landing pills. Keep visible Current build, Saved builds and Community builds labels on every build page, with the active icon highlighted. Retain text labels in the mobile Menu and minimum 44px touch targets.
