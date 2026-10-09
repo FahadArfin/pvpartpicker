@@ -64,7 +64,7 @@ export function SiteNavigation({path}:{path:string}) {
     {inBuilds&&buildNavigation()}
     {path==='/parts'&&<div className="part-category-picker">
       <button type="button" className="part-category-toggle" aria-expanded={categoriesOpen} aria-controls="part-category-options" onClick={()=>setCategoriesOpen(o=>!o)}><span className="section-pill-icon"><CategoryIcon size={19} aria-hidden="true"/></span><span>{selectedCategory?.label||'All categories'}</span><ChevronDown size={16} aria-hidden="true"/></button>
-      {categoriesOpen&&<nav id="part-category-options" className="workspace-categories workspace-part-categories" aria-label="Part categories">{categories.map(c=>{const Icon=icons[c.id];return <Link key={c.id} href={'/parts?category='+c.id+(builder?'&builder=1':'')} aria-current={category===c.id?'page':undefined} onClick={()=>setCategoriesOpen(false)}><span className="section-pill-icon"><Icon size={19} strokeWidth={1.7} aria-hidden="true"/></span><span>{c.label}</span></Link>;})}</nav>}
+      <div id="part-category-options" className={'part-category-options'+(categoriesOpen?' is-open':'')} aria-hidden={!categoriesOpen} inert={!categoriesOpen}><div className="part-category-options-inner"><nav className="workspace-categories workspace-part-categories" aria-label="Part categories">{categories.map(c=>{const Icon=icons[c.id];return <Link key={c.id} href={'/parts?category='+c.id+(builder?'&builder=1':'')} aria-current={category===c.id?'page':undefined} onClick={()=>setCategoriesOpen(false)}><span className="section-pill-icon"><Icon size={19} strokeWidth={1.7} aria-hidden="true"/></span><span>{c.label}</span></Link>;})}</nav></div></div>
     </div>}
 
   </header>;

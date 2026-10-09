@@ -46,3 +46,11 @@
 .part-category-picker .workspace-part-categories{padding:10px 0 0;border:0;background:transparent}
 @media(max-width:720px){.part-category-picker{padding:8px 16px}.workspace-header:has(.part-category-picker){position:static}.part-category-picker .section-pill-icon{width:30px;height:30px;flex-basis:30px}}
 @media(prefers-reduced-motion:reduce){.part-category-toggle>svg{transition:none}}
+
+/* Animate intrinsic category height so the catalog moves smoothly with the picker. */
+.part-category-options{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .24s cubic-bezier(.2,.7,.2,1),opacity .18s ease}
+.part-category-options.is-open{grid-template-rows:1fr;opacity:1}
+.part-category-options-inner{min-height:0;overflow:hidden}
+.part-category-toggle,.workspace-part-categories>a{transition:background-color .16s ease,border-color .16s ease,color .16s ease}
+.part-category-toggle>svg{transition:transform .24s cubic-bezier(.2,.7,.2,1)}
+@media(prefers-reduced-motion:reduce){.part-category-options,.part-category-toggle,.workspace-part-categories>a,.part-category-toggle>svg{transition:none}}

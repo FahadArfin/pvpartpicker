@@ -312,3 +312,8 @@ Removed the repeated visible Builds heading and intro while retaining an accessi
 
 - Smaller category pills behind a selected-category toggle, initially closed. Choosing a category closes the options. Removed duplicate visible category heading and Searching label; screen-reader heading, search-all control and builder context remain.
 - 334 tests, typecheck and production build passed. Real browser checked both themes at 1440/320px, open/closed appearance, no horizontal overflow, 12 options, keyboard expansion, automatic collapse/selected-label update and preservation of builder=1 links. Screenshots output/picker-{day,night}-{1440,320}-{closed,open}.png.
+
+## October 9 — Smooth category tray motion
+
+- Category drawer uses a 240ms intrinsic-height transition and gentle opacity/chevron/pill feedback. Closed options are inert and hidden from assistive technology; reduced-motion settings suppress animation.
+- 334 tests, typecheck and build passed. Browser checked animated expansion/collapse and inert state in both themes at 1440/320px, no page overflow, reduced-motion duration <=1ms, and category selection/automatic closure. Screenshots output/motion-{day,night}-{1440,320}.png.
