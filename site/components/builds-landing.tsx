@@ -11,11 +11,11 @@ const actions=[
 
 export function BuildsLanding(){
   return <main className="page-container builds-landing">
-    <header className="page-intro"><div><h1>Builds</h1><p>Start your solar system, pick up where you left off, or find inspiration.</p></div></header>
+    <h1 className="sr-only">Builds</h1>
     <nav className="build-hub-nav" aria-label="Build options">
       {actions.map(({id,label,href,icon:Icon})=><Link key={id} href={href} className={'build-hub-link'+(id==='start'?' primary':'')} aria-labelledby={'build-option-'+id}>
         <span className="build-hub-icon"><Icon size={25} strokeWidth={1.7} aria-hidden="true"/></span>
-        <div><h2 id={'build-option-'+id}>{label}</h2></div>
+        <span id={'build-option-'+id}>{label}</span>
 
       </Link>)}
     </nav>
