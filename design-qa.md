@@ -262,3 +262,8 @@ Removed the repeated visible Builds heading and intro while retaining an accessi
 - Budget tiers use full fresh package-aware subtotals; unpriced examples are separate. System/budget combination, reset empty results and ascending price order checked.
 - User-selected rounded cards show text when closed and photos only in expanded part lists. Reviewed desktop and 320px phone in both themes; no overflow. Screenshots output/compact-night.png and output/compact-mobile.png (theme reflects persisted browser selection).
 - Enphase copy verified 16 panels, 16 microinverters and one combiner with gridtie purpose. 329 tests, typecheck and build passed. QA fixtures retain real public catalog prices; live API will be rechecked after publish.
+
+## Compact vertical build contents
+- Closed cards show each selected model and quantity on its own line, with tighter spacing. Expanded lists retain photos and pack-aware line prices, add a bottom total, and remove the requested Finish for your location and explanatory paragraphs. Transparent photo mats and translucent images are scoped to examples.
+- Built Worker reviewed in both themes and at 320px: output/vertical-collapsed.png, output/vertical-expanded-night.png, output/vertical-expanded-day.png and output/vertical-mobile.png. No horizontal overflow; three Cabin line prices sum to the displayed $7,041.96. Real catalog fixture used locally.
+- 329 tests passed; typecheck and build passed. Scraper and backfill code unchanged.
