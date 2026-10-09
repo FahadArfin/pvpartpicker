@@ -277,3 +277,8 @@ Removed the repeated visible Builds heading and intro while retaining an accessi
 - Budget and System use the shared Deals category pill buttons with visible selected state, named groups and focus outlines. All ten options remain available; budget ranges remain visible.
 - Built browser checks passed for budget/system combinations, empty-result reset, keyboard Tab/Enter and 320px wrapping without overflow. Reviewed both themes: output/pill-desktop.png, output/pill-other-theme.png, output/pill-mobile.png.
 - 329 tests, typecheck and build passed; no scraper changes.
+
+## Uniform build cards
+- Eight collapsed cards measured 280px on desktop and 380px at 320px phone width. Bottom pricing/expansion controls align; expanded content grows without clipping and total matches resolved subtotal.
+- Removed build-count/sort text and the budget paragraph above cards. Both themes visually reviewed; no phone overflow. Screenshots output/uniform-desktop.png, output/uniform-other-theme.png, output/uniform-mobile.png.
+- 329 tests, typecheck and final build passed. Fixture offers retain freshness handling; older offers can be unpriced.

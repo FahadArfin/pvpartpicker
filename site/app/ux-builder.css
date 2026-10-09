@@ -104,3 +104,8 @@
 /* Visible pill filters matching Deals. */
 .example-pill-toolbar{display:grid;gap:8px}.example-filter-row{display:flex;align-items:center;gap:12px;min-width:0}.example-filter-row>span{flex:0 0 45px;color:var(--muted);font-size:12px}.example-filter-row .deal-category-shortcuts{margin:0;min-width:0}.example-pill-toolbar>span{margin-left:0;font-size:11px}.example-filter-row button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 @media(max-width:720px){.example-filter-row{display:block}.example-filter-row>span{display:block;margin-bottom:6px}.example-pill-toolbar{gap:12px}.example-filter-row .deal-category-shortcuts button{font-size:12px;min-height:44px}}
+
+/* Uniform closed cards; expanded lists grow without clipping. */
+.compact-examples .example-build{min-height:280px;grid-template-rows:minmax(45px,auto) minmax(60px,1fr) auto auto;align-self:stretch}
+.example-pill-toolbar>.sr-only{margin:0}
+@media(max-width:720px){.compact-examples .example-build{min-height:380px;grid-template-rows:auto minmax(60px,1fr) auto auto auto}}
