@@ -9,13 +9,12 @@ import {money} from '../lib/domain';
 import {productListName} from '../lib/part-comparison';
 type ExamplesResponse={examples:ExampleBuild[];products:Product[]};
 export function BuildExamples(){
- const [data,setData]=useState<ExamplesResponse>(),[error,setError]=useState(''),[attempt,setAttempt]=useState(0),[filter,setFilter]=useState('All');
+ const [data,setData]=useState<ExamplesResponse>(),[error,setError]=useState(''),[attempt,setAttempt]=useState(0);
  useEffect(()=>{const controller=new AbortController();let active=true;const deadline=setTimeout(()=>controller.abort(),15000);setError('');fetch('/api/example-builds',{signal:controller.signal}).then(async r=>{if(!r.ok)throw Error('Could not load example builds.');return r.json() as Promise<ExamplesResponse>;}).then(v=>{if(active)setData(v);}).catch(e=>{if(active)setError(e.name==='AbortError'?'Loading timed out. Please try again.':e.message);}).finally(()=>clearTimeout(deadline));return()=>{active=false;clearTimeout(deadline);controller.abort();};},[attempt]);
  useEffect(()=>{const refresh=()=>{if(document.visibilityState==='visible')setAttempt(n=>n+1);};const interval=setInterval(refresh,120000);document.addEventListener('visibilitychange',refresh);return()=>{clearInterval(interval);document.removeEventListener('visibilitychange',refresh);};},[]);
- return <section id="example-builds" className="example-builds"><span id="planning-examples"/><header><div><h2>Choose your starting build.</h2><p>Compare the equipment. Pick a setup. Customize every part.</p></div><span className="example-editorial">Curated examples</span></header>
- <div className="example-filters" role="group" aria-label="Example build type">{['All','Portable','Off-grid','Hybrid / backup'].map(f=><button key={f} aria-pressed={filter===f} onClick={()=>setFilter(f)}>{f}</button>)}</div>
+ return <section id="example-builds" className="example-builds"><span id="planning-examples"/><h2 className="sr-only">Example builds</h2>
  {!data&&!error&&<p role="status">Loading selected parts and current offers…</p>}{error&&<p role="alert">{error} <button className="text-link" onClick={()=>setAttempt(n=>n+1)}>Retry</button></p>}
- {data?.examples.filter(e=>filter==='All'||filter===e.useCase).map(e=>{const r=resolveExample(e,data.products);return <article className="example-build" key={e.id}>
+ {data?.examples.map(e=>{const r=resolveExample(e,data.products);return <article className="example-build" key={e.id}>
  <div className="example-build-description"><small>{e.useCase}</small><h3>{e.name}</h3><p>{e.description}</p></div>
  <dl className="example-highlights">{e.highlights.map(h=>{const split=h.match(/^(.+?(?:kWh|kW|W)) (.+)$/);return <div key={h}><dt>{split?.[2]??'System'}</dt><dd>{split?.[1]??h}</dd></div>;})}</dl>
  <div className="example-build-photos" aria-label={'Equipment in '+e.name}>{r.selections.map(s=><div key={s.line.productId}>{s.product?<Link href={'/products/'+s.product.id}><ProductImage product={s.product}/><span><small>{s.line.quantity} × {s.product.category==='kits'?'solar bundle':s.product.category==='panels'?'solar panel':s.product.category==='batteries'?'battery':'inverter'}</small><strong>{productListName(s.product)}</strong></span></Link>:<span>Part unavailable</span>}</div>)}</div>

@@ -251,3 +251,8 @@ Removed the repeated visible Builds heading and intro while retaining an accessi
 - Moved landing shortcuts into the shared top-left build banner; removed duplicate local navigation and centered 1150px content constraint.
 - Verified identical banner geometry on landing and Saved (x=0, y=100 at 1280px), one navigation row, day/night and phone without overflow. Screenshots output/build-align-night.png and output/build-align-mobile.png.
 - 326 tests, typecheck and build passed.
+
+## Remove repeated build introductions
+- Removed landing intro/filter tabs, Saved heading/current-draft block and both Community introductions. Accessible headings and shared navigation retained.
+- Built Worker reviewed in night desktop/day phone: output/build-trim-landing.png, output/build-trim-saved.png, output/build-trim-community.png. Confirmed search inputs remain usable and no overflow. Browser uses real catalog fixture and empty community fixture.
+- 326 tests, typecheck and build passed.

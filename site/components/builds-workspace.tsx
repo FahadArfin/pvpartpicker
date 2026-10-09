@@ -8,7 +8,7 @@ import {CommunityWorkspace} from './community-workspace';
 import {deviceBuildsKey,readDeviceBuilds,isDeviceBuild,purposeLabel,type SavedBuild} from '../lib/build-library';
 
 export function BuildsWorkspace({view}:{view:'saved'|'community'}) {
-  const {user,build,draftReady}=usePV();
+  const {user}=usePV();
   const [saved,setSaved]=useState<SavedBuild[]>([]),[loading,setLoading]=useState(true),[errors,setErrors]=useState<string[]>([]),[query,setQuery]=useState('');
   const reload=useCallback(async()=>{
     setLoading(true);setErrors([]);
@@ -20,9 +20,8 @@ export function BuildsWorkspace({view}:{view:'saved'|'community'}) {
   useEffect(()=>{if(view==='saved')void reload();},[view,reload]);
   const visible=saved.filter(b=>b.name.toLowerCase().includes(query.trim().toLowerCase()));
   return <main className="page-container builds-page">
-    <header className="page-intro"><div><Link className="builds-back" href="/builds">← Builds</Link><h1>{view==='saved'?'Saved builds':'Community builds'}</h1><p>{view==='saved'?'Reopen a system saved on this device or in your account.':'Explore systems shared by the community and make them your own.'}</p></div><Link className="button dark small" href="/build">Current build</Link></header>
+    <h1 className="sr-only">{view==='saved'?'Saved builds':'Community builds'}</h1>
     {view==='community'?<CommunityWorkspace embedded/>:<section aria-label="Saved builds">
-      <div className="home-current"><FolderOpen size={20} aria-hidden="true"/><div><span className="eyebrow">CURRENT BUILD</span><h2>{draftReady?build.name:'Loading current draft…'}</h2><p>{draftReady?`${build.lines.length} part selection${build.lines.length===1?'':'s'} · Your draft is separate from saved versions.`:'Restoring this device’s draft.'}</p></div><Link className="button outline small" href="/build">Continue editing</Link></div>
       <div className="builds-toolbar"><label className="field">Find a saved build<input type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="Search by build name"/></label><button className="button outline small" disabled={loading} onClick={reload}><RefreshCw size={14}/>Refresh</button></div>
       <p className="inline-note">{user?'Showing private account builds and builds saved on this device.':'Device builds stay in this browser.'} {!user&&<a className="text-link" href="/signin-with-chatgpt?return_to=%2Fbuilds%2Fsaved" target="_top">Sign in for your account builds</a>}</p>
       {errors.map(message=><p className="error-message" role="alert" key={message}>{message}</p>)}
