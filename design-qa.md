@@ -272,3 +272,8 @@ Removed the repeated visible Builds heading and intro while retaining an accessi
 - Matches the existing header, Current build, Saved builds and Community builds: 1500px wide, x=505.5 at a 2511px viewport. Two desktop card columns, one on phones.
 - Reviewed both themes and 320px phone, with no overflow: output/center-desktop.png, output/center-other-theme.png, output/center-mobile.png.
 - 329 tests, typecheck and final build passed. Only presentation changed.
+
+## Build filter pills
+- Budget and System use the shared Deals category pill buttons with visible selected state, named groups and focus outlines. All ten options remain available; budget ranges remain visible.
+- Built browser checks passed for budget/system combinations, empty-result reset, keyboard Tab/Enter and 320px wrapping without overflow. Reviewed both themes: output/pill-desktop.png, output/pill-other-theme.png, output/pill-mobile.png.
+- 329 tests, typecheck and build passed; no scraper changes.
