@@ -1,6 +1,6 @@
 'use client';
 import {useEffect, useState, useRef} from 'react';
-import {Home, FolderOpen, Battery, BookOpen, Box, Cable, CircleUserRound, Eye, Gauge, Grid2X2, Layers, Menu, PackageOpen, Plug, ShieldCheck, SlidersHorizontal, Sun, TrendingDown, Users, Wrench, Zap} from 'lucide-react';
+import {Home, FolderOpen, Battery, BookOpen, Box, Cable, CircleUserRound, ChevronDown, Eye, Gauge, Grid2X2, Layers, Menu, PackageOpen, Plug, ShieldCheck, SlidersHorizontal, Sun, TrendingDown, Users, Wrench, Zap} from 'lucide-react';
 import {Dialog,DialogContent,DialogTitle,DialogDescription} from './ui/dialog';
 import Link from './site-link';
 import {usePV} from './pv-provider';
@@ -22,7 +22,9 @@ const buildLinks = [
 ];
 export function SiteNavigation({path}:{path:string}) {
   const {build,user,draftReady} = usePV();
-  const [category,setCategory] = useState('panels'), [builder,setBuilder] = useState(false);
+  const [category,setCategory] = useState('panels'), [builder,setBuilder] = useState(false),[categoriesOpen,setCategoriesOpen]=useState(false);
+  const selectedCategory=categories.find(c=>c.id===category);
+  const CategoryIcon=selectedCategory?icons[selectedCategory.id]:Grid2X2;
   const header=useRef<HTMLElement>(null);
   const [menuOpen,setMenuOpen]=useState(false),menuTrigger=useRef<HTMLButtonElement>(null);
   const inBuilds=path==='/build'||path==='/builds'||path.startsWith('/builds/')||path==='/community'||path.startsWith('/community/')||path.startsWith('/share/');
@@ -46,7 +48,7 @@ export function SiteNavigation({path}:{path:string}) {
     }};
     reveal();window.addEventListener('resize',reveal);
     return()=>window.removeEventListener('resize',reveal);
-  },[path,category]);
+  },[path,category,categoriesOpen]);
   if(path==='/') return <header className="home-header">
     <Link className="home-brand" href="/" aria-label="PVPartPicker home"><Grid2X2 size={29} strokeWidth={1.7} aria-hidden="true"/><span>PV<b>Part</b>Picker</span></Link>
     <nav className="home-header-links" aria-label="Home navigation">{user?<Link href="/account">My account</Link>:<a href="/signin-with-chatgpt?return_to=%2Faccount" target="_top">Sign in</a>}<ThemeToggle/></nav>
@@ -60,7 +62,11 @@ export function SiteNavigation({path}:{path:string}) {
     <Dialog open={menuOpen} onOpenChange={setMenuOpen}><DialogContent className="build-dialog mobile-navigation-dialog" onCloseAutoFocus={e=>{e.preventDefault();menuTrigger.current?.focus();}}><DialogTitle>Navigate PVPartPicker</DialogTitle><DialogDescription className="sr-only">Choose a section of your solar workspace.</DialogDescription><nav aria-label="Mobile navigation">{links.map(({href,label,icon:Icon})=>{const link=<Link href={href} aria-current={active(href)?'page':undefined} onClick={()=>setMenuOpen(false)}><Icon size={19} aria-hidden="true"/><span>{label}</span></Link>;return href==='/builds'?<div key={href} className="mobile-navigation-group">{link}{buildNavigation(true)}</div>:<div key={href}>{link}</div>;})}</nav><div className="mobile-navigation-tools"><Link href="/price-scraper" onClick={()=>setMenuOpen(false)}>Price scraper</Link><Link href="/account" onClick={()=>setMenuOpen(false)}>My account</Link></div></DialogContent></Dialog>
     <nav className="workspace-primary" aria-label="Main navigation">{links.map(({href,label,icon:Icon})=><Link key={href} href={href} aria-current={active(href)?'page':undefined}><Icon size={16} aria-hidden="true"/><span>{label}</span></Link>)}</nav>
     {inBuilds&&buildNavigation()}
-    {path==='/parts'&&<nav className="workspace-categories workspace-part-categories" aria-label="Part categories">{categories.map(c=>{const Icon=icons[c.id];return <Link key={c.id} href={'/parts?category='+c.id+(builder?'&builder=1':'')} aria-current={category===c.id?'page':undefined}><span className="section-pill-icon"><Icon size={23} strokeWidth={1.7} aria-hidden="true"/></span><span>{c.label}</span></Link>;})}</nav>}
+    {path==='/parts'&&<div className="part-category-picker">
+      <button type="button" className="part-category-toggle" aria-expanded={categoriesOpen} aria-controls="part-category-options" onClick={()=>setCategoriesOpen(o=>!o)}><span className="section-pill-icon"><CategoryIcon size={19} aria-hidden="true"/></span><span>{selectedCategory?.label||'All categories'}</span><ChevronDown size={16} aria-hidden="true"/></button>
+      {categoriesOpen&&<nav id="part-category-options" className="workspace-categories workspace-part-categories" aria-label="Part categories">{categories.map(c=>{const Icon=icons[c.id];return <Link key={c.id} href={'/parts?category='+c.id+(builder?'&builder=1':'')} aria-current={category===c.id?'page':undefined} onClick={()=>setCategoriesOpen(false)}><span className="section-pill-icon"><Icon size={19} strokeWidth={1.7} aria-hidden="true"/></span><span>{c.label}</span></Link>;})}</nav>}
+    </div>}
+
   </header>;
 }
 

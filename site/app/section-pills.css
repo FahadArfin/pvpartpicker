@@ -23,7 +23,7 @@
 
 /* Parts categories use the same named icon pills in wrapping rows without horizontal scrolling. */
 .workspace-categories.workspace-part-categories{display:flex;flex-wrap:wrap;gap:10px;padding-top:10px;padding-bottom:10px;align-items:center;overflow:visible}
-.workspace-part-categories.workspace-part-categories>a{flex:0 0 auto;min-height:60px;gap:12px;padding:4px 18px 4px 4px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--text);font-size:13px;font-weight:650;white-space:nowrap}
+.workspace-part-categories.workspace-part-categories>a{flex:0 0 auto;min-height:46px;gap:8px;padding:4px 14px 4px 4px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--text);font-size:12px;font-weight:650;white-space:nowrap}
 .workspace-part-categories.workspace-part-categories>a[aria-current=page]{border-color:var(--accent);background:var(--surface);color:var(--text)}
 .workspace-part-categories>a[aria-current=page] .section-pill-icon{background:var(--accent-solid);color:var(--on-accent)}
 .workspace-part-categories.workspace-part-categories>a:hover{border-color:var(--accent);background:var(--accent-soft)}
@@ -35,3 +35,14 @@
  .workspace-part-categories .section-pill-icon{width:32px;height:32px;flex-basis:32px}
  .workspace-part-categories .section-pill-icon svg{width:18px;height:18px}
 }
+
+.part-category-picker{max-width:1500px;margin:auto;padding:8px 26px;border-top:1px solid var(--line)}
+.part-category-toggle{display:flex;align-items:center;gap:8px;min-height:46px;padding:4px 12px 4px 4px;border:1px solid var(--accent);border-radius:999px;background:var(--surface);color:var(--text);font-size:12px;font-weight:650}
+.part-category-picker .section-pill-icon{width:36px;height:36px;flex-basis:36px}
+.part-category-toggle .section-pill-icon{background:var(--accent-solid);color:var(--on-accent)}
+.part-category-toggle>svg{transition:transform .15s}
+.part-category-toggle[aria-expanded=true]>svg{transform:rotate(180deg)}
+.part-category-toggle:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.part-category-picker .workspace-part-categories{padding:10px 0 0;border:0;background:transparent}
+@media(max-width:720px){.part-category-picker{padding:8px 16px}.workspace-header:has(.part-category-picker){position:static}.part-category-picker .section-pill-icon{width:30px;height:30px;flex-basis:30px}}
+@media(prefers-reduced-motion:reduce){.part-category-toggle>svg{transition:none}}

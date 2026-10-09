@@ -307,3 +307,8 @@ Removed the repeated visible Builds heading and intro while retaining an accessi
 
 - Owner revision replaces the horizontal category scroll with wrapped rows. Phones use two columns and wrapping labels; the Parts header is non-sticky on phones to avoid covering products.
 - 334 tests, typecheck and production build passed. Browser checked both themes at 1440px (two rows) and 320px (six rows), no horizontal category/page overflow, all 12 links unclipped with >=44px touch targets, and category selection navigation. Screenshots output/wrapped-pills-{day,night}-{1440,320}.png.
+
+## October 9 — Compact expandable Parts category picker
+
+- Smaller category pills behind a selected-category toggle, initially closed. Choosing a category closes the options. Removed duplicate visible category heading and Searching label; screen-reader heading, search-all control and builder context remain.
+- 334 tests, typecheck and production build passed. Real browser checked both themes at 1440/320px, open/closed appearance, no horizontal overflow, 12 options, keyboard expansion, automatic collapse/selected-label update and preservation of builder=1 links. Screenshots output/picker-{day,night}-{1440,320}-{closed,open}.png.

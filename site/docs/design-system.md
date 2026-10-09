@@ -108,3 +108,5 @@ Owner revision: collapsed example cards use uniform desktop/phone heights with a
 Shared section controls: Deals views, Watch List all/fresh views, Tier List families and Guide Articles/Calculators use named pill controls enclosing a circular icon, matching Builds. Active icons use the shared accent tokens. Keep semantic button/link state, visible labels, keyboard focus, compact secondary filters and wrapping phone layouts.
 
 Parts category header uses the shared named circular-icon pill style in wrapping rows, without horizontal scrolling. Phones use two columns with wrapping labels; the Parts header scrolls with the page so the expanded category navigation does not cover the product list. Keep category navigation scoped to /parts.
+
+Owner revision: Parts categories start collapsed behind a compact selected-category icon pill with a chevron. Expand to see smaller wrapping category pills; selecting a category closes the picker. Avoid repeated visible category headings and Searching labels in the catalog; retain accessible headings and search controls.
