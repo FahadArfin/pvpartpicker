@@ -236,3 +236,8 @@ Removed the repeated visible Builds heading and intro while retaining an accessi
 - Built Worker reviewed at 1365px in day/night and at 375px/320px; no horizontal overflow. All seven product images loaded. Screenshots: output/examples-refresh-day.png, output/examples-refresh-night.png, output/examples-refresh-mobile.png.
 - Off-grid filter and expanded contents checked. Copy retained panel/inverter/battery quantities 8/1/2; cancelling a switch preserved the current draft. QA uses the captured real catalog fixture because the local database lacks newer products.
 - 326 tests passed; typecheck and build passed.
+
+## Build subsection circular icons
+- Verified Current, Saved and Community navigation on built Worker; active Saved icon, labeled links, preserved landing pills and no duplicate row.
+- Reviewed night desktop and day 375px screenshots: output/build-icons-night.png and output/build-icons-mobile.png. Phone targets are 44px and no overflow. Local community API returned its existing unavailable state; navigation still worked.
+- 326 tests, typecheck and build passed.

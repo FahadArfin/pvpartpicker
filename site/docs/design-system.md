@@ -98,3 +98,5 @@ Owner refinement, October 8, 2026: on the Builds landing page, omit the repeated
 Builds landing navigation: hide the small workspace-builds subnavigation on exact /builds because its pill shortcuts already provide these destinations. Retain the subnavigation on the builder, saved/community collections and detail pages, plus the mobile Menu group.
 
 Build examples use open comparison rows: build name and purpose first, large labeled solar/storage figures, product photographs with quantities and model names, then an aligned equipment subtotal and Customize this build action. Keep source details expandable and preserve pack-aware prices and draft confirmation. On phones, stack the price/action below the equipment.
+
+Owner refinement: build subsection header navigation uses circular icon-only links (wrench, folder, community) with accessible names, hover titles and an active outline/fill. Keep the labeled pills on the Builds landing page and text labels in the mobile Menu. Minimum touch target is 44px.
