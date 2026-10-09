@@ -95,7 +95,7 @@ At widths up to 720px, use the compact current-section/Menu row and accessible n
 
 Owner refinement, October 8, 2026: on the Builds landing page, omit the repeated visible Builds title and introductory sentence (retain an accessible page heading). Current build, Saved builds and Community builds are single pill-shaped links enclosing the round icon and label. Keep them compact in both themes and on phones.
 
-Builds landing navigation: hide the small workspace-builds subnavigation on exact /builds because its pill shortcuts already provide these destinations. Retain the subnavigation on the builder, saved/community collections and detail pages, plus the mobile Menu group.
+Builds navigation uses the same named circular-icon pill banner on /builds and every build subsection. Render it once in the shared header, aligned top-left; do not repeat pills inside the landing content. The landing content uses the full-width page alignment rather than a narrow centered column. Preserve the mobile Menu group.
 
 Build examples use open comparison rows: build name and purpose first, large labeled solar/storage figures, product photographs with quantities and model names, then an aligned equipment subtotal and Customize this build action. Keep source details expandable and preserve pack-aware prices and draft confirmation. On phones, stack the price/action below the equipment.
 

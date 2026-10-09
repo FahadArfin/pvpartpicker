@@ -246,3 +246,8 @@ Removed the repeated visible Builds heading and intro while retaining an accessi
 - Restored visible names beside the circular icons across Current, Saved and Community subsections; retained active icon styling and landing pills.
 - Checked night desktop and day 320px phone navigation, all destinations and visible labels. Final phone spacing accommodates Community builds. Screenshots: output/named-icons-night.png and output/named-icons-mobile.png.
 - 326 tests, typecheck and final build passed.
+
+## Builds landing alignment
+- Moved landing shortcuts into the shared top-left build banner; removed duplicate local navigation and centered 1150px content constraint.
+- Verified identical banner geometry on landing and Saved (x=0, y=100 at 1280px), one navigation row, day/night and phone without overflow. Screenshots output/build-align-night.png and output/build-align-mobile.png.
+- 326 tests, typecheck and build passed.
