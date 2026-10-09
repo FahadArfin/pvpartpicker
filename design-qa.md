@@ -230,3 +230,9 @@ Validation: 326 tests passed; typecheck and production build passed. Browser QA 
 ## Compact Builds pills - October 8, 2026
 
 Removed the repeated visible Builds heading and intro while retaining an accessible h1. Enclosed each Current/Saved/Community shortcut icon and label in a single rounded pill matching the owner's sketch. Browser checked the built Worker in night desktop and day mobile (375px): all three links fit without overflow, retain correct destinations and have 48px touch targets. Screenshots output/pills-night.png and output/pills-mobile.png. All 326 tests, typecheck and production build passed.
+
+## Example build readability refinement
+- Enlarged labeled capacity metrics, named equipment photos, clear subtotal and Customize this build action; preserved open rows and shared tokens.
+- Built Worker reviewed at 1365px in day/night and at 375px/320px; no horizontal overflow. All seven product images loaded. Screenshots: output/examples-refresh-day.png, output/examples-refresh-night.png, output/examples-refresh-mobile.png.
+- Off-grid filter and expanded contents checked. Copy retained panel/inverter/battery quantities 8/1/2; cancelling a switch preserved the current draft. QA uses the captured real catalog fixture because the local database lacks newer products.
+- 326 tests passed; typecheck and build passed.
