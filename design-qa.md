@@ -214,3 +214,9 @@ Final built-Worker browser QA used 16 actual Renogy RSP100DC panels, one EG4 18k
 Owner approved the generated Soft Slate preview. Replaced the rejected warm stone/sage day tokens with cool blue-gray canvas, lighter slate panels, charcoal text and blue actions. Shared layout and night tokens retained.
 
 Validation: 321 tests passed, typecheck and production build passed. Browser inspected Home, Parts and Builder at 1280px and Guide at 375px in day/night. Local preview has no hosted deals feed (503); empty/error handling remains visible. Screenshots: output/slate-home.png, output/slate-parts.png, output/slate-build.png, output/slate-guide-mobile.png and output/slate-guide-night.png. No scraper, scheduling or data changes.
+
+## Deals thumbnails - October 8, 2026
+
+Fixed inherited card-image padding consuming the entire 44px thumbnail width. Live diagnosis confirmed loaded 800px/1024px source photos rendered at zero width. Deals now use 4px padding (36px image content) with a bounded missing-image fallback. Retailer sales and recorded drops share this thumbnail styling.
+
+321 tests, typecheck and production build passed. Verified correction against actual live sale photos using a temporary browser style override at desktop and 375px mobile in both themes; screenshots output/deal-images-after-desktop.png and output/deal-images-mobile-detail.png. Post-publication check verifies the built CSS without the override.
