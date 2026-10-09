@@ -287,3 +287,12 @@ Removed the repeated visible Builds heading and intro while retaining an accessi
 - Deals, Watch List, Tier Lists and Guide (including calculators) share the Builds circular-icon pill format. Watch fresh-only checkbox becomes two explicit view buttons using the same existing filter state.
 - Built route checks verified icon counts, selected state and switching; 320px layouts have no horizontal overflow. Reviewed desktop and phone screenshots output/sections-* in alternating day/night themes. Local Deals and Watch use existing empty states; tier catalog photos may be unavailable locally.
 - 334 tests, typecheck and production build passed. Existing catalog, pricing, saved watches, tier evidence and guide/calculator behavior retained; no scraper changes.
+
+## October 9, 2026 — Compact Tier Lists, Watch List and Deals
+
+- Removed the requested visible introductory copy and watch storage note. Page headings remain available to screen readers. Related-page links now sit beside section pills.
+- Removed Tier Lists' fresh-only checkbox and coverage row, including its invisible filter state; all researched models remain available. Price eligibility rules are unchanged.
+- Simplified How the tiers work to product ratings, price value and missing prices. Detailed thresholds, metrics, source limitations and research date remain in a second collapsed disclosure.
+- Preserved recorded-drop period explanations, watch target alerts, category/filter controls and price/source details. No scraper, workflow or backfill settings changed.
+- Verification: 334 tests passed; typecheck and production build passed. Built Worker browser checks at 1440px and 320px in both themes passed for /tiers, /watchlist and /deals, with no horizontal overflow. Verified price-value/unpriced lane, watch view switch, sales/drop controls and detailed methodology disclosure.
+- Screenshots: output/trim-{tiers,watchlist,deals}-{day,night}-{1440,320}.png; output/trim-tier-simple.png. Local catalog freshness is not production data proof.
