@@ -14,6 +14,7 @@ import "./ux-catalog.css";
 import "./ux-discovery.css";
 import "./ux-builder.css";
 import "./ux-guide.css";
+import "./section-pills.css";
 import {themeBootstrap} from '../lib/theme';
 import {PVProvider} from '../components/pv-provider';
 import {getChatGPTUser} from './chatgpt-auth';

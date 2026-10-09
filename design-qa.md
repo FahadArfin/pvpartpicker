@@ -282,3 +282,8 @@ Removed the repeated visible Builds heading and intro while retaining an accessi
 - Eight collapsed cards measured 280px on desktop and 380px at 320px phone width. Bottom pricing/expansion controls align; expanded content grows without clipping and total matches resolved subtotal.
 - Removed build-count/sort text and the budget paragraph above cards. Both themes visually reviewed; no phone overflow. Screenshots output/uniform-desktop.png, output/uniform-other-theme.png, output/uniform-mobile.png.
 - 329 tests, typecheck and final build passed. Fixture offers retain freshness handling; older offers can be unpriced.
+
+## Shared section icon pills
+- Deals, Watch List, Tier Lists and Guide (including calculators) share the Builds circular-icon pill format. Watch fresh-only checkbox becomes two explicit view buttons using the same existing filter state.
+- Built route checks verified icon counts, selected state and switching; 320px layouts have no horizontal overflow. Reviewed desktop and phone screenshots output/sections-* in alternating day/night themes. Local Deals and Watch use existing empty states; tier catalog photos may be unavailable locally.
+- 334 tests, typecheck and production build passed. Existing catalog, pricing, saved watches, tier evidence and guide/calculator behavior retained; no scraper changes.

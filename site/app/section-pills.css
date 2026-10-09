@@ -1,0 +1,11 @@
+/* Shared named circular-icon pills, matching the Builds navigation. */
+.section-pill-nav.section-pill-nav{display:flex;flex-wrap:wrap;align-items:center;gap:12px;padding:0;margin:0 0 20px;border:0;background:none;overflow:visible}
+.section-pill-nav.section-pill-nav>a,.section-pill-nav.section-pill-nav>button{display:flex;align-items:center;justify-content:flex-start;gap:12px;min-height:60px;padding:4px 20px 4px 4px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--text);font-size:14px;font-weight:650;line-height:1.35;white-space:normal;text-decoration:none;min-width:0;box-shadow:none}
+.section-pill-icon{display:grid;place-items:center;width:50px;height:50px;flex:0 0 50px;border-radius:50%;background:var(--accent-soft);color:var(--text)}
+.section-pill-nav.section-pill-nav>a[aria-current=page],.section-pill-nav.section-pill-nav>button[aria-pressed=true]{border-color:var(--accent);background:var(--surface);color:var(--text)}
+.section-pill-nav>a[aria-current=page] .section-pill-icon,.section-pill-nav>button[aria-pressed=true] .section-pill-icon{background:var(--accent-solid);color:var(--on-accent)}
+.section-pill-nav.section-pill-nav>a:hover,.section-pill-nav.section-pill-nav>button:hover{border-color:var(--accent);background:var(--accent-soft)}
+.section-pill-nav>a:focus-visible,.section-pill-nav>button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.section-pill-nav>button>small{background:var(--accent-soft);color:var(--muted);border-radius:999px;padding:3px 6px;font-size:10px}
+.guide-tabs{display:flex;flex-wrap:wrap;gap:6px;border-bottom:0}.guide-tabs button{border:1px solid var(--line);border-radius:999px;padding:8px 12px;background:var(--surface);color:var(--text)}.guide-tabs button[aria-pressed=true]{background:var(--accent-soft);border-color:var(--accent)}
+@media(max-width:720px){.section-pill-nav.section-pill-nav{gap:8px;margin-bottom:16px}.section-pill-nav.section-pill-nav>a,.section-pill-nav.section-pill-nav>button{font-size:12px;gap:8px;min-height:48px;padding:4px 12px 4px 4px;max-width:100%}.section-pill-icon{width:38px;height:38px;flex-basis:38px}.section-pill-icon svg{width:20px;height:20px}.guide-tabs button{min-height:44px}}
