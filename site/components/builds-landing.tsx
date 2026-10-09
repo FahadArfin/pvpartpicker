@@ -1,7 +1,7 @@
-import {ArrowRight,FolderOpen,Users,Wrench} from 'lucide-react';
+import {FolderOpen,Users,Wrench} from 'lucide-react';
 import Link from './site-link';
 
-import {BuildPlanningExamples} from './build-planning-examples';
+import {BuildExamples} from './build-examples';
 
 const actions=[
   {id:'start',label:'Current build',href:'/build',icon:Wrench,description:'Choose your equipment and put your solar system together.'},
@@ -12,13 +12,13 @@ const actions=[
 export function BuildsLanding(){
   return <main className="page-container builds-landing">
     <header className="page-intro"><div><h1>Builds</h1><p>Start your solar system, pick up where you left off, or find inspiration.</p></div></header>
-    <nav className="builds-landing-actions" aria-label="Build options">
-      {actions.map(({id,label,href,icon:Icon,description})=><Link key={id} href={href} className={'builds-landing-action'+(id==='start'?' primary':'')} aria-labelledby={'build-option-'+id}>
-        <Icon size={25} strokeWidth={1.7} aria-hidden="true"/>
-        <div><h2 id={'build-option-'+id}>{label}</h2><p>{description}</p></div>
-        <ArrowRight size={18} aria-hidden="true"/>
+    <nav className="build-hub-nav" aria-label="Build options">
+      {actions.map(({id,label,href,icon:Icon})=><Link key={id} href={href} className={'build-hub-link'+(id==='start'?' primary':'')} aria-labelledby={'build-option-'+id}>
+        <span className="build-hub-icon"><Icon size={25} strokeWidth={1.7} aria-hidden="true"/></span>
+        <div><h2 id={'build-option-'+id}>{label}</h2></div>
+
       </Link>)}
     </nav>
-    <BuildPlanningExamples/>
+    <BuildExamples/>
   </main>;
 }

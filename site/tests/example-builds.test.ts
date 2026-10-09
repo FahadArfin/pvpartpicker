@@ -1,0 +1,13 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {exampleBuilds,exampleProducts,resolveExample} from '../lib/example-builds.ts';
+import {validateBuild} from '../lib/domain.ts';
+import type {Product} from '../lib/types.ts';
+const now=Date.parse('2026-10-09T00:00:00Z');
+const example=exampleBuilds[1];
+const products=example.build.lines.map(l=>({id:l.productId,name:l.productId,brand:'Test',category:'panels',description:'',image:'',images:[],sourceUrl:'https://example.com',specs:{},verifiedAt:'',offers:[{id:l.productId+'-offer',retailerId:'test',retailer:'Test',url:'https://example.com',price:100,currency:'USD',packQuantity:l.quantity===8?8:1,stock:'in_stock',observedAt:new Date(now).toISOString(),condition:'new'}]})) as Product[];
+test('every example opens a nonempty valid build with unique lines',()=>{for(const e of exampleBuilds){assert.ok(e.build.lines.length>0);assert.deepEqual(validateBuild(e.build),e.build);}});
+test('examples price whole packages and copy the exact quantities and selected offers',()=>{const r=resolveExample(example,products,now);assert.equal(r.total,400);assert.equal(r.missing,0);assert.equal(r.unpriced,0);assert.equal(r.selections[0].cost?.packs,1);assert.deepEqual(r.build.lines.map(l=>l.quantity),[8,1,2]);assert.ok(r.build.lines.every(l=>l.offerId));r.build.lines[0].quantity=1;assert.equal(example.build.lines[0].quantity,8);});
+test('missing products do not silently remove build lines',()=>{const r=resolveExample(example,products.slice(1),now);assert.equal(r.missing,1);assert.equal(r.unpriced,1);assert.equal(r.build.lines.length,3);});
+test('stale and out-of-stock prices never become current example totals',()=>{const stale=resolveExample(example,products,now+86400001);assert.equal(stale.unpriced,3);assert.equal(stale.total,0);assert.ok(stale.build.lines.every(l=>!l.offerId));const unavailable=resolveExample(example,products.map(p=>({...p,offers:p.offers.map(o=>({...o,stock:'out_of_stock' as const}))})),now);assert.equal(unavailable.unpriced,3);});
+test('example endpoint selection omits unrelated catalog products',()=>{assert.equal(exampleProducts([...products,{...products[0],id:'not-selected'}]).length,3);});
