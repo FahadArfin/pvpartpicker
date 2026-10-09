@@ -34,12 +34,12 @@
 @media(max-width:540px){.connection-heading{padding:15px;align-items:flex-start;flex-direction:column;gap:8px}.connection-conditions{padding:15px;gap:12px;grid-template-columns:1fr}.connection-conditions p{grid-column:auto}.connection-array{margin:10px 10px 16px}.connection-flow{padding:8px}.connection-array-bar{gap:7px;flex-wrap:wrap}.connection-array-bar>strong{width:100%;margin:0}.connection-array-bar>.icon-button{margin-left:auto}.connection-allocation-list{padding:12px 15px;flex-direction:column}.connection-numbers>div{flex-direction:column;gap:3px}.connection-numbers dd{text-align:left}.connection-check-table{padding:0 5px}.connection-check-table table{min-width:380px}.connection-actions{padding:8px 15px 16px}.connection-warning,.connection-footnote{margin-left:15px;margin-right:15px}}
 html[data-theme="light"] {
   color-scheme:light;
-  /* Warm stone day palette: colored canvas and panels, without white page glare. */
-  --background:#d8d8cf; --surface:#e5e4da; --surface-alt:#ced4ce; --surface-raised:#c5cec8;
-  --text:#303e40; --muted:#485757; --line:#adb9b1;
-  --accent:#2c5668; --accent-solid:#3b6375; --accent-soft:#c8d9d9; --on-accent:#fff;
+  /* Soft Slate day palette: cool low-glare surfaces and restrained blue actions. */
+  --background:#e1e6ec; --surface:#ebeef2; --surface-alt:#d8e0e9; --surface-raised:#ced9e5;
+  --text:#28364a; --muted:#526176; --line:#bdc8d5;
+  --accent:#315f98; --accent-solid:#3567a2; --accent-soft:#cfdcec; --on-accent:#fff;
   --success:#205c42; --success-soft:#cfdfd2; --warning:#6f501b; --warning-soft:#e7dcc1;
-  --danger:#963747; --danger-soft:#e7d3d1; --rail:#ced4cc; --brand:#79561d;
+  --danger:#963747; --danger-soft:#e7d3d1; --rail:#d8e0e9; --brand:#315f98;
   --chart-1:#14788d; --chart-2:#9c5f13; --chart-3:#7650b4; --chart-4:#b93d69;
   --chart-5:#51792c; --chart-6:#315ec0; --chart-7:#334b5e; --chart-8:#9a5a31;
 }

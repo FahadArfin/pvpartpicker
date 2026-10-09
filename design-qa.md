@@ -208,3 +208,9 @@ Final built-Worker browser QA used 16 actual Renogy RSP100DC panels, one EG4 18k
 - Primary, muted and link text tested against all five day surfaces: minimum 4.70:1; white filled-button text also exceeds 4.5:1.
 - Built Worker Home inspected at desktop width; Guide inspected at 390x844 in both day and night. Mobile document/client width both 375px. Toggle changes palette correctly. Screenshot: output/day-home.png.
 - 321 tests passed; typecheck and final production build passed. No scraper, data, workflow or runtime changes.
+
+## Soft Slate day theme - October 8, 2026
+
+Owner approved the generated Soft Slate preview. Replaced the rejected warm stone/sage day tokens with cool blue-gray canvas, lighter slate panels, charcoal text and blue actions. Shared layout and night tokens retained.
+
+Validation: 321 tests passed, typecheck and production build passed. Browser inspected Home, Parts and Builder at 1280px and Guide at 375px in day/night. Local preview has no hosted deals feed (503); empty/error handling remains visible. Screenshots: output/slate-home.png, output/slate-parts.png, output/slate-build.png, output/slate-guide-mobile.png and output/slate-guide-night.png. No scraper, scheduling or data changes.

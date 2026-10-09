@@ -47,20 +47,20 @@ Use CSS tokens; do not duplicate hex values in page styles. Legacy `--ink`, `--g
 
 | Token | Night | Day | Purpose |
 | --- | --- | --- | --- |
-| `--background` | #171e27 | #d8d8cf | Page canvas |
-| `--surface` | #1c2530 | #e5e4da | Tables, inputs, panels |
-| `--surface-alt` | #222d3a | #ced4ce | Headers, secondary surfaces |
-| `--surface-raised` | #263240 | #c5cec8 | Hover, dialogs, feedback |
-| `--text` | #e4eaf2 | #303e40 | Primary text |
-| `--muted` | #a8b5c5 | #485757 | Labels and supporting text |
-| `--line` | #344151 | #adb9b1 | Quiet boundaries |
-| `--accent` | #71b0ff | #2c5668 | Links, focus, selected borders |
-| `--accent-solid` | #286bb4 | #3b6375 | Filled actions with `--on-accent` text |
-| `--accent-soft` | #243c57 | #c8d9d9 | Selected rows |
+| `--background` | #171e27 | #e1e6ec | Page canvas |
+| `--surface` | #1c2530 | #ebeef2 | Tables, inputs, panels |
+| `--surface-alt` | #222d3a | #d8e0e9 | Headers, secondary surfaces |
+| `--surface-raised` | #263240 | #ced9e5 | Hover, dialogs, feedback |
+| `--text` | #e4eaf2 | #28364a | Primary text |
+| `--muted` | #a8b5c5 | #526176 | Labels and supporting text |
+| `--line` | #344151 | #bdc8d5 | Quiet boundaries |
+| `--accent` | #71b0ff | #315f98 | Links, focus, selected borders |
+| `--accent-solid` | #286bb4 | #3567a2 | Filled actions with `--on-accent` text |
+| `--accent-soft` | #243c57 | #cfdcec | Selected rows |
 
 Use `--success`, `--warning`, `--danger` and their `-soft` backgrounds for statuses, with text labels. Use `--chart-1` through `--chart-8` for charts. Do not reuse a light link color as a filled button background.
 
-Owner revision, October 8, 2026: day mode uses a visibly warm stone canvas, parchment-tinted panels, sage-gray secondary surfaces, charcoal text and muted blue actions to reduce glare. Avoid white page/panel backgrounds; reuse these shared tokens on every route. Preserve readable text contrast rather than fading text. Keep the switch thumb white for contrast against its track.
+Owner revision, October 8, 2026: the owner approved the Soft Slate preview: day mode uses a cool blue-gray canvas, lighter slate panels, charcoal-slate text and restrained blue actions. This supersedes the rejected warm stone/sage palette. Preserve the existing layout and circular Home shortcuts. Avoid white page/panel backgrounds; reuse these shared tokens on every route. Preserve readable text contrast rather than fading text. Keep the switch thumb white for contrast against its track.
 
 Typography uses the existing Inter/system sans stack. Typical sizes: title 27–28px, body 14px, row name 12px, specs 11px, metadata 10–11px. Numbers use tabular alignment. Borders 1px; corners usually 4–6px. Avoid oversized headings, pill-shaped everything, heavy shadows, and gradients.
 
