@@ -302,3 +302,8 @@ Removed the repeated visible Builds heading and intro while retaining an accessi
 - Parts-only header categories now use named rounded pills with circular icons and accent-selected state, matching the Builds/section controls.
 - One horizontal scroll row, 60px desktop / 48px phone touch targets; selected category automatically stays visible. Existing SiteLink URLs and builder query handling retained.
 - 334 tests, typecheck and production build passed. Browser checked all 12 icons, rounded shape, both themes at 1440px and 320px, no page overflow, navigation to Accessories and automatic active-link reveal. No category row on Builds. Screenshots output/part-pills-{day,night}-{1440,320}.png.
+
+## October 9 — Wrapping Parts category pills
+
+- Owner revision replaces the horizontal category scroll with wrapped rows. Phones use two columns and wrapping labels; the Parts header is non-sticky on phones to avoid covering products.
+- 334 tests, typecheck and production build passed. Browser checked both themes at 1440px (two rows) and 320px (six rows), no horizontal category/page overflow, all 12 links unclipped with >=44px touch targets, and category selection navigation. Screenshots output/wrapped-pills-{day,night}-{1440,320}.png.
