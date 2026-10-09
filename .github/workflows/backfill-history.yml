@@ -8,6 +8,10 @@ on:
         description: Add current retailer URLs to the durable queue
         type: boolean
         default: false
+      resume_rate_limit:
+        description: Explicitly acknowledge source review and request resume after the stored cooldown (never clears robots/access/lookup pauses)
+        type: boolean
+        default: false
 permissions:
   contents: read
   actions: write
@@ -25,6 +29,7 @@ jobs:
       PV_API_ORIGIN: ${{ vars.PV_API_ORIGIN }}
       PV_COLLECTOR_TOKEN: ${{ secrets.PV_COLLECTOR_TOKEN }}
       SEED_QUEUE: ${{ inputs.seed }}
+      RESUME_RATE_LIMIT: ${{ inputs.resume_rate_limit }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -36,6 +41,9 @@ jobs:
       - name: Resume history queue at no more than one request per 30 seconds
         id: worker
         run: |
+          if [ "$RESUME_RATE_LIMIT" = "true" ]; then
+            node --experimental-strip-types scripts/drop-history-worker.mjs --resume --reviewed-rate-limit
+          fi
           if [ "$SEED_QUEUE" = "true" ]; then
             node --experimental-strip-types scripts/drop-history-worker.mjs --seed --continuous
           else

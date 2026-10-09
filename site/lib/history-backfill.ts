@@ -1,12 +1,12 @@
 import {historyUrl} from './drop-history.ts';
 import type {Product,Offer} from './types.ts';
 const controlId='drop-history-control',prefix='drop-history-job:';
-interface Control {nextAt:number;slotAt?:number;lease?:string;until?:number;jobId?:string;paused?:boolean;reason?:string;lastRequestAt?:number;}
+interface Control {nextAt:number;slotAt?:number;lease?:string;until?:number;jobId?:string;paused?:boolean;reason?:string;lastRequestAt?:number;pauseKind?:string;retryAfter?:string;cooldownUntil?:number;}
 interface Job {id:string;url:string;p:Pick<Product,'id'|'name'|'category'>;o:Offer;status:string;rows:number;reason?:string;attempts:number;}
 async function state(db:D1Database){const r=await db.prepare('SELECT value FROM job_state WHERE id=?').bind(controlId).first<{value:string}>();return r?{raw:r.value,c:JSON.parse(r.value) as Control}:null;}
 async function swap(db:D1Database,raw:string,c:Control){const r=await db.prepare('UPDATE job_state SET value=? WHERE id=? AND value=?').bind(JSON.stringify(c),controlId,raw).run();if(!r.meta.changes)throw Error('Backfill lease changed; retry later');}
 export async function backfillAction(db:D1Database,d:any,now=Date.now()):Promise<any>{
- if(!d||!['seed','status','claim','permit','confirm','finish','pause','heartbeat','release','recover','setup_error'].includes(d.action))throw Error('Unknown historical backfill action');
+ if(!d||!['seed','status','claim','permit','confirm','finish','pause','heartbeat','release','recover','setup_error','resume','validate_lookup'].includes(d.action))throw Error('Unknown historical backfill action');
  await db.prepare('INSERT OR IGNORE INTO job_state(id,value) VALUES(?,?)').bind(controlId,JSON.stringify({nextAt:0})).run();
  if(d.action==='heartbeat'){
   if(!['started','finished','failed'].includes(d.phase))throw Error('Invalid worker phase');
@@ -33,6 +33,16 @@ export async function backfillAction(db:D1Database,d:any,now=Date.now()):Promise
   if(!legacy||s.c.lease&&(s.c.until||0)>now)return {recovered:false};
   await swap(db,s.raw,{nextAt:Math.max(s.c.nextAt,now),lastRequestAt:s.c.lastRequestAt});return {recovered:true};
  }
+ if(d.action==='resume'){
+  if(!s.c.paused)return {resumed:false,reason:'Queue is not paused'};
+  if(d.reviewedRateLimit!==true||typeof d.expectedReason!=='string'||d.expectedReason!==s.c.reason)throw Error('Review and exact current pause reason required');
+  const rateLimit=s.c.pauseKind==='rate_limit'||(!s.c.pauseKind&&s.c.reason==='Drop.solar refused requests (HTTP 429); owner review required');
+  if(!rateLimit)throw Error('Access, robots and lookup-integrity pauses require source resolution, not rate-limit resume');
+  const until=s.c.cooldownUntil??((s.c.lastRequestAt??now)+86400000);
+  if(now<until)return {resumed:false,cooldownUntil:new Date(until).toISOString()};
+  if(s.c.lease&&(s.c.until||0)>now)throw Error('Active worker prevents resume');
+  await swap(db,s.raw,{nextAt:Math.max(s.c.nextAt,now+30000),lastRequestAt:s.c.lastRequestAt});return {resumed:true};
+ }
  if(d.action==='status'){
   const counts=await db.prepare("SELECT json_extract(value,'$.status') AS status,COUNT(*) AS n,SUM(json_extract(value,'$.rows')) AS rows FROM job_state WHERE id LIKE 'drop-history-job:%' GROUP BY json_extract(value,'$.status')").all<{status:string;n:number;rows:number}>();
   const recent=await db.prepare("SELECT value FROM job_state WHERE id LIKE 'drop-history-job:%' AND json_extract(value,'$.status') NOT IN ('pending') ORDER BY json_extract(value,'$.finishedAt') DESC LIMIT 100").all<{value:string}>();
@@ -41,7 +51,7 @@ export async function backfillAction(db:D1Database,d:any,now=Date.now()):Promise
   const worker=await db.prepare('SELECT value FROM job_state WHERE id=?').bind('drop-history-heartbeat').first<{value:string}>();
   const current=s.c.jobId&&(s.c.until||0)>now?await db.prepare('SELECT value FROM job_state WHERE id=?').bind(s.c.jobId).first<{value:string}>():null;
   const j=current?JSON.parse(current.value):null,c=Object.fromEntries(counts.results.map(r=>[r.status,r.n])),all=counts.results.reduce((n,r)=>n+r.n,0),preReview=review?.n||0,remaining=c.pending||0;
-  return {counts:c,queue:{total:all-preReview,checked:all-preReview-remaining,remaining,preReview},importedRows:imported?.n||0,paused:!!s.c.paused,reason:s.c.reason,now:new Date(now).toISOString(),nextRequestAt:s.c.nextAt?new Date(s.c.nextAt).toISOString():null,lastRequestAt:s.c.lastRequestAt!==undefined?new Date(s.c.lastRequestAt).toISOString():null,worker:worker?JSON.parse(worker.value):null,active:j?{productId:j.p.id,name:j.p.name,retailer:j.o.retailer,until:new Date(s.c.until!).toISOString(),requestAt:s.c.slotAt!==undefined?new Date(s.c.slotAt).toISOString():null}:null,recent:recent.results.map(r=>{const j=JSON.parse(r.value);return {productId:j.p.id,name:j.p.name,retailer:j.o.retailer,status:j.status,rows:j.rows,reason:j.reason,sourceUrl:j.sourceUrl,finishedAt:j.finishedAt};})};
+  return {counts:c,queue:{total:all-preReview,checked:all-preReview-remaining,remaining,preReview},importedRows:imported?.n||0,paused:!!s.c.paused,reason:s.c.reason,pauseKind:s.c.pauseKind,retryAfter:s.c.retryAfter,cooldownUntil:s.c.cooldownUntil?new Date(s.c.cooldownUntil).toISOString():null,now:new Date(now).toISOString(),nextRequestAt:s.c.nextAt?new Date(s.c.nextAt).toISOString():null,lastRequestAt:s.c.lastRequestAt!==undefined?new Date(s.c.lastRequestAt).toISOString():null,worker:worker?JSON.parse(worker.value):null,active:j?{productId:j.p.id,name:j.p.name,retailer:j.o.retailer,until:new Date(s.c.until!).toISOString(),requestAt:s.c.slotAt!==undefined?new Date(s.c.slotAt).toISOString():null}:null,recent:recent.results.map(r=>{const j=JSON.parse(r.value);return {productId:j.p.id,name:j.p.name,retailer:j.o.retailer,status:j.status,rows:j.rows,reason:j.reason,sourceUrl:j.sourceUrl,finishedAt:j.finishedAt};})};
  }
  if(d.action==='claim'){
   if(s.c.paused)return {paused:true,reason:s.c.reason};if(s.c.lease&&(s.c.until||0)>now)return {busy:true};
@@ -57,6 +67,12 @@ export async function backfillAction(db:D1Database,d:any,now=Date.now()):Promise
   if(!row)return {done:true};const job=JSON.parse(row.value) as Job,lease=crypto.randomUUID();await swap(db,s.raw,{...s.c,lease,until:now+300000,jobId:job.id});return {lease,job};
  }
  if(typeof d.lease!=='string'||d.lease!==s.c.lease||(s.c.until||0)<=now)throw Error('Active historical backfill lease required');
+ if(d.action==='validate_lookup'){
+  if(typeof d.sourceUrl!=='string'||!/^https:\/\/drop\.solar\/products\/[a-zA-Z0-9_-]{1,100}$/.test(d.sourceUrl))throw Error('Invalid lookup candidate');
+  const collision=await db.prepare("SELECT value FROM job_state WHERE id LIKE 'drop-history-job:%' AND json_extract(value,'$.sourceUrl')=? AND id<>? AND json_extract(value,'$.status')='unmatched' AND json_extract(value,'$.reason')='Retailer/model/package identity requires review' LIMIT 1").bind(d.sourceUrl,s.c.jobId).first<{value:string}>();
+  if(collision)return {valid:false,reason:'Lookup returned a previously rejected product for another listing: '+d.sourceUrl};
+  return {valid:true};
+ }
  if(d.action==='setup_error'){
   if(typeof d.reason!=='string'||!d.reason.includes('/robots.txt')||d.reason.length>500)throw Error('Robots setup error required');
   await swap(db,s.raw,{nextAt:Math.max(s.c.nextAt,now+60000),lastRequestAt:s.c.lastRequestAt,reason:d.reason});return {retrying:true};
@@ -74,7 +90,10 @@ export async function backfillAction(db:D1Database,d:any,now=Date.now()):Promise
   await swap(db,s.raw,{...s.c,slotAt:undefined,nextAt:now+30000,until:now+300000,lastRequestAt:now});return {waitMs:0};
  }
  if(d.action==='pause'){
-  if(typeof d.reason!=='string'||d.reason.length>500)throw Error('Backfill pause reason required');await swap(db,s.raw,{nextAt:s.c.nextAt,lastRequestAt:s.c.lastRequestAt,paused:true,reason:d.reason});return {paused:true};
+  if(typeof d.reason!=='string'||d.reason.length>500)throw Error('Backfill pause reason required');if(d.kind!==undefined&&!['rate_limit','access_denied','lookup_integrity','policy'].includes(d.kind))throw Error('Invalid pause kind');
+  if(d.retryAfter!==undefined&&(typeof d.retryAfter!=='string'||d.retryAfter.length>200))throw Error('Invalid Retry-After');
+  if(d.cooldownUntil!==undefined&&(!Number.isSafeInteger(d.cooldownUntil)||d.cooldownUntil<now))throw Error('Invalid cooldown');
+  await swap(db,s.raw,{nextAt:s.c.nextAt,lastRequestAt:s.c.lastRequestAt,paused:true,reason:d.reason,pauseKind:d.kind,retryAfter:d.retryAfter,cooldownUntil:d.kind==='rate_limit'?Math.max(now+86400000,d.cooldownUntil??0):undefined});return {paused:true};
  }
  if(d.id!==s.c.jobId||!['complete','not_found','unmatched','failed','retry'].includes(d.status)||!Number.isInteger(d.rows||0)||(d.rows||0)<0||(d.rows||0)>5000||typeof(d.reason||'')!=='string'||(d.reason||'').length>500)throw Error('Invalid historical backfill result');
  const row=await db.prepare('SELECT value FROM job_state WHERE id=?').bind(d.id).first<{value:string}>();if(!row)throw Error('Unknown backfill job');const job=JSON.parse(row.value) as Job;

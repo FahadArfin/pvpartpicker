@@ -3,7 +3,13 @@ import {readFile,appendFile} from 'node:fs/promises';
 import {pathToFileURL} from 'node:url';
 import {parseDropHistory,dropIdentity,dropPagePath} from '../lib/drop-history.ts';
 import {robotsAllows} from '../lib/retailers.ts';
-const pauseError=reason=>Object.assign(Error(reason),{pause:true});
+const pauseError=(reason,detail={})=>Object.assign(Error(reason),{pause:true,...detail});
+export function retryAfterDeadline(value,now){
+ if(typeof value!=='string'||value.length>200)return undefined;
+ const seconds=/^\d+$/.test(value.trim())?Number(value.trim()):NaN;
+ const at=Number.isFinite(seconds)?now+seconds*1000:/^(?:Mon|Tue|Wed|Thu|Fri|Sat|Sun), \d{2} (?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec) \d{4} \d{2}:\d{2}:\d{2} GMT$/.test(value)?Date.parse(value):NaN;
+ return Number.isSafeInteger(at)&&at>=now?at:undefined;
+}
 /** One worker, one reserved request slot at a time. Restart state lives in the site's D1 job_state. */
 export async function runBackfill({api,request,now=Date.now,sleep=ms=>new Promise(r=>setTimeout(r,ms)),budgetMs=45*60000,maxJobs=10000,continuous=false,log=console.log}){
  const deadline=now()+budgetMs;let robots,delay=30000,lastRequest=-Infinity,processed=0;
@@ -25,7 +31,8 @@ export async function runBackfill({api,request,now=Date.now,sleep=ms=>new Promis
    let confirmed=await api('confirm',{lease});while(confirmed.waitMs>0){await sleep(confirmed.waitMs);confirmed=await api('confirm',{lease});}
    lastRequest=now();let result;
    try{result=await request(path,options);}catch(e){throw Error('Drop.solar connection failed at '+path+': '+e.message);}
-   if([401,403,429].includes(result.status)||/captcha|verify you are human|just a moment|cf-chl-/i.test(result.body.slice(0,20000)))throw pauseError('Drop.solar refused requests (HTTP '+result.status+'); owner review required');
+   const challenge=/captcha|verify you are human|just a moment|cf-chl-/i.test(result.body.slice(0,20000));
+   if([401,403,429].includes(result.status)||challenge)throw pauseError('Drop.solar refused requests (HTTP '+result.status+'); owner review required',{kind:result.status===429&&!challenge?'rate_limit':'access_denied',retryAfter:result.retryAfter,cooldownUntil:retryAfterDeadline(result.retryAfter,now())});
    if(result.status>=500)throw Error('Drop.solar HTTP '+result.status+' at '+path);
    return result;
   };
@@ -38,6 +45,7 @@ export async function runBackfill({api,request,now=Date.now,sleep=ms=>new Promis
    if(lookup.status!==200)throw Error('URL lookup failed (HTTP '+lookup.status+')');
    const found=JSON.parse(lookup.body).found;if(!found){await api('finish',{lease,id:job.id,status:'not_found',reason:'No Drop.solar page for this retailer URL'});processed++;continue;}
    const path=dropPagePath(found);if(!path)throw Error('Unexpected URL lookup response');sourceUrl='https://drop.solar'+path;
+   const validation=await api('validate_lookup',{lease,sourceUrl});if(validation?.valid===false)throw pauseError(validation.reason,{kind:'lookup_integrity'});
    const page=await get(path);if(page.status!==200)throw Error('Product page failed (HTTP '+page.status+')');
    const data=parseDropHistory(page.body,path);
    if(!dropIdentity(job.p,job.o,data.product)){await api('finish',{lease,id:job.id,status:'unmatched',sourceUrl,reason:'Retailer/model/package identity requires review'});processed++;continue;}
@@ -48,7 +56,7 @@ export async function runBackfill({api,request,now=Date.now,sleep=ms=>new Promis
    }
    await api('finish',{lease,id:job.id,status:'complete',sourceUrl,rows:inserted});log({productId:job.p.id,retailer:job.o.retailer,status:'complete',inserted});processed++;
   }catch(e){
-   if(e.pause){await api('pause',{lease,reason:e.message});log({paused:true,reason:e.message});return {continuation:false};}
+   if(e.pause){await api('pause',{lease,reason:e.message,kind:e.kind,retryAfter:e.retryAfter,cooldownUntil:e.cooldownUntil});log({paused:true,reason:e.message});return {continuation:false};}
    if(e.budget){await api('release',{lease});log({deferred:true});return {continuation:continuous};}
    if(e.setup){await api('setup_error',{lease,reason:e.message.slice(0,500)});log({setupError:true,reason:e.message.slice(0,200)});if(!continuous)return {continuation:false};await sleep(60000);continue;}
    // Identity/parser failures are review items, not permission to guess or hammer the source.
@@ -74,6 +82,7 @@ async function main(){
  if(!token&&args.includes('--env-file')){const env=await readFile(option('--env-file'),'utf8');token=env.match(/^COLLECTOR_TOKEN\s*=\s*(.+)$/m)?.[1]?.trim().replace(/^(["'])(.*)\1$/,'$2');}
  const origin=process.env.PV_API_ORIGIN||'https://pvpartpicker.fwad101.chatgpt.site';if(!['https://pvpartpicker.fwad101.chatgpt.site','http://127.0.0.1:5191'].includes(origin)||!token)throw Error('Configure the existing PV API origin and collector credential');
  const api=async(action,data={})=>{const r=await fetch(origin+'/api/'+(action==='import'?'history-import':'history-backfill'),{method:'POST',headers:{'Content-Type':'application/json',Authorization:'Bearer '+token},body:JSON.stringify(action==='import'?data:{action,...data}),signal:AbortSignal.timeout(90000)});const result=await r.json();if(!r.ok)throw Object.assign(Error(result.error||'Backfill API failed'),{transient:r.status>=500});return result;};
+ if(args.includes('--resume')){if(!args.includes('--reviewed-rate-limit'))throw Error('Review the source refusal before using --resume --reviewed-rate-limit');const status=await api('status');console.log(await api('resume',{reviewedRateLimit:true,expectedReason:status.reason}));return;}
  if(args.includes('--status')){console.log(await api('status'));return;}if(args.includes('--seed'))console.log(await api('seed'));
  const continuous=args.includes('--continuous'),minutes=args.includes('--minutes')?Number(option('--minutes')):continuous?350:45,maxJobs=args.includes('--max-jobs')?Number(option('--max-jobs')):10000;
  if(!Number.isFinite(minutes)||minutes<1||minutes>350||!Number.isInteger(maxJobs)||maxJobs<1)throw Error('Invalid worker budget');
@@ -88,7 +97,7 @@ async function main(){
  };
  const result=await withWorkerCheckIn(api,async()=>{await api('recover');return runBackfill({api:checkedApi,continuous,budgetMs:minutes*60000,maxJobs,sleep:ms=>sleepWithCheckIn(ms,chunk=>new Promise(r=>setTimeout(r,chunk)),checkHeartbeat),request:async(path,options)=>{
   const r=await fetch('https://drop.solar'+path,{...options,redirect:'error',headers:{'User-Agent':'PVPartPickerBot/1.0 (+https://github.com/FahadArfin/pvpartpicker)','Content-Type':'application/json'},signal:AbortSignal.timeout(25000)});
-  const reader=r.body?.getReader();let size=0,body='';if(reader){const decoder=new TextDecoder();while(true){const chunk=await reader.read();if(chunk.done)break;size+=chunk.value.length;if(size>8_000_000){await reader.cancel();throw Error('Source page too large');}body+=decoder.decode(chunk.value,{stream:true});}body+=decoder.decode();}return {status:r.status,body};
+  const reader=r.body?.getReader();let size=0,body='';if(reader){const decoder=new TextDecoder();while(true){const chunk=await reader.read();if(chunk.done)break;size+=chunk.value.length;if(size>8_000_000){await reader.cancel();throw Error('Source page too large');}body+=decoder.decode(chunk.value,{stream:true});}body+=decoder.decode();}return {status:r.status,body,retryAfter:r.headers.get('retry-after')??undefined};
  }});},runUrl);
  const status=await api('status');console.log(status);
  if(process.env.GITHUB_OUTPUT)await appendFile(process.env.GITHUB_OUTPUT,'continue='+Boolean(result?.continuation&&!status.paused&&status.queue?.remaining>0)+'\n');

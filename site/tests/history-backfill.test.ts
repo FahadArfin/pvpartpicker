@@ -116,3 +116,24 @@ test('timestamp import is retry-safe, rejects conflicts/ambiguous variants and l
  sql.prepare('INSERT INTO offers VALUES(?,?,?,?)').run('ss-2',p.id,JSON.stringify({...o,id:'ss-2',packQuantity:2}),'today');
  await assert.rejects(importHistory(db,payload),/ambiguous/i);sql.close();
 });
+
+test('explicit rate-limit resume honors cooldown, exact review and keeps job state unchanged',async()=>{
+ const {db,sql}=fixture();await backfillAction(db,{action:'seed'},1000);const c=await backfillAction(db,{action:'claim'},1000);
+ const before=sql.prepare('SELECT value FROM job_state WHERE id=?').get(c.job.id);
+ await backfillAction(db,{action:'pause',lease:c.lease,reason:'429',kind:'rate_limit',retryAfter:'90000',cooldownUntil:90001000},1000);
+ assert.equal((await backfillAction(db,{action:'status'},1001)).retryAfter,'90000');
+ await assert.rejects(backfillAction(db,{action:'resume',reviewedRateLimit:true,expectedReason:'different'},1002),/review/i);
+ assert.equal((await backfillAction(db,{action:'resume',reviewedRateLimit:true,expectedReason:'429'},86401000)).resumed,false);
+ assert.equal((await backfillAction(db,{action:'resume',reviewedRateLimit:true,expectedReason:'429'},90001000)).resumed,true);
+ assert.deepEqual(sql.prepare('SELECT value FROM job_state WHERE id=?').get(c.job.id),before);assert.equal((await backfillAction(db,{action:'status'},90001000)).queue.remaining,1);
+ const next=await backfillAction(db,{action:'claim'},90032000);await backfillAction(db,{action:'pause',lease:next.lease,reason:'403',kind:'access_denied'},90032000);
+ await assert.rejects(backfillAction(db,{action:'resume',reviewedRateLimit:true,expectedReason:'403'},200000000),/resolution/i);sql.close();
+});
+test('durable lookup guard uses existing rejected candidates without rewriting completed or pending jobs',async()=>{
+ const {db,sql,p,o}=fixture();sql.prepare('INSERT INTO offers VALUES(?,?,?,?)').run('ss-2',p.id,JSON.stringify({...o,id:'ss-2',url:'https://signaturesolar.com/second/'}),'today');
+ await backfillAction(db,{action:'seed'},1000);const a=await backfillAction(db,{action:'claim'},1000);const sourceUrl='https://drop.solar/products/sg-4882548064393';
+ await backfillAction(db,{action:'finish',lease:a.lease,id:a.job.id,status:'unmatched',sourceUrl,reason:'Retailer/model/package identity requires review'},1000);
+ const b=await backfillAction(db,{action:'claim'},32000);assert.equal((await backfillAction(db,{action:'validate_lookup',lease:b.lease,sourceUrl},32000)).valid,false);
+ assert.equal((await backfillAction(db,{action:'validate_lookup',lease:b.lease,sourceUrl:'https://drop.solar/products/ss-other'},32000)).valid,true);
+ const status=await backfillAction(db,{action:'status'},32000);assert.equal(status.counts.unmatched,1);assert.equal(status.queue.remaining,1);sql.close();
+});
