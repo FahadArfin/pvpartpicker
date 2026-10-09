@@ -256,3 +256,9 @@ Removed the repeated visible Builds heading and intro while retaining an accessi
 - Removed landing intro/filter tabs, Saved heading/current-draft block and both Community introductions. Accessible headings and shared navigation retained.
 - Built Worker reviewed in night desktop/day phone: output/build-trim-landing.png, output/build-trim-saved.png, output/build-trim-community.png. Confirmed search inputs remain usable and no overflow. Browser uses real catalog fixture and empty community fixture.
 - 326 tests, typecheck and build passed.
+
+## Compact rounded example build cards
+- Eight populated examples: portable, off-grid, four hybrid options and two Enphase IQ8MC solar-only setups. Catalog IDs verified against the current public catalog; manufacturer manuals linked in expanded details. No scraper changes.
+- Budget tiers use full fresh package-aware subtotals; unpriced examples are separate. System/budget combination, reset empty results and ascending price order checked.
+- User-selected rounded cards show text when closed and photos only in expanded part lists. Reviewed desktop and 320px phone in both themes; no overflow. Screenshots output/compact-night.png and output/compact-mobile.png (theme reflects persisted browser selection).
+- Enphase copy verified 16 panels, 16 microinverters and one combiner with gridtie purpose. 329 tests, typecheck and build passed. QA fixtures retain real public catalog prices; live API will be rechecked after publish.
