@@ -338,3 +338,8 @@ Removed the repeated visible Builds heading and intro while retaining an accessi
 
 - Moved ecosystem chooser into Brands control between category picker and search, using existing catalog state via portal. Removed old main ecosystem disclosure after toolbar host mounts; fallback remains before hydration. Smooth/inert drawer retains logos, counts, disabled unavailable brands and reset; selection closes it.
 - 334 tests, typecheck and production build passed. Browser checked toolbar order, both themes at 1440/320px, no overflow or duplicate search/ecosystem controls, Renogy filtering, All brands reset, selected label/automatic closure, builder query/category retention and no runtime errors. Screenshots output/brands-{day,night}-{1440,320}.png.
+
+## October 10 — All categories default
+
+- Normal Parts catalog and picker now default to All categories, with a matching tray reset link. Explicit URLs and builder category scope preserved.
+- 335 tests passed including default/explicit/builder URL-state coverage; typecheck and build passed. Browser checked default picker/catalog agreement, category/reset navigation, explicit inverter and builder panel scope, both themes at 1440/320px, no overflow. Screenshot output/all-categories-day-1440.png.

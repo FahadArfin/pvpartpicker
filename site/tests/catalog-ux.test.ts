@@ -32,3 +32,9 @@ test('comparison uses unit-aware public fields and preserves missing values',()=
  assert.ok(!rows.some(r=>r.key==='hasFancyFeature'));
  assert.equal(comparisonRows([p('a'),p('b')]).find(r=>r.key==='watts')?.different,false);
 });
+
+test('catalog starts across all categories but retains explicit and builder selections',()=>{
+ assert.equal(readCatalogState(new URLSearchParams()).category,'all');
+ assert.equal(readCatalogState(new URLSearchParams('category=inverters')).category,'inverters');
+ assert.equal(readCatalogState(new URLSearchParams('builder=1')).category,'panels');
+});

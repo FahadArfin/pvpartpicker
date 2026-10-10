@@ -11,7 +11,7 @@ export function readCatalogState(params:URLSearchParams):CatalogState{
  const attributes:Record<string,string>={};
  for(const [key,value] of params)if(/^f\.[a-zA-Z][a-zA-Z0-9]{0,35}$/.test(key)&&value.length<=100)attributes[key.slice(2)]=value;
  const price=params.get('maxPrice')||'';
- return {category:params.get('category')||'panels',ecosystem:params.get('ecosystem')||'',q:(params.get('q')||'').slice(0,100),brand:(params.get('brand')||'').slice(0,100),maxPrice:price&&Number.isFinite(Number(price))&&Number(price)>=0?price:'',inStock:params.get('stock')==='1',condition:['new','used'].includes(params.get('condition')||'')?params.get('condition')!:'all',sort:params.get('sort')||'recommended',attributes};
+ return {category:params.get('category')||(params.get('builder')==='1'?'panels':'all'),ecosystem:params.get('ecosystem')||'',q:(params.get('q')||'').slice(0,100),brand:(params.get('brand')||'').slice(0,100),maxPrice:price&&Number.isFinite(Number(price))&&Number(price)>=0?price:'',inStock:params.get('stock')==='1',condition:['new','used'].includes(params.get('condition')||'')?params.get('condition')!:'all',sort:params.get('sort')||'recommended',attributes};
 }
 export function catalogStateUrl(current:string,state:CatalogState):string{
  const url=new URL(current,'https://pvpartpicker.invalid');

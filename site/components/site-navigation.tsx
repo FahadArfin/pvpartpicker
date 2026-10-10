@@ -28,7 +28,7 @@ const buildLinks = [
 ];
 export function SiteNavigation({path}:{path:string}) {
   const {build,user,draftReady} = usePV();
-  const [category,setCategory] = useState('panels'), [builder,setBuilder] = useState(false),[categoriesOpen,setCategoriesOpen]=useState(false);
+  const [category,setCategory] = useState('all'), [builder,setBuilder] = useState(false),[categoriesOpen,setCategoriesOpen]=useState(false);
   const selectedCategory=categories.find(c=>c.id===category);
   const CategoryIcon=selectedCategory?icons[selectedCategory.id]:Grid2X2;
   const header=useRef<HTMLElement>(null);
@@ -40,7 +40,7 @@ export function SiteNavigation({path}:{path:string}) {
   useEffect(()=>{setMenuOpen(false);},[path]);
   useEffect(()=>{const media=window.matchMedia('(min-width:721px)');const close=()=>{if(media.matches)setMenuOpen(false);};media.addEventListener('change',close);return()=>media.removeEventListener('change',close);},[]);
   useEffect(() => {
-    const sync = () => {const query=new URLSearchParams(location.search);setCategory(query.get('category')||'panels');setBuilder(query.get('builder')==='1');};
+    const sync = () => {const query=new URLSearchParams(location.search);setCategory(query.get('category')||(query.get('builder')==='1'?'panels':'all'));setBuilder(query.get('builder')==='1');};
     sync();window.addEventListener('pv:catalog-change',sync);
     return () => window.removeEventListener('pv:catalog-change',sync);
   },[path]);
@@ -70,7 +70,7 @@ export function SiteNavigation({path}:{path:string}) {
     {inBuilds&&buildNavigation()}
     {path==='/parts'&&<div className="part-category-picker">
       <div className="part-picker-toolbar"><button type="button" className="part-category-toggle" aria-expanded={categoriesOpen} aria-controls="part-category-options" onClick={()=>setCategoriesOpen(o=>!o)}><span className="section-pill-icon"><CategoryIcon size={19} aria-hidden="true"/></span><span>{selectedCategory?.label||'All categories'}</span><ChevronDown size={16} aria-hidden="true"/></button><div id="catalog-header-brands" className="part-picker-brands"/><div id="catalog-header-search" className="part-picker-search"/></div>
-      <div id="part-category-options" className={'part-category-options'+(categoriesOpen?' is-open':'')} aria-hidden={!categoriesOpen} inert={!categoriesOpen}><div className="part-category-options-inner"><nav className="solar-system-tray" aria-label="Part categories">{categoryGroups.map(group=><section className="solar-tray-group" key={group.id} aria-labelledby={'tray-'+group.id}><h2 id={'tray-'+group.id}>{group.label}</h2><div className="workspace-categories workspace-part-categories">{group.categories.map(id=>{const c=categories.find(c=>c.id===id)!;const Icon=icons[c.id];return <Link key={c.id} href={'/parts?category='+c.id+(builder?'&builder=1':'')} aria-current={category===c.id?'page':undefined} onClick={()=>setCategoriesOpen(false)}><span className="section-pill-icon"><Icon size={19} strokeWidth={1.7} aria-hidden="true"/></span><span>{c.label}</span></Link>;})}</div></section>)}</nav></div></div>
+      <div id="part-category-options" className={'part-category-options'+(categoriesOpen?' is-open':'')} aria-hidden={!categoriesOpen} inert={!categoriesOpen}><div className="part-category-options-inner"><nav className="solar-system-tray" aria-label="Part categories">{!builder&&<div className="workspace-categories workspace-part-categories"><Link href="/parts?category=all" aria-current={category==='all'?'page':undefined} onClick={()=>setCategoriesOpen(false)}><span className="section-pill-icon"><Grid2X2 size={19} aria-hidden="true"/></span><span>All categories</span></Link></div>}{categoryGroups.map(group=><section className="solar-tray-group" key={group.id} aria-labelledby={'tray-'+group.id}><h2 id={'tray-'+group.id}>{group.label}</h2><div className="workspace-categories workspace-part-categories">{group.categories.map(id=>{const c=categories.find(c=>c.id===id)!;const Icon=icons[c.id];return <Link key={c.id} href={'/parts?category='+c.id+(builder?'&builder=1':'')} aria-current={category===c.id?'page':undefined} onClick={()=>setCategoriesOpen(false)}><span className="section-pill-icon"><Icon size={19} strokeWidth={1.7} aria-hidden="true"/></span><span>{c.label}</span></Link>;})}</div></section>)}</nav></div></div>
       <div id="catalog-header-brand-options"/>
     </div>}
 

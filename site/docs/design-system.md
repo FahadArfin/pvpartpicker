@@ -116,3 +116,5 @@ Owner-approved solar-system tray groups the category pills under Generate, Store
 Parts search sits directly beside the selected-category picker with a 16px gap, rather than at the far right of the header toolbar. Phones stack the search directly below the picker. Preserve the same controlled search state, clear button, URL filters and accessible fallback; do not duplicate the catalog search or leave an empty introduction row.
 
 The ecosystem brand chooser is now a Brands pill between category selection and search. Its smooth drawer retains logos, availability counts, disabled unlisted brands, selected state and All brands reset. Choosing a brand closes the drawer; preserve the existing ecosystem filtering and builder category rules.
+
+Parts defaults to All categories when no category is supplied. The normal tray includes All categories reset; explicit category URLs stay selected and builder pickers retain category scope.
