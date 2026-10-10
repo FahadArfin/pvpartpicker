@@ -64,8 +64,8 @@
 @media(max-width:720px){.solar-tray-group{grid-template-columns:minmax(0,1fr);gap:8px;padding:10px 0}.solar-tray-group h2{padding-top:0;font-size:11px}.solar-system-tray{padding-top:4px}}
 
 /* Search and category selection share one compact header toolbar. */
-.part-picker-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.part-picker-search{width:min(390px,45%);margin-left:auto;min-width:0}
+.part-picker-toolbar{display:flex;align-items:center;justify-content:flex-start;gap:16px}
+.part-picker-search{width:min(390px,45%);margin-left:0;min-width:0}
 .part-picker-search .catalog-search{margin:0;width:100%;height:36px;min-height:36px;border-radius:6px;padding:0 12px}
 .part-picker-search .catalog-search input{height:34px;padding:5px 0;min-width:0}
 @media(max-width:600px){.part-picker-toolbar{flex-wrap:wrap;gap:8px}.part-picker-search{width:100%;margin-left:0}}

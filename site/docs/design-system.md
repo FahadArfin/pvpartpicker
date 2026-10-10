@@ -113,4 +113,4 @@ Owner revision: Parts categories start collapsed behind a compact selected-categ
 
 Owner-approved solar-system tray groups the category pills under Generate, Store, Convert, and Connect & control. Group headings sit beside pills on desktop and above the two-column pills on phones. Preserve the selected-category toggle, smooth collapse, inert closed content, reduced-motion support and all 12 category routes.
 
-Parts search sits beside the selected-category picker in the header toolbar. Phones stack the search directly below the picker. Preserve the same controlled search state, clear button, URL filters and accessible fallback; do not duplicate the catalog search or leave an empty introduction row.
+Parts search sits directly beside the selected-category picker with a 16px gap, rather than at the far right of the header toolbar. Phones stack the search directly below the picker. Preserve the same controlled search state, clear button, URL filters and accessible fallback; do not duplicate the catalog search or leave an empty introduction row.

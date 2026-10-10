@@ -328,3 +328,8 @@ Removed the repeated visible Builds heading and intro while retaining an accessi
 - Moved the existing controlled search field into a header toolbar host via React portal, keeping state and filtering in CatalogWorkspace. Server/client fallback remains in the catalog until the host mounts. Removed the now-empty normal catalog intro row; accessible heading and builder heading retained.
 - Desktop search aligned beside the category picker; phones stack it within the same compact toolbar.
 - 334 tests, typecheck and production build passed. Browser verified one search only, aligned desktop centers, both themes at 1440/320px, no overflow, real unmatched filtering, clear-search reset, category navigation, builder context and no runtime page errors. Screenshots output/header-search-{day,night}-{1440,320}.png.
+
+## October 10 — Search directly beside category picker
+
+- Removed automatic right alignment; desktop search now follows the selected category with a 16px gap. Phone stack unchanged.
+- 334 tests, typecheck and build passed. Browser verified exact adjacent gap, vertical alignment, filtering/clear/navigation, no duplicates/runtime errors or overflow at 1440/320px in both themes. Screenshot output/search-position-day-1440.png.
