@@ -69,3 +69,12 @@
 .part-picker-search .catalog-search{margin:0;width:100%;height:36px;min-height:36px;border-radius:6px;padding:0 12px}
 .part-picker-search .catalog-search input{height:34px;padding:5px 0;min-width:0}
 @media(max-width:600px){.part-picker-toolbar{flex-wrap:wrap;gap:8px}.part-picker-search{width:100%;margin-left:0}}
+
+.part-picker-brands{flex:0 0 auto;min-width:0}
+.brands-toggle>span:not(.section-pill-icon){display:flex;align-items:center;gap:6px}
+.brands-toggle small{color:var(--muted);font-size:10px;max-width:90px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.brand-options .ecosystem-buttons{padding-top:12px;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+.brand-options .ecosystem-buttons button{min-height:44px;border-radius:999px}
+.brand-options .ecosystem-note{margin:8px 0 4px;font-size:10px;color:var(--muted)}
+@media(max-width:900px){.part-picker-toolbar{flex-wrap:wrap;gap:8px}.part-picker-search{flex:1;min-width:220px;max-width:390px}}
+@media(max-width:600px){.part-picker-search{flex-basis:100%;max-width:none}.brands-toggle small{display:none}}

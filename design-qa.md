@@ -333,3 +333,8 @@ Removed the repeated visible Builds heading and intro while retaining an accessi
 
 - Removed automatic right alignment; desktop search now follows the selected category with a 16px gap. Phone stack unchanged.
 - 334 tests, typecheck and build passed. Browser verified exact adjacent gap, vertical alignment, filtering/clear/navigation, no duplicates/runtime errors or overflow at 1440/320px in both themes. Screenshot output/search-position-day-1440.png.
+
+## October 10 — Brands dropdown in catalog toolbar
+
+- Moved ecosystem chooser into Brands control between category picker and search, using existing catalog state via portal. Removed old main ecosystem disclosure after toolbar host mounts; fallback remains before hydration. Smooth/inert drawer retains logos, counts, disabled unavailable brands and reset; selection closes it.
+- 334 tests, typecheck and production build passed. Browser checked toolbar order, both themes at 1440/320px, no overflow or duplicate search/ecosystem controls, Renogy filtering, All brands reset, selected label/automatic closure, builder query/category retention and no runtime errors. Screenshots output/brands-{day,night}-{1440,320}.png.
