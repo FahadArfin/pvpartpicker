@@ -317,3 +317,8 @@ Removed the repeated visible Builds heading and intro while retaining an accessi
 
 - Category drawer uses a 240ms intrinsic-height transition and gentle opacity/chevron/pill feedback. Closed options are inert and hidden from assistive technology; reduced-motion settings suppress animation.
 - 334 tests, typecheck and build passed. Browser checked animated expansion/collapse and inert state in both themes at 1440/320px, no page overflow, reduced-motion duration <=1ms, and category selection/automatic closure. Screenshots output/motion-{day,night}-{1440,320}.png.
+
+## October 10 — Grouped solar-system category tray
+
+- Approved grouped drawer: Generate (panels/mounting), Store (batteries/stations), Convert (inverters/controllers), Connect & control (wiring/module electronics/monitoring/electrical/bundles/accessories). Existing category names, icons and routes retained. Desktop groups use compact labeled rows; phone groups use two-column pills beneath headings.
+- 334 tests, typecheck and production build passed. Built browser checks verified four headings, exactly 12 unique category links, no clipped links or horizontal overflow, >=44px targets, both themes at 1440/320px, inert collapsed content, automatic selection/closure, builder query retention and reduced motion. Screenshots output/tray-{day,night}-{1440,320}.png.

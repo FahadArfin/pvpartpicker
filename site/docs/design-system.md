@@ -110,3 +110,5 @@ Shared section controls: Deals views, Watch List all/fresh views, Tier List fami
 Parts category header uses the shared named circular-icon pill style in wrapping rows, without horizontal scrolling. Phones use two columns with wrapping labels; the Parts header scrolls with the page so the expanded category navigation does not cover the product list. Keep category navigation scoped to /parts.
 
 Owner revision: Parts categories start collapsed behind a compact selected-category icon pill with a chevron. Expand to see smaller wrapping category pills; selecting a category closes the picker. Avoid repeated visible category headings and Searching labels in the catalog; retain accessible headings and search controls.
+
+Owner-approved solar-system tray groups the category pills under Generate, Store, Convert, and Connect & control. Group headings sit beside pills on desktop and above the two-column pills on phones. Preserve the selected-category toggle, smooth collapse, inert closed content, reduced-motion support and all 12 category routes.

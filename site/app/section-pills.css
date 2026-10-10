@@ -54,3 +54,11 @@
 .part-category-toggle,.workspace-part-categories>a{transition:background-color .16s ease,border-color .16s ease,color .16s ease}
 .part-category-toggle>svg{transition:transform .24s cubic-bezier(.2,.7,.2,1)}
 @media(prefers-reduced-motion:reduce){.part-category-options,.part-category-toggle,.workspace-part-categories>a,.part-category-toggle>svg{transition:none}}
+
+/* Solar-system tray: familiar category pills, grouped by their role. */
+.solar-system-tray{display:grid;gap:0;padding-top:10px}
+.solar-tray-group{display:grid;grid-template-columns:120px minmax(0,1fr);align-items:start;gap:12px;padding:8px 0}
+.solar-tray-group+.solar-tray-group{border-top:1px solid var(--line)}
+.solar-tray-group h2{font-size:12px;font-weight:650;letter-spacing:0;line-height:1.4;padding-top:14px;color:var(--muted)}
+.part-category-picker .solar-tray-group .workspace-part-categories{padding:0;margin:0;max-width:none;gap:8px}
+@media(max-width:720px){.solar-tray-group{grid-template-columns:minmax(0,1fr);gap:8px;padding:10px 0}.solar-tray-group h2{padding-top:0;font-size:11px}.solar-system-tray{padding-top:4px}}

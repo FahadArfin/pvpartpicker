@@ -9,6 +9,12 @@ import {categories} from '../lib/types';
 import {bestOffer, costForQuantity, money} from '../lib/domain';
 
 const icons = {panels:Sun,mounting:Wrench,wiring:Cable,batteries:Battery,'all-in-one':Battery,inverters:Zap,charging:Plug,'module-electronics':ShieldCheck,monitoring:Gauge,kits:PackageOpen,electrical:Box,accessories:SlidersHorizontal};
+const categoryGroups = [
+  {id:'generate',label:'Generate',categories:['panels','mounting']},
+  {id:'store',label:'Store',categories:['batteries','all-in-one']},
+  {id:'convert',label:'Convert',categories:['inverters','charging']},
+  {id:'connect',label:'Connect & control',categories:['wiring','module-electronics','monitoring','electrical','kits','accessories']},
+] as const;
 const links = [
   {href:'/',label:'Home',icon:Home}, {href:'/parts',label:'Parts',icon:Grid2X2},
   {href:'/builds',label:'Builds',icon:FolderOpen},
@@ -64,7 +70,7 @@ export function SiteNavigation({path}:{path:string}) {
     {inBuilds&&buildNavigation()}
     {path==='/parts'&&<div className="part-category-picker">
       <button type="button" className="part-category-toggle" aria-expanded={categoriesOpen} aria-controls="part-category-options" onClick={()=>setCategoriesOpen(o=>!o)}><span className="section-pill-icon"><CategoryIcon size={19} aria-hidden="true"/></span><span>{selectedCategory?.label||'All categories'}</span><ChevronDown size={16} aria-hidden="true"/></button>
-      <div id="part-category-options" className={'part-category-options'+(categoriesOpen?' is-open':'')} aria-hidden={!categoriesOpen} inert={!categoriesOpen}><div className="part-category-options-inner"><nav className="workspace-categories workspace-part-categories" aria-label="Part categories">{categories.map(c=>{const Icon=icons[c.id];return <Link key={c.id} href={'/parts?category='+c.id+(builder?'&builder=1':'')} aria-current={category===c.id?'page':undefined} onClick={()=>setCategoriesOpen(false)}><span className="section-pill-icon"><Icon size={19} strokeWidth={1.7} aria-hidden="true"/></span><span>{c.label}</span></Link>;})}</nav></div></div>
+      <div id="part-category-options" className={'part-category-options'+(categoriesOpen?' is-open':'')} aria-hidden={!categoriesOpen} inert={!categoriesOpen}><div className="part-category-options-inner"><nav className="solar-system-tray" aria-label="Part categories">{categoryGroups.map(group=><section className="solar-tray-group" key={group.id} aria-labelledby={'tray-'+group.id}><h2 id={'tray-'+group.id}>{group.label}</h2><div className="workspace-categories workspace-part-categories">{group.categories.map(id=>{const c=categories.find(c=>c.id===id)!;const Icon=icons[c.id];return <Link key={c.id} href={'/parts?category='+c.id+(builder?'&builder=1':'')} aria-current={category===c.id?'page':undefined} onClick={()=>setCategoriesOpen(false)}><span className="section-pill-icon"><Icon size={19} strokeWidth={1.7} aria-hidden="true"/></span><span>{c.label}</span></Link>;})}</div></section>)}</nav></div></div>
     </div>}
 
   </header>;
