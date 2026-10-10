@@ -322,3 +322,9 @@ Removed the repeated visible Builds heading and intro while retaining an accessi
 
 - Approved grouped drawer: Generate (panels/mounting), Store (batteries/stations), Convert (inverters/controllers), Connect & control (wiring/module electronics/monitoring/electrical/bundles/accessories). Existing category names, icons and routes retained. Desktop groups use compact labeled rows; phone groups use two-column pills beneath headings.
 - 334 tests, typecheck and production build passed. Built browser checks verified four headings, exactly 12 unique category links, no clipped links or horizontal overflow, >=44px targets, both themes at 1440/320px, inert collapsed content, automatic selection/closure, builder query retention and reduced motion. Screenshots output/tray-{day,night}-{1440,320}.png.
+
+## October 10 — Catalog search alongside category picker
+
+- Moved the existing controlled search field into a header toolbar host via React portal, keeping state and filtering in CatalogWorkspace. Server/client fallback remains in the catalog until the host mounts. Removed the now-empty normal catalog intro row; accessible heading and builder heading retained.
+- Desktop search aligned beside the category picker; phones stack it within the same compact toolbar.
+- 334 tests, typecheck and production build passed. Browser verified one search only, aligned desktop centers, both themes at 1440/320px, no overflow, real unmatched filtering, clear-search reset, category navigation, builder context and no runtime page errors. Screenshots output/header-search-{day,night}-{1440,320}.png.
