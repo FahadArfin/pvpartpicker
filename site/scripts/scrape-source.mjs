@@ -5,7 +5,7 @@ import {fetchSource} from './scraper-network.mjs';
 const locs=xml=>[...xml.matchAll(/<loc>\s*([^<]+)\s*<\/loc>/g)].map(m=>m[1].replaceAll('&amp;','&'));
 const text=html=>load(html||'')('body').text().replace(/\s+/g,' ').trim();
 export async function scrapeSource(job,{event,publish},transport=fetchSource){
- const site=job.site,progress=emptyProgress(),products=[],deadline=Date.now()+12*60000;let robots='',last=0,cancelled=false,budget=false,delay=site.delaySeconds,discoveryNext=job.discoveryOffset||0,refreshNext=job.refreshOffset||0,malformedFeed=false;
+ const site=job.site,progress=emptyProgress(),products=[],deadline=Date.now()+12*60000;let robots='',last=0,cancelled=false,budget=false,delay=site.delaySeconds,discoveryNext=job.discoveryOffset||0,refreshNext=job.refreshOffset||0,malformedFeed=false,refreshComplete=false,refreshAdvanced=false,blocked=false;
  const report=async(e)=>{const result=await event({...progress},e?{...e,id:crypto.randomUUID()}:undefined);if(result.cancel)cancelled=true;};
  async function request(url,policy=false,redirects=0){
   url=publicSourceUrl(url,site.origin).href;progress.currentUrl=url;
@@ -25,7 +25,7 @@ export async function scrapeSource(job,{event,publish},transport=fetchSource){
    await report({url,status:'ok',httpStatus:response.status,durationMs:Date.now()-start,message:policy?'Robots policy checked':'Fetched public source'});return response.status===404?'':response.text;
   }catch(e){progress.errors++;progress.message=e.message;await report({url,status:'error',httpStatus:response?.status||null,durationMs:Date.now()-start,message:e.message.slice(0,1000)});throw e;}
  }
- function collect(html,url){const found=parseProductPage(html,site,url,new Date().toISOString());products.push(...found);progress.checked++;progress.found+=found.length;}
+ function collect(html,url){const found=parseProductPage(html,site,url,new Date().toISOString());products.push(...found);progress.checked++;progress.found+=found.length;return found.length;}
  async function feedData(body,url){
   if(/^(?:forbidden|access denied|unauthorized|authentication required)\b/i.test(text(body))||/^\s*(?:<!doctype|<html)/i.test(body)&&/forbidden|access denied/i.test(body.slice(0,4000))){progress.errors++;await report({url,status:'error',httpStatus:200,durationMs:0,message:'Source access denied; no fallback attempted'});throw new Error('Source access denied; no fallback attempted');}
   try{return JSON.parse(body);}catch{malformedFeed=true;progress.errors++;await report({url,status:'error',httpStatus:200,durationMs:0,message:'Product feed returned malformed JSON; known listings will be checked.'});throw new Error('Malformed product feed');}
@@ -78,12 +78,12 @@ export async function scrapeSource(job,{event,publish},transport=fetchSource){
    progress.planned=urls.length;await report();
    for(const [index,url] of urls.entries()){
     let consumed=false;
-    try{const html=await request(url);consumed=true;collect(html,url);progress.message='Product page checked';await report();}
+    try{const html=await request(url);consumed=true;const found=collect(html,url);progress.message=found?'Product page checked':'No supported USD offer on this page';await report(found?undefined:{url,status:'skipped',httpStatus:200,durationMs:0,message:progress.message});}
     catch(e){if(!budget&&!cancelled)consumed=true;if(cancelled||budget||/HTTP (401|403|429)|challenge|non-public|Cross-origin/.test(e.message))throw e;progress.message='Skipped page: '+e.message;await report();}
-    finally{if(consumed){if(site.adapter==='pages')discoveryNext=(pageOffset+index+1)%configured.length;else{if(tracked.includes(url))refreshNext=(tracked.indexOf(url)+1)%tracked.length;if(discovery.includes(url)&&(!known.includes(url)||selected.includes(url)))discoveryNext=(discovery.indexOf(url)+1)%discovery.length;}}}
+    finally{if(consumed){if(site.adapter==='pages'){discoveryNext=(pageOffset+index+1)%configured.length;refreshAdvanced=true;if(pageOffset+index+1>=configured.length)refreshComplete=true;}else{const at=tracked.indexOf(url);if(at>=0&&at===refreshNext%tracked.length){refreshNext=(at+1)%tracked.length;refreshAdvanced=true;if(at===tracked.length-1)refreshComplete=true;}if(discovery.includes(url)&&(!known.includes(url)||selected.includes(url)))discoveryNext=(discovery.indexOf(url)+1)%discovery.length;}}}
    }
   }
- }catch(e){failed=true;progress.message=e.message;}
+ }catch(e){failed=true;progress.message=e.message;blocked=/HTTP (401|403|429)|challenge|access denied|non-public|Cross-origin|robots_disallowed/.test(e.message);}
  if(malformedFeed&&!cancelled&&!budget){
   discoveryNext=0;
   // Only verified WooCommerce offer IDs may be refreshed from the page fallback.
@@ -93,8 +93,8 @@ export async function scrapeSource(job,{event,publish},transport=fetchSource){
    progress.planned+=urls.length;
    for(const url of urls){let consumed=false;try{
     const body=await request(url);consumed=true;const found=parseProductPage(body,site,url,new Date().toISOString()).map(p=>({...p,offers:p.offers.filter(o=>allowed.has(o.id))})).filter(p=>p.offers.length);products.push(...found);progress.checked++;progress.found+=found.length;await report();
-   }catch(e){if(!budget&&!cancelled)consumed=true;progress.message=e.message;if(cancelled||budget||/HTTP (401|403|429)|challenge|access denied|non-public|Cross-origin/.test(e.message))break;}
-   finally{if(consumed)refreshNext=(known.indexOf(url)+1)%known.length;}}
+   }catch(e){if(!budget&&!cancelled)consumed=true;progress.message=e.message;blocked=/HTTP (401|403|429)|challenge|access denied|non-public|Cross-origin|robots_disallowed/.test(e.message);if(cancelled||budget||blocked)break;}
+   finally{if(consumed){const at=known.indexOf(url);refreshNext=(at+1)%known.length;refreshAdvanced=true;if(at===known.length-1)refreshComplete=true;}}}
   }
  }
  // Keep successfully parsed pages from partial runs. Cancellation retains only observations already committed.
@@ -102,5 +102,6 @@ export async function scrapeSource(job,{event,publish},transport=fetchSource){
  const status=cancelled?'cancelled':failed||progress.errors?(progress.inserted?'partial':'failed'):progress.found?'succeeded':'partial';
  if(status==='succeeded')progress.message=`Completed: ${progress.checked} parsed entries, ${progress.inserted} accepted observations.`;
  else if(!failed&&!cancelled)progress.message=progress.found?'Completed with request errors':'No supported USD product offers found. Check the adapter or URLs.';
- return {status,progress,discoveryNext,refreshNext};
+ const continuation=!cancelled&&!blocked&&((['shopify','woocommerce'].includes(site.adapter)&&discoveryNext>0&&progress.found>0)||(refreshAdvanced&&!refreshComplete));
+ return {status,progress,discoveryNext,refreshNext,continuation};
 }
