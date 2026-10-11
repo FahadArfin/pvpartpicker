@@ -11,7 +11,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: retailer-price-collection
+  group: ${{ inputs.naz_probe && 'naz-source-diagnostic' || 'retailer-price-collection' }}
   cancel-in-progress: false
 jobs:
   naz-probe:
