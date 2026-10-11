@@ -40,6 +40,15 @@ this collector's owned evidence. No browser run continues after an agent turn
 unless a separate scheduled continuation has actually been configured.
 
 October 11 validation: 338 tests, typecheck and production build passed. Browser
-trial evidence is ignored under `output/browser-drop-cc-36455*`. Workflow disable
-and queue resume were rejected by automatic approval review pending explicit
-owner approval; the workflow remained active and the queue remained paused.
+trial evidence is ignored under `output/browser-drop-cc-36455*`. After explicit
+owner approval, only `backfill-history.yml` was disabled and the saved queue was
+resumed. Normal retailer collection remains active. Three paced browser lookups
+returned visible `product not found` responses and were recorded without stopping:
+checked increased from 1,805 to 1,808, remaining decreased to 2,126, and imported
+history rows stayed at 23. Missing source records are not imported or fabricated.
+
+The active hourly thread heartbeat `pvpartpicker-browser-history-backfill`
+continues up to 20 items per run with the same checks and one-minute minimum
+between source lookups. This requires Codex and the connected Edge browser to
+remain available. It reports completion, failures or required input; ordinary
+progress remains visible in the site's existing history queue section.
