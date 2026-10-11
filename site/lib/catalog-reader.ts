@@ -10,8 +10,8 @@ export async function readCatalog(db:D1Database,initial:CatalogSnapshot,evidence
  try{
   // All reads share one database round trip and a consistent read transaction.
   const [rows,offerRows,corrections,mappings,runs]=await db.batch([
-   db.prepare('SELECT json FROM products LIMIT 5000'),
-   db.prepare('SELECT product_id, json FROM offers LIMIT 20000'),
+   db.prepare('SELECT p.json FROM products p WHERE EXISTS (SELECT 1 FROM offers f WHERE f.product_id=p.id) ORDER BY p.id'),
+   db.prepare('SELECT product_id, json FROM offers ORDER BY product_id,id'),
    db.prepare('SELECT id,json FROM product_overrides'),
    db.prepare('SELECT id,product_id FROM offer_mappings'),
    db.prepare('SELECT json, created_at FROM collection_runs ORDER BY created_at DESC LIMIT 7'),

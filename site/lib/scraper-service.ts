@@ -2,6 +2,7 @@ import {retailers} from './retailers.ts';
 import {validateScraperSite,nextScrapeAt,emptyProgress,validateProgress,publicSourceUrl} from './scraper-config.ts';
 import type {ScraperSite,ScraperProgress} from './scraper-config.ts';
 import {backfillAction} from './history-backfill.ts';
+import initialCatalog from '../data/catalog.json' with {type:'json'};
 interface SiteRow{id:string;json:string;next_at:string|null;updated_at:string;}
 interface JobRow{id:string;site_id:string;status:string;config:string;progress:string;queued_at:string;started_at:string|null;finished_at:string|null;lease_token:string|null;lease_until:string|null;cancel_requested:number;}
 const iso=()=>new Date().toISOString();
@@ -12,7 +13,20 @@ export async function seedScraperSites(db:D1Database){
  const now=iso();await db.batch(retailers.map(r=>{
   const site:ScraperSite={id:r.id,name:r.name,origin:r.origin,enabled:r.enabled!==false,sourceNotes:r.sourceNotes,adapter:r.adapter||(['renogy','shopsolar','emporia'].includes(r.id)?'shopify':r.id==='santan-solar'?'woocommerce':'sitemap'),startPath:r.startPath||(r.id==='signature-solar'?'/xmlsitemap.php?type=products&page=1':'/sitemap.xml'),urls:r.urls||[],schedule:'interval',frequencyMinutes:r.frequencyMinutes||360,dailyTime:'06:17',weekdays:[0,1,2,3,4,5,6],delaySeconds:10,jitterSeconds:2,maxPages:24,usdConfirmed:r.usdConfirmed!==false,feedPages:['renogy','santan-solar'].includes(r.id)?2:1};
   return db.prepare('INSERT OR IGNORE INTO scraper_sites (id,origin,json,next_at,updated_at) VALUES (?,?,?,?,?)').bind(r.id,r.origin,JSON.stringify(site),site.enabled?now:null,now);
- }));seeded.add(db);
+ }));
+ const migration='scraper-coverage-v1';
+ if(!await db.prepare('SELECT value FROM job_state WHERE id=?').bind(migration).first()){
+  const changes=[];
+  for(const row of await sites(db)){
+   const site=JSON.parse(row.json) as ScraperSite;let changed=false;
+   if(site.id==='naz'&&site.origin==='https://www.solar-electric.com'&&site.adapter==='sitemap'){site.execution='local';changed=true;}
+   if(site.id==='inverters-r-us'&&site.frequencyMinutes===1440){site.frequencyMinutes=360;changed=true;}
+   if(['shopify','woocommerce'].includes(site.adapter)&&site.feedPages===1&&site.sourceNotes?.startsWith('Public USD feed verified on 2026-10-06.')){site.feedPages=4;changed=true;}
+   if(changed){changes.push(db.prepare('UPDATE scraper_sites SET json=?,next_at=?,updated_at=? WHERE id=?').bind(JSON.stringify(site),site.enabled&&site.schedule!=='manual'?now:null,now,site.id));if(site.id==='naz')changes.push(db.prepare("UPDATE scraper_jobs SET config=? WHERE site_id=? AND status='queued'").bind(JSON.stringify(site),site.id));}
+  }
+  changes.push(db.prepare('INSERT OR IGNORE INTO job_state(id,value) VALUES(?,?)').bind(migration,now));await db.batch(changes);
+ }
+ seeded.add(db);
 }
 async function sites(db:D1Database){const r=await db.prepare('SELECT * FROM scraper_sites ORDER BY updated_at DESC,id').all<SiteRow>();return r.results;}
 async function queue(db:D1Database,row:SiteRow){
@@ -59,15 +73,17 @@ async function leasedJob(db:D1Database,d:any){
 export async function scraperWorkerAction(db:D1Database,d:any){
  await seedScraperSites(db);
  if(d.action==='claim'){
+  const execution=d.execution===undefined?'hosted':d.execution;if(!['hosted','local'].includes(execution))throw new Error('Invalid collection executor.');
+  if(d.siteId!==undefined&&(typeof d.siteId!=='string'||!/^[a-z0-9-]{1,80}$/.test(d.siteId)))throw new Error('Invalid source selector.');
   const now=iso();await db.prepare("INSERT INTO job_state (id,value) VALUES ('scraper-heartbeat',?) ON CONFLICT(id) DO UPDATE SET value=excluded.value").bind(JSON.stringify({at:now,runUrl:typeof d.runUrl==='string'&&/^https:\/\/github\.com\/FahadArfin\/pvpartpicker\/actions\/runs\/\d+$/.test(d.runUrl)?d.runUrl:null})).run();
   await db.prepare("UPDATE scraper_jobs SET status='failed',finished_at=?,progress=json_set(progress,'$.message','Worker lease expired; previously saved observations are retained.') WHERE status='running' AND lease_until<=?").bind(now,now).run();
-  for(const row of await sites(db))if(row.next_at&&row.next_at<=now&&JSON.parse(row.json).enabled){await queue(db,row);await db.prepare('UPDATE scraper_sites SET next_at=? WHERE id=?').bind(nextScrapeAt(JSON.parse(row.json)),row.id).run();}
+  for(const row of await sites(db)){const site=JSON.parse(row.json);if((site.execution||'hosted')!==execution||(d.siteId&&row.id!==d.siteId))continue;if(row.next_at&&row.next_at<=now&&site.enabled&&site.schedule!=='manual'){await queue(db,row);await db.prepare('UPDATE scraper_sites SET next_at=? WHERE id=?').bind(nextScrapeAt(site),row.id).run();}}
   if(typeof d.claimId!=='string'||!/^[a-f0-9-]{36}$/.test(d.claimId))throw new Error('Claim request identifier required.');
   // One atomic allocation per request ID. Replayed or concurrent requests recover
   // that same job, including when the first response was lost after commit.
   const claimKey='scraper-claim:'+d.claimId,until=new Date(Date.now()+1200000).toISOString();
   await db.batch([
-   db.prepare("INSERT OR IGNORE INTO job_state (id,value) VALUES (?,json_object('jobId',COALESCE((SELECT id FROM scraper_jobs WHERE status='queued' ORDER BY queued_at,id LIMIT 1),''),'at',?))").bind(claimKey,now),
+   db.prepare("INSERT OR IGNORE INTO job_state (id,value) VALUES (?,json_object('jobId',COALESCE((SELECT id FROM scraper_jobs WHERE status='queued' AND COALESCE(json_extract(config,'$.execution'),'hosted')=? AND (? IS NULL OR site_id=?) ORDER BY queued_at,id LIMIT 1),''),'at',?))").bind(claimKey,execution,d.siteId||null,d.siteId||null,now),
    db.prepare("UPDATE scraper_jobs SET status='running',started_at=?,lease_token=?,lease_until=? WHERE id=(SELECT json_extract(value,'$.jobId') FROM job_state WHERE id=?) AND status='queued'").bind(now,d.claimId,until,claimKey)
   ]);
   await db.prepare("DELETE FROM job_state WHERE id LIKE 'scraper-claim:%' AND json_extract(value,'$.at')<?").bind(new Date(Date.now()-86400000).toISOString()).run();
@@ -75,9 +91,12 @@ export async function scraperWorkerAction(db:D1Database,d:any){
   const row=await db.prepare("SELECT * FROM scraper_jobs WHERE id=(SELECT json_extract(value,'$.jobId') FROM job_state WHERE id=?) AND lease_token=? AND status='running' AND lease_until>?").bind(claimKey,d.claimId,now).first<JobRow>();
   if(row){
    const site=JSON.parse(row.config) as ScraperSite;
-   const known=await db.prepare("SELECT DISTINCT json_extract(json,'$.url') AS url FROM offers WHERE json_extract(json,'$.retailerId')=? ORDER BY updated_at LIMIT 80").bind(site.id).all<{url:string}>();
+   const known=await db.prepare("SELECT json FROM offers WHERE json_extract(json,'$.retailerId')=?").bind(site.id).all<{json:string}>();
+   const tracked=[...initialCatalog.products.flatMap(p=>p.offers.filter(o=>o.retailerId===site.id)),...known.results.map(r=>JSON.parse(r.json))];
+   const knownUrls=[...new Set(tracked.map(o=>o.url as string))].filter(u=>{try{return publicSourceUrl(u,site.origin).origin===site.origin;}catch{return false;}}).sort();
    const cursor=await db.prepare('SELECT value FROM job_state WHERE id=?').bind('scraper-discovery:'+site.id).first<{value:string}>();
-   jobs.push({...presentJob(row),lease:d.claimId,discoveryOffset:Number(cursor?.value)||0,knownUrls:known.results.map(r=>r.url).filter(u=>{try{return publicSourceUrl(u,site.origin).origin===site.origin;}catch{return false;}})});
+   const refresh=await db.prepare('SELECT value FROM job_state WHERE id=?').bind('scraper-refresh:'+site.id).first<{value:string}>();
+   jobs.push({...presentJob(row),lease:d.claimId,discoveryOffset:Number(cursor?.value)||0,refreshOffset:Number(refresh?.value)||0,knownUrls,knownOfferIds:[...new Set(tracked.map(o=>o.id))]});
   }return {jobs};
  }
  if(d.action==='finish'&&typeof d.id==='string'&&typeof d.lease==='string'){
@@ -98,7 +117,9 @@ export async function scraperWorkerAction(db:D1Database,d:any){
   if(!['succeeded','partial','failed','cancelled'].includes(d.status))throw new Error('Invalid completion status.');
   const status=row.cancel_requested?'cancelled':d.status,site=JSON.parse(row.config) as ScraperSite,now=iso();
   const statements=[db.prepare('UPDATE scraper_jobs SET status=?,progress=?,finished_at=?,lease_until=NULL WHERE id=? AND lease_token=?').bind(status,JSON.stringify(progress),now,row.id,d.lease),db.prepare('INSERT OR IGNORE INTO collection_runs (id,json,created_at) VALUES (?,?,?)').bind(row.id,JSON.stringify([{retailerId:site.id,retailer:site.name,status:status==='succeeded'?'ok':status,products:progress.found,checkedAt:now,message:progress.message,managedJobId:row.id}]),now)];
-  if(status!=='cancelled'&&Number.isInteger(d.discoveryNext)&&d.discoveryNext>=0&&d.discoveryNext<2000)statements.push(db.prepare('INSERT INTO job_state (id,value) VALUES (?,?) ON CONFLICT(id) DO UPDATE SET value=excluded.value').bind('scraper-discovery:'+site.id,String(d.discoveryNext)));
+  if(status!=='cancelled'&&Number.isInteger(d.discoveryNext)&&d.discoveryNext>=0&&d.discoveryNext<100000)statements.push(db.prepare('INSERT INTO job_state (id,value) VALUES (?,?) ON CONFLICT(id) DO UPDATE SET value=excluded.value').bind('scraper-discovery:'+site.id,String(d.discoveryNext)));
+  if(status!=='cancelled'&&Number.isInteger(d.refreshNext)&&d.refreshNext>=0&&d.refreshNext<100000)statements.push(db.prepare('INSERT INTO job_state (id,value) VALUES (?,?) ON CONFLICT(id) DO UPDATE SET value=excluded.value').bind('scraper-refresh:'+site.id,String(d.refreshNext)));
+  if(status!=='cancelled'&&['shopify','woocommerce'].includes(site.adapter)&&d.discoveryNext>0&&progress.found>0)statements.push(db.prepare("UPDATE scraper_sites SET next_at=MIN(COALESCE(next_at,?),?) WHERE id=? AND json_extract(json,'$.enabled')=1 AND json_extract(json,'$.schedule')<>'manual' AND json_extract(json,'$.adapter') IN ('shopify','woocommerce') AND COALESCE(json_extract(json,'$.execution'),'hosted')=?").bind(new Date(Date.now()+15*60000).toISOString(),new Date(Date.now()+15*60000).toISOString(),site.id,site.execution||'hosted'));
   await db.batch(statements);return {finished:true};
  }throw new Error('Unknown worker action.');
 }
