@@ -1,7 +1,7 @@
 export type ScraperAdapter='shopify'|'woocommerce'|'sitemap'|'pages';
 export interface ScraperSite {
  id:string;name:string;origin:string;enabled:boolean;adapter:ScraperAdapter;startPath:string;urls:string[];
- schedule:'interval'|'daily'|'manual';frequencyMinutes:number;dailyTime:string;weekdays:number[];
+ schedule:'interval'|'daily'|'manual';frequencyMinutes:number;dailyTime:string;weekdays:number[];execution?:'hosted'|'local';
  delaySeconds:number;jitterSeconds:number;maxPages:number;feedPages:number;usdConfirmed:boolean;sourceNotes?:string;
 }
 export interface ScraperProgress {requests:number;checked:number;found:number;inserted:number;quarantined:number;errors:number;planned:number;currentUrl:string;message:string;}
@@ -18,6 +18,7 @@ export function validateScraperSite(value:unknown,id:string):ScraperSite{
  const d=value as ScraperSite;if(!d||typeof d.name!=='string'||!d.name.trim()||d.name.length>80||typeof d.origin!=='string')throw new Error('A site name and website are required.');
  const origin=publicSourceUrl(d.origin).origin;
  if(!['shopify','woocommerce','sitemap','pages'].includes(d.adapter)||!['interval','daily','manual'].includes(d.schedule)||typeof d.enabled!=='boolean')throw new Error('Select an adapter and schedule.');
+ if(d.execution!==undefined&&!['hosted','local'].includes(d.execution))throw new Error('Invalid collection executor.');
  if(typeof d.startPath!=='string'||d.startPath.length>500)throw new Error('Invalid starting path.');
  const start=publicSourceUrl(d.startPath||'/sitemap.xml',origin);
  if(!Array.isArray(d.urls)||d.urls.length>80||d.urls.some(u=>typeof u!=='string'||u.length>1500))throw new Error('Use at most 80 product URLs.');
@@ -26,7 +27,7 @@ export function validateScraperSite(value:unknown,id:string):ScraperSite{
  const urls=[...new Set(d.urls.map(u=>publicSourceUrl(u,origin).href))];
  if(d.adapter==='pages'&&!urls.length)throw new Error('Add at least one product URL for a product-page source.');
  if(typeof d.dailyTime!=='string'||!/^([01]\d|2[0-3]):[0-5]\d$/.test(d.dailyTime)||!Array.isArray(d.weekdays)||!d.weekdays.length||d.weekdays.some(n=>!Number.isInteger(n)||n<0||n>6))throw new Error('Choose a valid UTC time and at least one weekday.');
- return {id,name:d.name.trim(),origin,enabled:d.enabled,adapter:d.adapter,startPath:start.pathname+start.search,urls,schedule:d.schedule,
+ return {id,name:d.name.trim(),origin,enabled:d.enabled,adapter:d.adapter,startPath:start.pathname+start.search,urls,schedule:d.schedule,execution:d.execution||'hosted',
  usdConfirmed:d.usdConfirmed===true,sourceNotes:d.sourceNotes,frequencyMinutes:number(d.frequencyMinutes,15,10080,'Frequency (minutes)'),dailyTime:d.dailyTime,weekdays:[...new Set(d.weekdays)],
  delaySeconds:number(d.delaySeconds,10,300,'Request delay (seconds)'),jitterSeconds:number(d.jitterSeconds,0,30,'Jitter (seconds)'),maxPages:number(d.maxPages,1,80,'Page budget'),feedPages:number(d.feedPages,1,4,'Feed pages')};
 }

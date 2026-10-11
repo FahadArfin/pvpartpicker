@@ -9,6 +9,23 @@ function database(){
  const sql=new DatabaseSync(':memory:');for(const name of readdirSync(new URL('../drizzle/',import.meta.url)).filter(n=>n.endsWith('.sql')).sort())sql.exec(readFileSync(new URL('../drizzle/'+name,import.meta.url),'utf8'));
  const db={prepare(query:string){let args:any[]=[];const stmt=sql.prepare(query);const wrapper={bind(...values:any[]){args=values;return wrapper;},async all(){return {results:stmt.all(...args)};},async first(){return stmt.get(...args)||null;},async run(){return {meta:{changes:Number(stmt.run(...args).changes)}};}};return wrapper;},async batch(statements:any[]){sql.exec('BEGIN');try{const result=[];for(const s of statements)result.push(await s.run());sql.exec('COMMIT');return result;}catch(e){sql.exec('ROLLBACK');throw e;}}};return {db:db as unknown as D1Database,sql};
 }
+test('local NAZ execution is isolated from hosted collection and retains snapshot targets',async()=>{
+ const {db,sql}=database();const initial=await scraperDashboard(db);for(const s of initial.sites)await scraperOwnerAction(db,{action:'save',id:s.id,site:{...s,enabled:s.id==='naz'}});
+ const hosted=await scraperWorkerAction(db,{action:'claim',claimId:crypto.randomUUID()});assert.equal(hosted.jobs?.length,0);
+ const local=await scraperWorkerAction(db,{action:'claim',claimId:crypto.randomUUID(),execution:'local',siteId:'naz'});assert.equal(local.jobs?.[0]?.site.id,'naz');assert.ok(local.jobs?.[0]?.knownUrls.some(u=>u.includes('cerbo-gx')));sql.close();
+});
+test('refresh cursor survives leased completion for catalogs larger than eighty URLs',async()=>{
+ const {db,sql}=database();const initial=await scraperDashboard(db);for(const s of initial.sites)await scraperOwnerAction(db,{action:'save',id:s.id,site:{...s,enabled:false}});
+ const source={...initial.sites.find(s=>s.id==='current-connected'),enabled:true,schedule:'manual'};await scraperOwnerAction(db,{action:'save',id:source.id,site:source});
+ for(let i=0;i<95;i++)sql.prepare('INSERT INTO offers(id,product_id,json,updated_at) VALUES(?,?,?,?)').run('offer-'+i,'p',JSON.stringify({id:'offer-'+i,retailerId:source.id,url:source.origin+'/target-'+i}),'2026-10-01T00:00:00Z');
+ await scraperOwnerAction(db,{action:'queue',id:source.id});const first=(await scraperWorkerAction(db,{action:'claim',claimId:crypto.randomUUID()})).jobs![0];assert.ok(first.knownUrls.length>=95);
+ await scraperWorkerAction(db,{action:'finish',id:first.id,lease:first.lease,status:'partial',progress:emptyProgress(),refreshNext:84});await scraperOwnerAction(db,{action:'queue',id:source.id});const next=(await scraperWorkerAction(db,{action:'claim',claimId:crypto.randomUUID()})).jobs![0];assert.equal(next.refreshOffset,84);sql.close();
+});
+test('feed continuation never overrides owner schedule changes made during a run',async()=>{
+ const {db,sql}=database();const initial=await scraperDashboard(db);for(const s of initial.sites)await scraperOwnerAction(db,{action:'save',id:s.id,site:{...s,enabled:false}});
+ const source={...initial.sites.find(s=>s.id==='renogy'),enabled:true,schedule:'interval'};await scraperOwnerAction(db,{action:'save',id:source.id,site:source});const job=(await scraperWorkerAction(db,{action:'claim',claimId:crypto.randomUUID()})).jobs![0];
+ await scraperOwnerAction(db,{action:'save',id:source.id,site:{...source,schedule:'manual'}});await scraperWorkerAction(db,{action:'finish',id:job.id,lease:job.lease,status:'succeeded',progress:{...emptyProgress(),found:250,inserted:250},discoveryNext:1});assert.equal((await scraperDashboard(db)).sites.find(s=>s.id===source.id)?.nextAt,null);assert.equal((await scraperWorkerAction(db,{action:'claim',claimId:crypto.randomUUID()})).jobs?.length,0);sql.close();
+});
 test('real SQLite queue deduplicates active runs, snapshots settings and honors pause/cancellation',async()=>{
  const {db,sql}=database();const first=await scraperDashboard(db);assert.equal(first.sites.length,retailers.length);
  assert.equal(first.sites.find(s=>s.id==='windynation')?.startPath,'/collections/solar-cable/products.json');

@@ -4,6 +4,27 @@ import {scrapeSource} from '../scripts/scrape-source.mjs';
 const site={id:'test-solar',name:'Solar Store',origin:'https://solar-store.com',enabled:true,adapter:'pages',startPath:'/sitemap.xml',urls:['https://solar-store.com/panel'],schedule:'manual',frequencyMinutes:360,dailyTime:'06:17',weekdays:[0],delaySeconds:0,jitterSeconds:0,maxPages:5,feedPages:1};
 const html='<script type="application/ld+json">'+JSON.stringify({'@type':'Product',name:'400W Solar Panel',sku:'pv400',offers:{'@type':'Offer',price:'120',priceCurrency:'USD',availability:'https://schema.org/InStock'}})+'</script>';
 const makeHooks=()=>{const events:any[]=[],saved:any[]=[];return {events,saved,hooks:{event:async (_p:any,e:any)=>{if(e)events.push(e);return {cancel:false};},publish:async (products:any[])=>{saved.push(...products);return {inserted:products.length,quarantined:0};}}};};
+test('known sitemap listings rotate independently of discovery, including failed targets',async()=>{
+ const urls:string[]=[],h=makeHooks();const job={site:{...site,adapter:'sitemap',urls:[],maxPages:2},knownUrls:['a','b','c','d'].map(p=>site.origin+'/'+p)};
+ const transport=async(url:string)=>{urls.push(url);return {status:url.endsWith('/a')?404:200,text:url.endsWith('/robots.txt')?'':url.endsWith('/sitemap.xml')?'<urlset/>':html};};
+ const first=await scrapeSource(job,h.hooks,transport);assert.equal(first.refreshNext,2);urls.length=0;
+ await scrapeSource({...job,refreshOffset:first.refreshNext},h.hooks,transport);assert.ok(urls.includes(site.origin+'/c'));assert.ok(urls.includes(site.origin+'/d'));assert.ok(!urls.includes(site.origin+'/a'));
+});
+test('malformed WooCommerce feeds reset discovery and refresh verifiable known listings',async()=>{
+ const h=makeHooks();const result=await scrapeSource({site:{...site,adapter:'woocommerce'},knownUrls:[site.origin+'/panel'],knownOfferIds:['test-solar-pv400'],discoveryOffset:3},h.hooks,async url=>({status:200,text:url.endsWith('/robots.txt')?'':url.includes('/wp-json/')?'<html>Temporary service error</html>':html}));
+ assert.equal(result.discoveryNext,0);assert.equal(result.status,'partial');assert.equal(h.saved[0]?.offers[0].price,120);assert.ok(h.events.some(e=>e.status==='error'&&/feed/i.test(e.message)));
+});
+test('a forbidden HTML feed does not fall back to product pages',async()=>{
+ const h=makeHooks(),urls:string[]=[];const result=await scrapeSource({site:{...site,adapter:'woocommerce'},knownUrls:[site.origin+'/panel'],knownOfferIds:['test-solar-pv400']},h.hooks,async url=>{urls.push(url);return {status:200,text:url.endsWith('/robots.txt')?'':'<html>Forbidden</html>'};});
+ assert.equal(result.status,'failed');assert.ok(!urls.includes(site.origin+'/panel'));
+});
+test('plain access-denied feed responses stop without refreshing other pages',async()=>{
+ const h=makeHooks(),urls:string[]=[];const result=await scrapeSource({site:{...site,adapter:'woocommerce'},knownUrls:[site.origin+'/panel'],knownOfferIds:['test-solar-pv400']},h.hooks,async url=>{urls.push(url);return {status:200,text:url.endsWith('/robots.txt')?'':'Access denied'};});assert.equal(result.status,'failed');assert.equal(result.progress.errors,1);assert.ok(!urls.includes(site.origin+'/panel'));
+});
+test('slow sitemap pacing still advances tracked refresh before discovery',async()=>{
+ const h=makeHooks(),urls:string[]=[],realNow=Date.now,realTimer=globalThis.setTimeout;let now=realNow();Date.now=()=>now;globalThis.setTimeout=((fn:()=>void,ms:number)=>{now+=ms;queueMicrotask(fn);return 0;}) as unknown as typeof setTimeout;
+ try{const job={site:{...site,adapter:'sitemap',urls:[],delaySeconds:300,maxPages:24},knownUrls:[site.origin+'/old-a',site.origin+'/old-b']};const transport=async(url:string)=>{urls.push(url);return {status:200,text:url.endsWith('/robots.txt')?'':url.endsWith('/sitemap.xml')?'<urlset><url><loc>'+site.origin+'/new-a</loc></url></urlset>':html};};const first=await scrapeSource(job,h.hooks,transport);assert.equal(first.refreshNext,1);assert.ok(urls.includes(site.origin+'/old-a'));urls.length=0;await scrapeSource({...job,refreshOffset:first.refreshNext},h.hooks,transport);assert.ok(urls.includes(site.origin+'/old-b'));}finally{Date.now=realNow;globalThis.setTimeout=realTimer;}
+});
 test('WooCommerce retains the published regular price in the same currency units',async()=>{
  const h=makeHooks(),feed=JSON.stringify([{id:1,name:'400W Solar Panel',type:'simple',permalink:site.origin+'/panel',is_in_stock:true,prices:{currency_code:'USD',currency_minor_unit:2,price:'12000',regular_price:'18000'}}]);
  await scrapeSource({site:{...site,adapter:'woocommerce'},knownUrls:[]},h.hooks,async url=>({status:200,text:url.endsWith('/robots.txt')?'':feed}));

@@ -23,6 +23,10 @@ test('catalog loads all database tables in one round trip while preserving corre
  assert.equal(catalog.products.length,1);assert.equal(catalog.reports.length,1);
  assert.equal(product.specs.voltage,48);assert.equal(product.offers.length,1);
 });
+test('catalog does not silently discard products or offers beyond the old limits',async()=>{
+ const {readCatalog}=await import('../lib/catalog-reader.ts');const db=fakeDB([[{json:JSON.stringify({...product,offers:[]})}],[{product_id:'battery',json:JSON.stringify(offer)}],[],[],[]]);await readCatalog(db as any,snapshot);
+ assert.ok(!db.prepared.some(sql=>/LIMIT (5000|20000)\b/i.test(sql)));
+});
 test('empty and unavailable databases retain the dated snapshot without caching a failure',async()=>{
  const {readCatalog}=await import('../lib/catalog-reader.ts');
  const empty=await readCatalog(fakeDB([[],[],[],[],[]]) as any,snapshot);assert.equal(empty.storage,'snapshot');assert.equal(empty.products[0].offers[0].observedAt,offer.observedAt);
