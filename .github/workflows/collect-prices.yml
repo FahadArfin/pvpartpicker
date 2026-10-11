@@ -3,13 +3,31 @@ on:
   schedule:
     - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
+    inputs:
+      naz_probe:
+        type: boolean
+        default: false
+        description: Check NAZ robots from the regular hosted collector
 permissions:
   contents: read
 concurrency:
   group: retailer-price-collection
   cancel-in-progress: false
 jobs:
+  naz-probe:
+    if: github.event_name == 'workflow_dispatch' && inputs.naz_probe
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check public robots response
+        working-directory: site
+        run: |
+          node --input-type=module -e "import {fetchSource} from './scripts/scraper-network.mjs'; const r=await fetchSource('https://www.solar-electric.com/robots.txt'); console.log(JSON.stringify({status:r.status,body:r.text.slice(0,500)})); if(r.status!==200)process.exitCode=1;"
   collect:
+    if: ${{ !inputs.naz_probe }}
     runs-on: ubuntu-latest
     timeout-minutes: 45
     defaults:
