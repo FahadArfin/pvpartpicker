@@ -7,8 +7,14 @@ const makeHooks=()=>{const events:any[]=[],saved:any[]=[];return {events,saved,h
 test('known sitemap listings rotate independently of discovery, including failed targets',async()=>{
  const urls:string[]=[],h=makeHooks();const job={site:{...site,adapter:'sitemap',urls:[],maxPages:2},knownUrls:['a','b','c','d'].map(p=>site.origin+'/'+p)};
  const transport=async(url:string)=>{urls.push(url);return {status:url.endsWith('/a')?404:200,text:url.endsWith('/robots.txt')?'':url.endsWith('/sitemap.xml')?'<urlset/>':html};};
- const first=await scrapeSource(job,h.hooks,transport);assert.equal(first.refreshNext,2);urls.length=0;
- await scrapeSource({...job,refreshOffset:first.refreshNext},h.hooks,transport);assert.ok(urls.includes(site.origin+'/c'));assert.ok(urls.includes(site.origin+'/d'));assert.ok(!urls.includes(site.origin+'/a'));
+ const first=await scrapeSource(job,h.hooks,transport);assert.equal(first.refreshNext,2);assert.equal(first.continuation,true);urls.length=0;
+ const second=await scrapeSource({...job,refreshOffset:first.refreshNext},h.hooks,transport);assert.ok(urls.includes(site.origin+'/c'));assert.ok(urls.includes(site.origin+'/d'));assert.ok(!urls.includes(site.origin+'/a'));assert.equal(second.continuation,false);
+});
+test('out-of-order discovery targets cannot reset or falsely complete tracked refresh',async()=>{
+ const h=makeHooks(),seen=new Set<string>(),known=['a','b','c','d','e'].map(p=>site.origin+'/'+p);let refreshOffset=0;
+ const transport=async(url:string)=>{seen.add(url);return {status:200,text:url.endsWith('/robots.txt')?'':url.endsWith('/sitemap.xml')?'<urlset><url><loc>'+known[4]+'</loc></url></urlset>':html};};
+ for(let i=0;i<4;i++){const result=await scrapeSource({site:{...site,adapter:'sitemap',urls:[],maxPages:2},knownUrls:known,refreshOffset},h.hooks,transport);if(i<3){assert.equal(result.continuation,true);assert.equal(result.refreshNext,i+1);}else assert.equal(result.continuation,false);refreshOffset=result.refreshNext;}
+ assert.ok(known.every(url=>seen.has(url)));
 });
 test('malformed WooCommerce feeds reset discovery and refresh verifiable known listings',async()=>{
  const h=makeHooks();const result=await scrapeSource({site:{...site,adapter:'woocommerce'},knownUrls:[site.origin+'/panel'],knownOfferIds:['test-solar-pv400'],discoveryOffset:3},h.hooks,async url=>({status:200,text:url.endsWith('/robots.txt')?'':url.includes('/wp-json/')?'<html>Temporary service error</html>':html}));
@@ -33,6 +39,9 @@ test('WooCommerce retains the published regular price in the same currency units
 test('job records real request events and publishes parsed USD prices with the registered source identity',async()=>{
  const h=makeHooks();const result=await scrapeSource({site,knownUrls:[]},h.hooks,async url=>({status:200,text:url.endsWith('/robots.txt')?'User-agent: *\nAllow: /':html}));
  assert.equal(result.status,'succeeded');assert.equal(result.progress.requests,2);assert.equal(h.saved[0].offers[0].price,120);assert.equal(h.saved[0].offers[0].retailerId,site.id);assert.equal(h.events.length,2);
+});
+test('a checked page without a usable price is recorded explicitly without inventing an observation',async()=>{
+ const h=makeHooks();const result=await scrapeSource({site,knownUrls:[]},h.hooks,async url=>({status:200,text:url.endsWith('/robots.txt')?'':'<html>Product discontinued</html>'}));assert.equal(result.progress.checked,1);assert.equal(h.saved.length,0);assert.ok(h.events.some(e=>e.status==='skipped'&&/No supported USD offer/.test(e.message)));
 });
 test('full existing catalogs reserve rotating sitemap discovery slots across runs',async()=>{
  const h=makeHooks(),urls:string[]=[];const sitemap='<urlset>'+['new-a','new-b','old-a','old-b'].map(p=>'<url><loc>'+site.origin+'/'+p+'</loc></url>').join('')+'</urlset>';
@@ -67,6 +76,7 @@ test('robots-disallowed product pages are recorded without fetching or ingesting
 test('a 429 stops the source and preserves successfully parsed pages as a partial run',async()=>{
  const h=makeHooks();const result=await scrapeSource({site:{...site,urls:[...site.urls,site.origin+'/other']},knownUrls:[]},h.hooks,async url=>({status:url.endsWith('other')?429:200,text:url.endsWith('/robots.txt')?'':html}));
  assert.equal(result.status,'partial');assert.equal(h.saved.length,1);assert.equal(result.progress.errors,1);assert.equal(h.events.at(-1).httpStatus,429);
+ assert.equal(result.continuation,false);
 });
 test('cancel before the next request does not fetch or publish anything',async()=>{
  let fetched=false;const result=await scrapeSource({site,knownUrls:[]},{event:async()=>({cancel:true}),publish:async()=>{throw new Error('Must not ingest');}},async()=>{fetched=true;return {status:200,text:''};});
