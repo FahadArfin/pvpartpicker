@@ -214452,5 +214452,3997 @@
     ],
     "reviewStatus": "approved",
     "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained. Identity corrigendum: exact original model/SKU/selected variant/pack source bindings reverified; maxPvVoltage=50 is an imported rating, absent before hydration, and cannot be an import prerequisite. Existing facts/conditions/source dates unchanged."
+  },
+  {
+    "productIds": [
+      "santan-solar-b1781111"
+    ],
+    "expected": {
+      "santan-solar-b1781111": {
+        "name": "Anker SOLIX F2600+30A Transfer Switch",
+        "sourceUrl": "https://www.santansolar.com/product/anker-solix-f260030a-transfer-switch/",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/anker-solix-f260030a-transfer-switch/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:25:06.038Z",
+    "label": "Exact selected SKU/model; F2600 station component of transfer-switch bundle; expansion capacity excluded",
+    "rows": [
+      [
+        "Energy capacity",
+        "2560Wh"
+      ],
+      [
+        "Rated AC output power",
+        "2400W Pure Sine Wave"
+      ],
+      [
+        "Maximum PV input power",
+        "1000W"
+      ],
+      [
+        "MPPT voltage range",
+        "11-60V"
+      ],
+      [
+        "Dimensions",
+        "52.5×39.5×25 cm"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4 (Lithium Iron Phosphate)"
+      ],
+      [
+        "Cycle life",
+        "80% Capacity After 3,000 Cycles"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "santan-solar-tmr500-mr500-rc-us"
+    ],
+    "expected": {
+      "santan-solar-tmr500-mr500-rc-us": {
+        "name": "EcoFlow DELTA Pro + 1*Remote Control",
+        "sourceUrl": "https://www.santansolar.com/product/delta-pro-1remote-control/",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/delta-pro-1remote-control/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:29:39.366Z",
+    "label": "Exact selected SKU/model; DELTA Pro station component, one remote control; X-Boost and dual-unit output excluded; solar input range not relabelled MPPT",
+    "rows": [
+      [
+        "Energy capacity",
+        "3600Wh"
+      ],
+      [
+        "Rated AC output power",
+        "3600W total"
+      ],
+      [
+        "Maximum PV input power",
+        "1600W Max"
+      ],
+      [
+        "Maximum PV input current",
+        "15A Max"
+      ],
+      [
+        "Solar input voltage range",
+        "11-150V"
+      ],
+      [
+        "Dimensions",
+        "25*11.2*16.4 in/63.5*28.4*42cm"
+      ],
+      [
+        "Battery chemistry",
+        "LFP"
+      ],
+      [
+        "Cycle life",
+        "6,500 cycles to 50% capacity, 3,500 cycles to 80% capacity"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "inverters-r-us-e300lfp"
+    ],
+    "expected": {
+      "inverters-r-us-e300lfp": {
+        "name": "PECRON E300LFP Portable Power Station 600W 288Wh",
+        "sourceUrl": "https://invertersrus.com/product/pecron-e300lfp/",
+        "category": "all-in-one",
+        "anchors": {
+          "capacityKwh": 0.288
+        }
+      }
+    },
+    "url": "https://invertersrus.com/product/pecron-e300lfp/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:35.944Z",
+    "label": "Exact selected SKU/model; Exact E300LFP/E500LFP model row, port-scoped PV Voc; USB-C charging excluded from PV power",
+    "rows": [
+      [
+        "Model",
+        "E300LFP"
+      ],
+      [
+        "Capacity",
+        "288Wh"
+      ],
+      [
+        "Battery Type",
+        "LiFePo4 with 3,500+ Life Cycles to 80%"
+      ],
+      [
+        "Charging Time",
+        "60 minutes-80%; 80 minutes-100%"
+      ],
+      [
+        "Charge Temperature",
+        "0°C~45°C / 32°F-113°F"
+      ],
+      [
+        "Discharge Temperature",
+        "-20°C~45°C / -4°F-113°F"
+      ],
+      [
+        "Rated AC output power",
+        "600W"
+      ],
+      [
+        "AC output voltage",
+        "100V~120V Pure Sine Wave"
+      ],
+      [
+        "Maximum PV input power",
+        "100W Max (DC5521 port)"
+      ],
+      [
+        "Maximum PV input current",
+        "7A Max (DC5521 port)"
+      ],
+      [
+        "Solar input voltage range",
+        "12V~28V (Voc; DC5521 port)"
+      ],
+      [
+        "Dimensions",
+        "L254*W172*H154 mm"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "inverters-r-us-e500lfp"
+    ],
+    "expected": {
+      "inverters-r-us-e500lfp": {
+        "name": "PECRON E500LFP Portable Power Station 600W 576Wh",
+        "sourceUrl": "https://invertersrus.com/product/pecron-e500lfp/",
+        "category": "all-in-one",
+        "anchors": {
+          "capacityKwh": 0.576
+        }
+      }
+    },
+    "url": "https://invertersrus.com/product/pecron-e500lfp/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:44.781Z",
+    "label": "Exact selected SKU/model; Exact E300LFP/E500LFP model row, port-scoped PV Voc; USB-C charging excluded from PV power",
+    "rows": [
+      [
+        "Model",
+        "E500LFP"
+      ],
+      [
+        "Capacity",
+        "576Wh"
+      ],
+      [
+        "Battery Type",
+        "LiFePo4 with 3,500+ Life Cycles to 80%"
+      ],
+      [
+        "Charging Time",
+        "60 minutes-80%; 90 minutes-100%"
+      ],
+      [
+        "Charge Temperature",
+        "0°C~45°C / 32°F-113°F"
+      ],
+      [
+        "Discharge Temperature",
+        "-20°C~45°C / -4°F-113°F"
+      ],
+      [
+        "Rated AC output power",
+        "600W"
+      ],
+      [
+        "AC output voltage",
+        "100V~120V Pure Sine Wave"
+      ],
+      [
+        "Maximum PV input power",
+        "100W Max (DC5521 port)"
+      ],
+      [
+        "Maximum PV input current",
+        "7A Max (DC5521 port)"
+      ],
+      [
+        "Solar input voltage range",
+        "12V~28V (Voc; DC5521 port)"
+      ],
+      [
+        "Dimensions",
+        "L252 x W170 x H187 MM"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "inverters-r-us-e3600lfp"
+    ],
+    "expected": {
+      "inverters-r-us-e3600lfp": {
+        "name": "PECRON E3600LFP Portable Power Station 3600W 3072Wh",
+        "sourceUrl": "https://invertersrus.com/product/pecron-e3600lfp/",
+        "category": "all-in-one",
+        "anchors": {
+          "capacityKwh": 3.072
+        }
+      }
+    },
+    "url": "https://invertersrus.com/product/pecron-e3600lfp/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:38.789Z",
+    "label": "Exact selected SKU/model; Single E3600LFP unit; dual-unit240V/7200W excluded; multi-port PV totals held",
+    "rows": [
+      [
+        "Model",
+        "E3600LFP"
+      ],
+      [
+        "Capacity",
+        "3072Wh"
+      ],
+      [
+        "Battery Type",
+        "LiFePo4"
+      ],
+      [
+        "Charge Temperature",
+        "0°C~45°C / 32°F-113°F"
+      ],
+      [
+        "Discharge Temperature",
+        "-20°C~45°C / -4°F-113°F"
+      ],
+      [
+        "Rated AC output power",
+        "3600W (single E3600LFP, 120V)"
+      ],
+      [
+        "AC output voltage",
+        "100V~120V Pure Sine Wave"
+      ],
+      [
+        "Peak power",
+        "7000W (10 ms, single unit)"
+      ],
+      [
+        "Dimensions",
+        "17.5*12.1*13.8 in"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "inverters-r-us-e600lfp"
+    ],
+    "expected": {
+      "inverters-r-us-e600lfp": {
+        "name": "PECRON E600LFP Portable Power Station 1200W 614Wh LiFePo4",
+        "sourceUrl": "https://invertersrus.com/product/pecron-e600lfp/",
+        "category": "all-in-one",
+        "anchors": {
+          "capacityKwh": 0.614
+        }
+      }
+    },
+    "url": "https://invertersrus.com/product/pecron-e600lfp/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:47.643Z",
+    "label": "Exact selected SKU/model; E600LFP exact model; row mislabeled AC Input not relabelled output voltage; no undated surge duration",
+    "rows": [
+      [
+        "Model",
+        "E600LFP"
+      ],
+      [
+        "Capacity",
+        "614Wh"
+      ],
+      [
+        "Battery Type",
+        "LiFePo4 Battery can retain 80% of its original capacity at 3500 complete charge cycles"
+      ],
+      [
+        "Charge Temperature",
+        "0°C~45°C / 32°F-113°F"
+      ],
+      [
+        "Discharge Temperature",
+        "-20°C~45°C / -4°F-113°F"
+      ],
+      [
+        "Rated AC output power",
+        "1200W"
+      ],
+      [
+        "Maximum PV input power",
+        "350W Max (GX16-5 port)"
+      ],
+      [
+        "Maximum PV input current",
+        "11A Max (GX16-5 port)"
+      ],
+      [
+        "Solar input voltage range",
+        "10V~60V (Voc; GX16-5 port)"
+      ],
+      [
+        "Dimensions",
+        "11.7x7.8x8.5in"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "inverters-r-us-f1000lfp"
+    ],
+    "expected": {
+      "inverters-r-us-f1000lfp": {
+        "name": "PECRON F1000LFP Portable Power Station 1500W 960Wh",
+        "sourceUrl": "https://invertersrus.com/product/pecron-f1000lfp/",
+        "category": "all-in-one",
+        "anchors": {
+          "capacityKwh": 0.96
+        }
+      }
+    },
+    "url": "https://invertersrus.com/product/pecron-f1000lfp/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:26:19.223Z",
+    "label": "Exact selected SKU/model; Exact F1000LFP labeled General/Battery/Output/Input sections in full body; undated surge held",
+    "rows": [
+      [
+        "Energy capacity",
+        "960Wh"
+      ],
+      [
+        "Rated AC output power",
+        "1500W"
+      ],
+      [
+        "Maximum PV input power",
+        "600W Max (XT60)"
+      ],
+      [
+        "Maximum PV input current",
+        "14A Max (XT60)"
+      ],
+      [
+        "Solar input voltage range",
+        "11Vdc~60Vdc (XT60)"
+      ],
+      [
+        "Dimensions",
+        "15*8.5*8.4 in / 380*217*214 mm"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "shopsolar-43663378153612"
+    ],
+    "expected": {
+      "shopsolar-43663378153612": {
+        "name": "RUiXU Split Phase Hybrid Inverter | RX-12K | UL1741",
+        "sourceUrl": "https://shopsolarkits.com/products/ruixu-split-phase-hybrid-inverter-rx-12k-ul1741?variant=43663378153612",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "url": "https://shopsolarkits.com/products/ruixu-split-phase-hybrid-inverter-rx-12k-ul1741",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:38:56.312Z",
+    "label": "Exact selected SKU/model; Exact RX-12K variant and maximum PV array power at STC; four input entries not inferred independent MPPT count",
+    "rows": [
+      [
+        "Maximum PV input power",
+        "17100 Wp @ STC (maximum PV array power)"
+      ],
+      [
+        "Maximum PV input voltage",
+        "600 V"
+      ],
+      [
+        "MPPT voltage range",
+        "90~550 V"
+      ],
+      [
+        "Maximum PV input current",
+        "16 A (each of four listed inputs:16/16/16/16)"
+      ],
+      [
+        "Dimensions",
+        "30.7*18.5*10.2 in (H*W*D)"
+      ],
+      [
+        "Ingress protection",
+        "NEMA 4X (IP65)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "signature-solar-1669005"
+    ],
+    "expected": {
+      "signature-solar-1669005": {
+        "name": "Duracell Power Center | Dual Microinverter | D600-M2A",
+        "sourceUrl": "https://signaturesolar.com/duracell-power-center-dual-microinverter-d600-m2a/",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "url": "https://signaturesolar.com/duracell-power-center-dual-microinverter-d600-m2a/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:36:50.610Z",
+    "label": "Exact selected SKU/model; Exact D600-M2A;600W advertised peak not continuous output; MPPT number not inferred from dual panels",
+    "rows": [
+      [
+        "Maximum PV input voltage",
+        "60 V"
+      ],
+      [
+        "MPPT voltage range",
+        "22–55 Vdc"
+      ],
+      [
+        "Ingress protection",
+        "NEMA 6 / IP67"
+      ],
+      [
+        "CEC efficiency",
+        "96.5% (CEC)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "shopsolar-43520886276236"
+    ],
+    "expected": {
+      "shopsolar-43520886276236": {
+        "name": "2,000 Watt 12 Volt Pure Sine Wave Inverter | RICH SOLAR NOVA PURE 2K",
+        "sourceUrl": "https://shopsolarkits.com/products/nova-pure-2k?variant=43520886276236",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "url": "https://shopsolarkits.com/products/nova-pure-2k",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:38:16.019Z",
+    "label": "Exact selected SKU/model; Exact selected NOVA PURE variant and labelled continuous power; surge duration absent, undated peak held",
+    "rows": [
+      [
+        "Model",
+        "RS-V2P12"
+      ],
+      [
+        "Rated AC output power",
+        "2000W"
+      ],
+      [
+        "Nominal battery voltage",
+        "12V DC"
+      ],
+      [
+        "AC output voltage",
+        "120V AC"
+      ],
+      [
+        "AC frequency",
+        "60 Hz"
+      ],
+      [
+        "Conversion efficiency",
+        ">88%"
+      ],
+      [
+        "Operation Temperature",
+        "14°F to 122°F"
+      ],
+      [
+        "Dimensions",
+        "16.1 x 9.6 x 4.0 (in) / 410 x 244 x 102 (mm)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "shopsolar-43521059192972"
+    ],
+    "expected": {
+      "shopsolar-43521059192972": {
+        "name": "3,000 Watt 12 Volt Pure Sine Wave Inverter | RICH SOLAR NOVA PURE 3K",
+        "sourceUrl": "https://shopsolarkits.com/products/nova-pure-3k?variant=43521059192972",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "url": "https://shopsolarkits.com/products/nova-pure-3k",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:38:18.151Z",
+    "label": "Exact selected SKU/model; Exact selected NOVA PURE variant and labelled continuous power; surge duration absent, undated peak held",
+    "rows": [
+      [
+        "Model",
+        "RS-V3P12"
+      ],
+      [
+        "Rated AC output power",
+        "3000W"
+      ],
+      [
+        "Nominal battery voltage",
+        "12V DC"
+      ],
+      [
+        "AC output voltage",
+        "120V AC"
+      ],
+      [
+        "AC frequency",
+        "60 Hz"
+      ],
+      [
+        "Conversion efficiency",
+        ">88%"
+      ],
+      [
+        "Operation Temperature",
+        "14°F to 122°F"
+      ],
+      [
+        "Dimensions",
+        "18.7 x 9.6 x 4.0 (in) / 475 x 245 x 102 (mm)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "signature-solar-1600017"
+    ],
+    "expected": {
+      "signature-solar-1600017": {
+        "name": "Outback Power | M Series | 2.5kW Inverter Charger | 55A",
+        "sourceUrl": "https://signaturesolar.com/outback-power-m-series-2-5kw-inverter-charger-55a/",
+        "category": "inverters",
+        "anchors": {
+          "outputWatts": 2500
+        }
+      }
+    },
+    "url": "https://signaturesolar.com/outback-power-m-series-2-5kw-inverter-charger-55a/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:32:40.456Z",
+    "label": "Exact selected SKU/model; Exact M-series mobile inverter technical section; no sibling charger-current transfer",
+    "rows": [
+      [
+        "Rated AC output power",
+        "2.5kW continuous"
+      ],
+      [
+        "Nominal battery voltage",
+        "24VDC"
+      ],
+      [
+        "AC output voltage",
+        "120VAC"
+      ],
+      [
+        "AC frequency",
+        "60Hz"
+      ],
+      [
+        "Dimensions",
+        "13 × 8.25 × 16.25 in"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "signature-solar-1593016"
+    ],
+    "expected": {
+      "signature-solar-1593016": {
+        "name": "Victron Energy MultiPlus Compact 24/2000/50-50 120V VE.Bus",
+        "sourceUrl": "https://signaturesolar.com/victron-energy-multiplus-compact-24-2000-50-50-120v-ve-bus/",
+        "category": "inverters",
+        "anchors": {
+          "voltage": 120
+        }
+      }
+    },
+    "url": "https://signaturesolar.com/product_images/Datasheet-MultiPlus-2000VA-120V-EN-.pdf",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-12T22:51:07.834072+00:00",
+    "label": "Exact selected SKU/model; 24/2000/50-50 120V column, temperature and country/frequency qualified;3500W peak lacks duration",
+    "rows": [
+      [
+        "Rated AC output power",
+        "1600 W (continuous at25°C; non-linear load crest factor3:1)"
+      ],
+      [
+        "AC output voltage",
+        "120 VAC ±2%"
+      ],
+      [
+        "AC frequency",
+        "60 Hz ±0.1% (adjustable50Hz)"
+      ],
+      [
+        "Maximum efficiency",
+        "94% (24V model column)"
+      ],
+      [
+        "Maximum charge current",
+        "50 A (house battery, up to25°C ambient)"
+      ],
+      [
+        "Operating voltage range",
+        "19–33 V (DC input;24V model)"
+      ],
+      [
+        "Dimensions",
+        "506 x236 x147 mm (H×W×D)"
+      ],
+      [
+        "Ingress protection",
+        "IP22"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "signature-solar-1519008"
+    ],
+    "expected": {
+      "signature-solar-1519008": {
+        "name": "Growatt 3kW Stackable Off-Grid Inverter | SPF 3000TL LVM-24P",
+        "sourceUrl": "https://signaturesolar.com/growatt-24v-3kw-150vdc-stackable-off-grid-inverter/",
+        "category": "inverters",
+        "anchors": {
+          "outputWatts": 3000
+        }
+      }
+    },
+    "url": "https://signaturesolar.com/content/documents/GROWATT/1519008-manual.pdf",
+    "kind": "manual",
+    "checkedAt": "2026-10-12T22:51:17.036078+00:00",
+    "label": "Exact selected SKU/model; SPF3000TL LVM-24P manual pp42–43; PV80A/utility60A/joint140A distinct; retailer150Voc conflict held",
+    "rows": [
+      [
+        "Rated AC output power",
+        "3000 W (3kVA/3kW)"
+      ],
+      [
+        "AC output voltage",
+        "120 Vac ±5%"
+      ],
+      [
+        "AC frequency",
+        "50Hz/60Hz(default)"
+      ],
+      [
+        "Peak efficiency",
+        "90% (inverter mode)"
+      ],
+      [
+        "MPPT voltage range",
+        "30~115 Vdc (24P model column)"
+      ],
+      [
+        "Maximum PV input voltage",
+        "145 Vdc (PV array open circuit)"
+      ],
+      [
+        "Maximum charge current",
+        "140 A (joint utility and solar,24P model)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "signature-solar-1651001"
+    ],
+    "expected": {
+      "signature-solar-1651001": {
+        "name": "Solis | 30kW Three Phase Inverter | Three MPPT w/ AFCI w/ FAN",
+        "sourceUrl": "https://signaturesolar.com/solis-30kw-three-phase-inverter-three-mppt-w-afci-w-fan/",
+        "category": "inverters",
+        "anchors": {
+          "outputWatts": 30000
+        }
+      }
+    },
+    "url": "https://signaturesolar.com/content/documents/Solis/Solis_S6-GC(30K)-LV-US_Datasheet.pdf",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-12T22:51:19.337187+00:00",
+    "label": "Exact selected SKU/model; S6-GC30K-LV-US 30K208V US column;600V DC rated voltage not battery nominal;33kW max not rated30kW",
+    "rows": [
+      [
+        "Rated AC output power",
+        "30 kW"
+      ],
+      [
+        "AC output voltage",
+        "208 V (3Φ/PE grid)"
+      ],
+      [
+        "Phase",
+        "Three-phase (3Φ/PE)"
+      ],
+      [
+        "AC frequency",
+        "60 Hz"
+      ],
+      [
+        "Maximum PV input voltage",
+        "1000 V"
+      ],
+      [
+        "MPPT voltage range",
+        "180–1000 V"
+      ],
+      [
+        "Number of MPPTs",
+        "3 (6 maximum input strings)"
+      ],
+      [
+        "Maximum PV input current",
+        "40 A (per MPPT;40/40/40A)"
+      ],
+      [
+        "Maximum PV short circuit current",
+        "63 A (per MPPT;63/63/63A)"
+      ],
+      [
+        "Maximum efficiency",
+        "97.7% (maximum);97.0% CEC"
+      ],
+      [
+        "Dimensions",
+        "25.5*24.8*9.9 in (647*629*252 mm;W*H*D)"
+      ],
+      [
+        "Ingress protection",
+        "TYPE 4X"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "signature-solar-1651010"
+    ],
+    "expected": {
+      "signature-solar-1651010": {
+        "name": "Solis S6 11.4kW High Voltage Hybrid Inverter  (RSS Model)",
+        "sourceUrl": "https://signaturesolar.com/solis-s6-11-4kw-single-phase-high-voltage-energy-storage-hybrid-inverter-s6-eh1p11-4k-h-us-rss/",
+        "category": "inverters",
+        "anchors": {
+          "outputWatts": 11400
+        }
+      }
+    },
+    "url": "https://signaturesolar.com/content/Solis%20Inverters/Series%206%20Hybrid/Spec%20Sheet%20Solis%20S6-EH1P(3.8-11.4)K-H-US.pdf",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-12T22:51:23.937638+00:00",
+    "label": "Exact selected SKU/model; S6-EH1P11.4K-H-US RSS model selected11.4K rightmost column;18.2kVA10s apparent power not W surge",
+    "rows": [
+      [
+        "Rated AC output power",
+        "11400 W (grid and backup/off-grid)"
+      ],
+      [
+        "AC output voltage",
+        "240 V (L1–L2)"
+      ],
+      [
+        "Phase",
+        "240 V split-phase (backup/off-grid)"
+      ],
+      [
+        "AC frequency",
+        "60 Hz"
+      ],
+      [
+        "Maximum PV input voltage",
+        "600 V"
+      ],
+      [
+        "MPPT voltage range",
+        "80–520 V"
+      ],
+      [
+        "Number of MPPTs",
+        "4 (one string per MPPT)"
+      ],
+      [
+        "Maximum PV input current",
+        "16 A (per string, one string per MPPT)"
+      ],
+      [
+        "Maximum PV short circuit current",
+        "25.6 A (per string)"
+      ],
+      [
+        "Operating voltage range",
+        "120–500 V (battery)"
+      ],
+      [
+        "Maximum charge current",
+        "50 A (battery charge/discharge;11.4K model)"
+      ],
+      [
+        "Maximum efficiency",
+        "97.6% (PV maximum);97.0% PV CEC"
+      ],
+      [
+        "Dimensions",
+        "22.05×29.53×8.66 in (560×750×220mm;W×H×D)"
+      ],
+      [
+        "Ingress protection",
+        "TYPE 4X"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "signature-solar-1593053"
+    ],
+    "expected": {
+      "signature-solar-1593053": {
+        "name": "Victron MultiPlus-II 12/3000 | 12V Input | 3000VA Output 120/240V | 120A Charger | Transfer Switch",
+        "sourceUrl": "https://signaturesolar.com/victron-multiplus-ii-12-3000-12v-input-3000w-output-120-240v-120a-charger-transfer-switch/",
+        "category": "inverters",
+        "anchors": {
+          "voltage": 12
+        }
+      }
+    },
+    "url": "https://signaturesolar.com/content/documents/Victron/Datasheet-MultiPlus-II-3kVA-2x120V-EN-.pdf",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-12T22:51:26.238404+00:00",
+    "label": "Exact selected SKU/model; MultiPlus-II2x120V12/3000/120-50;120/240V input/pass-through distinct from120V inverter mode;5500W peak undated",
+    "rows": [
+      [
+        "Rated AC output power",
+        "2400 W (continuous at25°C; non-linear crest factor3:1)"
+      ],
+      [
+        "AC output voltage",
+        "120 VAC ±2% (inverter mode)"
+      ],
+      [
+        "AC frequency",
+        "60 Hz ±0.1% (adjustable50Hz)"
+      ],
+      [
+        "Maximum efficiency",
+        "93% (12V column)"
+      ],
+      [
+        "Maximum charge current",
+        "120 A (up to25°C ambient)"
+      ],
+      [
+        "Operating voltage range",
+        "9.5–17 V (DC input,12V model)"
+      ],
+      [
+        "Dimensions",
+        "578x275x148mm (H×W×D)"
+      ],
+      [
+        "Ingress protection",
+        "IP22"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "sungoldpower-44797594468489"
+    ],
+    "expected": {
+      "sungoldpower-44797594468489": {
+        "name": "High Voltage 11.4KW Hybrid Split Phase Inverter with APS Transmitter SG11.4KHB-HV",
+        "sourceUrl": "https://sungoldpower.com/products/high-voltage-11-4kw-hybrid-split-phase-inverter-with-aps-transmitter-sg11-4khb-hv?variant=44797594468489",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "url": "https://cdn.shopify.com/s/files/1/0323/4090/2025/files/Sun_Gold_Power_manual_SG11.4KHB-HV_-_20241115_2.pdf",
+    "kind": "manual",
+    "checkedAt": "2026-10-12T22:51:35.440862+00:00",
+    "label": "Exact selected SKU/model; SG11.4KHB-HV exact manufacturer model;recommended18240W PV not maximum input;18.2kVA10s apparent power not W surge",
+    "rows": [
+      [
+        "Rated AC output power",
+        "11.4 kW (grid and backup/off-grid)"
+      ],
+      [
+        "AC output voltage",
+        "240 V"
+      ],
+      [
+        "Phase",
+        "240 V split-phase"
+      ],
+      [
+        "AC frequency",
+        "60 Hz"
+      ],
+      [
+        "Maximum PV input voltage",
+        "600 V"
+      ],
+      [
+        "MPPT voltage range",
+        "80–550 V"
+      ],
+      [
+        "Number of MPPTs",
+        "4 (one string per MPPT)"
+      ],
+      [
+        "Maximum PV input current",
+        "16 A (per string)"
+      ],
+      [
+        "Maximum PV short circuit current",
+        "25.6 A (per string)"
+      ],
+      [
+        "Operating voltage range",
+        "120–500 V (battery)"
+      ],
+      [
+        "Maximum charge current",
+        "50 A (battery charge/discharge)"
+      ],
+      [
+        "Maximum efficiency",
+        "97.6% (PV maximum);97.0% PV CEC"
+      ],
+      [
+        "Dimensions",
+        "29.53*22.05*8.66in (750*560*220mm;H/W/D)"
+      ],
+      [
+        "Ingress protection",
+        "TYPE4X (IP66)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "practical-preppers-23696"
+    ],
+    "expected": {
+      "practical-preppers-23696": {
+        "name": "EcoFlow RIVER Pro Portable Power Station",
+        "sourceUrl": "https://practicalpreppers.com/product/ecoflow-river-pro-portable-power-station/",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://practicalpreppers.com/product/ecoflow-river-pro-portable-power-station/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:31:29.905Z",
+    "label": "Exact selected SKU/model; Exact RIVER Pro unit table;X-Boost and expansion-battery capacity excluded",
+    "rows": [
+      [
+        "Net Weight",
+        "16.8 lbs (7.6kg)"
+      ],
+      [
+        "Dimensions",
+        "11.4 x 7.1 x 9.3in (28.9 x 18.0 x 23.5cm)"
+      ],
+      [
+        "Charge Temperature",
+        "32 to 113°F +/- 5°F (0 to 45°C +/- 3°C)"
+      ],
+      [
+        "Discharge Temperature",
+        "-4 to 113°F +/- 5°F (-20 to 45°C +/- 3°C)"
+      ],
+      [
+        "Warranty",
+        "24 Months"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "inverters-r-us-e3800lfp"
+    ],
+    "expected": {
+      "inverters-r-us-e3800lfp": {
+        "name": "PECRON E3800LFP Portable Power Station 4200W 3840Wh with Free Cart",
+        "sourceUrl": "https://invertersrus.com/product/pecron-e3800lfp-portable-power-station/",
+        "category": "all-in-one",
+        "anchors": {
+          "capacityKwh": 3.84
+        }
+      }
+    },
+    "url": "https://invertersrus.com/product/pecron-e3800lfp-portable-power-station/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:41.988Z",
+    "label": "Exact selected SKU/model; Exact E3800LFP labelled General/Battery/Output/Input sections;cart not station dimensions;dual-unit output andDC5521 not merged intoXT60 rating",
+    "rows": [
+      [
+        "Energy capacity",
+        "3840Wh"
+      ],
+      [
+        "Rated AC output power",
+        "4200W (single E3800LFP)"
+      ],
+      [
+        "AC output voltage",
+        "120V (single E3800LFP)"
+      ],
+      [
+        "Maximum PV input power",
+        "3000W Max (XT60-M;2×1500W Max)"
+      ],
+      [
+        "Maximum PV input current",
+        "20 A Max (each XT60-M port)"
+      ],
+      [
+        "Solar input voltage range",
+        "32V~150V (Voc;XT60-M port)"
+      ],
+      [
+        "Dimensions",
+        "17.5*12.1*14.7 in (445*307*373mm;L*W*H)"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "sungoldpower-47129947472009"
+    ],
+    "expected": {
+      "sungoldpower-47129947472009": {
+        "name": "12KW All in One Off Grid Solar Inverter FR12K-B",
+        "sourceUrl": "https://sungoldpower.com/products/12kw-48v-split-phase-off-grid-solar-inverter?variant=47129947472009",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "url": "https://cdn.shopify.com/s/files/1/0323/4090/2025/files/FR12K-B_Inverter.pdf",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-12T22:51:33.140841+00:00",
+    "label": "Exact selected SKU/model; Exact FR12K-B visually read complete raster technical table;24kW peak lacks duration;99.9%tracking not inverter efficiency",
+    "rows": [
+      [
+        "Rated AC output power",
+        "12000 W"
+      ],
+      [
+        "AC output voltage",
+        "120/240 VAC (single-phase/split-phase)"
+      ],
+      [
+        "Phase",
+        "Single-phase/split-phase"
+      ],
+      [
+        "AC frequency",
+        "50/60 Hz"
+      ],
+      [
+        "Nominal battery voltage",
+        "48 Vdc"
+      ],
+      [
+        "Operating voltage range",
+        "40–60 Vdc (battery)"
+      ],
+      [
+        "Maximum charge current",
+        "200 A (PV and hybrid;grid/generator120A)"
+      ],
+      [
+        "Number of MPPTs",
+        "2"
+      ],
+      [
+        "Maximum PV input power",
+        "6600W+6600W (two channels)"
+      ],
+      [
+        "Maximum PV input current",
+        "22 A (per channel;22/22A)"
+      ],
+      [
+        "Maximum PV input voltage",
+        "500 Vdc (open circuit)"
+      ],
+      [
+        "MPPT voltage range",
+        "125–425 Vdc"
+      ],
+      [
+        "Maximum efficiency",
+        "92% (battery inverter);99.9%MPPT tracking separately"
+      ],
+      [
+        "Dimensions",
+        "28.48×17.64×5.91 in (723.4×448×150mm)"
+      ],
+      [
+        "Ingress protection",
+        "IP20 (indoor use only)"
+      ],
+      [
+        "Operating temperature",
+        "-10–55°C (>45°C derated)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-generation-independent.json; review SHA256 0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2; candidate SHA256 fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1. Source conditions and uncertainty retained."
+  },
+  {
+    "family": 0,
+    "key": "accessories|https://invertersrus.com/product/eg4-flexboss-remote-lcd-screen/",
+    "productIds": [
+      "inverters-r-us-eg4-1511081"
+    ],
+    "expected": {
+      "inverters-r-us-eg4-1511081": {
+        "name": "EG4 FlexBoss Remote LCD Screen",
+        "sourceUrl": "https://invertersrus.com/product/eg4-flexboss-remote-lcd-screen/",
+        "category": "accessories",
+        "anchors": {
+          "accessoryType": "Displays & controls"
+        }
+      }
+    },
+    "model": "EG4 FlexBoss Remote LCD Screen",
+    "url": "https://invertersrus.com/product/eg4-flexboss-remote-lcd-screen/",
+    "kind": "retailer",
+    "label": "Exact selected SKU retained product technical source",
+    "checkedAt": "2026-10-12T01:25:21.669Z",
+    "rows": [
+      [
+        "Compatibility",
+        "EG4 FlexBOSS21"
+      ]
+    ],
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\c32f0ee975cdf42c.html",
+    "sha256": "fa6e723e6566dd6b7d090209bdc84d4822e6efe67c5fe910c256fe0c7173da69",
+    "facts": [
+      {
+        "label": "Compatibility",
+        "value": "EG4 FlexBOSS21",
+        "quote": "Compatible with the FlexBOSS21",
+        "sourceUrl": "https://invertersrus.com/product/eg4-flexboss-remote-lcd-screen/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\c32f0ee975cdf42c.html",
+        "sha256": "fa6e723e6566dd6b7d090209bdc84d4822e6efe67c5fe910c256fe0c7173da69",
+        "checkedAt": "2026-10-12T01:25:21.669Z",
+        "scope": "Exact EG4-1511081 screen kit; conflicting storefront versus unit dimensions held"
+      }
+    ],
+    "variantEvidence": {
+      "exactInertRecords": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "@id": "https://invertersrus.com/product/eg4-flexboss-remote-lcd-screen/#product",
+          "name": "EG4 FlexBoss Remote LCD Screen",
+          "url": "https://invertersrus.com/product/eg4-flexboss-remote-lcd-screen/",
+          "description": "The EG4 FlexBOSS Screen Kit simplifies system monitoring and control by providing real-time data visualization and the ability to streamline settings adjustments. Compatible with the FlexBOSS21, this accessory enhances the overall functionality of the inverter, ensuring seamless integration into your solar setup. With its simple installation process, intuitive interface, and dynamic features, the external LCD screen is designed to provide a clean and powerful user experience.\r\n\r\n\r\n\r\n&amp;nbsp;\r\n\r\n&amp;nbsp;\r\n\r\nFEATURES &amp;amp; BENEFITS\r\n\r\n&amp;nbsp;\r\nEasy Installation &amp;amp; Setup\r\nQuick and straightforward process\r\nComprehensive/ Real-Time System Status Monitoring\r\nKeep track of detailed system performance indicators and quickly identify faults or issues\r\nAdvanced Settings Control\r\nEasily customize key system parameters\r\nEnhanced Accessibility for Installers\r\nConvenient, offline user interface for installers to perform diagnostics and finetune settings without needing to access the EG4 Monitor Center\r\n\r\n\r\n\r\n\r\n&amp;nbsp;\r\n\r\n&amp;nbsp;\r\n\r\nKEY SPECIFICATIONS\r\n\r\n&amp;nbsp;\r\nUnit Dimensions: 7.5 in. x 5.9 in. x 1.0 in.\r\nAttachment: 3M Dual Lock Re-Closable Fasteners\r\n\r\n\r\n\r\n\r\n&amp;nbsp;\r\n\r\n&amp;nbsp;\r\n\r\nSKU: EG4-1511081\r\nManufacturer SKU: EG4FLEXBOSSRMTELCDSCRN",
+          "image": "https://invertersrus.com/wp-content/uploads/2026/06/EG4-1511081-1.png",
+          "sku": "EG4-1511081",
+          "offers": [
+            {
+              "@type": "Offer",
+              "priceSpecification": [
+                {
+                  "@type": "UnitPriceSpecification",
+                  "price": "136.99",
+                  "priceCurrency": "USD",
+                  "validThrough": "2027-12-31",
+                  "valueAddedTaxIncluded": false
+                }
+              ],
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://invertersrus.com/product/eg4-flexboss-remote-lcd-screen/",
+              "seller": {
+                "@type": "Organization",
+                "name": "Inverters R US",
+                "url": "https://invertersrus.com"
+              },
+              "price": "136.99",
+              "priceCurrency": "USD"
+            }
+          ],
+          "itemCondition": "https://schema.org/NewCondition",
+          "mpn": "EG4-1511081",
+          "brand": {
+            "@type": "Brand",
+            "name": "EG4 Electronics"
+          }
+        }
+      ],
+      "visibleSku": "EG4-1511081",
+      "exactVisibleSkuMatches": [
+        "EG4-1511081"
+      ],
+      "title": "EG4 FlexBoss Remote LCD Screen",
+      "h1": [
+        "EG4 FlexBoss Remote LCD Screen"
+      ],
+      "canonical": [
+        "https://invertersrus.com/product/eg4-flexboss-remote-lcd-screen/"
+      ],
+      "selectedIdentityInspected": true,
+      "rawIdentity": {
+        "name": "EG4 FlexBoss Remote LCD Screen",
+        "sourceUrl": "https://invertersrus.com/product/eg4-flexboss-remote-lcd-screen/",
+        "category": "accessories"
+      },
+      "offers": [
+        {
+          "id": "inverters-r-us-eg4-1511081",
+          "sku": "EG4-1511081",
+          "packQuantity": 1,
+          "url": "https://invertersrus.com/product/eg4-flexboss-remote-lcd-screen/",
+          "condition": "new"
+        }
+      ]
+    },
+    "reviewStatus": "approved",
+    "reviewNote": "Exact EG4-1511081 screen kit; conflicting storefront versus unit dimensions held; full original HTML and inert JSON read offline; source timestamps from paired metadata, byte hash computed now. Exact name/source/category plus original role-only anchors; no hydrated engineering anchors. Independently reviewed against complete retained sources: review-seventeen-balance-independent.json; review SHA256 68ec7fcfc2aecbab2ea1be01da8d9361d94c8b48b315ad49d66c851b519ca8bb; candidate SHA256 a935fa94f0868bf6ce06b644bbceef86134f894cc9d91d27e646af9e72e92820. Source conditions and uncertainty retained."
+  },
+  {
+    "family": 20,
+    "key": "electrical|https://invertersrus.com/product/bsb-125a-ac-circuit-breaker/",
+    "productIds": [
+      "inverters-r-us-eg4b3s1gbbrkr125av1"
+    ],
+    "expected": {
+      "inverters-r-us-eg4b3s1gbbrkr125av1": {
+        "name": "BSB 125A AC Circuit Breaker",
+        "sourceUrl": "https://invertersrus.com/product/bsb-125a-ac-circuit-breaker/",
+        "category": "electrical",
+        "anchors": {
+          "electricalType": "Circuit breakers"
+        }
+      }
+    },
+    "model": "BSB 125A AC Circuit Breaker",
+    "url": "https://invertersrus.com/product/bsb-125a-ac-circuit-breaker/",
+    "kind": "retailer",
+    "label": "Exact selected SKU retained product technical source",
+    "checkedAt": "2026-10-12T01:25:48.744Z",
+    "rows": [
+      [
+        "Current rating",
+        "125A"
+      ],
+      [
+        "Voltage rating",
+        "120/240V AC"
+      ]
+    ],
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\eebc5fd8df4ca3b9.html",
+    "sha256": "500c491dd61c3d75687878b4240bba6e57aafe62e0c2390d6fac8d593ef00a1a",
+    "facts": [
+      {
+        "label": "Current rating",
+        "value": "125A",
+        "quote": "Current Rating: 125A",
+        "sourceUrl": "https://invertersrus.com/product/bsb-125a-ac-circuit-breaker/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\eebc5fd8df4ca3b9.html",
+        "sha256": "500c491dd61c3d75687878b4240bba6e57aafe62e0c2390d6fac8d593ef00a1a",
+        "checkedAt": "2026-10-12T01:25:48.744Z",
+        "scope": "BSB 125A exact SKU technical rows; high interrupting capacity has no numeric value and is held"
+      },
+      {
+        "label": "Voltage rating",
+        "value": "120/240V AC",
+        "quote": "Rated Voltage: AC 120/240V",
+        "sourceUrl": "https://invertersrus.com/product/bsb-125a-ac-circuit-breaker/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\eebc5fd8df4ca3b9.html",
+        "sha256": "500c491dd61c3d75687878b4240bba6e57aafe62e0c2390d6fac8d593ef00a1a",
+        "checkedAt": "2026-10-12T01:25:48.744Z",
+        "scope": "BSB 125A exact SKU technical rows; high interrupting capacity has no numeric value and is held"
+      }
+    ],
+    "variantEvidence": {
+      "exactInertRecords": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "@id": "https://invertersrus.com/product/bsb-125a-ac-circuit-breaker/#product",
+          "name": "BSB 125A AC Circuit Breaker",
+          "url": "https://invertersrus.com/product/bsb-125a-ac-circuit-breaker/",
+          "description": "Reliable Circuit Protection for Energy Storage and Backup Systems\r\n\r\nThe 125A AC Circuit Breaker provides dependable overload and short-circuit protection for residential, commercial, and industrial electrical systems. Designed for use as a Smart Port and Generator Breaker, it helps safeguard critical power equipment while supporting safe and reliable system operation. With a high interrupting capacity, advanced safety features, and compliance with industry standards, this breaker is an essential component for energy storage, backup power, and solar applications.\r\n\r\n&amp;nbsp;\r\n\r\n&amp;nbsp;\r\n\r\nKey Benefits\r\n125A Current Capacity – Designed to support systems requiring up to 125 amps of continuous protection.\r\nAdvanced Safety Features – Includes trip-free operation, an indicating handle, and high interrupting capacity for enhanced system safety.\r\nSolar and Energy Storage Ready – Supports applications requiring protection for smart ports, generators, and energy storage system components.\r\nMultiple Protection Functions – Provides protection against PV reverse polarity, over-voltage conditions, and electrical surges.\r\nVersatile Installation Options – Suitable for residential, commercial, industrial, and backup power applications.\r\n&amp;nbsp;\r\n\r\n&amp;nbsp;\r\n\r\nUse Cases\r\nIdeal for solar energy systems, energy storage installations, backup power systems, generator integration, industrial automation equipment, telecommunications infrastructure, and mobile power applications where dependable circuit protection is required.\r\n&amp;nbsp;\r\n\r\n&amp;nbsp;\r\n\r\nTech Specs\r\nProduct Type: AC Circuit Breaker\r\nCurrent Rating: 125A\r\nRated Voltage: AC 120/240V\r\nApplication: Smart Port and Generator Breaker\r\nProtection Functions: Overload Protection, Short Circuit Protection, PV Reverse Polarity Protection, Over-Voltage Protection, Surge Protection",
+          "image": "https://invertersrus.com/wp-content/uploads/2026/07/EG4B3S1GBBRKR125AV1-1.png",
+          "sku": "EG4B3S1GBBRKR125AV1",
+          "offers": [
+            {
+              "@type": "Offer",
+              "priceSpecification": [
+                {
+                  "@type": "UnitPriceSpecification",
+                  "price": "43.99",
+                  "priceCurrency": "USD",
+                  "validThrough": "2027-12-31",
+                  "valueAddedTaxIncluded": false
+                }
+              ],
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://invertersrus.com/product/bsb-125a-ac-circuit-breaker/",
+              "seller": {
+                "@type": "Organization",
+                "name": "Inverters R US",
+                "url": "https://invertersrus.com"
+              },
+              "price": "43.99",
+              "priceCurrency": "USD"
+            }
+          ],
+          "itemCondition": "https://schema.org/NewCondition",
+          "mpn": "EG4B3S1GBBRKR125AV1"
+        }
+      ],
+      "visibleSku": "EG4B3S1GBBRKR125AV1",
+      "exactVisibleSkuMatches": [
+        "EG4B3S1GBBRKR125AV1"
+      ],
+      "title": "BSB 125A AC Circuit Breaker",
+      "h1": [
+        "BSB 125A AC Circuit Breaker"
+      ],
+      "canonical": [
+        "https://invertersrus.com/product/bsb-125a-ac-circuit-breaker/"
+      ],
+      "selectedIdentityInspected": true,
+      "rawIdentity": {
+        "name": "BSB 125A AC Circuit Breaker",
+        "sourceUrl": "https://invertersrus.com/product/bsb-125a-ac-circuit-breaker/",
+        "category": "electrical"
+      },
+      "offers": [
+        {
+          "id": "inverters-r-us-eg4b3s1gbbrkr125av1",
+          "sku": "EG4B3S1GBBRKR125AV1",
+          "packQuantity": 1,
+          "url": "https://invertersrus.com/product/bsb-125a-ac-circuit-breaker/",
+          "condition": "new"
+        }
+      ]
+    },
+    "reviewStatus": "approved",
+    "reviewNote": "BSB 125A exact SKU technical rows; high interrupting capacity has no numeric value and is held; full original HTML and inert JSON read offline; source timestamps from paired metadata, byte hash computed now. Exact name/source/category plus original role-only anchors; no hydrated engineering anchors. Independently reviewed against complete retained sources: review-seventeen-balance-independent.json; review SHA256 68ec7fcfc2aecbab2ea1be01da8d9361d94c8b48b315ad49d66c851b519ca8bb; candidate SHA256 a935fa94f0868bf6ce06b644bbceef86134f894cc9d91d27e646af9e72e92820. Source conditions and uncertainty retained."
+  },
+  {
+    "family": 60,
+    "key": "monitoring|https://invertersrus.com/product/eg4-18kpv-monitoring-adapter-4g-cellular-modem/",
+    "productIds": [
+      "inverters-r-us-eg4-1511300"
+    ],
+    "expected": {
+      "inverters-r-us-eg4-1511300": {
+        "name": "EG4 18Kpv Monitoring Adapter 4G Cellular Modem",
+        "sourceUrl": "https://invertersrus.com/product/eg4-18kpv-monitoring-adapter-4g-cellular-modem/",
+        "category": "monitoring",
+        "anchors": {
+          "monitorType": "Energy monitor / meter"
+        }
+      }
+    },
+    "model": "EG4 18Kpv Monitoring Adapter 4G Cellular Modem",
+    "url": "https://invertersrus.com/product/eg4-18kpv-monitoring-adapter-4g-cellular-modem/",
+    "kind": "retailer",
+    "label": "Exact selected SKU retained product technical source",
+    "checkedAt": "2026-10-12T01:25:34.094Z",
+    "rows": [
+      [
+        "Communication",
+        "4G cellular"
+      ]
+    ],
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\e3500b877589366f.html",
+    "sha256": "c6456aa91aa06810221353e960911586ef0fca0dac60cc524e9d2acd2589f6d7",
+    "facts": [
+      {
+        "label": "Communication",
+        "value": "4G cellular",
+        "quote": "Utilize a 4G cellular connection",
+        "sourceUrl": "https://invertersrus.com/product/eg4-18kpv-monitoring-adapter-4g-cellular-modem/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\e3500b877589366f.html",
+        "sha256": "c6456aa91aa06810221353e960911586ef0fca0dac60cc524e9d2acd2589f6d7",
+        "checkedAt": "2026-10-12T01:25:34.094Z",
+        "scope": "Exact EG4SPLTEDONGLE; no channels, accuracy or IP inferred"
+      }
+    ],
+    "variantEvidence": {
+      "exactInertRecords": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "@id": "https://invertersrus.com/product/eg4-18kpv-monitoring-adapter-4g-cellular-modem/#product",
+          "name": "EG4 18Kpv Monitoring Adapter 4G Cellular Modem",
+          "url": "https://invertersrus.com/product/eg4-18kpv-monitoring-adapter-4g-cellular-modem/",
+          "description": "Monitor your EG4 18kPV or 6000XP inverter remotely using this 4G Monitoring Adapter that replaces a WIFI monitoring adapter. The adapter comes with a pre-included SIM card that provides 5 years of service. After this period, simply obtain a new SIM card to continue 4G monitoring. \r\n\r\n\r\n\r\n&amp;nbsp;\r\n\r\n&amp;nbsp;\r\n\r\nFEATURES &amp;amp; BENEFITS\r\n\r\n&amp;nbsp;\r\nRemote Monitoring:\r\nMonitor EG4 18kPV or 6000XP inverters remotely.\r\n4G Connectivity:\r\nUtilize a 4G cellular connection for seamless monitoring.\r\nLong Service Period:\r\nComes with a pre-included SIM card with 5 years of service.\r\nSIM Card Renewal:\r\nRenew 4G monitoring after 5 years by obtaining a new SIM card.\r\nUser-Friendly:\r\nEasy and convenient monitoring solution for 18kPV or 6000XP inverter systems.\r\nReplaces the need for a WIFI Monitoring Adapter.\r\n\r\n\r\n\r\n\r\n&amp;nbsp;\r\n\r\n&amp;nbsp;\r\n\r\nSKU: EG4-1511300\r\nManufacturer SKU: EG4SPLTEDONGLE",
+          "image": "https://invertersrus.com/wp-content/uploads/2026/06/EG4-1511300.png",
+          "sku": "EG4-1511300",
+          "offers": [
+            {
+              "@type": "Offer",
+              "priceSpecification": [
+                {
+                  "@type": "UnitPriceSpecification",
+                  "price": "369.99",
+                  "priceCurrency": "USD",
+                  "validThrough": "2027-12-31",
+                  "valueAddedTaxIncluded": false
+                }
+              ],
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://invertersrus.com/product/eg4-18kpv-monitoring-adapter-4g-cellular-modem/",
+              "seller": {
+                "@type": "Organization",
+                "name": "Inverters R US",
+                "url": "https://invertersrus.com"
+              },
+              "price": "369.99",
+              "priceCurrency": "USD"
+            }
+          ],
+          "itemCondition": "https://schema.org/NewCondition",
+          "mpn": "EG4-1511300",
+          "brand": {
+            "@type": "Brand",
+            "name": "EG4 Electronics"
+          }
+        }
+      ],
+      "visibleSku": "EG4-1511300",
+      "exactVisibleSkuMatches": [
+        "EG4-1511300"
+      ],
+      "title": "EG4 18Kpv Monitoring Adapter 4G Cellular Modem",
+      "h1": [
+        "EG4 18Kpv Monitoring Adapter 4G Cellular Modem"
+      ],
+      "canonical": [
+        "https://invertersrus.com/product/eg4-18kpv-monitoring-adapter-4g-cellular-modem/"
+      ],
+      "selectedIdentityInspected": true,
+      "rawIdentity": {
+        "name": "EG4 18Kpv Monitoring Adapter 4G Cellular Modem",
+        "sourceUrl": "https://invertersrus.com/product/eg4-18kpv-monitoring-adapter-4g-cellular-modem/",
+        "category": "monitoring"
+      },
+      "offers": [
+        {
+          "id": "inverters-r-us-eg4-1511300",
+          "sku": "EG4-1511300",
+          "packQuantity": 1,
+          "url": "https://invertersrus.com/product/eg4-18kpv-monitoring-adapter-4g-cellular-modem/",
+          "condition": "new"
+        }
+      ]
+    },
+    "reviewStatus": "approved",
+    "reviewNote": "Exact EG4SPLTEDONGLE; no channels, accuracy or IP inferred; full original HTML and inert JSON read offline; source timestamps from paired metadata, byte hash computed now. Exact name/source/category plus original role-only anchors; no hydrated engineering anchors. Independently reviewed against complete retained sources: review-seventeen-balance-independent.json; review SHA256 68ec7fcfc2aecbab2ea1be01da8d9361d94c8b48b315ad49d66c851b519ca8bb; candidate SHA256 a935fa94f0868bf6ce06b644bbceef86134f894cc9d91d27e646af9e72e92820. Source conditions and uncertainty retained."
+  },
+  {
+    "family": 62,
+    "key": "monitoring|https://invertersrus.com/product/enphase-iq-gateway-single-phase-gateway-monitoring-device/",
+    "productIds": [
+      "inverters-r-us-env2-iq-am1-240"
+    ],
+    "expected": {
+      "inverters-r-us-env2-iq-am1-240": {
+        "name": "Enphase IQ Gateway Single Phase Gateway Monitoring Device",
+        "sourceUrl": "https://invertersrus.com/product/enphase-iq-gateway-single-phase-gateway-monitoring-device/",
+        "category": "monitoring",
+        "anchors": {
+          "monitorType": "Gateway / communications"
+        }
+      }
+    },
+    "model": "Enphase IQ Gateway Single Phase Gateway Monitoring Device",
+    "url": "https://invertersrus.com/product/enphase-iq-gateway-single-phase-gateway-monitoring-device/",
+    "kind": "retailer",
+    "label": "Exact selected SKU retained product technical source",
+    "checkedAt": "2026-10-12T01:26:09.769Z",
+    "rows": [
+      [
+        "Communication",
+        "Wi-Fi, Ethernet, or cellular"
+      ],
+      [
+        "Measurement accuracy",
+        "Production metering: ANSI C12.20 ±0.5%; optional consumption monitoring: ±2.5%"
+      ]
+    ],
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\df56ea990c5af967.html",
+    "sha256": "aef8fc282dc286fec325bf047c34126e9992fa2ebe23f2172d4a8622b526974d",
+    "facts": [
+      {
+        "label": "Communication",
+        "value": "Wi-Fi, Ethernet, or cellular",
+        "quote": "Flexible networking with Wi-Fi, Ethernet, or cellular",
+        "sourceUrl": "https://invertersrus.com/product/enphase-iq-gateway-single-phase-gateway-monitoring-device/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\df56ea990c5af967.html",
+        "sha256": "aef8fc282dc286fec325bf047c34126e9992fa2ebe23f2172d4a8622b526974d",
+        "checkedAt": "2026-10-12T01:26:09.769Z",
+        "scope": "IQ Gateway exact listing; optional consumption CT remains optional, networking describes supported options"
+      },
+      {
+        "label": "Measurement accuracy",
+        "value": "Production metering: ANSI C12.20 ±0.5%; optional consumption monitoring: ±2.5%",
+        "quote": "ANSI C12.20 +/- 0.5%) and optional consumption monitoring (+/- 2.5%)",
+        "sourceUrl": "https://invertersrus.com/product/enphase-iq-gateway-single-phase-gateway-monitoring-device/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\df56ea990c5af967.html",
+        "sha256": "aef8fc282dc286fec325bf047c34126e9992fa2ebe23f2172d4a8622b526974d",
+        "checkedAt": "2026-10-12T01:26:09.769Z",
+        "scope": "IQ Gateway exact listing; optional consumption CT remains optional, networking describes supported options"
+      }
+    ],
+    "variantEvidence": {
+      "exactInertRecords": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "@id": "https://invertersrus.com/product/enphase-iq-gateway-single-phase-gateway-monitoring-device/#product",
+          "name": "Enphase IQ Gateway Single Phase Gateway Monitoring Device",
+          "url": "https://invertersrus.com/product/enphase-iq-gateway-single-phase-gateway-monitoring-device/",
+          "description": "The IEEE certified Enphase IQ Gateway delivers solar production and energy consumption data to the Enphase Installer Platform for comprehensive remote maintenance and management of the Enphase Energy System.\r\n\r\n&amp;nbsp;\r\n\r\nWith revenue-grade production metering, optional consumption monitoring, and seamless integration with Enphase IQ Batteries, the IQ Gateway is the platform for total energy management.\r\n\r\n&amp;nbsp;\r\n\r\nThe IQ Gateway comes with integrated revenue-grade solar production metering (ANSI C12.20 +/- 0.5%) and optional consumption monitoring (+/- 2.5%). It also includes one 200 A continuous rated Production Current Transformer (CT).\r\n\r\n\r\n\r\n&amp;nbsp;\r\n\r\n&amp;nbsp;\r\n\r\nDetails\r\n\r\n \tDesigned for installation indoors or outdoors\r\n \tEasy system configuration using Enphase Installer App\r\n \tBidirectional communications for remote upgrades\r\n \tSupports power export limiting and zero export applications\r\n \tFlexible networking with Wi-Fi, Ethernet, or cellular\r\n \tComplies with the IEEE 2030.5 protocol and has been used in the IEEE 1547:2018 testing and certification\r\n \t5-year warranty\r\n\r\n\r\n\r\n\r\n&amp;nbsp;\r\n\r\n&amp;nbsp;\r\n\r\nCompatibility\r\n\r\n \tIQ Series Microinverters\r\n \tIQ Cables\r\n \tIQ Batteries",
+          "image": "https://invertersrus.com/wp-content/uploads/2026/07/ENV2-IQ-AM1-240-front-angle.png",
+          "sku": "ENV2-IQ-AM1-240",
+          "offers": [
+            {
+              "@type": "Offer",
+              "priceSpecification": [
+                {
+                  "@type": "UnitPriceSpecification",
+                  "price": "689.35",
+                  "priceCurrency": "USD",
+                  "validThrough": "2027-12-31",
+                  "valueAddedTaxIncluded": false
+                }
+              ],
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://invertersrus.com/product/enphase-iq-gateway-single-phase-gateway-monitoring-device/",
+              "seller": {
+                "@type": "Organization",
+                "name": "Inverters R US",
+                "url": "https://invertersrus.com"
+              },
+              "price": "689.35",
+              "priceCurrency": "USD"
+            }
+          ],
+          "itemCondition": "https://schema.org/NewCondition",
+          "mpn": "ENV2-IQ-AM1-240"
+        }
+      ],
+      "visibleSku": "ENV2-IQ-AM1-240",
+      "exactVisibleSkuMatches": [
+        "ENV2-IQ-AM1-240"
+      ],
+      "title": "Enphase IQ Gateway Single Phase Gateway Monitoring Device",
+      "h1": [
+        "Enphase IQ Gateway Single Phase Gateway Monitoring Device"
+      ],
+      "canonical": [
+        "https://invertersrus.com/product/enphase-iq-gateway-single-phase-gateway-monitoring-device/"
+      ],
+      "selectedIdentityInspected": true,
+      "rawIdentity": {
+        "name": "Enphase IQ Gateway Single Phase Gateway Monitoring Device",
+        "sourceUrl": "https://invertersrus.com/product/enphase-iq-gateway-single-phase-gateway-monitoring-device/",
+        "category": "monitoring"
+      },
+      "offers": [
+        {
+          "id": "inverters-r-us-env2-iq-am1-240",
+          "sku": "ENV2-IQ-AM1-240",
+          "packQuantity": 1,
+          "url": "https://invertersrus.com/product/enphase-iq-gateway-single-phase-gateway-monitoring-device/",
+          "condition": "new"
+        }
+      ]
+    },
+    "reviewStatus": "approved",
+    "reviewNote": "IQ Gateway exact listing; optional consumption CT remains optional, networking describes supported options; full original HTML and inert JSON read offline; source timestamps from paired metadata, byte hash computed now. Exact name/source/category plus original role-only anchors; no hydrated engineering anchors. Independently reviewed against complete retained sources: review-seventeen-balance-independent.json; review SHA256 68ec7fcfc2aecbab2ea1be01da8d9361d94c8b48b315ad49d66c851b519ca8bb; candidate SHA256 a935fa94f0868bf6ce06b644bbceef86134f894cc9d91d27e646af9e72e92820. Source conditions and uncertainty retained."
+  },
+  {
+    "family": 63,
+    "key": "monitoring|https://invertersrus.com/product/enphase-iq-system-controller-3-microgrid-interconnect-device/",
+    "productIds": [
+      "inverters-r-us-sc200d111c240us01"
+    ],
+    "expected": {
+      "inverters-r-us-sc200d111c240us01": {
+        "name": "Enphase IQ System Controller 3 Microgrid Interconnect Device",
+        "sourceUrl": "https://invertersrus.com/product/enphase-iq-system-controller-3-microgrid-interconnect-device/",
+        "category": "monitoring",
+        "anchors": {
+          "monitorType": "System / load control"
+        }
+      }
+    },
+    "model": "Enphase IQ System Controller 3 Microgrid Interconnect Device",
+    "url": "https://invertersrus.com/product/enphase-iq-system-controller-3-microgrid-interconnect-device/",
+    "kind": "retailer",
+    "label": "Exact selected SKU retained product technical source",
+    "checkedAt": "2026-10-12T01:27:56.658Z",
+    "rows": [
+      [
+        "Communication",
+        "Wired control cable"
+      ]
+    ],
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\6af420c51f3906ba.html",
+    "sha256": "a34027817ed9c4a64e3623dee547c7d83d44cba4ba39d3241f6091488772a859",
+    "facts": [
+      {
+        "label": "Communication",
+        "value": "Wired control cable",
+        "quote": "Uses control cable for wired communication",
+        "sourceUrl": "https://invertersrus.com/product/enphase-iq-system-controller-3-microgrid-interconnect-device/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\6af420c51f3906ba.html",
+        "sha256": "a34027817ed9c4a64e3623dee547c7d83d44cba4ba39d3241f6091488772a859",
+        "checkedAt": "2026-10-12T01:27:56.658Z",
+        "scope": "IQ System Controller 3, not 3G; included breaker and nominal AC ratings not assigned to monitoring accuracy"
+      }
+    ],
+    "variantEvidence": {
+      "exactInertRecords": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "@id": "https://invertersrus.com/product/enphase-iq-system-controller-3-microgrid-interconnect-device/#product",
+          "name": "Enphase IQ System Controller 3 Microgrid Interconnect Device",
+          "url": "https://invertersrus.com/product/enphase-iq-system-controller-3-microgrid-interconnect-device/",
+          "description": "The Enphase IQ System Controller 3 connects the home to grid power, IQ Batteries, and solar PV with microinverters.\r\n\r\n&amp;nbsp;\r\n\r\nUse IQ System Controller 3 for all new installs using IQ8 Series Microinverters.\r\n\r\n&amp;nbsp;\r\n\r\nIQ System Controller 3 provides microgrid interconnection device (MID) functionality by automatically detecting and seamlessly transitioning the home energy system from grid power to backup power in the event of a grid failure. It consolidates interconnection equipment into a single enclosure and streamlines grid-independent capabilities of PV, storage by providing a consistent, pre-wired solution for residential applications.\r\n\r\n&amp;nbsp;\r\n\r\nDOES NOT support Generator Integration\r\n\r\n\r\n\r\n&amp;nbsp;\r\n\r\n&amp;nbsp;\r\n\r\nDETAILS:\r\n\r\n \t10-year limited warranty\r\n \tControls safe connectivity to the grid\r\n \tAutomatically detects grid outages\r\n \tProvides seamless transition to backup\r\n \tUses control cable for wired communication\r\n \tConnects to the load or service equipment side of the main load panel\r\n \tCentered mounting brackets support single-stud mounting\r\n \tSupports conduit entry from the bottom, bottom left and bottom right\r\n \tEnables backup for solar and solar + battery configurations\r\n \tIncludes neutral-forming transformer for split phase 120/240 V backup operation\r\n \tSystem Shutdown Switch to disconnect PV, battery, and generator systems\r\n \tWhen paired with a dedicated IQ Load Controller, homeowners have the ability to prioritize and direct power to critical loads in the event of a grid outage\r\n \tIntegrates hold-down functionality to eliminate the need for hold-down kits and special breakers\r\n \tPower Control System ( PCS) feature to control solar and storage operation based on Main panel rating\r\n \tRequired for Sunlight Jump Start\r\n\r\n&amp;nbsp;\r\n\r\n&amp;nbsp;\r\n\r\nTECHNICAL SPECIFICATIONS:\r\n\r\n \tMaximum overcurrent protection device: 200 A\r\n \tMaximum continuous current: 160 A\r\n \tNominal voltage: 240 VAC\r\n\r\n\r\n\r\n\r\nDepth\r\n9.7 in\r\n\r\n\r\nWidth\r\n19.7 in\r\n\r\n\r\nHeight\r\n36 in\r\n\r\n\r\nWeight\r\n87 lbs\r\n\r\n\r\n\r\n&amp;nbsp;\r\n\r\n&amp;nbsp;\r\n\r\nWHAT'S IN THE BOX:\r\n\r\n \tIQ System Controller 3\r\n \tColor Coded Pre Wired System Shutdown Switch\r\n \tWall-mounting Bracket\r\n \tAccessory Kit\r\n \tPre Installed 4 Pole Circuit Breaker",
+          "image": "https://invertersrus.com/wp-content/uploads/2026/07/SC200D111C240US01-1.png",
+          "sku": "SC200D111C240US01",
+          "offers": [
+            {
+              "@type": "Offer",
+              "priceSpecification": [
+                {
+                  "@type": "UnitPriceSpecification",
+                  "price": "2429.23",
+                  "priceCurrency": "USD",
+                  "validThrough": "2027-12-31",
+                  "valueAddedTaxIncluded": false
+                }
+              ],
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://invertersrus.com/product/enphase-iq-system-controller-3-microgrid-interconnect-device/",
+              "seller": {
+                "@type": "Organization",
+                "name": "Inverters R US",
+                "url": "https://invertersrus.com"
+              },
+              "price": "2429.23",
+              "priceCurrency": "USD"
+            }
+          ],
+          "itemCondition": "https://schema.org/NewCondition",
+          "mpn": "SC200D111C240US01"
+        }
+      ],
+      "visibleSku": "SC200D111C240US01",
+      "exactVisibleSkuMatches": [
+        "SC200D111C240US01"
+      ],
+      "title": "Enphase IQ System Controller 3 Microgrid Interconnect Device",
+      "h1": [
+        "Enphase IQ System Controller 3 Microgrid Interconnect Device"
+      ],
+      "canonical": [
+        "https://invertersrus.com/product/enphase-iq-system-controller-3-microgrid-interconnect-device/"
+      ],
+      "selectedIdentityInspected": true,
+      "rawIdentity": {
+        "name": "Enphase IQ System Controller 3 Microgrid Interconnect Device",
+        "sourceUrl": "https://invertersrus.com/product/enphase-iq-system-controller-3-microgrid-interconnect-device/",
+        "category": "monitoring"
+      },
+      "offers": [
+        {
+          "id": "inverters-r-us-sc200d111c240us01",
+          "sku": "SC200D111C240US01",
+          "packQuantity": 1,
+          "url": "https://invertersrus.com/product/enphase-iq-system-controller-3-microgrid-interconnect-device/",
+          "condition": "new"
+        }
+      ]
+    },
+    "reviewStatus": "approved",
+    "reviewNote": "IQ System Controller 3, not 3G; included breaker and nominal AC ratings not assigned to monitoring accuracy; full original HTML and inert JSON read offline; source timestamps from paired metadata, byte hash computed now. Exact name/source/category plus original role-only anchors; no hydrated engineering anchors. Independently reviewed against complete retained sources: review-seventeen-balance-independent.json; review SHA256 68ec7fcfc2aecbab2ea1be01da8d9361d94c8b48b315ad49d66c851b519ca8bb; candidate SHA256 a935fa94f0868bf6ce06b644bbceef86134f894cc9d91d27e646af9e72e92820. Source conditions and uncertainty retained."
+  },
+  {
+    "family": 78,
+    "key": "monitoring|https://www.santansolar.com/product/ecoflow-power-insight-home-energy-manager-for-delta-pro-ultra/",
+    "productIds": [
+      "santan-solar-powerinsight-us"
+    ],
+    "expected": {
+      "santan-solar-powerinsight-us": {
+        "name": "EcoFlow Power Insight Home Energy Manager for Delta Pro Ultra",
+        "sourceUrl": "https://www.santansolar.com/product/ecoflow-power-insight-home-energy-manager-for-delta-pro-ultra/",
+        "category": "monitoring",
+        "anchors": {
+          "monitorType": "Energy monitor / meter"
+        }
+      }
+    },
+    "model": "EcoFlow Power Insight Home Energy Manager for Delta Pro Ultra",
+    "url": "https://www.santansolar.com/product/ecoflow-power-insight-home-energy-manager-for-delta-pro-ultra/",
+    "kind": "retailer",
+    "label": "Exact selected SKU retained product technical source",
+    "checkedAt": "2026-10-12T01:28:12.757Z",
+    "rows": [
+      [
+        "Communication",
+        "WLAN 802.11 a/b/g/n/ac (2.4GHz, 5GHz); Bluetooth 5.0"
+      ]
+    ],
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\994df94ac3554ad9.html",
+    "sha256": "9051d5afeeb64a0d7e00335ee834d5113e411a3af4cc8ba9ad62135eaf0fed17",
+    "facts": [
+      {
+        "label": "Communication",
+        "value": "WLAN 802.11 a/b/g/n/ac (2.4GHz, 5GHz); Bluetooth 5.0",
+        "quote": "WLAN 802.11 a/b/g/n/ac 2.4GHz, 5GHz Bluetooth Bluetooth 5.0",
+        "sourceUrl": "https://www.santansolar.com/product/ecoflow-power-insight-home-energy-manager-for-delta-pro-ultra/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\994df94ac3554ad9.html",
+        "sha256": "9051d5afeeb64a0d7e00335ee834d5113e411a3af4cc8ba9ad62135eaf0fed17",
+        "checkedAt": "2026-10-12T01:28:12.757Z",
+        "scope": "Power Insight tablet exact SKU; touchscreen touch-point count is not monitor channel count"
+      }
+    ],
+    "variantEvidence": {
+      "exactInertRecords": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "@id": "https://www.santansolar.com/product/ecoflow-power-insight-home-energy-manager-for-delta-pro-ultra/#product",
+          "name": "EcoFlow Power Insight Home Energy Manager for Delta Pro Ultra",
+          "url": "https://www.santansolar.com/product/ecoflow-power-insight-home-energy-manager-for-delta-pro-ultra/",
+          "description": "EcoFlow home energy manager makes it easy to control and use the EcoFlow Delta Pro Ultra.\r\n\r\nThere is a 5-8 business day lead time on shipping EcoFlow products.",
+          "image": "https://www.santansolar.com/wp-content/uploads/EcoFlow-PowerInsight-Home-Energy-Manager.png",
+          "sku": "POWERINSIGHT-US",
+          "offers": [
+            {
+              "@type": "Offer",
+              "priceSpecification": [
+                {
+                  "@type": "UnitPriceSpecification",
+                  "price": "399.00",
+                  "priceCurrency": "USD",
+                  "validThrough": "2027-12-31",
+                  "valueAddedTaxIncluded": false
+                }
+              ],
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://www.santansolar.com/product/ecoflow-power-insight-home-energy-manager-for-delta-pro-ultra/",
+              "seller": {
+                "@type": "Organization",
+                "name": "SanTan Solar",
+                "url": "https://www.santansolar.com"
+              },
+              "price": "399.00",
+              "priceCurrency": "USD"
+            }
+          ],
+          "brand": {
+            "@type": "Brand",
+            "name": "EcoFlow"
+          }
+        }
+      ],
+      "visibleSku": "POWERINSIGHT-US",
+      "exactVisibleSkuMatches": [
+        "POWERINSIGHT-US"
+      ],
+      "title": "EcoFlow Power Insight Home Energy Manager for Delta Pro Ultra | SanTan Solar",
+      "h1": [
+        "EcoFlow Power Insight Home Energy Manager for Delta Pro Ultra"
+      ],
+      "canonical": [
+        "https://www.santansolar.com/product/ecoflow-power-insight-home-energy-manager-for-delta-pro-ultra/"
+      ],
+      "selectedIdentityInspected": true,
+      "rawIdentity": {
+        "name": "EcoFlow Power Insight Home Energy Manager for Delta Pro Ultra",
+        "sourceUrl": "https://www.santansolar.com/product/ecoflow-power-insight-home-energy-manager-for-delta-pro-ultra/",
+        "category": "monitoring"
+      },
+      "offers": [
+        {
+          "id": "santan-solar-powerinsight-us",
+          "sku": "POWERINSIGHT-US",
+          "packQuantity": 1,
+          "url": "https://www.santansolar.com/product/ecoflow-power-insight-home-energy-manager-for-delta-pro-ultra/",
+          "condition": "new"
+        }
+      ]
+    },
+    "reviewStatus": "approved",
+    "reviewNote": "Power Insight tablet exact SKU; touchscreen touch-point count is not monitor channel count; full original HTML and inert JSON read offline; source timestamps from paired metadata, byte hash computed now. Exact name/source/category plus original role-only anchors; no hydrated engineering anchors. Independently reviewed against complete retained sources: review-seventeen-balance-independent.json; review SHA256 68ec7fcfc2aecbab2ea1be01da8d9361d94c8b48b315ad49d66c851b519ca8bb; candidate SHA256 a935fa94f0868bf6ce06b644bbceef86134f894cc9d91d27e646af9e72e92820. Source conditions and uncertainty retained."
+  },
+  {
+    "family": 79,
+    "key": "monitoring|https://www.santansolar.com/product/eg4-18kpv-ethernet-monitoring-adapter/",
+    "productIds": [
+      "santan-solar-eg4sp18kdleth"
+    ],
+    "expected": {
+      "santan-solar-eg4sp18kdleth": {
+        "name": "EG4 18kPV Ethernet Monitoring Adapter",
+        "sourceUrl": "https://www.santansolar.com/product/eg4-18kpv-ethernet-monitoring-adapter/",
+        "category": "monitoring",
+        "anchors": {
+          "monitorType": "Energy monitor / meter"
+        }
+      }
+    },
+    "model": "EG4 18kPV Ethernet Monitoring Adapter",
+    "url": "https://www.santansolar.com/product/eg4-18kpv-ethernet-monitoring-adapter/",
+    "kind": "retailer",
+    "label": "Exact selected SKU retained product technical source",
+    "checkedAt": "2026-10-05T03:15:02.139Z",
+    "rows": [
+      [
+        "Communication",
+        "RJ45 Ethernet (LAN)"
+      ]
+    ],
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\ccf69eb514c9bab3.html",
+    "sha256": "845ce063da810dfad282fcb00dbf0a6d497b8e97cf2a95c06ca876956141e2fe",
+    "facts": [
+      {
+        "label": "Communication",
+        "value": "RJ45 Ethernet (LAN)",
+        "quote": "RJ45 Ethernet cable",
+        "sourceUrl": "https://www.santansolar.com/product/eg4-18kpv-ethernet-monitoring-adapter/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\ccf69eb514c9bab3.html",
+        "sha256": "845ce063da810dfad282fcb00dbf0a6d497b8e97cf2a95c06ca876956141e2fe",
+        "checkedAt": "2026-10-05T03:15:02.139Z",
+        "scope": "Exact EG4SP18KDLETH; compatibility does not mean all EG4 products"
+      }
+    ],
+    "variantEvidence": {
+      "exactInertRecords": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "@id": "https://www.santansolar.com/product/eg4-18kpv-ethernet-monitoring-adapter/#product",
+          "name": "EG4 18kPV Ethernet Monitoring Adapter",
+          "url": "https://www.santansolar.com/product/eg4-18kpv-ethernet-monitoring-adapter/",
+          "description": "EG4SP18KDLETH — EG4 Ethernet Monitoring Adapter\r\nThe EG4SP18KDLETH is an Ethernet monitoring adapter designed to provide stable, wired connectivity for compatible EG4 hybrid inverters. This accessory replaces traditional Wi-Fi monitoring solutions by enabling a direct Ethernet (LAN) connection between the inverter and your local network, offering more reliable, secure, and consistent system monitoring than wireless alternatives.\r\n\r\nKey Features\r\n\r\n \t\r\nWired Ethernet Connectivity: Connects the inverter directly to a network via RJ45 Ethernet cable, improving reliability over Wi-Fi and eliminating common wireless signal issues.\r\n\r\n \t\r\nReal-Time Monitoring: Supports transmission of performance data to the EG4 monitoring platform (app or web dashboard), providing visibility into system operation, PV production, battery status, and fault reporting.\r\n\r\n \t\r\nPlug-and-Play Installation: Easy to install with standard Ethernet cable (568B), mounting hardware included, and status LEDs for network, inverter communications, and IP connectivity.\r\n\r\n \t\r\nImproved Data Reliability: By eliminating reliance on Wi-Fi, the adapter ensures consistent data flow for remote diagnostics, performance tracking, and energy management.\r\n\r\n \t\r\nCompact &amp;amp; Durable: Designed to integrate seamlessly with EG4 inverters in both residential and commercial installations.",
+          "image": "https://www.santansolar.com/wp-content/uploads/EG4-18kPV-Monitoring-Adapter.jpeg",
+          "sku": "EG4SP18KDLETH",
+          "offers": [
+            {
+              "@type": "Offer",
+              "priceSpecification": [
+                {
+                  "@type": "UnitPriceSpecification",
+                  "price": "34.99",
+                  "priceCurrency": "USD",
+                  "validThrough": "2027-12-31",
+                  "valueAddedTaxIncluded": false
+                }
+              ],
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://www.santansolar.com/product/eg4-18kpv-ethernet-monitoring-adapter/",
+              "seller": {
+                "@type": "Organization",
+                "name": "SanTan Solar",
+                "url": "https://www.santansolar.com"
+              },
+              "price": "34.99",
+              "priceCurrency": "USD"
+            }
+          ]
+        }
+      ],
+      "visibleSku": "EG4SP18KDLETH",
+      "exactVisibleSkuMatches": [
+        "EG4SP18KDLETH"
+      ],
+      "title": "EG4 18kPV Ethernet Monitoring Adapter | SanTan Solar",
+      "h1": [
+        "EG4 18kPV Ethernet Monitoring Adapter"
+      ],
+      "canonical": [
+        "https://www.santansolar.com/product/eg4-18kpv-ethernet-monitoring-adapter/"
+      ],
+      "selectedIdentityInspected": true,
+      "rawIdentity": {
+        "name": "EG4 18kPV Ethernet Monitoring Adapter",
+        "sourceUrl": "https://www.santansolar.com/product/eg4-18kpv-ethernet-monitoring-adapter/",
+        "category": "monitoring"
+      },
+      "offers": [
+        {
+          "id": "santan-solar-eg4sp18kdleth",
+          "sku": "EG4SP18KDLETH",
+          "packQuantity": 1,
+          "url": "https://www.santansolar.com/product/eg4-18kpv-ethernet-monitoring-adapter/",
+          "condition": "new"
+        }
+      ]
+    },
+    "reviewStatus": "approved",
+    "reviewNote": "Exact EG4SP18KDLETH; compatibility does not mean all EG4 products; full original HTML and inert JSON read offline; source timestamps from paired metadata, byte hash computed now. Exact name/source/category plus original role-only anchors; no hydrated engineering anchors. Independently reviewed against complete retained sources: review-seventeen-balance-independent.json; review SHA256 68ec7fcfc2aecbab2ea1be01da8d9361d94c8b48b315ad49d66c851b519ca8bb; candidate SHA256 a935fa94f0868bf6ce06b644bbceef86134f894cc9d91d27e646af9e72e92820. Source conditions and uncertainty retained."
+  },
+  {
+    "family": 84,
+    "key": "mounting|https://www.santansolar.com/product/minirail-xpress-base-17-w-epdm-and-screws-mill-kit-4000073/",
+    "productIds": [
+      "santan-solar-4000073"
+    ],
+    "expected": {
+      "santan-solar-4000073": {
+        "name": "K2 MiniRail XPRess Base 17″ w/EPDM, Mill KIT 4000073",
+        "sourceUrl": "https://www.santansolar.com/product/minirail-xpress-base-17-w-epdm-and-screws-mill-kit-4000073/",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Roof"
+        }
+      }
+    },
+    "model": "K2 MiniRail XPRess Base 17″ w/EPDM, Mill KIT 4000073",
+    "url": "https://www.santansolar.com/product/minirail-xpress-base-17-w-epdm-and-screws-mill-kit-4000073/",
+    "kind": "retailer",
+    "label": "Exact selected SKU retained product technical source",
+    "checkedAt": "2026-10-12T01:24:07.778Z",
+    "rows": [
+      [
+        "Compatibility",
+        "Trapezoidal metal roof peaks; base with EPDM and four Jf3 self-tapping screws"
+      ]
+    ],
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\c4408da886ceecd9.html",
+    "sha256": "4a78b60cc4e6716fdbff3a8e611b80d6f1afb60292bd430e9d8cc6fee5bc4d45",
+    "facts": [
+      {
+        "label": "Compatibility",
+        "value": "Trapezoidal metal roof peaks; base with EPDM and four Jf3 self-tapping screws",
+        "quote": "base is installed to the peak of trapezoidal metal roof using four Jf3 self tapping screws",
+        "sourceUrl": "https://www.santansolar.com/product/minirail-xpress-base-17-w-epdm-and-screws-mill-kit-4000073/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\c4408da886ceecd9.html",
+        "sha256": "4a78b60cc4e6716fdbff3a8e611b80d6f1afb60292bd430e9d8cc6fee5bc4d45",
+        "checkedAt": "2026-10-12T01:24:07.778Z",
+        "scope": "Exact K2 4000073 kit; 17-inch size describes component base, not assembled kit envelope"
+      }
+    ],
+    "variantEvidence": {
+      "exactInertRecords": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "@id": "https://www.santansolar.com/product/minirail-xpress-base-17-w-epdm-and-screws-mill-kit-4000073/#product",
+          "name": "K2 MiniRail XPRess Base 17\" w/EPDM, Mill KIT 4000073",
+          "url": "https://www.santansolar.com/product/minirail-xpress-base-17-w-epdm-and-screws-mill-kit-4000073/",
+          "description": "K2 MiniRail XPRess Base 17\" w/EPDM, Mill KIT 4000073",
+          "image": "https://www.santansolar.com/wp-content/uploads/4000667-280x280-1.png",
+          "sku": "4000073",
+          "offers": [
+            {
+              "@type": "Offer",
+              "priceSpecification": [
+                {
+                  "@type": "UnitPriceSpecification",
+                  "price": "18.00",
+                  "priceCurrency": "USD",
+                  "validThrough": "2027-12-31",
+                  "valueAddedTaxIncluded": false
+                }
+              ],
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://www.santansolar.com/product/minirail-xpress-base-17-w-epdm-and-screws-mill-kit-4000073/",
+              "seller": {
+                "@type": "Organization",
+                "name": "SanTan Solar",
+                "url": "https://www.santansolar.com"
+              },
+              "price": "18.00",
+              "priceCurrency": "USD"
+            }
+          ],
+          "brand": {
+            "@type": "Brand",
+            "name": "K2"
+          }
+        }
+      ],
+      "visibleSku": "4000073",
+      "exactVisibleSkuMatches": [
+        "4000073"
+      ],
+      "title": "K2 MiniRail XPRess Base 17\" w/EPDM, Mill KIT 4000073 | SanTan Solar",
+      "h1": [
+        "K2 MiniRail XPRess Base 17″ w/EPDM, Mill KIT 4000073"
+      ],
+      "canonical": [
+        "https://www.santansolar.com/product/minirail-xpress-base-17-w-epdm-and-screws-mill-kit-4000073/"
+      ],
+      "selectedIdentityInspected": true,
+      "rawIdentity": {
+        "name": "K2 MiniRail XPRess Base 17″ w/EPDM, Mill KIT 4000073",
+        "sourceUrl": "https://www.santansolar.com/product/minirail-xpress-base-17-w-epdm-and-screws-mill-kit-4000073/",
+        "category": "mounting"
+      },
+      "offers": [
+        {
+          "id": "santan-solar-4000073",
+          "sku": "4000073",
+          "packQuantity": 1,
+          "url": "https://www.santansolar.com/product/minirail-xpress-base-17-w-epdm-and-screws-mill-kit-4000073/",
+          "condition": "new"
+        }
+      ]
+    },
+    "reviewStatus": "approved",
+    "reviewNote": "Exact K2 4000073 kit; 17-inch size describes component base, not assembled kit envelope; full original HTML and inert JSON read offline; source timestamps from paired metadata, byte hash computed now. Exact name/source/category plus original role-only anchors; no hydrated engineering anchors. Independently reviewed against complete retained sources: review-seventeen-balance-independent.json; review SHA256 68ec7fcfc2aecbab2ea1be01da8d9361d94c8b48b315ad49d66c851b519ca8bb; candidate SHA256 a935fa94f0868bf6ce06b644bbceef86134f894cc9d91d27e646af9e72e92820. Source conditions and uncertainty retained."
+  },
+  {
+    "family": 86,
+    "key": "mounting|https://www.santansolar.com/product/solar-panel-z-bracket-4-pack/",
+    "productIds": [
+      "santan-solar-4zbrackets"
+    ],
+    "expected": {
+      "santan-solar-4zbrackets": {
+        "name": "Z Brackets set of 4",
+        "sourceUrl": "https://www.santansolar.com/product/solar-panel-z-bracket-4-pack/",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Hardware"
+        }
+      }
+    },
+    "model": "Z Brackets set of 4",
+    "url": "https://www.santansolar.com/product/solar-panel-z-bracket-4-pack/",
+    "kind": "retailer",
+    "label": "Exact selected SKU retained product technical source",
+    "checkedAt": "2026-10-12T01:24:27.844Z",
+    "rows": [
+      [
+        "Material",
+        "Anodized 6005-T5 aluminum Z-brackets"
+      ],
+      [
+        "Dimensions",
+        "Approximately 4 × 2.75 × 1.25 in per bracket"
+      ],
+      [
+        "Compatibility",
+        "Most aluminum-framed solar panels; mounting to flat surfaces"
+      ]
+    ],
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\a171d8ae4dfd2b8c.html",
+    "sha256": "e337f06779d4881f533ed35b138c40196afdc71a5561144ece5f03c9282b96bf",
+    "facts": [
+      {
+        "label": "Material",
+        "value": "Anodized 6005-T5 aluminum Z-brackets",
+        "quote": "lightweight aluminum Z-Bracket",
+        "sourceUrl": "https://www.santansolar.com/product/solar-panel-z-bracket-4-pack/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\a171d8ae4dfd2b8c.html",
+        "sha256": "e337f06779d4881f533ed35b138c40196afdc71a5561144ece5f03c9282b96bf",
+        "checkedAt": "2026-10-12T01:24:27.844Z",
+        "scope": "SP03 / 4ZBRACKETS set of four; per-bracket approximate dimensions; material applies to brackets, not all included fasteners"
+      },
+      {
+        "label": "Dimensions",
+        "value": "Approximately 4 × 2.75 × 1.25 in per bracket",
+        "quote": "Dimensional Foot Print (L x W x H): about 4” x 2.75” x 1.25”",
+        "sourceUrl": "https://www.santansolar.com/product/solar-panel-z-bracket-4-pack/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\a171d8ae4dfd2b8c.html",
+        "sha256": "e337f06779d4881f533ed35b138c40196afdc71a5561144ece5f03c9282b96bf",
+        "checkedAt": "2026-10-12T01:24:27.844Z",
+        "scope": "SP03 / 4ZBRACKETS set of four; per-bracket approximate dimensions; material applies to brackets, not all included fasteners"
+      },
+      {
+        "label": "Compatibility",
+        "value": "Most aluminum-framed solar panels; mounting to flat surfaces",
+        "quote": "These Z-brackets are compatible with most aluminum framed solar panels",
+        "sourceUrl": "https://www.santansolar.com/product/solar-panel-z-bracket-4-pack/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\a171d8ae4dfd2b8c.html",
+        "sha256": "e337f06779d4881f533ed35b138c40196afdc71a5561144ece5f03c9282b96bf",
+        "checkedAt": "2026-10-12T01:24:27.844Z",
+        "scope": "SP03 / 4ZBRACKETS set of four; per-bracket approximate dimensions; material applies to brackets, not all included fasteners"
+      }
+    ],
+    "variantEvidence": {
+      "exactInertRecords": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "@id": "https://www.santansolar.com/product/solar-panel-z-bracket-4-pack/#product",
+          "name": "Z Brackets set of 4",
+          "url": "https://www.santansolar.com/product/solar-panel-z-bracket-4-pack/",
+          "description": "Z Brackets set of 4",
+          "image": "https://www.santansolar.com/wp-content/uploads/Z-Bracket.png",
+          "sku": "4ZBRACKETS",
+          "gtin": "850055035096",
+          "offers": [
+            {
+              "@type": "Offer",
+              "priceSpecification": [
+                {
+                  "@type": "UnitPriceSpecification",
+                  "price": "12.00",
+                  "priceCurrency": "USD",
+                  "validThrough": "2027-12-31",
+                  "valueAddedTaxIncluded": false
+                }
+              ],
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://www.santansolar.com/product/solar-panel-z-bracket-4-pack/",
+              "seller": {
+                "@type": "Organization",
+                "name": "SanTan Solar",
+                "url": "https://www.santansolar.com"
+              },
+              "price": "12.00",
+              "priceCurrency": "USD"
+            }
+          ],
+          "brand": {
+            "@type": "Brand",
+            "name": "SanTan Solar"
+          }
+        }
+      ],
+      "visibleSku": "4ZBRACKETS",
+      "exactVisibleSkuMatches": [
+        "4ZBRACKETS"
+      ],
+      "title": "Z Brackets set of 4 | SanTan Solar",
+      "h1": [
+        "Z Brackets set of 4"
+      ],
+      "canonical": [
+        "https://www.santansolar.com/product/solar-panel-z-bracket-4-pack/"
+      ],
+      "selectedIdentityInspected": true,
+      "rawIdentity": {
+        "name": "Z Brackets set of 4",
+        "sourceUrl": "https://www.santansolar.com/product/solar-panel-z-bracket-4-pack/",
+        "category": "mounting"
+      },
+      "offers": [
+        {
+          "id": "santan-solar-4zbrackets",
+          "sku": "4ZBRACKETS",
+          "packQuantity": 1,
+          "url": "https://www.santansolar.com/product/solar-panel-z-bracket-4-pack/",
+          "condition": "new"
+        }
+      ]
+    },
+    "reviewStatus": "approved",
+    "reviewNote": "SP03 / 4ZBRACKETS set of four; per-bracket approximate dimensions; material applies to brackets, not all included fasteners; full original HTML and inert JSON read offline; source timestamps from paired metadata, byte hash computed now. Exact name/source/category plus original role-only anchors; no hydrated engineering anchors. Independently reviewed against complete retained sources: review-seventeen-balance-independent.json; review SHA256 68ec7fcfc2aecbab2ea1be01da8d9361d94c8b48b315ad49d66c851b519ca8bb; candidate SHA256 a935fa94f0868bf6ce06b644bbceef86134f894cc9d91d27e646af9e72e92820. Source conditions and uncertainty retained."
+  },
+  {
+    "family": 91,
+    "key": "mounting|https://www.santansolar.com/product/integra-10-pack-boltsir-t1-tileballast-no-penetration-tile-roof-mounting-system/",
+    "productIds": [
+      "santan-solar-boltsir-t1-10pk"
+    ],
+    "expected": {
+      "santan-solar-boltsir-t1-10pk": {
+        "name": "Integra 10 Pack BoltsIR-T1 TileBallast No Penetration Tile Roof Mounting System",
+        "sourceUrl": "https://www.santansolar.com/product/integra-10-pack-boltsir-t1-tileballast-no-penetration-tile-roof-mounting-system/",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Roof"
+        }
+      }
+    },
+    "model": "Integra 10 Pack BoltsIR-T1 TileBallast No Penetration Tile Roof Mounting System",
+    "url": "https://www.santansolar.com/product/integra-10-pack-boltsir-t1-tileballast-no-penetration-tile-roof-mounting-system/",
+    "kind": "retailer",
+    "label": "Exact selected SKU retained product technical source",
+    "checkedAt": "2026-10-05T03:15:20.447Z",
+    "rows": [
+      [
+        "Material",
+        "2 mm carbon steel with black zinc finish"
+      ],
+      [
+        "Compatibility",
+        "Concrete tile roofs; integrated upright for standard solar rails"
+      ]
+    ],
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\2528cfabf14f1acf.html",
+    "sha256": "640b92ff43aca78e3a8a2b2c778b66614b6583340fe2e8330fd545131b54577f",
+    "facts": [
+      {
+        "label": "Material",
+        "value": "2 mm carbon steel with black zinc finish",
+        "quote": "made from 2 mm carbon steel with a black zinc finish",
+        "sourceUrl": "https://www.santansolar.com/product/integra-10-pack-boltsir-t1-tileballast-no-penetration-tile-roof-mounting-system/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\2528cfabf14f1acf.html",
+        "sha256": "640b92ff43aca78e3a8a2b2c778b66614b6583340fe2e8330fd545131b54577f",
+        "checkedAt": "2026-10-05T03:15:20.447Z",
+        "scope": "BoltsIR-T1-10PK exact ten mounts; no system tilt/load engineering inferred; material refers to mounts"
+      },
+      {
+        "label": "Compatibility",
+        "value": "Concrete tile roofs; integrated upright for standard solar rails",
+        "quote": "fully non-invasive solution for concrete tile roofs",
+        "sourceUrl": "https://www.santansolar.com/product/integra-10-pack-boltsir-t1-tileballast-no-penetration-tile-roof-mounting-system/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\2528cfabf14f1acf.html",
+        "sha256": "640b92ff43aca78e3a8a2b2c778b66614b6583340fe2e8330fd545131b54577f",
+        "checkedAt": "2026-10-05T03:15:20.447Z",
+        "scope": "BoltsIR-T1-10PK exact ten mounts; no system tilt/load engineering inferred; material refers to mounts"
+      }
+    ],
+    "variantEvidence": {
+      "exactInertRecords": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "@id": "https://www.santansolar.com/product/integra-10-pack-boltsir-t1-tileballast-no-penetration-tile-roof-mounting-system/#product",
+          "name": "Integra 10 Pack BoltsIR-T1 TileBallast No Penetration Tile Roof Mounting System",
+          "url": "https://www.santansolar.com/product/integra-10-pack-boltsir-t1-tileballast-no-penetration-tile-roof-mounting-system/",
+          "description": "The IntegraRack IR-T1 TileBallast™ is a groundbreaking tile-roof mounting bracket that requires no tile removal and no roof penetration, offering a fully non-invasive solution for concrete tile roofs. Instead of screwing through tiles, the IR-T1 uses IntegraGel industrial-strength epoxy to bond three overlapping concrete tiles together, leveraging their weight as ballast. This system dramatically speeds up installation (up to 4× faster than traditional tile hooks), while also increasing structural strength. Tested in a wind tunnel at over 165 MPH (3:1 safety factor), the IR-T1 is built to withstand severe wind conditions without compromising roof integrity. It includes an integrated upright mount that supports any rail system, making it highly flexible for solar module installation.",
+          "image": "https://www.santansolar.com/wp-content/uploads/BoltsIR-T1.png",
+          "sku": "BoltsIR-T1-10PK",
+          "offers": [
+            {
+              "@type": "Offer",
+              "priceSpecification": [
+                {
+                  "@type": "UnitPriceSpecification",
+                  "price": "129.99",
+                  "priceCurrency": "USD",
+                  "validThrough": "2027-12-31",
+                  "valueAddedTaxIncluded": false
+                }
+              ],
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://www.santansolar.com/product/integra-10-pack-boltsir-t1-tileballast-no-penetration-tile-roof-mounting-system/",
+              "seller": {
+                "@type": "Organization",
+                "name": "SanTan Solar",
+                "url": "https://www.santansolar.com"
+              },
+              "price": "129.99",
+              "priceCurrency": "USD"
+            }
+          ],
+          "brand": {
+            "@type": "Brand",
+            "name": "Integra Rack"
+          }
+        }
+      ],
+      "visibleSku": "BoltsIR-T1-10PK",
+      "exactVisibleSkuMatches": [
+        "BoltsIR-T1-10PK"
+      ],
+      "title": "Integra 10 Pack BoltsIR-T1 TileBallast No Penetration Tile Roof Mounting System | SanTan Solar",
+      "h1": [
+        "Integra 10 Pack BoltsIR-T1 TileBallast No Penetration Tile Roof Mounting System"
+      ],
+      "canonical": [
+        "https://www.santansolar.com/product/integra-10-pack-boltsir-t1-tileballast-no-penetration-tile-roof-mounting-system/"
+      ],
+      "selectedIdentityInspected": true,
+      "rawIdentity": {
+        "name": "Integra 10 Pack BoltsIR-T1 TileBallast No Penetration Tile Roof Mounting System",
+        "sourceUrl": "https://www.santansolar.com/product/integra-10-pack-boltsir-t1-tileballast-no-penetration-tile-roof-mounting-system/",
+        "category": "mounting"
+      },
+      "offers": [
+        {
+          "id": "santan-solar-boltsir-t1-10pk",
+          "sku": "BoltsIR-T1-10PK",
+          "packQuantity": 10,
+          "url": "https://www.santansolar.com/product/integra-10-pack-boltsir-t1-tileballast-no-penetration-tile-roof-mounting-system/",
+          "condition": "new"
+        }
+      ]
+    },
+    "reviewStatus": "approved",
+    "reviewNote": "BoltsIR-T1-10PK exact ten mounts; no system tilt/load engineering inferred; material refers to mounts; full original HTML and inert JSON read offline; source timestamps from paired metadata, byte hash computed now. Exact name/source/category plus original role-only anchors; no hydrated engineering anchors. Independently reviewed against complete retained sources: review-seventeen-balance-independent.json; review SHA256 68ec7fcfc2aecbab2ea1be01da8d9361d94c8b48b315ad49d66c851b519ca8bb; candidate SHA256 a935fa94f0868bf6ce06b644bbceef86134f894cc9d91d27e646af9e72e92820. Source conditions and uncertainty retained."
+  },
+  {
+    "family": 92,
+    "key": "mounting|https://www.santansolar.com/product/s-5-solarfoot-brackets-attachment-for-metal-roofs/",
+    "productIds": [
+      "santan-solar-s5-solarfoot"
+    ],
+    "expected": {
+      "santan-solar-s5-solarfoot": {
+        "name": "S-5! SolarFoot Brackets Attachment For Metal Roofs",
+        "sourceUrl": "https://www.santansolar.com/product/s-5-solarfoot-brackets-attachment-for-metal-roofs/",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Roof"
+        }
+      }
+    },
+    "model": "S-5! SolarFoot Brackets Attachment For Metal Roofs",
+    "url": "https://www.santansolar.com/product/s-5-solarfoot-brackets-attachment-for-metal-roofs/",
+    "kind": "retailer",
+    "label": "Exact selected SKU retained product technical source",
+    "checkedAt": "2026-10-05T03:15:55.054Z",
+    "rows": [
+      [
+        "Compatibility",
+        "L-foot components from all rail manufacturers, on exposed-fastened metal roofs"
+      ]
+    ],
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\f70b76c9c06f8911.html",
+    "sha256": "b1cfe89f71f4ca397557ba4a0cd5435ebfd1da676cf5b63e9266426b84c45a70",
+    "facts": [
+      {
+        "label": "Compatibility",
+        "value": "L-foot components from all rail manufacturers, on exposed-fastened metal roofs",
+        "quote": "Compatible with all rail manufacturer’s L-Foot components",
+        "sourceUrl": "https://www.santansolar.com/product/s-5-solarfoot-brackets-attachment-for-metal-roofs/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\f70b76c9c06f8911.html",
+        "sha256": "b1cfe89f71f4ca397557ba4a0cd5435ebfd1da676cf5b63e9266426b84c45a70",
+        "checkedAt": "2026-10-05T03:15:55.054Z",
+        "scope": "SolarFoot only; stainless stud is component material, not whole bracket material"
+      }
+    ],
+    "variantEvidence": {
+      "exactInertRecords": [
+        {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "@id": "https://www.santansolar.com/product/s-5-solarfoot-brackets-attachment-for-metal-roofs/#product",
+          "name": "S-5! SolarFoot Brackets Attachment For Metal Roofs",
+          "url": "https://www.santansolar.com/product/s-5-solarfoot-brackets-attachment-for-metal-roofs/",
+          "description": "S-5! SolarFoot Brackets Attachment For Metal Roofs",
+          "image": "https://www.santansolar.com/wp-content/uploads/s-5-solarfoot.png",
+          "sku": "S5-SOLARFOOT",
+          "offers": [
+            {
+              "@type": "Offer",
+              "priceSpecification": [
+                {
+                  "@type": "UnitPriceSpecification",
+                  "price": "6.99",
+                  "priceCurrency": "USD",
+                  "validThrough": "2027-12-31",
+                  "valueAddedTaxIncluded": false
+                }
+              ],
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://www.santansolar.com/product/s-5-solarfoot-brackets-attachment-for-metal-roofs/",
+              "seller": {
+                "@type": "Organization",
+                "name": "SanTan Solar",
+                "url": "https://www.santansolar.com"
+              },
+              "price": "6.99",
+              "priceCurrency": "USD"
+            }
+          ],
+          "brand": {
+            "@type": "Brand",
+            "name": "S-5!"
+          }
+        }
+      ],
+      "visibleSku": "S5-SOLARFOOT",
+      "exactVisibleSkuMatches": [
+        "S5-SOLARFOOT"
+      ],
+      "title": "S-5! SolarFoot Brackets Attachment For Metal Roofs | SanTan Solar",
+      "h1": [
+        "S-5! SolarFoot Brackets Attachment For Metal Roofs"
+      ],
+      "canonical": [
+        "https://www.santansolar.com/product/s-5-solarfoot-brackets-attachment-for-metal-roofs/"
+      ],
+      "selectedIdentityInspected": true,
+      "rawIdentity": {
+        "name": "S-5! SolarFoot Brackets Attachment For Metal Roofs",
+        "sourceUrl": "https://www.santansolar.com/product/s-5-solarfoot-brackets-attachment-for-metal-roofs/",
+        "category": "mounting"
+      },
+      "offers": [
+        {
+          "id": "santan-solar-s5-solarfoot",
+          "sku": "S5-SOLARFOOT",
+          "packQuantity": 1,
+          "url": "https://www.santansolar.com/product/s-5-solarfoot-brackets-attachment-for-metal-roofs/",
+          "condition": "new"
+        }
+      ]
+    },
+    "reviewStatus": "approved",
+    "reviewNote": "SolarFoot only; stainless stud is component material, not whole bracket material; full original HTML and inert JSON read offline; source timestamps from paired metadata, byte hash computed now. Exact name/source/category plus original role-only anchors; no hydrated engineering anchors. Independently reviewed against complete retained sources: review-seventeen-balance-independent.json; review SHA256 68ec7fcfc2aecbab2ea1be01da8d9361d94c8b48b315ad49d66c851b519ca8bb; candidate SHA256 a935fa94f0868bf6ce06b644bbceef86134f894cc9d91d27e646af9e72e92820. Source conditions and uncertainty retained."
+  },
+  {
+    "family": 101,
+    "key": "wiring|https://shopsolarkits.com/products/anker-solix-mc4-to-xt-60-charging-cable-0-5m",
+    "productIds": [
+      "shopsolar-43420189917324"
+    ],
+    "expected": {
+      "shopsolar-43420189917324": {
+        "name": "Anker SOLIX MC4-to-XT-60 Charging Cable (0.5m)",
+        "sourceUrl": "https://shopsolarkits.com/products/anker-solix-mc4-to-xt-60-charging-cable-0-5m?variant=43420189917324",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "model": "Anker SOLIX MC4-to-XT-60 Charging Cable (0.5m)",
+    "url": "https://shopsolarkits.com/products/anker-solix-mc4-to-xt-60-charging-cable-0-5m?variant=43420189917324",
+    "kind": "retailer",
+    "label": "Exact selected SKU retained product technical source",
+    "checkedAt": "2026-10-12T01:37:47.941Z",
+    "rows": [
+      [
+        "Length",
+        "1.6 ft nominal (0.5 m model)"
+      ],
+      [
+        "Connection type",
+        "MC4-to-XT-60"
+      ]
+    ],
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\cf145ad9857425ca.html",
+    "sha256": "5b873283f57cd911b264aca1765832fce903b5910dedcca9a956d64ac47ba445",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "1.6 ft nominal (0.5 m model)",
+        "quote": "Specifications: Length: 1.6ft",
+        "sourceUrl": "https://shopsolarkits.com/products/anker-solix-mc4-to-xt-60-charging-cable-0-5m?variant=43420189917324",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\cf145ad9857425ca.html",
+        "sha256": "5b873283f57cd911b264aca1765832fce903b5910dedcca9a956d64ac47ba445",
+        "checkedAt": "2026-10-12T01:37:47.941Z",
+        "scope": "A24V7011 exact selected single cable; source rounded length retained without converting; Output 25A not interpreted as rated current"
+      },
+      {
+        "label": "Connection type",
+        "value": "MC4-to-XT-60",
+        "quote": "MC4-to-XT-60 Charging Cable",
+        "sourceUrl": "https://shopsolarkits.com/products/anker-solix-mc4-to-xt-60-charging-cable-0-5m?variant=43420189917324",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\cf145ad9857425ca.html",
+        "sha256": "5b873283f57cd911b264aca1765832fce903b5910dedcca9a956d64ac47ba445",
+        "checkedAt": "2026-10-12T01:37:47.941Z",
+        "scope": "A24V7011 exact selected single cable; source rounded length retained without converting; Output 25A not interpreted as rated current"
+      }
+    ],
+    "variantEvidence": {
+      "exactInertRecords": [
+        {
+          "id": 43420189917324,
+          "o": [
+            "Default Title"
+          ],
+          "a": true,
+          "p": "$29.99",
+          "n": "",
+          "m": 0
+        }
+      ],
+      "visibleSku": null,
+      "exactVisibleSkuMatches": [],
+      "title": "Anker SOLIX MC4-to-XT-60 Charging Cable (0.5m) - ShopSolar: Complete Solar Kits + Lifetime Customer Support",
+      "h1": [
+        "Anker SOLIX MC4-to-XT-60 Charging Cable (0.5m)"
+      ],
+      "canonical": [
+        "https://shopsolarkits.com/products/anker-solix-mc4-to-xt-60-charging-cable-0-5m"
+      ],
+      "selectedIdentityInspected": true,
+      "rawIdentity": {
+        "name": "Anker SOLIX MC4-to-XT-60 Charging Cable (0.5m)",
+        "sourceUrl": "https://shopsolarkits.com/products/anker-solix-mc4-to-xt-60-charging-cable-0-5m?variant=43420189917324",
+        "category": "wiring"
+      },
+      "offers": [
+        {
+          "id": "shopsolar-43420189917324",
+          "sku": "43420189917324",
+          "packQuantity": 1,
+          "url": "https://shopsolarkits.com/products/anker-solix-mc4-to-xt-60-charging-cable-0-5m?variant=43420189917324",
+          "condition": "new"
+        }
+      ]
+    },
+    "reviewStatus": "approved",
+    "reviewNote": "A24V7011 exact selected single cable; source rounded length retained without converting; Output 25A not interpreted as rated current; full original HTML and inert JSON read offline; source timestamps from paired metadata, byte hash computed now. Exact name/source/category plus original role-only anchors; no hydrated engineering anchors. Independently reviewed against complete retained sources: review-seventeen-balance-independent.json; review SHA256 68ec7fcfc2aecbab2ea1be01da8d9361d94c8b48b315ad49d66c851b519ca8bb; candidate SHA256 a935fa94f0868bf6ce06b644bbceef86134f894cc9d91d27e646af9e72e92820. Source conditions and uncertainty retained."
+  },
+  {
+    "family": 104,
+    "key": "wiring|https://shopsolarkits.com/products/ecoflow-power-input-output-cable",
+    "productIds": [
+      "shopsolar-42041771753612"
+    ],
+    "expected": {
+      "shopsolar-42041771753612": {
+        "name": "EcoFlow Power Input/Output Cable",
+        "sourceUrl": "https://shopsolarkits.com/products/ecoflow-power-input-output-cable?variant=42041771753612",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "model": "EcoFlow Power Input/Output Cable",
+    "url": "https://shopsolarkits.com/products/ecoflow-power-input-output-cable?variant=42041771753612",
+    "kind": "retailer",
+    "label": "Exact selected SKU retained product technical source",
+    "checkedAt": "2026-10-12T01:34:25.038Z",
+    "rows": [
+      [
+        "Length",
+        "7.1 ft (2.2 m), source nominal values"
+      ]
+    ],
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\4ba7193ef58ab775.html",
+    "sha256": "bf1c7b7e30e274f530995bed42d702a6d5251eed2feeb03f7a47dc718c7d9afb",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "7.1 ft (2.2 m), source nominal values",
+        "quote": "Length: 7.1 ft (2.2 m)",
+        "sourceUrl": "https://shopsolarkits.com/products/ecoflow-power-input-output-cable?variant=42041771753612",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\4ba7193ef58ab775.html",
+        "sha256": "bf1c7b7e30e274f530995bed42d702a6d5251eed2feeb03f7a47dc718c7d9afb",
+        "checkedAt": "2026-10-12T01:34:25.038Z",
+        "scope": "Exact EFL-PowerInOutAdapter; nominal rounded lengths preserved; AC charge watts and hub amps not cable ratings"
+      }
+    ],
+    "variantEvidence": {
+      "exactInertRecords": [
+        {
+          "id": 42041771753612,
+          "o": [
+            "Default Title"
+          ],
+          "a": true,
+          "p": "$129.00",
+          "n": "",
+          "m": 0
+        }
+      ],
+      "visibleSku": null,
+      "exactVisibleSkuMatches": [],
+      "title": "EcoFlow Power Input/Output Cable - ShopSolar: Complete Solar Kits + Lifetime Customer Support",
+      "h1": [
+        "EcoFlow Power Input/Output Cable"
+      ],
+      "canonical": [
+        "https://shopsolarkits.com/products/ecoflow-power-input-output-cable"
+      ],
+      "selectedIdentityInspected": true,
+      "rawIdentity": {
+        "name": "EcoFlow Power Input/Output Cable",
+        "sourceUrl": "https://shopsolarkits.com/products/ecoflow-power-input-output-cable?variant=42041771753612",
+        "category": "wiring"
+      },
+      "offers": [
+        {
+          "id": "shopsolar-42041771753612",
+          "sku": "42041771753612",
+          "packQuantity": 1,
+          "url": "https://shopsolarkits.com/products/ecoflow-power-input-output-cable?variant=42041771753612",
+          "condition": "new"
+        }
+      ]
+    },
+    "reviewStatus": "approved",
+    "reviewNote": "Exact EFL-PowerInOutAdapter; nominal rounded lengths preserved; AC charge watts and hub amps not cable ratings; full original HTML and inert JSON read offline; source timestamps from paired metadata, byte hash computed now. Exact name/source/category plus original role-only anchors; no hydrated engineering anchors. Independently reviewed against complete retained sources: review-seventeen-balance-independent.json; review SHA256 68ec7fcfc2aecbab2ea1be01da8d9361d94c8b48b315ad49d66c851b519ca8bb; candidate SHA256 a935fa94f0868bf6ce06b644bbceef86134f894cc9d91d27e646af9e72e92820. Source conditions and uncertainty retained."
+  },
+  {
+    "family": 108,
+    "key": "wiring|https://shopsolarkits.com/products/renogy-solar-connectors-y-branch-parallel-adapter-cable-mmf-ffm-pair",
+    "productIds": [
+      "shopsolar-43361186775180"
+    ],
+    "expected": {
+      "shopsolar-43361186775180": {
+        "name": "Renogy Solar Connectors Y Branch Parallel Adapter Cable MMF+FFM Pair",
+        "sourceUrl": "https://shopsolarkits.com/products/renogy-solar-connectors-y-branch-parallel-adapter-cable-mmf-ffm-pair?variant=43361186775180",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "model": "Renogy Solar Connectors Y Branch Parallel Adapter Cable MMF+FFM Pair",
+    "url": "https://shopsolarkits.com/products/renogy-solar-connectors-y-branch-parallel-adapter-cable-mmf-ffm-pair?variant=43361186775180",
+    "kind": "retailer",
+    "label": "Exact selected SKU retained product technical source",
+    "checkedAt": "2026-10-12T01:37:25.777Z",
+    "rows": [
+      [
+        "Voltage rating",
+        "1500V DC (IEC), connectors"
+      ],
+      [
+        "Current rating",
+        "30A, connectors"
+      ]
+    ],
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\19b34ad1532e63c9.html",
+    "sha256": "c2f8f959276fb2bcc5d2ecb38c50d96833bb746ad5d7d8d30e257e203b76aac4",
+    "facts": [
+      {
+        "label": "Voltage rating",
+        "value": "1500V DC (IEC), connectors",
+        "quote": "1500V DC(IEC)",
+        "sourceUrl": "https://shopsolarkits.com/products/renogy-solar-connectors-y-branch-parallel-adapter-cable-mmf-ffm-pair?variant=43361186775180",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\19b34ad1532e63c9.html",
+        "sha256": "c2f8f959276fb2bcc5d2ecb38c50d96833bb746ad5d7d8d30e257e203b76aac4",
+        "checkedAt": "2026-10-12T01:37:25.777Z",
+        "scope": "Exact RPC0110EC-Y-US Y-branch connector pair; no connector acceptance range treated as cable gauge; tin-plated copper contact material not cable conductor material"
+      },
+      {
+        "label": "Current rating",
+        "value": "30A, connectors",
+        "quote": "Rated Current 30A",
+        "sourceUrl": "https://shopsolarkits.com/products/renogy-solar-connectors-y-branch-parallel-adapter-cable-mmf-ffm-pair?variant=43361186775180",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\19b34ad1532e63c9.html",
+        "sha256": "c2f8f959276fb2bcc5d2ecb38c50d96833bb746ad5d7d8d30e257e203b76aac4",
+        "checkedAt": "2026-10-12T01:37:25.777Z",
+        "scope": "Exact RPC0110EC-Y-US Y-branch connector pair; no connector acceptance range treated as cable gauge; tin-plated copper contact material not cable conductor material"
+      }
+    ],
+    "variantEvidence": {
+      "exactInertRecords": [
+        {
+          "id": 43361186775180,
+          "o": [
+            "Default Title"
+          ],
+          "a": true,
+          "p": "$19.99",
+          "n": "",
+          "m": 0
+        }
+      ],
+      "visibleSku": null,
+      "exactVisibleSkuMatches": [],
+      "title": "Renogy Solar Connectors - ShopSolar: Complete Solar Kits + Lifetime Customer Support",
+      "h1": [
+        "Renogy Solar Connectors"
+      ],
+      "canonical": [
+        "https://shopsolarkits.com/products/renogy-solar-connectors-y-branch-parallel-adapter-cable-mmf-ffm-pair"
+      ],
+      "selectedIdentityInspected": true,
+      "rawIdentity": {
+        "name": "Renogy Solar Connectors Y Branch Parallel Adapter Cable MMF+FFM Pair",
+        "sourceUrl": "https://shopsolarkits.com/products/renogy-solar-connectors-y-branch-parallel-adapter-cable-mmf-ffm-pair?variant=43361186775180",
+        "category": "wiring"
+      },
+      "offers": [
+        {
+          "id": "shopsolar-43361186775180",
+          "sku": "43361186775180",
+          "packQuantity": 1,
+          "url": "https://shopsolarkits.com/products/renogy-solar-connectors-y-branch-parallel-adapter-cable-mmf-ffm-pair?variant=43361186775180",
+          "condition": "new"
+        }
+      ]
+    },
+    "reviewStatus": "approved",
+    "reviewNote": "Exact RPC0110EC-Y-US Y-branch connector pair; no connector acceptance range treated as cable gauge; tin-plated copper contact material not cable conductor material; full original HTML and inert JSON read offline; source timestamps from paired metadata, byte hash computed now. Exact name/source/category plus original role-only anchors; no hydrated engineering anchors. Independently reviewed against complete retained sources: review-seventeen-balance-independent.json; review SHA256 68ec7fcfc2aecbab2ea1be01da8d9361d94c8b48b315ad49d66c851b519ca8bb; candidate SHA256 a935fa94f0868bf6ce06b644bbceef86134f894cc9d91d27e646af9e72e92820. Source conditions and uncertainty retained."
+  },
+  {
+    "family": 111,
+    "key": "wiring|https://signaturesolar.com/bigbattery-ethos-10kwh-red-and-black-controller-to-battery-power-cable-31-5-inch-800mm/",
+    "productIds": [
+      "signature-solar-1622033"
+    ],
+    "expected": {
+      "signature-solar-1622033": {
+        "name": "BigBatttery | ETHOS | Control Box to Battery Cables | 31.5-IN | Red & Black Pair",
+        "sourceUrl": "https://signaturesolar.com/bigbattery-ethos-10kwh-red-and-black-controller-to-battery-power-cable-31-5-inch-800mm/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "model": "BigBatttery | ETHOS | Control Box to Battery Cables | 31.5-IN | Red & Black Pair",
+    "url": "https://signaturesolar.com/bigbattery-ethos-10kwh-red-and-black-controller-to-battery-power-cable-31-5-inch-800mm/",
+    "kind": "retailer",
+    "label": "Exact selected SKU retained product technical source",
+    "checkedAt": "2026-10-12T01:33:40.520Z",
+    "rows": [
+      [
+        "Length",
+        "31.5 in (800 mm) per cable"
+      ]
+    ],
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\b3dba85ad67ff1ed.html",
+    "sha256": "4db6ca3b30b7c749b00654ac3e923de11743160fa58ed098841e51d0dad92628",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "31.5 in (800 mm) per cable",
+        "quote": "31.5 inches (800mm) in length",
+        "sourceUrl": "https://signaturesolar.com/bigbattery-ethos-10kwh-red-and-black-controller-to-battery-power-cable-31-5-inch-800mm/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\b3dba85ad67ff1ed.html",
+        "sha256": "4db6ca3b30b7c749b00654ac3e923de11743160fa58ed098841e51d0dad92628",
+        "checkedAt": "2026-10-12T01:33:40.520Z",
+        "scope": "Exact retailer 1622033 ETHOS controller-to-battery red/black pair; length per cable"
+      }
+    ],
+    "variantEvidence": {
+      "exactInertRecords": [
+        {
+          "sku": "1622033",
+          "upc": null,
+          "mpn": "CBL088",
+          "gtin": null,
+          "weight": null,
+          "base": true,
+          "image": null,
+          "price": {
+            "without_tax": {
+              "formatted": "$80.00",
+              "value": 80,
+              "currency": "USD"
+            },
+            "tax_label": "Tax",
+            "sale_price_without_tax": {
+              "formatted": "$80.00",
+              "value": 80,
+              "currency": "USD"
+            },
+            "non_sale_price_without_tax": {
+              "formatted": "$90.00",
+              "value": 90,
+              "currency": "USD"
+            },
+            "map_price_without_tax": {
+              "formatted": "$80.00",
+              "value": 80,
+              "currency": "USD"
+            }
+          },
+          "out_of_stock_behavior": "label_option",
+          "out_of_stock_message": "Out of Stock",
+          "available_modifier_values": [],
+          "in_stock_attributes": [],
+          "stock": null,
+          "instock": true,
+          "stock_message": null,
+          "purchasable": true,
+          "purchasing_message": null,
+          "call_for_price_message": null,
+          "disabled_option_values": []
+        }
+      ],
+      "visibleSku": "1622033",
+      "exactVisibleSkuMatches": [
+        "1622033"
+      ],
+      "title": "ETHOS 10kWh Battery Power Cable – 31.5\"",
+      "h1": [
+        "BigBatttery | ETHOS | Control Box to Battery Cables | 31.5-IN | Red & Black Pair"
+      ],
+      "canonical": [
+        "https://signaturesolar.com/bigbattery-ethos-10kwh-red-and-black-controller-to-battery-power-cable-31-5-inch-800mm/"
+      ],
+      "selectedIdentityInspected": true,
+      "rawIdentity": {
+        "name": "BigBatttery | ETHOS | Control Box to Battery Cables | 31.5-IN | Red & Black Pair",
+        "sourceUrl": "https://signaturesolar.com/bigbattery-ethos-10kwh-red-and-black-controller-to-battery-power-cable-31-5-inch-800mm/",
+        "category": "wiring"
+      },
+      "offers": [
+        {
+          "id": "signature-solar-1622033",
+          "sku": "1622033",
+          "packQuantity": 1,
+          "url": "https://signaturesolar.com/bigbattery-ethos-10kwh-red-and-black-controller-to-battery-power-cable-31-5-inch-800mm/",
+          "condition": "new"
+        }
+      ]
+    },
+    "reviewStatus": "approved",
+    "reviewNote": "Exact retailer 1622033 ETHOS controller-to-battery red/black pair; length per cable; full original HTML and inert JSON read offline; source timestamps from paired metadata, byte hash computed now. Exact name/source/category plus original role-only anchors; no hydrated engineering anchors. Independently reviewed against complete retained sources: review-seventeen-balance-independent.json; review SHA256 68ec7fcfc2aecbab2ea1be01da8d9361d94c8b48b315ad49d66c851b519ca8bb; candidate SHA256 a935fa94f0868bf6ce06b644bbceef86134f894cc9d91d27e646af9e72e92820. Source conditions and uncertainty retained."
+  },
+  {
+    "family": 112,
+    "key": "wiring|https://signaturesolar.com/eg4-100ah-wallmount-battery-paralleling-cable-kit/",
+    "productIds": [
+      "signature-solar-1511085"
+    ],
+    "expected": {
+      "signature-solar-1511085": {
+        "name": "EG4 100Ah WallMount Battery Paralleling Cable Kit",
+        "sourceUrl": "https://signaturesolar.com/eg4-100ah-wallmount-battery-paralleling-cable-kit/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "model": "EG4 100Ah WallMount Battery Paralleling Cable Kit",
+    "url": "https://signaturesolar.com/eg4-100ah-wallmount-battery-paralleling-cable-kit/",
+    "kind": "retailer",
+    "label": "Exact selected SKU retained product technical source",
+    "checkedAt": "2026-10-12T01:27:10.148Z",
+    "rows": [
+      [
+        "Wire gauge",
+        "4 AWG (positive/negative power cables); communication cable: Cat6"
+      ],
+      [
+        "Length",
+        "59 in per power and communication cable"
+      ],
+      [
+        "Connection type",
+        "Power cables: Degson; communication cable: RJ45"
+      ]
+    ],
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\95ed2202ab990e72.html",
+    "sha256": "5bb89a79f02d073ff234239c49a6e64d78c0fde73bfa01334bf79da61a4c7f44",
+    "facts": [
+      {
+        "label": "Wire gauge",
+        "value": "4 AWG (positive/negative power cables); communication cable: Cat6",
+        "quote": "Conductor Size: 4 AWG",
+        "sourceUrl": "https://signaturesolar.com/eg4-100ah-wallmount-battery-paralleling-cable-kit/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\95ed2202ab990e72.html",
+        "sha256": "5bb89a79f02d073ff234239c49a6e64d78c0fde73bfa01334bf79da61a4c7f44",
+        "checkedAt": "2026-10-12T01:27:10.148Z",
+        "scope": "Exact 1511085 EG4 100Ah WallMount paralleling kit; component roles explicitly preserved"
+      },
+      {
+        "label": "Length",
+        "value": "59 in per power and communication cable",
+        "quote": "Length: 59 inches",
+        "sourceUrl": "https://signaturesolar.com/eg4-100ah-wallmount-battery-paralleling-cable-kit/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\95ed2202ab990e72.html",
+        "sha256": "5bb89a79f02d073ff234239c49a6e64d78c0fde73bfa01334bf79da61a4c7f44",
+        "checkedAt": "2026-10-12T01:27:10.148Z",
+        "scope": "Exact 1511085 EG4 100Ah WallMount paralleling kit; component roles explicitly preserved"
+      },
+      {
+        "label": "Connection type",
+        "value": "Power cables: Degson; communication cable: RJ45",
+        "quote": "Connector Type: RJ45",
+        "sourceUrl": "https://signaturesolar.com/eg4-100ah-wallmount-battery-paralleling-cable-kit/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\95ed2202ab990e72.html",
+        "sha256": "5bb89a79f02d073ff234239c49a6e64d78c0fde73bfa01334bf79da61a4c7f44",
+        "checkedAt": "2026-10-12T01:27:10.148Z",
+        "scope": "Exact 1511085 EG4 100Ah WallMount paralleling kit; component roles explicitly preserved"
+      }
+    ],
+    "variantEvidence": {
+      "exactInertRecords": [
+        {
+          "sku": "1511085",
+          "upc": null,
+          "mpn": null,
+          "gtin": null,
+          "weight": null,
+          "base": true,
+          "image": null,
+          "price": {
+            "without_tax": {
+              "formatted": "$105.99",
+              "value": 105.99,
+              "currency": "USD"
+            },
+            "tax_label": "Tax",
+            "sale_price_without_tax": {
+              "formatted": "$105.99",
+              "value": 105.99,
+              "currency": "USD"
+            },
+            "map_price_without_tax": {
+              "formatted": "$105.99",
+              "value": 105.99,
+              "currency": "USD"
+            }
+          },
+          "out_of_stock_behavior": "label_option",
+          "out_of_stock_message": "Out of Stock",
+          "available_modifier_values": [],
+          "in_stock_attributes": [],
+          "stock": null,
+          "instock": true,
+          "stock_message": null,
+          "purchasable": true,
+          "purchasing_message": null,
+          "call_for_price_message": null,
+          "disabled_option_values": []
+        }
+      ],
+      "visibleSku": "1511085",
+      "exactVisibleSkuMatches": [
+        "1511085"
+      ],
+      "title": "EG4 100Ah WallMount Battery Paralleling Cable Kit",
+      "h1": [
+        "EG4 100Ah WallMount Battery Paralleling Cable Kit"
+      ],
+      "canonical": [
+        "https://signaturesolar.com/eg4-100ah-wallmount-battery-paralleling-cable-kit/"
+      ],
+      "selectedIdentityInspected": true,
+      "rawIdentity": {
+        "name": "EG4 100Ah WallMount Battery Paralleling Cable Kit",
+        "sourceUrl": "https://signaturesolar.com/eg4-100ah-wallmount-battery-paralleling-cable-kit/",
+        "category": "wiring"
+      },
+      "offers": [
+        {
+          "id": "signature-solar-1511085",
+          "sku": "1511085",
+          "packQuantity": 1,
+          "url": "https://signaturesolar.com/eg4-100ah-wallmount-battery-paralleling-cable-kit/",
+          "condition": "new"
+        }
+      ]
+    },
+    "reviewStatus": "approved",
+    "reviewNote": "Exact 1511085 EG4 100Ah WallMount paralleling kit; component roles explicitly preserved; full original HTML and inert JSON read offline; source timestamps from paired metadata, byte hash computed now. Exact name/source/category plus original role-only anchors; no hydrated engineering anchors. Independently reviewed against complete retained sources: review-seventeen-balance-independent.json; review SHA256 68ec7fcfc2aecbab2ea1be01da8d9361d94c8b48b315ad49d66c851b519ca8bb; candidate SHA256 a935fa94f0868bf6ce06b644bbceef86134f894cc9d91d27e646af9e72e92820. Source conditions and uncertainty retained."
+  },
+  {
+    "family": 115,
+    "key": "wiring|https://signaturesolar.com/insulated-multitap-wire-connector-3-hole-pbts-3-4/",
+    "productIds": [
+      "signature-solar-1632005"
+    ],
+    "expected": {
+      "signature-solar-1632005": {
+        "name": "Insulated Multitap Wire Connector | 3 Hole | PBTS-3-4",
+        "sourceUrl": "https://signaturesolar.com/insulated-multitap-wire-connector-3-hole-pbts-3-4/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "model": "Insulated Multitap Wire Connector | 3 Hole | PBTS-3-4",
+    "url": "https://signaturesolar.com/insulated-multitap-wire-connector-3-hole-pbts-3-4/",
+    "kind": "retailer",
+    "label": "Exact selected SKU retained product technical source",
+    "checkedAt": "2026-10-12T01:33:50.655Z",
+    "rows": [
+      [
+        "Voltage rating",
+        "600V (PBTS-3-4 connector)"
+      ]
+    ],
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\ec80382793da882a.html",
+    "sha256": "65f3b6df72910ae316bb2dba93d8463696e7cfebe6083f8dc9e38476480ffa48",
+    "facts": [
+      {
+        "label": "Voltage rating",
+        "value": "600V (PBTS-3-4 connector)",
+        "quote": "Voltage Rating: 600V",
+        "sourceUrl": "https://signaturesolar.com/insulated-multitap-wire-connector-3-hole-pbts-3-4/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\ec80382793da882a.html",
+        "sha256": "65f3b6df72910ae316bb2dba93d8463696e7cfebe6083f8dc9e38476480ffa48",
+        "checkedAt": "2026-10-12T01:33:50.655Z",
+        "scope": "Exact retailer 1632005 / PBTS-3-4 connector; accepted wire range not cable gauge, aluminum connector body not cable conductor material"
+      }
+    ],
+    "variantEvidence": {
+      "exactInertRecords": [
+        {
+          "sku": "1632005",
+          "upc": "032076949174",
+          "mpn": "PBTS-3-4-EC",
+          "gtin": null,
+          "weight": null,
+          "base": true,
+          "image": null,
+          "price": {
+            "without_tax": {
+              "formatted": "$23.10",
+              "value": 23.1,
+              "currency": "USD"
+            },
+            "tax_label": "Tax",
+            "sale_price_without_tax": {
+              "formatted": "$23.10",
+              "value": 23.1,
+              "currency": "USD"
+            },
+            "map_price_without_tax": {
+              "formatted": "$23.10",
+              "value": 23.1,
+              "currency": "USD"
+            }
+          },
+          "out_of_stock_behavior": "label_option",
+          "out_of_stock_message": "Out of Stock",
+          "available_modifier_values": [],
+          "in_stock_attributes": [],
+          "stock": null,
+          "instock": true,
+          "stock_message": null,
+          "purchasable": true,
+          "purchasing_message": null,
+          "call_for_price_message": null,
+          "disabled_option_values": []
+        }
+      ],
+      "visibleSku": "1632005",
+      "exactVisibleSkuMatches": [
+        "1632005"
+      ],
+      "title": "Insulated Multitap Wire Connector | 3 Hole | PBTS-3-4 - Signature Solar",
+      "h1": [
+        "Insulated Multitap Wire Connector | 3 Hole | PBTS-3-4",
+        "Insulated Multitap Wire Connector | 3 Hole | PBTS-3-4"
+      ],
+      "canonical": [
+        "https://signaturesolar.com/insulated-multitap-wire-connector-3-hole-pbts-3-4/"
+      ],
+      "selectedIdentityInspected": true,
+      "rawIdentity": {
+        "name": "Insulated Multitap Wire Connector | 3 Hole | PBTS-3-4",
+        "sourceUrl": "https://signaturesolar.com/insulated-multitap-wire-connector-3-hole-pbts-3-4/",
+        "category": "wiring"
+      },
+      "offers": [
+        {
+          "id": "signature-solar-1632005",
+          "sku": "1632005",
+          "packQuantity": 1,
+          "url": "https://signaturesolar.com/insulated-multitap-wire-connector-3-hole-pbts-3-4/",
+          "condition": "new"
+        }
+      ]
+    },
+    "reviewStatus": "approved",
+    "reviewNote": "Exact retailer 1632005 / PBTS-3-4 connector; accepted wire range not cable gauge, aluminum connector body not cable conductor material; full original HTML and inert JSON read offline; source timestamps from paired metadata, byte hash computed now. Exact name/source/category plus original role-only anchors; no hydrated engineering anchors. Independently reviewed against complete retained sources: review-seventeen-balance-independent.json; review SHA256 68ec7fcfc2aecbab2ea1be01da8d9361d94c8b48b315ad49d66c851b519ca8bb; candidate SHA256 a935fa94f0868bf6ce06b644bbceef86134f894cc9d91d27e646af9e72e92820. Source conditions and uncertainty retained."
+  },
+  {
+    "family": 117,
+    "key": "wiring|https://signaturesolar.com/power-center-2-meter-bus-cable/",
+    "productIds": [
+      "signature-solar-1669012"
+    ],
+    "expected": {
+      "signature-solar-1669012": {
+        "name": "Power Center 2 Meter Bus Cable",
+        "sourceUrl": "https://signaturesolar.com/power-center-2-meter-bus-cable/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "model": "Power Center 2 Meter Bus Cable",
+    "url": "https://signaturesolar.com/power-center-2-meter-bus-cable/",
+    "kind": "retailer",
+    "label": "Exact selected SKU retained product technical source",
+    "checkedAt": "2026-10-12T01:37:00.847Z",
+    "rows": [
+      [
+        "Wire gauge",
+        "10 AWG"
+      ]
+    ],
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\1eabdcc7efa18572.html",
+    "sha256": "241bceed7182ce1346ec681f6974ba79682e41386cd7b5fc9f3d03acf33cd337",
+    "facts": [
+      {
+        "label": "Wire gauge",
+        "value": "10 AWG",
+        "quote": "10 AWG wiring",
+        "sourceUrl": "https://signaturesolar.com/power-center-2-meter-bus-cable/",
+        "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-seventeen-balance-frozen-v5\\artifacts\\output\\spec-research\\1eabdcc7efa18572.html",
+        "sha256": "241bceed7182ce1346ec681f6974ba79682e41386cd7b5fc9f3d03acf33cd337",
+        "checkedAt": "2026-10-12T01:37:00.847Z",
+        "scope": "Exact PC-2M CABLE-20; 2-meter length described as optimized connector spacing and held pending exact cable length confirmation"
+      }
+    ],
+    "variantEvidence": {
+      "exactInertRecords": [
+        {
+          "sku": "1669012",
+          "upc": null,
+          "mpn": null,
+          "gtin": null,
+          "weight": null,
+          "base": true,
+          "image": null,
+          "price": {
+            "without_tax": {
+              "formatted": "$30.49",
+              "value": 30.49,
+              "currency": "USD"
+            },
+            "tax_label": "Tax",
+            "sale_price_without_tax": {
+              "formatted": "$30.49",
+              "value": 30.49,
+              "currency": "USD"
+            },
+            "map_price_without_tax": {
+              "formatted": "$30.49",
+              "value": 30.49,
+              "currency": "USD"
+            }
+          },
+          "out_of_stock_behavior": "label_option",
+          "out_of_stock_message": "Out of Stock",
+          "available_modifier_values": [],
+          "in_stock_attributes": [],
+          "stock": null,
+          "instock": true,
+          "stock_message": null,
+          "purchasable": true,
+          "purchasing_message": null,
+          "call_for_price_message": null,
+          "disabled_option_values": []
+        }
+      ],
+      "visibleSku": "1669012",
+      "exactVisibleSkuMatches": [
+        "1669012"
+      ],
+      "title": "Duracell PC-2M 2m AC Bus Cable",
+      "h1": [
+        "Power Center 2 Meter Bus Cable"
+      ],
+      "canonical": [
+        "https://signaturesolar.com/power-center-2-meter-bus-cable/"
+      ],
+      "selectedIdentityInspected": true,
+      "rawIdentity": {
+        "name": "Power Center 2 Meter Bus Cable",
+        "sourceUrl": "https://signaturesolar.com/power-center-2-meter-bus-cable/",
+        "category": "wiring"
+      },
+      "offers": [
+        {
+          "id": "signature-solar-1669012",
+          "sku": "1669012",
+          "packQuantity": 1,
+          "url": "https://signaturesolar.com/power-center-2-meter-bus-cable/",
+          "condition": "new"
+        }
+      ]
+    },
+    "reviewStatus": "approved",
+    "reviewNote": "Exact PC-2M CABLE-20; 2-meter length described as optimized connector spacing and held pending exact cable length confirmation; full original HTML and inert JSON read offline; source timestamps from paired metadata, byte hash computed now. Exact name/source/category plus original role-only anchors; no hydrated engineering anchors. Independently reviewed against complete retained sources: review-seventeen-balance-independent.json; review SHA256 68ec7fcfc2aecbab2ea1be01da8d9361d94c8b48b315ad49d66c851b519ca8bb; candidate SHA256 a935fa94f0868bf6ce06b644bbceef86134f894cc9d91d27e646af9e72e92820. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://www.vatrerpower.com/products/vatrer-48v-105ah-mini-lithium-battery",
+    "kind": "manufacturer",
+    "model": "Vatrer 48V 105Ah Mini Lithium Golf Cart Battery for Tight Battery Compartments — 1 Pack Lithium Battery+1*58.4V 18A Charger+1*LCD Screen+Others",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:46:21.431Z",
+    "rows": [
+      [
+        "Nominal Voltage",
+        "51.2 V"
+      ],
+      [
+        "Energy",
+        "5376 Wh"
+      ],
+      [
+        "Rated Capacity",
+        "105 Ah"
+      ],
+      [
+        "Battery Chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Maximum Continuous Discharge Current",
+        "200 A"
+      ],
+      [
+        "Maximum Charge Current",
+        "200 A"
+      ],
+      [
+        "Communications",
+        "Bluetooth app"
+      ],
+      [
+        "Dimensions",
+        "335 x 310 x 255 mm"
+      ]
+    ],
+    "productIds": [
+      "vatrer-46876136603806"
+    ],
+    "expected": {
+      "vatrer-46876136603806": {
+        "name": "Vatrer 48V 105Ah Mini Lithium Golf Cart Battery for Tight Battery Compartments — 1 Pack Lithium Battery+1*58.4V 18A Charger+1*LCD Screen+Others",
+        "sourceUrl": "https://www.vatrerpower.com/products/vatrer-48v-105ah-mini-lithium-battery?variant=46876136603806",
+        "category": "batteries",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://www.vatrerpower.com/products/vatrer-48v-105ah-mini-lithium-battery",
+    "kind": "manufacturer",
+    "model": "Vatrer 48V 105Ah Mini Lithium Golf Cart Battery for Tight Battery Compartments — 1 Pack Lithium Battery+1*58.4V 18A Charger+1*48V TO 12V Converter+1*LCD Screen+Others",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:46:21.431Z",
+    "rows": [
+      [
+        "Nominal Voltage",
+        "51.2 V"
+      ],
+      [
+        "Energy",
+        "5376 Wh"
+      ],
+      [
+        "Rated Capacity",
+        "105 Ah"
+      ],
+      [
+        "Battery Chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Maximum Continuous Discharge Current",
+        "200 A"
+      ],
+      [
+        "Maximum Charge Current",
+        "200 A"
+      ],
+      [
+        "Communications",
+        "Bluetooth app"
+      ],
+      [
+        "Dimensions",
+        "335 x 310 x 255 mm"
+      ]
+    ],
+    "productIds": [
+      "vatrer-46876136636574"
+    ],
+    "expected": {
+      "vatrer-46876136636574": {
+        "name": "Vatrer 48V 105Ah Mini Lithium Golf Cart Battery for Tight Battery Compartments — 1 Pack Lithium Battery+1*58.4V 18A Charger+1*48V TO 12V Converter+1*LCD Screen+Others",
+        "sourceUrl": "https://www.vatrerpower.com/products/vatrer-48v-105ah-mini-lithium-battery?variant=46876136636574",
+        "category": "batteries",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://invertersrus.com/product/aims-agm-225ah-6v-gc2/",
+    "kind": "retailer",
+    "model": "AIMS Power 6 Volt 225Ah AGM Deep Cycle Battery Heavy Duty GC2",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:24:07.510Z",
+    "rows": [
+      [
+        "Battery Chemistry",
+        "AGM"
+      ],
+      [
+        "Dimensions",
+        "7 L x 10.25 W x 10.5 H in (with terminals)"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-agm6v225g"
+    ],
+    "expected": {
+      "inverters-r-us-agm6v225g": {
+        "name": "AIMS Power 6 Volt 225Ah AGM Deep Cycle Battery Heavy Duty GC2",
+        "sourceUrl": "https://invertersrus.com/product/aims-agm-225ah-6v-gc2/",
+        "category": "batteries",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://www.santansolar.com/product/anker-solix-everfrost-2-removable-battery/",
+    "kind": "retailer",
+    "model": "Anker SOLIX EverFrost 2 Removable Battery",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:24:49.926Z",
+    "rows": [
+      [
+        "Energy",
+        "288 Wh"
+      ],
+      [
+        "Battery Chemistry",
+        "LiFePO4"
+      ]
+    ],
+    "productIds": [
+      "santan-solar-a17d2011"
+    ],
+    "expected": {
+      "santan-solar-a17d2011": {
+        "name": "Anker SOLIX EverFrost 2 Removable Battery",
+        "sourceUrl": "https://www.santansolar.com/product/anker-solix-everfrost-2-removable-battery/",
+        "category": "batteries",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://www.santansolar.com/product/ecoflow-delta-2-max-extra-battery/",
+    "kind": "retailer",
+    "model": "EcoFlow DELTA 2 Max Extra Battery",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:26:28.239Z",
+    "rows": [
+      [
+        "Energy",
+        "2048 Wh"
+      ],
+      [
+        "Battery Chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Dimensions",
+        "464 x 235 x 283 mm"
+      ]
+    ],
+    "productIds": [
+      "santan-solar-delta2maxeb"
+    ],
+    "expected": {
+      "santan-solar-delta2maxeb": {
+        "name": "EcoFlow DELTA 2 Max Extra Battery",
+        "sourceUrl": "https://www.santansolar.com/product/ecoflow-delta-2-max-extra-battery/",
+        "category": "batteries",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://www.santansolar.com/product/ecoflow-delta-2-smart-extra-battery/",
+    "kind": "retailer",
+    "model": "EcoFlow DELTA 2 Smart Extra Battery",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:29:55.441Z",
+    "rows": [
+      [
+        "Energy",
+        "1024 Wh"
+      ],
+      [
+        "Battery Chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Dimensions",
+        "40 x 21.1 x 28.1 cm"
+      ]
+    ],
+    "productIds": [
+      "santan-solar-zmr330eb"
+    ],
+    "expected": {
+      "santan-solar-zmr330eb": {
+        "name": "EcoFlow DELTA 2 Smart Extra Battery",
+        "sourceUrl": "https://www.santansolar.com/product/ecoflow-delta-2-smart-extra-battery/",
+        "category": "batteries",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://www.santansolar.com/product/ecoflow-delta-3-series-smart-extra-battery/",
+    "kind": "retailer",
+    "model": "EcoFlow DELTA 3 Series Smart Extra Battery",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:26:34.258Z",
+    "rows": [
+      [
+        "Energy",
+        "1024 Wh"
+      ],
+      [
+        "Battery Chemistry",
+        "LiFePO4"
+      ]
+    ],
+    "productIds": [
+      "santan-solar-delta3p-eb"
+    ],
+    "expected": {
+      "santan-solar-delta3p-eb": {
+        "name": "EcoFlow DELTA 3 Series Smart Extra Battery",
+        "sourceUrl": "https://www.santansolar.com/product/ecoflow-delta-3-series-smart-extra-battery/",
+        "category": "batteries",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://www.santansolar.com/product/ecoflow-river-3-plus-smart-extra-battery-286-wh-300/",
+    "kind": "retailer",
+    "model": "EcoFlow RIVER 3 Plus Smart Extra Battery 286 Wh (300)",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:27:06.367Z",
+    "rows": [
+      [
+        "Energy",
+        "286 Wh"
+      ],
+      [
+        "Battery Chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Dimensions",
+        "9.2 x 8.8 x 4.3 in"
+      ]
+    ],
+    "productIds": [
+      "santan-solar-efeb300"
+    ],
+    "expected": {
+      "santan-solar-efeb300": {
+        "name": "EcoFlow RIVER 3 Plus Smart Extra Battery 286 Wh (300)",
+        "sourceUrl": "https://www.santansolar.com/product/ecoflow-river-3-plus-smart-extra-battery-286-wh-300/",
+        "category": "batteries",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://www.santansolar.com/product/ecoflow-river-3-plus-smart-extra-battery-527wh-600/",
+    "kind": "retailer",
+    "model": "EcoFlow RIVER 3 Plus Smart Extra Battery 527Wh (600)",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:27:08.383Z",
+    "rows": [
+      [
+        "Battery Chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Dimensions",
+        "9.2 x 8.8 x 6.2 in"
+      ]
+    ],
+    "productIds": [
+      "santan-solar-efeb600"
+    ],
+    "expected": {
+      "santan-solar-efeb600": {
+        "name": "EcoFlow RIVER 3 Plus Smart Extra Battery 527Wh (600)",
+        "sourceUrl": "https://www.santansolar.com/product/ecoflow-river-3-plus-smart-extra-battery-527wh-600/",
+        "category": "batteries",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://www.santansolar.com/product/ecoflow-wave-3-add-on-battery/",
+    "kind": "retailer",
+    "model": "EcoFlow WAVE 3 Add-on Battery",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:29:49.455Z",
+    "rows": [
+      [
+        "Energy",
+        "1024 Wh"
+      ],
+      [
+        "Nominal Voltage",
+        "51.2 V"
+      ],
+      [
+        "Rated Capacity",
+        "20 Ah"
+      ],
+      [
+        "Battery Chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Dimensions",
+        "516 x 281 x 111 mm"
+      ]
+    ],
+    "productIds": [
+      "santan-solar-wave3-eb"
+    ],
+    "expected": {
+      "santan-solar-wave3-eb": {
+        "name": "EcoFlow WAVE 3 Add-on Battery",
+        "sourceUrl": "https://www.santansolar.com/product/ecoflow-wave-3-add-on-battery/",
+        "category": "batteries",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://invertersrus.com/product/eg4-3-slot-battery-rack/",
+    "kind": "retailer",
+    "model": "EG4 3-Slot Battery Rack",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:25:45.365Z",
+    "rows": [
+      [
+        "Dimensions",
+        "23.6 x 26.8 x 26.5 in"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-eg4abr00v003s"
+    ],
+    "expected": {
+      "inverters-r-us-eg4abr00v003s": {
+        "name": "EG4 3-Slot Battery Rack",
+        "sourceUrl": "https://invertersrus.com/product/eg4-3-slot-battery-rack/",
+        "category": "batteries",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://invertersrus.com/product/pecron-fp5000-48v/",
+    "kind": "retailer",
+    "model": "PECRON FP5000-48V Expansion Battery 5120Wh for F5000LFP",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:26:30.817Z",
+    "rows": [
+      [
+        "Energy",
+        "5120 Wh"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-fp5000-48v"
+    ],
+    "expected": {
+      "inverters-r-us-fp5000-48v": {
+        "name": "PECRON FP5000-48V Expansion Battery 5120Wh for F5000LFP",
+        "sourceUrl": "https://invertersrus.com/product/pecron-fp5000-48v/",
+        "category": "batteries",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://www.wattcycle.com/products/48v-100ah-wall-mount-battery-dual-head-quick-connect-parallel-cable",
+    "kind": "manufacturer",
+    "model": "WattCyCle Dedicated 51.2V 100Ah Wall-Mount Battery - Dual-Head Quick-Connect Parallel Cable — 2x Batteries & 1x Parallel Cables",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:25:30.912Z",
+    "rows": [
+      [
+        "Included Components",
+        "2 x WattCycle 51.2V 100Ah wall-mount battery; 1 x dual-head quick-connect parallel cable"
+      ]
+    ],
+    "productIds": [
+      "wattcycle-51989393965352"
+    ],
+    "expected": {
+      "wattcycle-51989393965352": {
+        "name": "WattCyCle Dedicated 51.2V 100Ah Wall-Mount Battery - Dual-Head Quick-Connect Parallel Cable — 2x Batteries & 1x Parallel Cables",
+        "sourceUrl": "https://www.wattcycle.com/products/48v-100ah-wall-mount-battery-dual-head-quick-connect-parallel-cable?variant=51989393965352",
+        "category": "kits",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://www.wattcycle.com/products/48v-100ah-wall-mount-battery-dual-head-quick-connect-parallel-cable",
+    "kind": "manufacturer",
+    "model": "WattCyCle Dedicated 51.2V 100Ah Wall-Mount Battery - Dual-Head Quick-Connect Parallel Cable — 2x Batteries + 1x 12kW Inverter + 1x Parallel Cables",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:25:30.912Z",
+    "rows": [
+      [
+        "Included Components",
+        "2 x WattCycle 51.2V 100Ah wall-mount battery; 1 x 12kW inverter; 1 x dual-head quick-connect parallel cable"
+      ]
+    ],
+    "productIds": [
+      "wattcycle-51989393998120"
+    ],
+    "expected": {
+      "wattcycle-51989393998120": {
+        "name": "WattCyCle Dedicated 51.2V 100Ah Wall-Mount Battery - Dual-Head Quick-Connect Parallel Cable — 2x Batteries + 1x 12kW Inverter + 1x Parallel Cables",
+        "sourceUrl": "https://www.wattcycle.com/products/48v-100ah-wall-mount-battery-dual-head-quick-connect-parallel-cable?variant=51989393998120",
+        "category": "kits",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable",
+    "kind": "manufacturer",
+    "model": "WattCycle WattLINK - BLUETTI AC200MAX PPS Extra 48V Battery-to-PPS Expansion Cable — 5.12kWh(48V 100Ah Wall-Mount Battery) & AC200MAX Adapter kit",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:25:54.470Z",
+    "rows": [
+      [
+        "Included Components",
+        "1 x WattCycle 48V 100Ah wall-mount battery; 1 x BLUETTI AC200MAX adapter kit"
+      ]
+    ],
+    "productIds": [
+      "wattcycle-67838376345896"
+    ],
+    "expected": {
+      "wattcycle-67838376345896": {
+        "name": "WattCycle WattLINK - BLUETTI AC200MAX PPS Extra 48V Battery-to-PPS Expansion Cable — 5.12kWh(48V 100Ah Wall-Mount Battery) & AC200MAX Adapter kit",
+        "sourceUrl": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable?variant=67838376345896",
+        "category": "kits",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable",
+    "kind": "manufacturer",
+    "model": "WattCycle WattLINK - BLUETTI AC200MAX PPS Extra 48V Battery-to-PPS Expansion Cable — 5.12kWh(48V 100Ah 3U Rack Battery) & AC200MAX Adapter kit",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:25:54.470Z",
+    "rows": [
+      [
+        "Included Components",
+        "1 x WattCycle 48V 100Ah 3U rack battery; 1 x BLUETTI AC200MAX adapter kit"
+      ]
+    ],
+    "productIds": [
+      "wattcycle-67838376378664"
+    ],
+    "expected": {
+      "wattcycle-67838376378664": {
+        "name": "WattCycle WattLINK - BLUETTI AC200MAX PPS Extra 48V Battery-to-PPS Expansion Cable — 5.12kWh(48V 100Ah 3U Rack Battery) & AC200MAX Adapter kit",
+        "sourceUrl": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable?variant=67838376378664",
+        "category": "kits",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://www.wattcycle.com/products/quick-connect-parallel-cable-314ah-battery-250a-70mm2",
+    "kind": "manufacturer",
+    "model": "WattCycle Dedicated 51.2V 314Ah Floor-Standing Battery Expansion Dual-Head Quick-Connect Parallel Cable — 2x Batteries + 1x 12kW Inverter + 1x Parallel Cables",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:25:28.457Z",
+    "rows": [
+      [
+        "Included Components",
+        "2 x WattCycle 51.2V 314Ah floor-standing battery; 1 x 12kW inverter; 1 x dual-head quick-connect parallel cable"
+      ]
+    ],
+    "productIds": [
+      "wattcycle-51989380694312"
+    ],
+    "expected": {
+      "wattcycle-51989380694312": {
+        "name": "WattCycle Dedicated 51.2V 314Ah Floor-Standing Battery Expansion Dual-Head Quick-Connect Parallel Cable — 2x Batteries + 1x 12kW Inverter + 1x Parallel Cables",
+        "sourceUrl": "https://www.wattcycle.com/products/quick-connect-parallel-cable-314ah-battery-250a-70mm2?variant=51989380694312",
+        "category": "kits",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://yixiangpower.com/products/pre-sale-yixiang-pre-assembled-stacked-15kw-diy-lithium-battery-box-kitus-stock-estimated-shipping-time-aug-28th-16pcs-eve-314ah-brand-new-grade-a-lifepo4-battery-cellchina-stock",
+    "kind": "manufacturer",
+    "model": "YIXIANG V3 Stacked Battery Box Kit With JK 200A BMS (US Stock shipping time:Early November)+16PCS EVE 314 MB31 Brand New Grade A Lifepo4 Battery Cell(US Stock shipping time:Mid-Oct)",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:23:57.980Z",
+    "rows": [
+      [
+        "Included Components",
+        "1 x YIXIANG V3 Stacked Battery Box Kit With JK 200A BMS; 16PCS EVE 314 MB31 Brand New Grade A Lifepo4 Battery Cell"
+      ]
+    ],
+    "productIds": [
+      "yixiang-power-50832511140133"
+    ],
+    "expected": {
+      "yixiang-power-50832511140133": {
+        "name": "YIXIANG V3 Stacked Battery Box Kit With JK 200A BMS (US Stock shipping time:Early November)+16PCS EVE 314 MB31 Brand New Grade A Lifepo4 Battery Cell(US Stock shipping time:Mid-Oct)",
+        "sourceUrl": "https://yixiangpower.com/products/pre-sale-yixiang-pre-assembled-stacked-15kw-diy-lithium-battery-box-kitus-stock-estimated-shipping-time-aug-28th-16pcs-eve-314ah-brand-new-grade-a-lifepo4-battery-cellchina-stock?variant=50832511140133",
+        "category": "kits",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://yixiangpower.com/products/pre-sale-yixiang-pre-assembled-vertical-v19-bms-diy-lithium-battery-box-kitus-stock-estimated-shipping-time-oct-7th-16pcs-eve-314ah-brand-new-grade-a-lifepo4-battery-cellin-stock-at-us-warehouse-shipping-time-3-5-days",
+    "kind": "manufacturer",
+    "model": "YIXIANG S2 Vertical JK BMS DIY Battery Box Kit(US Stock: Oct-8th )+16PCS EVE 314 MB31 Grade A Lifepo4 Battery Cell(US Stock :Mid-Oct)",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:24:16.057Z",
+    "rows": [
+      [
+        "Included Components",
+        "1 x YIXIANG S2 Vertical JK BMS DIY Battery Box Kit; 16PCS EVE 314 MB31 Grade A Lifepo4 Battery Cell"
+      ]
+    ],
+    "productIds": [
+      "yixiang-power-51223113826597"
+    ],
+    "expected": {
+      "yixiang-power-51223113826597": {
+        "name": "YIXIANG S2 Vertical JK BMS DIY Battery Box Kit(US Stock: Oct-8th )+16PCS EVE 314 MB31 Grade A Lifepo4 Battery Cell(US Stock :Mid-Oct)",
+        "sourceUrl": "https://yixiangpower.com/products/pre-sale-yixiang-pre-assembled-vertical-v19-bms-diy-lithium-battery-box-kitus-stock-estimated-shipping-time-oct-7th-16pcs-eve-314ah-brand-new-grade-a-lifepo4-battery-cellin-stock-at-us-warehouse-shipping-time-3-5-days?variant=51223113826597",
+        "category": "kits",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://yixiangpower.com/products/yixiang-diy-vertical-battery-box-kit-with-jk-200a-bmsus-stock-estimated-shipping-time-sept-28th-16pcs-314ah-brand-new-grade-a-lifepo4-batterychina-stock",
+    "kind": "manufacturer",
+    "model": "YIXIANG New Vertical JK BMS DIY Battery Box Kit(US Stock: Oct-8th )+16Pcs YIXIANG 314AH Brand New Grade a Lifepo4 Battery(China's inventory :25-35 days )",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:24:08.013Z",
+    "rows": [
+      [
+        "Included Components",
+        "1 x YIXIANG New Vertical JK BMS DIY Battery Box Kit; 16Pcs YIXIANG 314AH Brand New Grade a Lifepo4 Battery"
+      ]
+    ],
+    "productIds": [
+      "yixiang-power-50995063718181"
+    ],
+    "expected": {
+      "yixiang-power-50995063718181": {
+        "name": "YIXIANG New Vertical JK BMS DIY Battery Box Kit(US Stock: Oct-8th )+16Pcs YIXIANG 314AH Brand New Grade a Lifepo4 Battery(China's inventory :25-35 days )",
+        "sourceUrl": "https://yixiangpower.com/products/yixiang-diy-vertical-battery-box-kit-with-jk-200a-bmsus-stock-estimated-shipping-time-sept-28th-16pcs-314ah-brand-new-grade-a-lifepo4-batterychina-stock?variant=50995063718181",
+        "category": "kits",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://yixiangpower.com/products/yixiang-pre-assembled-stacked-v19-bms-diy-lithium-battery-box-kitin-stock-at-us-warehouse-shipping-time-3-5-days-16pcs-eve-314ah-brand-new-grade-a-lifepo4-battery-cellin-china-the-shipping-time-is-25-35-days",
+    "kind": "manufacturer",
+    "model": "YIXIANG Stacked V3 JK BMS DIY Battery Box Kit(US Stock shipping time:Early November)+16PCS EVE 314AH Brand New Grade A Lifepo4 Battery Cell(China Inventory: 25-35 days)",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:24:18.108Z",
+    "rows": [
+      [
+        "Included Components",
+        "1 x YIXIANG Stacked V3 JK BMS DIY Battery Box Kit; 16PCS EVE 314AH Brand New Grade A Lifepo4 Battery Cell"
+      ]
+    ],
+    "productIds": [
+      "yixiang-power-51223192011045"
+    ],
+    "expected": {
+      "yixiang-power-51223192011045": {
+        "name": "YIXIANG Stacked V3 JK BMS DIY Battery Box Kit(US Stock shipping time:Early November)+16PCS EVE 314AH Brand New Grade A Lifepo4 Battery Cell(China Inventory: 25-35 days)",
+        "sourceUrl": "https://yixiangpower.com/products/yixiang-pre-assembled-stacked-v19-bms-diy-lithium-battery-box-kitin-stock-at-us-warehouse-shipping-time-3-5-days-16pcs-eve-314ah-brand-new-grade-a-lifepo4-battery-cellin-china-the-shipping-time-is-25-35-days?variant=51223192011045",
+        "category": "kits",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://yixiangpower.com/products/yixiang-v2-diy-horizontal-battery-box-kit-with-jk-200a-bmsus-stock-estimated-shipping-time-aug-28th-16pcs-314ah-brand-new-grade-a-lifepo4-batterychina-stock",
+    "kind": "manufacturer",
+    "model": "YIXIANG V3 DIY Horizontal Battery Box Kit with JK 200A BMS（US Stock shipping time:Early November) +16Pcs YIXIANG 314AH Brand New Grade a Lifepo4 Battery(China's inventory :25-35 days)",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:24:09.962Z",
+    "rows": [
+      [
+        "Included Components",
+        "1 x YIXIANG V3 DIY Horizontal Battery Box Kit with JK 200A BMS（US Stock shipping time:Early November); 16Pcs YIXIANG 314AH Brand New Grade a Lifepo4 Battery"
+      ]
+    ],
+    "productIds": [
+      "yixiang-power-50995125649701"
+    ],
+    "expected": {
+      "yixiang-power-50995125649701": {
+        "name": "YIXIANG V3 DIY Horizontal Battery Box Kit with JK 200A BMS（US Stock shipping time:Early November) +16Pcs YIXIANG 314AH Brand New Grade a Lifepo4 Battery(China's inventory :25-35 days)",
+        "sourceUrl": "https://yixiangpower.com/products/yixiang-v2-diy-horizontal-battery-box-kit-with-jk-200a-bmsus-stock-estimated-shipping-time-aug-28th-16pcs-314ah-brand-new-grade-a-lifepo4-batterychina-stock?variant=50995125649701",
+        "category": "kits",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://yixiangpower.com/products/yixiang-v3-stacked-battery-box-kit-with-yx-200a-bms-us-stock-shipping-time-3-7-days-16pcs-eve-314-mb31-brand-new-grade-a-lifepo4-battery-cellus-stock-shipping-time-3-7-days",
+    "kind": "manufacturer",
+    "model": "YIXIANG WIFI BMS Stacked Battery Box Kit With YX 200A BMS (US Stock shipping time: 3~7 Days)+16PCS EVE 314 MB31 Brand New Grade A Lifepo4 Battery Cell(US Stock shipping time: Mid-Oct)",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:24:38.149Z",
+    "rows": [
+      [
+        "Included Components",
+        "1 x YIXIANG WIFI BMS Stacked Battery Box Kit With YX 200A BMS; 16PCS EVE 314 MB31 Brand New Grade A Lifepo4 Battery Cell"
+      ]
+    ],
+    "productIds": [
+      "yixiang-power-53699881271589"
+    ],
+    "expected": {
+      "yixiang-power-53699881271589": {
+        "name": "YIXIANG WIFI BMS Stacked Battery Box Kit With YX 200A BMS (US Stock shipping time: 3~7 Days)+16PCS EVE 314 MB31 Brand New Grade A Lifepo4 Battery Cell(US Stock shipping time: Mid-Oct)",
+        "sourceUrl": "https://yixiangpower.com/products/yixiang-v3-stacked-battery-box-kit-with-yx-200a-bms-us-stock-shipping-time-3-7-days-16pcs-eve-314-mb31-brand-new-grade-a-lifepo4-battery-cellus-stock-shipping-time-3-7-days?variant=53699881271589",
+        "category": "kits",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "url": "https://yixiangpower.com/products/yixiang-vertical-15kw-diy-lithium-battery-box-kitus-stock-16pcs-eve-314ah-brand-new-grade-a-lifepo4-battery-cellchina-stock",
+    "kind": "manufacturer",
+    "model": "YIXIANG New Vertical JK BMS DIY Battery Box Kit(US Stock: Mid-Oct)+16PCS EVE 314AH Brand New Grade A Lifepo4 Battery Cell(China's inventory :25-35 days)",
+    "label": "Exact variant original-source offline storage review batch seventeen",
+    "checkedAt": "2026-10-12T01:23:55.968Z",
+    "rows": [
+      [
+        "Included Components",
+        "1 x YIXIANG New Vertical JK BMS DIY Battery Box Kit; 16PCS EVE 314AH Brand New Grade A Lifepo4 Battery Cell"
+      ]
+    ],
+    "productIds": [
+      "yixiang-power-50779021705509"
+    ],
+    "expected": {
+      "yixiang-power-50779021705509": {
+        "name": "YIXIANG New Vertical JK BMS DIY Battery Box Kit(US Stock: Mid-Oct)+16PCS EVE 314AH Brand New Grade A Lifepo4 Battery Cell(China's inventory :25-35 days)",
+        "sourceUrl": "https://yixiangpower.com/products/yixiang-vertical-15kw-diy-lithium-battery-box-kitus-stock-16pcs-eve-314ah-brand-new-grade-a-lifepo4-battery-cellchina-stock?variant=50779021705509",
+        "category": "kits",
+        "anchors": {}
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
   }
 ]
