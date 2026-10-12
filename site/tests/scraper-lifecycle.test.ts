@@ -10,7 +10,7 @@ function database(){
  const db={prepare(query:string){let args:any[]=[];const stmt=sql.prepare(query);const wrapper={bind(...values:any[]){args=values;return wrapper;},async all(){return {results:stmt.all(...args)};},async first(){return stmt.get(...args)||null;},async run(){return {meta:{changes:Number(stmt.run(...args).changes)}};}};return wrapper;},async batch(statements:any[]){sql.exec('BEGIN');try{const result=[];for(const s of statements)result.push(await s.run());sql.exec('COMMIT');return result;}catch(e){sql.exec('ROLLBACK');throw e;}}};return {db:db as unknown as D1Database,sql};
 }
 test('local NAZ execution is isolated from hosted collection and retains snapshot targets',async()=>{
- const {db,sql}=database();const initial=await scraperDashboard(db);for(const s of initial.sites)await scraperOwnerAction(db,{action:'save',id:s.id,site:{...s,enabled:s.id==='naz'}});
+ const {db,sql}=database();const initial=await scraperDashboard(db);for(const s of initial.sites)await scraperOwnerAction(db,{action:'save',id:s.id,site:{...s,enabled:s.id==='naz',execution:s.id==='naz'?'local':s.execution}});
  const hosted=await scraperWorkerAction(db,{action:'claim',claimId:crypto.randomUUID()});assert.equal(hosted.jobs?.length,0);
  const local=await scraperWorkerAction(db,{action:'claim',claimId:crypto.randomUUID(),execution:'local',siteId:'naz'});assert.equal(local.jobs?.[0]?.site.id,'naz');assert.ok(local.jobs?.[0]?.knownUrls.some(u=>u.includes('cerbo-gx')));sql.close();
 });
@@ -75,4 +75,32 @@ test('job leases reject other workers and decreasing counters; events replay ide
  await assert.rejects(()=>scraperWorkerAction(db,{action:'event',id:j.id,lease:j.lease,progress,event:{...event,id:crypto.randomUUID(),url:'https://other.com/'}}));
  sql.prepare("UPDATE scraper_jobs SET lease_until='2000-01-01T00:00:00Z' WHERE id=?").run(j.id);await scraperWorkerAction(db,{action:'claim',claimId:crypto.randomUUID()});assert.equal((await scraperDashboard(db)).jobs.find(r=>r.id===j.id)?.status,'failed');
  await assert.rejects(()=>scraperWorkerAction(db,{action:'finish',id:j.id,lease:j.lease,status:'succeeded',progress}));sql.close();
+});
+
+test('legacy local NAZ moves to background collection without changing other sources or active leases',async()=>{
+ for(const status of ['queued','running']){const {db,sql}=database();
+ sql.prepare('INSERT INTO job_state(id,value) VALUES(?,?)').run('scraper-coverage-v1','done');
+ const source={id:'naz',name:'NAZ Solar Electric',origin:'https://www.solar-electric.com',enabled:true,adapter:'sitemap',startPath:'/sitemap.xml',urls:[],schedule:'interval',frequencyMinutes:360,dailyTime:'06:17',weekdays:[0,1,2,3,4,5,6],delaySeconds:30,jitterSeconds:2,maxPages:24,feedPages:1,usdConfirmed:true,execution:'local'};
+ sql.prepare('INSERT INTO scraper_sites(id,origin,json,next_at,updated_at) VALUES(?,?,?,?,?)').run('naz',source.origin,JSON.stringify(source),'2099-01-01','2026-10-01');
+ sql.prepare('INSERT INTO scraper_jobs(id,site_id,status,config,progress,queued_at) VALUES(?,?,?,?,?,?)').run(status,'naz',status,JSON.stringify(source),JSON.stringify(emptyProgress()),'2026-10-01');
+ const dashboard=await scraperDashboard(db),naz=dashboard.sites.find(s=>s.id==='naz')!;
+ assert.equal(naz.execution,'hosted');assert.equal(naz.delaySeconds,30);assert.equal(naz.frequencyMinutes,360);
+ assert.equal(JSON.parse((sql.prepare('SELECT config FROM scraper_jobs WHERE id=?').get(status) as any).config).execution,status==='queued'?'hosted':'local');
+ if(status==='queued'){const job=(await scraperWorkerAction(db,{action:'claim',execution:'hosted',siteId:'naz',claimId:crypto.randomUUID()})).jobs![0];assert.equal(job.site.id,'naz');assert.ok(job.knownUrls.some(u=>u.includes('cerbo-gx')));}
+ assert.ok(dashboard.sites.filter(s=>s.id!=='naz'&&s.enabled).every(s=>s.execution!=='local'));
+ sql.close();}
+});
+test('NAZ background migration preserves a disabled source and manual scheduling',async()=>{
+ const {db,sql}=database();sql.prepare('INSERT INTO job_state(id,value) VALUES(?,?)').run('scraper-coverage-v1','done');
+ const s={id:'naz',name:'NAZ',origin:'https://www.solar-electric.com',enabled:false,adapter:'sitemap',startPath:'/sitemap.xml',urls:[],schedule:'manual',frequencyMinutes:360,dailyTime:'06:17',weekdays:[0],delaySeconds:10,jitterSeconds:2,maxPages:24,feedPages:1,usdConfirmed:true,execution:'local'};
+ sql.prepare('INSERT INTO scraper_sites(id,origin,json,next_at,updated_at) VALUES(?,?,?,?,?)').run(s.id,s.origin,JSON.stringify(s),null,'2026-10-01');
+ const after=(await scraperDashboard(db)).sites.find(x=>x.id==='naz')!;assert.equal(after.execution,'hosted');assert.equal(after.enabled,false);assert.equal(after.schedule,'manual');assert.equal(after.nextAt,null);sql.close();
+});
+
+test('concurrent startup migration cannot overwrite a newly saved owner pause',async()=>{
+ const {db,sql}=database();sql.prepare('INSERT INTO job_state(id,value) VALUES(?,?)').run('scraper-coverage-v1','done');
+ const s={id:'naz',name:'NAZ',origin:'https://www.solar-electric.com',enabled:true,adapter:'sitemap',startPath:'/sitemap.xml',urls:[],schedule:'interval',frequencyMinutes:360,dailyTime:'06:17',weekdays:[0],delaySeconds:10,jitterSeconds:2,maxPages:24,feedPages:1,usdConfirmed:true,execution:'local'};
+ sql.prepare('INSERT INTO scraper_sites(id,origin,json,next_at,updated_at) VALUES(?,?,?,?,?)').run(s.id,s.origin,JSON.stringify(s),'2026-10-01','2026-10-01');
+ let batches=0;const racingDb={...db,async batch(statements:any[]){if(++batches===2){await scraperDashboard(db);await scraperOwnerAction(db,{action:'save',id:s.id,site:{...s,enabled:false,schedule:'manual',execution:'hosted'}});}return db.batch(statements);}} as D1Database;
+ const after=(await scraperDashboard(racingDb)).sites.find(x=>x.id==='naz')!;assert.equal(after.enabled,false);assert.equal(after.schedule,'manual');assert.equal(after.nextAt,null);sql.close();
 });

@@ -26,6 +26,18 @@ export async function seedScraperSites(db:D1Database){
   }
   changes.push(db.prepare('INSERT OR IGNORE INTO job_state(id,value) VALUES(?,?)').bind(migration,now));await db.batch(changes);
  }
+ // The owner requested fully hosted current-price collection. Only migrate the
+ // earlier NAZ local assignment; preserve owner pauses and active lease configs.
+ const backgroundMigration='scraper-naz-background-v1';
+ if(!await db.prepare('SELECT value FROM job_state WHERE id=?').bind(backgroundMigration).first()){
+  // D1 batch is atomic. Use live fields and guard every mutation with the marker
+  // so a second startup cannot overwrite an owner edit after the first commits.
+  await db.batch([
+   db.prepare("UPDATE scraper_sites SET json=json_set(json,'$.execution','hosted'),next_at=CASE WHEN json_extract(json,'$.enabled')=1 AND json_extract(json,'$.schedule')<>'manual' THEN ? ELSE NULL END,updated_at=? WHERE id='naz' AND origin='https://www.solar-electric.com' AND json_extract(json,'$.adapter')='sitemap' AND json_extract(json,'$.execution')='local' AND NOT EXISTS(SELECT 1 FROM job_state WHERE id=?)").bind(now,now,backgroundMigration),
+   db.prepare("UPDATE scraper_jobs SET config=(SELECT json FROM scraper_sites WHERE id='naz') WHERE site_id='naz' AND status='queued' AND json_extract(config,'$.execution')='local' AND EXISTS(SELECT 1 FROM scraper_sites WHERE id='naz' AND origin='https://www.solar-electric.com' AND json_extract(json,'$.adapter')='sitemap' AND json_extract(json,'$.execution')='hosted') AND NOT EXISTS(SELECT 1 FROM job_state WHERE id=?)").bind(backgroundMigration),
+   db.prepare('INSERT OR IGNORE INTO job_state(id,value) VALUES(?,?)').bind(backgroundMigration,now)
+  ]);
+ }
  seeded.add(db);
 }
 async function sites(db:D1Database){const r=await db.prepare('SELECT * FROM scraper_sites ORDER BY updated_at DESC,id').all<SiteRow>();return r.results;}
