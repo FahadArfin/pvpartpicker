@@ -1,0 +1,9 @@
+# Exhaustive specification research: batch twelve
+
+Continue the full owner-authorized investigation across all remaining listings. Use the attached isolated worktree on `codex/specification-batch-twelve`, fixed 8,591-listing catalog and pre-import specification index. Split independent generation, storage and balance source acquisition, then review complete immutable source packets separately from their authors. Inspect exact variant/SKU/pack/condition, complete primary tables and relevant visual PDF pages; persist source refusals, preserve dates and never bypass paused origins.
+
+Promote approved records only, preserving all stronger existing fields and complete source/panel provenance. Record every assigned identity's unresolved labels and exact reasons. Hold unresolved category/assembly and genuine source conflicts; do not declare a family exhausted from parser output. Keep hosted current-price collection enabled and preserve offers, history and schedules.
+
+Regenerate current coverage against the fresh fixed baseline and report catalog drift separately. Validate full retention, tests, types, Worker build and an independent whole-branch review. Commit the exact source, verify required CI, merge, build/package/publish the existing public Site and verify terminal deployment plus live field/source and asset identities. Update the durable queue/checkpoint and continue the next families; completion of this batch does not complete the exhaustive goal.
+
+Review focus: selected model/variant bindings, conditional versus scalar electrical limits, component versus whole-system values, raw role versus runtime normalization, title-only numeric attributes, manufacturer qualifiers, preservation of prior full field/source objects, price-write boundaries, current-versus-fixed progress counts, and source capture/review chronology. Inspect these beyond the existing test suite.

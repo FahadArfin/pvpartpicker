@@ -1,0 +1,283 @@
+{
+  "status": "exact_replacement_evidence_approved",
+  "id": "shopsolar-45169174478988",
+  "recommendation": "Use a bounded correction of this one dimensions field.53.35lbs is published Weight, not dimensions. Exact retained retailer paragraph and visually inspected linked manufacturer SGN-450-BDG5 datasheet independently publish identical per-module dimensions. No model-name alias, unit conversion, engineering inference or pallet aggregate is needed. Quarantining/removing only the invalid field is safe fallback if replacement correction is not authorized or cannot be guarded.",
+  "currentIndexPath": "C:/Users/fahad/.codex/worktrees/specification-batch-eleven/pvpartpicker/site/data/specifications.json",
+  "currentIndexSha256": "089ab03cad964e0d51d403aa95d2390a03e6961822c61f01f1e9a124f3e64d91",
+  "oldFullObjectSha256": "7599a16fa4ad2aaff57278597c809ddd267d63002bcf14cecc8b7ef8a9e583e9",
+  "oldFullObject": {
+    "summary": "Sungold SGN-450-BDG5 solar panel. 450 W per panel · N-type · 22.5% module efficiency.",
+    "groups": [
+      {
+        "title": "Physical specifications",
+        "fields": [
+          {
+            "key": "dimensions",
+            "label": "Dimensions",
+            "value": "53.35 lbs",
+            "source": "https://shopsolarkits.com/products/sungoldpower-450w-bifacial-n-type-solar-panels-full-pallet-32-panels?variant=45169174478988",
+            "kind": "retailer"
+          }
+        ]
+      },
+      {
+        "title": "Module & cells",
+        "fields": [
+          {
+            "key": "watts",
+            "label": "Rated panel power",
+            "value": "450 W",
+            "source": "https://shopsolarkits.com/products/sungoldpower-450w-bifacial-n-type-solar-panels-full-pallet-32-panels?variant=45169174478988",
+            "kind": "listing"
+          },
+          {
+            "key": "face",
+            "label": "Panel face",
+            "value": "Bifacial",
+            "source": "https://shopsolarkits.com/products/sungoldpower-450w-bifacial-n-type-solar-panels-full-pallet-32-panels?variant=45169174478988",
+            "kind": "listing"
+          },
+          {
+            "key": "cellType",
+            "label": "Cell type",
+            "value": "N-type",
+            "source": "https://shopsolarkits.com/products/sungoldpower-450w-bifacial-n-type-solar-panels-full-pallet-32-panels?variant=45169174478988",
+            "kind": "listing"
+          },
+          {
+            "key": "moduleEfficiency",
+            "label": "Module efficiency",
+            "value": "22.5%",
+            "source": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+            "kind": "datasheet"
+          },
+          {
+            "key": "cellCount",
+            "label": "Cell count / arrangement",
+            "value": "96 cells",
+            "source": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+            "kind": "datasheet"
+          }
+        ]
+      },
+      {
+        "title": "Identity",
+        "fields": [
+          {
+            "key": "model",
+            "label": "Model",
+            "value": "SGN-450-BDG5",
+            "source": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+            "kind": "datasheet"
+          }
+        ]
+      },
+      {
+        "title": "Temperature & load ratings",
+        "fields": [
+          {
+            "key": "pmaxTemperatureCoefficient",
+            "label": "Pmax temperature coefficient",
+            "value": "-0.29 %/°C",
+            "source": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+            "kind": "datasheet"
+          },
+          {
+            "key": "vocTemperatureCoefficient",
+            "label": "Voc temperature coefficient",
+            "value": "-0.28 %/°C",
+            "source": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+            "kind": "datasheet"
+          },
+          {
+            "key": "iscTemperatureCoefficient",
+            "label": "Isc temperature coefficient",
+            "value": "0.04 %/°C",
+            "source": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+            "kind": "datasheet"
+          },
+          {
+            "key": "nmotTemperature",
+            "label": "Nominal module operating temperature (NMOT)",
+            "value": "43 ±2 °C",
+            "source": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+            "kind": "datasheet"
+          }
+        ]
+      },
+      {
+        "title": "Protection & limits",
+        "fields": [
+          {
+            "key": "maxSystemVoltage",
+            "label": "Maximum system voltage",
+            "value": "1500 V DC",
+            "source": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+            "kind": "datasheet"
+          }
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "url": "https://shopsolarkits.com/products/sungoldpower-450w-bifacial-n-type-solar-panels-full-pallet-32-panels?variant=45169174478988",
+        "kind": "retailer",
+        "label": "Product technical table",
+        "checkedAt": "2026-10-05T03:15:57.679Z"
+      },
+      {
+        "url": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+        "kind": "datasheet",
+        "label": "SunGold Power SGN-450-BDG5 exact model datasheet, page 2",
+        "checkedAt": "2026-10-12T12:01:58.876775+00:00"
+      },
+      {
+        "url": "https://shopsolarkits.com/products/sungoldpower-450w-bifacial-n-type-solar-panels-full-pallet-32-panels?variant=45169174478988",
+        "kind": "listing",
+        "label": "Selected product listing"
+      }
+    ],
+    "notes": [
+      "NOCT electrical ratings are not published in the matched sources. NOCT temperature is a separate specification."
+    ],
+    "panelRatings": {
+      "stc": {
+        "pmax": "450 W",
+        "vmp": "30.08 V",
+        "imp": "14.97 A",
+        "voc": "35.03 V",
+        "isc": "16.05 A",
+        "efficiency": "22.5%"
+      },
+      "noct": {
+        "pmax": "338 W",
+        "vmp": "27.96 V",
+        "imp": "12.09 A",
+        "voc": "33.28 V",
+        "isc": "12.96 A"
+      },
+      "sources": {
+        "stc.pmax": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+        "stc.vmp": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+        "stc.imp": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+        "stc.voc": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+        "stc.isc": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+        "stc.efficiency": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+        "noct.pmax": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+        "noct.vmp": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+        "noct.imp": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+        "noct.voc": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+        "noct.isc": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855"
+      }
+    },
+    "identity": {
+      "name": "Sungold Power 450W Bifacial Solar Panel Pallet (32 Panels) | UL61730 | N-Type Mono Solar Panels | 30-Year Warranty",
+      "sourceUrl": "https://shopsolarkits.com/products/sungoldpower-450w-bifacial-n-type-solar-panels-full-pallet-32-panels?variant=45169174478988",
+      "category": "panels",
+      "anchors": {
+        "watts": 450,
+        "face": "Bifacial",
+        "cellType": "N-type"
+      }
+    }
+  },
+  "oldFullFieldSha256": "fdb525da16ad27a7ddecb41ccf1529e1726a2c80fed70a2a78d5ee012598ef61",
+  "oldFullField": {
+    "key": "dimensions",
+    "label": "Dimensions",
+    "value": "53.35 lbs",
+    "source": "https://shopsolarkits.com/products/sungoldpower-450w-bifacial-n-type-solar-panels-full-pallet-32-panels?variant=45169174478988",
+    "kind": "retailer"
+  },
+  "proposedReplacement": {
+    "key": "dimensions",
+    "label": "Dimensions",
+    "value": "69.37 × 44.65 × 1.38 in (1762 × 1134 × 35 mm)",
+    "source": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+    "kind": "datasheet"
+  },
+  "expected": {
+    "name": "Sungold Power 450W Bifacial Solar Panel Pallet (32 Panels) | UL61730 | N-Type Mono Solar Panels | 30-Year Warranty",
+    "sourceUrl": "https://shopsolarkits.com/products/sungoldpower-450w-bifacial-n-type-solar-panels-full-pallet-32-panels?variant=45169174478988",
+    "category": "panels",
+    "anchors": {
+      "watts": 450,
+      "face": "Bifacial",
+      "cellType": "N-type"
+    }
+  },
+  "selectedVariant": {
+    "id": 45169174478988,
+    "sku": "SGN-450-BDG5",
+    "variantLiteralInFrozenHtml": true,
+    "skuLiteralInFrozenHtml": true
+  },
+  "exactRetailerExcerpts": [
+    "Dimensions (Per Panel) – 69.37\" x 44.65\" x 1.38\" | Weight: 53.35 lbs"
+  ],
+  "pdfVisualEvidence": {
+    "artifactPath": "output/specification-research/batch-twelve-generation-frozen/artifacts/543-cached-document-56-p2.png",
+    "physicalPage": 2,
+    "visibleModel": "SGN-450-BDG5",
+    "visibleDimensionRow": "Module dimension (L*W*H):69.37 x44.65 x1.38 inch (1762 x1134 x35mm)",
+    "visibleWeightRow": "Weight:53.35lbs (24.2kg)"
+  },
+  "modelAliasAssessment": "No SNG-450 text found in exact retained HTML; selected variant SKU, retailer description and linked PDF are SGN-450-BDG5. Do not treat SNG and SGN as equivalent in general. SNG-440-SW5 is a separate source/model.",
+  "sng450Present": false,
+  "sourceDate": {
+    "retailer": "2026-10-05T03:15:57.679Z",
+    "datasheet": "2026-10-12T12:01:58.876775+00:00"
+  },
+  "generationManifestSha256": "70abe1b40adcb8db62a58f1d07209823c29cfa39d8b1e12a362afa191d289473",
+  "sourceArtifacts": [
+    {
+      "path": "output/specification-research/batch-twelve-generation-frozen/artifacts/545-cached-document-56.pdf",
+      "sha256": "8b3a521e9ec09c518286f17165eb7ad1a9f5a047f1ca1291119c3f8cd05f7cdb",
+      "matchesManifest": true
+    },
+    {
+      "path": "output/specification-research/batch-twelve-generation-frozen/artifacts/543-cached-document-56-p2.png",
+      "sha256": "87dce095a4dc1b32bb74aef7334a7fe898d931e168d9fc533119f6464e464649",
+      "matchesManifest": true
+    },
+    {
+      "path": "output/specification-research/batch-twelve-generation-frozen/artifacts/48-2b15b902cb6f6ade.html",
+      "sha256": "290a31d20decd5025445be3ad85919a0a75c1b42c99cee5f98778b057673d648",
+      "matchesManifest": true
+    }
+  ],
+  "holdLocation": {
+    "publishedConflictsHasTarget": false,
+    "conflictHoldsHasTarget": true,
+    "conflictHoldsRows": [
+      [
+        "Dimensions",
+        "1762 × 1134 × 35 mm"
+      ]
+    ]
+  },
+  "boundedWriteRequirements": [
+    "Guard exact selected product identity,old complete object SHA and exact invalid full field tuple before correction; reject drift.",
+    "Change/remove only dimensions field. Preserve every other field,source,STC/NMOT value/source and note unless separate authorization/review.",
+    "Retain old complete object and source artifacts in correction evidence. Do not silently infer a weight field or change scalar specs.",
+    "Prevent regeneration from reintroducing quarantined dimensions mass tuple using bounded existing correction workflow, without broader parser relaxation.",
+    "Final reviewer must independently verify root-authored one-ID full-object-hash correction, registry dimension row and tracked correction audit before delivery."
+  ],
+  "reviewerTrackedChanges": false,
+  "networkRequests": 0,
+  "published": false,
+  "sourceApprovedReplacement": {
+    "key": "dimensions",
+    "label": "Dimensions",
+    "value": "69.37 × 44.65 × 1.38 in (1762 × 1134 × 35 mm)",
+    "source": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/SGN-450-BDG5_-_20251113.pdf?v=1763989855",
+    "kind": "datasheet"
+  },
+  "scope": "One module of exact SGN-450-BDG5 variant45169174478988; pallet quantity32 does not scale physical dimensions.",
+  "appliedAt": "2026-10-12T18:07:53.125Z",
+  "replacementFullObjectSha256": "3157d08469f00f3ab437b9a41784ae746ec1fa0c2fc4c5e983e78a1b51e3e02d",
+  "changedFieldCount": 1,
+  "untargetedObjectsRetained": 4197,
+  "productScalarsChanged": false,
+  "priceWrites": false
+}
