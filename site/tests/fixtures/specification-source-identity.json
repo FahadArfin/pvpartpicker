@@ -1,0 +1,57 @@
+[
+  {
+    "id": "shopsolar-52726444785804",
+    "name": "FIRE SALE | Canadian Solar 695W N-Type TOPCon Bifacial Solar Panel | Up to 840W Bifacial | CS7N-695-TB-AG | 21.55 kW Full Pallet (31)",
+    "sourceUrl": "https://shopsolarkits.com/products/canadian-solar-695w-n-type-topcon-bifacial-solar-panels?variant=52726444785804",
+    "category": "panels",
+    "specs": {
+      "watts": 695,
+      "face": "Bifacial",
+      "cellType": "N-type",
+      "technology": "TOPCon"
+    }
+  },
+  {
+    "id": "shopsolar-52726482337932",
+    "name": "Canadian Solar 695W N-Type TOPCon Bifacial Solar Panel | Up to 840W Bifacial | CS7N-695-TB-AG",
+    "sourceUrl": "https://shopsolarkits.com/products/canadian-solar-695w-n-type-topcon-bifacial-solar-panel?variant=52726482337932",
+    "category": "panels",
+    "specs": {
+      "watts": 695,
+      "face": "Bifacial",
+      "cellType": "N-type",
+      "technology": "TOPCon"
+    }
+  },
+  {
+    "id": "renogy-44251647869043",
+    "name": "12V 100Ah/200Ah Deep Cycle AGM Battery — 200Ah / 1 Pack",
+    "sourceUrl": "https://www.renogy.com/products/deep-cycle-agm-battery-12-volt-100ah-200ah?variant=44251647869043",
+    "category": "batteries",
+    "specs": {
+      "voltage": 12,
+      "capacityAh": 200,
+      "batteryKind": "Battery modules"
+    }
+  },
+  {
+    "id": "renogy-44894241521779",
+    "name": "Wanderer 10A PWM Charge Controller — Controller Only",
+    "sourceUrl": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller?variant=44894241521779",
+    "category": "charging",
+    "specs": {
+      "controllerType": "PWM",
+      "chargeCurrentA": 10
+    }
+  },
+  {
+    "id": "renogy-44894241554547",
+    "name": "Wanderer 10A PWM Charge Controller — 🔥 W/ Bluetooth Module",
+    "sourceUrl": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller?variant=44894241554547",
+    "category": "charging",
+    "specs": {
+      "controllerType": "PWM",
+      "chargeCurrentA": 10
+    }
+  }
+]

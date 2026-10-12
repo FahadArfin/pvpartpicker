@@ -214238,5 +214238,219 @@
     },
     "reviewStatus": "approved",
     "reviewNote": " Independent complete immutable-source review review-sixteen-storage-secondary-independent.json (review SHA256 d7c5dcf4a4ca34a98e4364fafa09c654b8bf9c3551c30407c225cd3c46545456, candidate SHA256 26b00f1196bf554a27204c295d0e985189ae8ac1cc88355e8cac6097abfca2e5). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "shopsolar-52726444785804"
+    ],
+    "expected": {
+      "shopsolar-52726444785804": {
+        "name": "FIRE SALE | Canadian Solar 695W N-Type TOPCon Bifacial Solar Panel | Up to 840W Bifacial | CS7N-695-TB-AG | 21.55 kW Full Pallet (31)",
+        "sourceUrl": "https://shopsolarkits.com/products/canadian-solar-695w-n-type-topcon-bifacial-solar-panels?variant=52726444785804",
+        "category": "panels",
+        "anchors": {
+          "watts": 695,
+          "face": "Bifacial",
+          "cellType": "N-type",
+          "technology": "TOPCon"
+        }
+      }
+    },
+    "url": "https://cdn.shopify.com/s/files/1/0850/1801/8067/files/CS-Datasheet-TOPBiHiKu7_TOPCon__CS7N-TB-AG_v1.75C1_F43M_J1_TX_4_1_f5128718-3c04-4564-9b3c-fb643858e6b7.pdf?v=1761223457",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-12T21:38:12.138283+00:00",
+    "label": "Exact selected CS7N-695TB-AG labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Maximum power at STC",
+        "695 W"
+      ],
+      [
+        "Maximum power voltage (Vmp) at STC",
+        "39.8 V"
+      ],
+      [
+        "Maximum power current (Imp) at STC",
+        "17.47 A"
+      ],
+      [
+        "Short circuit current (Isc) at STC",
+        "18.44 A"
+      ],
+      [
+        "Module efficiency",
+        "22.4%"
+      ],
+      [
+        "Voc temperature coefficient",
+        "-0.25%/°C"
+      ],
+      [
+        "Pmax temperature coefficient",
+        "-0.29%/°C"
+      ],
+      [
+        "Dimensions",
+        "2384 × 1303 × 35 mm(93.9 × 51.3 × 1.38 in)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained. Identity corrigendum: exact original model/SKU/selected variant/pack source bindings reverified; voc=47.7 is an imported rating, absent before hydration, and cannot be an import prerequisite. Existing facts/conditions/source dates unchanged."
+  },
+  {
+    "productIds": [
+      "shopsolar-52726482337932"
+    ],
+    "expected": {
+      "shopsolar-52726482337932": {
+        "name": "Canadian Solar 695W N-Type TOPCon Bifacial Solar Panel | Up to 840W Bifacial | CS7N-695-TB-AG",
+        "sourceUrl": "https://shopsolarkits.com/products/canadian-solar-695w-n-type-topcon-bifacial-solar-panel?variant=52726482337932",
+        "category": "panels",
+        "anchors": {
+          "watts": 695,
+          "face": "Bifacial",
+          "cellType": "N-type",
+          "technology": "TOPCon"
+        }
+      }
+    },
+    "url": "https://cdn.shopify.com/s/files/1/0850/1801/8067/files/CS-Datasheet-TOPBiHiKu7_TOPCon__CS7N-TB-AG_v1.75C1_F43M_J1_TX_4_1_f5128718-3c04-4564-9b3c-fb643858e6b7.pdf?v=1761223457",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-12T21:38:12.138283+00:00",
+    "label": "Exact selected CS7N-695TB-AG labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Maximum power at STC",
+        "695 W"
+      ],
+      [
+        "Maximum power voltage (Vmp) at STC",
+        "39.8 V"
+      ],
+      [
+        "Maximum power current (Imp) at STC",
+        "17.47 A"
+      ],
+      [
+        "Short circuit current (Isc) at STC",
+        "18.44 A"
+      ],
+      [
+        "Module efficiency",
+        "22.4%"
+      ],
+      [
+        "Voc temperature coefficient",
+        "-0.25%/°C"
+      ],
+      [
+        "Pmax temperature coefficient",
+        "-0.29%/°C"
+      ],
+      [
+        "Dimensions",
+        "2384 × 1303 × 35 mm(93.9 × 51.3 × 1.38 in)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained. Identity corrigendum: exact original model/SKU/selected variant/pack source bindings reverified; voc=47.7 is an imported rating, absent before hydration, and cannot be an import prerequisite. Existing facts/conditions/source dates unchanged."
+  },
+  {
+    "url": "https://www.renogy.com/cdn/shop/files/12V_Deep_Cycle_AGM_Battery_UM.pdf?v=5775865963845898436",
+    "kind": "manual",
+    "model": "12V 100Ah/200Ah Deep Cycle AGM Battery — 200Ah / 1 Pack",
+    "label": "Exact identity offline storage review batch sixteen",
+    "checkedAt": "2026-10-12T21:35:22.741120+00:00",
+    "rows": [
+      [
+        "Maximum Continuous Discharge Current",
+        "200 A"
+      ],
+      [
+        "Maximum Continuous Charging Current",
+        "60 A"
+      ],
+      [
+        "Peak Discharge Current",
+        "2000 A (5 seconds)"
+      ],
+      [
+        "Communications",
+        "No"
+      ]
+    ],
+    "productIds": [
+      "renogy-44251647869043"
+    ],
+    "expected": {
+      "renogy-44251647869043": {
+        "name": "12V 100Ah/200Ah Deep Cycle AGM Battery — 200Ah / 1 Pack",
+        "sourceUrl": "https://www.renogy.com/products/deep-cycle-agm-battery-12-volt-100ah-200ah?variant=44251647869043",
+        "category": "batteries",
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 200,
+          "batteryKind": "Battery modules"
+        }
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-storage-independent.json (review SHA256 6a2daf33481874a7e66571238507050e32cf2cf1e2c4a08d2885e49eb3a8e3a4, candidate SHA256 45fa40e4261a0b037e32fd4c9e063302dd64c212d76b18a2c3943c696a013a83). Published conditions and uncertainty are retained. Identity corrigendum: exact original model/SKU/selected variant/pack source bindings reverified; maxChargeCurrent=60 is an imported rating, absent before hydration, and cannot be an import prerequisite. Existing facts/conditions/source dates unchanged."
+  },
+  {
+    "productIds": [
+      "renogy-44894241521779"
+    ],
+    "expected": {
+      "renogy-44894241521779": {
+        "name": "Wanderer 10A PWM Charge Controller — Controller Only",
+        "sourceUrl": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller?variant=44894241521779",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "PWM",
+          "chargeCurrentA": 10
+        }
+      }
+    },
+    "url": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-05T03:18:24.316Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Maximum PV input power",
+        "130W / 12V; 260W / 24V"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained. Identity corrigendum: exact original model/SKU/selected variant/pack source bindings reverified; maxPvVoltage=50 is an imported rating, absent before hydration, and cannot be an import prerequisite. Existing facts/conditions/source dates unchanged."
+  },
+  {
+    "productIds": [
+      "renogy-44894241554547"
+    ],
+    "expected": {
+      "renogy-44894241554547": {
+        "name": "Wanderer 10A PWM Charge Controller — 🔥 W/ Bluetooth Module",
+        "sourceUrl": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller?variant=44894241554547",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "PWM",
+          "chargeCurrentA": 10
+        }
+      }
+    },
+    "url": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-05T03:18:24.316Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Maximum PV input power",
+        "130W / 12V; 260W / 24V"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained. Identity corrigendum: exact original model/SKU/selected variant/pack source bindings reverified; maxPvVoltage=50 is an imported rating, absent before hydration, and cannot be an import prerequisite. Existing facts/conditions/source dates unchanged."
   }
 ]

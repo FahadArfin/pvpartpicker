@@ -17,3 +17,13 @@ test('contradictory battery source measurements are rejected against listing anc
 test('excluded panel variants cannot masquerade as reviewed imports',()=>{const panel={...p,category:'panels' as const,specs:{watts:400}};const r={...record,expected:{battery:{...expected,category:'panels' as const,anchors:{watts:400}}},rows:[['Maximum Power','500 W'],['Open Circuit Voltage (Voc)','45 V']]};assert.equal(importReviewedSpecification(panel,[r]),undefined);});
 test('source energy is normalized Wh/kWh and cannot contradict the anchored battery capacity',()=>{const q={...p,specs:{...p.specs,capacityKwh:5.12}},r={...record,expected:{[p.id]:{...expected,anchors:{...expected.anchors,capacityKwh:5.12}}},rows:[['Energy capacity','10240 Wh']]};assert.equal(importReviewedSpecification(q,[r]),undefined);assert.ok(importReviewedSpecification(q,[{...r,rows:[['Energy capacity','5120 Wh']]}]));});
 test('zero and fractional limits cannot enter runtime electrical specifications',()=>{for(const [key,value] of [['maxChargeCurrent','0 A'],['maxPvVoltage','0 V'],['mpptCount','0'],['mpptCount','1.5']]){const d={summary:'',groups:[{title:'Electrical',fields:[{key,label:key,value,source:record.url,kind:'manual' as const}]}],sources:[{url:record.url,kind:'manual' as const,label:'Manual'}],notes:[]};assert.equal(applySpecificationEvidence(p,{[p.id]:d}).specs[key],undefined);}});
+
+test('reimport from an enriched catalog preserves the valid original source identity',()=>{
+ const prior=importReviewedSpecification(p,[record])!;
+ const hydrated=applySpecificationEvidence(p,{[p.id]:prior});
+ const circular={...record,expected:{[p.id]:{...expected,anchors:{...expected.anchors,maxChargeCurrent:100}}}};
+ const regenerated=importReviewedSpecification(hydrated,[circular,record],prior)!;
+ assert.deepEqual(regenerated.identity,prior.identity);
+ assert.equal(applySpecificationEvidence(p,{[p.id]:regenerated}).specification,regenerated);
+ assert.deepEqual(regenerated.groups,prior.groups);
+});

@@ -1,24 +1,24 @@
 {
-  "checkedAt": "2026-10-12T22:10:56.292Z",
-  "catalogListings": 8603,
-  "completeListings": 1319,
-  "remainingListings": 7284,
-  "remainingFields": 38855,
+  "checkedAt": "2026-10-12T22:40:03.886Z",
+  "catalogListings": 8609,
+  "completeListings": 1320,
+  "remainingListings": 7289,
+  "remainingFields": 38886,
   "reviewedGaps": 3875,
   "blockedListings": 288,
-  "awaitingReview": 3121,
+  "awaitingReview": 3126,
   "categories": [
     {
       "category": "batteries",
-      "listings": 2106,
-      "remainingListings": 2101,
-      "remainingFields": 11662
+      "listings": 2107,
+      "remainingListings": 2102,
+      "remainingFields": 11671
     },
     {
       "category": "inverters",
       "listings": 1043,
       "remainingListings": 1043,
-      "remainingFields": 9053
+      "remainingFields": 9058
     },
     {
       "category": "panels",
@@ -46,9 +46,9 @@
     },
     {
       "category": "electrical",
-      "listings": 413,
-      "remainingListings": 407,
-      "remainingFields": 1644
+      "listings": 414,
+      "remainingListings": 408,
+      "remainingFields": 1649
     },
     {
       "category": "accessories",
@@ -58,15 +58,15 @@
     },
     {
       "category": "monitoring",
-      "listings": 243,
-      "remainingListings": 242,
-      "remainingFields": 835
+      "listings": 244,
+      "remainingListings": 243,
+      "remainingFields": 839
     },
     {
       "category": "mounting",
-      "listings": 306,
-      "remainingListings": 298,
-      "remainingFields": 783
+      "listings": 308,
+      "remainingListings": 300,
+      "remainingFields": 791
     },
     {
       "category": "module-electronics",
@@ -76,7 +76,7 @@
     },
     {
       "category": "kits",
-      "listings": 1291,
+      "listings": 1292,
       "remainingListings": 25,
       "remainingFields": 25
     }

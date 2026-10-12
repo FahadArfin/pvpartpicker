@@ -1,0 +1,97 @@
+{
+  "checkedAt": "2026-10-12T22:35:28.935Z",
+  "baseCommit": "0932953c729acb9ebc3b9d163aebb8f14078ba56",
+  "indexEntries": 4634,
+  "changedIdentities": [
+    "renogy-44251647869043",
+    "renogy-44894241521779",
+    "renogy-44894241554547",
+    "shopsolar-52726444785804",
+    "shopsolar-52726482337932"
+  ],
+  "strongFieldObjectsRetained": 29682,
+  "sourceObjectsRetained": 8077,
+  "panelCellsAndSourceReferencesRetained": 2421,
+  "oldRegistryRecordsRetained": 4235,
+  "correctiveRecordsAppended": 5,
+  "newResearchFacts": 0,
+  "remainingListings": 7286,
+  "remainingFields": 38866,
+  "catalogListings": 8605,
+  "comparisonFillsFromCorrection": 0,
+  "applied": 4630,
+  "withheld": [
+    "eg4-18kpv",
+    "eg4-6000xp",
+    "eg4-lifepower4-v2",
+    "eg4-ll-s"
+  ],
+  "batchIdsApplied": 79,
+  "summaries": [],
+  "tests": {
+    "discovered": 582,
+    "passed": 579,
+    "skipped": 3,
+    "failed": 0,
+    "redImporterRegressionObserved": true,
+    "redFiveSourceFixturesObserved": true,
+    "typecheck": "passed"
+  },
+  "build": "passed",
+  "live": "pending corrected deployment",
+  "published": false,
+  "sourceReview": {
+    "report": "batch-sixteen-identity-corrigendum-review.json",
+    "sha256": "f88394f6c26ef17a69e4222ce6268751a367b46adc88e31e68eb30a8ac564e23",
+    "proposalSha256": "d124f89f3f85c4fc4d2a3be6f2941f5fdef7a2a25df1cdd3b4486b773ff39442",
+    "negativeProbes": 35
+  },
+  "browser": {
+    "status": "passed",
+    "observedFailedProductionMetadataSeededOnlyLocally": true,
+    "checkedProducts": [
+      "shopsolar-52726482337932",
+      "renogy-44251647869043"
+    ],
+    "dayDesktop": true,
+    "nightMobile375": true,
+    "panelSTCAndNOCTUnknownsPreserved": true,
+    "batteryRateAndTemperatureAndDurationPreserved": true,
+    "estimatesExplicitlyLabelled": true,
+    "localHistoryReviews503": "intentionally absent local tables",
+    "noLayoutChanges": true,
+    "viewportReset": true,
+    "temporaryTabClosed": true,
+    "ownedServerStopped": true
+  },
+  "latestCatalog": {
+    "catalogListings": 8609,
+    "remainingListings": 7289,
+    "remainingFields": 38886,
+    "remainingFamilies": 4442,
+    "checkedAt": "2026-10-12T22:40:32.375Z",
+    "appliedEntries": 4630,
+    "batchIdsApplied": 79,
+    "withheld": [
+      "eg4-18kpv",
+      "eg4-6000xp",
+      "eg4-lifepower4-v2",
+      "eg4-ll-s"
+    ],
+    "allPriorStrongFieldsSourcesPanelsStillPreserved": true
+  },
+  "priceRun": {
+    "id": 38316932209,
+    "status": "completed",
+    "conclusion": "success",
+    "acceptedObservations": 1315,
+    "retailers": {
+      "Inverters R Us": 280,
+      "ShopSolar": 1012,
+      "Signature Solar": 23
+    },
+    "publicTimestampCount": 1315,
+    "SanTanRecoveryProven": false,
+    "workflowEnabled": true
+  }
+}
