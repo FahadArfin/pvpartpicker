@@ -6,7 +6,9 @@ import {specificationRowsFromHtml} from '../lib/specification-html.ts';
 import {resolve} from 'node:path';
 import {pathToFileURL} from 'node:url';
 const args=process.argv.slice(2);const dir=pathToFileURL(resolve(args[args.indexOf('--cache')+1]||'../output/spec-research')+'/');await mkdir(dir,{recursive:true});
-const catalog=JSON.parse(await readFile(new URL('../data/catalog.json',import.meta.url),'utf8'));
+const catalogArgument=args.indexOf('--catalog');
+const catalogPath=catalogArgument>=0?resolve(args[catalogArgument+1]):new URL('../data/catalog.json',import.meta.url);
+const catalog=JSON.parse(await readFile(catalogPath,'utf8'));
 const groups=new Map();
 for(const p of catalog.products){const u=new URL(p.sourceUrl);u.search='';const list=groups.get(u.origin)||new Set();list.add(u.href);groups.set(u.origin,list);}
 const hash=url=>createHash('sha256').update(url).digest('hex').slice(0,16);

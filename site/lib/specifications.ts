@@ -33,7 +33,7 @@ const definitions:Definition[]=[
  {key:'chemistry',label:'Battery chemistry',group:'Capacity & battery',match:/^(?:battery type|battery chemistry|chemistry|cell chemistry|cell type)$/,categories:storage},
  {key:'cycleLife',label:'Cycle life (manufacturer conditions)',group:'Capacity & battery',match:/^(?:cycle life|life cycles|battery life cycles|cycles|cycling life)(?:.*)?$/,categories:storage},
  {key:'depthOfDischarge',label:'Depth of discharge',group:'Capacity & battery',match:/^(?:depth of discharge|dod)(?:.*)?$/,categories:storage},
- {key:'maxDischargeCurrent',label:'Maximum continuous discharge current',group:'Electrical ratings',match:/^(?:max(?:imum)?(?: continuous)? discharge current|continuous discharge current)(?:.*)?$/,categories:['batteries','all-in-one','inverters']},
+ {key:'maxDischargeCurrent',label:'Maximum continuous discharge current',group:'Electrical ratings',match:/^(?!.*(?:peak|pulse|surge|trip|protection))(?:max(?:imum)?(?: continuous)? discharge current|continuous discharge current)(?:.*)?$/,categories:['batteries','all-in-one','inverters']},
  {key:'peakDischargeCurrent',label:'Peak discharge current',group:'Electrical ratings',match:/^(?:max(?:imum)? discharge peak current|max(?:imum)? discharge current peak|peak discharge current|pulse discharge current)(?:.*)?$/,categories:storage},
  {key:'maxChargeCurrent',label:'Maximum charge current',group:'Electrical ratings',match:/^(?:max(?:imum)?(?: continuous)? charg(?:e|ing) current)(?:.*)?$/},
  {key:'chargeVoltage',label:'Charging voltage',group:'Electrical ratings',match:/^(?:charging voltage(?: range)?|charge voltage|maximum charge voltage|max charge voltage|recommended charge voltage)(?:.*)?$/},
@@ -101,6 +101,7 @@ const ratingKey=(label:string):string|undefined=>{
 function usable(value:string){return value.length>0&&value.length<420&&!/^(?:n\/?a|none|not applicable|[-–—]+)$/i.test(value)&&!/(?:regular price|sale price|save \d+%|rated \d out of|shop now|buy now)/i.test(value);}
 const measured=new Set(['moduleEfficiency','cellEfficiency','cellCount','noctTemperature','nmotTemperature','pmaxTemperatureCoefficient','vocTemperatureCoefficient','iscTemperatureCoefficient','maxSystemVoltage','maxSeriesFuse','snowLoad','windLoad','voltage','operatingVoltage','capacityAh','capacityKwh','maxDischargeCurrent','peakDischargeCurrent','maxChargeCurrent','chargeVoltage','outputWatts','surgeWatts','acOutput','frequency','efficiency','maxPvVoltage','mpptVoltageRange','mpptCount','maxMpptCurrent','maxPvIsc','maxPvWatts','chargeCurrentA','acChargeWatts','chargeTime','ratedCurrent','ratedVoltage','poles','interruptRating','gauge','length','dimensions','weight','tilt','operatingTemperature','chargeTemperature','dischargeTemperature','humidity','altitude']);
 function validMeasurement(key:string,value:string){
+ if(['maxDischargeCurrent','peakDischargeCurrent','maxChargeCurrent','chargeCurrentA','maxMpptCurrent','maxPvIsc','ratedCurrent'].includes(key)&&!/^\d+(?:\.\d+)?(?:\s*A\b.*)?$/i.test(value))return false;
  if(['outputWatts','surgeWatts','maxPvWatts','acChargeWatts'].includes(key)&&!(/^\d+(?:\.\d+)?$/.test(value)||/^[~<>≤≥±+−–—\-\s]*(?:(?:up to|max\.?|approximately)\s*)?\d+(?:\.\d+)?\s*k?w(?:atts?)?\b/i.test(value)))return false;
  return !measured.has(key)||/^(?:[~<>≤≥±+−–—\-\s]*(?:(?:up to|max\.?|approximately)\s*)?\d|AWG\s*\d)/i.test(value);
 }
@@ -220,6 +221,7 @@ export function specificationDisplayGroups(product:Product,details:ProductSpecif
 /** Static evidence applies to both snapshot and database records. Prices remain live. */
 export function applySpecificationEvidence(product:Product,index:Record<string,ProductSpecification>):Product{
  const specification=index[product.id];if(!specification)return product;
+ if(specification.identity){const i=specification.identity;if(product.name!==i.name||product.sourceUrl!==i.sourceUrl||product.category!==i.category||Object.entries(i.anchors).some(([key,value])=>product.specs[key]!==value))return product;}
  if(product.specification===specification)return product;
  if(specification.panelRatings?.stc.pmax&&product.specs.watts&&Math.abs(number(specification.panelRatings.stc.pmax)-Number(product.specs.watts))>.5)return product;
  const specs={...product.specs};
@@ -228,7 +230,8 @@ export function applySpecificationEvidence(product:Product,index:Record<string,P
  for(const field of specification.groups.flatMap(g=>g.fields)){
   if(field.key==='vocTemperatureCoefficient'&&/^[-+]?\d+(?:\.\d+)?\s*%\s*\/\s*[°º]C$/i.test(field.value))specs.vocTempCoefficient=number(field.value);
   if(['maxPvVoltage','maxMpptCurrent','mpptCount','chargeCurrentA','maxDischargeCurrent','maxChargeCurrent'].includes(field.key)){
-  if(field.kind!=='listing'&&specification.sources.some(s=>s.url===field.source&&s.kind!=='listing')&&/^\d+(?:\.\d+)?\s*(?:[AV]|VDC|A DC)?$/i.test(field.value)){specs[field.key]=number(field.value);}
+  const pattern=field.key==='maxPvVoltage'?/^\d+(?:\.\d+)?\s*(?:V|VDC)?$/i:field.key==='mpptCount'?/^\d+$/:/^\d+(?:\.\d+)?\s*(?:A|A DC)?$/i;
+  if(field.kind!=='listing'&&specification.sources.some(s=>s.url===field.source&&s.kind!=='listing')&&pattern.test(field.value)&&number(field.value)>0){specs[field.key]=number(field.value);}
  }}
  return {...product,specs,specification};
 }
