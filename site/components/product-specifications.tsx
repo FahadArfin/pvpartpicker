@@ -1,12 +1,11 @@
 import {ArrowUpRight,FileText} from 'lucide-react';
 import type {Product} from '../lib/types';
 import type {SpecEstimate} from '../lib/specification-estimates';
-import {buildSpecification,specificationDisplayGroups} from '../lib/specifications';
+import {specificationForDisplay,specificationDisplayGroups} from '../lib/specifications';
 
 const ratings=[['pmax','Maximum power (Pmax)'],['moduleEfficiency','Module efficiency'],['voc','Open-circuit voltage (Voc)'],['vmp','Maximum-power voltage (Vmp)'],['imp','Maximum-power current (Imp)'],['isc','Short-circuit current (Isc)']];
 export function ProductSpecifications({product,estimates=[],gap}:{product:Product;estimates?:SpecEstimate[];gap?:string}){
- // Old station/panel evidence must not become a whole-bundle voltage or capacity rating.
- const details=product.category==='kits'?buildSpecification(product):product.specification||buildSpecification(product),panel=details.panelRatings;
+ const details=specificationForDisplay(product),panel=details.panelRatings;
  const sources=details.sources;
  const groups=specificationDisplayGroups(product,details),visibleGroups=groups.map(g=>({...g,fields:g.fields.filter(f=>!/^Not (?:verified|published)$/.test(f.value)||estimates.some(e=>e.key===f.key))})).filter(g=>g.fields.length);
  const missingGroups=groups.filter(g=>!visibleGroups.some(v=>v.title===g.title));
