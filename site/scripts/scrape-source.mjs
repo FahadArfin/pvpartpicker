@@ -27,8 +27,16 @@ export async function scrapeSource(job,{event,publish},transport=fetchSource){
  }
  function collect(html,url){const found=parseProductPage(html,site,url,new Date().toISOString());products.push(...found);progress.checked++;progress.found+=found.length;return found.length;}
  async function feedData(body,url){
-  if(/^(?:forbidden|access denied|unauthorized|authentication required)\b/i.test(text(body))||/^\s*(?:<!doctype|<html)/i.test(body)&&/forbidden|access denied/i.test(body.slice(0,4000))){progress.errors++;await report({url,status:'error',httpStatus:200,durationMs:0,message:'Source access denied; no fallback attempted'});throw new Error('Source access denied; no fallback attempted');}
-  try{return JSON.parse(body);}catch{malformedFeed=true;progress.errors++;await report({url,status:'error',httpStatus:200,durationMs:0,message:'Product feed returned malformed JSON; known listings will be checked.'});throw new Error('Malformed product feed');}
+  // Escaped closing tags inside JSON descriptions are not HTML. Parsing the
+  // serialized feed as HTML first can create a deeply nested DOM and overflow.
+  try{return JSON.parse(body);}catch{}
+  // Only invalid JSON reaches HTML inspection. Walk iteratively to retain
+  // entity-decoded refusal text without overflowing on nested denial pages.
+  const prefix=body.slice(0,4000),pending=[load(body)('body')[0]],parts=[];
+  while(pending.length){const node=pending.pop();if(node?.type==='text')parts.push(node.data);else if(node?.children&&node.type!=='comment')for(let i=node.children.length-1;i>=0;i--)pending.push(node.children[i]);}
+  const denialText=parts.join('').replace(/\s+/g,' ').trim();
+  if(/^(?:forbidden|access denied|unauthorized|authentication required)\b/i.test(denialText)||/^\s*(?:<!doctype|<html)/i.test(prefix)&&/forbidden|access denied/i.test(prefix)){progress.errors++;await report({url,status:'error',httpStatus:200,durationMs:0,message:'Source access denied; no fallback attempted'});throw new Error('Source access denied; no fallback attempted');}
+  malformedFeed=true;progress.errors++;await report({url,status:'error',httpStatus:200,durationMs:0,message:'Product feed returned malformed JSON; known listings will be checked.'});throw new Error('Malformed product feed');
  }
  function synthetic(p){collect('<script type="application/ld+json">'+JSON.stringify(p).replace(/<\//g,'<\\/')+'</script>',p.offers.url);}
  let failed=false;

@@ -1,0 +1,218 @@
+{
+  "checkedAt": "2026-10-12T22:19:56.264Z",
+  "batch": "sixteen",
+  "sourceBase": "0a7cb1ba8eb6c7aaecd81d927b0adc02b789f95c",
+  "approvedSourceRecords": 77,
+  "newSourceBackedTechnicalFields": 218,
+  "changedTechnicalIds": 78,
+  "newPanelCells": 12,
+  "priorIndexIds": 4593,
+  "indexIds": 4634,
+  "priorStrongFieldsRetained": 29464,
+  "priorSourceObjectsRetained": 7996,
+  "priorPanelCellsAndFlatSourceRefsRetained": 2409,
+  "priorRegistryRecordsRetained": 4158,
+  "fixedBaselineMissingFields": 39077,
+  "fixedComparisonFills": 209,
+  "fixed": {
+    "catalogListings": 8604,
+    "remainingListings": 7285,
+    "remainingFields": 38868
+  },
+  "current": {
+    "catalogListings": 8603,
+    "remainingListings": 7284,
+    "remainingFields": 38855
+  },
+  "assignedFamilies": 240,
+  "assignedListingIds": 705,
+  "inspectedFamilies": 237,
+  "inspectedListingIds": 699,
+  "uninspectedListingIds": 6,
+  "inspectionCreditExcludesRemovedVariantsAndUncachedKits": true,
+  "categoryRoleGapRetirement": 0,
+  "sourceReviews": [
+    "review-sixteen-generation-v2-independent.json",
+    "review-sixteen-balance-v3-independent.json",
+    "review-sixteen-storage-independent.json",
+    "review-sixteen-storage-secondary-independent.json"
+  ],
+  "promotion": {
+    "promotedAt": "2026-10-12T22:07:30.778Z",
+    "records": 77,
+    "distinctIds": 79,
+    "verifiedPayloadFiles": 2113,
+    "baselineRecords": 4158,
+    "registryRecords": 4235,
+    "packets": [
+      {
+        "role": "generation",
+        "records": 40,
+        "manifestSha256": "292a1dee72192a76c2a5f28c101259aa527a2ed4ef05cac206bd6aa7dff43d7a",
+        "candidateSha256": "fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c",
+        "reviewSha256": "d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0",
+        "payloadFiles": 1451
+      },
+      {
+        "role": "balance",
+        "records": 27,
+        "manifestSha256": "0b443e8aadaeb0f6216cd559b71d4e325cea829e4ee4ac942e4901621ff99149",
+        "candidateSha256": "d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084",
+        "reviewSha256": "778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5",
+        "payloadFiles": 425
+      },
+      {
+        "role": "storage",
+        "records": 9,
+        "manifestSha256": "ad5e604e3144df8d961d02f2811536c29b311db2f69368963429a55b2aa309c6",
+        "candidateSha256": "45fa40e4261a0b037e32fd4c9e063302dd64c212d76b18a2c3943c696a013a83",
+        "reviewSha256": "6a2daf33481874a7e66571238507050e32cf2cf1e2c4a08d2885e49eb3a8e3a4",
+        "payloadFiles": 172
+      },
+      {
+        "role": "storage-secondary",
+        "records": 1,
+        "manifestSha256": "392a8f62aa199521ee7bd3993f11741d5c9a5c0a82ccebc37fbffda922b7a264",
+        "candidateSha256": "26b00f1196bf554a27204c295d0e985189ae8ac1cc88355e8cac6097abfca2e5",
+        "reviewSha256": "d7c5dcf4a4ca34a98e4364fafa09c654b8bf9c3551c30407c225cd3c46545456",
+        "payloadFiles": 65
+      }
+    ],
+    "indexImportPerformed": false
+  },
+  "acquisition": {
+    "checkedAt": "2026-10-12T21:57:17.070741+00:00",
+    "capturedResponses": 108,
+    "lookupAttempts": 108,
+    "successfulResponses": 104,
+    "nonSuccessBodiesRetained": 4,
+    "sourceLookups": 95,
+    "robotsLookups": 13,
+    "minimumGlobalStartGapSeconds": 2.300071954727173,
+    "overlappingRequests": 0,
+    "allBodyHashesAndSizesMatch": true,
+    "robotsPermissionAndDelaysVerified": true,
+    "ownedClaimReleased": true,
+    "newPauses": [],
+    "pausedOrigins": [
+      "0fa80982-c142-44c6-a762-5e4fe5133859.usrfiles.com",
+      "apsmartglobal.com",
+      "catalog.k2-systems.com",
+      "cdn.currentconnected.com",
+      "cdn.prod.website-files.com",
+      "eg4electronics.com",
+      "enphase.com",
+      "gopowersolar.com",
+      "invertersrus.com",
+      "mppsolar.com",
+      "practicalpreppers.com",
+      "r.jackery.net",
+      "s3.amazonaws.com",
+      "s3.us-east-1.amazonaws.com",
+      "salesforce-knowledge-download.s3.us-west-2.amazonaws.com",
+      "santansolar.com",
+      "signaturesolar.imagerelay.com",
+      "solar-electric.com",
+      "solaxpower.com",
+      "tamaracksolar.com",
+      "us.ecoflow.com",
+      "vatrerpower.com",
+      "watts247.az3.infogenixdev.com",
+      "watts247.com",
+      "www.snapnrack.com"
+    ],
+    "transportFailures": [],
+    "skippedRequests": [],
+    "skippedPausedRequestsAreNotInspectedSources": true,
+    "helperSha256": "80210fe5d1225364a427d5570db744c14f78570f3a16081f6b7ee551250df50e",
+    "failures": []
+  },
+  "qualifiedConditions": [
+    "Sol-Ark15K rated175–425V versusgeneral150–500V range both retained; numeric connection-map compatibility stays unknown",
+    "Sol-Ark60K current and short-circuit limits explicitly per MPPT",
+    "Epoch12334A-MC maximumcontinuouscharging300A at25°C; charging/discharging recommendations not interchanged",
+    "Selected cable length39in100cm retained as nominalrounded1m, conflicting gauge/current excluded"
+  ],
+  "heldClaims": [
+    "Mismatching HUSKY105/200Ah hardware generation",
+    "Renon A03manual1225mm vsselected880mm hardware generation; no200A directional inference",
+    "Busbar1000A versus1500/2000A and conflictingMPNs",
+    "Cable40in/105cm inconsistency and6AWG/30A versus8AWG/50A conflict",
+    "Removed HQSTvariants, unbound dongle subtype, and threeuncachedkits receive noinspectioncredit"
+  ],
+  "priceFix": {
+    "review": "worktree/output/specification-price-fix/review-independent.json",
+    "baseOverflowReproduced": true,
+    "focusedTests": 25,
+    "workflowConfigurationChanged": false,
+    "hostedRecoveryProven": false
+  },
+  "priceRun": {
+    "id": "38314481742",
+    "status": "completed",
+    "workflowConclusion": "success",
+    "acceptedObservations": 514,
+    "retailers": {
+      "ShopSolar": 493,
+      "Signature Solar": 21,
+      "Inverters R Us": "failed; zero observations"
+    },
+    "allRetailersHealthy": false
+  },
+  "published": false,
+  "failures": [],
+  "proposedListingIds": 79,
+  "uninspectedIds": [
+    "hqst-52549741183294",
+    "hqst-53114609271102",
+    "current-connected-eg4-monitoring-adapter-with-ethernet-and-4g-lte-options-monitoring-modem-for-eg4-hybrid-and-off-grid-i",
+    "inverters-r-us-gp-flex-55e",
+    "inverters-r-us-kit1009",
+    "inverters-r-us-samlex-srv-130"
+  ],
+  "currentRemainingFamilies": 4437,
+  "catalogDeduplication": {
+    "removedListing": "shopsolar-43088092004492",
+    "canonicalOwner": "eg4-12kpv",
+    "sameOfferRetained": true,
+    "gapsRetired": 13,
+    "countedAsResearch": false,
+    "oldSavedIdResolution": "unavailable; separate alias repair remains queued"
+  },
+  "validation": {
+    "testsDiscovered": 576,
+    "testsPassed": 573,
+    "testsSkipped": 3,
+    "testsFailed": 0,
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "browser": {
+      "status": "passed",
+      "products": [
+        "best-solar-bundle-43680131317802",
+        "shopsolar-41599854379148",
+        "inverters-r-us-12334a-mc"
+      ],
+      "themes": [
+        "light desktop1280",
+        "dark mobile375"
+      ],
+      "qualifiedRangesAndCurrentsAndTemperaturePreserved": true,
+      "checkedInverterHorizontalOverflow": false,
+      "localHistoryReviews": "503 due intentionally omitted local tables",
+      "scope": "UI rendering; hydrated snapshot is not raw database identity proof",
+      "temporaryTabClosed": true,
+      "viewportReset": true,
+      "ownedPreviewStopped": true
+    },
+    "wholeBranchReview": {
+      "report": "batch-sixteen-whole-branch-review.json",
+      "sha256": "31fd9630228e8b1a4917e22e7f2386317d597a83826c4e933a0f7772b8a62e4b",
+      "verdict": "approved_with_bounded_limits",
+      "livePublicationGateRequired": true
+    }
+  },
+  "sourceDocumentationOnlyId": "watts247-50619",
+  "sourceBindingProof": "batch-sixteen-release-source-binding-proof.json",
+  "rawD1IdentityReplay": "Not claimed: public snapshots are hydrated. Original frozen listing/model/variant bindings independently verified for all79; deployed guard attachment remains a required live check."
+}

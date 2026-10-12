@@ -210355,5 +210355,3888 @@
     "variantEvidence": [],
     "reviewNote": "The URL filename is2023, internal retained document version is2.0/2024-05-30; actual retained version authoritative.  Root independent identity/source/importer delta review pending. Independent exact immutable source review 2026-10-12T21:01:26.945360+00:00 approved candidate SHA 49547f29ff9b8d05718071039857c08d4afeaa0b0a40b4fa16b7114b577b49f3. Published estimates retain explicit qualifications and are not measured ratings.",
     "artifactOriginalPath": "output\\specification-research\\batch-fifteen-collected\\75c1c542d029419fa1627306a7a338c5.pdf"
+  },
+  {
+    "productIds": [
+      "shopsolar-44678937837708"
+    ],
+    "expected": {
+      "shopsolar-44678937837708": {
+        "name": "EcoFlow DELTA 3 Max Plus – 2,048Wh / 3,000W Portable Power Station + Choose Custom Solar Panel Bundle Option | 5-Year Warranty | Complete Solar Kit — DELTA 3 MAX PLUS [Main Unit Only]",
+        "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-max-plus?variant=44678937837708",
+        "category": "all-in-one",
+        "anchors": {
+          "stationType": "Integrated power station",
+          "capacityKwh": 2.048
+        }
+      }
+    },
+    "url": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/EcoFlow_DELTA_3_Max_Plus_Portable_Power_Station_User_Manual.pdf?v=1761050058",
+    "kind": "manual",
+    "checkedAt": "2026-10-12T21:34:45.934782+00:00",
+    "label": "Exact selected EF-DL3-MP US labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Rated AC output power",
+        "3000 W total (discharge mode)"
+      ],
+      [
+        "AC output voltage",
+        "120 V"
+      ],
+      [
+        "AC frequency",
+        "60 Hz"
+      ],
+      [
+        "Maximum PV input current",
+        "18 A"
+      ],
+      [
+        "Maximum PV input voltage",
+        "60 V"
+      ],
+      [
+        "Dimensions",
+        "Approximately 494 × 242 × 305 mm (19.4 × 9.5 × 12.0 in)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "shopsolar-44337746575500"
+    ],
+    "expected": {
+      "shopsolar-44337746575500": {
+        "name": "NUE SunCase 3651 Portable Power Station | 3,600W Inverter & 5.12kWh LiFePO4 | 120V & 48V Output | Bundle Options w/ 240W Solar Panels | 2-Year Warranty — SunCase 3651 [Main Unit Only]",
+        "sourceUrl": "https://shopsolarkits.com/products/nue-suncase-3651-solar-generator?variant=44337746575500",
+        "category": "all-in-one",
+        "anchors": {
+          "capacityKwh": 5.12,
+          "stationType": "Integrated power station"
+        }
+      }
+    },
+    "url": "https://cdn.shopify.com/s/files/1/0743/7097/3969/files/SunCase_3651_Datasheet_print_2.pdf?v=1707428016",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-12T21:34:50.535744+00:00",
+    "label": "Exact selected SunCase3651 selectedSC-3651-126 labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Maximum PV input power",
+        "1700 W"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "inverters-r-us-e1000lfp"
+    ],
+    "expected": {
+      "inverters-r-us-e1000lfp": {
+        "name": "PECRON E1000LFP Portable Power Station 1800W 1024Wh",
+        "sourceUrl": "https://invertersrus.com/product/pecron-e1000lfp-portable-power-station-1800w-1024wh/",
+        "category": "all-in-one",
+        "anchors": {
+          "stationType": "Integrated power station",
+          "capacityKwh": 1.024
+        }
+      }
+    },
+    "url": "https://invertersrus.com/product/pecron-e1000lfp-portable-power-station-1800w-1024wh/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:23.995Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Rated AC output power",
+        "1800W"
+      ],
+      [
+        "Surge power",
+        "3000W (10MS)"
+      ],
+      [
+        "AC output voltage",
+        "100V~120V Pure Sine Wave"
+      ],
+      [
+        "Dimensions",
+        "14.9*9.4*10 in"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "inverters-r-us-e1500lfp"
+    ],
+    "expected": {
+      "inverters-r-us-e1500lfp": {
+        "name": "PECRON E1500LFP Expandable Portable Power Station 2200W 1536Wh V3 Version",
+        "sourceUrl": "https://invertersrus.com/product/pecron-e1500lfp/",
+        "category": "all-in-one",
+        "anchors": {
+          "stationType": "Integrated power station",
+          "capacityKwh": 1.536
+        }
+      }
+    },
+    "url": "https://invertersrus.com/product/pecron-e1500lfp/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:27.216Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Rated AC output power",
+        "2200W"
+      ],
+      [
+        "Surge power",
+        "4400W (10ms)"
+      ],
+      [
+        "AC output voltage",
+        "100V~120V Pure Sine Wave"
+      ],
+      [
+        "Dimensions",
+        "14.8×9.3×12 in"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "shopsolar-46262671179916"
+    ],
+    "expected": {
+      "shopsolar-46262671179916": {
+        "name": "Jackery Explorer 1500 Ultra Solar Generator Custom Kits | 1,536Wh | 1,800W Output | 3,600W Peak | IP65 Rugged | 5-Year Warranty — Jackery 1500 Ultra [Main Unit Only]",
+        "sourceUrl": "https://shopsolarkits.com/products/jackery-explorer-1500-ultra?variant=46262671179916",
+        "category": "all-in-one",
+        "anchors": {
+          "stationType": "Integrated power station",
+          "capacityKwh": 1.536
+        }
+      }
+    },
+    "url": "https://cdn.shopify.com/s/files/1/0970/9262/files/Jackery_Explorer_1500_Ultra_USER_MANUAL.pdf?v=1766979182",
+    "kind": "manual",
+    "checkedAt": "2026-10-12T21:34:57.437221+00:00",
+    "label": "Exact selected JE-1500C US labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Rated AC output power",
+        "1800 W"
+      ],
+      [
+        "AC output voltage",
+        "120 V"
+      ],
+      [
+        "AC frequency",
+        "60 Hz"
+      ],
+      [
+        "Maximum PV input power",
+        "800 W"
+      ],
+      [
+        "Maximum PV input current",
+        "12 A per DC8020 port;24 A double-port maximum"
+      ],
+      [
+        "Maximum PV input voltage",
+        "60 V"
+      ],
+      [
+        "Dimensions",
+        "13.2 × 10.4 × 11.6 in /33.6 × 26.4 × 29.5 cm"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "inverters-r-us-e2000lfp"
+    ],
+    "expected": {
+      "inverters-r-us-e2000lfp": {
+        "name": "PECRON E2000LFP Portable Power Station 2000W 1920Wh",
+        "sourceUrl": "https://invertersrus.com/product/pecron-e2000lfp/",
+        "category": "all-in-one",
+        "anchors": {
+          "stationType": "Integrated power station",
+          "capacityKwh": 1.92
+        }
+      }
+    },
+    "url": "https://invertersrus.com/product/pecron-e2000lfp/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:30.336Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Rated AC output power",
+        "2000W"
+      ],
+      [
+        "Surge power",
+        "4000W (10MS）"
+      ],
+      [
+        "Dimensions",
+        "16.1x10x11.6in"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "inverters-r-us-e2400lfp"
+    ],
+    "expected": {
+      "inverters-r-us-e2400lfp": {
+        "name": "PECRON E2400LFP Portable Power Station 2400W 2048Wh",
+        "sourceUrl": "https://invertersrus.com/product/pecron-e2400lfp/",
+        "category": "all-in-one",
+        "anchors": {
+          "stationType": "Integrated power station",
+          "capacityKwh": 2.048
+        }
+      }
+    },
+    "url": "https://invertersrus.com/product/pecron-e2400lfp/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:33.170Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Rated AC output power",
+        "2400W"
+      ],
+      [
+        "Surge power",
+        "4000W (10ms)"
+      ],
+      [
+        "AC output voltage",
+        "100V~120V Pure Sine Wave"
+      ],
+      [
+        "Dimensions",
+        "14.8*9.3*13 in"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "signature-solar-1593101"
+    ],
+    "expected": {
+      "signature-solar-1593101": {
+        "name": "Victron SmartSolar MPPT 250/100-Tr VE.Can",
+        "sourceUrl": "https://signaturesolar.com/victron-smartsolar-mppt-250-100-tr-ve-can/",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "MPPT"
+        }
+      }
+    },
+    "url": "https://www.victronenergy.com/upload/documents/Datasheet-SmartSolar-charge-controller-MPPT-250-70-up-to-250-100-VE.Can-EN.pdf",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-12T21:35:38.843279+00:00",
+    "label": "Exact selected SmartSolar250/100-Tr VE.Can labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Rated charge current",
+        "100 A"
+      ],
+      [
+        "Nominal system voltage",
+        "12/24/48 V automatic;36 V manual"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "santan-solar-vicssmppt250100"
+    ],
+    "expected": {
+      "santan-solar-vicssmppt250100": {
+        "name": "Victron 100A 250/100 Smart Solar Charge Controller",
+        "sourceUrl": "https://www.santansolar.com/product/victron-100a-250-100-smart-solar-charge-controller/",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "Solar controller",
+          "chargeCurrentA": 100
+        }
+      }
+    },
+    "url": "https://www.santansolar.com/product/victron-100a-250-100-smart-solar-charge-controller/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:29:47.412Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Nominal system voltage",
+        "12V/24V/48V Auto Select (software tool needed for 36V)"
+      ],
+      [
+        "Maximum PV Short Circuit Current",
+        "70A"
+      ],
+      [
+        "Maximum PV Open Circuit Voltage",
+        "250V"
+      ],
+      [
+        "Operating Temperature Range",
+        "-30 to 60°C (-22 to 140°F)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "santan-solar-scc115060211"
+    ],
+    "expected": {
+      "santan-solar-scc115060211": {
+        "name": "Victron MPPT SmartSolar 150/60A Solar Charge Controller",
+        "sourceUrl": "https://www.santansolar.com/product/victron-energy-smartsolar-mppt-150-60-tr-solar-charge-controller/",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "MPPT",
+          "chargeCurrentA": 60
+        }
+      }
+    },
+    "url": "https://www.santansolar.com/product/victron-energy-smartsolar-mppt-150-60-tr-solar-charge-controller/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:28:42.960Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Nominal system voltage",
+        "12 – 48V"
+      ],
+      [
+        "Maximum PV input power",
+        "860W(12V Battery); 1720W(24V battery); 2580W(36V battery); 3440W(48V battery)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "santan-solar-scc115110211"
+    ],
+    "expected": {
+      "santan-solar-scc115110211": {
+        "name": "Victron MPPT SmartSolar 150/100 Solar Charge Controller",
+        "sourceUrl": "https://www.santansolar.com/product/victron-energy-smartsolar-mppt-150-100-tr-solar-charge-controller/",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "MPPT"
+        }
+      }
+    },
+    "url": "https://www.santansolar.com/product/victron-energy-smartsolar-mppt-150-100-tr-solar-charge-controller/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:28:46.970Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Nominal system voltage",
+        "12 – 48V"
+      ],
+      [
+        "Rated charge current",
+        "100A"
+      ],
+      [
+        "Maximum PV input power",
+        "1450W(12V Battery); 2900W(24V battery); 4350W(36V battery); 5800W(48V battery)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "santan-solar-scc125085411"
+    ],
+    "expected": {
+      "santan-solar-scc125085411": {
+        "name": "Victron MPPT SmartSolar 250/85A Solar Charge Controller",
+        "sourceUrl": "https://www.santansolar.com/product/victron-mppt-smartsolar-250-85a-solar-charge-controller/",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "MPPT",
+          "chargeCurrentA": 85
+        }
+      }
+    },
+    "url": "https://www.santansolar.com/product/victron-mppt-smartsolar-250-85a-solar-charge-controller/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:28:53.028Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Nominal system voltage",
+        "12 – 48V"
+      ],
+      [
+        "Maximum PV input power",
+        "1200W(12V Battery); 2400W(24V battery); 3600W(36V battery); 4900W(48V battery)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "hqst-53469847028030"
+    ],
+    "expected": {
+      "hqst-53469847028030": {
+        "name": "HQST 60A MPPT Solar Charge Controller with Smart APP Control, LiFePO4 Battery Low Temp Protection, and Parallel Charging",
+        "sourceUrl": "https://hqsolarpower.com/products/hqst-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=53469847028030",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "MPPT",
+          "chargeCurrentA": 60
+        }
+      }
+    },
+    "url": "https://hqsolarpower.com/products/hqst-12v-24v-36v-48v-60a-mppt-solar-charge-controller",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-12T01:27:40.520Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Nominal system voltage",
+        "12V/24V/36V/48V"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "hqst-52549741150526"
+    ],
+    "expected": {
+      "hqst-52549741150526": {
+        "name": "HQST 80A MPPT Solar Charge Controller with Smart APP Control, LiFePO4 Battery Low Temp Protection, and Parallel Charging — 80A MPPT",
+        "sourceUrl": "https://hqsolarpower.com/products/80a-mppt-solar-charge-controller-with-smart-app-control-lifepo4-battery-low-temp-protection-and-parallel-charging?variant=52549741150526",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "MPPT",
+          "chargeCurrentA": 80
+        }
+      }
+    },
+    "url": "https://hqsolarpower.com/products/80a-mppt-solar-charge-controller-with-smart-app-control-lifepo4-battery-low-temp-protection-and-parallel-charging",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-12T01:25:50.990Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Nominal system voltage",
+        "12V/24V/36V/48V"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "renogy-44894241521779"
+    ],
+    "expected": {
+      "renogy-44894241521779": {
+        "name": "Wanderer 10A PWM Charge Controller — Controller Only",
+        "sourceUrl": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller?variant=44894241521779",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "PWM",
+          "chargeCurrentA": 10,
+          "maxPvVoltage": 50
+        }
+      }
+    },
+    "url": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-05T03:18:24.316Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Maximum PV input power",
+        "130W / 12V; 260W / 24V"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "renogy-44894241554547"
+    ],
+    "expected": {
+      "renogy-44894241554547": {
+        "name": "Wanderer 10A PWM Charge Controller — 🔥 W/ Bluetooth Module",
+        "sourceUrl": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller?variant=44894241554547",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "PWM",
+          "chargeCurrentA": 10,
+          "maxPvVoltage": 50
+        }
+      }
+    },
+    "url": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-05T03:18:24.316Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Maximum PV input power",
+        "130W / 12V; 260W / 24V"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "best-solar-bundle-43680131317802"
+    ],
+    "expected": {
+      "best-solar-bundle-43680131317802": {
+        "name": "Sol-Ark 15kW Hybrid Inverter — 15kW",
+        "sourceUrl": "https://bestsolarbundle.com/products/sol-ark-15kw-hybrid-inverter?variant=43680131317802",
+        "category": "inverters",
+        "anchors": {
+          "inverterType": "Hybrid",
+          "outputWatts": 15000
+        }
+      }
+    },
+    "url": "https://bestsolarbundle.com/cdn/shop/files/SK150-0001-002-15K-2P-N-EN-Datasheet.pdf?v=5673859400369419455",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-12T21:36:13.309534+00:00",
+    "label": "Exact selected Sol-Ark15K-2P-N Limitless15K-LV labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Maximum PV input power",
+        "19500 W (STC)"
+      ],
+      [
+        "MPPT voltage range",
+        "175–425 V rated MPPT operating range;150–500 V general MPPT voltage range"
+      ],
+      [
+        "Maximum PV input voltage",
+        "500 V"
+      ],
+      [
+        "Maximum operating input current",
+        "26 A per MPPT"
+      ],
+      [
+        "Maximum input short circuit current",
+        "44 A per MPPT"
+      ],
+      [
+        "No. of MPP trackers",
+        "3"
+      ],
+      [
+        "AC output voltage",
+        "120/240 V,120/208 V,220 V"
+      ],
+      [
+        "AC frequency",
+        "50/60 Hz"
+      ],
+      [
+        "Battery voltage range",
+        "43–63 V"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "shopsolar-46311837696140"
+    ],
+    "expected": {
+      "shopsolar-46311837696140": {
+        "name": "BigBattery APEX 6.5K Hybrid Off-Grid Inverter | 6,500W 120/240V Split-Phase | Dual MPPT 10kW | 48V | UL1741 | 5-Year Warranty",
+        "sourceUrl": "https://shopsolarkits.com/products/bigbattery-apex-6-5k-hybrid-inverter?variant=46311837696140",
+        "category": "inverters",
+        "anchors": {
+          "watts": 6500,
+          "voltage": 240,
+          "inverterType": "Hybrid",
+          "acOutput": "120/240V split-phase",
+          "outputWatts": 6500,
+          "systemVoltageV": 48
+        }
+      }
+    },
+    "url": "https://bigbattery.com/wp-content/uploads/2026/02/APEX-SpecSheet0202.pdf",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-12T21:36:22.512179+00:00",
+    "label": "Exact selected APEX-6.5kW labelled technical table;source scope retained",
+    "rows": [
+      [
+        "AC frequency",
+        "50/60 Hz"
+      ],
+      [
+        "Battery voltage range",
+        "40–60 VDC"
+      ],
+      [
+        "Number of MPPTs",
+        "2 (source No.ofMPPT:1+1)"
+      ],
+      [
+        "Maximum PV input power",
+        "10000 W total (5000 W +5000 W)"
+      ],
+      [
+        "Maximum PV input current",
+        "18 A +18 A"
+      ],
+      [
+        "Maximum PV input voltage",
+        "550 VDC per input"
+      ],
+      [
+        "MPPT voltage range",
+        "125–450 VDC"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "shopsolar-46311637090444"
+    ],
+    "expected": {
+      "shopsolar-46311637090444": {
+        "name": "BigBattery APEX 10K Hybrid Off-Grid Inverter | 10,000W 120/240V Split-Phase | Dual MPPT 11kW PV | 48V | UL1741 | 5-Year Warranty",
+        "sourceUrl": "https://shopsolarkits.com/products/bigbattery-apex-10k-off-grid-hybrid-inverter?variant=46311637090444",
+        "category": "inverters",
+        "anchors": {
+          "watts": 10000,
+          "voltage": 240,
+          "inverterType": "Hybrid",
+          "acOutput": "120/240V split-phase",
+          "outputWatts": 10000,
+          "systemVoltageV": 48
+        }
+      }
+    },
+    "url": "https://bigbattery.com/wp-content/uploads/2026/02/APEX-SpecSheet0202.pdf",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-12T21:36:22.512179+00:00",
+    "label": "Exact selected APEX-10kW labelled technical table;source scope retained",
+    "rows": [
+      [
+        "AC frequency",
+        "50/60 Hz"
+      ],
+      [
+        "Battery voltage range",
+        "40–60 VDC"
+      ],
+      [
+        "Number of MPPTs",
+        "2 (source No.ofMPPT:1+1)"
+      ],
+      [
+        "Maximum PV input power",
+        "11000 W total (5500 W +5500 W)"
+      ],
+      [
+        "Maximum PV input current",
+        "22 A +22 A"
+      ],
+      [
+        "Maximum PV input voltage",
+        "550 VDC per input"
+      ],
+      [
+        "MPPT voltage range",
+        "125–450 VDC"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "shopsolar-46439300726924"
+    ],
+    "expected": {
+      "shopsolar-46439300726924": {
+        "name": "Fortress Power Envy Duo 21 Hybrid Inverter | 48V | 25kW PV Input | 12kW Backup | 240V Split-Phase & 208V 3-Phase | Parallel to 120kW | 10-Year Warranty",
+        "sourceUrl": "https://shopsolarkits.com/products/fortress-power-envy-duo-21-hybrid-inverter-48v?variant=46439300726924",
+        "category": "inverters",
+        "anchors": {
+          "voltage": 48,
+          "inverterType": "Hybrid",
+          "acOutput": "120/240V split-phase",
+          "outputWatts": 12000,
+          "systemVoltageV": 48,
+          "maxChargeCurrent": 250,
+          "mpptCount": 3
+        }
+      }
+    },
+    "url": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/FP-datasheet-EnvyDuo21_0625.pdf?v=1772473968",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-12T21:36:34.946500+00:00",
+    "label": "Exact selected EnvyDuo21-US labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Maximum PV input voltage",
+        "550 V"
+      ],
+      [
+        "Maximum PV input current",
+        "26 A / 26 A / 15 A per MPPT"
+      ],
+      [
+        "Maximum input short circuit current",
+        "31 A / 31 A / 19 A per MPPT"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "watts247-sa-12k"
+    ],
+    "expected": {
+      "watts247-sa-12k": {
+        "name": "Sol-Ark SA-12K Pre-Wired Hybrid Solar Inverter System",
+        "sourceUrl": "https://watts247.com/product/sol-ark-sa-12k-pre-wired-hybrid-solar-inverter-system/",
+        "category": "inverters",
+        "anchors": {
+          "inverterType": "Hybrid"
+        }
+      }
+    },
+    "url": "https://watts247.com/product/sol-ark-sa-12k-pre-wired-hybrid-solar-inverter-system/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:28:38.285Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "AC output voltage",
+        "120/240V split phase"
+      ],
+      [
+        "AC frequency",
+        "60/50 Hz"
+      ],
+      [
+        "MPPT Voltage Range",
+        "150-425V (Max Voc 500V @18 A, 450V @20 A)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "santan-solar-sol-ark-8k"
+    ],
+    "expected": {
+      "santan-solar-sol-ark-8k": {
+        "name": "Sol-Ark 8K Hybrid Solar Inverter System",
+        "sourceUrl": "https://www.santansolar.com/product/sol-ark-8k-hybrid-solar-battery-system-on-or-off-grid/",
+        "category": "inverters",
+        "anchors": {
+          "inverterType": "Hybrid"
+        }
+      }
+    },
+    "url": "https://www.santansolar.com/product/sol-ark-8k-hybrid-solar-battery-system-on-or-off-grid/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:29:05.140Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "AC output voltage",
+        "120/240V split phase"
+      ],
+      [
+        "AC frequency",
+        "60/50 Hz"
+      ],
+      [
+        "Maximum PV input power",
+        "11000W"
+      ],
+      [
+        "Number of MPPTs",
+        "2"
+      ],
+      [
+        "MPPT Voltage Range",
+        "150-425V"
+      ],
+      [
+        "Maximum PV input current",
+        "18 A (per mppt)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "shopsolar-41599854379148"
+    ],
+    "expected": {
+      "shopsolar-41599854379148": {
+        "name": "Sol-Ark 60K Commercial Hybrid Inverter | 60kW 3-Phase | Native 277/480V | AC/DC Coupling | Modular & Scalable | 10-Year Warranty",
+        "sourceUrl": "https://shopsolarkits.com/products/sol-ark-60k?variant=41599854379148",
+        "category": "inverters",
+        "anchors": {
+          "voltage": 480,
+          "inverterType": "Hybrid",
+          "outputWatts": 60000
+        }
+      }
+    },
+    "url": "https://shopsolarkits.com/products/sol-ark-60k",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:30:38.085Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "MPPT Voltage Range",
+        "150–850V"
+      ],
+      [
+        "Maximum PV input voltage",
+        "1,000V"
+      ],
+      [
+        "Number of MPPTs",
+        "4 (2 strings per MPPT)"
+      ],
+      [
+        "Maximum PV input current",
+        "36 A per MPPT"
+      ],
+      [
+        "Maximum input short circuit current",
+        "55 A per MPPT"
+      ],
+      [
+        "AC output voltage",
+        "277/480V Wye or 480V Delta"
+      ],
+      [
+        "AC frequency",
+        "50/60Hz"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "signature-solar-1593038"
+    ],
+    "expected": {
+      "signature-solar-1593038": {
+        "name": "Victron Energy MultiPlus 24/3000 | 24V Input | 3000VA Output 120V VE.Bus | 70A Charger | Transfer Switch | UL 1741",
+        "sourceUrl": "https://signaturesolar.com/victron-multiplus-24-3000-24v-input-3000va-output-120v-120a-charger-transfer-switch/",
+        "category": "inverters",
+        "anchors": {
+          "voltage": 24,
+          "systemVoltageV": 24
+        }
+      }
+    },
+    "url": "https://www.victronenergy.com/upload/documents/Datasheet-Multiplus-inverter-charger_2kVA-and-3kVA-120V-US-EN.pdf",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-12T21:36:44.148095+00:00",
+    "label": "Exact selected MultiPlus24/3000/70 US120V labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Rated AC output power",
+        "2400 W at25°C;2200 W at40°C;1700 W at65°C"
+      ],
+      [
+        "Battery voltage range",
+        "19–33 VDC"
+      ],
+      [
+        "AC output voltage",
+        "120 VAC ±2%"
+      ],
+      [
+        "AC frequency",
+        "60 Hz ±0.1%(adjustable50Hz)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "signature-solar-1593084"
+    ],
+    "expected": {
+      "signature-solar-1593084": {
+        "name": "Victron Quattro 48/5000 | 48V Input | 5000VA Output 120V | 70A Charger | Transfer Switch",
+        "sourceUrl": "https://signaturesolar.com/victron-quattro-48-5000-48v-input-5000w-output-120v-70a-charger-transfer-switch/",
+        "category": "inverters",
+        "anchors": {
+          "voltage": 48,
+          "systemVoltageV": 48
+        }
+      }
+    },
+    "url": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-12T21:36:51.048229+00:00",
+    "label": "Exact selected Quattro48/5000/70-100/100120V labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Rated AC output power",
+        "4000 W at25°C;3700 W at40°C;3000 W at65°C"
+      ],
+      [
+        "Battery voltage range",
+        "38–66 VDC"
+      ],
+      [
+        "AC output voltage",
+        "120 VAC ±2%"
+      ],
+      [
+        "AC frequency",
+        "60 Hz ±0.1%"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "wattcycle-51806480859432"
+    ],
+    "expected": {
+      "wattcycle-51806480859432": {
+        "name": "WattCycle V2 48V 12kW All-in-one Split Phase Hybrid Inverter - 120/240V, 24kW Dual MPPT, 250A Charger, Wi-Fi connection — Upgrade: 24kW MPPT",
+        "sourceUrl": "https://www.wattcycle.com/products/12kw-split-phase-solar-inverter-48v?variant=51806480859432",
+        "category": "inverters",
+        "anchors": {
+          "voltage": 48,
+          "inverterType": "Hybrid",
+          "acOutput": "120/240V split-phase",
+          "outputWatts": 12000,
+          "systemVoltageV": 48
+        }
+      }
+    },
+    "url": "https://www.wattcycle.com/products/12kw-split-phase-solar-inverter-48v",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-12T01:25:18.421Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "AC output voltage",
+        "120Vac (L1/N, L2/N) / 240Vac (L1/L2)"
+      ],
+      [
+        "Max. PV Input Power",
+        "24000 W (12,000W + 12,000W)"
+      ],
+      [
+        "Number of MPPTs",
+        "2 Groups"
+      ],
+      [
+        "MPPT Voltage Range",
+        "90Vdc ~ 450Vdc"
+      ],
+      [
+        "Maximum PV input voltage",
+        "500Vdc"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "santan-solar-sol-ark-12k-p"
+    ],
+    "expected": {
+      "santan-solar-sol-ark-12k-p": {
+        "name": "SOL-ARK 12K HYBRID SOLAR INVERTER SYSTEM",
+        "sourceUrl": "https://www.santansolar.com/product/sol-ark-12k-hybrid-solar-inverter-system/",
+        "category": "inverters",
+        "anchors": {
+          "inverterType": "Hybrid"
+        }
+      }
+    },
+    "url": "https://www.santansolar.com/product/sol-ark-12k-hybrid-solar-inverter-system/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:29:01.141Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Nominal battery voltage",
+        "48V"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "santan-solar-sol-ark-15k-p"
+    ],
+    "expected": {
+      "santan-solar-sol-ark-15k-p": {
+        "name": "SOL-ARK 15K HYBRID SOLAR INVERTER SYSTEM",
+        "sourceUrl": "https://www.santansolar.com/product/sol-ark-15k-hybrid-solar-inverter-system/",
+        "category": "inverters",
+        "anchors": {
+          "inverterType": "Hybrid"
+        }
+      }
+    },
+    "url": "https://www.santansolar.com/product/sol-ark-15k-hybrid-solar-inverter-system/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:29:03.123Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Nominal battery voltage",
+        "48V"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "vatrer-46023073497246"
+    ],
+    "expected": {
+      "vatrer-46023073497246": {
+        "name": "【Pre-order】Vatrer 48V 5000W Solar Inverter With MPPT",
+        "sourceUrl": "https://www.vatrerpower.com/products/vatrer-5000w-solar-inverter?variant=46023073497246",
+        "category": "inverters",
+        "anchors": {
+          "watts": 5000,
+          "voltage": 48,
+          "systemVoltageV": 48
+        }
+      }
+    },
+    "url": "https://www.vatrerpower.com/products/vatrer-5000w-solar-inverter",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-12T01:43:41.374Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Nominal battery voltage",
+        "48V"
+      ],
+      [
+        "AC output voltage",
+        "110V"
+      ],
+      [
+        "AC frequency",
+        "60Hz"
+      ],
+      [
+        "Maximum PV input power",
+        "5000W"
+      ],
+      [
+        "Maximum PV input voltage",
+        "150Vdc"
+      ],
+      [
+        "MPPT voltage range",
+        "60 ~ 150Vdc"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "wattcycle-52163504668968"
+    ],
+    "expected": {
+      "wattcycle-52163504668968": {
+        "name": "WattCycle Super 12kW Split-Phase All-in-one Inverter with 200A Grid Bypass - 24kW Dual MPPT & 250A Hybrid Charging — 12kW Split-Phase Inverter with 200A Bypass",
+        "sourceUrl": "https://www.wattcycle.com/products/48v-12kw-split-phase-inverter-200a-bypass?variant=52163504668968",
+        "category": "inverters",
+        "anchors": {
+          "inverterType": "Hybrid",
+          "acOutput": "120/240V split-phase",
+          "outputWatts": 12000
+        }
+      }
+    },
+    "url": "https://www.wattcycle.com/products/48v-12kw-split-phase-inverter-200a-bypass",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-12T01:25:40.922Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "AC output voltage",
+        "120Vac (L1/N, L2/N) / 240Vac (L1/L2)"
+      ],
+      [
+        "AC frequency",
+        "50Hz ±0.3Hz / 60Hz ±0.3Hz"
+      ],
+      [
+        "Nominal battery voltage",
+        "51.2V"
+      ],
+      [
+        "Battery Voltage Range",
+        "40.0Vdc to 58.6Vdc ±0.6Vdc"
+      ],
+      [
+        "Maximum PV Input Power",
+        "24000 W Total (12,000W + 12,000W)"
+      ],
+      [
+        "Number of MPPTs",
+        "2"
+      ],
+      [
+        "Maximum PV Input Current",
+        "32A + 32A"
+      ],
+      [
+        "Maximum PV Open-Circuit Voltage",
+        "500Vdc"
+      ],
+      [
+        "MPPT Voltage Range",
+        "90Vdc to 450Vdc"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "shopsolar-41589599600780"
+    ],
+    "expected": {
+      "shopsolar-41589599600780": {
+        "name": "RICH Solar NOVA MAX 3K | 3000 Watt (3kW) 24 Volt Off-Grid Hybrid Solar Inverter | Powerful 3000W 24V Hybrid Inverter | #1 Ranked 24V Hybrid Inverter",
+        "sourceUrl": "https://shopsolarkits.com/products/rs-h3024?variant=41589599600780",
+        "category": "inverters",
+        "anchors": {
+          "watts": 3000,
+          "voltage": 24,
+          "inverterType": "Hybrid",
+          "outputWatts": 3000,
+          "systemVoltageV": 24
+        }
+      }
+    },
+    "url": "https://shopsolarkits.com/products/rs-h3024",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:30:36.130Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "AC output voltage",
+        "120 VAC±5%"
+      ],
+      [
+        "AC frequency",
+        "60Hz / 50Hz"
+      ],
+      [
+        "Maximum PV input voltage",
+        "250 VDC"
+      ],
+      [
+        "MPPT voltage range",
+        "90 VDC~230 VDC"
+      ],
+      [
+        "Maximum PV input current",
+        "18A"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "shopsolar-44064157466764"
+    ],
+    "expected": {
+      "shopsolar-44064157466764": {
+        "name": "Pecron 200W Portable Solar Panel | 36V Output | MC4 Connector | Foldable & Lightweight Design | 21% Efficiency | 1-Year Warranty",
+        "sourceUrl": "https://shopsolarkits.com/products/pecron-200w-portable-solar-panel?variant=44064157466764",
+        "category": "panels",
+        "anchors": {
+          "watts": 200,
+          "voltage": 36
+        }
+      }
+    },
+    "url": "https://shopsolarkits.com/products/pecron-200w-portable-solar-panel",
+    "kind": "retailer",
+    "checkedAt": "2026-10-05T03:18:18.614Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Dimensions",
+        "2,086 × 705 × 25mm;folded:705 × 470 × 60mm"
+      ],
+      [
+        "Module efficiency",
+        "≥21% ± 5%"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "watts247-pm400-rw0"
+    ],
+    "expected": {
+      "watts247-pm400-rw0": {
+        "name": "OSCAL PM400 400W PORTABLE SOLAR PANEL",
+        "sourceUrl": "https://watts247.com/product/oscal-pm400-400w-portable-solar-panel/",
+        "category": "panels",
+        "anchors": {
+          "watts": 400
+        }
+      }
+    },
+    "url": "https://watts247.com/product/oscal-pm400-400w-portable-solar-panel/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:28:26.201Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Module efficiency",
+        "≥22.7%"
+      ],
+      [
+        "Cell Type",
+        "Monocrystalline Silicon"
+      ],
+      [
+        "Dimensions",
+        "41.3″ × 91.9″ × 1.0″;folded:20.9″ × 39.4″ × 2.5″"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "shopsolar-43597250691212"
+    ],
+    "expected": {
+      "shopsolar-43597250691212": {
+        "name": "Bluetti SP200L Portable Solar Panel | 200W",
+        "sourceUrl": "https://shopsolarkits.com/products/bluetti-sp200l-portable-solar-panel-200w?variant=43597250691212",
+        "category": "panels",
+        "anchors": {
+          "watts": 200
+        }
+      }
+    },
+    "url": "https://shopsolarkits.com/products/bluetti-sp200l-portable-solar-panel-200w",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:38:34.250Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Dimensions",
+        "23.6*82.5in / 601*2096mm;folded:22.5*23.6*2.9in / 573*601*75mm"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "shopsolar-43602890358924"
+    ],
+    "expected": {
+      "shopsolar-43602890358924": {
+        "name": "Bluetti PV200L 200 Watt Solar Panel",
+        "sourceUrl": "https://shopsolarkits.com/products/bluetti-pv200l?variant=43602890358924",
+        "category": "panels",
+        "anchors": {
+          "watts": 200
+        }
+      }
+    },
+    "url": "https://shopsolarkits.com/products/bluetti-pv200l",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:38:40.202Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Dimensions",
+        " 23.6 x 82.5 in / 601 x 2096mm Folded - 22.5 x 23.6 x 1.9 in / 573 x 601 x 50 mm"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "shopsolar-52726444785804"
+    ],
+    "expected": {
+      "shopsolar-52726444785804": {
+        "name": "FIRE SALE | Canadian Solar 695W N-Type TOPCon Bifacial Solar Panel | Up to 840W Bifacial | CS7N-695-TB-AG | 21.55 kW Full Pallet (31)",
+        "sourceUrl": "https://shopsolarkits.com/products/canadian-solar-695w-n-type-topcon-bifacial-solar-panels?variant=52726444785804",
+        "category": "panels",
+        "anchors": {
+          "watts": 695,
+          "face": "Bifacial",
+          "cellType": "N-type",
+          "technology": "TOPCon",
+          "voc": 47.7
+        }
+      }
+    },
+    "url": "https://cdn.shopify.com/s/files/1/0850/1801/8067/files/CS-Datasheet-TOPBiHiKu7_TOPCon__CS7N-TB-AG_v1.75C1_F43M_J1_TX_4_1_f5128718-3c04-4564-9b3c-fb643858e6b7.pdf?v=1761223457",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-12T21:38:12.138283+00:00",
+    "label": "Exact selected CS7N-695TB-AG labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Maximum power at STC",
+        "695 W"
+      ],
+      [
+        "Maximum power voltage (Vmp) at STC",
+        "39.8 V"
+      ],
+      [
+        "Maximum power current (Imp) at STC",
+        "17.47 A"
+      ],
+      [
+        "Short circuit current (Isc) at STC",
+        "18.44 A"
+      ],
+      [
+        "Module efficiency",
+        "22.4%"
+      ],
+      [
+        "Voc temperature coefficient",
+        "-0.25%/°C"
+      ],
+      [
+        "Pmax temperature coefficient",
+        "-0.29%/°C"
+      ],
+      [
+        "Dimensions",
+        "2384 × 1303 × 35 mm(93.9 × 51.3 × 1.38 in)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "shopsolar-52726482337932"
+    ],
+    "expected": {
+      "shopsolar-52726482337932": {
+        "name": "Canadian Solar 695W N-Type TOPCon Bifacial Solar Panel | Up to 840W Bifacial | CS7N-695-TB-AG",
+        "sourceUrl": "https://shopsolarkits.com/products/canadian-solar-695w-n-type-topcon-bifacial-solar-panel?variant=52726482337932",
+        "category": "panels",
+        "anchors": {
+          "watts": 695,
+          "face": "Bifacial",
+          "cellType": "N-type",
+          "technology": "TOPCon",
+          "voc": 47.7
+        }
+      }
+    },
+    "url": "https://cdn.shopify.com/s/files/1/0850/1801/8067/files/CS-Datasheet-TOPBiHiKu7_TOPCon__CS7N-TB-AG_v1.75C1_F43M_J1_TX_4_1_f5128718-3c04-4564-9b3c-fb643858e6b7.pdf?v=1761223457",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-12T21:38:12.138283+00:00",
+    "label": "Exact selected CS7N-695TB-AG labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Maximum power at STC",
+        "695 W"
+      ],
+      [
+        "Maximum power voltage (Vmp) at STC",
+        "39.8 V"
+      ],
+      [
+        "Maximum power current (Imp) at STC",
+        "17.47 A"
+      ],
+      [
+        "Short circuit current (Isc) at STC",
+        "18.44 A"
+      ],
+      [
+        "Module efficiency",
+        "22.4%"
+      ],
+      [
+        "Voc temperature coefficient",
+        "-0.25%/°C"
+      ],
+      [
+        "Pmax temperature coefficient",
+        "-0.29%/°C"
+      ],
+      [
+        "Dimensions",
+        "2384 × 1303 × 35 mm(93.9 × 51.3 × 1.38 in)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "shopsolar-43286692528268"
+    ],
+    "expected": {
+      "shopsolar-43286692528268": {
+        "name": "Rich Solar MEGA 250 PRO | 250 Watt Monocrystalline Solar Panel | Best 24V Panel for RVs and Off-Grid | 25-Year Output Warranty | UL Certified | Choose Color Silver or Black — Black",
+        "sourceUrl": "https://shopsolarkits.com/products/rich-solar-mega-250-pro?variant=43286692528268",
+        "category": "panels",
+        "anchors": {
+          "watts": 250,
+          "voltage": 24,
+          "color": "Black"
+        }
+      }
+    },
+    "url": "https://shopsolarkits.com/products/rich-solar-mega-250-pro",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:36:57.787Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Dimensions",
+        "60.6x29.9x1.2in (1540x760x30mm)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "shopsolar-43286692561036"
+    ],
+    "expected": {
+      "shopsolar-43286692561036": {
+        "name": "Rich Solar MEGA 250 PRO | 250 Watt Monocrystalline Solar Panel | Best 24V Panel for RVs and Off-Grid | 25-Year Output Warranty | UL Certified | Choose Color Silver or Black — Silver",
+        "sourceUrl": "https://shopsolarkits.com/products/rich-solar-mega-250-pro?variant=43286692561036",
+        "category": "panels",
+        "anchors": {
+          "watts": 250,
+          "voltage": 24,
+          "color": "Black"
+        }
+      }
+    },
+    "url": "https://shopsolarkits.com/products/rich-solar-mega-250-pro",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:36:57.787Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Dimensions",
+        "60.6x29.9x1.2in (1540x760x30mm)"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "productIds": [
+      "shopsolar-41502306009228"
+    ],
+    "expected": {
+      "shopsolar-41502306009228": {
+        "name": "EcoFlow 100W Flexible Solar Panel",
+        "sourceUrl": "https://shopsolarkits.com/products/ecoflow-100w-flexible-solar-panel?variant=41502306009228",
+        "category": "panels",
+        "anchors": {
+          "watts": 100
+        }
+      }
+    },
+    "url": "https://shopsolarkits.com/products/ecoflow-100w-flexible-solar-panel",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:29:07.647Z",
+    "label": "Exact selected listing model labelled technical table;source scope retained",
+    "rows": [
+      [
+        "Dimensions",
+        "1055*612*25 mm (41.5*24.1*1.0 in)"
+      ],
+      [
+        "Pmax temperature coefficient",
+        "-0.39%/°C"
+      ]
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-generation-v2-independent.json (review SHA256 d49785e2f97c502da68be692f98fa128deb86af2328fbbf186dd1c3ab45954a0, candidate SHA256 fff04310e6c9a03c501ad2a53b469079ab59dc20de14ee9819414fb2a04fe29c). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 0,
+    "key": "accessories|https://shopsolarkits.com/products/ecoflow-glacier-classic-3-in-1-portable-fridge-freezer-battery",
+    "productIds": [
+      "shopsolar-44285387735180"
+    ],
+    "expected": {
+      "shopsolar-44285387735180": {
+        "name": "EcoFlow GLACIER Classic 3-in-1 Portable Fridge, Freezer & Battery | 35L–55L | Up to 45H Runtime | Dual-Zone Cooling | Solar + USB-C Rechargeable — 55L / With Plug-in Battery",
+        "sourceUrl": "https://shopsolarkits.com/products/ecoflow-glacier-classic-3-in-1-portable-fridge-freezer-battery?variant=44285387735180",
+        "category": "accessories",
+        "anchors": {
+          "accessoryType": "Other accessories"
+        }
+      }
+    },
+    "model": "EFGLACIER55L-US-EB",
+    "url": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/EcoFlow_GLACIER_Classic_User_Manual_en_20250430.pdf?v=1752161145",
+    "kind": "manual",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T21:34:27.531622+00:00",
+    "rows": [
+      [
+        "Dimensions",
+        "706 × 466 × 480 mm"
+      ],
+      [
+        "Ingress Protection",
+        "IPX4"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\415f3d273a064e35a14113a2e662f709.pdf",
+    "sha256": "a5da7b27b42e9173b540e240e00b760885bba8b692b1fa35f5b38500b7f00d53",
+    "facts": [
+      {
+        "label": "Dimensions",
+        "value": "706 × 466 × 480 mm",
+        "quote": null,
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/EcoFlow_GLACIER_Classic_User_Manual_en_20250430.pdf?v=1752161145",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\415f3d273a064e35a14113a2e662f709.pdf",
+        "sha256": "a5da7b27b42e9173b540e240e00b760885bba8b692b1fa35f5b38500b7f00d53",
+        "checkedAt": "2026-10-12T21:34:27.531622+00:00",
+        "scope": "GLACIER Classic 55L refrigerator main unit; both battery pack options retain this exact unit; no battery dimensions/material/electrical ratings transferred",
+        "pages": [
+          24,
+          25
+        ]
+      },
+      {
+        "label": "Ingress Protection",
+        "value": "IPX4",
+        "quote": "IPX4",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/EcoFlow_GLACIER_Classic_User_Manual_en_20250430.pdf?v=1752161145",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\415f3d273a064e35a14113a2e662f709.pdf",
+        "sha256": "a5da7b27b42e9173b540e240e00b760885bba8b692b1fa35f5b38500b7f00d53",
+        "checkedAt": "2026-10-12T21:34:27.531622+00:00",
+        "scope": "GLACIER Classic 55L refrigerator main unit; both battery pack options retain this exact unit; no battery dimensions/material/electrical ratings transferred",
+        "pages": [
+          24,
+          25
+        ]
+      }
+    ],
+    "variantEvidence": {
+      "shopsolar-44285387735180": [
+        {
+          "id": 44285387735180,
+          "title": null,
+          "name": "EcoFlow GLACIER Classic 3-in-1 Portable Fridge, Freezer & Battery | 35L–55L | Up to 45H Runtime | Dual-Zone Cooling | Solar + USB-C Rechargeable - 55L / With Plug-in Battery",
+          "sku": "EFGLACIER55L-US-EB",
+          "option1": null,
+          "option2": null,
+          "option3": null
+        }
+      ]
+    },
+    "pages": [
+      24,
+      25
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. GLACIER Classic 55L refrigerator main unit; both battery pack options retain this exact unit; no battery dimensions/material/electrical ratings transferred. Collector timestamp and response byte hash verified; rendered relevant pages visually inspected. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 0,
+    "key": "accessories|https://shopsolarkits.com/products/ecoflow-glacier-classic-3-in-1-portable-fridge-freezer-battery",
+    "productIds": [
+      "shopsolar-44285445898380"
+    ],
+    "expected": {
+      "shopsolar-44285445898380": {
+        "name": "EcoFlow GLACIER Classic 3-in-1 Portable Fridge, Freezer & Battery | 35L–55L | Up to 45H Runtime | Dual-Zone Cooling | Solar + USB-C Rechargeable — 55L / No Plug-In Battery",
+        "sourceUrl": "https://shopsolarkits.com/products/ecoflow-glacier-classic-3-in-1-portable-fridge-freezer-battery?variant=44285445898380",
+        "category": "accessories",
+        "anchors": {
+          "accessoryType": "Other accessories"
+        }
+      }
+    },
+    "model": "EFGLACIER55L-US-NBOX",
+    "url": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/EcoFlow_GLACIER_Classic_User_Manual_en_20250430.pdf?v=1752161145",
+    "kind": "manual",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T21:34:27.531622+00:00",
+    "rows": [
+      [
+        "Dimensions",
+        "706 × 466 × 480 mm"
+      ],
+      [
+        "Ingress Protection",
+        "IPX4"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\415f3d273a064e35a14113a2e662f709.pdf",
+    "sha256": "a5da7b27b42e9173b540e240e00b760885bba8b692b1fa35f5b38500b7f00d53",
+    "facts": [
+      {
+        "label": "Dimensions",
+        "value": "706 × 466 × 480 mm",
+        "quote": null,
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/EcoFlow_GLACIER_Classic_User_Manual_en_20250430.pdf?v=1752161145",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\415f3d273a064e35a14113a2e662f709.pdf",
+        "sha256": "a5da7b27b42e9173b540e240e00b760885bba8b692b1fa35f5b38500b7f00d53",
+        "checkedAt": "2026-10-12T21:34:27.531622+00:00",
+        "scope": "GLACIER Classic 55L refrigerator main unit; both battery pack options retain this exact unit; no battery dimensions/material/electrical ratings transferred",
+        "pages": [
+          24,
+          25
+        ]
+      },
+      {
+        "label": "Ingress Protection",
+        "value": "IPX4",
+        "quote": "IPX4",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/EcoFlow_GLACIER_Classic_User_Manual_en_20250430.pdf?v=1752161145",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\415f3d273a064e35a14113a2e662f709.pdf",
+        "sha256": "a5da7b27b42e9173b540e240e00b760885bba8b692b1fa35f5b38500b7f00d53",
+        "checkedAt": "2026-10-12T21:34:27.531622+00:00",
+        "scope": "GLACIER Classic 55L refrigerator main unit; both battery pack options retain this exact unit; no battery dimensions/material/electrical ratings transferred",
+        "pages": [
+          24,
+          25
+        ]
+      }
+    ],
+    "variantEvidence": {
+      "shopsolar-44285445898380": [
+        {
+          "id": 44285445898380,
+          "title": null,
+          "name": "EcoFlow GLACIER Classic 3-in-1 Portable Fridge, Freezer & Battery | 35L–55L | Up to 45H Runtime | Dual-Zone Cooling | Solar + USB-C Rechargeable - 55L / No Plug-In Battery",
+          "sku": "EFGLACIER55L-US-NBOX",
+          "option1": null,
+          "option2": null,
+          "option3": null
+        }
+      ]
+    },
+    "pages": [
+      24,
+      25
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. GLACIER Classic 55L refrigerator main unit; both battery pack options retain this exact unit; no battery dimensions/material/electrical ratings transferred. Collector timestamp and response byte hash verified; rendered relevant pages visually inspected. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 0,
+    "key": "accessories|https://shopsolarkits.com/products/ecoflow-glacier-classic-3-in-1-portable-fridge-freezer-battery",
+    "productIds": [
+      "shopsolar-44285387767948"
+    ],
+    "expected": {
+      "shopsolar-44285387767948": {
+        "name": "EcoFlow GLACIER Classic 3-in-1 Portable Fridge, Freezer & Battery | 35L–55L | Up to 45H Runtime | Dual-Zone Cooling | Solar + USB-C Rechargeable — 45L / With Plug-in Battery",
+        "sourceUrl": "https://shopsolarkits.com/products/ecoflow-glacier-classic-3-in-1-portable-fridge-freezer-battery?variant=44285387767948",
+        "category": "accessories",
+        "anchors": {
+          "accessoryType": "Other accessories"
+        }
+      }
+    },
+    "model": "EFGLACIER45L-US-EB",
+    "url": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/EcoFlow_GLACIER_Classic_User_Manual_en_20250430.pdf?v=1752161145",
+    "kind": "manual",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T21:34:27.531622+00:00",
+    "rows": [
+      [
+        "Dimensions",
+        "706 × 400 × 480 mm"
+      ],
+      [
+        "Ingress Protection",
+        "IPX4"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\415f3d273a064e35a14113a2e662f709.pdf",
+    "sha256": "a5da7b27b42e9173b540e240e00b760885bba8b692b1fa35f5b38500b7f00d53",
+    "facts": [
+      {
+        "label": "Dimensions",
+        "value": "706 × 400 × 480 mm",
+        "quote": null,
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/EcoFlow_GLACIER_Classic_User_Manual_en_20250430.pdf?v=1752161145",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\415f3d273a064e35a14113a2e662f709.pdf",
+        "sha256": "a5da7b27b42e9173b540e240e00b760885bba8b692b1fa35f5b38500b7f00d53",
+        "checkedAt": "2026-10-12T21:34:27.531622+00:00",
+        "scope": "GLACIER Classic 45L refrigerator main unit; both battery pack options retain this exact unit; no battery dimensions/material/electrical ratings transferred",
+        "pages": [
+          24,
+          25
+        ]
+      },
+      {
+        "label": "Ingress Protection",
+        "value": "IPX4",
+        "quote": "IPX4",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/EcoFlow_GLACIER_Classic_User_Manual_en_20250430.pdf?v=1752161145",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\415f3d273a064e35a14113a2e662f709.pdf",
+        "sha256": "a5da7b27b42e9173b540e240e00b760885bba8b692b1fa35f5b38500b7f00d53",
+        "checkedAt": "2026-10-12T21:34:27.531622+00:00",
+        "scope": "GLACIER Classic 45L refrigerator main unit; both battery pack options retain this exact unit; no battery dimensions/material/electrical ratings transferred",
+        "pages": [
+          24,
+          25
+        ]
+      }
+    ],
+    "variantEvidence": {
+      "shopsolar-44285387767948": [
+        {
+          "id": 44285387767948,
+          "title": null,
+          "name": "EcoFlow GLACIER Classic 3-in-1 Portable Fridge, Freezer & Battery | 35L–55L | Up to 45H Runtime | Dual-Zone Cooling | Solar + USB-C Rechargeable - 45L / With Plug-in Battery",
+          "sku": "EFGLACIER45L-US-EB",
+          "option1": null,
+          "option2": null,
+          "option3": null
+        }
+      ]
+    },
+    "pages": [
+      24,
+      25
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. GLACIER Classic 45L refrigerator main unit; both battery pack options retain this exact unit; no battery dimensions/material/electrical ratings transferred. Collector timestamp and response byte hash verified; rendered relevant pages visually inspected. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 0,
+    "key": "accessories|https://shopsolarkits.com/products/ecoflow-glacier-classic-3-in-1-portable-fridge-freezer-battery",
+    "productIds": [
+      "shopsolar-44285445931148"
+    ],
+    "expected": {
+      "shopsolar-44285445931148": {
+        "name": "EcoFlow GLACIER Classic 3-in-1 Portable Fridge, Freezer & Battery | 35L–55L | Up to 45H Runtime | Dual-Zone Cooling | Solar + USB-C Rechargeable — 45L / No Plug-In Battery",
+        "sourceUrl": "https://shopsolarkits.com/products/ecoflow-glacier-classic-3-in-1-portable-fridge-freezer-battery?variant=44285445931148",
+        "category": "accessories",
+        "anchors": {
+          "accessoryType": "Other accessories"
+        }
+      }
+    },
+    "model": "EFGLACIER45L-US-NBOX",
+    "url": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/EcoFlow_GLACIER_Classic_User_Manual_en_20250430.pdf?v=1752161145",
+    "kind": "manual",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T21:34:27.531622+00:00",
+    "rows": [
+      [
+        "Dimensions",
+        "706 × 400 × 480 mm"
+      ],
+      [
+        "Ingress Protection",
+        "IPX4"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\415f3d273a064e35a14113a2e662f709.pdf",
+    "sha256": "a5da7b27b42e9173b540e240e00b760885bba8b692b1fa35f5b38500b7f00d53",
+    "facts": [
+      {
+        "label": "Dimensions",
+        "value": "706 × 400 × 480 mm",
+        "quote": null,
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/EcoFlow_GLACIER_Classic_User_Manual_en_20250430.pdf?v=1752161145",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\415f3d273a064e35a14113a2e662f709.pdf",
+        "sha256": "a5da7b27b42e9173b540e240e00b760885bba8b692b1fa35f5b38500b7f00d53",
+        "checkedAt": "2026-10-12T21:34:27.531622+00:00",
+        "scope": "GLACIER Classic 45L refrigerator main unit; both battery pack options retain this exact unit; no battery dimensions/material/electrical ratings transferred",
+        "pages": [
+          24,
+          25
+        ]
+      },
+      {
+        "label": "Ingress Protection",
+        "value": "IPX4",
+        "quote": "IPX4",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/EcoFlow_GLACIER_Classic_User_Manual_en_20250430.pdf?v=1752161145",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\415f3d273a064e35a14113a2e662f709.pdf",
+        "sha256": "a5da7b27b42e9173b540e240e00b760885bba8b692b1fa35f5b38500b7f00d53",
+        "checkedAt": "2026-10-12T21:34:27.531622+00:00",
+        "scope": "GLACIER Classic 45L refrigerator main unit; both battery pack options retain this exact unit; no battery dimensions/material/electrical ratings transferred",
+        "pages": [
+          24,
+          25
+        ]
+      }
+    ],
+    "variantEvidence": {
+      "shopsolar-44285445931148": [
+        {
+          "id": 44285445931148,
+          "title": null,
+          "name": "EcoFlow GLACIER Classic 3-in-1 Portable Fridge, Freezer & Battery | 35L–55L | Up to 45H Runtime | Dual-Zone Cooling | Solar + USB-C Rechargeable - 45L / No Plug-In Battery",
+          "sku": "EFGLACIER45L-US-NBOX",
+          "option1": null,
+          "option2": null,
+          "option3": null
+        }
+      ]
+    },
+    "pages": [
+      24,
+      25
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. GLACIER Classic 45L refrigerator main unit; both battery pack options retain this exact unit; no battery dimensions/material/electrical ratings transferred. Collector timestamp and response byte hash verified; rendered relevant pages visually inspected. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 0,
+    "key": "accessories|https://shopsolarkits.com/products/ecoflow-glacier-classic-3-in-1-portable-fridge-freezer-battery",
+    "productIds": [
+      "shopsolar-44285445963916"
+    ],
+    "expected": {
+      "shopsolar-44285445963916": {
+        "name": "EcoFlow GLACIER Classic 3-in-1 Portable Fridge, Freezer & Battery | 35L–55L | Up to 45H Runtime | Dual-Zone Cooling | Solar + USB-C Rechargeable — 35L / With Plug-in Battery",
+        "sourceUrl": "https://shopsolarkits.com/products/ecoflow-glacier-classic-3-in-1-portable-fridge-freezer-battery?variant=44285445963916",
+        "category": "accessories",
+        "anchors": {
+          "accessoryType": "Other accessories"
+        }
+      }
+    },
+    "model": "EFGLACIER35L-US-EB",
+    "url": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/EcoFlow_GLACIER_Classic_User_Manual_en_20250430.pdf?v=1752161145",
+    "kind": "manual",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T21:34:27.531622+00:00",
+    "rows": [
+      [
+        "Dimensions",
+        "706 × 400 × 405 mm"
+      ],
+      [
+        "Ingress Protection",
+        "IPX4"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\415f3d273a064e35a14113a2e662f709.pdf",
+    "sha256": "a5da7b27b42e9173b540e240e00b760885bba8b692b1fa35f5b38500b7f00d53",
+    "facts": [
+      {
+        "label": "Dimensions",
+        "value": "706 × 400 × 405 mm",
+        "quote": null,
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/EcoFlow_GLACIER_Classic_User_Manual_en_20250430.pdf?v=1752161145",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\415f3d273a064e35a14113a2e662f709.pdf",
+        "sha256": "a5da7b27b42e9173b540e240e00b760885bba8b692b1fa35f5b38500b7f00d53",
+        "checkedAt": "2026-10-12T21:34:27.531622+00:00",
+        "scope": "GLACIER Classic 35L refrigerator main unit; both battery pack options retain this exact unit; no battery dimensions/material/electrical ratings transferred",
+        "pages": [
+          24,
+          25
+        ]
+      },
+      {
+        "label": "Ingress Protection",
+        "value": "IPX4",
+        "quote": "IPX4",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/EcoFlow_GLACIER_Classic_User_Manual_en_20250430.pdf?v=1752161145",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\415f3d273a064e35a14113a2e662f709.pdf",
+        "sha256": "a5da7b27b42e9173b540e240e00b760885bba8b692b1fa35f5b38500b7f00d53",
+        "checkedAt": "2026-10-12T21:34:27.531622+00:00",
+        "scope": "GLACIER Classic 35L refrigerator main unit; both battery pack options retain this exact unit; no battery dimensions/material/electrical ratings transferred",
+        "pages": [
+          24,
+          25
+        ]
+      }
+    ],
+    "variantEvidence": {
+      "shopsolar-44285445963916": [
+        {
+          "id": 44285445963916,
+          "title": null,
+          "name": "EcoFlow GLACIER Classic 3-in-1 Portable Fridge, Freezer & Battery | 35L–55L | Up to 45H Runtime | Dual-Zone Cooling | Solar + USB-C Rechargeable - 35L / With Plug-in Battery",
+          "sku": "EFGLACIER35L-US-EB",
+          "option1": null,
+          "option2": null,
+          "option3": null
+        }
+      ]
+    },
+    "pages": [
+      24,
+      25
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. GLACIER Classic 35L refrigerator main unit; both battery pack options retain this exact unit; no battery dimensions/material/electrical ratings transferred. Collector timestamp and response byte hash verified; rendered relevant pages visually inspected. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 0,
+    "key": "accessories|https://shopsolarkits.com/products/ecoflow-glacier-classic-3-in-1-portable-fridge-freezer-battery",
+    "productIds": [
+      "shopsolar-44285445996684"
+    ],
+    "expected": {
+      "shopsolar-44285445996684": {
+        "name": "EcoFlow GLACIER Classic 3-in-1 Portable Fridge, Freezer & Battery | 35L–55L | Up to 45H Runtime | Dual-Zone Cooling | Solar + USB-C Rechargeable — 35L / No Plug-In Battery",
+        "sourceUrl": "https://shopsolarkits.com/products/ecoflow-glacier-classic-3-in-1-portable-fridge-freezer-battery?variant=44285445996684",
+        "category": "accessories",
+        "anchors": {
+          "accessoryType": "Other accessories"
+        }
+      }
+    },
+    "model": "EFGLACIER35L-US-NBOX",
+    "url": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/EcoFlow_GLACIER_Classic_User_Manual_en_20250430.pdf?v=1752161145",
+    "kind": "manual",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T21:34:27.531622+00:00",
+    "rows": [
+      [
+        "Dimensions",
+        "706 × 400 × 405 mm"
+      ],
+      [
+        "Ingress Protection",
+        "IPX4"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\415f3d273a064e35a14113a2e662f709.pdf",
+    "sha256": "a5da7b27b42e9173b540e240e00b760885bba8b692b1fa35f5b38500b7f00d53",
+    "facts": [
+      {
+        "label": "Dimensions",
+        "value": "706 × 400 × 405 mm",
+        "quote": null,
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/EcoFlow_GLACIER_Classic_User_Manual_en_20250430.pdf?v=1752161145",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\415f3d273a064e35a14113a2e662f709.pdf",
+        "sha256": "a5da7b27b42e9173b540e240e00b760885bba8b692b1fa35f5b38500b7f00d53",
+        "checkedAt": "2026-10-12T21:34:27.531622+00:00",
+        "scope": "GLACIER Classic 35L refrigerator main unit; both battery pack options retain this exact unit; no battery dimensions/material/electrical ratings transferred",
+        "pages": [
+          24,
+          25
+        ]
+      },
+      {
+        "label": "Ingress Protection",
+        "value": "IPX4",
+        "quote": "IPX4",
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/EcoFlow_GLACIER_Classic_User_Manual_en_20250430.pdf?v=1752161145",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\415f3d273a064e35a14113a2e662f709.pdf",
+        "sha256": "a5da7b27b42e9173b540e240e00b760885bba8b692b1fa35f5b38500b7f00d53",
+        "checkedAt": "2026-10-12T21:34:27.531622+00:00",
+        "scope": "GLACIER Classic 35L refrigerator main unit; both battery pack options retain this exact unit; no battery dimensions/material/electrical ratings transferred",
+        "pages": [
+          24,
+          25
+        ]
+      }
+    ],
+    "variantEvidence": {
+      "shopsolar-44285445996684": [
+        {
+          "id": 44285445996684,
+          "title": null,
+          "name": "EcoFlow GLACIER Classic 3-in-1 Portable Fridge, Freezer & Battery | 35L–55L | Up to 45H Runtime | Dual-Zone Cooling | Solar + USB-C Rechargeable - 35L / No Plug-In Battery",
+          "sku": "EFGLACIER35L-US-NBOX",
+          "option1": null,
+          "option2": null,
+          "option3": null
+        }
+      ]
+    },
+    "pages": [
+      24,
+      25
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. GLACIER Classic 35L refrigerator main unit; both battery pack options retain this exact unit; no battery dimensions/material/electrical ratings transferred. Collector timestamp and response byte hash verified; rendered relevant pages visually inspected. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 6,
+    "key": "accessories|https://invertersrus.com/product/eg4-lfp-com-hub/",
+    "productIds": [
+      "inverters-r-us-eg4-1511068"
+    ],
+    "expected": {
+      "inverters-r-us-eg4-1511068": {
+        "name": "EG4 LiFePOWER4 Communications Hub",
+        "sourceUrl": "https://invertersrus.com/product/eg4-lfp-com-hub/",
+        "category": "accessories",
+        "anchors": {
+          "accessoryType": "Adapters & communications"
+        }
+      }
+    },
+    "model": "EG4 LiFePOWER4 Communications Hub",
+    "url": "https://invertersrus.com/product/eg4-lfp-com-hub/",
+    "kind": "retailer",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T01:25:04.911Z",
+    "rows": [
+      [
+        "Compatibility",
+        "48V EG4-LiFePOWER4 batteries only"
+      ],
+      [
+        "Dimensions",
+        "3.4 in × 9.7 in × 1.3 in"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\a5457c6df347ea46.html",
+    "sha256": "4bdab27c9c4e9db30c390a453469a83f85a47c231a1a8c0fd0865e7c9d4ac0d6",
+    "facts": [
+      {
+        "label": "Compatibility",
+        "value": "48V EG4-LiFePOWER4 batteries only",
+        "quote": "Compatible with 48V EG4-LiFePOWER4 batteries only",
+        "sourceUrl": "https://invertersrus.com/product/eg4-lfp-com-hub/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\a5457c6df347ea46.html",
+        "sha256": "4bdab27c9c4e9db30c390a453469a83f85a47c231a1a8c0fd0865e7c9d4ac0d6",
+        "checkedAt": "2026-10-12T01:25:04.911Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\a5457c6df347ea46.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      },
+      {
+        "label": "Dimensions",
+        "value": "3.4 in × 9.7 in × 1.3 in",
+        "quote": "3.4 in × 9.7 in × 1.3 in",
+        "sourceUrl": "https://invertersrus.com/product/eg4-lfp-com-hub/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\a5457c6df347ea46.html",
+        "sha256": "4bdab27c9c4e9db30c390a453469a83f85a47c231a1a8c0fd0865e7c9d4ac0d6",
+        "checkedAt": "2026-10-12T01:25:04.911Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\a5457c6df347ea46.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      }
+    ],
+    "variantEvidence": {
+      "inverters-r-us-eg4-1511068": []
+    },
+    "pages": null,
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. Selected product technical body; related products/reviews excluded. Prior paired capture metadata; original cache has no historical byte hash. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 7,
+    "key": "accessories|https://practicalpreppers.com/product/air-wind-control-panel/",
+    "productIds": [
+      "practical-preppers-sku-369-1"
+    ],
+    "expected": {
+      "practical-preppers-sku-369-1": {
+        "name": "Air Wind Control Panel – Digital (WCP-D)",
+        "sourceUrl": "https://practicalpreppers.com/product/air-wind-control-panel/",
+        "category": "accessories",
+        "anchors": {
+          "accessoryType": "Displays & controls"
+        }
+      }
+    },
+    "model": "Air Wind Control Panel – Digital (WCP-D)",
+    "url": "https://practicalpreppers.com/product/air-wind-control-panel/",
+    "kind": "retailer",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T01:57:00.355Z",
+    "rows": [
+      [
+        "Dimensions",
+        "6.5 × 4.25 × 2.5 in"
+      ],
+      [
+        "Material",
+        "Black plastic enclosure"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\6e364763f57d1041.html",
+    "sha256": "ee664d1b6ef6378a7ca1ab0f4ad741219babac4b04c11b537788a0cdad83f3b9",
+    "facts": [
+      {
+        "label": "Dimensions",
+        "value": "6.5 × 4.25 × 2.5 in",
+        "quote": "Dimensions are: L –6.5 inch / W –4.25 inch/ D –2.5 inches.",
+        "sourceUrl": "https://practicalpreppers.com/product/air-wind-control-panel/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\6e364763f57d1041.html",
+        "sha256": "ee664d1b6ef6378a7ca1ab0f4ad741219babac4b04c11b537788a0cdad83f3b9",
+        "checkedAt": "2026-10-12T01:57:00.355Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\6e364763f57d1041.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      },
+      {
+        "label": "Material",
+        "value": "Black plastic enclosure",
+        "quote": "indoor only, black plastic enclosure",
+        "sourceUrl": "https://practicalpreppers.com/product/air-wind-control-panel/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\6e364763f57d1041.html",
+        "sha256": "ee664d1b6ef6378a7ca1ab0f4ad741219babac4b04c11b537788a0cdad83f3b9",
+        "checkedAt": "2026-10-12T01:57:00.355Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\6e364763f57d1041.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      }
+    ],
+    "variantEvidence": {
+      "practical-preppers-sku-369-1": []
+    },
+    "pages": null,
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. Selected product technical body; related products/reviews excluded. Prior paired capture metadata; original cache has no historical byte hash. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 8,
+    "key": "accessories|https://invertersrus.com/product/redarc-tow-pro-link/",
+    "productIds": [
+      "inverters-r-us-ebrhx-adh-na"
+    ],
+    "expected": {
+      "inverters-r-us-ebrhx-adh-na": {
+        "name": "REDARC Tow-Pro Link Electric Brake Controller",
+        "sourceUrl": "https://invertersrus.com/product/redarc-tow-pro-link/",
+        "category": "accessories",
+        "anchors": {
+          "accessoryType": "Displays & controls"
+        }
+      }
+    },
+    "model": "REDARC Tow-Pro Link Electric Brake Controller",
+    "url": "https://invertersrus.com/product/redarc-tow-pro-link/",
+    "kind": "retailer",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T01:24:54.153Z",
+    "rows": [
+      [
+        "Compatibility",
+        "Standard USCAR 7-pin connector; excludes Ford Transit 2020–2021 and BMW X5 2016 North America"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\49c94c2e239dd77b.html",
+    "sha256": "6f045a5d2083986611abfbb79c018b89e2fc58dfc7e03c64a00cee70fec70a7a",
+    "facts": [
+      {
+        "label": "Compatibility",
+        "value": "Standard USCAR 7-pin connector; excludes Ford Transit 2020–2021 and BMW X5 2016 North America",
+        "quote": "confirm your vehicle uses a standard USCAR 7-pin connector",
+        "sourceUrl": "https://invertersrus.com/product/redarc-tow-pro-link/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\49c94c2e239dd77b.html",
+        "sha256": "6f045a5d2083986611abfbb79c018b89e2fc58dfc7e03c64a00cee70fec70a7a",
+        "checkedAt": "2026-10-12T01:24:54.153Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\49c94c2e239dd77b.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      }
+    ],
+    "variantEvidence": {
+      "inverters-r-us-ebrhx-adh-na": []
+    },
+    "pages": null,
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. Selected product technical body; related products/reviews excluded. Prior paired capture metadata; original cache has no historical byte hash. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 9,
+    "key": "accessories|https://invertersrus.com/product/114938/",
+    "productIds": [
+      "inverters-r-us-lk2-rvconbox-12c"
+    ],
+    "expected": {
+      "inverters-r-us-lk2-rvconbox-12c": {
+        "name": "LINKS2 by Linkswell – 10-Inch RV Central Control Center & 12-Channel Switching Module",
+        "sourceUrl": "https://invertersrus.com/product/114938/",
+        "category": "accessories",
+        "anchors": {
+          "accessoryType": "Displays & controls"
+        }
+      }
+    },
+    "model": "LINKS2 by Linkswell – 10-Inch RV Central Control Center & 12-Channel Switching Module",
+    "url": "https://invertersrus.com/product/114938/",
+    "kind": "retailer",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T01:27:05.749Z",
+    "rows": [
+      [
+        "Dimensions",
+        "254 × 160 × 24 mm (display); switching module: 350 × 167 × 45 mm"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\c485df70035d951b.html",
+    "sha256": "2d37952ff724a4bed47c513da3cdb364f1ebe2c9c20077e3c3fe8eede976978d",
+    "facts": [
+      {
+        "label": "Dimensions",
+        "value": "254 × 160 × 24 mm (display); switching module: 350 × 167 × 45 mm",
+        "quote": "254×160×24 mm",
+        "sourceUrl": "https://invertersrus.com/product/114938/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\c485df70035d951b.html",
+        "sha256": "2d37952ff724a4bed47c513da3cdb364f1ebe2c9c20077e3c3fe8eede976978d",
+        "checkedAt": "2026-10-12T01:27:05.749Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\c485df70035d951b.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      }
+    ],
+    "variantEvidence": {
+      "inverters-r-us-lk2-rvconbox-12c": []
+    },
+    "pages": null,
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. Selected product technical body; related products/reviews excluded. Prior paired capture metadata; original cache has no historical byte hash. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 20,
+    "key": "electrical|https://signaturesolar.com/victron-energy-mega-fuse-300a-32v-package-of-5-pcs/",
+    "productIds": [
+      "signature-solar-1593040"
+    ],
+    "expected": {
+      "signature-solar-1593040": {
+        "name": "Victron Energy | MEGA-fuse 300A/32V (package of 5 pcs)",
+        "sourceUrl": "https://signaturesolar.com/victron-energy-mega-fuse-300a-32v-package-of-5-pcs/",
+        "category": "electrical",
+        "anchors": {
+          "voltage": 32,
+          "electricalType": "Fuses"
+        }
+      }
+    },
+    "model": "Victron Energy | MEGA-fuse 300A/32V (package of 5 pcs)",
+    "url": "https://signaturesolar.com/victron-energy-mega-fuse-300a-32v-package-of-5-pcs/",
+    "kind": "retailer",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T01:30:40.410Z",
+    "rows": [
+      [
+        "Current rating",
+        "300A"
+      ],
+      [
+        "Voltage rating",
+        "32V max"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\535b15913c3e9a5e.html",
+    "sha256": "995c419a3b21f2087c67898159d6f644c7f10963653040545b2b02b7d095fe68",
+    "facts": [
+      {
+        "label": "Current rating",
+        "value": "300A",
+        "quote": "300A",
+        "sourceUrl": "https://signaturesolar.com/victron-energy-mega-fuse-300a-32v-package-of-5-pcs/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\535b15913c3e9a5e.html",
+        "sha256": "995c419a3b21f2087c67898159d6f644c7f10963653040545b2b02b7d095fe68",
+        "checkedAt": "2026-10-12T01:30:40.410Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\535b15913c3e9a5e.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      },
+      {
+        "label": "Voltage rating",
+        "value": "32V max",
+        "quote": "32V max",
+        "sourceUrl": "https://signaturesolar.com/victron-energy-mega-fuse-300a-32v-package-of-5-pcs/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\535b15913c3e9a5e.html",
+        "sha256": "995c419a3b21f2087c67898159d6f644c7f10963653040545b2b02b7d095fe68",
+        "checkedAt": "2026-10-12T01:30:40.410Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\535b15913c3e9a5e.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      }
+    ],
+    "variantEvidence": {
+      "signature-solar-1593040": []
+    },
+    "pages": null,
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. Selected product technical body; related products/reviews excluded. Prior paired capture metadata; original cache has no historical byte hash. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 26,
+    "key": "electrical|https://invertersrus.com/product/bsb-50a-ac-circuit-breaker-eg4-12kpv-hybrid-inverter/",
+    "productIds": [
+      "inverters-r-us-eg4b3s1gbbrkr50av1"
+    ],
+    "expected": {
+      "inverters-r-us-eg4b3s1gbbrkr50av1": {
+        "name": "BSB 50A AC Circuit Breaker Compatible with EG4 12kPV Hybrid Inverter",
+        "sourceUrl": "https://invertersrus.com/product/bsb-50a-ac-circuit-breaker-eg4-12kpv-hybrid-inverter/",
+        "category": "electrical",
+        "anchors": {
+          "electricalType": "Circuit breakers"
+        }
+      }
+    },
+    "model": "BSB 50A AC Circuit Breaker Compatible with EG4 12kPV Hybrid Inverter",
+    "url": "https://invertersrus.com/product/bsb-50a-ac-circuit-breaker-eg4-12kpv-hybrid-inverter/",
+    "kind": "retailer",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T01:25:51.726Z",
+    "rows": [
+      [
+        "Current rating",
+        "50A"
+      ],
+      [
+        "Interrupting capacity",
+        "10000A maximum"
+      ],
+      [
+        "Voltage rating",
+        "120/240V AC"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\8233f693549c3f12.html",
+    "sha256": "644f1829722c222feefdfa908fc6d4c1286855ee465b6695502749801d428b3f",
+    "facts": [
+      {
+        "label": "Current rating",
+        "value": "50A",
+        "quote": "50A",
+        "sourceUrl": "https://invertersrus.com/product/bsb-50a-ac-circuit-breaker-eg4-12kpv-hybrid-inverter/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\8233f693549c3f12.html",
+        "sha256": "644f1829722c222feefdfa908fc6d4c1286855ee465b6695502749801d428b3f",
+        "checkedAt": "2026-10-12T01:25:51.726Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\8233f693549c3f12.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      },
+      {
+        "label": "Interrupting capacity",
+        "value": "10000A maximum",
+        "quote": "10,000A",
+        "sourceUrl": "https://invertersrus.com/product/bsb-50a-ac-circuit-breaker-eg4-12kpv-hybrid-inverter/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\8233f693549c3f12.html",
+        "sha256": "644f1829722c222feefdfa908fc6d4c1286855ee465b6695502749801d428b3f",
+        "checkedAt": "2026-10-12T01:25:51.726Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\8233f693549c3f12.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      },
+      {
+        "label": "Voltage rating",
+        "value": "120/240V AC",
+        "quote": "AC 120/240V",
+        "sourceUrl": "https://invertersrus.com/product/bsb-50a-ac-circuit-breaker-eg4-12kpv-hybrid-inverter/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\8233f693549c3f12.html",
+        "sha256": "644f1829722c222feefdfa908fc6d4c1286855ee465b6695502749801d428b3f",
+        "checkedAt": "2026-10-12T01:25:51.726Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\8233f693549c3f12.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      }
+    ],
+    "variantEvidence": {
+      "inverters-r-us-eg4b3s1gbbrkr50av1": []
+    },
+    "pages": null,
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. Selected product technical body; related products/reviews excluded. Prior paired capture metadata; original cache has no historical byte hash. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 29,
+    "key": "electrical|https://invertersrus.com/product/bsb-70a-ac-circuit-breaker-eg4-18kpv-hybrid-inverter/",
+    "productIds": [
+      "inverters-r-us-eg4b3s1gbbrkr70av1"
+    ],
+    "expected": {
+      "inverters-r-us-eg4b3s1gbbrkr70av1": {
+        "name": "BSB 70A AC Circuit Breaker Compatible with EG4 18kPV Hybrid Inverter",
+        "sourceUrl": "https://invertersrus.com/product/bsb-70a-ac-circuit-breaker-eg4-18kpv-hybrid-inverter/",
+        "category": "electrical",
+        "anchors": {
+          "electricalType": "Circuit breakers"
+        }
+      }
+    },
+    "model": "BSB 70A AC Circuit Breaker Compatible with EG4 18kPV Hybrid Inverter",
+    "url": "https://invertersrus.com/product/bsb-70a-ac-circuit-breaker-eg4-18kpv-hybrid-inverter/",
+    "kind": "retailer",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T01:25:54.674Z",
+    "rows": [
+      [
+        "Current rating",
+        "70A"
+      ],
+      [
+        "Interrupting capacity",
+        "10000A maximum"
+      ],
+      [
+        "Voltage rating",
+        "120/240V AC"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\1483777e2fa07a5b.html",
+    "sha256": "4c747f552c90c70c8c2af2772fa37c6e6b065a0a75ec1e440b63b99d4ea12503",
+    "facts": [
+      {
+        "label": "Current rating",
+        "value": "70A",
+        "quote": "70A",
+        "sourceUrl": "https://invertersrus.com/product/bsb-70a-ac-circuit-breaker-eg4-18kpv-hybrid-inverter/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\1483777e2fa07a5b.html",
+        "sha256": "4c747f552c90c70c8c2af2772fa37c6e6b065a0a75ec1e440b63b99d4ea12503",
+        "checkedAt": "2026-10-12T01:25:54.674Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\1483777e2fa07a5b.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      },
+      {
+        "label": "Interrupting capacity",
+        "value": "10000A maximum",
+        "quote": "10,000A",
+        "sourceUrl": "https://invertersrus.com/product/bsb-70a-ac-circuit-breaker-eg4-18kpv-hybrid-inverter/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\1483777e2fa07a5b.html",
+        "sha256": "4c747f552c90c70c8c2af2772fa37c6e6b065a0a75ec1e440b63b99d4ea12503",
+        "checkedAt": "2026-10-12T01:25:54.674Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\1483777e2fa07a5b.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      },
+      {
+        "label": "Voltage rating",
+        "value": "120/240V AC",
+        "quote": "AC 120/240V",
+        "sourceUrl": "https://invertersrus.com/product/bsb-70a-ac-circuit-breaker-eg4-18kpv-hybrid-inverter/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\1483777e2fa07a5b.html",
+        "sha256": "4c747f552c90c70c8c2af2772fa37c6e6b065a0a75ec1e440b63b99d4ea12503",
+        "checkedAt": "2026-10-12T01:25:54.674Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\1483777e2fa07a5b.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      }
+    ],
+    "variantEvidence": {
+      "inverters-r-us-eg4b3s1gbbrkr70av1": []
+    },
+    "pages": null,
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. Selected product technical body; related products/reviews excluded. Prior paired capture metadata; original cache has no historical byte hash. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 30,
+    "key": "electrical|https://invertersrus.com/product/bsb-90a-ac-circuit-breaker-eg4-flexboss21-hybrid-inverter/",
+    "productIds": [
+      "inverters-r-us-eg4b3s1gbbrkr90av1"
+    ],
+    "expected": {
+      "inverters-r-us-eg4b3s1gbbrkr90av1": {
+        "name": "BSB 90A AC Circuit Breaker Compatible with EG4 FlexBOSS21 Hybrid Inverter",
+        "sourceUrl": "https://invertersrus.com/product/bsb-90a-ac-circuit-breaker-eg4-flexboss21-hybrid-inverter/",
+        "category": "electrical",
+        "anchors": {
+          "electricalType": "Circuit breakers"
+        }
+      }
+    },
+    "model": "BSB 90A AC Circuit Breaker Compatible with EG4 FlexBOSS21 Hybrid Inverter",
+    "url": "https://invertersrus.com/product/bsb-90a-ac-circuit-breaker-eg4-flexboss21-hybrid-inverter/",
+    "kind": "retailer",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T01:25:57.333Z",
+    "rows": [
+      [
+        "Current rating",
+        "90A"
+      ],
+      [
+        "Interrupting capacity",
+        "10000A maximum"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\fa8e65aed522b808.html",
+    "sha256": "0062a9ccd0cfb40a27284e6d1984c8adf598988ebf2e96c29e180d06b788edf2",
+    "facts": [
+      {
+        "label": "Current rating",
+        "value": "90A",
+        "quote": "90A",
+        "sourceUrl": "https://invertersrus.com/product/bsb-90a-ac-circuit-breaker-eg4-flexboss21-hybrid-inverter/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\fa8e65aed522b808.html",
+        "sha256": "0062a9ccd0cfb40a27284e6d1984c8adf598988ebf2e96c29e180d06b788edf2",
+        "checkedAt": "2026-10-12T01:25:57.333Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\fa8e65aed522b808.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      },
+      {
+        "label": "Interrupting capacity",
+        "value": "10000A maximum",
+        "quote": "10,000A",
+        "sourceUrl": "https://invertersrus.com/product/bsb-90a-ac-circuit-breaker-eg4-flexboss21-hybrid-inverter/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\fa8e65aed522b808.html",
+        "sha256": "0062a9ccd0cfb40a27284e6d1984c8adf598988ebf2e96c29e180d06b788edf2",
+        "checkedAt": "2026-10-12T01:25:57.333Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\fa8e65aed522b808.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      }
+    ],
+    "variantEvidence": {
+      "inverters-r-us-eg4b3s1gbbrkr90av1": []
+    },
+    "pages": null,
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. Selected product technical body; related products/reviews excluded. Prior paired capture metadata; original cache has no historical byte hash. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 34,
+    "key": "electrical|https://www.litime.com/products/150a-switchable-circuit-breaker-for-lifepo4-batteries",
+    "productIds": [
+      "litime-47240808988892"
+    ],
+    "expected": {
+      "litime-47240808988892": {
+        "name": "LiTime 150A Switchable Circuit Breaker for LiFePO4 Batteries — 1 Pack",
+        "sourceUrl": "https://www.litime.com/products/150a-switchable-circuit-breaker-for-lifepo4-batteries?variant=47240808988892",
+        "category": "electrical",
+        "anchors": {
+          "electricalType": "Circuit breakers"
+        }
+      }
+    },
+    "model": "L-BKR12V48V150A-BK-H",
+    "url": "https://cdn.shopify.com/s/files/1/0667/7220/5788/files/LiTime_150A_Circuit_Breaker_-_User_Manual.pdf?v=1760495586",
+    "kind": "manual",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T21:36:08.708963+00:00",
+    "rows": [
+      [
+        "Current rating",
+        "150A"
+      ],
+      [
+        "Voltage rating",
+        "12–48V (maximum 48V)"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\5bb2e2a42fb3498e9e35b7400e5ce190.pdf",
+    "sha256": "a1ccdf1d9da56bb4b5da8d26f328e85f089537aed0bc9e931195d1b107b9c86e",
+    "facts": [
+      {
+        "label": "Current rating",
+        "value": "150A",
+        "quote": null,
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0667/7220/5788/files/LiTime_150A_Circuit_Breaker_-_User_Manual.pdf?v=1760495586",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\5bb2e2a42fb3498e9e35b7400e5ce190.pdf",
+        "sha256": "a1ccdf1d9da56bb4b5da8d26f328e85f089537aed0bc9e931195d1b107b9c86e",
+        "checkedAt": "2026-10-12T21:36:08.708963+00:00",
+        "scope": "Image-only LiTime manual visually inspected both pages; maximum current endurance is rating; 1.35x/2x cut-off-time table is not breaking capacity",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "label": "Voltage rating",
+        "value": "12–48V (maximum 48V)",
+        "quote": null,
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0667/7220/5788/files/LiTime_150A_Circuit_Breaker_-_User_Manual.pdf?v=1760495586",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\5bb2e2a42fb3498e9e35b7400e5ce190.pdf",
+        "sha256": "a1ccdf1d9da56bb4b5da8d26f328e85f089537aed0bc9e931195d1b107b9c86e",
+        "checkedAt": "2026-10-12T21:36:08.708963+00:00",
+        "scope": "Image-only LiTime manual visually inspected both pages; maximum current endurance is rating; 1.35x/2x cut-off-time table is not breaking capacity",
+        "pages": [
+          1,
+          2
+        ]
+      }
+    ],
+    "variantEvidence": {
+      "litime-47240808988892": [
+        {
+          "id": 47240808988892,
+          "title": null,
+          "name": "LiTime 150A Switchable Circuit Breaker for LiFePO4 Batteries - 1 Pack",
+          "sku": "L-BKR12V48V150A-BK-H",
+          "option1": null,
+          "option2": null,
+          "option3": null
+        }
+      ]
+    },
+    "pages": [
+      1,
+      2
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. Image-only LiTime manual visually inspected both pages; maximum current endurance is rating; 1.35x/2x cut-off-time table is not breaking capacity. Collector timestamp and response byte hash verified; rendered relevant pages visually inspected. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 35,
+    "key": "electrical|https://www.litime.com/products/litime-250a-switchable-circuit-breaker-for-lifepo4-batteries",
+    "productIds": [
+      "litime-47240811413724"
+    ],
+    "expected": {
+      "litime-47240811413724": {
+        "name": "LiTime 250A Switchable Circuit Breaker for LiFePO4 Batteries — 1 Pack",
+        "sourceUrl": "https://www.litime.com/products/litime-250a-switchable-circuit-breaker-for-lifepo4-batteries?variant=47240811413724",
+        "category": "electrical",
+        "anchors": {
+          "electricalType": "Circuit breakers"
+        }
+      }
+    },
+    "model": "L-BKR250A-BK-H",
+    "url": "https://cdn.shopify.com/s/files/1/0667/7220/5788/files/LiTime_250A_Circuit_Breaker_-_User_Manual.pdf?v=1760495550",
+    "kind": "manual",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T21:36:11.009126+00:00",
+    "rows": [
+      [
+        "Current rating",
+        "250A"
+      ],
+      [
+        "Voltage rating",
+        "12–48V (maximum 48V)"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\6fdcc40bf7ba4c46b60f437b752e4888.pdf",
+    "sha256": "915c65e069fbddfd13155f73af24d7cb0a63c8cdeaeaa05e24f78bac20e33c3b",
+    "facts": [
+      {
+        "label": "Current rating",
+        "value": "250A",
+        "quote": null,
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0667/7220/5788/files/LiTime_250A_Circuit_Breaker_-_User_Manual.pdf?v=1760495550",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\6fdcc40bf7ba4c46b60f437b752e4888.pdf",
+        "sha256": "915c65e069fbddfd13155f73af24d7cb0a63c8cdeaeaa05e24f78bac20e33c3b",
+        "checkedAt": "2026-10-12T21:36:11.009126+00:00",
+        "scope": "Image-only LiTime manual visually inspected both pages; maximum current endurance is rating; 1.35x/2x cut-off-time table is not breaking capacity",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "label": "Voltage rating",
+        "value": "12–48V (maximum 48V)",
+        "quote": null,
+        "sourceUrl": "https://cdn.shopify.com/s/files/1/0667/7220/5788/files/LiTime_250A_Circuit_Breaker_-_User_Manual.pdf?v=1760495550",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\6fdcc40bf7ba4c46b60f437b752e4888.pdf",
+        "sha256": "915c65e069fbddfd13155f73af24d7cb0a63c8cdeaeaa05e24f78bac20e33c3b",
+        "checkedAt": "2026-10-12T21:36:11.009126+00:00",
+        "scope": "Image-only LiTime manual visually inspected both pages; maximum current endurance is rating; 1.35x/2x cut-off-time table is not breaking capacity",
+        "pages": [
+          1,
+          2
+        ]
+      }
+    ],
+    "variantEvidence": {
+      "litime-47240811413724": [
+        {
+          "id": 47240811413724,
+          "title": null,
+          "name": "LiTime 250A Switchable Circuit Breaker for LiFePO4 Batteries - 1 Pack",
+          "sku": "L-BKR250A-BK-H",
+          "option1": null,
+          "option2": null,
+          "option3": null
+        }
+      ]
+    },
+    "pages": [
+      1,
+      2
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. Image-only LiTime manual visually inspected both pages; maximum current endurance is rating; 1.35x/2x cut-off-time table is not breaking capacity. Collector timestamp and response byte hash verified; rendered relevant pages visually inspected. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 40,
+    "key": "module-electronics|https://bestsolarbundle.com/products/rsd-s-plc-rapid-shut-down",
+    "productIds": [
+      "best-solar-bundle-43671499571242"
+    ],
+    "expected": {
+      "best-solar-bundle-43671499571242": {
+        "name": "RSD-S-PLC Rapid Shut Down Five-Piece Package — RSD-S-PLC",
+        "sourceUrl": "https://bestsolarbundle.com/products/rsd-s-plc-rapid-shut-down?variant=43671499571242",
+        "category": "module-electronics",
+        "anchors": {
+          "moduleFunction": "Rapid shutdown"
+        }
+      }
+    },
+    "model": "415002",
+    "url": "https://bestsolarbundle.com/cdn/shop/files/RSD-S-PLC-Datasheet_REV3.pdf?v=9357925403717661963",
+    "kind": "datasheet",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T21:37:02.549788+00:00",
+    "rows": [
+      [
+        "Voltage rating",
+        "10.5–80V input/output operating range"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\7db818a693de42e9b52a30e1a64d564a.pdf",
+    "sha256": "e178861ac29d391ed2ef0dd62e05d93abad70bbc3c0aa89ef97a5a0c5c183d0b",
+    "facts": [
+      {
+        "label": "Voltage rating",
+        "value": "10.5–80V input/output operating range",
+        "quote": "10.5-80V",
+        "sourceUrl": "https://bestsolarbundle.com/cdn/shop/files/RSD-S-PLC-Datasheet_REV3.pdf?v=9357925403717661963",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\7db818a693de42e9b52a30e1a64d564a.pdf",
+        "sha256": "e178861ac29d391ed2ef0dd62e05d93abad70bbc3c0aa89ef97a5a0c5c183d0b",
+        "checkedAt": "2026-10-12T21:37:02.549788+00:00",
+        "scope": "RSD-S-PLC exact model; operating range separate from 1000V/1500V system rating; no single certification subtype inferred",
+        "pages": [
+          1,
+          2
+        ]
+      }
+    ],
+    "variantEvidence": {
+      "best-solar-bundle-43671499571242": [
+        {
+          "id": 43671499571242,
+          "title": null,
+          "name": "RSD-S-PLC Rapid Shut Down Five-Piece Package - RSD-S-PLC",
+          "sku": "415002",
+          "option1": null,
+          "option2": null,
+          "option3": null
+        }
+      ]
+    },
+    "pages": [
+      1,
+      2
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. RSD-S-PLC exact model; operating range separate from 1000V/1500V system rating; no single certification subtype inferred. Collector timestamp and response byte hash verified; rendered relevant pages visually inspected. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 44,
+    "key": "module-electronics|https://watts247.com/product/tigo-ts4-a-o-optimizer-rapid-shutdown-module/",
+    "productIds": [
+      "watts247-50619"
+    ],
+    "expected": {
+      "watts247-50619": {
+        "name": "Tigo TS4-A-O – Optimizer/Rapid Shutdown Module",
+        "sourceUrl": "https://watts247.com/product/tigo-ts4-a-o-optimizer-rapid-shutdown-module/",
+        "category": "module-electronics",
+        "anchors": {
+          "moduleFunction": "Optimizer + rapid shutdown"
+        }
+      }
+    },
+    "model": "Tigo TS4-A-O – Optimizer/Rapid Shutdown Module",
+    "url": "https://watts247.com/product/tigo-ts4-a-o-optimizer-rapid-shutdown-module/",
+    "kind": "retailer",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T01:25:13.108Z",
+    "rows": [
+      [
+        "Maximum PV voltage",
+        "80V"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\016079c3f68cb035.html",
+    "sha256": "d1179dc620a7d5e100f1767076b71eb71b1b6a3084b2f4e1711edf750ed7be80",
+    "facts": [
+      {
+        "label": "Maximum PV voltage",
+        "value": "80V",
+        "quote": "80V",
+        "sourceUrl": "https://watts247.com/product/tigo-ts4-a-o-optimizer-rapid-shutdown-module/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\016079c3f68cb035.html",
+        "sha256": "d1179dc620a7d5e100f1767076b71eb71b1b6a3084b2f4e1711edf750ed7be80",
+        "checkedAt": "2026-10-12T01:25:13.108Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\016079c3f68cb035.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      }
+    ],
+    "variantEvidence": {
+      "watts247-50619": []
+    },
+    "pages": null,
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. Selected product technical body; related products/reviews excluded. Prior paired capture metadata; original cache has no historical byte hash. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 45,
+    "key": "module-electronics|https://signaturesolar.com/tigo-ts4-a-o-optimization-monitoring-rapid-shutdown-22a/",
+    "productIds": [
+      "signature-solar-1594035"
+    ],
+    "expected": {
+      "signature-solar-1594035": {
+        "name": "Tigo TS4-A-O | Optimization, Monitoring & Rapid Shutdown | 22A",
+        "sourceUrl": "https://signaturesolar.com/tigo-ts4-a-o-optimization-monitoring-rapid-shutdown-22a/",
+        "category": "module-electronics",
+        "anchors": {
+          "moduleFunction": "Rapid shutdown"
+        }
+      }
+    },
+    "model": "Tigo TS4-A-O | Optimization, Monitoring & Rapid Shutdown | 22A",
+    "url": "https://signaturesolar.com/tigo-ts4-a-o-optimization-monitoring-rapid-shutdown-22a/",
+    "kind": "retailer",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T01:32:20.487Z",
+    "rows": [
+      [
+        "Current rating",
+        "22A"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\e7a22cc1de065009.html",
+    "sha256": "3cef2549698fecb327f7b99e6599e95c9c4e752d764ea93b86dd3917e01c8930",
+    "facts": [
+      {
+        "label": "Current rating",
+        "value": "22A",
+        "quote": "22A",
+        "sourceUrl": "https://signaturesolar.com/tigo-ts4-a-o-optimization-monitoring-rapid-shutdown-22a/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\e7a22cc1de065009.html",
+        "sha256": "3cef2549698fecb327f7b99e6599e95c9c4e752d764ea93b86dd3917e01c8930",
+        "checkedAt": "2026-10-12T01:32:20.487Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\e7a22cc1de065009.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      }
+    ],
+    "variantEvidence": {
+      "signature-solar-1594035": []
+    },
+    "pages": null,
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. Selected product technical body; related products/reviews excluded. Prior paired capture metadata; original cache has no historical byte hash. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 70,
+    "key": "monitoring|https://www.santansolar.com/product/victron-bmv-702-battery-monitor/",
+    "productIds": [
+      "santan-solar-bam010702000"
+    ],
+    "expected": {
+      "santan-solar-bam010702000": {
+        "name": "Victron Battery Monitor BMV-702",
+        "sourceUrl": "https://www.santansolar.com/product/victron-bmv-702-battery-monitor/",
+        "category": "monitoring",
+        "anchors": {
+          "monitorType": "Battery monitor"
+        }
+      }
+    },
+    "model": "Victron Battery Monitor BMV-702",
+    "url": "https://www.santansolar.com/product/victron-bmv-702-battery-monitor/",
+    "kind": "retailer",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T01:25:42.102Z",
+    "rows": [
+      [
+        "Communication",
+        "VE.Direct communication port"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\753a1bbff76d26eb.html",
+    "sha256": "570e6930d7e60ea9f02bf401a1492544f33b68bba44542a78c4575cbfd8a9dd4",
+    "facts": [
+      {
+        "label": "Communication",
+        "value": "VE.Direct communication port",
+        "quote": "VE.Direct communication port",
+        "sourceUrl": "https://www.santansolar.com/product/victron-bmv-702-battery-monitor/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\753a1bbff76d26eb.html",
+        "sha256": "570e6930d7e60ea9f02bf401a1492544f33b68bba44542a78c4575cbfd8a9dd4",
+        "checkedAt": "2026-10-12T01:25:42.102Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\753a1bbff76d26eb.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      }
+    ],
+    "variantEvidence": {
+      "santan-solar-bam010702000": []
+    },
+    "pages": null,
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. Selected product technical body; related products/reviews excluded. Prior paired capture metadata; original cache has no historical byte hash. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 71,
+    "key": "monitoring|https://www.santansolar.com/product/victron-bmv-712-smart-battery-monitor/",
+    "productIds": [
+      "santan-solar-bam030712000"
+    ],
+    "expected": {
+      "santan-solar-bam030712000": {
+        "name": "Victron BMV-712 Smart Battery Monitor",
+        "sourceUrl": "https://www.santansolar.com/product/victron-bmv-712-smart-battery-monitor/",
+        "category": "monitoring",
+        "anchors": {
+          "monitorType": "Battery monitor"
+        }
+      }
+    },
+    "model": "Victron BMV-712 Smart Battery Monitor",
+    "url": "https://www.santansolar.com/product/victron-bmv-712-smart-battery-monitor/",
+    "kind": "retailer",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T01:25:44.139Z",
+    "rows": [
+      [
+        "Communication",
+        "Bluetooth; VE.Direct communication port"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\ff1b2b01da4a6375.html",
+    "sha256": "eb1472d946863547c72cc5f1f0009f48f17b6a2921c8b442f18e60461f3ad4e2",
+    "facts": [
+      {
+        "label": "Communication",
+        "value": "Bluetooth; VE.Direct communication port",
+        "quote": "VE. Direct communication port",
+        "sourceUrl": "https://www.santansolar.com/product/victron-bmv-712-smart-battery-monitor/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\ff1b2b01da4a6375.html",
+        "sha256": "eb1472d946863547c72cc5f1f0009f48f17b6a2921c8b442f18e60461f3ad4e2",
+        "checkedAt": "2026-10-12T01:25:44.139Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\ff1b2b01da4a6375.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      }
+    ],
+    "variantEvidence": {
+      "santan-solar-bam030712000": []
+    },
+    "pages": null,
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. Selected product technical body; related products/reviews excluded. Prior paired capture metadata; original cache has no historical byte hash. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 79,
+    "key": "monitoring|https://signaturesolar.com/growatt-syn-200-xh-us-11a-200a-automatic-transfer-switch/",
+    "productIds": [
+      "signature-solar-1519123"
+    ],
+    "expected": {
+      "signature-solar-1519123": {
+        "name": "Growatt SYN 200-XH-US-11A  | 200A Automatic Transfer Switch",
+        "sourceUrl": "https://signaturesolar.com/growatt-syn-200-xh-us-11a-200a-automatic-transfer-switch/",
+        "category": "monitoring",
+        "anchors": {
+          "monitorType": "System / load control"
+        }
+      }
+    },
+    "model": "Growatt SYN 200-XH-US-11A  | 200A Automatic Transfer Switch",
+    "url": "https://signaturesolar.com/content/documents/GROWATT/syn/SYN_200-XH-US_Datasheet_EN_202403%20(1).pdf",
+    "kind": "datasheet",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T21:37:46.834003+00:00",
+    "rows": [
+      [
+        "Communication",
+        "RS485"
+      ],
+      [
+        "Measurement accuracy",
+        "1% (import/export energy meter)"
+      ],
+      [
+        "Ingress Protection",
+        "IP65"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\030f73d38a56412a91ba7af978751310.pdf",
+    "sha256": "dd871a4d44c485d8a35d503d93ea3d8011ee0319c680d972a7d3c4d752cbef76",
+    "facts": [
+      {
+        "label": "Communication",
+        "value": "RS485",
+        "quote": "RS485",
+        "sourceUrl": "https://signaturesolar.com/content/documents/GROWATT/syn/SYN_200-XH-US_Datasheet_EN_202403%20(1).pdf",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\030f73d38a56412a91ba7af978751310.pdf",
+        "sha256": "dd871a4d44c485d8a35d503d93ea3d8011ee0319c680d972a7d3c4d752cbef76",
+        "checkedAt": "2026-10-12T21:37:46.834003+00:00",
+        "scope": "SYN 200-XH-US-11A column and merged shared rows; generator features only apply to 13A and excluded; explicit IP65 not NEMA conversion",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "label": "Measurement accuracy",
+        "value": "1% (import/export energy meter)",
+        "quote": "1% accuracy",
+        "sourceUrl": "https://signaturesolar.com/content/documents/GROWATT/syn/SYN_200-XH-US_Datasheet_EN_202403%20(1).pdf",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\030f73d38a56412a91ba7af978751310.pdf",
+        "sha256": "dd871a4d44c485d8a35d503d93ea3d8011ee0319c680d972a7d3c4d752cbef76",
+        "checkedAt": "2026-10-12T21:37:46.834003+00:00",
+        "scope": "SYN 200-XH-US-11A column and merged shared rows; generator features only apply to 13A and excluded; explicit IP65 not NEMA conversion",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      {
+        "label": "Ingress Protection",
+        "value": "IP65",
+        "quote": "IP65/NEMA Type 4X",
+        "sourceUrl": "https://signaturesolar.com/content/documents/GROWATT/syn/SYN_200-XH-US_Datasheet_EN_202403%20(1).pdf",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\specification-research\\batch-sixteen-collected\\030f73d38a56412a91ba7af978751310.pdf",
+        "sha256": "dd871a4d44c485d8a35d503d93ea3d8011ee0319c680d972a7d3c4d752cbef76",
+        "checkedAt": "2026-10-12T21:37:46.834003+00:00",
+        "scope": "SYN 200-XH-US-11A column and merged shared rows; generator features only apply to 13A and excluded; explicit IP65 not NEMA conversion",
+        "pages": [
+          1,
+          2
+        ]
+      }
+    ],
+    "variantEvidence": {
+      "signature-solar-1519123": []
+    },
+    "pages": [
+      1,
+      2
+    ],
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. SYN 200-XH-US-11A column and merged shared rows; generator features only apply to 13A and excluded; explicit IP65 not NEMA conversion. Collector timestamp and response byte hash verified; rendered relevant pages visually inspected. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 85,
+    "key": "mounting|https://practicalpreppers.com/product/k2-crossrail-44-x-mill-86/",
+    "productIds": [
+      "practical-preppers-4000143"
+    ],
+    "expected": {
+      "practical-preppers-4000143": {
+        "name": "K2 CrossRail 44-X (Mill) 86″",
+        "sourceUrl": "https://practicalpreppers.com/product/k2-crossrail-44-x-mill-86/",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Roof"
+        }
+      }
+    },
+    "model": "K2 CrossRail 44-X (Mill) 86″",
+    "url": "https://practicalpreppers.com/product/k2-crossrail-44-x-mill-86/",
+    "kind": "retailer",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T01:41:00.149Z",
+    "rows": [
+      [
+        "Material",
+        "Aluminum"
+      ],
+      [
+        "Dimensions",
+        "86 in length; 44 mm rail height"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\773a41e5c66ee669.html",
+    "sha256": "47f38bbd6298b9480dc296625fb22f22ad680287342ca398c21ba4ad3a2eb366",
+    "facts": [
+      {
+        "label": "Material",
+        "value": "Aluminum",
+        "quote": "Aluminum",
+        "sourceUrl": "https://practicalpreppers.com/product/k2-crossrail-44-x-mill-86/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\773a41e5c66ee669.html",
+        "sha256": "47f38bbd6298b9480dc296625fb22f22ad680287342ca398c21ba4ad3a2eb366",
+        "checkedAt": "2026-10-12T01:41:00.149Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\773a41e5c66ee669.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      },
+      {
+        "label": "Dimensions",
+        "value": "86 in length; 44 mm rail height",
+        "quote": "HEIGHT [MM]: 44 LENGTH [IN]: 86″",
+        "sourceUrl": "https://practicalpreppers.com/product/k2-crossrail-44-x-mill-86/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\773a41e5c66ee669.html",
+        "sha256": "47f38bbd6298b9480dc296625fb22f22ad680287342ca398c21ba4ad3a2eb366",
+        "checkedAt": "2026-10-12T01:41:00.149Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\773a41e5c66ee669.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      }
+    ],
+    "variantEvidence": {
+      "practical-preppers-4000143": []
+    },
+    "pages": null,
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. Selected product technical body; related products/reviews excluded. Prior paired capture metadata; original cache has no historical byte hash. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 89,
+    "key": "mounting|https://www.santansolar.com/product/eg4-brightmount-v2-1-groundmount-with-extensions-3-4-panels/",
+    "productIds": [
+      "santan-solar-eg4-brightmount-v2-1"
+    ],
+    "expected": {
+      "santan-solar-eg4-brightmount-v2-1": {
+        "name": "EG4 Brightmount V2.1 Groundmount with Extensions 3-4 panels",
+        "sourceUrl": "https://www.santansolar.com/product/eg4-brightmount-v2-1-groundmount-with-extensions-3-4-panels/",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Ground"
+        }
+      }
+    },
+    "model": "EG4 Brightmount V2.1 Groundmount with Extensions 3-4 panels",
+    "url": "https://www.santansolar.com/product/eg4-brightmount-v2-1-groundmount-with-extensions-3-4-panels/",
+    "kind": "retailer",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-05T03:12:49.203Z",
+    "rows": [
+      [
+        "Compatibility",
+        "Up to 4 portrait panels; width up to 44.64 in with extension; thickness 30, 35 or 40 mm"
+      ],
+      [
+        "Tilt angle",
+        "20°, 25°, 30°, 35°, 40°"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\5332ee5d1227af44.html",
+    "sha256": "e3371f2263f4e323b1b500bcde994bceadd07588a0908074719642d2b9aae394",
+    "facts": [
+      {
+        "label": "Compatibility",
+        "value": "Up to 4 portrait panels; width up to 44.64 in with extension; thickness 30, 35 or 40 mm",
+        "quote": "44.64 in. (1134 mm)",
+        "sourceUrl": "https://www.santansolar.com/product/eg4-brightmount-v2-1-groundmount-with-extensions-3-4-panels/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\5332ee5d1227af44.html",
+        "sha256": "e3371f2263f4e323b1b500bcde994bceadd07588a0908074719642d2b9aae394",
+        "checkedAt": "2026-10-05T03:12:49.203Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\5332ee5d1227af44.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      },
+      {
+        "label": "Tilt angle",
+        "value": "20°, 25°, 30°, 35°, 40°",
+        "quote": "20°, 25°, 30°, 35°, 40°",
+        "sourceUrl": "https://www.santansolar.com/product/eg4-brightmount-v2-1-groundmount-with-extensions-3-4-panels/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\5332ee5d1227af44.html",
+        "sha256": "e3371f2263f4e323b1b500bcde994bceadd07588a0908074719642d2b9aae394",
+        "checkedAt": "2026-10-05T03:12:49.203Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\5332ee5d1227af44.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      }
+    ],
+    "variantEvidence": {
+      "santan-solar-eg4-brightmount-v2-1": []
+    },
+    "pages": null,
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. Selected product technical body; related products/reviews excluded. Prior paired capture metadata; original cache has no historical byte hash. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 98,
+    "key": "mounting|https://www.santansolar.com/product/solar-stack-10-tilt-kit-8-length-low-high-mount/",
+    "productIds": [
+      "santan-solar-ss-8-tk10"
+    ],
+    "expected": {
+      "santan-solar-ss-8-tk10": {
+        "name": "Solar Stack 10° Tilt Kit – 8” length (low & high mount)",
+        "sourceUrl": "https://www.santansolar.com/product/solar-stack-10-tilt-kit-8-length-low-high-mount/",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Hardware"
+        }
+      }
+    },
+    "model": "Solar Stack 10° Tilt Kit – 8” length (low & high mount)",
+    "url": "https://www.santansolar.com/product/solar-stack-10-tilt-kit-8-length-low-high-mount/",
+    "kind": "retailer",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-05T03:15:24.446Z",
+    "rows": [
+      [
+        "Tilt angle",
+        "10° fixed"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\5438a9701caa5191.html",
+    "sha256": "54e27b5f8eac66324ea10881b2d733b92d0763ce38564d0f526060a1adafa980",
+    "facts": [
+      {
+        "label": "Tilt angle",
+        "value": "10° fixed",
+        "quote": "fixed 10° slope",
+        "sourceUrl": "https://www.santansolar.com/product/solar-stack-10-tilt-kit-8-length-low-high-mount/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\5438a9701caa5191.html",
+        "sha256": "54e27b5f8eac66324ea10881b2d733b92d0763ce38564d0f526060a1adafa980",
+        "checkedAt": "2026-10-05T03:15:24.446Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\5438a9701caa5191.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      }
+    ],
+    "variantEvidence": {
+      "santan-solar-ss-8-tk10": []
+    },
+    "pages": null,
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. Selected product technical body; related products/reviews excluded. Prior paired capture metadata; original cache has no historical byte hash. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "family": 103,
+    "key": "wiring|https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable",
+    "productIds": [
+      "wattcycle-67838376313128"
+    ],
+    "expected": {
+      "wattcycle-67838376313128": {
+        "name": "WattCycle WattLINK - BLUETTI AC200MAX PPS Extra 48V Battery-to-PPS Expansion Cable — Bluetti AC200MAX Adapter Cable",
+        "sourceUrl": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable?variant=67838376313128",
+        "category": "wiring",
+        "anchors": {
+          "voltage": 48
+        }
+      }
+    },
+    "model": "WT-PPSQCCBT30048XL",
+    "url": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable",
+    "kind": "manufacturer",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T01:25:54.470Z",
+    "rows": [
+      [
+        "Length",
+        "39 inch (100 cm)"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\cef82451e9321e49.html",
+    "sha256": "51d43a28874cead6664522d5d2ef71565a05ce86a35aabf728c22c85416c140a",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "39 inch (100 cm)",
+        "quote": "39 inch (100 cm)",
+        "sourceUrl": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\cef82451e9321e49.html",
+        "sha256": "51d43a28874cead6664522d5d2ef71565a05ce86a35aabf728c22c85416c140a",
+        "checkedAt": "2026-10-12T01:25:54.470Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\cef82451e9321e49.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded; nominal source-rounded 1 m cable length, not computed; inconsistent gauge/current revisions withheld",
+        "pages": null
+      }
+    ],
+    "variantEvidence": {
+      "wattcycle-67838376313128": [
+        {
+          "id": 67838376313128,
+          "title": null,
+          "name": "WattCycle WattLINK - BLUETTI AC200MAX PPS Extra 48V Battery-to-PPS Expansion Cable - Bluetti AC200MAX Adapter Cable",
+          "sku": "WT-PPSQCCBT30048XL",
+          "option1": null,
+          "option2": null,
+          "option3": null
+        }
+      ]
+    },
+    "pages": null,
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. Selected product technical body; related products/reviews excluded. Prior paired capture metadata; original cache has no historical byte hash. Only Length retained: 39 inch (100 cm) is the source nominal rounded 1 m length, supported by upper selected product body 39.37 inch / 1 meter. No length calculated or substituted. Gauge 8 AWG and current 50A continuous withheld: upper body says 6 AWG copper, 30A bidirectional, 80A fuse; lower table says 8AWG, 50A and safety note 50A fuse. Exact selected revision remains unresolved. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained.",
+    "sourceNotes": [
+      "Only Length retained: 39 inch (100 cm) is the source nominal rounded 1 m length, supported by upper selected product body 39.37 inch / 1 meter. No length calculated or substituted. Gauge 8 AWG and current 50A continuous withheld: upper body says 6 AWG copper, 30A bidirectional, 80A fuse; lower table says 8AWG, 50A and safety note 50A fuse. Exact selected revision remains unresolved."
+    ]
+  },
+  {
+    "family": 109,
+    "key": "wiring|https://signaturesolar.com/eg4-chargeverter-adapter-cable/",
+    "productIds": [
+      "signature-solar-1510985"
+    ],
+    "expected": {
+      "signature-solar-1510985": {
+        "name": "EG4 Chargeverter Adapter Cable",
+        "sourceUrl": "https://signaturesolar.com/eg4-chargeverter-adapter-cable/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "model": "EG4 Chargeverter Adapter Cable",
+    "url": "https://signaturesolar.com/eg4-chargeverter-adapter-cable/",
+    "kind": "retailer",
+    "label": "Exact selected model full-source transcription",
+    "checkedAt": "2026-10-12T01:26:10.233Z",
+    "rows": [
+      [
+        "Length",
+        "72 in"
+      ],
+      [
+        "Voltage rating",
+        "600VDC"
+      ],
+      [
+        "Current rating",
+        "100A"
+      ]
+    ],
+    "artifactPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\3ba5ef04dc07e574.html",
+    "sha256": "5e4d3f7f8d46a01c2df2f035c86739584d26cabd474235e6a8594a4d01b30f0c",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "72 in",
+        "quote": "72in",
+        "sourceUrl": "https://signaturesolar.com/eg4-chargeverter-adapter-cable/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\3ba5ef04dc07e574.html",
+        "sha256": "5e4d3f7f8d46a01c2df2f035c86739584d26cabd474235e6a8594a4d01b30f0c",
+        "checkedAt": "2026-10-12T01:26:10.233Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\3ba5ef04dc07e574.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      },
+      {
+        "label": "Voltage rating",
+        "value": "600VDC",
+        "quote": "600 VDC",
+        "sourceUrl": "https://signaturesolar.com/eg4-chargeverter-adapter-cable/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\3ba5ef04dc07e574.html",
+        "sha256": "5e4d3f7f8d46a01c2df2f035c86739584d26cabd474235e6a8594a4d01b30f0c",
+        "checkedAt": "2026-10-12T01:26:10.233Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\3ba5ef04dc07e574.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      },
+      {
+        "label": "Current rating",
+        "value": "100A",
+        "quote": "100 A",
+        "sourceUrl": "https://signaturesolar.com/eg4-chargeverter-adapter-cable/",
+        "path": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\3ba5ef04dc07e574.html",
+        "sha256": "5e4d3f7f8d46a01c2df2f035c86739584d26cabd474235e6a8594a4d01b30f0c",
+        "checkedAt": "2026-10-12T01:26:10.233Z",
+        "metadataPath": "output\\specification-research\\batch-sixteen-balance-frozen-v3\\artifacts\\output\\spec-research\\3ba5ef04dc07e574.json",
+        "dateBasis": "paired prior cache metadata; present hash computed offline; no historical hash assertion",
+        "scope": "Selected product technical body; related products/reviews excluded",
+        "pages": null
+      }
+    ],
+    "variantEvidence": {
+      "signature-solar-1510985": []
+    },
+    "pages": null,
+    "reviewStatus": "approved",
+    "reviewNote": "Actual selected IDs and raw anchors bound. Selected product technical body; related products/reviews excluded. Prior paired capture metadata; original cache has no historical byte hash. Independent complete immutable-source review review-sixteen-balance-v3-independent.json (review SHA256 778cb66a151975dd40d0f1548a9e22f3262ed02f6f722ab50a783465842501c5, candidate SHA256 d9a4372f4544d014569fd8a658646a05a74e0e5c96cd6447c4bc4ae4324f2084). Published conditions and uncertainty are retained."
+  },
+  {
+    "url": "https://practicalpreppers.com/product/renon-xcellent-plus-battery-module/",
+    "kind": "retailer",
+    "model": "Renon Xcellent Plus Battery Module",
+    "label": "Exact identity offline storage review batch sixteen",
+    "checkedAt": "2026-10-12T02:00:30.678Z",
+    "rows": [
+      [
+        "Nominal Energy",
+        "16 kWh"
+      ],
+      [
+        "Communications",
+        "RS485, CAN, WiFi"
+      ]
+    ],
+    "productIds": [
+      "practical-preppers-xcellentplus"
+    ],
+    "expected": {
+      "practical-preppers-xcellentplus": {
+        "name": "Renon Xcellent Plus Battery Module",
+        "sourceUrl": "https://practicalpreppers.com/product/renon-xcellent-plus-battery-module/",
+        "category": "batteries",
+        "anchors": {
+          "batteryKind": "Battery modules"
+        }
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-storage-independent.json (review SHA256 6a2daf33481874a7e66571238507050e32cf2cf1e2c4a08d2885e49eb3a8e3a4, candidate SHA256 45fa40e4261a0b037e32fd4c9e063302dd64c212d76b18a2c3943c696a013a83). Published conditions and uncertainty are retained."
+  },
+  {
+    "url": "https://invertersrus.com/product/sun-xtender-pvx-1290t/",
+    "kind": "retailer",
+    "model": "Sun Xtender PVX-1290T Solar Battery",
+    "label": "Exact identity offline storage review batch sixteen",
+    "checkedAt": "2026-10-12T01:27:34.276Z",
+    "rows": [
+      [
+        "Nominal Voltage",
+        "12 V"
+      ],
+      [
+        "Battery Chemistry",
+        "VRLA-AGM"
+      ],
+      [
+        "Rated Capacity",
+        "129 Ah (24-hour rate at 25 C /77 F to 1.75 V per cell)"
+      ],
+      [
+        "Dimensions",
+        "12.9 x 6.75 x 8.96 in"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-pvx-1290t"
+    ],
+    "expected": {
+      "inverters-r-us-pvx-1290t": {
+        "name": "Sun Xtender PVX-1290T Solar Battery",
+        "sourceUrl": "https://invertersrus.com/product/sun-xtender-pvx-1290t/",
+        "category": "batteries",
+        "anchors": {
+          "batteryKind": "Battery modules"
+        }
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-storage-independent.json (review SHA256 6a2daf33481874a7e66571238507050e32cf2cf1e2c4a08d2885e49eb3a8e3a4, candidate SHA256 45fa40e4261a0b037e32fd4c9e063302dd64c212d76b18a2c3943c696a013a83). Published conditions and uncertainty are retained."
+  },
+  {
+    "url": "https://invertersrus.com/product/pecron-eb3000-24v/",
+    "kind": "retailer",
+    "model": "PECRON EB3000-24V Expansion Battery 3072Wh for E2000LFP ONLY",
+    "label": "Exact identity offline storage review batch sixteen",
+    "checkedAt": "2026-10-12T01:24:51.006Z",
+    "rows": [
+      [
+        "Capacity",
+        "3072 Wh"
+      ],
+      [
+        "Rated Capacity",
+        "120 Ah"
+      ],
+      [
+        "Battery Chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Dimensions",
+        "441 x 312 x 200 mm"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-eb3000-24v"
+    ],
+    "expected": {
+      "inverters-r-us-eb3000-24v": {
+        "name": "PECRON EB3000-24V Expansion Battery 3072Wh for E2000LFP ONLY",
+        "sourceUrl": "https://invertersrus.com/product/pecron-eb3000-24v/",
+        "category": "batteries",
+        "anchors": {
+          "voltage": 24,
+          "batteryKind": "Battery modules"
+        }
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-storage-independent.json (review SHA256 6a2daf33481874a7e66571238507050e32cf2cf1e2c4a08d2885e49eb3a8e3a4, candidate SHA256 45fa40e4261a0b037e32fd4c9e063302dd64c212d76b18a2c3943c696a013a83). Published conditions and uncertainty are retained."
+  },
+  {
+    "url": "https://invertersrus.com/product/epoch-12v-334ah-lifepo4-battery-4-28kwh/",
+    "kind": "retailer",
+    "model": "EPOCH 12V 334Ah MC Essential Series LiFePO4 Battery (4.28kWh)",
+    "label": "Exact identity offline storage review batch sixteen",
+    "checkedAt": "2026-10-12T01:23:58.770Z",
+    "rows": [
+      [
+        "Rated Capacity",
+        "334 Ah"
+      ],
+      [
+        "Maximum Continuous Discharge Current",
+        "300 A"
+      ],
+      [
+        "Peak Discharge Current",
+        "600 A (10 seconds)"
+      ],
+      [
+        "Communications",
+        "Victron communications; Bluetooth"
+      ],
+      [
+        "Dimensions",
+        "15.35 x 8.07 x 11.02 in"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-12334a-mc"
+    ],
+    "expected": {
+      "inverters-r-us-12334a-mc": {
+        "name": "EPOCH 12V 334Ah MC Essential Series LiFePO4 Battery (4.28kWh)",
+        "sourceUrl": "https://invertersrus.com/product/epoch-12v-334ah-lifepo4-battery-4-28kwh/",
+        "category": "batteries",
+        "anchors": {
+          "voltage": 12,
+          "capacityKwh": 4.28,
+          "capacityAh": 334,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        }
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-storage-independent.json (review SHA256 6a2daf33481874a7e66571238507050e32cf2cf1e2c4a08d2885e49eb3a8e3a4, candidate SHA256 45fa40e4261a0b037e32fd4c9e063302dd64c212d76b18a2c3943c696a013a83). Published conditions and uncertainty are retained."
+  },
+  {
+    "url": "https://www.renogy.com/cdn/shop/files/12V_Deep_Cycle_AGM_Battery_UM.pdf?v=5775865963845898436",
+    "kind": "manual",
+    "model": "12V 100Ah/200Ah Deep Cycle AGM Battery — 200Ah / 1 Pack",
+    "label": "Exact identity offline storage review batch sixteen",
+    "checkedAt": "2026-10-12T21:35:22.741120+00:00",
+    "rows": [
+      [
+        "Maximum Continuous Discharge Current",
+        "200 A"
+      ],
+      [
+        "Maximum Continuous Charging Current",
+        "60 A"
+      ],
+      [
+        "Peak Discharge Current",
+        "2000 A (5 seconds)"
+      ],
+      [
+        "Communications",
+        "No"
+      ]
+    ],
+    "productIds": [
+      "renogy-44251647869043"
+    ],
+    "expected": {
+      "renogy-44251647869043": {
+        "name": "12V 100Ah/200Ah Deep Cycle AGM Battery — 200Ah / 1 Pack",
+        "sourceUrl": "https://www.renogy.com/products/deep-cycle-agm-battery-12-volt-100ah-200ah?variant=44251647869043",
+        "category": "batteries",
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 200,
+          "batteryKind": "Battery modules",
+          "maxChargeCurrent": 60
+        }
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-storage-independent.json (review SHA256 6a2daf33481874a7e66571238507050e32cf2cf1e2c4a08d2885e49eb3a8e3a4, candidate SHA256 45fa40e4261a0b037e32fd4c9e063302dd64c212d76b18a2c3943c696a013a83). Published conditions and uncertainty are retained."
+  },
+  {
+    "url": "https://www.renogy.com/cdn/shop/files/12V_Deep_Cycle_AGM_Battery_UM.pdf?v=5775865963845898436",
+    "kind": "manual",
+    "model": "12V 100Ah/200Ah Deep Cycle AGM Battery — 100Ah / 1 Pack",
+    "label": "Exact identity offline storage review batch sixteen",
+    "checkedAt": "2026-10-12T21:35:22.741120+00:00",
+    "rows": [
+      [
+        "Maximum Continuous Discharge Current",
+        "100 A"
+      ],
+      [
+        "Maximum Continuous Charging Current",
+        "30 A"
+      ],
+      [
+        "Peak Discharge Current",
+        "1100 A (5 seconds)"
+      ],
+      [
+        "Communications",
+        "No"
+      ]
+    ],
+    "productIds": [
+      "renogy-44251647967347"
+    ],
+    "expected": {
+      "renogy-44251647967347": {
+        "name": "12V 100Ah/200Ah Deep Cycle AGM Battery — 100Ah / 1 Pack",
+        "sourceUrl": "https://www.renogy.com/products/deep-cycle-agm-battery-12-volt-100ah-200ah?variant=44251647967347",
+        "category": "batteries",
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 100,
+          "batteryKind": "Battery modules"
+        }
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-storage-independent.json (review SHA256 6a2daf33481874a7e66571238507050e32cf2cf1e2c4a08d2885e49eb3a8e3a4, candidate SHA256 45fa40e4261a0b037e32fd4c9e063302dd64c212d76b18a2c3943c696a013a83). Published conditions and uncertainty are retained."
+  },
+  {
+    "url": "https://shopsolarkits.com/products/anker-solix-b6000-battery-module-e10",
+    "kind": "retailer",
+    "model": "Anker SOLIX B6000 Battery Module for E10 Backup System | 6–24kWh Expandable LiFePO4 | 10kW Turbo | UL 9540A | 5-Year Warranty — 1 Battery | 6 kWh",
+    "label": "Exact identity offline storage review batch sixteen",
+    "checkedAt": "2026-10-05T03:15:14.998Z",
+    "rows": [
+      [
+        "Mounting Type",
+        "Floor or wall mount"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46081362559116",
+      "shopsolar-46081362591884",
+      "shopsolar-46081362624652",
+      "shopsolar-46081362657420"
+    ],
+    "expected": {
+      "shopsolar-46081362559116": {
+        "name": "Anker SOLIX B6000 Battery Module for E10 Backup System | 6–24kWh Expandable LiFePO4 | 10kW Turbo | UL 9540A | 5-Year Warranty — 1 Battery | 6 kWh",
+        "sourceUrl": "https://shopsolarkits.com/products/anker-solix-b6000-battery-module-e10?variant=46081362559116",
+        "category": "batteries",
+        "anchors": {
+          "capacityKwh": 6,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        }
+      },
+      "shopsolar-46081362591884": {
+        "name": "Anker SOLIX B6000 Battery Module for E10 Backup System | 6–24kWh Expandable LiFePO4 | 10kW Turbo | UL 9540A | 5-Year Warranty — 2 Batteries | 12 kWh",
+        "sourceUrl": "https://shopsolarkits.com/products/anker-solix-b6000-battery-module-e10?variant=46081362591884",
+        "category": "batteries",
+        "anchors": {
+          "capacityKwh": 12,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        }
+      },
+      "shopsolar-46081362624652": {
+        "name": "Anker SOLIX B6000 Battery Module for E10 Backup System | 6–24kWh Expandable LiFePO4 | 10kW Turbo | UL 9540A | 5-Year Warranty — 3 Batteries | 18 kWh",
+        "sourceUrl": "https://shopsolarkits.com/products/anker-solix-b6000-battery-module-e10?variant=46081362624652",
+        "category": "batteries",
+        "anchors": {
+          "capacityKwh": 18,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        }
+      },
+      "shopsolar-46081362657420": {
+        "name": "Anker SOLIX B6000 Battery Module for E10 Backup System | 6–24kWh Expandable LiFePO4 | 10kW Turbo | UL 9540A | 5-Year Warranty — 4 Batteries | 24 kWh",
+        "sourceUrl": "https://shopsolarkits.com/products/anker-solix-b6000-battery-module-e10?variant=46081362657420",
+        "category": "batteries",
+        "anchors": {
+          "capacityKwh": 24,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        }
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-storage-independent.json (review SHA256 6a2daf33481874a7e66571238507050e32cf2cf1e2c4a08d2885e49eb3a8e3a4, candidate SHA256 45fa40e4261a0b037e32fd4c9e063302dd64c212d76b18a2c3943c696a013a83). Published conditions and uncertainty are retained."
+  },
+  {
+    "url": "https://www.wattcycle.com/products/quick-connect-parallel-cable-314ah-battery-250a-70mm2",
+    "kind": "manufacturer",
+    "model": "WattCycle Dedicated 51.2V 314Ah Floor-Standing Battery Expansion Dual-Head Quick-Connect Parallel Cable — 2x Batteries & 1x Parallel Cables",
+    "label": "Exact identity offline storage review batch sixteen",
+    "checkedAt": "2026-10-12T01:25:28.457Z",
+    "rows": [
+      [
+        "Included Components",
+        "2 x WattCycle 51.2V 314Ah floor-standing LiFePO4 batteries; 1 x 70 mm2 250A dual-head quick-connect parallel cable (1.2 m)"
+      ]
+    ],
+    "productIds": [
+      "wattcycle-51987972587816"
+    ],
+    "expected": {
+      "wattcycle-51987972587816": {
+        "name": "WattCycle Dedicated 51.2V 314Ah Floor-Standing Battery Expansion Dual-Head Quick-Connect Parallel Cable — 2x Batteries & 1x Parallel Cables",
+        "sourceUrl": "https://www.wattcycle.com/products/quick-connect-parallel-cable-314ah-battery-250a-70mm2?variant=51987972587816",
+        "category": "kits",
+        "anchors": {
+          "kitType": "Other equipment kits"
+        }
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-storage-independent.json (review SHA256 6a2daf33481874a7e66571238507050e32cf2cf1e2c4a08d2885e49eb3a8e3a4, candidate SHA256 45fa40e4261a0b037e32fd4c9e063302dd64c212d76b18a2c3943c696a013a83). Published conditions and uncertainty are retained."
+  },
+  {
+    "url": "https://signaturesolar.com/tamarack-solar-portrait-top-of-pole-mount-4-modules-1-post-38-in-72in-long-uni-pgrm-4p1-kit/",
+    "kind": "retailer",
+    "model": "Tamarack Solar | Portrait Top of Pole Mount | 4 Modules / 1 Post | 38-IN - 72IN Long | UNI-PGRM/4P1 | Kit",
+    "label": "Exact identity offline storage review batch sixteen",
+    "checkedAt": "2026-10-12T01:37:50.804Z",
+    "rows": [
+      [
+        "Included Components",
+        "1 x Tamarack Solar 4 in pole cap with U-bolts; 3 x Tamarack Solar pole-mount mid clamps for 38-72 in modules; 2 x Tamarack Solar pole-mount end clamps for38-72 in modules"
+      ]
+    ],
+    "productIds": [
+      "signature-solar-1688006-kit"
+    ],
+    "expected": {
+      "signature-solar-1688006-kit": {
+        "name": "Tamarack Solar | Portrait Top of Pole Mount | 4 Modules / 1 Post | 38-IN - 72IN Long | UNI-PGRM/4P1 | Kit",
+        "sourceUrl": "https://signaturesolar.com/tamarack-solar-portrait-top-of-pole-mount-4-modules-1-post-38-in-72in-long-uni-pgrm-4p1-kit/",
+        "category": "kits",
+        "anchors": {
+          "kitType": "Other equipment kits",
+          "Product Image": "Product Information"
+        }
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-storage-independent.json (review SHA256 6a2daf33481874a7e66571238507050e32cf2cf1e2c4a08d2885e49eb3a8e3a4, candidate SHA256 45fa40e4261a0b037e32fd4c9e063302dd64c212d76b18a2c3943c696a013a83). Published conditions and uncertainty are retained."
+  },
+  {
+    "url": "https://cdn.shopify.com/s/files/1/0251/0484/2798/files/Epoch_12334A-MC_Technical_Data_Sheet_Rev8.pdf?v=1790849242",
+    "kind": "datasheet",
+    "model": "12334A-MC",
+    "label": "Epoch 12334A-MC manufacturer Technical Data Sheet Rev8 October1,2026; max charge25C",
+    "checkedAt": "2026-10-12T21:57:16.657687+00:00",
+    "rows": [
+      [
+        "Maximum Continuous Charging Current",
+        "300 A (ratings at 25 C)"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-12334a-mc"
+    ],
+    "expected": {
+      "inverters-r-us-12334a-mc": {
+        "name": "EPOCH 12V 334Ah MC Essential Series LiFePO4 Battery (4.28kWh)",
+        "category": "batteries",
+        "sourceUrl": "https://invertersrus.com/product/epoch-12v-334ah-lifepo4-battery-4-28kwh/",
+        "anchors": {
+          "voltage": 12,
+          "capacityKwh": 4.28,
+          "capacityAh": 334,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        }
+      }
+    },
+    "reviewStatus": "approved",
+    "reviewNote": " Independent complete immutable-source review review-sixteen-storage-secondary-independent.json (review SHA256 d7c5dcf4a4ca34a98e4364fafa09c654b8bf9c3551c30407c225cd3c46545456, candidate SHA256 26b00f1196bf554a27204c295d0e985189ae8ac1cc88355e8cac6097abfca2e5). Published conditions and uncertainty are retained."
   }
 ]
