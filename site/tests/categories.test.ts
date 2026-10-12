@@ -196,10 +196,36 @@ test('equipment roles follow the sale subject before attached features and wirin
 });
 
 test('rated equipment descriptions do not absorb accessories or battery bank kits',()=>{
- assert.equal(classify('Compatible Accessories for the 12V 104Ah Super Slim Solid-State LiFePO4 Battery — Bracket for 2P Busbar'),null);
+ assert.equal(classify('Compatible Accessories for the 12V 104Ah Super Slim Solid-State LiFePO4 Battery — Bracket for 2P Busbar'),'mounting');
  assert.equal(classify('300Ah 12V LiFePO4 Off-Grid Battery Kit | 3.8kWh Deep Cycle Lithium Battery Bank | Powerful 300Ah Battery Kit for RVs, Trailers, Cabins, Campers, Vans, Off-Grid | 3 X ALPHA 1 LITE in Parallel'),'kits');
  assert.equal(classify('EG4 FlexBOSS21 Inverter & EG4-GridBOSS MID V3.1 [BNDL-E0019-3.1]'),'monitoring');
 });
 test('plural inverter connection cables stay wiring after catalog expansion',()=>{
  for(const name of ['6 Foot 1/0 AWT Alligator Clamp Power Inverter Cables CLAMPHDCBL06FT1/0','10 Foot 4 AWG Alligator Clamp Inverter Cables PWRC12004A1500','Vector 1,000 Watt Power Inverter Cables'])assert.equal(classify(name),'wiring');
+});
+test('accessory families and package selections use the item actually sold',()=>{
+ const cases:[string,Category][]=[
+ ['Compatible Accessories for the 12V 104Ah Super Slim Solid-State LiFePO4 Battery — Battery Bracket for Single Battery','mounting'],
+ ['Compatible Accessories for the 12V 104Ah Super Slim Solid-State LiFePO4 Battery — Bracket for Double Batteries','mounting'],
+ ['Compatible Accessories for the 12V 104Ah Super Slim Solid-State LiFePO4 Battery — Bracket for 2P Busbar','mounting'],
+ ['Adjustable Solar Panel Tilt Mount Brackets kit 28inch Support up to 150 Watt Solar Panels for Boats,RV,Roof Off Grid System','mounting'],
+ ['Ultra-Light 100W & 200W Foldable Portable Solar Panel | Up to 25% Cell Efficiency, IP67, 3-in-1 Adapter Cable — 200W','panels'],
+ ['12V 2x HUSKY2 RV LINKS2 Control System','kits'],
+ ['12V 400Ah RV HUSKY2-Victron-LINKS2 Control System','kits'],
+ ['WattCycle Dedicated 51.2V 314Ah Floor-Standing Battery Expansion Dual-Head Quick-Connect Parallel Cable — 2x Batteries & 1x Parallel Cables','kits'],
+ ['WattCycle WattLINK - BLUETTI AC200MAX PPS Extra 48V Battery-to-PPS Expansion Cable — 5.12kWh(48V 100Ah Wall-Mount Battery) & AC200MAX Adapter kit','kits'],
+ ['GridBOSS Breaker Kit','electrical'],
+ ['Cable Entry Housing | Cable Entry Solutions for Solar Panel Roof Installs | Easy to Install — Black','accessories'],
+ ];for(const [name,category] of cases)assert.equal(classify(name),category,name);
+ assert.equal(classify('WattCycle Dedicated 51.2V 314Ah Floor-Standing Battery Expansion Dual-Head Quick-Connect Parallel Cable — Parallel Cable Only'),'wiring');
+ assert.equal(classify('120V 30 Amp Automatic Transfer Switch'),'monitoring');
+ assert.equal(classify('EG4 GridBOSS 200A MID'),'monitoring');
+ assert.equal(classify('100W Solar Panel Extension Cable'),'wiring');
+});
+test('equipment destinations and plural accessories do not become solar panels',()=>{
+ assert.equal(classify('Solar Connectors for Solar Panels 5 Pairs Male & Female'),'wiring');
+ assert.equal(classify('Solar Panel Stands | 28" Fully Adjustable Tilt Mount | 100W-200W Panels ONLY'),'mounting');
+ assert.equal(classify('Mega 1 + 2*240W Solar Panel | Solar Generator Kits — Mega 1 + 240W Solar Panel*2'),'kits');
+ assert.equal(classify('Victron Energy Cerbo GX for Solar Panels and System Monitoring'),'monitoring');
+ assert.equal(classify('HQST Solar Panel Connectors, Male & Female Pair, IP67 Waterproof Solar PV Connectors for Photovoltaic Solar System Outdoor Permanent Installation — 5 pairs'),'wiring');
 });
