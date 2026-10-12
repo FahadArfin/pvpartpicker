@@ -1,36 +1,36 @@
 {
-  "checkedAt": "2026-10-12T03:26:04.489Z",
-  "catalogListings": 7213,
+  "checkedAt": "2026-10-12T03:39:09.437Z",
+  "catalogListings": 7408,
   "completeListings": 1128,
-  "remainingListings": 6085,
-  "remainingFields": 41713,
+  "remainingListings": 6280,
+  "remainingFields": 43263,
   "reviewedGaps": 162,
   "blockedListings": 288,
-  "awaitingReview": 5635,
+  "awaitingReview": 5830,
   "categories": [
     {
       "category": "batteries",
-      "listings": 1957,
-      "remainingListings": 1954,
-      "remainingFields": 15556
+      "listings": 1997,
+      "remainingListings": 1994,
+      "remainingFields": 15887
     },
     {
       "category": "panels",
-      "listings": 679,
-      "remainingListings": 679,
-      "remainingFields": 6171
+      "listings": 682,
+      "remainingListings": 682,
+      "remainingFields": 6204
     },
     {
       "category": "wiring",
-      "listings": 1199,
-      "remainingListings": 1199,
-      "remainingFields": 5486
+      "listings": 1212,
+      "remainingListings": 1212,
+      "remainingFields": 5561
     },
     {
       "category": "inverters",
-      "listings": 446,
-      "remainingListings": 446,
-      "remainingFields": 4178
+      "listings": 491,
+      "remainingListings": 491,
+      "remainingFields": 4649
     },
     {
       "category": "all-in-one",
@@ -40,33 +40,33 @@
     },
     {
       "category": "charging",
-      "listings": 262,
-      "remainingListings": 262,
-      "remainingFields": 1918
+      "listings": 318,
+      "remainingListings": 318,
+      "remainingFields": 2388
     },
     {
       "category": "electrical",
-      "listings": 333,
-      "remainingListings": 333,
-      "remainingFields": 1586
+      "listings": 351,
+      "remainingListings": 351,
+      "remainingFields": 1676
     },
     {
       "category": "accessories",
-      "listings": 293,
-      "remainingListings": 293,
-      "remainingFields": 1135
+      "listings": 305,
+      "remainingListings": 305,
+      "remainingFields": 1183
     },
     {
       "category": "mounting",
-      "listings": 250,
-      "remainingListings": 250,
-      "remainingFields": 908
+      "listings": 255,
+      "remainingListings": 255,
+      "remainingFields": 928
     },
     {
       "category": "monitoring",
-      "listings": 198,
-      "remainingListings": 198,
-      "remainingFields": 756
+      "listings": 201,
+      "remainingListings": 201,
+      "remainingFields": 768
     },
     {
       "category": "module-electronics",
