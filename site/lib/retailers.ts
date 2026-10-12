@@ -25,7 +25,10 @@ export function classify(title: string): Category | null {
   if(configuration?.kind==='standalone')return configuration.type==='Inverter'?'inverters':'all-in-one';
   // Classify the main equipment, not an optional variant cable/panel or a feature.
   const base = title.split(/\s—\s/)[0].toLowerCase();
-  const t = base.split(/\s(?:for|with|including|featuring)\s/)[0];
+  const primary=base.split(/[|｜]/)[0];
+  // Rated battery modules may advertise monitoring/communications in feature columns.
+  const batterySubject=/\b(?:monitoring|communication|comms)\b/.test(base.slice(primary.length))&&!/\b(?:kit|bundle|system)\b|\b[\d,.]+\s*(?:kw|w|watts?)\s+output\b/.test(base)&&/\bbatter(?:y|ies)\b/.test(primary)&&/\b[\d,.]+\s*(?:ah|kwh)\b/.test(primary)&&!/\b(?:inverter|charger|controller|monitor|adapter|cable|wire|kit|bundle|box|case|cover|stand|tray|bracket|cabinet)\b/.test(primary);
+  const t = (batterySubject?primary:base).split(/\s(?:for|with|including|featuring)\s/)[0];
   if(/\btilt kit\b/i.test(t))return 'mounting';
   if(/\bmicroinverter\b/i.test(t)&&!/\b(?:kit|bundle)\b/i.test(base))return 'inverters';
   const stationModel = /^(?:pecron\s*(?:e(?:1000|1500|2000|2400|3600|3800)|f(?:1000|3000|5000))\s*lfp|anker\s*(?:solix\s*)?(?:c(?:1000|2000)|f(?:2000|2600|3000|3800)|s2000)\b|ecoflow\s+delta\b|bluetti\s+(?:ac200l|apex\s*300|elite\s*\d+)\b|jackery\s+explorer\s+\d+)/.test(t);
@@ -54,7 +57,7 @@ export function classify(title: string): Category | null {
   if (/conduit|junction|combiner|disconnect|grounding|ground rod|busbar|bus bar|breaker|fuse|isolator|surge protect|electrical box/.test(t)) return 'electrical';
   if (/lcd|screen kit|battery base|battery stand|battery cover|battery tray/.test(t)) return 'accessories';
   if (/monitor|sensor|meter/.test(t)) return 'monitoring';
-  if (/communication|display|adapter|control|battery charger/.test(t)) return 'accessories';
+  if (/communication|display|adapter|control|battery charger|\b(?:lithium|lifepo4|lifpo4|lfp)\s+charger\b|chargeverter/.test(t)) return 'accessories';
   if (/lifepo4|lifpo4|lfp48|\b\d+\s*(?:kwh|ah)\b/.test(t) && !/inverter|kit|bundle|cable/.test(t)) return 'batteries';
   if (/rail|mount|clamp|flashing|bracket|roof hook/.test(t) && !/wall.?mount.*battery|battery.*wall.?mount/.test(t)) return 'mounting';
   if (/battery|batteries|lifepo4|lithium/.test(t) && !/inverter|solar kit|solar system|bundle/.test(t)) return 'batteries';
@@ -78,10 +81,23 @@ export function robotsAllows(text: string, path: string, agent = 'PVPartPickerBo
   const matches = selected.flatMap(g => g.rules).filter(r => { const end = r.pattern.endsWith('$'); const p = end ? r.pattern.slice(0, -1) : r.pattern; return new RegExp('^' + p.split('*').map(x => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('.*') + (end ? '$' : '')).test(path); }).sort((a, b) => b.pattern.replace(/\*/g, '').length - a.pattern.replace(/\*/g, '').length || Number(b.allow) - Number(a.allow));
   return matches[0]?.allow ?? true;
 }
+const voltagePattern=/\b([\d.]+)\s*v(?:dc|ac)?(?=\b|\d+(?:\.\d+)?\s*ah\b)/i;
+function batteryVoltageText(title:string) {
+ const [main,...variants]=title.split(/\s—\s/),selected=variants.join(' ');
+ if(!/\bcharger\b/i.test(selected))return selected||title;
+ // Added charger/converter ratings describe accessories, not the selected battery.
+ const battery=selected.split(/\+|\s(?:with|including)\s/i)[0];
+ if(!/\bcharger\b/i.test(battery)&&voltagePattern.test(battery))return battery;
+ return main.split(/\s(?:with|including)\s/i)[0];
+}
 export function extractSpecs(title: string, category: Category, properties: Record<string, unknown> = {}): Specs {
   const selected = title.split(/\s—\s/).slice(1).join(' ');
   const specs: Specs = {}; const numeric = (key: string, pattern: RegExp) => { const m = selected.match(pattern) || title.match(pattern); if (m) specs[key] = Number(m[1].replace(/,/g, '')); };
   numeric('watts', /\b([\d,]+)\s*(?:w|watts?)\b/i); numeric('voltage', /\b([\d.]+)\s*v(?:dc|ac)?(?=\b|\d+(?:\.\d+)?\s*ah\b)/i); numeric('capacityKwh', /\b([\d.]+)\s*kwh\b/i); numeric('capacityAh', /\b([\d.]+)\s*ah\b/i);
+  if(category==='batteries'&&/\bcharger\b/i.test(selected)){
+   const voltage=batteryVoltageText(title).match(voltagePattern);
+   if(voltage)specs.voltage=Number(voltage[1]);else delete specs.voltage;
+  }
   if (category === 'panels') { if (/bi[ -]?facial/i.test(title)) specs.face = 'Bifacial'; else if (/mono[ -]?facial/i.test(title)) specs.face = 'Monofacial'; if (/n[ -]?type/i.test(title)) specs.cellType = 'N-type'; if (/p[ -]?type/i.test(title)) specs.cellType = 'P-type'; if (/perovskite/i.test(title)) specs.cellType='Perovskite'; if (/back[ -]?contact/i.test(title)) specs.technology='Back contact'; for (const tech of ['TOPCon', 'HPBC', 'IBC', 'PERC', 'HJT', 'HBC', 'ABC', 'BC']) if (new RegExp('\\b' + tech + '\\b', 'i').test(title)) specs.technology = tech; }
   if (category === 'batteries') { specs.batteryKind=isBatteryCabinet(title)?'Battery cabinets':'Battery modules'; if(specs.batteryKind==='Battery modules'){if (/stackable|stacking/i.test(title)) specs.formFactor='Stackable'; else if (/\b(?:server|rack)\b|server[ -]?rack/i.test(title)) specs.formFactor = 'Server rack'; else if (/wall/i.test(title)) specs.formFactor = 'Wall mounted'; else if (/standing|cabinet/i.test(title)) specs.formFactor = 'Floor standing'; if (/lifepo4|lithium iron phosphate|\bLFP\b/i.test(title)) specs.chemistry = 'LiFePO4';} }
   if (category === 'inverters') { if (/microinverter/i.test(title)) specs.inverterType = 'Microinverter'; else if (/hybrid/i.test(title)) specs.inverterType = 'Hybrid'; else if (/off[ -]?grid/i.test(title)) specs.inverterType = 'Off-grid'; else if (/grid[ -]?tie/i.test(title)) specs.inverterType = 'Grid-tie'; if (/split[ -]?phase|120\s*\/\s*240/i.test(title)) specs.acOutput = '120/240V split-phase'; if (/grid[ -]?forming/i.test(title)) specs.gridForming = true; }
@@ -139,7 +155,7 @@ function electricalType(title:string) {
 function accessoryType(title:string) {
  const main=title.split(/\s—\s/)[0];
  if(/\bEV\b.*charg|level 2.*charg/i.test(main))return 'EV charging';
- if(/battery charg|chargeverter/i.test(main))return 'Battery chargers';
+ if(/battery charg|\b(?:lithium|lifepo4|lifpo4|lfp)\s+charger\b|chargeverter/i.test(main))return 'Battery chargers';
  if(/battery base|battery stand|battery tray/i.test(main))return 'Battery bases & stands';
  if(/mini split|heat pump|appliance/i.test(main))return 'Appliances';
  if(/lcd|screen|display|control/i.test(main))return 'Displays & controls';
@@ -176,9 +192,16 @@ export function categorizeProduct(product: Omit<Product,'offers'> & {offers?:Pro
   // known title-parser artifact; genuine rack evidence/corrections survive.
   if(category==='batteries'&&specs.formFactor==='Server rack'&&/\bbrackets?\b/i.test(product.name)&&!/\b(?:server|rack)\b|server[ -]?rack/i.test(product.name))delete specs.formFactor;
   if(category!==product.category) for(const key of ['face','cellType','technology','formFactor','chemistry','inverterType','acOutput','gridForming','mountType','gauge','lengthFt','kitType','stationType','watts','voltage','capacityKwh']) delete specs[key];
+  if(category!==product.category&&category==='batteries'){delete specs.monitorType;delete specs.accessoryType;}
+  if(category!==product.category&&product.category==='batteries')for(const key of ['capacityAh','batteryKind'])delete specs[key];
   const offers=product.offers||[]; // D1 stores product metadata separately from offers.
   const panelDetails:Specs={};
   const extracted=extractSpecs(product.name,category);
+  if(category==='batteries'&&/\bcharger\b/i.test(product.name.split(/\s—\s/).slice(1).join(' '))){
+   const legacy=product.name.split(/\s—\s/).slice(1).join(' ').match(voltagePattern);
+   // Repair the known accessory-voltage artifact while retaining existing nominal evidence.
+   if(specs.voltage!==undefined&&legacy&&Number(specs.voltage)!==Number(legacy[1]))extracted.voltage=specs.voltage;
+  }
   if(category==='batteries'&&extracted.batteryKind!=='Battery cabinets'&&!extracted.formFactor&&!specs.formFactor&&/(?:installation\s*:\s*(?:indoor\s*)?floor[ -]?standing|floor[ -]?standing design)/i.test(product.description||'')){
    extracted.formFactor='Floor standing';extracted.formFactorSource=product.sourceUrl;
   }
