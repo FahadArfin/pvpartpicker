@@ -53,7 +53,7 @@ export function partValue(product:Product,key:string):PartValue{
  if(cabinet&&['capacityKwh','voltage','maxDischargeCurrent','chemistry'].includes(key))return {value:'N/A',note:'Empty battery cabinet; batteries are not included.'};
  if(key==='category')return {value:categories.find(c=>c.id===product.category)!.label};
  if(key==='highlights')return {value:partColumns[product.category].slice(0,3).map(c=>partValue(product,c.key).value).filter(v=>v!=='—').join(' · ')||'—'};
- if(key==='contents')return {value:product.configuration?.components.map(c=>(c.quantity?c.quantity+' × ':'')+({panels:'panels',batteries:'batteries',inverter:'inverter','power-station':'station',mounting:'mounts',controls:'controls',charging:'charger',accessories:'extras'}[c.type])).join(' + ')||'—'};
+ if(key==='contents'){const verified=product.comparisonSpecs?.contents??comparisonEvidence(product).contents;if(verified?.source)return verified;return {value:product.configuration?.components.map(c=>(c.quantity?c.quantity+' × ':'')+({panels:'panels',batteries:'batteries',inverter:'inverter','power-station':'station',mounting:'mounts',controls:'controls',charging:'charger',accessories:'extras'}[c.type])).join(' + ')||'—'};}
  if(key==='cell')return {value:[raw(product,'cellType')?.value,raw(product,'technology')?.value].filter(Boolean).join(' · ')||'—'};
  if(key==='capacityKwh')value=energy(product);
  else if(key==='outputWatts'&&product.specs.stationType==='DC-only station (no AC inverter)')return {value:'DC only',note:'No AC inverter.'};

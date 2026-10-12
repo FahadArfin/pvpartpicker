@@ -4,6 +4,8 @@ export interface SpecificationEvidence {url:string;kind:'datasheet'|'manual'|'ma
 type Definition={key:string;label:string;group:string;match:RegExp;categories?:Category[]};
 const panel=['panels'] as Category[],storage=['batteries','all-in-one'] as Category[];
 const definitions:Definition[]=[
+ {key:'kitType',label:'Kit type',group:'Package contents',match:/^(?:kit type|kit format|bundle type)$/,categories:['kits']},
+ {key:'contents',label:'Included components',group:'Package contents',match:/^(?:kit contents|included components|package contents)$/,categories:['kits']},
  {key:'model',label:'Model',group:'Identity',match:/^(?:model(?: number| no\.?| name)?|product model|part number|manufacturer part number|sku)$/},
  {key:'moduleEfficiency',label:'Module efficiency',group:'Module & cells',match:/^(?:module|panel|solar panel) efficiency(?:.*)?$/,categories:panel},
  {key:'cellEfficiency',label:'Cell efficiency',group:'Module & cells',match:/^(?:solar )?cell efficiency(?:.*)?$/,categories:panel},
