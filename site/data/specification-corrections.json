@@ -1,0 +1,1440 @@
+{
+  "id": "renogy-rover-reviewed-2026-10-12",
+  "scope": "Nine numeric replacements; five generic BT2 accessory length quarantines. All other full objects retained. No communications promotion.",
+  "sourceArtifacts": [
+    {
+      "path": "output/specification-research/batch-eight-generation-proof/renogy-manual-2.pdf",
+      "sha256": "df8e0cc2970e457b596e5c6b78cbeac1d1677e9ad527f4fb3e20827930886658"
+    },
+    {
+      "path": "output/spec-research/ef6ccd32086f6a35.html",
+      "sha256": "e453eb48a53ba69f2dd35e4e8422d920b57fc2e03300aa6e6df5cbc56e5df2f9"
+    },
+    {
+      "path": "output/specification-research/batch-ten-generation-legacy-renogy-source-proof.json",
+      "sha256": "fd8977af89a4ab2982dbcb56ecefd32b1695d078bda5f38ccfcc4fcb12ab4611"
+    },
+    {
+      "path": "output/specification-research/batch-eight-generation-proof/renogy-manual-2-p67.png",
+      "sha256": "a9b7190167b1dd19ab854a23abbe2fdf04ba23ef3075c388765921983c977b5a"
+    },
+    {
+      "path": "output/specification-research/batch-ten-generation-proof/legacy-renogy-p68.png",
+      "sha256": "34b4af5e5c2cc2887bae7b2c66129d6f4fc06489f6ff1714f96ac1033972dd52"
+    }
+  ],
+  "entries": [
+    {
+      "id": "renogy-43178688675955",
+      "expected": {
+        "name": "Rover Li 20/30/40 Amp MPPT Solar Charge Controller — 20A / Controller Only",
+        "sourceUrl": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "MPPT",
+          "chargeCurrentA": 20
+        }
+      },
+      "exactControllerSku": "RNG-CTRL-RVR20-US",
+      "oldFullObjectSha256": "ccda8b23d33a985f018d04a96b8400c88f813167b45e809dcdbaa08fd66f0122",
+      "oldFullObject": {
+        "summary": "Renogy charge controller / charger.",
+        "groups": [
+          {
+            "title": "Electrical ratings",
+            "fields": [
+              {
+                "key": "voltage",
+                "label": "Nominal voltage",
+                "value": "12/24V Auto-Detect",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "chargeCurrentA",
+                "label": "Rated charge current",
+                "value": "40A",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Solar input",
+            "fields": [
+              {
+                "key": "maxPvVoltage",
+                "label": "Maximum PV input voltage",
+                "value": "15VDC~100VDC",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "maxPvWatts",
+                "label": "Maximum PV input power",
+                "value": "260 W (12V) / 520 W (24V)",
+                "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+                "kind": "manual"
+              },
+              {
+                "key": "mpptVoltageRange",
+                "label": "MPPT voltage range",
+                "value": "17 to 100 V DC",
+                "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+                "kind": "manual"
+              }
+            ]
+          },
+          {
+            "title": "Monitoring & control",
+            "fields": [
+              {
+                "key": "communications",
+                "label": "Communications",
+                "value": "G1 Version: RS232, G2 Version: RS485",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Protection & environment",
+            "fields": [
+              {
+                "key": "ipRating",
+                "label": "Ingress protection",
+                "value": "IP32",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "operatingTemperature",
+                "label": "Operating temperature",
+                "value": "-35°C to 45°C; -31°F to 113°F",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "storageTemperature",
+                "label": "Storage temperature",
+                "value": "-35°C to 75°C; -31°F to 167°F",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "altitude",
+                "label": "Operating altitude",
+                "value": "≤3000m",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Physical specifications",
+            "fields": [
+              {
+                "key": "dimensions",
+                "label": "Dimensions",
+                "value": "238 x 172 x 77 mm;9.38 x 6.78 x 3.05 in",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "weight",
+                "label": "Weight",
+                "value": "2.0kg / 4.41 lb",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "length",
+                "label": "Length",
+                "value": "16.4 ft (5.00m )",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Warranty",
+            "fields": [
+              {
+                "key": "warranty",
+                "label": "Product warranty",
+                "value": "3 Year",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Identity",
+            "fields": [
+              {
+                "key": "controllerType",
+                "label": "Controller type",
+                "value": "MPPT",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "listing"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+            "kind": "manufacturer",
+            "label": "Product technical table",
+            "checkedAt": "2026-10-05T03:17:23.890Z"
+          },
+          {
+            "url": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+            "kind": "manual",
+            "label": "Exact linked manufacturer PDF table; visual pages 67",
+            "checkedAt": "2026-10-12T09:33:17.904879+00:00"
+          },
+          {
+            "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+            "kind": "listing",
+            "label": "Selected product listing"
+          }
+        ],
+        "notes": [],
+        "identity": {
+          "name": "Rover Li 20/30/40 Amp MPPT Solar Charge Controller — 20A / Controller Only",
+          "sourceUrl": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+          "category": "charging",
+          "anchors": {
+            "controllerType": "MPPT",
+            "chargeCurrentA": 20
+          }
+        }
+      },
+      "manualSource": {
+        "url": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+        "kind": "manual",
+        "label": "Exact linked manufacturer PDF table; visual pages 67",
+        "checkedAt": "2026-10-12T09:33:17.904879+00:00"
+      },
+      "changes": [
+        {
+          "key": "chargeCurrentA",
+          "oldFullField": {
+            "key": "chargeCurrentA",
+            "label": "Rated charge current",
+            "value": "40A",
+            "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+            "kind": "manufacturer"
+          },
+          "oldFieldSha256": "14aef6bd4b0d576fb9537307f4cd10532246071fd3f5539b840d9edc0bce80bd",
+          "replacement": {
+            "key": "chargeCurrentA",
+            "label": "Rated charge current",
+            "value": "20 A",
+            "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+            "kind": "manual"
+          },
+          "reason": "replace with 20 A, exact RVR20 manual column",
+          "manualPage": 67,
+          "removedSourceMetadata": [
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+              "kind": "manufacturer",
+              "label": "Product technical table",
+              "checkedAt": "2026-10-05T03:17:23.890Z"
+            },
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+              "kind": "listing",
+              "label": "Selected product listing"
+            }
+          ]
+        },
+        {
+          "key": "dimensions",
+          "oldFullField": {
+            "key": "dimensions",
+            "label": "Dimensions",
+            "value": "238 x 172 x 77 mm;9.38 x 6.78 x 3.05 in",
+            "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+            "kind": "manufacturer"
+          },
+          "oldFieldSha256": "36253cbae37637ac73d81ac58cac2dbbac527b21af7f610a1b669c657465ead7",
+          "replacement": {
+            "key": "dimensions",
+            "label": "Dimensions",
+            "value": "210 x 151 x 68 mm",
+            "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+            "kind": "manual"
+          },
+          "reason": "replace with 210 x 151 x 68 mm",
+          "manualPage": 68,
+          "removedSourceMetadata": [
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+              "kind": "manufacturer",
+              "label": "Product technical table",
+              "checkedAt": "2026-10-05T03:17:23.890Z"
+            },
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+              "kind": "listing",
+              "label": "Selected product listing"
+            }
+          ]
+        },
+        {
+          "key": "weight",
+          "oldFullField": {
+            "key": "weight",
+            "label": "Weight",
+            "value": "2.0kg / 4.41 lb",
+            "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+            "kind": "manufacturer"
+          },
+          "oldFieldSha256": "d661536db19ab1ea8bf4ebbcbe565a7fb026f8c552855433ae5d25c9fd71db36",
+          "replacement": {
+            "key": "weight",
+            "label": "Weight",
+            "value": "1.4 kg",
+            "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+            "kind": "manual"
+          },
+          "reason": "replace with 1.4 kg",
+          "manualPage": 68,
+          "removedSourceMetadata": [
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+              "kind": "manufacturer",
+              "label": "Product technical table",
+              "checkedAt": "2026-10-05T03:17:23.890Z"
+            },
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+              "kind": "listing",
+              "label": "Selected product listing"
+            }
+          ]
+        },
+        {
+          "key": "length",
+          "oldFullField": {
+            "key": "length",
+            "label": "Length",
+            "value": "16.4 ft (5.00m )",
+            "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+            "kind": "manufacturer"
+          },
+          "oldFieldSha256": "8c6eefff9ca7a86a0cfdcbfbfaccf8e82ddb1b8baadc9100996b10daa88d75a7",
+          "replacement": null,
+          "reason": "quarantine generic length; retain BT2 cable length as component-only fact when selected BT2 is included",
+          "manualPage": null,
+          "removedSourceMetadata": [
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+              "kind": "manufacturer",
+              "label": "Product technical table",
+              "checkedAt": "2026-10-05T03:17:23.890Z"
+            },
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+              "kind": "listing",
+              "label": "Selected product listing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "renogy-43178688708723",
+      "expected": {
+        "name": "Rover Li 20/30/40 Amp MPPT Solar Charge Controller — 20A / w/Bluetooth (BT2)",
+        "sourceUrl": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "MPPT",
+          "chargeCurrentA": 20
+        }
+      },
+      "exactControllerSku": "RNG-CTRL-RVR20-BT-US",
+      "oldFullObjectSha256": "b5bd9da5c06744c665fac6ad4439805bc87d508ba256113e00c8c90e1803056e",
+      "oldFullObject": {
+        "summary": "Renogy charge controller / charger.",
+        "groups": [
+          {
+            "title": "Electrical ratings",
+            "fields": [
+              {
+                "key": "voltage",
+                "label": "Nominal voltage",
+                "value": "12/24V Auto-Detect",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "chargeCurrentA",
+                "label": "Rated charge current",
+                "value": "40A",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Solar input",
+            "fields": [
+              {
+                "key": "maxPvVoltage",
+                "label": "Maximum PV input voltage",
+                "value": "15VDC~100VDC",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "maxPvWatts",
+                "label": "Maximum PV input power",
+                "value": "260 W (12V) / 520 W (24V)",
+                "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+                "kind": "manual"
+              },
+              {
+                "key": "mpptVoltageRange",
+                "label": "MPPT voltage range",
+                "value": "17 to 100 V DC",
+                "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+                "kind": "manual"
+              }
+            ]
+          },
+          {
+            "title": "Monitoring & control",
+            "fields": [
+              {
+                "key": "communications",
+                "label": "Communications",
+                "value": "G1 Version: RS232, G2 Version: RS485",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Protection & environment",
+            "fields": [
+              {
+                "key": "ipRating",
+                "label": "Ingress protection",
+                "value": "IP32",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "operatingTemperature",
+                "label": "Operating temperature",
+                "value": "-35°C to 45°C; -31°F to 113°F",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "storageTemperature",
+                "label": "Storage temperature",
+                "value": "-35°C to 75°C; -31°F to 167°F",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "altitude",
+                "label": "Operating altitude",
+                "value": "≤3000m",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Physical specifications",
+            "fields": [
+              {
+                "key": "dimensions",
+                "label": "Dimensions",
+                "value": "238 x 172 x 77 mm;9.38 x 6.78 x 3.05 in",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "weight",
+                "label": "Weight",
+                "value": "2.0kg / 4.41 lb",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "length",
+                "label": "Length",
+                "value": "16.4 ft (5.00m )",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Warranty",
+            "fields": [
+              {
+                "key": "warranty",
+                "label": "Product warranty",
+                "value": "3 Year",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Identity",
+            "fields": [
+              {
+                "key": "controllerType",
+                "label": "Controller type",
+                "value": "MPPT",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+                "kind": "listing"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+            "kind": "manufacturer",
+            "label": "Product technical table",
+            "checkedAt": "2026-10-05T03:17:23.890Z"
+          },
+          {
+            "url": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+            "kind": "manual",
+            "label": "Exact linked manufacturer PDF table; visual pages 67",
+            "checkedAt": "2026-10-12T09:33:17.904879+00:00"
+          },
+          {
+            "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+            "kind": "listing",
+            "label": "Selected product listing"
+          }
+        ],
+        "notes": [],
+        "identity": {
+          "name": "Rover Li 20/30/40 Amp MPPT Solar Charge Controller — 20A / w/Bluetooth (BT2)",
+          "sourceUrl": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+          "category": "charging",
+          "anchors": {
+            "controllerType": "MPPT",
+            "chargeCurrentA": 20
+          }
+        }
+      },
+      "manualSource": {
+        "url": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+        "kind": "manual",
+        "label": "Exact linked manufacturer PDF table; visual pages 67",
+        "checkedAt": "2026-10-12T09:33:17.904879+00:00"
+      },
+      "changes": [
+        {
+          "key": "chargeCurrentA",
+          "oldFullField": {
+            "key": "chargeCurrentA",
+            "label": "Rated charge current",
+            "value": "40A",
+            "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+            "kind": "manufacturer"
+          },
+          "oldFieldSha256": "188cc047a6a91d54414852bc62ab5707c427a233c35745e4de28f596afa6c0ae",
+          "replacement": {
+            "key": "chargeCurrentA",
+            "label": "Rated charge current",
+            "value": "20 A",
+            "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+            "kind": "manual"
+          },
+          "reason": "replace with 20 A, exact RVR20 manual column",
+          "manualPage": 67,
+          "removedSourceMetadata": [
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+              "kind": "manufacturer",
+              "label": "Product technical table",
+              "checkedAt": "2026-10-05T03:17:23.890Z"
+            },
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+              "kind": "listing",
+              "label": "Selected product listing"
+            }
+          ]
+        },
+        {
+          "key": "dimensions",
+          "oldFullField": {
+            "key": "dimensions",
+            "label": "Dimensions",
+            "value": "238 x 172 x 77 mm;9.38 x 6.78 x 3.05 in",
+            "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+            "kind": "manufacturer"
+          },
+          "oldFieldSha256": "3fdce50feacdb2039fac6254016fb689ca45540f87a237d9556d9598d10ddbe3",
+          "replacement": {
+            "key": "dimensions",
+            "label": "Dimensions",
+            "value": "210 x 151 x 68 mm",
+            "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+            "kind": "manual"
+          },
+          "reason": "replace with 210 x 151 x 68 mm",
+          "manualPage": 68,
+          "removedSourceMetadata": [
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+              "kind": "manufacturer",
+              "label": "Product technical table",
+              "checkedAt": "2026-10-05T03:17:23.890Z"
+            },
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+              "kind": "listing",
+              "label": "Selected product listing"
+            }
+          ]
+        },
+        {
+          "key": "weight",
+          "oldFullField": {
+            "key": "weight",
+            "label": "Weight",
+            "value": "2.0kg / 4.41 lb",
+            "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+            "kind": "manufacturer"
+          },
+          "oldFieldSha256": "dbd515e81637c8a89a2a17deb46b82e8a868e6def3f48b60f7f8a4814891c6e3",
+          "replacement": {
+            "key": "weight",
+            "label": "Weight",
+            "value": "1.4 kg",
+            "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+            "kind": "manual"
+          },
+          "reason": "replace with 1.4 kg",
+          "manualPage": 68,
+          "removedSourceMetadata": [
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+              "kind": "manufacturer",
+              "label": "Product technical table",
+              "checkedAt": "2026-10-05T03:17:23.890Z"
+            },
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+              "kind": "listing",
+              "label": "Selected product listing"
+            }
+          ]
+        },
+        {
+          "key": "length",
+          "oldFullField": {
+            "key": "length",
+            "label": "Length",
+            "value": "16.4 ft (5.00m )",
+            "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+            "kind": "manufacturer"
+          },
+          "oldFieldSha256": "0a5d7b419c9e699be4e60b7e46119f6760370ec1ab9962fdabfdcf4e861d6d73",
+          "replacement": null,
+          "reason": "quarantine generic length; retain BT2 cable length as component-only fact when selected BT2 is included",
+          "manualPage": null,
+          "removedSourceMetadata": [
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+              "kind": "manufacturer",
+              "label": "Product technical table",
+              "checkedAt": "2026-10-05T03:17:23.890Z"
+            },
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688708723",
+              "kind": "listing",
+              "label": "Selected product listing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "renogy-43938600779891",
+      "expected": {
+        "name": "Rover Li 20/30/40 Amp MPPT Solar Charge Controller — 30A / Controller Only",
+        "sourceUrl": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "MPPT",
+          "chargeCurrentA": 30
+        }
+      },
+      "exactControllerSku": "RNG-CTRL-RVR30-US",
+      "oldFullObjectSha256": "5c09644353251879e52bee9ae74b583cdfb198281205cb9faa06754f36516e3b",
+      "oldFullObject": {
+        "summary": "Renogy charge controller / charger.",
+        "groups": [
+          {
+            "title": "Electrical ratings",
+            "fields": [
+              {
+                "key": "voltage",
+                "label": "Nominal voltage",
+                "value": "12/24V Auto-Detect",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "chargeCurrentA",
+                "label": "Rated charge current",
+                "value": "40A",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Solar input",
+            "fields": [
+              {
+                "key": "maxPvVoltage",
+                "label": "Maximum PV input voltage",
+                "value": "15VDC~100VDC",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "maxPvWatts",
+                "label": "Maximum PV input power",
+                "value": "400 W (12V) / 800 W (24V)",
+                "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+                "kind": "manual"
+              },
+              {
+                "key": "mpptVoltageRange",
+                "label": "MPPT voltage range",
+                "value": "17 to 100 V DC",
+                "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+                "kind": "manual"
+              }
+            ]
+          },
+          {
+            "title": "Monitoring & control",
+            "fields": [
+              {
+                "key": "communications",
+                "label": "Communications",
+                "value": "G1 Version: RS232, G2 Version: RS485",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Protection & environment",
+            "fields": [
+              {
+                "key": "ipRating",
+                "label": "Ingress protection",
+                "value": "IP32",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "operatingTemperature",
+                "label": "Operating temperature",
+                "value": "-35°C to 45°C; -31°F to 113°F",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "storageTemperature",
+                "label": "Storage temperature",
+                "value": "-35°C to 75°C; -31°F to 167°F",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "altitude",
+                "label": "Operating altitude",
+                "value": "≤3000m",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Physical specifications",
+            "fields": [
+              {
+                "key": "dimensions",
+                "label": "Dimensions",
+                "value": "238 x 172 x 77 mm;9.38 x 6.78 x 3.05 in",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "weight",
+                "label": "Weight",
+                "value": "2.0kg / 4.41 lb",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "length",
+                "label": "Length",
+                "value": "16.4 ft (5.00m )",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Warranty",
+            "fields": [
+              {
+                "key": "warranty",
+                "label": "Product warranty",
+                "value": "3 Year",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Identity",
+            "fields": [
+              {
+                "key": "controllerType",
+                "label": "Controller type",
+                "value": "MPPT",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+                "kind": "listing"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+            "kind": "manufacturer",
+            "label": "Product technical table",
+            "checkedAt": "2026-10-05T03:17:23.890Z"
+          },
+          {
+            "url": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+            "kind": "manual",
+            "label": "Exact linked manufacturer PDF table; visual pages 67",
+            "checkedAt": "2026-10-12T09:33:17.904879+00:00"
+          },
+          {
+            "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+            "kind": "listing",
+            "label": "Selected product listing"
+          }
+        ],
+        "notes": [],
+        "identity": {
+          "name": "Rover Li 20/30/40 Amp MPPT Solar Charge Controller — 30A / Controller Only",
+          "sourceUrl": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+          "category": "charging",
+          "anchors": {
+            "controllerType": "MPPT",
+            "chargeCurrentA": 30
+          }
+        }
+      },
+      "manualSource": {
+        "url": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+        "kind": "manual",
+        "label": "Exact linked manufacturer PDF table; visual pages 67",
+        "checkedAt": "2026-10-12T09:33:17.904879+00:00"
+      },
+      "changes": [
+        {
+          "key": "chargeCurrentA",
+          "oldFullField": {
+            "key": "chargeCurrentA",
+            "label": "Rated charge current",
+            "value": "40A",
+            "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+            "kind": "manufacturer"
+          },
+          "oldFieldSha256": "5c9d9066ce996acb1eff1ea3040a248c6ab881a60b8fb5d1efaeed36519db7e6",
+          "replacement": {
+            "key": "chargeCurrentA",
+            "label": "Rated charge current",
+            "value": "30 A",
+            "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+            "kind": "manual"
+          },
+          "reason": "replace with 30 A, exact RVR30 manual column",
+          "manualPage": 67,
+          "removedSourceMetadata": [
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+              "kind": "manufacturer",
+              "label": "Product technical table",
+              "checkedAt": "2026-10-05T03:17:23.890Z"
+            },
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+              "kind": "listing",
+              "label": "Selected product listing"
+            }
+          ]
+        },
+        {
+          "key": "length",
+          "oldFullField": {
+            "key": "length",
+            "label": "Length",
+            "value": "16.4 ft (5.00m )",
+            "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+            "kind": "manufacturer"
+          },
+          "oldFieldSha256": "acb2d36e79648f6562b631890eb9b65453957ce8591f93f6947b354f5df8cba5",
+          "replacement": null,
+          "reason": "quarantine generic length; retain BT2 cable length as component-only fact when selected BT2 is included",
+          "manualPage": null,
+          "removedSourceMetadata": [
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+              "kind": "manufacturer",
+              "label": "Product technical table",
+              "checkedAt": "2026-10-05T03:17:23.890Z"
+            },
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600779891",
+              "kind": "listing",
+              "label": "Selected product listing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "renogy-43938600845427",
+      "expected": {
+        "name": "Rover Li 20/30/40 Amp MPPT Solar Charge Controller — 30A / 🔥w/Bluetooth & Renogy ONE Core (BT2)",
+        "sourceUrl": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "MPPT",
+          "chargeCurrentA": 30
+        }
+      },
+      "exactControllerSku": "RNG-CTRL-RVR30-BT-W02W-US",
+      "oldFullObjectSha256": "0bceef8466f28b440613d65db3b3038c78c222cf0eb06560e9270de62d983643",
+      "oldFullObject": {
+        "summary": "Renogy charge controller / charger.",
+        "groups": [
+          {
+            "title": "Electrical ratings",
+            "fields": [
+              {
+                "key": "voltage",
+                "label": "Nominal voltage",
+                "value": "12/24V Auto-Detect",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "chargeCurrentA",
+                "label": "Rated charge current",
+                "value": "40A",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Solar input",
+            "fields": [
+              {
+                "key": "maxPvVoltage",
+                "label": "Maximum PV input voltage",
+                "value": "15VDC~100VDC",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "maxPvWatts",
+                "label": "Maximum PV input power",
+                "value": "400 W (12V) / 800 W (24V)",
+                "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+                "kind": "manual"
+              },
+              {
+                "key": "mpptVoltageRange",
+                "label": "MPPT voltage range",
+                "value": "17 to 100 V DC",
+                "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+                "kind": "manual"
+              }
+            ]
+          },
+          {
+            "title": "Monitoring & control",
+            "fields": [
+              {
+                "key": "communications",
+                "label": "Communications",
+                "value": "G1 Version: RS232, G2 Version: RS485",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Protection & environment",
+            "fields": [
+              {
+                "key": "ipRating",
+                "label": "Ingress protection",
+                "value": "IP32",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "operatingTemperature",
+                "label": "Operating temperature",
+                "value": "-35°C to 45°C; -31°F to 113°F",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "storageTemperature",
+                "label": "Storage temperature",
+                "value": "-35°C to 75°C; -31°F to 167°F",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "altitude",
+                "label": "Operating altitude",
+                "value": "≤3000m",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Physical specifications",
+            "fields": [
+              {
+                "key": "dimensions",
+                "label": "Dimensions",
+                "value": "238 x 172 x 77 mm;9.38 x 6.78 x 3.05 in",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "weight",
+                "label": "Weight",
+                "value": "2.0kg / 4.41 lb",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "length",
+                "label": "Length",
+                "value": "16.4 ft (5.00m )",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Warranty",
+            "fields": [
+              {
+                "key": "warranty",
+                "label": "Product warranty",
+                "value": "3 Year",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Identity",
+            "fields": [
+              {
+                "key": "controllerType",
+                "label": "Controller type",
+                "value": "MPPT",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+                "kind": "listing"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+            "kind": "manufacturer",
+            "label": "Product technical table",
+            "checkedAt": "2026-10-05T03:17:23.890Z"
+          },
+          {
+            "url": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+            "kind": "manual",
+            "label": "Exact linked manufacturer PDF table; visual pages 67",
+            "checkedAt": "2026-10-12T09:33:17.904879+00:00"
+          },
+          {
+            "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+            "kind": "listing",
+            "label": "Selected product listing"
+          }
+        ],
+        "notes": [],
+        "identity": {
+          "name": "Rover Li 20/30/40 Amp MPPT Solar Charge Controller — 30A / 🔥w/Bluetooth & Renogy ONE Core (BT2)",
+          "sourceUrl": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+          "category": "charging",
+          "anchors": {
+            "controllerType": "MPPT",
+            "chargeCurrentA": 30
+          }
+        }
+      },
+      "manualSource": {
+        "url": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+        "kind": "manual",
+        "label": "Exact linked manufacturer PDF table; visual pages 67",
+        "checkedAt": "2026-10-12T09:33:17.904879+00:00"
+      },
+      "changes": [
+        {
+          "key": "chargeCurrentA",
+          "oldFullField": {
+            "key": "chargeCurrentA",
+            "label": "Rated charge current",
+            "value": "40A",
+            "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+            "kind": "manufacturer"
+          },
+          "oldFieldSha256": "772f250d5679d63777395c748c0af2cf71e6cf121243f6a4a1e39e1d9861e600",
+          "replacement": {
+            "key": "chargeCurrentA",
+            "label": "Rated charge current",
+            "value": "30 A",
+            "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+            "kind": "manual"
+          },
+          "reason": "replace with 30 A, exact RVR30 manual column",
+          "manualPage": 67,
+          "removedSourceMetadata": [
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+              "kind": "manufacturer",
+              "label": "Product technical table",
+              "checkedAt": "2026-10-05T03:17:23.890Z"
+            },
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+              "kind": "listing",
+              "label": "Selected product listing"
+            }
+          ]
+        },
+        {
+          "key": "length",
+          "oldFullField": {
+            "key": "length",
+            "label": "Length",
+            "value": "16.4 ft (5.00m )",
+            "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+            "kind": "manufacturer"
+          },
+          "oldFieldSha256": "843f7660a3330ab33eb826038c261d7b374a306ca356861b85038da8488016ed",
+          "replacement": null,
+          "reason": "quarantine generic length; retain BT2 cable length as component-only fact when selected BT2 is included",
+          "manualPage": null,
+          "removedSourceMetadata": [
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+              "kind": "manufacturer",
+              "label": "Product technical table",
+              "checkedAt": "2026-10-05T03:17:23.890Z"
+            },
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600845427",
+              "kind": "listing",
+              "label": "Selected product listing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "renogy-43938600812659",
+      "expected": {
+        "name": "Rover Li 20/30/40 Amp MPPT Solar Charge Controller — 30A / w/Bluetooth (BT2)",
+        "sourceUrl": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "MPPT",
+          "chargeCurrentA": 30
+        }
+      },
+      "exactControllerSku": "RNG-CTRL-RVR30-BT-US",
+      "oldFullObjectSha256": "c1740b02545b1cc9b18233da4c52c3ea572dec8b938dd203a492c136540e7753",
+      "oldFullObject": {
+        "summary": "Renogy charge controller / charger.",
+        "groups": [
+          {
+            "title": "Electrical ratings",
+            "fields": [
+              {
+                "key": "voltage",
+                "label": "Nominal voltage",
+                "value": "12/24V Auto-Detect",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "chargeCurrentA",
+                "label": "Rated charge current",
+                "value": "40A",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Solar input",
+            "fields": [
+              {
+                "key": "maxPvVoltage",
+                "label": "Maximum PV input voltage",
+                "value": "15VDC~100VDC",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "maxPvWatts",
+                "label": "Maximum PV input power",
+                "value": "400 W (12V) / 800 W (24V)",
+                "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+                "kind": "manual"
+              },
+              {
+                "key": "mpptVoltageRange",
+                "label": "MPPT voltage range",
+                "value": "17 to 100 V DC",
+                "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+                "kind": "manual"
+              }
+            ]
+          },
+          {
+            "title": "Monitoring & control",
+            "fields": [
+              {
+                "key": "communications",
+                "label": "Communications",
+                "value": "G1 Version: RS232, G2 Version: RS485",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Protection & environment",
+            "fields": [
+              {
+                "key": "ipRating",
+                "label": "Ingress protection",
+                "value": "IP32",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "operatingTemperature",
+                "label": "Operating temperature",
+                "value": "-35°C to 45°C; -31°F to 113°F",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "storageTemperature",
+                "label": "Storage temperature",
+                "value": "-35°C to 75°C; -31°F to 167°F",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "altitude",
+                "label": "Operating altitude",
+                "value": "≤3000m",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Physical specifications",
+            "fields": [
+              {
+                "key": "dimensions",
+                "label": "Dimensions",
+                "value": "238 x 172 x 77 mm;9.38 x 6.78 x 3.05 in",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "weight",
+                "label": "Weight",
+                "value": "2.0kg / 4.41 lb",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "length",
+                "label": "Length",
+                "value": "16.4 ft (5.00m )",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Warranty",
+            "fields": [
+              {
+                "key": "warranty",
+                "label": "Product warranty",
+                "value": "3 Year",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Identity",
+            "fields": [
+              {
+                "key": "controllerType",
+                "label": "Controller type",
+                "value": "MPPT",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+                "kind": "listing"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+            "kind": "manufacturer",
+            "label": "Product technical table",
+            "checkedAt": "2026-10-05T03:17:23.890Z"
+          },
+          {
+            "url": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+            "kind": "manual",
+            "label": "Exact linked manufacturer PDF table; visual pages 67",
+            "checkedAt": "2026-10-12T09:33:17.904879+00:00"
+          },
+          {
+            "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+            "kind": "listing",
+            "label": "Selected product listing"
+          }
+        ],
+        "notes": [],
+        "identity": {
+          "name": "Rover Li 20/30/40 Amp MPPT Solar Charge Controller — 30A / w/Bluetooth (BT2)",
+          "sourceUrl": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+          "category": "charging",
+          "anchors": {
+            "controllerType": "MPPT",
+            "chargeCurrentA": 30
+          }
+        }
+      },
+      "manualSource": {
+        "url": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+        "kind": "manual",
+        "label": "Exact linked manufacturer PDF table; visual pages 67",
+        "checkedAt": "2026-10-12T09:33:17.904879+00:00"
+      },
+      "changes": [
+        {
+          "key": "chargeCurrentA",
+          "oldFullField": {
+            "key": "chargeCurrentA",
+            "label": "Rated charge current",
+            "value": "40A",
+            "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+            "kind": "manufacturer"
+          },
+          "oldFieldSha256": "06b80318b9b5ee596103eababd87edc01b51d9a3575811e096d75532a05c445d",
+          "replacement": {
+            "key": "chargeCurrentA",
+            "label": "Rated charge current",
+            "value": "30 A",
+            "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+            "kind": "manual"
+          },
+          "reason": "replace with 30 A, exact RVR30 manual column",
+          "manualPage": 67,
+          "removedSourceMetadata": [
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+              "kind": "manufacturer",
+              "label": "Product technical table",
+              "checkedAt": "2026-10-05T03:17:23.890Z"
+            },
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+              "kind": "listing",
+              "label": "Selected product listing"
+            }
+          ]
+        },
+        {
+          "key": "length",
+          "oldFullField": {
+            "key": "length",
+            "label": "Length",
+            "value": "16.4 ft (5.00m )",
+            "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+            "kind": "manufacturer"
+          },
+          "oldFieldSha256": "1df308095a5aa809167e8ee6b8f8438553af036e37b47ad8ca49316162fca976",
+          "replacement": null,
+          "reason": "quarantine generic length; retain BT2 cable length as component-only fact when selected BT2 is included",
+          "manualPage": null,
+          "removedSourceMetadata": [
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+              "kind": "manufacturer",
+              "label": "Product technical table",
+              "checkedAt": "2026-10-05T03:17:23.890Z"
+            },
+            {
+              "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43938600812659",
+              "kind": "listing",
+              "label": "Selected product listing"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

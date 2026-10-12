@@ -1,3 +1,4 @@
+import {assertCorrectionWriteBoundary} from '../lib/specification-correction-guard.ts';
 /** Rebuild source-audited detail specs from cached product tables and reviewed sheets.
  * node --experimental-strip-types scripts/collect-specifications.mjs --cache ../output/spec-research
  * See docs/product-specifications.md for the bounded fetch/extract workflow.
@@ -68,6 +69,7 @@ for(const original of catalog.products){
  const cat=audit.categories[p.category]||{products:0,sheet:0,manual:0,table:0,listingOnly:0};cat.products++;cat.sheet+=Number(sheet);cat.manual+=Number(manualDoc);cat.table+=Number(table);cat.listingOnly+=Number(!sheet&&!manualDoc&&!table);audit.categories[p.category]=cat;
 }
 const outputArgument=args.indexOf('--output');const outputPath=outputArgument>=0?resolve(args[outputArgument+1]):new URL('data/specifications.json',root);
+assertCorrectionWriteBoundary(catalog.products.map(categorizeProduct),index);
 await writeFile(outputPath,JSON.stringify(index));
 await writeFile(outputArgument>=0?outputPath+'.audit.json':new URL('data/specification-audit.json',root),JSON.stringify(audit,null,2)+'\n');
 console.log(JSON.stringify({...audit,missing:audit.missing.length,excludedDocuments:audit.excludedDocuments.length},null,2));
