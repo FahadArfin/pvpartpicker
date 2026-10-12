@@ -6619,5 +6619,281 @@
         "kind": "unit"
       }
     ]
+  },
+  {
+    "id": "rich-solar-alpha-5-pro-standard",
+    "name": "Rich Solar ALPHA 5 PRO (Standard)",
+    "preferredId": "shopsolar-43171241394316",
+    "note": "Exact Standard battery variants from the same retailer page. Battery count is explicit in the selected variant; other revisions and cabinet bundles remain separate.",
+    "listings": [
+      {
+        "id": "shopsolar-43171241394316",
+        "title": "Rich Solar ALPHA 5 PRO Server Rack Battery | 51.2V 100Ah LiFePO4 Battery | 7,000 Lifetime Cycles | 10 Year Warranty | UL1973, UL9540A Certified — ALPHA 5 PRO [Standard] / 1 Battery Only",
+        "parent": "https://shopsolarkits.com/products/alpha-5-pro",
+        "hardware": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "chemistry": "LiFePO4"
+        },
+        "packQuantity": 1,
+        "packageKey": "unit",
+        "packageLabel": "Single battery",
+        "kind": "unit"
+      },
+      {
+        "id": "shopsolar-43171241427084",
+        "title": "Rich Solar ALPHA 5 PRO Server Rack Battery | 51.2V 100Ah LiFePO4 Battery | 7,000 Lifetime Cycles | 10 Year Warranty | UL1973, UL9540A Certified — ALPHA 5 PRO [Standard] / 2 Batteries",
+        "parent": "https://shopsolarkits.com/products/alpha-5-pro",
+        "hardware": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "chemistry": "LiFePO4"
+        },
+        "packQuantity": 2,
+        "packageKey": "pack-2",
+        "packageLabel": "Pack of 2 batteries",
+        "kind": "pack"
+      },
+      {
+        "id": "shopsolar-43171241459852",
+        "title": "Rich Solar ALPHA 5 PRO Server Rack Battery | 51.2V 100Ah LiFePO4 Battery | 7,000 Lifetime Cycles | 10 Year Warranty | UL1973, UL9540A Certified — ALPHA 5 PRO [Standard] / 3 Batteries",
+        "parent": "https://shopsolarkits.com/products/alpha-5-pro",
+        "hardware": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "chemistry": "LiFePO4"
+        },
+        "packQuantity": 3,
+        "packageKey": "pack-3",
+        "packageLabel": "Pack of 3 batteries",
+        "kind": "pack"
+      },
+      {
+        "id": "shopsolar-43171241492620",
+        "title": "Rich Solar ALPHA 5 PRO Server Rack Battery | 51.2V 100Ah LiFePO4 Battery | 7,000 Lifetime Cycles | 10 Year Warranty | UL1973, UL9540A Certified — ALPHA 5 PRO [Standard] / 4 Batteries",
+        "parent": "https://shopsolarkits.com/products/alpha-5-pro",
+        "hardware": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "chemistry": "LiFePO4"
+        },
+        "packQuantity": 4,
+        "packageKey": "pack-4",
+        "packageLabel": "Pack of 4 batteries",
+        "kind": "pack"
+      },
+      {
+        "id": "shopsolar-43171241525388",
+        "title": "Rich Solar ALPHA 5 PRO Server Rack Battery | 51.2V 100Ah LiFePO4 Battery | 7,000 Lifetime Cycles | 10 Year Warranty | UL1973, UL9540A Certified — ALPHA 5 PRO [Standard] / 5 Batteries",
+        "parent": "https://shopsolarkits.com/products/alpha-5-pro",
+        "hardware": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "chemistry": "LiFePO4"
+        },
+        "packQuantity": 5,
+        "packageKey": "pack-5",
+        "packageLabel": "Pack of 5 batteries",
+        "kind": "pack"
+      },
+      {
+        "id": "shopsolar-43171241558156",
+        "title": "Rich Solar ALPHA 5 PRO Server Rack Battery | 51.2V 100Ah LiFePO4 Battery | 7,000 Lifetime Cycles | 10 Year Warranty | UL1973, UL9540A Certified — ALPHA 5 PRO [Standard] / 6 Batteries",
+        "parent": "https://shopsolarkits.com/products/alpha-5-pro",
+        "hardware": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "chemistry": "LiFePO4"
+        },
+        "packQuantity": 6,
+        "packageKey": "pack-6",
+        "packageLabel": "Pack of 6 batteries",
+        "kind": "pack"
+      }
+    ]
+  },
+  {
+    "id": "rich-solar-alpha5pro-self-heating",
+    "name": "Rich Solar ALPHA 5 PRO (Self-heating)",
+    "preferredId": "shopsolar-44040562606220",
+    "note": "Exact title and hardware variants from one source page. Other revisions and mixed bundles remain separate; cross-retailer model equivalence is not assumed.",
+    "listings": [
+      {
+        "id": "shopsolar-44040562606220",
+        "title": "Rich Solar ALPHA 5 PRO Server Rack Battery | 51.2V 100Ah LiFePO4 Battery | 7,000 Lifetime Cycles | 10 Year Warranty | UL1973, UL9540A Certified — ALPHA 5 PRO [Self Heating] / 1 Battery Only",
+        "parent": "https://shopsolarkits.com/products/alpha-5-pro",
+        "hardware": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "chemistry": "LiFePO4"
+        },
+        "packQuantity": 1,
+        "packageKey": "unit",
+        "packageLabel": "Single battery",
+        "kind": "unit"
+      },
+      {
+        "id": "shopsolar-44040562638988",
+        "title": "Rich Solar ALPHA 5 PRO Server Rack Battery | 51.2V 100Ah LiFePO4 Battery | 7,000 Lifetime Cycles | 10 Year Warranty | UL1973, UL9540A Certified — ALPHA 5 PRO [Self Heating] / 2 Batteries",
+        "parent": "https://shopsolarkits.com/products/alpha-5-pro",
+        "hardware": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "chemistry": "LiFePO4"
+        },
+        "packQuantity": 2,
+        "packageKey": "pack-2",
+        "packageLabel": "Pack of 2 batteries",
+        "kind": "pack"
+      },
+      {
+        "id": "shopsolar-44040562671756",
+        "title": "Rich Solar ALPHA 5 PRO Server Rack Battery | 51.2V 100Ah LiFePO4 Battery | 7,000 Lifetime Cycles | 10 Year Warranty | UL1973, UL9540A Certified — ALPHA 5 PRO [Self Heating] / 3 Batteries",
+        "parent": "https://shopsolarkits.com/products/alpha-5-pro",
+        "hardware": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "chemistry": "LiFePO4"
+        },
+        "packQuantity": 3,
+        "packageKey": "pack-3",
+        "packageLabel": "Pack of 3 batteries",
+        "kind": "pack"
+      },
+      {
+        "id": "shopsolar-44040562704524",
+        "title": "Rich Solar ALPHA 5 PRO Server Rack Battery | 51.2V 100Ah LiFePO4 Battery | 7,000 Lifetime Cycles | 10 Year Warranty | UL1973, UL9540A Certified — ALPHA 5 PRO [Self Heating] / 4 Batteries",
+        "parent": "https://shopsolarkits.com/products/alpha-5-pro",
+        "hardware": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "chemistry": "LiFePO4"
+        },
+        "packQuantity": 4,
+        "packageKey": "pack-4",
+        "packageLabel": "Pack of 4 batteries",
+        "kind": "pack"
+      },
+      {
+        "id": "shopsolar-44040562737292",
+        "title": "Rich Solar ALPHA 5 PRO Server Rack Battery | 51.2V 100Ah LiFePO4 Battery | 7,000 Lifetime Cycles | 10 Year Warranty | UL1973, UL9540A Certified — ALPHA 5 PRO [Self Heating] / 5 Batteries",
+        "parent": "https://shopsolarkits.com/products/alpha-5-pro",
+        "hardware": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "chemistry": "LiFePO4"
+        },
+        "packQuantity": 5,
+        "packageKey": "pack-5",
+        "packageLabel": "Pack of 5 batteries",
+        "kind": "pack"
+      },
+      {
+        "id": "shopsolar-44040562770060",
+        "title": "Rich Solar ALPHA 5 PRO Server Rack Battery | 51.2V 100Ah LiFePO4 Battery | 7,000 Lifetime Cycles | 10 Year Warranty | UL1973, UL9540A Certified — ALPHA 5 PRO [Self Heating] / 6 Batteries",
+        "parent": "https://shopsolarkits.com/products/alpha-5-pro",
+        "hardware": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "chemistry": "LiFePO4"
+        },
+        "packQuantity": 6,
+        "packageKey": "pack-6",
+        "packageLabel": "Pack of 6 batteries",
+        "kind": "pack"
+      }
+    ]
+  },
+  {
+    "id": "rich-solar-alpha5pro-manufacturer",
+    "name": "Rich Solar ALPHA 5 PRO (manufacturer listing)",
+    "preferredId": "rich-solar-40459924799537",
+    "note": "Exact title and hardware variants from one source page. Other revisions and mixed bundles remain separate; cross-retailer model equivalence is not assumed.",
+    "listings": [
+      {
+        "id": "rich-solar-40459924799537",
+        "title": "ALPHA 5 PRO | 51.2V 100Ah LiFePO4 Battery | Premium 48V Server Rack Lithium Battery for Residential, Commercial, RVs, Off-Grid | 7,000 Lifetime Cycles | 10 Year Warranty | UL1973, UL9540A Certified — 1 Battery",
+        "parent": "https://richsolar.com/products/alpha-5-pro-48v-100ah-lifepo4-battery",
+        "hardware": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "chemistry": "LiFePO4"
+        },
+        "packQuantity": 1,
+        "packageKey": "unit",
+        "packageLabel": "Single battery",
+        "kind": "unit"
+      },
+      {
+        "id": "rich-solar-40460662997041",
+        "title": "ALPHA 5 PRO | 51.2V 100Ah LiFePO4 Battery | Premium 48V Server Rack Lithium Battery for Residential, Commercial, RVs, Off-Grid | 7,000 Lifetime Cycles | 10 Year Warranty | UL1973, UL9540A Certified — 2 Batteries",
+        "parent": "https://richsolar.com/products/alpha-5-pro-48v-100ah-lifepo4-battery",
+        "hardware": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "chemistry": "LiFePO4"
+        },
+        "packQuantity": 2,
+        "packageKey": "pack-2",
+        "packageLabel": "Pack of 2 batteries",
+        "kind": "pack"
+      },
+      {
+        "id": "rich-solar-40460663029809",
+        "title": "ALPHA 5 PRO | 51.2V 100Ah LiFePO4 Battery | Premium 48V Server Rack Lithium Battery for Residential, Commercial, RVs, Off-Grid | 7,000 Lifetime Cycles | 10 Year Warranty | UL1973, UL9540A Certified — 3 Batteries",
+        "parent": "https://richsolar.com/products/alpha-5-pro-48v-100ah-lifepo4-battery",
+        "hardware": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "chemistry": "LiFePO4"
+        },
+        "packQuantity": 3,
+        "packageKey": "pack-3",
+        "packageLabel": "Pack of 3 batteries",
+        "kind": "pack"
+      },
+      {
+        "id": "rich-solar-40460663062577",
+        "title": "ALPHA 5 PRO | 51.2V 100Ah LiFePO4 Battery | Premium 48V Server Rack Lithium Battery for Residential, Commercial, RVs, Off-Grid | 7,000 Lifetime Cycles | 10 Year Warranty | UL1973, UL9540A Certified — 4 Batteries",
+        "parent": "https://richsolar.com/products/alpha-5-pro-48v-100ah-lifepo4-battery",
+        "hardware": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "chemistry": "LiFePO4"
+        },
+        "packQuantity": 4,
+        "packageKey": "pack-4",
+        "packageLabel": "Pack of 4 batteries",
+        "kind": "pack"
+      },
+      {
+        "id": "rich-solar-40460663095345",
+        "title": "ALPHA 5 PRO | 51.2V 100Ah LiFePO4 Battery | Premium 48V Server Rack Lithium Battery for Residential, Commercial, RVs, Off-Grid | 7,000 Lifetime Cycles | 10 Year Warranty | UL1973, UL9540A Certified — 5 Batteries",
+        "parent": "https://richsolar.com/products/alpha-5-pro-48v-100ah-lifepo4-battery",
+        "hardware": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "chemistry": "LiFePO4"
+        },
+        "packQuantity": 5,
+        "packageKey": "pack-5",
+        "packageLabel": "Pack of 5 batteries",
+        "kind": "pack"
+      },
+      {
+        "id": "rich-solar-40460680560689",
+        "title": "ALPHA 5 PRO | 51.2V 100Ah LiFePO4 Battery | Premium 48V Server Rack Lithium Battery for Residential, Commercial, RVs, Off-Grid | 7,000 Lifetime Cycles | 10 Year Warranty | UL1973, UL9540A Certified — 6 Batteries",
+        "parent": "https://richsolar.com/products/alpha-5-pro-48v-100ah-lifepo4-battery",
+        "hardware": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "chemistry": "LiFePO4"
+        },
+        "packQuantity": 6,
+        "packageKey": "pack-6",
+        "packageLabel": "Pack of 6 batteries",
+        "kind": "pack"
+      }
+    ]
   }
 ]

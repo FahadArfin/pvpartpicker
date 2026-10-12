@@ -1,0 +1,26 @@
+.build-purchase-comparison { margin: 20px 0; border-block: 1px solid var(--line); color: var(--text); }
+.build-purchase-comparison summary { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 20px; min-height: 44px; padding: 10px 0; cursor: pointer; }
+.build-purchase-comparison summary::before { content: '›'; color: var(--accent); }
+.build-purchase-comparison details[open] > summary::before, .build-purchase-comparison[open] > summary::before { content: '⌄'; }
+.build-purchase-comparison summary span, .build-purchase-comparison p, .build-purchase-comparison small { color: var(--muted); }
+.build-purchase-comparison p { font-size: 12px; line-height: 1.6; margin: 8px 0 12px; }
+.build-purchase-comparison summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.build-purchase-comparison .purchase-option { border-top: 1px solid var(--line); }
+.build-purchase-comparison .purchase-option summary { font-size: 13px; }
+.build-purchase-comparison table { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 12px; }
+.build-purchase-comparison th, .build-purchase-comparison td { padding: 10px 8px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; overflow-wrap: anywhere; }
+.build-purchase-comparison thead { background: var(--surface-alt); }
+.build-purchase-comparison tbody th { font-weight: 500; }
+.build-purchase-comparison small { display: block; font-size: 11px; line-height: 1.5; margin-top: 4px; }
+.build-purchase-comparison a { color: var(--accent); display: inline-flex; align-items: center; min-height: 28px; }
+.build-purchase-comparison .purchase-summary { font-variant-numeric: tabular-nums; }
+@media (max-width: 720px) {
+ .build-purchase-comparison summary { align-items: flex-start; }
+ .build-purchase-comparison summary span { width: 100%; padding-left: 13px; }
+ .build-purchase-comparison table, .build-purchase-comparison tbody, .build-purchase-comparison tr, .build-purchase-comparison th, .build-purchase-comparison td { display: block; width: auto; }
+ .build-purchase-comparison thead { display: none; }
+ .build-purchase-comparison tr { border-bottom: 1px solid var(--line); padding: 8px 0; }
+ .build-purchase-comparison th, .build-purchase-comparison td { border: 0; padding: 4px 0; }
+ .build-purchase-comparison td::before { content: attr(data-label) ': '; font-weight: 600; }
+ .build-purchase-comparison a { min-height: 44px; }
+}

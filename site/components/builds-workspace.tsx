@@ -3,18 +3,21 @@ import {useCallback,useEffect,useState} from 'react';
 import {FolderOpen,RefreshCw} from 'lucide-react';
 import Link from './site-link';
 import {api,usePV} from './pv-provider';
+import {SavedBuildTarget} from './saved-build-target';
+import type {SavedBuildAlert} from '../lib/build-alerts';
 import {BuildOpenAction} from './build-open-action';
 import {CommunityWorkspace} from './community-workspace';
 import {deviceBuildsKey,readDeviceBuilds,isDeviceBuild,purposeLabel,type SavedBuild} from '../lib/build-library';
 
 export function BuildsWorkspace({view}:{view:'saved'|'community'}) {
   const {user}=usePV();
+  const [buildAlerts,setBuildAlerts]=useState<SavedBuildAlert[]>([]);
   const [saved,setSaved]=useState<SavedBuild[]>([]),[loading,setLoading]=useState(true),[errors,setErrors]=useState<string[]>([]),[query,setQuery]=useState('');
   const reload=useCallback(async()=>{
     setLoading(true);setErrors([]);
     const issues:string[]=[];let device:SavedBuild[]=[],account:SavedBuild[]=[];
     try{device=readDeviceBuilds(localStorage.getItem(deviceBuildsKey));}catch(e){issues.push((e as Error).message);}
-    if(user)try{account=(await api('builds')).builds;}catch(e){issues.push('Account builds: '+(e as Error).message);}
+    if(user)try{const [b,a]=await Promise.all([api('builds'),api('build-alerts')]);account=b.builds;setBuildAlerts(a.alerts);}catch(e){issues.push('Account builds: '+(e as Error).message);}
     setSaved([...account,...device]);setErrors(issues);setLoading(false);
   },[user]);
   useEffect(()=>{if(view==='saved')void reload();},[view,reload]);
@@ -25,7 +28,7 @@ export function BuildsWorkspace({view}:{view:'saved'|'community'}) {
       <div className="builds-toolbar"><label className="field">Find a saved build<input type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="Search by build name"/></label><button className="button outline small" disabled={loading} onClick={reload}><RefreshCw size={14}/>Refresh</button></div>
       <p className="inline-note">{user?'Showing private account builds and builds saved on this device.':'Device builds stay in this browser.'} {!user&&<a className="text-link" href="/signin-with-chatgpt?return_to=%2Fbuilds%2Fsaved" target="_top">Sign in for your account builds</a>}</p>
       {errors.map(message=><p className="error-message" role="alert" key={message}>{message}</p>)}
-      {loading?<p role="status">Loading saved builds…</p>:<div className="saved-build-list">{visible.map(b=><article className="saved-build-item" key={b.id}><div><h2>{b.name}</h2><p>{b.lines.length} part{b.lines.length===1?'':'s'} · {purposeLabel[b.settings.purpose]} · {b.settings.mount==='roof'?'Roof':'Ground'}</p><small>{isDeviceBuild(b.id)?'This device':'Account'} · saved {new Date(b.updatedAt).toLocaleDateString()}</small></div><BuildOpenAction target={b} navigate/></article>)}</div>}
+      {loading?<p role="status">Loading saved builds…</p>:<div className="saved-build-list">{visible.map(b=><article className="saved-build-item" key={b.id}><div><h2>{b.name}</h2><p>{b.lines.length} part{b.lines.length===1?'':'s'} · {purposeLabel[b.settings.purpose]} · {b.settings.mount==='roof'?'Roof':'Ground'}</p><small>{isDeviceBuild(b.id)?'This device':'Account'} · saved {new Date(b.updatedAt).toLocaleDateString()}</small></div><div className="saved-build-actions"><BuildOpenAction target={b} navigate/>{!isDeviceBuild(b.id)&&<SavedBuildTarget buildId={b.id} alert={buildAlerts.find(a=>a.buildId===b.id)} onChange={reload}/>}</div></article>)}</div>}
       {!loading&&!errors.length&&!visible.length&&<div className="empty-state"><FolderOpen size={26}/><h2>{saved.length?'No saved builds match.':'Save your first system'}</h2><p>{saved.length?'Try a different build name.':'In System Builder, name your setup and choose Save build. You can reopen it here whenever you’re ready.'}</p>{saved.length?<button className="button outline small" onClick={()=>setQuery('')}>Clear search</button>:<Link className="button dark small" href="/build">Open System Builder</Link>}</div>}
     </section>}
   </main>;

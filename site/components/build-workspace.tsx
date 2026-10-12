@@ -7,6 +7,7 @@ import {CheckCircle2,AlertTriangle,HelpCircle,Plus,Minus,Trash2} from 'lucide-re
 import {usePV,ProductImage} from './pv-provider';
 import {BuildLibraryToolbar} from './build-library-toolbar';
 import {BuildPriceHistory} from './build-price-history';
+import {BuildPurchaseComparison} from './build-purchase-comparison';
 import {BuildConnectionMap} from './build-connection-map';
 import {useConnectionProducts} from './use-connection-products';
 import {categories} from '../lib/types';
@@ -80,6 +81,7 @@ export function BuildWorkspace(){
    <div className="builder-totals"><div className="builder-metrics"><span><strong>{watts?(watts/1000).toFixed(1):'—'}</strong> kW PV</span><span><strong>{kwh?kwh.toFixed(1):'—'}</strong> kWh DC storage</span>{stationKwh>0&&<span><strong>{stationKwh.toFixed(2)}</strong> kWh integrated stations</span>}</div><div className="builder-subtotal"><span>Equipment subtotal</span><strong>{money(total)}</strong></div></div>
    <p className="builder-price-note">{unpriced?`${unpriced} items need current prices. `:''}Package quantities included. Shipping and tax excluded. Totals cover selected equipment, not a complete installation.</p>
   </section>
+  <BuildPurchaseComparison build={build} products={products}/>
   <BuildPriceHistory lines={build.lines}/>
   <BuildConnectionMap {...connections}/>
   <section className="section-card builder-compatibility" id="compatibility-notes"><h2>Compatibility notes</h2><p className="inline-note">Connection calculations are shown above. These additional checks cover operating modes, control systems and installation requirements. A passed numerical check does not establish a complete, approved installation.</p>{checks.filter(c=>!build.settings.pvArrays?.length||["System purpose","Battery communication & certification","Module electronics & shutdown","Monitoring & load control","Bundled equipment","Integrated power station","DC-only output","Mounting fit & structure","Wiring & protection","Choose an inverter"].includes(c.title)).map((c,i)=>{const Icon=c.status==='match'?CheckCircle2:c.status==='mismatch'?AlertTriangle:HelpCircle;return <div className={'compatibility-item status-'+c.status} key={i}><Icon size={19}/><div><strong>{c.title} · {c.status==='unknown'?'Needs verification':c.status==='match'?'Documented check passed':'Mismatch'}</strong><p>{c.detail}</p>{c.source&&<a className="text-link small-text" href={c.source} target="_blank" rel="noreferrer">Source documentation</a>}</div></div>;})}</section>

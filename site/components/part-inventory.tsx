@@ -1,4 +1,7 @@
 'use client';
+import {PriceConfidence} from './price-confidence';
+import {offerConfidence} from '../lib/price-confidence';
+import {latestObservedOffer} from '../lib/catalog-cleanup';
 import {useEffect,useRef,useState} from 'react';
 import {Sun,Battery,Zap,Cable,Wrench,Box,Plug,ShieldCheck,Gauge,PackageOpen,Check,ArrowUpRight,ArrowRight,X,Package} from 'lucide-react';
 import Link from './site-link';
@@ -17,9 +20,9 @@ import {ProductPriceHistory} from './product-price-history';
 const icons={panels:Sun,mounting:Wrench,wiring:Cable,batteries:Battery,inverters:Zap,electrical:Box,accessories:Plug,charging:Zap,'module-electronics':ShieldCheck,monitoring:Gauge,kits:PackageOpen,'all-in-one':Battery};
 function specs(product:Product){return partColumns[product.category].map(c=>({label:c.label,...partValue(product,c.key)})).filter(v=>v.value!=='—').slice(0,4);}
 const bundled=(p:Product)=>p.modelIdentity?.kind==='bundle'||p.category==='kits';
-function pricing(product:Product){const current=bestOffer(product);const last=[...product.offers].sort((a,b)=>a.price/a.packQuantity-b.price/b.packQuantity)[0];return {current,offer:current||last};}
+function pricing(product:Product){const current=bestOffer(product);const last=latestObservedOffer(product.offers);return {current,offer:current||last};}
 export function PartRow({product,active,onInspect,onOpen,columns,builderMode=false,selectedOfferId}:{columns:PartColumn[];product:Product;active:boolean;onInspect:()=>void;onOpen:()=>void;builderMode?:boolean;selectedOfferId?:string}){
- const {build,compare,setCompare,notify}=usePV();const router=useRouter();const {current,offer}=pricing(product);const Icon=icons[product.category];const quantity=build.lines.find(l=>l.productId===product.id)?.quantity||0;const selected=compare.includes(product.id);
+ const {build,compare,setCompare,notify,reports}=usePV();const router=useRouter();const {current,offer}=pricing(product);const Icon=icons[product.category];const quantity=build.lines.find(l=>l.productId===product.id)?.quantity||0;const selected=compare.includes(product.id);
  return <article role="row" className={'part-row '+(active?'inspected ':'')+(quantity?'equipped':'')} onMouseEnter={onInspect} onFocus={onInspect} onDoubleClick={e=>{
   // A second click on the part opens its details; action controls stay separate.
   if((e.target as HTMLElement).closest('a,input,select,textarea,label,button:not(.part-inspect)'))return;
@@ -30,20 +33,20 @@ export function PartRow({product,active,onInspect,onOpen,columns,builderMode=fal
    <strong>{productListName(product)}</strong><span title={productListVariant(product)}>{productListVariant(product)}{product.modelIdentity&&product.modelIdentity.listingCount>1?` · ${product.modelIdentity.listingCount} listings · options`:null}</span>
   </button><Link className="part-details-link" href={'/products/'+encodeURIComponent(product.id)+(builderMode?'?builder=1':'')} aria-label={'View specs and history for '+productListName(product)} title="Open specifications & price history"><ArrowUpRight size={16}/></Link></div>
   {columns.map(c=>{const v=partValue(product,c.key);return <div className={'part-spec-cell'+(v.value==='—'?' missing':'')} role="cell" key={c.key} title={[v.value,c.help,v.note,v.source].filter(Boolean).join('\n')}><span className="part-spec-label">{c.label}</span><span>{v.value}</span></div>;})}
-  <div role="cell" className="part-price"><strong>{offer?money(offer.price/offer.packQuantity):'Unpriced'}</strong>{offer&&offer.packQuantity>1&&<small className="part-package-total">{money(offer.price)} package purchase</small>}<span>{offer?.retailer||'No current offer'}{!current&&offer?' · Last observed':''}{offer&&offer.packQuantity>1?` · ${offer.packQuantity}-pack`:''}</span></div>
-  <div className="part-actions" role="cell"><span className="part-watch-control"><WatchButton product={product}/><small aria-hidden="true">Watch</small></span><label className={'part-compare '+(selected?'selected':'')} title={selected?"Remove from comparison":"Compare this part"}><input type="checkbox" checked={selected} onChange={()=>{if(!selected&&compare.length>=4){notify('Compare up to four parts. Remove one to add another.');return;}setCompare(c=>selected?c.filter(id=>id!==product.id):[...c,product.id]);}}/><span><Check size={13}/></span><small aria-hidden="true">Compare</small><span className="sr-only">Compare {product.name}</span></label>
+  <div role="cell" className="part-price"><strong title={offer?offer.retailer+' · '+offerConfidence(offer,reports).detail:undefined}>{offer?money(offer.price/offer.packQuantity):'Unpriced'}</strong>{offer&&offer.packQuantity>1&&<small className="part-package-total">{offer.packQuantity}-pack: {money(offer.price)}</small>}<PriceConfidence offer={offer} reports={reports} hideFresh/></div>
+  <div className="part-actions part-selection-actions" role="cell"><span className="part-watch-control"><WatchButton product={product}/></span><label className={'part-compare '+(selected?'selected':'')} title={selected?"Remove from comparison":"Compare this part"}><input type="checkbox" checked={selected} onChange={()=>{if(!selected&&compare.length>=4){notify('Compare up to four parts. Remove one to add another.');return;}setCompare(c=>selected?c.filter(id=>id!==product.id):[...c,product.id]);}}/><span><Check size={13}/></span><span className="sr-only">Compare {product.name}</span></label>
   <BuildQuantity product={product} offerId={selectedOfferId} returnToBuild={builderMode}/></div>
  </article>;
 }
 function PartPreview({product,builderMode=false,selectedOfferId}:{product:Product;builderMode?:boolean;selectedOfferId?:string}){
- const {build}=usePV();const {current,offer}=pricing(product);const quantity=build.lines.find(l=>l.productId===product.id)?.quantity||0;
+ const {build,reports}=usePV();const {current,offer}=pricing(product);const quantity=build.lines.find(l=>l.productId===product.id)?.quantity||0;
  return <div className="part-preview">
   <div className="inspection-label"><span className="pulse-dot"/>PART INSPECTOR<span>{categories.find(c=>c.id===product.category)?.label}</span></div>
   <div className="inspection-image"><div className="inspection-grid"/><ProductImage key={product.id} product={product}/>{quantity>0&&<span className="equipped-badge"><Check size={12}/> In build ×{quantity}</span>}</div>
   <div className="inspection-content"><span className="brand-label">{manufacturerDisplay(product.brand)}</span><h3>{productListName(product)}</h3><BundleTags product={product}/><div className="spec-pills">{specs(product).map((s,i)=><span key={i} title={s.note}>{s.label}: {s.value}</span>)}</div>
    <div className="inspection-price"><div><small>{bundled(product)?(current?'Current bundle price':'Last observed bundle price'):current?'Current unit price':'Last observed unit price'}</small><strong>{offer?money(offer.price/offer.packQuantity):'Unpriced'}</strong></div><span className={current?'stock-dot':'muted'}>{current?'In stock':'Check stock'}</span></div>
    <ProductPriceHistory key={product.id} product={product} compact/>
-   {offer&&<><div className="purchase-note"><Package size={15}/><span>{offer.packQuantity>1?`${money(offer.price)} purchase · ${offer.packQuantity} units`:`${money(offer.price)} ${bundled(product)?'whole-bundle':'single-unit'} purchase`}<small>{offer.retailer} · {offer.condition==='used'?'Used / refurbished':'New'}</small></span></div><p className="inspection-date">Observed {new Date(offer.observedAt).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'})} · {product.offers.length} {product.offers.length===1?'offer':'offers'}</p></>}
+   {offer&&<><div className="purchase-note"><Package size={15}/><span>{offer.packQuantity>1?`${money(offer.price)} purchase · ${offer.packQuantity} units`:`${money(offer.price)} ${bundled(product)?'whole-bundle':'single-unit'} purchase`}<small>{offer.retailer} · {offer.condition==='used'?'Used / refurbished':'New'}</small></span></div><PriceConfidence offer={offer} reports={reports}/><p className="inspection-date">Observed {new Date(offer.observedAt).toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'})} · {product.offers.length} {product.offers.length===1?'offer':'offers'}</p></>}
    <div className="inspection-quantity"><span>Quantity in build</span><BuildQuantity product={product} offerId={selectedOfferId} returnToBuild={builderMode}/></div>
    <WatchButton product={product} compact={false}/><Link className="inspection-details" href={'/products/'+product.id+(builderMode?'?builder=1':'')}>View specs & price history <ArrowUpRight size={15}/></Link>
   </div>

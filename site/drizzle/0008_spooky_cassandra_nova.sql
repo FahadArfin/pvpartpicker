@@ -1,0 +1,1 @@
+ALTER TABLE `build_alerts` ADD `evaluation_token` text;

@@ -50,6 +50,20 @@
       "when": 1791338291892,
       "tag": "0006_living_marvel_boy",
       "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "6",
+      "when": 1791720000000,
+      "tag": "0007_build_alerts",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "6",
+      "when": 1791766231748,
+      "tag": "0008_spooky_cassandra_nova",
+      "breakpoints": true
     }
   ]
 }

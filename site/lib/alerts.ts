@@ -1,3 +1,4 @@
+import {processBuildAlerts,queuedBuildAlertEligible,recordEmailStatus} from './build-alerts';
 import { database, runtime, getCatalog } from './storage';
 import { buildModelCatalog,type ModelRegistry } from './model-identity';
 import modelRegistry from '../data/model-identities.json';
@@ -17,10 +18,11 @@ export async function processAlerts() {
     } else await db.prepare('UPDATE alerts SET last_price = ? WHERE id = ?').bind(price,a.id).run();
   }
   await db.prepare("INSERT INTO job_state (id,value) VALUES ('alerts-cursor',?) ON CONFLICT(id) DO UPDATE SET value=excluded.value").bind(rows.results.length===500?rows.results.at(-1).id:'').run();
+  const builds = await processBuildAlerts(db,catalog.products); generated+=builds.generated;
   let delivered = 0;
   if (configuration.RESEND_API_KEY && configuration.EMAIL_FROM && configuration.SITE_ORIGIN) {
-    const queue = await db.prepare("SELECT n.*, a.email, a.token FROM notifications n JOIN alerts a ON a.id=n.alert_id WHERE n.email_status='pending' AND n.attempts < 3 AND a.active=1 ORDER BY n.created_at LIMIT 25").all<any>();
-    delivered=await sendQueuedEmails(queue.results,configuration as {RESEND_API_KEY:string;EMAIL_FROM:string;SITE_ORIGIN:string},async(id,status)=>db.prepare('UPDATE notifications SET email_status=?, attempts=attempts+1 WHERE id=?').bind(status,id).run());
+    const queue = await db.prepare("SELECT n.*, a.email, a.token FROM notifications n JOIN alerts a ON a.id=n.alert_id WHERE n.email_status='pending' AND n.attempts < 3 AND a.active=1 UNION ALL SELECT n.*,a.email,a.token FROM notifications n JOIN build_alerts a ON a.id=n.alert_id JOIN builds b ON b.id=a.build_id AND b.user_id=a.user_id WHERE n.email_status='pending' AND n.attempts<3 AND a.active=1 AND a.email_enabled=1 AND n.build_signature=a.build_signature ORDER BY created_at LIMIT 25").all<any>();
+    delivered=await sendQueuedEmails(queue.results,configuration as {RESEND_API_KEY:string;EMAIL_FROM:string;SITE_ORIGIN:string},async(id,status)=>recordEmailStatus(db,id,status),fetch,async n=>!n.build_id||queuedBuildAlertEligible(db,n,catalog.products));
   }
-  return { evaluated: rows.results.length, generated, delivered, emailConfigured: Boolean(configuration.RESEND_API_KEY && configuration.EMAIL_FROM && configuration.SITE_ORIGIN) };
+  return { evaluated: rows.results.length+builds.evaluated, generated, delivered, emailConfigured: Boolean(configuration.RESEND_API_KEY && configuration.EMAIL_FROM && configuration.SITE_ORIGIN) };
 }
