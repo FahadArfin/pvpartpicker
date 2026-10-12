@@ -21,7 +21,9 @@ export function importReviewedSpecification(p:Product,records:ReviewedSpecificat
  for(const g of next.groups)for(const f of g.fields){const known=groups.flatMap(g=>g.fields).find(x=>x.key===f.key);if(known){if(known.kind==='listing'&&f.kind!=='listing')Object.assign(known,f);else if(f.kind!=='listing'&&known.kind!=='listing'&&known.value.replace(/\s/g,'')!==f.value.replace(/\s/g,''))notes.push('Reviewed source conflict for '+f.label+'; existing rating retained.');continue;}let target=groups.find(x=>x.title===g.title);if(!target){target={title:g.title,fields:[]};groups.push(target);}target.fields.push(f);}
  const panelRatings=next.panelRatings||prior?.panelRatings?{...next.panelRatings,...prior?.panelRatings,stc:{...next.panelRatings?.stc,...prior?.panelRatings?.stc},noct:{...next.panelRatings?.noct,...prior?.panelRatings?.noct},sources:{...next.panelRatings?.sources,...prior?.panelRatings?.sources}}:undefined;
  for(const condition of ['stc','noct'] as const)for(const [key,value] of Object.entries(next.panelRatings?.[condition]||{})){const old=prior?.panelRatings?.[condition][key];if(old&&old!==value)notes.push('Reviewed source conflict for '+condition+' '+key+'; existing rating retained.');}
- const merged={...next,groups,sources,notes:[...new Set(notes.filter(n=>!n.startsWith('A matching technical specification table is not available')))],...(panelRatings?{panelRatings}:{}),identity:accepted[0].expected[p.id]};
+ // A still-matching prior identity was checked before merging. Keep its source
+ // anchors so reimports cannot require ratings added by an earlier hydration.
+ const merged={...next,groups,sources,notes:[...new Set(notes.filter(n=>!n.startsWith('A matching technical specification table is not available')))],...(panelRatings?{panelRatings}:{}),identity:prior?.identity||accepted[0].expected[p.id]};
  assertCorrectionWriteBoundary([p],{[p.id]:merged});
  return merged;
 }
