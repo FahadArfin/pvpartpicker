@@ -28,7 +28,7 @@ export function classify(title: string): Category | null {
   const primary=base.split(/[|｜]/)[0];
   // Rated battery modules may advertise monitoring/communications in feature columns.
   const batterySubject=/\b(?:monitoring|communication|comms)\b/.test(base.slice(primary.length))&&!/\b(?:kit|bundle|system)\b|\b[\d,.]+\s*(?:kw|w|watts?)\s+output\b/.test(base)&&/\bbatter(?:y|ies)\b/.test(primary)&&/\b[\d,.]+\s*(?:ah|kwh)\b/.test(primary)&&!/\b(?:inverter|charger|controller|monitor|adapter|cable|wire|kit|bundle|box|case|cover|stand|tray|bracket|cabinet)\b/.test(primary);
-  const t = (batterySubject?primary:base).split(/\s(?:for|with|including|featuring)\s|\s+w\/\s*/)[0];
+  const t = (batterySubject?primary:base).split(/\s(?:for|with|including|featuring)\s|\s+w\/\s*|\s*\(with\s/)[0];
   if(/\btilt kit\b/i.test(t))return 'mounting';
   if(/\bmicroinverter\b/i.test(t)&&!/\b(?:kit|bundle)\b/i.test(base))return 'inverters';
   const stationModel = /^(?:pecron\s*(?:e(?:1000|1500|2000|2400|3600|3800)|f(?:1000|3000|5000))\s*lfp|anker\s*(?:solix\s*)?(?:c(?:1000|2000)|f(?:2000|2600|3000|3800)|s2000)\b|ecoflow\s+delta\b|bluetti\s+(?:ac200l|apex\s*300|elite\s*\d+)\b|jackery\s+explorer\s+\d+)/.test(t)||/^(?:hysolis\s+)?mps3k\b/i.test(t);
@@ -40,6 +40,13 @@ export function classify(title: string): Category | null {
   const inverterModule=/inverter/.test(subject)&&!/power station|solar generator/.test(subject);
   if ((/portable power station|solar generator|power bank/.test(subject) || stationModel) && !stationAccessory && !inverterModule) return 'all-in-one';
   if (/\b(?:kit|bundle)\b/.test(base)&&/\bkwh\b.*(?:storage|array)|storage.*array|inverter.*battery|battery.*inverter/.test(base)) return 'kits';
+  // A destination or built-in feature does not change the item being sold.
+  const selected=title.split(/\s—\s/).slice(1).join(' ').toLowerCase();
+  const ratedStorage=/\b[\d,.]+\s*(?:ah|kwh)\b/.test(primary)&&/\b(?:lifepo4|lithium)\b/.test(primary)&&/\b(?:battery|energy storage)\b/.test(primary)&&!/\b(?:cable|adapter|charger|inverter|cover|tray|bracket|accessories|kit|bundle)\b/.test(primary);
+  if(ratedStorage&&/\bbattery\b.*\+.*\binverter\b/.test(selected))return 'kits';
+  if(ratedStorage&&!/\b(?:display|screen)\s+kit\b/.test(selected))return 'batteries';
+  if(/\b(?:inverter|multiplus|quattro)\b/.test(subject)&&!/\b(?:cables?|adapters?|adaptors?|screen|remote|control|brackets?|clamps?|connectors?|cover|replacement|kit|bundle)\b/.test(subject)&&!/\bbatter(?:y|ies)\b|&|\bbndl\b/.test(base))return 'inverters';
+  if(/^(?:solar panel to charge controller adaptor kit|solar tray cables|(?:[\d.]+ gauge )?extension cable\b)/.test(subject)||/\bcharge controller\b.*\b(?:connecting cable|adaptor kit)\b/.test(subject))return 'wiring';
   if (/wirebox|wire box/.test(t)) return 'electrical';
   if (/rapid[ -]?shutdown|pv optimizer|module.level.*optimizer|\bts4[- ]|\brss transmitter|\brsd[- ]|tigo.*(?:\btap\b|\bcca\b|cloud connect)/.test(t)) return 'module-electronics';
   // These suffixes name the sale component, rather than the equipment it connects to.
