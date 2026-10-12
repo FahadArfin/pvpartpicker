@@ -1,0 +1,1008 @@
+[
+  {
+    "expectedCategory": "all-in-one",
+    "product": {
+      "id": "shopsolar-54751581536396",
+      "name": "BLUETTI FridgePower - 2,016Wh Battery / 1,800W Output / LiFePO4 | Phone-Thin, Kicks In the Second Power Fails — 1 x FridgePower [2kWh / 1800W]",
+      "brand": "Bluetti",
+      "category": "batteries",
+      "sourceUrl": "https://shopsolarkits.com/products/bluetti-fridgepower?variant=54751581536396",
+      "description": "",
+      "offers": [
+        {
+          "id": "shopsolar-54751581536396",
+          "retailerId": "shopsolar",
+          "retailer": "ShopSolar",
+          "url": "https://shopsolarkits.com/products/bluetti-fridgepower?variant=54751581536396",
+          "price": 949,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T14:57:20.739Z",
+          "sku": "54751581536396",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T14:57:20.739Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "accessories",
+    "product": {
+      "id": "shopsolar-45985821032588",
+      "name": "Anker SOLIX E10 Trolley | Mobile Transport for E10 Power & Battery Modules | L-Shaped Secure Fit | Smooth Rolling",
+      "brand": "Anker",
+      "category": "batteries",
+      "sourceUrl": "https://shopsolarkits.com/products/anker-solix-e10-trolley?variant=45985821032588",
+      "description": "",
+      "offers": [
+        {
+          "id": "shopsolar-45985821032588",
+          "retailerId": "shopsolar",
+          "retailer": "ShopSolar",
+          "url": "https://shopsolarkits.com/products/anker-solix-e10-trolley?variant=45985821032588",
+          "price": 249,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-04T21:54:21.309Z",
+          "sku": "45985821032588",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-04T21:54:21.309Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "mounting",
+    "product": {
+      "id": "shopsolar-44206118535308",
+      "name": "Eco-Worthy 6-Layer 19-Inch Rack for Server Rack Batteries | Holds Up to 6 x 3U Batteries | Heavy-Duty Steel | Easy Assembly",
+      "brand": "Eco-Worthy",
+      "category": "batteries",
+      "sourceUrl": "https://shopsolarkits.com/products/eco-worthy-6-layer-19-inch-rack-for-server-rack-batteries?variant=44206118535308",
+      "description": "",
+      "offers": [
+        {
+          "id": "shopsolar-44206118535308",
+          "retailerId": "shopsolar",
+          "retailer": "ShopSolar",
+          "url": "https://shopsolarkits.com/products/eco-worthy-6-layer-19-inch-rack-for-server-rack-batteries?variant=44206118535308",
+          "price": 499,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-04T21:54:21.309Z",
+          "sku": "44206118535308",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-04T21:54:21.309Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "electrical",
+    "product": {
+      "id": "current-connected-55050",
+      "name": "50 Amp Surface Mount Outlet",
+      "brand": "See manufacturer",
+      "category": "mounting",
+      "sourceUrl": "https://www.currentconnected.com/product/50-amp-surface-mount-outlet/",
+      "description": "",
+      "offers": [
+        {
+          "id": "current-connected-55050",
+          "retailerId": "current-connected",
+          "retailer": "Current Connected",
+          "url": "https://www.currentconnected.com/product/50-amp-surface-mount-outlet/",
+          "price": 21.58,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-12T13:33:15.431Z",
+          "sku": "55050",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-12T13:33:15.431Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "mounting",
+    "product": {
+      "id": "best-solar-bundle-43671354933290",
+      "name": "TOP Rack Solar Panel TRT Rail Less System(TRT 01) — 12P",
+      "brand": "My Store",
+      "category": "panels",
+      "sourceUrl": "https://bestsolarbundle.com/products/top-rack-solar-panel-trt-rail-less-systemtrt-01?variant=43671354933290",
+      "description": "",
+      "offers": [
+        {
+          "id": "best-solar-bundle-43671354933290",
+          "retailerId": "best-solar-bundle",
+          "retailer": "Best Solar Bundle",
+          "url": "https://bestsolarbundle.com/products/top-rack-solar-panel-trt-rail-less-systemtrt-01?variant=43671354933290",
+          "price": 360,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:35:27.610Z",
+          "sku": "43671354933290",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:35:27.610Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "mounting",
+    "product": {
+      "id": "best-solar-bundle-43671354966058",
+      "name": "TOP Rack Solar Panel TRT Rail Less System(TRT 01) — 16P",
+      "brand": "My Store",
+      "category": "panels",
+      "sourceUrl": "https://bestsolarbundle.com/products/top-rack-solar-panel-trt-rail-less-systemtrt-01?variant=43671354966058",
+      "description": "",
+      "offers": [
+        {
+          "id": "best-solar-bundle-43671354966058",
+          "retailerId": "best-solar-bundle",
+          "retailer": "Best Solar Bundle",
+          "url": "https://bestsolarbundle.com/products/top-rack-solar-panel-trt-rail-less-systemtrt-01?variant=43671354966058",
+          "price": 480,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:35:27.611Z",
+          "sku": "43671354966058",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:35:27.611Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "mounting",
+    "product": {
+      "id": "best-solar-bundle-43671354998826",
+      "name": "TOP Rack Solar Panel TRT Rail Less System(TRT 01) — 31P",
+      "brand": "My Store",
+      "category": "panels",
+      "sourceUrl": "https://bestsolarbundle.com/products/top-rack-solar-panel-trt-rail-less-systemtrt-01?variant=43671354998826",
+      "description": "",
+      "offers": [
+        {
+          "id": "best-solar-bundle-43671354998826",
+          "retailerId": "best-solar-bundle",
+          "retailer": "Best Solar Bundle",
+          "url": "https://bestsolarbundle.com/products/top-rack-solar-panel-trt-rail-less-systemtrt-01?variant=43671354998826",
+          "price": 960,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:35:27.611Z",
+          "sku": "43671354998826",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:35:27.611Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "wiring",
+    "product": {
+      "id": "gosun-39407719972958",
+      "name": "Combiner Cord",
+      "brand": "GoSun",
+      "category": "electrical",
+      "sourceUrl": "https://gosun.co/products/combiner-cord?variant=39407719972958",
+      "description": "",
+      "offers": [
+        {
+          "id": "gosun-39407719972958",
+          "retailerId": "gosun",
+          "retailer": "GoSun",
+          "url": "https://gosun.co/products/combiner-cord?variant=39407719972958",
+          "price": 39,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "out_of_stock",
+          "observedAt": "2026-10-11T23:36:22.106Z",
+          "sku": "39407719972958",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:36:22.106Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "kits",
+    "product": {
+      "id": "oupes-47602971836593",
+      "name": "OUPES Guardian 6000 V2 + G5 Extra Battery | Home Backup Battery — Guardian 6000 V2 + G5 Extra Battery",
+      "brand": "OUPES",
+      "category": "batteries",
+      "sourceUrl": "https://oupes.com/products/oupes-guardian-6000-v2-g5-extra-battery-home-backup-battery?variant=47602971836593",
+      "description": "",
+      "offers": [
+        {
+          "id": "oupes-47602971836593",
+          "retailerId": "oupes",
+          "retailer": "Oupes",
+          "url": "https://oupes.com/products/oupes-guardian-6000-v2-g5-extra-battery-home-backup-battery?variant=47602971836593",
+          "price": 4099,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:37:16.076Z",
+          "sku": "47602971836593",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:37:16.076Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "kits",
+    "product": {
+      "id": "oupes-47602976817329",
+      "name": "OUPES Guardian 6000 V2 + G5 Extra Battery + 4*240W Solar Panel | Solar Generator Kit — Guardian 6000 V2 + G5 Extra Battery + 240W Solar Panel*4",
+      "brand": "OUPES",
+      "category": "kits",
+      "sourceUrl": "https://oupes.com/products/oupes-guardian-6000-v2-g5-extra-battery-4-240w-solar-panel-solar-generator-kit?variant=47602976817329",
+      "description": "",
+      "offers": [
+        {
+          "id": "oupes-47602976817329",
+          "retailerId": "oupes",
+          "retailer": "Oupes",
+          "url": "https://oupes.com/products/oupes-guardian-6000-v2-g5-extra-battery-4-240w-solar-panel-solar-generator-kit?variant=47602976817329",
+          "price": 5779,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:37:16.076Z",
+          "sku": "47602976817329",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:37:16.076Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "kits",
+    "product": {
+      "id": "oupes-47602991431857",
+      "name": "OUPES Guardian 6000 V2 + G5 Extra Battery + 2*240W Solar Panel | Solar Generator Kit — Guardian 6000 V2 + G5 Extra Battery + 240W Solar Panel*2",
+      "brand": "OUPES",
+      "category": "kits",
+      "sourceUrl": "https://oupes.com/products/oupes-guardian-6000-v2-g5-extra-battery-2-240w-solar-panel-solar-generator-kit?variant=47602991431857",
+      "description": "",
+      "offers": [
+        {
+          "id": "oupes-47602991431857",
+          "retailerId": "oupes",
+          "retailer": "Oupes",
+          "url": "https://oupes.com/products/oupes-guardian-6000-v2-g5-extra-battery-2-240w-solar-panel-solar-generator-kit?variant=47602991431857",
+          "price": 4919,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:37:16.075Z",
+          "sku": "47602991431857",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:37:16.075Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "all-in-one",
+    "product": {
+      "id": "pecron-45340485681340",
+      "name": "Pecron D77 DC UPS Battery Backup, 76.96Wh Small UPS for WiFi Router/Modem/Security Camera/Phone, With PoE Port, 5V/9V/12V",
+      "brand": "PECRON LLC",
+      "category": "batteries",
+      "sourceUrl": "https://www.pecron.com/products/pecron-d77-dc-ups-battery-backup-76-96wh-small-ups-for-wifi-router-modem-security-camera-phone-uninterruptible-power-supply-with-poe-port-5v-9v-12v?variant=45340485681340",
+      "description": "",
+      "offers": [
+        {
+          "id": "pecron-45340485681340",
+          "retailerId": "pecron",
+          "retailer": "Pecron",
+          "url": "https://www.pecron.com/products/pecron-d77-dc-ups-battery-backup-76-96wh-small-ups-for-wifi-router-modem-security-camera-phone-uninterruptible-power-supply-with-poe-port-5v-9v-12v?variant=45340485681340",
+          "price": 59.9,
+          "referencePrice": 69.9,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:39:01.695Z",
+          "sku": "45340485681340",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:39:01.695Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "all-in-one",
+    "product": {
+      "id": "pecron-45340489384124",
+      "name": "Pecron D39 DC UPS Battery Backup, 38.48Wh Small UPS for WiFi Router/Modem/Security Camera/Phone, With PoE Port, 5V/9V/12V",
+      "brand": "PECRON LLC",
+      "category": "batteries",
+      "sourceUrl": "https://www.pecron.com/products/pecron-d39-dc-ups-battery-backup-38-48wh-small-ups-for-wifi-router-modem-security-camera-phone-with-poe-port-5v-9v-12v?variant=45340489384124",
+      "description": "",
+      "offers": [
+        {
+          "id": "pecron-45340489384124",
+          "retailerId": "pecron",
+          "retailer": "Pecron",
+          "url": "https://www.pecron.com/products/pecron-d39-dc-ups-battery-backup-38-48wh-small-ups-for-wifi-router-modem-security-camera-phone-with-poe-port-5v-9v-12v?variant=45340489384124",
+          "price": 39.9,
+          "referencePrice": 59.9,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:39:01.695Z",
+          "sku": "45340489384124",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:39:01.695Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "accessories",
+    "product": {
+      "id": "powmr-51417636340007",
+      "name": "Battery Equalizer Voltage Balancer for 24V Lead-Acid/AGM/Gel/Flood Battery",
+      "brand": "PowMr",
+      "category": "batteries",
+      "sourceUrl": "https://powmr.com/products/battery-equalizer-voltage-balancer-for-24v-lead-acid-agm-gel-flood-battery?variant=51417636340007",
+      "description": "",
+      "offers": [
+        {
+          "id": "powmr-51417636340007",
+          "retailerId": "powmr",
+          "retailer": "PowMr",
+          "url": "https://powmr.com/products/battery-equalizer-voltage-balancer-for-24v-lead-acid-agm-gel-flood-battery?variant=51417636340007",
+          "price": 27.9,
+          "referencePrice": 39.86,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:39:01.448Z",
+          "sku": "51417636340007",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:39:01.448Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "accessories",
+    "product": {
+      "id": "powmr-51417703547175",
+      "name": "Battery Equalizer Voltage Balancer for 48V Lead-Acid/AGM/Gel/Flood Battery",
+      "brand": "PowMr",
+      "category": "batteries",
+      "sourceUrl": "https://powmr.com/products/battery-equalizer-voltage-balancer-for-48v-lead-acid-agm-gel-flood-battery?variant=51417703547175",
+      "description": "",
+      "offers": [
+        {
+          "id": "powmr-51417703547175",
+          "retailerId": "powmr",
+          "retailer": "PowMr",
+          "url": "https://powmr.com/products/battery-equalizer-voltage-balancer-for-48v-lead-acid-agm-gel-flood-battery?variant=51417703547175",
+          "price": 49,
+          "referencePrice": 70,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:39:01.448Z",
+          "sku": "51417703547175",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:39:01.448Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "all-in-one",
+    "product": {
+      "id": "powmr-51610413498663",
+      "name": "500W 110V 1KWH All In One Portable Energy Storage System",
+      "brand": "PowMr",
+      "category": "batteries",
+      "sourceUrl": "https://powmr.com/products/500w-1000wh-all-in-one-portable-energy-storage-system?variant=51610413498663",
+      "description": "",
+      "offers": [
+        {
+          "id": "powmr-51610413498663",
+          "retailerId": "powmr",
+          "retailer": "PowMr",
+          "url": "https://powmr.com/products/500w-1000wh-all-in-one-portable-energy-storage-system?variant=51610413498663",
+          "price": 276.72,
+          "referencePrice": 395.31,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:39:01.427Z",
+          "sku": "51610413498663",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:39:01.427Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "all-in-one",
+    "product": {
+      "id": "powmr-51610444628263",
+      "name": "1000W 110V 2KWH All In One Portable Energy Storage System",
+      "brand": "PowMr",
+      "category": "batteries",
+      "sourceUrl": "https://powmr.com/products/1000w-2kwh-all-in-one-portable-energy-storage-system?variant=51610444628263",
+      "description": "",
+      "offers": [
+        {
+          "id": "powmr-51610444628263",
+          "retailerId": "powmr",
+          "retailer": "PowMr",
+          "url": "https://powmr.com/products/1000w-2kwh-all-in-one-portable-energy-storage-system?variant=51610444628263",
+          "price": 896.41,
+          "referencePrice": 1280.59,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:39:01.426Z",
+          "sku": "51610444628263",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:39:01.426Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "accessories",
+    "product": {
+      "id": "practical-preppers-13426",
+      "name": "Mountain Hauler 4000",
+      "brand": "See manufacturer",
+      "category": "mounting",
+      "sourceUrl": "https://practicalpreppers.com/product/sitka-gear-mountain-pack/",
+      "description": "",
+      "offers": [
+        {
+          "id": "practical-preppers-13426",
+          "retailerId": "practical-preppers",
+          "retailer": "Practical Preppers",
+          "url": "https://practicalpreppers.com/product/sitka-gear-mountain-pack/",
+          "price": 529,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:40:11.912Z",
+          "sku": "13426",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:40:11.912Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "accessories",
+    "product": {
+      "id": "practical-preppers-13437",
+      "name": "Women’s Mountain Pack (2700 in3)",
+      "brand": "See manufacturer",
+      "category": "mounting",
+      "sourceUrl": "https://practicalpreppers.com/product/womens-mountain-pack/",
+      "description": "",
+      "offers": [
+        {
+          "id": "practical-preppers-13437",
+          "retailerId": "practical-preppers",
+          "retailer": "Practical Preppers",
+          "url": "https://practicalpreppers.com/product/womens-mountain-pack/",
+          "price": 329,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:40:11.911Z",
+          "sku": "13437",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:40:11.911Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "accessories",
+    "product": {
+      "id": "practical-preppers-31904",
+      "name": "SB-12 Fine-Bubble Aeration Diffuser",
+      "brand": "US Solar Mounts",
+      "category": "electrical",
+      "sourceUrl": "https://practicalpreppers.com/product/sb-12-fine-bubble-aeration-diffuser/",
+      "description": "",
+      "offers": [
+        {
+          "id": "practical-preppers-31904",
+          "retailerId": "practical-preppers",
+          "retailer": "Practical Preppers",
+          "url": "https://practicalpreppers.com/product/sb-12-fine-bubble-aeration-diffuser/",
+          "price": 131.76,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-10T15:22:52.014Z",
+          "sku": "31904",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-10T15:22:52.014Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "accessories",
+    "product": {
+      "id": "practical-preppers-31911",
+      "name": "SB-18 Fine-Bubble Aeration Diffuser",
+      "brand": "US Solar Mounts",
+      "category": "electrical",
+      "sourceUrl": "https://practicalpreppers.com/product/sb-18-fine-bubble-aeration-diffuser/",
+      "description": "",
+      "offers": [
+        {
+          "id": "practical-preppers-31911",
+          "retailerId": "practical-preppers",
+          "retailer": "Practical Preppers",
+          "url": "https://practicalpreppers.com/product/sb-18-fine-bubble-aeration-diffuser/",
+          "price": 146.48,
+          "referencePrice": 156.48,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-10T15:22:52.013Z",
+          "sku": "31911",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-10T15:22:52.013Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "accessories",
+    "product": {
+      "id": "practical-preppers-31914",
+      "name": "SB-24 Fine-Bubble Aeration Diffuser",
+      "brand": "US Solar Mounts",
+      "category": "electrical",
+      "sourceUrl": "https://practicalpreppers.com/product/sb-24-fine-bubble-aeration-diffuser/",
+      "description": "",
+      "offers": [
+        {
+          "id": "practical-preppers-31914",
+          "retailerId": "practical-preppers",
+          "retailer": "Practical Preppers",
+          "url": "https://practicalpreppers.com/product/sb-24-fine-bubble-aeration-diffuser/",
+          "price": 167.32,
+          "referencePrice": 177.32,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-10T15:22:52.012Z",
+          "sku": "31914",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-10T15:22:52.012Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "accessories",
+    "product": {
+      "id": "practical-preppers-31918",
+      "name": "SB-36 Fine-Bubble Aeration Diffuser",
+      "brand": "US Solar Mounts",
+      "category": "electrical",
+      "sourceUrl": "https://practicalpreppers.com/product/sb-36-fine-bubble-aeration-diffuser/",
+      "description": "",
+      "offers": [
+        {
+          "id": "practical-preppers-31918",
+          "retailerId": "practical-preppers",
+          "retailer": "Practical Preppers",
+          "url": "https://practicalpreppers.com/product/sb-36-fine-bubble-aeration-diffuser/",
+          "price": 183.32,
+          "referencePrice": 193.32,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-10T15:22:52.012Z",
+          "sku": "31918",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-10T15:22:52.012Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "accessories",
+    "product": {
+      "id": "practical-preppers-31921",
+      "name": "DB-36 High-Efficiency Diffuser",
+      "brand": "US Solar Mounts",
+      "category": "electrical",
+      "sourceUrl": "https://practicalpreppers.com/product/db-36-high-efficiency-diffuser/",
+      "description": "",
+      "offers": [
+        {
+          "id": "practical-preppers-31921",
+          "retailerId": "practical-preppers",
+          "retailer": "Practical Preppers",
+          "url": "https://practicalpreppers.com/product/db-36-high-efficiency-diffuser/",
+          "price": 165,
+          "referencePrice": 183,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-10T15:22:52.011Z",
+          "sku": "31921",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-10T15:22:52.011Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "accessories",
+    "product": {
+      "id": "shopsolar-41922497937548",
+      "name": "Solar Panel Caddy — Solar Panel Caddy (42mm - 34mm thick solar panels)",
+      "brand": "Solar Tools",
+      "category": "panels",
+      "sourceUrl": "https://shopsolarkits.com/products/solar-panel-caddy?variant=41922497937548",
+      "description": "",
+      "offers": [
+        {
+          "id": "shopsolar-41922497937548",
+          "retailerId": "shopsolar",
+          "retailer": "ShopSolar",
+          "url": "https://shopsolarkits.com/products/solar-panel-caddy?variant=41922497937548",
+          "price": 129,
+          "referencePrice": 159,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "out_of_stock",
+          "observedAt": "2026-10-11T23:17:26.288Z",
+          "sku": "41922497937548",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:17:26.288Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "accessories",
+    "product": {
+      "id": "shopsolar-41922497970316",
+      "name": "Solar Panel Caddy — Solar Panel Caddy with Spacer (42mm - 28mm thick solar panels)",
+      "brand": "Solar Tools",
+      "category": "panels",
+      "sourceUrl": "https://shopsolarkits.com/products/solar-panel-caddy?variant=41922497970316",
+      "description": "",
+      "offers": [
+        {
+          "id": "shopsolar-41922497970316",
+          "retailerId": "shopsolar",
+          "retailer": "ShopSolar",
+          "url": "https://shopsolarkits.com/products/solar-panel-caddy?variant=41922497970316",
+          "price": 159.95,
+          "referencePrice": 189,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:17:26.289Z",
+          "sku": "41922497970316",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:17:26.289Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "accessories",
+    "product": {
+      "id": "shopsolar-41922498003084",
+      "name": "Solar Panel Caddy — Spacer Only",
+      "brand": "Solar Tools",
+      "category": "panels",
+      "sourceUrl": "https://shopsolarkits.com/products/solar-panel-caddy?variant=41922498003084",
+      "description": "",
+      "offers": [
+        {
+          "id": "shopsolar-41922498003084",
+          "retailerId": "shopsolar",
+          "retailer": "ShopSolar",
+          "url": "https://shopsolarkits.com/products/solar-panel-caddy?variant=41922498003084",
+          "price": 34.95,
+          "referencePrice": 48,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:17:26.290Z",
+          "sku": "41922498003084",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:17:26.290Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "accessories",
+    "product": {
+      "id": "shopsolar-41923202547852",
+      "name": "Solar Panel Cleaner — Quart with Hose Sprayer",
+      "brand": "Solar Tools",
+      "category": "panels",
+      "sourceUrl": "https://shopsolarkits.com/products/solar-panel-cleaner?variant=41923202547852",
+      "description": "",
+      "offers": [
+        {
+          "id": "shopsolar-41923202547852",
+          "retailerId": "shopsolar",
+          "retailer": "ShopSolar",
+          "url": "https://shopsolarkits.com/products/solar-panel-cleaner?variant=41923202547852",
+          "price": 35.95,
+          "referencePrice": 49,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:17:26.285Z",
+          "sku": "41923202547852",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:17:26.285Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "accessories",
+    "product": {
+      "id": "shopsolar-41923202580620",
+      "name": "Solar Panel Cleaner — Quart",
+      "brand": "Solar Tools",
+      "category": "panels",
+      "sourceUrl": "https://shopsolarkits.com/products/solar-panel-cleaner?variant=41923202580620",
+      "description": "",
+      "offers": [
+        {
+          "id": "shopsolar-41923202580620",
+          "retailerId": "shopsolar",
+          "retailer": "ShopSolar",
+          "url": "https://shopsolarkits.com/products/solar-panel-cleaner?variant=41923202580620",
+          "price": 49.88,
+          "referencePrice": 59,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:17:26.286Z",
+          "sku": "41923202580620",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:17:26.286Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "accessories",
+    "product": {
+      "id": "shopsolar-41923202613388",
+      "name": "Solar Panel Cleaner — Gallon",
+      "brand": "Solar Tools",
+      "category": "panels",
+      "sourceUrl": "https://shopsolarkits.com/products/solar-panel-cleaner?variant=41923202613388",
+      "description": "",
+      "offers": [
+        {
+          "id": "shopsolar-41923202613388",
+          "retailerId": "shopsolar",
+          "retailer": "ShopSolar",
+          "url": "https://shopsolarkits.com/products/solar-panel-cleaner?variant=41923202613388",
+          "price": 44.95,
+          "referencePrice": 59,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:17:26.286Z",
+          "sku": "41923202613388",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:17:26.286Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "accessories",
+    "product": {
+      "id": "shopsolar-41923202646156",
+      "name": "Solar Panel Cleaner — 5 Gallon",
+      "brand": "Solar Tools",
+      "category": "panels",
+      "sourceUrl": "https://shopsolarkits.com/products/solar-panel-cleaner?variant=41923202646156",
+      "description": "",
+      "offers": [
+        {
+          "id": "shopsolar-41923202646156",
+          "retailerId": "shopsolar",
+          "retailer": "ShopSolar",
+          "url": "https://shopsolarkits.com/products/solar-panel-cleaner?variant=41923202646156",
+          "price": 215.95,
+          "referencePrice": 299,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:17:26.287Z",
+          "sku": "41923202646156",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:17:26.287Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "accessories",
+    "product": {
+      "id": "shopsolar-42107834990732",
+      "name": "Solar Panel Cleaning Pack — Cleaning Kit / Gutter Clamp / 1 Quarts of Panel Cleaner",
+      "brand": "Solar Tools",
+      "category": "panels",
+      "sourceUrl": "https://shopsolarkits.com/products/solar-panel-cleaning-pack?variant=42107834990732",
+      "description": "",
+      "offers": [
+        {
+          "id": "shopsolar-42107834990732",
+          "retailerId": "shopsolar",
+          "retailer": "ShopSolar",
+          "url": "https://shopsolarkits.com/products/solar-panel-cleaning-pack?variant=42107834990732",
+          "price": 409.95,
+          "referencePrice": 519,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:17:26.239Z",
+          "sku": "42107834990732",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:17:26.239Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "accessories",
+    "product": {
+      "id": "shopsolar-42107835023500",
+      "name": "Solar Panel Cleaning Pack — Cleaning Kit / Gutter Clamp / 1 Gallon of Panel Cleaner",
+      "brand": "Solar Tools",
+      "category": "panels",
+      "sourceUrl": "https://shopsolarkits.com/products/solar-panel-cleaning-pack?variant=42107835023500",
+      "description": "",
+      "offers": [
+        {
+          "id": "shopsolar-42107835023500",
+          "retailerId": "shopsolar",
+          "retailer": "ShopSolar",
+          "url": "https://shopsolarkits.com/products/solar-panel-cleaning-pack?variant=42107835023500",
+          "price": 429.95,
+          "referencePrice": 539,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:17:26.239Z",
+          "sku": "42107835023500",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:17:26.239Z",
+      "image": "",
+      "images": []
+    }
+  },
+  {
+    "expectedCategory": "accessories",
+    "product": {
+      "id": "shopsolar-42107835056268",
+      "name": "Solar Panel Cleaning Pack — Cleaning Kit / Gutter Clamp / 1 Quarts of Panel Cleaner / Hose Sprayer",
+      "brand": "Solar Tools",
+      "category": "panels",
+      "sourceUrl": "https://shopsolarkits.com/products/solar-panel-cleaning-pack?variant=42107835056268",
+      "description": "",
+      "offers": [
+        {
+          "id": "shopsolar-42107835056268",
+          "retailerId": "shopsolar",
+          "retailer": "ShopSolar",
+          "url": "https://shopsolarkits.com/products/solar-panel-cleaning-pack?variant=42107835056268",
+          "price": 419.95,
+          "referencePrice": 529,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:17:26.240Z",
+          "sku": "42107835056268",
+          "condition": "new"
+        }
+      ],
+      "verifiedAt": "2026-10-11T23:17:26.240Z",
+      "image": "",
+      "images": []
+    }
+  }
+]
