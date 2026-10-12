@@ -28,10 +28,10 @@ export function classify(title: string): Category | null {
   const primary=base.split(/[|｜]/)[0];
   // Rated battery modules may advertise monitoring/communications in feature columns.
   const batterySubject=/\b(?:monitoring|communication|comms)\b/.test(base.slice(primary.length))&&!/\b(?:kit|bundle|system)\b|\b[\d,.]+\s*(?:kw|w|watts?)\s+output\b/.test(base)&&/\bbatter(?:y|ies)\b/.test(primary)&&/\b[\d,.]+\s*(?:ah|kwh)\b/.test(primary)&&!/\b(?:inverter|charger|controller|monitor|adapter|cable|wire|kit|bundle|box|case|cover|stand|tray|bracket|cabinet)\b/.test(primary);
-  const t = (batterySubject?primary:base).split(/\s(?:for|with|including|featuring)\s/)[0];
+  const t = (batterySubject?primary:base).split(/\s(?:for|with|including|featuring)\s|\s+w\/\s*/)[0];
   if(/\btilt kit\b/i.test(t))return 'mounting';
   if(/\bmicroinverter\b/i.test(t)&&!/\b(?:kit|bundle)\b/i.test(base))return 'inverters';
-  const stationModel = /^(?:pecron\s*(?:e(?:1000|1500|2000|2400|3600|3800)|f(?:1000|3000|5000))\s*lfp|anker\s*(?:solix\s*)?(?:c(?:1000|2000)|f(?:2000|2600|3000|3800)|s2000)\b|ecoflow\s+delta\b|bluetti\s+(?:ac200l|apex\s*300|elite\s*\d+)\b|jackery\s+explorer\s+\d+)/.test(t);
+  const stationModel = /^(?:pecron\s*(?:e(?:1000|1500|2000|2400|3600|3800)|f(?:1000|3000|5000))\s*lfp|anker\s*(?:solix\s*)?(?:c(?:1000|2000)|f(?:2000|2600|3000|3800)|s2000)\b|ecoflow\s+delta\b|bluetti\s+(?:ac200l|apex\s*300|elite\s*\d+)\b|jackery\s+explorer\s+\d+)/.test(t)||/^(?:hysolis\s+)?mps3k\b/i.test(t);
   // Inspect the main sale item before optional additions and feature columns.
   // A cycle count such as "4,000+" does not turn an expansion battery into a station.
   const subject=t.split(/\+|\|/)[0];
@@ -42,8 +42,16 @@ export function classify(title: string): Category | null {
   if (/\b(?:kit|bundle)\b/.test(base)&&/\bkwh\b.*(?:storage|array)|storage.*array|inverter.*battery|battery.*inverter/.test(base)) return 'kits';
   if (/wirebox|wire box/.test(t)) return 'electrical';
   if (/rapid[ -]?shutdown|pv optimizer|module.level.*optimizer|\bts4[- ]|\brss transmitter|\brsd[- ]|tigo.*(?:\btap\b|\bcca\b|cloud connect)/.test(t)) return 'module-electronics';
+  // These suffixes name the sale component, rather than the equipment it connects to.
+  if (/\bmounting brackets?\b(?:\s*\([^)]*\))?\s*$/.test(subject)) return 'mounting';
+  if (/\b(?:cables?|connectors?)\b(?:\s*\([^)]*\))?\s*$/.test(subject)) return 'wiring';
+  if (/\bbattery hold[ -]?down\b/.test(subject)) return 'mounting';
+  if (/\b(?:battery switch|battery terminal distribution block|conduit box)\b/.test(subject)) return 'electrical';
+  if (/\bbattery (?:management system|balancer|top (?:plate )?cover)\b/.test(subject)) return 'accessories';
+  if (/\bbattery box\b/.test(subject)&&!/[+＋]|\b[\d.,]+\s*(?:ah|kwh|wh)\b|\b(?:cells?|lifepo4|lithium)\b/.test(base)) return 'accessories';
+  if (/\bmppt\b.*\bsolar charging\b.*\bmodule\b/.test(subject)) return 'charging';
   if (/pluggable.*(?:control )?display|controller.*(?:replacement )?display|smartsolar.*display|bluesolar.*display/.test(t)) return 'accessories';
-  if (/charge controller|smartsolar|bluesolar|dc[ -]?dc.*charg|orion.*charg/.test(t) || /dc[ -]?dc/.test(t)&&/battery charger/.test(base)) return 'charging';
+  if (/charge controller|smartsolar|bluesolar|dc[ -]?(?:to[ -]?)?dc.*charg|orion.*charg/.test(t) || /dc[ -]?dc/.test(t)&&/battery charger/.test(base)) return 'charging';
   if (/portable power station|solar generator|power bank|balcony solar|plug.?and.?play solar|solar.*\bkit\b|solar (?:power )?system/.test(t) && !/expansion battery|extra battery|replacement|carrying|cover|cable|adapter|mounting/.test(t)) return 'kits';
   if (/\b(?:kit|bundle)\b/.test(t) && /inverter.*battery|battery.*inverter|off.grid.*power/.test(t)) return 'kits';
   if (/smart.*(?:electrical|home|solar)?\s*panel|electrical panel|load center|breaker panel/.test(t)) return 'electrical';
@@ -94,6 +102,11 @@ export function extractSpecs(title: string, category: Category, properties: Reco
   const selected = title.split(/\s—\s/).slice(1).join(' ');
   const specs: Specs = {}; const numeric = (key: string, pattern: RegExp) => { const m = selected.match(pattern) || title.match(pattern); if (m) specs[key] = Number(m[1].replace(/,/g, '')); };
   numeric('watts', /\b([\d,]+)\s*(?:w|watts?)\b/i); numeric('voltage', /\b([\d.]+)\s*v(?:dc|ac)?(?=\b|\d+(?:\.\d+)?\s*ah\b)/i); numeric('capacityKwh', /\b([\d.]+)\s*kwh\b/i); numeric('capacityAh', /\b([\d.]+)\s*ah\b/i);
+  if(category==='panels'){
+   // Both total and per-module power are explicitly printed in these pack titles.
+   const main=title.split(/\s—\s/)[0],total=main.match(/^\s*([\d,]+(?:\.\d+)?)\s*w\b/i),modules=main.match(/\b(\d+)\s*[x×]\s*([\d,]+(?:\.\d+)?)\s*w\b/i);
+   if(total&&modules&&Number(total[1].replace(/,/g,''))===Number(modules[1])*Number(modules[2].replace(/,/g,'')))specs.watts=Number(modules[2].replace(/,/g,''));
+  }
   if(category==='batteries'&&/\bcharger\b/i.test(selected)){
    const voltage=batteryVoltageText(title).match(voltagePattern);
    if(voltage)specs.voltage=Number(voltage[1]);else delete specs.voltage;
@@ -186,7 +199,8 @@ export function extractPackQuantity(title: string, category: Category): number |
 // Reclassify old stored metadata without changing IDs, prices, or observation dates.
 // Owner specification corrections are applied after this normalization in storage.
 export function categorizeProduct(product: Omit<Product,'offers'> & {offers?:Product['offers']}): Product {
-  const category=classify(product.name)||product.category;
+  const emporiaSensorClamps=/^Emporia(?: Energy)?$/i.test(product.brand)&&/^Spring Clamps \(Set of 2\)$/i.test(product.name)&&/Vue Home Energy Monitor/i.test(product.description||'');
+  const category=emporiaSensorClamps?'monitoring':classify(product.name)||product.category;
   const specs={...product.specs};
   // Older substring matching read "bracket" as "rack". Remove only that
   // known title-parser artifact; genuine rack evidence/corrections survive.
@@ -197,6 +211,7 @@ export function categorizeProduct(product: Omit<Product,'offers'> & {offers?:Pro
   const offers=product.offers||[]; // D1 stores product metadata separately from offers.
   const panelDetails:Specs={};
   const extracted=extractSpecs(product.name,category);
+  if(emporiaSensorClamps)extracted.monitorType='Sensor';
   if(category==='batteries'&&/\bcharger\b/i.test(product.name.split(/\s—\s/).slice(1).join(' '))){
    const legacy=product.name.split(/\s—\s/).slice(1).join(' ').match(voltagePattern);
    // Repair the known accessory-voltage artifact while retaining existing nominal evidence.
