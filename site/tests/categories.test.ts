@@ -177,3 +177,29 @@ test('explicit panel-pack ratings retain published per-module watts and whole-pa
  }
  assert.equal(extractSpecs('2400W Solar Panel | 4x 590W N-Type Panels','panels').watts,2400);
 });
+test('equipment roles follow the sale subject before attached features and wiring destinations',()=>{
+ const cases:[string,Category][]=[
+ ['EG4 12K PV Hybrid Inverter | 48V | 12000W Input | RSD | All-In-One Hybrid Solar Inverter','inverters'],
+ ['Pro 12V Bluetooth Pure Sine Inverter (1000W/2000W/3000W) + 120V 30A Automatic ATS Transfer Switch — 3000W','inverters'],
+ ['Solar Panel to Charge Controller Adaptor Kit — 10FT / 12AWG','wiring'],
+ ['Solar Tray Cables - Connecting Charge Controller and Battery — 8FT / 8 AWG','wiring'],
+ ['10 Gauge Extension Cable to Connect Solar Panel to Charge Controller | Pair of 10AWG Red and Black Extension Wires — 20 Feet','wiring'],
+ ['440 Watt All-black Bifacial Mono-crystalline Solar Panels (with Z-brackets)','panels'],
+ ['WattCycle 51.2V 628Ah 32kWh Smart LiFePO4 Solar Home Energy Storage System - Active Balancing — 32kWh Battery','batteries'],
+ ['WattCycle 51.2V 628Ah 32kWh Smart LiFePO4 Solar Home Energy Storage System - Active Balancing — 32kWh Battery + 12kW AIO Inverter','kits'],
+ ['LiTime 48V 30Ah GC2 Metal Case RS485 Monitor Lithium Battery for Golf Cart & Lawn Mower — 1 Pack 51.2V 30Ah COM','batteries'],
+ ];for(const [name,category] of cases)assert.equal(classify(name),category,name);
+ assert.equal(classify('Solar Charge Controller Connecting Cable'),'wiring');
+ assert.equal(classify('Tigo TS4-A-O Optimizer | Rapid Shutdown | MC4 Cables'),'module-electronics');
+ assert.equal(classify('12V Inverter Remote Control'),'monitoring');
+ assert.equal(classify('Mounting Bracket for MPPT Charge Controller'),'mounting');
+});
+
+test('rated equipment descriptions do not absorb accessories or battery bank kits',()=>{
+ assert.equal(classify('Compatible Accessories for the 12V 104Ah Super Slim Solid-State LiFePO4 Battery — Bracket for 2P Busbar'),null);
+ assert.equal(classify('300Ah 12V LiFePO4 Off-Grid Battery Kit | 3.8kWh Deep Cycle Lithium Battery Bank | Powerful 300Ah Battery Kit for RVs, Trailers, Cabins, Campers, Vans, Off-Grid | 3 X ALPHA 1 LITE in Parallel'),'kits');
+ assert.equal(classify('EG4 FlexBOSS21 Inverter & EG4-GridBOSS MID V3.1 [BNDL-E0019-3.1]'),'monitoring');
+});
+test('plural inverter connection cables stay wiring after catalog expansion',()=>{
+ for(const name of ['6 Foot 1/0 AWT Alligator Clamp Power Inverter Cables CLAMPHDCBL06FT1/0','10 Foot 4 AWG Alligator Clamp Inverter Cables PWRC12004A1500','Vector 1,000 Watt Power Inverter Cables'])assert.equal(classify(name),'wiring');
+});
