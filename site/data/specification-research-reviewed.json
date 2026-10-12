@@ -8329,5 +8329,4162 @@
     "reviewNote": "Exact plain300W kit. Kit Includes heading normalized to recognized Included components. Component values confined to BOM; no aggregate engineering inferred.",
     "reviewStatus": "accepted",
     "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "hqst-51996745531710"
+    ],
+    "expected": {
+      "hqst-51996745531710": {
+        "name": "Traver Force 100W 12V 10BB Monocrystalline Solar Panel — 4 pack - $43.99/ea Flash Sale",
+        "sourceUrl": "https://hqsolarpower.com/products/traver-force-100-watt-12-volt-10bb-cell-monocrystalline-solar-panel?variant=51996745531710",
+        "category": "panels",
+        "anchors": {
+          "watts": 100
+        }
+      }
+    },
+    "model": "TSP100D-30",
+    "kind": "manufacturer",
+    "url": "https://hqsolarpower.com/products/traver-force-100-watt-12-volt-10bb-cell-monocrystalline-solar-panel",
+    "label": "TSP100D-30 official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:23:41.220Z",
+    "rows": [
+      [
+        "Model",
+        "TSP100D-30"
+      ],
+      [
+        "Max Power at STC",
+        "100W"
+      ],
+      [
+        "Open Circuit Voltage",
+        "20.5 V"
+      ],
+      [
+        "Short Circuit Current",
+        "6.03 A"
+      ],
+      [
+        "Optimum Operating Voltage",
+        "17.6 V"
+      ],
+      [
+        "Optimum Operating Current",
+        "5.68 A"
+      ],
+      [
+        "Cell Efficiency",
+        "Up to 25%"
+      ],
+      [
+        "Maximum System Voltage",
+        "600 VDC UL"
+      ],
+      [
+        "Maximum Series Fuse Rating",
+        "15 A"
+      ],
+      [
+        "Cell Type",
+        "Monocrystalline"
+      ],
+      [
+        "Dimensions",
+        "38.1 x 22.6 x 1.2 in/970 x 576 x 30 mm"
+      ],
+      [
+        "Weight",
+        "13 lbs/5.9 kg"
+      ],
+      [
+        "Front Glass",
+        "Low Iron-Tempered Glass"
+      ],
+      [
+        "Frame Material",
+        "Anti-Corrosion Aluminium Alloy"
+      ],
+      [
+        "Connector Type",
+        "MC4 Solar Connectors"
+      ],
+      [
+        "Fire Rating",
+        "Class C"
+      ],
+      [
+        "Temperature Coefficient of Pmax",
+        "-0.37%/ºC"
+      ],
+      [
+        "Temperature Coefficient of Voc",
+        "-0.28%/ºC"
+      ],
+      [
+        "Temperature Coefficient of Isc",
+        "0.048%/ºC"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/cf37404ae8d166e7.html, collected 2026-10-12T01:23:41.220Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. Per-module electrical ratings and physical dimensions, not aggregate pack ratings. NOCT/rear-gain values not inferred. Cell efficiency not module efficiency. SGN-450 source title single-glass versus catalog bifacial ambiguity: no face/glass construction added.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.655Z"
+  },
+  {
+    "productIds": [
+      "hqst-53075670827326",
+      "hqst-53075670860094",
+      "hqst-53805381255486"
+    ],
+    "expected": {
+      "hqst-53075670827326": {
+        "name": "HQST 200W N-Type Solar Panel | 13% Smaller, 14.5% Lighter — 2 Panels — Best Value | Save $114 🔥",
+        "sourceUrl": "https://hqsolarpower.com/products/hqst-200w-16bb-n-type-high-efficiency-monocrystalline-solar-panel?variant=53075670827326",
+        "category": "panels",
+        "anchors": {
+          "watts": 200
+        }
+      },
+      "hqst-53075670860094": {
+        "name": "HQST 200W N-Type Solar Panel | 13% Smaller, 14.5% Lighter — 4 Panels — Save $210",
+        "sourceUrl": "https://hqsolarpower.com/products/hqst-200w-16bb-n-type-high-efficiency-monocrystalline-solar-panel?variant=53075670860094",
+        "category": "panels",
+        "anchors": {
+          "watts": 200
+        }
+      },
+      "hqst-53805381255486": {
+        "name": "HQST 200W N-Type Solar Panel | 13% Smaller, 14.5% Lighter — 3 Panels — Save $157",
+        "sourceUrl": "https://hqsolarpower.com/products/hqst-200w-16bb-n-type-high-efficiency-monocrystalline-solar-panel?variant=53805381255486",
+        "category": "panels",
+        "anchors": {
+          "watts": 200
+        }
+      }
+    },
+    "model": "HSP200N-64L",
+    "kind": "manufacturer",
+    "url": "https://hqsolarpower.com/products/hqst-200w-16bb-n-type-high-efficiency-monocrystalline-solar-panel",
+    "label": "HSP200N-64L official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:26:10.700Z",
+    "rows": [
+      [
+        "Max Power at STC",
+        "200 W"
+      ],
+      [
+        "Open Circuit Voltage",
+        "22.4 V ±3%"
+      ],
+      [
+        "Short Circuit Current",
+        "11.04 A ±3%"
+      ],
+      [
+        "Optimum Operating Voltage",
+        "19.02 V ±3%"
+      ],
+      [
+        "Optimum Operating Current",
+        "10.50 A ±3%"
+      ],
+      [
+        "Cell Efficiency",
+        "Up to 25.4%"
+      ],
+      [
+        "Maximum System Voltage",
+        "600 VDC UL"
+      ],
+      [
+        "Maximum Series Fuse Rating",
+        "20 A"
+      ],
+      [
+        "Cell Type",
+        "N-Type"
+      ],
+      [
+        "Front Glass",
+        "Low Iron-Tempered Glass"
+      ],
+      [
+        "Frame Material",
+        "Anti-Corrosion Aluminium Alloy"
+      ],
+      [
+        "Connector Type",
+        "MC4 Solar Connectors"
+      ],
+      [
+        "Fire Rating",
+        "Class C"
+      ],
+      [
+        "Waterproof Rating",
+        "IP65"
+      ],
+      [
+        "Dimensions",
+        "30.1 × 46.3 × 1.2 in / 765 × 1175 × 30 mm"
+      ],
+      [
+        "Weight",
+        "20.17 lb / 9.15 kg"
+      ],
+      [
+        "Material and Workmanship Warranty",
+        "5 Years"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/c630ca218221e517.html, collected 2026-10-12T01:26:10.700Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. Per-module electrical ratings and physical dimensions, not aggregate pack ratings. NOCT/rear-gain values not inferred. Cell efficiency not module efficiency. SGN-450 source title single-glass versus catalog bifacial ambiguity: no face/glass construction added. Model family identified from manufacturer variant SKU and matching manual filename, not a raw-catalog model anchor.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "hqst-53224206467390",
+      "hqst-53224206500158",
+      "hqst-53805294944574"
+    ],
+    "expected": {
+      "hqst-53224206467390": {
+        "name": "HQST Bifacial 200W Compact N-Type Solar Panel | 25.4% Efficiency, 13% Smaller — 2 Panels — Save $117",
+        "sourceUrl": "https://hqsolarpower.com/products/hqst-compact-bifacial-200w-n-type-16bb-solar-panel-with-all-black-design?variant=53224206467390",
+        "category": "panels",
+        "anchors": {
+          "watts": 200
+        }
+      },
+      "hqst-53224206500158": {
+        "name": "HQST Bifacial 200W Compact N-Type Solar Panel | 25.4% Efficiency, 13% Smaller — 4 Panels — Best Value | Save $225 🔥",
+        "sourceUrl": "https://hqsolarpower.com/products/hqst-compact-bifacial-200w-n-type-16bb-solar-panel-with-all-black-design?variant=53224206500158",
+        "category": "panels",
+        "anchors": {
+          "watts": 200
+        }
+      },
+      "hqst-53805294944574": {
+        "name": "HQST Bifacial 200W Compact N-Type Solar Panel | 25.4% Efficiency, 13% Smaller — 3 Panels — Save $176",
+        "sourceUrl": "https://hqsolarpower.com/products/hqst-compact-bifacial-200w-n-type-16bb-solar-panel-with-all-black-design?variant=53805294944574",
+        "category": "panels",
+        "anchors": {
+          "watts": 200
+        }
+      }
+    },
+    "model": "HSP200N-64LT",
+    "kind": "manufacturer",
+    "url": "https://hqsolarpower.com/products/hqst-compact-bifacial-200w-n-type-16bb-solar-panel-with-all-black-design",
+    "label": "HSP200N-64LT official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:26:30.469Z",
+    "rows": [
+      [
+        "Max Power at STC",
+        "200 W"
+      ],
+      [
+        "Open Circuit Voltage",
+        "22.4 V"
+      ],
+      [
+        "Short Circuit Current",
+        "11.04 A"
+      ],
+      [
+        "Optimum Operating Voltage",
+        "19.02 V"
+      ],
+      [
+        "Optimum Operating Current",
+        "10.5 A"
+      ],
+      [
+        "Cell Efficiency",
+        "Up to 25.4%"
+      ],
+      [
+        "Maximum System Voltage",
+        "600 VDC UL"
+      ],
+      [
+        "Maximum Series Fuse Rating",
+        "20 A"
+      ],
+      [
+        "Cell Type",
+        "N-Type"
+      ],
+      [
+        "Front Glass",
+        "Low Iron-Tempered Glass"
+      ],
+      [
+        "Frame Material",
+        "Anti-Corrosion Aluminium Alloy"
+      ],
+      [
+        "Connector Type",
+        "MC4 Solar Connectors"
+      ],
+      [
+        "Fire Rating",
+        "Class C"
+      ],
+      [
+        "Waterproof Rating",
+        "IP68"
+      ],
+      [
+        "Dimensions",
+        "30.1 × 47.2 × 1.2 in / 765 × 1200 × 30 mm"
+      ],
+      [
+        "Weight",
+        "21.58 lb / 9.79 kg"
+      ],
+      [
+        "Material and Workmanship Warranty",
+        "5 Years"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/81d9808d568ad989.html, collected 2026-10-12T01:26:30.469Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. Per-module electrical ratings and physical dimensions, not aggregate pack ratings. NOCT/rear-gain values not inferred. Cell efficiency not module efficiency. SGN-450 source title single-glass versus catalog bifacial ambiguity: no face/glass construction added. Model family identified from manufacturer variant SKU and matching manual filename, not a raw-catalog model anchor.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "hqst-54129005756734"
+    ],
+    "expected": {
+      "hqst-54129005756734": {
+        "name": "HQST 100W 12V 9BB Monocrystalline Solar Panel — 100W Panel — Save $67",
+        "sourceUrl": "https://hqsolarpower.com/products/100-watt-12-volt-9bb-cell-monocrystalline-solar-panel?variant=54129005756734",
+        "category": "panels",
+        "anchors": {
+          "watts": 100
+        }
+      }
+    },
+    "model": "HSP100DL-36",
+    "kind": "manufacturer",
+    "url": "https://hqsolarpower.com/products/100-watt-12-volt-9bb-cell-monocrystalline-solar-panel",
+    "label": "HSP100DL-36 official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:29:40.935Z",
+    "rows": [
+      [
+        "Model",
+        "HSP100DL-36"
+      ],
+      [
+        "Max Power at STC",
+        "100W"
+      ],
+      [
+        "Open Circuit Voltage",
+        "24.3 V"
+      ],
+      [
+        "Short Circuit Current",
+        "5.21 A"
+      ],
+      [
+        "Optimum Operating Voltage",
+        "20.4 V"
+      ],
+      [
+        "Optimum Operating Current",
+        "4.91 A"
+      ],
+      [
+        "Cell Efficiency",
+        "Up to 23%"
+      ],
+      [
+        "Maximum System Voltage",
+        "600 VDC UL"
+      ],
+      [
+        "Maximum Series Fuse Rating",
+        "15 A"
+      ],
+      [
+        "Cell Type",
+        "Monocrystalline"
+      ],
+      [
+        "Dimensions",
+        "31.8 x 27.5 x 1.18 in / 807 x 699 x 30 mm"
+      ],
+      [
+        "Weight",
+        "14.3 lbs / 6.5 kg"
+      ],
+      [
+        "Front Glass",
+        "Low Iron-Tempered Glass"
+      ],
+      [
+        "Frame Material",
+        "Anti-Corrosion Aluminium Alloy"
+      ],
+      [
+        "Connector Type",
+        "MC4 Solar Connectors"
+      ],
+      [
+        "Fire Rating",
+        "Class C"
+      ],
+      [
+        "Temperature Coefficient of Pmax",
+        "-0.37%/℃"
+      ],
+      [
+        "Temperature Coefficient of Voc",
+        "-0.28%/℃"
+      ],
+      [
+        "Temperature Coefficient of Isc",
+        "0.048%/℃"
+      ],
+      [
+        "Connector IP Rating",
+        "IP65"
+      ],
+      [
+        "Junction Box IP Rating",
+        "IP65"
+      ],
+      [
+        "Output Cables",
+        "14 AWG (1.97 ft length)"
+      ],
+      [
+        "Material and Workmanship Warranty",
+        "5 Year"
+      ],
+      [
+        "Performance Warranty",
+        "5 year / 95% output 10 year / 90% output 25 year / 80% output warranty"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/956bcc53ef8115a2.html, collected 2026-10-12T01:29:40.935Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. Per-module electrical ratings and physical dimensions, not aggregate pack ratings. NOCT/rear-gain values not inferred. Cell efficiency not module efficiency. SGN-450 source title single-glass versus catalog bifacial ambiguity: no face/glass construction added.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "hqst-52549739053374"
+    ],
+    "expected": {
+      "hqst-52549739053374": {
+        "name": "HQST 100A MPPT Solar Charge Controller with Smart APP Control, LiFePO4 Battery Low Temp Protection, and Parallel Charging — 2 pack 100A MPPT with cable $399.99",
+        "sourceUrl": "https://hqsolarpower.com/products/100a-mppt-solar-charge-controller-with-smart-app-control-lifepo4-battery-low-temp-protection-and-parallel-charging?variant=52549739053374",
+        "category": "charging",
+        "anchors": {}
+      }
+    },
+    "model": "HCC100HTR-FC",
+    "kind": "manufacturer",
+    "url": "https://hqsolarpower.com/products/100a-mppt-solar-charge-controller-with-smart-app-control-lifepo4-battery-low-temp-protection-and-parallel-charging",
+    "label": "HCC100HTR-FC official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:25:40.854Z",
+    "rows": [
+      [
+        "Model",
+        "HCC100HTR-FC"
+      ],
+      [
+        "Rated Charge Current",
+        "100A"
+      ],
+      [
+        "Maximum PV Input Voltage",
+        "150 Voc Max. (PV open-circuit maximum)"
+      ],
+      [
+        "Maximum PV Input Power",
+        "1200W/12V; 2400W/24V; 3600W/36V; 4800W/48V"
+      ],
+      [
+        "System Voltage",
+        "12V/24V/36V/48V"
+      ],
+      [
+        "Operating Temperature",
+        "-13°F～113°F (-25℃~45℃)"
+      ],
+      [
+        "Storage Temperature",
+        "-40°F～176°F (-40℃~80℃)"
+      ],
+      [
+        "Communications",
+        "RS485 (RJ12)"
+      ],
+      [
+        "Weight",
+        "5.7 lbs (2.6 kg)"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/3d4380aaeea4a190.html, collected 2026-10-12T01:25:40.854Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. PV limit is open-circuit voltage; PV watts remain battery-voltage conditional. Tracking efficiency and invented PV current withheld. 100 A conflicting inch/mm axis order dimensions withheld.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "hqst-53469847028030"
+    ],
+    "expected": {
+      "hqst-53469847028030": {
+        "name": "HQST 60A MPPT Solar Charge Controller with Smart APP Control, LiFePO4 Battery Low Temp Protection, and Parallel Charging",
+        "sourceUrl": "https://hqsolarpower.com/products/hqst-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=53469847028030",
+        "category": "charging",
+        "anchors": {}
+      }
+    },
+    "model": "HCC60HTR-FC",
+    "kind": "manufacturer",
+    "url": "https://hqsolarpower.com/products/hqst-12v-24v-36v-48v-60a-mppt-solar-charge-controller",
+    "label": "HCC60HTR-FC official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:27:40.520Z",
+    "rows": [
+      [
+        "Model",
+        "HCC60HTR-FC"
+      ],
+      [
+        "Rated Charge Current",
+        "60A"
+      ],
+      [
+        "Maximum PV Input Voltage",
+        "145 Voc (PV open-circuit maximum)"
+      ],
+      [
+        "Maximum PV Input Power",
+        "900W/12V; 1800W/24V; 2600W/36V; 3200W/48V"
+      ],
+      [
+        "System Voltage",
+        "12V/24V/36V/48V"
+      ],
+      [
+        "Operating Temperature",
+        "-4°F～131°F (-20℃~55℃)"
+      ],
+      [
+        "Storage Temperature",
+        "-40°F～176°F (-40℃~80℃)"
+      ],
+      [
+        "Communications",
+        "RS485"
+      ],
+      [
+        "Weight",
+        "3.88 lb (1.76 kg)"
+      ],
+      [
+        "Peak Efficiency",
+        "98.7%"
+      ],
+      [
+        "Ingress Protection",
+        "IP21"
+      ],
+      [
+        "Dimensions",
+        "7.91 × 7.91 × 3.15 in / 201 × 201 × 80 mm (L x W x H)"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/b9a0896f87dfcdd7.html, collected 2026-10-12T01:27:40.520Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. PV limit is open-circuit voltage; PV watts remain battery-voltage conditional. Tracking efficiency and invented PV current withheld. 100 A conflicting inch/mm axis order dimensions withheld.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-32199381909553"
+    ],
+    "expected": {
+      "rich-solar-32199381909553": {
+        "name": "MEGA 200 PRO | 200 Watt 24 Volt Solar Panel | Premium 24V Off-Grid Solar Panel for RVs, Trailers, Cabins | 25-Year Output Warranty | UL Certified",
+        "sourceUrl": "https://richsolar.com/products/mega-200-max-200-watt-24-volt-solar-panel?variant=32199381909553",
+        "category": "panels",
+        "anchors": {
+          "watts": 200
+        }
+      }
+    },
+    "model": "RS-M200P",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/mega-200-max-200-watt-24-volt-solar-panel",
+    "label": "RS-M200P official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:23:50.126Z",
+    "rows": [
+      [
+        "Model",
+        "RS-M200P"
+      ],
+      [
+        "Maximum Power ( Pmax)",
+        "200W"
+      ],
+      [
+        "Maximum Power Voltage (Vmp)",
+        "36.3V"
+      ],
+      [
+        "Maximum Power Current (Imp)",
+        "5.51A"
+      ],
+      [
+        "Open Circuit Voltage (Voc)",
+        "43.5V"
+      ],
+      [
+        "Short Circuit Current (Isc)",
+        "5.93A"
+      ],
+      [
+        "Maximum System Voltage (Vmax)",
+        "1000VDC"
+      ],
+      [
+        "Temperature Range",
+        "-40°F~ +185°F"
+      ],
+      [
+        "Weight",
+        "24 lb"
+      ],
+      [
+        "Dimensions",
+        "58.7 × 26.8 × 1.2 in"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/1c96b744a37a030f.html, collected 2026-10-12T01:23:50.126Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. Per-module electrical ratings and physical dimensions, not aggregate pack ratings. NOCT/rear-gain values not inferred. Cell efficiency not module efficiency. SGN-450 source title single-glass versus catalog bifacial ambiguity: no face/glass construction added.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40364378521649"
+    ],
+    "expected": {
+      "rich-solar-40364378521649": {
+        "name": "MEGA 250 | 250 Watt Solar Panel | Premier 12V Off-Grid Solar Panel for RVs, Vans, Boats | 25-Year Output Warranty | UL Certified",
+        "sourceUrl": "https://richsolar.com/products/mega-250-250-watt-12-volt-solar-panel?variant=40364378521649",
+        "category": "panels",
+        "anchors": {
+          "watts": 250
+        }
+      }
+    },
+    "model": "RS-M250",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/mega-250-250-watt-12-volt-solar-panel",
+    "label": "RS-M250 official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:26:26.498Z",
+    "rows": [
+      [
+        "Model",
+        "RS-M250"
+      ],
+      [
+        "Maximum Power ( Pmax)",
+        "250W"
+      ],
+      [
+        "Maximum Power Voltage (Vmp)",
+        "18.9V"
+      ],
+      [
+        "Maximum Power Current (Imp)",
+        "13.2A"
+      ],
+      [
+        "Open Circuit Voltage (Voc)",
+        "22.8V"
+      ],
+      [
+        "Short Circuit Current (Isc)",
+        "13.7A"
+      ],
+      [
+        "Maximum System Voltage (Vmax)",
+        "1500VDC"
+      ],
+      [
+        "Temperature Range",
+        "-40°F~ +185°F"
+      ],
+      [
+        "Weight",
+        "26.9 lb"
+      ],
+      [
+        "Dimensions",
+        "60.6 × 29.9 × 1.2 in"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/b2ee37e6f168bdab.html, collected 2026-10-12T01:26:26.498Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. Per-module electrical ratings and physical dimensions, not aggregate pack ratings. NOCT/rear-gain values not inferred. Cell efficiency not module efficiency. SGN-450 source title single-glass versus catalog bifacial ambiguity: no face/glass construction added.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40364400312369"
+    ],
+    "expected": {
+      "rich-solar-40364400312369": {
+        "name": "MEGA 250 PRO | 250 Watt 24 Volt Solar Panel | Premium 24V Off-Grid Solar Panel for Campers, Tiny Homes, Cabins | 25-Year Output Warranty | UL Certified",
+        "sourceUrl": "https://richsolar.com/products/mega-250-pro-250-watt-24-volt-solar-panel?variant=40364400312369",
+        "category": "panels",
+        "anchors": {
+          "watts": 250
+        }
+      }
+    },
+    "model": "RS-M250P",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/mega-250-pro-250-watt-24-volt-solar-panel",
+    "label": "RS-M250P official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:26:28.601Z",
+    "rows": [
+      [
+        "Model",
+        "RS-M250P"
+      ],
+      [
+        "Maximum Power( Pmax)",
+        "250W"
+      ],
+      [
+        "Maximum Power Voltage (Vmp)",
+        "36.9V"
+      ],
+      [
+        "Maximum Power Current (Imp)",
+        "6.78A"
+      ],
+      [
+        "Open Circuit Voltage (Voc)",
+        "44.7V"
+      ],
+      [
+        "Short Circuit Current (Isc)",
+        "7.24A"
+      ],
+      [
+        "Maximum System Voltage(Vmax)",
+        "1500VDC"
+      ],
+      [
+        "Temperature Range",
+        "-40°F~ +185°F"
+      ],
+      [
+        "Weight",
+        "26.9 lb"
+      ],
+      [
+        "Dimensions",
+        "60.6 × 29.9 × 1.2 in"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/fb75d64066d6fa09.html, collected 2026-10-12T01:26:28.601Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. Per-module electrical ratings and physical dimensions, not aggregate pack ratings. NOCT/rear-gain values not inferred. Cell efficiency not module efficiency. SGN-450 source title single-glass versus catalog bifacial ambiguity: no face/glass construction added.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40539735916593"
+    ],
+    "expected": {
+      "rich-solar-40539735916593": {
+        "name": "MEGA 200 | 200 Watt Solar Panel | Premier 12V Off-Grid Solar Panel for RVs Cabins, Boats | 25-Year Output Warranty | UL Certified",
+        "sourceUrl": "https://richsolar.com/products/mega-200-200-watt-12-volt-solar-panel?variant=40539735916593",
+        "category": "panels",
+        "anchors": {
+          "watts": 200
+        }
+      }
+    },
+    "model": "RS-M200",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/mega-200-200-watt-12-volt-solar-panel",
+    "label": "RS-M200 official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:27:04.604Z",
+    "rows": [
+      [
+        "Model",
+        "RS-M200"
+      ],
+      [
+        "Maximum Power (Pmax)",
+        "200W"
+      ],
+      [
+        "Maximum Power Voltage(Vmp)",
+        "18.4V"
+      ],
+      [
+        "Maximum Power Current(Imp)",
+        "10.9A"
+      ],
+      [
+        "Open Circuit Voltage(Voc)",
+        "21.8V"
+      ],
+      [
+        "Short Circuit Current (Isc)",
+        "11.6A"
+      ],
+      [
+        "Temperature Range",
+        "-40 ~ +185°F"
+      ],
+      [
+        "Weight",
+        "24 lb"
+      ],
+      [
+        "Dimensions",
+        "58.7 x 26.8 x 1.2 in"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/7f180740c6bb53af.html, collected 2026-10-12T01:27:04.604Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. Per-module electrical ratings and physical dimensions, not aggregate pack ratings. NOCT/rear-gain values not inferred. Cell efficiency not module efficiency. SGN-450 source title single-glass versus catalog bifacial ambiguity: no face/glass construction added.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40735114199089"
+    ],
+    "expected": {
+      "rich-solar-40735114199089": {
+        "name": "12V 20A DC-DC Battery Charger for RV, Van, Boat, Off-Grid | Lithium & Lead-Acid Batteries",
+        "sourceUrl": "https://richsolar.com/products/12v-20a-dc-dc-battery-charger?variant=40735114199089",
+        "category": "charging",
+        "anchors": {}
+      }
+    },
+    "model": "RS-DC20",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/12v-20a-dc-dc-battery-charger",
+    "label": "RS-DC20 official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:28:07.226Z",
+    "rows": [
+      [
+        "Model",
+        "RS-DC20"
+      ],
+      [
+        "Operating Voltage Range",
+        "10–16VDC (DC input)"
+      ],
+      [
+        "Rated Charge Current",
+        "20A"
+      ],
+      [
+        "Dimensions",
+        "8.4 × 7.4 × 3.1 in"
+      ],
+      [
+        "Weight",
+        "4.0 Ib"
+      ],
+      [
+        "Efficiency",
+        ">85%, @14VDC, 30% load"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/1b36002b8f242e5a.html, collected 2026-10-12T01:28:07.226Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. Exact model column selected; operating range is DC input, charge current rated output.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40883072270385"
+    ],
+    "expected": {
+      "rich-solar-40883072270385": {
+        "name": "12V 40A DC-DC Battery Charger for RVs, Vans, Boats & Off-Grid Systems | Lithium & Lead-Acid",
+        "sourceUrl": "https://richsolar.com/products/12v-40a-dc-to-dc-battery-charger?variant=40883072270385",
+        "category": "charging",
+        "anchors": {}
+      }
+    },
+    "model": "RS-DC40",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/12v-40a-dc-to-dc-battery-charger",
+    "label": "RS-DC40 official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:28:19.342Z",
+    "rows": [
+      [
+        "Model",
+        "RS-DC40"
+      ],
+      [
+        "Operating Voltage Range",
+        "10–16VDC (DC input)"
+      ],
+      [
+        "Rated Charge Current",
+        "40A"
+      ],
+      [
+        "Dimensions",
+        "10.3 × 7.4 × 3.1 in"
+      ],
+      [
+        "Weight",
+        "4.9 lb"
+      ],
+      [
+        "Efficiency",
+        ">85%, @14VDC, 30% load"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/9c2b57e54da89624.html, collected 2026-10-12T01:28:19.342Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. Exact model column selected; operating range is DC input, charge current rated output.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40883214778417"
+    ],
+    "expected": {
+      "rich-solar-40883214778417": {
+        "name": "12V 60A DC-DC Battery Charger for RVs, Vans, Boats & Off-Grid Systems | Lithium & Lead-Acid",
+        "sourceUrl": "https://richsolar.com/products/12v-60a-dc-to-dc-battery-charger?variant=40883214778417",
+        "category": "charging",
+        "anchors": {}
+      }
+    },
+    "model": "RS-DC60",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/12v-60a-dc-to-dc-battery-charger",
+    "label": "RS-DC60 official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:28:21.415Z",
+    "rows": [
+      [
+        "Model",
+        "RS-DC60"
+      ],
+      [
+        "Operating Voltage Range",
+        "10–16VDC (DC input)"
+      ],
+      [
+        "Rated Charge Current",
+        "60A"
+      ],
+      [
+        "Dimensions",
+        "12.3 × 7.4 × 3.1 in"
+      ],
+      [
+        "Weight",
+        "6.2 Ib"
+      ],
+      [
+        "Efficiency",
+        ">85%, @14VDC, 30% load"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/6e21bd98ba595b79.html, collected 2026-10-12T01:28:21.415Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. Exact model column selected; operating range is DC input, charge current rated output.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40895830622257"
+    ],
+    "expected": {
+      "rich-solar-40895830622257": {
+        "name": "NOVA SUPERCHARGER 3K | 3000W 12V Pure Sine Wave Inverter Charger | UL 458 Certified",
+        "sourceUrl": "https://richsolar.com/products/nova-supercharger-3k-3000w-12v-inverter-charger?variant=40895830622257",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "model": "RS-V3P12C",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/nova-supercharger-3k-3000w-12v-inverter-charger",
+    "label": "RS-V3P12C official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:28:23.520Z",
+    "rows": [
+      [
+        "Model",
+        "RS-V3P12C"
+      ],
+      [
+        "Rated Power",
+        "3000W"
+      ],
+      [
+        "Surge Power",
+        "6000W (5 s)"
+      ],
+      [
+        "AC Output Voltage",
+        "120VAC ±5% (Battery Mode)"
+      ],
+      [
+        "Output Frequency",
+        "50Hz or 60Hz (±1%)"
+      ],
+      [
+        "Peak Efficiency",
+        "91%"
+      ],
+      [
+        "Dimensions",
+        "15.4 x 12.0 x 4.8 in"
+      ],
+      [
+        "Weight",
+        "18.5 Ib"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/5024cbeae99ac503.html, collected 2026-10-12T01:28:23.520Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. Surge retains 5-second duration. AC input ratings and selectable battery charger current range withheld.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40895862341681"
+    ],
+    "expected": {
+      "rich-solar-40895862341681": {
+        "name": "NOVA SUPERCHARGER 2K | 2000W 12V Pure Sine Wave Inverter Charger | UL 458 Certified",
+        "sourceUrl": "https://richsolar.com/products/nova-supercharger-2k-2000w-12v-inverter-charger?variant=40895862341681",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "model": "RS-V2P12C",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/nova-supercharger-2k-2000w-12v-inverter-charger",
+    "label": "RS-V2P12C official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:28:25.380Z",
+    "rows": [
+      [
+        "Model",
+        "RS-V2P12C"
+      ],
+      [
+        "Rated Power",
+        "2000W"
+      ],
+      [
+        "Surge Power",
+        "4000W (5 s)"
+      ],
+      [
+        "AC Output Voltage",
+        "120VAC ±5% (Battery Mode)"
+      ],
+      [
+        "Output Frequency",
+        "50Hz or 60Hz (±1%)"
+      ],
+      [
+        "Peak Efficiency",
+        "91%"
+      ],
+      [
+        "Dimensions",
+        "15.4 x 12.0 x 4.1 in"
+      ],
+      [
+        "Weight",
+        "16.5 Ib"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/23c1c779a551c12d.html, collected 2026-10-12T01:28:25.380Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. Surge retains 5-second duration. AC input ratings and selectable battery charger current range withheld.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "pecron-42739059327164"
+    ],
+    "expected": {
+      "pecron-42739059327164": {
+        "name": "PECRON E1500LFP Expandable Portable Power Station 2200W 1536Wh V3 Version — E1500LFP",
+        "sourceUrl": "https://www.pecron.com/products/pecron-e1500lfp-expandable-power-station-2200w-1536wh?variant=42739059327164",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "model": "E1500LFP",
+    "kind": "manufacturer",
+    "url": "https://www.pecron.com/products/pecron-e1500lfp-expandable-power-station-2200w-1536wh",
+    "label": "E1500LFP official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:23:50.473Z",
+    "rows": [
+      [
+        "Model",
+        "E1500LFP"
+      ],
+      [
+        "Rated Power",
+        "2200W"
+      ],
+      [
+        "Peak Power",
+        "4400W (10ms)"
+      ],
+      [
+        "Energy Capacity",
+        "1536Wh"
+      ],
+      [
+        "AC Output Voltage",
+        "100V~120V Pure Sine Wave"
+      ],
+      [
+        "Dimensions",
+        "14.8x9.3x12 in"
+      ],
+      [
+        "Battery Type",
+        "LiFePo4"
+      ],
+      [
+        "Weight",
+        "38.4lbs(17.4Kg)"
+      ],
+      [
+        "Maximum PV Input Power",
+        "1000 W (XT60 port)"
+      ],
+      [
+        "Maximum PV Input Current",
+        "20 A (XT60 port)"
+      ],
+      [
+        "AC Charging Input",
+        "1400 W (100–120 V)"
+      ],
+      [
+        "Communications",
+        "APP Control. Wifi / Bluetooth control;"
+      ],
+      [
+        "Charge Temperature",
+        "0°C~45°C / 32°F-113°F"
+      ],
+      [
+        "Discharge Temperature",
+        "-20°C~45°C / -4°F-113°F"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/fbf334b5d8832072.html, collected 2026-10-12T01:23:50.473Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. Bare US V3 station only. XT60 11–60 V input range not asserted as Voc rating; old GX16 FAQ, expansion bundles, unqualified charge time and ambiguous warranty withheld.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "sungoldpower-42271558205577",
+      "sungoldpower-42271558238345",
+      "sungoldpower-42271558271113",
+      "sungoldpower-42271558303881",
+      "sungoldpower-42271558336649",
+      "sungoldpower-42271558369417",
+      "sungoldpower-42271558402185",
+      "sungoldpower-42271558434953",
+      "sungoldpower-42271558467721",
+      "sungoldpower-42271558500489",
+      "sungoldpower-42271558533257"
+    ],
+    "expected": {
+      "sungoldpower-42271558205577": {
+        "name": "440W Mono Black N-Type Solar Panel UL61730 CEC Listed — 2pcs",
+        "sourceUrl": "https://sungoldpower.com/products/440w-mono-black-perc-solar-panel?variant=42271558205577",
+        "category": "panels",
+        "anchors": {
+          "watts": 440
+        }
+      },
+      "sungoldpower-42271558238345": {
+        "name": "440W Mono Black N-Type Solar Panel UL61730 CEC Listed — 4pcs",
+        "sourceUrl": "https://sungoldpower.com/products/440w-mono-black-perc-solar-panel?variant=42271558238345",
+        "category": "panels",
+        "anchors": {
+          "watts": 440
+        }
+      },
+      "sungoldpower-42271558271113": {
+        "name": "440W Mono Black N-Type Solar Panel UL61730 CEC Listed — 6pcs",
+        "sourceUrl": "https://sungoldpower.com/products/440w-mono-black-perc-solar-panel?variant=42271558271113",
+        "category": "panels",
+        "anchors": {
+          "watts": 440
+        }
+      },
+      "sungoldpower-42271558303881": {
+        "name": "440W Mono Black N-Type Solar Panel UL61730 CEC Listed — 8pcs",
+        "sourceUrl": "https://sungoldpower.com/products/440w-mono-black-perc-solar-panel?variant=42271558303881",
+        "category": "panels",
+        "anchors": {
+          "watts": 440
+        }
+      },
+      "sungoldpower-42271558336649": {
+        "name": "440W Mono Black N-Type Solar Panel UL61730 CEC Listed — 10pcs",
+        "sourceUrl": "https://sungoldpower.com/products/440w-mono-black-perc-solar-panel?variant=42271558336649",
+        "category": "panels",
+        "anchors": {
+          "watts": 440
+        }
+      },
+      "sungoldpower-42271558369417": {
+        "name": "440W Mono Black N-Type Solar Panel UL61730 CEC Listed — 12pcs",
+        "sourceUrl": "https://sungoldpower.com/products/440w-mono-black-perc-solar-panel?variant=42271558369417",
+        "category": "panels",
+        "anchors": {
+          "watts": 440
+        }
+      },
+      "sungoldpower-42271558402185": {
+        "name": "440W Mono Black N-Type Solar Panel UL61730 CEC Listed — 14pcs",
+        "sourceUrl": "https://sungoldpower.com/products/440w-mono-black-perc-solar-panel?variant=42271558402185",
+        "category": "panels",
+        "anchors": {
+          "watts": 440
+        }
+      },
+      "sungoldpower-42271558434953": {
+        "name": "440W Mono Black N-Type Solar Panel UL61730 CEC Listed — 16pcs",
+        "sourceUrl": "https://sungoldpower.com/products/440w-mono-black-perc-solar-panel?variant=42271558434953",
+        "category": "panels",
+        "anchors": {
+          "watts": 440
+        }
+      },
+      "sungoldpower-42271558467721": {
+        "name": "440W Mono Black N-Type Solar Panel UL61730 CEC Listed — 18pcs",
+        "sourceUrl": "https://sungoldpower.com/products/440w-mono-black-perc-solar-panel?variant=42271558467721",
+        "category": "panels",
+        "anchors": {
+          "watts": 440
+        }
+      },
+      "sungoldpower-42271558500489": {
+        "name": "440W Mono Black N-Type Solar Panel UL61730 CEC Listed — 20pcs",
+        "sourceUrl": "https://sungoldpower.com/products/440w-mono-black-perc-solar-panel?variant=42271558500489",
+        "category": "panels",
+        "anchors": {
+          "watts": 440
+        }
+      },
+      "sungoldpower-42271558533257": {
+        "name": "440W Mono Black N-Type Solar Panel UL61730 CEC Listed — Need more? Pls contact us",
+        "sourceUrl": "https://sungoldpower.com/products/440w-mono-black-perc-solar-panel?variant=42271558533257",
+        "category": "panels",
+        "anchors": {
+          "watts": 440
+        }
+      }
+    },
+    "model": "SGN-440-SW5",
+    "kind": "manufacturer",
+    "url": "https://sungoldpower.com/products/440w-mono-black-perc-solar-panel",
+    "label": "SGN-440-SW5 official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:25:40.763Z",
+    "rows": [
+      [
+        "Model",
+        "SGN-440-SW5"
+      ],
+      [
+        "Peak Power (Pmax)",
+        "440W"
+      ],
+      [
+        "Maximum Power Current (Imp)",
+        "13.15A"
+      ],
+      [
+        "Maximum Power Voltage (Vmp)",
+        "33.48V"
+      ],
+      [
+        "Short Circuit Current (Isc)",
+        "13.73A"
+      ],
+      [
+        "Open Circuit Voltage (Voc)",
+        "39.03V"
+      ],
+      [
+        "Maximum System Voltage",
+        "1500V"
+      ],
+      [
+        "Wind Load",
+        "2400Pa"
+      ],
+      [
+        "Output wire",
+        "4mm² (IEC),12 AWG (UL)"
+      ],
+      [
+        "Number of Cells",
+        "108 cells(2×54)"
+      ],
+      [
+        "Cell Type",
+        "N-type monocrystalline (M10)"
+      ],
+      [
+        "Weight",
+        "46.30 lbs"
+      ],
+      [
+        "Dimensions",
+        "67.80 * 44.65 * 1.38 inch"
+      ],
+      [
+        "Operating Temperature Range",
+        "-40℉ to 185℉(-40℃~+85℃)"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/fb907ff34da95f8f.html, collected 2026-10-12T01:25:40.763Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. Per-module electrical ratings and physical dimensions, not aggregate pack ratings. NOCT/rear-gain values not inferred. Cell efficiency not module efficiency. SGN-450 source title single-glass versus catalog bifacial ambiguity: no face/glass construction added.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "sungoldpower-42271624200329",
+      "sungoldpower-42271624233097",
+      "sungoldpower-42271624265865",
+      "sungoldpower-42271624298633",
+      "sungoldpower-42271624331401",
+      "sungoldpower-42271624364169",
+      "sungoldpower-42271624396937",
+      "sungoldpower-42271624429705",
+      "sungoldpower-42271624462473",
+      "sungoldpower-42271624495241",
+      "sungoldpower-42271624528009"
+    ],
+    "expected": {
+      "sungoldpower-42271624200329": {
+        "name": "500W Mono Black PERC Solar Panel UL61730 CEC Listed — 2pcs",
+        "sourceUrl": "https://sungoldpower.com/products/500w-mono-black-perc-solar-panel?variant=42271624200329",
+        "category": "panels",
+        "anchors": {
+          "watts": 500
+        }
+      },
+      "sungoldpower-42271624233097": {
+        "name": "500W Mono Black PERC Solar Panel UL61730 CEC Listed — 4pcs",
+        "sourceUrl": "https://sungoldpower.com/products/500w-mono-black-perc-solar-panel?variant=42271624233097",
+        "category": "panels",
+        "anchors": {
+          "watts": 500
+        }
+      },
+      "sungoldpower-42271624265865": {
+        "name": "500W Mono Black PERC Solar Panel UL61730 CEC Listed — 6pcs",
+        "sourceUrl": "https://sungoldpower.com/products/500w-mono-black-perc-solar-panel?variant=42271624265865",
+        "category": "panels",
+        "anchors": {
+          "watts": 500
+        }
+      },
+      "sungoldpower-42271624298633": {
+        "name": "500W Mono Black PERC Solar Panel UL61730 CEC Listed — 8pcs",
+        "sourceUrl": "https://sungoldpower.com/products/500w-mono-black-perc-solar-panel?variant=42271624298633",
+        "category": "panels",
+        "anchors": {
+          "watts": 500
+        }
+      },
+      "sungoldpower-42271624331401": {
+        "name": "500W Mono Black PERC Solar Panel UL61730 CEC Listed — 10pcs",
+        "sourceUrl": "https://sungoldpower.com/products/500w-mono-black-perc-solar-panel?variant=42271624331401",
+        "category": "panels",
+        "anchors": {
+          "watts": 500
+        }
+      },
+      "sungoldpower-42271624364169": {
+        "name": "500W Mono Black PERC Solar Panel UL61730 CEC Listed — 12pcs",
+        "sourceUrl": "https://sungoldpower.com/products/500w-mono-black-perc-solar-panel?variant=42271624364169",
+        "category": "panels",
+        "anchors": {
+          "watts": 500
+        }
+      },
+      "sungoldpower-42271624396937": {
+        "name": "500W Mono Black PERC Solar Panel UL61730 CEC Listed — 14pcs",
+        "sourceUrl": "https://sungoldpower.com/products/500w-mono-black-perc-solar-panel?variant=42271624396937",
+        "category": "panels",
+        "anchors": {
+          "watts": 500
+        }
+      },
+      "sungoldpower-42271624429705": {
+        "name": "500W Mono Black PERC Solar Panel UL61730 CEC Listed — 16pcs",
+        "sourceUrl": "https://sungoldpower.com/products/500w-mono-black-perc-solar-panel?variant=42271624429705",
+        "category": "panels",
+        "anchors": {
+          "watts": 500
+        }
+      },
+      "sungoldpower-42271624462473": {
+        "name": "500W Mono Black PERC Solar Panel UL61730 CEC Listed — 18pcs",
+        "sourceUrl": "https://sungoldpower.com/products/500w-mono-black-perc-solar-panel?variant=42271624462473",
+        "category": "panels",
+        "anchors": {
+          "watts": 500
+        }
+      },
+      "sungoldpower-42271624495241": {
+        "name": "500W Mono Black PERC Solar Panel UL61730 CEC Listed — 20pcs",
+        "sourceUrl": "https://sungoldpower.com/products/500w-mono-black-perc-solar-panel?variant=42271624495241",
+        "category": "panels",
+        "anchors": {
+          "watts": 500
+        }
+      },
+      "sungoldpower-42271624528009": {
+        "name": "500W Mono Black PERC Solar Panel UL61730 CEC Listed — Need more? Pls contact us",
+        "sourceUrl": "https://sungoldpower.com/products/500w-mono-black-perc-solar-panel?variant=42271624528009",
+        "category": "panels",
+        "anchors": {
+          "watts": 500
+        }
+      }
+    },
+    "model": "SG500WM",
+    "kind": "manufacturer",
+    "url": "https://sungoldpower.com/products/500w-mono-black-perc-solar-panel",
+    "label": "SG500WM official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:25:42.587Z",
+    "rows": [
+      [
+        "Model",
+        "SG500WM"
+      ],
+      [
+        "Peak Power (Pmax)",
+        "500W"
+      ],
+      [
+        "Maximum Power Current (Imp)",
+        "13.30A"
+      ],
+      [
+        "Maximum Power Voltage (Vmp)",
+        "37.60V"
+      ],
+      [
+        "Short Circuit Current (Isc)",
+        "14.09A"
+      ],
+      [
+        "Open Circuit Voltage (Voc)",
+        "44.36V"
+      ],
+      [
+        "Maximum System Voltage",
+        "1500V"
+      ],
+      [
+        "Wind Load",
+        "2400Pa"
+      ],
+      [
+        "Output Cables",
+        "12 AWG (1ft per cable)"
+      ],
+      [
+        "Number of Cells",
+        "132(6*22)"
+      ],
+      [
+        "Cell Type",
+        "PERC Mono182*91mm"
+      ],
+      [
+        "Weight",
+        "56.2lbs"
+      ],
+      [
+        "Dimensions",
+        "82.44*44.65*1.38inch"
+      ],
+      [
+        "Operating Temperature Range",
+        "-40℉ to 185℉(-40℃~+85℃)"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/31b7e71622862663.html, collected 2026-10-12T01:25:42.587Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. Per-module electrical ratings and physical dimensions, not aggregate pack ratings. NOCT/rear-gain values not inferred. Cell efficiency not module efficiency. SGN-450 source title single-glass versus catalog bifacial ambiguity: no face/glass construction added.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "sungoldpower-44365846511753",
+      "sungoldpower-44365846544521",
+      "sungoldpower-44365846577289",
+      "sungoldpower-44365846610057",
+      "sungoldpower-44365846642825",
+      "sungoldpower-44365846675593",
+      "sungoldpower-44365846708361",
+      "sungoldpower-44365846741129",
+      "sungoldpower-44365846773897",
+      "sungoldpower-44365846806665",
+      "sungoldpower-44365846839433"
+    ],
+    "expected": {
+      "sungoldpower-44365846511753": {
+        "name": "450 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-450-BDG5 UL61730 CEC Listed — 2pcs",
+        "sourceUrl": "https://sungoldpower.com/products/450-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-450-bdg5-ul61730-cec-listed?variant=44365846511753",
+        "category": "panels",
+        "anchors": {
+          "watts": 450
+        }
+      },
+      "sungoldpower-44365846544521": {
+        "name": "450 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-450-BDG5 UL61730 CEC Listed — 4pcs",
+        "sourceUrl": "https://sungoldpower.com/products/450-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-450-bdg5-ul61730-cec-listed?variant=44365846544521",
+        "category": "panels",
+        "anchors": {
+          "watts": 450
+        }
+      },
+      "sungoldpower-44365846577289": {
+        "name": "450 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-450-BDG5 UL61730 CEC Listed — 6pcs",
+        "sourceUrl": "https://sungoldpower.com/products/450-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-450-bdg5-ul61730-cec-listed?variant=44365846577289",
+        "category": "panels",
+        "anchors": {
+          "watts": 450
+        }
+      },
+      "sungoldpower-44365846610057": {
+        "name": "450 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-450-BDG5 UL61730 CEC Listed — 8pcs",
+        "sourceUrl": "https://sungoldpower.com/products/450-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-450-bdg5-ul61730-cec-listed?variant=44365846610057",
+        "category": "panels",
+        "anchors": {
+          "watts": 450
+        }
+      },
+      "sungoldpower-44365846642825": {
+        "name": "450 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-450-BDG5 UL61730 CEC Listed — 10pcs",
+        "sourceUrl": "https://sungoldpower.com/products/450-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-450-bdg5-ul61730-cec-listed?variant=44365846642825",
+        "category": "panels",
+        "anchors": {
+          "watts": 450
+        }
+      },
+      "sungoldpower-44365846675593": {
+        "name": "450 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-450-BDG5 UL61730 CEC Listed — 12pcs",
+        "sourceUrl": "https://sungoldpower.com/products/450-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-450-bdg5-ul61730-cec-listed?variant=44365846675593",
+        "category": "panels",
+        "anchors": {
+          "watts": 450
+        }
+      },
+      "sungoldpower-44365846708361": {
+        "name": "450 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-450-BDG5 UL61730 CEC Listed — 14pcs",
+        "sourceUrl": "https://sungoldpower.com/products/450-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-450-bdg5-ul61730-cec-listed?variant=44365846708361",
+        "category": "panels",
+        "anchors": {
+          "watts": 450
+        }
+      },
+      "sungoldpower-44365846741129": {
+        "name": "450 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-450-BDG5 UL61730 CEC Listed — 16pcs",
+        "sourceUrl": "https://sungoldpower.com/products/450-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-450-bdg5-ul61730-cec-listed?variant=44365846741129",
+        "category": "panels",
+        "anchors": {
+          "watts": 450
+        }
+      },
+      "sungoldpower-44365846773897": {
+        "name": "450 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-450-BDG5 UL61730 CEC Listed — 18pcs",
+        "sourceUrl": "https://sungoldpower.com/products/450-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-450-bdg5-ul61730-cec-listed?variant=44365846773897",
+        "category": "panels",
+        "anchors": {
+          "watts": 450
+        }
+      },
+      "sungoldpower-44365846806665": {
+        "name": "450 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-450-BDG5 UL61730 CEC Listed — 20pcs",
+        "sourceUrl": "https://sungoldpower.com/products/450-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-450-bdg5-ul61730-cec-listed?variant=44365846806665",
+        "category": "panels",
+        "anchors": {
+          "watts": 450
+        }
+      },
+      "sungoldpower-44365846839433": {
+        "name": "450 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-450-BDG5 UL61730 CEC Listed — Need more? Pls contact us",
+        "sourceUrl": "https://sungoldpower.com/products/450-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-450-bdg5-ul61730-cec-listed?variant=44365846839433",
+        "category": "panels",
+        "anchors": {
+          "watts": 450
+        }
+      }
+    },
+    "model": "SGN-450-BDG5",
+    "kind": "manufacturer",
+    "url": "https://sungoldpower.com/products/450-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-450-bdg5-ul61730-cec-listed",
+    "label": "SGN-450-BDG5 official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:26:40.922Z",
+    "rows": [
+      [
+        "Model",
+        "SGN-450-BDG5"
+      ],
+      [
+        "Peak Power (Pmax)",
+        "450W"
+      ],
+      [
+        "Maximum Power Current (Imp)",
+        "14.97A"
+      ],
+      [
+        "Maximum Power Voltage (Vmp)",
+        "30.08V"
+      ],
+      [
+        "Short Circuit Current (Isc)",
+        "16.05A"
+      ],
+      [
+        "Open Circuit Voltage (Voc)",
+        "35.03V"
+      ],
+      [
+        "Maximum System Voltage",
+        "1500V"
+      ],
+      [
+        "Wind Load",
+        "2400Pa"
+      ],
+      [
+        "Output Cables",
+        "12 AWG (1ft per cable)"
+      ],
+      [
+        "Number of Cells",
+        "96 cells"
+      ],
+      [
+        "Cell Type",
+        "N-type monocrystalline ( 7.17 X 8.27 inch）"
+      ],
+      [
+        "Weight",
+        "53.35 lbs"
+      ],
+      [
+        "Dimensions",
+        "69.37 x 44.65 x 1.38 inch"
+      ],
+      [
+        "Operating Temperature Range",
+        "-40℉ to 185℉(-40℃~+85℃)"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/e5f895f79dbdb5fe.html, collected 2026-10-12T01:26:40.922Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. Per-module electrical ratings and physical dimensions, not aggregate pack ratings. NOCT/rear-gain values not inferred. Cell efficiency not module efficiency. SGN-450 source title single-glass versus catalog bifacial ambiguity: no face/glass construction added.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "sungoldpower-44776765980809",
+      "sungoldpower-44776766013577",
+      "sungoldpower-44776766046345",
+      "sungoldpower-44776766079113",
+      "sungoldpower-44776766111881",
+      "sungoldpower-44776766144649",
+      "sungoldpower-44776766177417",
+      "sungoldpower-44776766210185",
+      "sungoldpower-44776766242953",
+      "sungoldpower-44776766275721",
+      "sungoldpower-44776766308489"
+    ],
+    "expected": {
+      "sungoldpower-44776765980809": {
+        "name": "590 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-590-BDG1 UL61730 CEC Listed — 2PCS",
+        "sourceUrl": "https://sungoldpower.com/products/590-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-590-bdg-ul61730?variant=44776765980809",
+        "category": "panels",
+        "anchors": {
+          "watts": 590
+        }
+      },
+      "sungoldpower-44776766013577": {
+        "name": "590 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-590-BDG1 UL61730 CEC Listed — 4PCS",
+        "sourceUrl": "https://sungoldpower.com/products/590-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-590-bdg-ul61730?variant=44776766013577",
+        "category": "panels",
+        "anchors": {
+          "watts": 590
+        }
+      },
+      "sungoldpower-44776766046345": {
+        "name": "590 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-590-BDG1 UL61730 CEC Listed — 6PCS",
+        "sourceUrl": "https://sungoldpower.com/products/590-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-590-bdg-ul61730?variant=44776766046345",
+        "category": "panels",
+        "anchors": {
+          "watts": 590
+        }
+      },
+      "sungoldpower-44776766079113": {
+        "name": "590 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-590-BDG1 UL61730 CEC Listed — 8PCS",
+        "sourceUrl": "https://sungoldpower.com/products/590-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-590-bdg-ul61730?variant=44776766079113",
+        "category": "panels",
+        "anchors": {
+          "watts": 590
+        }
+      },
+      "sungoldpower-44776766111881": {
+        "name": "590 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-590-BDG1 UL61730 CEC Listed — 10PCS",
+        "sourceUrl": "https://sungoldpower.com/products/590-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-590-bdg-ul61730?variant=44776766111881",
+        "category": "panels",
+        "anchors": {
+          "watts": 590
+        }
+      },
+      "sungoldpower-44776766144649": {
+        "name": "590 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-590-BDG1 UL61730 CEC Listed — 12PCS",
+        "sourceUrl": "https://sungoldpower.com/products/590-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-590-bdg-ul61730?variant=44776766144649",
+        "category": "panels",
+        "anchors": {
+          "watts": 590
+        }
+      },
+      "sungoldpower-44776766177417": {
+        "name": "590 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-590-BDG1 UL61730 CEC Listed — 14PCS",
+        "sourceUrl": "https://sungoldpower.com/products/590-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-590-bdg-ul61730?variant=44776766177417",
+        "category": "panels",
+        "anchors": {
+          "watts": 590
+        }
+      },
+      "sungoldpower-44776766210185": {
+        "name": "590 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-590-BDG1 UL61730 CEC Listed — 16PCS",
+        "sourceUrl": "https://sungoldpower.com/products/590-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-590-bdg-ul61730?variant=44776766210185",
+        "category": "panels",
+        "anchors": {
+          "watts": 590
+        }
+      },
+      "sungoldpower-44776766242953": {
+        "name": "590 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-590-BDG1 UL61730 CEC Listed — 18PCS",
+        "sourceUrl": "https://sungoldpower.com/products/590-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-590-bdg-ul61730?variant=44776766242953",
+        "category": "panels",
+        "anchors": {
+          "watts": 590
+        }
+      },
+      "sungoldpower-44776766275721": {
+        "name": "590 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-590-BDG1 UL61730 CEC Listed — 20PCS",
+        "sourceUrl": "https://sungoldpower.com/products/590-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-590-bdg-ul61730?variant=44776766275721",
+        "category": "panels",
+        "anchors": {
+          "watts": 590
+        }
+      },
+      "sungoldpower-44776766308489": {
+        "name": "590 Watt Bifacial N-Type Monocrystalline Solar Panel SGN-590-BDG1 UL61730 CEC Listed — Need more? Pls contact us",
+        "sourceUrl": "https://sungoldpower.com/products/590-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-590-bdg-ul61730?variant=44776766308489",
+        "category": "panels",
+        "anchors": {
+          "watts": 590
+        }
+      }
+    },
+    "model": "SGN-590-BDG1",
+    "kind": "manufacturer",
+    "url": "https://sungoldpower.com/products/590-watt-bifacial-n-type-monocrystalline-solar-panel-sgn-590-bdg-ul61730",
+    "label": "SGN-590-BDG1 official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:26:50.996Z",
+    "rows": [
+      [
+        "Model",
+        "SGN-590-BDG1"
+      ],
+      [
+        "Peak Power (Pmax)",
+        "590W"
+      ],
+      [
+        "Maximum Power Current (Imp)",
+        "13.29A"
+      ],
+      [
+        "Maximum Power Voltage (Vmp)",
+        "44.40V"
+      ],
+      [
+        "Short Circuit Current (Isc)",
+        "13.90A"
+      ],
+      [
+        "Open Circuit Voltage (Voc)",
+        "52.35V"
+      ],
+      [
+        "Maximum System Voltage",
+        "1500V"
+      ],
+      [
+        "Wind Load",
+        "2400Pa"
+      ],
+      [
+        "Output Cables",
+        "12 AWG (1ft per cable)"
+      ],
+      [
+        "Number of Cells",
+        "144 cells"
+      ],
+      [
+        "Cell Type",
+        "N-type monocrystalline (M10)"
+      ],
+      [
+        "Weight",
+        "69.45 lbs"
+      ],
+      [
+        "Dimensions",
+        "89.69 x 44.65 x 1.38 inch"
+      ],
+      [
+        "Operating Temperature Range",
+        "-40℉ to 185℉(-40℃~+85℃)"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/8664eb542b6c7ee5.html, collected 2026-10-12T01:26:50.996Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. Per-module electrical ratings and physical dimensions, not aggregate pack ratings. NOCT/rear-gain values not inferred. Cell efficiency not module efficiency. SGN-450 source title single-glass versus catalog bifacial ambiguity: no face/glass construction added.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "gosun-27898060210270"
+    ],
+    "expected": {
+      "gosun-27898060210270": {
+        "name": "Solar Panel 10",
+        "sourceUrl": "https://gosun.co/products/best-solar-phone-charger?variant=27898060210270",
+        "category": "panels",
+        "anchors": {}
+      }
+    },
+    "model": "FPSP0010",
+    "kind": "manufacturer",
+    "url": "https://gosun.co/products/best-solar-phone-charger",
+    "label": "FPSP0010 official manufacturer specification table",
+    "checkedAt": "2026-10-12T01:23:32.397Z",
+    "rows": [
+      [
+        "Model",
+        "FPSP0010"
+      ],
+      [
+        "Weight",
+        "0.65 lbs"
+      ],
+      [
+        "Material",
+        "Monocrystaline Silicone Water-resistant Flexible Polymer"
+      ],
+      [
+        "Compatibility",
+        "USB devices (5 V, up to 2 A)"
+      ]
+    ],
+    "reviewNote": "Reviewed retained primary HTML output/spec-research/7d04f362c4a4f7e2.html, collected 2026-10-12T01:23:32.397Z. Manufacturer primary page independently opened 2026-10-12; technical timestamp remains original cache retrieval. Exact raw name/full variant URL/category and retained manufacturer variant IDs guarded. Folded/unfolded compound dimensions and unqualified charge time withheld. Published 10 W USB panel output has no STC test-condition declaration; withheld from importer STC table.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-used-ass030530203"
+    ],
+    "expected": {
+      "inverters-r-us-used-ass030530203": {
+        "name": "Used Victron Energy VE.Direct Cable 0.3 Meter",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-energy-ve-direct-cable-0-3-meter/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "model": "ASS030530203",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron ASS030530203 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "ASS030530203"
+      ],
+      [
+        "Length",
+        "0.3 m"
+      ],
+      [
+        "Connector type",
+        "VE.Direct"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 11, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page11.png. Catalogue specifies length and connector family only. No gauge, conductor material, current rating, voltage, data rate or environmental rating inferred. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-used-ass030530209"
+    ],
+    "expected": {
+      "inverters-r-us-used-ass030530209": {
+        "name": "Used Victron Energy VE.Direct Cable 0.9 Meter",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-energy-ve-direct-cable-0-9-meter/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "model": "ASS030530209",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron ASS030530209 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "ASS030530209"
+      ],
+      [
+        "Length",
+        "0.9 m"
+      ],
+      [
+        "Connector type",
+        "VE.Direct"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 11, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page11.png. Catalogue specifies length and connector family only. No gauge, conductor material, current rating, voltage, data rate or environmental rating inferred. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "santan-solar-ass030530218"
+    ],
+    "expected": {
+      "santan-solar-ass030530218": {
+        "name": "Victron VE Direct Cable 1.8M",
+        "sourceUrl": "https://www.santansolar.com/product/victron-ve-direct-cable-1-8m/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "model": "ASS030530218",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron ASS030530218 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "ASS030530218"
+      ],
+      [
+        "Length",
+        "1.8 m"
+      ],
+      [
+        "Connector type",
+        "VE.Direct"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 11, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page11.png. Catalogue specifies length and connector family only. No gauge, conductor material, current rating, voltage, data rate or environmental rating inferred. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-used-ass030530230"
+    ],
+    "expected": {
+      "inverters-r-us-used-ass030530230": {
+        "name": "Used Victron Energy VE.Direct Cable 3 Meter",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-energy-ve-direct-cable-3-meter/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "model": "ASS030530230",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron ASS030530230 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "ASS030530230"
+      ],
+      [
+        "Length",
+        "3 m"
+      ],
+      [
+        "Connector type",
+        "VE.Direct"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 11, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page11.png. Catalogue specifies length and connector family only. No gauge, conductor material, current rating, voltage, data rate or environmental rating inferred. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-used-ass030530250"
+    ],
+    "expected": {
+      "inverters-r-us-used-ass030530250": {
+        "name": "Used Victron Energy VE.Direct Cable 5 Meter",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-energy-ve-direct-cable-5-meter/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "model": "ASS030530250",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron ASS030530250 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "ASS030530250"
+      ],
+      [
+        "Length",
+        "5 m"
+      ],
+      [
+        "Connector type",
+        "VE.Direct"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 11, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page11.png. Catalogue specifies length and connector family only. No gauge, conductor material, current rating, voltage, data rate or environmental rating inferred. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-used-ass030530310"
+    ],
+    "expected": {
+      "inverters-r-us-used-ass030530310": {
+        "name": "Used Victron Energy VE.Direct Cable 10 Meter",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-energy-ve-direct-cable-10-meter/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "model": "ASS030530310",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron ASS030530310 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "ASS030530310"
+      ],
+      [
+        "Length",
+        "10 m"
+      ],
+      [
+        "Connector type",
+        "VE.Direct"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 11, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page11.png. Catalogue specifies length and connector family only. No gauge, conductor material, current rating, voltage, data rate or environmental rating inferred. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-used-ass030531203"
+    ],
+    "expected": {
+      "inverters-r-us-used-ass030531203": {
+        "name": "Used Victron VE.Direct Cable 0.3m (1 side right angle)",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-ve-direct-cable-0-3m-1-side-right-angle/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "model": "ASS030531203",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron ASS030531203 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "ASS030531203"
+      ],
+      [
+        "Length",
+        "0.3 m"
+      ],
+      [
+        "Connector type",
+        "VE.Direct; one end right-angle"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 11, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page11.png. Catalogue specifies length and connector family only. No gauge, conductor material, current rating, voltage, data rate or environmental rating inferred. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-used-ass030531230"
+    ],
+    "expected": {
+      "inverters-r-us-used-ass030531230": {
+        "name": "Used Victron VE.Direct Cable 3m (1 side right angle)",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-ve-direct-cable-3m-1-side-right-angle/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "model": "ASS030531230",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron ASS030531230 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "ASS030531230"
+      ],
+      [
+        "Length",
+        "3 m"
+      ],
+      [
+        "Connector type",
+        "VE.Direct; one end right-angle"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 11, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page11.png. Catalogue specifies length and connector family only. No gauge, conductor material, current rating, voltage, data rate or environmental rating inferred. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-used-ass030531250"
+    ],
+    "expected": {
+      "inverters-r-us-used-ass030531250": {
+        "name": "Used Victron VE.Direct Cable 5m (1 side right angle)",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-ve-direct-cable-5m-1-side-right-angle/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "model": "ASS030531250",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron ASS030531250 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "ASS030531250"
+      ],
+      [
+        "Length",
+        "5 m"
+      ],
+      [
+        "Connector type",
+        "VE.Direct; one end right-angle"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 11, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page11.png. Catalogue specifies length and connector family only. No gauge, conductor material, current rating, voltage, data rate or environmental rating inferred. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-used-ass030064900"
+    ],
+    "expected": {
+      "inverters-r-us-used-ass030064900": {
+        "name": "Used Victron Energy RJ45 UTP Cable, 0.3 Meter",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-energy-rj45-utp-cable-0-3-meter/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "model": "ASS030064900",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron ASS030064900 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "ASS030064900"
+      ],
+      [
+        "Length",
+        "0.3 m"
+      ],
+      [
+        "Connector type",
+        "RJ45 UTP"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 11, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page11.png. Exact legacy/new unchanged part number; other RJ45 revisions differ and are held. No Ethernet data rate, pinout, gauge or ampacity inferred. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-used-ass030560500"
+    ],
+    "expected": {
+      "inverters-r-us-used-ass030560500": {
+        "name": "Used M8 circular connector Male/Female 3 pole cable 5m (bag of 2)",
+        "sourceUrl": "https://invertersrus.com/product/used-m8-circular-connector-male-female-3-pole-cable-5m-bag-of-2/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "model": "ASS030560500",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron ASS030560500 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "ASS030560500"
+      ],
+      [
+        "Length",
+        "5 m"
+      ],
+      [
+        "Connector type",
+        "M8 circular, male to female, 3-pole"
+      ],
+      [
+        "Included components",
+        "2 cables"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 11, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page11.png. Catalogue explicitly identifies cable length/connectors and bag quantity. No conductor count-to-gauge conversion, current, voltage or environmental rating inferred. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-open-box-ass050300010",
+      "inverters-r-us-used-ass050300010"
+    ],
+    "expected": {
+      "inverters-r-us-open-box-ass050300010": {
+        "name": "Open Box Victron Wall Mount Enclosure for 65 x 120mm GX Panels",
+        "sourceUrl": "https://invertersrus.com/product/open-box-victron-wall-mount-enclosure-for-65-x-120mm-gx-panels/",
+        "category": "mounting",
+        "anchors": {}
+      },
+      "inverters-r-us-used-ass050300010": {
+        "name": "Used Victron Wall Mount Enclosure for 65 x 120mm GX Panels",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-wall-mount-enclosure-for-65-x-120mm-gx-panels/",
+        "category": "mounting",
+        "anchors": {}
+      }
+    },
+    "model": "ASS050300010",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron ASS050300010 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "ASS050300010"
+      ],
+      [
+        "Dimensions (H x W x D)",
+        "80 x 150 x 50 mm"
+      ],
+      [
+        "Compatibility",
+        "65 x 120 mm GX panels with 90-degree RJ45 socket only: Battery Alarm GX BPA000100000R; Skylla-i Control GX REC000300000R; Digital Multi Control 200/200A GX DMC000200000R"
+      ],
+      [
+        "Mount type",
+        "Wall mount enclosure"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 10, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page10.png. Manufacturer table H x W x D transcribed; no material, IP rating or assembled panel dimensions inferred. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-used-ass050500000"
+    ],
+    "expected": {
+      "inverters-r-us-used-ass050500000": {
+        "name": "Used Victron Wall Mounted Enclosure for BMV or MPPT Control",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-wall-mounted-enclosure-for-bmv-or-mppt-control/",
+        "category": "mounting",
+        "anchors": {}
+      }
+    },
+    "model": "ASS050500000",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron ASS050500000 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "ASS050500000"
+      ],
+      [
+        "Dimensions (H x W x D)",
+        "130 x 85 x 45 mm"
+      ],
+      [
+        "Compatibility",
+        "BMV or MPPT Control"
+      ],
+      [
+        "Mount type",
+        "Wall mount enclosure"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 10, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page10.png. Manufacturer table H x W x D transcribed; no material, IP rating or assembled panel dimensions inferred. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-used-ass050600000"
+    ],
+    "expected": {
+      "inverters-r-us-used-ass050600000": {
+        "name": "Used Victron Wall Mounted Enclosure for Color Control GX & BMV or MPPT",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-wall-mounted-enclosure-for-color-control-gx-bmv-or-mppt/",
+        "category": "mounting",
+        "anchors": {}
+      }
+    },
+    "model": "ASS050600000",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron ASS050600000 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "ASS050600000"
+      ],
+      [
+        "Dimensions (H x W x D)",
+        "245 x 135 x 65 mm"
+      ],
+      [
+        "Compatibility",
+        "Color Control GX and BMV or MPPT Control"
+      ],
+      [
+        "Mount type",
+        "Wall mount enclosure"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 10, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page10.png. Manufacturer table H x W x D transcribed; no material, IP rating or assembled panel dimensions inferred. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-open-box-bcd000402000",
+      "inverters-r-us-used-bcd000402000"
+    ],
+    "expected": {
+      "inverters-r-us-open-box-bcd000402000": {
+        "name": "Open Box Victron BCD 402 40A Diode Battery Combiner (2 Batteries)",
+        "sourceUrl": "https://invertersrus.com/product/open-box-victron-bcd-402-40a-diode-battery-combiner-2-batteries/",
+        "category": "electrical",
+        "anchors": {}
+      },
+      "inverters-r-us-used-bcd000402000": {
+        "name": "Used Victron BCD 402 40A Diode Battery Combiner (2 Batteries)",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-bcd-402-40a-diode-battery-combiner-2-batteries/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "model": "BCD000402000",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron BCD000402000 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "BCD000402000"
+      ],
+      [
+        "Rated current",
+        "40 A"
+      ],
+      [
+        "Dimensions (H x W x D)",
+        "60 x 120 x 75 mm"
+      ],
+      [
+        "Weight",
+        "0.6 kg"
+      ],
+      [
+        "Compatibility",
+        "2 batteries"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 13, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page13.png. Explicit original hardware current/physical attributes and battery count. No voltage range, diode drop, temperature, continuous derating or used-condition performance inferred. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-open-box-bcd000802000",
+      "inverters-r-us-used-bcd000802000"
+    ],
+    "expected": {
+      "inverters-r-us-open-box-bcd000802000": {
+        "name": "Open Box Victron BCD 802 80A Diode Battery Combiner (2 Batteries)",
+        "sourceUrl": "https://invertersrus.com/product/open-box-victron-bcd-802-80a-diode-battery-combiner-2-batteries/",
+        "category": "electrical",
+        "anchors": {}
+      },
+      "inverters-r-us-used-bcd000802000": {
+        "name": "Used Victron BCD 802 80A Diode Battery Combiner (2 Batteries)",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-bcd-802-80a-diode-battery-combiner-2-batteries/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "model": "BCD000802000",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron BCD000802000 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "BCD000802000"
+      ],
+      [
+        "Rated current",
+        "80 A"
+      ],
+      [
+        "Dimensions (H x W x D)",
+        "60 x 120 x 75 mm"
+      ],
+      [
+        "Weight",
+        "0.8 kg"
+      ],
+      [
+        "Compatibility",
+        "2 batteries"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 13, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page13.png. Explicit original hardware current/physical attributes and battery count. No voltage range, diode drop, temperature, continuous derating or used-condition performance inferred. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-open-box-scc950100000",
+      "inverters-r-us-used-scc950100000"
+    ],
+    "expected": {
+      "inverters-r-us-open-box-scc950100000": {
+        "name": "Open Box Victron MPPT WireBox-S for 75V 10/15A",
+        "sourceUrl": "https://invertersrus.com/product/open-box-victron-mppt-wirebox-s-for-75v-10-15a/",
+        "category": "electrical",
+        "anchors": {}
+      },
+      "inverters-r-us-used-scc950100000": {
+        "name": "Used Victron MPPT WireBox-S for 75V 10/15A",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-mppt-wirebox-s-for-75v-10-15a/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "model": "SCC950100000",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron SCC950100000 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "SCC950100000"
+      ],
+      [
+        "Compatibility",
+        "MPPT 75/10 and 75/15"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 15, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page15.png. Only explicit model fit accepted. Controller height is a fit condition, not WireBox dimensions; controller voltage/current names are not WireBox electrical ratings. XL MC4 legacy/revision identities held. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-open-box-scc950120000",
+      "inverters-r-us-used-scc950120000"
+    ],
+    "expected": {
+      "inverters-r-us-open-box-scc950120000": {
+        "name": "Open Box Victron MPPT WireBox-S for 100V 15A",
+        "sourceUrl": "https://invertersrus.com/product/open-box-victron-mppt-wirebox-s-for-100v-15a/",
+        "category": "electrical",
+        "anchors": {}
+      },
+      "inverters-r-us-used-scc950120000": {
+        "name": "Used Victron MPPT WireBox-S for 100V 15A",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-mppt-wirebox-s-for-100v-15a/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "model": "SCC950120000",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron SCC950120000 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "SCC950120000"
+      ],
+      [
+        "Compatibility",
+        "MPPT 100/15"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 15, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page15.png. Only explicit model fit accepted. Controller height is a fit condition, not WireBox dimensions; controller voltage/current names are not WireBox electrical ratings. XL MC4 legacy/revision identities held. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-open-box-scc950140000",
+      "inverters-r-us-used-scc950140000"
+    ],
+    "expected": {
+      "inverters-r-us-open-box-scc950140000": {
+        "name": "Open Box Victron MPPT WireBox-S for 100V 20A",
+        "sourceUrl": "https://invertersrus.com/product/open-box-victron-mppt-wirebox-s-for-100v-20a/",
+        "category": "electrical",
+        "anchors": {}
+      },
+      "inverters-r-us-used-scc950140000": {
+        "name": "Used Victron MPPT WireBox-S for 100V 20A",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-mppt-wirebox-s-for-100v-20a/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "model": "SCC950140000",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron SCC950140000 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "SCC950140000"
+      ],
+      [
+        "Compatibility",
+        "MPPT 100/20"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 15, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page15.png. Only explicit model fit accepted. Controller height is a fit condition, not WireBox dimensions; controller voltage/current names are not WireBox electrical ratings. XL MC4 legacy/revision identities held. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-open-box-scc950200000",
+      "inverters-r-us-used-scc950200000"
+    ],
+    "expected": {
+      "inverters-r-us-open-box-scc950200000": {
+        "name": "Open Box Victron MPPT Wirebox-M",
+        "sourceUrl": "https://invertersrus.com/product/open-box-victron-mppt-wirebox-medium-for-100v-30-50a-150v-35a/",
+        "category": "electrical",
+        "anchors": {}
+      },
+      "inverters-r-us-used-scc950200000": {
+        "name": "Used Victron MPPT Wirebox-M",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-mppt-wirebox-m/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "model": "SCC950200000",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron SCC950200000 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "SCC950200000"
+      ],
+      [
+        "Compatibility",
+        "MPPT models with 130 mm height"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 15, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page15.png. Only explicit model fit accepted. Controller height is a fit condition, not WireBox dimensions; controller voltage/current names are not WireBox electrical ratings. XL MC4 legacy/revision identities held. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-open-box-scc950300210",
+      "inverters-r-us-used-scc950300210"
+    ],
+    "expected": {
+      "inverters-r-us-open-box-scc950300210": {
+        "name": "Open Box Victron MPPT WireBox-L Tr",
+        "sourceUrl": "https://invertersrus.com/product/open-box-victron-mppt-wirebox-l-tr-for-150v-45-60-70a-250v-60-70a/",
+        "category": "electrical",
+        "anchors": {}
+      },
+      "inverters-r-us-used-scc950300210": {
+        "name": "Used Victron MPPT WireBox-L Tr",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-mppt-wirebox-l-tr/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "model": "SCC950300210",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron SCC950300210 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "SCC950300210"
+      ],
+      [
+        "Compatibility",
+        "MPPT Tr models with 200 mm height"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 15, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page15.png. Only explicit model fit accepted. Controller height is a fit condition, not WireBox dimensions; controller voltage/current names are not WireBox electrical ratings. XL MC4 legacy/revision identities held. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-open-box-scc950300310",
+      "inverters-r-us-used-scc950300310"
+    ],
+    "expected": {
+      "inverters-r-us-open-box-scc950300310": {
+        "name": "Open Box Victron MPPT WireBox-L MC4",
+        "sourceUrl": "https://invertersrus.com/product/open-box-victron-mppt-wirebox-l-mc4-for-150v-45-60-70a-250v-60-70a-previously-scc950300300/",
+        "category": "electrical",
+        "anchors": {}
+      },
+      "inverters-r-us-used-scc950300310": {
+        "name": "Used Victron MPPT WireBox-L MC4",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-mppt-wirebox-l-mc4/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "model": "SCC950300310",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron SCC950300310 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "SCC950300310"
+      ],
+      [
+        "Compatibility",
+        "MPPT MC4 models with 200 mm height"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 15, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page15.png. Only explicit model fit accepted. Controller height is a fit condition, not WireBox dimensions; controller voltage/current names are not WireBox electrical ratings. XL MC4 legacy/revision identities held. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-open-box-scc950400210",
+      "inverters-r-us-used-scc950400210"
+    ],
+    "expected": {
+      "inverters-r-us-open-box-scc950400210": {
+        "name": "Open Box Victron MPPT WireBox-XL Tr",
+        "sourceUrl": "https://invertersrus.com/product/open-box-victron-mppt-wirebox-xl-tr-150-85-100-250-85-100-ve-can/",
+        "category": "electrical",
+        "anchors": {}
+      },
+      "inverters-r-us-used-scc950400210": {
+        "name": "Used Victron MPPT WireBox-XL Tr",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-mppt-wirebox-xl-tr/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "model": "SCC950400210",
+    "kind": "manufacturer",
+    "url": "https://latam.victronenergy.com/pricelist",
+    "label": "Victron SCC950400210 manufacturer catalogue (2026-Q3)",
+    "checkedAt": "2026-10-12T05:29:59.547727+00:00",
+    "rows": [
+      [
+        "Model",
+        "SCC950400210"
+      ],
+      [
+        "Compatibility",
+        "MPPT Tr and Tr VE.Can models with 216 mm height"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "reviewNote": "Exact manufacturer part number in 2026-Q3 USD C catalogue, printed page 15, visually reviewed from retained PDF page image. PDF SHA256 64268b3001a36422f72725436b344ab379037272faa664343f98d7fc9b9b1cb8; proof output/specification-research/batch-four-balance-proof/victron-2026-q3.pdf.page15.png. Only explicit model fit accepted. Controller height is a fit condition, not WireBox dimensions; controller voltage/current names are not WireBox electrical ratings. XL MC4 legacy/revision identities held. Original manufacturer hardware attributes only; used/open-box condition untested. Prices ignored.",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-39601356472369"
+    ],
+    "expected": {
+      "rich-solar-39601356472369": {
+        "name": "ALPHA 2 LITE | 12V 200Ah LiFePO4 Battery | Best 12V Deep Cycle Lithium Battery for RVs, Trailers, Vans, Boats, Off-Grid | 4,000 Lifetime Cycles | Best Value",
+        "sourceUrl": "https://richsolar.com/products/alpha-2-lite-12v-200ah-lifepo4-battery?variant=39601356472369",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 200
+        }
+      }
+    },
+    "model": "ALPHA 2 LITE | 12V 200Ah LiFePO4 Battery | Best 12V Deep Cycle Lithium Battery for RVs, Trailers, Vans, Boats, Off-Grid | 4,000 Lifetime Cycles | Best Value",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/alpha-2-lite-12v-200ah-lifepo4-battery",
+    "label": "RICH SOLAR exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:24:18.078Z",
+    "rows": [
+      [
+        "Nominal Voltage",
+        "12.8V"
+      ],
+      [
+        "Rated Capacity",
+        "200Ah"
+      ],
+      [
+        "Energy",
+        "2560Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO₄"
+      ],
+      [
+        "Cycle Life",
+        "4,000+"
+      ],
+      [
+        "Charging Voltage",
+        "14.4V"
+      ],
+      [
+        "Maximum charge current",
+        "200A"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "200A"
+      ],
+      [
+        "Bluetooth",
+        "No"
+      ],
+      [
+        "IP Rating",
+        "IP65"
+      ],
+      [
+        "Warranty",
+        "5 Years"
+      ],
+      [
+        "Dimensions (L × W × H)",
+        "20.9 × 8.1 × 8.5 in"
+      ],
+      [
+        "Net Weight",
+        "52.9 lbs"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-39956821114929"
+    ],
+    "expected": {
+      "rich-solar-39956821114929": {
+        "name": "ALPHA 4 LITE | 24V 100Ah LiFePO4 Battery | Fast-Charging 24V Lithium Battery for RVs, Trailers, Vans, Boats, Off-Grid, Backup | 4,000 Lifetime Cycles | Best Value",
+        "sourceUrl": "https://richsolar.com/products/alpha-4-lite-24v-100ah-lifepo4-battery?variant=39956821114929",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 100
+        }
+      }
+    },
+    "model": "ALPHA 4 LITE | 24V 100Ah LiFePO4 Battery | Fast-Charging 24V Lithium Battery for RVs, Trailers, Vans, Boats, Off-Grid, Backup | 4,000 Lifetime Cycles | Best Value",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/alpha-4-lite-24v-100ah-lifepo4-battery",
+    "label": "RICH SOLAR exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:25:06.183Z",
+    "rows": [
+      [
+        "Nominal Voltage",
+        "25.6V"
+      ],
+      [
+        "Rated Capacity",
+        "100Ah"
+      ],
+      [
+        "Energy",
+        "2560Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO₄"
+      ],
+      [
+        "Cycle Life",
+        "4,000+"
+      ],
+      [
+        "Charging Voltage",
+        "28.8V"
+      ],
+      [
+        "Maximum charge current",
+        "100A"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "100A"
+      ],
+      [
+        "Bluetooth",
+        "No"
+      ],
+      [
+        "IP Rating",
+        "IP65"
+      ],
+      [
+        "Warranty",
+        "5 Years"
+      ],
+      [
+        "Dimensions (L × W × H)",
+        "20.9 × 8.1 × 8.5 in"
+      ],
+      [
+        "Net Weight",
+        "52.9 lbs"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40035485155377"
+    ],
+    "expected": {
+      "rich-solar-40035485155377": {
+        "name": "ALPHA 2 | 12V 200Ah LiFePO4 Battery | Powerful 12V Lithium Battery for RVs, Trailers, Vans, Boats, Off-Grid | 5,000 Lifetime Cycles | Bluetooth and Internal Heat Technology",
+        "sourceUrl": "https://richsolar.com/products/alpha-2-12v-200ah-lifepo4-battery?variant=40035485155377",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 200
+        }
+      }
+    },
+    "model": "ALPHA 2 | 12V 200Ah LiFePO4 Battery | Powerful 12V Lithium Battery for RVs, Trailers, Vans, Boats, Off-Grid | 5,000 Lifetime Cycles | Bluetooth and Internal Heat Technology",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/alpha-2-12v-200ah-lifepo4-battery",
+    "label": "RICH SOLAR exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:25:40.447Z",
+    "rows": [
+      [
+        "Bluetooth Monitoring",
+        "View real-time battery status through the RICH SOLAR App."
+      ],
+      [
+        "Nominal Voltage",
+        "12.8V"
+      ],
+      [
+        "Rated Capacity",
+        "200Ah"
+      ],
+      [
+        "Energy",
+        "2,560Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO₄"
+      ],
+      [
+        "Cycle Life",
+        "5,000+"
+      ],
+      [
+        "Charging Voltage",
+        "14.4V"
+      ],
+      [
+        "Maximum charge current",
+        "100A"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "100A"
+      ],
+      [
+        "Bluetooth",
+        "Yes"
+      ],
+      [
+        "IP Rating",
+        "IP55"
+      ],
+      [
+        "Warranty",
+        "5 Years"
+      ],
+      [
+        "Dimensions (L × W × H)",
+        "20.9 × 8.1 × 8.5 in"
+      ],
+      [
+        "Net Weight",
+        "52.9 lbs"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40035491381297"
+    ],
+    "expected": {
+      "rich-solar-40035491381297": {
+        "name": "ALPHA 4 | 24V 100Ah LiFePO4 Battery | Powerful 24V Lithium Battery for RVs, Trailers, Vans, Boats, Off-Grid | 5,000 Lifetime Cycles | Bluetooth and Internal Heat Technology",
+        "sourceUrl": "https://richsolar.com/products/alpha-4-24v-100ah-lifepo4-battery?variant=40035491381297",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 100
+        }
+      }
+    },
+    "model": "ALPHA 4 | 24V 100Ah LiFePO4 Battery | Powerful 24V Lithium Battery for RVs, Trailers, Vans, Boats, Off-Grid | 5,000 Lifetime Cycles | Bluetooth and Internal Heat Technology",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/alpha-4-24v-100ah-lifepo4-battery",
+    "label": "RICH SOLAR exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:25:42.359Z",
+    "rows": [
+      [
+        "Bluetooth Monitoring",
+        "View real-time battery status through the RICH SOLAR App."
+      ],
+      [
+        "Nominal Voltage",
+        "25.6V"
+      ],
+      [
+        "Rated Capacity",
+        "100Ah"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO₄"
+      ],
+      [
+        "Cycle Life",
+        "5000+"
+      ],
+      [
+        "Charging Voltage",
+        "28.8V"
+      ],
+      [
+        "Maximum charge current",
+        "100A"
+      ],
+      [
+        "Bluetooth",
+        "Yes"
+      ],
+      [
+        "IP Rating",
+        "IP65"
+      ],
+      [
+        "Warranty",
+        "5 Years"
+      ],
+      [
+        "Dimensions (L × W × H)",
+        "20.9 × 8.1 × 8.5 in"
+      ],
+      [
+        "Net Weight",
+        "48.5 lbs"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40363819171889"
+    ],
+    "expected": {
+      "rich-solar-40363819171889": {
+        "name": "ALPHA 2 PRO | 12V 200Ah LiFePO4 Battery | Premium 12V Lithium Battery for RVs, Cabins, Tiny Homes | 7,000 Lifetime Cycles | 10 Year Warranty | UL1973 Certified",
+        "sourceUrl": "https://richsolar.com/products/alpha-2-pro-12v-200ah-lifepo4-battery?variant=40363819171889",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 200
+        }
+      }
+    },
+    "model": "ALPHA 2 PRO | 12V 200Ah LiFePO4 Battery | Premium 12V Lithium Battery for RVs, Cabins, Tiny Homes | 7,000 Lifetime Cycles | 10 Year Warranty | UL1973 Certified",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/alpha-2-pro-12v-200ah-lifepo4-battery",
+    "label": "RICH SOLAR exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:26:24.394Z",
+    "rows": [
+      [
+        "Bluetooth Monitoring",
+        "View real-time battery status through the RICH SOLAR App."
+      ],
+      [
+        "Nominal Voltage",
+        "12.8V"
+      ],
+      [
+        "Rated Capacity",
+        "200Ah"
+      ],
+      [
+        "Energy",
+        "2,560Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO₄"
+      ],
+      [
+        "Cycle Life",
+        "7,000+"
+      ],
+      [
+        "Charging Voltage",
+        "14.4V"
+      ],
+      [
+        "Maximum charge current",
+        "100A"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "100A"
+      ],
+      [
+        "Bluetooth",
+        "Yes"
+      ],
+      [
+        "IP Rating",
+        "IP55"
+      ],
+      [
+        "Warranty",
+        "10 Years"
+      ],
+      [
+        "Dimensions (L × W × H)",
+        "20.9 × 8.1 × 8.5 in"
+      ],
+      [
+        "Net Weight",
+        "52.9 lbs"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40620142231601"
+    ],
+    "expected": {
+      "rich-solar-40620142231601": {
+        "name": "ALPHA 3 LITE | 12V 300Ah LiFePO4 Battery | 12V Lithium Battery for RVs, Cabins, Off-Grid | 4,000 Lifetime Cycles",
+        "sourceUrl": "https://richsolar.com/products/alpha-3-lite-12v-300ah-lifepo4-battery?variant=40620142231601",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 300
+        }
+      }
+    },
+    "model": "ALPHA 3 LITE | 12V 300Ah LiFePO4 Battery | 12V Lithium Battery for RVs, Cabins, Off-Grid | 4,000 Lifetime Cycles",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/alpha-3-lite-12v-300ah-lifepo4-battery",
+    "label": "RICH SOLAR exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:27:16.687Z",
+    "rows": [
+      [
+        "Nominal Voltage",
+        "12.8V"
+      ],
+      [
+        "Rated Capacity",
+        "300Ah"
+      ],
+      [
+        "Energy",
+        "3840Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO₄"
+      ],
+      [
+        "Cycle Life",
+        "4,000+"
+      ],
+      [
+        "Charging Voltage",
+        "14.4V"
+      ],
+      [
+        "Maximum charge current",
+        "300A"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "300A"
+      ],
+      [
+        "Bluetooth",
+        "No"
+      ],
+      [
+        "IP Rating",
+        "IP65"
+      ],
+      [
+        "Warranty",
+        "5 Years"
+      ],
+      [
+        "Dimensions (L × W × H)",
+        "20.6 × 10.6 × 8.7 in"
+      ],
+      [
+        "Net Weight",
+        "71.3 lbs"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40620176605233"
+    ],
+    "expected": {
+      "rich-solar-40620176605233": {
+        "name": "ALPHA 3 | 12V 300Ah LiFePO4 Battery | 12V Lithium Battery for RVs, Cabins, Off-Grid | 5,000 Lifetime Cycles | Internal Heat Technology | Bluetooth",
+        "sourceUrl": "https://richsolar.com/products/alpha-3-12v-300ah-lifepo4-battery?variant=40620176605233",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 300
+        }
+      }
+    },
+    "model": "ALPHA 3 | 12V 300Ah LiFePO4 Battery | 12V Lithium Battery for RVs, Cabins, Off-Grid | 5,000 Lifetime Cycles | Internal Heat Technology | Bluetooth",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/alpha-3-12v-300ah-lifepo4-battery",
+    "label": "RICH SOLAR exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:27:18.621Z",
+    "rows": [
+      [
+        "Bluetooth Monitoring",
+        "View real-time battery status through the RICH SOLAR App."
+      ],
+      [
+        "Nominal Voltage",
+        "12.8V"
+      ],
+      [
+        "Rated Capacity",
+        "300Ah"
+      ],
+      [
+        "Energy",
+        "3840Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO₄"
+      ],
+      [
+        "Cycle Life",
+        "5,000+"
+      ],
+      [
+        "Charging Voltage",
+        "14.4V"
+      ],
+      [
+        "Maximum charge current",
+        "300A"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "300A"
+      ],
+      [
+        "Bluetooth",
+        "Yes"
+      ],
+      [
+        "IP Rating",
+        "IP65"
+      ],
+      [
+        "Warranty",
+        "5 Years"
+      ],
+      [
+        "Dimensions (L × W × H)",
+        "20.6 × 10.6 × 8.7 in"
+      ],
+      [
+        "Net Weight",
+        "71.7 lbs"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40948081852465"
+    ],
+    "expected": {
+      "rich-solar-40948081852465": {
+        "name": "12V 20Ah LiFePO₄ Battery | 256Wh Lithium Battery, 3,000+ Cycles | for RV, Solar, Off-Grid, Marine & Backup",
+        "sourceUrl": "https://richsolar.com/products/12v-20ah-lifepo4-battery-12v-lithium-battery?variant=40948081852465",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 20
+        }
+      }
+    },
+    "model": "12V 20Ah LiFePO₄ Battery | 256Wh Lithium Battery, 3,000+ Cycles | for RV, Solar, Off-Grid, Marine & Backup",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/12v-20ah-lifepo4-battery-12v-lithium-battery",
+    "label": "RICH SOLAR exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:28:37.476Z",
+    "rows": [
+      [
+        "Nominal Voltage",
+        "12.8V"
+      ],
+      [
+        "Rated Capacity",
+        "20Ah"
+      ],
+      [
+        "Energy",
+        "256Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO₄"
+      ],
+      [
+        "Cycle Life",
+        "3,000+"
+      ],
+      [
+        "Charging Voltage",
+        "14.4V"
+      ],
+      [
+        "Maximum charge current",
+        "20A"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "30A"
+      ],
+      [
+        "Bluetooth",
+        "No"
+      ],
+      [
+        "Warranty",
+        "5 Years"
+      ],
+      [
+        "Dimensions (L × W × H)",
+        "7.1 × 3.1 × 6.5 in"
+      ],
+      [
+        "Net Weight",
+        "4.6 lbs"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40997595938865"
+    ],
+    "expected": {
+      "rich-solar-40997595938865": {
+        "name": "ALPHA 3 PRO | 12V 314Ah LiFePO4 Battery | 8,000+ Cycles | Built-in Heater & Bluetooth | Lithium Battery for RV, Off-Grid, Cabin & Backup Power | UL1973 Certified",
+        "sourceUrl": "https://richsolar.com/products/alpha-3-pro-12v-314ah-lifepo4-battery?variant=40997595938865",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 314
+        }
+      }
+    },
+    "model": "ALPHA 3 PRO | 12V 314Ah LiFePO4 Battery | 8,000+ Cycles | Built-in Heater & Bluetooth | Lithium Battery for RV, Off-Grid, Cabin & Backup Power | UL1973 Certified",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/alpha-3-pro-12v-314ah-lifepo4-battery",
+    "label": "RICH SOLAR exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:29:03.567Z",
+    "rows": [
+      [
+        "Bluetooth Monitoring",
+        "View real-time battery status through the RICH SOLAR App."
+      ],
+      [
+        "Nominal Voltage",
+        "12.8V"
+      ],
+      [
+        "Rated Capacity",
+        "314Ah"
+      ],
+      [
+        "Energy",
+        "4019Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO₄"
+      ],
+      [
+        "Cycle Life",
+        "8,000+"
+      ],
+      [
+        "Charging Voltage",
+        "14.4V"
+      ],
+      [
+        "Maximum charge current",
+        "200A"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "200A"
+      ],
+      [
+        "Bluetooth",
+        "Yes"
+      ],
+      [
+        "Ingress Protection",
+        "IP65"
+      ],
+      [
+        "Dimensions (L × W × H)",
+        "20.5 × 10.6 × 8.7 in"
+      ],
+      [
+        "Net Weight",
+        "71.7 lbs"
+      ],
+      [
+        "Warranty",
+        "10 Years"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-41055863210033"
+    ],
+    "expected": {
+      "rich-solar-41055863210033": {
+        "name": "ALPHA 3 MINI | 12V 314Ah LiFePO₄ Battery | 40% More Compact, Built-in Heater & Bluetooth | Lithium Battery for RV, Solar, Off-Grid & Home Backup",
+        "sourceUrl": "https://richsolar.com/products/alpha-3-mini-12v-314ah-lifepo-battery-41019wh-built-in-heater-bluetooth?variant=41055863210033",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 314
+        }
+      }
+    },
+    "model": "ALPHA 3 MINI | 12V 314Ah LiFePO₄ Battery | 40% More Compact, Built-in Heater & Bluetooth | Lithium Battery for RV, Solar, Off-Grid & Home Backup",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/alpha-3-mini-12v-314ah-lifepo-battery-41019wh-built-in-heater-bluetooth",
+    "label": "RICH SOLAR exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:29:57.819Z",
+    "rows": [
+      [
+        "Nominal Voltage",
+        "12.8V"
+      ],
+      [
+        "Rated Capacity",
+        "314Ah"
+      ],
+      [
+        "Energy",
+        "4,019Wh"
+      ],
+      [
+        "Cycle Life",
+        "5,000+ Cycles"
+      ],
+      [
+        "Charging Voltage",
+        "14.4V"
+      ],
+      [
+        "Maximum charge current",
+        "200A"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "200A"
+      ],
+      [
+        "Bluetooth",
+        "Yes"
+      ],
+      [
+        "Ingress Protection",
+        "IP65"
+      ],
+      [
+        "Dimensions (L × W × H)",
+        "15.1 × 7.6 × 9.9 in"
+      ],
+      [
+        "Net Weight",
+        "61.7 lbs"
+      ],
+      [
+        "Warranty",
+        "5 Years"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-41212293414961"
+    ],
+    "expected": {
+      "rich-solar-41212293414961": {
+        "name": "ALPHA 6 MINI | 12V 460Ah Compact LiFePO₄ Battery | Internal Heater & Bluetooth for RV, Van, Marine, Cabin, Backup & Off-Grid Power",
+        "sourceUrl": "https://richsolar.com/products/alpha-6-mini-12v-460ah-compact-lifepo-battery?variant=41212293414961",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 460
+        }
+      }
+    },
+    "model": "ALPHA 6 MINI | 12V 460Ah Compact LiFePO₄ Battery | Internal Heater & Bluetooth for RV, Van, Marine, Cabin, Backup & Off-Grid Power",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/alpha-6-mini-12v-460ah-compact-lifepo-battery",
+    "label": "RICH SOLAR exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:30:09.842Z",
+    "rows": [
+      [
+        "Nominal Voltage",
+        "12.8V"
+      ],
+      [
+        "Rated Capacity",
+        "460Ah"
+      ],
+      [
+        "Energy",
+        "5,888Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO₄"
+      ],
+      [
+        "Cycle Life",
+        "5,000+ Cycles"
+      ],
+      [
+        "Maximum charge current",
+        "200A"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "200A"
+      ],
+      [
+        "Bluetooth",
+        "Yes"
+      ],
+      [
+        "Ingress Protection",
+        "IP65"
+      ],
+      [
+        "Dimensions (L × W × H)",
+        "20.6 × 9.4 × 8.6 in"
+      ],
+      [
+        "Net Weight",
+        "88.2 lb"
+      ],
+      [
+        "Warranty",
+        "5 Years"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40622210154545"
+    ],
+    "expected": {
+      "rich-solar-40622210154545": {
+        "name": "12V(14.4V) 10A | 100-240VAC | 12V LiFePO4 Battery Charger",
+        "sourceUrl": "https://richsolar.com/products/12v-10a-lifepo4-battery-charger?variant=40622210154545",
+        "category": "accessories",
+        "anchors": {}
+      }
+    },
+    "model": "12V(14.4V) 10A | 100-240VAC | 12V LiFePO4 Battery Charger",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/12v-10a-lifepo4-battery-charger",
+    "label": "RICH SOLAR exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:27:20.862Z",
+    "rows": [
+      [
+        "Battery Compatibility",
+        "12V LiFePO₄ Batteries"
+      ],
+      [
+        "Protection Rating",
+        "IP65"
+      ],
+      [
+        "Operating Temperature",
+        "-4°F to 104°F"
+      ],
+      [
+        "Storage Temperature",
+        "-40°F to 158°F"
+      ],
+      [
+        "Dimensions",
+        "8.19 × 3.58 × 2.07 in"
+      ],
+      [
+        "Net Weight",
+        "3.86 lb"
+      ],
+      [
+        "Maximum charge current",
+        "10A"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40622212481073"
+    ],
+    "expected": {
+      "rich-solar-40622212481073": {
+        "name": "12V(14.4V) 20A | 100-240VAC | 12V LiFePO4 Battery Charger",
+        "sourceUrl": "https://richsolar.com/products/12v-20a-lifepo4-battery-charger?variant=40622212481073",
+        "category": "accessories",
+        "anchors": {}
+      }
+    },
+    "model": "12V(14.4V) 20A | 100-240VAC | 12V LiFePO4 Battery Charger",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/12v-20a-lifepo4-battery-charger",
+    "label": "RICH SOLAR exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:27:22.713Z",
+    "rows": [
+      [
+        "Battery Compatibility",
+        "12V LiFePO₄ Batteries"
+      ],
+      [
+        "Protection Rating",
+        "IP65"
+      ],
+      [
+        "Operating Temperature",
+        "-4°F to 104°F"
+      ],
+      [
+        "Storage Temperature",
+        "-40°F to 158°F"
+      ],
+      [
+        "Dimensions",
+        "9.06 × 3.58 × 2.07 in"
+      ],
+      [
+        "Net Weight",
+        "3.75 lb"
+      ],
+      [
+        "Maximum charge current",
+        "20A"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40686089764913"
+    ],
+    "expected": {
+      "rich-solar-40686089764913": {
+        "name": "Inverter Remote Control with Smart LCD Display — Exclusive for Nova Pure Series",
+        "sourceUrl": "https://richsolar.com/products/inverter-remote-control?variant=40686089764913",
+        "category": "monitoring",
+        "anchors": {}
+      }
+    },
+    "model": "Inverter Remote Control with Smart LCD Display",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/inverter-remote-control",
+    "label": "RICH SOLAR exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:27:57.069Z",
+    "rows": [
+      [
+        "Connection",
+        "Wired RJ45 with 6 m (19.69 ft) Shielded Cable"
+      ],
+      [
+        "Dimensions",
+        "3.68 × 2.22 × 0.73 in"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40713513009201"
+    ],
+    "expected": {
+      "rich-solar-40713513009201": {
+        "name": "Inverter Remote Controller with LCD | Wall-Mount Meter for NOVA SWITCH & SUPERCHARGER",
+        "sourceUrl": "https://richsolar.com/products/remote-control-for-nova-nova-supercharger-inverters?variant=40713513009201",
+        "category": "monitoring",
+        "anchors": {}
+      }
+    },
+    "model": "Inverter Remote Controller with LCD | Wall-Mount Meter for NOVA SWITCH & SUPERCHARGER",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/remote-control-for-nova-nova-supercharger-inverters",
+    "label": "RICH SOLAR exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:28:03.116Z",
+    "rows": [
+      [
+        "Connection",
+        "Wired RJ45 with 6 m (20 ft) Cable"
+      ],
+      [
+        "Dimensions",
+        "5.4 × 3.4 × 1.3 in"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40812072468529"
+    ],
+    "expected": {
+      "rich-solar-40812072468529": {
+        "name": "Inverter Remote Control with LCD & Bluetooth | Bypass Mode & Smart Charging | Compatible with NOVA SWITCH & NOVA SUPERCHARGER Series Inverters",
+        "sourceUrl": "https://richsolar.com/products/inverter-remote-control-with-lcd-bluetooth?variant=40812072468529",
+        "category": "monitoring",
+        "anchors": {}
+      }
+    },
+    "model": "Inverter Remote Control with LCD & Bluetooth | Bypass Mode & Smart Charging | Compatible with NOVA SWITCH & NOVA SUPERCHARGER Series Inverters",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/inverter-remote-control-with-lcd-bluetooth",
+    "label": "RICH SOLAR exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:28:13.263Z",
+    "rows": [
+      [
+        "Bluetooth Control",
+        "Monitor system performance, switch operating modes, and adjust settings through the RICH SOLAR App."
+      ],
+      [
+        "Connection",
+        "Wired RJ45 with 6 m (20 ft) Cable"
+      ],
+      [
+        "Bluetooth",
+        "Yes"
+      ],
+      [
+        "Dimensions",
+        "5.4 × 3.4 × 1.3 in"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-39643484487729"
+    ],
+    "expected": {
+      "rich-solar-39643484487729": {
+        "name": "Y Branch Parallel Adapters 3-to-1 | 3-to-1 Weatherproof Parallel Adapters for Solar Panels | Easy to Install",
+        "sourceUrl": "https://richsolar.com/products/y-branch-parallel-adapters-3-to-1?variant=39643484487729",
+        "category": "accessories",
+        "anchors": {}
+      }
+    },
+    "model": "Y Branch Parallel Adapters 3-to-1 | 3-to-1 Weatherproof Parallel Adapters for Solar Panels | Easy to Install",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/y-branch-parallel-adapters-3-to-1",
+    "label": "RICH SOLAR exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:24:28.232Z",
+    "rows": [
+      [
+        "Rated Current",
+        "20A"
+      ],
+      [
+        "Maximum operating voltage",
+        "1000V DC"
+      ],
+      [
+        "Protection Rating",
+        "IP67"
+      ],
+      [
+        "Material",
+        "TPE / PPO"
+      ],
+      [
+        "Operating Temperature",
+        "-40°F to 194°F"
+      ]
+    ],
+    "reviewNote": " Independent review withheld compatible wire-size and contact-material rows rather than treating them as installed conductor attributes.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-39643484749873"
+    ],
+    "expected": {
+      "rich-solar-39643484749873": {
+        "name": "Y Branch Parallel Adapters 4-to-1 | 4-to-1 Weatherproof Parallel Adapters for Solar Panels | Easy to Install",
+        "sourceUrl": "https://richsolar.com/products/y-branch-parallel-adapters-4-to-1?variant=39643484749873",
+        "category": "accessories",
+        "anchors": {}
+      }
+    },
+    "model": "Y Branch Parallel Adapters 4-to-1 | 4-to-1 Weatherproof Parallel Adapters for Solar Panels | Easy to Install",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/y-branch-parallel-adapters-4-to-1",
+    "label": "RICH SOLAR exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:24:30.099Z",
+    "rows": [
+      [
+        "Rated Current",
+        "20A"
+      ],
+      [
+        "Maximum operating voltage",
+        "1000V DC"
+      ],
+      [
+        "Protection Rating",
+        "IP67"
+      ],
+      [
+        "Material",
+        "TPE / PPO"
+      ],
+      [
+        "Operating Temperature",
+        "-40°F to 194°F"
+      ]
+    ],
+    "reviewNote": " Independent review withheld compatible wire-size and contact-material rows rather than treating them as installed conductor attributes.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40614605357105"
+    ],
+    "expected": {
+      "rich-solar-40614605357105": {
+        "name": "50 Watt Solar Kit | Includes 50W Solar Panel + 30A PWM Solar Controller + Wires and Brackets | DIY Complete Solar Kit without Batteries",
+        "sourceUrl": "https://richsolar.com/products/50-watt-solar-kit?variant=40614605357105",
+        "category": "kits",
+        "anchors": {}
+      }
+    },
+    "model": "50 Watt Solar Kit | Includes 50W Solar Panel + 30A PWM Solar Controller + Wires and Brackets | DIY Complete Solar Kit without Batteries",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/50-watt-solar-kit",
+    "label": "RICH SOLAR exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:27:14.692Z",
+    "rows": [
+      [
+        "Included components",
+        "1 × 50W monocrystalline panel (RS-M50); 1 × 30A PWM controller (RS-PWM30P); 1 × 20ft 10AWG red solar cable; 1 × 20ft 10AWG black solar cable; 1 × 10ft 10AWG red battery cable; 1 × 10ft 10AWG black battery cable; 1 set mounting Z brackets (4); 1 × 10A inline fuse holder with fuse"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-41009856610353"
+    ],
+    "expected": {
+      "rich-solar-41009856610353": {
+        "name": "Basic 200 Watt Solar Kit | Solar Panel & Charge Controller Kit for RVs, Vans & Off-Grid Applications | Expandable Solar Charging",
+        "sourceUrl": "https://richsolar.com/products/basic-200-watt-solar-kit?variant=41009856610353",
+        "category": "kits",
+        "anchors": {}
+      }
+    },
+    "model": "Basic 200 Watt Solar Kit | Solar Panel & Charge Controller Kit for RVs, Vans & Off-Grid Applications | Expandable Solar Charging",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/basic-200-watt-solar-kit",
+    "label": "RICH SOLAR exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:29:07.551Z",
+    "rows": [
+      [
+        "Included components",
+        "1 x 200 Watt Monocrystalline Solar Panel (RS-M200) 1 x Bravo 30A MPPT Charge Controller (RS-MPPT30PB) 1 x Mounting Z Brackets (one set of 4) (RS-ZB4C) 1 x Cable Entry Housing (RS-C2B) 1 x 15A Inline Fuse Holder with Fuse (RS-SC15F) 1 x 30 ft 10 AWG Solar Cable Set (Panel to Controller) (RS-30101) 1 x 10 ft 10 AWG Battery Cable Set (Controller to Battery) (RS-1010)"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "hqst-53176626184510"
+    ],
+    "expected": {
+      "hqst-53176626184510": {
+        "name": "HQST 12V 60Ah AGM Start-Stop Car Battery – Group 47 H5, 680 CCA Maintenance-Free Automotive Replacement Battery — 1 Pack",
+        "sourceUrl": "https://hqsolarpower.com/products/12v-60ah-agm-car-battery-group-47-h5?variant=53176626184510",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 60
+        }
+      }
+    },
+    "model": "HQST 12V 60Ah AGM Start-Stop Car Battery – Group 47 H5, 680 CCA Maintenance-Free Automotive Replacement Battery",
+    "kind": "manufacturer",
+    "url": "https://hqsolarpower.com/products/12v-60ah-agm-car-battery-group-47-h5",
+    "label": "HQST exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:26:20.586Z",
+    "rows": [
+      [
+        "Nominal voltage",
+        "12V"
+      ],
+      [
+        "Rated capacity",
+        "60Ah"
+      ],
+      [
+        "Charging voltage",
+        "13.5~13.8V"
+      ],
+      [
+        "Maximum Charging Current",
+        "18.0A"
+      ],
+      [
+        "Terminals",
+        "SAE Top Post (T2)"
+      ],
+      [
+        "Dimensions (L × W × H)",
+        "9.5 × 6.9 × 7.6 in / 242 × 174 × 192 mm"
+      ],
+      [
+        "Weight",
+        "39 lb / 17.7 kg"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "hqst-53969956667710",
+      "hqst-53969956700478",
+      "hqst-53969956733246",
+      "hqst-53969956766014"
+    ],
+    "expected": {
+      "hqst-53969956667710": {
+        "name": "HQST 12V 100Ah LiFePO4 Battery, Mini Size Group 22NF with LED Meter, 10+ Years Lifespan — 1 Battery — Save $111",
+        "sourceUrl": "https://hqsolarpower.com/products/hqst-12v-100ah-lifepo4-battery-group-22nf-led-display?variant=53969956667710",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 100
+        }
+      },
+      "hqst-53969956700478": {
+        "name": "HQST 12V 100Ah LiFePO4 Battery, Mini Size Group 22NF with LED Meter, 10+ Years Lifespan — 2 Batteries — Save $216 🔥",
+        "sourceUrl": "https://hqsolarpower.com/products/hqst-12v-100ah-lifepo4-battery-group-22nf-led-display?variant=53969956700478",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 100
+        }
+      },
+      "hqst-53969956733246": {
+        "name": "HQST 12V 100Ah LiFePO4 Battery, Mini Size Group 22NF with LED Meter, 10+ Years Lifespan — 3 Batteries — Save $322",
+        "sourceUrl": "https://hqsolarpower.com/products/hqst-12v-100ah-lifepo4-battery-group-22nf-led-display?variant=53969956733246",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 100
+        }
+      },
+      "hqst-53969956766014": {
+        "name": "HQST 12V 100Ah LiFePO4 Battery, Mini Size Group 22NF with LED Meter, 10+ Years Lifespan — 4 Batteries — Best Value | Save $434",
+        "sourceUrl": "https://hqsolarpower.com/products/hqst-12v-100ah-lifepo4-battery-group-22nf-led-display?variant=53969956766014",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 100
+        }
+      }
+    },
+    "model": "HQST 12V 100Ah LiFePO4 Battery, Mini Size Group 22NF with LED Meter, 10+ Years Lifespan",
+    "kind": "manufacturer",
+    "url": "https://hqsolarpower.com/products/hqst-12v-100ah-lifepo4-battery-group-22nf-led-display",
+    "label": "HQST exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:28:40.640Z",
+    "rows": [
+      [
+        "Model",
+        "HBT12100LFP-S48SC-G8-US"
+      ],
+      [
+        "Nominal Voltage",
+        "12.8 V"
+      ],
+      [
+        "Energy",
+        "1,280 Wh"
+      ],
+      [
+        "Rated capacity",
+        "100Ah"
+      ],
+      [
+        "Cycle Life (0.2C, 25±5℃)",
+        "8,000 Cycles at 70% DOD"
+      ],
+      [
+        "Maximum Continuous Discharge Current",
+        "100A"
+      ],
+      [
+        "Discharging Temperature Range",
+        "-10℃~60℃ / 14℉~140℉"
+      ],
+      [
+        "Charging Temperature Range",
+        "0℃~45℃ / 32℉~113℉"
+      ],
+      [
+        "Weight",
+        "9.5kg / 21 lb"
+      ],
+      [
+        "Maximum charge current",
+        "50A"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
+  },
+  {
+    "productIds": [
+      "bigbattery-frptr-72076-g2"
+    ],
+    "expected": {
+      "bigbattery-frptr-72076-g2": {
+        "name": "72V RAPTOR 2 – 7.68kWh LiFePO4",
+        "sourceUrl": "https://bigbattery.com/products/72v-raptor-2-7-68kwh-lifepo4/",
+        "category": "batteries",
+        "anchors": {
+          "capacityKwh": 7.68
+        }
+      }
+    },
+    "model": "72V RAPTOR 2 – 7.68kWh LiFePO4",
+    "kind": "manufacturer",
+    "url": "https://bigbattery.com/products/72v-raptor-2-7-68kwh-lifepo4/",
+    "label": "See manufacturer exact product manufacturer technical HTML",
+    "checkedAt": "2026-10-12T01:25:23.926Z",
+    "rows": [
+      [
+        "Model",
+        "FRPTR-72076-G2"
+      ],
+      [
+        "Nominal Voltage",
+        "76.8V"
+      ],
+      [
+        "Chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Energy",
+        "7.68kWh"
+      ],
+      [
+        "Rated capacity",
+        "100Ah"
+      ],
+      [
+        "Max Charge Voltage",
+        "87.6V"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "150A"
+      ],
+      [
+        "Maximum charge current",
+        "100A"
+      ],
+      [
+        "Charge Temperature Range",
+        "32°F – 113°F (0°C – 45°C)"
+      ],
+      [
+        "Discharge Temperature Range",
+        "-4°F – 149°F (-20°C – 65°C)"
+      ],
+      [
+        "Weight",
+        "143 lb (64.9 kg)"
+      ],
+      [
+        "Protection Rating",
+        "IP65 / NEMA 4X"
+      ],
+      [
+        "Communications",
+        "RS485"
+      ],
+      [
+        "Dimensions (D × W × H)",
+        "15.3 in (389 mm) × 34.5 in (876 mm) × 7.4 in (188 mm)"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T05:35:33.656Z"
   }
 ]
