@@ -28,3 +28,10 @@ Raw pages/PDFs and comprehensive remaining tables are retained in canonical outp
 403 tests, TypeScript check and production Worker build passed. Independent focused review cleared all 12newimport/measurement regressions. Built preview confirmed ALPHA unknown counts fall from 6 each to 2 Standard / 1 Heating, with exact distinct document links. Day/night and 390 px mobile comparison inspected. Evidence screenshots: output/specification-research/qa/compare-night.png and compare-mobile-day.png.
 
 No price collector scripts, schedules, workflows, offer IDs, prices or historical observations were changed. Existing normal retailer scraping remains enabled. This release does not remove the existing NAZ access limitation.
+## October12 continuation
+
+Fresh snapshot:7,213 catalog listings. Twelve additional exact standalone identities from manufacturer pages,129 new technical fields and65 resolved comparison cells. Seven Redodo/LiTime batteries and five PECRON stations. Source disputes (dimensions, surge durations/contradictions, solar voltage versus operating ranges) remain unknown. Qualified port currents are retained as text and are not scalar compatibility limits. Combined PV totals were refined after independent review so per-port numbers cannot look like alternative totals.
+
+Remaining:6,085 listings /41,776 comparison fields;5,664 awaiting review,288 unavailable source pages,133 reviewed with gaps. These include retailer and pack variants;1,128 complete comparison coverage does not mean an installation design is verified. Owner dashboard snapshot is a build-time report, not an automatic research worker. Category detail expands with native keyboard-accessible disclosure.
+
+Validation:407 existing/progress tests before two new source regressions; typecheck and built Worker passed. Local owner dashboard day/night,390px phone table317px and no page overflow; screenshots under output/specification-research/qa. Hosted price workflow enabled and running during research. Price database and schedules untouched.

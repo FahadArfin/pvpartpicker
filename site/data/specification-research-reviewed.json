@@ -3535,5 +3535,834 @@
     },
     "acceptedAt": "2026-10-12T01:35:19.523Z",
     "reviewStatus": "accepted-exact-identities"
+  },
+  {
+    "kind": "manufacturer",
+    "reviewNote": "Only exact new single battery. Dimensions withheld: current SPECS 14.49 x 7.44 x 10.04 in conflicts with manufacturer blog 15.12 x 7.64 x 9.76 in. Surge has explicit 1-second duration. No pack or charger/inverter bundle applied.",
+    "expected": {
+      "redodo-42530598125658": {
+        "category": "batteries",
+        "sourceUrl": "https://www.redodopower.com/products/redodo-12v-320ah-mini-bluetooth-lithium-battery?variant=42530598125658",
+        "name": "🔥【SVAE $63】Redodo 12V 320Ah Mini Bluetooth Lithium Battery | Best for Boondocking, Long Road Trip, Desert Trip, Home Backup — 1 Pack",
+        "anchors": {
+          "capacityAh": 320,
+          "voltage": 12
+        }
+      }
+    },
+    "rows": [
+      [
+        "Nominal voltage",
+        "12.8 V"
+      ],
+      [
+        "Rated capacity",
+        "320 Ah"
+      ],
+      [
+        "Nominal energy",
+        "4096 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Maximum charge current",
+        "200 A"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "200 A"
+      ],
+      [
+        "Ingress protection",
+        "IP65"
+      ],
+      [
+        "Peak discharge current",
+        "1000 A (1 second)"
+      ],
+      [
+        "Weight",
+        "57.17 lb"
+      ]
+    ],
+    "model": "AE-A28140B-1C / Redodo 12V 320Ah Mini Bluetooth",
+    "productIds": [
+      "redodo-42530598125658"
+    ],
+    "checkedAt": "2026-10-12T00:00:00Z",
+    "url": "https://www.redodopower.com/products/redodo-12v-320ah-mini-bluetooth-lithium-battery",
+    "label": "AE-A28140B-1C / Redodo 12V 320Ah Mini Bluetooth manufacturer technical specification section",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T02:34:40.953Z"
+  },
+  {
+    "kind": "manufacturer",
+    "reviewNote": "Only exact new single battery. No Group31 Bluetooth model, pack or charger bundle applied. Nominal 25.6 V matches marketed 24 V within identity guard.",
+    "expected": {
+      "redodo-41403266007130": {
+        "category": "batteries",
+        "sourceUrl": "https://www.redodopower.com/products/24v-100ah-lifepo4-battery?variant=41403266007130",
+        "name": "Redodo 24V 100Ah LiFePO4 Lithium Battery | Marine, RV, Solar Home, Home Backup — 1 Pack",
+        "anchors": {
+          "chemistry": "LiFePO4",
+          "voltage": 24,
+          "capacityAh": 100
+        }
+      }
+    },
+    "rows": [
+      [
+        "Nominal voltage",
+        "25.6 V"
+      ],
+      [
+        "Rated capacity",
+        "100 Ah"
+      ],
+      [
+        "Nominal energy",
+        "2560 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Maximum charge current",
+        "100 A"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "100 A"
+      ],
+      [
+        "Ingress protection",
+        "IP65"
+      ],
+      [
+        "Peak discharge current",
+        "400 A (1 second)"
+      ],
+      [
+        "Weight",
+        "45.58 lb"
+      ],
+      [
+        "Dimensions (L x W x H)",
+        "20.95 x 8.15 x 8.5 in"
+      ]
+    ],
+    "model": "DE-C14514N-11 / Redodo 24V 100Ah non-Bluetooth",
+    "productIds": [
+      "redodo-41403266007130"
+    ],
+    "checkedAt": "2026-10-12T00:00:00Z",
+    "url": "https://www.redodopower.com/products/24v-100ah-lifepo4-battery",
+    "label": "DE-C14514N-11 / Redodo 24V 100Ah non-Bluetooth manufacturer technical specification section",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T02:34:40.954Z"
+  },
+  {
+    "kind": "manufacturer",
+    "reviewNote": "Only exact new single Plus battery. Undated 600 A surge omitted because duration is absent. Non-Plus 100 A model and multi-packs excluded.",
+    "expected": {
+      "redodo-41540749525082": {
+        "category": "batteries",
+        "sourceUrl": "https://www.redodopower.com/products/12v-200ah-plus-deep-cycle-lithium-battery?variant=41540749525082",
+        "name": "Redodo 12V 200Ah Plus LiFePO4 Deep Cycle Lithium Battery | 2560W Load Power | For Solar Home, RV, Marine — 1 Pack",
+        "anchors": {
+          "chemistry": "LiFePO4",
+          "voltage": 12,
+          "capacityAh": 200,
+          "watts": 2560
+        }
+      }
+    },
+    "rows": [
+      [
+        "Nominal voltage",
+        "12.8 V"
+      ],
+      [
+        "Rated capacity",
+        "200 Ah"
+      ],
+      [
+        "Nominal energy",
+        "2560 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Maximum charge current",
+        "200 A"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "200 A"
+      ],
+      [
+        "Ingress protection",
+        "IP65"
+      ],
+      [
+        "Weight",
+        "45.59 lb"
+      ],
+      [
+        "Dimensions (L x W x H)",
+        "21 x 8.2 x 8.5 in"
+      ]
+    ],
+    "model": "FE-A28528N-11 / Redodo 12V 200Ah Plus",
+    "productIds": [
+      "redodo-41540749525082"
+    ],
+    "checkedAt": "2026-10-12T00:00:00Z",
+    "url": "https://www.redodopower.com/products/12v-200ah-plus-deep-cycle-lithium-battery",
+    "label": "FE-A28528N-11 / Redodo 12V 200Ah Plus manufacturer technical specification section",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T02:34:40.954Z"
+  },
+  {
+    "kind": "manufacturer",
+    "reviewNote": "Only exact new single non-Bluetooth battery. Multi-packs excluded. Charge voltage omitted because SPECS 28.8 +/- 0.4 V differs from FAQ 29.2 V recommendation; neither used as nominal voltage.",
+    "expected": {
+      "redodo-40128115671130": {
+        "category": "batteries",
+        "sourceUrl": "https://www.redodopower.com/products/redodo-24v-200ah-lifepo4-battery-5-12kwh-5-12kw?variant=40128115671130",
+        "name": "Redodo 24V 200Ah LiFePO4 Lithium Battery | Trolling Motor, Marine, RV, Solar Home, Home Backup — 1 Pack",
+        "anchors": {
+          "chemistry": "LiFePO4",
+          "voltage": 24,
+          "capacityAh": 200
+        }
+      }
+    },
+    "rows": [
+      [
+        "Nominal voltage",
+        "25.6 V"
+      ],
+      [
+        "Rated capacity",
+        "200 Ah"
+      ],
+      [
+        "Nominal energy",
+        "5120 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Maximum charge current",
+        "200 A"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "200 A"
+      ],
+      [
+        "Ingress protection",
+        "IP65"
+      ],
+      [
+        "Peak discharge current",
+        "800 A (1 second)"
+      ],
+      [
+        "Weight",
+        "82 lb"
+      ],
+      [
+        "Dimensions (L x W x H)",
+        "20.47 x 10.55 x 8.66 in"
+      ]
+    ],
+    "model": "DE-C28A28N-13 / Redodo 24V 200Ah",
+    "productIds": [
+      "redodo-40128115671130"
+    ],
+    "checkedAt": "2026-10-12T00:00:00Z",
+    "url": "https://www.redodopower.com/products/redodo-24v-200ah-lifepo4-battery-5-12kwh-5-12kw",
+    "label": "DE-C28A28N-13 / Redodo 24V 200Ah manufacturer technical specification section",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T02:34:40.954Z"
+  },
+  {
+    "kind": "manufacturer",
+    "reviewNote": "Only exact new single battery. Weight withheld: image text says 43.16 lb while SPECS says 45.59 lb. No Bluetooth, ComFlex, self-heating, used or kit variant applied.",
+    "expected": {
+      "litime-43673534202076": {
+        "category": "batteries",
+        "sourceUrl": "https://www.litime.com/products/litime-24v-100ah-lifepo4-lithium-battery?variant=43673534202076",
+        "name": "LiTime 24V 100Ah Lithium Battery for RV and Truck — 1 Pack 24V 100Ah",
+        "anchors": {
+          "capacityAh": 100,
+          "voltage": 24
+        }
+      }
+    },
+    "rows": [
+      [
+        "Nominal voltage",
+        "25.6 V"
+      ],
+      [
+        "Rated capacity",
+        "100 Ah"
+      ],
+      [
+        "Nominal energy",
+        "2560 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Maximum charge current",
+        "100 A"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "100 A"
+      ],
+      [
+        "Ingress protection",
+        "IP65"
+      ],
+      [
+        "Peak discharge current",
+        "280 A (5 seconds)"
+      ],
+      [
+        "Dimensions (L x W x H)",
+        "20.95 x 8.15 x 8.5 in"
+      ]
+    ],
+    "model": "LiTime 25.6V 100Ah non-Bluetooth",
+    "productIds": [
+      "litime-43673534202076"
+    ],
+    "checkedAt": "2026-10-12T00:00:00Z",
+    "url": "https://www.litime.com/products/litime-24v-100ah-lifepo4-lithium-battery",
+    "label": "LiTime 25.6V 100Ah non-Bluetooth manufacturer technical specification section",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T02:34:40.954Z"
+  },
+  {
+    "kind": "manufacturer",
+    "reviewNote": "Only exact new single non-heating battery. Separate 24V 230Ah self-heating Bluetooth model, truck variant, used units, kits and packs excluded. Both peak durations retained. Slash-valued Bluetooth/heating/protection fields remain unknown.",
+    "expected": {
+      "litime-44068628103388": {
+        "category": "batteries",
+        "sourceUrl": "https://www.litime.com/products/24v-230ah-lithium-battery?variant=44068628103388",
+        "name": "LiTime 24V 230Ah Deep Cycle LiFePO4 Group 8D Battery for RV and Off-Grid — 1 Pack",
+        "anchors": {
+          "chemistry": "LiFePO4",
+          "voltage": 24,
+          "capacityAh": 230
+        }
+      }
+    },
+    "rows": [
+      [
+        "Nominal voltage",
+        "25.6 V"
+      ],
+      [
+        "Rated capacity",
+        "230 Ah"
+      ],
+      [
+        "Nominal energy",
+        "5888 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Maximum charge current",
+        "200 A"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "200 A"
+      ],
+      [
+        "Ingress protection",
+        "IP65"
+      ],
+      [
+        "Peak discharge current",
+        "800 A (1 second); 400 A (5 seconds)"
+      ],
+      [
+        "Weight",
+        "86.6 lb"
+      ],
+      [
+        "Dimensions (L x W x H)",
+        "20.47 x 10.59 x 8.66 in"
+      ]
+    ],
+    "model": "LiTime 25.6V 230Ah Group 8D non-heating",
+    "productIds": [
+      "litime-44068628103388"
+    ],
+    "checkedAt": "2026-10-12T00:00:00Z",
+    "url": "https://www.litime.com/products/24v-230ah-lithium-battery",
+    "label": "LiTime 25.6V 230Ah Group 8D non-heating manufacturer technical specification section",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T02:34:40.954Z"
+  },
+  {
+    "kind": "manufacturer",
+    "reviewNote": "Only exact new single non-heating battery. Peak withheld: feature bullet says 800 A (1 s) but BMS table says 1000 A (1 s). Low-temperature cut-off withheld: automatic cutoff section conflicts with FAQ saying no low-temperature cutoff. Used, truck, SHUNT bundle and packs excluded.",
+    "expected": {
+      "litime-44069497929948": {
+        "category": "batteries",
+        "sourceUrl": "https://www.litime.com/products/12v-460ah-lithium-battery?variant=44069497929948",
+        "name": "LiTime 12V 460Ah LiFePO4 Lithium Group 8D Battery for RV and Off-Grid — 1 Pack",
+        "anchors": {
+          "chemistry": "LiFePO4",
+          "voltage": 12,
+          "capacityAh": 460
+        }
+      }
+    },
+    "rows": [
+      [
+        "Nominal voltage",
+        "12.8 V"
+      ],
+      [
+        "Rated capacity",
+        "460 Ah"
+      ],
+      [
+        "Nominal energy",
+        "5888 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Maximum charge current",
+        "250 A"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "250 A"
+      ],
+      [
+        "Ingress protection",
+        "IP65"
+      ],
+      [
+        "Weight",
+        "86.7 lb"
+      ],
+      [
+        "Dimensions (L x W x H)",
+        "20.47 x 10.59 x 8.66 in"
+      ]
+    ],
+    "model": "LiTime 12.8V 460Ah Group 8D non-heating",
+    "productIds": [
+      "litime-44069497929948"
+    ],
+    "checkedAt": "2026-10-12T00:00:00Z",
+    "url": "https://www.litime.com/products/12v-460ah-lithium-battery",
+    "label": "LiTime 12.8V 460Ah Group 8D non-heating manufacturer technical specification section",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T02:34:40.954Z"
+  },
+  {
+    "model": "E300LFP",
+    "expected": {
+      "pecron-44010872406204": {
+        "category": "all-in-one",
+        "anchors": {
+          "capacityKwh": 0.288
+        },
+        "sourceUrl": "https://www.pecron.com/products/pecron-e300lfp-portable-power-station-600w-288wh?variant=44010872406204",
+        "name": "PECRON E300LFP Portable Power Station 600W 288Wh — E300LFP"
+      }
+    },
+    "kind": "manufacturer",
+    "reviewNote": "US model. Solar voltage withheld: spec table says Voc 12–28 V while FAQ says 12–25 V. USB-C plus solar aggregate also conflicts (45 W USB-C versus 200 W combined statement); no combined value imported. No published surge duration, tracker count or PV short-circuit rating.",
+    "rows": [
+      [
+        "Model",
+        "E300LFP"
+      ],
+      [
+        "Energy capacity",
+        "288 Wh"
+      ],
+      [
+        "Rated AC output power",
+        "600 W"
+      ],
+      [
+        "AC output voltage",
+        "100–120 V pure sine wave"
+      ],
+      [
+        "Maximum PV input power",
+        "100 W (DC5521 solar port; USB-C input excluded)"
+      ],
+      [
+        "Maximum solar input current",
+        "7 A (DC5521 port)"
+      ],
+      [
+        "Dimensions",
+        "254 × 172 × 154 mm (L × W × H)"
+      ],
+      [
+        "Weight",
+        "4.8 kg"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Cycle life",
+        "3500+ cycles to 80% capacity"
+      ],
+      [
+        "AC charging input",
+        "300 W"
+      ],
+      [
+        "Charge temperature",
+        "0–45 °C"
+      ],
+      [
+        "Discharge temperature",
+        "-20–45 °C"
+      ]
+    ],
+    "label": "PECRON E300LFP US manufacturer technical page",
+    "checkedAt": "2026-10-12T02:31:47.3928622Z",
+    "url": "https://www.pecron.com/products/pecron-e300lfp-portable-power-station-600w-288wh",
+    "productIds": [
+      "pecron-44010872406204"
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T02:34:40.954Z"
+  },
+  {
+    "model": "E500LFP",
+    "expected": {
+      "pecron-44050347360444": {
+        "category": "all-in-one",
+        "anchors": {
+          "capacityKwh": 0.576
+        },
+        "sourceUrl": "https://www.pecron.com/products/pecron-e500lfp-portable-power-station-600w-576wh?variant=44050347360444",
+        "name": "PECRON E500LFP Portable Power Station 600W 576Wh — E500LFP"
+      }
+    },
+    "kind": "manufacturer",
+    "reviewNote": "US model. Solar voltage withheld: spec table says Voc 12–28 V while FAQ says 12–25 V. Solar-only maximum excludes USB-C input. No published surge duration, independent tracker count or PV short-circuit rating.",
+    "rows": [
+      [
+        "Model",
+        "E500LFP"
+      ],
+      [
+        "Energy capacity",
+        "576 Wh"
+      ],
+      [
+        "Rated AC output power",
+        "600 W"
+      ],
+      [
+        "AC output voltage",
+        "100–120 V pure sine wave"
+      ],
+      [
+        "Maximum PV input power",
+        "100 W (DC5521 solar port; USB-C input excluded)"
+      ],
+      [
+        "Maximum solar input current",
+        "7 A (DC5521 port)"
+      ],
+      [
+        "Dimensions",
+        "252 × 170 × 187 mm (L × W × H)"
+      ],
+      [
+        "Weight",
+        "6.8 kg"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Cycle life",
+        "3500+ cycles to 80% capacity"
+      ],
+      [
+        "AC charging input",
+        "500 W"
+      ],
+      [
+        "Charge temperature",
+        "0–45 °C"
+      ],
+      [
+        "Discharge temperature",
+        "-20–45 °C"
+      ]
+    ],
+    "label": "PECRON E500LFP US manufacturer technical page",
+    "checkedAt": "2026-10-12T02:31:47.5009175Z",
+    "url": "https://www.pecron.com/products/pecron-e500lfp-portable-power-station-600w-576wh",
+    "productIds": [
+      "pecron-44050347360444"
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T02:34:40.954Z"
+  },
+  {
+    "model": "E2400LFP",
+    "expected": {
+      "pecron-44270114144444": {
+        "category": "all-in-one",
+        "anchors": {
+          "capacityKwh": 2.048
+        },
+        "sourceUrl": "https://www.pecron.com/products/pecron-e2400lfp-portable-power-station-2400w-2048wh?variant=44270114144444",
+        "name": "PECRON E2400LFP Portable Power Station 2400W 2048Wh — E2400LFP"
+      }
+    },
+    "kind": "manufacturer",
+    "reviewNote": "US model. The two ports have different current/voltage ratings; no scalar per-MPPT rating imported. DC5521 table/FAQ voltage discrepancy withheld. 4000 W peak duration is explicitly 10 ms, not sustained. UPS maximum 1800 W differs from rated inverter output 2400 W. No tracker count or PV short-circuit rating verified.",
+    "rows": [
+      [
+        "Model",
+        "E2400LFP"
+      ],
+      [
+        "Energy capacity",
+        "2048 Wh"
+      ],
+      [
+        "Rated AC output power",
+        "2400 W"
+      ],
+      [
+        "Peak power",
+        "4000 W (10 ms)"
+      ],
+      [
+        "AC output voltage",
+        "100–120 V pure sine wave"
+      ],
+      [
+        "Maximum PV input power",
+        "800 W (combined GX16MF + DC5521 solar maximum)"
+      ],
+      [
+        "Dimensions",
+        "14.8 × 9.3 × 13 in (L × W × H)"
+      ],
+      [
+        "Weight",
+        "20.5 kg"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "AC charging input",
+        "1800 W"
+      ],
+      [
+        "Charge temperature",
+        "0–45 °C"
+      ],
+      [
+        "Discharge temperature",
+        "-20–45 °C"
+      ]
+    ],
+    "label": "PECRON E2400LFP US manufacturer technical page",
+    "checkedAt": "2026-10-12T02:31:47.5271459Z",
+    "url": "https://www.pecron.com/products/pecron-e2400lfp-portable-power-station-2400w-2048wh",
+    "productIds": [
+      "pecron-44270114144444"
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T02:34:40.954Z"
+  },
+  {
+    "model": "F1000LFP",
+    "expected": {
+      "pecron-45854615929020": {
+        "category": "all-in-one",
+        "anchors": {
+          "capacityKwh": 0.96
+        },
+        "sourceUrl": "https://www.pecron.com/products/pecron-f1000lfp-portable-power-station-1500w-1004wh?variant=45854615929020",
+        "name": "PECRON F1000LFP Portable Power Station 1500W 960Wh — F1000LFP"
+      }
+    },
+    "kind": "manufacturer",
+    "reviewNote": "Current US listing and manufacturer title/capacity specify 960 Wh; old URL slug says 1004wh and must not override current identity. XT60 text says 11–60 Vdc but FAQ calls same range Voc; operating MPPT range versus absolute limit is unresolved. 3000 W marketing surge has no duration, so withheld. AC output voltage, tracker count and PV Isc remain unverified.",
+    "rows": [
+      [
+        "Model",
+        "F1000LFP"
+      ],
+      [
+        "Energy capacity",
+        "960 Wh"
+      ],
+      [
+        "Rated AC output power",
+        "1500 W"
+      ],
+      [
+        "Maximum PV input power",
+        "600 W (XT60 solar port)"
+      ],
+      [
+        "Maximum solar input current",
+        "14 A (XT60 port)"
+      ],
+      [
+        "Dimensions",
+        "380 × 217 × 214 mm (L × W × H)"
+      ],
+      [
+        "Weight",
+        "10.85 kg (approximately)"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Cycle life",
+        "3500 cycles to 80%+ capacity"
+      ],
+      [
+        "AC charging input",
+        "1000 W maximum"
+      ],
+      [
+        "Charge temperature",
+        "0–45 °C"
+      ],
+      [
+        "Discharge temperature",
+        "-10–45 °C"
+      ]
+    ],
+    "label": "PECRON F1000LFP US manufacturer technical page",
+    "checkedAt": "2026-10-12T02:31:47.5745216Z",
+    "url": "https://www.pecron.com/products/pecron-f1000lfp-portable-power-station-1500w-1004wh",
+    "productIds": [
+      "pecron-45854615929020"
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T02:34:40.954Z"
+  },
+  {
+    "model": "E3600LFP",
+    "expected": {
+      "pecron-43882473881788": {
+        "category": "all-in-one",
+        "anchors": {
+          "capacityKwh": 3.072
+        },
+        "sourceUrl": "https://www.pecron.com/products/pecron-e3600lfp-portable-power-station-3600w-3072wh?variant=43882473881788",
+        "name": "PECRON E3600LFP Portable Power Station 3600W 3072Wh — E3600LFP / Without Trolley"
+      }
+    },
+    "kind": "manufacturer",
+    "reviewNote": "Without Trolley exact listing only. Single-unit 120 V / 3600 W preserved; paired-unit 240 V / 7200 W requires second station and connect box and is excluded. Auxiliary DC5521 rated 150 W separately; no invented 2550 W simultaneous total. Voltage text mixes Voc/working language; operating MPPT range/absolute maximum withheld. Current field is per-port; importer may reject composite scalar, so review before promoting. Independent MPPT count and short-circuit current not inferred from number of ports.",
+    "rows": [
+      [
+        "Model",
+        "E3600LFP"
+      ],
+      [
+        "Energy capacity",
+        "3072 Wh"
+      ],
+      [
+        "Rated AC output power",
+        "3600 W (single unit)"
+      ],
+      [
+        "AC output voltage",
+        "120 V (single unit)"
+      ],
+      [
+        "Maximum PV input power",
+        "2400 W (two XT60 inputs; auxiliary DC5521 port excluded)"
+      ],
+      [
+        "Maximum solar input current",
+        "20 A per XT60 input; 7 A DC5521 input"
+      ],
+      [
+        "Dimensions",
+        "17.5 × 12.1 × 13.8 in (L × W × H)"
+      ],
+      [
+        "Weight",
+        "36 kg (approximately)"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Cycle life",
+        "3500+ cycles to 80%+ capacity"
+      ],
+      [
+        "AC charging input",
+        "3200 W with 30 A cable; 1800 W with 15 A cable"
+      ],
+      [
+        "Charge temperature",
+        "0–45 °C"
+      ],
+      [
+        "Discharge temperature",
+        "-20–45 °C"
+      ]
+    ],
+    "label": "PECRON E3600LFP US manufacturer technical page",
+    "checkedAt": "2026-10-12T02:31:47.6009737Z",
+    "url": "https://www.pecron.com/products/pecron-e3600lfp-portable-power-station-3600w-3072wh",
+    "productIds": [
+      "pecron-43882473881788"
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T02:34:40.954Z"
   }
 ]

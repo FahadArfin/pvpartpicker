@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {applySpecificationEvidence} from '../lib/specifications.ts';
+import {comparisonRows} from '../lib/comparison-view.ts';
+import type {Product,ProductSpecification} from '../lib/types.ts';
+const index=JSON.parse(readFileSync(new URL('../data/specifications.json',import.meta.url),'utf8')) as Record<string,ProductSpecification>;
+const product=(id:string):Product=>{const i=index[id].identity!;return {id,...i,brand:'',description:'',image:'',images:[],specs:{...i.anchors},offers:[],verifiedAt:''};};
+test('combined PECRON PV maxima display one total with connector conditions retained',()=>{for(const [id,value] of [['pecron-44270114144444','0.8 kW'],['pecron-43882473881788','2.4 kW']]){const p=applySpecificationEvidence(product(id),index),field=comparisonRows([p],true).find(r=>r.key==='maxPvWatts')?.values[0];assert.equal(field?.value,value);assert.match(field?.note??'',/GX16MF|XT60/);assert.equal(p.specs.maxMpptCurrent,undefined);}});
+test('LiTime conflicting peak remains unknown while sourced continuous current resolves',()=>{const p=applySpecificationEvidence(product('litime-44069497929948'),index),rows=comparisonRows([p],true);assert.equal(rows.find(r=>r.key==='maxDischargeCurrent')?.values[0].value,'250 A');assert.equal(rows.find(r=>r.key==='peakDischargeCurrent')?.values[0].value,'—');});
