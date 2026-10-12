@@ -1,3 +1,4 @@
+import {assertCorrectionWriteBoundary} from '../lib/specification-correction-guard.ts';
 /** Import only explicitly reviewed, exact-identity source transcriptions. No network or price writes. */
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {resolve} from 'node:path';
@@ -17,6 +18,7 @@ for(const raw of catalog.products){const p=categorizeProduct(raw),before=applySp
  const row={productId:p.id,name:p.name,category:normalizeCatalogProduct(p).category,sourceUrl:p.sourceUrl,status:next!==prior[p.id]&&next?.identity?'reviewed-imported':acceptedIds.has(p.id)?'reviewed-not-imported':'remaining',resolvedComparisonFields:resolved,addedTechnicalFields:newTechnical,missing:newFields.filter(f=>f.value==='—').map(f=>f.label),conflicts:next?.notes.filter(n=>/conflict/i.test(n))||[]};rows.push(row);
  const c=categories[row.category]??={listings:0,reviewedListings:0,newTechnicalFields:0,resolvedComparisonFields:0,remainingListings:0};c.listings++;c.reviewedListings+=Number(row.status==='reviewed-imported');c.newTechnicalFields+=newTechnical.length;c.resolvedComparisonFields+=resolved.length;c.remainingListings+=Number(row.missing.length>0);
 }
+assertCorrectionWriteBoundary(catalog.products.map(categorizeProduct),index);
 await mkdir(directory,{recursive:true});
 const report={checkedAt:new Date().toISOString(),catalogListings:catalog.products.length,reviewedSources:records.length,categories,rows};
 await writeFile(resolve(directory,'import-report.json'),JSON.stringify(report,null,2));

@@ -1,0 +1,123 @@
+{
+  "appliedAt": "2026-10-12T13:54:26.458Z",
+  "review": "review-ten-generation-v3-report.json",
+  "proposalSha256": "340e69fd1ac98bddbcfe117d522ee9392e839c54891213ed07df4e6c710a93a3",
+  "originalIndexSha256": "cdc92db37ea26465811b869ab348acb5d57d181ce5cff47f10286ac88853efaf",
+  "legacyCorrectedIndexSha256": "4bbe7f649db19cb79c89800910f35165cad93e8d29a3e9fd52dfaef7634e8413",
+  "originalRegistrySha256": "98586b41c6bd77b9a82b75767f3d17dc790c1db9740dbd36de7f59bf3f9e86ea",
+  "rows": [
+    {
+      "id": "eg4-18kpv",
+      "model": "18KPV-12LV",
+      "retailerSku": "EG4INV18KPV00",
+      "oldIdentity": {
+        "name": "EG4 | 18kPV Hybrid Inverter",
+        "sourceUrl": "https://signaturesolar.com/eg4-18kpv-hybrid-inverter-eg4-18kpv-12lv-48v-split-phase-120-240vac-ul1741-cec/",
+        "category": "inverters",
+        "anchors": {}
+      },
+      "newIdentity": {
+        "name": "EG4 18kPV 48V All-in-One Hybrid Inverter, 12kW AC Output, 18kW PV Input, UL 1741 & UL 9540 Solar Inverter",
+        "sourceUrl": "https://www.currentconnected.com/product/eg4-18kpv-hybrid-inverter/",
+        "category": "inverters",
+        "anchors": {
+          "voltage": 48,
+          "inverterType": "Hybrid",
+          "outputWatts": 12000,
+          "systemVoltageV": 48
+        }
+      },
+      "oldRecords": [
+        {
+          "registryPosition": 4,
+          "recordSha256": "6854f9b3a92f5b8acb2d691ef0d1132303ea4ceb22aa6a6c418dedf769235cac",
+          "expected": {
+            "name": "EG4 | 18kPV Hybrid Inverter",
+            "sourceUrl": "https://signaturesolar.com/eg4-18kpv-hybrid-inverter-eg4-18kpv-12lv-48v-split-phase-120-240vac-ul1741-cec/",
+            "category": "inverters",
+            "anchors": {}
+          }
+        }
+      ],
+      "originalObjectSha256": "0e1f04e5f22c63bdab7c939f1282b3ae1e1ae7ebfaefa768587eb78b7b1efa4e",
+      "groupsSha256": "91aa213e7a1030ed552452ba9deccf6354546d1b4a9f86c8220a63d874ff44c4",
+      "sourcesSha256": "9d3013d159c7f449eaf3ea95c870bde797b69830b89b39f0621ceb6bb9918573",
+      "sourceProof": {
+        "newPrimary": {
+          "i": "eg4-18kpv",
+          "url": "https://www.currentconnected.com/product/eg4-18kpv-hybrid-inverter/",
+          "checkedAt": "2026-10-12T13:19:43.632893+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "artifactPath": "output/specification-research/batch-ten-generation-v2-proof/alternate-eg4-0.html",
+          "sha256": "10097eb7ce9f776a8254225b6b0a74a690914ae9552baa2d4a2196c877af16cd",
+          "outcome": "retained inert HTML; scriptsnotexecuted"
+        },
+        "fullPrimaryText": "output/specification-research/batch-ten-generation-v2-proof/eg4-primary-0.txt",
+        "retainedManufacturerPdf": "output/spec-research/pdf/f240fd4ca513f68e.pdf",
+        "retainedManufacturerMetadata": "output/spec-research/pdf/f240fd4ca513f68e.json",
+        "retainedManufacturerSha256": "7ff6b7d96bb6028882ee4ffea09ea8ac852569d1de8061701beeca832d8e74bd",
+        "visualCover": "output/specification-research/batch-ten-generation-v2-proof/identity-f240fd4ca513f68e-p1.png"
+      },
+      "engineeringChanges": []
+    },
+    {
+      "id": "eg4-6000xp",
+      "model": "EG4-6000XP",
+      "retailerSku": "EG4HYB6K00V2",
+      "oldIdentity": {
+        "name": "EG4 | 6000XP Off-Grid Inverter",
+        "sourceUrl": "https://signaturesolar.com/eg4-6000xp-off-grid-inverter-split-phase/",
+        "category": "inverters",
+        "anchors": {}
+      },
+      "newIdentity": {
+        "name": "EG4 6000XP 48V 6kW Off-Grid All-in-One Inverter/Charger, 6kW Split-Phase AC Output, 8kW Solar Input, UL 1741 & UL 9540 Solar Inverter",
+        "sourceUrl": "https://www.currentconnected.com/product/eg4-6000xp-48v-6kw-off-grid-all-in-one-inverter-charger-6kw-split-phase-ac-output-8kw-solar-input-ul-1741-ul-9540-solar-inverter/",
+        "category": "inverters",
+        "anchors": {
+          "voltage": 48,
+          "inverterType": "Off-grid",
+          "acOutput": "120/240V split-phase",
+          "outputWatts": 6000,
+          "systemVoltageV": 48
+        }
+      },
+      "oldRecords": [
+        {
+          "registryPosition": 11,
+          "recordSha256": "9a4193d56b788ce4e8805d0dc80f64bda01e4736fe9602f45e223bcd078a6d0e",
+          "expected": {
+            "name": "EG4 | 6000XP Off-Grid Inverter",
+            "sourceUrl": "https://signaturesolar.com/eg4-6000xp-off-grid-inverter-split-phase/",
+            "category": "inverters",
+            "anchors": {}
+          }
+        }
+      ],
+      "originalObjectSha256": "bb85f840433aefce27b432e430f0e05773621990f60bcee5f3948bac50ac7675",
+      "groupsSha256": "006ec4c4fa7b0f2eca275ab6b39c6ce58808055a2685a267970c40f307e29228",
+      "sourcesSha256": "86e67b2fef672125aecb32d1cb7348c99b25571bcdc238fa4f62328729ec0bfa",
+      "sourceProof": {
+        "newPrimary": {
+          "i": "eg4-6000xp",
+          "url": "https://www.currentconnected.com/product/eg4-6000xp-48v-6kw-off-grid-all-in-one-inverter-charger-6kw-split-phase-ac-output-8kw-solar-input-ul-1741-ul-9540-solar-inverter/",
+          "checkedAt": "2026-10-12T13:19:46.068369+00:00",
+          "status": 200,
+          "contentType": "text/html;charset=utf-8",
+          "artifactPath": "output/specification-research/batch-ten-generation-v2-proof/alternate-eg4-1.html",
+          "sha256": "56f75a0ad36e9cfb32701b5790458414768b7fe28b7ed69be68f484c83574706",
+          "outcome": "retained inert HTML; scriptsnotexecuted"
+        },
+        "fullPrimaryText": "output/specification-research/batch-ten-generation-v2-proof/eg4-primary-1.txt",
+        "retainedManufacturerPdf": "output/spec-research/pdf/9269771fa4fefaff.pdf",
+        "retainedManufacturerMetadata": "output/spec-research/pdf/9269771fa4fefaff.json",
+        "retainedManufacturerSha256": "803731faa2eacdee4268601b5410672dade98b619a8d922a20161f257cd86160",
+        "visualCover": "output/specification-research/batch-ten-generation-v2-proof/identity-9269771fa4fefaff-p1.png"
+      },
+      "engineeringChanges": []
+    }
+  ],
+  "outputIndexSha256": "2ef39d82a11bd3a3ee5f8ef4a49ed421380114804aeb6f49dfc3fbcb0e467d21",
+  "outputRegistrySha256": "7ff7407f02a0e6c4ef1194b59fdbf01e9d0bc4ebc6e4eb49c060af9efe3084f7"
+}

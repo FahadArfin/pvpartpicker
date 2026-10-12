@@ -1,6 +1,6 @@
 import { load } from 'cheerio';
 import type { Category, Product, Specs } from './types.ts';
-import {describeConfiguration} from './bundles.ts';
+import {describeConfiguration,selectedSaleCategory} from './bundles.ts';
 import additionalRetailers from '../data/retailer-sources.json' with {type:'json'};
 export interface Retailer { id: string; name: string; origin: string; seeds?: string[]; adapter?:'shopify'|'woocommerce'|'sitemap'|'pages';startPath?:string;urls?:string[];enabled?:boolean;usdConfirmed?:boolean;sourceNotes?:string;frequencyMinutes?:number; }
 export const retailers: Retailer[] = [
@@ -29,6 +29,8 @@ export function classify(title: string): Category | null {
    if(/\b(?:cables?|wires?|connectors?)\b/.test(option))return 'wiring';
    return 'accessories';
   }
+  const saleCategory=selectedSaleCategory(title);
+  if(saleCategory)return saleCategory;
   const configuration=describeConfiguration(title);
   if(configuration?.kind==='combo')return 'kits';
   if(configuration?.kind==='standalone')return configuration.type==='Inverter'?'inverters':'all-in-one';
@@ -122,8 +124,13 @@ function batteryVoltageText(title:string) {
 }
 export function extractSpecs(title: string, category: Category, properties: Record<string, unknown> = {}): Specs {
   const selected = title.split(/\s—\s/).slice(1).join(' ');
-  const specs: Specs = {}; const numeric = (key: string, pattern: RegExp) => { const m = selected.match(pattern) || title.match(pattern); if (m) specs[key] = Number(m[1].replace(/,/g, '')); };
+  const optionCategory=selectedSaleCategory(title);
+  const optionOnly=!!selected&&!!optionCategory&&/^(?:Jackery FridgeGuard|BigBattery 48V ETHOS Stackable Battery|Renogy.*ANL Fuse Set)\b/i.test(title)&&['mounting','wiring','accessories'].includes(optionCategory);
+  const ratingTitle=optionOnly?selected:title;
+  const specs: Specs = {}; const numeric = (key: string, pattern: RegExp) => { const m = selected.match(pattern) || ratingTitle.match(pattern); if (m) specs[key] = Number(m[1].replace(/,/g, '')); };
   numeric('watts', /\b([\d,]+)\s*(?:w|watts?)\b/i); numeric('voltage', /\b([\d.]+)\s*v(?:dc|ac)?(?=\b|\d+(?:\.\d+)?\s*ah\b)/i); numeric('capacityKwh', /\b([\d.]+)\s*kwh\b/i); numeric('capacityAh', /\b([\d.]+)\s*ah\b/i);
+  const batteryPack=category==='batteries'?deltaUltraBatteryPack(title):undefined;
+  if(batteryPack){specs.capacityKwh=batteryPack.moduleCapacityKwh;specs.packCapacityKwh=batteryPack.packCapacityKwh;}
   if(category==='panels'){
    // Both total and per-module power are explicitly printed in these pack titles.
    const main=title.split(/\s—\s/)[0],total=main.match(/^\s*([\d,]+(?:\.\d+)?)\s*w\b/i),modules=main.match(/\b(\d+)\s*[x×]\s*([\d,]+(?:\.\d+)?)\s*w\b/i);
@@ -208,7 +215,19 @@ function extractInverterOutput(title:string):number|undefined {
   return Number(match[1].replace(/,/g,''))*(match[2].toLowerCase()==='kw'?1000:1);
  }
 }
+
+// The selected DPU sale is a homogeneous battery pack, despite the parent bundle picker.
+function deltaUltraBatteryPack(title:string){
+ const [main,...parts]=title.split(/\s—\s/),selected=parts.join(' — ');
+ if(!/^EcoFlow DELTA PRO ULTRA\b.*\bBattery Pack\b/i.test(main))return;
+ const pack=selected.match(/^([1-5]) Battery(?: Packs?)? \[([\d.]+)\s*kWh\]$/i);
+ const module=main.match(/\b([\d.]+)\s*kWh\b/i);
+ if(pack&&module)return {quantity:Number(pack[1]),moduleCapacityKwh:Number(module[1]),packCapacityKwh:Number(pack[2])};
+}
+
 export function extractPackQuantity(title: string, category: Category): number | null {
+  const batteryPack=category==='batteries'?deltaUltraBatteryPack(title):undefined;
+  if(batteryPack)return batteryPack.quantity;
   if(category==='kits'||category==='all-in-one') return 1; // The sale unit is the complete kit/station bundle.
   // A mixed bundle is one sale unit; quantities of included plugs/sensors are not monitor counts.
   if (category !== 'panels' && /\bwith\b|\bbundle\b|\bkit\b/i.test(title)) return 1;
@@ -230,7 +249,13 @@ export function categorizeProduct(product: Omit<Product,'offers'> & {offers?:Pro
   if(category!==product.category) for(const key of ['face','cellType','technology','formFactor','chemistry','inverterType','acOutput','gridForming','mountType','gauge','lengthFt','kitType','stationType','watts','voltage','capacityKwh']) delete specs[key];
   if(category!==product.category&&category==='batteries'){delete specs.monitorType;delete specs.accessoryType;}
   if(category!==product.category&&product.category==='batteries')for(const key of ['capacityAh','batteryKind'])delete specs[key];
-  const offers=product.offers||[]; // D1 stores product metadata separately from offers.
+  const batteryPack=category==='batteries'?deltaUltraBatteryPack(product.name):undefined;
+  const offers=(product.offers||[]).map(o=>{
+   if(!batteryPack||o.packQuantity===batteryPack.quantity)return o;
+   // Apply only to the exact selected offer, including merged retailer listings.
+   try{const a=new URL(o.url),b=new URL(product.sourceUrl);if(a.origin!==b.origin||a.pathname!==b.pathname||a.searchParams.get('variant')!==b.searchParams.get('variant'))return o;}catch{return o;}
+   return {...o,packQuantity:batteryPack.quantity,recordedPackQuantity:o.recordedPackQuantity??o.packQuantity};
+  }); // D1 stores product metadata separately from offers.
   const panelDetails:Specs={};
   const extracted=extractSpecs(product.name,category);
   if(emporiaSensorClamps)extracted.monitorType='Sensor';

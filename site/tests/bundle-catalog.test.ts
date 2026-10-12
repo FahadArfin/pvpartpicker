@@ -92,3 +92,208 @@ test('stored combo names distinguish each configuration and module capacities ar
  const ocean=selected('shopsolar-45099587272844').configuration!;
  assert.match(ocean.components.find(c=>c.type==='batteries')!.detail,/10 kWh each.*20 kWh listed storage/);
 });
+
+test('source-confirmed RV Cerbo packages exclude batteries and retain their included equipment',()=>{
+ const p=product('6KW Array12V Victron w/ Cerbo Kit for 50A RV/Trailer | 4 Panel | No Batteries');
+ assert.equal(p.category,'kits');
+ assert.deepEqual(p.configuration?.components.map(c=>c.type),['panels','inverter','charging','controls']);
+ assert.equal(p.configuration?.components[0].quantity,4);
+});
+test('Mega and FridgeGuard selected combos preserve battery counts and mounting',()=>{
+ const mega=product('Mega 3 & B2 Extra Battery | Home Backup Battery — Mega 3 + 2 * B2 Extra Battery');
+ assert.equal(mega.configuration?.components.find(c=>c.type==='batteries')?.quantity,2);
+ const fridge=product('Jackery FridgeGuard - 1,024Wh Battery / 800W Output — FridgeGuard + Expansion Battery Pack + Mounting Bracket');
+ assert.equal(fridge.category,'kits');
+ assert.ok(fridge.configuration?.components.some(c=>c.type==='mounting'));
+});
+
+test('a bundle descriptor before the selected capacity never replaces the selected battery size',()=>{
+ const p=product('Sol-Ark 15kW Inverter with Deye SE-G5.1 Pro-B Battery Pack — UL 9540 Closed-Loop Bundle (15/20/40kWh) — 15.3kWh');
+ assert.equal(p.configuration?.components.find(c=>c.type==='batteries')?.detail,'15.3 kWh listed storage');
+});
+
+// Exact selected Shopify variants from cached 7c97730a4d3e6fce.html; offers frozen from the batch-ten snapshot.
+const dpuPacks=[
+ {
+  "id": "shopsolar-44235326849164",
+  "name": "EcoFlow DELTA PRO ULTRA - 6,114Wh / 6.1kWh Battery Pack - Choose Bundle Option — 1 Battery [6.1kWh]",
+  "brand": "EcoFlow",
+  "category": "all-in-one",
+  "description": "",
+  "image": "",
+  "images": [],
+  "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro-ultra-battery-pack?variant=44235326849164",
+  "specs": {
+   "capacityKwh": 6.1,
+   "stationType": "Integrated power station"
+  },
+  "offers": [
+   {
+    "id": "shopsolar-44235326849164",
+    "retailerId": "shopsolar",
+    "retailer": "ShopSolar",
+    "url": "https://shopsolarkits.com/products/ecoflow-delta-pro-ultra-battery-pack?variant=44235326849164",
+    "price": 2199,
+    "referencePrice": 4123.75,
+    "currency": "USD",
+    "packQuantity": 1,
+    "stock": "out_of_stock",
+    "observedAt": "2026-10-11T23:17:26.270Z",
+    "sku": "44235326849164",
+    "condition": "new"
+   }
+  ],
+  "verifiedAt": "2026-10-11T23:17:26.270Z"
+ },
+ {
+  "id": "shopsolar-44235326881932",
+  "name": "EcoFlow DELTA PRO ULTRA - 6,114Wh / 6.1kWh Battery Pack - Choose Bundle Option — 2 Battery Packs [12.2kWh]",
+  "brand": "EcoFlow",
+  "category": "all-in-one",
+  "description": "",
+  "image": "",
+  "images": [],
+  "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro-ultra-battery-pack?variant=44235326881932",
+  "specs": {
+   "capacityKwh": 12.2,
+   "stationType": "Integrated power station"
+  },
+  "offers": [
+   {
+    "id": "shopsolar-44235326881932",
+    "retailerId": "shopsolar",
+    "retailer": "ShopSolar",
+    "url": "https://shopsolarkits.com/products/ecoflow-delta-pro-ultra-battery-pack?variant=44235326881932",
+    "price": 4368,
+    "referencePrice": 8247.5,
+    "currency": "USD",
+    "packQuantity": 1,
+    "stock": "out_of_stock",
+    "observedAt": "2026-10-11T23:17:26.271Z",
+    "sku": "44235326881932",
+    "condition": "new"
+   }
+  ],
+  "verifiedAt": "2026-10-11T23:17:26.271Z"
+ },
+ {
+  "id": "shopsolar-44235326914700",
+  "name": "EcoFlow DELTA PRO ULTRA - 6,114Wh / 6.1kWh Battery Pack - Choose Bundle Option — 3 Battery Packs [18.42kWh]",
+  "brand": "EcoFlow",
+  "category": "all-in-one",
+  "description": "",
+  "image": "",
+  "images": [],
+  "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro-ultra-battery-pack?variant=44235326914700",
+  "specs": {
+   "capacityKwh": 18.42,
+   "stationType": "Integrated power station"
+  },
+  "offers": [
+   {
+    "id": "shopsolar-44235326914700",
+    "retailerId": "shopsolar",
+    "retailer": "ShopSolar",
+    "url": "https://shopsolarkits.com/products/ecoflow-delta-pro-ultra-battery-pack?variant=44235326914700",
+    "price": 6547,
+    "referencePrice": 12371.25,
+    "currency": "USD",
+    "packQuantity": 1,
+    "stock": "out_of_stock",
+    "observedAt": "2026-10-11T23:17:26.272Z",
+    "sku": "44235326914700",
+    "condition": "new"
+   }
+  ],
+  "verifiedAt": "2026-10-11T23:17:26.272Z"
+ },
+ {
+  "id": "shopsolar-44235326947468",
+  "name": "EcoFlow DELTA PRO ULTRA - 6,114Wh / 6.1kWh Battery Pack - Choose Bundle Option — 4 Battery Packs [24.56kWh]",
+  "brand": "EcoFlow",
+  "category": "all-in-one",
+  "description": "",
+  "image": "",
+  "images": [],
+  "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro-ultra-battery-pack?variant=44235326947468",
+  "specs": {
+   "capacityKwh": 24.56,
+   "stationType": "Integrated power station"
+  },
+  "offers": [
+   {
+    "id": "shopsolar-44235326947468",
+    "retailerId": "shopsolar",
+    "retailer": "ShopSolar",
+    "url": "https://shopsolarkits.com/products/ecoflow-delta-pro-ultra-battery-pack?variant=44235326947468",
+    "price": 8706,
+    "referencePrice": 16495,
+    "currency": "USD",
+    "packQuantity": 1,
+    "stock": "out_of_stock",
+    "observedAt": "2026-10-11T23:17:26.273Z",
+    "sku": "44235326947468",
+    "condition": "new"
+   }
+  ],
+  "verifiedAt": "2026-10-11T23:17:26.273Z"
+ },
+ {
+  "id": "shopsolar-44235326980236",
+  "name": "EcoFlow DELTA PRO ULTRA - 6,114Wh / 6.1kWh Battery Pack - Choose Bundle Option — 5 Battery Packs [30.7kWh]",
+  "brand": "EcoFlow",
+  "category": "all-in-one",
+  "description": "",
+  "image": "",
+  "images": [],
+  "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro-ultra-battery-pack?variant=44235326980236",
+  "specs": {
+   "capacityKwh": 30.7,
+   "stationType": "Integrated power station"
+  },
+  "offers": [
+   {
+    "id": "shopsolar-44235326980236",
+    "retailerId": "shopsolar",
+    "retailer": "ShopSolar",
+    "url": "https://shopsolarkits.com/products/ecoflow-delta-pro-ultra-battery-pack?variant=44235326980236",
+    "price": 10895,
+    "referencePrice": 20618.75,
+    "currency": "USD",
+    "packQuantity": 1,
+    "stock": "out_of_stock",
+    "observedAt": "2026-10-11T23:17:26.274Z",
+    "sku": "44235326980236",
+    "condition": "new"
+   }
+  ],
+  "verifiedAt": "2026-10-11T23:17:26.274Z"
+ }
+] as Product[];
+
+test('homogeneous DELTA Pro Ultra battery packs retain total offers and compare per-module capacity',()=>{
+ const cases:[string,number,number][]=[['shopsolar-44235326881932',2,12.2],['shopsolar-44235326849164',1,6.1],['shopsolar-44235326914700',3,18.42],['shopsolar-44235326947468',4,24.56],['shopsolar-44235326980236',5,30.7]];
+ for(const [id,count,totalKwh] of cases){
+  const raw=dpuPacks.find(p=>p.id===id)!;assert.ok(raw,id);
+  const normalized=categorizeProduct(raw);
+  assert.equal(normalized.category,'batteries');
+  assert.equal(extractPackQuantity(raw.name,'batteries'),count);
+  assert.equal(normalized.specs.capacityKwh,6.1,id+' explicitly listed rounded module capacity');
+  assert.equal(normalized.specs.packCapacityKwh,totalKwh,id+' selected aggregate capacity');
+  for(let i=0;i<raw.offers.length;i++){
+   const old=raw.offers[i],offer=normalized.offers[i];
+   assert.equal(offer.packQuantity,count);
+   assert.equal(offer.price/offer.packQuantity,old.price/count);
+   assert.deepEqual({...offer,packQuantity:old.packQuantity,recordedPackQuantity:old.recordedPackQuantity},{...old,recordedPackQuantity:old.recordedPackQuantity});
+   assert.equal(costForQuantity(offer,count).subtotal,old.price);
+  }
+  assert.deepEqual(categorizeProduct(normalized),normalized,'normalization is idempotent');
+ }
+});
+test('selected homogeneous battery quantities exclude mixed systems and accessory packs',()=>{
+ const main='EcoFlow DELTA PRO ULTRA - 6,114Wh / 6.1kWh Battery Pack - Choose Bundle Option';
+ for(const [name,category] of [[main+' — 2 Battery Packs [12.2kWh] + Inverter','kits'],['EcoFlow DELTA Pro Power Station — Main Unit + 2 Extra Batteries','kits'],['Battery Carrying Case Kit — 2 Battery Packs','accessories']] as const)assert.equal(extractPackQuantity(name,category),1,name);
+ const raw=dpuPacks.find(p=>p.id==='shopsolar-44235326881932')!;
+ const otherOffer={...raw.offers[0],id:'another-variant-offer',url:raw.sourceUrl.replace('44235326881932','44235326914700')};
+ assert.deepEqual(categorizeProduct({...raw,offers:[otherOffer]}).offers[0],otherOffer,'a different selected offer is not rewritten');
+});

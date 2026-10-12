@@ -229,3 +229,125 @@ test('equipment destinations and plural accessories do not become solar panels',
  assert.equal(classify('Victron Energy Cerbo GX for Solar Panels and System Monitoring'),'monitoring');
  assert.equal(classify('HQST Solar Panel Connectors, Male & Female Pair, IP67 Waterproof Solar PV Connectors for Photovoltaic Solar System Outdoor Permanent Installation — 5 pairs'),'wiring');
 });
+
+test('exact selected equipment sale roles from batch ten preserve component boundaries',()=>{
+ const examples:[string,Category][]=[
+  ["Sol-Ark 60kW Inverter with Deye GE-FL60/GE-FH60 Cabinet — UL 9540 Closed-Loop Bundle (60/120/180/240/300/360kWh) — 60kWh","kits"],
+  ["Sol-Ark 60kW Inverter with Deye GE-FL60/GE-FH60 Cabinet — UL 9540 Closed-Loop Bundle (60/120/180/240/300/360kWh) — 120kWh","kits"],
+  ["Sol-Ark 60kW Inverter with Deye GE-FL60/GE-FH60 Cabinet — UL 9540 Closed-Loop Bundle (60/120/180/240/300/360kWh) — 180kWh","kits"],
+  ["Sol-Ark 60kW Inverter with Deye GE-FL60/GE-FH60 Cabinet — UL 9540 Closed-Loop Bundle (60/120/180/240/300/360kWh) — 240kWh","kits"],
+  ["Sol-Ark 60kW Inverter with Deye GE-FL60/GE-FH60 Cabinet — UL 9540 Closed-Loop Bundle (60/120/180/240/300/360kWh) — 300kWh","kits"],
+  ["Sol-Ark 60kW Inverter with Deye GE-FL60/GE-FH60 Cabinet — UL 9540 Closed-Loop Bundle (60/120/180/240/300/360kWh) — 360kWh","kits"],
+  ["EcoFlow DELTA PRO ULTRA - 6,114Wh / 6.1kWh Battery Pack - Choose Bundle Option — 1 Battery [6.1kWh]","batteries"],
+  ["EcoFlow DELTA PRO ULTRA - 6,114Wh / 6.1kWh Battery Pack - Choose Bundle Option — 2 Battery Packs [12.2kWh]","batteries"],
+  ["EcoFlow DELTA PRO ULTRA - 6,114Wh / 6.1kWh Battery Pack - Choose Bundle Option — 3 Battery Packs [18.42kWh]","batteries"],
+  ["EcoFlow DELTA PRO ULTRA - 6,114Wh / 6.1kWh Battery Pack - Choose Bundle Option — 4 Battery Packs [24.56kWh]","batteries"],
+  ["EcoFlow DELTA PRO ULTRA - 6,114Wh / 6.1kWh Battery Pack - Choose Bundle Option — 5 Battery Packs [30.7kWh]","batteries"],
+  ["Set of 28\" Solar Panel Stands / Legs | 4/6/8 Panels | Portable Solar Panel Leg Kit | Fully Adjustable & Universal Compatibility — 4 x Sets of 2 Legs","mounting"],
+  ["Set of 28\" Solar Panel Stands / Legs | 4/6/8 Panels | Portable Solar Panel Leg Kit | Fully Adjustable & Universal Compatibility — 6 x Sets of 2 Legs","mounting"],
+  ["Set of 28\" Solar Panel Stands / Legs | 4/6/8 Panels | Portable Solar Panel Leg Kit | Fully Adjustable & Universal Compatibility — 8 x Sets of 2 Legs","mounting"],
+  ["Sol-Ark 15kW Inverter with Deye RW-F10.2 — UL 9540 Closed-Loop Bundle (10/20/30kWh) — 20.4kWh","kits"],
+  ["Sol-Ark 15kW Inverter with Deye RW-F10.2 — UL 9540 Closed-Loop Bundle (10/20/30kWh) — 10.2kWh","kits"],
+  ["Sol-Ark 15kW Inverter with Deye RW-F10.2 — UL 9540 Closed-Loop Bundle (10/20/30kWh) — 30.6kWh","kits"],
+  ["Sol-Ark 30kW Inverter with Deye GE-FL60/GE-FH60 Cabinet — UL 9540 Closed-Loop Bundle (60/120/180kWh) — 60kWh","kits"],
+  ["Sol-Ark 30kW Inverter with Deye GE-FL60/GE-FH60 Cabinet — UL 9540 Closed-Loop Bundle (60/120/180kWh) — 120kWh","kits"],
+  ["Sol-Ark 30kW Inverter with Deye GE-FL60/GE-FH60 Cabinet — UL 9540 Closed-Loop Bundle (60/120/180kWh) — 180kWh","kits"],
+  ["SRNE 5kW Inverter with Deye SE-G5.1 Pro-B — Off-Grid Bundle (5/10/15kWh) — 5.12kWh","kits"],
+  ["SRNE 5kW Inverter with Deye SE-G5.1 Pro-B — Off-Grid Bundle (5/10/15kWh) — 10.2kWh","kits"],
+  ["SRNE 5kW Inverter with Deye SE-G5.1 Pro-B — Off-Grid Bundle (5/10/15kWh) — 15.3kWh","kits"],
+  ["SRNE 10kW Inverter with Deye RW-F10.2 — Off-Grid Bundle (10/20/30kWh) — 10.2kWh","kits"],
+  ["SRNE 10kW Inverter with Deye RW-F10.2 — Off-Grid Bundle (10/20/30kWh) — 20.4kWh","kits"],
+  ["SRNE 10kW Inverter with Deye RW-F10.2 — Off-Grid Bundle (10/20/30kWh) — 30.6kWh","kits"],
+  ["Solar Oven Kit Replacement Tube","accessories"],
+  ["Single-Panel Adjustable Solar Pole Mount Bracket Kit | 36.6\" Crossbar | 25°–90° Tilt | Supports 100–250W Solar Panels | Fits Poles Up to 5\"","mounting"],
+  ["Dual-Panel Adjustable Solar Pole Mount Bracket Kit | 36.6 in Crossbar | 25°–90° Tilt | Supports 100–250W Solar Panels | Fits Poles Up to 5 in","mounting"],
+  ["SunRise Solar Attic Fan with Integrated Solar Panel | 30W–45W Options | Flat or Curb Base | Up to 2,800 sq/ft Cooling — 30W (Up to 2000 sq/ft) / Flat (Shingled Roof)","accessories"],
+  ["SunRise Solar Attic Fan with Integrated Solar Panel | 30W–45W Options | Flat or Curb Base | Up to 2,800 sq/ft Cooling — 30W (Up to 2000 sq/ft) / Curb (Flat or Tile Roof)","accessories"],
+  ["SunRise Solar Attic Fan with Integrated Solar Panel | 30W–45W Options | Flat or Curb Base | Up to 2,800 sq/ft Cooling — 32W (Up to 2100 sq/ft) / Flat (Shingled Roof)","accessories"],
+  ["SunRise Solar Attic Fan with Integrated Solar Panel | 30W–45W Options | Flat or Curb Base | Up to 2,800 sq/ft Cooling — 32W (Up to 2100 sq/ft) / Curb (Flat or Tile Roof)","accessories"],
+  ["SunRise Solar Attic Fan with Integrated Solar Panel | 30W–45W Options | Flat or Curb Base | Up to 2,800 sq/ft Cooling — 45W (Up to 2800 sq/ft) / Flat (Shingled Roof)","accessories"],
+  ["SunRise Solar Attic Fan with Integrated Solar Panel | 30W–45W Options | Flat or Curb Base | Up to 2,800 sq/ft Cooling — 45W (Up to 2800 sq/ft) / Curb (Flat or Tile Roof)","accessories"],
+  ["Tamarack Solar 1.6-IN Flush Mount Rail Kit | 8-Module Portrait | 5050 Module Clamps | 8' Spans | UL 2703 | PE Certified","mounting"],
+  ["Tamarack Solar 2.3 Rail 93\" Black Flush Mount Kit | 4 Rails | Mounts 4 Modules up to 46\" Wide | UL 2703 | 180 MPH Rated","mounting"],
+  ["Tamarack Solar 1.6 Rail 93 IN Black 2-Rail Kit | Mount Up to 2 Modules (Up to 46\" Wide) | UL 2703 Listed | 1.6-IN Rail Height","mounting"],
+  ["TOP Rack Solar Panel TRT Rail Base System(TRT 02) — 12P","mounting"],
+  ["TOP Rack Solar Panel TRT Rail Base System(TRT 02) — 16P","mounting"],
+  ["TOP Rack Solar Panel TRT Rail Base System(TRT 02) — 36P","mounting"],
+  ["TOP Rack Solar Panel TRT Rail Base System(TRT 02) — 40P","mounting"],
+  ["TOP Rack Solar Panel TRT Rail Base System(TRT 02) — 31P","mounting"],
+  ["Tamarack Solar 2.3 Rail - 93-Inch Black 2-Rail Flush Mount Kit | Mount 2 Modules up to 46\" Wide | Compatible w/ 4 & 8 Rail Kits | UL 2703 | PE Certified","mounting"],
+  ["TOP Rack Solar Panel TRT Tile Hook System(TRT 03) — 12P","mounting"],
+  ["TOP Rack Solar Panel TRT Tile Hook System(TRT 03) — 16P","mounting"],
+  ["TOP Rack Solar Panel TRT Tile Hook System(TRT 03) — 31P","mounting"],
+  ["TOP Rack Solar Panel TRT Tile Hook System(TRT 03) — 36P","mounting"],
+  ["TOP Rack Solar Panel TRT Tile Hook System(TRT 03) — 40P","mounting"],
+  ["BLUETTI Premium 200 [AC200PL] Portable Power Statio | Complete Solar Generator Kit | 3,500 Cycles | 5‑Year Warranty | Choose Your Bundle — Bluetti AC200P L [Main Unit Only]","all-in-one"],
+  ["Canadian Solar EP Cube 2.0 All-In-One Solar Energy Storage System | 11.5kW 120/240V Output | 23kW Solar PV Input | 5 - 40kWh Battery Capacity | Service Entrance Rated — 5 kWh Battery | 11.5 kW Output - 1 Battery Modules | 1 Inverter","all-in-one"],
+  ["Canadian Solar EP Cube 2.0 All-In-One Solar Energy Storage System | 11.5kW 120/240V Output | 23kW Solar PV Input | 5 - 40kWh Battery Capacity | Service Entrance Rated — 10 kWh Battery | 11.5 kW Output - 2 Battery Modules | 1 Inverter","all-in-one"],
+  ["Canadian Solar EP Cube 2.0 All-In-One Solar Energy Storage System | 11.5kW 120/240V Output | 23kW Solar PV Input | 5 - 40kWh Battery Capacity | Service Entrance Rated — 15 kWh Battery | 11.5 kW Output - 3 Battery Modules | 1 Inverter","all-in-one"],
+  ["Canadian Solar EP Cube 2.0 All-In-One Solar Energy Storage System | 11.5kW 120/240V Output | 23kW Solar PV Input | 5 - 40kWh Battery Capacity | Service Entrance Rated — 20 kWh Battery | 11.5 kW Output - 4 Battery Modules | 1 Inverter","all-in-one"],
+  ["Canadian Solar EP Cube 2.0 All-In-One Solar Energy Storage System | 11.5kW 120/240V Output | 23kW Solar PV Input | 5 - 40kWh Battery Capacity | Service Entrance Rated — 25 kWh Battery | 11.5 kW Output - 5 Battery Modules | 1 Inverter","all-in-one"],
+  ["Canadian Solar EP Cube 2.0 All-In-One Solar Energy Storage System | 11.5kW 120/240V Output | 23kW Solar PV Input | 5 - 40kWh Battery Capacity | Service Entrance Rated — 30 kWh Battery | 11.5 kW Output - 6 Battery Modules | 1 Inverter","all-in-one"],
+  ["Canadian Solar EP Cube 2.0 All-In-One Solar Energy Storage System | 11.5kW 120/240V Output | 23kW Solar PV Input | 5 - 40kWh Battery Capacity | Service Entrance Rated — 35 kWh Battery | 11.5 kW Output - 7 Battery Modules | 1 Inverter","all-in-one"],
+  ["Canadian Solar EP Cube 2.0 All-In-One Solar Energy Storage System | 11.5kW 120/240V Output | 23kW Solar PV Input | 5 - 40kWh Battery Capacity | Service Entrance Rated — 40 kWh Battery | 11.5 kW Output - 8 Battery Modules | 1 Inverter","all-in-one"],
+  ["EcoFlow GLACIER Classic 3-in-1 Portable Fridge, Freezer & Battery | 35L–55L | Up to 45H Runtime | Dual-Zone Cooling | Solar + USB-C Rechargeable — 55L / With Plug-in Battery","accessories"],
+  ["EcoFlow GLACIER Classic 3-in-1 Portable Fridge, Freezer & Battery | 35L–55L | Up to 45H Runtime | Dual-Zone Cooling | Solar + USB-C Rechargeable — 55L / No Plug-In Battery","accessories"],
+  ["EcoFlow GLACIER Classic 3-in-1 Portable Fridge, Freezer & Battery | 35L–55L | Up to 45H Runtime | Dual-Zone Cooling | Solar + USB-C Rechargeable — 45L / With Plug-in Battery","accessories"],
+  ["EcoFlow GLACIER Classic 3-in-1 Portable Fridge, Freezer & Battery | 35L–55L | Up to 45H Runtime | Dual-Zone Cooling | Solar + USB-C Rechargeable — 45L / No Plug-In Battery","accessories"],
+  ["EcoFlow GLACIER Classic 3-in-1 Portable Fridge, Freezer & Battery | 35L–55L | Up to 45H Runtime | Dual-Zone Cooling | Solar + USB-C Rechargeable — 35L / With Plug-in Battery","accessories"],
+  ["EcoFlow GLACIER Classic 3-in-1 Portable Fridge, Freezer & Battery | 35L–55L | Up to 45H Runtime | Dual-Zone Cooling | Solar + USB-C Rechargeable — 35L / No Plug-In Battery","accessories"],
+  ["BigBattery ETHOS 12kW Energy Storage System | 10.2–30.7kWh | Modular LiFePO4 | Indoor-Ready | 12-Year Warranty — 1 x EG4 18kPV + 2 x 48V Ethos 5.12kWh Stackable Battery Module | 10.2kWh Capacity","kits"],
+  ["BigBattery ETHOS 12kW Energy Storage System | 10.2–30.7kWh | Modular LiFePO4 | Indoor-Ready | 12-Year Warranty — 1 x EG4 18kPV + 3 x 48V Ethos 5.12kWh Stackable Battery Module | 15.3kWh Capacity","kits"],
+  ["BigBattery ETHOS 12kW Energy Storage System | 10.2–30.7kWh | Modular LiFePO4 | Indoor-Ready | 12-Year Warranty — 1 x EG4 18kPV + 4 x 48V Ethos 5.12kWh Stackable Battery Module | 20.4kWh Capacity","kits"],
+  ["BigBattery ETHOS 12kW Energy Storage System | 10.2–30.7kWh | Modular LiFePO4 | Indoor-Ready | 12-Year Warranty — 1 x EG4 18kPV + 6 x 48V Ethos 5.12kWh Stackable Battery Module | 30.7kWh Capacity","kits"],
+  ["(Sold Out) Mega 5 & B5 Extra Battery | Home Backup Battery — Mega 5 + 1 * B5 Extra Battery","kits"],
+  ["(Sold Out) Mega 5 & B5 Extra Battery | Home Backup Battery — Mega 5 + 2 * B5 Extra Battery","kits"],
+  ["Mega 3 & B2 Extra Battery | Home Backup Battery — Mega 3 + 1 * B2 Extra Battery","kits"],
+  ["Mega 3 & B2 Extra Battery | Home Backup Battery — Mega 3 + 2 * B2 Extra Battery","kits"],
+  ["Sol-Ark + Renon [E-CUBE] Sol Ark 30K or 60K + 61kWh Battery Storage | Air-Cooled Battery Storage System | Commercial / Industrial Solar — SOL-ARK 30K+ 61kWh Renon ECUBE","kits"],
+  ["Sol-Ark + Renon [E-CUBE] Sol Ark 30K or 60K + 61kWh Battery Storage | Air-Cooled Battery Storage System | Commercial / Industrial Solar — SOL-ARK 60K + 61kWh Renon ECUBE","kits"],
+  ["Jackery FridgeGuard - 1,024Wh Battery / 800W Output - Ultra-Slim Smart Power Backup | 5-Year Warranty — Jackery FridgeGuard","all-in-one"],
+  ["Jackery FridgeGuard - 1,024Wh Battery / 800W Output - Ultra-Slim Smart Power Backup | 5-Year Warranty — Mounting Bracket","mounting"],
+  ["Jackery FridgeGuard - 1,024Wh Battery / 800W Output - Ultra-Slim Smart Power Backup | 5-Year Warranty — DC Input Module","accessories"],
+  ["Jackery FridgeGuard - 1,024Wh Battery / 800W Output - Ultra-Slim Smart Power Backup | 5-Year Warranty — Expansion Battery Pack","batteries"],
+  ["Jackery FridgeGuard - 1,024Wh Battery / 800W Output - Ultra-Slim Smart Power Backup | 5-Year Warranty — FridgeGuard + Expansion Battery Pack + Mounting Bracket","kits"],
+  ["EcoFlow Wave 3 Portable Air Conditioner with Heater | 5,100 BTU Cooling + 6,100 BTU Heating | 8 Hrs Runtime | 5-Year Warranty — WAVE 3 + Add-on Battery","accessories"],
+  ["Jackery FridgeGuard - 1,024Wh Battery / 800W Output - Ultra-Slim Smart Power Backup | 5-Year Warranty — Mounting Bracket","mounting"],
+  ["Jackery FridgeGuard - 1,024Wh Battery / 800W Output - Ultra-Slim Smart Power Backup | 5-Year Warranty — DC Input Module","accessories"],
+  ["Jackery FridgeGuard - 1,024Wh Battery / 800W Output - Ultra-Slim Smart Power Backup | 5-Year Warranty — Expansion Battery Pack","batteries"],
+  ["Jackery FridgeGuard - 1,024Wh Battery / 800W Output - Ultra-Slim Smart Power Backup | 5-Year Warranty — FridgeGuard + Expansion Battery Pack + Mounting Bracket","kits"],
+  ["EcoFlow Wave 3 Portable Air Conditioner with Heater | 5,100 BTU Cooling + 6,100 BTU Heating | 8 Hrs Runtime | 5-Year Warranty — WAVE 3 Add-on Battery [Battery Only]","batteries"],
+  ["BLUETTI RV5 - Modular RV Solar System | 5,000W | 120V | Off-Grid Ready | UL Certified | 5-Year Warranty — RV5 Power Hub [Unit Only]","inverters"],
+  ["Discover HELIOS ESS Generic Conduit Box | 950-0077 | Lockable, Code-Compliant Wiring Enclosure | LYNK II Mount","accessories"],
+  ["RUiXU Conduit Box for Lithi2-16 Battery | Compatible with RX-12K & Sol-Ark 15K | Clean Cable Management | Weather-Resistant | Easy Assembly","accessories"],
+  ["Renogy 20A/30A/40A/60A/80A/100A/200A/300A/400A ANL Fuse Set w/ Fuse — Cover","accessories"],
+  ["Anker SOLIX Manual Transfer Switch | 6-Circuit (30A, 120V) & 10-Circuit (50A, 120/240V or 30A Cable Kit) | UL 1008 | For F2000–F3800+ — 10-Circuit Kit (120V/240V, 50 Amp | For F3800 & 2 x F3800 Plus","electrical"],
+  ["6KW Array12V Victron w/ Cerbo Kit for 50A RV/Trailer | 4 Panel | No Batteries","kits"],
+  ["3KW Array 12V Victron w/Cerbo Kit for 30A RV/Trailer | 4 Panel | No Batteries","kits"]
+ ];
+ for(const [name,category] of examples)assert.equal(classify(name),category,name);
+});
+
+test('ETHOS control and connection options exclude battery cells while installation options retain them',()=>{
+ const cases:[string,Category][]=[
+ [
+  "BigBattery 48V ETHOS Stackable Battery [Choose Capacity: 10kWh-30kWh] | On-Grid or Off-Grid | UN9540, UL1973, CE | 12-Year Warranty — 1 x Parallel Kit",
+  "wiring"
+ ],
+ [
+  "BigBattery 48V ETHOS Stackable Battery [Choose Capacity: 10kWh-30kWh] | On-Grid or Off-Grid | UN9540, UL1973, CE | 12-Year Warranty — 1 x Control Box Only",
+  "accessories"
+ ],
+ [
+  "RUiXU Lithi2-16 | 51.2V314Ah | 16kWh Battery | UL1973, 9540A, 9540, CEC, SGIP — Wheels Only",
+  "batteries"
+ ]
+];
+ for(const [name,category] of cases)assert.equal(classify(name),category,name);
+});
+
+test('standalone appliance batteries and selected passive options retain their own ratings',()=>{
+ assert.equal(classify('EcoFlow WAVE 3 Add-on Battery'),'batteries');
+ const options=['Jackery FridgeGuard - 1,024Wh Battery / 800W Output — Mounting Bracket','BigBattery 48V ETHOS Stackable Battery [Choose Capacity: 10kWh-30kWh] — 1 x Parallel Kit','BigBattery 48V ETHOS Stackable Battery [Choose Capacity: 10kWh-30kWh] — 1 x Control Box Only'];
+ for(const name of options){const specs=extractSpecs(name,classify(name)!);for(const key of ['watts','voltage','capacityKwh','capacityAh'])assert.equal(specs[key],undefined,name+' '+key);}
+});
