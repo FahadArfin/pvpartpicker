@@ -36,6 +36,32 @@ test('WooCommerce retains the published regular price in the same currency units
  await scrapeSource({site:{...site,adapter:'woocommerce'},knownUrls:[]},h.hooks,async url=>({status:200,text:url.endsWith('/robots.txt')?'':feed}));
  assert.equal(h.saved[0].offers[0].price,120);assert.equal(h.saved[0].offers[0].referencePrice,180);
 });
+test('WooCommerce parses slash-escaped feed descriptions before interpreting HTML',async()=>{
+ const h=makeHooks(),urls:string[]=[];
+ // PHP JSON encoding escapes closing-tag slashes. Reading the whole feed as
+ // HTML turns individually shallow descriptions into one deeply nested tree.
+ const description='<div>'.repeat(50)+'Access denied troubleshooting guide'+'</div>'.repeat(50);
+ const feed=JSON.stringify(Array.from({length:100},(_,i)=>({id:i+1,name:'400W Solar Panel',type:'simple',permalink:site.origin+'/panel-'+(i+1),description,is_in_stock:true,prices:{currency_code:'USD',currency_minor_unit:2,price:'12000',regular_price:'18000'}}))).replaceAll('/','\\/');
+ const result=await scrapeSource({site:{...site,adapter:'woocommerce'},discoveryOffset:2,knownUrls:[site.origin+'/fallback'],knownOfferIds:['test-solar-pv400']},h.hooks,async url=>{urls.push(url);return {status:200,text:url.endsWith('/robots.txt')?'':feed};});
+ assert.equal(result.status,'succeeded',result.progress.message);
+ assert.equal(result.progress.checked,100);assert.equal(result.progress.errors,0);assert.equal(result.discoveryNext,3);
+ assert.equal(h.saved.length,100);assert.equal(h.saved[0].offers[0].id,'test-solar-1');assert.equal(h.saved[99].offers[0].id,'test-solar-100');
+ assert.equal(h.saved[0].offers[0].price,120);assert.equal(h.saved[0].offers[0].referencePrice,180);
+ assert.deepEqual(urls,[site.origin+'/robots.txt',site.origin+'/wp-json/wc/store/v1/products?per_page=100&page=3']);
+});
+test('nested forbidden HTML feeds refuse access without recursive text extraction',async()=>{
+ const h=makeHooks(),urls:string[]=[],body='<div>'.repeat(1300)+'Forbidden'+'</div>'.repeat(1300);
+ const result=await scrapeSource({site:{...site,adapter:'woocommerce'},knownUrls:[site.origin+'/fallback'],knownOfferIds:['test-solar-pv400']},h.hooks,async url=>{urls.push(url);return {status:200,text:url.endsWith('/robots.txt')?'':body};});
+ assert.equal(result.status,'failed');assert.equal(result.progress.errors,1);
+ assert.ok(h.events.some(e=>e.status==='error'&&/access denied/i.test(e.message)));
+ assert.equal(h.saved.length,0);assert.equal(urls.length,2);
+});
+test('entity-encoded access refusal retains the no-fallback policy',async()=>{
+ const h=makeHooks(),urls:string[]=[];
+ const result=await scrapeSource({site:{...site,adapter:'woocommerce'},knownUrls:[site.origin+'/fallback'],knownOfferIds:['test-solar-pv400']},h.hooks,async url=>{urls.push(url);return {status:200,text:url.endsWith('/robots.txt')?'':'<div>&nbsp;&#70;orbidden</div>'};});
+ assert.equal(result.status,'failed');assert.ok(h.events.some(e=>e.status==='error'&&/access denied/i.test(e.message)));
+ assert.equal(h.saved.length,0);assert.equal(urls.length,2);
+});
 test('job records real request events and publishes parsed USD prices with the registered source identity',async()=>{
  const h=makeHooks();const result=await scrapeSource({site,knownUrls:[]},h.hooks,async url=>({status:200,text:url.endsWith('/robots.txt')?'User-agent: *\nAllow: /':html}));
  assert.equal(result.status,'succeeded');assert.equal(result.progress.requests,2);assert.equal(h.saved[0].offers[0].price,120);assert.equal(h.saved[0].offers[0].retailerId,site.id);assert.equal(h.events.length,2);
