@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-10-12T18:59:43.869Z",
+  "batch": "thirteen",
+  "fixedCatalogListings": 8591,
+  "currentCatalogListings": 8593,
+  "familiesInvestigated": 254,
+  "assignedFamilies": 240,
+  "supplementalKitFamilies": 9,
+  "supplementalModuleFamilies": 5,
+  "approvedSourceRecords": 172,
+  "newVerifiedFields": 826,
+  "changedTechnicalIds": 167,
+  "newPanelCells": 0,
+  "fixedBaselineMissingFields": 40113,
+  "fixedResolvedComparisonFields": 501,
+  "fixedRemainingListings": 7281,
+  "fixedRemainingFields": 39612,
+  "currentRemainingListings": 7283,
+  "currentRemainingFields": 39652,
+  "catalogDriftAdditionalFields": 40,
+  "newCatalogListings": 2,
+  "legacySourceIdentityHolds": [
+    "eg4-6000xp",
+    "eg4-18kpv",
+    "eg4-lifepower4-v2",
+    "eg4-ll-s"
+  ],
+  "indexIds": 4359,
+  "priorIds": 4198,
+  "priorStrongFieldsRetained": 27576,
+  "priorSourceObjectsRetained": 7390,
+  "priorPanelCellsRetained": 2360,
+  "failures": [],
+  "sourceReviews": [
+    "batch-thirteen-storage-v2-independent-review.json",
+    "review-thirteen-balance-independent-v4/report.json",
+    "batch-thirteen-generation-v2-independent-signoff.json",
+    "batch-thirteen-supplemental-independent-review.json",
+    "batch-thirteen-module-independent-review.json"
+  ],
+  "unsupportedSTCElectricalRowsHeld": 79,
+  "approximateWeightsExcluded": 4,
+  "priceWorkflowChanged": false,
+  "priceRun": {
+    "id": "38292093134",
+    "status": "success",
+    "completedJobs": 5,
+    "freshLiveOfferTimestamps": 1133
+  },
+  "published": false,
+  "allRemainingFamilyWorkContinues": true
+}
