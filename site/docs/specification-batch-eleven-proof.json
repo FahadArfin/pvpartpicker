@@ -1,0 +1,87 @@
+{
+  "reviewedAt": "2026-10-12T16:17:53.833Z",
+  "batch": "eleven",
+  "catalogListings": 8591,
+  "remainingListings": 7293,
+  "remainingFields": 40654,
+  "remainingFamilies": 4449,
+  "sourcePackets": {
+    "generation": {
+      "decision": "approved_corrected_candidate_v3",
+      "sha256": "25f15807080b8e6cc90721285099edfe437ca59fa236d8e92718ab3284c9bab2",
+      "records": 41,
+      "listingIds": 39,
+      "technicalFields": 327,
+      "panelCells": 58,
+      "comparisonGaps": 108
+    },
+    "storage": {
+      "decision": "approved_exact_source_and_import_replay",
+      "sha256": "9e18f0ca93253176bfc00e05cca267ff44c026ceeac2182fa4f115d427f5e012",
+      "records": 60,
+      "listingIds": 51,
+      "technicalFields": 554,
+      "comparisonGaps": 212,
+      "sourceArtifacts": 256,
+      "hashFailures": 0,
+      "exactVariantRecords": 60,
+      "independentRawGuards": 86,
+      "negativeGuards": 810
+    },
+    "balance": {
+      "decision": "approved_independent_identity_and_source_review",
+      "sourceReviewSha256": "7b6da0944632d0ce2f1484f1b22a988ff8b6b304be7dd9ab2b24943d3cba659d",
+      "records": 77,
+      "listingIds": 67,
+      "technicalFields": 238,
+      "comparisonGaps": 117,
+      "sourceFamilies": 80,
+      "conflictFamiliesHeld": 7,
+      "otherSourceHolds": 22,
+      "pdfDocuments": 11,
+      "pdfVisualPages": 16,
+      "sourceArtifactEntries": 243,
+      "hashFailures": 0
+    }
+  },
+  "import": {
+    "reviewedSourceRecords": 3525,
+    "priorIdSupplements": 14,
+    "newBalanceRecords": 77,
+    "newBalanceListingIds": 67
+  },
+  "roleCorrections": {
+    "sha256": "9c0f8af4c82028a814429f7e1eb8b79720b269cfb53763bcf76ec989c3f2d505",
+    "changedListings": 36,
+    "roleChanges": 34,
+    "configurationOnlyChanges": 2,
+    "approval": true,
+    "offerPriceHistoryChanges": 0
+  },
+  "retention": {
+    "checkedAt": "2026-10-12T16:16:38.508Z",
+    "baselineIds": 3978,
+    "finalIds": 4060,
+    "priorIds": 3978,
+    "retainedFields": 29997,
+    "listingUpgrades": 28,
+    "retainedSources": 6910,
+    "panelCells": 2248,
+    "failures": []
+  },
+  "unresolved": {
+    "balanceFamiliesAwaitingIndependentSourceReview": 0,
+    "balanceFamiliesPartiallyResolved": 80,
+    "canadianSolarBGradeOffersHeld": 2,
+    "otherConflictingOrUnreadValuesRemainUnknown": true
+  },
+  "validation": {
+    "testsDiscovered": 500,
+    "testsPassed": 497,
+    "testsFailed": 0,
+    "testsSkipped": 3,
+    "typecheck": "passed after final correction",
+    "productionBuild": "passed after final correction"
+  },
+  "priceCollection": "Automated retailer collection remains unchanged; latest observed workflow run succeeded (38271752413 at 2026-10-12 15:39 UTC)."
+}

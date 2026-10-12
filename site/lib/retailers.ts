@@ -155,7 +155,7 @@ export function extractSpecs(title: string, category: Category, properties: Reco
   if (category === 'module-electronics') specs.moduleFunction=/optimi[sz]er/i.test(title)?(/rapid[ -]?shutdown/i.test(title)?'Optimizer + rapid shutdown':'Optimizer'):/transmitter/i.test(title)?'Shutdown transmitter':/\btap\b|\bcca\b|cloud connect/i.test(title)?'Shutdown gateway / access point':'Rapid shutdown';
   if (category === 'monitoring') specs.monitorType=/smart panel|gridboss|energy management|transfer|system controller|\bats\b/i.test(title)?'System / load control':/smart plug/i.test(title)?'Smart plug':/shunt|battery monitor/i.test(title)?'Battery monitor':/sensor/i.test(title)?'Sensor':/dongle|gateway|cerbo|logger/i.test(title)?'Gateway / communications':'Energy monitor / meter';
   if (category === 'all-in-one') {
-    specs.stationType=/\bdc portable power station|\btrail\b|\bexplorer\s*\d+d\b|dc-only/i.test(title)?'DC-only station (no AC inverter)':'Integrated power station';
+    specs.stationType=/\bdc (?:portable power station|ups)\b|\btrail\b|\bexplorer\s*\d+d\b|dc-only/i.test(title)?'DC-only station (no AC inverter)':'Integrated power station';
     const main=title.split(/\s—\s/)[0],whPattern=/\b([\d,]+(?:\.\d+)?)\s*wh\b/i;
     const selectedWh=selected.match(whPattern),selectedKwh=selected.match(/\b([\d.]+)\s*kwh\b/i),mainWh=main.match(whPattern);
     if(selectedWh) specs.capacityKwh=Number(selectedWh[1].replace(/,/g,''))/1000;
@@ -251,7 +251,8 @@ export function extractPackQuantity(title: string, category: Category): number |
 // Owner specification corrections are applied after this normalization in storage.
 export function categorizeProduct(product: Omit<Product,'offers'> & {offers?:Product['offers']}): Product {
   const emporiaSensorClamps=/^Emporia(?: Energy)?$/i.test(product.brand)&&/^Spring Clamps \(Set of 2\)$/i.test(product.name)&&/Vue Home Energy Monitor/i.test(product.description||'');
-  const category=emporiaSensorClamps?'monitoring':classify(product.name)||product.category;
+  const ovenTiltAccessory=/^GoSun$/i.test(product.brand)&&/^Fusion Tilt Kit$/i.test(product.name)&&/Fusion Solar Oven/i.test(product.description||'');
+  const category=ovenTiltAccessory?'accessories':emporiaSensorClamps?'monitoring':classify(product.name)||product.category;
   const specs={...product.specs};
   // Older substring matching read "bracket" as "rack". Remove only that
   // known title-parser artifact; genuine rack evidence/corrections survive.
@@ -275,7 +276,7 @@ export function categorizeProduct(product: Omit<Product,'offers'> & {offers?:Pro
    const conductor=Object.entries(specs).find(([key])=>/^conductor material$/i.test(key))?.[1];
    if(/^(?:bare|tinned|pure|uncoated)?\s*copper$/i.test(String(conductor||''))||/\b(?:100%\s*(?:pure\s*)?copper|conductor(?:s| material)?\s*:\s*(?:bare|tinned|uncoated|pure)?\s*copper)\b/i.test(product.description||''))extracted.wireMaterial='Copper';
   }
-  const configuration=describeConfiguration(product.name,category);
+  const configuration=ovenTiltAccessory?undefined:describeConfiguration(product.name,category);
   if(category==='kits')for(const key of ['watts','voltage','capacityKwh','capacityAh','outputWatts','stationType'])delete specs[key];
   if(category==='panels') {
     // Read labeled product specs only: comparisons in marketing prose describe other modules.
@@ -295,7 +296,7 @@ export function categorizeProduct(product: Omit<Product,'offers'> & {offers?:Pro
       panelDetails.technology='Back contact';panelDetails.technologySource='https://www.sec.gov/Archives/edgar/data/867773/000086777313000012/spwr_12302012x10-k.htm';
     }
   }
-  return {...product,category,configuration,specs:{...specs,...panelDetails,...extracted},offers:category==='kits'||category==='all-in-one'?offers.map(o=>({...o,packQuantity:1})):offers};
+  return {...product,category,configuration,specs:product.specification?{...product.specs}:{...specs,...panelDetails,...extracted},offers:category==='kits'||category==='all-in-one'?offers.map(o=>({...o,packQuantity:1})):offers};
 }
 function flatten(value: any): any[] { if (Array.isArray(value)) return value.flatMap(flatten); if (!value || typeof value !== 'object') return []; return [value, ...flatten(value['@graph']), ...flatten(value.itemListElement?.map((i: any) => i.item || i)), ...flatten(value.hasVariant)]; }
 export function parseProductPage(html: string, retailer: Retailer, url: string, observedAt: string): Product[] {

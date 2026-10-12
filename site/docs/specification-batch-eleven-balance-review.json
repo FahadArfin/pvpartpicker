@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-10-12T16:10:29.130Z",
+  "sourceFamilies": 80,
+  "sourceRecords": 77,
+  "uniqueListingIds": 67,
+  "fieldRows": 238,
+  "exactIdentitySourceBindings": 77,
+  "conflictsHeld": 7,
+  "sourceHolds": 22,
+  "frozenArtifactHashEntries": 243,
+  "hashFailures": 0,
+  "issues": [],
+  "disposition": "approved_for_reviewed_import",
+  "pdfVisualPagesReviewed": 16,
+  "pdfDocumentsReviewed": 11,
+  "reviewerNotes": [
+    "Independently matched exact listing names, source URLs and categories to the fixed catalog.",
+    "Checked selected variant bindings against inert retained product JSON; no source scripts executed.",
+    "Compared accepted rows to retained full descriptions/tables and linked manufacturer or retailer documents. Rows with contradictory or unbound model evidence remain excluded.",
+    "Visually reviewed all 16 relevant PDF pages; retained artifact hashes match the frozen manifest.",
+    "Held unresolved category, identity and condition fields plus all seven conflict families."
+  ],
+  "registryBefore": 3448,
+  "registryAfter": 3525,
+  "sourceRecordsImported": 77,
+  "importedUniqueIds": 67,
+  "numericRowsChecked": 238,
+  "numericClaimsWithoutSourceEvidence": 0,
+  "correctedDrawingDimensions": 1,
+  "sourceReviewSha256": "7b6da0944632d0ce2f1484f1b22a988ff8b6b304be7dd9ab2b24943d3cba659d"
+}

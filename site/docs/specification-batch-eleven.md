@@ -1,0 +1,11 @@
+# PVPartPicker specification research — batch eleven
+
+Batch eleven examined 240 manufacturer-page families covering 284 exact catalog listings across all 12 categories. The accepted source packets add 881 verified technical fields, 58 panel STC/NOCT cells, and resolve 320 comparison gaps across 90 exact listing identities. Fourteen identities already had reviewed data; their stronger existing fields and provenance remain intact.
+
+The source review rejected an earlier generation packet and the corrected packet removes the unsupported POWMR voltage range, retains the Rich Solar temperature and efficiency qualifiers, and keeps the SunCase operating-range recommendation qualifier. Two Canadian Solar B-grade offers remain held until their offer-grade identity can be represented safely. Sixty storage source records passed retained-artifact, exact-variant, table extraction and importer-replay checks; conflicting and model-unbound rows remain held.
+
+A separately reviewed catalog-role change updates 34 item roles and two OUPES configurations without changing offers, price observations, pack counts or previously reviewed identities. The balance-of-system packet then passed independent identity and source review: 77 records across 67 listings added 238 technical fields and resolved 117 comparison gaps. Eleven linked PDFs and 16 relevant pages were visually reviewed; a numeric replay confirmed all 238 claims against retained HTML or visual PDF evidence after correcting one vertical-dimension label. All 243 frozen source artifacts matched their hashes. Seven conflicting families and 22 other identity/source holds remain partial and unimported.
+
+The final imported snapshot contains 8,591 listings, with 7,293 listings and 40,654 comparison fields still unresolved across 4,449 remaining product families. The hosted price-collection workflow and its schedule were not changed.
+
+Validation in the isolated worktree: 500 tests discovered, 497 passed, 0 failed and 3 skipped before the balance import; the final post-import run passed: 497 passed, 0 failed and 3 skipped; typecheck and production build also passed. The build includes no UI changes. Source captures, independent review evidence, import report and per-family attempts are retained under `output/specification-research/` for the next continuation.

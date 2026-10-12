@@ -11,6 +11,16 @@ function familyKey(title:string){let hash=2166136261;for(const ch of title.toLow
 /** A selected component precedes the parent family and its optional equipment. */
 export function selectedSaleCategory(title:string):Category|undefined {
  const [main,...parts]=title.split(/\s—\s/), option=parts.join(' — ').trim(), subject=main.split('|')[0];
+ // Passive sale items must precede panel/battery names and parent bundle pickers.
+ if(/^Solar Panel (?:Cleaner|Caddy|Cleaning Pack)\b/i.test(subject))return 'accessories';
+ if(/^TOP Rack Solar Panel TRT Rail Less System\b/i.test(subject))return 'mounting';
+ if(/\bBattery Equalizer Voltage Balancer\b/i.test(subject))return 'accessories';
+ if(/^Anker SOLIX E10 Trolley\b/i.test(subject))return 'accessories';
+ if(/^Eco-Worthy \d+-Layer \d+-Inch Rack for Server Rack Batteries\b/i.test(subject))return 'mounting';
+ if(/^(?:\d+ Amp Surface Mount Outlet)\b/i.test(subject))return 'electrical';
+ if(/^Combiner Cord$/i.test(subject))return 'wiring';
+ if(/^(?:Mountain Hauler \d+|Women[’']s Mountain Pack\b|(?:SB|DB)-\d+ .*Diffuser$)/i.test(subject))return 'accessories';
+ if(/^BLUETTI FridgePower\b/i.test(subject)&&/\bFridgeBattery\b/i.test(option)&&!/\bFridgePower\b/i.test(option))return 'batteries';
  if(/^BigBattery 48V ETHOS Stackable Battery\b/i.test(subject)){
   if(/^1 x Parallel Kit$/i.test(option))return 'wiring';
   if(/^1 x Control Box Only$/i.test(option))return 'accessories';
@@ -34,7 +44,9 @@ export function selectedSaleCategory(title:string):Category|undefined {
 }
 
 function station(title:string){
+ if(/^OUPES Guardian 6000 V2 \+ G5 Extra Battery\b/i.test(title))return true;
  const subject=title.split(/[+|]/)[0];
+ if(/^BLUETTI FridgePower\b|^Pecron D(?:39|77) DC UPS\b|^\d+W 110V \dKWH All In One Portable Energy Storage System\b/i.test(subject))return true;
  if(/^Jackery FridgeGuard\b|^(?:\(Sold Out\)\s*)?Mega [35]\s*&\s*B[25] Extra Battery\b|^BLUETTI Premium 200 \[AC200PL\]/i.test(subject))return true;
  if(/expansion battery|extra battery|battery only|cable|adapter|cover|carrying|replacement/i.test(subject))return false;
  if(/inverter/i.test(subject)&&!/power\s*station|solar generator/i.test(subject))return false;
@@ -70,14 +82,19 @@ export function describeConfiguration(title:string,fallbackCategory?:Product['ca
  // Some product names contain a bundle descriptor before the selected capacity.
  const descriptor=chunks.length>2&&/^(?:UL 9540 Closed-Loop|Off-Grid) Bundle\b/i.test(chunks[1]);
  const main=descriptor?chunks.slice(0,2).join(' — '):chunks[0],variant=chunks.slice(descriptor?2:1).join(' — ').trim(),isStation=station(main);
+ if(/^UT 1300 BT-H \+ Battery Charger Bundle$/i.test(main)&&(!variant||/^Default Title$/i.test(variant)))return {kind:'combo',title:clean(main),family:familyKey(main),selection:'Listed bundle',type:'Storage bundles',components:[{type:'batteries',quantity:1,detail:'UT 1300 BT-H battery'},{type:'charging',quantity:1,detail:'Battery charger'}]};
  if(selectedSaleCategory(title))return;
  const family=familyKey(main);
  if(/^(?:6KW Array12V|3KW Array 12V) Victron w\/\s*Cerbo Kit for (?:50A|30A) RV\/Trailer\s*\|\s*4 Panel\s*\|\s*No Batteries$/i.test(main))return {kind:'combo',title:clean(main),family,selection:'Listed bundle',type:'Solar system kits',components:[{type:'panels',quantity:4,detail:'Four solar panels; module model not specified in title'},{type:'inverter',detail:'Victron MultiPlus inverter / charger'},{type:'charging',detail:'Victron MPPT controller'},{type:'controls',detail:'Victron Cerbo monitoring / communications'}]};
  if(isStation){
-  const identity=(compact(main)||main.split('|')[0].trim()).replace(/\s*&\s*B[25] Extra Battery\b.*$/i,'');
+  const identity=(/^OUPES Guardian 6000 V2 \+ G5 Extra Battery\b/i.test(main)?'OUPES Guardian 6000 V2':(compact(main)||main.split('|')[0].trim())).replace(/\s*&\s*B[25] Extra Battery\b.*$/i,'');
   const unitOnly=/\b(?:main\s+)?unit only\b|station only/i.test(variant);
   const chosen=unitOnly?'':variant||main.split('|')[0].split(/\s(?:\+|with|and)\s/).slice(1).join(' + ');
   const additions=extras(chosen);
+  if(/^OUPES Guardian 6000 V2 \+ G5 Extra Battery\b/i.test(main)){
+   const suffix=chosen.match(/\b([\d,]+)W Solar Panel\s*[*×]\s*(\d+)\b/i),panels=additions.find(c=>c.type==='panels');
+   if(suffix&&panels){panels.quantity=Number(suffix[2]);panels.detail=Number(suffix[1].replace(/,/g,''))+' W each · '+(Number(suffix[1].replace(/,/g,''))*panels.quantity).toLocaleString('en-US')+' W array';}
+  }
   const counted=chosen.match(/\b(\d+)\s*[x×*]\s*(?:E\d+\s*LFP|F\d+|\d+\s*PLUS|DELTA\b|Explorer\b|PowerStation\b)/i);
   const quantity=counted?Number(counted[1]):/\bdual\b.*\bkit/i.test(main)&&!unitOnly?2:/\bdelta.*\bultra/i.test(main)&&!unitOnly?undefined:1;
   const combo=additions.length>0||(quantity||0)>1;
