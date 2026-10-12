@@ -1,5 +1,5 @@
 import { load } from 'cheerio';
-import type { Category, Product, Specs } from './types.ts';
+import type { Category, Product, Specs, Offer } from './types.ts';
 import {describeConfiguration,selectedSaleCategory} from './bundles.ts';
 import additionalRetailers from '../data/retailer-sources.json' with {type:'json'};
 export interface Retailer { id: string; name: string; origin: string; seeds?: string[]; adapter?:'shopify'|'woocommerce'|'sitemap'|'pages';startPath?:string;urls?:string[];enabled?:boolean;usdConfirmed?:boolean;sourceNotes?:string;frequencyMinutes?:number; }
@@ -225,6 +225,16 @@ function deltaUltraBatteryPack(title:string){
  if(pack&&module)return {quantity:Number(pack[1]),moduleCapacityKwh:Number(module[1]),packCapacityKwh:Number(pack[2])};
 }
 
+
+/** Normalize one selected sale offer without changing enriched product metadata. */
+export function normalizeSelectedBatteryPackOffer(product:Pick<Product,'name'|'category'|'sourceUrl'>,offer:Offer):Offer {
+ const batteryPack=product.category==='batteries'?deltaUltraBatteryPack(product.name):undefined;
+ if(!batteryPack||offer.packQuantity===batteryPack.quantity)return offer;
+ // The original recorded package belongs to this exact selected retailer variant.
+ try{const a=new URL(offer.url),b=new URL(product.sourceUrl);if(a.origin!==b.origin||a.pathname!==b.pathname||a.searchParams.get('variant')!==b.searchParams.get('variant'))return offer;}catch{return offer;}
+ return {...offer,packQuantity:batteryPack.quantity,recordedPackQuantity:offer.recordedPackQuantity??offer.packQuantity};
+}
+
 export function extractPackQuantity(title: string, category: Category): number | null {
   const batteryPack=category==='batteries'?deltaUltraBatteryPack(title):undefined;
   if(batteryPack)return batteryPack.quantity;
@@ -249,13 +259,7 @@ export function categorizeProduct(product: Omit<Product,'offers'> & {offers?:Pro
   if(category!==product.category) for(const key of ['face','cellType','technology','formFactor','chemistry','inverterType','acOutput','gridForming','mountType','gauge','lengthFt','kitType','stationType','watts','voltage','capacityKwh']) delete specs[key];
   if(category!==product.category&&category==='batteries'){delete specs.monitorType;delete specs.accessoryType;}
   if(category!==product.category&&product.category==='batteries')for(const key of ['capacityAh','batteryKind'])delete specs[key];
-  const batteryPack=category==='batteries'?deltaUltraBatteryPack(product.name):undefined;
-  const offers=(product.offers||[]).map(o=>{
-   if(!batteryPack||o.packQuantity===batteryPack.quantity)return o;
-   // Apply only to the exact selected offer, including merged retailer listings.
-   try{const a=new URL(o.url),b=new URL(product.sourceUrl);if(a.origin!==b.origin||a.pathname!==b.pathname||a.searchParams.get('variant')!==b.searchParams.get('variant'))return o;}catch{return o;}
-   return {...o,packQuantity:batteryPack.quantity,recordedPackQuantity:o.recordedPackQuantity??o.packQuantity};
-  }); // D1 stores product metadata separately from offers.
+  const offers=(product.offers||[]).map(o=>normalizeSelectedBatteryPackOffer({...product,category},o)); // D1 stores metadata separately from offers.
   const panelDetails:Specs={};
   const extracted=extractSpecs(product.name,category);
   if(emporiaSensorClamps)extracted.monitorType='Sensor';
