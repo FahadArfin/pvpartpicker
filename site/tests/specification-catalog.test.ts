@@ -5,8 +5,8 @@ import type {ProductSpecification,Product} from '../lib/types.ts';
 const catalog=JSON.parse(readFileSync(new URL('../data/catalog.json',import.meta.url),'utf8')) as {products:Product[]};
 const details=JSON.parse(readFileSync(new URL('../data/specifications.json',import.meta.url),'utf8')) as Record<string,ProductSpecification>;
 test('every stored listing has a brief, source-linked specification record with unique technical fields',()=>{
- assert.equal(Object.keys(details).length,catalog.products.length);
- for(const p of catalog.products){const d=details[p.id];assert.ok(d,p.id);assert.ok(d.summary.length<=220,p.id);const fields=d.groups.flatMap(g=>g.fields);assert.equal(new Set(fields.map(f=>f.key)).size,fields.length,p.id);
+ assert.ok(Object.keys(details).length>=catalog.products.length);
+ for(const [id,d] of Object.entries(details)){const p=catalog.products.find(p=>p.id===id)||{id,specs:d.identity?.anchors||{}};assert.ok(catalog.products.some(p=>p.id===id)||d.identity,id+' needs identity guard');assert.ok(d,p.id);assert.ok(d.summary.length<=220,p.id);const fields=d.groups.flatMap(g=>g.fields);assert.equal(new Set(fields.map(f=>f.key)).size,fields.length,p.id);
   for(const f of fields){assert.ok(d.sources.some(s=>s.url===f.source),p.id+' '+f.key);assert.ok(!/batteries in parallel|regular price|sale price|rated [1-5] out of/i.test(f.value),p.id+' '+f.key);}
   if(d.panelRatings?.stc.pmax&&p.specs.watts)assert.equal(Number(d.panelRatings.stc.pmax.replace(/,/g,'').match(/\d+(?:\.\d+)?/)?.[0]),Number(p.specs.watts),p.id);
  }

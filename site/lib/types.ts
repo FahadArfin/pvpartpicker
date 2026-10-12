@@ -3,7 +3,8 @@ export type Specs = Record<string, string | number | boolean>;
 export interface Offer { id: string; retailerId: string; retailer: string; url: string; price: number; referencePrice?:number; currency: 'USD'; packQuantity: number; recordedPackQuantity?:number; stock: 'in_stock' | 'out_of_stock' | 'unknown'; observedAt: string; sku?: string; shipping?: number; condition: 'new' | 'used'; listingId?:string; selectionLabel?:string; }
 export interface SpecificationSource { url: string; kind: 'datasheet' | 'manual' | 'manufacturer' | 'retailer' | 'listing'; label: string; model?: string; checkedAt?: string; }
 export interface SpecificationField { key: string; label: string; value: string; source: string; kind?: SpecificationSource['kind']; }
-export interface ProductSpecification { summary: string; groups: {title: string; fields: SpecificationField[]}[]; sources: SpecificationSource[]; notes: string[]; panelRatings?: {stc: Record<string,string>; noct: Record<string,string>; noctLabel?: string; sources?: Record<string,string>}; }
+export interface SpecificationIdentity {name:string;sourceUrl:string;category:Category;anchors:Record<string,string|number|boolean>;}
+export interface ProductSpecification { identity?:SpecificationIdentity; summary: string; groups: {title: string; fields: SpecificationField[]}[]; sources: SpecificationSource[]; notes: string[]; panelRatings?: {stc: Record<string,string>; noct: Record<string,string>; noctLabel?: string; sources?: Record<string,string>}; }
 export type BundleComponentType = 'power-station' | 'panels' | 'batteries' | 'inverter' | 'mounting' | 'controls' | 'charging' | 'accessories';
 export interface BundleComponent {type:BundleComponentType;quantity?:number;detail:string;}
 export interface ProductConfiguration {kind:'combo'|'standalone';title:string;family:string;selection:string;type:string;components:BundleComponent[];}

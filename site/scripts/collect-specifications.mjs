@@ -8,7 +8,9 @@ import {buildSpecification,technicalRows} from '../lib/specifications.ts';
 import {categorizeProduct} from '../lib/retailers.ts';
 const args=process.argv.slice(2),cache=resolve(args[args.indexOf('--cache')+1]||'../output/spec-research');
 const root=new URL('../',import.meta.url);
-const catalog=JSON.parse(await readFile(new URL('data/catalog.json',root),'utf8'));
+const catalogArgument=args.indexOf('--catalog');
+const catalogPath=catalogArgument>=0?resolve(args[catalogArgument+1]):new URL('data/catalog.json',root);
+const catalog=JSON.parse(await readFile(catalogPath,'utf8'));
 const {sources,failures}=JSON.parse(await readFile(resolve(cache,'sources.json'),'utf8'));
 let pdfs={};try{pdfs=JSON.parse(await readFile(resolve(cache,'pdf-tables.json'),'utf8'));}catch{}
 const reviewed=JSON.parse(await readFile(new URL('data/specification-reviewed.json',root),'utf8'));
@@ -65,6 +67,7 @@ for(const original of catalog.products){
  if(details.panelRatings?.stc.voc)audit.panelElectricalProducts++;if(details.panelRatings?.noct.voc)audit.panelNoctProducts++;
  const cat=audit.categories[p.category]||{products:0,sheet:0,manual:0,table:0,listingOnly:0};cat.products++;cat.sheet+=Number(sheet);cat.manual+=Number(manualDoc);cat.table+=Number(table);cat.listingOnly+=Number(!sheet&&!manualDoc&&!table);audit.categories[p.category]=cat;
 }
-await writeFile(new URL('data/specifications.json',root),JSON.stringify(index));
-await writeFile(new URL('data/specification-audit.json',root),JSON.stringify(audit,null,2)+'\n');
+const outputArgument=args.indexOf('--output');const outputPath=outputArgument>=0?resolve(args[outputArgument+1]):new URL('data/specifications.json',root);
+await writeFile(outputPath,JSON.stringify(index));
+await writeFile(outputArgument>=0?outputPath+'.audit.json':new URL('data/specification-audit.json',root),JSON.stringify(audit,null,2)+'\n');
 console.log(JSON.stringify({...audit,missing:audit.missing.length,excludedDocuments:audit.excludedDocuments.length},null,2));
