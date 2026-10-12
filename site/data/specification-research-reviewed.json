@@ -6059,5 +6059,2275 @@
     "reviewNote": "Exact current single-option kit SKU and listing match. Package Contents text supplies explicit manufacturer BOM. The 200 W mounting item is copied exactly as RNG-MTS-ZBx2 x1 (one two-set bundle); no invented individual fastener count. No component voltage/current/dimensions/weight are promoted to aggregate kit ratings. Package contents row is the exact verified BOM. Baseline importer dry run imports model only; parent integration will add kit-only contents recognition. Included charge controller/panel rows provide contextual identity only, never aggregate engineering limits. No battery/inverter assumed included.",
     "reviewStatus": "accepted",
     "acceptedAt": "2026-10-12T03:26:02.574Z"
+  },
+  {
+    "productIds": [
+      "renogy-43212843122803"
+    ],
+    "expected": {
+      "renogy-43212843122803": {
+        "name": "320W N-Type Solar Panel（2-Pack） — 2 Panels",
+        "sourceUrl": "https://www.renogy.com/products/renogy-n-type-320-watt-monocrystalline-solar-panel?variant=43212843122803",
+        "category": "panels",
+        "anchors": {
+          "watts": 320
+        }
+      }
+    },
+    "model": "RSP320DC-BK",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/renogy-n-type-320-watt-monocrystalline-solar-panel",
+    "label": "Renogy RSP320DC-BK official US specification table",
+    "checkedAt": "2026-10-12T03:59:01.846Z",
+    "rows": [
+      [
+        "Model",
+        "RSP320DC-BK"
+      ],
+      [
+        "Maximum Power at STC",
+        "320 W"
+      ],
+      [
+        "Open Circuit Voltage",
+        "43.82 V"
+      ],
+      [
+        "Short Circuit Current",
+        "8.92 A"
+      ],
+      [
+        "Optimum Operating Voltage",
+        "37.85 V"
+      ],
+      [
+        "Optimum Operating Current",
+        "8.46 A"
+      ],
+      [
+        "Maximum System Voltage",
+        "1000 VDC"
+      ],
+      [
+        "Maximum Series Fuse Rating",
+        "20 A"
+      ],
+      [
+        "Module Efficiency",
+        "22.2%"
+      ],
+      [
+        "Dimensions",
+        "1640 × 880 × 35 mm"
+      ],
+      [
+        "Weight",
+        "14.9 kg"
+      ]
+    ],
+    "reviewNote": "Reviewed actual manufacturer HTML specification grid retained in output/spec-research/aa32102cff6a7df8.html (collected 2026-10-05T03:14:21.311Z); SKU confirmed in raw product variant data. Exact catalog title, full variant URL and category guards retained. Ratings are per module, including exact 2-panel pack variants; no aggregate pack electrical values or rear-gain STC values. Current manufacturer product HTML read on 2026-10-12 returned HTTP 200 and confirmed the same US SKU family after robots permission; manufacturer table evidence remains the dated retained HTML. No inaccessible PDF evidence used.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.456Z"
+  },
+  {
+    "productIds": [
+      "renogy-43178652106867"
+    ],
+    "expected": {
+      "renogy-43178652106867": {
+        "name": "250W N-Type Bifacial Solar Panel — 1 Panel · Extra $99 Shipping Fee",
+        "sourceUrl": "https://www.renogy.com/products/renogy-16bb-n-type-250-watt-bifacial-solar-panel?variant=43178652106867",
+        "category": "panels",
+        "anchors": {
+          "watts": 250
+        }
+      }
+    },
+    "model": "RSP250DCT",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/renogy-16bb-n-type-250-watt-bifacial-solar-panel",
+    "label": "Renogy RSP250DCT official US specification table",
+    "checkedAt": "2026-10-12T03:59:01.860Z",
+    "rows": [
+      [
+        "Model",
+        "RSP250DCT"
+      ],
+      [
+        "Maximum Power at STC",
+        "250 W"
+      ],
+      [
+        "Open Circuit Voltage",
+        "22.35 V"
+      ],
+      [
+        "Short Circuit Current",
+        "13.49 A"
+      ],
+      [
+        "Optimum Operating Voltage",
+        "19.52 V"
+      ],
+      [
+        "Optimum Operating Current",
+        "12.81 A"
+      ],
+      [
+        "Maximum System Voltage",
+        "1000 VDC"
+      ],
+      [
+        "Maximum Series Fuse Rating",
+        "30 A"
+      ],
+      [
+        "Module Efficiency",
+        "21.2%"
+      ],
+      [
+        "Dimensions",
+        "1547 × 763 × 30 mm"
+      ],
+      [
+        "Weight",
+        "12.4 kg"
+      ]
+    ],
+    "reviewNote": "Reviewed actual manufacturer HTML specification grid retained in output/spec-research/aef091828f358aea.html (collected 2026-10-05T03:14:05.433Z); SKU confirmed in raw product variant data. Exact catalog title, full variant URL and category guards retained. Ratings are per module, including exact 2-panel pack variants; no aggregate pack electrical values or rear-gain STC values. Current manufacturer product HTML read on 2026-10-12 returned HTTP 200 and confirmed the same US SKU family after robots permission; manufacturer table evidence remains the dated retained HTML. No inaccessible PDF evidence used.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.457Z"
+  },
+  {
+    "productIds": [
+      "renogy-43178666000499"
+    ],
+    "expected": {
+      "renogy-43178666000499": {
+        "name": "590W N-Type Bifacial Solar Panel (2-Pack) — 2 Panels",
+        "sourceUrl": "https://www.renogy.com/products/renogy-bifacial-590-watt-n-type-monocrystalline-solar-panel?variant=43178666000499",
+        "category": "panels",
+        "anchors": {
+          "watts": 590
+        }
+      }
+    },
+    "model": "RSP590DCT-144",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/renogy-bifacial-590-watt-n-type-monocrystalline-solar-panel",
+    "label": "Renogy RSP590DCT-144 official US specification table",
+    "checkedAt": "2026-10-12T03:59:01.877Z",
+    "rows": [
+      [
+        "Model",
+        "RSP590DCT-144"
+      ],
+      [
+        "Maximum Power at STC",
+        "590 W"
+      ],
+      [
+        "Open Circuit Voltage",
+        "52.63 V"
+      ],
+      [
+        "Short Circuit Current",
+        "14.13 A"
+      ],
+      [
+        "Optimum Operating Voltage",
+        "43.71 V"
+      ],
+      [
+        "Optimum Operating Current",
+        "13.50 A"
+      ],
+      [
+        "Maximum System Voltage",
+        "1500 VDC"
+      ],
+      [
+        "Maximum Series Fuse Rating",
+        "30 A"
+      ],
+      [
+        "Module Efficiency",
+        "22.8%"
+      ],
+      [
+        "Dimensions",
+        "2278 × 1134 × 35 mm"
+      ],
+      [
+        "Weight",
+        "26.5 kg"
+      ]
+    ],
+    "reviewNote": "Reviewed actual manufacturer HTML specification grid retained in output/spec-research/3e3c377360d20edf.html (collected 2026-10-05T03:16:03.313Z); SKU confirmed in raw product variant data. Exact catalog title, full variant URL and category guards retained. Ratings are per module, including exact 2-panel pack variants; no aggregate pack electrical values or rear-gain STC values. Current manufacturer product HTML read on 2026-10-12 returned HTTP 200 and confirmed the same US SKU family after robots permission; manufacturer table evidence remains the dated retained HTML. No inaccessible PDF evidence used.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.457Z"
+  },
+  {
+    "productIds": [
+      "renogy-43178670391411"
+    ],
+    "expected": {
+      "renogy-43178670391411": {
+        "name": "E.Flex 30W Portable Solar Panel",
+        "sourceUrl": "https://www.renogy.com/products/e-flex-se-30w-pro-portable-solar-panel?variant=43178670391411",
+        "category": "panels",
+        "anchors": {
+          "watts": 30
+        }
+      }
+    },
+    "model": "RPP30EF-LN",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/e-flex-se-30w-pro-portable-solar-panel",
+    "label": "Renogy RPP30EF-LN official US specification table",
+    "checkedAt": "2026-10-12T03:59:01.902Z",
+    "rows": [
+      [
+        "Model",
+        "RPP30EF-LN"
+      ],
+      [
+        "Maximum Power at STC",
+        "30 W"
+      ],
+      [
+        "Open Circuit Voltage",
+        "19.04 V"
+      ],
+      [
+        "Short Circuit Current",
+        "1.97 A"
+      ],
+      [
+        "Optimum Operating Voltage",
+        "15.96 V"
+      ],
+      [
+        "Optimum Operating Current",
+        "1.88 A"
+      ],
+      [
+        "Cell Efficiency",
+        "≥22.4%"
+      ],
+      [
+        "Operating Temperature",
+        "-10°C to +65°C"
+      ],
+      [
+        "Dimensions",
+        "Folded: 267.9 × 225 × 18 mm; unfolded: 923 × 267.9 × 2 mm"
+      ],
+      [
+        "Weight",
+        "0.56 kg"
+      ]
+    ],
+    "reviewNote": "Reviewed actual manufacturer HTML specification grid retained in output/spec-research/7d25633d4db0925a.html (collected 2026-10-05T03:16:38.161Z); SKU confirmed in raw product variant data. Exact catalog title, full variant URL and category guards retained. Ratings are per module, including exact 2-panel pack variants; no aggregate pack electrical values or rear-gain STC values. Current manufacturer product HTML read on 2026-10-12 returned HTTP 200 and confirmed the same US SKU family after robots permission; manufacturer table evidence remains the dated retained HTML. No inaccessible PDF evidence used.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.457Z"
+  },
+  {
+    "productIds": [
+      "renogy-43178666786931"
+    ],
+    "expected": {
+      "renogy-43178666786931": {
+        "name": "2000W 24V Pure Sine Wave Inverter",
+        "sourceUrl": "https://www.renogy.com/products/2000w-24v-pure-sine-wave-inverter?variant=43178666786931",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "model": "RIV2420P2-12S",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/2000w-24v-pure-sine-wave-inverter",
+    "label": "Renogy RIV2420P2-12S official US specification table",
+    "checkedAt": "2026-10-12T03:59:01.913Z",
+    "rows": [
+      [
+        "Model",
+        "RIV2420P2-12S"
+      ],
+      [
+        "Continuous Output Power",
+        "2000 W"
+      ],
+      [
+        "Output Waveform",
+        "Pure Sine Wave"
+      ],
+      [
+        "Output Voltage",
+        "120 V AC ±3%"
+      ],
+      [
+        "Output Frequency",
+        "50/60 Hz"
+      ],
+      [
+        "Rated Battery Input Voltage",
+        "24 VDC"
+      ],
+      [
+        "Battery Input Voltage Range",
+        "23–30.7 VDC"
+      ],
+      [
+        "Surge Power",
+        "4000 W (2 seconds)"
+      ],
+      [
+        "Maximum Efficiency",
+        "Maximum 92%"
+      ],
+      [
+        "Full Load Efficiency",
+        "89%"
+      ],
+      [
+        "Dimensions",
+        "430.3 × 228.4 × 95.3 mm"
+      ],
+      [
+        "Weight",
+        "4.6 kg"
+      ],
+      [
+        "Enclosure Rating",
+        "IP20"
+      ]
+    ],
+    "reviewNote": "Reviewed actual manufacturer HTML specification grid retained in output/spec-research/7437ef4d27d6912c.html (collected 2026-10-05T03:16:11.404Z); SKU confirmed in raw product variant data. Exact catalog title, full variant URL and category guards retained. Current manufacturer product HTML read on 2026-10-12 returned HTTP 200 and confirmed the same US SKU family after robots permission; manufacturer table evidence remains the dated retained HTML. No inaccessible PDF evidence used.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.457Z"
+  },
+  {
+    "productIds": [
+      "renogy-43178688807027"
+    ],
+    "expected": {
+      "renogy-43178688807027": {
+        "name": "700W 12V Pure Sine Wave Inverter",
+        "sourceUrl": "https://www.renogy.com/products/700w-12v-pure-sine-wave-inverter?variant=43178688807027",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "model": "RNG-INVT-700-12V-P2",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/700w-12v-pure-sine-wave-inverter",
+    "label": "Renogy RNG-INVT-700-12V-P2 official US specification table",
+    "checkedAt": "2026-10-12T03:59:01.920Z",
+    "rows": [
+      [
+        "Model",
+        "RNG-INVT-700-12V-P2"
+      ],
+      [
+        "Continuous Output Power",
+        "700 W"
+      ],
+      [
+        "Output Voltage",
+        "120 V"
+      ],
+      [
+        "Output Frequency",
+        "60 Hz ±0.1%"
+      ],
+      [
+        "Output Waveform",
+        "Pure Sine Wave"
+      ],
+      [
+        "Nominal Input Battery Voltage",
+        "12 V"
+      ],
+      [
+        "Nominal Efficiency",
+        ">90%"
+      ],
+      [
+        "Dimensions",
+        "12.2 × 7.4 × 3.3 in"
+      ],
+      [
+        "Weight",
+        "5.6 lb"
+      ],
+      [
+        "Operating Temperature Range",
+        "-4°F to 104°F"
+      ],
+      [
+        "No Load Current Draw",
+        "<0.8 A"
+      ]
+    ],
+    "reviewNote": "Reviewed actual manufacturer HTML specification grid retained in output/spec-research/c5a0a5c85e15d31a.html (collected 2026-10-05T03:17:22.270Z); SKU confirmed in raw product variant data. Exact catalog title, full variant URL and category guards retained. Untimed 1400W peak withheld. Current manufacturer product HTML read on 2026-10-12 returned HTTP 200 and confirmed the same US SKU family after robots permission; manufacturer table evidence remains the dated retained HTML. No inaccessible PDF evidence used.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.457Z"
+  },
+  {
+    "productIds": [
+      "renogy-43178665410675"
+    ],
+    "expected": {
+      "renogy-43178665410675": {
+        "name": "3000W 12V Pro Pure Sine Wave Inverter with EcoSleep Mode — Inverter Only",
+        "sourceUrl": "https://www.renogy.com/products/3000w-12v-pro-pure-sine-wave-inverter-with-ecosleep-mode?variant=43178665410675",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "model": "RIV1230P2-126",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/3000w-12v-pro-pure-sine-wave-inverter-with-ecosleep-mode",
+    "label": "Renogy RIV1230P2-126 official US specification table",
+    "checkedAt": "2026-10-12T03:59:01.931Z",
+    "rows": [
+      [
+        "Model",
+        "RIV1230P2-126"
+      ],
+      [
+        "Rated Output Power",
+        "3000 W"
+      ],
+      [
+        "Surge Power (100ms)",
+        "6000 W (100 ms)"
+      ],
+      [
+        "Nominal output Voltage RMS",
+        "120 Vac ±3%"
+      ],
+      [
+        "Output Frequency",
+        "60 Hz ±0.3 Hz"
+      ],
+      [
+        "Output Waveform",
+        "Pure Sine Wave"
+      ],
+      [
+        "Nominal Input Voltage",
+        "12 VDC"
+      ],
+      [
+        "Input Voltage Range",
+        "11–15.5 VDC"
+      ],
+      [
+        "Peak Efficiency",
+        "≥90%"
+      ],
+      [
+        "Full-load Efficiency",
+        "≥87%"
+      ],
+      [
+        "Communication",
+        "RS485 / RV-C"
+      ],
+      [
+        "Dimensions",
+        "20.82 × 10.35 × 4.12 in"
+      ],
+      [
+        "Weight",
+        "6 kg"
+      ]
+    ],
+    "reviewNote": "Reviewed actual manufacturer HTML specification grid retained in output/spec-research/763629aa256fed3e.html (collected 2026-10-05T03:15:57.271Z); SKU confirmed in raw product variant data. Exact catalog title, full variant URL and category guards retained. Current manufacturer product HTML read on 2026-10-12 returned HTTP 200 and confirmed the same US SKU family after robots permission; manufacturer table evidence remains the dated retained HTML. No inaccessible PDF evidence used.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.457Z"
+  },
+  {
+    "productIds": [
+      "renogy-43178710270067"
+    ],
+    "expected": {
+      "renogy-43178710270067": {
+        "name": "DCC30S 12V 30A Dual Input DC-DC On-Board Battery Charger with MPPT — Battery Charger Only",
+        "sourceUrl": "https://www.renogy.com/products/dcc30s-12v-30a-dual-input-dc-dc-on-board-battery-charger-with-mppt?variant=43178710270067",
+        "category": "charging",
+        "anchors": {}
+      }
+    },
+    "model": "RBC30D1S",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/dcc30s-12v-30a-dual-input-dc-dc-on-board-battery-charger-with-mppt",
+    "label": "Renogy RBC30D1S official US specification table",
+    "checkedAt": "2026-10-12T03:59:01.944Z",
+    "rows": [
+      [
+        "Model",
+        "RBC30D1S"
+      ],
+      [
+        "System Voltage",
+        "12 VDC"
+      ],
+      [
+        "Battery Voltage Range",
+        "9–16 VDC"
+      ],
+      [
+        "Maximum Charging Current",
+        "30 A"
+      ],
+      [
+        "Battery Types",
+        "AGM/SLD, GEL, FLD, LI, USER"
+      ],
+      [
+        "Conversion Efficiency (charging)",
+        "94%"
+      ],
+      [
+        "Max. Solar Input Voltage",
+        "30 V"
+      ],
+      [
+        "Max. Solar Input Power",
+        "400 W"
+      ],
+      [
+        "Max. Alternator Input Power",
+        "400 W"
+      ],
+      [
+        "Dimensions",
+        "244 × 146 × 77 mm"
+      ],
+      [
+        "Weight",
+        "1.4 kg"
+      ],
+      [
+        "Communication Protocol",
+        "RS485"
+      ]
+    ],
+    "reviewNote": "Reviewed actual manufacturer HTML specification grid retained in output/spec-research/b8c1e500a30818cf.html (collected 2026-10-05T03:14:03.195Z); SKU confirmed in raw product variant data. Exact catalog title, full variant URL and category guards retained. Current manufacturer product HTML read on 2026-10-12 returned HTTP 200 and confirmed the same US SKU family after robots permission; manufacturer table evidence remains the dated retained HTML. No inaccessible PDF evidence used.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.457Z"
+  },
+  {
+    "productIds": [
+      "renogy-43178695753843"
+    ],
+    "expected": {
+      "renogy-43178695753843": {
+        "name": "REGO 12V 60A MPPT Solar Charge Controller — None",
+        "sourceUrl": "https://www.renogy.com/products/rego-12v-60a-mppt-solar-charge-controller?variant=43178695753843",
+        "category": "charging",
+        "anchors": {}
+      }
+    },
+    "model": "RCC60REGO",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/rego-12v-60a-mppt-solar-charge-controller",
+    "label": "Renogy RCC60REGO official US specification table",
+    "checkedAt": "2026-10-12T03:59:01.954Z",
+    "rows": [
+      [
+        "Model",
+        "RCC60REGO"
+      ],
+      [
+        "Nominal System Voltage",
+        "12 V"
+      ],
+      [
+        "Rated Charge Current",
+        "60 A"
+      ],
+      [
+        "Max. PV Input Power",
+        "800 W"
+      ],
+      [
+        "MPPT Voltage Range",
+        "15–100 VDC (12V system)"
+      ],
+      [
+        "Solar Input Voltage Range (VOC)",
+        "100 V"
+      ],
+      [
+        "Maximum PV short circuit current",
+        "50 A"
+      ],
+      [
+        "Battery Operating Range",
+        "10–16 V"
+      ],
+      [
+        "Battery Types",
+        "AGM/Sealed, GEL, FLOODED, LFP, USER"
+      ],
+      [
+        "Dimensions",
+        "239.4 × 187 × 108.8 mm"
+      ],
+      [
+        "Weight",
+        "2.30 kg"
+      ]
+    ],
+    "reviewNote": "Reviewed actual manufacturer HTML specification grid retained in output/spec-research/e7aa9dd63028311c.html (collected 2026-10-05T03:13:08.509Z); SKU confirmed in raw product variant data. Exact catalog title, full variant URL and category guards retained. Source contains G2 manual alongside original RCC60REGO SKU; table transcribed only, newer-manual-specific features withheld. Current manufacturer product HTML read on 2026-10-12 returned HTTP 200 and confirmed the same US SKU family after robots permission; manufacturer table evidence remains the dated retained HTML. No inaccessible PDF evidence used. Manufacturer Isc is short-circuit current, not maximum operating MPPT input current.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.457Z"
+  },
+  {
+    "productIds": [
+      "renogy-43178656890995"
+    ],
+    "expected": {
+      "renogy-43178656890995": {
+        "name": "REGO 12V/24V/36V/48V 30A MPPT Solar Charge Controller",
+        "sourceUrl": "https://www.renogy.com/products/renogy-rego-12v-24v-36v-48v-30a-mppt-solar-charge-controller?variant=43178656890995",
+        "category": "charging",
+        "anchors": {}
+      }
+    },
+    "model": "RCC30REGO",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/renogy-rego-12v-24v-36v-48v-30a-mppt-solar-charge-controller",
+    "label": "Renogy RCC30REGO official US specification table",
+    "checkedAt": "2026-10-12T03:59:01.976Z",
+    "rows": [
+      [
+        "Model",
+        "RCC30REGO"
+      ],
+      [
+        "Rated Charge Current",
+        "30 A"
+      ],
+      [
+        "Maximum Solar Input Voltage (Voc)",
+        "150 VDC"
+      ],
+      [
+        "Maximum Solar Input Power",
+        "440 W (12V battery); 880 W (24V battery); 1314 W (36V battery); 1700 W (48V battery)"
+      ],
+      [
+        "Battery Operating Voltage Range",
+        "8–64 V"
+      ],
+      [
+        "MPPT Tracking Efficiency",
+        ">99%"
+      ],
+      [
+        "Conversion Efficiency",
+        ">97%"
+      ],
+      [
+        "Communication",
+        "RS485; RENOGY CAN"
+      ],
+      [
+        "Enclosure Rating",
+        "IP43"
+      ],
+      [
+        "Dimensions",
+        "250 × 188 × 80 mm (solar connector length excluded); 250 × 218 × 80 mm (included)"
+      ],
+      [
+        "Weight",
+        "2.7 kg"
+      ]
+    ],
+    "reviewNote": "Reviewed actual manufacturer HTML specification grid retained in output/spec-research/7fe8061e53219a94.html (collected 2026-10-05T03:15:23.043Z); SKU confirmed in raw product variant data. Exact catalog title, full variant URL and category guards retained. Solar power remains conditional by battery voltage; no scalar aggregate, MPPT voltage range or port count inferred. Current manufacturer product HTML read on 2026-10-12 returned HTTP 200 and confirmed the same US SKU family after robots permission; manufacturer table evidence remains the dated retained HTML. No inaccessible PDF evidence used.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.457Z"
+  },
+  {
+    "productIds": [
+      "renogy-43178665082995"
+    ],
+    "expected": {
+      "renogy-43178665082995": {
+        "name": "40A DC-DC Battery Charger with MPPT",
+        "sourceUrl": "https://www.renogy.com/products/renogy-40a-dc-dc-battery-charger-with-mppt?variant=43178665082995",
+        "category": "charging",
+        "anchors": {}
+      }
+    },
+    "model": "RBC40D1S",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/renogy-40a-dc-dc-battery-charger-with-mppt",
+    "label": "Renogy RBC40D1S official US specification table",
+    "checkedAt": "2026-10-12T03:59:01.987Z",
+    "rows": [
+      [
+        "Model",
+        "RBC40D1S"
+      ],
+      [
+        "System Voltage",
+        "12V–12V"
+      ],
+      [
+        "Maximum Charging Current",
+        "40 A"
+      ],
+      [
+        "Solar Input Voltage",
+        "10–30 V DC"
+      ],
+      [
+        "Output Voltage",
+        "10–16 V DC"
+      ],
+      [
+        "Output Power",
+        "616 W"
+      ],
+      [
+        "Battery Types",
+        "AGM, Gel, Flooded, Lithium-iron Phosphate"
+      ],
+      [
+        "Input Fuse Rating",
+        "60 A"
+      ],
+      [
+        "Output Fuse Rating",
+        "50 A"
+      ],
+      [
+        "Conversion Efficiency (charging)",
+        "93%"
+      ],
+      [
+        "Enclosure Rating",
+        "IP31"
+      ],
+      [
+        "Dimensions",
+        "195 × 149 × 48 mm"
+      ],
+      [
+        "Weight",
+        "1.2 kg"
+      ]
+    ],
+    "reviewNote": "Reviewed actual manufacturer HTML specification grid retained in output/spec-research/c273ac7dc798fa03.html (collected 2026-10-05T03:15:55.349Z); SKU confirmed in raw product variant data. Exact catalog title, full variant URL and category guards retained. Current manufacturer product HTML read on 2026-10-12 returned HTTP 200 and confirmed the same US SKU family after robots permission; manufacturer table evidence remains the dated retained HTML. No inaccessible PDF evidence used.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.457Z"
+  },
+  {
+    "productIds": [
+      "renogy-45234902958195"
+    ],
+    "expected": {
+      "renogy-45234902958195": {
+        "name": "PowerStation 2000",
+        "sourceUrl": "https://www.renogy.com/products/power-station-2000?variant=45234902958195",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "model": "RPS2024AA-PCS",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/power-station-2000",
+    "label": "Renogy RPS2024AA-PCS official US specification table",
+    "checkedAt": "2026-10-12T03:59:01.998Z",
+    "rows": [
+      [
+        "Model",
+        "RPS2024AA-PCS"
+      ],
+      [
+        "Battery Type",
+        "Lithium Iron Phosphate (LiFePO4)"
+      ],
+      [
+        "Energy Capacity",
+        "2048 Wh"
+      ],
+      [
+        "Nominal Battery Voltage",
+        "51.2 V"
+      ],
+      [
+        "Rated Capacity",
+        "40 Ah"
+      ],
+      [
+        "Cycle Life",
+        "3000 cycles (0.5C, 80% DOD)"
+      ],
+      [
+        "AC Input",
+        "100–120 V, 15 A maximum"
+      ],
+      [
+        "DC Input",
+        "12–60 V DC, 25 A maximum, 1200 W maximum"
+      ],
+      [
+        "AC Output",
+        "120 V AC, 60 Hz; 20 A maximum; 2400 W maximum; five outlets"
+      ],
+      [
+        "Dimensions",
+        "450 × 265.8 × 349 mm"
+      ],
+      [
+        "Weight",
+        "23.5 kg"
+      ],
+      [
+        "Charging Ambient Temperature",
+        "0°C to 40°C"
+      ],
+      [
+        "Discharge Ambient Temperature",
+        "-10°C to 40°C"
+      ]
+    ],
+    "reviewNote": "Reviewed actual manufacturer HTML specification grid retained in output/spec-research/30fb68a1a5b09991.html (collected 2026-10-12T01:23:43.956Z); SKU confirmed in raw product variant data. Exact catalog title, full variant URL and category guards retained. Untimed 3600W surge withheld; cycle life does not publish remaining capacity threshold. DC input is not relabelled solar input. Current manufacturer product HTML read on 2026-10-12 returned HTTP 200 and confirmed the same US SKU family after robots permission; manufacturer table evidence remains the dated retained HTML. No inaccessible PDF evidence used.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.457Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-open-box-vbb125021220",
+      "inverters-r-us-used-vbb125021220"
+    ],
+    "expected": {
+      "inverters-r-us-open-box-vbb125021220": {
+        "name": "Open Box Victron Busbar 250A 2P with 12 screws +cover",
+        "sourceUrl": "https://invertersrus.com/product/open-box-victron-busbar-250a-2p-with-12-screws-cover/",
+        "category": "electrical",
+        "anchors": {}
+      },
+      "inverters-r-us-used-vbb125021220": {
+        "name": "Used Victron Busbar 250A 2P with 12 screws +cover",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-busbar-250a-2p-with-12-screws-cover/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "model": "VBB125021220",
+    "kind": "manufacturer",
+    "url": "https://www.victronenergy.com/upload/documents/Datasheet-Busbar-250-A-2P-with-6-or-12-screws-EN.pdf",
+    "label": "VBB125021220 manufacturer technical source",
+    "checkedAt": "2026-10-12T04:00:00Z",
+    "rows": [
+      [
+        "Model",
+        "VBB125021220"
+      ],
+      [
+        "Maximum current rating",
+        "250 A"
+      ],
+      [
+        "Voltage rating",
+        "70 VDC"
+      ],
+      [
+        "Terminal type",
+        "2 studs (5/16 in / 8 mm); 12 screws (10-24 / 4.8 mm)"
+      ],
+      [
+        "Conductor material",
+        "Tin-plated copper busbar strip"
+      ],
+      [
+        "Housing material",
+        "Black ABS base (UL 94 V-0) and cover (UL 94 V-2)"
+      ],
+      [
+        "Dimensions (H x W x D, with cover)",
+        "48 x 237 x 70 mm"
+      ],
+      [
+        "Weight",
+        "0.35 kg"
+      ]
+    ],
+    "reviewNote": "Official PDF page1 visually reviewed; exact current/terminal variant and part ID confirmed against official Victron 2026Q1 parts catalogue. Original hardware maximum ratings per unit; used/open-box condition and remaining life not verified. No installation ampacity, fuse coordination, system compatibility or warranty inferred. Metric table dimensions used; inconsistent rounded imperial cells withheld. Persistent proof: output/specification-research/batch-three-visual/Datasheet-Busbar-250-A-2P-with-6-or-12-screws-EN.pdf.png. PDF SHA256 1de2808b4bb2251ec8bfc59899b442339180d0ca9b96d951e61e69fcee5f3f20.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.457Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-open-box-vbb125040010",
+      "inverters-r-us-used-vbb125040010"
+    ],
+    "expected": {
+      "inverters-r-us-open-box-vbb125040010": {
+        "name": "Open Box Victron Busbars 250 amp 70VDC, 4 Terminals",
+        "sourceUrl": "https://invertersrus.com/product/open-box-victron-busbars-250-amp-70vdc-4-high-current-terminals/",
+        "category": "electrical",
+        "anchors": {}
+      },
+      "inverters-r-us-used-vbb125040010": {
+        "name": "Used Victron Busbars 250 amp 70VDC, 4 Terminals",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-busbars-250-amp-70vdc-4-terminals/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "model": "VBB125040010",
+    "kind": "manufacturer",
+    "url": "https://www.victronenergy.com/upload/documents/Datasheet-Busbar-250-A-4P-and-6P-with-cover-EN.pdf",
+    "label": "VBB125040010 manufacturer technical source",
+    "checkedAt": "2026-10-12T04:00:00Z",
+    "rows": [
+      [
+        "Model",
+        "VBB125040010"
+      ],
+      [
+        "Maximum current rating",
+        "250 A"
+      ],
+      [
+        "Voltage rating",
+        "70 VDC"
+      ],
+      [
+        "Terminal type",
+        "4 studs (5/16 in / 8 mm)"
+      ],
+      [
+        "Conductor material",
+        "Tin-plated copper busbar strip"
+      ],
+      [
+        "Housing material",
+        "Black ABS base (UL 94 V-0) and cover (UL 94 V-2)"
+      ],
+      [
+        "Dimensions (H x W x D, with cover)",
+        "48 x 237 x 70 mm"
+      ],
+      [
+        "Weight",
+        "0.24 kg"
+      ]
+    ],
+    "reviewNote": "Official PDF page1 visually reviewed; exact current/terminal variant and part ID confirmed against official Victron 2026Q1 parts catalogue. Original hardware maximum ratings per unit; used/open-box condition and remaining life not verified. No installation ampacity, fuse coordination, system compatibility or warranty inferred. Metric table dimensions used; inconsistent rounded imperial cells withheld. Persistent proof: output/specification-research/batch-three-visual/Datasheet-Busbar-250-A-4P-and-6P-with-cover-EN.pdf.png. PDF SHA256 4b6de64b3ad4137ff76b97ae778e90e85e2ff1e509ef6fbd3df9554c3477d1f2.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-open-box-vbb125060020",
+      "inverters-r-us-used-vbb125060020"
+    ],
+    "expected": {
+      "inverters-r-us-open-box-vbb125060020": {
+        "name": "Open Box Victron Busbar 250A 6P + Cover",
+        "sourceUrl": "https://invertersrus.com/product/open-box-victron-busbar-250a-6p-cover/",
+        "category": "electrical",
+        "anchors": {}
+      },
+      "inverters-r-us-used-vbb125060020": {
+        "name": "Used Victron Busbar 250A 6P + Cover",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-busbar-250a-6p-cover/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "model": "VBB125060020",
+    "kind": "manufacturer",
+    "url": "https://www.victronenergy.com/upload/documents/Datasheet-Busbar-250-A-4P-and-6P-with-cover-EN.pdf",
+    "label": "VBB125060020 manufacturer technical source",
+    "checkedAt": "2026-10-12T04:00:00Z",
+    "rows": [
+      [
+        "Model",
+        "VBB125060020"
+      ],
+      [
+        "Maximum current rating",
+        "250 A"
+      ],
+      [
+        "Voltage rating",
+        "70 VDC"
+      ],
+      [
+        "Terminal type",
+        "6 studs (5/16 in / 8 mm)"
+      ],
+      [
+        "Conductor material",
+        "Tin-plated copper busbar strip"
+      ],
+      [
+        "Housing material",
+        "Black ABS base (UL 94 V-0) and cover (UL 94 V-2)"
+      ],
+      [
+        "Dimensions (H x W x D, with cover)",
+        "48 x 237 x 70 mm"
+      ],
+      [
+        "Weight",
+        "0.43 kg"
+      ]
+    ],
+    "reviewNote": "Official PDF page1 visually reviewed; exact current/terminal variant and part ID confirmed against official Victron 2026Q1 parts catalogue. Original hardware maximum ratings per unit; used/open-box condition and remaining life not verified. No installation ampacity, fuse coordination, system compatibility or warranty inferred. Metric table dimensions used; inconsistent rounded imperial cells withheld. Persistent proof: output/specification-research/batch-three-visual/Datasheet-Busbar-250-A-4P-and-6P-with-cover-EN.pdf.png. PDF SHA256 4b6de64b3ad4137ff76b97ae778e90e85e2ff1e509ef6fbd3df9554c3477d1f2.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-open-box-vbb160040010",
+      "inverters-r-us-used-vbb160040010",
+      "shopsolar-41306337509516"
+    ],
+    "expected": {
+      "inverters-r-us-open-box-vbb160040010": {
+        "name": "Open Box Victron Busbars 600 amp 70VDC, 4 Terminals",
+        "sourceUrl": "https://invertersrus.com/product/open-box-victron-busbars-600-amp-70vdc-4-high-current-terminals/",
+        "category": "electrical",
+        "anchors": {}
+      },
+      "inverters-r-us-used-vbb160040010": {
+        "name": "Used Victron Busbars 600 amp 70VDC, 4 Terminals",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-busbars-600-amp-70vdc-4-terminals/",
+        "category": "electrical",
+        "anchors": {}
+      },
+      "shopsolar-41306337509516": {
+        "name": "Victron 600A Bus Bar - 4 Studs with Cover",
+        "sourceUrl": "https://shopsolarkits.com/products/victron-600a-bus-bar-4-studs-with-cover?variant=41306337509516",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "model": "VBB160040010",
+    "kind": "manufacturer",
+    "url": "https://www.victronenergy.com/upload/documents/Datasheet-Busbar-600-A-EN.pdf",
+    "label": "VBB160040010 manufacturer technical source",
+    "checkedAt": "2026-10-12T04:00:00Z",
+    "rows": [
+      [
+        "Model",
+        "VBB160040010"
+      ],
+      [
+        "Maximum current rating",
+        "600 A"
+      ],
+      [
+        "Voltage rating",
+        "70 VDC"
+      ],
+      [
+        "Terminal type",
+        "4 high-current studs (3/8 in / 9.53 mm); 8 low-current screws (#8 / 4.2 mm)"
+      ],
+      [
+        "Conductor material",
+        "Tin-plated copper busbar strip"
+      ],
+      [
+        "Housing material",
+        "Black ABS base (UL 94 V-0) and cover (UL 94 V-2)"
+      ],
+      [
+        "Dimensions (H x W x D, with cover)",
+        "65 x 216 x 86 mm"
+      ],
+      [
+        "Weight",
+        "0.75 kg"
+      ]
+    ],
+    "reviewNote": "Official PDF page1 visually reviewed; exact current/terminal variant and part ID confirmed against official Victron 2026Q1 parts catalogue. Original hardware maximum ratings per unit; used/open-box condition and remaining life not verified. No installation ampacity, fuse coordination, system compatibility or warranty inferred. Metric table dimensions used; inconsistent rounded imperial cells withheld. Persistent proof: output/specification-research/batch-three-visual/Datasheet-Busbar-600-A-EN.pdf.png. PDF SHA256 a147f2e9a876b2abbfd1e5811bcb5b4bee80ac68fcbb7b6acd28f6b9d4c8c862.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "inverters-r-us-open-box-vbb160080010",
+      "inverters-r-us-used-vbb160080010",
+      "shopsolar-41525237055628"
+    ],
+    "expected": {
+      "inverters-r-us-open-box-vbb160080010": {
+        "name": "Open Box Victron Busbars 600 amp 70VDC, 8 Terminals",
+        "sourceUrl": "https://invertersrus.com/product/open-box-victron-busbars-600-amp-70vdc-8-high-current-terminals/",
+        "category": "electrical",
+        "anchors": {}
+      },
+      "inverters-r-us-used-vbb160080010": {
+        "name": "Used Victron Busbars 600 amp 70VDC, 8 Terminals",
+        "sourceUrl": "https://invertersrus.com/product/used-victron-busbars-600-amp-70vdc-8-terminals/",
+        "category": "electrical",
+        "anchors": {}
+      },
+      "shopsolar-41525237055628": {
+        "name": "Victron 600 Amp Bus Bar - 600A / 70V - 8 High Current Connections / 8 Low Current Connections",
+        "sourceUrl": "https://shopsolarkits.com/products/victron-600amps-bus-bar-8studs?variant=41525237055628",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "model": "VBB160080010",
+    "kind": "manufacturer",
+    "url": "https://www.victronenergy.com/upload/documents/Datasheet-Busbar-600-A-EN.pdf",
+    "label": "VBB160080010 manufacturer technical source",
+    "checkedAt": "2026-10-12T04:00:00Z",
+    "rows": [
+      [
+        "Model",
+        "VBB160080010"
+      ],
+      [
+        "Maximum current rating",
+        "600 A"
+      ],
+      [
+        "Voltage rating",
+        "70 VDC"
+      ],
+      [
+        "Terminal type",
+        "8 high-current studs (3/8 in / 9.53 mm); 8 low-current screws (#8 / 4.2 mm)"
+      ],
+      [
+        "Conductor material",
+        "Tin-plated copper busbar strip"
+      ],
+      [
+        "Housing material",
+        "Black ABS base (UL 94 V-0) and cover (UL 94 V-2)"
+      ],
+      [
+        "Dimensions (H x W x D, with cover)",
+        "65 x 327 x 86 mm"
+      ],
+      [
+        "Weight",
+        "1.3 kg"
+      ]
+    ],
+    "reviewNote": "Official PDF page1 visually reviewed; exact current/terminal variant and part ID confirmed against official Victron 2026Q1 parts catalogue. Original hardware maximum ratings per unit; used/open-box condition and remaining life not verified. No installation ampacity, fuse coordination, system compatibility or warranty inferred. Metric table dimensions used; inconsistent rounded imperial cells withheld. Persistent proof: output/specification-research/batch-three-visual/Datasheet-Busbar-600-A-EN.pdf.png. PDF SHA256 a147f2e9a876b2abbfd1e5811bcb5b4bee80ac68fcbb7b6acd28f6b9d4c8c862.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "renogy-43178708533363"
+    ],
+    "expected": {
+      "renogy-43178708533363": {
+        "name": "Renogy 5FT 6AWG Anderson Adapter Cable（Anderson PP75 - 3/8 in Lugs）",
+        "sourceUrl": "https://www.renogy.com/products/renogy-5ft-6awg-anderson-adapter-cable-anderson-pp75-3-8-in-lugs?variant=43178708533363",
+        "category": "wiring",
+        "anchors": {
+          "gauge": "6 AWG",
+          "lengthFt": 5
+        }
+      }
+    },
+    "model": "RPC0506PR-75",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/renogy-5ft-6awg-anderson-adapter-cable-anderson-pp75-3-8-in-lugs",
+    "label": "RPC0506PR-75 manufacturer technical source",
+    "checkedAt": "2026-10-12T04:00:00Z",
+    "rows": [
+      [
+        "Model",
+        "RPC0506PR-75"
+      ],
+      [
+        "Length",
+        "5 ft"
+      ],
+      [
+        "Wire gauge",
+        "6 AWG"
+      ],
+      [
+        "Terminal size",
+        "Anderson PP75 - 3/8 in metal lugs"
+      ],
+      [
+        "Maximum current",
+        "105 A (manufacturer cable table maximum; installation conditions not specified)"
+      ],
+      [
+        "Voltage rating",
+        "600 V"
+      ],
+      [
+        "Conductor material",
+        "High-purity oxygen-free tinned copper"
+      ],
+      [
+        "Operating temperature range",
+        "-40 C to 105 C"
+      ],
+      [
+        "Product warranty",
+        "1 year material and workmanship"
+      ]
+    ],
+    "reviewNote": "Exact US manufacturer model/gauge/length/terminal table match. Rating Voltage and Temperature labels normalized without value change. Maximum current retains unspecified installation conditions; not generic conductor ampacity or connector-only rating. Conflicting Fahrenheit conversion omitted. 10FT source narrative5FT is a typo: exact title/model/table10FT retained. Temperature rows were independently verified in the official US technical table via cached web results; the older local HTML does not retain those rows.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "renogy-43178700996723"
+    ],
+    "expected": {
+      "renogy-43178700996723": {
+        "name": "Renogy 10FT 6AWG Anderson Adapter Cable（Anderson PP75 - 3/8 in Lugs）",
+        "sourceUrl": "https://www.renogy.com/products/renogy-10ft-6awg-anderson-adapter-cable-anderson-pp75-3-8-in-lugs?variant=43178700996723",
+        "category": "wiring",
+        "anchors": {
+          "gauge": "6 AWG",
+          "lengthFt": 10
+        }
+      }
+    },
+    "model": "RPC1006PR-75",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/renogy-10ft-6awg-anderson-adapter-cable-anderson-pp75-3-8-in-lugs",
+    "label": "RPC1006PR-75 manufacturer technical source",
+    "checkedAt": "2026-10-12T04:00:00Z",
+    "rows": [
+      [
+        "Model",
+        "RPC1006PR-75"
+      ],
+      [
+        "Length",
+        "10 ft"
+      ],
+      [
+        "Wire gauge",
+        "6 AWG"
+      ],
+      [
+        "Terminal size",
+        "Anderson PP75 - 3/8 in metal lugs"
+      ],
+      [
+        "Maximum current",
+        "105 A (manufacturer cable table maximum; installation conditions not specified)"
+      ],
+      [
+        "Voltage rating",
+        "600 V"
+      ],
+      [
+        "Conductor material",
+        "High-purity oxygen-free tinned copper"
+      ],
+      [
+        "Operating temperature range",
+        "-40 C to 105 C"
+      ],
+      [
+        "Product warranty",
+        "1 year material and workmanship"
+      ]
+    ],
+    "reviewNote": "Exact US manufacturer model/gauge/length/terminal table match. Rating Voltage and Temperature labels normalized without value change. Maximum current retains unspecified installation conditions; not generic conductor ampacity or connector-only rating. Conflicting Fahrenheit conversion omitted. 10FT source narrative5FT is a typo: exact title/model/table10FT retained. Temperature rows were independently verified in the official US technical table via cached web results; the older local HTML does not retain those rows.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "renogy-43178704928883"
+    ],
+    "expected": {
+      "renogy-43178704928883": {
+        "name": "Renogy 5FT 4/0AWG Anderson Adapter Cable Anderson SB350 - 5/16 in Lugs",
+        "sourceUrl": "https://www.renogy.com/products/renogy-5ft-4-0awg-anderson-adapter-cable-anderson-sb350-5-16-in-lugs?variant=43178704928883",
+        "category": "wiring",
+        "anchors": {
+          "gauge": "4/0 AWG",
+          "lengthFt": 5
+        }
+      }
+    },
+    "model": "RPC0540SR-35",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/renogy-5ft-4-0awg-anderson-adapter-cable-anderson-sb350-5-16-in-lugs",
+    "label": "RPC0540SR-35 manufacturer technical source",
+    "checkedAt": "2026-10-12T04:00:00Z",
+    "rows": [
+      [
+        "Model",
+        "RPC0540SR-35"
+      ],
+      [
+        "Length",
+        "5 ft"
+      ],
+      [
+        "Wire gauge",
+        "4/0 AWG"
+      ],
+      [
+        "Terminal size",
+        "Anderson SB350 - 5/16 in metal lugs"
+      ],
+      [
+        "Maximum current",
+        "405 A (manufacturer cable table maximum; installation conditions not specified)"
+      ],
+      [
+        "Voltage rating",
+        "600 V"
+      ],
+      [
+        "Conductor material",
+        "High-purity oxygen-free tinned copper"
+      ],
+      [
+        "Operating temperature range",
+        "-40 C to 105 C"
+      ],
+      [
+        "Product warranty",
+        "1 year material and workmanship"
+      ]
+    ],
+    "reviewNote": "Exact US manufacturer model/gauge/length/terminal table match. Rating Voltage and Temperature labels normalized without value change. Maximum current retains unspecified installation conditions; not generic conductor ampacity or connector-only rating. Conflicting Fahrenheit conversion omitted. 10FT source narrative5FT is a typo: exact title/model/table10FT retained. Temperature rows were independently verified in the official US technical table via cached web results; the older local HTML does not retain those rows.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "renogy-43178717118579"
+    ],
+    "expected": {
+      "renogy-43178717118579": {
+        "name": "5ft ANL Fuse Cable with Double Ring Terminals for 5/16 in Lugs — 6AWG 5FT",
+        "sourceUrl": "https://www.renogy.com/products/5ft-anl-fuse-cable-with-double-ring-terminals-for-5-16-in-lugs?variant=43178717118579",
+        "category": "wiring",
+        "anchors": {
+          "gauge": "6 AWG",
+          "lengthFt": 5
+        }
+      }
+    },
+    "model": "Renogy 5ft ANL fuse cable 6 AWG",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/5ft-anl-fuse-cable-with-double-ring-terminals-for-5-16-in-lugs",
+    "label": "Renogy 5ft ANL fuse cable 6 AWG manufacturer technical source",
+    "checkedAt": "2026-10-12T04:00:00Z",
+    "rows": [
+      [
+        "Length",
+        "5 ft"
+      ],
+      [
+        "Wire gauge",
+        "6 AWG"
+      ],
+      [
+        "Voltage rating",
+        "600 V"
+      ],
+      [
+        "Terminal type",
+        "Double ring terminals for 5/16 in lugs"
+      ],
+      [
+        "Conductor material",
+        "High-purity oxygen-free tinned copper"
+      ],
+      [
+        "Product warranty",
+        "1 year material warranty"
+      ]
+    ],
+    "reviewNote": "Exact selected gauge-specific manufacturer table. No SKU published in table; title, URL variant and raw gauge/length anchors guard identity. Package dimensions/weight omitted because not cable dimensions/net weight. Corrupted temperature omitted. Current and installation ampacity unknown.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "renogy-43178717151347"
+    ],
+    "expected": {
+      "renogy-43178717151347": {
+        "name": "5ft ANL Fuse Cable with Double Ring Terminals for 5/16 in Lugs — 3/0AWG 5FT",
+        "sourceUrl": "https://www.renogy.com/products/5ft-anl-fuse-cable-with-double-ring-terminals-for-5-16-in-lugs?variant=43178717151347",
+        "category": "wiring",
+        "anchors": {
+          "gauge": "3/0 AWG",
+          "lengthFt": 5
+        }
+      }
+    },
+    "model": "Renogy 5ft ANL fuse cable 3/0 AWG",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/5ft-anl-fuse-cable-with-double-ring-terminals-for-5-16-in-lugs",
+    "label": "Renogy 5ft ANL fuse cable 3/0 AWG manufacturer technical source",
+    "checkedAt": "2026-10-12T04:00:00Z",
+    "rows": [
+      [
+        "Length",
+        "5 ft"
+      ],
+      [
+        "Wire gauge",
+        "3/0 AWG"
+      ],
+      [
+        "Voltage rating",
+        "600 V"
+      ],
+      [
+        "Terminal type",
+        "Double ring terminals for 5/16 in lugs"
+      ],
+      [
+        "Conductor material",
+        "High-purity oxygen-free tinned copper"
+      ],
+      [
+        "Product warranty",
+        "1 year material warranty"
+      ]
+    ],
+    "reviewNote": "Exact selected gauge-specific manufacturer table. No SKU published in table; title, URL variant and raw gauge/length anchors guard identity. Package dimensions/weight omitted because not cable dimensions/net weight. Corrupted temperature omitted. Current and installation ampacity unknown.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "renogy-43178685366387",
+      "shopsolar-43308003655820"
+    ],
+    "expected": {
+      "renogy-43178685366387": {
+        "name": "3 to 1 Solar Branch Connectors MMMF+FFFM Pair",
+        "sourceUrl": "https://www.renogy.com/products/3-to-1-solar-branch-connectors-mmmf-fffm-pair?variant=43178685366387",
+        "category": "wiring",
+        "anchors": {}
+      },
+      "shopsolar-43308003655820": {
+        "name": "Renogy 3 to 1 Solar Branch Connectors MMMF+FFFM Pair",
+        "sourceUrl": "https://shopsolarkits.com/products/renogy-3-to-1-solar-branch-connectors-mmmf-fffm-pair?variant=43308003655820",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "model": "RNG-CNCT-MC4Y-M-US",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/collections/accessories/products/3-to-1-solar-branch-connectors-mmmf-fffm-pair",
+    "label": "RNG-CNCT-MC4Y-M-US manufacturer technical source",
+    "checkedAt": "2026-10-12T04:00:00Z",
+    "rows": [
+      [
+        "Model",
+        "RNG-CNCT-MC4Y-M-US"
+      ],
+      [
+        "Rated current",
+        "50 A"
+      ],
+      [
+        "Voltage rating",
+        "1000 VDC"
+      ],
+      [
+        "Connector type",
+        "MMMF + FFFM branch connector pair"
+      ],
+      [
+        "Ingress protection",
+        "IP67"
+      ],
+      [
+        "Operating temperature range",
+        "-40 C to 85 C"
+      ]
+    ],
+    "reviewNote": "Exact 3-to-1 US manufacturer SKU/arrangement. Maximum working voltage label normalized. USIP67 retained; AustralianIP65 not mixed into US variant. Misplaced panel warranty omitted. No universal MC4 mating or parallel string design approval inferred. Temperature rows were independently verified in the official US technical table via cached web results; the older local HTML does not retain those rows.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "renogy-43178714071155",
+      "shopsolar-43371344822412"
+    ],
+    "expected": {
+      "renogy-43178714071155": {
+        "name": "Renogy Solar Panel Flat Roof Tilt Mount",
+        "sourceUrl": "https://www.renogy.com/products/solar-panel-flat-roof-tilt-mount?variant=43178714071155",
+        "category": "mounting",
+        "anchors": {}
+      },
+      "shopsolar-43371344822412": {
+        "name": "Renogy Solar Panel Flat Roof Tilt Mount",
+        "sourceUrl": "https://shopsolarkits.com/products/renogy-solar-panel-flat-roof-tilt-mount?variant=43371344822412",
+        "category": "mounting",
+        "anchors": {}
+      }
+    },
+    "model": "RNG-MTS-TM100-US",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/solar-panel-flat-roof-tilt-mount",
+    "label": "RNG-MTS-TM100-US manufacturer technical source",
+    "checkedAt": "2026-10-12T04:00:00Z",
+    "rows": [
+      [
+        "Model",
+        "RNG-MTS-TM100-US"
+      ],
+      [
+        "Material",
+        "5052-H32 aluminum with stainless steel fasteners"
+      ],
+      [
+        "Mounting type",
+        "Adjustable tilt mount for flat surfaces (correct fastening required)"
+      ],
+      [
+        "Product warranty",
+        "1 year material warranty"
+      ]
+    ],
+    "reviewNote": "Exact official US model/title. Maximum tilt depends on panel size: no universal angle, wind rating, compatible module dimensions, assembled dimensions or load approval inferred. Alloy and fastener composition combined as Material.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "wattcycle-47399329038632",
+      "wattcycle-49287192248616",
+      "wattcycle-49287192281384",
+      "wattcycle-49287192314152"
+    ],
+    "expected": {
+      "wattcycle-47399329038632": {
+        "name": "WattCycle 12V 100Ah Group 24 LiFePO4 Battery for RV Solar, Trolling Motor & Off Grid — 1 Pack",
+        "sourceUrl": "https://www.wattcycle.com/products/wattcycle-12v-100ah-group-24-lifepo4-battery?variant=47399329038632",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 100
+        }
+      },
+      "wattcycle-49287192248616": {
+        "name": "WattCycle 12V 100Ah Group 24 LiFePO4 Battery for RV Solar, Trolling Motor & Off Grid — 2 Pack",
+        "sourceUrl": "https://www.wattcycle.com/products/wattcycle-12v-100ah-group-24-lifepo4-battery?variant=49287192248616",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 100
+        }
+      },
+      "wattcycle-49287192281384": {
+        "name": "WattCycle 12V 100Ah Group 24 LiFePO4 Battery for RV Solar, Trolling Motor & Off Grid — 3 Pack",
+        "sourceUrl": "https://www.wattcycle.com/products/wattcycle-12v-100ah-group-24-lifepo4-battery?variant=49287192281384",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 100
+        }
+      },
+      "wattcycle-49287192314152": {
+        "name": "WattCycle 12V 100Ah Group 24 LiFePO4 Battery for RV Solar, Trolling Motor & Off Grid — 4 Pack",
+        "sourceUrl": "https://www.wattcycle.com/products/wattcycle-12v-100ah-group-24-lifepo4-battery?variant=49287192314152",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 100
+        }
+      }
+    },
+    "model": "WattCycle 12V 100Ah Group 24",
+    "kind": "manufacturer",
+    "url": "https://www.wattcycle.com/products/wattcycle-12v-100ah-group-24-lifepo4-battery",
+    "label": "WattCycle 12V 100Ah Group 24 official manufacturer technical page",
+    "checkedAt": "2026-10-12T03:58:50.650Z",
+    "rows": [
+      [
+        "Nominal Voltage",
+        "12.8 V"
+      ],
+      [
+        "Rated capacity",
+        "100 Ah"
+      ],
+      [
+        "Energy",
+        "1280 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Maximum Continuous Charge Current",
+        "100 A"
+      ],
+      [
+        "Maximum Continuous Discharge Current",
+        "100 A"
+      ],
+      [
+        "Dimensions",
+        "10.2 (L) x 6.6 (W) x 8.2 (H) in"
+      ],
+      [
+        "Weight",
+        "10.5 kg"
+      ],
+      [
+        "Waterproof Rating",
+        "IP65"
+      ],
+      [
+        "Housing Material",
+        "ABS (flame retardant plastic)"
+      ],
+      [
+        "Terminal",
+        "M8 bolts"
+      ],
+      [
+        "Charge Voltage",
+        "14.4 V +/- 0.2 V"
+      ],
+      [
+        "Charge Temperature",
+        "0 to 50 C"
+      ],
+      [
+        "Discharge Temperature",
+        "-20 to 70 C"
+      ]
+    ],
+    "reviewNote": "Exact named manufacturer family and selected unchanged catalog variant URLs. Per-unit ratings only; shared pack selector confirms identical hardware. Bundled chargers, like-new, duplicate-slug and other revisions excluded. Nominal voltage differs from raw marketed 12V/24V class, so voltage is deliberately not an anchor. 300 +/-50A <=5s maximum is withheld as ambiguous protection/peak rather than imported current.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "wattcycle-48978685886760"
+    ],
+    "expected": {
+      "wattcycle-48978685886760": {
+        "name": "WattCycle 12V 200Ah Plus LiFePO4 Deep Cycle Battery | 200A BMS | 2560Wh | Low-temp Protection",
+        "sourceUrl": "https://www.wattcycle.com/products/wattcycle-12v-200ah-lifepo4-battery?variant=48978685886760",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 200
+        }
+      }
+    },
+    "model": "WattCycle 12V 200Ah Plus",
+    "kind": "manufacturer",
+    "url": "https://www.wattcycle.com/products/wattcycle-12v-200ah-lifepo4-battery",
+    "label": "WattCycle 12V 200Ah Plus official manufacturer technical page",
+    "checkedAt": "2026-10-12T03:58:50.650Z",
+    "rows": [
+      [
+        "Nominal Voltage",
+        "12.8 V"
+      ],
+      [
+        "Rated capacity",
+        "200 Ah"
+      ],
+      [
+        "Energy",
+        "2560 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Maximum Continuous Charge Current",
+        "200 A"
+      ],
+      [
+        "Maximum Continuous Discharge Current",
+        "200 A"
+      ],
+      [
+        "Dimensions",
+        "19.0 (L) x 6.6 (W) x 9.4 (H) in"
+      ],
+      [
+        "Weight",
+        "20.5 kg"
+      ],
+      [
+        "Waterproof Rating",
+        "IP65"
+      ],
+      [
+        "Housing Material",
+        "ABS (flame retardant plastic)"
+      ],
+      [
+        "Terminal",
+        "M8 bolts"
+      ],
+      [
+        "Charge Voltage",
+        "14.6 V +/- 0.2 V"
+      ],
+      [
+        "Discharge Temperature",
+        "-20 to 55 C"
+      ]
+    ],
+    "reviewNote": "Exact named manufacturer family and selected unchanged catalog variant URLs. Per-unit ratings only; shared pack selector confirms identical hardware. Bundled chargers, like-new, duplicate-slug and other revisions excluded. Nominal voltage differs from raw marketed 12V/24V class, so voltage is deliberately not an anchor. 300 +/-50A <=5s maximum withheld. Charge-temperature Celsius/Fahrenheit values conflict; no charge temperature imported. Generic UL string is insufficient certification evidence.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "wattcycle-49890597929256",
+      "wattcycle-49890597962024",
+      "wattcycle-49890597994792",
+      "wattcycle-49890598027560"
+    ],
+    "expected": {
+      "wattcycle-49890597929256": {
+        "name": "WattCycle 24V 100Ah LiFePO4 Battery with Low-Temp Protection for 70-100 lb Trolling Motor — 1 Pack",
+        "sourceUrl": "https://www.wattcycle.com/products/wattcycle-24v-100ah-lifepo4-battery?variant=49890597929256",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 100
+        }
+      },
+      "wattcycle-49890597962024": {
+        "name": "WattCycle 24V 100Ah LiFePO4 Battery with Low-Temp Protection for 70-100 lb Trolling Motor — 2 Pack",
+        "sourceUrl": "https://www.wattcycle.com/products/wattcycle-24v-100ah-lifepo4-battery?variant=49890597962024",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 100
+        }
+      },
+      "wattcycle-49890597994792": {
+        "name": "WattCycle 24V 100Ah LiFePO4 Battery with Low-Temp Protection for 70-100 lb Trolling Motor — 3 Pack",
+        "sourceUrl": "https://www.wattcycle.com/products/wattcycle-24v-100ah-lifepo4-battery?variant=49890597994792",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 100
+        }
+      },
+      "wattcycle-49890598027560": {
+        "name": "WattCycle 24V 100Ah LiFePO4 Battery with Low-Temp Protection for 70-100 lb Trolling Motor — 4 Pack",
+        "sourceUrl": "https://www.wattcycle.com/products/wattcycle-24v-100ah-lifepo4-battery?variant=49890598027560",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 100
+        }
+      }
+    },
+    "model": "WattCycle 24V 100Ah",
+    "kind": "manufacturer",
+    "url": "https://www.wattcycle.com/products/wattcycle-24v-100ah-lifepo4-battery",
+    "label": "WattCycle 24V 100Ah official manufacturer technical page",
+    "checkedAt": "2026-10-12T03:58:50.650Z",
+    "rows": [
+      [
+        "Nominal Voltage",
+        "25.6 V"
+      ],
+      [
+        "Rated capacity",
+        "100 Ah"
+      ],
+      [
+        "Energy",
+        "2560 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Maximum Continuous Charge Current",
+        "100 A"
+      ],
+      [
+        "Maximum Continuous Discharge Current",
+        "100 A"
+      ],
+      [
+        "Dimensions",
+        "19.0 (L) x 6.6 (W) x 9.4 (H) in"
+      ],
+      [
+        "Weight",
+        "19.96 kg"
+      ],
+      [
+        "Waterproof Rating",
+        "IP65"
+      ],
+      [
+        "Housing Material",
+        "ABS (flame retardant plastic)"
+      ],
+      [
+        "Terminal",
+        "M8 bolts"
+      ]
+    ],
+    "reviewNote": "Exact named manufacturer family and selected unchanged catalog variant URLs. Per-unit ratings only; shared pack selector confirms identical hardware. Bundled chargers, like-new, duplicate-slug and other revisions excluded. Nominal voltage differs from raw marketed 12V/24V class, so voltage is deliberately not an anchor. No charge voltage or peak current published in this exact readable table. Hero300A +/-50A1.2s peak is withheld because threshold-like tolerance cannot exclude protection trip semantics.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "wattcycle-49890638790952"
+    ],
+    "expected": {
+      "wattcycle-49890638790952": {
+        "name": "12V 20Ah LiFePO4 Battery — 1 Pack",
+        "sourceUrl": "https://www.wattcycle.com/products/wattcycle-12v-20ah-lifepo4-battery?variant=49890638790952",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 20
+        }
+      }
+    },
+    "model": "WattCycle 12V 20Ah",
+    "kind": "manufacturer",
+    "url": "https://www.wattcycle.com/products/wattcycle-12v-20ah-lifepo4-battery",
+    "label": "WattCycle 12V 20Ah official manufacturer technical page",
+    "checkedAt": "2026-10-12T03:58:50.650Z",
+    "rows": [
+      [
+        "Nominal Voltage",
+        "12.8 V"
+      ],
+      [
+        "Rated capacity",
+        "20 Ah"
+      ],
+      [
+        "Energy",
+        "256 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Maximum Continuous Charge Current",
+        "20 A"
+      ],
+      [
+        "Maximum Continuous Discharge Current",
+        "20 A"
+      ],
+      [
+        "Weight",
+        "2.05 kg"
+      ],
+      [
+        "Waterproof Rating",
+        "IP65"
+      ],
+      [
+        "Housing Material",
+        "ABS (flame retardant plastic)"
+      ],
+      [
+        "Terminal",
+        "M5 bolts"
+      ],
+      [
+        "Charge Voltage",
+        "14.6 V +/- 0.2 V"
+      ],
+      [
+        "Discharge Temperature",
+        "-20 to 55 C"
+      ]
+    ],
+    "reviewNote": "Exact named manufacturer family and selected unchanged catalog variant URLs. Per-unit ratings only; shared pack selector confirms identical hardware. Bundled chargers, like-new, duplicate-slug and other revisions excluded. Nominal voltage differs from raw marketed 12V/24V class, so voltage is deliberately not an anchor. Recommend Charge Current 40A (0.2C) contradicts 20Ah/20A table and is withheld. Charge-temperature Celsius/Fahrenheit values conflict and are withheld. Hero height7in conflicts with table6.7in; dimensions withheld.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "wattcycle-48978573066536",
+      "wattcycle-48978573099304",
+      "wattcycle-48978573132072",
+      "wattcycle-48978573164840"
+    ],
+    "expected": {
+      "wattcycle-48978573066536": {
+        "name": "WattCycle 12V 50Ah TM LiFePO4 Battery for Fish Finder, LiveScope & Kayak Fishing — 1 Pack",
+        "sourceUrl": "https://www.wattcycle.com/products/wattcycle-12v-50ah-lifepo4-battery?variant=48978573066536",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 50
+        }
+      },
+      "wattcycle-48978573099304": {
+        "name": "WattCycle 12V 50Ah TM LiFePO4 Battery for Fish Finder, LiveScope & Kayak Fishing — 2 Pack",
+        "sourceUrl": "https://www.wattcycle.com/products/wattcycle-12v-50ah-lifepo4-battery?variant=48978573099304",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 50
+        }
+      },
+      "wattcycle-48978573132072": {
+        "name": "WattCycle 12V 50Ah TM LiFePO4 Battery for Fish Finder, LiveScope & Kayak Fishing — 3 Pack",
+        "sourceUrl": "https://www.wattcycle.com/products/wattcycle-12v-50ah-lifepo4-battery?variant=48978573132072",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 50
+        }
+      },
+      "wattcycle-48978573164840": {
+        "name": "WattCycle 12V 50Ah TM LiFePO4 Battery for Fish Finder, LiveScope & Kayak Fishing — 4 Pack (8% OFF)",
+        "sourceUrl": "https://www.wattcycle.com/products/wattcycle-12v-50ah-lifepo4-battery?variant=48978573164840",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 50
+        }
+      }
+    },
+    "model": "WattCycle 12V 50Ah TM",
+    "kind": "manufacturer",
+    "url": "https://www.wattcycle.com/products/wattcycle-12v-50ah-lifepo4-battery",
+    "label": "WattCycle 12V 50Ah TM official manufacturer technical page",
+    "checkedAt": "2026-10-12T03:58:50.650Z",
+    "rows": [
+      [
+        "Nominal Voltage",
+        "12.8 V"
+      ],
+      [
+        "Rated capacity",
+        "50 Ah"
+      ],
+      [
+        "Energy",
+        "640 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Maximum Continuous Charge Current",
+        "50 A"
+      ],
+      [
+        "Maximum Continuous Discharge Current",
+        "50 A"
+      ],
+      [
+        "Dimensions",
+        "7.7 (L) x 5.1 (W) x 6.7 (H) in"
+      ],
+      [
+        "Weight",
+        "5.2 kg"
+      ],
+      [
+        "Waterproof Rating",
+        "IP65"
+      ],
+      [
+        "Housing Material",
+        "ABS (flame retardant plastic)"
+      ],
+      [
+        "Terminal",
+        "M6 bolts"
+      ],
+      [
+        "Charge Voltage",
+        "14.6 V +/- 0.2 V"
+      ],
+      [
+        "Discharge Temperature",
+        "-20 to 55 C"
+      ]
+    ],
+    "reviewNote": "Exact named manufacturer family and selected unchanged catalog variant URLs. Per-unit ratings only; shared pack selector confirms identical hardware. Bundled chargers, like-new, duplicate-slug and other revisions excluded. Nominal voltage differs from raw marketed 12V/24V class, so voltage is deliberately not an anchor. 100 +/-50A 5s maximum withheld. Cycle-life 40% vs60% DOD conflict and charge-temperature Celsius/Fahrenheit conflict withheld.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "wattcycle-46972243444008"
+    ],
+    "expected": {
+      "wattcycle-46972243444008": {
+        "name": "14.6V 20A Aluminum Shell LiFePO4 Battery Charger",
+        "sourceUrl": "https://www.wattcycle.com/products/wattcycle-12v-20a-lifepo4-battery-charger?variant=46972243444008",
+        "category": "accessories",
+        "anchors": {
+          "voltage": 14.6
+        }
+      }
+    },
+    "model": "WT-15V20AFA",
+    "kind": "manufacturer",
+    "url": "https://www.wattcycle.com/products/wattcycle-12v-20a-lifepo4-battery-charger",
+    "label": "WT-15V20AFA official manufacturer technical page",
+    "checkedAt": "2026-10-12T03:58:50.650Z",
+    "rows": [
+      [
+        "Model",
+        "WT-15V20AFA"
+      ],
+      [
+        "Charging Voltage",
+        "14.6 V"
+      ],
+      [
+        "Maximum charge current",
+        "20 A"
+      ],
+      [
+        "Dimensions",
+        "8.07 (L) x 3.93 (W) x 2.16 (H) in"
+      ],
+      [
+        "Material",
+        "Aluminum alloy"
+      ],
+      [
+        "Compatibility",
+        "12V-class LiFePO4 batteries"
+      ]
+    ],
+    "reviewNote": "Exact aluminum-shell variant only. Manufacturer input/output quantities remain distinct; DC charger output never becomes inverter AC output. Input100-240V50/60Hz5Amax and output292W retained only here as contextual notes (no recognized precise charger fields). Source net-weight3.09lb/1.04kg contradicts, withheld.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "wattcycle-51799290904872"
+    ],
+    "expected": {
+      "wattcycle-51799290904872": {
+        "name": "24V 15A Aluminum Shell LiFePO4 Battery Charger — 29.2V 15A Charger",
+        "sourceUrl": "https://www.wattcycle.com/products/wattcycle-24v-15a-lifepo4-battery-charger?variant=51799290904872",
+        "category": "accessories",
+        "anchors": {
+          "voltage": 29.2
+        }
+      }
+    },
+    "model": "WattCycle 24V 15A charger",
+    "kind": "manufacturer",
+    "url": "https://www.wattcycle.com/products/wattcycle-24v-15a-lifepo4-battery-charger",
+    "label": "WattCycle 24V 15A charger official manufacturer technical page",
+    "checkedAt": "2026-10-12T03:58:50.650Z",
+    "rows": [
+      [
+        "Model",
+        "24V 15A"
+      ],
+      [
+        "Charging Voltage",
+        "29.2 V"
+      ],
+      [
+        "Maximum charge current",
+        "15 A"
+      ],
+      [
+        "Dimensions",
+        "6.93 x 4.67 x 2.32 in"
+      ],
+      [
+        "Material",
+        "Aluminum shell"
+      ],
+      [
+        "Operating Temperature",
+        "-10 to 45 C"
+      ],
+      [
+        "Humidity",
+        "5 to 95%"
+      ],
+      [
+        "Compatibility",
+        "24V-class LiFePO4 batteries"
+      ]
+    ],
+    "reviewNote": "Exact aluminum-shell variant only. Manufacturer input/output quantities remain distinct; DC charger output never becomes inverter AC output. Input100-120Vac50/60Hz not relabelled as output or nominal battery voltage. Net3.85lb/1.7kg withheld due rounding ambiguity. Selected29.2V variant matches output.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "wattcycle-49864598651176"
+    ],
+    "expected": {
+      "wattcycle-49864598651176": {
+        "name": "WattCycle 48V(58.4V) 15A Aluminum Shell AC-DC LiFePO4 Battery Charger",
+        "sourceUrl": "https://www.wattcycle.com/products/wattcycle-48v-15a-aluminum-shell-lifepo4-battery-charger?variant=49864598651176",
+        "category": "accessories",
+        "anchors": {}
+      }
+    },
+    "model": "WattCycle 48V 15A charger",
+    "kind": "manufacturer",
+    "url": "https://www.wattcycle.com/products/wattcycle-48v-15a-aluminum-shell-lifepo4-battery-charger",
+    "label": "WattCycle 48V 15A charger official manufacturer technical page",
+    "checkedAt": "2026-10-12T03:58:50.650Z",
+    "rows": [
+      [
+        "Model",
+        "48V 15A"
+      ],
+      [
+        "Charging Voltage",
+        "58.4 V"
+      ],
+      [
+        "Maximum charge current",
+        "15 A"
+      ],
+      [
+        "Dimensions",
+        "6.65 x 4.17 x 4.34 in"
+      ],
+      [
+        "Weight",
+        "3.15 kg"
+      ],
+      [
+        "Material",
+        "Aluminum"
+      ],
+      [
+        "Operating Temperature",
+        "-10 to 45 C"
+      ],
+      [
+        "Humidity",
+        "5 to 95%"
+      ],
+      [
+        "Ingress protection",
+        "IP67"
+      ],
+      [
+        "Compatibility",
+        "48V-class LiFePO4 batteries"
+      ]
+    ],
+    "reviewNote": "Exact aluminum-shell variant only. Manufacturer input/output quantities remain distinct; DC charger output never becomes inverter AC output. Input100-240Vac50/60Hz contextual only. Raw48V marketed class differs58.4V output; no voltage anchor.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-40582885179441"
+    ],
+    "expected": {
+      "rich-solar-40582885179441": {
+        "name": "500 Amp Battery Monitor with Shunt | 8~120V 500A Battery Monitor with Shunt | Accurate Battery Status Monitor | Easy to Use — Battery Monitor",
+        "sourceUrl": "https://richsolar.com/products/500a-battery-monitor-with-shunt?variant=40582885179441",
+        "category": "monitoring",
+        "anchors": {}
+      }
+    },
+    "model": "RS-BM500",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/500a-battery-monitor-with-shunt",
+    "label": "RS-BM500 official manufacturer technical page",
+    "checkedAt": "2026-10-12T03:58:50.650Z",
+    "rows": [
+      [
+        "Model",
+        "RS-BM500"
+      ],
+      [
+        "Battery Voltage Range",
+        "8 to 120 V"
+      ],
+      [
+        "Voltage accuracy",
+        "+/-1.0%"
+      ]
+    ],
+    "reviewNote": "Exact Battery Monitor variant only. Metal Bezel excluded. Source mislabeled Capacity Setting Value0-500A and Current Range0.1-9999Ah withheld; no corrected/inferred units or current measurement range imported. Package dimensions8x6x3in and gross2lb are not device dimensions/netweight. Raw120V derives maximum range rather than nominal supply and is not an anchor.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-32083111215153"
+    ],
+    "expected": {
+      "rich-solar-32083111215153": {
+        "name": "100 Watt Solar Kit",
+        "sourceUrl": "https://richsolar.com/products/100-watt-solar-kit?variant=32083111215153",
+        "category": "kits",
+        "anchors": {}
+      }
+    },
+    "model": "Rich Solar 100 Watt Solar Kit",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/100-watt-solar-kit",
+    "label": "Rich Solar 100 Watt Solar Kit official manufacturer technical page",
+    "checkedAt": "2026-10-12T03:58:50.650Z",
+    "rows": [
+      [
+        "Included components",
+        "1 x RS-M100 100W monocrystalline panel; 1 x RS-MPPT20 20A MPPT controller; 1 x red and 1 x black 20ft 10AWG solar cable (RS-20101); 1 x red and 1 x black 10ft 10AWG battery cable (RS-1010); 1 x four-piece Z bracket set (RS-ZB4C); 1 x 10A inline fuse holder with fuse (RS-SC10F)"
+      ]
+    ],
+    "reviewNote": "Exact plain100W kit. Kit Includes heading is normalized to recognized Included components. Source component values remain within BOM; no panel electrical values/controller engineering/combined dimensions promoted to kit scalar.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
+  },
+  {
+    "productIds": [
+      "rich-solar-32083050659889"
+    ],
+    "expected": {
+      "rich-solar-32083050659889": {
+        "name": "300 Watt Solar Kit",
+        "sourceUrl": "https://richsolar.com/products/300-watt-solar-kit?variant=32083050659889",
+        "category": "kits",
+        "anchors": {}
+      }
+    },
+    "model": "Rich Solar 300 Watt Solar Kit",
+    "kind": "manufacturer",
+    "url": "https://richsolar.com/products/300-watt-solar-kit",
+    "label": "Rich Solar 300 Watt Solar Kit official manufacturer technical page",
+    "checkedAt": "2026-10-12T03:58:50.650Z",
+    "rows": [
+      [
+        "Included components",
+        "3 x MEGA100 12V100W panels (RS-M100); 1 x RS-MPPT40P 40A MPPT controller; 1 x red and 1 x black 20ft10AWG solar cable (RS-20101); 1 x red and 1 x black 10ft8AWG battery cable (RS-810); 3 x four-piece Z bracket sets (RS-ZB4C); 1 x 10A inline fuse holder with fuse (RS-SC10F)"
+      ]
+    ],
+    "reviewNote": "Exact plain300W kit. Kit Includes heading normalized to recognized Included components. Component values confined to BOM; no aggregate engineering inferred.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T04:07:52.458Z"
   }
 ]
