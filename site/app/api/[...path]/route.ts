@@ -1,3 +1,4 @@
+import {listBuildAlerts,saveBuildAlert,disableBuildAlert} from '../../../lib/build-alerts';
 import {exampleBuilds,exampleProducts} from '../../../lib/example-builds';
 import { getChatGPTUser } from '../../chatgpt-auth';
 import { database, runtime, getCatalog, getPublicCatalog, getModelCatalog, getCatalogSummary, invalidatePublicCatalog, rateLimit } from '../../../lib/storage';
@@ -120,7 +121,7 @@ async function handle(request: Request, method: string) {
       return json({ reviews: rows.results, own });
     }
     if (action === 'share' && method === 'GET') { if (!id || !/^[a-f0-9-]{36}$/.test(id)) return json({ error:'Shared build not found.' },404); const row = await database().prepare('SELECT json FROM builds WHERE share_id=?').bind(id).first<{json:string}>(); return row ? json(publicBuildCopy(JSON.parse(row.json))) : json({ error:'Shared build not found.' },404); }
-    if (action === 'unsubscribe' && method === 'POST') { const token = url.searchParams.get('token'); if (!token || !/^[a-f0-9-]{36}$/.test(token)) return json({ error:'Invalid unsubscribe link.' },400); await database().prepare('UPDATE alerts SET active=0, email_enabled=0 WHERE token=?').bind(token).run(); return json({ unsubscribed:true }); }
+    if (action === 'unsubscribe' && method === 'POST') { const token = url.searchParams.get('token'); if (!token || !/^[a-f0-9-]{36}$/.test(token)) return json({ error:'Invalid unsubscribe link.' },400); await database().batch([database().prepare('UPDATE alerts SET active=0, email_enabled=0 WHERE token=?').bind(token),database().prepare('UPDATE build_alerts SET active=0,email_enabled=0,revision=revision+1 WHERE token=?').bind(token),database().prepare("UPDATE notifications SET email_status='disabled' WHERE email_status='pending' AND alert_id IN(SELECT id FROM build_alerts WHERE token=?)").bind(token)]); return json({ unsubscribed:true }); }
     if(action==='scraper'){
       if(id==='worker'){
         if(method!=='POST'||!collector(request))return json({error:'Collector authentication required.'},401);
@@ -172,7 +173,7 @@ async function handle(request: Request, method: string) {
     }
     if (action === 'builds') {
       if (method === 'GET') { const rows = await db.prepare('SELECT b.id,b.json,b.share_id AS shareId,b.updated_at AS updatedAt,c.share_id AS communityShareId,c.description AS communityDescription FROM builds b LEFT JOIN community_builds c ON c.build_id=b.id WHERE b.user_id=? ORDER BY b.updated_at DESC LIMIT 100').bind(user.userId).all<any>(); const builds=rows.results.map(r=>({...validateBuild(JSON.parse(r.json)),id:r.id,shareId:r.shareId,updatedAt:r.updatedAt,communityShareId:r.communityShareId,communityDescription:r.communityDescription}));return id?(builds.find(b=>b.id===id)?json(builds.find(b=>b.id===id)):json({error:'Build not found.'},404)):json({builds}); }
-      if (method === 'DELETE' && id) { const result = await db.prepare('DELETE FROM builds WHERE id=? AND user_id=?').bind(id,user.userId).run(); return result.meta.changes ? json({deleted:true}) : json({error:'Build not found.'},404); }
+      if (method === 'DELETE' && id) { const result = (await db.batch([db.prepare('UPDATE build_alerts SET active=0,email_enabled=0,revision=revision+1 WHERE build_id=? AND user_id=?').bind(id,user.userId),db.prepare('DELETE FROM builds WHERE id=? AND user_id=?').bind(id,user.userId)]))[1]; return result.meta.changes ? json({deleted:true}) : json({error:'Build not found.'},404); }
       if (method === 'POST') {
         const data = await body(request); const build = validateBuild(data); const products = (await getModelCatalog()).products;
         if (build.lines.some(l => !products.some(p => p.id === l.productId && (!l.offerId || p.offers.some(o=>o.id===l.offerId))))) throw new Error('A selected product or retailer offer is no longer available.');
@@ -186,6 +187,12 @@ async function handle(request: Request, method: string) {
         await db.prepare("INSERT INTO reviews (id,product_id,user_id,author,rating,body,status,created_at) VALUES (?,?,?,?,?,?,'pending',?) ON CONFLICT(user_id,product_id) DO UPDATE SET rating=excluded.rating,body=excluded.body,status='pending',created_at=excluded.created_at").bind(crypto.randomUUID(),d.productId,user.userId,user.fullName || 'Solar builder',d.rating,d.body.trim(),new Date().toISOString()).run(); return json({status:'pending'}); }
       if (method === 'DELETE' && id) { await db.prepare('DELETE FROM reviews WHERE id=? AND user_id=?').bind(id,user.userId).run(); return json({deleted:true}); }
     }
+    if(action==='build-alerts'){
+      if(method==='GET')return json({alerts:await listBuildAlerts(db,user.userId)});
+      if(method==='POST'){const data=await body(request);return json(await saveBuildAlert(db,user,data.buildId,data));}
+      if(method==='PATCH'&&id){const own=await db.prepare('SELECT build_id FROM build_alerts WHERE id=? AND user_id=?').bind(id,user.userId).first<{build_id:string}>();if(!own)return json({error:'Build alert not found.'},404);return json(await saveBuildAlert(db,user,own.build_id,await body(request)));}
+      if(method==='DELETE'&&id)return await disableBuildAlert(db,user.userId,id)?json({deleted:true}):json({error:'Build alert not found.'},404);
+    }
     if (action === 'alerts') {
       if (method === 'GET') { const rows = await db.prepare('SELECT id,product_id AS productId,quantity,target,email_enabled AS emailEnabled,active,last_price AS lastPrice FROM alerts WHERE user_id=? ORDER BY created_at DESC LIMIT 100').bind(user.userId).all(); return json({alerts:rows.results}); }
       if (method === 'DELETE' && id) { await db.prepare('UPDATE alerts SET active=0,email_enabled=0 WHERE id=? AND user_id=?').bind(id,user.userId).run(); return json({deleted:true}); }
@@ -193,7 +200,7 @@ async function handle(request: Request, method: string) {
         const alertId=crypto.randomUUID(); await db.prepare('INSERT INTO alerts (id,user_id,email,product_id,quantity,target,email_enabled,last_price,active,token,created_at) VALUES (?,?,?,?,?,?,?,NULL,1,?,?)').bind(alertId,user.userId,user.email,d.productId,d.quantity,d.target,Number(d.emailEnabled),crypto.randomUUID(),new Date().toISOString()).run(); return json({id:alertId,emailConfigured:Boolean(runtime().RESEND_API_KEY&&runtime().EMAIL_FROM)}); }
     }
     if (action === 'notifications') {
-      if (method === 'GET') return json({notifications:(await db.prepare('SELECT id,title,body,product_id AS productId,read,created_at AS createdAt FROM notifications WHERE user_id=? ORDER BY created_at DESC LIMIT 100').bind(user.userId).all()).results});
+      if (method === 'GET') return json({notifications:(await db.prepare('SELECT id,title,body,product_id AS productId,build_id AS buildId,read,created_at AS createdAt FROM notifications WHERE user_id=? ORDER BY created_at DESC LIMIT 100').bind(user.userId).all()).results});
       if (method === 'PATCH' && id) { await db.prepare('UPDATE notifications SET read=1 WHERE id=? AND user_id=?').bind(id,user.userId).run(); return json({read:true}); }
     }
     if (action === 'admin') {

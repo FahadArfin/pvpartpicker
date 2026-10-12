@@ -39,7 +39,7 @@ export function HomePriceDrops(){
   frame=requestAnimationFrame(tick);return()=>cancelAnimationFrame(frame);
  },[paused,hovered,focused,reduced,hidden,loopWidth]);
  const items=(duplicate=false)=>deals.map(d=>{
-  const pack=d.packQuantity>1?`Pack of ${d.packQuantity}`:'Single unit';
+  const pack=d.packageLabel||(d.packQuantity>1?`Pack of ${d.packQuantity}`:'Single unit');
   const detail=`${d.name} · ${d.retailer}${d.condition==='used'?' · Used / refurbished':''} · ${pack} · Checked ${d.observedAt.slice(0,10)} · Shipping and tax extra`;
   return <Link key={d.offerId} tabIndex={duplicate?-1:undefined} className="home-ticker-item" title={detail} href={'/products/'+encodeURIComponent(d.productId)}>
    <span className="home-ticker-image"><Package aria-hidden="true" size={22}/>{d.image&&<img src={d.image} alt="" width={38} height={44} loading="lazy" decoding="async" onError={e=>{e.currentTarget.hidden=true;}}/>}</span>

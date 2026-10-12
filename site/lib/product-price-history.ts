@@ -9,7 +9,7 @@ export function historyTick(time:number,start:number,end:number){
  return span<86400000?iso.slice(11,span<3600000?19:16):iso.slice(5,10);
 }
 /** Historical pack sizes, not today's pack size, determine the plotted unit cost. */
-export function productHistoryPoints(product:Product,observations:Observation[]):HistoryPoint[]{
+export function productHistoryPoints(product:Product,observations:Observation[],basis:'unit'|'package'='unit'):HistoryPoint[]{
  const points=new Map<string,HistoryPoint>();
  for(const observation of observations){
   const offer=product.offers.find(o=>o.id===observation.offerId),time=Date.parse(observation.observedAt);
@@ -19,7 +19,7 @@ export function productHistoryPoints(product:Product,observations:Observation[])
   const point=points.get(observation.observedAt)||{date:observation.observedAt,time};
   // The shared tooltip must retain the warning if any series has a day-only record.
   point.dayOnly=point.dayOnly===1||observation.precision==='day'?1:0;
-  point[offer.id]=observation.price/(product.category==='kits'||product.modelIdentity?.kind==='bundle'?1:pack);
+  point[offer.id]=observation.price/(basis==='package'||product.category==='kits'||product.modelIdentity?.kind==='bundle'?1:pack);
   points.set(observation.observedAt,point);
  }
  return [...points.values()].sort((a,b)=>a.time-b.time);

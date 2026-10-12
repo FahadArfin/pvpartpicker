@@ -197,3 +197,14 @@ input[type=checkbox]{accent-color:var(--accent-solid)}
 .builder-history-tooltip{max-width:440px;max-height:280px;overflow:auto;padding:12px;background:var(--surface-raised);color:var(--text);border:1px solid var(--line);border-radius:4px;font-size:11px;box-shadow:0 3px 12px var(--background)}.builder-history-tooltip>strong{display:block;margin-bottom:8px}.builder-history-tooltip>div{display:flex;justify-content:space-between;gap:16px;margin-top:7px}.builder-history-tooltip span{overflow-wrap:anywhere}.builder-history-tooltip b{white-space:nowrap}.builder-history-tooltip>div:last-child{border-top:1px solid var(--line);padding-top:8px}
 .builder-history-records{margin-top:16px}.builder-history-records summary{font-size:11px;color:var(--accent);cursor:pointer}.builder-history-records .table-scroll{max-height:330px;margin-top:12px}.builder-history-records th{min-width:120px;max-width:260px}.builder-history-records td{white-space:nowrap}
 @media(max-width:650px){.builder-history{margin:22px 0;padding:18px 0}.builder-history-heading{flex-direction:column;gap:12px}.builder-history-controls{width:100%;justify-content:space-between}.builder-history-legend{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.builder-history-chart{height:260px}.builder-history-summary{gap:18px}.builder-history-summary strong{font-size:16px}.builder-history-tooltip{max-width:250px}}
+
+/* Saved account equipment targets share the compact workspace tokens. */
+.saved-build-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; max-width: 440px; }
+.saved-build-target { max-width: 440px; color: var(--text); font-size: 12px; }
+.saved-build-target summary { cursor: pointer; color: var(--accent); padding: 8px 0; }
+.saved-build-target summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.saved-build-target form { border-top: 1px solid var(--line); padding-top: 10px; }
+.saved-build-target .field { max-width: 240px; }
+.saved-build-target-email { display: flex; align-items: center; gap: 8px; margin: 10px 0; }
+.saved-build-target-email input { width: 18px; height: 18px; }
+@media(max-width:720px) { .saved-build-target { width: 100%; max-width: none; } .saved-build-actions { width: 100%; } .saved-build-target summary, .saved-build-target-email { min-height: 44px; } .saved-build-target .field input { font-size: 16px; min-height: 44px; } }
