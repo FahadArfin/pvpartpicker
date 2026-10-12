@@ -1,0 +1,60 @@
+{
+  "checkedAt": "2026-10-12T20:14:47.631Z",
+  "batch": "fourteen",
+  "fixedCatalogListings": 8593,
+  "currentCatalogListings": 8593,
+  "assignedFamilies": 189,
+  "supplementalFamilyAttempts": 6,
+  "actuallyInspectedFamilies": 194,
+  "uninspectedRefusedFamilyAttempts": 1,
+  "approvedSourceRecords": 165,
+  "newVerifiedFields": 748,
+  "changedTechnicalIds": 151,
+  "newPanelCells": 30,
+  "baselineMissingFields": 39652,
+  "resolvedComparisonFields": 320,
+  "currentRemainingListings": 7282,
+  "currentRemainingFields": 39332,
+  "priorIds": 4359,
+  "indexIds": 4502,
+  "priorStrongFieldsRetained": 28402,
+  "priorSourceObjectsRetained": 7640,
+  "priorPanelCellsAndFlatSourceRefsRetained": 2360,
+  "priorRegistryRecordsRetained": 3890,
+  "legacySourceIdentityHolds": [
+    "eg4-6000xp",
+    "eg4-18kpv",
+    "eg4-lifepower4-v2",
+    "eg4-ll-s"
+  ],
+  "sourceReviews": [
+    "review-fourteen-balance-v3-independent.json",
+    "batch-fourteen-storage-v2-independent-review.json",
+    "review-fourteen-root-independent.json",
+    "review-fourteen-generation-independent.json"
+  ],
+  "processLimitations": [
+    "Storage source helpers overlapped and the original minimum global start gap was 0.352161 seconds. Original retained tool responses independently verified the affected successful evidence.",
+    "Generation used per-origin 2300ms pacing; ten cross-origin start gaps were shorter, minimum 319.305ms. One overwritten failed robots response lacks retained original body; failed captures are excluded from candidate evidence.",
+    "Future acquisition requires one collector process with no overlapping requests and a global minimum 2300ms start interval."
+  ],
+  "categoryCorrections": {
+    "independentlySupported": 11,
+    "held": 7,
+    "implemented": false
+  },
+  "priceWorkflowChanged": false,
+  "priceRun": {
+    "id": "38297483499",
+    "event": "schedule",
+    "status": "success",
+    "freshLiveOfferTimestamps": 15,
+    "retailers": [
+      "Inverters R Us"
+    ]
+  },
+  "kitDisplayFix": "Render identity-guarded sourced package contents without inheriting component electrical ratings.",
+  "failures": [],
+  "published": false,
+  "allRemainingFamilyWorkContinues": true
+}

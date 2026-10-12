@@ -195,6 +195,21 @@ export function buildSpecification(product:Product,input?:SpecificationEvidence|
  return result;
 }
 
+/** Kit measurements must describe the selected package, never a component's ratings. */
+export function specificationForDisplay(product:Product):ProductSpecification{
+ if(product.category!=='kits')return product.specification||buildSpecification(product);
+ const packageKeys=new Set(['contents','kitType','model','compatibility','dimensions','weight','material','ipRating']);
+ const fallback=buildSpecification(product),reviewed=product.specification;
+ fallback.groups=fallback.groups.map(g=>({...g,fields:g.fields.filter(f=>packageKeys.has(f.key))})).filter(g=>g.fields.length);
+ if(!reviewed?.identity||reviewed.identity.category!=='kits'||applySpecificationEvidence({...product,specification:undefined},{[product.id]:reviewed}).specification!==reviewed)return fallback;
+ const groups=reviewed.groups.map(g=>({...g,fields:g.fields.filter(f=>packageKeys.has(f.key)&&f.kind!=='listing'&&reviewed.sources.some(s=>s.url===f.source&&s.kind===f.kind))})).filter(g=>g.fields.length);
+ if(!groups.length)return fallback;
+ const keys=new Set(groups.flatMap(g=>g.fields.map(f=>f.key))),usedSources=new Set(groups.flatMap(g=>g.fields.map(f=>f.source)));
+ const extra=fallback.groups.map(g=>({...g,fields:g.fields.filter(f=>!keys.has(f.key))})).filter(g=>g.fields.length);
+ const sources=[...reviewed.sources.filter(s=>usedSources.has(s.url)),...fallback.sources.filter(s=>!usedSources.has(s.url))];
+ return {summary:fallback.summary,groups:[...groups,...extra],sources,notes:reviewed.notes};
+}
+
 /** Missing core fields remain visible without becoming measured catalog values. */
 export function specificationDisplayGroups(product:Product,details:ProductSpecification){
  const core:Record<Category,string[]>={
