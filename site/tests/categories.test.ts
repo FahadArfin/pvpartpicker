@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {classify,extractSpecs,extractPackQuantity,categorizeProduct} from '../lib/retailers.ts';
-import type {Product} from '../lib/types.ts';
+import type {Product,Category} from '../lib/types.ts';
 import {checkCompatibility} from '../lib/domain.ts';
 
 test('standalone solar controllers are distinct from inverters with built-in MPPT',()=>{
@@ -123,4 +123,57 @@ test('Anker E10 whole-home output and battery-bank systems remain kits',()=>{
  const title='Anker SOLIX E10 [DUAL] - 15kW Output + 12kWh Battery Bank | Whole Home, Off-Grid, Hybrid, Backup Power System | Choose Complete Bundle — PLUS - 5.2KW Solar + 12KWH Battery / Standard Ground Mount';
  assert.equal(classify(title),'kits');
  assert.equal(classify('Anker SOLIX E10 [DUAL] - 15kW Output + 12kWh Battery Bank | Whole Home Backup Solar Power System | Battery Monitoring'),'kits');
+});
+
+test('equipment connection cables and mounting brackets retain their component roles',()=>{
+ const examples:[string,Category][]=[
+  ['Battery to Charge Controller 4 AWG THHN Cables','wiring'],
+  ['ETHOS 1/0AWG Control Box to Inverter Connectors (R&B)','wiring'],
+  ['Boulder Charge Controller Mounting Brackets','mounting'],
+  ['400W N-Type Portable Solar Panel Blanket with 4-in-1 Extension Cable for Power Stations','panels'],
+  ['40A Solar Charge Controller with Battery Cables','charging'],
+  ['3000W Off-Grid Inverter with Mounting Brackets','inverters'],
+ ];
+ for(const [name,category] of examples)assert.equal(classify(name),category,name);
+});
+
+test('battery accessories and charging modules remain distinct from stored energy',()=>{
+ const examples:[string,Category][]=[
+  ['Dr.Prepare Smart Battery Box with USB, 12V/24V Cigarette Lighter, and Anderson Ports','accessories'],
+  ['Heavy Duty Battery Box for Group 24-31 Battery Sizes','accessories'],
+  ['350A Battery Switch','electrical'],
+  ['12-Way Battery Terminal Distribution Block Pair','electrical'],
+  ['SolaX Xpower Battery Management System','accessories'],
+  ['LiTime Battery Balancer for Series & Parallel Connected Batteries — 1 Pack','accessories'],
+  ['LiTime Heavy Duty Golf Cart Battery Hold Down Kit with Clamps and Bolts — 1 Pack','mounting'],
+  ['ETHOS Battery Top Plate Cover. Side Panel Protection Accessory','accessories'],
+  ['Yeti Lithium MPPT Solar Charging Optimization Module','charging'],
+  ['MPS3K (3kW / 4.5kWh)','all-in-one'],
+  ['Adventurer Li- 30A PWM Flush Mount Charge Controller w/ LCD Display','charging'],
+  ['12V 60A DC to DC Battery Charger','charging'],
+  ['2360W Bifacial Solar Panel | 4x 590W N-Type Panels w/Tilt Mounts','panels'],
+  ['ECO-WORTHY PowerMega Conduit Box, Cable Management & Terminal Protection Enclosure for 48V 314Ah Battery','electrical'],
+  ['ECO-WORTHY 24V 100Ah Bluetooth Lithium Battery with BMS — 1 Pack','batteries'],
+  ['48V 100Ah LiFePO4 Battery with Battery Management System','batteries'],
+  ['Steel Battery Cabinet for Server Rack Batteries','batteries'],
+ ];
+ for(const [name,category] of examples)assert.equal(classify(name),category,name);
+});
+test('Emporia current sensor clamps use source context without moving ordinary spring clamps',()=>{
+ const base:Product={id:'emporia-46599751631103',name:'Spring Clamps (Set of 2)',brand:'Emporia Energy',description:'Set of 2 Spring Clips for Vue Home Energy Monitor Applications: Applicable primary current: 50-200A',category:'mounting',image:'',images:[],sourceUrl:'https://shop.emporiaenergy.com/products/spring-clips-set-of-2?variant=46599751631103',specs:{},offers:[],verifiedAt:''};
+ const sensor=categorizeProduct(base);assert.equal(sensor.category,'monitoring');assert.equal(sensor.specs.monitorType,'Sensor');
+ assert.equal(categorizeProduct({...base,brand:'Other',description:'Spring clamps for mounting a solar panel'}).category,'mounting');
+});
+
+test('battery-box cell packages are not mistaken for empty enclosures',()=>{
+ assert.equal(classify('YIXIANG V3 Stacked Battery Box Kit With JK 200A BMS +16PCS EVE 314 MB31 Brand New Grade A Lifepo4 Battery Cell'),'batteries');
+ assert.equal(classify('YIXIANG DIY Battery Box Kit +16PCS EVE 314Ah LiFePO4 Battery Cells'),'batteries');
+});
+
+test('explicit panel-pack ratings retain published per-module watts and whole-package offers',()=>{
+ for(const [name,unit] of [['2360W Bifacial Solar Panel | 4x 590W N-Type Panels w/Tilt Mounts',590],['1280W Solar Panel | 4x 320W N-Type Panels w/Tilt Mounts',320]] as const){
+  const p:Product={id:'panel-pack',name,brand:'Renogy',description:'',category:'mounting',image:'',images:[],sourceUrl:'https://example.test/panel-pack',specs:{watts:unit*4},offers:[{id:'offer',retailerId:'renogy',retailer:'Renogy',url:'https://example.test/panel-pack',price:1000,currency:'USD',stock:'in_stock',packQuantity:4,observedAt:'2026-10-12T00:00:00Z',condition:'new'}],verifiedAt:''};
+  const actual=categorizeProduct(p);assert.equal(actual.category,'panels');assert.equal(actual.specs.watts,unit);assert.deepEqual(actual.offers,p.offers);
+ }
+ assert.equal(extractSpecs('2400W Solar Panel | 4x 590W N-Type Panels','panels').watts,2400);
 });

@@ -74,3 +74,17 @@ test('panel gain and cell efficiency never substitute for front-side STC/module 
  const s=buildSpecification(panel,{url:source,kind:'manufacturer',rows:[['Maximum Power at STC','175 W'],['Maximum Power Current (Imp)','8.38 A - 10.0 A (bifacial boost)'],['Cell Efficiency','25 %'],['Module Efficiency','Up to 27.9%']]});
  assert.equal(s.panelRatings?.stc.imp,undefined);assert.equal(field(s,'cellEfficiency')?.value,'25 %');assert.equal(field(s,'moduleEfficiency'),undefined);
 });
+
+test('panel voltage and current ranges never become scalar string-sizing limits',()=>{
+ const details=buildSpecification(panel,{url:source,kind:'manufacturer',rows:[['Open circuit voltage','18–22 V'],['Maximum power voltage','16.5 V'],['Short circuit current','2.1–2.5 A'],['Maximum power current','2 A']]});
+ const actual=applySpecificationEvidence({...panel,specs:{watts:175}},{[panel.id]:details});
+ assert.equal(details.panelRatings?.stc.voc,'18–22 V');assert.equal(actual.specs.voc,undefined);assert.equal(actual.specs.isc,undefined);
+ assert.equal(actual.specs.vmp,16.5);assert.equal(actual.specs.imp,2);
+});
+
+test('explicit paired units and published percentage tolerances retain their nominal panel values',()=>{
+ const details=buildSpecification(panel,{url:source,kind:'manufacturer',rows:[['Open circuit voltage','41.72V / 13.82A'],['Maximum power voltage','22.4 V ±3%'],['Short circuit current','11.04 A ±3%'],['Maximum power current','10.5 A']]});
+ const actual=applySpecificationEvidence({...panel,specs:{watts:175}},{[panel.id]:details});
+ assert.equal(actual.specs.voc,41.72);assert.equal(actual.specs.vmp,22.4);assert.equal(actual.specs.isc,11.04);assert.equal(actual.specs.imp,10.5);
+ assert.equal(details.panelRatings?.stc.vmp,'22.4 V ±3%');
+});

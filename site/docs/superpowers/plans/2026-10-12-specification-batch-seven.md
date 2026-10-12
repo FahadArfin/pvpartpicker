@@ -1,0 +1,5 @@
+# Exhaustive specification research batch seven
+
+Continue the owner's all-listing research without another permission question. Baseline is the validated batch-six release (main 6673c58, Sites105): 7,638 catalog listings, 6,493 with 41,049 missing comparison fields.
+
+Three disjoint assignments cover 240 pending families across all 12 categories. Research exact official/manual evidence and retain acquisition dates, artifact proofs, variant identities and unresolved reasons. Truthful exact seller attribution is permitted. No price/history/scraper/workflow changes. Hold category mismatches, unitless limits, model/revision conflicts and inaccessible sources. PDF table numbers require visual proof. Independently review packages, import missing keys while retaining all prior values and provenance, validate tests/types/build, commit/CI/merge and publish the exact artifact. Verify live fields and assets, refresh the durable queue and continue subsequent pending families/manuals until actual exhaustion.

@@ -228,7 +228,13 @@ export function applySpecificationEvidence(product:Product,index:Record<string,P
  if(specification.panelRatings?.stc.pmax&&product.specs.watts&&Math.abs(number(specification.panelRatings.stc.pmax)-Number(product.specs.watts))>.5)return product;
  const specs={...product.specs};
  // Only verified sheet / technical-table STC measurements enter string sizing checks.
- for(const key of ['voc','vmp','imp','isc']){const value=specification.panelRatings?.stc[key];if(value){const n=number(value);if(Number.isFinite(n)&&n>0)specs[key]=n;}}
+ for(const key of ['voc','vmp','imp','isc']){
+  const value=specification.panelRatings?.stc[key];
+  // Ranges are not one electrical limit. Explicit paired units and percentage
+  // tolerances still identify a nominal measurement; preserve their source text.
+  const scalar=['voc','vmp'].includes(key)?/^\s*\d+(?:\.\d+)?\s*(?:(?:v(?:\s*dc)?|volts?)(?:\s*\/\s*\d+(?:\.\d+)?\s*(?:a(?:\s*dc)?|amps?|amperes?))?)?\s*(?:[±+−-]\s*\d+(?:\.\d+)?\s*%)?\s*$/i:/^\s*\d+(?:\.\d+)?\s*(?:(?:a(?:\s*dc)?|amps?|amperes?)(?:\s*\/\s*\d+(?:\.\d+)?\s*(?:v(?:\s*dc)?|volts?))?)?\s*(?:[±+−-]\s*\d+(?:\.\d+)?\s*%)?\s*$/i;
+  if(value&&scalar.test(value)){const n=number(value);if(Number.isFinite(n)&&n>0)specs[key]=n;}
+ }
  for(const field of specification.groups.flatMap(g=>g.fields)){
   if(field.key==='vocTemperatureCoefficient'&&/^[-+]?\d+(?:\.\d+)?\s*%\s*\/\s*[°º]C$/i.test(field.value))specs.vocTempCoefficient=number(field.value);
   if(['maxPvVoltage','maxMpptCurrent','mpptCount','chargeCurrentA','maxDischargeCurrent','maxChargeCurrent'].includes(field.key)){
