@@ -5564,8 +5564,7 @@
         "category": "batteries",
         "anchors": {
           "capacityAh": 100,
-          "batteryKind": "Battery modules",
-          "maxChargeCurrent": 30
+          "batteryKind": "Battery modules"
         }
       }
     },
@@ -5660,8 +5659,7 @@
         "anchors": {
           "voltage": 12,
           "capacityAh": 200,
-          "batteryKind": "Battery modules",
-          "maxChargeCurrent": 60
+          "batteryKind": "Battery modules"
         }
       }
     },
@@ -5990,8 +5988,7 @@
         "sourceUrl": "https://www.renogy.com/products/100w-12v-solar-panel-kit?variant=45276322660467",
         "category": "kits",
         "anchors": {
-          "kitType": "Panel kits",
-          "maxPvVoltage": 25
+          "kitType": "Panel kits"
         }
       }
     },
@@ -6032,8 +6029,7 @@
         "sourceUrl": "https://www.renogy.com/products/200-watt-12-volt-solar-starter-kit?variant=43178678714483",
         "category": "kits",
         "anchors": {
-          "kitType": "Panel kits",
-          "maxPvVoltage": 25
+          "kitType": "Panel kits"
         }
       }
     },
