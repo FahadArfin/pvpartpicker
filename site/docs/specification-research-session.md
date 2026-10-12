@@ -1,0 +1,23 @@
+# Exhaustive specification research session
+
+Owner authorization, October 12, 2026: keep working through ALL remaining listings while the owner sleeps, without repeated continue/approval questions. Fill every missing field supported by verifiable exact-product evidence. Keep price collection running. Publish validated batches using the standing repository/Sites delivery instructions. Missing fields may remain unknown where evidence is unavailable or conflicting; exhaustion means every remaining family/listing has been investigated and unresolved reasons recorded, not guessed values.
+
+## Durable checkpoint
+
+Read output/specification-research/exhaustive-queue.json. Its families group category and retailer page only for efficient investigation; exact model/variant/pack identity still controls every import. All listings with missing fields remain included, including previously reviewed listings. Never exclude all prior reviewed IDs from the exhaustive pass. Investigate alternative official manufacturer/manual sources for remaining fields. Existing blocked retailer pages do not prohibit a different permitted manufacturer source; never bypass origin refusals or retry blocked origins as a workaround.
+
+For each family record an attempts entry with actual date, source URLs and retained artifact paths, investigated exact listing IDs, verified additions, unresolved labels/reasons and source access outcome. Use statuses pending, active, investigated_partial, exhausted_unresolved, or complete. Do not mark uninspected variants exhausted. Partial work remains resumable. Never mark a missing field unavailable merely because an HTML parser omitted it. Read primary pages, specification tables and manuals; visually review PDF tables. Preserve cache dates and review records. No synthetic or peer-derived engineering values.
+
+Update the queue after each batch from a fresh catalog and importer report. Preserve attempts and statuses, append new catalog families. Record batch delta against a fixed pre-import specification baseline; current public catalog may already be enriched, so it is not a valid delta baseline. Report catalog growth separately.
+
+## Execution and review
+
+Only one researcher/publisher owns the session at a time. Inspect active worktrees and this thread status before starting an automated continuation; do not overlap active work or steal it. Record owned worktree/agent assignments and last checkpoint in output/specification-research/exhaustive-session.json. Resume incomplete work before launching another batch. Owner thread heartbeat pvpartpicker-specification-research is active hourly for interruptions/continued unattended batches, requiring this computer and Codex available. History and NAZ browser automations remain paused.
+
+Use reviewed-source importer contracts and independent source review. Guard exact titles, full variant URLs, category and raw stable anchors; no circular enriched selectors. Packs retain per-unit ratings unless an exact aggregate system rating is published. Continuous battery current is not a BMS trip threshold. Charger outputs are not inverter outputs or battery limits. Qualify peak duration, conditions and fit statements. Hold misclassified products until classification is fixed and independently checked. Keep unknown values unknown.
+
+After review import, retain all prior stronger fields and panel STC/NOCT tables, regenerate current progress/category reports. Run required tests/types/build; source changes go through isolated worktree, PR/CI/merge, exact provider build and Sites publish. Verify terminal deployment success, live field identity/provenance and asset hashes. Browser QA uses permitted native browser APIs; do not circumvent browser policy blocks. No scraper schedule, current offer, observation history or archival backfill changes.
+
+Continue sustained batches without another approval request. Notify meaningful batch progress and exhaustion, failures or required action; stay quiet for unchanged routine state. Stop further research scheduling only when all families/listings have been investigated and all supported missing fields imported, and report the residual unknown reasons and totals honestly.
+
+A native continuous goal is active for this owner-requested exhaustive task. Keep it active until the stated investigation/import/publication objective is achieved. The hourly heartbeat is a recovery/continuation checkpoint, not a replacement for active continuous work. Never mark the goal complete because a batch finished. Refresh the durable queue with output/specification-research/refresh-exhaustive-queue.mjs and an explicit latest importer report path, preserving per-family attempts; do not feed an obsolete report.
