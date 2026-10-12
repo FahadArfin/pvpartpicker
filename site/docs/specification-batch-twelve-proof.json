@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-10-12T18:09:22.498Z",
+  "batch": "twelve",
+  "fixedCatalogListings": 8591,
+  "familiesInvestigated": 250,
+  "assignedFamilies": 240,
+  "supplementalKitFamilies": 10,
+  "approvedSourceRecords": 193,
+  "newVerifiedFields": 808,
+  "newPanelCells": 54,
+  "changedTechnicalIds": 166,
+  "baselineMissingFields": 40655,
+  "remainingListings": 7285,
+  "remainingFields": 40113,
+  "netResolvedComparisonFields": 542,
+  "newCompleteListings": 8,
+  "indexIds": 4198,
+  "priorIds": 4060,
+  "priorStrongFieldsRetained": 26767,
+  "reviewedInvalidFieldsCorrected": 1,
+  "correctionAudit": "specification-batch-twelve-dimensions-correction.json",
+  "priorSourceObjectsRetained": 7117,
+  "priorPanelCellsRetained": 2306,
+  "failures": [],
+  "sourceReviews": [
+    "review-twelve-balance-approval.json",
+    "generation-independent-review.json",
+    "batch-twelve-storage-independent-review-v2.json",
+    "batch-twelve-supplemental-review.json",
+    "nominal-voltage-review.json"
+  ],
+  "heldReports": [
+    "kit-extra-review.json",
+    "batch-twelve-generation-frozen-v3/conflict-holds.json",
+    "batch-twelve-balance-frozen-v2/role-holds.json",
+    "batch-twelve-storage-frozen-20261012T171022Z/artifacts/output/specification-research/batch-twelve-storage-holds.json"
+  ],
+  "allRemainingFamilyWorkContinues": true,
+  "priceWorkflowChanged": false,
+  "published": false
+}
