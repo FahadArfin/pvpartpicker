@@ -1,0 +1,116 @@
+{
+  "checkedAt": "2026-10-12T21:11:52.459Z",
+  "batch": "fifteen",
+  "fixedCatalogListings": 8593,
+  "assignedFamilies": 160,
+  "sourceInspectedFamilies": 159,
+  "sourceInspectedListingIds": 159,
+  "uninspectedIds": [
+    "eco-worthy-48429340557561",
+    "eco-worthy-48429340590329",
+    "eco-worthy-48429340623097",
+    "eco-worthy-48429353206009"
+  ],
+  "uninspectedReason": "Exact ECO-WORTHY590W family page404; no peer-model or assigned-ID inspection credit.",
+  "approvedSourceRecords": 103,
+  "newSourceBackedTechnicalFields": 314,
+  "newUnqualifiedTechnicalFields": 308,
+  "explicitlyQualifiedManufacturerEstimatedFields": 6,
+  "changedTechnicalIds": 91,
+  "newPanelCells": 19,
+  "explicitlyQualifiedEstimatedPanelCells": 6,
+  "estimatedScalarComparisonGapsRetained": 7,
+  "baselineMissingFields": 39332,
+  "roleOnlyRemainingFields": 39258,
+  "categoryRoleGapRetirement": 74,
+  "technicalResearchComparisonFills": 230,
+  "fixedRemainingListings": 7277,
+  "fixedRemainingFields": 39028,
+  "roleCorrections": 11,
+  "categoryMoves": 10,
+  "roleResearchFieldsAdded": 0,
+  "priorIds": 4502,
+  "indexIds": 4593,
+  "priorStrongFieldsRetained": 29150,
+  "priorSourceObjectsRetained": 7868,
+  "priorPanelCellsAndFlatSourceRefsRetained": 2390,
+  "priorRegistryRecordsRetained": 4055,
+  "sourceReviews": [
+    "review-fifteen-generation-v2-independent.json",
+    "review-fifteen-balance-v3-independent.json"
+  ],
+  "roleReview": "review-fifteen-roles-v3-independent.json",
+  "sourceAcquisition": {
+    "capturedResponses": 52,
+    "successfulResponses": 49,
+    "nonSuccessBodiesRetained": 3,
+    "minimumGlobalStartGapSeconds": 2.3000738620758057,
+    "overlappingRequests": 0,
+    "allBodyHashesAndSizesMatch": true,
+    "robotsPermissionAndDelaysVerified": true,
+    "ownedClaimReleased": true,
+    "newPause": [
+      {
+        "origin": "signaturesolar.imagerelay.com",
+        "reason": "Robots disallows explicit source",
+        "at": "2026-10-12T20:31:26.348853+00:00"
+      }
+    ],
+    "failures": [],
+    "primaryHelperSha256": "c8ebc013f61eeb2058ea308ecbc7a121f3cd63990c689690c6b30f73a2fc9ed5",
+    "secondaryHelperSha256": "80210fe5d1225364a427d5570db744c14f78570f3a16081f6b7ee551250df50e",
+    "skippedPausedRequestsAreNotInspectedSources": true
+  },
+  "legacySourceIdentityHolds": [
+    "eg4-6000xp",
+    "eg4-18kpv",
+    "eg4-lifepower4-v2",
+    "eg4-ll-s"
+  ],
+  "priceWorkflowChanged": false,
+  "sourceConflictsRemainHeld": true,
+  "allRemainingFamilyWorkContinues": true,
+  "published": false,
+  "failures": [],
+  "currentCatalogListings": 8604,
+  "currentRemainingListings": 7288,
+  "currentRemainingFields": 39077,
+  "currentRemainingFamilies": 4440,
+  "catalogGrowthSinceFixedBaseline": 11,
+  "newMissingFieldsFromCatalogGrowth": 49,
+  "priceCollection": {
+    "run": "38308552474",
+    "workflowConclusion": "success",
+    "acceptedObservations": 548,
+    "verifiedFreshOfferTimestamps": 548,
+    "retailers": [
+      "ShopSolar",
+      "Current Connected",
+      "Signature Solar"
+    ],
+    "failedRetailers": [
+      {
+        "retailer": "NAZ Solar Electric",
+        "reason": "robots HTTP403"
+      },
+      {
+        "retailer": "Inverters R Us",
+        "reason": "collection failed; requires exact error diagnosis"
+      },
+      {
+        "retailer": "SanTan Solar",
+        "reason": "Maximum call stack size exceeded"
+      }
+    ],
+    "workingWorkflowRemainsEnabled": true
+  },
+  "rootValidation": {
+    "testsDiscovered": 573,
+    "testsPassed": 570,
+    "testsSkipped": 3,
+    "testsFailed": 0,
+    "typecheck": "passed",
+    "build": "passed",
+    "browserProof": "batch-fifteen-local-browser-qa.json"
+  }
+}

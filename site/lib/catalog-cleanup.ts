@@ -1,7 +1,10 @@
 import type {Product,Offer} from './types.ts';
+import {applyReviewedStorageRole,isReviewedStorageRoleCandidate} from './reviewed-storage-roles.ts';
 function sameSelection(a:string,b:string){try{const x=new URL(a),y=new URL(b);return x.origin===y.origin&&x.pathname.replace(/\/$/,'')===y.pathname.replace(/\/$/,'')&&x.searchParams.get('variant')===y.searchParams.get('variant');}catch{return false;}}
 /** Reversible presentation corrections. Never writes offers or historical prices. */
-export function normalizeCatalogProduct(product:Product):Product{
+export function normalizeCatalogProduct(product:Product,options:{skipReviewedStorageRole?:boolean}={}):Product{
+ if(options.skipReviewedStorageRole&&isReviewedStorageRoleCandidate(product))return product;
+ const reviewed=applyReviewedStorageRole(product);if(reviewed)return reviewed;
  const selected=product.name.split(/\s—\s/).slice(1).join(' ');
  // These recorded variants explicitly include one NOVA inverter and ALPHA batteries.
  // Component counts are not counts of the entire inverter/battery purchase.

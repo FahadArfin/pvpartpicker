@@ -1,4 +1,5 @@
 import { load } from 'cheerio';
+import {applyReviewedStorageRole,isReviewedStorageRoleCandidate} from './reviewed-storage-roles.ts';
 import type { Category, Product, Specs, Offer } from './types.ts';
 import {describeConfiguration,selectedSaleCategory} from './bundles.ts';
 import additionalRetailers from '../data/retailer-sources.json' with {type:'json'};
@@ -250,6 +251,13 @@ export function extractPackQuantity(title: string, category: Category): number |
 // Reclassify old stored metadata without changing IDs, prices, or observation dates.
 // Owner specification corrections are applied after this normalization in storage.
 export function categorizeProduct(product: Omit<Product,'offers'> & {offers?:Product['offers']}): Product {
+  // Defer strictly matched metadata until selected offers hydrate; drifted
+  // records and foreign selected offers retain existing generic categorization.
+  if(isReviewedStorageRoleCandidate(product)){
+    const hydrated={...product,offers:product.offers||[]},reviewed=applyReviewedStorageRole(hydrated);
+    if(reviewed)return reviewed;
+    if(!hydrated.offers.length||product.specification)return hydrated;
+  }
   const emporiaSensorClamps=/^Emporia(?: Energy)?$/i.test(product.brand)&&/^Spring Clamps \(Set of 2\)$/i.test(product.name)&&/Vue Home Energy Monitor/i.test(product.description||'');
   const ovenTiltAccessory=/^GoSun$/i.test(product.brand)&&/^Fusion Tilt Kit$/i.test(product.name)&&/Fusion Solar Oven/i.test(product.description||'');
   const category=ovenTiltAccessory?'accessories':emporiaSensorClamps?'monitoring':classify(product.name)||product.category;
