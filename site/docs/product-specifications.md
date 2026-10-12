@@ -47,3 +47,13 @@ Each estimate is visibly labelled and exposes its formula or reference-product l
 A separate illustrative power estimate assumes crystalline silicon, 800 W/m² and 45°C cell temperature with −0.5 to −0.3%/°C Pmax coefficients, following [Sandia PVPMC](https://pvpmc.sandia.gov/modeling-guide/5-ac-system-output/pv-performance-metrics/normalized-efficiency/). This does not fill the published NOCT table. It excludes rear-side gain and is not a measured NOCT rating.
 
 The audit records why each missing listing has no recognized fields: no collected page, no readable structured table, a conflicting variant, or no recognized exact-item ratings. These are collection diagnostics, not claims that a datasheet does not exist. Do not fabricate dimensions or electrical limits for an unidentified accessory, cabinet, or kit simply to fill a table.
+
+## Remaining research snapshot
+
+After each reviewed import, regenerate the compact owner dashboard snapshot:
+
+```text
+node --experimental-strip-types scripts/specification-progress.mjs --report ../output/specification-research/continuation-results/import-report.json --sources ../output/spec-research/sources.json
+```
+
+The report counts comparison-field gaps before display filters. Complete coverage includes listed fields and applicable N/A values; it is not engineering approval. Listings include retailer/pack variants. Missing fields are grouped into reviewed with gaps, source unavailable, and awaiting review. A failed source does not establish unpublished specifications. The snapshot's date remains fixed until the next reviewed import; ordinary price runs do not update it or perform specification research.

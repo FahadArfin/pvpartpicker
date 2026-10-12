@@ -1,0 +1,84 @@
+{
+  "checkedAt": "2026-10-12T02:37:11.924Z",
+  "catalogListings": 7213,
+  "completeListings": 1128,
+  "remainingListings": 6085,
+  "remainingFields": 41776,
+  "reviewedGaps": 133,
+  "blockedListings": 288,
+  "awaitingReview": 5664,
+  "categories": [
+    {
+      "category": "batteries",
+      "listings": 1957,
+      "remainingListings": 1954,
+      "remainingFields": 15561
+    },
+    {
+      "category": "panels",
+      "listings": 679,
+      "remainingListings": 679,
+      "remainingFields": 6181
+    },
+    {
+      "category": "wiring",
+      "listings": 1199,
+      "remainingListings": 1199,
+      "remainingFields": 5490
+    },
+    {
+      "category": "inverters",
+      "listings": 446,
+      "remainingListings": 446,
+      "remainingFields": 4186
+    },
+    {
+      "category": "all-in-one",
+      "listings": 381,
+      "remainingListings": 381,
+      "remainingFields": 3861
+    },
+    {
+      "category": "charging",
+      "listings": 262,
+      "remainingListings": 262,
+      "remainingFields": 1922
+    },
+    {
+      "category": "electrical",
+      "listings": 333,
+      "remainingListings": 333,
+      "remainingFields": 1594
+    },
+    {
+      "category": "accessories",
+      "listings": 293,
+      "remainingListings": 293,
+      "remainingFields": 1138
+    },
+    {
+      "category": "mounting",
+      "listings": 250,
+      "remainingListings": 250,
+      "remainingFields": 916
+    },
+    {
+      "category": "monitoring",
+      "listings": 198,
+      "remainingListings": 198,
+      "remainingFields": 756
+    },
+    {
+      "category": "module-electronics",
+      "listings": 21,
+      "remainingListings": 21,
+      "remainingFields": 102
+    },
+    {
+      "category": "kits",
+      "listings": 1194,
+      "remainingListings": 69,
+      "remainingFields": 69
+    }
+  ]
+}
