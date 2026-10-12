@@ -4364,5 +4364,1704 @@
     ],
     "reviewStatus": "accepted",
     "acceptedAt": "2026-10-12T02:34:40.954Z"
+  },
+  {
+    "productIds": [
+      "hqst-53075670794558"
+    ],
+    "expected": {
+      "hqst-53075670794558": {
+        "name": "HQST 200W N-Type Solar Panel | 13% Smaller, 14.5% Lighter — 1 Panel — Save $57",
+        "sourceUrl": "https://hqsolarpower.com/products/hqst-200w-16bb-n-type-high-efficiency-monocrystalline-solar-panel?variant=53075670794558",
+        "category": "panels",
+        "anchors": {
+          "watts": 200
+        }
+      }
+    },
+    "url": "https://hqsolarpower.com/products/hqst-200w-16bb-n-type-high-efficiency-monocrystalline-solar-panel",
+    "kind": "manufacturer",
+    "model": "HQST 200W Compact N-Type 16BB",
+    "label": "HQST 200W Compact N-Type 16BB exact US manufacturer technical page",
+    "checkedAt": "2026-10-12T03:19:36.466Z",
+    "reviewNote": "Exact 1 Panel variant and compact N-Type 16BB table. 25.4% is cell efficiency, not module efficiency. Electrical tolerances retained. NOCT/NMOT and temperature coefficients not published in this page table; remain unknown.",
+    "rows": [
+      [
+        "Model",
+        "HQST 200W Compact N-Type 16BB"
+      ],
+      [
+        "Maximum power at STC",
+        "200 W"
+      ],
+      [
+        "Open circuit voltage (Voc)",
+        "22.4 V ±3%"
+      ],
+      [
+        "Short circuit current (Isc)",
+        "11.04 A ±3%"
+      ],
+      [
+        "Optimum operating voltage (Vmp)",
+        "19.02 V ±3%"
+      ],
+      [
+        "Optimum operating current (Imp)",
+        "10.5 A ±3%"
+      ],
+      [
+        "Cell efficiency",
+        "Up to 25.4%"
+      ],
+      [
+        "Cell type",
+        "N-Type"
+      ],
+      [
+        "Maximum system voltage",
+        "600 VDC UL"
+      ],
+      [
+        "Maximum series fuse rating",
+        "20 A"
+      ],
+      [
+        "Connector type",
+        "MC4 Solar Connectors"
+      ],
+      [
+        "Frame material",
+        "Anti-Corrosion Aluminium Alloy"
+      ],
+      [
+        "Front glass",
+        "Low Iron-Tempered Glass"
+      ],
+      [
+        "Dimensions",
+        "765 × 1175 × 30 mm"
+      ],
+      [
+        "Weight",
+        "9.15 kg"
+      ],
+      [
+        "Waterproof rating",
+        "IP65"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.573Z"
+  },
+  {
+    "productIds": [
+      "hqst-53224206434622"
+    ],
+    "expected": {
+      "hqst-53224206434622": {
+        "name": "HQST Bifacial 200W Compact N-Type Solar Panel | 25.4% Efficiency, 13% Smaller — 1 Panel — Save $59",
+        "sourceUrl": "https://hqsolarpower.com/products/hqst-compact-bifacial-200w-n-type-16bb-solar-panel-with-all-black-design?variant=53224206434622",
+        "category": "panels",
+        "anchors": {
+          "watts": 200,
+          "face": "Bifacial"
+        }
+      }
+    },
+    "url": "https://hqsolarpower.com/products/hqst-compact-bifacial-200w-n-type-16bb-solar-panel-with-all-black-design",
+    "kind": "manufacturer",
+    "model": "HQST Bifacial 200W Compact N-Type 16BB All-Black",
+    "label": "HQST Bifacial 200W Compact N-Type 16BB All-Black exact US manufacturer technical page",
+    "checkedAt": "2026-10-12T03:19:36.466Z",
+    "reviewNote": "Exact 1 Panel bifacial All-Black variant. Front STC 200 W excludes advertised rear gain. Cell efficiency does not become module efficiency. No transposed non-bifacial dimensions or IP65 rating. NOCT/NMOT and temperature coefficients remain unknown.",
+    "rows": [
+      [
+        "Model",
+        "HQST Bifacial 200W Compact N-Type 16BB All-Black"
+      ],
+      [
+        "Maximum power at STC",
+        "200 W"
+      ],
+      [
+        "Open circuit voltage (Voc)",
+        "22.4 V"
+      ],
+      [
+        "Short circuit current (Isc)",
+        "11.04 A"
+      ],
+      [
+        "Optimum operating voltage (Vmp)",
+        "19.02 V"
+      ],
+      [
+        "Optimum operating current (Imp)",
+        "10.5 A"
+      ],
+      [
+        "Cell efficiency",
+        "Up to 25.4%"
+      ],
+      [
+        "Cell type",
+        "N-Type"
+      ],
+      [
+        "Maximum system voltage",
+        "600 VDC UL"
+      ],
+      [
+        "Maximum series fuse rating",
+        "20 A"
+      ],
+      [
+        "Connector type",
+        "MC4 Solar Connectors"
+      ],
+      [
+        "Frame material",
+        "Anti-Corrosion Aluminium Alloy"
+      ],
+      [
+        "Front glass",
+        "Low Iron-Tempered Glass"
+      ],
+      [
+        "Dimensions",
+        "765 × 1200 × 30 mm"
+      ],
+      [
+        "Weight",
+        "9.79 kg"
+      ],
+      [
+        "Waterproof rating",
+        "IP68"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.573Z"
+  },
+  {
+    "productIds": [
+      "hqst-53412669325630"
+    ],
+    "expected": {
+      "hqst-53412669325630": {
+        "name": "HQST 1000W Pure Sine Wave Inverter | 2000W Surge | GFCI Protected | Built for RV & Off-Grid — 1000W Inverter",
+        "sourceUrl": "https://hqsolarpower.com/products/1000w-12v-pure-sine-wave-inverter-boost?variant=53412669325630",
+        "category": "inverters",
+        "anchors": {
+          "watts": 1000,
+          "inverterType": "Off-grid",
+          "outputWatts": 1000
+        }
+      }
+    },
+    "url": "https://hqsolarpower.com/products/1000w-12v-pure-sine-wave-inverter-boost",
+    "kind": "manufacturer",
+    "model": "HI1210PG2",
+    "label": "HI1210PG2 exact US manufacturer technical page",
+    "checkedAt": "2026-10-12T03:19:36.466Z",
+    "reviewNote": "Exact 1000W Inverter standalone current PG2 page and manual link model. Five-second surge explicitly published; review prose is excluded. No PV/MPPT ratings applicable to standalone inverter.",
+    "rows": [
+      [
+        "Model",
+        "HI1210PG2"
+      ],
+      [
+        "Continuous output power",
+        "1000 W"
+      ],
+      [
+        "Surge power",
+        "2000 W (5 seconds maximum)"
+      ],
+      [
+        "Output voltage",
+        "120 V ±5%"
+      ],
+      [
+        "Operating voltage range",
+        "10.0–15.5 V DC ±0.3 V"
+      ],
+      [
+        "Output frequency",
+        "60 Hz ±0.5 Hz"
+      ],
+      [
+        "Output waveform",
+        "Pure Sine Wave"
+      ],
+      [
+        "Conversion efficiency",
+        "Up to 94%"
+      ],
+      [
+        "Operating temperature",
+        "-10–55 °C"
+      ],
+      [
+        "Dimensions",
+        "282 × 181 × 79 mm (L × W × H)"
+      ],
+      [
+        "Weight",
+        "2.3 kg"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.573Z"
+  },
+  {
+    "productIds": [
+      "hqst-53467027439934"
+    ],
+    "expected": {
+      "hqst-53467027439934": {
+        "name": "HQST 1500W Pure Sine Wave Inverter 12V to 120V with 3000W Surge & GFCI Protection — Inverter Only",
+        "sourceUrl": "https://hqsolarpower.com/products/1500w-12v-pure-sine-wave-inverter-gfci?variant=53467027439934",
+        "category": "inverters",
+        "anchors": {
+          "watts": 1500,
+          "voltage": 12,
+          "outputWatts": 1500
+        }
+      }
+    },
+    "url": "https://hqsolarpower.com/products/1500w-12v-pure-sine-wave-inverter-gfci",
+    "kind": "manufacturer",
+    "model": "HI1215PG2",
+    "label": "HI1215PG2 exact US manufacturer technical page",
+    "checkedAt": "2026-10-12T03:19:36.466Z",
+    "reviewNote": "Exact Inverter Only PG2 model. Published selectable/dual 110/120 V text retained; not normalized to a single AC voltage. Weight and dimensions are not present as text in selected page table and remain unknown.",
+    "rows": [
+      [
+        "Model",
+        "HI1215PG2"
+      ],
+      [
+        "Continuous output power",
+        "1500 W"
+      ],
+      [
+        "Surge power",
+        "3000 W (up to 5 seconds)"
+      ],
+      [
+        "Output voltage",
+        "110/120 V ±5%"
+      ],
+      [
+        "Operating voltage range",
+        "10.0–15.5 V DC ±0.3 V"
+      ],
+      [
+        "Output frequency",
+        "60 Hz ±0.5 Hz"
+      ],
+      [
+        "Output waveform",
+        "Pure Sine Wave"
+      ],
+      [
+        "Conversion efficiency",
+        "Up to 94%"
+      ],
+      [
+        "Operating temperature",
+        "-10–55 °C"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.573Z"
+  },
+  {
+    "productIds": [
+      "hqst-53470159470910"
+    ],
+    "expected": {
+      "hqst-53470159470910": {
+        "name": "HQST 2000W Pure Sine Wave Inverter 12V DC to 120V AC with 4000W Surge, AC Hardwire, Wired Remote Control — 2000W Inverter",
+        "sourceUrl": "https://hqsolarpower.com/products/2000w-12v-pure-sine-wave-inverter-hardwire?variant=53470159470910",
+        "category": "inverters",
+        "anchors": {
+          "watts": 2000,
+          "voltage": 12,
+          "outputWatts": 2000
+        }
+      }
+    },
+    "url": "https://hqsolarpower.com/products/2000w-12v-pure-sine-wave-inverter-hardwire",
+    "kind": "manufacturer",
+    "model": "HI1220PG2-BR-G1-US",
+    "label": "HI1220PG2-BR-G1-US exact US manufacturer technical page",
+    "checkedAt": "2026-10-12T03:19:36.466Z",
+    "reviewNote": "Exact 2000W Inverter standalone SKU HI1220PG2-BR-G1-US, hardwire/remote revision. Table and feature text agree on 2000 W/4000 W five-second surge. Page manual link is labelled HI1215PG2 and FAQ includes copied 1500W text; those sections excluded. Only product-specific 2000W table used.",
+    "rows": [
+      [
+        "Model",
+        "HI1220PG2-BR-G1-US"
+      ],
+      [
+        "Continuous output power",
+        "2000 W"
+      ],
+      [
+        "Surge power",
+        "4000 W (up to 5 seconds)"
+      ],
+      [
+        "Output voltage",
+        "110/120 V ±5%"
+      ],
+      [
+        "Operating voltage range",
+        "10.0–15.5 V DC ±0.3 V"
+      ],
+      [
+        "Output frequency",
+        "60 Hz ±0.5 Hz"
+      ],
+      [
+        "Output waveform",
+        "Pure Sine Wave"
+      ],
+      [
+        "Conversion efficiency",
+        "Up to 94%"
+      ],
+      [
+        "Operating temperature",
+        "-10–50 °C"
+      ],
+      [
+        "Dimensions",
+        "361 × 206 × 86 mm"
+      ],
+      [
+        "Weight",
+        "3.6 kg"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.573Z"
+  },
+  {
+    "productIds": [
+      "hqst-53470488428862"
+    ],
+    "expected": {
+      "hqst-53470488428862": {
+        "name": "HQST 3000W Pure Sine Wave Inverter 12V | 6000W Surge, GFCI & Remote — 3000W Inverter",
+        "sourceUrl": "https://hqsolarpower.com/products/3000w-12v-pure-sine-wave-inverter-gfci-remote?variant=53470488428862",
+        "category": "inverters",
+        "anchors": {
+          "watts": 3000,
+          "voltage": 12,
+          "outputWatts": 3000
+        }
+      }
+    },
+    "url": "https://hqsolarpower.com/products/3000w-12v-pure-sine-wave-inverter-gfci-remote",
+    "kind": "manufacturer",
+    "model": "HI1230PG2-BR-G1-US",
+    "label": "HI1230PG2-BR-G1-US exact US manufacturer technical page",
+    "checkedAt": "2026-10-12T03:19:36.466Z",
+    "reviewNote": "Exact 3000W Inverter standalone current US SKU. Five-second surge explicitly published. Preserve 110/120 V text; do not transpose 2000W harmonic distortion or dimensions.",
+    "rows": [
+      [
+        "Model",
+        "HI1230PG2-BR-G1-US"
+      ],
+      [
+        "Continuous output power",
+        "3000 W"
+      ],
+      [
+        "Surge power",
+        "6000 W (up to 5 seconds)"
+      ],
+      [
+        "Output voltage",
+        "110/120 V ±5%"
+      ],
+      [
+        "Operating voltage range",
+        "10.0–15.5 V DC ±0.3 V"
+      ],
+      [
+        "Output frequency",
+        "60 Hz ±0.5 Hz"
+      ],
+      [
+        "Output waveform",
+        "Pure Sine Wave"
+      ],
+      [
+        "Conversion efficiency",
+        "Up to 94%"
+      ],
+      [
+        "Operating temperature",
+        "-10–50 °C"
+      ],
+      [
+        "Dimensions",
+        "415 × 241 × 95 mm"
+      ],
+      [
+        "Weight",
+        "5 kg"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.573Z"
+  },
+  {
+    "productIds": [
+      "hqst-52549739020606"
+    ],
+    "expected": {
+      "hqst-52549739020606": {
+        "name": "HQST 100A MPPT Solar Charge Controller with Smart APP Control, LiFePO4 Battery Low Temp Protection, and Parallel Charging — 100A MPPT",
+        "sourceUrl": "https://hqsolarpower.com/products/100a-mppt-solar-charge-controller-with-smart-app-control-lifepo4-battery-low-temp-protection-and-parallel-charging?variant=52549739020606",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "MPPT",
+          "chargeCurrentA": 100
+        }
+      }
+    },
+    "url": "https://hqsolarpower.com/products/100a-mppt-solar-charge-controller-with-smart-app-control-lifepo4-battery-low-temp-protection-and-parallel-charging",
+    "kind": "manufacturer",
+    "model": "HCC100HTR-FC",
+    "label": "HCC100HTR-FC exact US manufacturer technical page",
+    "checkedAt": "2026-10-12T03:19:36.466Z",
+    "reviewNote": "Exact standalone 100A variant and matching model manual link. PV table duplicates 1200/2400/3600/4800 W for both 80A and 100A; withheld pending manual validation instead of presenting conditional overpanel array wattage as usable input. Dimensions 7.9 × 3.7 × 10 in versus 200 × 260 × 93 mm conflict in axis ordering and are withheld. Independent MPPT count, working MPPT range and PV input current not inferred.",
+    "rows": [
+      [
+        "Model",
+        "HCC100HTR-FC"
+      ],
+      [
+        "Rated charge current",
+        "100 A"
+      ],
+      [
+        "Maximum PV input voltage",
+        "150 V DC (maximum PV open-circuit voltage)"
+      ],
+      [
+        "System voltage",
+        "12/24/36/48 V"
+      ],
+      [
+        "Conversion efficiency",
+        "Up to 98.7% (peak)"
+      ],
+      [
+        "Communication ports",
+        "RS485 (RJ12)"
+      ],
+      [
+        "Weight",
+        "2.6 kg"
+      ],
+      [
+        "Operating temperature",
+        "-25–45 °C"
+      ],
+      [
+        "Storage temperature",
+        "-40–80 °C"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.573Z"
+  },
+  {
+    "productIds": [
+      "hqst-52549741150526"
+    ],
+    "expected": {
+      "hqst-52549741150526": {
+        "name": "HQST 80A MPPT Solar Charge Controller with Smart APP Control, LiFePO4 Battery Low Temp Protection, and Parallel Charging — 80A MPPT",
+        "sourceUrl": "https://hqsolarpower.com/products/80a-mppt-solar-charge-controller-with-smart-app-control-lifepo4-battery-low-temp-protection-and-parallel-charging?variant=52549741150526",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "MPPT",
+          "chargeCurrentA": 80
+        }
+      }
+    },
+    "url": "https://hqsolarpower.com/products/80a-mppt-solar-charge-controller-with-smart-app-control-lifepo4-battery-low-temp-protection-and-parallel-charging",
+    "kind": "manufacturer",
+    "model": "HCC80HTR-FC",
+    "label": "HCC80HTR-FC exact US manufacturer technical page",
+    "checkedAt": "2026-10-12T03:19:36.466Z",
+    "reviewNote": "Exact standalone 80A variant and matching model manual link. PV table duplicates 1200/2400/3600/4800 W for both 80A and 100A; withheld pending manual validation instead of presenting conditional overpanel array wattage as usable input. Dimensions 7.9 × 3.7 × 10 in versus 200 × 260 × 93 mm conflict in axis ordering and are withheld. Independent MPPT count, working MPPT range and PV input current not inferred.",
+    "rows": [
+      [
+        "Model",
+        "HCC80HTR-FC"
+      ],
+      [
+        "Rated charge current",
+        "80 A"
+      ],
+      [
+        "Maximum PV input voltage",
+        "150 V DC (maximum PV open-circuit voltage)"
+      ],
+      [
+        "System voltage",
+        "12/24/36/48 V"
+      ],
+      [
+        "Conversion efficiency",
+        "Up to 98.7% (peak)"
+      ],
+      [
+        "Communication ports",
+        "RS485 (RJ12)"
+      ],
+      [
+        "Weight",
+        "2.6 kg"
+      ],
+      [
+        "Operating temperature",
+        "-25–45 °C"
+      ],
+      [
+        "Storage temperature",
+        "-40–80 °C"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.573Z"
+  },
+  {
+    "productIds": [
+      "oupes-42896283402417"
+    ],
+    "expected": {
+      "oupes-42896283402417": {
+        "name": "OUPES Mega 3 Home Backup & Portable Power Station | 3600W 3072Wh — Mega 3 (Unit Only)",
+        "sourceUrl": "https://oupes.com/products/oupes-mega-3-home-backup-portable-power-station-3600w-3072wh?variant=42896283402417",
+        "category": "all-in-one",
+        "anchors": {
+          "stationType": "Integrated power station",
+          "capacityKwh": 3.072
+        }
+      }
+    },
+    "url": "https://oupes.com/products/oupes-mega-3-home-backup-portable-power-station-3600w-3072wh",
+    "kind": "manufacturer",
+    "model": "OUPES Mega 3",
+    "label": "OUPES Mega 3 exact US manufacturer technical page",
+    "checkedAt": "2026-10-12T03:19:36.466Z",
+    "reviewNote": "Exact US Mega 3 Unit Only variant, distinct from Pro/Lite/Titan and B2 expansion batteries. Main-unit specification block only; B2 and solar-panel columns excluded. Surge marketing has no duration and is withheld. Solar 12–148 V DC is not explicitly an absolute Voc rating, so max PV voltage withheld; explicitly named 18–140 V MPPT range retained. Tracker count and PV Isc not inferred. Celsius retained because Fahrenheit translation is inconsistent.",
+    "rows": [
+      [
+        "Model",
+        "OUPES Mega 3"
+      ],
+      [
+        "Energy capacity",
+        "3072 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Cycle life",
+        "More than 3500 cycles to 80% capacity"
+      ],
+      [
+        "Rated AC output power",
+        "3600 W"
+      ],
+      [
+        "AC output voltage",
+        "120 V"
+      ],
+      [
+        "Output waveform",
+        "Pure Sine Wave"
+      ],
+      [
+        "Maximum PV input power",
+        "2100 W (main unit only)"
+      ],
+      [
+        "MPPT voltage range",
+        "18–140 V"
+      ],
+      [
+        "Maximum MPPT input current",
+        "15 A"
+      ],
+      [
+        "AC charging input",
+        "1800 W (fast mode)"
+      ],
+      [
+        "Dimensions",
+        "641.5 × 304.5 × 437.5 mm (L × W × D)"
+      ],
+      [
+        "Weight",
+        "37.8 kg"
+      ],
+      [
+        "Operating temperature",
+        "0–40 °C"
+      ],
+      [
+        "Ingress protection",
+        "IP21"
+      ],
+      [
+        "Connectivity",
+        "WiFi 2.4GHz / Bluetooth"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.573Z"
+  },
+  {
+    "productIds": [
+      "oupes-43067408023729"
+    ],
+    "expected": {
+      "oupes-43067408023729": {
+        "name": "OUPES Mega 2 Home Backup & Portable Power Station | 2500W, 2048Wh — Mega 2 (Unit Only)",
+        "sourceUrl": "https://oupes.com/products/oupes-mega-2-home-backup-portable-power-station-2500w-2048wh?variant=43067408023729",
+        "category": "all-in-one",
+        "anchors": {
+          "stationType": "Integrated power station",
+          "capacityKwh": 2.048
+        }
+      }
+    },
+    "url": "https://oupes.com/products/oupes-mega-2-home-backup-portable-power-station-2500w-2048wh",
+    "kind": "manufacturer",
+    "model": "OUPES Mega 2",
+    "label": "OUPES Mega 2 exact US manufacturer technical page",
+    "checkedAt": "2026-10-12T03:19:36.466Z",
+    "reviewNote": "Exact US Mega 2 Unit Only variant, distinct from Pro/Lite/Titan and B2 expansion batteries. Main-unit specification block only; B2 and solar-panel columns excluded. Surge marketing has no duration and is withheld. Solar 12–148 V DC is not explicitly an absolute Voc rating, so max PV voltage withheld; explicitly named 18–140 V MPPT range retained. Tracker count and PV Isc not inferred. Celsius retained because Fahrenheit translation is inconsistent.",
+    "rows": [
+      [
+        "Model",
+        "OUPES Mega 2"
+      ],
+      [
+        "Energy capacity",
+        "2048 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Cycle life",
+        "More than 3500 cycles to 80% capacity"
+      ],
+      [
+        "Rated AC output power",
+        "2500 W"
+      ],
+      [
+        "AC output voltage",
+        "120 V"
+      ],
+      [
+        "Output waveform",
+        "Pure Sine Wave"
+      ],
+      [
+        "Maximum PV input power",
+        "2100 W (main unit only)"
+      ],
+      [
+        "MPPT voltage range",
+        "18–140 V"
+      ],
+      [
+        "Maximum MPPT input current",
+        "15 A"
+      ],
+      [
+        "AC charging input",
+        "1600 W (fast mode)"
+      ],
+      [
+        "Dimensions",
+        "460 × 270 × 305 mm (L × W × D)"
+      ],
+      [
+        "Weight",
+        "22 kg"
+      ],
+      [
+        "Operating temperature",
+        "0–40 °C"
+      ],
+      [
+        "Ingress protection",
+        "IP21"
+      ],
+      [
+        "Connectivity",
+        "WiFi 2.4GHz / Bluetooth"
+      ]
+    ],
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.573Z"
+  },
+  {
+    "model": "RPC0530SR-35",
+    "productIds": [
+      "renogy-43178645323891"
+    ],
+    "expected": {
+      "renogy-43178645323891": {
+        "name": "Renogy 5FT 3/0AWG Anderson Adapter Cable Anderson SB350 - Ring Lug",
+        "category": "wiring",
+        "sourceUrl": "https://www.renogy.com/products/renogy-5ft-3-0awg-anderson-adapter-cable-anderson-sb350-ring-lug?variant=43178645323891",
+        "anchors": {
+          "gauge": "3/0 AWG",
+          "lengthFt": 5
+        }
+      }
+    },
+    "url": "https://www.renogy.com/products/renogy-5ft-3-0awg-anderson-adapter-cable-anderson-sb350-ring-lug",
+    "label": "RPC0530SR-35 manufacturer technical source",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-12T03:21:39.406Z",
+    "rows": [
+      [
+        "Model",
+        "RPC0530SR-35"
+      ],
+      [
+        "Cable length",
+        "5 ft"
+      ],
+      [
+        "Wire gauge",
+        "3/0 AWG"
+      ],
+      [
+        "Connector type",
+        "Anderson SB350 to 5/16 in ring lugs"
+      ],
+      [
+        "Voltage rating",
+        "600 V"
+      ],
+      [
+        "Conductor material",
+        "Oxygen-free tinned copper"
+      ],
+      [
+        "Operating temperature",
+        "-40 to 105 °C"
+      ],
+      [
+        "Product warranty",
+        "1 year"
+      ]
+    ],
+    "reviewNote": "Exact technical table and SKU RPC0530SR-35-US. SB350 designation is not cable ampacity; no continuous current or universal inverter compatibility inferred.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.573Z"
+  },
+  {
+    "model": "RPC0110EC-Y",
+    "productIds": [
+      "renogy-43178653057139"
+    ],
+    "expected": {
+      "renogy-43178653057139": {
+        "name": "Solar Connectors Y Branch Parallel Adapter Cable MMF+FFM Pair",
+        "category": "wiring",
+        "sourceUrl": "https://www.renogy.com/products/solar-connectors-y-branch-adapter-cable-mmf-ffm-pair?variant=43178653057139",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.renogy.com/products/solar-connectors-y-branch-adapter-cable-mmf-ffm-pair",
+    "label": "RPC0110EC-Y manufacturer technical source",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-12T03:21:39.407Z",
+    "rows": [
+      [
+        "Model",
+        "RPC0110EC-Y"
+      ],
+      [
+        "Rated current",
+        "30 A"
+      ],
+      [
+        "Voltage rating",
+        "1500 V DC (IEC)"
+      ],
+      [
+        "Connector type",
+        "MMF + FFM parallel Y branch pair"
+      ],
+      [
+        "Material",
+        "PC insulation; tin-plated copper contacts"
+      ],
+      [
+        "Ingress protection",
+        "IP67 mated / IP2X unmated"
+      ],
+      [
+        "Operating temperature",
+        "-40 to 90 °C"
+      ],
+      [
+        "Compatibility",
+        "Single-core cable cross sections 2.5, 4 or 6 mm²"
+      ],
+      [
+        "Product warranty",
+        "1 year"
+      ]
+    ],
+    "reviewNote": "Exact SKU RPC0110EC-Y-US manufacturer table. Current is connector rating, not doubled for pair or treated as PV-system ampacity. IEC qualifier preserved. No cable length invented.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.573Z"
+  },
+  {
+    "model": "MNEDC100",
+    "productIds": [
+      "renogy-43178671341683"
+    ],
+    "expected": {
+      "renogy-43178671341683": {
+        "name": "MidNite Breaker MNEDC100",
+        "category": "electrical",
+        "sourceUrl": "https://www.renogy.com/products/midnite-breaker-mnedc100?variant=43178671341683",
+        "anchors": {
+          "electricalType": "Circuit breakers"
+        }
+      }
+    },
+    "url": "https://www.midnitesolar.com/productPhoto.php?act=p&productCat_ID=43&product_ID=197&sortOrder=1",
+    "label": "MNEDC100 manufacturer technical source",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-12T03:21:39.407Z",
+    "rows": [
+      [
+        "Model",
+        "MNEDC100"
+      ],
+      [
+        "Rated current",
+        "100 A"
+      ],
+      [
+        "Voltage rating",
+        "150 V DC / 120 V AC"
+      ],
+      [
+        "Interrupting capacity",
+        "10000 AIC"
+      ],
+      [
+        "Connector type",
+        "1/4 in electrical connection studs"
+      ],
+      [
+        "Mounting type",
+        "Panel mount; 0.75 in width"
+      ],
+      [
+        "Enclosure rating",
+        "Type 1 (indoor)"
+      ]
+    ],
+    "reviewNote": "Family enumerates MNEDC100. 125 V belongs to different MNEDC125RT. Family shipping weight withheld; no full dimensions inferred from width. Generic certification withheld because requires appropriate breaker box.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.573Z"
+  },
+  {
+    "model": "MNSPD-300-DC",
+    "productIds": [
+      "shopsolar-31952777838732",
+      "practical-preppers-midnite300vdc"
+    ],
+    "expected": {
+      "shopsolar-31952777838732": {
+        "name": "Midnite Solar 300V DC Surge Protector Device | MNSPD-300-DC",
+        "category": "electrical",
+        "sourceUrl": "https://shopsolarkits.com/products/midnite-solar-300v-dc-surge-protector-device-mnspd-300-dc?variant=31952777838732",
+        "anchors": {
+          "voltage": 300,
+          "electricalType": "Surge protection"
+        }
+      },
+      "practical-preppers-midnite300vdc": {
+        "name": "MidNite Solar Surge Protection Device 300VDC",
+        "category": "electrical",
+        "sourceUrl": "https://practicalpreppers.com/product/midnite-solar-surge-protection-device-300vdc/",
+        "anchors": {
+          "voltage": 300,
+          "electricalType": "Surge protection"
+        }
+      }
+    },
+    "url": "https://mail.midnitesolar.com/productPhoto.php?act=p&productCat_ID=8&product_ID=284&sortOrder=1",
+    "label": "MNSPD-300-DC manufacturer technical source",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-12T03:21:39.407Z",
+    "rows": [
+      [
+        "Model",
+        "MNSPD-300-DC"
+      ],
+      [
+        "Dimensions",
+        "4.4 × 3.8 × 3.5 in (L × W × D)"
+      ],
+      [
+        "Enclosure rating",
+        "Type 4X (outdoor)"
+      ],
+      [
+        "Product warranty",
+        "5 years"
+      ]
+    ],
+    "reviewNote": "Exact DC model. Manufacturer brochure tables conflict about 300/385 V maximum,57/80 kA and Type1/2 editions; scalar operating/surge/clamp ratings, SPD type and UL edition withheld. Individual weight may include shipping; withheld.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.573Z"
+  },
+  {
+    "model": "MNSPD-600",
+    "productIds": [
+      "shopsolar-31241342517388",
+      "practical-preppers-midnite600vdc"
+    ],
+    "expected": {
+      "shopsolar-31241342517388": {
+        "name": "MidNite Solar 600V Surge Protector Device | MNSPD-600",
+        "category": "electrical",
+        "sourceUrl": "https://shopsolarkits.com/products/600v-surge-protector-device?variant=31241342517388",
+        "anchors": {
+          "voltage": 600,
+          "electricalType": "Surge protection"
+        }
+      },
+      "practical-preppers-midnite600vdc": {
+        "name": "MidNite Solar Surge Protection Device 600VDC",
+        "category": "electrical",
+        "sourceUrl": "https://practicalpreppers.com/product/midnite-solar-surge-protection-device-600vdc/",
+        "anchors": {
+          "voltage": 600,
+          "electricalType": "Surge protection"
+        }
+      }
+    },
+    "url": "https://www.midnitesolar.com/productPhoto.php?act=p&productCat_ID=21&product_ID=285&sortOrder=1",
+    "label": "MNSPD-600 manufacturer technical source",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-12T03:21:39.408Z",
+    "rows": [
+      [
+        "Model",
+        "MNSPD-600"
+      ],
+      [
+        "Dimensions",
+        "4.4 × 3.8 × 3.5 in (L × W × D)"
+      ],
+      [
+        "Enclosure rating",
+        "Type 4X (outdoor)"
+      ],
+      [
+        "Product warranty",
+        "5 years"
+      ]
+    ],
+    "reviewNote": "Exact MNSPD-600. Conflicting brochure revisions mean electrical surge,MCOV,clamping and interrupt ratings, UL edition and SPD type withheld. Individual weight may include shipping; withheld.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.573Z"
+  },
+  {
+    "model": "88450 5050 Clamp",
+    "productIds": [
+      "shopsolar-47548430909580",
+      "signature-solar-1688024"
+    ],
+    "expected": {
+      "shopsolar-47548430909580": {
+        "name": "Tamarack Solar 5050 Clamp BLACK 30mm-40mm (12 Pack) 88450",
+        "category": "mounting",
+        "sourceUrl": "https://shopsolarkits.com/products/tamarack-solar-5050-clamp-88450?variant=47548430909580",
+        "anchors": {
+          "color": "Black",
+          "mountType": "Hardware"
+        }
+      },
+      "signature-solar-1688024": {
+        "name": "Tamarack Solar | 5050 Clamp | Black | 30mm - 40mm",
+        "category": "mounting",
+        "sourceUrl": "https://signaturesolar.com/tamarack-solar-5050-clamp-black-30mm-40mm/",
+        "anchors": {
+          "color": "Black",
+          "mountType": "Hardware"
+        }
+      }
+    },
+    "url": "https://tamaracksolar.com/wp-content/uploads/Tamarack-Solar-Ground-Mount-System-Data-Sheet.pdf",
+    "label": "88450 5050 Clamp manufacturer technical source",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-12T03:21:39.408Z",
+    "rows": [
+      [
+        "Model",
+        "88450 5050 Clamp"
+      ],
+      [
+        "Compatibility",
+        "Module frame height 30–40 mm"
+      ],
+      [
+        "Mounting type",
+        "Mid-clamp or end-clamp"
+      ]
+    ],
+    "reviewNote": "Rev4d page2 explicitly identifies #88450 12-pack clamp. Per-clamp fit across single/pack listings only. System wind/snow/UL2703 claims not imported as standalone clamp loads/certification. No material,dimensions or unit weight inferred.",
+    "visualReview": {
+      "page": 2,
+      "revision": "Rev4d",
+      "artifact": "output/specification-research/qa/batch-two-tamarack-page2.png",
+      "checkedAt": "2026-10-12T03:25:57.620Z",
+      "sha256": "e1cd13c87ac602dc93d4bef17fb627cb40dabf0f13ab06b8bef9c1490eede80e"
+    },
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.574Z"
+  },
+  {
+    "model": "MTS-ZB",
+    "productIds": [
+      "renogy-43178708926579",
+      "renogy-43178708959347",
+      "renogy-43178708992115"
+    ],
+    "expected": {
+      "renogy-43178708926579": {
+        "name": "Solar Panel Mounting Z Bracket -- Set of 4 — 1 set",
+        "category": "mounting",
+        "sourceUrl": "https://www.renogy.com/products/solar-panel-mounting-z-bracket-set-of-4?variant=43178708926579",
+        "anchors": {
+          "mountType": "Hardware"
+        }
+      },
+      "renogy-43178708959347": {
+        "name": "Solar Panel Mounting Z Bracket -- Set of 4 — 2 sets（Hot Sale）",
+        "category": "mounting",
+        "sourceUrl": "https://www.renogy.com/products/solar-panel-mounting-z-bracket-set-of-4?variant=43178708959347",
+        "anchors": {
+          "mountType": "Hardware"
+        }
+      },
+      "renogy-43178708992115": {
+        "name": "Solar Panel Mounting Z Bracket -- Set of 4 — 4 sets",
+        "category": "mounting",
+        "sourceUrl": "https://www.renogy.com/products/solar-panel-mounting-z-bracket-set-of-4?variant=43178708992115",
+        "anchors": {
+          "mountType": "Hardware"
+        }
+      }
+    },
+    "url": "https://www.renogy.com/products/solar-panel-mounting-z-bracket-set-of-4",
+    "label": "MTS-ZB manufacturer technical source",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-12T03:21:39.408Z",
+    "rows": [
+      [
+        "Model",
+        "MTS-ZB"
+      ],
+      [
+        "Material",
+        "Aluminum"
+      ],
+      [
+        "Mounting type",
+        "Fixed Z brackets"
+      ],
+      [
+        "Compatibility",
+        "Rigid solar panels; manufacturer does not recommend one set for a single panel over 200 W"
+      ],
+      [
+        "Product warranty",
+        "1 year material warranty"
+      ]
+    ],
+    "reviewNote": "Uncurved Z bracket family across1/2/4-set variants.200 W recommendation is fit guidance,not structural load approval or pack-total rating. Curved bracket excluded; no dimensions/wind rating borrowed.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.574Z"
+  },
+  {
+    "model": "346-00000-00 CCA",
+    "productIds": [
+      "shopsolar-31894770516108"
+    ],
+    "expected": {
+      "shopsolar-31894770516108": {
+        "name": "TIGO - CCA Standalone Unit| 346-00000-00",
+        "category": "module-electronics",
+        "sourceUrl": "https://shopsolarkits.com/products/tigo-cca-standalone-unit-346-00000-00?variant=31894770516108",
+        "anchors": {
+          "moduleFunction": "Shutdown gateway / access point"
+        }
+      }
+    },
+    "url": "https://www.tigoenergy.com/product/cloud-connect-advanced",
+    "label": "346-00000-00 CCA manufacturer technical source",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-12T03:21:39.408Z",
+    "rows": [
+      [
+        "Model",
+        "346-00000-00 CCA"
+      ],
+      [
+        "Communications",
+        "Ethernet and Wi-Fi; optional cellular connectivity"
+      ],
+      [
+        "Compatibility",
+        "Tigo TAP, TS4-A-O, TS4-A-S and TS4-A-M"
+      ]
+    ],
+    "reviewNote": "Official kit identification confirms standalone CCA P/N346-00000-00: https://support.tigoenergy.com/hc/en-us/articles/204333388-Description-of-Tigo-CCA-Kits . Exact standalone only. Current CCA PDF unavailable; dimensions,voltage range,IP and PDF-only values withheld.No kit enclosure rating borrowed.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.574Z"
+  },
+  {
+    "productIds": [
+      "renogy-43178674782323"
+    ],
+    "expected": {
+      "renogy-43178674782323": {
+        "name": "Deep Cycle AGM Battery 12 Volt 100Ah — 1 Pack",
+        "sourceUrl": "https://www.renogy.com/products/deep-cycle-agm-battery-12-volt-100ah?variant=43178674782323",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 100,
+          "batteryKind": "Battery modules",
+          "maxChargeCurrent": 30
+        }
+      }
+    },
+    "model": "RNG-BATT-AGM12-100-US",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/deep-cycle-agm-battery-12-volt-100ah",
+    "label": "Renogy RNG-BATT-AGM12-100-US official product technical page",
+    "checkedAt": "2026-10-12T03:20:28.147592Z",
+    "rows": [
+      [
+        "Model",
+        "RNG-BATT-AGM12-100-US"
+      ],
+      [
+        "Nominal voltage",
+        "12 V"
+      ],
+      [
+        "Rated capacity",
+        "100 Ah (10 hour rate to 10.5 V)"
+      ],
+      [
+        "Battery chemistry",
+        "AGM lead-acid"
+      ],
+      [
+        "Maximum continuous charging current",
+        "30 A"
+      ],
+      [
+        "Peak discharge current",
+        "1100 A (5 seconds)"
+      ],
+      [
+        "Cycle life",
+        "500 cycles at 50% DOD"
+      ],
+      [
+        "Dimensions",
+        "332 x 175 x 219 mm"
+      ],
+      [
+        "Weight",
+        "29 kg"
+      ],
+      [
+        "Housing material",
+        "ABS"
+      ],
+      [
+        "Charging voltage",
+        "14.4–14.8 V (cycle use)"
+      ],
+      [
+        "Float charge voltage",
+        "13.5–13.8 V"
+      ],
+      [
+        "Charge temperature",
+        "0–50 °C"
+      ],
+      [
+        "Discharge temperature",
+        "-20–60 °C"
+      ],
+      [
+        "Terminal type",
+        "M8"
+      ],
+      [
+        "Bluetooth",
+        "No"
+      ],
+      [
+        "Communications",
+        "No communication port"
+      ]
+    ],
+    "reviewNote": "Exact standalone 1 Pack identity; technical table transcribed from current manufacturer page. Capacity test duration retained (100 Ah at 10-hour rate; 200 Ah at 20-hour rate). Published maximum discharge is explicitly FIVE SECONDS, so only peakDischargeCurrent is supplied; continuous discharge remains unknown. No extrapolated nominal energy or unlimited-series engineering approval. Page technical table, not shared 100/200 Ah page, supplies these values.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.574Z"
+  },
+  {
+    "productIds": [
+      "renogy-43756629295219"
+    ],
+    "expected": {
+      "renogy-43756629295219": {
+        "name": "12V 200Ah Deep Cycle AGM Battery — 1 Pack",
+        "sourceUrl": "https://www.renogy.com/products/deep-cycle-agm-battery-12-volt-200ah?variant=43756629295219",
+        "category": "batteries",
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 200,
+          "batteryKind": "Battery modules",
+          "maxChargeCurrent": 60
+        }
+      }
+    },
+    "model": "RNG-BATT-AGM12-200-US",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/deep-cycle-agm-battery-12-volt-200ah",
+    "label": "Renogy RNG-BATT-AGM12-200-US official product technical page",
+    "checkedAt": "2026-10-12T03:20:28.147592Z",
+    "rows": [
+      [
+        "Model",
+        "RNG-BATT-AGM12-200-US"
+      ],
+      [
+        "Nominal voltage",
+        "12 V"
+      ],
+      [
+        "Rated capacity",
+        "200 Ah (20 hour rate to 10.5 V)"
+      ],
+      [
+        "Battery chemistry",
+        "AGM lead-acid"
+      ],
+      [
+        "Maximum continuous charging current",
+        "60 A"
+      ],
+      [
+        "Peak discharge current",
+        "2000 A (5 seconds)"
+      ],
+      [
+        "Cycle life",
+        "500 cycles at 50% DOD"
+      ],
+      [
+        "Dimensions",
+        "522 x 240 x 224 mm"
+      ],
+      [
+        "Weight",
+        "58 kg"
+      ],
+      [
+        "Housing material",
+        "ABS"
+      ],
+      [
+        "Charging voltage",
+        "14.4–14.8 V (cycle use)"
+      ],
+      [
+        "Float charge voltage",
+        "13.6–13.8 V"
+      ],
+      [
+        "Charge temperature",
+        "0–50 °C"
+      ],
+      [
+        "Discharge temperature",
+        "-20–60 °C"
+      ],
+      [
+        "Terminal type",
+        "M8"
+      ],
+      [
+        "Bluetooth",
+        "No"
+      ],
+      [
+        "Communications",
+        "No communication port"
+      ]
+    ],
+    "reviewNote": "Exact standalone 1 Pack identity; technical table transcribed from current manufacturer page. Capacity test duration retained (100 Ah at 10-hour rate; 200 Ah at 20-hour rate). Published maximum discharge is explicitly FIVE SECONDS, so only peakDischargeCurrent is supplied; continuous discharge remains unknown. No extrapolated nominal energy or unlimited-series engineering approval. Page technical table, not shared 100/200 Ah page, supplies these values.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.574Z"
+  },
+  {
+    "productIds": [
+      "emporia-46847303844095"
+    ],
+    "expected": {
+      "emporia-46847303844095": {
+        "name": "50A Large Diameter Sensor for Vue 3 Home Energy Monitor (Single Sensor) — Current Type (Standard)",
+        "sourceUrl": "https://shop.emporiaenergy.com/products/gen-3-50a-large-diameter-sensor?variant=46847303844095",
+        "category": "monitoring",
+        "anchors": {
+          "monitorType": "Sensor"
+        }
+      }
+    },
+    "model": "EMV3WD5-A-1P",
+    "kind": "manufacturer",
+    "url": "https://shop.emporiaenergy.com/products/gen-3-50a-large-diameter-sensor",
+    "label": "Emporia Energy EMV3WD5-A-1P official product technical page",
+    "checkedAt": "2026-10-12T03:20:28.147592Z",
+    "rows": [
+      [
+        "Model",
+        "EMV3WD5-A-1P"
+      ],
+      [
+        "Rated current",
+        "50 A"
+      ],
+      [
+        "Dimensions",
+        "59.5 x 44.9 x 69.7 mm (H x W x D)"
+      ],
+      [
+        "Cable length",
+        "1.5 m (5 ft)"
+      ],
+      [
+        "Connector type",
+        "3.8 mm"
+      ],
+      [
+        "Compatibility",
+        "Vue 3 individual-circuit ports only; not the three main 200 A ports"
+      ],
+      [
+        "Sensor aperture",
+        "22 mm"
+      ],
+      [
+        "Measurement range",
+        "Accurate up to 60 A"
+      ]
+    ],
+    "reviewNote": "Only Current Type (Standard), whose embedded variant ID and SKU match catalog. Legacy Type (Largest) excluded because dimensions may differ. 60 A accuracy ceiling is not a 60 A electrical load rating; nominal 50 A sensor identity retained. No percentage accuracy invented.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.574Z"
+  },
+  {
+    "productIds": [
+      "emporia-45925284741375"
+    ],
+    "expected": {
+      "emporia-45925284741375": {
+        "name": "200A 3-Phase Sensor Kit for Vue 3 Home Energy Monitor",
+        "sourceUrl": "https://shop.emporiaenergy.com/products/200a-3-phase-sensor-kit-for-vue-3-home-energy-monitor?variant=45925284741375",
+        "category": "monitoring",
+        "anchors": {
+          "monitorType": "Sensor"
+        }
+      }
+    },
+    "model": "EMV3CT2-C-1",
+    "kind": "manufacturer",
+    "url": "https://shop.emporiaenergy.com/products/200a-3-phase-sensor-kit-for-vue-3-home-energy-monitor",
+    "label": "Emporia Energy EMV3CT2-C-1 official product technical page",
+    "checkedAt": "2026-10-12T03:20:28.147592Z",
+    "rows": [
+      [
+        "Model",
+        "EMV3CT2-C-1"
+      ],
+      [
+        "Rated current",
+        "200 A"
+      ],
+      [
+        "Dimensions",
+        "40 x 51 x 70 mm"
+      ],
+      [
+        "Cable length",
+        "40 in"
+      ],
+      [
+        "Connector type",
+        "5.0 mm screw terminal"
+      ],
+      [
+        "Compatibility",
+        "Vue 3 main 200 A sensor ports; light-commercial 3-phase/4-wire systems under 600 A; excludes 3-phase/3-wire and 50 A expansion ports"
+      ],
+      [
+        "Sensor aperture",
+        "22 mm"
+      ]
+    ],
+    "reviewNote": "Embedded exact variant ID and manufacturer SKU reviewed. One additional clamp upgrades an existing two-phase Vue; this is not a complete three-sensor monitor. Three-phase four-wire compatibility kept distinct from excluded three-wire configurations. No percentage accuracy or AC safety voltage inferred.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.574Z"
+  },
+  {
+    "productIds": [
+      "renogy-43178702831731"
+    ],
+    "expected": {
+      "renogy-43178702831731": {
+        "name": "Communication Hub",
+        "sourceUrl": "https://www.renogy.com/products/communication-hub?variant=43178702831731",
+        "category": "accessories",
+        "anchors": {
+          "accessoryType": "Adapters & communications"
+        }
+      }
+    },
+    "model": "RCM-HUB-US",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/communication-hub",
+    "label": "Renogy RCM-HUB-US official product technical page",
+    "checkedAt": "2026-10-12T03:20:28.147592Z",
+    "rows": [
+      [
+        "Model",
+        "RCM-HUB-US"
+      ],
+      [
+        "Operating voltage range",
+        "9–60 V"
+      ],
+      [
+        "Connector type",
+        "RJ45"
+      ],
+      [
+        "Communications",
+        "RS485 and CAN"
+      ],
+      [
+        "Dimensions",
+        "160 x 48 x 23 mm"
+      ],
+      [
+        "Weight",
+        "125 g"
+      ],
+      [
+        "Cable length",
+        "5 m"
+      ],
+      [
+        "Operating temperature",
+        "-20–85 °C"
+      ],
+      [
+        "Compatibility",
+        "Renogy appliances with RJ45 and RS485/CAN; one separate BT-2 module for phone monitoring"
+      ],
+      [
+        "Standby power consumption",
+        "0.324 W"
+      ],
+      [
+        "Operating power consumption",
+        "<0.35 W"
+      ],
+      [
+        "Serial baud rate",
+        "RS485 9600 bps; CAN 500 kbps"
+      ]
+    ],
+    "reviewNote": "Current official table SKU RCM-HUB-US and exact catalog title checked. Hub is wired RS485/CAN; Bluetooth requires separate BT-2. Table communication range ≤82 ft withheld to avoid attributing BT-2 wireless range to hub. No unsupported material or Wi-Fi connectivity invented.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.574Z"
+  },
+  {
+    "productIds": [
+      "emporia-42529083326719"
+    ],
+    "expected": {
+      "emporia-42529083326719": {
+        "name": "Indoor Wall-Mounted EV Charger Cable Retractor",
+        "sourceUrl": "https://shop.emporiaenergy.com/products/emporia-ev-charger-rectractor-mounting-kit?variant=42529083326719",
+        "category": "accessories",
+        "anchors": {
+          "accessoryType": "EV charging"
+        }
+      }
+    },
+    "model": "Emporia Indoor EV Charger Cable Retractor",
+    "kind": "manufacturer",
+    "url": "https://shop.emporiaenergy.com/products/emporia-ev-charger-rectractor-mounting-kit",
+    "label": "Emporia Energy Emporia Indoor EV Charger Cable Retractor official product technical page",
+    "checkedAt": "2026-10-12T03:20:28.147592Z",
+    "rows": [
+      [
+        "Model",
+        "Emporia Indoor EV Charger Cable Retractor"
+      ],
+      [
+        "Compatibility",
+        "Emporia EV charging cables with 20–25 mm diameter; EV charger and cable sold separately"
+      ],
+      [
+        "Material",
+        "Powder-coated steel"
+      ],
+      [
+        "Mount type",
+        "Indoor wall or ceiling mounting"
+      ],
+      [
+        "Cable length",
+        "2.7–3 m (tether pull length)"
+      ],
+      [
+        "Pull strength",
+        "40–50 N"
+      ],
+      [
+        "Warranty",
+        "1 year"
+      ]
+    ],
+    "reviewNote": "Manufacturer benefits and product details reviewed. Mounting screws are not included. Pull length is tether travel, not EV charger cable length; qualifier retained. Outer enclosure dimensions and electrical ratings unknown. Customer reviews not used as technical evidence.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.574Z"
+  },
+  {
+    "productIds": [
+      "renogy-45276322660467"
+    ],
+    "expected": {
+      "renogy-45276322660467": {
+        "name": "100W 12V Solar Panel Kit",
+        "sourceUrl": "https://www.renogy.com/products/100w-12v-solar-panel-kit?variant=45276322660467",
+        "category": "kits",
+        "anchors": {
+          "kitType": "Panel kits",
+          "maxPvVoltage": 25
+        }
+      }
+    },
+    "model": "RNG-KIT-STARTER100D-WND30-US",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/100w-12v-solar-panel-kit",
+    "label": "Renogy RNG-KIT-STARTER100D-WND30-US official product technical page",
+    "checkedAt": "2026-10-12T03:20:28.147592Z",
+    "rows": [
+      [
+        "Model",
+        "RNG-KIT-STARTER100D-WND30-US"
+      ],
+      [
+        "Package contents",
+        "RSP100DC x1; RNG-CTRL-WND30-LI x1; RNG-AK-20FT-10 x1; RNG-TRAYCB-8FT-10 x1; RNG-MTS-ZB x1"
+      ],
+      [
+        "Included charge controller",
+        "Wanderer Li 30 A PWM (RNG-CTRL-WND30-LI)"
+      ],
+      [
+        "Included solar panels",
+        "RSP100DC 100 W N-Type x1"
+      ]
+    ],
+    "reviewNote": "Exact current single-option kit SKU and listing match. Package Contents text supplies explicit manufacturer BOM. The 200 W mounting item is copied exactly as RNG-MTS-ZBx2 x1 (one two-set bundle); no invented individual fastener count. No component voltage/current/dimensions/weight are promoted to aggregate kit ratings. Package contents row is the exact verified BOM. Baseline importer dry run imports model only; parent integration will add kit-only contents recognition. Included charge controller/panel rows provide contextual identity only, never aggregate engineering limits. No battery/inverter assumed included.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.574Z"
+  },
+  {
+    "productIds": [
+      "renogy-43178678714483"
+    ],
+    "expected": {
+      "renogy-43178678714483": {
+        "name": "200W 12V Starter Solar Panel Kit",
+        "sourceUrl": "https://www.renogy.com/products/200-watt-12-volt-solar-starter-kit?variant=43178678714483",
+        "category": "kits",
+        "anchors": {
+          "kitType": "Panel kits",
+          "maxPvVoltage": 25
+        }
+      }
+    },
+    "model": "RNG-KIT-STARTER200D-WND30-US",
+    "kind": "manufacturer",
+    "url": "https://www.renogy.com/products/200-watt-12-volt-solar-starter-kit",
+    "label": "Renogy RNG-KIT-STARTER200D-WND30-US official product technical page",
+    "checkedAt": "2026-10-12T03:20:28.147592Z",
+    "rows": [
+      [
+        "Model",
+        "RNG-KIT-STARTER200D-WND30-US"
+      ],
+      [
+        "Package contents",
+        "RSP100DC x2; RNG-CTRL-WND30-LI x1; RNG-AK-20FT-10 x1; RNG-TRAYCB-8FT-10 x1; RNG-MTS-ZBx2 x1; RNG-CNCT-MC4Y x1"
+      ],
+      [
+        "Included charge controller",
+        "Wanderer Li 30 A PWM (RNG-CTRL-WND30-LI)"
+      ],
+      [
+        "Included solar panels",
+        "RSP100DC 100 W N-Type x2"
+      ]
+    ],
+    "reviewNote": "Exact current single-option kit SKU and listing match. Package Contents text supplies explicit manufacturer BOM. The 200 W mounting item is copied exactly as RNG-MTS-ZBx2 x1 (one two-set bundle); no invented individual fastener count. No component voltage/current/dimensions/weight are promoted to aggregate kit ratings. Package contents row is the exact verified BOM. Baseline importer dry run imports model only; parent integration will add kit-only contents recognition. Included charge controller/panel rows provide contextual identity only, never aggregate engineering limits. No battery/inverter assumed included.",
+    "reviewStatus": "accepted",
+    "acceptedAt": "2026-10-12T03:26:02.574Z"
   }
 ]

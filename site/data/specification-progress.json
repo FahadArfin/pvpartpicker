@@ -1,66 +1,66 @@
 {
-  "checkedAt": "2026-10-12T02:37:11.924Z",
+  "checkedAt": "2026-10-12T03:26:04.489Z",
   "catalogListings": 7213,
   "completeListings": 1128,
   "remainingListings": 6085,
-  "remainingFields": 41776,
-  "reviewedGaps": 133,
+  "remainingFields": 41713,
+  "reviewedGaps": 162,
   "blockedListings": 288,
-  "awaitingReview": 5664,
+  "awaitingReview": 5635,
   "categories": [
     {
       "category": "batteries",
       "listings": 1957,
       "remainingListings": 1954,
-      "remainingFields": 15561
+      "remainingFields": 15556
     },
     {
       "category": "panels",
       "listings": 679,
       "remainingListings": 679,
-      "remainingFields": 6181
+      "remainingFields": 6171
     },
     {
       "category": "wiring",
       "listings": 1199,
       "remainingListings": 1199,
-      "remainingFields": 5490
+      "remainingFields": 5486
     },
     {
       "category": "inverters",
       "listings": 446,
       "remainingListings": 446,
-      "remainingFields": 4186
+      "remainingFields": 4178
     },
     {
       "category": "all-in-one",
       "listings": 381,
       "remainingListings": 381,
-      "remainingFields": 3861
+      "remainingFields": 3849
     },
     {
       "category": "charging",
       "listings": 262,
       "remainingListings": 262,
-      "remainingFields": 1922
+      "remainingFields": 1918
     },
     {
       "category": "electrical",
       "listings": 333,
       "remainingListings": 333,
-      "remainingFields": 1594
+      "remainingFields": 1586
     },
     {
       "category": "accessories",
       "listings": 293,
       "remainingListings": 293,
-      "remainingFields": 1138
+      "remainingFields": 1135
     },
     {
       "category": "mounting",
       "listings": 250,
       "remainingListings": 250,
-      "remainingFields": 916
+      "remainingFields": 908
     },
     {
       "category": "monitoring",
@@ -72,7 +72,7 @@
       "category": "module-electronics",
       "listings": 21,
       "remainingListings": 21,
-      "remainingFields": 102
+      "remainingFields": 101
     },
     {
       "category": "kits",
