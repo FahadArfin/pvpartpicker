@@ -20,6 +20,15 @@ export const retailers: Retailer[] = [
   ...additionalRetailers as Retailer[],
 ];
 export function classify(title: string): Category | null {
+  // Accessory options name the item sold; the parent describes supported equipment.
+  const accessoryMain=title.split(/\s—\s/)[0].toLowerCase();
+  if(/^compatible accessories for\b/.test(accessoryMain)){
+   const option=title.split(/\s—\s/).slice(1).join(' ').toLowerCase();
+   if(/\bbrackets?\b/.test(option))return 'mounting';
+   if(/\bbus ?bars?\b/.test(option))return 'electrical';
+   if(/\b(?:cables?|wires?|connectors?)\b/.test(option))return 'wiring';
+   return 'accessories';
+  }
   const configuration=describeConfiguration(title);
   if(configuration?.kind==='combo')return 'kits';
   if(configuration?.kind==='standalone')return configuration.type==='Inverter'?'inverters':'all-in-one';
@@ -42,6 +51,12 @@ export function classify(title: string): Category | null {
   if (/\b(?:kit|bundle)\b/.test(base)&&/\bkwh\b.*(?:storage|array)|storage.*array|inverter.*battery|battery.*inverter/.test(base)) return 'kits';
   // A destination or built-in feature does not change the item being sold.
   const selected=title.split(/\s—\s/).slice(1).join(' ').toLowerCase();
+  if(/\bcables?\b/.test(primary)&&/[+&]/.test(selected)&&/\bbatter(?:y|ies)\b/.test(selected)&&(/\b\d+\s*x\s*batteries\b/.test(selected)||/\b[\d.]+\s*kwh\b/.test(selected)))return 'kits';
+  if(/\btilt mount brackets?\b/.test(subject))return 'mounting';
+  if(/\bhusky2\b/.test(subject)&&/\brv\b/.test(subject)&&/\bcontrol system\b/.test(subject)&&!/\b(?:cables?|adapters?|brackets?|replacement|cover)\b/.test(subject))return 'kits';
+  if(/\bgridboss\b.*\bbreaker kit\b/.test(subject))return 'electrical';
+  if(/^cable entry housing\b/.test(subject))return 'accessories';
+  if(/\bsolar panels?\b/.test(subject)&&!/\b(?:cables?|wires?|adapters?|adaptors?|brackets?|mounting|mount|clamps?|connectors?|kits?|bundles?|case|cover|stands?|multimeter|meter|tester|charger|controller|optimizer|shutdown)\b/.test(subject))return 'panels';
   const ratedStorage=/\b[\d,.]+\s*(?:ah|kwh)\b/.test(primary)&&/\b(?:lifepo4|lithium)\b/.test(primary)&&/\b(?:battery|energy storage)\b/.test(primary)&&!/\b(?:cable|adapter|charger|inverter|cover|tray|bracket|accessories|kit|bundle)\b/.test(primary);
   if(ratedStorage&&/\bbattery\b.*\+.*\binverter\b/.test(selected))return 'kits';
   if(ratedStorage&&!/\b(?:display|screen)\s+kit\b/.test(selected))return 'batteries';

@@ -1,0 +1,9 @@
+# Exhaustive specification research batch nine
+
+Continue the owner's all-listing research without another permission question. Baseline is the validated batch-eight release (main8d2e3a3, Sites107): 8,236 catalog listings, 7,018 with 42,914 missing comparison fields. Live proof verified1,955 researched identities,15,436 technicalfields with full source/panel provenance,74asset hashes and53role corrections.
+
+Three disjoint pending assignments cover240families439exactIDs. Research full primary tables, exact variant selections and linked manufacturer manuals; visually inspectPDFtables. Record originalacquisitiondates, truthfully label source kinds, and preserve immutableartifacts. Rawfulltitles/fullvariantURLs/categories/stableanchors controlimports; never use evidence-enriched selectors. Hold conflicts, bareunits, BMS/trip vscontinuous ambiguity, unrepresentedvariants and wrong revisions. Qualify modes, peakduration, outlet groups and separate input topology.
+
+Authors write ignoredcandidate/sourceproof files only. Independentreview and boundedfixrounds precedeimport. Retain everypriorfullfield/sourceobject and STC/NOCTvalue/provenance; valid listing upgrades allowed. Reproduce delta against pinned baseline, regeneratefreshcoverage/attempts without falseexhaustion, validate tests/types/Workerbuild, PR/CI/merge/publish exactartifact,verifylivefields/assets. Continue next pendingfamilies and reasonablealternate/manualsources until actualexhaustion.
+
+Keepnormalhostedpricecollectionenabled. No workflow/currentprice/observation/history/UI changes. Pausedsource origins:catalog.k2-systems.com,enphase.com,www.solaxpower.com,invertersrus.com,www.vatrerpower.com; no newfetches/bypass/retries there. Ordinary permitted exact manufacturer sources remain usable even if a retailer origin is paused. Sparse sequential lookups≥2s/origin, coordinate sharedCDNs, inspecteveryresponse and stop any refusal.
