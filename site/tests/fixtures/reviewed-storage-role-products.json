@@ -1,0 +1,758 @@
+{
+  "approved": [
+    {
+      "proposalIndex": 2,
+      "product": {
+        "id": "yixiang-power-50926959460645",
+        "name": "YIXIANG DIY Box Lifepo4 Battery Case Accessory Insect Net for Dust and Mosquito Repellent",
+        "brand": "yixiangnewenergy",
+        "category": "batteries",
+        "description": "",
+        "image": "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/4_0027e3d6-1453-4420-975d-896a17899f51.png?v=1754969169",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/4_0027e3d6-1453-4420-975d-896a17899f51.png?v=1754969169"
+        ],
+        "sourceUrl": "https://yixiangpower.com/products/yixiang-diy-box-lifepo4-battery-case-accessory-insect-net-for-dust-and-mosquito-repellent?variant=50926959460645",
+        "specs": {
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "verifiedAt": "2026-10-11T23:43:29.621Z",
+        "offers": [
+          {
+            "id": "yixiang-power-50926959460645",
+            "retailerId": "yixiang-power",
+            "retailer": "Yixiang Power",
+            "url": "https://yixiangpower.com/products/yixiang-diy-box-lifepo4-battery-case-accessory-insect-net-for-dust-and-mosquito-repellent?variant=50926959460645",
+            "price": 60,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:43:29.621Z",
+            "sku": "50926959460645",
+            "condition": "new"
+          }
+        ]
+      },
+      "destination": {
+        "category": "accessories",
+        "specs": {
+          "accessoryType": "Other accessories"
+        }
+      },
+      "anchors": {
+        "batteryKind": "Battery modules",
+        "chemistry": "LiFePO4"
+      }
+    },
+    {
+      "proposalIndex": 3,
+      "product": {
+        "id": "yixiang-power-51143758217509",
+        "name": "US Stock 25.6V 280Ah 314Ah Diy Box JK BMS 8S 24V Battery Case Lifepo4 Battery Box (China's inventory :25-35 days)",
+        "brand": "yixiangnewenergy",
+        "category": "batteries",
+        "description": "",
+        "image": "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/2_4e80abf7-54e1-4d75-9bb1-98a466b9de24.png?v=1757586830",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/2_4e80abf7-54e1-4d75-9bb1-98a466b9de24.png?v=1757586830"
+        ],
+        "sourceUrl": "https://yixiangpower.com/products/us-stock-25-6v-280ah-314ah-diy-box-24v-battery-case-lifepo4-battery-case-24v-lifepo4-battery-case-with-8s-box-stack-type-without-cells?variant=51143758217509",
+        "specs": {
+          "voltage": 25.6,
+          "capacityAh": 280,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "verifiedAt": "2026-10-11T23:43:29.620Z",
+        "offers": [
+          {
+            "id": "yixiang-power-51143758217509",
+            "retailerId": "yixiang-power",
+            "retailer": "Yixiang Power",
+            "url": "https://yixiangpower.com/products/us-stock-25-6v-280ah-314ah-diy-box-24v-battery-case-lifepo4-battery-case-24v-lifepo4-battery-case-with-8s-box-stack-type-without-cells?variant=51143758217509",
+            "price": 358,
+            "referencePrice": 388,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "out_of_stock",
+            "observedAt": "2026-10-11T23:43:29.620Z",
+            "sku": "51143758217509",
+            "condition": "new"
+          }
+        ]
+      },
+      "destination": {
+        "category": "batteries",
+        "specs": {
+          "batteryKind": "Battery cabinets"
+        }
+      },
+      "anchors": {
+        "voltage": 25.6,
+        "capacityAh": 280,
+        "batteryKind": "Battery modules",
+        "chemistry": "LiFePO4"
+      }
+    },
+    {
+      "proposalIndex": 4,
+      "product": {
+        "id": "yixiang-power-51399984742693",
+        "name": "US Stock 16kwh Lifepo4 Battery Case Bottom Trolley Rolling Base+Wheels Battery Rack Accessories",
+        "brand": "yixiangnewenergy",
+        "category": "batteries",
+        "description": "",
+        "image": "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/5_c3f2f629-7072-4f85-b1af-6c5021c6721c.png?v=1762764688",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/5_c3f2f629-7072-4f85-b1af-6c5021c6721c.png?v=1762764688"
+        ],
+        "sourceUrl": "https://yixiangpower.com/products/us-stock-lifepo4-battery-case-bottom-trolley-rolling-base-battery-rack-accessoriesus-stock-estimated-shipping-time-nov-15th?variant=51399984742693",
+        "specs": {
+          "capacityKwh": 16,
+          "batteryKind": "Battery modules",
+          "formFactor": "Server rack",
+          "chemistry": "LiFePO4"
+        },
+        "verifiedAt": "2026-10-11T23:43:29.619Z",
+        "offers": [
+          {
+            "id": "yixiang-power-51399984742693",
+            "retailerId": "yixiang-power",
+            "retailer": "Yixiang Power",
+            "url": "https://yixiangpower.com/products/us-stock-lifepo4-battery-case-bottom-trolley-rolling-base-battery-rack-accessoriesus-stock-estimated-shipping-time-nov-15th?variant=51399984742693",
+            "price": 199,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:43:29.619Z",
+            "sku": "51399984742693",
+            "condition": "new"
+          }
+        ]
+      },
+      "destination": {
+        "category": "accessories",
+        "specs": {
+          "accessoryType": "Battery bases & stands"
+        }
+      },
+      "anchors": {
+        "capacityKwh": 16,
+        "batteryKind": "Battery modules",
+        "formFactor": "Server rack",
+        "chemistry": "LiFePO4"
+      }
+    },
+    {
+      "proposalIndex": 6,
+      "product": {
+        "id": "yixiang-power-51543300866341",
+        "name": "MB56 Box Lifepo4 Battery Case Bottom Trolley Rolling Base+Wheels MB56 Battery Rack Accessories",
+        "brand": "yixiangnewenergy",
+        "category": "batteries",
+        "description": "",
+        "image": "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/4_53fe6f96-49f3-4aea-99a4-12e0cf8bb943.png?v=1762764569",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/4_53fe6f96-49f3-4aea-99a4-12e0cf8bb943.png?v=1762764569"
+        ],
+        "sourceUrl": "https://yixiangpower.com/products/china-mb56-box-lifepo4-battery-case-bottom-trolley-rolling-base-mb56-battery-rack-accessories?variant=51543300866341",
+        "specs": {
+          "batteryKind": "Battery modules",
+          "formFactor": "Server rack",
+          "chemistry": "LiFePO4"
+        },
+        "verifiedAt": "2026-10-11T23:43:29.617Z",
+        "offers": [
+          {
+            "id": "yixiang-power-51543300866341",
+            "retailerId": "yixiang-power",
+            "retailer": "Yixiang Power",
+            "url": "https://yixiangpower.com/products/china-mb56-box-lifepo4-battery-case-bottom-trolley-rolling-base-mb56-battery-rack-accessories?variant=51543300866341",
+            "price": 209,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:43:29.617Z",
+            "sku": "51543300866341",
+            "condition": "new"
+          }
+        ]
+      },
+      "destination": {
+        "category": "accessories",
+        "specs": {
+          "accessoryType": "Battery bases & stands"
+        }
+      },
+      "anchors": {
+        "batteryKind": "Battery modules",
+        "formFactor": "Server rack",
+        "chemistry": "LiFePO4"
+      }
+    },
+    {
+      "proposalIndex": 10,
+      "product": {
+        "id": "yixiang-power-50779021705509",
+        "name": "YIXIANG New Vertical JK BMS DIY Battery Box Kit(US Stock: Mid-Oct)+16PCS EVE 314AH Brand New Grade A Lifepo4 Battery Cell(China's inventory :25-35 days)",
+        "brand": "yixiangnewenergy",
+        "category": "batteries",
+        "description": "",
+        "image": "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/eve_s2.png?v=1767929418",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/eve_s2.png?v=1767929418"
+        ],
+        "sourceUrl": "https://yixiangpower.com/products/yixiang-vertical-15kw-diy-lithium-battery-box-kitus-stock-16pcs-eve-314ah-brand-new-grade-a-lifepo4-battery-cellchina-stock?variant=50779021705509",
+        "specs": {
+          "capacityAh": 314,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "verifiedAt": "2026-10-11T23:43:29.623Z",
+        "offers": [
+          {
+            "id": "yixiang-power-50779021705509",
+            "retailerId": "yixiang-power",
+            "retailer": "Yixiang Power",
+            "url": "https://yixiangpower.com/products/yixiang-vertical-15kw-diy-lithium-battery-box-kitus-stock-16pcs-eve-314ah-brand-new-grade-a-lifepo4-battery-cellchina-stock?variant=50779021705509",
+            "price": 2249,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:43:29.623Z",
+            "sku": "50779021705509",
+            "condition": "new"
+          }
+        ]
+      },
+      "destination": {
+        "category": "kits",
+        "specs": {
+          "kitType": "Battery DIY kit"
+        }
+      },
+      "anchors": {
+        "capacityAh": 314,
+        "batteryKind": "Battery modules",
+        "chemistry": "LiFePO4"
+      }
+    },
+    {
+      "proposalIndex": 11,
+      "product": {
+        "id": "yixiang-power-50832511140133",
+        "name": "YIXIANG V3 Stacked Battery Box Kit With JK 200A BMS (US Stock shipping time:Early November)+16PCS EVE 314 MB31 Brand New Grade A Lifepo4 Battery Cell(US Stock shipping time:Mid-Oct)",
+        "brand": "yixiangnewenergy",
+        "category": "batteries",
+        "description": "",
+        "image": "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/1_892399c2-09f3-4365-9276-d681cc44824e.png?v=1777520397",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/1_892399c2-09f3-4365-9276-d681cc44824e.png?v=1777520397"
+        ],
+        "sourceUrl": "https://yixiangpower.com/products/pre-sale-yixiang-pre-assembled-stacked-15kw-diy-lithium-battery-box-kitus-stock-estimated-shipping-time-aug-28th-16pcs-eve-314ah-brand-new-grade-a-lifepo4-battery-cellchina-stock?variant=50832511140133",
+        "specs": {
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "verifiedAt": "2026-10-11T23:43:29.622Z",
+        "offers": [
+          {
+            "id": "yixiang-power-50832511140133",
+            "retailerId": "yixiang-power",
+            "retailer": "Yixiang Power",
+            "url": "https://yixiangpower.com/products/pre-sale-yixiang-pre-assembled-stacked-15kw-diy-lithium-battery-box-kitus-stock-estimated-shipping-time-aug-28th-16pcs-eve-314ah-brand-new-grade-a-lifepo4-battery-cellchina-stock?variant=50832511140133",
+            "price": 2139,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:43:29.622Z",
+            "sku": "50832511140133",
+            "condition": "new"
+          }
+        ]
+      },
+      "destination": {
+        "category": "kits",
+        "specs": {
+          "kitType": "Battery DIY kit"
+        }
+      },
+      "anchors": {
+        "batteryKind": "Battery modules",
+        "chemistry": "LiFePO4"
+      }
+    },
+    {
+      "proposalIndex": 12,
+      "product": {
+        "id": "yixiang-power-50995063718181",
+        "name": "YIXIANG New Vertical JK BMS DIY Battery Box Kit(US Stock: Oct-8th )+16Pcs YIXIANG 314AH Brand New Grade a Lifepo4 Battery(China's inventory :25-35 days )",
+        "brand": "yixiangnewenergy",
+        "category": "batteries",
+        "description": "",
+        "image": "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/3.2v_cell_S2.png?v=1773912106",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/3.2v_cell_S2.png?v=1773912106"
+        ],
+        "sourceUrl": "https://yixiangpower.com/products/yixiang-diy-vertical-battery-box-kit-with-jk-200a-bmsus-stock-estimated-shipping-time-sept-28th-16pcs-314ah-brand-new-grade-a-lifepo4-batterychina-stock?variant=50995063718181",
+        "specs": {
+          "capacityAh": 314,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "verifiedAt": "2026-10-11T23:43:29.620Z",
+        "offers": [
+          {
+            "id": "yixiang-power-50995063718181",
+            "retailerId": "yixiang-power",
+            "retailer": "Yixiang Power",
+            "url": "https://yixiangpower.com/products/yixiang-diy-vertical-battery-box-kit-with-jk-200a-bmsus-stock-estimated-shipping-time-sept-28th-16pcs-314ah-brand-new-grade-a-lifepo4-batterychina-stock?variant=50995063718181",
+            "price": 2049,
+            "referencePrice": 2149,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:43:29.620Z",
+            "sku": "50995063718181",
+            "condition": "new"
+          }
+        ]
+      },
+      "destination": {
+        "category": "kits",
+        "specs": {
+          "kitType": "Battery DIY kit"
+        }
+      },
+      "anchors": {
+        "capacityAh": 314,
+        "batteryKind": "Battery modules",
+        "chemistry": "LiFePO4"
+      }
+    },
+    {
+      "proposalIndex": 13,
+      "product": {
+        "id": "yixiang-power-50995125649701",
+        "name": "YIXIANG V3 DIY Horizontal Battery Box Kit with JK 200A BMS（US Stock shipping time:Early November) +16Pcs YIXIANG 314AH Brand New Grade a Lifepo4 Battery(China's inventory :25-35 days)",
+        "brand": "yixiangnewenergy",
+        "category": "batteries",
+        "description": "",
+        "image": "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/2_48de9ff1-b295-4064-be07-0d598ffd1aa7.png?v=1777520907",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/2_48de9ff1-b295-4064-be07-0d598ffd1aa7.png?v=1777520907"
+        ],
+        "sourceUrl": "https://yixiangpower.com/products/yixiang-v2-diy-horizontal-battery-box-kit-with-jk-200a-bmsus-stock-estimated-shipping-time-aug-28th-16pcs-314ah-brand-new-grade-a-lifepo4-batterychina-stock?variant=50995125649701",
+        "specs": {
+          "capacityAh": 314,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "verifiedAt": "2026-10-11T23:43:29.620Z",
+        "offers": [
+          {
+            "id": "yixiang-power-50995125649701",
+            "retailerId": "yixiang-power",
+            "retailer": "Yixiang Power",
+            "url": "https://yixiangpower.com/products/yixiang-v2-diy-horizontal-battery-box-kit-with-jk-200a-bmsus-stock-estimated-shipping-time-aug-28th-16pcs-314ah-brand-new-grade-a-lifepo4-batterychina-stock?variant=50995125649701",
+            "price": 1969,
+            "referencePrice": 2019,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:43:29.620Z",
+            "sku": "50995125649701",
+            "condition": "new"
+          }
+        ]
+      },
+      "destination": {
+        "category": "kits",
+        "specs": {
+          "kitType": "Battery DIY kit"
+        }
+      },
+      "anchors": {
+        "capacityAh": 314,
+        "batteryKind": "Battery modules",
+        "chemistry": "LiFePO4"
+      }
+    },
+    {
+      "proposalIndex": 14,
+      "product": {
+        "id": "yixiang-power-51223113826597",
+        "name": "YIXIANG S2 Vertical JK BMS DIY Battery Box Kit(US Stock: Oct-8th )+16PCS EVE 314 MB31 Grade A Lifepo4 Battery Cell(US Stock :Mid-Oct)",
+        "brand": "yixiangnewenergy",
+        "category": "batteries",
+        "description": "",
+        "image": "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/eve_s2.png?v=1767929418",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/eve_s2.png?v=1767929418"
+        ],
+        "sourceUrl": "https://yixiangpower.com/products/pre-sale-yixiang-pre-assembled-vertical-v19-bms-diy-lithium-battery-box-kitus-stock-estimated-shipping-time-oct-7th-16pcs-eve-314ah-brand-new-grade-a-lifepo4-battery-cellin-stock-at-us-warehouse-shipping-time-3-5-days?variant=51223113826597",
+        "specs": {
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "verifiedAt": "2026-10-11T23:43:29.620Z",
+        "offers": [
+          {
+            "id": "yixiang-power-51223113826597",
+            "retailerId": "yixiang-power",
+            "retailer": "Yixiang Power",
+            "url": "https://yixiangpower.com/products/pre-sale-yixiang-pre-assembled-vertical-v19-bms-diy-lithium-battery-box-kitus-stock-estimated-shipping-time-oct-7th-16pcs-eve-314ah-brand-new-grade-a-lifepo4-battery-cellin-stock-at-us-warehouse-shipping-time-3-5-days?variant=51223113826597",
+            "price": 2199,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:43:29.620Z",
+            "sku": "51223113826597",
+            "condition": "new"
+          }
+        ]
+      },
+      "destination": {
+        "category": "kits",
+        "specs": {
+          "kitType": "Battery DIY kit"
+        }
+      },
+      "anchors": {
+        "batteryKind": "Battery modules",
+        "chemistry": "LiFePO4"
+      }
+    },
+    {
+      "proposalIndex": 15,
+      "product": {
+        "id": "yixiang-power-51223192011045",
+        "name": "YIXIANG Stacked V3 JK BMS DIY Battery Box Kit(US Stock shipping time:Early November)+16PCS EVE 314AH Brand New Grade A Lifepo4 Battery Cell(China Inventory: 25-35 days)",
+        "brand": "yixiangnewenergy",
+        "category": "batteries",
+        "description": "",
+        "image": "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/1_892399c2-09f3-4365-9276-d681cc44824e.png?v=1777520397",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/1_892399c2-09f3-4365-9276-d681cc44824e.png?v=1777520397"
+        ],
+        "sourceUrl": "https://yixiangpower.com/products/yixiang-pre-assembled-stacked-v19-bms-diy-lithium-battery-box-kitin-stock-at-us-warehouse-shipping-time-3-5-days-16pcs-eve-314ah-brand-new-grade-a-lifepo4-battery-cellin-china-the-shipping-time-is-25-35-days?variant=51223192011045",
+        "specs": {
+          "capacityAh": 314,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "verifiedAt": "2026-10-11T23:43:29.619Z",
+        "offers": [
+          {
+            "id": "yixiang-power-51223192011045",
+            "retailerId": "yixiang-power",
+            "retailer": "Yixiang Power",
+            "url": "https://yixiangpower.com/products/yixiang-pre-assembled-stacked-v19-bms-diy-lithium-battery-box-kitin-stock-at-us-warehouse-shipping-time-3-5-days-16pcs-eve-314ah-brand-new-grade-a-lifepo4-battery-cellin-china-the-shipping-time-is-25-35-days?variant=51223192011045",
+            "price": 2169,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:43:29.619Z",
+            "sku": "51223192011045",
+            "condition": "new"
+          }
+        ]
+      },
+      "destination": {
+        "category": "kits",
+        "specs": {
+          "kitType": "Battery DIY kit"
+        }
+      },
+      "anchors": {
+        "capacityAh": 314,
+        "batteryKind": "Battery modules",
+        "chemistry": "LiFePO4"
+      }
+    },
+    {
+      "proposalIndex": 17,
+      "product": {
+        "id": "yixiang-power-53699881271589",
+        "name": "YIXIANG WIFI BMS Stacked Battery Box Kit With YX 200A BMS (US Stock shipping time: 3~7 Days)+16PCS EVE 314 MB31 Brand New Grade A Lifepo4 Battery Cell(US Stock shipping time: Mid-Oct)",
+        "brand": "yixiangnewenergy",
+        "category": "batteries",
+        "description": "",
+        "image": "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/3_53d3e013-3f7f-4253-875a-76a7fb15ce5c.jpg?v=1788337963",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/3_53d3e013-3f7f-4253-875a-76a7fb15ce5c.jpg?v=1788337963"
+        ],
+        "sourceUrl": "https://yixiangpower.com/products/yixiang-v3-stacked-battery-box-kit-with-yx-200a-bms-us-stock-shipping-time-3-7-days-16pcs-eve-314-mb31-brand-new-grade-a-lifepo4-battery-cellus-stock-shipping-time-3-7-days?variant=53699881271589",
+        "specs": {
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "verifiedAt": "2026-10-11T23:43:29.612Z",
+        "offers": [
+          {
+            "id": "yixiang-power-53699881271589",
+            "retailerId": "yixiang-power",
+            "retailer": "Yixiang Power",
+            "url": "https://yixiangpower.com/products/yixiang-v3-stacked-battery-box-kit-with-yx-200a-bms-us-stock-shipping-time-3-7-days-16pcs-eve-314-mb31-brand-new-grade-a-lifepo4-battery-cellus-stock-shipping-time-3-7-days?variant=53699881271589",
+            "price": 2089,
+            "referencePrice": 2159,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:43:29.612Z",
+            "sku": "53699881271589",
+            "condition": "new"
+          }
+        ]
+      },
+      "destination": {
+        "category": "kits",
+        "specs": {
+          "kitType": "Battery DIY kit"
+        }
+      },
+      "anchors": {
+        "batteryKind": "Battery modules",
+        "chemistry": "LiFePO4"
+      }
+    }
+  ],
+  "held": [
+    {
+      "id": "yixiang-power-50603676696869",
+      "name": "YIXIANG US STOCK V3 Battery Diy Kit Box With JK 200A V19 BMS LiFePO4 Battery Boxes 300A Fuse (US Stock shipping time:Early November）",
+      "brand": "yixiangnewenergy",
+      "category": "batteries",
+      "description": "",
+      "image": "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/1_f1079b22-2cc4-4b37-b8bd-203ae4b1ce9d.jpg?v=1777520412",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/1_f1079b22-2cc4-4b37-b8bd-203ae4b1ce9d.jpg?v=1777520412"
+      ],
+      "sourceUrl": "https://yixiangpower.com/products/usa-stock-48v-battery-diy-kit-box-with-jk-200a-bms-for-280ah-306ah-314ah-lifepo4-battery-boxes-racks?variant=50603676696869",
+      "specs": {
+        "batteryKind": "Battery modules",
+        "chemistry": "LiFePO4"
+      },
+      "verifiedAt": "2026-10-11T23:43:29.624Z",
+      "offers": [
+        {
+          "id": "yixiang-power-50603676696869",
+          "retailerId": "yixiang-power",
+          "retailer": "Yixiang Power",
+          "url": "https://yixiangpower.com/products/usa-stock-48v-battery-diy-kit-box-with-jk-200a-bms-for-280ah-306ah-314ah-lifepo4-battery-boxes-racks?variant=50603676696869",
+          "price": 579,
+          "referencePrice": 599,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:43:29.624Z",
+          "sku": "50603676696869",
+          "condition": "new"
+        }
+      ]
+    },
+    {
+      "id": "yixiang-power-50710235250981",
+      "name": "YIXIANG EU Stock V3 16KWH LiFePO4 Battery Box With JK 200A BMS and 300A Fuse",
+      "brand": "yixiangnewenergy",
+      "category": "batteries",
+      "description": "",
+      "image": "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/1_f1079b22-2cc4-4b37-b8bd-203ae4b1ce9d.jpg?v=1777520412",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/1_f1079b22-2cc4-4b37-b8bd-203ae4b1ce9d.jpg?v=1777520412"
+      ],
+      "sourceUrl": "https://yixiangpower.com/products/yixiang-eu-stock-v19-bms-with-latest-screen-16s-51-2v-diy-case-15kwh-lifepo4-battery-box?variant=50710235250981",
+      "specs": {
+        "capacityKwh": 16,
+        "batteryKind": "Battery modules",
+        "chemistry": "LiFePO4"
+      },
+      "verifiedAt": "2026-10-11T23:43:29.624Z",
+      "offers": [
+        {
+          "id": "yixiang-power-50710235250981",
+          "retailerId": "yixiang-power",
+          "retailer": "Yixiang Power",
+          "url": "https://yixiangpower.com/products/yixiang-eu-stock-v19-bms-with-latest-screen-16s-51-2v-diy-case-15kwh-lifepo4-battery-box?variant=50710235250981",
+          "price": 568,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "out_of_stock",
+          "observedAt": "2026-10-11T23:43:29.624Z",
+          "sku": "50710235250981",
+          "condition": "new"
+        }
+      ]
+    },
+    {
+      "id": "yixiang-power-51403893080357",
+      "name": "EU Stock 25.6V 280Ah 314Ah Diy Box JK BMS 8S 24V Battery Case Lifepo4 Battery Box (China's inventory :25-35 days)",
+      "brand": "yixiangnewenergy",
+      "category": "batteries",
+      "description": "",
+      "image": "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/2_4e80abf7-54e1-4d75-9bb1-98a466b9de24.png?v=1757586830",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/2_4e80abf7-54e1-4d75-9bb1-98a466b9de24.png?v=1757586830"
+      ],
+      "sourceUrl": "https://yixiangpower.com/products/eu-stock-25-6v-280ah-314ah-diy-box-jk-bms-8s-24v-battery-case-lifepo4-battery-box-us-stock-estimated-shipping-time-sept-28th?variant=51403893080357",
+      "specs": {
+        "voltage": 25.6,
+        "capacityAh": 280,
+        "batteryKind": "Battery modules",
+        "chemistry": "LiFePO4"
+      },
+      "verifiedAt": "2026-10-11T23:43:29.618Z",
+      "offers": [
+        {
+          "id": "yixiang-power-51403893080357",
+          "retailerId": "yixiang-power",
+          "retailer": "Yixiang Power",
+          "url": "https://yixiangpower.com/products/eu-stock-25-6v-280ah-314ah-diy-box-jk-bms-8s-24v-battery-case-lifepo4-battery-box-us-stock-estimated-shipping-time-sept-28th?variant=51403893080357",
+          "price": 358,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "out_of_stock",
+          "observedAt": "2026-10-11T23:43:29.618Z",
+          "sku": "51403893080357",
+          "condition": "new"
+        }
+      ]
+    },
+    {
+      "id": "yixiang-power-51929492160805",
+      "name": "YIXIANG 12V DIY 4S 314ah Lifepo4 Battery Box Kit With JK 200A BMS（US Stock shipping time:3-7days）",
+      "brand": "yixiangnewenergy",
+      "category": "batteries",
+      "description": "",
+      "image": "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/5_2e3f6323-36f3-4888-a63d-37cc19e21b87.png?v=1773911912",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/5_2e3f6323-36f3-4888-a63d-37cc19e21b87.png?v=1773911912"
+      ],
+      "sourceUrl": "https://yixiangpower.com/products/yixiang-12v-diy-4s-314ah-lifepo4-battery-box-kit-with-jk-200a-bms-us-stock-estimated-shipping-time-jan-25th?variant=51929492160805",
+      "specs": {
+        "voltage": 12,
+        "capacityAh": 314,
+        "batteryKind": "Battery modules",
+        "chemistry": "LiFePO4"
+      },
+      "verifiedAt": "2026-10-11T23:43:29.616Z",
+      "offers": [
+        {
+          "id": "yixiang-power-51929492160805",
+          "retailerId": "yixiang-power",
+          "retailer": "Yixiang Power",
+          "url": "https://yixiangpower.com/products/yixiang-12v-diy-4s-314ah-lifepo4-battery-box-kit-with-jk-200a-bms-us-stock-estimated-shipping-time-jan-25th?variant=51929492160805",
+          "price": 299,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:43:29.616Z",
+          "sku": "51929492160805",
+          "condition": "new"
+        }
+      ]
+    },
+    {
+      "id": "yixiang-power-52091900756261",
+      "name": "YIXIANG US Stock 12V MB56 628AH DIY BOX (US Stock shipping time:3-7 days)",
+      "brand": "yixiangnewenergy",
+      "category": "batteries",
+      "description": "",
+      "image": "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/4_9ad86064-5a37-44ba-bb84-c5f16a393be1.png?v=1773830194",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/4_9ad86064-5a37-44ba-bb84-c5f16a393be1.png?v=1773830194"
+      ],
+      "sourceUrl": "https://yixiangpower.com/products/yixiang-12v-mb56-628ah-diy-box-kitus-stock-shipping-time-mid-april?variant=52091900756261",
+      "specs": {
+        "voltage": 12,
+        "capacityAh": 628,
+        "batteryKind": "Battery modules"
+      },
+      "verifiedAt": "2026-10-11T23:43:29.614Z",
+      "offers": [
+        {
+          "id": "yixiang-power-52091900756261",
+          "retailerId": "yixiang-power",
+          "retailer": "Yixiang Power",
+          "url": "https://yixiangpower.com/products/yixiang-12v-mb56-628ah-diy-box-kitus-stock-shipping-time-mid-april?variant=52091900756261",
+          "price": 369,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:43:29.614Z",
+          "sku": "52091900756261",
+          "condition": "new"
+        }
+      ]
+    },
+    {
+      "id": "yixiang-power-53700076175653",
+      "name": "US Stock YIXIANG Y1 16KWH LiFePO4 Battery Box With YX 200A BMS WIFI function (US Stock shipping time: 3~7 Days)",
+      "brand": "yixiangnewenergy",
+      "category": "batteries",
+      "description": "",
+      "image": "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/2_b42d5f1d-ee90-4df4-a834-7d237232309c.jpg?v=1788337963",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/2_b42d5f1d-ee90-4df4-a834-7d237232309c.jpg?v=1788337963"
+      ],
+      "sourceUrl": "https://yixiangpower.com/products/yixiang-us-stock-16kwh-lifepo4-battery-box-with-yx-200a-bms-us-stock-shipping-time-3-7-days?variant=53700076175653",
+      "specs": {
+        "capacityKwh": 16,
+        "batteryKind": "Battery modules",
+        "chemistry": "LiFePO4"
+      },
+      "verifiedAt": "2026-10-11T23:43:29.611Z",
+      "offers": [
+        {
+          "id": "yixiang-power-53700076175653",
+          "retailerId": "yixiang-power",
+          "retailer": "Yixiang Power",
+          "url": "https://yixiangpower.com/products/yixiang-us-stock-16kwh-lifepo4-battery-box-with-yx-200a-bms-us-stock-shipping-time-3-7-days?variant=53700076175653",
+          "price": 528,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:43:29.611Z",
+          "sku": "53700076175653",
+          "condition": "new"
+        }
+      ]
+    },
+    {
+      "id": "yixiang-power-51761021387045",
+      "name": "YIXIANG 12V DIY 4S 314ah Lifepo4 Battery Box Kit With JK 200A BMS（US Stock shipping time:3-7 Day） +4PCS EVE 314AH Brand New Grade A Lifepo4 Battery Cell（US Stock shipping time: Mid-Oct）",
+      "brand": "yixiangnewenergy",
+      "category": "batteries",
+      "description": "",
+      "image": "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/1_419e3909-e5dd-4ebe-8a7d-8c46d1856c6c.png?v=1765955215",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0941/0963/0757/files/1_419e3909-e5dd-4ebe-8a7d-8c46d1856c6c.png?v=1765955215"
+      ],
+      "sourceUrl": "https://yixiangpower.com/products/yixiang-12v-diy-4s-314ah-lifepo4-battery-box-kit-with-jk-200a-bms-us-stock-estimated-shipping-time-jan-25th-4pcs-eve-314ah-brand-new-grade-a-lifepo4-battery-cell-us-stock-estimated-shipping-time-feb-5th?variant=51761021387045",
+      "specs": {
+        "voltage": 12,
+        "capacityAh": 314,
+        "batteryKind": "Battery modules",
+        "chemistry": "LiFePO4"
+      },
+      "verifiedAt": "2026-10-11T23:43:29.613Z",
+      "offers": [
+        {
+          "id": "yixiang-power-51761021387045",
+          "retailerId": "yixiang-power",
+          "retailer": "Yixiang Power",
+          "url": "https://yixiangpower.com/products/yixiang-12v-diy-4s-314ah-lifepo4-battery-box-kit-with-jk-200a-bms-us-stock-estimated-shipping-time-jan-25th-4pcs-eve-314ah-brand-new-grade-a-lifepo4-battery-cell-us-stock-estimated-shipping-time-feb-5th?variant=51761021387045",
+          "price": 639,
+          "referencePrice": 659,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:43:29.613Z",
+          "sku": "51761021387045",
+          "condition": "new"
+        }
+      ]
+    }
+  ]
+}

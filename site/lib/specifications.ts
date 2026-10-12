@@ -1,4 +1,5 @@
 import type {Category,Product,ProductSpecification,SpecificationField} from './types.ts';
+import {applyReviewedStorageRole} from './reviewed-storage-roles.ts';
 
 export interface SpecificationEvidence {url:string;kind:'datasheet'|'manual'|'manufacturer'|'retailer';model?:string;label?:string;checkedAt?:string;rows:string[][];}
 type Definition={key:string;label:string;group:string;match:RegExp;categories?:Category[]};
@@ -197,6 +198,18 @@ export function buildSpecification(product:Product,input?:SpecificationEvidence|
 
 /** Kit measurements must describe the selected package, never a component's ratings. */
 export function specificationForDisplay(product:Product):ProductSpecification{
+ // Exact reviewed accessories retain raw storage-parser anchors for audit;
+ // their displayed measurements describe the accessory, never a battery.
+ if(product.category==='accessories'&&applyReviewedStorageRole({...product,specification:undefined})?.category==='accessories'){
+  const display=product.specification||buildSpecification(product),accessoryKeys=new Set(['accessoryType','model','compatibility','dimensions','weight','material','ipRating']);
+  return {...display,summary:product.brand+' '+product.specs.accessoryType+'.',groups:display.groups.map(g=>({...g,fields:g.fields.filter(f=>accessoryKeys.has(f.key))})).filter(g=>g.fields.length)};
+ }
+ // Only the exact independently reviewed without-cells sale gets this display
+ // boundary. Retain its raw title-parser anchors for identity checks and audit.
+ if(product.specs.batteryKind==='Battery cabinets'&&applyReviewedStorageRole(product)){
+  const display=buildSpecification(product),cabinetKeys=new Set(['model','compatibility','dimensions','weight','material','ipRating','formFactor']);
+  return {...display,summary:product.brand+' empty battery cabinet. Batteries are not included.',groups:display.groups.map(g=>({...g,fields:g.fields.filter(f=>cabinetKeys.has(f.key))})).filter(g=>g.fields.length)};
+ }
  if(product.category!=='kits')return product.specification||buildSpecification(product);
  const packageKeys=new Set(['contents','kitType','model','compatibility','dimensions','weight','material','ipRating']);
  const fallback=buildSpecification(product),reviewed=product.specification;
