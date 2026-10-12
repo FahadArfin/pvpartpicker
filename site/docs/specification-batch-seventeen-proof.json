@@ -1,0 +1,800 @@
+{
+  "checkedAt": "2026-10-12T23:23:12.516Z",
+  "batch": "seventeen",
+  "sourceBase": "93622490abc382d293250d577136a384a58c8dec",
+  "approvedRecords": 63,
+  "reviewedIds": 63,
+  "newTechnicalFields": 264,
+  "changedTechnicalIds": 63,
+  "newPanelCells": 0,
+  "priorStrongFieldsRetained": 29682,
+  "priorSourcesRetained": 8077,
+  "priorPanelCellsAndFlatRefsRetained": 2421,
+  "allPriorReviewedIdentitiesUnchanged": true,
+  "previouslyUnboundEntriesGainIdentityOnlyForApprovedIds": true,
+  "indexIds": 4694,
+  "fixedBaseline": {
+    "checkedAt": "2026-10-12T22:40:03.886Z",
+    "catalogListings": 8609,
+    "completeListings": 1320,
+    "remainingListings": 7289,
+    "remainingFields": 38886,
+    "reviewedGaps": 3875,
+    "blockedListings": 288,
+    "awaitingReview": 3126,
+    "categories": [
+      {
+        "category": "batteries",
+        "listings": 2107,
+        "remainingListings": 2102,
+        "remainingFields": 11671
+      },
+      {
+        "category": "inverters",
+        "listings": 1043,
+        "remainingListings": 1043,
+        "remainingFields": 9058
+      },
+      {
+        "category": "panels",
+        "listings": 685,
+        "remainingListings": 685,
+        "remainingFields": 4254
+      },
+      {
+        "category": "wiring",
+        "listings": 1307,
+        "remainingListings": 1284,
+        "remainingFields": 4172
+      },
+      {
+        "category": "all-in-one",
+        "listings": 397,
+        "remainingListings": 397,
+        "remainingFields": 2771
+      },
+      {
+        "category": "charging",
+        "listings": 311,
+        "remainingListings": 310,
+        "remainingFields": 1980
+      },
+      {
+        "category": "electrical",
+        "listings": 414,
+        "remainingListings": 408,
+        "remainingFields": 1649
+      },
+      {
+        "category": "accessories",
+        "listings": 470,
+        "remainingListings": 461,
+        "remainingFields": 1553
+      },
+      {
+        "category": "monitoring",
+        "listings": 244,
+        "remainingListings": 243,
+        "remainingFields": 839
+      },
+      {
+        "category": "mounting",
+        "listings": 308,
+        "remainingListings": 300,
+        "remainingFields": 791
+      },
+      {
+        "category": "module-electronics",
+        "listings": 31,
+        "remainingListings": 31,
+        "remainingFields": 123
+      },
+      {
+        "category": "kits",
+        "listings": 1292,
+        "remainingListings": 25,
+        "remainingFields": 25
+      }
+    ]
+  },
+  "fixed": {
+    "catalogListings": 8609,
+    "remainingListings": 7277,
+    "remainingFields": 38717
+  },
+  "comparisonFills": 169,
+  "categoryResults": {
+    "accessories": {
+      "listings": 470,
+      "reviewedListings": 1,
+      "newTechnicalFields": 1,
+      "resolvedComparisonFields": 1,
+      "remainingListings": 461
+    },
+    "wiring": {
+      "listings": 1307,
+      "reviewedListings": 7,
+      "newTechnicalFields": 11,
+      "resolvedComparisonFields": 11,
+      "remainingListings": 1284
+    },
+    "mounting": {
+      "listings": 308,
+      "reviewedListings": 4,
+      "newTechnicalFields": 7,
+      "resolvedComparisonFields": 6,
+      "remainingListings": 300
+    },
+    "monitoring": {
+      "listings": 244,
+      "reviewedListings": 5,
+      "newTechnicalFields": 6,
+      "resolvedComparisonFields": 6,
+      "remainingListings": 243
+    },
+    "inverters": {
+      "listings": 1043,
+      "reviewedListings": 12,
+      "newTechnicalFields": 109,
+      "resolvedComparisonFields": 51,
+      "remainingListings": 1043
+    },
+    "batteries": {
+      "listings": 2107,
+      "reviewedListings": 12,
+      "newTechnicalFields": 40,
+      "resolvedComparisonFields": 38,
+      "remainingListings": 2102
+    },
+    "panels": {
+      "listings": 685,
+      "reviewedListings": 0,
+      "newTechnicalFields": 0,
+      "resolvedComparisonFields": 0,
+      "remainingListings": 685
+    },
+    "all-in-one": {
+      "listings": 397,
+      "reviewedListings": 9,
+      "newTechnicalFields": 76,
+      "resolvedComparisonFields": 42,
+      "remainingListings": 397
+    },
+    "kits": {
+      "listings": 1292,
+      "reviewedListings": 12,
+      "newTechnicalFields": 12,
+      "resolvedComparisonFields": 12,
+      "remainingListings": 13
+    },
+    "electrical": {
+      "listings": 414,
+      "reviewedListings": 1,
+      "newTechnicalFields": 2,
+      "resolvedComparisonFields": 2,
+      "remainingListings": 408
+    },
+    "charging": {
+      "listings": 311,
+      "reviewedListings": 0,
+      "newTechnicalFields": 0,
+      "resolvedComparisonFields": 0,
+      "remainingListings": 310
+    },
+    "module-electronics": {
+      "listings": 31,
+      "reviewedListings": 0,
+      "newTechnicalFields": 0,
+      "resolvedComparisonFields": 0,
+      "remainingListings": 31
+    }
+  },
+  "rawD1IdentityProof": false,
+  "canonicalPromotion": true,
+  "published": false,
+  "failures": [],
+  "promotion": {
+    "promotedAt": "2026-10-12T23:23:32.757Z",
+    "approvedRecords": 63,
+    "baselineRegistryRecords": 4240,
+    "registryRecords": 4303,
+    "approvedIds": [
+      "santan-solar-b1781111",
+      "santan-solar-tmr500-mr500-rc-us",
+      "inverters-r-us-e300lfp",
+      "inverters-r-us-e500lfp",
+      "inverters-r-us-e3600lfp",
+      "inverters-r-us-e600lfp",
+      "inverters-r-us-f1000lfp",
+      "shopsolar-43663378153612",
+      "signature-solar-1669005",
+      "shopsolar-43520886276236",
+      "shopsolar-43521059192972",
+      "signature-solar-1600017",
+      "signature-solar-1593016",
+      "signature-solar-1519008",
+      "signature-solar-1651001",
+      "signature-solar-1651010",
+      "signature-solar-1593053",
+      "sungoldpower-44797594468489",
+      "practical-preppers-23696",
+      "inverters-r-us-e3800lfp",
+      "sungoldpower-47129947472009",
+      "inverters-r-us-eg4-1511081",
+      "inverters-r-us-eg4b3s1gbbrkr125av1",
+      "inverters-r-us-eg4-1511300",
+      "inverters-r-us-env2-iq-am1-240",
+      "inverters-r-us-sc200d111c240us01",
+      "santan-solar-powerinsight-us",
+      "santan-solar-eg4sp18kdleth",
+      "santan-solar-4000073",
+      "santan-solar-4zbrackets",
+      "santan-solar-boltsir-t1-10pk",
+      "santan-solar-s5-solarfoot",
+      "shopsolar-43420189917324",
+      "shopsolar-42041771753612",
+      "shopsolar-43361186775180",
+      "signature-solar-1622033",
+      "signature-solar-1511085",
+      "signature-solar-1632005",
+      "signature-solar-1669012",
+      "vatrer-46876136603806",
+      "vatrer-46876136636574",
+      "inverters-r-us-agm6v225g",
+      "santan-solar-a17d2011",
+      "santan-solar-delta2maxeb",
+      "santan-solar-zmr330eb",
+      "santan-solar-delta3p-eb",
+      "santan-solar-efeb300",
+      "santan-solar-efeb600",
+      "santan-solar-wave3-eb",
+      "inverters-r-us-eg4abr00v003s",
+      "inverters-r-us-fp5000-48v",
+      "wattcycle-51989393965352",
+      "wattcycle-51989393998120",
+      "wattcycle-67838376345896",
+      "wattcycle-67838376378664",
+      "wattcycle-51989380694312",
+      "yixiang-power-50832511140133",
+      "yixiang-power-51223113826597",
+      "yixiang-power-50995063718181",
+      "yixiang-power-51223192011045",
+      "yixiang-power-50995125649701",
+      "yixiang-power-53699881271589",
+      "yixiang-power-50779021705509"
+    ],
+    "contract": {
+      "checkedAt": "2026-10-12T23:22:41.158Z",
+      "packets": [
+        {
+          "role": "generation",
+          "records": 21,
+          "manifestSha256": "e252d15c20f6eb34851123c735370fe0d641f1f7aceac145aaed301b93026e0c",
+          "candidateSha256": "fd423dd3d590b1b0e4d6d421fcdf4e976af9aa80808574eab2be937fe30cf0b1",
+          "reviewSha256": "0b7bf7a3073f248e43b50e637282715cca5f070a3bb72d4ca7a0a17d34f59ab2",
+          "payloadFiles": 1411
+        },
+        {
+          "role": "balance",
+          "records": 18,
+          "manifestSha256": "32a41bab3b1adc5b7c712a4661861e8e76ce3deb3a6df373859b2ddf169bad35",
+          "candidateSha256": "a935fa94f0868bf6ce06b644bbceef86134f894cc9d91d27e646af9e72e92820",
+          "reviewSha256": "68ec7fcfc2aecbab2ea1be01da8d9361d94c8b48b315ad49d66c851b519ca8bb",
+          "payloadFiles": 1552
+        },
+        {
+          "role": "storage",
+          "records": 24,
+          "manifestSha256": "b140acc4505c9529ae009e0f727c84e46ea3134b7180416d10278fd522563cca",
+          "candidateSha256": "eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1",
+          "reviewSha256": "c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a",
+          "payloadFiles": 1603
+        }
+      ],
+      "approvedRecords": 63,
+      "approvedIds": [
+        "santan-solar-b1781111",
+        "santan-solar-tmr500-mr500-rc-us",
+        "inverters-r-us-e300lfp",
+        "inverters-r-us-e500lfp",
+        "inverters-r-us-e3600lfp",
+        "inverters-r-us-e600lfp",
+        "inverters-r-us-f1000lfp",
+        "shopsolar-43663378153612",
+        "signature-solar-1669005",
+        "shopsolar-43520886276236",
+        "shopsolar-43521059192972",
+        "signature-solar-1600017",
+        "signature-solar-1593016",
+        "signature-solar-1519008",
+        "signature-solar-1651001",
+        "signature-solar-1651010",
+        "signature-solar-1593053",
+        "sungoldpower-44797594468489",
+        "practical-preppers-23696",
+        "inverters-r-us-e3800lfp",
+        "sungoldpower-47129947472009",
+        "inverters-r-us-eg4-1511081",
+        "inverters-r-us-eg4b3s1gbbrkr125av1",
+        "inverters-r-us-eg4-1511300",
+        "inverters-r-us-env2-iq-am1-240",
+        "inverters-r-us-sc200d111c240us01",
+        "santan-solar-powerinsight-us",
+        "santan-solar-eg4sp18kdleth",
+        "santan-solar-4000073",
+        "santan-solar-4zbrackets",
+        "santan-solar-boltsir-t1-10pk",
+        "santan-solar-s5-solarfoot",
+        "shopsolar-43420189917324",
+        "shopsolar-42041771753612",
+        "shopsolar-43361186775180",
+        "signature-solar-1622033",
+        "signature-solar-1511085",
+        "signature-solar-1632005",
+        "signature-solar-1669012",
+        "vatrer-46876136603806",
+        "vatrer-46876136636574",
+        "inverters-r-us-agm6v225g",
+        "santan-solar-a17d2011",
+        "santan-solar-delta2maxeb",
+        "santan-solar-zmr330eb",
+        "santan-solar-delta3p-eb",
+        "santan-solar-efeb300",
+        "santan-solar-efeb600",
+        "santan-solar-wave3-eb",
+        "inverters-r-us-eg4abr00v003s",
+        "inverters-r-us-fp5000-48v",
+        "wattcycle-51989393965352",
+        "wattcycle-51989393998120",
+        "wattcycle-67838376345896",
+        "wattcycle-67838376378664",
+        "wattcycle-51989380694312",
+        "yixiang-power-50832511140133",
+        "yixiang-power-51223113826597",
+        "yixiang-power-50995063718181",
+        "yixiang-power-51223192011045",
+        "yixiang-power-50995125649701",
+        "yixiang-power-53699881271589",
+        "yixiang-power-50779021705509"
+      ],
+      "cliSha256": "b5eec6a2efabbaa3732e37ccdcd39c91759f0db1c6e9b5a374c7c526af6bc162",
+      "cliSource": "Storage sealed actual CLI, independently reviewed and equal to current canonical CLI",
+      "isolated": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-seventeen-combined-isolated",
+      "canonicalWrites": false
+    },
+    "canonicalIndexImportPerformed": false
+  },
+  "assignedFamilies": 240,
+  "assignedIds": 243,
+  "inspectedFamilies": 224,
+  "inspectedIds": 227,
+  "uninspectedIds": [
+    "signature-solar-1594010",
+    "inverters-r-us-400-00900-00",
+    "inverters-r-us-158-00000-02",
+    "inverters-r-us-466-00252-32",
+    "inverters-r-us-348-00000-52",
+    "inverters-r-us-346-00000-00",
+    "inverters-r-us-492-00000-52",
+    "inverters-r-us-490-00000-52",
+    "inverters-r-us-492-00000-51",
+    "inverters-r-us-484-00252-22",
+    "inverters-r-us-481-00252-32",
+    "inverters-r-us-48-48-5120-h",
+    "signature-solar-1512009",
+    "inverters-r-us-samlex-srv-50",
+    "inverters-r-us-samlex-srv-85",
+    "inverters-r-us-usp1001"
+  ],
+  "uninspectedIdsReceiveNoCredit": true,
+  "noFamiliesDeclaredExhausted": true,
+  "current": {
+    "catalogListings": 8613,
+    "remainingListings": 7281,
+    "remainingFields": 38741
+  },
+  "remainingFamilies": 4436,
+  "categoryResultsCurrent": {
+    "accessories": {
+      "listings": 471,
+      "reviewedListings": 182,
+      "newTechnicalFields": 0,
+      "resolvedComparisonFields": 0,
+      "remainingListings": 462
+    },
+    "wiring": {
+      "listings": 1307,
+      "reviewedListings": 983,
+      "newTechnicalFields": 0,
+      "resolvedComparisonFields": 0,
+      "remainingListings": 1284
+    },
+    "mounting": {
+      "listings": 309,
+      "reviewedListings": 213,
+      "newTechnicalFields": 0,
+      "resolvedComparisonFields": 0,
+      "remainingListings": 301
+    },
+    "monitoring": {
+      "listings": 244,
+      "reviewedListings": 107,
+      "newTechnicalFields": 0,
+      "resolvedComparisonFields": 0,
+      "remainingListings": 243
+    },
+    "inverters": {
+      "listings": 1044,
+      "reviewedListings": 240,
+      "newTechnicalFields": 0,
+      "resolvedComparisonFields": 0,
+      "remainingListings": 1044
+    },
+    "batteries": {
+      "listings": 2107,
+      "reviewedListings": 1151,
+      "newTechnicalFields": 0,
+      "resolvedComparisonFields": 0,
+      "remainingListings": 2102
+    },
+    "panels": {
+      "listings": 685,
+      "reviewedListings": 457,
+      "newTechnicalFields": 0,
+      "resolvedComparisonFields": 0,
+      "remainingListings": 685
+    },
+    "all-in-one": {
+      "listings": 397,
+      "reviewedListings": 280,
+      "newTechnicalFields": 0,
+      "resolvedComparisonFields": 0,
+      "remainingListings": 397
+    },
+    "kits": {
+      "listings": 1292,
+      "reviewedListings": 94,
+      "newTechnicalFields": 0,
+      "resolvedComparisonFields": 0,
+      "remainingListings": 13
+    },
+    "electrical": {
+      "listings": 415,
+      "reviewedListings": 196,
+      "newTechnicalFields": 0,
+      "resolvedComparisonFields": 0,
+      "remainingListings": 409
+    },
+    "charging": {
+      "listings": 311,
+      "reviewedListings": 142,
+      "newTechnicalFields": 0,
+      "resolvedComparisonFields": 0,
+      "remainingListings": 310
+    },
+    "module-electronics": {
+      "listings": 31,
+      "reviewedListings": 25,
+      "newTechnicalFields": 0,
+      "resolvedComparisonFields": 0,
+      "remainingListings": 31
+    }
+  },
+  "catalogGrowthSinceFixedBaseline": 4,
+  "sourceAcquisition": {
+    "checkedAt": "2026-10-12T22:51:54.224733+00:00",
+    "capturedResponses": 23,
+    "lookupAttempts": 23,
+    "successfulResponses": 22,
+    "nonSuccessBodiesRetained": 1,
+    "sourceLookups": 18,
+    "robotsLookups": 5,
+    "minimumGlobalStartGapSeconds": 2.300265312194824,
+    "overlappingRequests": 0,
+    "allBodyHashesAndSizesMatch": true,
+    "robotsPermissionAndDelaysVerified": true,
+    "ownedClaimReleased": true,
+    "newPauses": [
+      {
+        "origin": "store-bi8c0htqsn.mybigcommerce.com",
+        "reason": "Robots disallows explicit source",
+        "at": "2026-10-12T22:51:03.768806+00:00"
+      },
+      {
+        "origin": "assets-global.website-files.com",
+        "reason": "Refusal; origin paused",
+        "at": "2026-10-12T22:51:54.223636+00:00"
+      }
+    ],
+    "pausedOrigins": [
+      "0fa80982-c142-44c6-a762-5e4fe5133859.usrfiles.com",
+      "apsmartglobal.com",
+      "catalog.k2-systems.com",
+      "cdn.currentconnected.com",
+      "cdn.prod.website-files.com",
+      "eg4electronics.com",
+      "enphase.com",
+      "gopowersolar.com",
+      "invertersrus.com",
+      "mppsolar.com",
+      "practicalpreppers.com",
+      "r.jackery.net",
+      "s3.amazonaws.com",
+      "s3.us-east-1.amazonaws.com",
+      "salesforce-knowledge-download.s3.us-west-2.amazonaws.com",
+      "santansolar.com",
+      "signaturesolar.imagerelay.com",
+      "solar-electric.com",
+      "solaxpower.com",
+      "tamaracksolar.com",
+      "us.ecoflow.com",
+      "vatrerpower.com",
+      "watts247.az3.infogenixdev.com",
+      "watts247.com",
+      "www.snapnrack.com",
+      "store-bi8c0htqsn.mybigcommerce.com",
+      "assets-global.website-files.com"
+    ],
+    "transportFailures": [],
+    "skippedRequests": [
+      {
+        "url": "https://store-bi8c0htqsn.mybigcommerce.com/product_images/DPC-Microinverters-GEN2-061625.2.pdf",
+        "kind": "linked-document",
+        "families": [
+          "inverters|https://signaturesolar.com/duracell-power-center-dual-microinverter-d600-m2a/",
+          "inverters|https://signaturesolar.com/duracell-power-center-dual-microinverter-d600-m2a/"
+        ],
+        "grounding": [
+          {
+            "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\fccd3a4963e982c9.json",
+            "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\fccd3a4963e982c9.html",
+            "htmlSha256": "238fc13ca8d6ba2f493fcd2d09b16a4212b30e9127fba0632432e8987eafb33e",
+            "listingPage": "https://signaturesolar.com/duracell-power-center-dual-microinverter-d600-m2a/",
+            "href": "https://store-bi8c0htqsn.mybigcommerce.com/product_images/DPC-Microinverters-GEN2-061625.2.pdf",
+            "label": "Download",
+            "htmlLine": 2335,
+            "identityTokens": [
+              "microinverter"
+            ]
+          },
+          {
+            "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\fccd3a4963e982c9.json",
+            "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\fccd3a4963e982c9.html",
+            "htmlSha256": "238fc13ca8d6ba2f493fcd2d09b16a4212b30e9127fba0632432e8987eafb33e",
+            "listingPage": "https://signaturesolar.com/duracell-power-center-dual-microinverter-d600-m2a/",
+            "href": "https://store-bi8c0htqsn.mybigcommerce.com/product_images/DPC-Microinverters-GEN2-061625.2.pdf",
+            "label": "Download",
+            "htmlLine": 2408,
+            "identityTokens": [
+              "microinverter"
+            ]
+          }
+        ],
+        "robots": {
+          "state": "robots_not_retained_for_origin",
+          "permitted": null,
+          "instruction": "Parent must obtain robots before serial acquisition"
+        },
+        "priorAcquisitionEvidence": [],
+        "retainedSuccessfulSources": [],
+        "acquisitionDisposition": "parent_serial_candidate",
+        "reason": "Exact retained HTML href with model token match; identity, revision, row/variant and applicability require review before fact promotion",
+        "linkedFrom": "https://signaturesolar.com/duracell-power-center-dual-microinverter-d600-m2a/"
+      },
+      {
+        "url": "https://store-bi8c0htqsn.mybigcommerce.com/product_images/Duracell-Power-Center_Microinverter-Warranty-Terms-Conditions_USA.pdf",
+        "kind": "linked-document",
+        "families": [
+          "inverters|https://signaturesolar.com/duracell-power-center-dual-microinverter-d600-m2a/",
+          "wiring|https://signaturesolar.com/power-center-2-meter-bus-cable/"
+        ],
+        "grounding": [
+          {
+            "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\fccd3a4963e982c9.json",
+            "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\fccd3a4963e982c9.html",
+            "htmlSha256": "238fc13ca8d6ba2f493fcd2d09b16a4212b30e9127fba0632432e8987eafb33e",
+            "listingPage": "https://signaturesolar.com/duracell-power-center-dual-microinverter-d600-m2a/",
+            "href": "https://store-bi8c0htqsn.mybigcommerce.com/product_images/Duracell-Power-Center_Microinverter-Warranty-Terms-Conditions_USA.pdf",
+            "label": "Microinverter Warranty Terms & Conditions (PDF)",
+            "htmlLine": 2425,
+            "identityTokens": [
+              "microinverter",
+              "duracell",
+              "center"
+            ]
+          },
+          {
+            "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\1eabdcc7efa18572.json",
+            "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\1eabdcc7efa18572.html",
+            "htmlSha256": "241bceed7182ce1346ec681f6974ba79682e41386cd7b5fc9f3d03acf33cd337",
+            "listingPage": "https://signaturesolar.com/power-center-2-meter-bus-cable/",
+            "href": "https://store-bi8c0htqsn.mybigcommerce.com/product_images/Duracell-Power-Center_Microinverter-Warranty-Terms-Conditions_USA.pdf",
+            "label": "Microinverter Warranty Terms & Conditions (PDF)",
+            "htmlLine": 2354,
+            "identityTokens": [
+              "center"
+            ]
+          }
+        ],
+        "robots": {
+          "state": "robots_not_retained_for_origin",
+          "permitted": null,
+          "instruction": "Parent must obtain robots before serial acquisition"
+        },
+        "priorAcquisitionEvidence": [],
+        "retainedSuccessfulSources": [],
+        "acquisitionDisposition": "parent_serial_candidate",
+        "reason": "Exact retained HTML href with model token match; identity, revision, row/variant and applicability require review before fact promotion",
+        "linkedFrom": "https://signaturesolar.com/duracell-power-center-dual-microinverter-d600-m2a/"
+      },
+      {
+        "url": "https://assets-global.website-files.com/5fad551d7419c7a0e9e4aba4/6476250dc1539c271cbbd507_CCA%20Kits%20datasheet%20002-00140-00%201.1%2020230525.pdf",
+        "kind": "linked-document",
+        "families": [
+          "module-electronics|https://www.currentconnected.com/product/tigo-cca-kit-cloud-connect-advanced-kit/"
+        ],
+        "grounding": [
+          {
+            "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\82a118fef2f606f9.json",
+            "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\82a118fef2f606f9.html",
+            "htmlSha256": "ad5f7581483e1dd5f088bc20645c7c06ed56bf9fe143356c1db3dedc82715cdc",
+            "listingPage": "https://www.currentconnected.com/product/tigo-cca-kit-cloud-connect-advanced-kit/",
+            "href": "https://assets-global.website-files.com/5fad551d7419c7a0e9e4aba4/6476250dc1539c271cbbd507_CCA%20Kits%20datasheet%20002-00140-00%201.1%2020230525.pdf",
+            "label": "Spec Sheet",
+            "htmlLine": 16,
+            "identityTokens": [
+              "cca"
+            ]
+          }
+        ],
+        "robots": {
+          "state": "robots_not_retained_for_origin",
+          "permitted": null,
+          "instruction": "Parent must obtain robots before serial acquisition"
+        },
+        "priorAcquisitionEvidence": [],
+        "retainedSuccessfulSources": [],
+        "acquisitionDisposition": "parent_serial_candidate",
+        "reason": "Exact retained HTML href with model token match; identity, revision, row/variant and applicability require review before fact promotion",
+        "linkedFrom": "https://www.currentconnected.com/product/tigo-cca-kit-cloud-connect-advanced-kit/"
+      },
+      {
+        "url": "https://assets-global.website-files.com/5fad551d7419c7a0e9e4aba4/6410e5fa0e9dad25e1610514_Tigo%20TS4-A%20installation%20manual_EN_2.0_20230210.pdf",
+        "kind": "linked-document",
+        "families": [
+          "module-electronics|https://www.currentconnected.com/product/tigo-cca-kit-cloud-connect-advanced-kit/"
+        ],
+        "grounding": [
+          {
+            "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\82a118fef2f606f9.json",
+            "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\82a118fef2f606f9.html",
+            "htmlSha256": "ad5f7581483e1dd5f088bc20645c7c06ed56bf9fe143356c1db3dedc82715cdc",
+            "listingPage": "https://www.currentconnected.com/product/tigo-cca-kit-cloud-connect-advanced-kit/",
+            "href": "https://assets-global.website-files.com/5fad551d7419c7a0e9e4aba4/6410e5fa0e9dad25e1610514_Tigo%20TS4-A%20installation%20manual_EN_2.0_20230210.pdf",
+            "label": "Manual",
+            "htmlLine": 16,
+            "identityTokens": [
+              "tigo"
+            ]
+          }
+        ],
+        "robots": {
+          "state": "robots_not_retained_for_origin",
+          "permitted": null,
+          "instruction": "Parent must obtain robots before serial acquisition"
+        },
+        "priorAcquisitionEvidence": [],
+        "retainedSuccessfulSources": [],
+        "acquisitionDisposition": "parent_serial_candidate",
+        "reason": "Exact retained HTML href with model token match; identity, revision, row/variant and applicability require review before fact promotion",
+        "linkedFrom": "https://www.currentconnected.com/product/tigo-cca-kit-cloud-connect-advanced-kit/"
+      },
+      {
+        "url": "https://assets-global.website-files.com/5fad551d7419c7a0e9e4aba4/64664fa9519eb784b340bdfb_002-00147-00%201.1%20QSG%20TS4-A%20CCA%20TAP%2020230515.pdf",
+        "kind": "linked-document",
+        "families": [
+          "module-electronics|https://www.currentconnected.com/product/tigo-cca-kit-cloud-connect-advanced-kit/"
+        ],
+        "grounding": [
+          {
+            "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\82a118fef2f606f9.json",
+            "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\82a118fef2f606f9.html",
+            "htmlSha256": "ad5f7581483e1dd5f088bc20645c7c06ed56bf9fe143356c1db3dedc82715cdc",
+            "listingPage": "https://www.currentconnected.com/product/tigo-cca-kit-cloud-connect-advanced-kit/",
+            "href": "https://assets-global.website-files.com/5fad551d7419c7a0e9e4aba4/64664fa9519eb784b340bdfb_002-00147-00%201.1%20QSG%20TS4-A%20CCA%20TAP%2020230515.pdf",
+            "label": "Quick Start Guide",
+            "htmlLine": 16,
+            "identityTokens": [
+              "cca"
+            ]
+          }
+        ],
+        "robots": {
+          "state": "robots_not_retained_for_origin",
+          "permitted": null,
+          "instruction": "Parent must obtain robots before serial acquisition"
+        },
+        "priorAcquisitionEvidence": [],
+        "retainedSuccessfulSources": [],
+        "acquisitionDisposition": "parent_serial_candidate",
+        "reason": "Exact retained HTML href with model token match; identity, revision, row/variant and applicability require review before fact promotion",
+        "linkedFrom": "https://www.currentconnected.com/product/tigo-cca-kit-cloud-connect-advanced-kit/"
+      }
+    ],
+    "skippedPausedRequestsAreNotInspectedSources": true,
+    "helperSha256": "80210fe5d1225364a427d5570db744c14f78570f3a16081f6b7ee551250df50e",
+    "failures": []
+  },
+  "validation": {
+    "tests": "passed",
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "browser": {
+      "status": "passed_bounded_rendering_check",
+      "products": [
+        "sungoldpower-47129947472009",
+        "vatrer-46876136603806",
+        "signature-solar-1651001"
+      ],
+      "themes": [
+        "light desktop1280",
+        "dark mobile375"
+      ],
+      "screenshots": [
+        "batch-seventeen-inverter-day.png",
+        "batch-seventeen-inverter-night-mobile.png",
+        "batch-seventeen-battery-day.png",
+        "batch-seventeen-battery-night-mobile.png",
+        "batch-seventeen-solis-day.png",
+        "batch-seventeen-solis-night-mobile.png"
+      ],
+      "observations": "batch-seventeen-browser-observations.json",
+      "dimensionsCorrectedToPrintedPrecision": true,
+      "qualifiedChannelAndEfficiencyConditionsPreserved": true,
+      "mainSpecificationColumnsContainCheckedText": true,
+      "universalDocumentZeroOverflowClaimed": false,
+      "retailerTablesUseExistingContainedScrolling": true,
+      "localHistoryReviews": "503 intentionally omitted local tables",
+      "hydratedPublicSnapshotNotRawD1": true,
+      "temporaryTabClosed": true,
+      "viewportReset": true,
+      "ownedPreviewStopped": true
+    },
+    "wholeBranchReview": "pending",
+    "testsDiscovered": 582,
+    "testsPassed": 579,
+    "testsSkipped": 3,
+    "testsFailed": 0
+  },
+  "growthAccounting": {
+    "catalogAddedListings": [
+      {
+        "id": "signature-solar-16180018",
+        "name": "SnapNRack | Universal SkirtRail Spacer | 30MM",
+        "sourceUrl": "https://signaturesolar.com/snapnrack-topspeed-skirt-spacer-30mm-snr-sku-232-02532/"
+      },
+      {
+        "id": "signature-solar-1656004",
+        "name": "Eaton 70A Breaker | 70A / 2 POLE | 120/240V",
+        "sourceUrl": "https://signaturesolar.com/eaton-70a-breaker-70a-2-pole-120-240v/"
+      },
+      {
+        "id": "signature-solar-1670013",
+        "name": "Briggs & Stratton SimpliPHI 6.6 Battery Controller",
+        "sourceUrl": "https://signaturesolar.com/simpliphi-6-6-battery-controller-15-year-warranty/"
+      },
+      {
+        "id": "signature-solar-1674024",
+        "name": "Top Rack | Microinverter Racking | Rail-Less | TRT 01",
+        "sourceUrl": "https://signaturesolar.com/top-rack-micro-inverter-racking-2-rail-less-system/"
+      }
+    ],
+    "addedListings": 4,
+    "addedMissingFields": 24,
+    "fixedCompletedListings": 12,
+    "fixedComparisonFills": 169,
+    "reportTotalCatalogSeparatelyFromIncompleteListingsAndFamilies": true
+  },
+  "totalStrongFieldObjects": 29946,
+  "totalSourceObjects": 8156
+}
