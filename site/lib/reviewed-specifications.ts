@@ -1,3 +1,4 @@
+import {isWattcycleReviewedListing,matchesWattcycleReviewedSelection,assertWattcycleReviewedRecordRegeneration} from './wattcycle-reviewed-selection.ts';
 import {assertCorrectionWriteBoundary} from './specification-correction-guard.ts';
 import {buildSpecification,technicalRows} from './specifications.ts';
 import type {SpecificationEvidence} from './specifications.ts';
@@ -13,9 +14,13 @@ function compatibleRows(p:Product,r:ReviewedSpecification){
  }return true;
 }
 export function importReviewedSpecification(p:Product,records:ReviewedSpecification[],prior?:ProductSpecification):ProductSpecification|undefined{
+ const protectedPrior=isWattcycleReviewedListing(p)?structuredClone(prior):undefined;
+ const finish=(value:ProductSpecification|undefined)=>{assertWattcycleReviewedRecordRegeneration(p,value,protectedPrior);return value;};
+ // Changed raw metadata/offers can only preserve a verified prior, never import facts.
+ if(isWattcycleReviewedListing(p)&&!matchesWattcycleReviewedSelection(p))return finish(prior);
  if(prior?.identity&&!identityMatches(p,prior.identity))prior=undefined;
- const accepted=records.filter(r=>r.productIds.includes(p.id)&&r.expected[p.id]&&identityMatches(p,r.expected[p.id])&&compatibleRows(p,r));if(!accepted.length)return prior;
- const next=buildSpecification(p,accepted);if(!next.sources.some(s=>s.kind!=='listing'&&accepted.some(r=>r.url===s.url)))return prior;
+ const accepted=records.filter(r=>r.productIds.includes(p.id)&&r.expected[p.id]&&identityMatches(p,r.expected[p.id])&&compatibleRows(p,r));if(!accepted.length)return finish(prior);
+ const next=buildSpecification(p,accepted);if(!next.sources.some(s=>s.kind!=='listing'&&accepted.some(r=>r.url===s.url)))return finish(prior);
  const sources=[...(prior?.sources||[])];for(const source of next.sources)if(!sources.some(s=>s.url===source.url&&s.kind===source.kind))sources.push(source);
  const groups=(prior?.groups||[]).map(g=>({...g,fields:g.fields.map(f=>({...f}))})),notes=[...(prior?.notes||[]),...next.notes];
  for(const g of next.groups)for(const f of g.fields){const known=groups.flatMap(g=>g.fields).find(x=>x.key===f.key);if(known){if(known.kind==='listing'&&f.kind!=='listing')Object.assign(known,f);else if(f.kind!=='listing'&&known.kind!=='listing'&&known.value.replace(/\s/g,'')!==f.value.replace(/\s/g,''))notes.push('Reviewed source conflict for '+f.label+'; existing rating retained.');continue;}let target=groups.find(x=>x.title===g.title);if(!target){target={title:g.title,fields:[]};groups.push(target);}target.fields.push(f);}
@@ -25,5 +30,5 @@ export function importReviewedSpecification(p:Product,records:ReviewedSpecificat
  // anchors so reimports cannot require ratings added by an earlier hydration.
  const merged={...next,groups,sources,notes:[...new Set(notes.filter(n=>!n.startsWith('A matching technical specification table is not available')))],...(panelRatings?{panelRatings}:{}),identity:prior?.identity||accepted[0].expected[p.id]};
  assertCorrectionWriteBoundary([p],{[p.id]:merged});
- return merged;
+ return finish(merged);
 }

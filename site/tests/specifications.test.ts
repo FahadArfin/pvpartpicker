@@ -3,9 +3,38 @@ import assert from 'node:assert/strict';
 import {buildSpecification,applySpecificationEvidence,specificationDisplayGroups} from '../lib/specifications.ts';
 import {serializePageCatalog} from '../lib/catalog-transport.ts';
 import type {Product} from '../lib/types.ts';
+import {partValue} from '../lib/part-comparison.ts';
 const source='https://manufacturer.example/panel.pdf';
 const panel:Product={id:'175w',name:'100/175/200W N-Type Solar Panel — 175W / 1 Piece',brand:'Renogy',category:'panels',description:'200W panel marketing text '.repeat(100),specs:{watts:175,cellType:'N-type'},image:'',images:[],sourceUrl:'https://manufacturer.example/product?variant=175',offers:[],verifiedAt:'2026-10-05T00:00:00Z'};
 const field=(s:ReturnType<typeof buildSpecification>,key:string)=>s.groups.flatMap(g=>g.fields).find(f=>f.key===key);
+test('explicit continuous discharge label variants retain original amperage and source',()=>{
+ const battery={...panel,category:'batteries' as const,specs:{}};
+ for(const label of ['Max Continuous Discharging Current','Max Continuous Discharge Amps']){
+  const rows=[[label,'100 A']],before=structuredClone(rows);
+  const details=buildSpecification(battery,{url:source,kind:'manufacturer',rows});
+  assert.equal(field(details,'maxDischargeCurrent')?.value,'100 A');
+  assert.equal(field(details,'maxDischargeCurrent')?.source,source);
+  assert.deepEqual(rows,before);
+ }
+ for(const label of ['Peak Continuous Discharging Current','Max Discharging Amps','Max Continuous Discharge Amps (Closed-loop / Open-loop)']){
+  const details=buildSpecification(battery,{url:source,kind:'manufacturer',rows:[[label,'100 A']]});
+  assert.equal(field(details,'maxDischargeCurrent'),undefined);
+ }
+ assert.equal(field(buildSpecification(battery,{url:source,kind:'manufacturer',rows:[['Max Continuous Discharging Current','100 / 80 A']]}),'maxDischargeCurrent'),undefined);
+ const accessory=buildSpecification({...battery,category:'accessories'}, {url:source,kind:'manufacturer',rows:[['Max Continuous Discharge Amps','100 A']]});
+ assert.equal(field(accessory,'maxDischargeCurrent'),undefined);
+});
+test('published Output Volts retains the voltage range and waveform for inverters',()=>{
+ const inverter={...panel,category:'inverters' as const,specs:{}};
+ const value='100V~120V Pure Sine Wave';
+ const details=buildSpecification(inverter,{url:source,kind:'retailer',rows:[['Output Volts',value]]});
+ assert.equal(field(details,'acOutput')?.value,value);assert.equal(field(details,'acOutput')?.source,source);
+ const hydrated=applySpecificationEvidence(inverter,{[inverter.id]:details});
+ assert.equal(hydrated.specs.voltage,undefined);
+ const transported=JSON.parse(serializePageCatalog({products:[hydrated],reports:[]})).products[0] as Product;
+ for(const product of [hydrated,transported]){assert.equal(partValue(product,'acOutput').value,value);assert.equal(partValue(product,'acOutput').source,source);}
+ assert.equal(field(buildSpecification({...inverter,category:'charging'},{url:source,kind:'retailer',rows:[['Output Volts',value]]}),'acOutput'),undefined);
+});
 test('mixed energy and Ah capacity notation does not turn watt-hours into amp-hours',()=>{
  const p={...panel,category:'all-in-one' as const,specs:{}};
  const details=buildSpecification(p,{url:source,kind:'manual',rows:[['Capacity','3072Wh(51.2V60Ah)']]});

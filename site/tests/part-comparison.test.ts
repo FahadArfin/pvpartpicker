@@ -5,6 +5,25 @@ import {serializePageCatalog} from '../lib/catalog-transport.ts';
 import type {Product,Category} from '../lib/types.ts';
 const p=(name:string,category:Category,specs:Product['specs']={}):Product=>({id:name,name,category,specs,brand:'Renogy',description:'',image:'',images:[],sourceUrl:'https://example.com/selected-sku',verifiedAt:'2026-10-05',offers:[]});
 
+test('manufacturer energy in compact Wh converts to kWh without changing the original source',()=>{
+ for(const [sourceValue,want]of [['5376Wh','5.376 kWh'],['5120Wh','5.12 kWh'],['7680Wh','7.68 kWh'],['5,376WH','5.376 kWh'],['5376 Wh','5.376 kWh'],['5.376kWh','5.376 kWh']]){
+  const battery=p('Exact source battery','batteries'),url='https://example.com/selected-battery-energy';
+  battery.specification={summary:'',notes:[],sources:[{kind:'manufacturer',label:'Selected manufacturer energy table',url}],groups:[{title:'Capacity',fields:[{key:'capacityKwh',label:'Energy capacity',value:sourceValue,source:url,kind:'manufacturer'}]}]};
+  const before=structuredClone(battery),transported=JSON.parse(serializePageCatalog({products:[battery],reports:[]})).products[0] as Product;
+  for(const product of [battery,transported]){assert.equal(partValue(product,'capacityKwh').value,want,sourceValue);assert.equal(partValue(product,'capacityKwh').source,url);}
+  assert.deepEqual(battery,before);assert.equal(transported.comparisonSpecs?.capacityKwh.value,sourceValue);
+ }
+});
+test('compound power ratings retain each published term instead of becoming one scalar',()=>{
+ for(const sourceValue of ['5500W+5500W','5500 W + 5500 W','3000 W at 120 V / 6000 W at 240 V']){
+  const inverter=p('Exact dual tracker inverter','inverters'),url='https://example.com/exact-inverter';
+  inverter.specification={summary:'',notes:[],sources:[{kind:'manufacturer',label:'Original ratings',url}],groups:[{title:'Solar input',fields:[{key:'maxPvWatts',label:'Maximum PV input power',value:sourceValue,source:url,kind:'manufacturer'}]}]};
+  const before=structuredClone(inverter),transported=JSON.parse(serializePageCatalog({products:[inverter],reports:[]})).products[0] as Product;
+  for(const product of [inverter,transported]){assert.equal(partValue(product,'maxPvWatts').value,sourceValue);assert.equal(partValue(product,'maxPvWatts').source,url);}
+  assert.deepEqual(inverter,before);
+ }
+});
+
 test('short names retain model codes while wattage and selected pack move out of the name',()=>{
  const panel=p('Renogy RSP175DC 175 Watt N-Type Monocrystalline Solar Panel — 4 Pieces','panels',{watts:175});
  assert.equal(productListName(panel),'Renogy RSP175DC N-Type Solar Panel');

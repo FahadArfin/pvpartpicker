@@ -1,0 +1,279 @@
+{
+  "sourceProposalSha256": "69b702d2d47ae263d2ccfaf22cc328db214898f1cf089361b0d7ea3d7c52b43b",
+  "products": [
+    {
+      "id": "wattcycle-67838376313128",
+      "name": "⚡️Early Bird⚡️ WattCycle WattLINK - BLUETTI AC200MAX PPS Extra 48V Battery-to-PPS Expansion Cable — Bluetti AC200MAX Adapter Cable",
+      "brand": "WattCycle",
+      "category": "wiring",
+      "sourceUrl": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable?variant=67838376313128",
+      "specs": {
+        "voltage": 48
+      },
+      "offers": [
+        {
+          "id": "wattcycle-67838376313128",
+          "retailerId": "wattcycle",
+          "retailer": "WattCycle",
+          "url": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable?variant=67838376313128",
+          "price": 49.99,
+          "referencePrice": 89.99,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-12T23:46:29.705Z",
+          "sku": "67838376313128",
+          "condition": "new"
+        }
+      ],
+      "description": "",
+      "image": "",
+      "images": [],
+      "verifiedAt": "2026-10-12T23:46:29.705Z"
+    },
+    {
+      "id": "wattcycle-67838376345896",
+      "name": "⚡️Early Bird⚡️ WattCycle WattLINK - BLUETTI AC200MAX PPS Extra 48V Battery-to-PPS Expansion Cable — 5.12kWh(48V 100Ah Wall-Mount Battery) & AC200MAX Adapter kit",
+      "brand": "WattCycle",
+      "category": "kits",
+      "sourceUrl": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable?variant=67838376345896",
+      "specs": {
+        "kitType": "Other equipment kits"
+      },
+      "offers": [
+        {
+          "id": "wattcycle-67838376345896",
+          "retailerId": "wattcycle",
+          "retailer": "WattCycle",
+          "url": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable?variant=67838376345896",
+          "price": 1019.99,
+          "referencePrice": 1389.99,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "out_of_stock",
+          "observedAt": "2026-10-12T23:46:29.713Z",
+          "sku": "67838376345896",
+          "condition": "new"
+        }
+      ],
+      "description": "",
+      "image": "",
+      "images": [],
+      "verifiedAt": "2026-10-12T23:46:29.713Z"
+    },
+    {
+      "id": "wattcycle-67838376378664",
+      "name": "⚡️Early Bird⚡️ WattCycle WattLINK - BLUETTI AC200MAX PPS Extra 48V Battery-to-PPS Expansion Cable — 5.12kWh(48V 100Ah 3U Rack Battery) & AC200MAX Adapter kit",
+      "brand": "WattCycle",
+      "category": "kits",
+      "sourceUrl": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable?variant=67838376378664",
+      "specs": {
+        "kitType": "Other equipment kits"
+      },
+      "offers": [
+        {
+          "id": "wattcycle-67838376378664",
+          "retailerId": "wattcycle",
+          "retailer": "WattCycle",
+          "url": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable?variant=67838376378664",
+          "price": 919.99,
+          "referencePrice": 1089.99,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-12T23:46:29.712Z",
+          "sku": "67838376378664",
+          "condition": "new"
+        }
+      ],
+      "description": "",
+      "image": "",
+      "images": [],
+      "verifiedAt": "2026-10-12T23:46:29.712Z"
+    }
+  ],
+  "evidence": {
+    "wattcycle-67838376313128": {
+      "summary": "WattCycle cable / connector.",
+      "groups": [
+        {
+          "title": "Cable & connections",
+          "fields": [
+            {
+              "key": "connector",
+              "label": "Connector / terminal",
+              "value": "M8 O-type battery terminal to BLUETTI AC200MAX expansion port",
+              "source": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable",
+              "kind": "manufacturer"
+            }
+          ]
+        },
+        {
+          "title": "Mounting & fit",
+          "fields": [
+            {
+              "key": "compatibility",
+              "label": "Supported equipment / fit",
+              "value": "BLUETTI AC200MAX with 51.2V LiFePO4 batteries; AC300/AC200L require an official B300 pilot battery first; both units must have tightly matched SOC and voltage difference ≤1V.",
+              "source": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable?variant=67838376313128",
+              "kind": "manufacturer"
+            }
+          ]
+        },
+        {
+          "title": "Electrical ratings",
+          "fields": [
+            {
+              "key": "voltage",
+              "label": "Nominal system voltage",
+              "value": "48 V",
+              "source": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable?variant=67838376313128",
+              "kind": "listing"
+            }
+          ]
+        },
+        {
+          "title": "Physical specifications",
+          "fields": [
+            {
+              "key": "length",
+              "label": "Length",
+              "value": "39 inch (100 cm)",
+              "source": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable",
+              "kind": "manufacturer"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable",
+          "kind": "manufacturer",
+          "label": "Exact retained manufacturer HTML technicalspecifications",
+          "checkedAt": "2026-10-12T01:25:54.470Z"
+        },
+        {
+          "url": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable?variant=67838376313128",
+          "kind": "listing",
+          "label": "Selected product listing"
+        },
+        {
+          "url": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable?variant=67838376313128",
+          "kind": "manufacturer",
+          "label": "Exact current selected cable Compatibility & Requirements; matched SOC and ≤1V voltage plus B300 pilot conditions",
+          "model": "WT-PPSQCCBT30048XL",
+          "checkedAt": "2026-10-13T00:39:43.396247+00:00"
+        }
+      ],
+      "notes": [],
+      "identity": {
+        "name": "⚡️Early Bird⚡️ WattCycle WattLINK - BLUETTI AC200MAX PPS Extra 48V Battery-to-PPS Expansion Cable — Bluetti AC200MAX Adapter Cable",
+        "sourceUrl": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable?variant=67838376313128",
+        "category": "wiring",
+        "anchors": {
+          "voltage": 48
+        }
+      }
+    },
+    "wattcycle-67838376345896": {
+      "summary": "WattCycle solar equipment kit.",
+      "groups": [
+        {
+          "title": "Package contents",
+          "fields": [
+            {
+              "key": "contents",
+              "label": "Included components",
+              "value": "1 x WattCycle 48V 100Ah wall-mount battery; 1 x BLUETTI AC200MAX adapter kit",
+              "source": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable",
+              "kind": "manufacturer"
+            }
+          ]
+        },
+        {
+          "title": "Identity",
+          "fields": [
+            {
+              "key": "kitType",
+              "label": "Kit format",
+              "value": "Other equipment kits",
+              "source": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable?variant=67838376345896",
+              "kind": "listing"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable",
+          "kind": "manufacturer",
+          "label": "Exact variant original-source offline storage review batch seventeen",
+          "model": "WattCycle WattLINK - BLUETTI AC200MAX PPS Extra 48V Battery-to-PPS Expansion Cable — 5.12kWh(48V 100Ah Wall-Mount Battery) & AC200MAX Adapter kit",
+          "checkedAt": "2026-10-12T01:25:54.470Z"
+        },
+        {
+          "url": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable?variant=67838376345896",
+          "kind": "listing",
+          "label": "Selected product listing"
+        }
+      ],
+      "notes": [],
+      "identity": {
+        "name": "⚡️Early Bird⚡️ WattCycle WattLINK - BLUETTI AC200MAX PPS Extra 48V Battery-to-PPS Expansion Cable — 5.12kWh(48V 100Ah Wall-Mount Battery) & AC200MAX Adapter kit",
+        "sourceUrl": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable?variant=67838376345896",
+        "category": "kits",
+        "anchors": {}
+      }
+    },
+    "wattcycle-67838376378664": {
+      "summary": "WattCycle solar equipment kit.",
+      "groups": [
+        {
+          "title": "Package contents",
+          "fields": [
+            {
+              "key": "contents",
+              "label": "Included components",
+              "value": "1 x WattCycle 48V 100Ah 3U rack battery; 1 x BLUETTI AC200MAX adapter kit",
+              "source": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable",
+              "kind": "manufacturer"
+            }
+          ]
+        },
+        {
+          "title": "Identity",
+          "fields": [
+            {
+              "key": "kitType",
+              "label": "Kit format",
+              "value": "Other equipment kits",
+              "source": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable?variant=67838376378664",
+              "kind": "listing"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable",
+          "kind": "manufacturer",
+          "label": "Exact variant original-source offline storage review batch seventeen",
+          "model": "WattCycle WattLINK - BLUETTI AC200MAX PPS Extra 48V Battery-to-PPS Expansion Cable — 5.12kWh(48V 100Ah 3U Rack Battery) & AC200MAX Adapter kit",
+          "checkedAt": "2026-10-12T01:25:54.470Z"
+        },
+        {
+          "url": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable?variant=67838376378664",
+          "kind": "listing",
+          "label": "Selected product listing"
+        }
+      ],
+      "notes": [],
+      "identity": {
+        "name": "⚡️Early Bird⚡️ WattCycle WattLINK - BLUETTI AC200MAX PPS Extra 48V Battery-to-PPS Expansion Cable — 5.12kWh(48V 100Ah 3U Rack Battery) & AC200MAX Adapter kit",
+        "sourceUrl": "https://www.wattcycle.com/products/wattlink-bluetti-ac200max-48v-battery-pps-expansion-cable?variant=67838376378664",
+        "category": "kits",
+        "anchors": {}
+      }
+    }
+  }
+}

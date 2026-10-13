@@ -18,7 +18,7 @@ export const partColumns:Record<Category|'all',PartColumn[]>={
  accessories:[col('accessoryType','Type','Accessory function.'),col('compatibility','Fits','Listed compatible equipment.'),col('dimensions','Size','Published dimensions.')],
  all:[col('category','Category','Equipment category.'),col('highlights','Key specs','Category-specific ratings. Open a category for aligned spec columns.')],
 };
-const relevantKeys=new Set([...Object.values(partColumns).flat().map(c=>c.key),'model','cellType','technology','capacityAh','outputWatts','maxPvWatts','systemVoltage','voltage','ratedVoltage','lengthFt']);
+const relevantKeys=new Set([...Object.values(partColumns).flat().map(c=>c.key),'model','cellType','technology','capacityAh','outputWatts','acOutput','maxPvWatts','systemVoltage','voltage','ratedVoltage','lengthFt']);
 
 /** Keep only matched technical fields in the lightweight catalog response. */
 export function comparisonEvidence(product:Product):Record<string,PartValue>{
@@ -38,11 +38,15 @@ const fmt=(n:number)=>n.toLocaleString('en-US',{maximumFractionDigits:3});
 function unit(v:PartValue|undefined,suffix:string):PartValue|undefined{return v?{...v,value:/^\d+(?:\.\d+)?$/.test(v.value)?fmt(Number(v.value))+' '+suffix:v.value}:undefined;}
 function power(v:PartValue|undefined):PartValue|undefined{
  const n=number(v);if(v&&n!==undefined)return {...v,value:fmt(/kw/i.test(v.value)?n:n/1000)+' kW'};
- if(v){const ratings=[...v.value.matchAll(/([\d,]+(?:\.\d+)?)\s*(kw|w)\b/gi)].map(m=>fmt(Number(m[1].replace(/,/g,''))*(m[2].toLowerCase()==='kw'?1:.001)));if(ratings.length)return {...v,value:[...new Set(ratings)].join(' / ')+' kW',note:v.value};}
+ if(v){const terms=[...v.value.matchAll(/([\d,]+(?:\.\d+)?)\s*(kw|w)\b/gi)];
+  // Multiple published terms can be per tracker or conditional output ratings.
+  // Keep their relationship and conditions visible; never deduplicate or sum.
+  if(terms.length>1)return v;
+  const ratings=terms.map(m=>fmt(Number(m[1].replace(/,/g,''))*(m[2].toLowerCase()==='kw'?1:.001)));if(ratings.length)return {...v,value:ratings.join(' / ')+' kW',note:v.value};}
  return v;
 }
 function energy(product:Product):PartValue|undefined{
- const v=raw(product,'capacityKwh');if(v){const n=number(v);return n!==undefined?{...v,value:fmt(/\bwh\b/i.test(v.value)&&!/kwh/i.test(v.value)?n/1000:n)+' kWh'}:v;}
+ const v=raw(product,'capacityKwh');if(v){const n=number(v);return n!==undefined?{...v,value:fmt(/wh\s*$/i.test(v.value)&&!/kwh\s*$/i.test(v.value)?n/1000:n)+' kWh'}:v;}
  const ah=raw(product,'capacityAh'),volts=raw(product,'voltage'),a=number(ah),b=number(volts);
  // A title's rounded "12 V" system class is not a 12.8 V battery nameplate.
  if(a&&b&&(volts?.note!=='Listed product specification'||[12.8,25.6,51.2].includes(b)))return {value:fmt(a*b/1000)+' kWh',source:ah?.source,note:'Calculated nominal energy: '+volts!.value+' × '+ah!.value+' / 1,000. Not usable energy.'};

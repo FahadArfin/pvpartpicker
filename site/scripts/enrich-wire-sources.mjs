@@ -1,3 +1,5 @@
+import {assertWattcycleReviewedRegeneration} from '../lib/wattcycle-reviewed-selection.ts';
+import {assertCorrectionWriteBoundary} from '../lib/specification-correction-guard.ts';
 // Reconcile the collected wire variants with explicit source-page facts. No
 // electrical ratings are estimated, and existing specification records are kept.
 import {readFile,writeFile} from 'node:fs/promises';
@@ -8,6 +10,7 @@ import {specificationRowsFromHtml} from '../lib/specification-html.ts';
 const data=new URL('../data/',import.meta.url);
 const catalog=JSON.parse(await readFile(new URL('catalog.json',data),'utf8'));
 const details=JSON.parse(await readFile(new URL('specifications.json',data),'utf8'));
+const rawProducts=structuredClone(catalog.products),prior=structuredClone(details);
 const audit=JSON.parse(await readFile(new URL('specification-audit.json',data),'utf8'));
 const temco=new Map();let lastRequest=0;
 async function request(url){await new Promise(r=>setTimeout(r,Math.max(0,10000-(Date.now()-lastRequest))));lastRequest=Date.now();const response=await fetch(url,{headers:{'User-Agent':'PVPartPickerBot/1.0 (+https://github.com/FahadArfin/pvpartpicker)'},redirect:'error',signal:AbortSignal.timeout(25000)});if(!response.ok)throw new Error('Source fetch failed: '+response.status);return response.text();}
@@ -35,6 +38,8 @@ for(const p of catalog.products){const d=details[p.id],kinds=new Set(d.groups.fi
  audit.datasheetProducts+=Number(sheet);audit.manualProducts+=Number(manual);audit.tableProducts+=Number(table);audit.listingOnlyProducts+=Number(listingOnly);
  const c=audit.categories[p.category]||{products:0,sheet:0,manual:0,table:0,listingOnly:0};c.products++;c.sheet+=Number(sheet);c.manual+=Number(manual);c.table+=Number(table);c.listingOnly+=Number(listingOnly);audit.categories[p.category]=c;
 }
+assertCorrectionWriteBoundary(catalog.products,details);
+assertWattcycleReviewedRegeneration(rawProducts,details,prior);
 await writeFile(new URL('catalog.json',data),JSON.stringify(catalog,null,2));
 await writeFile(new URL('specifications.json',data),JSON.stringify(details));
 await writeFile(new URL('specification-audit.json',data),JSON.stringify(audit,null,2)+'\n');

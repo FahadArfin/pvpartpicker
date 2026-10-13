@@ -1,6 +1,9 @@
+import {assertWattcycleReviewedRegeneration} from '../lib/wattcycle-reviewed-selection.ts';
+import {assertCorrectionWriteBoundary} from '../lib/specification-correction-guard.ts';
 // Exact-model manufacturer evidence checked 2026-10-06. No prices are changed.
 import fs from 'node:fs';
 const file=new URL('../data/specifications.json',import.meta.url),index=JSON.parse(fs.readFileSync(file,'utf8'));
+const prior=structuredClone(index),catalog=JSON.parse(fs.readFileSync(new URL('../data/catalog.json',import.meta.url),'utf8'));
 function update(id,url,label,values,notes=[]){
  const p=index[id];if(!p)throw new Error('Missing exact catalog model '+id);
  const keys=new Set(Object.keys(values));
@@ -21,5 +24,7 @@ update('eg4-6000xp',eg4+'EG4-6000XP-Inverter-Spec-Sheet.pdf','EG4 6000XP manufac
 update('santan-solar-eg4-lifepower4v2-48v-100ah','https://eg4electronics.com/wp-content/uploads/2024/06/EG4-LifePower4-Spec-Sheet.pdf','EG4 LifePower4 48V V2 manufacturer sheet v1.1.2',{
  voltage:['Nominal voltage','51.2 V'],chemistry:['Battery chemistry','LiFePO4'],capacityKwh:['Nameplate energy','5.12 kWh'],chargeVoltage:['Recommended bulk / absorb voltage','56.8 V'],maxChargeCurrent:['Maximum continuous charging current','100 A'],maxDischargeCurrent:['Maximum continuous discharge current','100 A'],
 },['BMS low/high protection thresholds are not a recommended operating envelope. Connection checks leave the full operating-voltage envelope unverified until an explicit operating range is documented.']);
+assertCorrectionWriteBoundary(catalog.products,index);
+assertWattcycleReviewedRegeneration(catalog.products,index,prior);
 fs.writeFileSync(file,JSON.stringify(index));
 console.log('Updated exact-model connection evidence for EG4 18kPV, 6000XP and LifePower4 V2.');
