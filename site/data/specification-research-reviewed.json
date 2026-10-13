@@ -227618,5 +227618,2830 @@
     ],
     "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-nineteen-mounting-grounded-sources\\3191851a68d14715a916c7bdc9d30b9f.pdf",
     "artifactSha256": "02f026e32a00b4c05fa410870435cb61457dc09d89180d0746069cd97acfb89c"
+  },
+  {
+    "productIds": [
+      "santan-solar-thhn-8awg-blk"
+    ],
+    "expected": {
+      "santan-solar-thhn-8awg-blk": {
+        "name": "8AWG Bulk THHN/THWN2 Wire Per Foot Black",
+        "sourceUrl": "https://www.santansolar.com/product/8awg-bulk-thhn-wire-per-foot-black/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/8awg-bulk-thhn-wire-per-foot-black/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:29:25.291Z",
+    "label": "Batch twenty exact SKU complete-body contextual source review",
+    "rows": [
+      [
+        "Wire Size",
+        "8 AWG"
+      ],
+      [
+        "Voltage rating",
+        "600V maximum"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/spec-research/b8d7c4b4b45c2953.html",
+      "htmlSha256": "6bc051263e5462494dbb468bf6386049aeccaf2350835bc6e6cafd4efe936527",
+      "metadataPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/spec-research/b8d7c4b4b45c2953.json",
+      "metadataSha256": "297087e031d81f683d874f95755d8976ac77625bbd54cbf100e6078ed6c11377",
+      "fullVisibleTextPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-manual-b8d7c4b4b45c2953.txt",
+      "fullVisibleTextSha256": "947d1e9ed909772aedf7df174f81ee66ac42367571c9548e5c4fa2c921c2c18a",
+      "fullOriginalBytes": 636348,
+      "sourceUrl": "https://www.santansolar.com/product/8awg-bulk-thhn-wire-per-foot-black/",
+      "sourceTimestamp": "2026-10-12T01:29:25.291Z",
+      "sku": "THHN-8AWG-BLK",
+      "selectedPackQuantity": 1,
+      "exactSkuVisible": true,
+      "scope": "Original Wire Size table exact8AWG and description explicit maximum600V. Authored Voltage rating label maps original Voltage600V plus independent maximum600V prose without changing unit or quantity. Selected THHN-8AWG-BLK SKU visible in complete source. Gauge and voltage invariant with bulk length; no conductor material inferred from jacket nylon or PVC insulation. Length choices10/100/2/25/5/50ft not chosen for per-foot listing. Placeholder1x1x1in and unspecified0.10lb not product dimensions/weight.",
+      "quotes": [
+        {
+          "label": "Wire Size",
+          "value": "8 AWG",
+          "quote": "Wire Size: 8 AWG"
+        },
+        {
+          "label": "Voltage rating",
+          "value": "600V maximum",
+          "quote": "THHN or THWN-2 for use at maximum 600V"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "gauge",
+        "label": "Wire gauge / cross-section",
+        "value": "8 AWG",
+        "source": "https://www.santansolar.com/product/8awg-bulk-thhn-wire-per-foot-black/",
+        "kind": "retailer"
+      },
+      {
+        "key": "ratedVoltage",
+        "label": "Voltage rating",
+        "value": "600V maximum",
+        "source": "https://www.santansolar.com/product/8awg-bulk-thhn-wire-per-foot-black/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-thhn-8awg-red"
+    ],
+    "expected": {
+      "santan-solar-thhn-8awg-red": {
+        "name": "8AWG Bulk THHN/THWN2 Wire Per Foot Red",
+        "sourceUrl": "https://www.santansolar.com/product/8awg-bulk-thhn-wire-per-foot-red/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/8awg-bulk-thhn-wire-per-foot-red/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:29:27.303Z",
+    "label": "Batch twenty exact SKU complete-body contextual source review",
+    "rows": [
+      [
+        "Wire Size",
+        "8 AWG"
+      ],
+      [
+        "Voltage rating",
+        "600V maximum"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/spec-research/3b2e8b2905f647b6.html",
+      "htmlSha256": "246b69251df000825d877d74a41522ea893c00fb1df84f260a46cb107ae41ed9",
+      "metadataPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/spec-research/3b2e8b2905f647b6.json",
+      "metadataSha256": "fc67547d704c94e9d644e90650d561046873f6ae3331d8f5c1e37dca14f51a74",
+      "fullVisibleTextPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-manual-3b2e8b2905f647b6.txt",
+      "fullVisibleTextSha256": "0353114093f601082e843fd0d82ff8ee57284db4832b91a9c60eae5d73a2b958",
+      "fullOriginalBytes": 636666,
+      "sourceUrl": "https://www.santansolar.com/product/8awg-bulk-thhn-wire-per-foot-red/",
+      "sourceTimestamp": "2026-10-12T01:29:27.303Z",
+      "sku": "THHN-8AWG-RED",
+      "selectedPackQuantity": 1,
+      "exactSkuVisible": true,
+      "scope": "Selected THHN-8AWG-RED visible SKU and red title/table. Original Wire Size8AWG; explicit maximum600V prose. Authored Voltage rating label preserves original Voltage600V and maximum qualifier. MM3 13.30 has no defined units and differs black source8.37; do not derive gauge/area or transfer that cell. Generic0.6lb and1x1x1in held. No chosen length or conductor material inferred.",
+      "quotes": [
+        {
+          "label": "Wire Size",
+          "value": "8 AWG",
+          "quote": "Wire Size: 8 AWG"
+        },
+        {
+          "label": "Voltage rating",
+          "value": "600V maximum",
+          "quote": "THHN or THWN-2 for use at maximum 600V"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "gauge",
+        "label": "Wire gauge / cross-section",
+        "value": "8 AWG",
+        "source": "https://www.santansolar.com/product/8awg-bulk-thhn-wire-per-foot-red/",
+        "kind": "retailer"
+      },
+      {
+        "key": "ratedVoltage",
+        "label": "Voltage rating",
+        "value": "600V maximum",
+        "source": "https://www.santansolar.com/product/8awg-bulk-thhn-wire-per-foot-red/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-thhn-6awg-blk"
+    ],
+    "expected": {
+      "santan-solar-thhn-6awg-blk": {
+        "name": "6AWG Bulk THHN/THWN2 Wire Per Foot Black",
+        "sourceUrl": "https://www.santansolar.com/product/6awg-bulk-thhn-wire-per-foot-black/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/6awg-bulk-thhn-wire-per-foot-black/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:29:21.283Z",
+    "label": "Batch twenty exact SKU complete-body contextual source review",
+    "rows": [
+      [
+        "Wire Size",
+        "6 AWG"
+      ],
+      [
+        "Voltage rating",
+        "600V maximum"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/spec-research/58928e2062eaecfc.html",
+      "htmlSha256": "fd28451d48ab51b446a01dc59dc1c1d80d03e194ec41e71a44e7d53040cccb88",
+      "metadataPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/spec-research/58928e2062eaecfc.json",
+      "metadataSha256": "ef1cda0250b2450f6ea3ed919c104c5946990297cbbc28297060528dcaded938",
+      "fullVisibleTextPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-manual-58928e2062eaecfc.txt",
+      "fullVisibleTextSha256": "56b8c14d4ac880132d5c7abb2b1ac63a35fa9111e37eb943f41286174141b578",
+      "fullOriginalBytes": 635994,
+      "sourceUrl": "https://www.santansolar.com/product/6awg-bulk-thhn-wire-per-foot-black/",
+      "sourceTimestamp": "2026-10-12T01:29:21.283Z",
+      "sku": "THHN-6AWG-BLK",
+      "selectedPackQuantity": 1,
+      "exactSkuVisible": true,
+      "scope": "Selected THHN-6AWG-BLK visible SKU and matching title. Wire Size6AWG explicit table and maximum600V prose. Authored Voltage rating label preserves original Voltage600V and maximum qualifier. Weight per foot0.12lb is a per-length measure, not whole product weight; hold. MM3 has no declared unit, no inferred conductor area. Bulk lengths and shipping placeholders held.",
+      "quotes": [
+        {
+          "label": "Wire Size",
+          "value": "6 AWG",
+          "quote": "Wire Size: 6 AWG"
+        },
+        {
+          "label": "Voltage rating",
+          "value": "600V maximum",
+          "quote": "THHN or THWN-2 for use at maximum 600V"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "gauge",
+        "label": "Wire gauge / cross-section",
+        "value": "6 AWG",
+        "source": "https://www.santansolar.com/product/6awg-bulk-thhn-wire-per-foot-black/",
+        "kind": "retailer"
+      },
+      {
+        "key": "ratedVoltage",
+        "label": "Voltage rating",
+        "value": "600V maximum",
+        "source": "https://www.santansolar.com/product/6awg-bulk-thhn-wire-per-foot-black/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-scc125060221"
+    ],
+    "expected": {
+      "santan-solar-scc125060221": {
+        "name": "Victron 60A 250/60 Smart Charge Controller",
+        "sourceUrl": "https://www.santansolar.com/product/victron-60a-250-60-smart-charge-controller/",
+        "category": "charging",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/victron-60a-250-60-smart-charge-controller/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:28:49.009Z",
+    "label": "Batch twenty exact SKU complete-body contextual source review",
+    "rows": [
+      [
+        "Maximum PV Short Circuit Current",
+        "35A"
+      ],
+      [
+        "Operating Temperature Range",
+        "-30 to 60°C (-22 to 140°F)"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/spec-research/b742ba3f1770a20e.html",
+      "htmlSha256": "c93a2096d369fdf08ab2d5511535d1f5f4392155e9203f98441b4c9fb0fd76fe",
+      "metadataPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/spec-research/b742ba3f1770a20e.json",
+      "metadataSha256": "189f7db55848d9e096aa6674371f5c5046edad2504d4c05227386bb8efcb9274",
+      "fullVisibleTextPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-manual-b742ba3f1770a20e.txt",
+      "fullVisibleTextSha256": "3cf87483dd73b38e4d31de1f31bb767f92edf445c1bf46958e13ca8204d6e2ea",
+      "fullOriginalBytes": 639984,
+      "sourceUrl": "https://www.santansolar.com/product/victron-60a-250-60-smart-charge-controller/",
+      "sourceTimestamp": "2026-10-12T01:28:49.009Z",
+      "sku": "SCC125060221",
+      "selectedPackQuantity": 1,
+      "exactSkuVisible": true,
+      "scope": "Selected SCC125060221 visible SKU; H1 and description explicitly SmartSolar MPPT250/60-Tr. Technical35A is PV short-circuit input, distinct60A charging output. Original thermal range retained. Existing manual250V has245Vstartup condition, so no voltage overwrite. Generic11lb versus technical7lb and storefrontdimensions versus technicalunit dimensions conflict; no new weight/dimensions.48V PV2440W inconsistent progression held as original-source uncertainty; no inferred correction.",
+      "quotes": [
+        {
+          "label": "Maximum PV Short Circuit Current",
+          "value": "35A",
+          "quote": "Maximum PV Short Circuit Current: 35A"
+        },
+        {
+          "label": "Operating Temperature Range",
+          "value": "-30 to 60°C (-22 to 140°F)",
+          "quote": "Operating Temperature Range: -30 to 60°C (-22 to 140°F)"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "maxPvIsc",
+        "label": "Maximum PV short-circuit current",
+        "value": "35A",
+        "source": "https://www.santansolar.com/product/victron-60a-250-60-smart-charge-controller/",
+        "kind": "retailer"
+      },
+      {
+        "key": "operatingTemperature",
+        "label": "Operating temperature",
+        "value": "-30 to 60°C (-22 to 140°F)",
+        "source": "https://www.santansolar.com/product/victron-60a-250-60-smart-charge-controller/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "inverters-r-us-e1000lfp"
+    ],
+    "expected": {
+      "inverters-r-us-e1000lfp": {
+        "name": "PECRON E1000LFP Portable Power Station 1800W 1024Wh",
+        "sourceUrl": "https://invertersrus.com/product/pecron-e1000lfp-portable-power-station-1800w-1024wh/",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://invertersrus.com/product/pecron-e1000lfp-portable-power-station-1800w-1024wh/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:23.995Z",
+    "label": "Batch twenty exact Pecron SKU original specification table contextual review",
+    "rows": [
+      [
+        "Model",
+        "E1000LFP"
+      ],
+      [
+        "Capacity",
+        "1024Wh"
+      ],
+      [
+        "Battery Type",
+        "LiFePo4"
+      ],
+      [
+        "Discharge Temperature",
+        "-20°C~45°C / -4°F-113°F"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\689a7c7e69d55653.html",
+      "htmlSha256": "abe63e4fe183d5f8ac31a10c42b7cee347d9493f8af93cdd000675efdee71439",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\689a7c7e69d55653.json",
+      "metadataSha256": "477f77a6da83b89e670b51bf14de416b42848321ee55a10413b36510801a9fc6",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "inertProduct": {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "@id": "https://invertersrus.com/product/pecron-e1000lfp-portable-power-station-1800w-1024wh/#product",
+        "name": "PECRON E1000LFP Portable Power Station 1800W 1024Wh",
+        "url": "https://invertersrus.com/product/pecron-e1000lfp-portable-power-station-1800w-1024wh/",
+        "description": "&amp;nbsp;\r\n\r\n \t2+1 Years Warranty\r\n \t1800W AC Pure Sine Wave Inverter (3000W Surge);\r\n1024Wh Large Capacity (51.2V/20Ah)\r\n \tCan Adjust the Charging Speed;\r\n \tBattery Heating- Intelligence BatteryTemp Management\r\n \tUPS; XT60 20A(12V) Output; APP Control; Wifi Control;\r\n \tLiFePO4 Battery with 3,500+ Life Cycles to 80%\r\n \tCan Cascade EP3000-48V, Expandable Up to 4864Wh with EP3800-48V;\r\n \t600W Max Solar Charging; 1000W Super Fast Charging: 80% in 1 hour;.\r\n \t12 Versatile Output; PD 100W USB-C\r\n \tMore Ways to Recharge (AC/Solar/Car/Generator/AC+Solar)",
+        "image": "https://invertersrus.com/wp-content/uploads/2026/06/E1000LFP-1.png",
+        "sku": "E1000LFP",
+        "offers": [
+          {
+            "@type": "Offer",
+            "priceSpecification": [
+              {
+                "@type": "UnitPriceSpecification",
+                "price": "399.00",
+                "priceCurrency": "USD",
+                "validThrough": "2027-12-31",
+                "valueAddedTaxIncluded": false
+              }
+            ],
+            "priceValidUntil": "2027-12-31",
+            "availability": "https://schema.org/OutOfStock",
+            "url": "https://invertersrus.com/product/pecron-e1000lfp-portable-power-station-1800w-1024wh/",
+            "seller": {
+              "@type": "Organization",
+              "name": "Inverters R US",
+              "url": "https://invertersrus.com"
+            },
+            "price": "399.00",
+            "priceCurrency": "USD"
+          }
+        ],
+        "itemCondition": "https://schema.org/NewCondition",
+        "mpn": "E1000LFP",
+        "brand": {
+          "@type": "Brand",
+          "name": "Pecron"
+        }
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact E1000LFP selected single station; visible SKU and inert Product SKU/name/URL match current listing. Capacity is built-in station Wh, not expanded EP battery capacity. Battery Type explicitly LiFePo4; no chemistry inferred from LFP model text. Discharge/charge thermal ranges retained only with matching Celsius/Fahrenheit values. No charge-time promotion without complete input and SOC conditions; no cycle-life promotion without full test conditions. Charge Temperature -10°C /15°F mismatch held. Existing AC output/surge/dimension source fields preserved.",
+      "quotes": [
+        {
+          "row": [
+            "Model",
+            "E1000LFP"
+          ],
+          "quote": "ModelE1000LFP"
+        },
+        {
+          "row": [
+            "Capacity",
+            "1024Wh"
+          ],
+          "quote": "Capacity1024Wh"
+        },
+        {
+          "row": [
+            "Battery Type",
+            "LiFePo4"
+          ],
+          "quote": "Battery TypeLiFePo4"
+        },
+        {
+          "row": [
+            "Discharge Temperature",
+            "-20°C~45°C / -4°F-113°F"
+          ],
+          "quote": "Discharge Temperature-20°C~45°C / -4°F-113°F"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "model",
+        "label": "Model",
+        "value": "E1000LFP",
+        "source": "https://invertersrus.com/product/pecron-e1000lfp-portable-power-station-1800w-1024wh/",
+        "kind": "retailer"
+      },
+      {
+        "key": "capacityKwh",
+        "label": "Energy capacity",
+        "value": "1024Wh",
+        "source": "https://invertersrus.com/product/pecron-e1000lfp-portable-power-station-1800w-1024wh/",
+        "kind": "retailer"
+      },
+      {
+        "key": "chemistry",
+        "label": "Battery chemistry",
+        "value": "LiFePo4",
+        "source": "https://invertersrus.com/product/pecron-e1000lfp-portable-power-station-1800w-1024wh/",
+        "kind": "retailer"
+      },
+      {
+        "key": "dischargeTemperature",
+        "label": "Discharge temperature",
+        "value": "-20°C~45°C / -4°F-113°F",
+        "source": "https://invertersrus.com/product/pecron-e1000lfp-portable-power-station-1800w-1024wh/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "inverters-r-us-e2400lfp"
+    ],
+    "expected": {
+      "inverters-r-us-e2400lfp": {
+        "name": "PECRON E2400LFP Portable Power Station 2400W 2048Wh",
+        "sourceUrl": "https://invertersrus.com/product/pecron-e2400lfp/",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://invertersrus.com/product/pecron-e2400lfp/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:33.170Z",
+    "label": "Batch twenty exact Pecron SKU original specification table contextual review",
+    "rows": [
+      [
+        "Model",
+        "E2400LFP"
+      ],
+      [
+        "Capacity",
+        "2048Wh"
+      ],
+      [
+        "Battery Type",
+        "LiFePo4"
+      ],
+      [
+        "Charge Temperature",
+        "0°C~45°C / 32°F-113°F"
+      ],
+      [
+        "Discharge Temperature",
+        "-20°C~45°C / -4°F-113°F"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\cefd9880c774a020.html",
+      "htmlSha256": "9e55361aa544774ebb1af9702216bc692d2f0ec29ee8f5bb774d17bc87a30cc8",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\cefd9880c774a020.json",
+      "metadataSha256": "6f3debcfd0597dc664e4646b75cc29844bc64b18a3d7c1432560b0b10727d754",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "inertProduct": {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "@id": "https://invertersrus.com/product/pecron-e2400lfp/#product",
+        "name": "PECRON E2400LFP Portable Power Station 2400W 2048Wh",
+        "url": "https://invertersrus.com/product/pecron-e2400lfp/",
+        "description": "E2400LFP Solar Generator 2400W 2048Wh Power Station\r\n\r\n \t2+1 Years Warranty\r\n \t2400W AC Pure Sine Wave Inverter (4000W Surge);\r\n \t2048Wh Large Capacity (51.2V/40Ah)\r\n \tCan Adjust the Charging Speed\r\n \tUPS; XT60 30A(12V) Output; APP Control; Wifi Control;\r\n \tLiFePO4 Battery with 3,500+ Life Cycles to 80%\r\n \tCan Cascade 2*EP3000-48V, Expandable Up to 8192Wh\r\n \t700W Max Solar Charging; 1800W Super Fast Charging: 1.5 Hours Full.\r\n \t12 Versatile Output; PD 100W USB-C\r\n \tMore Ways to Recharge (AC/Solar/Car/Generator/AC+Solar)\r\n\r\n\r\n\r\n\r\n&amp;nbsp;\r\n\r\n&amp;nbsp;\r\n\r\n\r\n\r\n&amp;nbsp;\r\nWhy Is The E2400LFP Popular\r\nPecron E2400LFP has an excellent load capacity of 2400 watts, and has 1800W super fast charging. It can meet regular outdoor and home emergency use, and its compact design is very convenient to carry. You can use Wifi remote control the E2400LFP power station even when you are away at work!\r\nKey features include:\r\n1: Can adjust the charging speed\r\n2: APP control; Wifi remote control\r\n3: UPS Function\r\n4: XT60 30A(12V) output\r\n5: 1.5 hours Super fast charging\r\n6: Expandable up to 8192Wh\r\n7: 800W Solar Input Max (GX16MF+DC5521)\r\n\r\n&amp;nbsp;\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n&amp;nbsp;\r\n\r\nWhat Will The E2400LFP Power Up?\r\nWhether you need to keep your electronic devices functioning on a weekend camping trip or are looking for an emergency power supply for use at home, E2400LFP is capable of providing days of extra juice wherever and whenever you need it.",
+        "image": "https://invertersrus.com/wp-content/uploads/2025/10/E2400LFP-1.png",
+        "sku": "E2400LFP",
+        "offers": [
+          {
+            "@type": "Offer",
+            "priceSpecification": [
+              {
+                "@type": "UnitPriceSpecification",
+                "price": "649.00",
+                "priceCurrency": "USD",
+                "validThrough": "2027-12-31",
+                "valueAddedTaxIncluded": false
+              }
+            ],
+            "priceValidUntil": "2027-12-31",
+            "availability": "https://schema.org/InStock",
+            "url": "https://invertersrus.com/product/pecron-e2400lfp/",
+            "seller": {
+              "@type": "Organization",
+              "name": "Inverters R US",
+              "url": "https://invertersrus.com"
+            },
+            "price": "649.00",
+            "priceCurrency": "USD"
+          }
+        ],
+        "itemCondition": "https://schema.org/NewCondition",
+        "mpn": "E2400LFP",
+        "brand": {
+          "@type": "Brand",
+          "name": "Pecron"
+        }
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact E2400LFP selected single station; visible SKU and inert Product SKU/name/URL match current listing. Capacity is built-in station Wh, not expanded EP battery capacity. Battery Type explicitly LiFePo4; no chemistry inferred from LFP model text. Discharge/charge thermal ranges retained only with matching Celsius/Fahrenheit values. No charge-time promotion without complete input and SOC conditions; no cycle-life promotion without full test conditions. 700W charging description and800W combined-port claim not flattened; separate port technical rows kept as unresolved scope. Dimension order differs storefront versus technical labels; existing rating retained. Existing AC output/surge/dimension source fields preserved.",
+      "quotes": [
+        {
+          "row": [
+            "Model",
+            "E2400LFP"
+          ],
+          "quote": "ModelE2400LFP"
+        },
+        {
+          "row": [
+            "Capacity",
+            "2048Wh"
+          ],
+          "quote": "Capacity2048Wh"
+        },
+        {
+          "row": [
+            "Battery Type",
+            "LiFePo4"
+          ],
+          "quote": "Battery TypeLiFePo4"
+        },
+        {
+          "row": [
+            "Charge Temperature",
+            "0°C~45°C / 32°F-113°F"
+          ],
+          "quote": "Charge Temperature0°C~45°C / 32°F-113°F"
+        },
+        {
+          "row": [
+            "Discharge Temperature",
+            "-20°C~45°C / -4°F-113°F"
+          ],
+          "quote": "Discharge Temperature-20°C~45°C / -4°F-113°F"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "model",
+        "label": "Model",
+        "value": "E2400LFP",
+        "source": "https://invertersrus.com/product/pecron-e2400lfp/",
+        "kind": "retailer"
+      },
+      {
+        "key": "capacityKwh",
+        "label": "Energy capacity",
+        "value": "2048Wh",
+        "source": "https://invertersrus.com/product/pecron-e2400lfp/",
+        "kind": "retailer"
+      },
+      {
+        "key": "chemistry",
+        "label": "Battery chemistry",
+        "value": "LiFePo4",
+        "source": "https://invertersrus.com/product/pecron-e2400lfp/",
+        "kind": "retailer"
+      },
+      {
+        "key": "chargeTemperature",
+        "label": "Charge temperature",
+        "value": "0°C~45°C / 32°F-113°F",
+        "source": "https://invertersrus.com/product/pecron-e2400lfp/",
+        "kind": "retailer"
+      },
+      {
+        "key": "dischargeTemperature",
+        "label": "Discharge temperature",
+        "value": "-20°C~45°C / -4°F-113°F",
+        "source": "https://invertersrus.com/product/pecron-e2400lfp/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "inverters-r-us-e1500lfp"
+    ],
+    "expected": {
+      "inverters-r-us-e1500lfp": {
+        "name": "PECRON E1500LFP Expandable Portable Power Station 2200W 1536Wh V3 Version",
+        "sourceUrl": "https://invertersrus.com/product/pecron-e1500lfp/",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://invertersrus.com/product/pecron-e1500lfp/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:27.216Z",
+    "label": "Batch twenty exact Pecron SKU original specification table contextual review",
+    "rows": [
+      [
+        "Model",
+        "E1500LFP"
+      ],
+      [
+        "Capacity",
+        "1536Wh"
+      ],
+      [
+        "Battery Type",
+        "LiFePo4"
+      ],
+      [
+        "Charge Temperature",
+        "0°C~45°C / 32°F-113°F"
+      ],
+      [
+        "Discharge Temperature",
+        "-20°C~45°C / -4°F-113°F"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\650549a1b312c00b.html",
+      "htmlSha256": "7ed6baa446147a468d07f784f1f0bb8f20271edfa73690df032020b5e0015033",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\650549a1b312c00b.json",
+      "metadataSha256": "c486ea6ba0c103bb3dae6a6dde1d76502bf43aa6e8e607060be31ed69deecbcd",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "inertProduct": {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "@id": "https://invertersrus.com/product/pecron-e1500lfp/#product",
+        "name": "PECRON E1500LFP Expandable Portable Power Station 2200W 1536Wh V3 Version",
+        "url": "https://invertersrus.com/product/pecron-e1500lfp/",
+        "description": "&amp;nbsp;\r\n\r\n\r\n\r\n&amp;nbsp;\r\n\r\n\r\n\r\n&amp;nbsp;\r\n\r\n\r\n\r\n&amp;nbsp;\r\n\r\n\r\n\r\n&amp;nbsp;\r\n\r\n\r\n\r\n&amp;nbsp;\r\n\r\n \t2+3 Years Warranty!\r\n \tliFePo4 Battery with 3,500+ Life Cycles to 80%\r\n \t2200W Bidirectional PSW Inverter(Surge 4400W)\r\n \t1536Wh Large Capacity; Expandable Up to 9,216Wh with 2*EP3800-48V;\r\n \tUPS; Wifi Remote Control; XT60 30A(12V) Output; APP Control\r\n \tIntegrated AC Charging Adapter(No Charging Brick Needed)\r\n \t1000W Max Solar Charging (XT60 11V-60V Port)\r\n \t1400W AC Charging; 1.8 Hours Super Fast Charging\r\n \t12 Versatile Output; 15W Wireless Charger; PD 100W USB-C",
+        "image": "https://invertersrus.com/wp-content/uploads/2026/06/E1500LFP-1.png",
+        "sku": "E1500LFP",
+        "offers": [
+          {
+            "@type": "Offer",
+            "priceSpecification": [
+              {
+                "@type": "UnitPriceSpecification",
+                "price": "549.00",
+                "priceCurrency": "USD",
+                "validThrough": "2027-12-31",
+                "valueAddedTaxIncluded": false
+              }
+            ],
+            "priceValidUntil": "2027-12-31",
+            "availability": "https://schema.org/InStock",
+            "url": "https://invertersrus.com/product/pecron-e1500lfp/",
+            "seller": {
+              "@type": "Organization",
+              "name": "Inverters R US",
+              "url": "https://invertersrus.com"
+            },
+            "price": "549.00",
+            "priceCurrency": "USD"
+          }
+        ],
+        "itemCondition": "https://schema.org/NewCondition",
+        "mpn": "E1500LFP",
+        "brand": {
+          "@type": "Brand",
+          "name": "Pecron"
+        }
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact E1500LFP selected single station; visible SKU and inert Product SKU/name/URL match current listing. V3 revision explicitly in H1 and inert Product name. Capacity is built-in station Wh, not expanded EP battery capacity. Battery Type explicitly LiFePo4; no chemistry inferred from LFP model text. Discharge/charge thermal ranges retained only with matching Celsius/Fahrenheit values. No charge-time promotion without complete input and SOC conditions; no cycle-life promotion without full test conditions. Existing AC output/surge/dimension source fields preserved.",
+      "quotes": [
+        {
+          "row": [
+            "Model",
+            "E1500LFP"
+          ],
+          "quote": "ModelE1500LFP"
+        },
+        {
+          "row": [
+            "Capacity",
+            "1536Wh"
+          ],
+          "quote": "Capacity1536Wh"
+        },
+        {
+          "row": [
+            "Battery Type",
+            "LiFePo4"
+          ],
+          "quote": "Battery TypeLiFePo4"
+        },
+        {
+          "row": [
+            "Charge Temperature",
+            "0°C~45°C / 32°F-113°F"
+          ],
+          "quote": "Charge Temperature0°C~45°C / 32°F-113°F"
+        },
+        {
+          "row": [
+            "Discharge Temperature",
+            "-20°C~45°C / -4°F-113°F"
+          ],
+          "quote": "Discharge Temperature-20°C~45°C / -4°F-113°F"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "model",
+        "label": "Model",
+        "value": "E1500LFP",
+        "source": "https://invertersrus.com/product/pecron-e1500lfp/",
+        "kind": "retailer"
+      },
+      {
+        "key": "capacityKwh",
+        "label": "Energy capacity",
+        "value": "1536Wh",
+        "source": "https://invertersrus.com/product/pecron-e1500lfp/",
+        "kind": "retailer"
+      },
+      {
+        "key": "chemistry",
+        "label": "Battery chemistry",
+        "value": "LiFePo4",
+        "source": "https://invertersrus.com/product/pecron-e1500lfp/",
+        "kind": "retailer"
+      },
+      {
+        "key": "chargeTemperature",
+        "label": "Charge temperature",
+        "value": "0°C~45°C / 32°F-113°F",
+        "source": "https://invertersrus.com/product/pecron-e1500lfp/",
+        "kind": "retailer"
+      },
+      {
+        "key": "dischargeTemperature",
+        "label": "Discharge temperature",
+        "value": "-20°C~45°C / -4°F-113°F",
+        "source": "https://invertersrus.com/product/pecron-e1500lfp/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-mc4-connpair"
+    ],
+    "expected": {
+      "santan-solar-mc4-connpair": {
+        "name": "Male and Female Solar PV Connectors",
+        "sourceUrl": "https://www.santansolar.com/product/pv-connectors-pair/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/pv-connectors-pair/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:27:56.640Z",
+    "label": "Exact retained seller technical table; contextual batch twenty C review",
+    "rows": [
+      [
+        "Rated Current",
+        "30A"
+      ],
+      [
+        "Temperature Range",
+        "-40 C ~ +90 C"
+      ]
+    ],
+    "reviewStatus": "contextually_reviewed_pending_independent_review",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\7f745d827161d998.html",
+    "sha256": "8e141ee1a16a16da4340a19ba21779cdf96e54723a4d29bacf849e87cf07eebd",
+    "sourceScope": "MC4-CONNPAIR exact SKU; one male/female sale pair, recorded pack1 unchanged.30A per connector not summed. Contact material not cable conductor; Suitable cable not supplied gauge. Waterproof degree label unmapped. Additional-information size/weight scope unresolved.",
+    "selectedOfferProof": [
+      {
+        "id": "santan-solar-mc4-connpair",
+        "retailerId": "santan-solar",
+        "retailer": "SanTan Solar",
+        "url": "https://www.santansolar.com/product/pv-connectors-pair/",
+        "price": 1.5,
+        "currency": "USD",
+        "packQuantity": 1,
+        "stock": "in_stock",
+        "observedAt": "2026-10-12T05:45:59.248Z",
+        "sku": "MC4-CONNPAIR",
+        "condition": "new"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "signature-solar-1511060"
+    ],
+    "expected": {
+      "signature-solar-1511060": {
+        "name": "BSB 70A AC Circuit Breaker | Compatible with EG4 18kPV Hybrid Inverter",
+        "sourceUrl": "https://signaturesolar.com/70a-ac-circuit-breaker-compatible-with-eg4-18kpv-hybrid-inverter/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "url": "https://signaturesolar.com/70a-ac-circuit-breaker-compatible-with-eg4-18kpv-hybrid-inverter/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:26:30.178Z",
+    "label": "Exact retained seller technical table; contextual batch twenty C review",
+    "rows": [
+      [
+        "Interrupting Capacity",
+        "Up to 10,000A"
+      ]
+    ],
+    "reviewStatus": "contextually_reviewed_pending_independent_review",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d095791de305c474.html",
+    "sha256": "c1d782cda2614e9e7f4d1495c476e3449f41dd21d1782fca0e7bdd56c4690519",
+    "sourceScope": "Exact SKU1511060 BSB70A AC breaker. Preserve Up to qualifier, no unconditional scalar or assumed test voltage. Switching cycles not battery cycles; PV-protection marketing not generalized.",
+    "selectedOfferProof": [
+      {
+        "id": "signature-solar-1511060",
+        "retailerId": "signature-solar",
+        "retailer": "Signature Solar",
+        "url": "https://signaturesolar.com/70a-ac-circuit-breaker-compatible-with-eg4-18kpv-hybrid-inverter/",
+        "price": 38.99,
+        "currency": "USD",
+        "packQuantity": 1,
+        "stock": "in_stock",
+        "observedAt": "2026-10-13T01:23:18.308Z",
+        "sku": "1511060",
+        "condition": "new"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "hysolis-43907468394794"
+    ],
+    "expected": {
+      "hysolis-43907468394794": {
+        "name": "MPS3K (3kW / 4.5kWh)",
+        "sourceUrl": "https://hysolis.com/products/mps3k?variant=43907468394794",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://hysolis.com/products/mps3k?variant=43907468394794",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-12T01:23:40.035Z",
+    "label": "Batch twenty-b exact model contextual source review",
+    "rows": [
+      [
+        "Rated Voltage",
+        "44.4 V DC"
+      ],
+      [
+        "Battery Type",
+        "Lithium-ion (NCM)"
+      ],
+      [
+        "Battery Capacity",
+        "4,500 Wh"
+      ],
+      [
+        "Continuous AC output power",
+        "3000 W"
+      ],
+      [
+        "AC output voltage",
+        "120 V AC +/- 5% (Inverter Mode)"
+      ],
+      [
+        "Efficiency",
+        ">85% (80% Resistive Load)"
+      ],
+      [
+        "Output frequency",
+        "60 Hz or 50 Hz +/- 1% (Inverter Mode)"
+      ],
+      [
+        "Maximum PV input power",
+        "1500 Watts (solar charger maximum)"
+      ],
+      [
+        "MPPT voltage range",
+        "60 V DC – 150 V DC"
+      ],
+      [
+        "Operating temperature",
+        "-20°C to +50°C"
+      ],
+      [
+        "Storage temperature",
+        "-25°C to +55°C"
+      ],
+      [
+        "Dimensions",
+        "503 mm (19.8 in) x 318 mm (12.5 in) x 483 mm (19 in) (L x W x H)"
+      ],
+      [
+        "Weight",
+        "55kg / 121lb"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\44855d89ac73d0ce.html",
+      "htmlSha256": "72157d467c5cebd1cab5b3cdf30c9fbd1ba7bd8c9db41d9da7a214642b65ca15",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\44855d89ac73d0ce.json",
+      "metadataSha256": "2689d02f69464cc375b8c880a1d1723113ff0ad9de835718810aa516cac95089",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Search",
+          "MPS3K (3kW / 4.5kWh)"
+        ],
+        "ogTitle": "MPS3K (3kW / 4.5kWh)",
+        "selectedSku": "43907468394794",
+        "selectedPackQuantity": 1,
+        "variant": "43907468394794",
+        "variantExact": false,
+        "sourceUrl": "https://hysolis.com/products/mps3k",
+        "exactInertVariant": {
+          "id": 43907468394794,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "MPS-01-3K",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": true,
+          "name": "MPS3K (3kW / 4.5kWh)",
+          "public_title": null,
+          "options": [
+            "Default Title"
+          ],
+          "price": 199500,
+          "weight": 67132,
+          "compare_at_price": 389500,
+          "inventory_management": "shopify",
+          "barcode": null,
+          "requires_selling_plan": false,
+          "selling_plan_allocations": [],
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          }
+        }
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact single default MPS3K variant 43907468394794, SKU MPS-01-3K; battery bank and AC OUTPUT sections distinguish battery voltage from output. NCM explicitly selected product chemistry; unrelated collection boilerplate excluded.",
+      "quotes": [
+        {
+          "row": [
+            "Rated Voltage",
+            "44.4 V DC"
+          ],
+          "quote": "BATTERY BANK Rated Voltage 44.4 V DC"
+        },
+        {
+          "row": [
+            "Battery Type",
+            "Lithium-ion (NCM)"
+          ],
+          "quote": "Battery Type Lithium-ion (NCM)"
+        },
+        {
+          "row": [
+            "Battery Capacity",
+            "4,500 Wh"
+          ],
+          "quote": "Battery Capacity 4,500 Wh"
+        },
+        {
+          "row": [
+            "Continuous AC output power",
+            "3000 W"
+          ],
+          "quote": "Rated AC Power: 120VAC / 3,000 W Continuous (6,000 W Surge)"
+        },
+        {
+          "row": [
+            "AC output voltage",
+            "120 V AC +/- 5% (Inverter Mode)"
+          ],
+          "quote": "AC OUTPUT Voltage Range 120 V AC +/- 5% (Inverter Mode)"
+        },
+        {
+          "row": [
+            "Efficiency",
+            ">85% (80% Resistive Load)"
+          ],
+          "quote": "Efficiency >85% (80% Resistive Load)"
+        },
+        {
+          "row": [
+            "Output frequency",
+            "60 Hz or 50 Hz +/- 1% (Inverter Mode)"
+          ],
+          "quote": "Frequency 60 Hz or 50 Hz +/- 1% (Inverter Mode)"
+        },
+        {
+          "row": [
+            "Maximum PV input power",
+            "1500 Watts (solar charger maximum)"
+          ],
+          "quote": "Solar Charger 48 V/30 A MPPT (Max 1,500 Watts, MPPTVoltage Range 60 V DC – 150 V DC)"
+        },
+        {
+          "row": [
+            "MPPT voltage range",
+            "60 V DC – 150 V DC"
+          ],
+          "quote": "MPPTVoltage Range 60 V DC – 150 V DC"
+        },
+        {
+          "row": [
+            "Operating temperature",
+            "-20°C to +50°C"
+          ],
+          "quote": "Oporating Ambient Termp -20°C to +50°C"
+        },
+        {
+          "row": [
+            "Storage temperature",
+            "-25°C to +55°C"
+          ],
+          "quote": "Storage Ambient Temp -25°C to +55°C"
+        },
+        {
+          "row": [
+            "Dimensions",
+            "503 mm (19.8 in) x 318 mm (12.5 in) x 483 mm (19 in) (L x W x H)"
+          ],
+          "quote": "Product Size (L*W*H): 503 mm (19.8 in) x 318 mm (12.5 in) x 483 mm (19 in)"
+        },
+        {
+          "row": [
+            "Weight",
+            "55kg / 121lb"
+          ],
+          "quote": "Weight 55kg / 121lb"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "voltage",
+        "label": "Nominal voltage",
+        "value": "44.4 V DC",
+        "source": "https://hysolis.com/products/mps3k?variant=43907468394794",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "efficiency",
+        "label": "Conversion efficiency",
+        "value": ">85% (80% Resistive Load)",
+        "source": "https://hysolis.com/products/mps3k?variant=43907468394794",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "chemistry",
+        "label": "Battery chemistry",
+        "value": "Lithium-ion (NCM)",
+        "source": "https://hysolis.com/products/mps3k?variant=43907468394794",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "capacityKwh",
+        "label": "Energy capacity",
+        "value": "4,500 Wh",
+        "source": "https://hysolis.com/products/mps3k?variant=43907468394794",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "outputWatts",
+        "label": "Rated AC output power",
+        "value": "3000 W",
+        "source": "https://hysolis.com/products/mps3k?variant=43907468394794",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "acOutput",
+        "label": "AC output voltage",
+        "value": "120 V AC +/- 5% (Inverter Mode)",
+        "source": "https://hysolis.com/products/mps3k?variant=43907468394794",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "frequency",
+        "label": "AC frequency",
+        "value": "60 Hz or 50 Hz +/- 1% (Inverter Mode)",
+        "source": "https://hysolis.com/products/mps3k?variant=43907468394794",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "maxPvWatts",
+        "label": "Maximum PV input power",
+        "value": "1500 Watts (solar charger maximum)",
+        "source": "https://hysolis.com/products/mps3k?variant=43907468394794",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "mpptVoltageRange",
+        "label": "MPPT voltage range",
+        "value": "60 V DC – 150 V DC",
+        "source": "https://hysolis.com/products/mps3k?variant=43907468394794",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "operatingTemperature",
+        "label": "Operating temperature",
+        "value": "-20°C to +50°C",
+        "source": "https://hysolis.com/products/mps3k?variant=43907468394794",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "storageTemperature",
+        "label": "Storage temperature",
+        "value": "-25°C to +55°C",
+        "source": "https://hysolis.com/products/mps3k?variant=43907468394794",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "dimensions",
+        "label": "Dimensions",
+        "value": "503 mm (19.8 in) x 318 mm (12.5 in) x 483 mm (19 in) (L x W x H)",
+        "source": "https://hysolis.com/products/mps3k?variant=43907468394794",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "weight",
+        "label": "Weight",
+        "value": "55kg / 121lb",
+        "source": "https://hysolis.com/products/mps3k?variant=43907468394794",
+        "kind": "manufacturer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "hysolis-43907472425258"
+    ],
+    "expected": {
+      "hysolis-43907472425258": {
+        "name": "Apollo 5K • Ultra-Fast Portable Solar Power Station",
+        "sourceUrl": "https://hysolis.com/products/apollo?variant=43907472425258",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://hysolis.com/products/apollo?variant=43907472425258",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-12T01:23:42.243Z",
+    "label": "Batch twenty-b exact model contextual source review",
+    "rows": [
+      [
+        "Rated Voltage",
+        "51.2V"
+      ],
+      [
+        "Battery Type",
+        "LiFePO4"
+      ],
+      [
+        "Battery Capacity",
+        "5,376Wh"
+      ],
+      [
+        "Continuous AC output power",
+        "3000 W"
+      ],
+      [
+        "AC output voltage",
+        "120 V AC +/- 5% (Inverter Mode)"
+      ],
+      [
+        "Efficiency",
+        ">94%"
+      ],
+      [
+        "Output frequency",
+        "60 Hz or 50 Hz +/- 1% (Inverter Mode)"
+      ],
+      [
+        "AC charging input",
+        "3000 W"
+      ],
+      [
+        "Operating temperature",
+        "+32 to +104 F (0 to +40 C)"
+      ],
+      [
+        "Dimensions",
+        "589mm L x 371mm W x 472mm H (480mm H including feet)"
+      ],
+      [
+        "Weight",
+        "131 lbs (59.5 kg)"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\37f208699ceb367c.html",
+      "htmlSha256": "34e278ed8f912095a5c926d80192ced0b0746a03bdb766c03a63e3e91242144e",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\37f208699ceb367c.json",
+      "metadataSha256": "6b40e3d239dfcbf077858f5c85411a02694eb5c278c8d6b7cd439b56a603c30a",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Search",
+          "Apollo 5K • Ultra-Fast Portable Solar Power Station"
+        ],
+        "ogTitle": "Apollo 5K • Ultra-Fast Portable Solar Power Station",
+        "selectedSku": "43907472425258",
+        "selectedPackQuantity": 1,
+        "variant": "43907472425258",
+        "variantExact": false,
+        "sourceUrl": "https://hysolis.com/products/apollo",
+        "exactInertVariant": {
+          "id": 43907472425258,
+          "title": "Default Title",
+          "option1": "Default Title",
+          "option2": null,
+          "option3": null,
+          "sku": "APL-01-5K",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": null,
+          "available": false,
+          "name": "Apollo 5K • Ultra-Fast Portable Solar Power Station",
+          "public_title": null,
+          "options": [
+            "Default Title"
+          ],
+          "price": 499500,
+          "weight": 64864,
+          "compare_at_price": 499500,
+          "inventory_management": "shopify",
+          "barcode": null,
+          "requires_selling_plan": false,
+          "selling_plan_allocations": [],
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          }
+        }
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact single default Apollo 5K variant43907472425258 SKU APL-01-5K. Single-unit output distinguished from two-unit120/240V split phase. Only explicitly battery-bank, AC-output and device physical facts.",
+      "quotes": [
+        {
+          "row": [
+            "Rated Voltage",
+            "51.2V"
+          ],
+          "quote": "BATTERY BANK Rated Voltage 51.2V"
+        },
+        {
+          "row": [
+            "Battery Type",
+            "LiFePO4"
+          ],
+          "quote": "Battery Type LiFePO4"
+        },
+        {
+          "row": [
+            "Battery Capacity",
+            "5,376Wh"
+          ],
+          "quote": "Battery Capacity 5,376Wh"
+        },
+        {
+          "row": [
+            "Continuous AC output power",
+            "3000 W"
+          ],
+          "quote": "3,000 W Continuous / 6,000 W Surge (6,000 W Continuous / 12,000W Surge w/ 2 Units)"
+        },
+        {
+          "row": [
+            "AC output voltage",
+            "120 V AC +/- 5% (Inverter Mode)"
+          ],
+          "quote": "AC OUTPUT Voltage Range 120 V AC +/- 5% (Inverter Mode)"
+        },
+        {
+          "row": [
+            "Efficiency",
+            ">94%"
+          ],
+          "quote": "Efficiency >94%"
+        },
+        {
+          "row": [
+            "Output frequency",
+            "60 Hz or 50 Hz +/- 1% (Inverter Mode)"
+          ],
+          "quote": "Frequency 60 Hz or 50 Hz +/- 1% (Inverter Mode)"
+        },
+        {
+          "row": [
+            "AC charging input",
+            "3000 W"
+          ],
+          "quote": "CHARGE AC Charger 3,000 W"
+        },
+        {
+          "row": [
+            "Operating temperature",
+            "+32 to +104 F (0 to +40 C)"
+          ],
+          "quote": "Operating Ambient Temp +32 to +104 F (0 to +40 C)"
+        },
+        {
+          "row": [
+            "Dimensions",
+            "589mm L x 371mm W x 472mm H (480mm H including feet)"
+          ],
+          "quote": "Product Size L 23.2 in x W 14.6 in x H 18.6 in (18.9 including feet) (L 589mm x W 371mm x H 472mm [480mm including feet])"
+        },
+        {
+          "row": [
+            "Weight",
+            "131 lbs (59.5 kg)"
+          ],
+          "quote": "Weight 131 lbs (59.5 kg)"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "voltage",
+        "label": "Nominal voltage",
+        "value": "51.2V",
+        "source": "https://hysolis.com/products/apollo?variant=43907472425258",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "efficiency",
+        "label": "Conversion efficiency",
+        "value": ">94%",
+        "source": "https://hysolis.com/products/apollo?variant=43907472425258",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "chemistry",
+        "label": "Battery chemistry",
+        "value": "LiFePO4",
+        "source": "https://hysolis.com/products/apollo?variant=43907472425258",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "capacityKwh",
+        "label": "Energy capacity",
+        "value": "5,376Wh",
+        "source": "https://hysolis.com/products/apollo?variant=43907472425258",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "outputWatts",
+        "label": "Rated AC output power",
+        "value": "3000 W",
+        "source": "https://hysolis.com/products/apollo?variant=43907472425258",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "acOutput",
+        "label": "AC output voltage",
+        "value": "120 V AC +/- 5% (Inverter Mode)",
+        "source": "https://hysolis.com/products/apollo?variant=43907472425258",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "frequency",
+        "label": "AC frequency",
+        "value": "60 Hz or 50 Hz +/- 1% (Inverter Mode)",
+        "source": "https://hysolis.com/products/apollo?variant=43907472425258",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "acChargeWatts",
+        "label": "AC charging input",
+        "value": "3000 W",
+        "source": "https://hysolis.com/products/apollo?variant=43907472425258",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "operatingTemperature",
+        "label": "Operating temperature",
+        "value": "+32 to +104 F (0 to +40 C)",
+        "source": "https://hysolis.com/products/apollo?variant=43907472425258",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "dimensions",
+        "label": "Dimensions",
+        "value": "589mm L x 371mm W x 472mm H (480mm H including feet)",
+        "source": "https://hysolis.com/products/apollo?variant=43907472425258",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "weight",
+        "label": "Weight",
+        "value": "131 lbs (59.5 kg)",
+        "source": "https://hysolis.com/products/apollo?variant=43907472425258",
+        "kind": "manufacturer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "practical-preppers-17839"
+    ],
+    "expected": {
+      "practical-preppers-17839": {
+        "name": "Sun Charger 30 – 30A 12V Entry Level Solar Charge Controller",
+        "sourceUrl": "https://practicalpreppers.com/product/entry-level-solar-charge-controller/",
+        "category": "charging",
+        "anchors": {}
+      }
+    },
+    "url": "https://practicalpreppers.com/product/entry-level-solar-charge-controller/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:29:29.931Z",
+    "label": "Batch twenty-b exact model contextual source review",
+    "rows": [
+      [
+        "Maximum PV input power",
+        "450W with 36-cell PV panel"
+      ],
+      [
+        "Rated charging current",
+        "30A with 36-cell PV panel"
+      ],
+      [
+        "Maximum PV input voltage",
+        "30V (recommended maximum panel Voc at STC: 24V)"
+      ],
+      [
+        "Efficiency",
+        "99% peak efficiency"
+      ],
+      [
+        "Operating temperature",
+        "-40°C – 45°C"
+      ],
+      [
+        "IP rating",
+        "IP10"
+      ],
+      [
+        "Weight",
+        "0.45 lb. (205 g)"
+      ],
+      [
+        "Dimensions",
+        "4.6×6.35×1.18′′ (11.8×16.1×3.0cm)"
+      ],
+      [
+        "Warranty",
+        "5 years"
+      ],
+      [
+        "Protection functions",
+        "PV array overload protection; reverse battery and panel protection"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\076a1c8f52e1589a.html",
+      "htmlSha256": "8d3dc61f475ff3b70749f517a470bbc23e483b878d6c47d1776c88e9d8adca69",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\076a1c8f52e1589a.json",
+      "metadataSha256": "8e69d9b907dbaf5b8be5dc0bcddf0427f449fec1ee822de5548f08a6113a450b",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": false,
+        "headings": [
+          "Blue Sky Energy Sun Charger 30",
+          "Overview",
+          "Specifications",
+          "Downloads"
+        ],
+        "ogTitle": "Sun Charger 30 - 30A 12V Entry Level Solar Charge Controller - Practical Preppers",
+        "selectedSku": "17839",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://practicalpreppers.com/product/entry-level-solar-charge-controller/"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "WooCommerce product17839 selected SC30 @12V model, confirmed product container and add-to-cart ID17839; exact Sun Charger30 page heading and dedicated specification table. No SKU inferred from numeric Woo ID. Single controller; PWM explicitly stated.",
+      "quotes": [
+        {
+          "row": [
+            "Maximum PV input power",
+            "450W with 36-cell PV panel"
+          ],
+          "quote": "Maximum PV Power 450W with 36-cell PV panel"
+        },
+        {
+          "row": [
+            "Rated charging current",
+            "30A with 36-cell PV panel"
+          ],
+          "quote": "Rated Battery (Output) Current 30A with 36-cell PV panel"
+        },
+        {
+          "row": [
+            "Maximum PV input voltage",
+            "30V (recommended maximum panel Voc at STC: 24V)"
+          ],
+          "quote": "Recommended Max Panel Voc at STC 24V (Max Panel Input 30V)"
+        },
+        {
+          "row": [
+            "Efficiency",
+            "99% peak efficiency"
+          ],
+          "quote": "99% peak efficiency"
+        },
+        {
+          "row": [
+            "Operating temperature",
+            "-40°C – 45°C"
+          ],
+          "quote": "Operating Temperature -40°C – 45°C"
+        },
+        {
+          "row": [
+            "IP rating",
+            "IP10"
+          ],
+          "quote": "Environmental Protection IP10"
+        },
+        {
+          "row": [
+            "Weight",
+            "0.45 lb. (205 g)"
+          ],
+          "quote": "Weight 0.45 lb. (205 g)"
+        },
+        {
+          "row": [
+            "Dimensions",
+            "4.6×6.35×1.18′′ (11.8×16.1×3.0cm)"
+          ],
+          "quote": "Dimensions 4.6×6.35×1.18′′ (11.8×16.1×3.0cm)"
+        },
+        {
+          "row": [
+            "Warranty",
+            "5 years"
+          ],
+          "quote": "Warranty 5 years"
+        },
+        {
+          "row": [
+            "Protection functions",
+            "PV array overload protection; reverse battery and panel protection"
+          ],
+          "quote": "PV array overload protection Reverse battery and panel protection"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "maxPvWatts",
+        "label": "Maximum PV input power",
+        "value": "450W with 36-cell PV panel",
+        "source": "https://practicalpreppers.com/product/entry-level-solar-charge-controller/",
+        "kind": "retailer"
+      },
+      {
+        "key": "maxPvVoltage",
+        "label": "Maximum PV input voltage",
+        "value": "30V (recommended maximum panel Voc at STC: 24V)",
+        "source": "https://practicalpreppers.com/product/entry-level-solar-charge-controller/",
+        "kind": "retailer"
+      },
+      {
+        "key": "chargeCurrentA",
+        "label": "Rated charge current",
+        "value": "30A with 36-cell PV panel",
+        "source": "https://practicalpreppers.com/product/entry-level-solar-charge-controller/",
+        "kind": "retailer"
+      },
+      {
+        "key": "efficiency",
+        "label": "Conversion efficiency",
+        "value": "99% peak efficiency",
+        "source": "https://practicalpreppers.com/product/entry-level-solar-charge-controller/",
+        "kind": "retailer"
+      },
+      {
+        "key": "operatingTemperature",
+        "label": "Operating temperature",
+        "value": "-40°C – 45°C",
+        "source": "https://practicalpreppers.com/product/entry-level-solar-charge-controller/",
+        "kind": "retailer"
+      },
+      {
+        "key": "ipRating",
+        "label": "Ingress protection",
+        "value": "IP10",
+        "source": "https://practicalpreppers.com/product/entry-level-solar-charge-controller/",
+        "kind": "retailer"
+      },
+      {
+        "key": "protections",
+        "label": "Protection functions",
+        "value": "PV array overload protection; reverse battery and panel protection",
+        "source": "https://practicalpreppers.com/product/entry-level-solar-charge-controller/",
+        "kind": "retailer"
+      },
+      {
+        "key": "weight",
+        "label": "Weight",
+        "value": "0.45 lb. (205 g)",
+        "source": "https://practicalpreppers.com/product/entry-level-solar-charge-controller/",
+        "kind": "retailer"
+      },
+      {
+        "key": "dimensions",
+        "label": "Dimensions",
+        "value": "4.6×6.35×1.18′′ (11.8×16.1×3.0cm)",
+        "source": "https://practicalpreppers.com/product/entry-level-solar-charge-controller/",
+        "kind": "retailer"
+      },
+      {
+        "key": "warranty",
+        "label": "Product warranty",
+        "value": "5 years",
+        "source": "https://practicalpreppers.com/product/entry-level-solar-charge-controller/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "watts247-58098"
+    ],
+    "expected": {
+      "watts247-58098": {
+        "name": "Jinko > 385 Watt 144 Mono PERC Half-cell Solar Panel – All Black, only 34c Per watt – full pallets only (27 pcs 10.395kW)",
+        "sourceUrl": "https://watts247.com/product/jinko-385-watt-144-mono-perc-half-cell-solar-panel-all-black-only-34c-per-watt-full-pallets-only-27-pcs-10-395kw/",
+        "category": "panels",
+        "anchors": {}
+      }
+    },
+    "url": "https://watts247.com/product/jinko-385-watt-144-mono-perc-half-cell-solar-panel-all-black-only-34c-per-watt-full-pallets-only-27-pcs-10-395kw/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:26:27.344Z",
+    "label": "Batch twenty-b exact model contextual source review",
+    "rows": [
+      [
+        "Manufacturer part number",
+        "JKM385M-72HBL-V_R"
+      ],
+      [
+        "Cell type",
+        "Monocrystalline"
+      ],
+      [
+        "Connector",
+        "MC4"
+      ],
+      [
+        "Dimensions",
+        "79.06 x 39.45 x 1.57 in (module L x W x H)"
+      ],
+      [
+        "Weight",
+        "49.6 lbs each"
+      ],
+      [
+        "Frame material",
+        "Anodized Aluminum Alloy"
+      ],
+      [
+        "Maximum system voltage",
+        "1500 VDC"
+      ],
+      [
+        "Operating temperature",
+        "−40°F to +185°F"
+      ],
+      [
+        "Junction box IP rating",
+        "IP68"
+      ],
+      [
+        "Output cable",
+        "4′ 7′′ MC4 leads on 12 AWG Cable"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\916be96e857f1d39.html",
+      "htmlSha256": "dd0f23f9ef3e659f5a57dbcff75e54372c7df3a01e70e93fe17e738cbc60b00e",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\916be96e857f1d39.json",
+      "metadataSha256": "28788cfe8469cbd44c05cf3d6065edf3ea7a9dc4d9ad8034b7ba02fb0868dada",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Jinko > 385 Watt 144 Mono PERC Half-cell Solar Panel – All Black, only 34c Per watt – full pallets only (27 pcs 10.395kW)"
+        ],
+        "ogTitle": "",
+        "selectedSku": "58098",
+        "selectedPackQuantity": 27,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://watts247.com/product/jinko-385-watt-144-mono-perc-half-cell-solar-panel-all-black-only-34c-per-watt-full-pallets-only-27-pcs-10-395kw/"
+      },
+      "selectedPackQuantity": 27,
+      "scope": "Exact Woo product58098 and inert Product SKU58098; selected pallet27 explicitly matched Pallet Qty27, manufacturer module JKM385M-72HBL-V_R. Module dimensions and weight explicitly each. Shipping1500lb/80x46x45in excluded. Electrical ratings retained as published, no STC conditions supplied or inferred.",
+      "quotes": [
+        {
+          "row": [
+            "Manufacturer part number",
+            "JKM385M-72HBL-V_R"
+          ],
+          "quote": "Manufacturer Part # JKM385M-72HBL-V_R"
+        },
+        {
+          "row": [
+            "Cell type",
+            "Monocrystalline"
+          ],
+          "quote": "Cell Type Monocrystalline"
+        },
+        {
+          "row": [
+            "Module efficiency",
+            "19.13%"
+          ],
+          "quote": "Rated Efficiency 19.13%"
+        },
+        {
+          "row": [
+            "Connector",
+            "MC4"
+          ],
+          "quote": "Connector Type MC4"
+        },
+        {
+          "row": [
+            "Dimensions",
+            "79.06 x 39.45 x 1.57 in (module L x W x H)"
+          ],
+          "quote": "Dimensions LxWxH 79.06 x 39.45 x 1.57 in (49.6 lbs each)"
+        },
+        {
+          "row": [
+            "Weight",
+            "49.6 lbs each"
+          ],
+          "quote": "Dimensions LxWxH 79.06 x 39.45 x 1.57 in (49.6 lbs each)"
+        },
+        {
+          "row": [
+            "Frame material",
+            "Anodized Aluminum Alloy"
+          ],
+          "quote": "Frame Anodized Aluminum Alloy"
+        },
+        {
+          "row": [
+            "Maximum system voltage",
+            "1500 VDC"
+          ],
+          "quote": "Max System Voltage DC 1500 VDC"
+        },
+        {
+          "row": [
+            "Operating temperature",
+            "−40°F to +185°F"
+          ],
+          "quote": "Operating Temperatures −40°F to +185°F"
+        },
+        {
+          "row": [
+            "Junction box IP rating",
+            "IP68"
+          ],
+          "quote": "Junction Box (IP68 Rated)"
+        },
+        {
+          "row": [
+            "Output cable",
+            "4′ 7′′ MC4 leads on 12 AWG Cable"
+          ],
+          "quote": "4′ 7′′ MC4 leads on 12 AWG Cable"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "model",
+        "label": "Model",
+        "value": "JKM385M-72HBL-V_R",
+        "source": "https://watts247.com/product/jinko-385-watt-144-mono-perc-half-cell-solar-panel-all-black-only-34c-per-watt-full-pallets-only-27-pcs-10-395kw/",
+        "kind": "retailer"
+      },
+      {
+        "key": "cellConstruction",
+        "label": "Cell construction",
+        "value": "Monocrystalline",
+        "source": "https://watts247.com/product/jinko-385-watt-144-mono-perc-half-cell-solar-panel-all-black-only-34c-per-watt-full-pallets-only-27-pcs-10-395kw/",
+        "kind": "retailer"
+      },
+      {
+        "key": "moduleEfficiency",
+        "label": "Module efficiency",
+        "value": "19.13%",
+        "source": "https://watts247.com/product/jinko-385-watt-144-mono-perc-half-cell-solar-panel-all-black-only-34c-per-watt-full-pallets-only-27-pcs-10-395kw/",
+        "kind": "retailer"
+      },
+      {
+        "key": "connector",
+        "label": "Connector / terminal",
+        "value": "MC4",
+        "source": "https://watts247.com/product/jinko-385-watt-144-mono-perc-half-cell-solar-panel-all-black-only-34c-per-watt-full-pallets-only-27-pcs-10-395kw/",
+        "kind": "retailer"
+      },
+      {
+        "key": "outputCable",
+        "label": "Output cable",
+        "value": "4′ 7′′ MC4 leads on 12 AWG Cable",
+        "source": "https://watts247.com/product/jinko-385-watt-144-mono-perc-half-cell-solar-panel-all-black-only-34c-per-watt-full-pallets-only-27-pcs-10-395kw/",
+        "kind": "retailer"
+      },
+      {
+        "key": "dimensions",
+        "label": "Dimensions",
+        "value": "79.06 x 39.45 x 1.57 in (module L x W x H)",
+        "source": "https://watts247.com/product/jinko-385-watt-144-mono-perc-half-cell-solar-panel-all-black-only-34c-per-watt-full-pallets-only-27-pcs-10-395kw/",
+        "kind": "retailer"
+      },
+      {
+        "key": "weight",
+        "label": "Weight",
+        "value": "49.6 lbs each",
+        "source": "https://watts247.com/product/jinko-385-watt-144-mono-perc-half-cell-solar-panel-all-black-only-34c-per-watt-full-pallets-only-27-pcs-10-395kw/",
+        "kind": "retailer"
+      },
+      {
+        "key": "material",
+        "label": "Material",
+        "value": "Anodized Aluminum Alloy",
+        "source": "https://watts247.com/product/jinko-385-watt-144-mono-perc-half-cell-solar-panel-all-black-only-34c-per-watt-full-pallets-only-27-pcs-10-395kw/",
+        "kind": "retailer"
+      },
+      {
+        "key": "maxSystemVoltage",
+        "label": "Maximum system voltage",
+        "value": "1500 VDC",
+        "source": "https://watts247.com/product/jinko-385-watt-144-mono-perc-half-cell-solar-panel-all-black-only-34c-per-watt-full-pallets-only-27-pcs-10-395kw/",
+        "kind": "retailer"
+      },
+      {
+        "key": "junctionIpRating",
+        "label": "Junction box ingress protection",
+        "value": "IP68",
+        "source": "https://watts247.com/product/jinko-385-watt-144-mono-perc-half-cell-solar-panel-all-black-only-34c-per-watt-full-pallets-only-27-pcs-10-395kw/",
+        "kind": "retailer"
+      },
+      {
+        "key": "operatingTemperature",
+        "label": "Operating temperature",
+        "value": "−40°F to +185°F",
+        "source": "https://watts247.com/product/jinko-385-watt-144-mono-perc-half-cell-solar-panel-all-black-only-34c-per-watt-full-pallets-only-27-pcs-10-395kw/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "vatrer-45676093505694"
+    ],
+    "expected": {
+      "vatrer-45676093505694": {
+        "name": "Vatrer 1000 Watt Pure Sine Wave Inverter 12V DC to 110V/120V AC Power Inverter",
+        "sourceUrl": "https://www.vatrerpower.com/products/vatrer-1000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676093505694",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.vatrerpower.com/products/vatrer-1000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676093505694",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-12T01:42:01.468Z",
+    "label": "Batch twenty-b exact model contextual source review",
+    "rows": [
+      [
+        "Continuous AC output power",
+        "1000W"
+      ],
+      [
+        "Rated Voltage",
+        "12V DC (input)"
+      ],
+      [
+        "AC output voltage",
+        "110V / 120V AC ± 5%"
+      ],
+      [
+        "Efficiency",
+        "≥85%~95%"
+      ],
+      [
+        "Operating temperature",
+        "32~104°F (0~40°C)"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\514ad44464ae5f5e.html",
+      "htmlSha256": "1d3039f7ee0847fca156fb2cbc2a6fb7332cd087244c7d389c0cad9bede4782a",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\514ad44464ae5f5e.json",
+      "metadataSha256": "80576a70a99636bb6bffd47187092686aac7ec006097f3677515e9032e8394ae",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Vatrer 1000 Watt Pure Sine Wave Inverter 12V DC to 110V/120V AC Power Inverter"
+        ],
+        "ogTitle": "Vatrer 1000W Pure Sine Wave Inverter for 12V Battery",
+        "selectedSku": "45676093505694",
+        "selectedPackQuantity": 1,
+        "variant": "45676093505694",
+        "variantExact": true,
+        "sourceUrl": "https://www.vatrerpower.com/products/vatrer-1000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter",
+        "inertProduct": {
+          "id": 8349300457630,
+          "handle": "vatrer-1000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter",
+          "variants": [
+            {
+              "id": 45676093505694,
+              "price": 12999,
+              "name": "Vatrer 1000 Watt Pure Sine Wave Inverter 12V DC to 110V/120V AC Power Inverter",
+              "public_title": null,
+              "sku": "1kw"
+            }
+          ]
+        },
+        "selectedActualSku": "1kw"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact single Default Title variant recovered from inert ShopifyAnalytics.meta JSON without script execution and bound to visible SKU and exact product name. External12V battery compatibility does not describe internal battery chemistry or capacity.",
+      "quotes": [
+        {
+          "row": [
+            "Continuous AC output power",
+            "1000W"
+          ],
+          "quote": "1000W Continuous Pure Sine Wave Output"
+        },
+        {
+          "row": [
+            "Rated Voltage",
+            "12V DC (input)"
+          ],
+          "quote": "DC input 12V"
+        },
+        {
+          "row": [
+            "AC output voltage",
+            "110V / 120V AC ± 5%"
+          ],
+          "quote": "Output voltage 110V / 120V AC ± 5%"
+        },
+        {
+          "row": [
+            "Efficiency",
+            "≥85%~95%"
+          ],
+          "quote": "Efficiency ≥85%~95%"
+        },
+        {
+          "row": [
+            "Operating temperature",
+            "32~104°F (0~40°C)"
+          ],
+          "quote": "Working temperature 32~104°F (0~40°C)"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "outputWatts",
+        "label": "Rated AC output power",
+        "value": "1000W",
+        "source": "https://www.vatrerpower.com/products/vatrer-1000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676093505694",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "acOutput",
+        "label": "AC output voltage",
+        "value": "110V / 120V AC ± 5%",
+        "source": "https://www.vatrerpower.com/products/vatrer-1000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676093505694",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "voltage",
+        "label": "Nominal voltage",
+        "value": "12V DC (input)",
+        "source": "https://www.vatrerpower.com/products/vatrer-1000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676093505694",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "efficiency",
+        "label": "Conversion efficiency",
+        "value": "≥85%~95%",
+        "source": "https://www.vatrerpower.com/products/vatrer-1000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676093505694",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "operatingTemperature",
+        "label": "Operating temperature",
+        "value": "32~104°F (0~40°C)",
+        "source": "https://www.vatrerpower.com/products/vatrer-1000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676093505694",
+        "kind": "manufacturer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "vatrer-45676166545566"
+    ],
+    "expected": {
+      "vatrer-45676166545566": {
+        "name": "Vatrer 3000 Watt Pure Sine Wave Inverter 12V DC to 110V/120V AC Power Inverter",
+        "sourceUrl": "https://www.vatrerpower.com/products/vatrer-3000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676166545566",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.vatrerpower.com/products/vatrer-3000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676166545566",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-12T01:42:11.391Z",
+    "label": "Batch twenty-b exact model contextual source review",
+    "rows": [
+      [
+        "Continuous AC output power",
+        "3000W"
+      ],
+      [
+        "Rated Voltage",
+        "12V DC (input)"
+      ],
+      [
+        "AC output voltage",
+        "110V / 120V AC ± 5%"
+      ],
+      [
+        "Efficiency",
+        "≥85%~95%"
+      ],
+      [
+        "Operating temperature",
+        "32~104°F (0~40°C)"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\30c452ee0d942882.html",
+      "htmlSha256": "0e4980e5bc979b2308eca8e5fff6300ab91624ca2f116d03e69319518617bed2",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\30c452ee0d942882.json",
+      "metadataSha256": "5bed24a9e086603f121c1f1b2d5ad4fc7e8faf2f4148f019870a3467670aa254",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Vatrer 3000 Watt Pure Sine Wave Inverter 12V DC to 110V/120V AC Power Inverter"
+        ],
+        "ogTitle": "Vatrer 3000W Pure Sine Wave Inverter for 12V Batteries",
+        "selectedSku": "45676166545566",
+        "selectedPackQuantity": 1,
+        "variant": "45676166545566",
+        "variantExact": true,
+        "sourceUrl": "https://www.vatrerpower.com/products/vatrer-3000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter",
+        "inertProduct": {
+          "id": 8349329424542,
+          "handle": "vatrer-3000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter",
+          "variants": [
+            {
+              "id": 45676166545566,
+              "price": 25999,
+              "name": "Vatrer 3000 Watt Pure Sine Wave Inverter 12V DC to 110V/120V AC Power Inverter",
+              "public_title": null,
+              "sku": "D-3kw"
+            }
+          ]
+        },
+        "selectedActualSku": "D-3kw"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact single Default Title variant recovered from inert ShopifyAnalytics.meta JSON without script execution and bound to visible SKU and exact product name. External12V battery compatibility does not describe internal battery chemistry or capacity.",
+      "quotes": [
+        {
+          "row": [
+            "Continuous AC output power",
+            "3000W"
+          ],
+          "quote": "3000W Continuous Pure Sine Wave Output"
+        },
+        {
+          "row": [
+            "Rated Voltage",
+            "12V DC (input)"
+          ],
+          "quote": "DC input 12V"
+        },
+        {
+          "row": [
+            "AC output voltage",
+            "110V / 120V AC ± 5%"
+          ],
+          "quote": "Output voltage 110V / 120V AC ± 5%"
+        },
+        {
+          "row": [
+            "Efficiency",
+            "≥85%~95%"
+          ],
+          "quote": "Efficiency ≥85%~95%"
+        },
+        {
+          "row": [
+            "Operating temperature",
+            "32~104°F (0~40°C)"
+          ],
+          "quote": "Working temperature 32~104°F (0~40°C)"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "outputWatts",
+        "label": "Rated AC output power",
+        "value": "3000W",
+        "source": "https://www.vatrerpower.com/products/vatrer-3000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676166545566",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "acOutput",
+        "label": "AC output voltage",
+        "value": "110V / 120V AC ± 5%",
+        "source": "https://www.vatrerpower.com/products/vatrer-3000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676166545566",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "voltage",
+        "label": "Nominal voltage",
+        "value": "12V DC (input)",
+        "source": "https://www.vatrerpower.com/products/vatrer-3000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676166545566",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "efficiency",
+        "label": "Conversion efficiency",
+        "value": "≥85%~95%",
+        "source": "https://www.vatrerpower.com/products/vatrer-3000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676166545566",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "operatingTemperature",
+        "label": "Operating temperature",
+        "value": "32~104°F (0~40°C)",
+        "source": "https://www.vatrerpower.com/products/vatrer-3000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676166545566",
+        "kind": "manufacturer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "vatrer-45676167004318"
+    ],
+    "expected": {
+      "vatrer-45676167004318": {
+        "name": "Vatrer 2000 Watt Pure Sine Wave Inverter 12V DC to 110V/120V AC Power Inverter",
+        "sourceUrl": "https://www.vatrerpower.com/products/vatrer-2000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676167004318",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.vatrerpower.com/products/vatrer-2000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676167004318",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-12T01:42:21.442Z",
+    "label": "Batch twenty-b exact model contextual source review",
+    "rows": [
+      [
+        "Continuous AC output power",
+        "2000W"
+      ],
+      [
+        "Rated Voltage",
+        "12V DC (input)"
+      ],
+      [
+        "AC output voltage",
+        "110V / 120V AC ± 5%"
+      ],
+      [
+        "Efficiency",
+        "≥85%~95%"
+      ],
+      [
+        "Operating temperature",
+        "32~104°F (0~40°C)"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\2a485b7fdf53a9bf.html",
+      "htmlSha256": "0e953becf1436d7fab9eef287df73440bbcdb910b12d85b7290eb7decec9ee16",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\2a485b7fdf53a9bf.json",
+      "metadataSha256": "0c8062baa4608842188ae0c369c6d306abc853b1badda6fead2bfd2d161c14bf",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Vatrer 2000 Watt Pure Sine Wave Inverter 12V DC to 110V/120V AC Power Inverter"
+        ],
+        "ogTitle": "Vatrer 2000W Pure Sine Wave Inverter for RV & Solar System",
+        "selectedSku": "45676167004318",
+        "selectedPackQuantity": 1,
+        "variant": "45676167004318",
+        "variantExact": true,
+        "sourceUrl": "https://www.vatrerpower.com/products/vatrer-2000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter",
+        "inertProduct": {
+          "id": 8349329588382,
+          "handle": "vatrer-2000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter",
+          "variants": [
+            {
+              "id": 45676167004318,
+              "price": 18999,
+              "name": "Vatrer 2000 Watt Pure Sine Wave Inverter 12V DC to 110V/120V AC Power Inverter",
+              "public_title": null,
+              "sku": "2kw"
+            }
+          ]
+        },
+        "selectedActualSku": "2kw"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact single Default Title variant recovered from inert ShopifyAnalytics.meta JSON without script execution and bound to visible SKU and exact product name. External12V battery compatibility does not describe internal battery chemistry or capacity.",
+      "quotes": [
+        {
+          "row": [
+            "Continuous AC output power",
+            "2000W"
+          ],
+          "quote": "2000W Continuous Pure Sine Wave Output"
+        },
+        {
+          "row": [
+            "Rated Voltage",
+            "12V DC (input)"
+          ],
+          "quote": "DC input 12V"
+        },
+        {
+          "row": [
+            "AC output voltage",
+            "110V / 120V AC ± 5%"
+          ],
+          "quote": "Output voltage 110V / 120V AC ± 5%"
+        },
+        {
+          "row": [
+            "Efficiency",
+            "≥85%~95%"
+          ],
+          "quote": "Efficiency ≥85%~95%"
+        },
+        {
+          "row": [
+            "Operating temperature",
+            "32~104°F (0~40°C)"
+          ],
+          "quote": "Working temperature 32~104°F (0~40°C)"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "outputWatts",
+        "label": "Rated AC output power",
+        "value": "2000W",
+        "source": "https://www.vatrerpower.com/products/vatrer-2000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676167004318",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "acOutput",
+        "label": "AC output voltage",
+        "value": "110V / 120V AC ± 5%",
+        "source": "https://www.vatrerpower.com/products/vatrer-2000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676167004318",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "voltage",
+        "label": "Nominal voltage",
+        "value": "12V DC (input)",
+        "source": "https://www.vatrerpower.com/products/vatrer-2000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676167004318",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "efficiency",
+        "label": "Conversion efficiency",
+        "value": "≥85%~95%",
+        "source": "https://www.vatrerpower.com/products/vatrer-2000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676167004318",
+        "kind": "manufacturer"
+      },
+      {
+        "key": "operatingTemperature",
+        "label": "Operating temperature",
+        "value": "32~104°F (0~40°C)",
+        "source": "https://www.vatrerpower.com/products/vatrer-2000-watt-pure-sine-wave-inverter-12v-dc-to-110v-120v-ac-power-inverter?variant=45676167004318",
+        "kind": "manufacturer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "shopsolar-41674292789388"
+    ],
+    "expected": {
+      "shopsolar-41674292789388": {
+        "name": "Hysolis [Apollo 5K] 120V Solar Kits - 5,376Wh / 3,000W Solar Power Station + Choose Your Custom Bundle | Complete Solar Kit | 5-Year Warranty — APOLLO 5K [Unit Only]",
+        "sourceUrl": "https://shopsolarkits.com/products/hysolis-apollo-5k?variant=41674292789388",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://shopsolarkits.com/products/hysolis-apollo-5k?variant=41674292789388",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:32:04.511Z",
+    "label": "Batch twenty-b exact model contextual source review",
+    "rows": [
+      [
+        "Weight",
+        "131 lbs (59.5 kg)"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\aaaef691c20101e1.html",
+      "htmlSha256": "2ee8f0830ac18d4e5d0f19818fb6d9663db1a545a1b52d18cb3b9e638bbad2d4",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\aaaef691c20101e1.json",
+      "metadataSha256": "c0fab8d329b0a7dbf897455db63fedbe3b7c1c823635ebe44da830eb262fae1c",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": false,
+        "headings": [
+          "Hysolis Apollo 5K Complete Solar Kit"
+        ],
+        "ogTitle": "Hysolis [Apollo 5K] 5,376wH / 3,000W Solar Power Station",
+        "selectedSku": "41674292789388",
+        "selectedPackQuantity": 1,
+        "variant": "41674292789388",
+        "variantExact": true,
+        "sourceUrl": "https://shopsolarkits.com/products/hysolis-apollo-5k",
+        "exactInertVariant": {
+          "id": 41674292789388,
+          "title": "APOLLO 5K [Unit Only]",
+          "option1": "APOLLO 5K [Unit Only]",
+          "option2": null,
+          "option3": null,
+          "sku": "HYSOLIS-APOLLO-5K",
+          "requires_shipping": true,
+          "taxable": true,
+          "featured_image": {
+            "id": 32145901879436,
+            "product_id": 7027875348620,
+            "position": 15,
+            "created_at": "2023-10-02T18:52:21-04:00",
+            "updated_at": "2024-07-25T21:30:26-04:00",
+            "alt": "Hysolis [Apollo 5K] 120V Solar Kits - 5,376Wh / 3,000W Solar Power Station + Choose Your Custom Bundle | Complete Solar Kit - ShopSolar.com",
+            "width": 800,
+            "height": 800,
+            "src": "//shopsolarkits.com/cdn/shop/files/HYSOLIS-APOLLO-5K_160ae771-a782-4636-9655-f83ec69a2f54.jpg?v=1721957426",
+            "variant_ids": [
+              41674292789388
+            ]
+          },
+          "available": false,
+          "name": "Hysolis [Apollo 5K] 120V Solar Kits - 5,376Wh / 3,000W Solar Power Station + Choose Your Custom Bundle | Complete Solar Kit | 5-Year Warranty - APOLLO 5K [Unit Only]",
+          "public_title": "APOLLO 5K [Unit Only]",
+          "options": [
+            "APOLLO 5K [Unit Only]"
+          ],
+          "price": 399500,
+          "weight": 45,
+          "compare_at_price": 624900,
+          "inventory_management": "shopify",
+          "barcode": null,
+          "featured_media": {
+            "alt": "Hysolis [Apollo 5K] 120V Solar Kits - 5,376Wh / 3,000W Solar Power Station + Choose Your Custom Bundle | Complete Solar Kit - ShopSolar.com",
+            "id": 24515182526604,
+            "position": 15,
+            "preview_image": {
+              "aspect_ratio": 1,
+              "height": 800,
+              "width": 800,
+              "src": "//shopsolarkits.com/cdn/shop/files/HYSOLIS-APOLLO-5K_160ae771-a782-4636-9655-f83ec69a2f54.jpg?v=1721957426"
+            }
+          },
+          "requires_selling_plan": false,
+          "selling_plan_allocations": [],
+          "quantity_rule": {
+            "min": 1,
+            "max": null,
+            "increment": 1
+          }
+        }
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Selected Unit Only variant HYSOLIS-APOLLO-5K; single station, not HEX or OCTO solar bundle. Explicit unit weight from Apollo technical table.",
+      "quotes": [
+        {
+          "row": [
+            "Weight",
+            "131 lbs (59.5 kg)"
+          ],
+          "quote": "Weight 131 lbs (59.5 kg)"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "weight",
+        "label": "Weight",
+        "value": "131 lbs (59.5 kg)",
+        "source": "https://shopsolarkits.com/products/hysolis-apollo-5k?variant=41674292789388",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-ssg250-60p-ucv"
+    ],
+    "expected": {
+      "santan-solar-ssg250-60p-ucv": {
+        "name": "Used SSG 250W Solar Panels Cracked Vinyl",
+        "sourceUrl": "https://www.santansolar.com/product/used-ssg-250w-solar-panels-cracked-vinyl/",
+        "category": "panels",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/used-ssg-250w-solar-panels-cracked-vinyl/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:29:19.310Z",
+    "label": "Batch twenty-b exact model contextual source review",
+    "rows": [
+      [
+        "Cell type",
+        "Poly"
+      ],
+      [
+        "Dimensions",
+        "64.95 × 39.05 × 1.37 inches (1650 × 992 × 35mm)"
+      ],
+      [
+        "Maximum system voltage",
+        "600V DC (UL)"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\0f7d9c872168e8d6.html",
+      "htmlSha256": "fc09bb050c2f03c9c32104fd8e1ee270dc44b593b00cd21438a5dfbf90ee43e1",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\0f7d9c872168e8d6.json",
+      "metadataSha256": "04a66fbdc730705f016b6a48a60a2dd454c9cf4c0754baf1c2362147bb0c24ae",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Used SSG 250W Solar Panels Cracked Vinyl"
+        ],
+        "ogTitle": "Used SSG 250W Solar Panels Cracked Vinyl | SanTan Solar",
+        "selectedSku": "SSG250-60P-UCV",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/used-ssg-250w-solar-panels-cracked-vinyl/"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact visible SKU SSG250-60P-UCV used cracked-vinyl module; listed original nominal ratings do not represent tested current output. Selected module described still producing75% and up; no power or STC curve promoted.",
+      "quotes": [
+        {
+          "row": [
+            "Cell type",
+            "Poly"
+          ],
+          "quote": "Cell Type Poly"
+        },
+        {
+          "row": [
+            "Dimensions",
+            "64.95 × 39.05 × 1.37 inches (1650 × 992 × 35mm)"
+          ],
+          "quote": "Dimensions: 64.95 × 39.05 × 1.37 inches (1650 × 992 × 35mm)"
+        },
+        {
+          "row": [
+            "Maximum system voltage",
+            "600V DC (UL)"
+          ],
+          "quote": "Maximum system voltage: 600V DC(UL)"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "cellConstruction",
+        "label": "Cell construction",
+        "value": "Poly",
+        "source": "https://www.santansolar.com/product/used-ssg-250w-solar-panels-cracked-vinyl/",
+        "kind": "retailer"
+      },
+      {
+        "key": "dimensions",
+        "label": "Dimensions",
+        "value": "64.95 × 39.05 × 1.37 inches (1650 × 992 × 35mm)",
+        "source": "https://www.santansolar.com/product/used-ssg-250w-solar-panels-cracked-vinyl/",
+        "kind": "retailer"
+      },
+      {
+        "key": "maxSystemVoltage",
+        "label": "Maximum system voltage",
+        "value": "600V DC (UL)",
+        "source": "https://www.santansolar.com/product/used-ssg-250w-solar-panels-cracked-vinyl/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "signature-solar-1534002"
+    ],
+    "expected": {
+      "signature-solar-1534002": {
+        "name": "7ft 10 AWG Copper PV Wire | Black and Red 30 Amp",
+        "sourceUrl": "https://signaturesolar.com/pv-wire-7-ft-10-gauge-copper-30-amp-black-red/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "url": "https://signaturesolar.com/pv-wire-7-ft-10-gauge-copper-30-amp-black-red/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:28:10.366Z",
+    "label": "Original seller source rows; contextual batch twenty D review",
+    "rows": [
+      [
+        "Rated Current",
+        "30A"
+      ]
+    ],
+    "reviewStatus": "contextually_reviewed_pending_independent_review",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\b171dd0d8f91607c.html",
+    "sha256": "9cd0bfa5fccbda5690ef3d81c276cdc8fd8d7df2f49f51e1d13d502fa49da86f",
+    "sourceScope": "Exact Signature1534002 pair of two7ft sections,30A per wire not60A summed. Original Rated Current row approved. MC4 prose not relabeled; all-black prose conflicts with black/red title so color not imported.",
+    "selectedOfferProof": [
+      {
+        "id": "signature-solar-1534002",
+        "retailerId": "signature-solar",
+        "retailer": "Signature Solar",
+        "url": "https://signaturesolar.com/pv-wire-7-ft-10-gauge-copper-30-amp-black-red/",
+        "price": 21.43,
+        "currency": "USD",
+        "packQuantity": 1,
+        "stock": "in_stock",
+        "observedAt": "2026-10-12T23:36:48.263Z",
+        "sku": "1534002",
+        "condition": "new"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-a24v7011"
+    ],
+    "expected": {
+      "santan-solar-a24v7011": {
+        "name": "Anker SOLIX MC4-to-XT-60 Charging Cable (0.5m)",
+        "sourceUrl": "https://www.santansolar.com/product/anker-solix-mc4-to-xt-60-charging-cable-0-5m/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/anker-solix-mc4-to-xt-60-charging-cable-0-5m/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-05T03:16:19.143Z",
+    "label": "Original seller source rows; contextual batch twenty D review",
+    "rows": [
+      [
+        "Length",
+        "1.6ft"
+      ],
+      [
+        "Compatibility",
+        "Anker SOLIX PS400 Solar Panel"
+      ]
+    ],
+    "reviewStatus": "contextually_reviewed_pending_independent_review",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\7678db41671cecf2.html",
+    "sha256": "9751b2f0b1ae55bce1b902fc5802a72b88b9f425889c56881094523c92276b7c",
+    "sourceScope": "Anker A24V7011 converter cable0.5m. Original nested Specifications text explicitly Length:1.6ft and Output:25A; extract Length without relabel, Output not ratedcurrent. Exact Compatibility PS400 row; do not use battery category weight1lb.",
+    "selectedOfferProof": [
+      {
+        "id": "santan-solar-a24v7011",
+        "retailerId": "santan-solar",
+        "retailer": "SanTan Solar",
+        "url": "https://www.santansolar.com/product/anker-solix-mc4-to-xt-60-charging-cable-0-5m/",
+        "price": 29.99,
+        "currency": "USD",
+        "packQuantity": 1,
+        "stock": "in_stock",
+        "observedAt": "2026-10-05T07:27:54.213Z",
+        "sku": "A24V7011",
+        "condition": "new"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "practical-preppers-17782"
+    ],
+    "expected": {
+      "practical-preppers-17782": {
+        "name": "Solar Boost 2512i(X)-HV – 12V Solar MPPT Controller",
+        "sourceUrl": "https://practicalpreppers.com/product/bluesky-solar-boost-1524ix-12v-24v-solar-mppt-controller/",
+        "category": "accessories",
+        "anchors": {}
+      }
+    },
+    "url": "https://practicalpreppers.com/product/bluesky-solar-boost-1524ix-12v-24v-solar-mppt-controller/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:28:00.021Z",
+    "label": "Original seller source rows; contextual batch twenty D review",
+    "rows": [
+      [
+        "Operating Temperature",
+        "-40°C – 45°C"
+      ],
+      [
+        "Weight",
+        "0.87 lb. (395 g)"
+      ],
+      [
+        "Dimensions",
+        "5.3×5.3×2.5″ (13.5×13.5×6.35cm)"
+      ]
+    ],
+    "reviewStatus": "contextually_reviewed_pending_independent_review",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\9af0f6f9a008228e.html",
+    "sha256": "23f89e1b8f538479e02e3f77b93ba6713c963c96d8e018d333173b711e9e6223",
+    "sourceScope": "2512i(X)-HV family exactcatalog/body despite stale1524URLslug. Single merged dimensions/weight/operatingtemperature rows applyboth2512columns. IP20 original Environmental Protection label unsupported; no rewrite. Loadoutput specificX held.",
+    "selectedOfferProof": [
+      {
+        "id": "practical-preppers-17782",
+        "retailerId": "practical-preppers",
+        "retailer": "Practical Preppers",
+        "url": "https://practicalpreppers.com/product/bluesky-solar-boost-1524ix-12v-24v-solar-mppt-controller/",
+        "price": 193,
+        "currency": "USD",
+        "packQuantity": 1,
+        "stock": "in_stock",
+        "observedAt": "2026-10-12T23:45:09.756Z",
+        "sku": "17782",
+        "condition": "new"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "shopsolar-43240462811276"
+    ],
+    "expected": {
+      "shopsolar-43240462811276": {
+        "name": "RUIXU 5.12kWh Server Rack Battery | Self-Heating - RX-LFP48100-H | 19\" Rack Mounted 3U Module | UL1973 Certified | 10-Year Warranty — 1 Battery Only",
+        "sourceUrl": "https://shopsolarkits.com/products/ruixu-self-heating-rx-lfp48100-h?variant=43240462811276",
+        "category": "batteries",
+        "anchors": {}
+      }
+    },
+    "url": "https://shopsolarkits.com/products/ruixu-self-heating-rx-lfp48100-h?variant=43240462811276",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:36:29.549Z",
+    "label": "Original seller source rows; contextual batch twenty D review",
+    "rows": [
+      [
+        "Max. charge current",
+        "70A"
+      ],
+      [
+        "Max. discharge current",
+        "100A"
+      ],
+      [
+        "Cell type",
+        "Lithium-iron phosphate (LiFePO4)"
+      ]
+    ],
+    "reviewStatus": "contextually_reviewed_pending_independent_review",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\1e7f80cf9bbbf51f.html",
+    "sha256": "b420208878ec2ed2eeec4f4e416bf70bc6f7f0e4f7ecbfa6f23702b22317250e",
+    "sourceScope": "RUIXU RX-LFP48100-H selected1BatteryOnly variant exact module table.70Amaxcharge and100Amaxdischarge separate from50Arecommended and timedpeak. CelltypeLiFePO4 approved; no pack aggregation.6other bundlevariants uninspected; heatingtypo not imported.",
+    "selectedOfferProof": [
+      {
+        "id": "shopsolar-43240462811276",
+        "retailerId": "shopsolar",
+        "retailer": "ShopSolar",
+        "url": "https://shopsolarkits.com/products/ruixu-self-heating-rx-lfp48100-h?variant=43240462811276",
+        "price": 1099,
+        "referencePrice": 1499,
+        "currency": "USD",
+        "packQuantity": 1,
+        "stock": "in_stock",
+        "observedAt": "2026-10-12T22:04:59.634Z",
+        "sku": "43240462811276",
+        "condition": "new"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "practical-preppers-17775"
+    ],
+    "expected": {
+      "practical-preppers-17775": {
+        "name": "Solar Boost 1524iX – 12V/24V Solar MPPT Controller",
+        "sourceUrl": "https://practicalpreppers.com/product/12v-24v-solar-mppt-controller/",
+        "category": "accessories",
+        "anchors": {}
+      }
+    },
+    "url": "https://practicalpreppers.com/product/12v-24v-solar-mppt-controller/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:27:29.855Z",
+    "label": "Original seller source rows; contextual batch twenty D review",
+    "rows": [
+      [
+        "Operating Temperature",
+        "-40°C – 50°C"
+      ],
+      [
+        "Weight",
+        "1.15 lb. (525 g)"
+      ],
+      [
+        "Dimensions",
+        "5.3×5.3×2.5″ (13.5×13.5×6.35cm)"
+      ]
+    ],
+    "reviewStatus": "contextually_reviewed_pending_independent_review",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\4b201aada5478d15.html",
+    "sha256": "77374f304861c538ce2e961a25f2cfdea4acd9150e0d67696659a7c5b2732d9d",
+    "sourceScope": "SB1524iX exactcatalog/body with12/24V operational columns. Single merged dimensions/weight/temp rows common; voltage-dependent current not flattened. EnvironmentalProtectionIP20 unmapped; efficiencycategoryaccessories notimported.",
+    "selectedOfferProof": [
+      {
+        "id": "practical-preppers-17775",
+        "retailerId": "practical-preppers",
+        "retailer": "Practical Preppers",
+        "url": "https://practicalpreppers.com/product/12v-24v-solar-mppt-controller/",
+        "price": 164,
+        "currency": "USD",
+        "packQuantity": 1,
+        "stock": "in_stock",
+        "observedAt": "2026-10-12T23:45:09.758Z",
+        "sku": "17775",
+        "condition": "new"
+      }
+    ]
   }
 ]

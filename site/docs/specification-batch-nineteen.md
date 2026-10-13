@@ -1,6 +1,6 @@
 # Specification research batch nineteen
 
-The reviewed canonical update adds 166 technical fields and resolves 137 new comparison cells from 79 source records. Three exact WattCycle identities restore four existing comparison cells, and one existing cable compatibility field receives the approved matched-SOC correction. Those identity and compatibility repairs add zero new facts and receive zero research-fill credit. Publication and final release browser validation remain pending.
+The reviewed canonical update adds 166 technical fields and resolves 137 new comparison cells from 79 source records. Three exact WattCycle identities restore four existing comparison cells, and one existing cable compatibility field receives the approved matched-SOC correction. Those identity and compatibility repairs add zero new facts and receive zero research-fill credit. Published as Sites version 120 after release validation.
 
 ## Current coverage
 
@@ -35,10 +35,14 @@ Research continues across all 12 categories, including previously reviewed listi
 
 ## Validation and release status
 
-The writer integration passed 664 tests with zero failures and three skips, including all eight optional WattCycle packet/CLI tests; TypeScript checking passed. These results cover the composed code and isolated migration fixtures. Final promoted-data build, affected browser flows in both themes and mobile, CI and live artifact verification are release gates recorded separately. This document makes no publication or final browser-validation claim.
+The writer integration passed 664 tests with zero failures and three skips, including all eight optional WattCycle packet/CLI tests; TypeScript checking passed. These results cover the composed code and isolated migration fixtures. Final promoted-data build, affected browser flows in both themes and mobile, CI and live artifact verification are release gates recorded separately. The release completion below records subsequent production verification.
 
 No price collector schedule, current offer, price history or scraper workflow is changed by this batch. Ordinary price collection remains independent of the research progress snapshot.
 
 ## Local release checks
 
-The promoted catalog passed the full packet-enabled test suite (664 passed, zero failures, three existing correction-CLI skips), type checking and a production build. Independent review approved the exact promoted data and a separate display-label-only cleanup; all 79 reimports remained identical. The local catalog endpoint exposed all 171 expected strong fields across the 82 affected listings. Browser checks covered product details and battery comparison in day/night themes at mobile and desktop widths, including 5.376 kWh, the complete 300A (Peak 600A 3s) condition, F3000 output voltage, and the corrected WattCycle SOC qualification. Local history/reviews were unavailable in the isolated database; production availability is checked separately. Publication is still pending.
+The promoted catalog passed the full packet-enabled test suite (664 passed, zero failures, three existing correction-CLI skips), type checking and a production build. Independent review approved the exact promoted data and a separate display-label-only cleanup; all 79 reimports remained identical. The local catalog endpoint exposed all 171 expected strong fields across the 82 affected listings. Browser checks covered product details and battery comparison in day/night themes at mobile and desktop widths, including 5.376 kWh, the complete 300A (Peak 600A 3s) condition, F3000 output voltage, and the corrected WattCycle SOC qualification. Local history/reviews were unavailable in the isolated database; production availability is checked separately. Published as Sites version 120.
+
+## Release completion
+
+PR #59 merged as `08ff46e2e09c43e1b558d88d4e1b1d6ee317906c`; both CI runs passed. Sites version 120 deployment `appgdep_6acd9eadb92c8191990fe05d79ca67cd` succeeded on 2026-10-13 at 03:00 UTC. The live catalog matched all 171 checked strong fields and source objects across 82 affected listings. Fourteen published JS/CSS assets matched the built artifact by SHA-256. The live Vatrer specifications page displayed 5376Wh, the full 300A (Peak 600A 3s) condition, and the manufacturer source label. This verifies the affected release; exhaustive catalog research remains active.
