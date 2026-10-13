@@ -1,0 +1,2301 @@
+{
+  "checkpointAt": "2026-10-13T00:17:23.044Z",
+  "published": false,
+  "canonicalImportPerformed": true,
+  "roleSourceApprovals": 18,
+  "sourceInspectedListings": 18,
+  "newTechnicalFields": 54,
+  "comparisonFills": 12,
+  "roleGapAccounting": {
+    "retiredInapplicableKeys": 211,
+    "newlyApplicableKeys": 85,
+    "persistingKeys": 2,
+    "netInapplicableGapReduction": 126,
+    "researchFillCredit": 0
+  },
+  "preservedPriorWholeSpecifications": 4694,
+  "preservedPriorStrongFields": 29946,
+  "preservedPriorSources": 8156,
+  "specificationEntries": 4712,
+  "strongFields": 30000,
+  "sourceObjects": 8175,
+  "registryRecords": 4321,
+  "sourceManifest": "ae4545bc98e731b769713adcd8a1b5856ed61b6ddd97a1d40896c344f2443bff",
+  "sourceReview": "review-role-fields-eighteen-v3.json",
+  "runtimeReview": "review-component-roles-FIXED-v2.json",
+  "sourceHolds": "role-fields-eighteen-holds.json",
+  "sourceAttempts": "role-fields-eighteen-attempts.json",
+  "growthAccounting": {
+    "addedListings": [
+      {
+        "id": "oupes-48006991446193",
+        "name": "OUPES UPS 1200 UPS Battery 368Wh 1200W — UPS 1200 (Unit Only)",
+        "category": "batteries",
+        "missing": [
+          "Energy (kWh)",
+          "Voltage (V)",
+          "Chemistry",
+          "Format",
+          "Discharge (A)",
+          "Rated capacity (Ah)",
+          "Maximum charge current",
+          "Peak discharge current",
+          "Communications",
+          "Dimensions"
+        ]
+      },
+      {
+        "id": "oupes-48006991478961",
+        "name": "OUPES UPS 1200 UPS Battery 368Wh 1200W — UPS 1800 (Unit Only)",
+        "category": "batteries",
+        "missing": [
+          "Energy (kWh)",
+          "Voltage (V)",
+          "Chemistry",
+          "Format",
+          "Discharge (A)",
+          "Rated capacity (Ah)",
+          "Maximum charge current",
+          "Peak discharge current",
+          "Communications",
+          "Dimensions"
+        ]
+      },
+      {
+        "id": "redodo-40276829012058",
+        "name": "Redodo 12V 40 Amp DC to DC Charger with MPPT",
+        "category": "charging",
+        "missing": [
+          "PV volts",
+          "PV power",
+          "MPPT operating voltage range",
+          "Independent MPPT count",
+          "Maximum MPPT input current",
+          "PV short-circuit current limit",
+          "Operating temperature"
+        ]
+      },
+      {
+        "id": "rich-solar-41179955298353",
+        "name": "4 AWG 5/16\" Battery Cable Pair | 1 FT Orange & Black Pure Copper Cables for ALPHA 5 PRO Server Rack Battery",
+        "category": "wiring",
+        "missing": [
+          "Connector",
+          "Conductor material",
+          "Rated voltage",
+          "Rated current"
+        ]
+      },
+      {
+        "id": "wattcycle-67875404284200",
+        "name": "⚡️Early Bird⚡️ WattCycle WattLINK - BLUETTI AC200MAX PPS Extra 48V Battery-to-PPS Expansion Cable — 2.56kWh(48V 50Ah GC Battery) & AC200MAX Adapter kit",
+        "category": "kits",
+        "missing": [
+          "Includes"
+        ]
+      },
+      {
+        "id": "wattcycle-67875518415144",
+        "name": "WattLINK - EcoFlow Delta 2/3 Series PPS Extra Battery Cable (M8 to XT150 Port) — 2.56kWh - 48V 50Ah GC Battery & Adapter Cable kit",
+        "category": "kits",
+        "missing": [
+          "Includes"
+        ]
+      }
+    ],
+    "existingDrift": [
+      {
+        "id": "wattcycle-51473197826344",
+        "name": "WattLINK - EcoFlow Delta 2/3 Series PPS Extra Battery Cable (M8 to XT150 Port) — 5.12kWh - 48V 100Ah Rack Battery & Adapter Cable kit",
+        "before": [
+          "Gauge",
+          "Length",
+          "Connector",
+          "Conductor material",
+          "Rated voltage",
+          "Rated current"
+        ],
+        "after": [
+          "Includes"
+        ]
+      },
+      {
+        "id": "wattcycle-51806480859432",
+        "name": "WattCycle V2 48V 12kW All-in-one Split Phase Hybrid Inverter - 120/240V, 24kW Dual MPPT, 250A Charger, Wi-Fi connection — Upgrade: 24kW MPPT & WI-FI Dongle",
+        "before": [
+          "PV A/MPPT",
+          "PV short-circuit current limit",
+          "Battery voltage range",
+          "AC frequency"
+        ],
+        "after": [
+          "PV max (kW)",
+          "PV A/MPPT",
+          "MPPT operating voltage range",
+          "Maximum PV voltage",
+          "Independent MPPT count",
+          "PV short-circuit current limit",
+          "Battery voltage range",
+          "AC output voltage / phase",
+          "AC frequency"
+        ]
+      },
+      {
+        "id": "wattcycle-52163504668968",
+        "name": "WattCycle Super 12kW Split-Phase All-in-one Wi-Fi Inverter with 200A Grid Bypass - 24kW Dual MPPT & 250A Hybrid Charging — 12kW Split-Phase Inverter with 200A Bypass",
+        "before": [
+          "PV short-circuit current limit",
+          "Battery voltage range"
+        ],
+        "after": [
+          "PV max (kW)",
+          "PV A/MPPT",
+          "Battery V",
+          "MPPT operating voltage range",
+          "Maximum PV voltage",
+          "Independent MPPT count",
+          "PV short-circuit current limit",
+          "Battery voltage range",
+          "AC output voltage / phase",
+          "AC frequency"
+        ]
+      },
+      {
+        "id": "wattcycle-67838376313128",
+        "name": "⚡️Early Bird⚡️ WattCycle WattLINK - BLUETTI AC200MAX PPS Extra 48V Battery-to-PPS Expansion Cable — Bluetti AC200MAX Adapter Cable",
+        "before": [
+          "Gauge",
+          "Conductor material",
+          "Rated voltage",
+          "Rated current"
+        ],
+        "after": [
+          "Gauge",
+          "Length",
+          "Connector",
+          "Conductor material",
+          "Rated voltage",
+          "Rated current"
+        ]
+      },
+      {
+        "id": "wattcycle-67838376345896",
+        "name": "⚡️Early Bird⚡️ WattCycle WattLINK - BLUETTI AC200MAX PPS Extra 48V Battery-to-PPS Expansion Cable — 5.12kWh(48V 100Ah Wall-Mount Battery) & AC200MAX Adapter kit",
+        "before": [],
+        "after": [
+          "Includes"
+        ]
+      },
+      {
+        "id": "wattcycle-67838376378664",
+        "name": "⚡️Early Bird⚡️ WattCycle WattLINK - BLUETTI AC200MAX PPS Extra 48V Battery-to-PPS Expansion Cable — 5.12kWh(48V 100Ah 3U Rack Battery) & AC200MAX Adapter kit",
+        "before": [],
+        "after": [
+          "Includes"
+        ]
+      }
+    ]
+  },
+  "current": {
+    "catalogListings": 8626,
+    "remainingListings": 7296,
+    "remainingFields": 38680,
+    "remainingFamilies": 4448,
+    "reportCheckedAt": "2026-10-13T00:12:14.564Z"
+  },
+  "validation": {
+    "testsDiscovered": 643,
+    "testsPassed": 640,
+    "testsSkipped": 3,
+    "testsFailed": 0,
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "initialDisplayRebuild": "EBUSY owned preview held build output; stopped only owned server, subsequent build passed",
+    "browser": {
+      "status": "passed_bounded_rendering_check",
+      "products": [
+        "practical-preppers-18167",
+        "santan-solar-deltaprorc",
+        "shopsolar-41900354470028",
+        "watts247-4-2",
+        "watts247-w-emp-600vdcx2"
+      ],
+      "themes": [
+        "light desktop1280",
+        "dark mobile375"
+      ],
+      "screenshots": [
+        "role-qa-practical-preppers-18167-day.png",
+        "role-qa-santan-solar-deltaprorc-day.png",
+        "role-qa-shopsolar-41900354470028-day.png",
+        "role-qa-watts247-4-2-day.png",
+        "role-qa-watts247-w-emp-600vdcx2-day.png",
+        "role-qa-practical-preppers-18167-night-mobile.png",
+        "role-qa-santan-solar-deltaprorc-night-mobile.png",
+        "role-qa-shopsolar-41900354470028-night-mobile.png",
+        "role-qa-watts247-4-2-night-mobile.png",
+        "role-qa-watts247-w-emp-600vdcx2-night-mobile.png"
+      ],
+      "observations": "role-correction-browser-observations.json",
+      "visuallyInspectedScreenshots": [
+        "role-qa-practical-preppers-18167-day.png",
+        "role-qa-watts247-4-2-night-mobile.png"
+      ],
+      "mainAndSpecificationColumnsContainCheckedText": true,
+      "universalDocumentZeroOverflowClaimed": false,
+      "localHistoryReviews": "503 intentionally omitted local tables",
+      "hydratedPublicSnapshotNotRawD1": true,
+      "falseStationPresentationRemoved": true,
+      "sourceMetadataPreserved": true,
+      "viewportReset": true,
+      "temporaryTabClosed": true,
+      "ownedPreviewStopped": true
+    },
+    "wholeBranchReview": {
+      "status": "approved_code_and_data_scope",
+      "review": "review-wholebranch-eighteen.json",
+      "sha256": "a7d3e2e509e3a6f0a1da334719266f4335d4de29a9602b902d2361131ce8ee4c",
+      "browserCiReleaseApprovalExcluded": true
+    },
+    "publication": "pending"
+  },
+  "normalPriceScrapingEnabled": true,
+  "historyCollectionPaused": true,
+  "noFamiliesDeclaredExhausted": true,
+  "sourceResearchAttempts": [
+    {
+      "id": "practical-preppers-18167",
+      "status": "full_cached_html_inspected",
+      "originalHtmlHash": "35109e760d33a0d1f2d160be0ac2992be86ce3bdc32ac0d4625734236ef2d7db",
+      "proposedFacts": 3,
+      "strongFields": 3,
+      "resolvedComparisonFields": [
+        {
+          "key": "compatibility",
+          "label": "Fits",
+          "value": "cell phone and other USB devices"
+        },
+        {
+          "key": "dimensions",
+          "label": "Size",
+          "value": "3 5/16″ x 3 5/16″ x 2 7/8”"
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "material",
+          "label": "Material",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        }
+      ],
+      "exhausted": false,
+      "holds": []
+    },
+    {
+      "id": "santan-solar-deltaprorc",
+      "status": "full_cached_html_inspected",
+      "originalHtmlHash": "4e8e8508bb2251ec743f26bb49895bebf3d16686d241b0e075cd5f9f93ca433b",
+      "proposedFacts": 3,
+      "strongFields": 3,
+      "resolvedComparisonFields": [
+        {
+          "key": "compatibility",
+          "label": "Fits",
+          "value": "only compatible with the EcoFlow DELTA Pro"
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "dimensions",
+          "label": "Size",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        }
+      ],
+      "exhausted": false,
+      "holds": []
+    },
+    {
+      "id": "shopsolar-41900354470028",
+      "status": "full_cached_html_inspected",
+      "originalHtmlHash": "3c0f44c1a3719687591e3fed5992dabdc7ee2e30eea20ca558844585fa137087",
+      "proposedFacts": 1,
+      "strongFields": 1,
+      "resolvedComparisonFields": [],
+      "unresolved": [
+        {
+          "key": "channels",
+          "label": "Channels",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "communications",
+          "label": "Connection",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "accuracy",
+          "label": "Measurement accuracy",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        }
+      ],
+      "exhausted": false,
+      "holds": []
+    },
+    {
+      "id": "watts247-fuse-combinerbox-15a-16",
+      "status": "full_cached_html_inspected",
+      "originalHtmlHash": "678ec0bd98f00ebff88bf2cd56a2ed51c9306176c6dc190c98f3018a6c5f4d44",
+      "proposedFacts": 1,
+      "strongFields": 1,
+      "resolvedComparisonFields": [],
+      "unresolved": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ratedVoltage",
+          "label": "Rated volts",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "interruptRating",
+          "label": "Interrupt / breaking capacity",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "poles",
+          "label": "Poles",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        }
+      ],
+      "exhausted": false,
+      "holds": [
+        {
+          "id": "watts247-fuse-combinerbox-15a-16",
+          "label": "Weight",
+          "value": ".1 lbs",
+          "reason": "Source decimal begins .1; parser currently rejects leading-decimal measurement. Five-fuse package scope also not established as per-fuse mass."
+        },
+        {
+          "id": "watts247-fuse-combinerbox-15a-16",
+          "label": "Dimensions",
+          "value": "1 × 1 × 1 in",
+          "reason": "Generic 1×1×1 inch source placeholder; real product dimensions not verified."
+        },
+        {
+          "id": "watts247-fuse-combinerbox-15a-16",
+          "label": "Component voltage/current",
+          "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+        }
+      ]
+    },
+    {
+      "id": "watts247-4-2-1",
+      "status": "full_cached_html_inspected",
+      "originalHtmlHash": "153ff82d428276a62756af513bcb44017ab564bd7fc74aa3fdc0bbacfa37313d",
+      "proposedFacts": 4,
+      "strongFields": 4,
+      "resolvedComparisonFields": [
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "IP65"
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ratedVoltage",
+          "label": "Rated volts",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "interruptRating",
+          "label": "Interrupt / breaking capacity",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "poles",
+          "label": "Poles",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        }
+      ],
+      "exhausted": false,
+      "holds": [
+        {
+          "id": "watts247-4-2-1",
+          "label": "Component voltage/current",
+          "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+        }
+      ]
+    },
+    {
+      "id": "watts247-4-4",
+      "status": "full_cached_html_inspected",
+      "originalHtmlHash": "ab567b888351eda822f98389c97991d475a0f23fb7636347eaf360712cb99b68",
+      "proposedFacts": 4,
+      "strongFields": 4,
+      "resolvedComparisonFields": [
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "IP65"
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ratedVoltage",
+          "label": "Rated volts",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "interruptRating",
+          "label": "Interrupt / breaking capacity",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "poles",
+          "label": "Poles",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        }
+      ],
+      "exhausted": false,
+      "holds": [
+        {
+          "id": "watts247-4-4",
+          "label": "Component voltage/current",
+          "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+        }
+      ]
+    },
+    {
+      "id": "watts247-6-2",
+      "status": "full_cached_html_inspected",
+      "originalHtmlHash": "69517c3674cf878cf0019df3615af632389cc04151f89814beda3fee59c68eb3",
+      "proposedFacts": 4,
+      "strongFields": 4,
+      "resolvedComparisonFields": [
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "IP65"
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ratedVoltage",
+          "label": "Rated volts",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "interruptRating",
+          "label": "Interrupt / breaking capacity",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "poles",
+          "label": "Poles",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        }
+      ],
+      "exhausted": false,
+      "holds": [
+        {
+          "id": "watts247-6-2",
+          "label": "Component voltage/current",
+          "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+        }
+      ]
+    },
+    {
+      "id": "watts247-6-3-1",
+      "status": "full_cached_html_inspected",
+      "originalHtmlHash": "6ab5e099516081da01701d253463ae013ac40b59685f936f2acf180140f26999",
+      "proposedFacts": 4,
+      "strongFields": 4,
+      "resolvedComparisonFields": [
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "IP65"
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ratedVoltage",
+          "label": "Rated volts",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "interruptRating",
+          "label": "Interrupt / breaking capacity",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "poles",
+          "label": "Poles",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        }
+      ],
+      "exhausted": false,
+      "holds": [
+        {
+          "id": "watts247-6-3-1",
+          "label": "Component voltage/current",
+          "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+        }
+      ]
+    },
+    {
+      "id": "watts247-6-3v3-36",
+      "status": "full_cached_html_inspected",
+      "originalHtmlHash": "cc3108bfe3b7d14f4f28e98a23561956494957c6150fb7bae07472cfd8fb18b1",
+      "proposedFacts": 4,
+      "strongFields": 4,
+      "resolvedComparisonFields": [
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "IP65"
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ratedVoltage",
+          "label": "Rated volts",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "interruptRating",
+          "label": "Interrupt / breaking capacity",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "poles",
+          "label": "Poles",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        }
+      ],
+      "exhausted": false,
+      "holds": [
+        {
+          "id": "watts247-6-3v3-36",
+          "label": "Component voltage/current",
+          "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+        }
+      ]
+    },
+    {
+      "id": "watts247-6-3",
+      "status": "full_cached_html_inspected",
+      "originalHtmlHash": "754b7dd6acbe07aa028a52d964ae2c7c5e9258dea747fa63fc916bb03667eadc",
+      "proposedFacts": 4,
+      "strongFields": 4,
+      "resolvedComparisonFields": [
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "IP65"
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ratedVoltage",
+          "label": "Rated volts",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "interruptRating",
+          "label": "Interrupt / breaking capacity",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "poles",
+          "label": "Poles",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        }
+      ],
+      "exhausted": false,
+      "holds": [
+        {
+          "id": "watts247-6-3",
+          "label": "Component voltage/current",
+          "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+        }
+      ]
+    },
+    {
+      "id": "watts247-8-4-empty",
+      "status": "full_cached_html_inspected",
+      "originalHtmlHash": "15171b7ba70a897f16d26fa88ed94bbc55b7b30dd92e65b7c4d2ba026d0353c5",
+      "proposedFacts": 2,
+      "strongFields": 2,
+      "resolvedComparisonFields": [],
+      "unresolved": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ratedVoltage",
+          "label": "Rated volts",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "interruptRating",
+          "label": "Interrupt / breaking capacity",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "poles",
+          "label": "Poles",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        }
+      ],
+      "exhausted": false,
+      "holds": [
+        {
+          "id": "watts247-8-4-empty",
+          "label": "Component voltage/current",
+          "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+        }
+      ]
+    },
+    {
+      "id": "watts247-8-4",
+      "status": "full_cached_html_inspected",
+      "originalHtmlHash": "6737eb9feeb4eae157b63045b41e6e491900ba2c0824b0162a093d8fb723770f",
+      "proposedFacts": 4,
+      "strongFields": 4,
+      "resolvedComparisonFields": [
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "IP65"
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ratedVoltage",
+          "label": "Rated volts",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "interruptRating",
+          "label": "Interrupt / breaking capacity",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "poles",
+          "label": "Poles",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        }
+      ],
+      "exhausted": false,
+      "holds": [
+        {
+          "id": "watts247-8-4",
+          "label": "Component voltage/current",
+          "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+        }
+      ]
+    },
+    {
+      "id": "watts247-w-emp-220300-2",
+      "status": "full_cached_html_inspected",
+      "originalHtmlHash": "8ec1329679b0cf21dc93cc80a6499c5158c07c21e7a23cef0a48950a5a0ba1e4",
+      "proposedFacts": 2,
+      "strongFields": 2,
+      "resolvedComparisonFields": [],
+      "unresolved": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ratedVoltage",
+          "label": "Rated volts",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "interruptRating",
+          "label": "Interrupt / breaking capacity",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "poles",
+          "label": "Poles",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        }
+      ],
+      "exhausted": false,
+      "holds": [
+        {
+          "id": "watts247-w-emp-220300-2",
+          "label": "Electrical, protection and certifications",
+          "reason": "Selected DC introduction is followed by generic residential 120/240VAC Home model marketing; generic 100kA/IP65/MIL claims held without exact selected DC-model scope bridge."
+        },
+        {
+          "id": "watts247-w-emp-220300-2",
+          "label": "Component voltage/current",
+          "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+        }
+      ]
+    },
+    {
+      "id": "watts247-w-emp-600vdcx2",
+      "status": "full_cached_html_inspected",
+      "originalHtmlHash": "cbebfc1ce4f9fbab80c20cde32332152e86528d8a5056ed60fa6bfbd62807b3c",
+      "proposedFacts": 2,
+      "strongFields": 2,
+      "resolvedComparisonFields": [],
+      "unresolved": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ratedVoltage",
+          "label": "Rated volts",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "interruptRating",
+          "label": "Interrupt / breaking capacity",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "poles",
+          "label": "Poles",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        }
+      ],
+      "exhausted": false,
+      "holds": [
+        {
+          "id": "watts247-w-emp-600vdcx2",
+          "label": "Electrical, protection and certifications",
+          "reason": "Selected DC introduction is followed by generic residential 120/240VAC Home model marketing; generic 100kA/IP65/MIL claims held without exact selected DC-model scope bridge."
+        },
+        {
+          "id": "watts247-w-emp-600vdcx2",
+          "label": "Component voltage/current",
+          "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+        }
+      ]
+    },
+    {
+      "id": "watts247-w-emp-220300",
+      "status": "full_cached_html_inspected",
+      "originalHtmlHash": "a132bff9a36ea083d0b08dee152088e74f858c5f3300d9e8af34d1f3739201ab",
+      "proposedFacts": 2,
+      "strongFields": 2,
+      "resolvedComparisonFields": [],
+      "unresolved": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ratedVoltage",
+          "label": "Rated volts",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "interruptRating",
+          "label": "Interrupt / breaking capacity",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "poles",
+          "label": "Poles",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        }
+      ],
+      "exhausted": false,
+      "holds": [
+        {
+          "id": "watts247-w-emp-220300",
+          "label": "Electrical, protection and certifications",
+          "reason": "Selected DC introduction is followed by generic residential 120/240VAC Home model marketing; generic 100kA/IP65/MIL claims held without exact selected DC-model scope bridge."
+        },
+        {
+          "id": "watts247-w-emp-220300",
+          "label": "Component voltage/current",
+          "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+        }
+      ]
+    },
+    {
+      "id": "watts247-w-emp-600vdcx1",
+      "status": "full_cached_html_inspected",
+      "originalHtmlHash": "21bd6f3d49622a564107ebfd549e62e1bc61bc0e56d75f2c79194390a2b83088",
+      "proposedFacts": 2,
+      "strongFields": 2,
+      "resolvedComparisonFields": [],
+      "unresolved": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ratedVoltage",
+          "label": "Rated volts",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "interruptRating",
+          "label": "Interrupt / breaking capacity",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "poles",
+          "label": "Poles",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        }
+      ],
+      "exhausted": false,
+      "holds": [
+        {
+          "id": "watts247-w-emp-600vdcx1",
+          "label": "Electrical, protection and certifications",
+          "reason": "Selected DC introduction is followed by generic residential 120/240VAC Home model marketing; generic 100kA/IP65/MIL claims held without exact selected DC-model scope bridge."
+        },
+        {
+          "id": "watts247-w-emp-600vdcx1",
+          "label": "Component voltage/current",
+          "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+        }
+      ]
+    },
+    {
+      "id": "watts247-4-1",
+      "status": "full_cached_html_inspected",
+      "originalHtmlHash": "395044654745706f1e69b28d03bd1ac2155330b022ea91831d0be402ee5166fa",
+      "proposedFacts": 4,
+      "strongFields": 4,
+      "resolvedComparisonFields": [
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "IP65"
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ratedVoltage",
+          "label": "Rated volts",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "interruptRating",
+          "label": "Interrupt / breaking capacity",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "poles",
+          "label": "Poles",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        }
+      ],
+      "exhausted": false,
+      "holds": [
+        {
+          "id": "watts247-4-1",
+          "label": "Component voltage/current",
+          "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+        }
+      ]
+    },
+    {
+      "id": "watts247-4-2",
+      "status": "full_cached_html_inspected",
+      "originalHtmlHash": "8f707c04d14ee1535784ed0d73f0cae90b8f4dcfc3f5446a792eb38939455238",
+      "proposedFacts": 4,
+      "strongFields": 4,
+      "resolvedComparisonFields": [
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "IP65"
+        }
+      ],
+      "unresolved": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "ratedVoltage",
+          "label": "Rated volts",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "interruptRating",
+          "label": "Interrupt / breaking capacity",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        },
+        {
+          "key": "poles",
+          "label": "Poles",
+          "value": "—",
+          "reason": "Full exact selected cached HTML and metadata inspected. No unambiguous selected-model/unit/component published value with valid parser semantics for this remaining label; source scope conflicts and unavailable originals are not inferred.",
+          "status": "remaining_not_exhausted"
+        }
+      ],
+      "exhausted": false,
+      "holds": [
+        {
+          "id": "watts247-4-2",
+          "label": "Component voltage/current",
+          "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+        }
+      ]
+    }
+  ],
+  "technicalSourceHolds": [
+    {
+      "id": "watts247-fuse-combinerbox-15a-16",
+      "label": "Weight",
+      "value": ".1 lbs",
+      "reason": "Source decimal begins .1; parser currently rejects leading-decimal measurement. Five-fuse package scope also not established as per-fuse mass."
+    },
+    {
+      "id": "watts247-fuse-combinerbox-15a-16",
+      "label": "Dimensions",
+      "value": "1 × 1 × 1 in",
+      "reason": "Generic 1×1×1 inch source placeholder; real product dimensions not verified."
+    },
+    {
+      "id": "watts247-fuse-combinerbox-15a-16",
+      "label": "Component voltage/current",
+      "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+    },
+    {
+      "id": "watts247-4-2-1",
+      "label": "Component voltage/current",
+      "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+    },
+    {
+      "id": "watts247-4-4",
+      "label": "Component voltage/current",
+      "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+    },
+    {
+      "id": "watts247-6-2",
+      "label": "Component voltage/current",
+      "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+    },
+    {
+      "id": "watts247-6-3-1",
+      "label": "Component voltage/current",
+      "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+    },
+    {
+      "id": "watts247-6-3v3-36",
+      "label": "Component voltage/current",
+      "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+    },
+    {
+      "id": "watts247-6-3",
+      "label": "Component voltage/current",
+      "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+    },
+    {
+      "id": "watts247-8-4-empty",
+      "label": "Component voltage/current",
+      "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+    },
+    {
+      "id": "watts247-8-4",
+      "label": "Component voltage/current",
+      "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+    },
+    {
+      "id": "watts247-w-emp-220300-2",
+      "label": "Electrical, protection and certifications",
+      "reason": "Selected DC introduction is followed by generic residential 120/240VAC Home model marketing; generic 100kA/IP65/MIL claims held without exact selected DC-model scope bridge."
+    },
+    {
+      "id": "watts247-w-emp-220300-2",
+      "label": "Component voltage/current",
+      "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+    },
+    {
+      "id": "watts247-w-emp-600vdcx2",
+      "label": "Electrical, protection and certifications",
+      "reason": "Selected DC introduction is followed by generic residential 120/240VAC Home model marketing; generic 100kA/IP65/MIL claims held without exact selected DC-model scope bridge."
+    },
+    {
+      "id": "watts247-w-emp-600vdcx2",
+      "label": "Component voltage/current",
+      "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+    },
+    {
+      "id": "watts247-w-emp-220300",
+      "label": "Electrical, protection and certifications",
+      "reason": "Selected DC introduction is followed by generic residential 120/240VAC Home model marketing; generic 100kA/IP65/MIL claims held without exact selected DC-model scope bridge."
+    },
+    {
+      "id": "watts247-w-emp-220300",
+      "label": "Component voltage/current",
+      "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+    },
+    {
+      "id": "watts247-w-emp-600vdcx1",
+      "label": "Electrical, protection and certifications",
+      "reason": "Selected DC introduction is followed by generic residential 120/240VAC Home model marketing; generic 100kA/IP65/MIL claims held without exact selected DC-model scope bridge."
+    },
+    {
+      "id": "watts247-w-emp-600vdcx1",
+      "label": "Component voltage/current",
+      "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+    },
+    {
+      "id": "watts247-4-1",
+      "label": "Component voltage/current",
+      "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+    },
+    {
+      "id": "watts247-4-2",
+      "label": "Component voltage/current",
+      "reason": "Source-labelled PV input fuse, diode and surge component ratings are not interchangeable with whole enclosure/system limits. Original Max DC Output/Surge Protection labels need scoped parser support; no relabeling to generic Rated voltage/current."
+    }
+  ],
+  "originalRoleHolds": [
+    {
+      "family": 49,
+      "id": "signature-solar-1659001",
+      "status": "held",
+      "reason": "Source explicitly describes a fuel inverter generator. The correct energy/AC generation semantics and supported catalog category require an engineering decision; no automatic accessory or solar-inverter correction proposed.",
+      "source": {
+        "url": "https://signaturesolar.com/champion-8500-watt-dual-fuel-inverter-generator",
+        "fullHtmlArtifact": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6415e471b6de6a39.html",
+        "fullHtmlSha256": "7b1c06a07a1ac6ac143ce859d285ac637d348f2effb1bca3f0a046a59072edfc",
+        "fullHtmlBytes": 312072,
+        "metadataArtifact": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6415e471b6de6a39.json",
+        "metadataSha256": "9580be72c926d2fec73c12666c7272531d5f2f9e3f8dfd98ef06ac0257b2011c",
+        "originalHistoricalAt": "2026-10-12T01:36:20.725Z",
+        "historicalHashClaim": false,
+        "sourceScriptsExecuted": false,
+        "selectedJsonLdProduct": null,
+        "selectedInertVariant": null,
+        "selectedBinding": {
+          "family": 49,
+          "id": "signature-solar-1659001",
+          "expected": {
+            "name": "Champion 8500 Watt Dual Fuel Inverter Generator with Electric Start",
+            "sourceUrl": "https://signaturesolar.com/champion-8500-watt-dual-fuel-inverter-generator",
+            "category": "inverters",
+            "anchors": {
+              "watts": 8500,
+              "outputWatts": 8500
+            }
+          },
+          "titleEvidence": [
+            "Champion 8500W Dual Fuel Inverter GeneratorYouTubeFacebookLinkedInInstagram",
+            "Champion 8500 Watt Dual Fuel Inverter Generator with Electric Start",
+            "Champion 8500 Watt Dual Fuel Inverter Generator with Electric Start",
+            "",
+            "Champion 8500 Watt Dual Fuel Inverter Generator with Electric Start"
+          ],
+          "titleMatch": true,
+          "variantMatch": false,
+          "skuMatch": true,
+          "selectedIdentityBound": true,
+          "skuProof": {
+            "sku": "1659001",
+            "offset": 7481
+          },
+          "selectedOffer": {
+            "id": "signature-solar-1659001",
+            "retailerId": "signature-solar",
+            "retailer": "Signature Solar",
+            "url": "https://signaturesolar.com/champion-8500-watt-dual-fuel-inverter-generator",
+            "price": 1805,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-12T21:21:12.592Z",
+            "sku": "1659001",
+            "condition": "new"
+          },
+          "rawSourceOffer": {
+            "id": "signature-solar-1659001",
+            "retailerId": "signature-solar",
+            "retailer": "Signature Solar",
+            "url": "https://signaturesolar.com/champion-8500-watt-dual-fuel-inverter-generator",
+            "price": 1805,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-12T01:36:20.725Z",
+            "sku": "1659001",
+            "condition": "new"
+          },
+          "rawSelectedVariant": null,
+          "packQuantity": 1,
+          "explicitRawTitlePack": null,
+          "packTitleMatchesOffer": null,
+          "packScope": "No aggregate quantity transferred; source-selected unit/component scope retained",
+          "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6415e471b6de6a39.html",
+          "htmlSha256": "7b1c06a07a1ac6ac143ce859d285ac637d348f2effb1bca3f0a046a59072edfc",
+          "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6415e471b6de6a39.json",
+          "metadataSha256": "9580be72c926d2fec73c12666c7272531d5f2f9e3f8dfd98ef06ac0257b2011c",
+          "fullHtmlBytes": 312072,
+          "originalHistoricalAt": "2026-10-12T01:36:20.725Z",
+          "historicalHashClaim": false,
+          "sourceScriptsExecuted": false,
+          "priorGuardRetained": false
+        },
+        "bodyTextArtifact": "output/specification-research/batch-seventeen-generation-proof/49-0.txt",
+        "bodyTextSha256": "728dbfbf7823d62cbcd94bc2b8cb2d03d2297c90c649ad7ebf571cf94d3ceae8"
+      },
+      "unchanged": {
+        "id": "signature-solar-1659001",
+        "name": "Champion 8500 Watt Dual Fuel Inverter Generator with Electric Start",
+        "sourceUrl": "https://signaturesolar.com/champion-8500-watt-dual-fuel-inverter-generator",
+        "brand": "See manufacturer",
+        "modelIdentity": null,
+        "configuration": null,
+        "technicalSpecs": {
+          "watts": 8500,
+          "outputWatts": 8500
+        },
+        "specification": null,
+        "comparisonSpecs": null,
+        "offers": [
+          {
+            "id": "signature-solar-1659001",
+            "retailerId": "signature-solar",
+            "retailer": "Signature Solar",
+            "url": "https://signaturesolar.com/champion-8500-watt-dual-fuel-inverter-generator",
+            "price": 1805,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-12T21:21:12.592Z",
+            "sku": "1659001",
+            "condition": "new"
+          }
+        ],
+        "offersSha256": "fa17f51f1583fddb8cfb3b594d878d7786ee7ca3231c047d9f1ccec4b789fdba",
+        "technicalSpecsSha256": "5dab0e27edf490e06abbd74de4dfa16e7f34f59f10e2d9befac6c696ca7a3eac",
+        "sourceModelReferences": {
+          "rawJsonLdName": null,
+          "rawJsonLdSku": null,
+          "rawVariantId": null,
+          "rawVariantSku": null
+        },
+        "offeredPackQuantities": [
+          {
+            "offerId": "signature-solar-1659001",
+            "packQuantity": 1
+          }
+        ],
+        "currentBaselineArtifact": "output/specification-research/batch-seventeen-catalog.json",
+        "currentBaselineSha256": "1ac0cd0270c7e06f413a7f3e72a39928c7825871f9264ba8f31d3951b9b09ce3",
+        "storedCheckoutCatalogHasId": false,
+        "storedCheckoutIdentity": null
+      },
+      "researchFillCredit": 0,
+      "exhaustionCredit": 0
+    },
+    {
+      "family": 73,
+      "id": "watts247-fuse-combinerbox-15a",
+      "status": "held",
+      "reason": "The selected title says a box of 5 pieces and the offered pack is 5, but the original description says Price is per fuse. Commercial pack ambiguity is held; no offered quantity or price changed.",
+      "source": {
+        "url": "https://watts247.com/product/solar-panel-combiner-box-15a-fuses/",
+        "fullHtmlArtifact": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\948eb41cdc7145fa.html",
+        "fullHtmlSha256": "a041952ed49d56691172a8588d269f7edecabdf9e74688a76ae2d1702735f618",
+        "fullHtmlBytes": 277603,
+        "metadataArtifact": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\948eb41cdc7145fa.json",
+        "metadataSha256": "246ab0e5fa6a8ad52e1eb5e0347d27d227ce73c5e4e3181a8fbc6e39649b106b",
+        "originalHistoricalAt": "2026-10-12T01:28:14.121Z",
+        "historicalHashClaim": false,
+        "sourceScriptsExecuted": false,
+        "selectedJsonLdProduct": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "@id": "https://watts247.com/product/solar-panel-combiner-box-15a-fuses/#product",
+          "name": "15A Spare Fuses -Solar Panel Combiner Box of 5 pcs",
+          "url": "https://watts247.com/product/solar-panel-combiner-box-15a-fuses/",
+          "description": "Solar Combiner box Spare fuses,  these should never blow, because panels should not be connected in parallel prior to the combiner box inputs (exceeding 15A)\r\n\r\n&amp;nbsp;\r\n\r\nPrice is per fuse",
+          "image": "https://watts247.com/wp-content/uploads/2023/06/Fuses.png",
+          "sku": "Fuse-CombinerBox-15A",
+          "offers": [
+            {
+              "@type": "Offer",
+              "priceSpecification": [
+                {
+                  "@type": "UnitPriceSpecification",
+                  "price": "10.00",
+                  "priceCurrency": "USD",
+                  "valueAddedTaxIncluded": false,
+                  "validThrough": "2027-12-31"
+                }
+              ],
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://watts247.com/product/solar-panel-combiner-box-15a-fuses/",
+              "seller": {
+                "@type": "Organization",
+                "name": "Watts247 Affordable DIY Solar",
+                "url": "https://watts247.com"
+              }
+            }
+          ]
+        },
+        "selectedInertVariant": null,
+        "selectedBinding": {
+          "family": 73,
+          "id": "watts247-fuse-combinerbox-15a",
+          "expected": {
+            "name": "15A Spare Fuses -Solar Panel Combiner Box of 5 pcs",
+            "sourceUrl": "https://watts247.com/product/solar-panel-combiner-box-15a-fuses/",
+            "category": "panels",
+            "anchors": {}
+          },
+          "titleEvidence": [
+            "15A Spare Fuses -Solar Panel Combiner Box of 5 pcs – Watts247 Affordable DIY Solar",
+            "15A Spare Fuses -Solar Panel Combiner Box of 5 pcs",
+            "",
+            "",
+            ""
+          ],
+          "titleMatch": true,
+          "variantMatch": false,
+          "skuMatch": true,
+          "selectedIdentityBound": true,
+          "skuProof": {
+            "sku": "Fuse-CombinerBox-15A",
+            "offset": 250692
+          },
+          "selectedOffer": {
+            "id": "watts247-fuse-combinerbox-15a",
+            "retailerId": "watts247",
+            "retailer": "Watts247",
+            "url": "https://watts247.com/product/solar-panel-combiner-box-15a-fuses/",
+            "price": 10,
+            "currency": "USD",
+            "packQuantity": 5,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T19:48:59.248Z",
+            "sku": "Fuse-CombinerBox-15A",
+            "condition": "new"
+          },
+          "rawSourceOffer": null,
+          "rawSelectedVariant": null,
+          "packQuantity": 5,
+          "explicitRawTitlePack": 5,
+          "packTitleMatchesOffer": true,
+          "packScope": "Exact selected original title quantity independently bound to offer",
+          "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\948eb41cdc7145fa.html",
+          "htmlSha256": "a041952ed49d56691172a8588d269f7edecabdf9e74688a76ae2d1702735f618",
+          "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\948eb41cdc7145fa.json",
+          "metadataSha256": "246ab0e5fa6a8ad52e1eb5e0347d27d227ce73c5e4e3181a8fbc6e39649b106b",
+          "fullHtmlBytes": 277603,
+          "originalHistoricalAt": "2026-10-12T01:28:14.121Z",
+          "historicalHashClaim": false,
+          "sourceScriptsExecuted": false,
+          "priorGuardRetained": false
+        },
+        "bodyTextArtifact": "output/specification-research/batch-seventeen-generation-proof/73-0.txt",
+        "bodyTextSha256": "ad260b20ebd6a922a9f691b99434ef64333563d7c501c6856f63fb114c837879"
+      },
+      "unchanged": {
+        "id": "watts247-fuse-combinerbox-15a",
+        "name": "15A Spare Fuses -Solar Panel Combiner Box of 5 pcs",
+        "sourceUrl": "https://watts247.com/product/solar-panel-combiner-box-15a-fuses/",
+        "brand": "See manufacturer",
+        "modelIdentity": null,
+        "configuration": null,
+        "technicalSpecs": {},
+        "specification": null,
+        "comparisonSpecs": null,
+        "offers": [
+          {
+            "id": "watts247-fuse-combinerbox-15a",
+            "retailerId": "watts247",
+            "retailer": "Watts247",
+            "url": "https://watts247.com/product/solar-panel-combiner-box-15a-fuses/",
+            "price": 10,
+            "currency": "USD",
+            "packQuantity": 5,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T19:48:59.248Z",
+            "sku": "Fuse-CombinerBox-15A",
+            "condition": "new"
+          }
+        ],
+        "offersSha256": "0c04eec5728dc0e6f0592760d50b402c7aa09d514c458c48291f64a134741543",
+        "technicalSpecsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "sourceModelReferences": {
+          "rawJsonLdName": "15A Spare Fuses -Solar Panel Combiner Box of 5 pcs",
+          "rawJsonLdSku": "Fuse-CombinerBox-15A",
+          "rawVariantId": null,
+          "rawVariantSku": null
+        },
+        "offeredPackQuantities": [
+          {
+            "offerId": "watts247-fuse-combinerbox-15a",
+            "packQuantity": 5
+          }
+        ],
+        "currentBaselineArtifact": "output/specification-research/batch-seventeen-catalog.json",
+        "currentBaselineSha256": "1ac0cd0270c7e06f413a7f3e72a39928c7825871f9264ba8f31d3951b9b09ce3",
+        "storedCheckoutCatalogHasId": false,
+        "storedCheckoutIdentity": null
+      },
+      "researchFillCredit": 0,
+      "exhaustionCredit": 0
+    },
+    {
+      "family": 76,
+      "id": "santan-solar-b24371a1",
+      "status": "held",
+      "reason": "PS400 selected titles and SKU/pack identity conflict with generic SST / 100–200 W source metadata. Brand, per-panel rating and commercial pack interpretation require independent review; no role correction proposed.",
+      "source": {
+        "url": "https://www.santansolar.com/product/2-x-anker-solix-ps400-portable-solar-panel/",
+        "fullHtmlArtifact": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\9997c7cb4f5b7e4d.html",
+        "fullHtmlSha256": "9982abe45d458e06188c084cf9aa2f8be6264ea7002d411a60ff0229ce1fc9a4",
+        "fullHtmlBytes": 644519,
+        "metadataArtifact": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\9997c7cb4f5b7e4d.json",
+        "metadataSha256": "de8770a39875716b9c97f255949f3b8694a508786de09094df836509790c880d",
+        "originalHistoricalAt": "2026-10-12T01:25:32.066Z",
+        "historicalHashClaim": false,
+        "sourceScriptsExecuted": false,
+        "selectedJsonLdProduct": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "@id": "https://www.santansolar.com/product/2-x-anker-solix-ps400-portable-solar-panel/#product",
+          "name": "2 x Anker SOLIX PS400 Portable Solar Panel",
+          "url": "https://www.santansolar.com/product/2-x-anker-solix-ps400-portable-solar-panel/",
+          "description": "These are perfect for off-grid applications. Due to their compact size and excellent low-light performance, they are ideal for installing on RVs, Campers, Buses, Tiny Homes, Boats, etc.",
+          "image": "https://www.santansolar.com/wp-content/uploads/Anker-SOLIX-PS200-Portable-Solar-Panel.png",
+          "sku": "B24371A1",
+          "offers": [
+            {
+              "@type": "Offer",
+              "priceSpecification": [
+                {
+                  "@type": "UnitPriceSpecification",
+                  "price": "1299.99",
+                  "priceCurrency": "USD",
+                  "validThrough": "2027-12-31",
+                  "valueAddedTaxIncluded": false
+                }
+              ],
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://www.santansolar.com/product/2-x-anker-solix-ps400-portable-solar-panel/",
+              "seller": {
+                "@type": "Organization",
+                "name": "SanTan Solar",
+                "url": "https://www.santansolar.com"
+              },
+              "price": "1299.99",
+              "priceCurrency": "USD"
+            }
+          ],
+          "brand": {
+            "@type": "Brand",
+            "name": "Anker"
+          }
+        },
+        "selectedInertVariant": null,
+        "selectedBinding": {
+          "family": 76,
+          "id": "santan-solar-b24371a1",
+          "expected": {
+            "name": "2 x Anker SOLIX PS400 Portable Solar Panel",
+            "sourceUrl": "https://www.santansolar.com/product/2-x-anker-solix-ps400-portable-solar-panel/",
+            "category": "panels",
+            "anchors": {}
+          },
+          "titleEvidence": [
+            "2 x Anker SOLIX PS400 Portable Solar Panel | SanTan SolarFacebookInstagramYouTubeTikTokXLinkedinAccountShopping CartExpandExpandExpandToggle MenuAccountShopping CartLoadingDoneLoadingDoneLoadingDoneLoadingDoneToggle Menu CloseExpandExpandExpand",
+            "2 x Anker SOLIX PS400 Portable Solar Panel",
+            "2 x Anker SOLIX PS400 Portable Solar Panel | SanTan Solar",
+            "",
+            "2 x Anker SOLIX PS400 Portable Solar Panel"
+          ],
+          "titleMatch": true,
+          "variantMatch": false,
+          "skuMatch": true,
+          "selectedIdentityBound": true,
+          "skuProof": {
+            "sku": "B24371A1",
+            "offset": 300168
+          },
+          "selectedOffer": {
+            "id": "santan-solar-b24371a1",
+            "retailerId": "santan-solar",
+            "retailer": "SanTan Solar",
+            "url": "https://www.santansolar.com/product/2-x-anker-solix-ps400-portable-solar-panel/",
+            "price": 1299.99,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:17:27.374Z",
+            "sku": "B24371A1",
+            "condition": "new"
+          },
+          "rawSourceOffer": {
+            "id": "santan-solar-b24371a1",
+            "retailerId": "santan-solar",
+            "retailer": "SanTan Solar",
+            "url": "https://www.santansolar.com/product/2-x-anker-solix-ps400-portable-solar-panel/",
+            "price": 1299.99,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-12T01:25:32.066Z",
+            "sku": "B24371A1",
+            "condition": "new"
+          },
+          "rawSelectedVariant": null,
+          "packQuantity": 1,
+          "explicitRawTitlePack": 2,
+          "packTitleMatchesOffer": false,
+          "packScope": "Exact selected original title quantity independently bound to offer",
+          "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\9997c7cb4f5b7e4d.html",
+          "htmlSha256": "9982abe45d458e06188c084cf9aa2f8be6264ea7002d411a60ff0229ce1fc9a4",
+          "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\9997c7cb4f5b7e4d.json",
+          "metadataSha256": "de8770a39875716b9c97f255949f3b8694a508786de09094df836509790c880d",
+          "fullHtmlBytes": 644519,
+          "originalHistoricalAt": "2026-10-12T01:25:32.066Z",
+          "historicalHashClaim": false,
+          "sourceScriptsExecuted": false,
+          "priorGuardRetained": false
+        },
+        "bodyTextArtifact": "output/specification-research/batch-seventeen-generation-proof/76-0.txt",
+        "bodyTextSha256": "6319f335230bdcbd10ddc81468f3d4bf8b5555338a26930e00a334ba11b99a92"
+      },
+      "unchanged": {
+        "id": "santan-solar-b24371a1",
+        "name": "2 x Anker SOLIX PS400 Portable Solar Panel",
+        "sourceUrl": "https://www.santansolar.com/product/2-x-anker-solix-ps400-portable-solar-panel/",
+        "brand": "Anker",
+        "modelIdentity": null,
+        "configuration": null,
+        "technicalSpecs": {},
+        "specification": null,
+        "comparisonSpecs": null,
+        "offers": [
+          {
+            "id": "santan-solar-b24371a1",
+            "retailerId": "santan-solar",
+            "retailer": "SanTan Solar",
+            "url": "https://www.santansolar.com/product/2-x-anker-solix-ps400-portable-solar-panel/",
+            "price": 1299.99,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:17:27.374Z",
+            "sku": "B24371A1",
+            "condition": "new"
+          }
+        ],
+        "offersSha256": "d1e32c7f428ee488814db9272ba1d14443e9f09f76c10a4fdfe58393e6f4180c",
+        "technicalSpecsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "sourceModelReferences": {
+          "rawJsonLdName": "2 x Anker SOLIX PS400 Portable Solar Panel",
+          "rawJsonLdSku": "B24371A1",
+          "rawVariantId": null,
+          "rawVariantSku": null
+        },
+        "offeredPackQuantities": [
+          {
+            "offerId": "santan-solar-b24371a1",
+            "packQuantity": 1
+          }
+        ],
+        "currentBaselineArtifact": "output/specification-research/batch-seventeen-catalog.json",
+        "currentBaselineSha256": "1ac0cd0270c7e06f413a7f3e72a39928c7825871f9264ba8f31d3951b9b09ce3",
+        "storedCheckoutCatalogHasId": false,
+        "storedCheckoutIdentity": null
+      },
+      "researchFillCredit": 0,
+      "exhaustionCredit": 0
+    },
+    {
+      "family": 77,
+      "id": "santan-solar-b24371a2",
+      "status": "held",
+      "reason": "PS400 selected titles and SKU/pack identity conflict with generic SST / 100–200 W source metadata. Brand, per-panel rating and commercial pack interpretation require independent review; no role correction proposed.",
+      "source": {
+        "url": "https://www.santansolar.com/product/3-x-anker-solix-ps400-portable-solar-panel/",
+        "fullHtmlArtifact": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\aa4c629f3de74b78.html",
+        "fullHtmlSha256": "3b66756b8f24af666475913f553c95475f4b53995d85666222797cd705f3501d",
+        "fullHtmlBytes": 643229,
+        "metadataArtifact": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\aa4c629f3de74b78.json",
+        "metadataSha256": "a65370643fbe407e1c4d25112bb7f89039d7c951065da64d96e593fb08e974b5",
+        "originalHistoricalAt": "2026-10-12T01:25:34.078Z",
+        "historicalHashClaim": false,
+        "sourceScriptsExecuted": false,
+        "selectedJsonLdProduct": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "@id": "https://www.santansolar.com/product/3-x-anker-solix-ps400-portable-solar-panel/#product",
+          "name": "3 x Anker SOLIX PS400 Portable Solar Panel",
+          "url": "https://www.santansolar.com/product/3-x-anker-solix-ps400-portable-solar-panel/",
+          "description": "These are perfect for off-grid applications. Due to their compact size and excellent low-light performance, they are ideal for installing on RVs, Campers, Buses, Tiny Homes, Boats, etc.",
+          "image": "https://www.santansolar.com/wp-content/uploads/Anker-SOLIX-PS200-Portable-Solar-Panel.png",
+          "sku": "B24371A2",
+          "offers": [
+            {
+              "@type": "Offer",
+              "priceSpecification": [
+                {
+                  "@type": "UnitPriceSpecification",
+                  "price": "1899.99",
+                  "priceCurrency": "USD",
+                  "validThrough": "2027-12-31",
+                  "valueAddedTaxIncluded": false
+                }
+              ],
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://www.santansolar.com/product/3-x-anker-solix-ps400-portable-solar-panel/",
+              "seller": {
+                "@type": "Organization",
+                "name": "SanTan Solar",
+                "url": "https://www.santansolar.com"
+              },
+              "price": "1899.99",
+              "priceCurrency": "USD"
+            }
+          ],
+          "brand": {
+            "@type": "Brand",
+            "name": "Anker"
+          }
+        },
+        "selectedInertVariant": null,
+        "selectedBinding": {
+          "family": 77,
+          "id": "santan-solar-b24371a2",
+          "expected": {
+            "name": "3 x Anker SOLIX PS400 Portable Solar Panel",
+            "sourceUrl": "https://www.santansolar.com/product/3-x-anker-solix-ps400-portable-solar-panel/",
+            "category": "panels",
+            "anchors": {}
+          },
+          "titleEvidence": [
+            "3 x Anker SOLIX PS400 Portable Solar Panel | SanTan SolarFacebookInstagramYouTubeTikTokXLinkedinAccountShopping CartExpandExpandExpandToggle MenuAccountShopping CartLoadingDoneLoadingDoneLoadingDoneLoadingDoneToggle Menu CloseExpandExpandExpand",
+            "3 x Anker SOLIX PS400 Portable Solar Panel",
+            "3 x Anker SOLIX PS400 Portable Solar Panel | SanTan Solar",
+            "",
+            "3 x Anker SOLIX PS400 Portable Solar Panel"
+          ],
+          "titleMatch": true,
+          "variantMatch": false,
+          "skuMatch": true,
+          "selectedIdentityBound": true,
+          "skuProof": {
+            "sku": "B24371A2",
+            "offset": 299546
+          },
+          "selectedOffer": {
+            "id": "santan-solar-b24371a2",
+            "retailerId": "santan-solar",
+            "retailer": "SanTan Solar",
+            "url": "https://www.santansolar.com/product/3-x-anker-solix-ps400-portable-solar-panel/",
+            "price": 1899.99,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:17:27.373Z",
+            "sku": "B24371A2",
+            "condition": "new"
+          },
+          "rawSourceOffer": {
+            "id": "santan-solar-b24371a2",
+            "retailerId": "santan-solar",
+            "retailer": "SanTan Solar",
+            "url": "https://www.santansolar.com/product/3-x-anker-solix-ps400-portable-solar-panel/",
+            "price": 1899.99,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-12T01:25:34.078Z",
+            "sku": "B24371A2",
+            "condition": "new"
+          },
+          "rawSelectedVariant": null,
+          "packQuantity": 1,
+          "explicitRawTitlePack": 3,
+          "packTitleMatchesOffer": false,
+          "packScope": "Exact selected original title quantity independently bound to offer",
+          "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\aa4c629f3de74b78.html",
+          "htmlSha256": "3b66756b8f24af666475913f553c95475f4b53995d85666222797cd705f3501d",
+          "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\aa4c629f3de74b78.json",
+          "metadataSha256": "a65370643fbe407e1c4d25112bb7f89039d7c951065da64d96e593fb08e974b5",
+          "fullHtmlBytes": 643229,
+          "originalHistoricalAt": "2026-10-12T01:25:34.078Z",
+          "historicalHashClaim": false,
+          "sourceScriptsExecuted": false,
+          "priorGuardRetained": false
+        },
+        "bodyTextArtifact": "output/specification-research/batch-seventeen-generation-proof/77-0.txt",
+        "bodyTextSha256": "b798ab67f16ecedb580dc33e08543296f38c2744d6d59d88c5250229b8257046"
+      },
+      "unchanged": {
+        "id": "santan-solar-b24371a2",
+        "name": "3 x Anker SOLIX PS400 Portable Solar Panel",
+        "sourceUrl": "https://www.santansolar.com/product/3-x-anker-solix-ps400-portable-solar-panel/",
+        "brand": "Anker",
+        "modelIdentity": null,
+        "configuration": null,
+        "technicalSpecs": {},
+        "specification": null,
+        "comparisonSpecs": null,
+        "offers": [
+          {
+            "id": "santan-solar-b24371a2",
+            "retailerId": "santan-solar",
+            "retailer": "SanTan Solar",
+            "url": "https://www.santansolar.com/product/3-x-anker-solix-ps400-portable-solar-panel/",
+            "price": 1899.99,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:17:27.373Z",
+            "sku": "B24371A2",
+            "condition": "new"
+          }
+        ],
+        "offersSha256": "d924eab2f30dbc4ee8701dfcc6a1c762bcf269c385e250564501434c61fec672",
+        "technicalSpecsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "sourceModelReferences": {
+          "rawJsonLdName": "3 x Anker SOLIX PS400 Portable Solar Panel",
+          "rawJsonLdSku": "B24371A2",
+          "rawVariantId": null,
+          "rawVariantSku": null
+        },
+        "offeredPackQuantities": [
+          {
+            "offerId": "santan-solar-b24371a2",
+            "packQuantity": 1
+          }
+        ],
+        "currentBaselineArtifact": "output/specification-research/batch-seventeen-catalog.json",
+        "currentBaselineSha256": "1ac0cd0270c7e06f413a7f3e72a39928c7825871f9264ba8f31d3951b9b09ce3",
+        "storedCheckoutCatalogHasId": false,
+        "storedCheckoutIdentity": null
+      },
+      "researchFillCredit": 0,
+      "exhaustionCredit": 0
+    },
+    {
+      "family": 78,
+      "id": "santan-solar-b24371a3",
+      "status": "held",
+      "reason": "PS400 selected titles and SKU/pack identity conflict with generic SST / 100–200 W source metadata. Brand, per-panel rating and commercial pack interpretation require independent review; no role correction proposed.",
+      "source": {
+        "url": "https://www.santansolar.com/product/4-x-anker-solix-ps400-portable-solar-panel/",
+        "fullHtmlArtifact": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\643ec6beabd4661b.html",
+        "fullHtmlSha256": "c48af370dbce0334bb4ace8e0bdeff9987845857d580c2b3a2fb9c611dcc11b2",
+        "fullHtmlBytes": 642931,
+        "metadataArtifact": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\643ec6beabd4661b.json",
+        "metadataSha256": "610a5444fbd24a93d548f91a1645fe51037657a9b11e25eabada715606d839aa",
+        "originalHistoricalAt": "2026-10-12T01:25:36.068Z",
+        "historicalHashClaim": false,
+        "sourceScriptsExecuted": false,
+        "selectedJsonLdProduct": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "@id": "https://www.santansolar.com/product/4-x-anker-solix-ps400-portable-solar-panel/#product",
+          "name": "4 x Anker SOLIX PS400 Portable Solar Panel",
+          "url": "https://www.santansolar.com/product/4-x-anker-solix-ps400-portable-solar-panel/",
+          "description": "These are perfect for off-grid applications. Due to their compact size and excellent low-light performance, they are ideal for installing on RVs, Campers, Buses, Tiny Homes, Boats, etc.",
+          "image": "https://www.santansolar.com/wp-content/uploads/Anker-SOLIX-PS200-Portable-Solar-Panel.png",
+          "sku": "B24371A3",
+          "offers": [
+            {
+              "@type": "Offer",
+              "priceSpecification": [
+                {
+                  "@type": "UnitPriceSpecification",
+                  "price": "2760.00",
+                  "priceCurrency": "USD",
+                  "validThrough": "2027-12-31",
+                  "valueAddedTaxIncluded": false
+                }
+              ],
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://www.santansolar.com/product/4-x-anker-solix-ps400-portable-solar-panel/",
+              "seller": {
+                "@type": "Organization",
+                "name": "SanTan Solar",
+                "url": "https://www.santansolar.com"
+              },
+              "price": "2760.00",
+              "priceCurrency": "USD"
+            }
+          ],
+          "brand": {
+            "@type": "Brand",
+            "name": "Anker"
+          }
+        },
+        "selectedInertVariant": null,
+        "selectedBinding": {
+          "family": 78,
+          "id": "santan-solar-b24371a3",
+          "expected": {
+            "name": "4 x Anker SOLIX PS400 Portable Solar Panel",
+            "sourceUrl": "https://www.santansolar.com/product/4-x-anker-solix-ps400-portable-solar-panel/",
+            "category": "panels",
+            "anchors": {}
+          },
+          "titleEvidence": [
+            "4 x Anker SOLIX PS400 Portable Solar Panel | SanTan SolarFacebookInstagramYouTubeTikTokXLinkedinAccountShopping CartExpandExpandExpandToggle MenuAccountShopping CartLoadingDoneLoadingDoneLoadingDoneLoadingDoneToggle Menu CloseExpandExpandExpand",
+            "4 x Anker SOLIX PS400 Portable Solar Panel",
+            "4 x Anker SOLIX PS400 Portable Solar Panel | SanTan Solar",
+            "",
+            "4 x Anker SOLIX PS400 Portable Solar Panel"
+          ],
+          "titleMatch": true,
+          "variantMatch": false,
+          "skuMatch": true,
+          "selectedIdentityBound": true,
+          "skuProof": {
+            "sku": "B24371A3",
+            "offset": 299546
+          },
+          "selectedOffer": {
+            "id": "santan-solar-b24371a3",
+            "retailerId": "santan-solar",
+            "retailer": "SanTan Solar",
+            "url": "https://www.santansolar.com/product/4-x-anker-solix-ps400-portable-solar-panel/",
+            "price": 2760,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:17:27.372Z",
+            "sku": "B24371A3",
+            "condition": "new"
+          },
+          "rawSourceOffer": {
+            "id": "santan-solar-b24371a3",
+            "retailerId": "santan-solar",
+            "retailer": "SanTan Solar",
+            "url": "https://www.santansolar.com/product/4-x-anker-solix-ps400-portable-solar-panel/",
+            "price": 2760,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-12T01:25:36.068Z",
+            "sku": "B24371A3",
+            "condition": "new"
+          },
+          "rawSelectedVariant": null,
+          "packQuantity": 1,
+          "explicitRawTitlePack": 4,
+          "packTitleMatchesOffer": false,
+          "packScope": "Exact selected original title quantity independently bound to offer",
+          "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\643ec6beabd4661b.html",
+          "htmlSha256": "c48af370dbce0334bb4ace8e0bdeff9987845857d580c2b3a2fb9c611dcc11b2",
+          "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\643ec6beabd4661b.json",
+          "metadataSha256": "610a5444fbd24a93d548f91a1645fe51037657a9b11e25eabada715606d839aa",
+          "fullHtmlBytes": 642931,
+          "originalHistoricalAt": "2026-10-12T01:25:36.068Z",
+          "historicalHashClaim": false,
+          "sourceScriptsExecuted": false,
+          "priorGuardRetained": false
+        },
+        "bodyTextArtifact": "output/specification-research/batch-seventeen-generation-proof/78-0.txt",
+        "bodyTextSha256": "b6644cd44cb579bb12d8f345751d80b4df508a948d5eefdfe49741da85cef94a"
+      },
+      "unchanged": {
+        "id": "santan-solar-b24371a3",
+        "name": "4 x Anker SOLIX PS400 Portable Solar Panel",
+        "sourceUrl": "https://www.santansolar.com/product/4-x-anker-solix-ps400-portable-solar-panel/",
+        "brand": "Anker",
+        "modelIdentity": null,
+        "configuration": null,
+        "technicalSpecs": {},
+        "specification": null,
+        "comparisonSpecs": null,
+        "offers": [
+          {
+            "id": "santan-solar-b24371a3",
+            "retailerId": "santan-solar",
+            "retailer": "SanTan Solar",
+            "url": "https://www.santansolar.com/product/4-x-anker-solix-ps400-portable-solar-panel/",
+            "price": 2760,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:17:27.372Z",
+            "sku": "B24371A3",
+            "condition": "new"
+          }
+        ],
+        "offersSha256": "1b973987a4eb64c64c79c7dc62688c569b826546f8b9aa829be5638b0d1ceb39",
+        "technicalSpecsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "sourceModelReferences": {
+          "rawJsonLdName": "4 x Anker SOLIX PS400 Portable Solar Panel",
+          "rawJsonLdSku": "B24371A3",
+          "rawVariantId": null,
+          "rawVariantSku": null
+        },
+        "offeredPackQuantities": [
+          {
+            "offerId": "santan-solar-b24371a3",
+            "packQuantity": 1
+          }
+        ],
+        "currentBaselineArtifact": "output/specification-research/batch-seventeen-catalog.json",
+        "currentBaselineSha256": "1ac0cd0270c7e06f413a7f3e72a39928c7825871f9264ba8f31d3951b9b09ce3",
+        "storedCheckoutCatalogHasId": false,
+        "storedCheckoutIdentity": null
+      },
+      "researchFillCredit": 0,
+      "exhaustionCredit": 0
+    },
+    {
+      "family": 79,
+      "id": "santan-solar-b24371a4",
+      "status": "held",
+      "reason": "PS400 selected titles and SKU/pack identity conflict with generic SST / 100–200 W source metadata. Brand, per-panel rating and commercial pack interpretation require independent review; no role correction proposed.",
+      "source": {
+        "url": "https://www.santansolar.com/product/5-x-anker-solix-ps400-portable-solar-panel/",
+        "fullHtmlArtifact": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\cb75f357f924bae3.html",
+        "fullHtmlSha256": "1ee9eb48ae02a8927e8085a7d35adba57db63f56c98303f65faaf20669fc962c",
+        "fullHtmlBytes": 643481,
+        "metadataArtifact": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\cb75f357f924bae3.json",
+        "metadataSha256": "80715f26634d5d245fd10030b7e6d39f6f9e427790b65f57a5203b8e8a50a408",
+        "originalHistoricalAt": "2026-10-12T01:25:38.078Z",
+        "historicalHashClaim": false,
+        "sourceScriptsExecuted": false,
+        "selectedJsonLdProduct": {
+          "@context": "https://schema.org/",
+          "@type": "Product",
+          "@id": "https://www.santansolar.com/product/5-x-anker-solix-ps400-portable-solar-panel/#product",
+          "name": "5 x Anker SOLIX PS400 Portable Solar Panel",
+          "url": "https://www.santansolar.com/product/5-x-anker-solix-ps400-portable-solar-panel/",
+          "description": "These are perfect for off-grid applications. Due to their compact size and excellent low-light performance, they are ideal for installing on RVs, Campers, Buses, Tiny Homes, Boats, etc.",
+          "image": "https://www.santansolar.com/wp-content/uploads/Anker-SOLIX-PS200-Portable-Solar-Panel.png",
+          "sku": "B24371A4",
+          "offers": [
+            {
+              "@type": "Offer",
+              "priceSpecification": [
+                {
+                  "@type": "UnitPriceSpecification",
+                  "price": "3425.00",
+                  "priceCurrency": "USD",
+                  "validThrough": "2027-12-31",
+                  "valueAddedTaxIncluded": false
+                }
+              ],
+              "priceValidUntil": "2027-12-31",
+              "availability": "https://schema.org/InStock",
+              "url": "https://www.santansolar.com/product/5-x-anker-solix-ps400-portable-solar-panel/",
+              "seller": {
+                "@type": "Organization",
+                "name": "SanTan Solar",
+                "url": "https://www.santansolar.com"
+              },
+              "price": "3425.00",
+              "priceCurrency": "USD"
+            }
+          ],
+          "brand": {
+            "@type": "Brand",
+            "name": "Anker"
+          }
+        },
+        "selectedInertVariant": null,
+        "selectedBinding": {
+          "family": 79,
+          "id": "santan-solar-b24371a4",
+          "expected": {
+            "name": "5 x Anker SOLIX PS400 Portable Solar Panel",
+            "sourceUrl": "https://www.santansolar.com/product/5-x-anker-solix-ps400-portable-solar-panel/",
+            "category": "panels",
+            "anchors": {}
+          },
+          "titleEvidence": [
+            "5 x Anker SOLIX PS400 Portable Solar Panel | SanTan SolarFacebookInstagramYouTubeTikTokXLinkedinAccountShopping CartExpandExpandExpandToggle MenuAccountShopping CartLoadingDoneLoadingDoneLoadingDoneLoadingDoneToggle Menu CloseExpandExpandExpand",
+            "5 x Anker SOLIX PS400 Portable Solar Panel",
+            "5 x Anker SOLIX PS400 Portable Solar Panel | SanTan Solar",
+            "",
+            "5 x Anker SOLIX PS400 Portable Solar Panel"
+          ],
+          "titleMatch": true,
+          "variantMatch": false,
+          "skuMatch": true,
+          "selectedIdentityBound": true,
+          "skuProof": {
+            "sku": "B24371A4",
+            "offset": 299546
+          },
+          "selectedOffer": {
+            "id": "santan-solar-b24371a4",
+            "retailerId": "santan-solar",
+            "retailer": "SanTan Solar",
+            "url": "https://www.santansolar.com/product/5-x-anker-solix-ps400-portable-solar-panel/",
+            "price": 3425,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:17:27.372Z",
+            "sku": "B24371A4",
+            "condition": "new"
+          },
+          "rawSourceOffer": {
+            "id": "santan-solar-b24371a4",
+            "retailerId": "santan-solar",
+            "retailer": "SanTan Solar",
+            "url": "https://www.santansolar.com/product/5-x-anker-solix-ps400-portable-solar-panel/",
+            "price": 3425,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-12T01:25:38.078Z",
+            "sku": "B24371A4",
+            "condition": "new"
+          },
+          "rawSelectedVariant": null,
+          "packQuantity": 1,
+          "explicitRawTitlePack": 5,
+          "packTitleMatchesOffer": false,
+          "packScope": "Exact selected original title quantity independently bound to offer",
+          "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\cb75f357f924bae3.html",
+          "htmlSha256": "1ee9eb48ae02a8927e8085a7d35adba57db63f56c98303f65faaf20669fc962c",
+          "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\cb75f357f924bae3.json",
+          "metadataSha256": "80715f26634d5d245fd10030b7e6d39f6f9e427790b65f57a5203b8e8a50a408",
+          "fullHtmlBytes": 643481,
+          "originalHistoricalAt": "2026-10-12T01:25:38.078Z",
+          "historicalHashClaim": false,
+          "sourceScriptsExecuted": false,
+          "priorGuardRetained": false
+        },
+        "bodyTextArtifact": "output/specification-research/batch-seventeen-generation-proof/79-0.txt",
+        "bodyTextSha256": "6ec72ea0fd0adf0162f841428e8affa05824a0b9e59e39034798d568faa2b5c2"
+      },
+      "unchanged": {
+        "id": "santan-solar-b24371a4",
+        "name": "5 x Anker SOLIX PS400 Portable Solar Panel",
+        "sourceUrl": "https://www.santansolar.com/product/5-x-anker-solix-ps400-portable-solar-panel/",
+        "brand": "Anker",
+        "modelIdentity": null,
+        "configuration": null,
+        "technicalSpecs": {},
+        "specification": null,
+        "comparisonSpecs": null,
+        "offers": [
+          {
+            "id": "santan-solar-b24371a4",
+            "retailerId": "santan-solar",
+            "retailer": "SanTan Solar",
+            "url": "https://www.santansolar.com/product/5-x-anker-solix-ps400-portable-solar-panel/",
+            "price": 3425,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:17:27.372Z",
+            "sku": "B24371A4",
+            "condition": "new"
+          }
+        ],
+        "offersSha256": "efe02d3c38aefaf90d5cf8d901d738b1a2a156734b3e3bcea2404774e5e4aa17",
+        "technicalSpecsSha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+        "sourceModelReferences": {
+          "rawJsonLdName": "5 x Anker SOLIX PS400 Portable Solar Panel",
+          "rawJsonLdSku": "B24371A4",
+          "rawVariantId": null,
+          "rawVariantSku": null
+        },
+        "offeredPackQuantities": [
+          {
+            "offerId": "santan-solar-b24371a4",
+            "packQuantity": 1
+          }
+        ],
+        "currentBaselineArtifact": "output/specification-research/batch-seventeen-catalog.json",
+        "currentBaselineSha256": "1ac0cd0270c7e06f413a7f3e72a39928c7825871f9264ba8f31d3951b9b09ce3",
+        "storedCheckoutCatalogHasId": false,
+        "storedCheckoutIdentity": null
+      },
+      "researchFillCredit": 0,
+      "exhaustionCredit": 0
+    }
+  ],
+  "completeCurrentRegistryReplay": {
+    "records": 4321,
+    "newTechnicalFields": 0,
+    "indexIdenticalToIndependentlyApprovedSupplement": true,
+    "report": "role-correction-canonical-current-results/import-report.json",
+    "presentationHelperAddedAfterFrozenSourcePacket": true
+  },
+  "priceStatus": {
+    "enabled": true,
+    "previousRun": 38322827496,
+    "previousJobs": 22,
+    "previousAcceptedObservations": 3663,
+    "previousPartialRetailers": [
+      "Signature Solar"
+    ],
+    "latestRun": 38325636107,
+    "workflowConclusion": "success",
+    "retailerJobs": 2,
+    "acceptedObservations": 22,
+    "retailerFailure": "Inverters R Us",
+    "retailerSuccess": "Signature Solar",
+    "allRetailersHealthyClaimed": false,
+    "historyCollectionPaused": true
+  }
+}

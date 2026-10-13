@@ -2,7 +2,7 @@ import {normalizeCatalogProduct} from './catalog-cleanup.ts';
 import {applyOverride} from './overrides.ts';
 import {categorizeProduct,normalizeSelectedBatteryPackOffer} from './retailers.ts';
 import {applySpecificationEvidence} from './specifications.ts';
-import {applyReviewedStorageRole,isReviewedStorageRoleCandidate} from './reviewed-storage-roles.ts';
+import {applyReviewedStorageRole,isReviewedStorageRoleCandidate,hasReviewedRoleOverride,isPackageGuardedReviewedRoleCandidate,isPackageGuardedReviewedRoleListing} from './reviewed-storage-roles.ts';
 import type {Product,Offer,CollectionReport,ProductSpecification} from './types.ts';
 export const latestSourceReportsQuery=`WITH reports AS (
  SELECT j.value AS report,r.created_at,ROW_NUMBER() OVER(PARTITION BY json_extract(j.value,'$.retailerId') ORDER BY r.created_at DESC,r.id DESC) AS rank
@@ -13,6 +13,7 @@ export interface Catalog extends CatalogSnapshot {storage:string;}
 
 // Offers hydrate separately from metadata; preserve reviewed evidence and owner overrides.
 function normalizeHydratedProduct(product:Product,skipReviewedStorageRole=false,evidence:Record<string,ProductSpecification>={}):Product{
+ skipReviewedStorageRole ||= isPackageGuardedReviewedRoleListing(product)&&!isReviewedStorageRoleCandidate(product);
  const hydrated=isReviewedStorageRoleCandidate(product)?product:{...product,offers:product.offers.map(o=>normalizeSelectedBatteryPackOffer(product,o))};
  const normalized=normalizeCatalogProduct(hydrated,{skipReviewedStorageRole});
  // Old-category evidence already attached before projection keeps its hold.
@@ -31,7 +32,7 @@ function applyPreProjectionEvidence(product:Product,evidence:Record<string,Produ
  const identity=evidence[product.id]?.identity;
  // Reviewed kit/accessory evidence waits for the final selected-offer guard,
  // even when saved metadata already carries its precisely corrected category.
- if(isReviewedStorageRoleCandidate(product)&&identity&&['kits','accessories'].includes(identity.category))return product;
+ if(isReviewedStorageRoleCandidate(product)&&identity&&['kits','accessories','monitoring','electrical'].includes(identity.category))return product;
  return applySpecificationEvidence(product,evidence);
 }
 
@@ -53,16 +54,24 @@ export async function readCatalog(db:D1Database,initial:CatalogSnapshot,evidence
   const deferredRoles=new Set(metadata.filter(isReviewedStorageRoleCandidate).map(p=>p.id));
   const ownerCorrections=new Map<string,Parameters<typeof applyOverride>[1]>();
   for(const id of duplicateIds(metadata))blockedRoles.add(id);
-  for(const raw of metadata){const p=applyPreProjectionEvidence(categorizeProduct({...raw,offers:[]}),evidence);productMap.set(p.id,{...p,offers:[]});}
+  for(const raw of metadata){
+   // Hold the original metadata decision before generic classification can
+   // replace its category or anchors. Only full identity guards grant a role.
+   if(isPackageGuardedReviewedRoleListing(raw)&&!isReviewedStorageRoleCandidate(raw))blockedRoles.add(raw.id);
+   const p=applyPreProjectionEvidence(categorizeProduct({...raw,offers:[]}),evidence);productMap.set(p.id,{...p,offers:[]});
+  }
   // Derive source-specific pack units before mappings can replace their metadata context.
   for(const row of offerRows.results){const p=productMap.get(row.product_id),o=JSON.parse(row.json) as Offer;p?.offers.push(isReviewedStorageRoleCandidate(p)?o:(p.category==='kits'||p.category==='all-in-one')?{...o,packQuantity:1}:normalizeSelectedBatteryPackOffer(p,o));}
-  for(const row of corrections.results){const p=productMap.get(row.id);if(p){const correction=JSON.parse(row.json);ownerCorrections.set(p.id,correction);if(isReviewedStorageRoleCandidate(p)&&['batteryKind','accessoryType','kitType'].some(key=>Object.hasOwn(correction.specs||{},key)))blockedRoles.add(p.id);productMap.set(row.id,applyOverride(p,correction));}}
+  for(const row of corrections.results){const p=productMap.get(row.id);if(p){const correction=JSON.parse(row.json);ownerCorrections.set(p.id,correction);if(hasReviewedRoleOverride(p,correction.specs||{}))blockedRoles.add(p.id);productMap.set(row.id,applyOverride(p,correction));}}
   for(const mapping of mappings.results){const target=productMap.get(mapping.product_id);if(!target)continue;for(const p of productMap.values()){if(p.id===target.id)continue;const offer=p.offers.find(o=>o.id===mapping.id);if(offer){p.offers=p.offers.filter(o=>o.id!==mapping.id);target.offers.push(offer);}}}
   // Metadata deferral is provisional. Resolve the final mapped selection before
   // output; rejected roles use the real generic path with fully hydrated offers.
   for(const id of deferredRoles){
    const p=productMap.get(id);
    if(!p||!p.offers.length||blockedRoles.has(id)||p.specification||applyReviewedStorageRole(p))continue;
+   // A generic package normalization must not turn a rejected final selection
+   // into an approved component role on the subsequent normalization pass.
+   if(isPackageGuardedReviewedRoleCandidate(p))blockedRoles.add(id);
    const generic=categorizeProduct(p),correction=ownerCorrections.get(id);
    productMap.set(id,correction?applyOverride(generic,correction):generic);
   }
