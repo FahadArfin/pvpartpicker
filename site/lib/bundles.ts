@@ -4,6 +4,14 @@ export const bundleComponentLabels:Record<BundleComponentType,string>={
  'power-station':'Power station',panels:'Solar panels',batteries:'Batteries',inverter:'Inverter',
  mounting:'Mounting',controls:'Home controls',charging:'Charger / controller',accessories:'Accessories',
 };
+
+/** Keep recorded configuration metadata, but present it only for its equipment category. */
+export function configurationForDisplay(product:Pick<Product,'category'|'configuration'>):ProductConfiguration|undefined{
+ const config=product.configuration;if(!config)return;
+ if(config.kind==='combo')return ['kits','all-in-one','inverters','batteries'].includes(product.category)?config:undefined;
+ if(config.type==='Inverter')return product.category==='inverters'?config:undefined;
+ return config.type==='Power station'&&product.category==='all-in-one'?config:undefined;
+}
 const clean=(text:string)=>text.replace(/[\[\]]/g,'').replace(/[×*]/g,'×').replace(/\s+/g,' ').trim();
 const compact=(text:string)=>clean(text.split('|')[0]).replace(/\s*\+\s*(?:choose|smart output|\d[\d,]*\s*cycles).*$/i,'').replace(/\s+(?:portable power station|power station|solar generator(?!\s+\d)|custom kits?).*$/i,'').split(/\s[–—]\s/)[0].replace(/\s+\d[\d,./]*\s*(?:wh|kwh|w|kw)\b.*$/i,'').trim();
 function familyKey(title:string){let hash=2166136261;for(const ch of title.toLowerCase().replace(/\s+/g,' ').trim())hash=Math.imul(hash^ch.charCodeAt(0),16777619);return 'configuration-'+(hash>>>0).toString(16);}

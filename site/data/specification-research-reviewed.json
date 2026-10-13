@@ -218444,5 +218444,581 @@
     },
     "reviewStatus": "approved",
     "reviewNote": " Independently reviewed against complete retained sources: review-seventeen-storage-independent.json; review SHA256 c3b159f393d2cd82a7529f408ebc9a05ff17aa0eab7756e6a217aecef7c1c10a; candidate SHA256 eb986c599336b729ad82a8ea2cbc88c1f63006bb3baad88deb0092d7bc8a15b1. Source conditions and uncertainty retained."
+  },
+  {
+    "productIds": [
+      "practical-preppers-18167"
+    ],
+    "expected": {
+      "practical-preppers-18167": {
+        "name": "Pocket Solar Lantern – Rechargeable LED Light, Power Bank with USB Charging Port",
+        "sourceUrl": "https://practicalpreppers.com/product/pocket-solar-lantern-rechargeable-led-light-power-bank/",
+        "category": "accessories",
+        "anchors": {}
+      }
+    },
+    "url": "https://practicalpreppers.com/product/pocket-solar-lantern-rechargeable-led-light-power-bank/",
+    "kind": "retailer",
+    "model": "Pocket Solar Lantern – Rechargeable LED Light, Power Bank with USB Charging Port",
+    "label": "Exact selected component/accessory retailer product description and labelled table; no pack aggregation",
+    "checkedAt": "2026-10-12T01:29:59.884Z",
+    "rows": [
+      [
+        "Dimensions",
+        "3 5/16″ x 3 5/16″ x 2 7/8”"
+      ],
+      [
+        "Weight",
+        "5 oz."
+      ],
+      [
+        "Compatibility",
+        "cell phone and other USB devices"
+      ]
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-deltaprorc"
+    ],
+    "expected": {
+      "santan-solar-deltaprorc": {
+        "name": "EcoFlow DELTA Pro Remote Control",
+        "sourceUrl": "https://www.santansolar.com/product/ecoflow-delta-pro-remote-control/",
+        "category": "accessories",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/ecoflow-delta-pro-remote-control/",
+    "kind": "retailer",
+    "model": "DELTAPRORC",
+    "label": "Exact selected component/accessory retailer product description and labelled table; no pack aggregation",
+    "checkedAt": "2026-10-12T01:26:46.301Z",
+    "rows": [
+      [
+        "Weight",
+        "1 lbs"
+      ],
+      [
+        "Compatibility",
+        "only compatible with the EcoFlow DELTA Pro"
+      ],
+      [
+        "Connectivity",
+        "Bluetooth or an ethernet cable"
+      ]
+    ]
+  },
+  {
+    "productIds": [
+      "shopsolar-41900354470028"
+    ],
+    "expected": {
+      "shopsolar-41900354470028": {
+        "name": "EP900 PV Inverter Energy Meter",
+        "sourceUrl": "https://shopsolarkits.com/products/ep900-pv-inverter-energy-meter?variant=41900354470028",
+        "category": "monitoring",
+        "anchors": {}
+      }
+    },
+    "url": "https://shopsolarkits.com/products/ep900-pv-inverter-energy-meter",
+    "kind": "retailer",
+    "model": "EP900-PV-METER",
+    "label": "Exact selected component/accessory retailer product description and labelled table; no pack aggregation",
+    "checkedAt": "2026-10-12T01:33:32.802Z",
+    "rows": [
+      [
+        "Compatibility",
+        "EP900"
+      ]
+    ]
+  },
+  {
+    "productIds": [
+      "watts247-fuse-combinerbox-15a-16"
+    ],
+    "expected": {
+      "watts247-fuse-combinerbox-15a-16": {
+        "name": "20A Spare Fuses -Solar Panel Combiner Box of 5 pcs",
+        "sourceUrl": "https://watts247.com/product/20a-spare-fuses-solar-panel-combiner-box-of-5-pcs/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "url": "https://watts247.com/product/20a-spare-fuses-solar-panel-combiner-box-of-5-pcs/",
+    "kind": "retailer",
+    "model": "Fuse-CombinerBox-15A-16",
+    "label": "Exact selected component/accessory retailer product description and labelled table; no pack aggregation",
+    "checkedAt": "2026-10-12T01:28:16.172Z",
+    "rows": [
+      [
+        "Compatibility",
+        "Use only on V3 combiner boxes bought after 2025 (with the 50A diodes)"
+      ]
+    ]
+  },
+  {
+    "productIds": [
+      "watts247-4-2-1"
+    ],
+    "expected": {
+      "watts247-4-2-1": {
+        "name": "4-2 Empty Solar Panel Combiner Box – DIY your own configuration (4 in 4 out etc)",
+        "sourceUrl": "https://watts247.com/product/4-2-empty-solar-panel-combiner-box-diy-your-own-configuration-4-in-4-out-etc/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "url": "https://watts247.com/product/4-2-empty-solar-panel-combiner-box-diy-your-own-configuration-4-in-4-out-etc/",
+    "kind": "retailer",
+    "model": "4-2-1",
+    "label": "Exact selected component/accessory retailer product description and labelled table; no pack aggregation",
+    "checkedAt": "2026-10-12T01:24:14.847Z",
+    "rows": [
+      [
+        "Weight",
+        "25 lbs"
+      ],
+      [
+        "Dimensions",
+        "21 × 14 × 8 in"
+      ],
+      [
+        "Material",
+        "Metal"
+      ],
+      [
+        "IP rating",
+        "IP65"
+      ]
+    ]
+  },
+  {
+    "productIds": [
+      "watts247-4-4"
+    ],
+    "expected": {
+      "watts247-4-4": {
+        "name": "4-4 Solar Panel Protection Box – 4 in 4 out MPPT Inputs – (4 x 63A max output) – Ideal For 4 PV Inputs – Fuse + Surge Protection",
+        "sourceUrl": "https://watts247.com/product/4-4-solar-panel-protection-box-4-in-4-out-mppt-inputs-4-x-63a-max-output-ideal-for-4-pv-inputs-fuse-surge-protection/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "url": "https://watts247.com/product/4-4-solar-panel-protection-box-4-in-4-out-mppt-inputs-4-x-63a-max-output-ideal-for-4-pv-inputs-fuse-surge-protection/",
+    "kind": "retailer",
+    "model": "4-4",
+    "label": "Exact selected component/accessory retailer product description and labelled table; no pack aggregation",
+    "checkedAt": "2026-10-12T01:24:16.880Z",
+    "rows": [
+      [
+        "Weight",
+        "30 lbs"
+      ],
+      [
+        "Dimensions",
+        "19 × 17 × 9 in"
+      ],
+      [
+        "Material",
+        "Metal"
+      ],
+      [
+        "IP rating",
+        "IP65"
+      ]
+    ]
+  },
+  {
+    "productIds": [
+      "watts247-6-2"
+    ],
+    "expected": {
+      "watts247-6-2": {
+        "name": "6-2 Solar Panel Combiner Box -(3 into 1 twice)- (2 x 63A max output) Version 3 Improved, ltd stock.",
+        "sourceUrl": "https://watts247.com/product/6-2-solar-panel-combiner-box-3-into-1-twice-63a-max-output/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "url": "https://watts247.com/product/6-2-solar-panel-combiner-box-3-into-1-twice-63a-max-output/",
+    "kind": "retailer",
+    "model": "6-2",
+    "label": "Exact selected component/accessory retailer product description and labelled table; no pack aggregation",
+    "checkedAt": "2026-10-12T01:27:05.471Z",
+    "rows": [
+      [
+        "Weight",
+        "26 lbs"
+      ],
+      [
+        "Dimensions",
+        "24 × 14 × 8 in"
+      ],
+      [
+        "Material",
+        "Metal"
+      ],
+      [
+        "IP rating",
+        "IP65"
+      ]
+    ]
+  },
+  {
+    "productIds": [
+      "watts247-6-3-1"
+    ],
+    "expected": {
+      "watts247-6-3-1": {
+        "name": "6-3 Empty Solar Panel Combiner Box – DIY your own configuration (6 in 6 out etc )",
+        "sourceUrl": "https://watts247.com/product/6-3-empty-solar-panel-combiner-box-diy-your-own-configuration-6-in-6-out-etc/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "url": "https://watts247.com/product/6-3-empty-solar-panel-combiner-box-diy-your-own-configuration-6-in-6-out-etc/",
+    "kind": "retailer",
+    "model": "6-3-1",
+    "label": "Exact selected component/accessory retailer product description and labelled table; no pack aggregation",
+    "checkedAt": "2026-10-12T01:27:09.441Z",
+    "rows": [
+      [
+        "Weight",
+        "30 lbs"
+      ],
+      [
+        "Dimensions",
+        "21 × 14 × 8 in"
+      ],
+      [
+        "Material",
+        "Metal"
+      ],
+      [
+        "IP rating",
+        "IP65"
+      ]
+    ]
+  },
+  {
+    "productIds": [
+      "watts247-6-3v3-36"
+    ],
+    "expected": {
+      "watts247-6-3v3-36": {
+        "name": "6-3 Solar Panel Combiner Box – (2 circuits to 1) x 3 times for 3MPPT Inputs – (3 x 63A max output) – Ideal For 3 PV Inputs -Version 3 Improved",
+        "sourceUrl": "https://watts247.com/product/6-3-solar-panel-combiner-box-2-circuits-to-1-x-3-times-for-3mppt-inputs-3-x-63a-max-output-ideal-for-3-pv-inputs-version-3-improved/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "url": "https://watts247.com/product/6-3-solar-panel-combiner-box-2-circuits-to-1-x-3-times-for-3mppt-inputs-3-x-63a-max-output-ideal-for-3-pv-inputs-version-3-improved/",
+    "kind": "retailer",
+    "model": "6-3V3-36",
+    "label": "Exact selected component/accessory retailer product description and labelled table; no pack aggregation",
+    "checkedAt": "2026-10-12T01:27:11.484Z",
+    "rows": [
+      [
+        "Weight",
+        "40 lbs"
+      ],
+      [
+        "Dimensions",
+        "23 × 22 × 9 in"
+      ],
+      [
+        "Material",
+        "Metal"
+      ],
+      [
+        "IP rating",
+        "IP65"
+      ]
+    ]
+  },
+  {
+    "productIds": [
+      "watts247-6-3"
+    ],
+    "expected": {
+      "watts247-6-3": {
+        "name": "6-3 Solar Panel Combiner Box – (2 circuits to 1) x3 times for 3 MPPT Inputs – (3 x 63A max output) – Ideal For Luxpower EG4 / Sol-Ark",
+        "sourceUrl": "https://watts247.com/product/6-3-solar-panel-combiner-box/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "url": "https://watts247.com/product/6-3-solar-panel-combiner-box/",
+    "kind": "retailer",
+    "model": "6-3",
+    "label": "Exact selected component/accessory retailer product description and labelled table; no pack aggregation",
+    "checkedAt": "2026-10-12T01:27:07.499Z",
+    "rows": [
+      [
+        "Weight",
+        "30 lbs"
+      ],
+      [
+        "Dimensions",
+        "21 × 14 × 8 in"
+      ],
+      [
+        "Material",
+        "Metal"
+      ],
+      [
+        "IP rating",
+        "IP65"
+      ]
+    ]
+  },
+  {
+    "productIds": [
+      "watts247-8-4-empty"
+    ],
+    "expected": {
+      "watts247-8-4-empty": {
+        "name": "8-4 Solar Panel Combiner Box – Empty Box ONLY",
+        "sourceUrl": "https://watts247.com/product/8-4-solar-panel-combiner-box-empty-box-only/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "url": "https://watts247.com/product/8-4-solar-panel-combiner-box-empty-box-only/",
+    "kind": "retailer",
+    "model": "8-4- Empty",
+    "label": "Exact selected component/accessory retailer product description and labelled table; no pack aggregation",
+    "checkedAt": "2026-10-12T01:27:21.565Z",
+    "rows": [
+      [
+        "Weight",
+        "41 lbs"
+      ],
+      [
+        "Dimensions",
+        "23 × 22 × 9 in"
+      ]
+    ]
+  },
+  {
+    "productIds": [
+      "watts247-8-4"
+    ],
+    "expected": {
+      "watts247-8-4": {
+        "name": "8-4 Solar Panel Combiner Box – (2 circuits to 1) x4 times for 4 MPPT Inputs – (4 x 63A max output) – Ideal For 4 PV Inputs -Version 3 Improved",
+        "sourceUrl": "https://watts247.com/product/8-4-solar-panel-combiner-box/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "url": "https://watts247.com/product/8-4-solar-panel-combiner-box/",
+    "kind": "retailer",
+    "model": "8-4",
+    "label": "Exact selected component/accessory retailer product description and labelled table; no pack aggregation",
+    "checkedAt": "2026-10-12T01:27:19.478Z",
+    "rows": [
+      [
+        "Weight",
+        "44 lbs"
+      ],
+      [
+        "Dimensions",
+        "23 × 22 × 9 in"
+      ],
+      [
+        "Material",
+        "Metal"
+      ],
+      [
+        "IP rating",
+        "IP65"
+      ]
+    ]
+  },
+  {
+    "productIds": [
+      "watts247-w-emp-220300-2"
+    ],
+    "expected": {
+      "watts247-w-emp-220300-2": {
+        "name": "Dual DC-220-300V-W EMP Shield (Solar Panel DC Protection) – Ideal for LV6548 or Dual 250V Mppts",
+        "sourceUrl": "https://watts247.com/product/dual-dc-220-300v-w-emp-shield-solar-panel-dc-protection/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "url": "https://watts247.com/product/dual-dc-220-300v-w-emp-shield-solar-panel-dc-protection/",
+    "kind": "retailer",
+    "model": "W-EMP-220300-2",
+    "label": "Exact selected component/accessory retailer product description and labelled table; no pack aggregation",
+    "checkedAt": "2026-10-12T01:29:18.539Z",
+    "rows": [
+      [
+        "Weight",
+        "2.5 lbs"
+      ],
+      [
+        "Dimensions",
+        "6 × 2.5 × 3 in"
+      ]
+    ]
+  },
+  {
+    "productIds": [
+      "watts247-w-emp-600vdcx2"
+    ],
+    "expected": {
+      "watts247-w-emp-600vdcx2": {
+        "name": "Dual DC-600V-W EMP Shield (Solar Panel DC Protection) – Use on LVX6048xx and SOL-Ark models",
+        "sourceUrl": "https://watts247.com/product/dual-dc-600v-w-emp-shield-solar-panel-dc-protection-use-on-lvx6048wp-and-sol-ark-models/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "url": "https://watts247.com/product/dual-dc-600v-w-emp-shield-solar-panel-dc-protection-use-on-lvx6048wp-and-sol-ark-models/",
+    "kind": "retailer",
+    "model": "W-EMP-600Vdcx2",
+    "label": "Exact selected component/accessory retailer product description and labelled table; no pack aggregation",
+    "checkedAt": "2026-10-12T01:29:24.524Z",
+    "rows": [
+      [
+        "Weight",
+        "2.5 lbs"
+      ],
+      [
+        "Dimensions",
+        "6 × 2.5 × 3 in"
+      ]
+    ]
+  },
+  {
+    "productIds": [
+      "watts247-w-emp-220300"
+    ],
+    "expected": {
+      "watts247-w-emp-220300": {
+        "name": "Single DC-220-300V-W EMP Shield (Solar Panel DC Protection)",
+        "sourceUrl": "https://watts247.com/product/single-dc-220-300v-w-emp-shield-solar-panel-dc-protection/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "url": "https://watts247.com/product/single-dc-220-300v-w-emp-shield-solar-panel-dc-protection/",
+    "kind": "retailer",
+    "model": "W-EMP-220300",
+    "label": "Exact selected component/accessory retailer product description and labelled table; no pack aggregation",
+    "checkedAt": "2026-10-12T01:29:16.476Z",
+    "rows": [
+      [
+        "Weight",
+        "2.5 lbs"
+      ],
+      [
+        "Dimensions",
+        "6 × 2.5 × 3 in"
+      ]
+    ]
+  },
+  {
+    "productIds": [
+      "watts247-w-emp-600vdcx1"
+    ],
+    "expected": {
+      "watts247-w-emp-600vdcx1": {
+        "name": "Single DC-600V-W EMP Shield (Solar Panel DC Protection) – Use on LVX6048xx models",
+        "sourceUrl": "https://watts247.com/product/single-dc-600v-w-emp-shield-solar-panel-dc-protection/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "url": "https://watts247.com/product/single-dc-600v-w-emp-shield-solar-panel-dc-protection/",
+    "kind": "retailer",
+    "model": "W-EMP-600Vdcx1",
+    "label": "Exact selected component/accessory retailer product description and labelled table; no pack aggregation",
+    "checkedAt": "2026-10-12T01:29:22.590Z",
+    "rows": [
+      [
+        "Weight",
+        "2.5 lbs"
+      ],
+      [
+        "Dimensions",
+        "6 × 2.5 × 3 in"
+      ]
+    ]
+  },
+  {
+    "productIds": [
+      "watts247-4-1"
+    ],
+    "expected": {
+      "watts247-4-1": {
+        "name": "4-1 Solar Panel Combiner Box – 4 circuits to 1 (1 x 63A max output) Version 3 Improved, ltd stock.",
+        "sourceUrl": "https://watts247.com/product/solar-panel-combiner-box-4-circuits-to-1/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "url": "https://watts247.com/product/solar-panel-combiner-box-4-circuits-to-1/",
+    "kind": "retailer",
+    "model": "4-1",
+    "label": "Exact selected component/accessory retailer product description and labelled table; no pack aggregation",
+    "checkedAt": "2026-10-12T01:24:10.987Z",
+    "rows": [
+      [
+        "Weight",
+        "20 lbs"
+      ],
+      [
+        "Dimensions",
+        "18 × 14 × 8 in"
+      ],
+      [
+        "Material",
+        "Metal"
+      ],
+      [
+        "IP rating",
+        "IP65"
+      ]
+    ]
+  },
+  {
+    "productIds": [
+      "watts247-4-2"
+    ],
+    "expected": {
+      "watts247-4-2": {
+        "name": "4-2 Solar Panel Combiner Box – 4 circuits to 2 (2 to 1)- (2 x 63A max output) Version 3 Improved, ltd stock.",
+        "sourceUrl": "https://watts247.com/product/solar-panel-combiner-box-4-circuits-to-2/",
+        "category": "electrical",
+        "anchors": {}
+      }
+    },
+    "url": "https://watts247.com/product/solar-panel-combiner-box-4-circuits-to-2/",
+    "kind": "retailer",
+    "model": "4-2",
+    "label": "Exact selected component/accessory retailer product description and labelled table; no pack aggregation",
+    "checkedAt": "2026-10-12T01:24:12.890Z",
+    "rows": [
+      [
+        "Weight",
+        "25 lbs"
+      ],
+      [
+        "Dimensions",
+        "21 × 14 × 8 in"
+      ],
+      [
+        "Material",
+        "Metal"
+      ],
+      [
+        "IP rating",
+        "IP65"
+      ]
+    ]
   }
 ]

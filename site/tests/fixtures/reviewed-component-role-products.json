@@ -1,0 +1,4209 @@
+{
+  "sourceProposalSha256": "1fb11e8475ef4e0b03af8ad68c9ef44b9e2fa5d613ea62025caa72bfb48e427c",
+  "approved": [
+    {
+      "proposalIndex": 0,
+      "product": {
+        "id": "practical-preppers-18167",
+        "name": "Pocket Solar Lantern – Rechargeable LED Light, Power Bank with USB Charging Port",
+        "brand": "See manufacturer",
+        "category": "all-in-one",
+        "description": "Features: Multiple Settings: High and low settings for a camp light and flashing setting to signal for help. High setting: ≥63 Lm. Low setting: ≥25 Lm Solar Charged: Use the built-in 4.8V solar panel to charge your small electronics or recharge the light itself. Powerful: 800mAh Li-Ion battery keeps you lit >10 hours on a single charge, plus it’ll charge your cell phone and other USB devices Compact: Telescopic function allows you to fold this mini lantern into a pocket-sized device. Durable Handle: Allows you to hang it inside your shelter or on a branch outside Light Up Your Campsite With all its capabilities, this multi-function light will be your new favorite tool. The mini camping lantern will charge your phone or tablet, brighten up your campsite AND signal for help. It’s so compact and easy to carry, it’s no secret why we call it the Pocket Light. Keep this rechargeable camping lantern handy for your next adventure! Specs: Dimensions: 3 5/16″ x 3 5/16″ x 2 7/8” Weight: 5 oz. Solar Charge Time: 4-6 hours",
+        "image": "https://practicalpreppers.com/wp-content/uploads/2020/10/Screen-Shot-2020-10-15-at-1.36.19-PM.png",
+        "images": [
+          "https://practicalpreppers.com/wp-content/uploads/2020/10/Screen-Shot-2020-10-15-at-1.36.19-PM.png"
+        ],
+        "sourceUrl": "https://practicalpreppers.com/product/pocket-solar-lantern-rechargeable-led-light-power-bank/",
+        "specs": {
+          "stationType": "Integrated power station"
+        },
+        "verifiedAt": "2026-10-11T19:41:36.487Z",
+        "offers": [
+          {
+            "id": "practical-preppers-18167",
+            "retailerId": "practical-preppers",
+            "retailer": "Practical Preppers",
+            "url": "https://practicalpreppers.com/product/pocket-solar-lantern-rechargeable-led-light-power-bank/",
+            "price": 12.49,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T19:41:36.487Z",
+            "sku": "18167",
+            "condition": "new"
+          }
+        ],
+        "configuration": {
+          "kind": "standalone",
+          "title": "Pocket Solar Lantern · Main unit only",
+          "family": "configuration-4de850d4",
+          "selection": "Main unit only",
+          "type": "Power station",
+          "components": [
+            {
+              "type": "power-station",
+              "quantity": 1,
+              "detail": "Pocket Solar Lantern"
+            }
+          ]
+        }
+      },
+      "target": {
+        "category": "accessories",
+        "specs": {
+          "accessoryType": "Other accessories"
+        }
+      },
+      "anchors": {}
+    },
+    {
+      "proposalIndex": 1,
+      "product": {
+        "id": "santan-solar-deltaprorc",
+        "name": "EcoFlow DELTA Pro Remote Control",
+        "brand": "EcoFlow",
+        "category": "all-in-one",
+        "description": "EcoFlow DELTA Pro Remote Control The first of its kind: The first remote control for a portable power station, designed for DELTA Pro. Ideal for storing your DELTA Pro in the garage, storage bay, or below deck. Connect over Bluetooth or an ethernet cable and get a second screen right where you need it. Monitor your energy: The display shows how much energy you’re using, the remaining battery time, and everything else DELTA Pro’s screen shows. It’s also a convenient place to turn on/off the AC outlets, DC outlets, or entire unit. Two ways to connect: Move the screen around when connected with Bluetooth; set it and forget it with a wired connection that works over longer distances. Control at a distance: Once set up, you can monitor & control your portable power station from afar. Ideal when your DELTA Pro is set up with solar panels, or at a charger. Note: This accessory is only compatible with the EcoFlow DELTA Pro. Allows For Remote Power Station Operation Great for when your power station is stored out of sight Bluetooth or Ethernet (Cable) Compatible Make this remote very easy to setup Designed For Monitoring & Control Easily view energy used and remaining battery time Displays everything your Delta Pro screen shows",
+        "image": "https://www.santansolar.com/wp-content/uploads/EcoFlow-DELTA-Pro-Remote-Control.png",
+        "images": [
+          "https://www.santansolar.com/wp-content/uploads/EcoFlow-DELTA-Pro-Remote-Control.png"
+        ],
+        "sourceUrl": "https://www.santansolar.com/product/ecoflow-delta-pro-remote-control/",
+        "specs": {
+          "stationType": "Integrated power station"
+        },
+        "verifiedAt": "2026-10-11T23:17:40.488Z",
+        "offers": [
+          {
+            "id": "santan-solar-deltaprorc",
+            "retailerId": "santan-solar",
+            "retailer": "SanTan Solar",
+            "url": "https://www.santansolar.com/product/ecoflow-delta-pro-remote-control/",
+            "price": 99,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:17:40.488Z",
+            "sku": "DELTAPRORC",
+            "condition": "new"
+          }
+        ],
+        "configuration": {
+          "kind": "standalone",
+          "title": "EcoFlow DELTA Pro Remote Control · Main unit only",
+          "family": "configuration-2846444a",
+          "selection": "Main unit only",
+          "type": "Power station",
+          "components": [
+            {
+              "type": "power-station",
+              "quantity": 1,
+              "detail": "EcoFlow DELTA Pro Remote Control"
+            }
+          ]
+        }
+      },
+      "target": {
+        "category": "accessories",
+        "specs": {
+          "accessoryType": "Displays & controls"
+        }
+      },
+      "anchors": {}
+    },
+    {
+      "proposalIndex": 2,
+      "product": {
+        "id": "shopsolar-41900354470028",
+        "name": "EP900 PV Inverter Energy Meter",
+        "brand": "Bluetti",
+        "category": "inverters",
+        "description": "EP900 PV Inverter Energy Meter This EP900 PV Inverter Energy Meter is required if you want to integrate your existing PV inverter and enable solar energy to feed into the energy storage system via AC coupling. Compatibility : EP900 Still Have Questions? Give us a call today 1-877-242-2792",
+        "image": "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/7acd46317ef07ef8583cd2f45e25ba65_2000x_ad325aa7-d9ba-486d-914b-29d8c9b420ac.png?v=1700608664",
+        "images": [
+          "https://cdn.shopify.com/s/files/1/0034/8913/6751/files/7acd46317ef07ef8583cd2f45e25ba65_2000x_ad325aa7-d9ba-486d-914b-29d8c9b420ac.png?v=1700608664"
+        ],
+        "sourceUrl": "https://shopsolarkits.com/products/ep900-pv-inverter-energy-meter?variant=41900354470028",
+        "specs": {},
+        "verifiedAt": "2026-10-12T22:04:59.796Z",
+        "offers": [
+          {
+            "id": "shopsolar-41900354470028",
+            "retailerId": "shopsolar",
+            "retailer": "ShopSolar",
+            "url": "https://shopsolarkits.com/products/ep900-pv-inverter-energy-meter?variant=41900354470028",
+            "price": 129,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-12T22:04:59.796Z",
+            "sku": "41900354470028",
+            "condition": "new"
+          }
+        ]
+      },
+      "target": {
+        "category": "monitoring",
+        "specs": {
+          "monitorType": "Energy monitor / meter"
+        }
+      },
+      "anchors": {}
+    },
+    {
+      "proposalIndex": 3,
+      "product": {
+        "id": "watts247-fuse-combinerbox-15a-16",
+        "name": "20A Spare Fuses -Solar Panel Combiner Box of 5 pcs",
+        "brand": "See manufacturer",
+        "category": "panels",
+        "description": "Solar Combiner box Spare fuses, these should never blow, because panels should not be connected in parallel prior to the combiner box inputs (exceeding 20A) Use only on V3 combiner boxes bought after 2025 (with the 50A diodes) Price is per 5 fuses",
+        "image": "https://watts247.com/wp-content/uploads/2023/06/Fuses.png",
+        "images": [
+          "https://watts247.com/wp-content/uploads/2023/06/Fuses.png"
+        ],
+        "sourceUrl": "https://watts247.com/product/20a-spare-fuses-solar-panel-combiner-box-of-5-pcs/",
+        "specs": {},
+        "verifiedAt": "2026-10-10T15:25:04.517Z",
+        "offers": [
+          {
+            "id": "watts247-fuse-combinerbox-15a-16",
+            "retailerId": "watts247",
+            "retailer": "Watts247",
+            "url": "https://watts247.com/product/20a-spare-fuses-solar-panel-combiner-box-of-5-pcs/",
+            "price": 12,
+            "currency": "USD",
+            "packQuantity": 5,
+            "stock": "in_stock",
+            "observedAt": "2026-10-10T15:25:04.517Z",
+            "sku": "Fuse-CombinerBox-15A-16",
+            "condition": "new"
+          }
+        ]
+      },
+      "target": {
+        "category": "electrical",
+        "specs": {
+          "electricalType": "Fuses"
+        }
+      },
+      "anchors": {}
+    },
+    {
+      "proposalIndex": 4,
+      "product": {
+        "id": "watts247-4-2-1",
+        "name": "4-2 Empty Solar Panel Combiner Box – DIY your own configuration (4 in 4 out etc)",
+        "brand": "See manufacturer",
+        "category": "panels",
+        "description": "This is an empty box with Din rails mounted , and all the internal hardware removed. (as shown in these pics, your breakers etc can mount in the same spots) we do this so you can make your own config, we have the fuses and din rail fuse holder and the breakers listed under combiner spare parts, some folks want to make 4 4 in 4 out box, 3 in 3 out etc, now you can do your own thing, you will need to do your own internal wiring Features: Metal Box (no melting or fire hazard) IP65 Outdoor Weatherproof Key Lockable Available in a variety of configurations (4 to 1 , 4 to 2, 6 to 1 , 8 to 2, 8 to 1)",
+        "image": "https://watts247.com/wp-content/uploads/2021/06/20210607_153430-scaled-e1623102067350.jpg",
+        "images": [
+          "https://watts247.com/wp-content/uploads/2021/06/20210607_153430-scaled-e1623102067350.jpg"
+        ],
+        "sourceUrl": "https://watts247.com/product/4-2-empty-solar-panel-combiner-box-diy-your-own-configuration-4-in-4-out-etc/",
+        "specs": {},
+        "verifiedAt": "2026-10-10T15:25:04.530Z",
+        "offers": [
+          {
+            "id": "watts247-4-2-1",
+            "retailerId": "watts247",
+            "retailer": "Watts247",
+            "url": "https://watts247.com/product/4-2-empty-solar-panel-combiner-box-diy-your-own-configuration-4-in-4-out-etc/",
+            "price": 129,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-10T15:25:04.530Z",
+            "sku": "4-2-1",
+            "condition": "new"
+          }
+        ]
+      },
+      "target": {
+        "category": "electrical",
+        "specs": {
+          "electricalType": "Boxes & combiners"
+        }
+      },
+      "anchors": {}
+    },
+    {
+      "proposalIndex": 5,
+      "product": {
+        "id": "watts247-4-4",
+        "name": "4-4 Solar Panel Protection Box – 4 in 4 out MPPT Inputs – (4 x 63A max output) – Ideal For 4 PV Inputs – Fuse + Surge Protection",
+        "brand": "See manufacturer",
+        "category": "panels",
+        "description": "4 inputs – 4 outputs , no strings are paralled, lightning and surge protection for each PV input Solar Combiner boxes make connecting multiple solar panels in series and parallel a breeze. This model is specifically for use as a PV Isolator box with surge protection, no strings are paralleled, and no diodes. New design! All your panel wiring troubles made really simple Built in DC Disconnect. Built in DC Overcurrent protection. Built in Lightning protection Built in fuse protection Features: Metal Box (no melting or fire hazard) IP65 Outdoor Weatherproof Key Lockable Each Circuit is fused 15A (on both Positive and Negative terminals ) Reverse Polarity Diode Protection Available in a variety of configurations (4 to 1 , 4 to 2, 6 to 1 , 8 to 2, 8 to 1) Acrylic face plate cover for full protection (most other suppliers simply ignore this feature) – often hundreds of volts Surge Protection – 1000V Specs: 15A to 50A per PV Input string (Fuse dependent) Max 4 x 63A DC Output.",
+        "image": "https://watts247.com/wp-content/uploads/2023/09/8-4-Outside-scaled.jpg",
+        "images": [
+          "https://watts247.com/wp-content/uploads/2023/09/8-4-Outside-scaled.jpg"
+        ],
+        "sourceUrl": "https://watts247.com/product/4-4-solar-panel-protection-box-4-in-4-out-mppt-inputs-4-x-63a-max-output-ideal-for-4-pv-inputs-fuse-surge-protection/",
+        "specs": {},
+        "verifiedAt": "2026-10-10T15:25:04.528Z",
+        "offers": [
+          {
+            "id": "watts247-4-4",
+            "retailerId": "watts247",
+            "retailer": "Watts247",
+            "url": "https://watts247.com/product/4-4-solar-panel-protection-box-4-in-4-out-mppt-inputs-4-x-63a-max-output-ideal-for-4-pv-inputs-fuse-surge-protection/",
+            "price": 425,
+            "currency": "USD",
+            "packQuantity": 4,
+            "stock": "in_stock",
+            "observedAt": "2026-10-10T15:25:04.528Z",
+            "sku": "4-4",
+            "condition": "new"
+          }
+        ]
+      },
+      "target": {
+        "category": "electrical",
+        "specs": {
+          "electricalType": "Boxes & combiners"
+        }
+      },
+      "anchors": {}
+    },
+    {
+      "proposalIndex": 6,
+      "product": {
+        "id": "watts247-6-2",
+        "name": "6-2 Solar Panel Combiner Box -(3 into 1 twice)- (2 x 63A max output) Version 3 Improved, ltd stock.",
+        "brand": "See manufacturer",
+        "category": "panels",
+        "description": "Solar Combiner boxes make connecting multiple solar panels in series and parallel a breeze. All your panel wiring troubles made really simple Built in DC Disconnect. Built in DC Overcurrent. Built in Lightning protection Built in fuse protection 6 inputs and 2 outputs (A & B) configured as ( 3 Inputs to 1 output A 3 inputs to 1 output B ) Features: Metal Box (no melting or fire hazard) IP65 Outdoor Weatherproof Key Lockable Each Circuit is fused 15A (on both Positive and Negative terminals ) Reverse Polarity Diode Protection Available in a variety of configurations (4 to 1 , 4 to 2, 6 to 1 , 8 to 2, 8 to 1, 4 to 2) Acrylic face plate cover for full protection (most other suppliers simply ignore this feature) – often hundreds of volts Surge / Lightning Protection – 1000V (box must be grounded) Specs: 15A per PV Input string Max 63 A DC Output per string (x 2)",
+        "image": "https://watts247.com/wp-content/uploads/2021/06/20210607_172024-scaled.jpg",
+        "images": [
+          "https://watts247.com/wp-content/uploads/2021/06/20210607_172024-scaled.jpg"
+        ],
+        "sourceUrl": "https://watts247.com/product/6-2-solar-panel-combiner-box-3-into-1-twice-63a-max-output/",
+        "specs": {},
+        "verifiedAt": "2026-10-11T19:48:59.284Z",
+        "offers": [
+          {
+            "id": "watts247-6-2",
+            "retailerId": "watts247",
+            "retailer": "Watts247",
+            "url": "https://watts247.com/product/6-2-solar-panel-combiner-box-3-into-1-twice-63a-max-output/",
+            "price": 399,
+            "currency": "USD",
+            "packQuantity": 2,
+            "stock": "out_of_stock",
+            "observedAt": "2026-10-11T19:48:59.284Z",
+            "sku": "6-2",
+            "condition": "new"
+          }
+        ]
+      },
+      "target": {
+        "category": "electrical",
+        "specs": {
+          "electricalType": "Boxes & combiners"
+        }
+      },
+      "anchors": {}
+    },
+    {
+      "proposalIndex": 7,
+      "product": {
+        "id": "watts247-6-3-1",
+        "name": "6-3 Empty Solar Panel Combiner Box – DIY your own configuration (6 in 6 out etc )",
+        "brand": "See manufacturer",
+        "category": "panels",
+        "description": "This is an empty box with Din rails mounted , and all the internal hardware removed. (as shown in these pics, your breakers etc can mount in the same spots) we do this so you can make your own config, we have the fuses and din rail fuse holder and the breakers listed under combiner spare parts, some folks want to make 5 in 4 out box, 6 in 6 out etc, now you can do your own thing, you will need to do your own internal wiring Features: Metal Box (no melting or fire hazard) IP65 Outdoor Weatherproof Key Lockable",
+        "image": "https://watts247.com/wp-content/uploads/2023/09/6-3.jpg",
+        "images": [
+          "https://watts247.com/wp-content/uploads/2023/09/6-3.jpg"
+        ],
+        "sourceUrl": "https://watts247.com/product/6-3-empty-solar-panel-combiner-box-diy-your-own-configuration-6-in-6-out-etc/",
+        "specs": {},
+        "verifiedAt": "2026-10-10T15:25:04.530Z",
+        "offers": [
+          {
+            "id": "watts247-6-3-1",
+            "retailerId": "watts247",
+            "retailer": "Watts247",
+            "url": "https://watts247.com/product/6-3-empty-solar-panel-combiner-box-diy-your-own-configuration-6-in-6-out-etc/",
+            "price": 189,
+            "referencePrice": 220,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-10T15:25:04.530Z",
+            "sku": "6-3-1",
+            "condition": "new"
+          }
+        ]
+      },
+      "target": {
+        "category": "electrical",
+        "specs": {
+          "electricalType": "Boxes & combiners"
+        }
+      },
+      "anchors": {}
+    },
+    {
+      "proposalIndex": 8,
+      "product": {
+        "id": "watts247-6-3v3-36",
+        "name": "6-3 Solar Panel Combiner Box – (2 circuits to 1) x 3 times for 3MPPT Inputs – (3 x 63A max output) – Ideal For 3 PV Inputs -Version 3 Improved",
+        "brand": "See manufacturer",
+        "category": "panels",
+        "description": "Solar Combiner boxes make connecting multiple solar panels in series and parallel a breeze. Diodes rated to 150A New design! All your panel wiring troubles made really simple Built in DC Disconnect. Built in DC Overcurrent protection. Built in Lightning protection Built in fuse protection Features: Metal Box (no melting or fire hazard) IP65 Outdoor Weatherproof Key Lockable Each Circuit is fused 20A (on both Positive and Negative terminals ) Reverse Polarity Diode Protection Available in a variety of configurations (4 to 1 , 4 to 2, 6 to 1 , 8 to 2, 8 to 1) Acrylic face plate cover for full protection (most other suppliers simply ignore this feature) – often hundreds of volts Surge Protection – 1000V Specs: 20A per PV Input string Max 3 x 63A DC Output.",
+        "image": "https://watts247.com/wp-content/uploads/2023/09/8-4-Outside-scaled.jpg",
+        "images": [
+          "https://watts247.com/wp-content/uploads/2023/09/8-4-Outside-scaled.jpg"
+        ],
+        "sourceUrl": "https://watts247.com/product/6-3-solar-panel-combiner-box-2-circuits-to-1-x-3-times-for-3mppt-inputs-3-x-63a-max-output-ideal-for-3-pv-inputs-version-3-improved/",
+        "specs": {},
+        "verifiedAt": "2026-10-10T15:25:04.524Z",
+        "offers": [
+          {
+            "id": "watts247-6-3v3-36",
+            "retailerId": "watts247",
+            "retailer": "Watts247",
+            "url": "https://watts247.com/product/6-3-solar-panel-combiner-box-2-circuits-to-1-x-3-times-for-3mppt-inputs-3-x-63a-max-output-ideal-for-3-pv-inputs-version-3-improved/",
+            "price": 389,
+            "currency": "USD",
+            "packQuantity": 3,
+            "stock": "in_stock",
+            "observedAt": "2026-10-10T15:25:04.524Z",
+            "sku": "6-3V3-36",
+            "condition": "new"
+          }
+        ]
+      },
+      "target": {
+        "category": "electrical",
+        "specs": {
+          "electricalType": "Boxes & combiners"
+        }
+      },
+      "anchors": {}
+    },
+    {
+      "proposalIndex": 9,
+      "product": {
+        "id": "watts247-6-3",
+        "name": "6-3 Solar Panel Combiner Box – (2 circuits to 1) x3 times for 3 MPPT Inputs – (3 x 63A max output) – Ideal For Luxpower EG4 / Sol-Ark",
+        "brand": "See manufacturer",
+        "category": "panels",
+        "description": "Solar Combiner boxes make connecting multiple solar panels in series and parallel a breeze. New design! All your panel wiring troubles made really simple Built in DC Disconnect. Built in DC Overcurrent protection. Built in Lightning protection Built in fuse protection Features: Metal Box (no melting or fire hazard) IP65 Outdoor Weatherproof Key Lockable Each Circuit is fused 15A (on both Positive and Negative terminals ) Reverse Polarity Diode Protection Available in a variety of configurations (4 to 1 , 4 to 2, 6 to 1 , 8 to 2, 8 to 1) Acrylic face plate cover for full protection (most other suppliers simply ignore this feature) – often hundreds of volts Surge Protection – 1000V Specs: 15A per PV Input string Max 3 x 63A DC Output.",
+        "image": "https://watts247.com/wp-content/uploads/2023/09/6-3.jpg",
+        "images": [
+          "https://watts247.com/wp-content/uploads/2023/09/6-3.jpg"
+        ],
+        "sourceUrl": "https://watts247.com/product/6-3-solar-panel-combiner-box/",
+        "specs": {},
+        "verifiedAt": "2026-10-11T19:48:59.245Z",
+        "offers": [
+          {
+            "id": "watts247-6-3",
+            "retailerId": "watts247",
+            "retailer": "Watts247",
+            "url": "https://watts247.com/product/6-3-solar-panel-combiner-box/",
+            "price": 337,
+            "referencePrice": 406,
+            "currency": "USD",
+            "packQuantity": 3,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T19:48:59.245Z",
+            "sku": "6-3",
+            "condition": "new"
+          }
+        ]
+      },
+      "target": {
+        "category": "electrical",
+        "specs": {
+          "electricalType": "Boxes & combiners"
+        }
+      },
+      "anchors": {}
+    },
+    {
+      "proposalIndex": 10,
+      "product": {
+        "id": "watts247-8-4-empty",
+        "name": "8-4 Solar Panel Combiner Box – Empty Box ONLY",
+        "brand": "See manufacturer",
+        "category": "panels",
+        "description": "This is an empty 8-4 box completely labeled and din rails installed (excludes all mbreakersm fuses diodes etc as shown on this picture. Includes lock and key you can buy the components individually on our website and build according to your own specs.",
+        "image": "https://watts247.com/wp-content/uploads/2023/09/8-4.jpg",
+        "images": [
+          "https://watts247.com/wp-content/uploads/2023/09/8-4.jpg"
+        ],
+        "sourceUrl": "https://watts247.com/product/8-4-solar-panel-combiner-box-empty-box-only/",
+        "specs": {},
+        "verifiedAt": "2026-10-10T15:25:04.529Z",
+        "offers": [
+          {
+            "id": "watts247-8-4-empty",
+            "retailerId": "watts247",
+            "retailer": "Watts247",
+            "url": "https://watts247.com/product/8-4-solar-panel-combiner-box-empty-box-only/",
+            "price": 120,
+            "currency": "USD",
+            "packQuantity": 4,
+            "stock": "in_stock",
+            "observedAt": "2026-10-10T15:25:04.529Z",
+            "sku": "8-4- Empty",
+            "condition": "new"
+          }
+        ]
+      },
+      "target": {
+        "category": "electrical",
+        "specs": {
+          "electricalType": "Boxes & combiners"
+        }
+      },
+      "anchors": {}
+    },
+    {
+      "proposalIndex": 11,
+      "product": {
+        "id": "watts247-8-4",
+        "name": "8-4 Solar Panel Combiner Box – (2 circuits to 1) x4 times for 4 MPPT Inputs – (4 x 63A max output) – Ideal For 4 PV Inputs -Version 3 Improved",
+        "brand": "See manufacturer",
+        "category": "panels",
+        "description": "Solar Combiner boxes make connecting multiple solar panels in series and parallel a breeze. New design! All your panel wiring troubles made really simple Built in DC Disconnect. Built in DC Overcurrent protection. Built in Lightning protection Built in fuse protection Features: Metal Box (no melting or fire hazard) IP65 Outdoor Weatherproof Key Lockable Each Circuit is fused 15A (on both Positive and Negative terminals ) Reverse Polarity Diode Protection Available in a variety of configurations (4 to 1 , 4 to 2, 6 to 1 , 8 to 2, 8 to 1) Acrylic face plate cover for full protection (most other suppliers simply ignore this feature) – often hundreds of volts Surge Protection – 1000V Specs: 15A per PV Input string Max 4 x 63A DC Output.",
+        "image": "https://watts247.com/wp-content/uploads/2023/09/8-4-Outside-scaled.jpg",
+        "images": [
+          "https://watts247.com/wp-content/uploads/2023/09/8-4-Outside-scaled.jpg"
+        ],
+        "sourceUrl": "https://watts247.com/product/8-4-solar-panel-combiner-box/",
+        "specs": {},
+        "verifiedAt": "2026-10-11T19:48:59.244Z",
+        "offers": [
+          {
+            "id": "watts247-8-4",
+            "retailerId": "watts247",
+            "retailer": "Watts247",
+            "url": "https://watts247.com/product/8-4-solar-panel-combiner-box/",
+            "price": 499,
+            "currency": "USD",
+            "packQuantity": 4,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T19:48:59.244Z",
+            "sku": "8-4",
+            "condition": "new"
+          }
+        ]
+      },
+      "target": {
+        "category": "electrical",
+        "specs": {
+          "electricalType": "Boxes & combiners"
+        }
+      },
+      "anchors": {}
+    },
+    {
+      "proposalIndex": 12,
+      "product": {
+        "id": "watts247-w-emp-220300-2",
+        "name": "Dual DC-220-300V-W EMP Shield (Solar Panel DC Protection) – Ideal for LV6548 or Dual 250V Mppts",
+        "brand": "See manufacturer",
+        "category": "panels",
+        "description": "This DC model is to be used for the Solar Panel Array Input can be used up to 300VDC, all the Growatt Models, and the MPP solar less than or equal to 250V DC input USE for LV6548 or similar with Dual MPPT Inputs How Does EMP Shield Work? The EMP Shield can see and protect all the electronics and equipment connected to your electrical system. This is accomplished by shunting (shorting) the over voltage coming in from the Grid and the voltage surges that are collected within you home. Whether the electrons are collected in the home or attempt to come into the electrical system from outside the home, the EMP will see the surge and shield your electrical system, smart meter, and all devices plugged into your homes system. The EMP Shield reacts in less than 1 billionth of a second. Since the shunting is completed incredibly fast, the over voltage is drained away from the equipment before the voltage can rise high enough to damage any equipment. We call this new technology SightSpeed™ Key Features and Benefits Military Grade Protection From EMP (Electromagnetic Pulses), CME (Coronal Mass Ejections), Lightning, Power Surges and Smart Meter Fire Protection. Features and Benefits ▪️ The worlds fastest, Keystone Testing Approved, Military Grade EMP Surge Devices on the market today. Starts shunting overvoltage in less than 1 Nanosecond to protect your home ▪️ Surpasses MIL-STD-188-125-1 requirement. Overvoltage spike protection through E1-E3 energy spikes ▪️ Approved and Listed to protect standard residential split phase 120/240, 60Hz system voltage. ▪️ Protects over 100 kA (100,000 Amps) per line surge current rating! ▪️ Withstood 44 EMP/Surge bursts of energy in testing with ZERO degradation! See testing results below. ▪️ Weatherproof, Commercial grade, IP65 NEMA 4X enclosure can be installed indoor or outdoor ▪️ Integrated Easy View LED Indicator ensures that EMP Shield is monitoring your electrical supply for over-voltage. ▪️ 100% Smart Meter Fire Protection for Home Applications. More About the EMP Shield EMP Shield offers the fastest over-voltage protection on the market today. Each of our models are very exquisitely and robustly designed to meet and exceed current Mil-Spec standards. Electrical surges move along your household wiring very quickly, however our EMP Shield is capable of shunting away overvoltage before the energy can move farther than 12 inches from your breaker panel and will also prevent smart meter fires in home applications. EMP Shield Home and Small Business models are designed to protect your assets while they are connected to the Grid or Homestead’s power supply. Each of these models will start shunting (removing) overvoltage in less than one nanosecond. That is less than one billionth of a second. Each EMP Shield utilizes three specialized distinct and proprietary overvoltage protection technologies to protect your home and assets from any overvoltage, including Lightning, Coronal Mass Ejection (CME) and Electromagnetic Pulse (EMP). We believe EMP Shield products will be pivotal in in ensuring national defense and national security should a high altitude nuclear weapon be detonated producing an incredibly dangerous electromagnetic pulse. “Whole Home Electrical System Surge and EMP Protection” Why Do I Need An EMP Shield? Our Most Common Question is: If the Grid is Down and I Have No Electricity, Why Do I Need an EMP Shield? 1. You will save thousands of dollars and potentially years of time. Electrical surges will destroy electrical equipment if not protected. In most cases, EMP Shield is cheaper than most home deductables. 2. Power may go out for a day or a year. However, when the power is restored, your home electrical system and electronics will still be operational. You will be able to assume your previous lifestyle. 3. If you have a backup power system, you will still be able to use your electrical system and electronics normally. Common backup power systems can include generators, solar power systems, and wind turbine systems. 4. Reduce your chances of fire. As seen in the Carrington event in 1859, many people were injured from electrical surge and fires produced from this CME (coronal mass ejection). The EMP Shield removes this excess electricity from your home and reduces your risk of fire. 5. EMP Shield can also protect your backup power systems. 6. EMP Shield protects against more than just EMP (Electromagnetic Pulse). Our technology also protects against CME (Coronal Mass Ejection / Solar Flares), Lightning, and Power Surges. We offer the worlds most robust, durable and proven EMP Protection systems. 2x locations in 2018 were struck with lighting with the EMP Shield Installed. Each home had ZERO damage and witnessed ZERO fire. 7. We offer 40 types of EMP Shield that can be used for homes, vehicles, backup power systems, industrial facilities, and DOD/DHS applications. If you need to protect an electrical system, EMP Shield has or will develop a device for you. 8. The EMP Shield Home Models can assist in preventing smart meter fires. Military Testing EMP Shield is the Worlds First Whole Home and Vehicle EMP Defense Technology to Surpass All Military EMP Testing Standards: MIL-STD-188-125-1 MIL-STD-464C MIL-STD-461G CS115, CS116, CS117 EMP Shield has been rigorously tested at the Keystone compliance facility which is a federally approved facility that is used to conduct many of today’s most advanced and rigorous technological tests. Out testing and evaluations conducted at the facility have been documented in depth to show the true ability and durability of the EMP Shield. The testing results derived from Keystone compliance testing facility highlights EMP Shields true strength and capability. Below you will find the complete Keystone Compliance testing results of the EMP Shield.",
+        "image": "https://watts247.com/wp-content/uploads/2021/07/DC-220-300-side.jpg",
+        "images": [
+          "https://watts247.com/wp-content/uploads/2021/07/DC-220-300-side.jpg"
+        ],
+        "sourceUrl": "https://watts247.com/product/dual-dc-220-300v-w-emp-shield-solar-panel-dc-protection/",
+        "specs": {
+          "voltage": 300
+        },
+        "verifiedAt": "2026-10-11T19:48:59.256Z",
+        "offers": [
+          {
+            "id": "watts247-w-emp-220300-2",
+            "retailerId": "watts247",
+            "retailer": "Watts247",
+            "url": "https://watts247.com/product/dual-dc-220-300v-w-emp-shield-solar-panel-dc-protection/",
+            "price": 499,
+            "referencePrice": 539,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T19:48:59.256Z",
+            "sku": "W-EMP-220300-2",
+            "condition": "new"
+          }
+        ]
+      },
+      "target": {
+        "category": "electrical",
+        "specs": {
+          "electricalType": "Surge protection"
+        }
+      },
+      "anchors": {}
+    },
+    {
+      "proposalIndex": 13,
+      "product": {
+        "id": "watts247-w-emp-600vdcx2",
+        "name": "Dual DC-600V-W EMP Shield (Solar Panel DC Protection) – Use on LVX6048xx and SOL-Ark models",
+        "brand": "See manufacturer",
+        "category": "panels",
+        "description": "This DC model is to be used for the Solar Panel Array Input can be used up to 600VDC, all the Growatt Models, and the MPP solar less than or equal to 550V DC input Use especially for Dual MPPT Input models up to 600V How Does EMP Shield Work? The EMP Shield can see and protect all the electronics and equipment connected to your electrical system. This is accomplished by shunting (shorting) the over voltage coming in from the Grid and the voltage surges that are collected within you home. Whether the electrons are collected in the home or attempt to come into the electrical system from outside the home, the EMP will see the surge and shield your electrical system, smart meter, and all devices plugged into your homes system. The EMP Shield reacts in less than 1 billionth of a second. Since the shunting is completed incredibly fast, the over voltage is drained away from the equipment before the voltage can rise high enough to damage any equipment. We call this new technology SightSpeed™ Key Features and Benefits Military Grade Protection From EMP (Electromagnetic Pulses), CME (Coronal Mass Ejections), Lightning, Power Surges and Smart Meter Fire Protection. Features and Benefits ▪️ The worlds fastest, Keystone Testing Approved, Military Grade EMP Surge Devices on the market today. Starts shunting overvoltage in less than 1 Nanosecond to protect your home ▪️ Surpasses MIL-STD-188-125-1 requirement. Overvoltage spike protection through E1-E3 energy spikes ▪️ Approved and Listed to protect standard residential split phase 120/240, 60Hz system voltage. ▪️ Protects over 100 kA (100,000 Amps) per line surge current rating! ▪️ Withstood 44 EMP/Surge bursts of energy in testing with ZERO degradation! See testing results below. ▪️ Weatherproof, Commercial grade, IP65 NEMA 4X enclosure can be installed indoor or outdoor ▪️ Integrated Easy View LED Indicator ensures that EMP Shield is monitoring your electrical supply for over-voltage. ▪️ 100% Smart Meter Fire Protection for Home Applications. More About the EMP Shield EMP Shield offers the fastest over-voltage protection on the market today. Each of our models are very exquisitely and robustly designed to meet and exceed current Mil-Spec standards. Electrical surges move along your household wiring very quickly, however our EMP Shield is capable of shunting away overvoltage before the energy can move farther than 12 inches from your breaker panel and will also prevent smart meter fires in home applications. EMP Shield Home and Small Business models are designed to protect your assets while they are connected to the Grid or Homestead’s power supply. Each of these models will start shunting (removing) overvoltage in less than one nanosecond. That is less than one billionth of a second. Each EMP Shield utilizes three specialized distinct and proprietary overvoltage protection technologies to protect your home and assets from any overvoltage, including Lightning, Coronal Mass Ejection (CME) and Electromagnetic Pulse (EMP). We believe EMP Shield products will be pivotal in in ensuring national defense and national security should a high altitude nuclear weapon be detonated producing an incredibly dangerous electromagnetic pulse. “Whole Home Electrical System Surge and EMP Protection” Why Do I Need An EMP Shield? Our Most Common Question is: If the Grid is Down and I Have No Electricity, Why Do I Need an EMP Shield? 1. You will save thousands of dollars and potentially years of time. Electrical surges will destroy electrical equipment if not protected. In most cases, EMP Shield is cheaper than most home deductables. 2. Power may go out for a day or a year. However, when the power is restored, your home electrical system and electronics will still be operational. You will be able to assume your previous lifestyle. 3. If you have a backup power system, you will still be able to use your electrical system and electronics normally. Common backup power systems can include generators, solar power systems, and wind turbine systems. 4. Reduce your chances of fire. As seen in the Carrington event in 1859, many people were injured from electrical surge and fires produced from this CME (coronal mass ejection). The EMP Shield removes this excess electricity from your home and reduces your risk of fire. 5. EMP Shield can also protect your backup power systems. 6. EMP Shield protects against more than just EMP (Electromagnetic Pulse). Our technology also protects against CME (Coronal Mass Ejection / Solar Flares), Lightning, and Power Surges. We offer the worlds most robust, durable and proven EMP Protection systems. 2x locations in 2018 were struck with lighting with the EMP Shield Installed. Each home had ZERO damage and witnessed ZERO fire. 7. We offer 40 types of EMP Shield that can be used for homes, vehicles, backup power systems, industrial facilities, and DOD/DHS applications. If you need to protect an electrical system, EMP Shield has or will develop a device for you. 8. The EMP Shield Home Models can assist in preventing smart meter fires. Military Testing EMP Shield is the Worlds First Whole Home and Vehicle EMP Defense Technology to Surpass All Military EMP Testing Standards: MIL-STD-188-125-1 MIL-STD-464C MIL-STD-461G CS115, CS116, CS117 EMP Shield has been rigorously tested at the Keystone compliance facility which is a federally approved facility that is used to conduct many of today’s most advanced and rigorous technological tests. Out testing and evaluations conducted at the facility have been documented in depth to show the true ability and durability of the EMP Shield. The testing results derived from Keystone compliance testing facility highlights EMP Shields true strength and capability. Below you will find the complete Keystone Compliance testing results of the EMP Shield.",
+        "image": "https://watts247.com/wp-content/uploads/2021/07/DC-220-300-side.jpg",
+        "images": [
+          "https://watts247.com/wp-content/uploads/2021/07/DC-220-300-side.jpg"
+        ],
+        "sourceUrl": "https://watts247.com/product/dual-dc-600v-w-emp-shield-solar-panel-dc-protection-use-on-lvx6048wp-and-sol-ark-models/",
+        "specs": {
+          "voltage": 600
+        },
+        "verifiedAt": "2026-10-11T19:48:59.258Z",
+        "offers": [
+          {
+            "id": "watts247-w-emp-600vdcx2",
+            "retailerId": "watts247",
+            "retailer": "Watts247",
+            "url": "https://watts247.com/product/dual-dc-600v-w-emp-shield-solar-panel-dc-protection-use-on-lvx6048wp-and-sol-ark-models/",
+            "price": 579,
+            "referencePrice": 639,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T19:48:59.258Z",
+            "sku": "W-EMP-600Vdcx2",
+            "condition": "new"
+          }
+        ]
+      },
+      "target": {
+        "category": "electrical",
+        "specs": {
+          "electricalType": "Surge protection"
+        }
+      },
+      "anchors": {}
+    },
+    {
+      "proposalIndex": 14,
+      "product": {
+        "id": "watts247-w-emp-220300",
+        "name": "Single DC-220-300V-W EMP Shield (Solar Panel DC Protection)",
+        "brand": "See manufacturer",
+        "category": "panels",
+        "description": "This DC model is to be used for the Solar Panel Array Input can be used up to 300VDC, all the Growatt Models, and the MPP solar less than or equal to 250V DC input How Does EMP Shield Work? The EMP Shield can see and protect all the electronics and equipment connected to your electrical system. This is accomplished by shunting (shorting) the over voltage coming in from the Grid and the voltage surges that are collected within you home. Whether the electrons are collected in the home or attempt to come into the electrical system from outside the home, the EMP will see the surge and shield your electrical system, smart meter, and all devices plugged into your homes system. The EMP Shield reacts in less than 1 billionth of a second. Since the shunting is completed incredibly fast, the over voltage is drained away from the equipment before the voltage can rise high enough to damage any equipment. We call this new technology SightSpeed™ Key Features and Benefits Military Grade Protection From EMP (Electromagnetic Pulses), CME (Coronal Mass Ejections), Lightning, Power Surges and Smart Meter Fire Protection. Features and Benefits ▪️ The worlds fastest, Keystone Testing Approved, Military Grade EMP Surge Devices on the market today. Starts shunting overvoltage in less than 1 Nanosecond to protect your home ▪️ Surpasses MIL-STD-188-125-1 requirement. Overvoltage spike protection through E1-E3 energy spikes ▪️ Approved and Listed to protect standard residential split phase 120/240, 60Hz system voltage. ▪️ Protects over 100 kA (100,000 Amps) per line surge current rating! ▪️ Withstood 44 EMP/Surge bursts of energy in testing with ZERO degradation! See testing results below. ▪️ Weatherproof, Commercial grade, IP65 NEMA 4X enclosure can be installed indoor or outdoor ▪️ Integrated Easy View LED Indicator ensures that EMP Shield is monitoring your electrical supply for over-voltage. ▪️ 100% Smart Meter Fire Protection for Home Applications. More About the EMP Shield EMP Shield offers the fastest over-voltage protection on the market today. Each of our models are very exquisitely and robustly designed to meet and exceed current Mil-Spec standards. Electrical surges move along your household wiring very quickly, however our EMP Shield is capable of shunting away overvoltage before the energy can move farther than 12 inches from your breaker panel and will also prevent smart meter fires in home applications. EMP Shield Home and Small Business models are designed to protect your assets while they are connected to the Grid or Homestead’s power supply. Each of these models will start shunting (removing) overvoltage in less than one nanosecond. That is less than one billionth of a second. Each EMP Shield utilizes three specialized distinct and proprietary overvoltage protection technologies to protect your home and assets from any overvoltage, including Lightning, Coronal Mass Ejection (CME) and Electromagnetic Pulse (EMP). We believe EMP Shield products will be pivotal in in ensuring national defense and national security should a high altitude nuclear weapon be detonated producing an incredibly dangerous electromagnetic pulse. “Whole Home Electrical System Surge and EMP Protection” Why Do I Need An EMP Shield? Our Most Common Question is: If the Grid is Down and I Have No Electricity, Why Do I Need an EMP Shield? 1. You will save thousands of dollars and potentially years of time. Electrical surges will destroy electrical equipment if not protected. In most cases, EMP Shield is cheaper than most home deductables. 2. Power may go out for a day or a year. However, when the power is restored, your home electrical system and electronics will still be operational. You will be able to assume your previous lifestyle. 3. If you have a backup power system, you will still be able to use your electrical system and electronics normally. Common backup power systems can include generators, solar power systems, and wind turbine systems. 4. Reduce your chances of fire. As seen in the Carrington event in 1859, many people were injured from electrical surge and fires produced from this CME (coronal mass ejection). The EMP Shield removes this excess electricity from your home and reduces your risk of fire. 5. EMP Shield can also protect your backup power systems. 6. EMP Shield protects against more than just EMP (Electromagnetic Pulse). Our technology also protects against CME (Coronal Mass Ejection / Solar Flares), Lightning, and Power Surges. We offer the worlds most robust, durable and proven EMP Protection systems. 2x locations in 2018 were struck with lighting with the EMP Shield Installed. Each home had ZERO damage and witnessed ZERO fire. 7. We offer 40 types of EMP Shield that can be used for homes, vehicles, backup power systems, industrial facilities, and DOD/DHS applications. If you need to protect an electrical system, EMP Shield has or will develop a device for you. 8. The EMP Shield Home Models can assist in preventing smart meter fires. Military Testing EMP Shield is the Worlds First Whole Home and Vehicle EMP Defense Technology to Surpass All Military EMP Testing Standards: MIL-STD-188-125-1 MIL-STD-464C MIL-STD-461G CS115, CS116, CS117 EMP Shield has been rigorously tested at the Keystone compliance facility which is a federally approved facility that is used to conduct many of today’s most advanced and rigorous technological tests. Out testing and evaluations conducted at the facility have been documented in depth to show the true ability and durability of the EMP Shield. The testing results derived from Keystone compliance testing facility highlights EMP Shields true strength and capability. Below you will find the complete Keystone Compliance testing results of the EMP Shield.",
+        "image": "https://watts247.com/wp-content/uploads/2021/07/DC-220-300-side.jpg",
+        "images": [
+          "https://watts247.com/wp-content/uploads/2021/07/DC-220-300-side.jpg"
+        ],
+        "sourceUrl": "https://watts247.com/product/single-dc-220-300v-w-emp-shield-solar-panel-dc-protection/",
+        "specs": {
+          "voltage": 300
+        },
+        "verifiedAt": "2026-10-11T23:43:31.120Z",
+        "offers": [
+          {
+            "id": "watts247-w-emp-220300",
+            "retailerId": "watts247",
+            "retailer": "Watts247",
+            "url": "https://watts247.com/product/single-dc-220-300v-w-emp-shield-solar-panel-dc-protection/",
+            "price": 330,
+            "referencePrice": 402,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:43:31.120Z",
+            "sku": "W-EMP-220300",
+            "condition": "new"
+          }
+        ]
+      },
+      "target": {
+        "category": "electrical",
+        "specs": {
+          "electricalType": "Surge protection"
+        }
+      },
+      "anchors": {}
+    },
+    {
+      "proposalIndex": 15,
+      "product": {
+        "id": "watts247-w-emp-600vdcx1",
+        "name": "Single DC-600V-W EMP Shield (Solar Panel DC Protection) – Use on LVX6048xx models",
+        "brand": "See manufacturer",
+        "category": "panels",
+        "description": "This DC model is to be used for the Solar Panel Array Input can be used up to 600VDC, all the Growatt Models, and the MPP solar less than or equal to 550V DC input How Does EMP Shield Work? The EMP Shield can see and protect all the electronics and equipment connected to your electrical system. This is accomplished by shunting (shorting) the over voltage coming in from the Grid and the voltage surges that are collected within you home. Whether the electrons are collected in the home or attempt to come into the electrical system from outside the home, the EMP will see the surge and shield your electrical system, smart meter, and all devices plugged into your homes system. The EMP Shield reacts in less than 1 billionth of a second. Since the shunting is completed incredibly fast, the over voltage is drained away from the equipment before the voltage can rise high enough to damage any equipment. We call this new technology SightSpeed™ Key Features and Benefits Military Grade Protection From EMP (Electromagnetic Pulses), CME (Coronal Mass Ejections), Lightning, Power Surges and Smart Meter Fire Protection. Features and Benefits ▪️ The worlds fastest, Keystone Testing Approved, Military Grade EMP Surge Devices on the market today. Starts shunting overvoltage in less than 1 Nanosecond to protect your home ▪️ Surpasses MIL-STD-188-125-1 requirement. Overvoltage spike protection through E1-E3 energy spikes ▪️ Approved and Listed to protect standard residential split phase 120/240, 60Hz system voltage. ▪️ Protects over 100 kA (100,000 Amps) per line surge current rating! ▪️ Withstood 44 EMP/Surge bursts of energy in testing with ZERO degradation! See testing results below. ▪️ Weatherproof, Commercial grade, IP65 NEMA 4X enclosure can be installed indoor or outdoor ▪️ Integrated Easy View LED Indicator ensures that EMP Shield is monitoring your electrical supply for over-voltage. ▪️ 100% Smart Meter Fire Protection for Home Applications. More About the EMP Shield EMP Shield offers the fastest over-voltage protection on the market today. Each of our models are very exquisitely and robustly designed to meet and exceed current Mil-Spec standards. Electrical surges move along your household wiring very quickly, however our EMP Shield is capable of shunting away overvoltage before the energy can move farther than 12 inches from your breaker panel and will also prevent smart meter fires in home applications. EMP Shield Home and Small Business models are designed to protect your assets while they are connected to the Grid or Homestead’s power supply. Each of these models will start shunting (removing) overvoltage in less than one nanosecond. That is less than one billionth of a second. Each EMP Shield utilizes three specialized distinct and proprietary overvoltage protection technologies to protect your home and assets from any overvoltage, including Lightning, Coronal Mass Ejection (CME) and Electromagnetic Pulse (EMP). We believe EMP Shield products will be pivotal in in ensuring national defense and national security should a high altitude nuclear weapon be detonated producing an incredibly dangerous electromagnetic pulse. “Whole Home Electrical System Surge and EMP Protection” Why Do I Need An EMP Shield? Our Most Common Question is: If the Grid is Down and I Have No Electricity, Why Do I Need an EMP Shield? 1. You will save thousands of dollars and potentially years of time. Electrical surges will destroy electrical equipment if not protected. In most cases, EMP Shield is cheaper than most home deductables. 2. Power may go out for a day or a year. However, when the power is restored, your home electrical system and electronics will still be operational. You will be able to assume your previous lifestyle. 3. If you have a backup power system, you will still be able to use your electrical system and electronics normally. Common backup power systems can include generators, solar power systems, and wind turbine systems. 4. Reduce your chances of fire. As seen in the Carrington event in 1859, many people were injured from electrical surge and fires produced from this CME (coronal mass ejection). The EMP Shield removes this excess electricity from your home and reduces your risk of fire. 5. EMP Shield can also protect your backup power systems. 6. EMP Shield protects against more than just EMP (Electromagnetic Pulse). Our technology also protects against CME (Coronal Mass Ejection / Solar Flares), Lightning, and Power Surges. We offer the worlds most robust, durable and proven EMP Protection systems. 2x locations in 2018 were struck with lighting with the EMP Shield Installed. Each home had ZERO damage and witnessed ZERO fire. 7. We offer 40 types of EMP Shield that can be used for homes, vehicles, backup power systems, industrial facilities, and DOD/DHS applications. If you need to protect an electrical system, EMP Shield has or will develop a device for you. 8. The EMP Shield Home Models can assist in preventing smart meter fires. Military Testing EMP Shield is the Worlds First Whole Home and Vehicle EMP Defense Technology to Surpass All Military EMP Testing Standards: MIL-STD-188-125-1 MIL-STD-464C MIL-STD-461G CS115, CS116, CS117 EMP Shield has been rigorously tested at the Keystone compliance facility which is a federally approved facility that is used to conduct many of today’s most advanced and rigorous technological tests. Out testing and evaluations conducted at the facility have been documented in depth to show the true ability and durability of the EMP Shield. The testing results derived from Keystone compliance testing facility highlights EMP Shields true strength and capability. Below you will find the complete Keystone Compliance testing results of the EMP Shield.",
+        "image": "https://watts247.com/wp-content/uploads/2021/07/DC-220-300-side.jpg",
+        "images": [
+          "https://watts247.com/wp-content/uploads/2021/07/DC-220-300-side.jpg"
+        ],
+        "sourceUrl": "https://watts247.com/product/single-dc-600v-w-emp-shield-solar-panel-dc-protection/",
+        "specs": {
+          "voltage": 600
+        },
+        "verifiedAt": "2026-10-11T19:48:59.260Z",
+        "offers": [
+          {
+            "id": "watts247-w-emp-600vdcx1",
+            "retailerId": "watts247",
+            "retailer": "Watts247",
+            "url": "https://watts247.com/product/single-dc-600v-w-emp-shield-solar-panel-dc-protection/",
+            "price": 402,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T19:48:59.260Z",
+            "sku": "W-EMP-600Vdcx1",
+            "condition": "new"
+          }
+        ]
+      },
+      "target": {
+        "category": "electrical",
+        "specs": {
+          "electricalType": "Surge protection"
+        }
+      },
+      "anchors": {}
+    },
+    {
+      "proposalIndex": 16,
+      "product": {
+        "id": "watts247-4-1",
+        "name": "4-1 Solar Panel Combiner Box – 4 circuits to 1 (1 x 63A max output) Version 3 Improved, ltd stock.",
+        "brand": "See manufacturer",
+        "category": "panels",
+        "description": "Solar Combiner boxes make connecting multiple solar panels in series and parallel a breeze. All your panel wiring troubles made really simple Version 3 include heavy duty diodes, no solder. Specifications: 63A DC Disconnect rated at 4kV DC (4 pole x 1000VDC in series ) Double fuse protection – Each Solar Panel input is protected by a 15A Silica Fast Blow Fuse (On both Positive and Negative Legs) DC Overcurrent protection rated at 63A at 4kV DC Surge Protection 1000V DC, Imax 40kA, In 20kA Up >= 2.5kV Diode Protection 25A, 1000V, per input string 4 PV Positive Fused Inputs and 4 PV Negative Fused Inputs Features: Metal Box (no melting or fire hazard) IP65 Outdoor Weatherproof Key Lockable Each Circuit is fused 15A (on both Positive and Negative terminals ) Reverse Polarity Diode Protection Available in a variety of configurations (4 to 1 , 4 to 2, 6 to 1 , 8 to 2, 8 to 1) Acrylic face plate cover for full protection (most other suppliers simply ignore this feature) – often hundreds of volts Surge Protection – 1000V Specs, 15A per PV Input string Max 63 A DC Output.",
+        "image": "https://watts247.com/wp-content/uploads/2021/06/20210607_143608-scaled-e1623101088259.jpg",
+        "images": [
+          "https://watts247.com/wp-content/uploads/2021/06/20210607_143608-scaled-e1623101088259.jpg"
+        ],
+        "sourceUrl": "https://watts247.com/product/solar-panel-combiner-box-4-circuits-to-1/",
+        "specs": {},
+        "verifiedAt": "2026-10-11T23:43:31.132Z",
+        "offers": [
+          {
+            "id": "watts247-4-1",
+            "retailerId": "watts247",
+            "retailer": "Watts247",
+            "url": "https://watts247.com/product/solar-panel-combiner-box-4-circuits-to-1/",
+            "price": 339,
+            "currency": "USD",
+            "packQuantity": 1,
+            "stock": "out_of_stock",
+            "observedAt": "2026-10-11T23:43:31.132Z",
+            "sku": "4-1",
+            "condition": "new"
+          }
+        ]
+      },
+      "target": {
+        "category": "electrical",
+        "specs": {
+          "electricalType": "Boxes & combiners"
+        }
+      },
+      "anchors": {}
+    },
+    {
+      "proposalIndex": 17,
+      "product": {
+        "id": "watts247-4-2",
+        "name": "4-2 Solar Panel Combiner Box – 4 circuits to 2 (2 to 1)- (2 x 63A max output) Version 3 Improved, ltd stock.",
+        "brand": "See manufacturer",
+        "category": "panels",
+        "description": "Solar Combiner boxes make connecting multiple solar panels in series and parallel a breeze. All your panel wiring troubles made really simple Built in DC Disconnect. Built in DC Overcurrent protection. Built in Lightning protection Built in fuse protection Features: Metal Box (no melting or fire hazard) IP65 Outdoor Weatherproof Key Lockable Each Circuit is fused 15A (on both Positive and Negative terminals ) Reverse Polarity Diode Protection Available in a variety of configurations (4 to 1 , 4 to 2, 6 to 1 , 8 to 2, 8 to 1) Acrylic face plate cover for full protection (most other suppliers simply ignore this feature) – often hundreds of volts Surge Protection – 1000V Specs: 15A per PV Input string Max 2 x 63A A DC Output.",
+        "image": "https://watts247.com/wp-content/uploads/2021/06/20210607_153430-scaled-e1623102067350.jpg",
+        "images": [
+          "https://watts247.com/wp-content/uploads/2021/06/20210607_153430-scaled-e1623102067350.jpg"
+        ],
+        "sourceUrl": "https://watts247.com/product/solar-panel-combiner-box-4-circuits-to-2/",
+        "specs": {},
+        "verifiedAt": "2026-10-11T23:43:31.131Z",
+        "offers": [
+          {
+            "id": "watts247-4-2",
+            "retailerId": "watts247",
+            "retailer": "Watts247",
+            "url": "https://watts247.com/product/solar-panel-combiner-box-4-circuits-to-2/",
+            "price": 329,
+            "currency": "USD",
+            "packQuantity": 2,
+            "stock": "in_stock",
+            "observedAt": "2026-10-11T23:43:31.131Z",
+            "sku": "4-2",
+            "condition": "new"
+          }
+        ]
+      },
+      "target": {
+        "category": "electrical",
+        "specs": {
+          "electricalType": "Boxes & combiners"
+        }
+      },
+      "anchors": {}
+    }
+  ],
+  "held": [
+    {
+      "id": "signature-solar-1659001",
+      "name": "Champion 8500 Watt Dual Fuel Inverter Generator with Electric Start",
+      "brand": "See manufacturer",
+      "category": "inverters",
+      "description": "Champion 8500-Watt Dual Fuel Inverter Generator delivers quiet, reliable power with CO Shield, electric start, and up to 14 hours of runtime.",
+      "image": "https://cdn11.bigcommerce.com/s-bi8c0htqsn/products/7890/images/9494/201175-altstudio__53996.1742588176.386.513.jpg?c=1",
+      "images": [
+        "https://cdn11.bigcommerce.com/s-bi8c0htqsn/products/7890/images/9494/201175-altstudio__53996.1742588176.386.513.jpg?c=1"
+      ],
+      "sourceUrl": "https://signaturesolar.com/champion-8500-watt-dual-fuel-inverter-generator",
+      "specs": {
+        "watts": 8500,
+        "outputWatts": 8500
+      },
+      "verifiedAt": "2026-10-12T21:21:12.592Z",
+      "offers": [
+        {
+          "id": "signature-solar-1659001",
+          "retailerId": "signature-solar",
+          "retailer": "Signature Solar",
+          "url": "https://signaturesolar.com/champion-8500-watt-dual-fuel-inverter-generator",
+          "price": 1805,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-12T21:21:12.592Z",
+          "sku": "1659001",
+          "condition": "new"
+        }
+      ]
+    },
+    {
+      "id": "watts247-fuse-combinerbox-15a",
+      "name": "15A Spare Fuses -Solar Panel Combiner Box of 5 pcs",
+      "brand": "See manufacturer",
+      "category": "panels",
+      "description": "Solar Combiner box Spare fuses, these should never blow, because panels should not be connected in parallel prior to the combiner box inputs (exceeding 15A) Price is per fuse",
+      "image": "https://watts247.com/wp-content/uploads/2023/06/Fuses.png",
+      "images": [
+        "https://watts247.com/wp-content/uploads/2023/06/Fuses.png"
+      ],
+      "sourceUrl": "https://watts247.com/product/solar-panel-combiner-box-15a-fuses/",
+      "specs": {},
+      "verifiedAt": "2026-10-11T19:48:59.248Z",
+      "offers": [
+        {
+          "id": "watts247-fuse-combinerbox-15a",
+          "retailerId": "watts247",
+          "retailer": "Watts247",
+          "url": "https://watts247.com/product/solar-panel-combiner-box-15a-fuses/",
+          "price": 10,
+          "currency": "USD",
+          "packQuantity": 5,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T19:48:59.248Z",
+          "sku": "Fuse-CombinerBox-15A",
+          "condition": "new"
+        }
+      ]
+    },
+    {
+      "id": "santan-solar-b24371a1",
+      "name": "2 x Anker SOLIX PS400 Portable Solar Panel",
+      "brand": "Anker",
+      "category": "panels",
+      "description": "Anker SOLIX PS400 Portable Solar Panel 400W of Solar Power: Watch solar power performance in action with SOLIX PS400—even quickly charging Anker portable power stations. Up to 23% Conversion Efficiency: You’ll notice 1.5X faster charging times thanks to monocrystalline solar cells and a powerful sunlight-trapping surface. 4 Set Angles for Max Sunlight Absorption: No matter where you are, the season, or time of day, you can maximize sunlight absorption. Easily switch between 30°, 40°, 50°, or 80° angles IP67 Waterproof Protection: With an IP67 waterproof design, you can camp without fear and enjoy the adventure with SOLIX PS400 Solar Panel. What’s In The Box: Anker SOLIX PS400 Solar Panel, 2x 9.8ft(3m) MC4 solar charging cable, 1.6 ft (0.5 m) MC4 to XT-60 solar charging cable and safety manual. SPECS: Maximum Output 400W Open Circuit Voltage 57.6V Operating Voltage 48V Operating Current 8.33A Dimensions (Folded) 39 × 26.6 × 2 in Dimensions (Unfolded) 100 × 39 × 1.2 in Net Weight 35.3 lb",
+      "image": "https://www.santansolar.com/wp-content/uploads/Anker-SOLIX-PS200-Portable-Solar-Panel.png",
+      "images": [
+        "https://www.santansolar.com/wp-content/uploads/Anker-SOLIX-PS200-Portable-Solar-Panel.png"
+      ],
+      "sourceUrl": "https://www.santansolar.com/product/2-x-anker-solix-ps400-portable-solar-panel/",
+      "specs": {},
+      "verifiedAt": "2026-10-11T23:17:27.374Z",
+      "offers": [
+        {
+          "id": "santan-solar-b24371a1",
+          "retailerId": "santan-solar",
+          "retailer": "SanTan Solar",
+          "url": "https://www.santansolar.com/product/2-x-anker-solix-ps400-portable-solar-panel/",
+          "price": 1299.99,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:17:27.374Z",
+          "sku": "B24371A1",
+          "condition": "new"
+        }
+      ]
+    },
+    {
+      "id": "santan-solar-b24371a2",
+      "name": "3 x Anker SOLIX PS400 Portable Solar Panel",
+      "brand": "Anker",
+      "category": "panels",
+      "description": "Anker SOLIX PS400 Portable Solar Panel 400W of Solar Power: Watch solar power performance in action with SOLIX PS400—even quickly charging Anker portable power stations. Up to 23% Conversion Efficiency: You’ll notice 1.5X faster charging times thanks to monocrystalline solar cells and a powerful sunlight-trapping surface. 4 Set Angles for Max Sunlight Absorption: No matter where you are, the season, or time of day, you can maximize sunlight absorption. Easily switch between 30°, 40°, 50°, or 80° angles IP67 Waterproof Protection: With an IP67 waterproof design, you can camp without fear and enjoy the adventure with SOLIX PS400 Solar Panel. What’s In The Box: Anker SOLIX PS400 Solar Panel, 2x 9.8ft(3m) MC4 solar charging cable, 1.6 ft (0.5 m) MC4 to XT-60 solar charging cable and safety manual. SPECS: Maximum Output 400W Open Circuit Voltage 57.6V Operating Voltage 48V Operating Current 8.33A Dimensions (Folded) 39 × 26.6 × 2 in Dimensions (Unfolded) 100 × 39 × 1.2 in Net Weight 35.3 lb",
+      "image": "https://www.santansolar.com/wp-content/uploads/Anker-SOLIX-PS200-Portable-Solar-Panel.png",
+      "images": [
+        "https://www.santansolar.com/wp-content/uploads/Anker-SOLIX-PS200-Portable-Solar-Panel.png"
+      ],
+      "sourceUrl": "https://www.santansolar.com/product/3-x-anker-solix-ps400-portable-solar-panel/",
+      "specs": {},
+      "verifiedAt": "2026-10-11T23:17:27.373Z",
+      "offers": [
+        {
+          "id": "santan-solar-b24371a2",
+          "retailerId": "santan-solar",
+          "retailer": "SanTan Solar",
+          "url": "https://www.santansolar.com/product/3-x-anker-solix-ps400-portable-solar-panel/",
+          "price": 1899.99,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:17:27.373Z",
+          "sku": "B24371A2",
+          "condition": "new"
+        }
+      ]
+    },
+    {
+      "id": "santan-solar-b24371a3",
+      "name": "4 x Anker SOLIX PS400 Portable Solar Panel",
+      "brand": "Anker",
+      "category": "panels",
+      "description": "Anker SOLIX PS400 Portable Solar Panel 400W of Solar Power: Watch solar power performance in action with SOLIX PS400—even quickly charging Anker portable power stations. Up to 23% Conversion Efficiency: You’ll notice 1.5X faster charging times thanks to monocrystalline solar cells and a powerful sunlight-trapping surface. 4 Set Angles for Max Sunlight Absorption: No matter where you are, the season, or time of day, you can maximize sunlight absorption. Easily switch between 30°, 40°, 50°, or 80° angles IP67 Waterproof Protection: With an IP67 waterproof design, you can camp without fear and enjoy the adventure with SOLIX PS400 Solar Panel. What’s In The Box: Anker SOLIX PS400 Solar Panel, 2x 9.8ft(3m) MC4 solar charging cable, 1.6 ft (0.5 m) MC4 to XT-60 solar charging cable and safety manual. SPECS: Maximum Output 400W Open Circuit Voltage 57.6V Operating Voltage 48V Operating Current 8.33A Dimensions (Folded) 39 × 26.6 × 2 in Dimensions (Unfolded) 100 × 39 × 1.2 in Net Weight 35.3 lb",
+      "image": "https://www.santansolar.com/wp-content/uploads/Anker-SOLIX-PS200-Portable-Solar-Panel.png",
+      "images": [
+        "https://www.santansolar.com/wp-content/uploads/Anker-SOLIX-PS200-Portable-Solar-Panel.png"
+      ],
+      "sourceUrl": "https://www.santansolar.com/product/4-x-anker-solix-ps400-portable-solar-panel/",
+      "specs": {},
+      "verifiedAt": "2026-10-11T23:17:27.372Z",
+      "offers": [
+        {
+          "id": "santan-solar-b24371a3",
+          "retailerId": "santan-solar",
+          "retailer": "SanTan Solar",
+          "url": "https://www.santansolar.com/product/4-x-anker-solix-ps400-portable-solar-panel/",
+          "price": 2760,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:17:27.372Z",
+          "sku": "B24371A3",
+          "condition": "new"
+        }
+      ]
+    },
+    {
+      "id": "santan-solar-b24371a4",
+      "name": "5 x Anker SOLIX PS400 Portable Solar Panel",
+      "brand": "Anker",
+      "category": "panels",
+      "description": "Anker SOLIX PS400 Portable Solar Panel 400W of Solar Power: Watch solar power performance in action with SOLIX PS400—even quickly charging Anker portable power stations. Up to 23% Conversion Efficiency: You’ll notice 1.5X faster charging times thanks to monocrystalline solar cells and a powerful sunlight-trapping surface. 4 Set Angles for Max Sunlight Absorption: No matter where you are, the season, or time of day, you can maximize sunlight absorption. Easily switch between 30°, 40°, 50°, or 80° angles IP67 Waterproof Protection: With an IP67 waterproof design, you can camp without fear and enjoy the adventure with SOLIX PS400 Solar Panel. What’s In The Box: Anker SOLIX PS400 Solar Panel, 2x 9.8ft(3m) MC4 solar charging cable, 1.6 ft (0.5 m) MC4 to XT-60 solar charging cable and safety manual. SPECS: Maximum Output 400W Open Circuit Voltage 57.6V Operating Voltage 48V Operating Current 8.33A Dimensions (Folded) 39 × 26.6 × 2 in Dimensions (Unfolded) 100 × 39 × 1.2 in Net Weight 35.3 lb",
+      "image": "https://www.santansolar.com/wp-content/uploads/Anker-SOLIX-PS200-Portable-Solar-Panel.png",
+      "images": [
+        "https://www.santansolar.com/wp-content/uploads/Anker-SOLIX-PS200-Portable-Solar-Panel.png"
+      ],
+      "sourceUrl": "https://www.santansolar.com/product/5-x-anker-solix-ps400-portable-solar-panel/",
+      "specs": {},
+      "verifiedAt": "2026-10-11T23:17:27.372Z",
+      "offers": [
+        {
+          "id": "santan-solar-b24371a4",
+          "retailerId": "santan-solar",
+          "retailer": "SanTan Solar",
+          "url": "https://www.santansolar.com/product/5-x-anker-solix-ps400-portable-solar-panel/",
+          "price": 3425,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-11T23:17:27.372Z",
+          "sku": "B24371A4",
+          "condition": "new"
+        }
+      ]
+    }
+  ],
+  "rejectionBaseline": [
+    {
+      "id": "practical-preppers-18167",
+      "label": "foreign SKU",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "practical-preppers-18167",
+              "retailerId": "practical-preppers",
+              "retailer": "Practical Preppers",
+              "url": "https://practicalpreppers.com/product/pocket-solar-lantern-rechargeable-led-light-power-bank/",
+              "price": 12.49,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:41:36.487Z",
+              "sku": "18167-foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "practical-preppers-18167",
+      "label": "package count",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "practical-preppers-18167",
+              "retailerId": "practical-preppers",
+              "retailer": "Practical Preppers",
+              "url": "https://practicalpreppers.com/product/pocket-solar-lantern-rechargeable-led-light-power-bank/",
+              "price": 12.49,
+              "currency": "USD",
+              "packQuantity": 2,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:41:36.487Z",
+              "sku": "18167",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {
+          "offers": [
+            {
+              "id": "practical-preppers-18167",
+              "retailerId": "practical-preppers",
+              "retailer": "Practical Preppers",
+              "url": "https://practicalpreppers.com/product/pocket-solar-lantern-rechargeable-led-light-power-bank/",
+              "price": 12.49,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:41:36.487Z",
+              "sku": "18167",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {
+            "offers": [
+              {
+                "id": "practical-preppers-18167",
+                "retailerId": "practical-preppers",
+                "retailer": "Practical Preppers",
+                "url": "https://practicalpreppers.com/product/pocket-solar-lantern-rechargeable-led-light-power-bank/",
+                "price": 12.49,
+                "currency": "USD",
+                "packQuantity": 1,
+                "stock": "in_stock",
+                "observedAt": "2026-10-11T19:41:36.487Z",
+                "sku": "18167",
+                "condition": "new"
+              }
+            ]
+          },
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "practical-preppers-18167",
+      "label": "second offer",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "practical-preppers-18167",
+              "retailerId": "practical-preppers",
+              "retailer": "Practical Preppers",
+              "url": "https://practicalpreppers.com/product/pocket-solar-lantern-rechargeable-led-light-power-bank/",
+              "price": 12.49,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:41:36.487Z",
+              "sku": "18167",
+              "condition": "new"
+            },
+            {
+              "id": "foreign-offer",
+              "retailerId": "practical-preppers",
+              "retailer": "Practical Preppers",
+              "url": "https://practicalpreppers.com/product/pocket-solar-lantern-rechargeable-led-light-power-bank/",
+              "price": 12.49,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:41:36.487Z",
+              "sku": "foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "practical-preppers-18167",
+      "label": "owner role scalar",
+      "input": {
+        "set": {
+          "specs": {
+            "stationType": "Integrated power station",
+            "accessoryType": "Owner selected role"
+          }
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "santan-solar-deltaprorc",
+      "label": "foreign SKU",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "santan-solar-deltaprorc",
+              "retailerId": "santan-solar",
+              "retailer": "SanTan Solar",
+              "url": "https://www.santansolar.com/product/ecoflow-delta-pro-remote-control/",
+              "price": 99,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T23:17:40.488Z",
+              "sku": "DELTAPRORC-foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "santan-solar-deltaprorc",
+      "label": "package count",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "santan-solar-deltaprorc",
+              "retailerId": "santan-solar",
+              "retailer": "SanTan Solar",
+              "url": "https://www.santansolar.com/product/ecoflow-delta-pro-remote-control/",
+              "price": 99,
+              "currency": "USD",
+              "packQuantity": 2,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T23:17:40.488Z",
+              "sku": "DELTAPRORC",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {
+          "offers": [
+            {
+              "id": "santan-solar-deltaprorc",
+              "retailerId": "santan-solar",
+              "retailer": "SanTan Solar",
+              "url": "https://www.santansolar.com/product/ecoflow-delta-pro-remote-control/",
+              "price": 99,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T23:17:40.488Z",
+              "sku": "DELTAPRORC",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {
+            "offers": [
+              {
+                "id": "santan-solar-deltaprorc",
+                "retailerId": "santan-solar",
+                "retailer": "SanTan Solar",
+                "url": "https://www.santansolar.com/product/ecoflow-delta-pro-remote-control/",
+                "price": 99,
+                "currency": "USD",
+                "packQuantity": 1,
+                "stock": "in_stock",
+                "observedAt": "2026-10-11T23:17:40.488Z",
+                "sku": "DELTAPRORC",
+                "condition": "new"
+              }
+            ]
+          },
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "santan-solar-deltaprorc",
+      "label": "second offer",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "santan-solar-deltaprorc",
+              "retailerId": "santan-solar",
+              "retailer": "SanTan Solar",
+              "url": "https://www.santansolar.com/product/ecoflow-delta-pro-remote-control/",
+              "price": 99,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T23:17:40.488Z",
+              "sku": "DELTAPRORC",
+              "condition": "new"
+            },
+            {
+              "id": "foreign-offer",
+              "retailerId": "santan-solar",
+              "retailer": "SanTan Solar",
+              "url": "https://www.santansolar.com/product/ecoflow-delta-pro-remote-control/",
+              "price": 99,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T23:17:40.488Z",
+              "sku": "foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "santan-solar-deltaprorc",
+      "label": "owner role scalar",
+      "input": {
+        "set": {
+          "specs": {
+            "stationType": "Integrated power station",
+            "accessoryType": "Owner selected role"
+          }
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "shopsolar-41900354470028",
+      "label": "foreign SKU",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "shopsolar-41900354470028",
+              "retailerId": "shopsolar",
+              "retailer": "ShopSolar",
+              "url": "https://shopsolarkits.com/products/ep900-pv-inverter-energy-meter?variant=41900354470028",
+              "price": 129,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-12T22:04:59.796Z",
+              "sku": "41900354470028-foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "shopsolar-41900354470028",
+      "label": "package count",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "shopsolar-41900354470028",
+              "retailerId": "shopsolar",
+              "retailer": "ShopSolar",
+              "url": "https://shopsolarkits.com/products/ep900-pv-inverter-energy-meter?variant=41900354470028",
+              "price": 129,
+              "currency": "USD",
+              "packQuantity": 2,
+              "stock": "in_stock",
+              "observedAt": "2026-10-12T22:04:59.796Z",
+              "sku": "41900354470028",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "shopsolar-41900354470028",
+      "label": "second offer",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "shopsolar-41900354470028",
+              "retailerId": "shopsolar",
+              "retailer": "ShopSolar",
+              "url": "https://shopsolarkits.com/products/ep900-pv-inverter-energy-meter?variant=41900354470028",
+              "price": 129,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-12T22:04:59.796Z",
+              "sku": "41900354470028",
+              "condition": "new"
+            },
+            {
+              "id": "foreign-offer",
+              "retailerId": "shopsolar",
+              "retailer": "ShopSolar",
+              "url": "https://shopsolarkits.com/products/ep900-pv-inverter-energy-meter?variant=41900354470028",
+              "price": 129,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-12T22:04:59.796Z",
+              "sku": "foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "shopsolar-41900354470028",
+      "label": "owner role scalar",
+      "input": {
+        "set": {
+          "specs": {
+            "monitorType": "Owner selected role"
+          }
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-fuse-combinerbox-15a-16",
+      "label": "foreign SKU",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-fuse-combinerbox-15a-16",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/20a-spare-fuses-solar-panel-combiner-box-of-5-pcs/",
+              "price": 12,
+              "currency": "USD",
+              "packQuantity": 5,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.517Z",
+              "sku": "Fuse-CombinerBox-15A-16-foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-fuse-combinerbox-15a-16",
+      "label": "package count",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-fuse-combinerbox-15a-16",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/20a-spare-fuses-solar-panel-combiner-box-of-5-pcs/",
+              "price": 12,
+              "currency": "USD",
+              "packQuantity": 6,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.517Z",
+              "sku": "Fuse-CombinerBox-15A-16",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-fuse-combinerbox-15a-16",
+      "label": "second offer",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-fuse-combinerbox-15a-16",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/20a-spare-fuses-solar-panel-combiner-box-of-5-pcs/",
+              "price": 12,
+              "currency": "USD",
+              "packQuantity": 5,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.517Z",
+              "sku": "Fuse-CombinerBox-15A-16",
+              "condition": "new"
+            },
+            {
+              "id": "foreign-offer",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/20a-spare-fuses-solar-panel-combiner-box-of-5-pcs/",
+              "price": 12,
+              "currency": "USD",
+              "packQuantity": 5,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.517Z",
+              "sku": "foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-fuse-combinerbox-15a-16",
+      "label": "owner role scalar",
+      "input": {
+        "set": {
+          "specs": {
+            "electricalType": "Owner selected role"
+          }
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-4-2-1",
+      "label": "foreign SKU",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-4-2-1",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/4-2-empty-solar-panel-combiner-box-diy-your-own-configuration-4-in-4-out-etc/",
+              "price": 129,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.530Z",
+              "sku": "4-2-1-foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-4-2-1",
+      "label": "package count",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-4-2-1",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/4-2-empty-solar-panel-combiner-box-diy-your-own-configuration-4-in-4-out-etc/",
+              "price": 129,
+              "currency": "USD",
+              "packQuantity": 2,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.530Z",
+              "sku": "4-2-1",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-4-2-1",
+      "label": "second offer",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-4-2-1",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/4-2-empty-solar-panel-combiner-box-diy-your-own-configuration-4-in-4-out-etc/",
+              "price": 129,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.530Z",
+              "sku": "4-2-1",
+              "condition": "new"
+            },
+            {
+              "id": "foreign-offer",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/4-2-empty-solar-panel-combiner-box-diy-your-own-configuration-4-in-4-out-etc/",
+              "price": 129,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.530Z",
+              "sku": "foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-4-2-1",
+      "label": "owner role scalar",
+      "input": {
+        "set": {
+          "specs": {
+            "electricalType": "Owner selected role"
+          }
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-4-4",
+      "label": "foreign SKU",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-4-4",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/4-4-solar-panel-protection-box-4-in-4-out-mppt-inputs-4-x-63a-max-output-ideal-for-4-pv-inputs-fuse-surge-protection/",
+              "price": 425,
+              "currency": "USD",
+              "packQuantity": 4,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.528Z",
+              "sku": "4-4-foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-4-4",
+      "label": "package count",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-4-4",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/4-4-solar-panel-protection-box-4-in-4-out-mppt-inputs-4-x-63a-max-output-ideal-for-4-pv-inputs-fuse-surge-protection/",
+              "price": 425,
+              "currency": "USD",
+              "packQuantity": 5,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.528Z",
+              "sku": "4-4",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-4-4",
+      "label": "second offer",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-4-4",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/4-4-solar-panel-protection-box-4-in-4-out-mppt-inputs-4-x-63a-max-output-ideal-for-4-pv-inputs-fuse-surge-protection/",
+              "price": 425,
+              "currency": "USD",
+              "packQuantity": 4,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.528Z",
+              "sku": "4-4",
+              "condition": "new"
+            },
+            {
+              "id": "foreign-offer",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/4-4-solar-panel-protection-box-4-in-4-out-mppt-inputs-4-x-63a-max-output-ideal-for-4-pv-inputs-fuse-surge-protection/",
+              "price": 425,
+              "currency": "USD",
+              "packQuantity": 4,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.528Z",
+              "sku": "foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-4-4",
+      "label": "owner role scalar",
+      "input": {
+        "set": {
+          "specs": {
+            "electricalType": "Owner selected role"
+          }
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-6-2",
+      "label": "foreign SKU",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-6-2",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/6-2-solar-panel-combiner-box-3-into-1-twice-63a-max-output/",
+              "price": 399,
+              "currency": "USD",
+              "packQuantity": 2,
+              "stock": "out_of_stock",
+              "observedAt": "2026-10-11T19:48:59.284Z",
+              "sku": "6-2-foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-6-2",
+      "label": "package count",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-6-2",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/6-2-solar-panel-combiner-box-3-into-1-twice-63a-max-output/",
+              "price": 399,
+              "currency": "USD",
+              "packQuantity": 3,
+              "stock": "out_of_stock",
+              "observedAt": "2026-10-11T19:48:59.284Z",
+              "sku": "6-2",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-6-2",
+      "label": "second offer",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-6-2",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/6-2-solar-panel-combiner-box-3-into-1-twice-63a-max-output/",
+              "price": 399,
+              "currency": "USD",
+              "packQuantity": 2,
+              "stock": "out_of_stock",
+              "observedAt": "2026-10-11T19:48:59.284Z",
+              "sku": "6-2",
+              "condition": "new"
+            },
+            {
+              "id": "foreign-offer",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/6-2-solar-panel-combiner-box-3-into-1-twice-63a-max-output/",
+              "price": 399,
+              "currency": "USD",
+              "packQuantity": 2,
+              "stock": "out_of_stock",
+              "observedAt": "2026-10-11T19:48:59.284Z",
+              "sku": "foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-6-2",
+      "label": "owner role scalar",
+      "input": {
+        "set": {
+          "specs": {
+            "electricalType": "Owner selected role"
+          }
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-6-3-1",
+      "label": "foreign SKU",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-6-3-1",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/6-3-empty-solar-panel-combiner-box-diy-your-own-configuration-6-in-6-out-etc/",
+              "price": 189,
+              "referencePrice": 220,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.530Z",
+              "sku": "6-3-1-foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-6-3-1",
+      "label": "package count",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-6-3-1",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/6-3-empty-solar-panel-combiner-box-diy-your-own-configuration-6-in-6-out-etc/",
+              "price": 189,
+              "referencePrice": 220,
+              "currency": "USD",
+              "packQuantity": 2,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.530Z",
+              "sku": "6-3-1",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-6-3-1",
+      "label": "second offer",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-6-3-1",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/6-3-empty-solar-panel-combiner-box-diy-your-own-configuration-6-in-6-out-etc/",
+              "price": 189,
+              "referencePrice": 220,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.530Z",
+              "sku": "6-3-1",
+              "condition": "new"
+            },
+            {
+              "id": "foreign-offer",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/6-3-empty-solar-panel-combiner-box-diy-your-own-configuration-6-in-6-out-etc/",
+              "price": 189,
+              "referencePrice": 220,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.530Z",
+              "sku": "foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-6-3-1",
+      "label": "owner role scalar",
+      "input": {
+        "set": {
+          "specs": {
+            "electricalType": "Owner selected role"
+          }
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-6-3v3-36",
+      "label": "foreign SKU",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-6-3v3-36",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/6-3-solar-panel-combiner-box-2-circuits-to-1-x-3-times-for-3mppt-inputs-3-x-63a-max-output-ideal-for-3-pv-inputs-version-3-improved/",
+              "price": 389,
+              "currency": "USD",
+              "packQuantity": 3,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.524Z",
+              "sku": "6-3V3-36-foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-6-3v3-36",
+      "label": "package count",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-6-3v3-36",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/6-3-solar-panel-combiner-box-2-circuits-to-1-x-3-times-for-3mppt-inputs-3-x-63a-max-output-ideal-for-3-pv-inputs-version-3-improved/",
+              "price": 389,
+              "currency": "USD",
+              "packQuantity": 4,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.524Z",
+              "sku": "6-3V3-36",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-6-3v3-36",
+      "label": "second offer",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-6-3v3-36",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/6-3-solar-panel-combiner-box-2-circuits-to-1-x-3-times-for-3mppt-inputs-3-x-63a-max-output-ideal-for-3-pv-inputs-version-3-improved/",
+              "price": 389,
+              "currency": "USD",
+              "packQuantity": 3,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.524Z",
+              "sku": "6-3V3-36",
+              "condition": "new"
+            },
+            {
+              "id": "foreign-offer",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/6-3-solar-panel-combiner-box-2-circuits-to-1-x-3-times-for-3mppt-inputs-3-x-63a-max-output-ideal-for-3-pv-inputs-version-3-improved/",
+              "price": 389,
+              "currency": "USD",
+              "packQuantity": 3,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.524Z",
+              "sku": "foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-6-3v3-36",
+      "label": "owner role scalar",
+      "input": {
+        "set": {
+          "specs": {
+            "electricalType": "Owner selected role"
+          }
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-6-3",
+      "label": "foreign SKU",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-6-3",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/6-3-solar-panel-combiner-box/",
+              "price": 337,
+              "referencePrice": 406,
+              "currency": "USD",
+              "packQuantity": 3,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:48:59.245Z",
+              "sku": "6-3-foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-6-3",
+      "label": "package count",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-6-3",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/6-3-solar-panel-combiner-box/",
+              "price": 337,
+              "referencePrice": 406,
+              "currency": "USD",
+              "packQuantity": 4,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:48:59.245Z",
+              "sku": "6-3",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-6-3",
+      "label": "second offer",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-6-3",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/6-3-solar-panel-combiner-box/",
+              "price": 337,
+              "referencePrice": 406,
+              "currency": "USD",
+              "packQuantity": 3,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:48:59.245Z",
+              "sku": "6-3",
+              "condition": "new"
+            },
+            {
+              "id": "foreign-offer",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/6-3-solar-panel-combiner-box/",
+              "price": 337,
+              "referencePrice": 406,
+              "currency": "USD",
+              "packQuantity": 3,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:48:59.245Z",
+              "sku": "foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-6-3",
+      "label": "owner role scalar",
+      "input": {
+        "set": {
+          "specs": {
+            "electricalType": "Owner selected role"
+          }
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-8-4-empty",
+      "label": "foreign SKU",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-8-4-empty",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/8-4-solar-panel-combiner-box-empty-box-only/",
+              "price": 120,
+              "currency": "USD",
+              "packQuantity": 4,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.529Z",
+              "sku": "8-4- Empty-foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-8-4-empty",
+      "label": "package count",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-8-4-empty",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/8-4-solar-panel-combiner-box-empty-box-only/",
+              "price": 120,
+              "currency": "USD",
+              "packQuantity": 5,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.529Z",
+              "sku": "8-4- Empty",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-8-4-empty",
+      "label": "second offer",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-8-4-empty",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/8-4-solar-panel-combiner-box-empty-box-only/",
+              "price": 120,
+              "currency": "USD",
+              "packQuantity": 4,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.529Z",
+              "sku": "8-4- Empty",
+              "condition": "new"
+            },
+            {
+              "id": "foreign-offer",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/8-4-solar-panel-combiner-box-empty-box-only/",
+              "price": 120,
+              "currency": "USD",
+              "packQuantity": 4,
+              "stock": "in_stock",
+              "observedAt": "2026-10-10T15:25:04.529Z",
+              "sku": "foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-8-4-empty",
+      "label": "owner role scalar",
+      "input": {
+        "set": {
+          "specs": {
+            "electricalType": "Owner selected role"
+          }
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-8-4",
+      "label": "foreign SKU",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-8-4",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/8-4-solar-panel-combiner-box/",
+              "price": 499,
+              "currency": "USD",
+              "packQuantity": 4,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:48:59.244Z",
+              "sku": "8-4-foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-8-4",
+      "label": "package count",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-8-4",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/8-4-solar-panel-combiner-box/",
+              "price": 499,
+              "currency": "USD",
+              "packQuantity": 5,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:48:59.244Z",
+              "sku": "8-4",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-8-4",
+      "label": "second offer",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-8-4",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/8-4-solar-panel-combiner-box/",
+              "price": 499,
+              "currency": "USD",
+              "packQuantity": 4,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:48:59.244Z",
+              "sku": "8-4",
+              "condition": "new"
+            },
+            {
+              "id": "foreign-offer",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/8-4-solar-panel-combiner-box/",
+              "price": 499,
+              "currency": "USD",
+              "packQuantity": 4,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:48:59.244Z",
+              "sku": "foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-8-4",
+      "label": "owner role scalar",
+      "input": {
+        "set": {
+          "specs": {
+            "electricalType": "Owner selected role"
+          }
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-w-emp-220300-2",
+      "label": "foreign SKU",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-w-emp-220300-2",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/dual-dc-220-300v-w-emp-shield-solar-panel-dc-protection/",
+              "price": 499,
+              "referencePrice": 539,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:48:59.256Z",
+              "sku": "W-EMP-220300-2-foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-w-emp-220300-2",
+      "label": "package count",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-w-emp-220300-2",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/dual-dc-220-300v-w-emp-shield-solar-panel-dc-protection/",
+              "price": 499,
+              "referencePrice": 539,
+              "currency": "USD",
+              "packQuantity": 2,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:48:59.256Z",
+              "sku": "W-EMP-220300-2",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-w-emp-220300-2",
+      "label": "second offer",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-w-emp-220300-2",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/dual-dc-220-300v-w-emp-shield-solar-panel-dc-protection/",
+              "price": 499,
+              "referencePrice": 539,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:48:59.256Z",
+              "sku": "W-EMP-220300-2",
+              "condition": "new"
+            },
+            {
+              "id": "foreign-offer",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/dual-dc-220-300v-w-emp-shield-solar-panel-dc-protection/",
+              "price": 499,
+              "referencePrice": 539,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:48:59.256Z",
+              "sku": "foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-w-emp-220300-2",
+      "label": "owner role scalar",
+      "input": {
+        "set": {
+          "specs": {
+            "voltage": 300,
+            "electricalType": "Owner selected role"
+          }
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-w-emp-600vdcx2",
+      "label": "foreign SKU",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-w-emp-600vdcx2",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/dual-dc-600v-w-emp-shield-solar-panel-dc-protection-use-on-lvx6048wp-and-sol-ark-models/",
+              "price": 579,
+              "referencePrice": 639,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:48:59.258Z",
+              "sku": "W-EMP-600Vdcx2-foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-w-emp-600vdcx2",
+      "label": "package count",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-w-emp-600vdcx2",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/dual-dc-600v-w-emp-shield-solar-panel-dc-protection-use-on-lvx6048wp-and-sol-ark-models/",
+              "price": 579,
+              "referencePrice": 639,
+              "currency": "USD",
+              "packQuantity": 2,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:48:59.258Z",
+              "sku": "W-EMP-600Vdcx2",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-w-emp-600vdcx2",
+      "label": "second offer",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-w-emp-600vdcx2",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/dual-dc-600v-w-emp-shield-solar-panel-dc-protection-use-on-lvx6048wp-and-sol-ark-models/",
+              "price": 579,
+              "referencePrice": 639,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:48:59.258Z",
+              "sku": "W-EMP-600Vdcx2",
+              "condition": "new"
+            },
+            {
+              "id": "foreign-offer",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/dual-dc-600v-w-emp-shield-solar-panel-dc-protection-use-on-lvx6048wp-and-sol-ark-models/",
+              "price": 579,
+              "referencePrice": 639,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:48:59.258Z",
+              "sku": "foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-w-emp-600vdcx2",
+      "label": "owner role scalar",
+      "input": {
+        "set": {
+          "specs": {
+            "voltage": 600,
+            "electricalType": "Owner selected role"
+          }
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-w-emp-220300",
+      "label": "foreign SKU",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-w-emp-220300",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/single-dc-220-300v-w-emp-shield-solar-panel-dc-protection/",
+              "price": 330,
+              "referencePrice": 402,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T23:43:31.120Z",
+              "sku": "W-EMP-220300-foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-w-emp-220300",
+      "label": "package count",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-w-emp-220300",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/single-dc-220-300v-w-emp-shield-solar-panel-dc-protection/",
+              "price": 330,
+              "referencePrice": 402,
+              "currency": "USD",
+              "packQuantity": 2,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T23:43:31.120Z",
+              "sku": "W-EMP-220300",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-w-emp-220300",
+      "label": "second offer",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-w-emp-220300",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/single-dc-220-300v-w-emp-shield-solar-panel-dc-protection/",
+              "price": 330,
+              "referencePrice": 402,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T23:43:31.120Z",
+              "sku": "W-EMP-220300",
+              "condition": "new"
+            },
+            {
+              "id": "foreign-offer",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/single-dc-220-300v-w-emp-shield-solar-panel-dc-protection/",
+              "price": 330,
+              "referencePrice": 402,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T23:43:31.120Z",
+              "sku": "foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-w-emp-220300",
+      "label": "owner role scalar",
+      "input": {
+        "set": {
+          "specs": {
+            "voltage": 300,
+            "electricalType": "Owner selected role"
+          }
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-w-emp-600vdcx1",
+      "label": "foreign SKU",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-w-emp-600vdcx1",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/single-dc-600v-w-emp-shield-solar-panel-dc-protection/",
+              "price": 402,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:48:59.260Z",
+              "sku": "W-EMP-600Vdcx1-foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-w-emp-600vdcx1",
+      "label": "package count",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-w-emp-600vdcx1",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/single-dc-600v-w-emp-shield-solar-panel-dc-protection/",
+              "price": 402,
+              "currency": "USD",
+              "packQuantity": 2,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:48:59.260Z",
+              "sku": "W-EMP-600Vdcx1",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-w-emp-600vdcx1",
+      "label": "second offer",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-w-emp-600vdcx1",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/single-dc-600v-w-emp-shield-solar-panel-dc-protection/",
+              "price": 402,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:48:59.260Z",
+              "sku": "W-EMP-600Vdcx1",
+              "condition": "new"
+            },
+            {
+              "id": "foreign-offer",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/single-dc-600v-w-emp-shield-solar-panel-dc-protection/",
+              "price": 402,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T19:48:59.260Z",
+              "sku": "foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-w-emp-600vdcx1",
+      "label": "owner role scalar",
+      "input": {
+        "set": {
+          "specs": {
+            "voltage": 600,
+            "electricalType": "Owner selected role"
+          }
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-4-1",
+      "label": "foreign SKU",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-4-1",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/solar-panel-combiner-box-4-circuits-to-1/",
+              "price": 339,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "out_of_stock",
+              "observedAt": "2026-10-11T23:43:31.132Z",
+              "sku": "4-1-foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-4-1",
+      "label": "package count",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-4-1",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/solar-panel-combiner-box-4-circuits-to-1/",
+              "price": 339,
+              "currency": "USD",
+              "packQuantity": 2,
+              "stock": "out_of_stock",
+              "observedAt": "2026-10-11T23:43:31.132Z",
+              "sku": "4-1",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-4-1",
+      "label": "second offer",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-4-1",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/solar-panel-combiner-box-4-circuits-to-1/",
+              "price": 339,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "out_of_stock",
+              "observedAt": "2026-10-11T23:43:31.132Z",
+              "sku": "4-1",
+              "condition": "new"
+            },
+            {
+              "id": "foreign-offer",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/solar-panel-combiner-box-4-circuits-to-1/",
+              "price": 339,
+              "currency": "USD",
+              "packQuantity": 1,
+              "stock": "out_of_stock",
+              "observedAt": "2026-10-11T23:43:31.132Z",
+              "sku": "foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-4-1",
+      "label": "owner role scalar",
+      "input": {
+        "set": {
+          "specs": {
+            "electricalType": "Owner selected role"
+          }
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-4-2",
+      "label": "foreign SKU",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-4-2",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/solar-panel-combiner-box-4-circuits-to-2/",
+              "price": 329,
+              "currency": "USD",
+              "packQuantity": 2,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T23:43:31.131Z",
+              "sku": "4-2-foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-4-2",
+      "label": "package count",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-4-2",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/solar-panel-combiner-box-4-circuits-to-2/",
+              "price": 329,
+              "currency": "USD",
+              "packQuantity": 3,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T23:43:31.131Z",
+              "sku": "4-2",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-4-2",
+      "label": "second offer",
+      "input": {
+        "set": {
+          "offers": [
+            {
+              "id": "watts247-4-2",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/solar-panel-combiner-box-4-circuits-to-2/",
+              "price": 329,
+              "currency": "USD",
+              "packQuantity": 2,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T23:43:31.131Z",
+              "sku": "4-2",
+              "condition": "new"
+            },
+            {
+              "id": "foreign-offer",
+              "retailerId": "watts247",
+              "retailer": "Watts247",
+              "url": "https://watts247.com/product/solar-panel-combiner-box-4-circuits-to-2/",
+              "price": 329,
+              "currency": "USD",
+              "packQuantity": 2,
+              "stock": "in_stock",
+              "observedAt": "2026-10-11T23:43:31.131Z",
+              "sku": "foreign",
+              "condition": "new"
+            }
+          ]
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    },
+    {
+      "id": "watts247-4-2",
+      "label": "owner role scalar",
+      "input": {
+        "set": {
+          "specs": {
+            "electricalType": "Owner selected role"
+          }
+        },
+        "remove": []
+      },
+      "categorized": {
+        "set": {},
+        "remove": []
+      },
+      "normalized": {
+        "set": {},
+        "remove": []
+      },
+      "databaseProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ],
+      "snapshotProducts": [
+        {
+          "set": {},
+          "remove": []
+        }
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import {useRouter} from 'next/navigation';
 import {navigatePage} from '../lib/page-navigation';
 import {usePV} from './pv-provider';
 import {bestOffer,money} from '../lib/domain';
-import {bundleComponentLabels} from '../lib/bundles';
+import {bundleComponentLabels,configurationForDisplay} from '../lib/bundles';
 import Link from './site-link';
 import {bundleCoreProduct} from '../lib/ux-product';
 import {partColumns,partValue,productListName} from '../lib/part-comparison';
@@ -14,7 +14,7 @@ import type {BundleComponentType,Product} from '../lib/types';
 const icons:Record<BundleComponentType,typeof Battery>={'power-station':Battery,panels:Sun,batteries:Battery,inverter:Zap,mounting:Wrench,controls:SlidersHorizontal,charging:Plug,accessories:Package};
 
 export function BundleTags({product}:{product:Product}){
- const config=product.configuration;if(!config)return null;
+ const config=configurationForDisplay(product);if(!config)return null;
  return <span className="bundle-tags" aria-label={config.kind==='combo'?'Bundle equipment types':'Selected equipment type'}>
   {config.kind==='combo'&&<span className="bundle-tag bundle-tag-kind"><Package size={11}/>Combo</span>}
   {config.components.map(c=>{const Icon=icons[c.type];return <span className="bundle-tag" key={c.type}><Icon size={11}/>{bundleComponentLabels[c.type]}</span>;})}
@@ -23,8 +23,8 @@ export function BundleTags({product}:{product:Product}){
 
 export function ConfigurationPicker({product,builderMode=false}:{product:Product;builderMode?:boolean}){
  const router=useRouter();
- const {products}=usePV(),config=product.configuration;if(!config)return null;
- const choices=[product,...products.filter(p=>p.id!==product.id&&p.configuration?.family===config.family)].sort((a,b)=>Number(a.configuration?.kind==='combo')-Number(b.configuration?.kind==='combo')||a.configuration!.selection.localeCompare(b.configuration!.selection));
+ const {products}=usePV(),config=configurationForDisplay(product);if(!config)return null;
+ const choices=[product,...products.filter(p=>p.id!==product.id&&configurationForDisplay(p)?.family===config.family)].sort((a,b)=>Number(a.configuration?.kind==='combo')-Number(b.configuration?.kind==='combo')||a.configuration!.selection.localeCompare(b.configuration!.selection));
  return <section className="configuration-picker" aria-label="Selected configuration">
   <div className="configuration-heading"><Package size={15}/><strong>{config.kind==='combo'?'Bundle configuration':'Selected configuration'}</strong><span>{config.kind==='combo'?config.type:'Standalone unit'}</span></div>
   {choices.length>1?<label><span className="sr-only">Choose product configuration</span><select value={product.id} onChange={e=>{const href='/products/'+encodeURIComponent(e.target.value)+(builderMode?'?builder=1':'');navigatePage(href,()=>router.push(href));}}>{choices.map(p=>{const offer=bestOffer(p)||p.offers[0];return <option key={p.id} value={p.id}>{p.configuration!.selection}{offer?' — '+money(offer.price):''}</option>;})}</select></label>:<p className="configuration-selection">{config.selection}</p>}
@@ -34,7 +34,7 @@ export function ConfigurationPicker({product,builderMode=false}:{product:Product
 }
 
 export function BundleContents({product,products=[]}:{product:Product;products?:Product[]}){
- const config=product.configuration;if(config?.kind!=='combo')return null;
+ const config=configurationForDisplay(product);if(config?.kind!=='combo')return null;
  const core=bundleCoreProduct(product,products);
  const contents=specificationForDisplay(product).groups.flatMap(g=>g.fields).find(f=>f.key==='contents'&&f.kind!=='listing');
  return <section className="section-card bundle-contents" aria-label="Bundle contents">
