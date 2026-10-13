@@ -1,3 +1,4 @@
+import {assertWattcycleReviewedRegeneration,isWattcycleReviewedListing,wattcycleReviewedSelections} from '../lib/wattcycle-reviewed-selection.ts';
 import {assertCorrectionWriteBoundary} from '../lib/specification-correction-guard.ts';
 /** Rebuild source-audited detail specs from cached product tables and reviewed sheets.
  * node --experimental-strip-types scripts/collect-specifications.mjs --cache ../output/spec-research
@@ -15,7 +16,9 @@ const catalog=JSON.parse(await readFile(catalogPath,'utf8'));
 const {sources,failures}=JSON.parse(await readFile(resolve(cache,'sources.json'),'utf8'));
 let pdfs={};try{pdfs=JSON.parse(await readFile(resolve(cache,'pdf-tables.json'),'utf8'));}catch{}
 const reviewed=JSON.parse(await readFile(new URL('data/specification-reviewed.json',root),'utf8'));
-const index={},audit={generatedAt:new Date().toISOString(),products:catalog.products.length,pages:Object.keys(sources).length,pageFailures:failures,downloadedDocuments:0,datasheetProducts:0,tableProducts:0,listingOnlyProducts:0,panelElectricalProducts:0,panelNoctProducts:0,categories:{},missing:[],excludedDocuments:[]};
+const prior=JSON.parse(await readFile(new URL('data/specifications.json',root),'utf8'));
+// Generic cached tables cannot replace the reviewed WattCycle source scope.
+const index=Object.fromEntries(wattcycleReviewedSelections.filter(s=>prior[s.id]).map(s=>[s.id,structuredClone(prior[s.id])])),audit={generatedAt:new Date().toISOString(),products:catalog.products.length,pages:Object.keys(sources).length,pageFailures:failures,downloadedDocuments:0,datasheetProducts:0,tableProducts:0,listingOnlyProducts:0,panelElectricalProducts:0,panelNoctProducts:0,categories:{},missing:[],excludedDocuments:[]};
 audit.manualProducts=0;audit.extractedDocuments=Object.keys(pdfs).length;
 try{const download=JSON.parse(await readFile(resolve(cache,'pdf-index.json'),'utf8'));audit.downloadedDocuments=download.documents.length;audit.documentDownloadFailures=download.failures;}catch{}
 try{audit.documentExtractionFailures=JSON.parse(await readFile(resolve(cache,'pdf-extraction-failures.json'),'utf8')).filter(f=>!pdfs[f.url.split('?')[0]]);}catch{}
@@ -61,7 +64,8 @@ for(const original of catalog.products){
   rejectedVariant=differentBattery||differentWire;
   if(!rejectedVariant)evidence.push({url:p.sourceUrl,kind:new URL(base).hostname.includes('renogy')||new URL(base).hostname.includes('emporia')?'manufacturer':'retailer',label:'Product technical table',checkedAt:source.checkedAt,rows});
  }
- const details=buildSpecification(p,evidence);index[p.id]=details;
+ const details=isWattcycleReviewedListing(original)?index[p.id]:buildSpecification(p,evidence);
+ if(!details)throw new Error('WattCycle protected prior missing: '+p.id);index[p.id]=details;
  const technicalSources=new Set([...details.groups.filter(g=>g.title!=='Identity').flatMap(g=>g.fields.filter(f=>f.kind!=='listing').map(f=>f.source)),...Object.values(details.panelRatings?.sources||{})]);
  const sheet=details.sources.some(s=>s.kind==='datasheet'&&technicalSources.has(s.url)),manualDoc=details.sources.some(s=>s.kind==='manual'&&technicalSources.has(s.url)),table=details.sources.some(s=>(s.kind==='manufacturer'||s.kind==='retailer')&&technicalSources.has(s.url));
  if(sheet)audit.datasheetProducts++;if(manualDoc)audit.manualProducts++;if(table)audit.tableProducts++;if(!sheet&&!manualDoc&&!table){audit.listingOnlyProducts++;const reason=!source?'Source page has not been collected.':rejectedVariant||details.notes.some(n=>n.includes('variant'))?'The shared page table describes a different variant; those ratings were excluded.':!rows.length?'No readable technical table was found on the collected page. Specifications may be in images, downloads, or interactive sections.':'The collected page has no recognized technical ratings for this exact item. Sales text and identity fields do not count as specifications.';audit.missing.push({productId:p.id,name:p.name,url:p.sourceUrl,category:p.category,reason});}
@@ -70,6 +74,7 @@ for(const original of catalog.products){
 }
 const outputArgument=args.indexOf('--output');const outputPath=outputArgument>=0?resolve(args[outputArgument+1]):new URL('data/specifications.json',root);
 assertCorrectionWriteBoundary(catalog.products.map(categorizeProduct),index);
+assertWattcycleReviewedRegeneration(catalog.products,index,prior);
 await writeFile(outputPath,JSON.stringify(index));
 await writeFile(outputArgument>=0?outputPath+'.audit.json':new URL('data/specification-audit.json',root),JSON.stringify(audit,null,2)+'\n');
 console.log(JSON.stringify({...audit,missing:audit.missing.length,excludedDocuments:audit.excludedDocuments.length},null,2));

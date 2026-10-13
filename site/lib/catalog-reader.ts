@@ -1,3 +1,4 @@
+import {isWattcycleReviewedListing,matchesWattcycleReviewedMetadata,canAttachWattcycleReviewedEvidence} from './wattcycle-reviewed-selection.ts';
 import {normalizeCatalogProduct} from './catalog-cleanup.ts';
 import {applyOverride} from './overrides.ts';
 import {categorizeProduct,normalizeSelectedBatteryPackOffer} from './retailers.ts';
@@ -14,8 +15,9 @@ export interface Catalog extends CatalogSnapshot {storage:string;}
 // Offers hydrate separately from metadata; preserve reviewed evidence and owner overrides.
 function normalizeHydratedProduct(product:Product,skipReviewedStorageRole=false,evidence:Record<string,ProductSpecification>={}):Product{
  skipReviewedStorageRole ||= isPackageGuardedReviewedRoleListing(product)&&!isReviewedStorageRoleCandidate(product);
- const hydrated=isReviewedStorageRoleCandidate(product)?product:{...product,offers:product.offers.map(o=>normalizeSelectedBatteryPackOffer(product,o))};
+ const hydrated=(isWattcycleReviewedListing(product)||isReviewedStorageRoleCandidate(product))?product:{...product,offers:product.offers.map(o=>normalizeSelectedBatteryPackOffer(product,o))};
  const normalized=normalizeCatalogProduct(hydrated,{skipReviewedStorageRole});
+ if(isWattcycleReviewedListing(product)){const held={...normalized,offers:product.offers,specification:undefined};return !skipReviewedStorageRole&&canAttachWattcycleReviewedEvidence(held,evidence[held.id])?applySpecificationEvidence(held,evidence):held;}
  // Old-category evidence already attached before projection keeps its hold.
  // Newly reviewed target-category evidence applies only after the full role and
  // final selected-offer guard succeed; duplicate/owner holds cannot bypass it.
@@ -29,6 +31,7 @@ function duplicateIds(products:{id:string}[]):Set<string>{
 }
 
 function applyPreProjectionEvidence(product:Product,evidence:Record<string,ProductSpecification>):Product{
+ if(isWattcycleReviewedListing(product))return {...product,specification:undefined};
  const identity=evidence[product.id]?.identity;
  // Reviewed kit/accessory evidence waits for the final selected-offer guard,
  // even when saved metadata already carries its precisely corrected category.
@@ -38,6 +41,7 @@ function applyPreProjectionEvidence(product:Product,evidence:Record<string,Produ
 
 export async function readCatalog(db:D1Database,initial:CatalogSnapshot,evidence:Record<string,ProductSpecification>={}):Promise<Catalog>{
  const blockedRoles=duplicateIds(initial.products);
+ for(const raw of initial.products)if(isWattcycleReviewedListing(raw)&&!matchesWattcycleReviewedMetadata(raw))blockedRoles.add(raw.id);
  const enrichedInitial={...initial,products:initial.products.map(p=>normalizeHydratedProduct(applyPreProjectionEvidence(p,evidence),blockedRoles.has(p.id),evidence))};
  try{
   // All reads share one database round trip and a consistent read transaction.
@@ -55,13 +59,14 @@ export async function readCatalog(db:D1Database,initial:CatalogSnapshot,evidence
   const ownerCorrections=new Map<string,Parameters<typeof applyOverride>[1]>();
   for(const id of duplicateIds(metadata))blockedRoles.add(id);
   for(const raw of metadata){
+   if(isWattcycleReviewedListing(raw)&&!matchesWattcycleReviewedMetadata(raw))blockedRoles.add(raw.id);
    // Hold the original metadata decision before generic classification can
    // replace its category or anchors. Only full identity guards grant a role.
    if(isPackageGuardedReviewedRoleListing(raw)&&!isReviewedStorageRoleCandidate(raw))blockedRoles.add(raw.id);
    const p=applyPreProjectionEvidence(categorizeProduct({...raw,offers:[]}),evidence);productMap.set(p.id,{...p,offers:[]});
   }
   // Derive source-specific pack units before mappings can replace their metadata context.
-  for(const row of offerRows.results){const p=productMap.get(row.product_id),o=JSON.parse(row.json) as Offer;p?.offers.push(isReviewedStorageRoleCandidate(p)?o:(p.category==='kits'||p.category==='all-in-one')?{...o,packQuantity:1}:normalizeSelectedBatteryPackOffer(p,o));}
+  for(const row of offerRows.results){const p=productMap.get(row.product_id),o=JSON.parse(row.json) as Offer;p?.offers.push((isWattcycleReviewedListing(p)||isReviewedStorageRoleCandidate(p))?o:(p.category==='kits'||p.category==='all-in-one')?{...o,packQuantity:1}:normalizeSelectedBatteryPackOffer(p,o));}
   for(const row of corrections.results){const p=productMap.get(row.id);if(p){const correction=JSON.parse(row.json);ownerCorrections.set(p.id,correction);if(hasReviewedRoleOverride(p,correction.specs||{}))blockedRoles.add(p.id);productMap.set(row.id,applyOverride(p,correction));}}
   for(const mapping of mappings.results){const target=productMap.get(mapping.product_id);if(!target)continue;for(const p of productMap.values()){if(p.id===target.id)continue;const offer=p.offers.find(o=>o.id===mapping.id);if(offer){p.offers=p.offers.filter(o=>o.id!==mapping.id);target.offers.push(offer);}}}
   // Metadata deferral is provisional. Resolve the final mapped selection before
