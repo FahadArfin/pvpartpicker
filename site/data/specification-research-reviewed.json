@@ -230443,5 +230443,4248 @@
         "condition": "new"
       }
     ]
+  },
+  {
+    "productIds": [
+      "inverters-r-us-e300lfp"
+    ],
+    "expected": {
+      "inverters-r-us-e300lfp": {
+        "name": "PECRON E300LFP Portable Power Station 600W 288Wh",
+        "sourceUrl": "https://invertersrus.com/product/pecron-e300lfp/",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://invertersrus.com/product/pecron-e300lfp/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:35.944Z",
+    "label": "Batch twenty-e exact model contextual source review",
+    "rows": [
+      [
+        "Model",
+        "E300LFP"
+      ],
+      [
+        "Capacity",
+        "288Wh"
+      ],
+      [
+        "Battery Type",
+        "LiFePo4"
+      ],
+      [
+        "Charge Temperature",
+        "0°C~45°C / 32°F-113°F"
+      ],
+      [
+        "Discharge Temperature",
+        "-20°C~45°C / -4°F-113°F"
+      ],
+      [
+        "PV open circuit voltage",
+        "12V~28V (DC5521 port)"
+      ],
+      [
+        "Maximum PV input power",
+        "100W Max (DC5521 solar port)"
+      ],
+      [
+        "Communications",
+        "Wi-Fi remote control or Bluetooth control"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\71643f5f6ce89f75.html",
+      "htmlSha256": "cb42fbcde31dbe3f08981e43ecfc9c58ca5a0c8b086260bea9e38b703c2d29d3",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\71643f5f6ce89f75.json",
+      "metadataSha256": "7216476d1aad6ec5ee45569771ae4933e47a7c7b8dedc2fae242409406c0437b",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "PECRON E300LFP Portable Power Station 600W 288Wh"
+        ],
+        "ogTitle": "PECRON E300LFP Portable Power Station 600W 288Wh",
+        "selectedSku": "E300LFP",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://invertersrus.com/product/pecron-e300lfp/",
+        "visibleSku": "E300LFP"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact visible and inert SKU single E300LFP station, dedicated table and product prose read; DC5521 solar input distinct from USB-C charging.",
+      "quotes": [
+        {
+          "row": [
+            "Model",
+            "E300LFP"
+          ],
+          "quote": "ModelE300LFP"
+        },
+        {
+          "row": [
+            "Capacity",
+            "288Wh"
+          ],
+          "quote": "Capacity288Wh"
+        },
+        {
+          "row": [
+            "Battery Type",
+            "LiFePo4"
+          ],
+          "quote": "Battery TypeLiFePo4 with 3,500+ Life Cycles to 80%"
+        },
+        {
+          "row": [
+            "Charge Temperature",
+            "0°C~45°C / 32°F-113°F"
+          ],
+          "quote": "Charge Temperature0°C~45°C / 32°F-113°F"
+        },
+        {
+          "row": [
+            "Discharge Temperature",
+            "-20°C~45°C / -4°F-113°F"
+          ],
+          "quote": "Discharge Temperature-20°C~45°C / -4°F-113°F"
+        },
+        {
+          "row": [
+            "PV open circuit voltage",
+            "12V~28V (DC5521 port)"
+          ],
+          "quote": "Solar InputDC5521: Voc 12V~28V / 100W Max /7A Max"
+        },
+        {
+          "row": [
+            "Maximum PV input power",
+            "100W Max (DC5521 solar port)"
+          ],
+          "quote": "Solar InputDC5521: Voc 12V~28V / 100W Max /7A Max"
+        },
+        {
+          "row": [
+            "Communications",
+            "Wi-Fi remote control or Bluetooth control"
+          ],
+          "quote": "Wifi remote control or Bluetooth control"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "communications",
+        "label": "Communications",
+        "value": "Wi-Fi remote control or Bluetooth control",
+        "source": "https://invertersrus.com/product/pecron-e300lfp/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "inverters-r-us-e500lfp"
+    ],
+    "expected": {
+      "inverters-r-us-e500lfp": {
+        "name": "PECRON E500LFP Portable Power Station 600W 576Wh",
+        "sourceUrl": "https://invertersrus.com/product/pecron-e500lfp/",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://invertersrus.com/product/pecron-e500lfp/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:44.781Z",
+    "label": "Batch twenty-e exact model contextual source review",
+    "rows": [
+      [
+        "Model",
+        "E500LFP"
+      ],
+      [
+        "Capacity",
+        "576Wh"
+      ],
+      [
+        "Battery Type",
+        "LiFePo4"
+      ],
+      [
+        "Charge Temperature",
+        "0°C~45°C / 32°F-113°F"
+      ],
+      [
+        "Discharge Temperature",
+        "-20°C~45°C / -4°F-113°F"
+      ],
+      [
+        "PV open circuit voltage",
+        "12V~28V (DC5521 port)"
+      ],
+      [
+        "Maximum PV input power",
+        "100W Max (DC5521 solar port)"
+      ],
+      [
+        "Communications",
+        "Wi-Fi remote control or Bluetooth control"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d636d7b6f2a5c7b8.html",
+      "htmlSha256": "fed2a4bc0c13f97773a9ce95e90da8eae2b1e5312ed2814af4665df839d3aeb9",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d636d7b6f2a5c7b8.json",
+      "metadataSha256": "f65dc9f4b6283abf212241e16d6ecd438557eb26dca9ba2525cd4e3a0411d3ce",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "PECRON E500LFP Portable Power Station 600W 576Wh"
+        ],
+        "ogTitle": "PECRON E500LFP Portable Power Station 600W 576Wh",
+        "selectedSku": "E500LFP",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://invertersrus.com/product/pecron-e500lfp/",
+        "visibleSku": "E500LFP"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact visible and inert SKU single E500LFP station, dedicated table and product prose read; DC5521 solar input distinct from USB-C charging.",
+      "quotes": [
+        {
+          "row": [
+            "Model",
+            "E500LFP"
+          ],
+          "quote": "ModelE500LFP"
+        },
+        {
+          "row": [
+            "Capacity",
+            "576Wh"
+          ],
+          "quote": "Capacity576Wh"
+        },
+        {
+          "row": [
+            "Battery Type",
+            "LiFePo4"
+          ],
+          "quote": "Battery TypeLiFePo4 with 3,500+ Life Cycles to 80%"
+        },
+        {
+          "row": [
+            "Charge Temperature",
+            "0°C~45°C / 32°F-113°F"
+          ],
+          "quote": "Charge Temperature0°C~45°C / 32°F-113°F"
+        },
+        {
+          "row": [
+            "Discharge Temperature",
+            "-20°C~45°C / -4°F-113°F"
+          ],
+          "quote": "Discharge Temperature-20°C~45°C / -4°F-113°F"
+        },
+        {
+          "row": [
+            "PV open circuit voltage",
+            "12V~28V (DC5521 port)"
+          ],
+          "quote": "Solar InputDC5521: Voc 12V~28V / 100W Max /7A Max"
+        },
+        {
+          "row": [
+            "Maximum PV input power",
+            "100W Max (DC5521 solar port)"
+          ],
+          "quote": "Solar InputDC5521: Voc 12V~28V / 100W Max /7A Max"
+        },
+        {
+          "row": [
+            "Communications",
+            "Wi-Fi remote control or Bluetooth control"
+          ],
+          "quote": "Wifi remote control or Bluetooth control"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "communications",
+        "label": "Communications",
+        "value": "Wi-Fi remote control or Bluetooth control",
+        "source": "https://invertersrus.com/product/pecron-e500lfp/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "inverters-r-us-e3600lfp"
+    ],
+    "expected": {
+      "inverters-r-us-e3600lfp": {
+        "name": "PECRON E3600LFP Portable Power Station 3600W 3072Wh",
+        "sourceUrl": "https://invertersrus.com/product/pecron-e3600lfp/",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://invertersrus.com/product/pecron-e3600lfp/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:38.789Z",
+    "label": "Batch twenty-e exact model contextual source review",
+    "rows": [
+      [
+        "Model",
+        "E3600LFP"
+      ],
+      [
+        "Capacity",
+        "3072Wh"
+      ],
+      [
+        "Battery Type",
+        "LiFePo4"
+      ],
+      [
+        "Charge Temperature",
+        "0°C~45°C / 32°F-113°F"
+      ],
+      [
+        "Discharge Temperature",
+        "-20°C~45°C / -4°F-113°F"
+      ],
+      [
+        "AC charging input",
+        "3200W with 30A cable; 1800W with 15A cable"
+      ],
+      [
+        "Communications",
+        "Wi-Fi remote control / Bluetooth control"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\0ad0b7bc8ea65b58.html",
+      "htmlSha256": "2183d53cb14b9b08c6cb4f308d08c3d9f387e56369ffd56192c5129b5c04e280",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\0ad0b7bc8ea65b58.json",
+      "metadataSha256": "acbb2049742d51a0d3b80ac8f4d264620871d2c14080d7fb9f62f3885add916c",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "PECRON E3600LFP Portable Power Station 3600W 3072Wh"
+        ],
+        "ogTitle": "PECRON E3600LFP Portable Power Station 3600W 3072Wh",
+        "selectedSku": "E3600LFP",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://invertersrus.com/product/pecron-e3600lfp/",
+        "visibleSku": "E3600LFP"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact single E3600LFP SKU, dual station7200W context excluded. Battery chemistry and thermal values from explicit single model table. Expansion accessories excluded from built-in capacity.",
+      "quotes": [
+        {
+          "row": [
+            "Model",
+            "E3600LFP"
+          ],
+          "quote": "ModelE3600LFP"
+        },
+        {
+          "row": [
+            "Capacity",
+            "3072Wh"
+          ],
+          "quote": "Capacity3072Wh"
+        },
+        {
+          "row": [
+            "Battery Type",
+            "LiFePo4"
+          ],
+          "quote": "Battery TypeLiFePo4"
+        },
+        {
+          "row": [
+            "Charge Temperature",
+            "0°C~45°C / 32°F-113°F"
+          ],
+          "quote": "Charge Temperature0°C~45°C / 32°F-113°F"
+        },
+        {
+          "row": [
+            "Discharge Temperature",
+            "-20°C~45°C / -4°F-113°F"
+          ],
+          "quote": "Discharge Temperature-20°C~45°C / -4°F-113°F"
+        },
+        {
+          "row": [
+            "AC charging input",
+            "3200W with 30A cable; 1800W with 15A cable"
+          ],
+          "quote": "3200W AC Charging with 30A cable; 1.3 Hours Super Fast Charging;1800W AC Charging with 15A cable"
+        },
+        {
+          "row": [
+            "Communications",
+            "Wi-Fi remote control / Bluetooth control"
+          ],
+          "quote": "Wifi remote control / Bluetooth control"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "acChargeWatts",
+        "label": "AC charging input",
+        "value": "3200W with 30A cable; 1800W with 15A cable",
+        "source": "https://invertersrus.com/product/pecron-e3600lfp/",
+        "kind": "retailer"
+      },
+      {
+        "key": "communications",
+        "label": "Communications",
+        "value": "Wi-Fi remote control / Bluetooth control",
+        "source": "https://invertersrus.com/product/pecron-e3600lfp/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "inverters-r-us-f5000lfp"
+    ],
+    "expected": {
+      "inverters-r-us-f5000lfp": {
+        "name": "PECRON F5000LFP Portable Power Station 7200W 5120Wh 120V/240V",
+        "sourceUrl": "https://invertersrus.com/product/pecron-f5000lfp/",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://invertersrus.com/product/pecron-f5000lfp/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:26:27.697Z",
+    "label": "Batch twenty-e exact model contextual source review",
+    "rows": [
+      [
+        "Battery Capacity",
+        "5120 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Charge Temperature",
+        "-20°C ~ 45°C / -4°F ~ 113°F (Battery Heating Activation)"
+      ],
+      [
+        "Discharge Temperature",
+        "14~113°F (-10~45°C)"
+      ],
+      [
+        "Storage Temperature",
+        "0°C ~ 45°C / 32°F ~ 113°F (Optimal:20°C~30°C /68°F~86°F)"
+      ],
+      [
+        "Dimensions",
+        "L 21.7 x W 15 x H 13.1 in"
+      ],
+      [
+        "Weight",
+        "About 123.9 lbs (56.2 kg)"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\5465242e3f2eedf0.html",
+      "htmlSha256": "b13cc11f0b1660fdc8d53d083828a37c3eb0e0bace1ef0b15ddec697f6c488d9",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\5465242e3f2eedf0.json",
+      "metadataSha256": "f29c7bee6318c66b32513a2c04f3aa286e9dcf4acc12a01b7b00093d5bf2d5b1",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "PECRON F5000LFP Portable Power Station 7200W 5120Wh 120V/240V"
+        ],
+        "ogTitle": "PECRON F5000LFP Portable Power Station 7200W 5120Wh 120V/240V",
+        "selectedSku": "F5000LFP",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://invertersrus.com/product/pecron-f5000lfp/",
+        "visibleSku": "F5000LFP"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact F5000LFP single station SKU; technical general/battery/input/output sections fully reviewed. Single-unit5800W input distinguished from6400W with extra battery.",
+      "quotes": [
+        {
+          "row": [
+            "Battery Capacity",
+            "5120 Wh"
+          ],
+          "quote": "Capacity: 5120 Wh"
+        },
+        {
+          "row": [
+            "Battery chemistry",
+            "LiFePO4"
+          ],
+          "quote": "Cell Chemistry: LiFePO4"
+        },
+        {
+          "row": [
+            "Charge Temperature",
+            "-20°C ~ 45°C / -4°F ~ 113°F (Battery Heating Activation)"
+          ],
+          "quote": "Charge Temperature: -20°C ~ 45°C / -4°F ~ 113°F (Battery Heating Activation)"
+        },
+        {
+          "row": [
+            "Discharge Temperature",
+            "14~113°F (-10~45°C)"
+          ],
+          "quote": "Discharge Temperature: 14~113°F (-10~45°C)"
+        },
+        {
+          "row": [
+            "Storage Temperature",
+            "0°C ~ 45°C / 32°F ~ 113°F (Optimal:20°C~30°C /68°F~86°F)"
+          ],
+          "quote": "Storage Ambient Temperature: 0°C ~ 45°C / 32°F ~ 113°F (Optimal Range: 20°C~30°C / 68°F~86°F)"
+        },
+        {
+          "row": [
+            "Dimensions",
+            "L 21.7 x W 15 x H 13.1 in"
+          ],
+          "quote": "Dimensions: L 21.7 * W 15 * H 13.1 in"
+        },
+        {
+          "row": [
+            "Weight",
+            "About 123.9 lbs (56.2 kg)"
+          ],
+          "quote": "Weight: About 123.9 lbs (56.2 kg)"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "dischargeTemperature",
+        "label": "Discharge temperature",
+        "value": "14~113°F (-10~45°C)",
+        "source": "https://invertersrus.com/product/pecron-f5000lfp/",
+        "kind": "retailer"
+      },
+      {
+        "key": "storageTemperature",
+        "label": "Storage temperature",
+        "value": "0°C ~ 45°C / 32°F ~ 113°F (Optimal:20°C~30°C /68°F~86°F)",
+        "source": "https://invertersrus.com/product/pecron-f5000lfp/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-a1790112"
+    ],
+    "expected": {
+      "santan-solar-a1790112": {
+        "name": "Anker SOLIX F3800 Plus Portable Power Station – 3840Wh | 6000W",
+        "sourceUrl": "https://www.santansolar.com/product/anker-solix-f3800-plus-portable-power-station-3840wh-6000w/",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/anker-solix-f3800-plus-portable-power-station-3840wh-6000w/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:47.960Z",
+    "label": "Batch twenty-e exact model contextual source review",
+    "rows": [
+      [
+        "Battery Capacity",
+        "3840Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LFP"
+      ],
+      [
+        "AC charging input",
+        "1800W Max"
+      ],
+      [
+        "Dimensions",
+        "27.6×15.3×15.6 in (Including wheels)"
+      ],
+      [
+        "Communications",
+        "Wi-Fi/Bluetooth via Anker app"
+      ],
+      [
+        "Warranty",
+        "5-year warranty"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\13b537011efa96ca.html",
+      "htmlSha256": "6b80a108d340246efb4405a7f0ff30c73951e93c190f10074f87db294bc0e3b4",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\13b537011efa96ca.json",
+      "metadataSha256": "246e6557d9885d3cd161be23d1a54eb1d2d4cd44eed5d901f6bf14cb7823d7d1",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Anker SOLIX F3800 Plus Portable Power Station – 3840Wh | 6000W"
+        ],
+        "ogTitle": "Anker SOLIX F3800 Plus Portable Power Station - 3840Wh | 6000W | SanTan Solar",
+        "selectedSku": "A1790112",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/anker-solix-f3800-plus-portable-power-station-3840wh-6000w/",
+        "visibleSku": "A1790112"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact A1790112 F3800 Plus single station. Plus model isolated from older F3800. Detailed Tech Specs outweigh neither conflicting additional attributes nor weight without resolution.",
+      "quotes": [
+        {
+          "row": [
+            "Battery Capacity",
+            "3840Wh"
+          ],
+          "quote": "Capacity: 3,840Wh"
+        },
+        {
+          "row": [
+            "Battery chemistry",
+            "LFP"
+          ],
+          "quote": "Battery Chemistry: LFP, 3,000+ cycles"
+        },
+        {
+          "row": [
+            "AC charging input",
+            "1800W Max"
+          ],
+          "quote": "AC Input Power (Charging): 1800W Max"
+        },
+        {
+          "row": [
+            "Dimensions",
+            "27.6×15.3×15.6 in (Including wheels)"
+          ],
+          "quote": "Length × Width × Height 27.6×15.3×15.6 in (Including wheels)"
+        },
+        {
+          "row": [
+            "Communications",
+            "Wi-Fi/Bluetooth via Anker app"
+          ],
+          "quote": "Monitor and manage power settings via the Anker app with Wi-Fi/Bluetooth."
+        },
+        {
+          "row": [
+            "Warranty",
+            "5-year warranty"
+          ],
+          "quote": "Warranty: 5-year warranty"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "capacityKwh",
+        "label": "Energy capacity",
+        "value": "3840Wh",
+        "source": "https://www.santansolar.com/product/anker-solix-f3800-plus-portable-power-station-3840wh-6000w/",
+        "kind": "retailer"
+      },
+      {
+        "key": "chemistry",
+        "label": "Battery chemistry",
+        "value": "LFP",
+        "source": "https://www.santansolar.com/product/anker-solix-f3800-plus-portable-power-station-3840wh-6000w/",
+        "kind": "retailer"
+      },
+      {
+        "key": "acChargeWatts",
+        "label": "AC charging input",
+        "value": "1800W Max",
+        "source": "https://www.santansolar.com/product/anker-solix-f3800-plus-portable-power-station-3840wh-6000w/",
+        "kind": "retailer"
+      },
+      {
+        "key": "dimensions",
+        "label": "Dimensions",
+        "value": "27.6×15.3×15.6 in (Including wheels)",
+        "source": "https://www.santansolar.com/product/anker-solix-f3800-plus-portable-power-station-3840wh-6000w/",
+        "kind": "retailer"
+      },
+      {
+        "key": "communications",
+        "label": "Communications",
+        "value": "Wi-Fi/Bluetooth via Anker app",
+        "source": "https://www.santansolar.com/product/anker-solix-f3800-plus-portable-power-station-3840wh-6000w/",
+        "kind": "retailer"
+      },
+      {
+        "key": "warranty",
+        "label": "Product warranty",
+        "value": "5-year warranty",
+        "source": "https://www.santansolar.com/product/anker-solix-f3800-plus-portable-power-station-3840wh-6000w/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-a1782111"
+    ],
+    "expected": {
+      "santan-solar-a1782111": {
+        "name": "Anker SOLIX F3000 Portable Power Station 3,072Wh/3,600W Essential Home Backup – Black",
+        "sourceUrl": "https://www.santansolar.com/product/f3000-portable-power-station/",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/f3000-portable-power-station/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-05T03:17:19.374Z",
+    "label": "Batch twenty-e exact model contextual source review",
+    "rows": [
+      [
+        "Battery chemistry",
+        "LFP"
+      ],
+      [
+        "Rated Voltage",
+        "51.2V"
+      ],
+      [
+        "Rated Capacity",
+        "60Ah"
+      ],
+      [
+        "Battery Capacity",
+        "3072Wh"
+      ],
+      [
+        "Charge Temperature",
+        "32°F-104°F / 0°C-40°C"
+      ],
+      [
+        "Discharge Temperature",
+        "-4°F-104°F / -20°C-40°C"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\08458e6b7456890e.html",
+      "htmlSha256": "b1facc55bf2f1c2619d0138ad0a6b31b5a82d0297a665cf70a494e484e66f79c",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\08458e6b7456890e.json",
+      "metadataSha256": "c34b4519558723697d4e354bbf1229121e1e3eb2c0a291ffc04eaca10d0d67a4",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Anker SOLIX F3000 Portable Power Station 3,072Wh/3,600W Essential Home Backup – Black"
+        ],
+        "ogTitle": "Anker SOLIX F3000 Portable Power Station 3,072Wh/3,600W Essential Home Backup - Black | SanTan Solar",
+        "selectedSku": "A1782111",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/f3000-portable-power-station/",
+        "visibleSku": "A1782111"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact A1782111 black F3000 station. BATTERY cell capacity is built-in single device. Single120V output separated from pair240V and accessory charging routes. Thermal ranges agree between units.",
+      "quotes": [
+        {
+          "row": [
+            "Battery chemistry",
+            "LFP"
+          ],
+          "quote": "Battery Type LFP"
+        },
+        {
+          "row": [
+            "Rated Voltage",
+            "51.2V"
+          ],
+          "quote": "Cell Capacity 51.2V / 60Ah / 3,072Wh"
+        },
+        {
+          "row": [
+            "Rated Capacity",
+            "60Ah"
+          ],
+          "quote": "Cell Capacity 51.2V / 60Ah / 3,072Wh"
+        },
+        {
+          "row": [
+            "Battery Capacity",
+            "3072Wh"
+          ],
+          "quote": "Cell Capacity 51.2V / 60Ah / 3,072Wh"
+        },
+        {
+          "row": [
+            "Charge Temperature",
+            "32°F-104°F / 0°C-40°C"
+          ],
+          "quote": "Charging Temperature 32°F-104°F / 0°C-40°C"
+        },
+        {
+          "row": [
+            "Discharge Temperature",
+            "-4°F-104°F / -20°C-40°C"
+          ],
+          "quote": "Discharging Temperature -4°F-104°F / -20°C-40°C"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "capacityKwh",
+        "label": "Energy capacity",
+        "value": "3072Wh",
+        "source": "https://www.santansolar.com/product/f3000-portable-power-station/",
+        "kind": "retailer"
+      },
+      {
+        "key": "chemistry",
+        "label": "Battery chemistry",
+        "value": "LFP",
+        "source": "https://www.santansolar.com/product/f3000-portable-power-station/",
+        "kind": "retailer"
+      },
+      {
+        "key": "capacityAh",
+        "label": "Rated capacity",
+        "value": "60Ah",
+        "source": "https://www.santansolar.com/product/f3000-portable-power-station/",
+        "kind": "retailer"
+      },
+      {
+        "key": "voltage",
+        "label": "Nominal voltage",
+        "value": "51.2V",
+        "source": "https://www.santansolar.com/product/f3000-portable-power-station/",
+        "kind": "retailer"
+      },
+      {
+        "key": "chargeTemperature",
+        "label": "Charge temperature",
+        "value": "32°F-104°F / 0°C-40°C",
+        "source": "https://www.santansolar.com/product/f3000-portable-power-station/",
+        "kind": "retailer"
+      },
+      {
+        "key": "dischargeTemperature",
+        "label": "Discharge temperature",
+        "value": "-4°F-104°F / -20°C-40°C",
+        "source": "https://www.santansolar.com/product/f3000-portable-power-station/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-a1772111"
+    ],
+    "expected": {
+      "santan-solar-a1772111": {
+        "name": "Anker SOLIX F1500 Portable Power Station – 1536Wh | 1800W",
+        "sourceUrl": "https://www.santansolar.com/product/anker-solix-f1500-portable-power-station-1536wh-1800w/",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/anker-solix-f1500-portable-power-station-1536wh-1800w/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:37.875Z",
+    "label": "Batch twenty-e exact model contextual source review",
+    "rows": [
+      [
+        "Battery Capacity",
+        "1536Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LFP"
+      ],
+      [
+        "Continuous AC output power",
+        "1800W"
+      ],
+      [
+        "AC charging input",
+        "1000W"
+      ],
+      [
+        "Communications",
+        "WiFi & Bluetooth remote app"
+      ],
+      [
+        "Warranty",
+        "5-Year Warranty"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\bd6995dfdc346a8b.html",
+      "htmlSha256": "94f5c84c470a70b0a0ac2211417e1afbeb4fc3ce617dc35df505ca38831c0774",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\bd6995dfdc346a8b.json",
+      "metadataSha256": "7e3601c0e02eb783be2b36649500a8d85026535f6bedca49d66c2848a76e86b6",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Anker SOLIX F1500 Portable Power Station – 1536Wh | 1800W"
+        ],
+        "ogTitle": "Anker SOLIX F1500 Portable Power Station - 1536Wh | 1800W | SanTan Solar",
+        "selectedSku": "A1772111",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/anker-solix-f1500-portable-power-station-1536wh-1800w/",
+        "visibleSku": "A1772111"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact visible single Anker SKU; substantive model prose distinguishes continuous output, charging input and LFP battery capacity. No technical data imported from generic product filters.",
+      "quotes": [
+        {
+          "row": [
+            "Battery Capacity",
+            "1536Wh"
+          ],
+          "quote": "Unchanged Size with 1,536Wh LFP Battery"
+        },
+        {
+          "row": [
+            "Battery chemistry",
+            "LFP"
+          ],
+          "quote": "Wh LFP Battery"
+        },
+        {
+          "row": [
+            "Continuous AC output power",
+            "1800W"
+          ],
+          "quote": "1800W Continuous AC Output"
+        },
+        {
+          "row": [
+            "AC charging input",
+            "1000W"
+          ],
+          "quote": "HyperFlash™ 1000W AC Input"
+        },
+        {
+          "row": [
+            "Communications",
+            "WiFi & Bluetooth remote app"
+          ],
+          "quote": "Remote App via WiFi & Bluetooth"
+        },
+        {
+          "row": [
+            "Warranty",
+            "5-Year Warranty"
+          ],
+          "quote": "5-Year Warranty & 10-Year Lifespan"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "capacityKwh",
+        "label": "Energy capacity",
+        "value": "1536Wh",
+        "source": "https://www.santansolar.com/product/anker-solix-f1500-portable-power-station-1536wh-1800w/",
+        "kind": "retailer"
+      },
+      {
+        "key": "chemistry",
+        "label": "Battery chemistry",
+        "value": "LFP",
+        "source": "https://www.santansolar.com/product/anker-solix-f1500-portable-power-station-1536wh-1800w/",
+        "kind": "retailer"
+      },
+      {
+        "key": "outputWatts",
+        "label": "Rated AC output power",
+        "value": "1800W",
+        "source": "https://www.santansolar.com/product/anker-solix-f1500-portable-power-station-1536wh-1800w/",
+        "kind": "retailer"
+      },
+      {
+        "key": "acChargeWatts",
+        "label": "AC charging input",
+        "value": "1000W",
+        "source": "https://www.santansolar.com/product/anker-solix-f1500-portable-power-station-1536wh-1800w/",
+        "kind": "retailer"
+      },
+      {
+        "key": "communications",
+        "label": "Communications",
+        "value": "WiFi & Bluetooth remote app",
+        "source": "https://www.santansolar.com/product/anker-solix-f1500-portable-power-station-1536wh-1800w/",
+        "kind": "retailer"
+      },
+      {
+        "key": "warranty",
+        "label": "Product warranty",
+        "value": "5-Year Warranty",
+        "source": "https://www.santansolar.com/product/anker-solix-f1500-portable-power-station-1536wh-1800w/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-a1781111"
+    ],
+    "expected": {
+      "santan-solar-a1781111": {
+        "name": "Anker SOLIX F2600 Portable Power Station – 2560Wh｜2400W",
+        "sourceUrl": "https://www.santansolar.com/product/anker-solix-f2600-portable-power-station-2560wh%ef%bd%9c2400w/",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/anker-solix-f2600-portable-power-station-2560wh%ef%bd%9c2400w/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:41.481Z",
+    "label": "Batch twenty-e exact model contextual source review",
+    "rows": [
+      [
+        "Battery Capacity",
+        "2560Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LFP"
+      ],
+      [
+        "Continuous AC output power",
+        "2400W"
+      ],
+      [
+        "AC charging input",
+        "1440W"
+      ],
+      [
+        "Communications",
+        "WiFi & Bluetooth remote app"
+      ],
+      [
+        "Warranty",
+        "5-Year Warranty"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\70292210cccd228a.html",
+      "htmlSha256": "2c07532a955ec9bcffaf0bfd188c067985ea627fdc31f61bca5b9ca944649d60",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\70292210cccd228a.json",
+      "metadataSha256": "2b110293f18a55b4dea392251881998883b0d2fcfbc10790d5ee652f15b6cadc",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Anker SOLIX F2600 Portable Power Station – 2560Wh|2400W"
+        ],
+        "ogTitle": "Anker SOLIX F2600 Portable Power Station - 2560Wh|2400W | SanTan Solar",
+        "selectedSku": "A1781111",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/anker-solix-f2600-portable-power-station-2560wh%ef%bd%9c2400w/",
+        "visibleSku": "A1781111"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact visible single Anker SKU; substantive model prose distinguishes continuous output, charging input and LFP battery capacity. No technical data imported from generic product filters.",
+      "quotes": [
+        {
+          "row": [
+            "Battery Capacity",
+            "2560Wh"
+          ],
+          "quote": "Unchanged Size with 2,560Wh LFP Battery"
+        },
+        {
+          "row": [
+            "Battery chemistry",
+            "LFP"
+          ],
+          "quote": "Wh LFP Battery"
+        },
+        {
+          "row": [
+            "Continuous AC output power",
+            "2400W"
+          ],
+          "quote": "2400W Continuous AC Output"
+        },
+        {
+          "row": [
+            "AC charging input",
+            "1440W"
+          ],
+          "quote": "HyperFlash™ 1440W AC Input"
+        },
+        {
+          "row": [
+            "Communications",
+            "WiFi & Bluetooth remote app"
+          ],
+          "quote": "Remote App via WiFi & Bluetooth"
+        },
+        {
+          "row": [
+            "Warranty",
+            "5-Year Warranty"
+          ],
+          "quote": "5-Year Warranty & 10-Year Lifespan"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "capacityKwh",
+        "label": "Energy capacity",
+        "value": "2560Wh",
+        "source": "https://www.santansolar.com/product/anker-solix-f2600-portable-power-station-2560wh%ef%bd%9c2400w/",
+        "kind": "retailer"
+      },
+      {
+        "key": "chemistry",
+        "label": "Battery chemistry",
+        "value": "LFP",
+        "source": "https://www.santansolar.com/product/anker-solix-f2600-portable-power-station-2560wh%ef%bd%9c2400w/",
+        "kind": "retailer"
+      },
+      {
+        "key": "outputWatts",
+        "label": "Rated AC output power",
+        "value": "2400W",
+        "source": "https://www.santansolar.com/product/anker-solix-f2600-portable-power-station-2560wh%ef%bd%9c2400w/",
+        "kind": "retailer"
+      },
+      {
+        "key": "acChargeWatts",
+        "label": "AC charging input",
+        "value": "1440W",
+        "source": "https://www.santansolar.com/product/anker-solix-f2600-portable-power-station-2560wh%ef%bd%9c2400w/",
+        "kind": "retailer"
+      },
+      {
+        "key": "communications",
+        "label": "Communications",
+        "value": "WiFi & Bluetooth remote app",
+        "source": "https://www.santansolar.com/product/anker-solix-f2600-portable-power-station-2560wh%ef%bd%9c2400w/",
+        "kind": "retailer"
+      },
+      {
+        "key": "warranty",
+        "label": "Product warranty",
+        "value": "5-Year Warranty",
+        "source": "https://www.santansolar.com/product/anker-solix-f2600-portable-power-station-2560wh%ef%bd%9c2400w/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-a1790111"
+    ],
+    "expected": {
+      "santan-solar-a1790111": {
+        "name": "Anker SOLIX F3800 Portable Power Station – 3840Wh | 6000W",
+        "sourceUrl": "https://www.santansolar.com/product/anker-solix-f3800-portable-power-station-3840wh-6000w/",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/anker-solix-f3800-portable-power-station-3840wh-6000w/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:43.900Z",
+    "label": "Batch twenty-e exact model contextual source review",
+    "rows": [
+      [
+        "Battery chemistry",
+        "LFP"
+      ],
+      [
+        "AC output voltage",
+        "120V/240V split-phase (one unit)"
+      ],
+      [
+        "Communications",
+        "Bluetooth and Wi-Fi via app"
+      ],
+      [
+        "Warranty",
+        "5-year warranty"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\e5d7e324e1864e21.html",
+      "htmlSha256": "af6dd2476e965e2f8af02e4834bc173d2a51aee30971a81a4eafaab41d2fd7f9",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\e5d7e324e1864e21.json",
+      "metadataSha256": "7fc6f4c7c74ec7e94ea1243aba2a467c8945d41d5dde3fb88874a94eb110379a",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Anker SOLIX F3800 Portable Power Station – 3840Wh | 6000W"
+        ],
+        "ogTitle": "Anker SOLIX F3800 Portable Power Station - 3840Wh | 6000W | SanTan Solar",
+        "selectedSku": "A1790111",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/anker-solix-f3800-portable-power-station-3840wh-6000w/",
+        "visibleSku": "A1790111"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact original F3800 A1790111 single station; expansion battery and paired systems excluded. Wrong EG4 LL-S linked-document labels not used as source.",
+      "quotes": [
+        {
+          "row": [
+            "Battery chemistry",
+            "LFP"
+          ],
+          "quote": "Long-Lasting LFP batteries and 5-year hassle-free warranty."
+        },
+        {
+          "row": [
+            "AC output voltage",
+            "120V/240V split-phase (one unit)"
+          ],
+          "quote": "6000W, 120V/240V split-phase output in one unit"
+        },
+        {
+          "row": [
+            "Communications",
+            "Bluetooth and Wi-Fi via app"
+          ],
+          "quote": "Monitor energy intelligently via the app. Connect with Bluetooth and Wi-Fi."
+        },
+        {
+          "row": [
+            "Warranty",
+            "5-year warranty"
+          ],
+          "quote": "5-year hassle-free warranty"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "chemistry",
+        "label": "Battery chemistry",
+        "value": "LFP",
+        "source": "https://www.santansolar.com/product/anker-solix-f3800-portable-power-station-3840wh-6000w/",
+        "kind": "retailer"
+      },
+      {
+        "key": "acOutput",
+        "label": "AC output voltage",
+        "value": "120V/240V split-phase (one unit)",
+        "source": "https://www.santansolar.com/product/anker-solix-f3800-portable-power-station-3840wh-6000w/",
+        "kind": "retailer"
+      },
+      {
+        "key": "communications",
+        "label": "Communications",
+        "value": "Bluetooth and Wi-Fi via app",
+        "source": "https://www.santansolar.com/product/anker-solix-f3800-portable-power-station-3840wh-6000w/",
+        "kind": "retailer"
+      },
+      {
+        "key": "warranty",
+        "label": "Product warranty",
+        "value": "5-year warranty",
+        "source": "https://www.santansolar.com/product/anker-solix-f3800-portable-power-station-3840wh-6000w/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-scc110030210"
+    ],
+    "expected": {
+      "santan-solar-scc110030210": {
+        "name": "Victron MPPT SmartSolar 30A 100/30 Solar Charge Controller",
+        "sourceUrl": "https://www.santansolar.com/product/victron-energy-smartsolar-mppt-100-30-solar-charge-controller/",
+        "category": "charging",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/victron-energy-smartsolar-mppt-100-30-solar-charge-controller/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:28:38.913Z",
+    "label": "Batch twenty-e exact model contextual source review",
+    "rows": [
+      [
+        "Maximum PV short circuit current",
+        "35A"
+      ],
+      [
+        "Bluetooth",
+        "Built-in"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6d994d20cb1f8a94.html",
+      "htmlSha256": "caa6726bf1b042a9f5d924e5db919c8b080d564ca6e4a356fd33558c7aecbc54",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6d994d20cb1f8a94.json",
+      "metadataSha256": "e4d4730155865db761ed9b91c846e329ebebd9e0cc99f07e4694f661bec7bb46",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Victron MPPT SmartSolar 30A 100/30 Solar Charge Controller"
+        ],
+        "ogTitle": "Victron MPPT SmartSolar 30A 100/30 Solar Charge Controller | SanTan Solar",
+        "selectedSku": "SCC110030210",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/victron-energy-smartsolar-mppt-100-30-solar-charge-controller/",
+        "visibleSku": "SCC110030210"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact selected SCC SKU and 100/30 or100/50 heading/table; input PV short circuit current separated from output charging current.",
+      "quotes": [
+        {
+          "row": [
+            "Maximum PV short circuit current",
+            "35A"
+          ],
+          "quote": "Max PV short circuit current: 35A"
+        },
+        {
+          "row": [
+            "Bluetooth",
+            "Built-in"
+          ],
+          "quote": "Bluetooth Smart built-in"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "bluetooth",
+        "label": "Bluetooth",
+        "value": "Built-in",
+        "source": "https://www.santansolar.com/product/victron-energy-smartsolar-mppt-100-30-solar-charge-controller/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-scc110050210"
+    ],
+    "expected": {
+      "santan-solar-scc110050210": {
+        "name": "Victron MPPT SmartSolar 100/50A Solar Charge Controller",
+        "sourceUrl": "https://www.santansolar.com/product/victron-energy-smartsolar-mppt-100-50-solar-charge-controller/",
+        "category": "charging",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/victron-energy-smartsolar-mppt-100-50-solar-charge-controller/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:28:40.955Z",
+    "label": "Batch twenty-e exact model contextual source review",
+    "rows": [
+      [
+        "Maximum PV short circuit current",
+        "60A"
+      ],
+      [
+        "Bluetooth",
+        "Built-in"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\753810390a5ed563.html",
+      "htmlSha256": "0fd81eac1bf216ccbb3f8091869932dad9a17a32b503721cdfe4832b14f3ffa5",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\753810390a5ed563.json",
+      "metadataSha256": "d18c53c15a888c394982d1231d5c1b1b92a322f94db44f4079732272ab0c64be",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Victron MPPT SmartSolar 100/50A Solar Charge Controller"
+        ],
+        "ogTitle": "Victron MPPT SmartSolar 100/50A Solar Charge Controller | SanTan Solar",
+        "selectedSku": "SCC110050210",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/victron-energy-smartsolar-mppt-100-50-solar-charge-controller/",
+        "visibleSku": "SCC110050210"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact selected SCC SKU and 100/30 or100/50 heading/table; input PV short circuit current separated from output charging current.",
+      "quotes": [
+        {
+          "row": [
+            "Maximum PV short circuit current",
+            "60A"
+          ],
+          "quote": "Max PV short circuit current: 60A"
+        },
+        {
+          "row": [
+            "Bluetooth",
+            "Built-in"
+          ],
+          "quote": "Bluetooth Smart built-in"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "bluetooth",
+        "label": "Bluetooth",
+        "value": "Built-in",
+        "source": "https://www.santansolar.com/product/victron-energy-smartsolar-mppt-100-50-solar-charge-controller/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-scc115070211"
+    ],
+    "expected": {
+      "santan-solar-scc115070211": {
+        "name": "Victron MPPT SmartSolar 150/70 Solar Charge Controller",
+        "sourceUrl": "https://www.santansolar.com/product/victron-energy-smartsolar-mppt-150-70-tr-solar-charge-controller/",
+        "category": "charging",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/victron-energy-smartsolar-mppt-150-70-tr-solar-charge-controller/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:28:44.953Z",
+    "label": "Batch twenty-e exact model contextual source review",
+    "rows": [
+      [
+        "Bluetooth",
+        "Built-in"
+      ],
+      [
+        "Protection functions",
+        "Over temperature protection and power derating when temperature is high"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\69415598979b9e6f.html",
+      "htmlSha256": "8d490178fb42a92805a18b46f4387e8021cd9450de7bee0693f71578ee44fce2",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\69415598979b9e6f.json",
+      "metadataSha256": "c0750829d94e27e9cb4c04e65a18340d7f23ecb61514b0acaa04447d36aa361d",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Victron MPPT SmartSolar 150/70 Solar Charge Controller"
+        ],
+        "ogTitle": "Victron MPPT SmartSolar 150/70 Solar Charge Controller | SanTan Solar",
+        "selectedSku": "SCC115070211",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/victron-energy-smartsolar-mppt-150-70-tr-solar-charge-controller/",
+        "visibleSku": "SCC115070211"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact SCC115070211 selected150/70-TR. Full description and technical context reviewed; terminal type conflicts retained.",
+      "quotes": [
+        {
+          "row": [
+            "Bluetooth",
+            "Built-in"
+          ],
+          "quote": "built-in Bluetooth"
+        },
+        {
+          "row": [
+            "Protection functions",
+            "Over temperature protection and power derating when temperature is high"
+          ],
+          "quote": "Over temperature protection and power derating when temperature is high"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "bluetooth",
+        "label": "Bluetooth",
+        "value": "Built-in",
+        "source": "https://www.santansolar.com/product/victron-energy-smartsolar-mppt-150-70-tr-solar-charge-controller/",
+        "kind": "retailer"
+      },
+      {
+        "key": "protections",
+        "label": "Protection functions",
+        "value": "Over temperature protection and power derating when temperature is high",
+        "source": "https://www.santansolar.com/product/victron-energy-smartsolar-mppt-150-70-tr-solar-charge-controller/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-scc145110410"
+    ],
+    "expected": {
+      "santan-solar-scc145110410": {
+        "name": "Victron 450/100-Tr SmartSolar MPPT RS Smart Charge Controller",
+        "sourceUrl": "https://www.santansolar.com/product/victron-450-100-tr-smartsolar-mppt-rs-smart-charge-controller/",
+        "category": "charging",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/victron-450-100-tr-smartsolar-mppt-rs-smart-charge-controller/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:28:55.073Z",
+    "label": "Batch twenty-e exact model contextual source review",
+    "rows": [
+      [
+        "Communications",
+        "Bluetooth via VictronConnect"
+      ],
+      [
+        "Housing material",
+        "Metal case"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d9338b89632d0e40.html",
+      "htmlSha256": "9ad4000e97a5f14a1ae84d501db5e7e62d05aaf6c338a8d09244ba7aae965773",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d9338b89632d0e40.json",
+      "metadataSha256": "ce1b4d98f70bfb7f4c37aa22c8e284eb7664ac234501be11ca95de13a470494e",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Victron 450/100-Tr SmartSolar MPPT RS Smart Charge Controller"
+        ],
+        "ogTitle": "Victron 450/100-Tr SmartSolar MPPT RS Smart Charge Controller | SanTan Solar",
+        "selectedSku": "SCC145110410",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/victron-450-100-tr-smartsolar-mppt-rs-smart-charge-controller/",
+        "visibleSku": "SCC145110410"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact selected RS450/100 or450/200 SKU. Shared RS family text applies connectivity and case material explicitly to both; no power model selected from generic alternatives.",
+      "quotes": [
+        {
+          "row": [
+            "Communications",
+            "Bluetooth via VictronConnect"
+          ],
+          "quote": "The SmartSolar RS charge controller can be remotely controlled and configured over Bluetooth via the VictronConnect App."
+        },
+        {
+          "row": [
+            "Housing material",
+            "Metal case"
+          ],
+          "quote": "The new metal case design and fully covered electrical connections"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "communications",
+        "label": "Communications",
+        "value": "Bluetooth via VictronConnect",
+        "source": "https://www.santansolar.com/product/victron-450-100-tr-smartsolar-mppt-rs-smart-charge-controller/",
+        "kind": "retailer"
+      },
+      {
+        "key": "material",
+        "label": "Material",
+        "value": "Metal case",
+        "source": "https://www.santansolar.com/product/victron-450-100-tr-smartsolar-mppt-rs-smart-charge-controller/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-scc145120410"
+    ],
+    "expected": {
+      "santan-solar-scc145120410": {
+        "name": "Victron 450/200-Tr SmartSolar MPPT RS Smart Charge Controller",
+        "sourceUrl": "https://www.santansolar.com/product/victron-450-200-tr-smartsolar-mppt-rs-smart-charge-controller/",
+        "category": "charging",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/victron-450-200-tr-smartsolar-mppt-rs-smart-charge-controller/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:28:57.068Z",
+    "label": "Batch twenty-e exact model contextual source review",
+    "rows": [
+      [
+        "Communications",
+        "Bluetooth via VictronConnect"
+      ],
+      [
+        "Housing material",
+        "Metal case"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\84567f4cf1842547.html",
+      "htmlSha256": "fada9656d75929f457cb08e32b953aec66cadf70a9957aeb2d16bff227e7c160",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\84567f4cf1842547.json",
+      "metadataSha256": "2d1721031313e65eb6dc56a1b99e99f90decfcd1da29640b019caf1de7ce9590",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Victron 450/200-Tr SmartSolar MPPT RS Smart Charge Controller"
+        ],
+        "ogTitle": "Victron 450/200-Tr SmartSolar MPPT RS Smart Charge Controller | SanTan Solar",
+        "selectedSku": "SCC145120410",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/victron-450-200-tr-smartsolar-mppt-rs-smart-charge-controller/",
+        "visibleSku": "SCC145120410"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact selected RS450/100 or450/200 SKU. Shared RS family text applies connectivity and case material explicitly to both; no power model selected from generic alternatives.",
+      "quotes": [
+        {
+          "row": [
+            "Communications",
+            "Bluetooth via VictronConnect"
+          ],
+          "quote": "The SmartSolar RS charge controller can be remotely controlled and configured over Bluetooth via the VictronConnect App."
+        },
+        {
+          "row": [
+            "Housing material",
+            "Metal case"
+          ],
+          "quote": "The new metal case design and fully covered electrical connections"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "communications",
+        "label": "Communications",
+        "value": "Bluetooth via VictronConnect",
+        "source": "https://www.santansolar.com/product/victron-450-200-tr-smartsolar-mppt-rs-smart-charge-controller/",
+        "kind": "retailer"
+      },
+      {
+        "key": "material",
+        "label": "Material",
+        "value": "Metal case",
+        "source": "https://www.santansolar.com/product/victron-450-200-tr-smartsolar-mppt-rs-smart-charge-controller/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-vsun370-120bmh-n"
+    ],
+    "expected": {
+      "santan-solar-vsun370-120bmh-n": {
+        "name": "VSUN 370W BOB 120 Half Cell Solar Panel",
+        "sourceUrl": "https://www.santansolar.com/product/vsun-370w-bob-120-half-cell-solar-panel/",
+        "category": "panels",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/vsun-370w-bob-120-half-cell-solar-panel/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-05T03:13:15.361Z",
+    "label": "Batch twenty-e exact model contextual source review",
+    "rows": [
+      [
+        "Module efficiency",
+        "~19.2%"
+      ],
+      [
+        "Pmax temperature coefficient",
+        "-0.36% / °C"
+      ],
+      [
+        "Voc temperature coefficient",
+        "-0.30% / °C"
+      ],
+      [
+        "Isc temperature coefficient",
+        "+0.05% / °C"
+      ],
+      [
+        "NOCT",
+        "~45 ± 2°C"
+      ],
+      [
+        "Frame material",
+        "Black anodized aluminum"
+      ],
+      [
+        "Front glass",
+        "3.2 mm tempered, anti-reflective coating"
+      ],
+      [
+        "Junction box IP rating",
+        "IP68"
+      ],
+      [
+        "Number of bypass diodes",
+        "3"
+      ],
+      [
+        "Connector type",
+        "MC4 compatible"
+      ],
+      [
+        "Product warranty",
+        "12 years"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\24e85a9ea48a1ecf.html",
+      "htmlSha256": "66b3234bba0fd4685aeaeaa69423d6e11669fb76bf3d117f4eb76757668a5e44",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\24e85a9ea48a1ecf.json",
+      "metadataSha256": "8f0e104a4f675c8ba9e512e8e1dc864449c84a79e7ce95090c2ec0514c0803e5",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "VSUN 370W BOB 120 Half Cell Solar Panel"
+        ],
+        "ogTitle": "VSUN 370W BOB 120 Half Cell Solar Panel | SanTan Solar",
+        "selectedSku": "VSUN370-120BMH-N",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/vsun-370w-bob-120-half-cell-solar-panel/",
+        "visibleSku": "VSUN370-120BMH-N"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact VSUN370-120BMH-N selected single module. Full Product Summary contains approximate ratings; approximate signs retained. No linked datasheet read and no arbitrary bifacial-gain uplift imported.",
+      "quotes": [
+        {
+          "row": [
+            "Module efficiency",
+            "~19.2%"
+          ],
+          "quote": "Panel Efficiency ~19.2%"
+        },
+        {
+          "row": [
+            "Pmax temperature coefficient",
+            "-0.36% / °C"
+          ],
+          "quote": "Temperature Coefficient (Pmax) -0.36% / °C"
+        },
+        {
+          "row": [
+            "Voc temperature coefficient",
+            "-0.30% / °C"
+          ],
+          "quote": "Temperature Coefficient (Voc) -0.30% / °C"
+        },
+        {
+          "row": [
+            "Isc temperature coefficient",
+            "+0.05% / °C"
+          ],
+          "quote": "Temperature Coefficient (Isc) +0.05% / °C"
+        },
+        {
+          "row": [
+            "NOCT",
+            "~45 ± 2°C"
+          ],
+          "quote": "NOCT ~45 ± 2°C"
+        },
+        {
+          "row": [
+            "Frame material",
+            "Black anodized aluminum"
+          ],
+          "quote": "Frame Black anodized aluminum"
+        },
+        {
+          "row": [
+            "Front glass",
+            "3.2 mm tempered, anti-reflective coating"
+          ],
+          "quote": "Front Glass 3.2 mm tempered, anti-reflective coating"
+        },
+        {
+          "row": [
+            "Junction box IP rating",
+            "IP68"
+          ],
+          "quote": "Junction Box IP68 rated, 3 bypass diodes"
+        },
+        {
+          "row": [
+            "Number of bypass diodes",
+            "3"
+          ],
+          "quote": "Junction Box IP68 rated, 3 bypass diodes"
+        },
+        {
+          "row": [
+            "Connector type",
+            "MC4 compatible"
+          ],
+          "quote": "Connector Type MC4 compatible"
+        },
+        {
+          "row": [
+            "Product warranty",
+            "12 years"
+          ],
+          "quote": "Product Warranty 12 years"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "junctionIpRating",
+        "label": "Junction box ingress protection",
+        "value": "IP68",
+        "source": "https://www.santansolar.com/product/vsun-370w-bob-120-half-cell-solar-panel/",
+        "kind": "retailer"
+      },
+      {
+        "key": "diodes",
+        "label": "Bypass diodes",
+        "value": "3",
+        "source": "https://www.santansolar.com/product/vsun-370w-bob-120-half-cell-solar-panel/",
+        "kind": "retailer"
+      },
+      {
+        "key": "material",
+        "label": "Material",
+        "value": "Black anodized aluminum",
+        "source": "https://www.santansolar.com/product/vsun-370w-bob-120-half-cell-solar-panel/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-mnb108-450w-bf-n-lt37"
+    ],
+    "expected": {
+      "santan-solar-mnb108-450w-bf-n-lt37": {
+        "name": "Pallet of 37 New Philadelphia Solar Mono 450W 108 Half Cell Bifacial Solar Panel",
+        "sourceUrl": "https://www.santansolar.com/product/pallet-of-25-new-philadelphia-solar-mono-450w-108-half-cell-bifacial-solar-panel/",
+        "category": "panels",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/pallet-of-25-new-philadelphia-solar-mono-450w-108-half-cell-bifacial-solar-panel/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-05T03:15:10.370Z",
+    "label": "Batch twenty-e exact model contextual source review",
+    "rows": [
+      [
+        "Cell type",
+        "N-type"
+      ],
+      [
+        "Cell construction",
+        "Mono-Crystalline"
+      ],
+      [
+        "Snow load",
+        "5400 Pascal (front)"
+      ],
+      [
+        "Wind load",
+        "2400 Pascal (back)"
+      ],
+      [
+        "Maximum system voltage",
+        "1500 V (IEC/UL)"
+      ],
+      [
+        "Weight",
+        "45 lbs. (module)"
+      ],
+      [
+        "Dimensions",
+        "1722 x 1134 x 30 mm (module)"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\258abf80fd370df4.html",
+      "htmlSha256": "c7c57bc9513203e624a340fa01f91c3c6d68dd53054d42618a2e87808f151f8d",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\258abf80fd370df4.json",
+      "metadataSha256": "f3b67970a64b730be2c184442699755eb6c45271c31db20628f9a8c2ec38fb2e",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Pallet of 37 New Philadelphia Solar Mono 450W 108 Half Cell Bifacial Solar Panel"
+        ],
+        "ogTitle": "Pallet of 37 New Philadelphia Solar Mono 450W 108 Half Cell Bifacial Solar Panel | SanTan Solar",
+        "selectedSku": "MNB108-450W-BF-N-LT37",
+        "selectedPackQuantity": 37,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/pallet-of-25-new-philadelphia-solar-mono-450w-108-half-cell-bifacial-solar-panel/",
+        "visibleSku": "MNB108-450W-BF-N-LT37"
+      },
+      "selectedPackQuantity": 37,
+      "scope": "Exact selected MNB108-450W model; 37module pallet explicit in title, SKU and description.1765lb/68x45x52in pallet shipping excluded. Module technical dimensions and weight distinguished from additional shipping attributes.",
+      "quotes": [
+        {
+          "row": [
+            "Cell type",
+            "N-type"
+          ],
+          "quote": "Mono-Crystalline N-type modules"
+        },
+        {
+          "row": [
+            "Cell construction",
+            "Mono-Crystalline"
+          ],
+          "quote": "Mono-Crystalline N-type modules"
+        },
+        {
+          "row": [
+            "Snow load",
+            "5400 Pascal (front)"
+          ],
+          "quote": "Withstand High Mechanical load : Front (5400 Pascal) Back (2400 Pascal)"
+        },
+        {
+          "row": [
+            "Wind load",
+            "2400 Pascal (back)"
+          ],
+          "quote": "Withstand High Mechanical load : Front (5400 Pascal) Back (2400 Pascal)"
+        },
+        {
+          "row": [
+            "Maximum system voltage",
+            "1500 V (IEC/UL)"
+          ],
+          "quote": "Maximum system voltage: 1500 V (IEC/UL)"
+        },
+        {
+          "row": [
+            "Weight",
+            "45 lbs. (module)"
+          ],
+          "quote": "Weight: 45 lbs."
+        },
+        {
+          "row": [
+            "Dimensions",
+            "1722 x 1134 x 30 mm (module)"
+          ],
+          "quote": "Dimensions: 1722 x 1134 x 30 mm (67.7× 44.64 × 1.18in.)"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "cellType",
+        "label": "Cell type",
+        "value": "N-type",
+        "source": "https://www.santansolar.com/product/pallet-of-25-new-philadelphia-solar-mono-450w-108-half-cell-bifacial-solar-panel/",
+        "kind": "retailer"
+      },
+      {
+        "key": "snowLoad",
+        "label": "Snow / front load",
+        "value": "5400 Pascal (front)",
+        "source": "https://www.santansolar.com/product/pallet-of-25-new-philadelphia-solar-mono-450w-108-half-cell-bifacial-solar-panel/",
+        "kind": "retailer"
+      },
+      {
+        "key": "windLoad",
+        "label": "Wind / rear load",
+        "value": "2400 Pascal (back)",
+        "source": "https://www.santansolar.com/product/pallet-of-25-new-philadelphia-solar-mono-450w-108-half-cell-bifacial-solar-panel/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-mnb108-450w-bf-n"
+    ],
+    "expected": {
+      "santan-solar-mnb108-450w-bf-n": {
+        "name": "New Philadelphia Solar Mono 450W 108 Half Cell Bifacial Solar Panel",
+        "sourceUrl": "https://www.santansolar.com/product/new-philadelphia-solar-mono-450w-108-half-cell-bifacial-solar-panel/",
+        "category": "panels",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/new-philadelphia-solar-mono-450w-108-half-cell-bifacial-solar-panel/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-05T03:16:15.101Z",
+    "label": "Batch twenty-e exact model contextual source review",
+    "rows": [
+      [
+        "Cell type",
+        "N-type"
+      ],
+      [
+        "Cell construction",
+        "Mono-Crystalline"
+      ],
+      [
+        "Snow load",
+        "5400 Pascal (front)"
+      ],
+      [
+        "Wind load",
+        "2400 Pascal (back)"
+      ],
+      [
+        "Maximum system voltage",
+        "1500 V (IEC/UL)"
+      ],
+      [
+        "Weight",
+        "45 lbs. (module)"
+      ],
+      [
+        "Dimensions",
+        "1722 x 1134 x 30 mm (module)"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\1bf06c7139153116.html",
+      "htmlSha256": "b64e6e6718ed5f9eb2e0ad9d8a81e33bb46c62cbf13020a0d788af8356af5757",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\1bf06c7139153116.json",
+      "metadataSha256": "fcab702875ab075585f05eeb743ae120dc1f65da2d25d5c95e51f66d154838f2",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "New Philadelphia Solar Mono 450W 108 Half Cell Bifacial Solar Panel"
+        ],
+        "ogTitle": "New Philadelphia Solar Mono 450W 108 Half Cell Bifacial Solar Panel | SanTan Solar",
+        "selectedSku": "MNB108-450W-BF-N",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/new-philadelphia-solar-mono-450w-108-half-cell-bifacial-solar-panel/",
+        "visibleSku": "MNB108-450W-BF-N"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact selected MNB108-450W model; single module. Module technical dimensions and weight distinguished from additional shipping attributes.",
+      "quotes": [
+        {
+          "row": [
+            "Cell type",
+            "N-type"
+          ],
+          "quote": "Mono-Crystalline N-type modules"
+        },
+        {
+          "row": [
+            "Cell construction",
+            "Mono-Crystalline"
+          ],
+          "quote": "Mono-Crystalline N-type modules"
+        },
+        {
+          "row": [
+            "Snow load",
+            "5400 Pascal (front)"
+          ],
+          "quote": "Withstand High Mechanical load : Front (5400 Pascal) Back (2400 Pascal)"
+        },
+        {
+          "row": [
+            "Wind load",
+            "2400 Pascal (back)"
+          ],
+          "quote": "Withstand High Mechanical load : Front (5400 Pascal) Back (2400 Pascal)"
+        },
+        {
+          "row": [
+            "Maximum system voltage",
+            "1500 V (IEC/UL)"
+          ],
+          "quote": "Maximum system voltage: 1500 V (IEC/UL)"
+        },
+        {
+          "row": [
+            "Weight",
+            "45 lbs. (module)"
+          ],
+          "quote": "Weight: 45 lbs."
+        },
+        {
+          "row": [
+            "Dimensions",
+            "1722 x 1134 x 30 mm (module)"
+          ],
+          "quote": "Dimensions: 1722 x 1134 x 30 mm (67.7× 44.64 × 1.18in.)"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "cellType",
+        "label": "Cell type",
+        "value": "N-type",
+        "source": "https://www.santansolar.com/product/new-philadelphia-solar-mono-450w-108-half-cell-bifacial-solar-panel/",
+        "kind": "retailer"
+      },
+      {
+        "key": "snowLoad",
+        "label": "Snow / front load",
+        "value": "5400 Pascal (front)",
+        "source": "https://www.santansolar.com/product/new-philadelphia-solar-mono-450w-108-half-cell-bifacial-solar-panel/",
+        "kind": "retailer"
+      },
+      {
+        "key": "windLoad",
+        "label": "Wind / rear load",
+        "value": "2400 Pascal (back)",
+        "source": "https://www.santansolar.com/product/new-philadelphia-solar-mono-450w-108-half-cell-bifacial-solar-panel/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-scc125070221"
+    ],
+    "expected": {
+      "santan-solar-scc125070221": {
+        "name": "Victron 70A 250/70 Smart Solar Charge Controller",
+        "sourceUrl": "https://www.santansolar.com/product/victron-70a-250-70-smart-solar-charge-controller/",
+        "category": "charging",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/victron-70a-250-70-smart-solar-charge-controller/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:28:51.023Z",
+    "label": "Batch twenty-e exact model contextual source review",
+    "rows": [
+      [
+        "Bluetooth",
+        "Built-in"
+      ],
+      [
+        "Protection functions",
+        "Over temperature protection and power derating when temperature is high"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\0140335bb06ae23e.html",
+      "htmlSha256": "9a51e717b11ad50973185d74c18254de248bca66355e37c582d05e8be23d3825",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\0140335bb06ae23e.json",
+      "metadataSha256": "497eec3cb11ac7193cef6b9c6a1db34eddd69a9d9fd6bbccdf75c3263fe198f8",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Victron 70A 250/70 Smart Solar Charge Controller"
+        ],
+        "ogTitle": "Victron 70A 250/70 Smart Solar Charge Controller | SanTan Solar",
+        "selectedSku": "SCC125070221",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/victron-70a-250-70-smart-solar-charge-controller/",
+        "visibleSku": "SCC125070221"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact SCC125070221 250/70-TR SKU. Full model page has connectivity/protection descriptions but no model technical numerical table.",
+      "quotes": [
+        {
+          "row": [
+            "Bluetooth",
+            "Built-in"
+          ],
+          "quote": "built-in Bluetooth"
+        },
+        {
+          "row": [
+            "Protection functions",
+            "Over temperature protection and power derating when temperature is high"
+          ],
+          "quote": "Over temperature protection and power derating when temperature is high"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "bluetooth",
+        "label": "Bluetooth",
+        "value": "Built-in",
+        "source": "https://www.santansolar.com/product/victron-70a-250-70-smart-solar-charge-controller/",
+        "kind": "retailer"
+      },
+      {
+        "key": "protections",
+        "label": "Protection functions",
+        "value": "Over temperature protection and power derating when temperature is high",
+        "source": "https://www.santansolar.com/product/victron-70a-250-70-smart-solar-charge-controller/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-a24371a1"
+    ],
+    "expected": {
+      "santan-solar-a24371a1": {
+        "name": "Anker SOLIX PS400 Portable Solar Panel",
+        "sourceUrl": "https://www.santansolar.com/product/anker-solix-ps400-portable-solar-panel/",
+        "category": "panels",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/anker-solix-ps400-portable-solar-panel/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:55.949Z",
+    "label": "Batch twenty-e exact model contextual source review",
+    "rows": [
+      [
+        "Tilt angle",
+        "30°, 40°, 50°, or 80°"
+      ],
+      [
+        "IP rating",
+        "IP67"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\a736b9722b8f0af0.html",
+      "htmlSha256": "03135430e507025fa3f394b602df837395f7d99c8e4bb6ea884d9189625c439b",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\a736b9722b8f0af0.json",
+      "metadataSha256": "976b8787cd5c92407a5e7c3cd2cf9705b6103e9e7d151a9407a0aac568ff5759",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Anker SOLIX PS400 Portable Solar Panel"
+        ],
+        "ogTitle": "Anker SOLIX PS400 Portable Solar Panel | SanTan Solar",
+        "selectedSku": "A24371A1",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/anker-solix-ps400-portable-solar-panel/",
+        "visibleSku": "A24371A1"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact selected Anker PS400 SKU A24371A1 single-panel listing. Only explicit module tilt and ingress rating selected; title/description agree Anker despite unrelated attribute-brand row.",
+      "quotes": [
+        {
+          "row": [
+            "Tilt angle",
+            "30°, 40°, 50°, or 80°"
+          ],
+          "quote": "Easily switch between 30°, 40°, 50°, or 80° angles"
+        },
+        {
+          "row": [
+            "IP rating",
+            "IP67"
+          ],
+          "quote": "IP67 Waterproof Protection: With an IP67 waterproof design"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "tilt",
+        "label": "Tilt range",
+        "value": "30°, 40°, 50°, or 80°",
+        "source": "https://www.santansolar.com/product/anker-solix-ps400-portable-solar-panel/",
+        "kind": "retailer"
+      },
+      {
+        "key": "ipRating",
+        "label": "Ingress protection",
+        "value": "IP67",
+        "source": "https://www.santansolar.com/product/anker-solix-ps400-portable-solar-panel/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "renogy-45494887153779"
+    ],
+    "expected": {
+      "renogy-45494887153779": {
+        "name": "Reserve Mini Smart 12V 200Ah / 314Ah LiFePO4 Battery with Self Heating & Bluetooth — 314Ah (Pre-order | Ships Mid-Nov) / 1 Pack",
+        "sourceUrl": "https://www.renogy.com/products/reserve-mini-smart-12v-200ah-300ah-lifepo4-battery?variant=45494887153779",
+        "category": "batteries",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.renogy.com/products/reserve-mini-smart-12v-200ah-300ah-lifepo4-battery?variant=45494887153779",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-05T03:12:52.400Z",
+    "label": "Original source rows; contextual batch twenty F review",
+    "rows": [
+      [
+        "Energy",
+        "4,019Wh"
+      ],
+      [
+        "Communication",
+        "Bluetooth"
+      ],
+      [
+        "Self-Heating Power",
+        "140W"
+      ],
+      [
+        "Max. Continuous Charge Current",
+        "215A"
+      ],
+      [
+        "Max. Continuous Discharge Current",
+        "220A"
+      ],
+      [
+        "Max. Discharge Current Peak",
+        "1,000A@1s"
+      ],
+      [
+        "Weight (Approx.)",
+        "55.1 lbs (25.0kg)"
+      ],
+      [
+        "Dimension",
+        "15.1 x 8.0 x 9.6 in (383 x 203 x 243mm)"
+      ],
+      [
+        "Housing Material",
+        "ABS+PC (V0 flame-retardant rating)"
+      ],
+      [
+        "Protection Class",
+        "IP65"
+      ]
+    ],
+    "reviewStatus": "contextually_reviewed_pending_independent_review",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6a9cb3c364beabed.html",
+    "sha256": "400d48446b1df974bb21b64c8195d013a42d6d36addc56282f763646be1768ed",
+    "sourceScope": "Renogy314Ah1Pack RBT-L12314-C1-US exact inert variant. Second section headed314Ah only. Dirty Rated Capacity contains100Ah200Ah314Ah held. FAQ confirms220A continuous and1000A1s.2560W maxpower not imported.140W heating specific314Ah; no pack aggregation.",
+    "selectedOfferProof": [
+      {
+        "id": "renogy-45494887153779",
+        "retailerId": "renogy",
+        "retailer": "Renogy",
+        "url": "https://www.renogy.com/products/reserve-mini-smart-12v-200ah-300ah-lifepo4-battery?variant=45494887153779",
+        "price": 899.99,
+        "currency": "USD",
+        "packQuantity": 1,
+        "stock": "in_stock",
+        "observedAt": "2026-10-13T00:40:12.950Z",
+        "sku": "45494887153779",
+        "condition": "new"
+      }
+    ],
+    "variantBindingQuote": "\"id\":45494887153779,\"price\":89999,\"name\":\"Reserve Mini Smart 12V 200Ah \\/ 314Ah LiFePO4 Battery with Self Heating \\u0026 Bluetooth - 314Ah (Pre-order | Ships Mid-Nov) \\/ 1 Pack\",\"public_title\":\"314Ah (Pre-order | Ships Mid-Nov) \\/ 1 Pack\",\"sku\":\"RBT-L12314-C1-US\"},{\"id\":45494887186547,\"price\":177899,\"name\":\"Reserve Mini Smart 12V 200Ah \\/ 314Ah LiFePO4 Battery with Self Heating \\u0026 Bluetooth - 314Ah (Pre-order | Ships Mid-Nov) \\/ 2 Pack\",\"public_title\":\"314Ah (Pre-order | Ships Mid-Nov) \\/ 2 Pack\",\"sku\":\"RBT-L12314-C1x2-US\"},{\"id\":45494887219315,\"price\":349699,\"name\":\"Reserve Mini Smart 12V 200Ah \\/ 314Ah LiFePO4 Battery with Self Heating \\u0026 Bluetooth - 314Ah (Pre-order | Ships Mid-Nov) \\/ 4 Pack\",\"public_title\":\"314Ah (Pre-order | Ships Mid-N"
+  },
+  {
+    "productIds": [
+      "wattcycle-51899976155432"
+    ],
+    "expected": {
+      "wattcycle-51899976155432": {
+        "name": "WattCycle 48V 50Ah GC2 Bluetooth Lithium Battery for Golf Cart & Lawn Mower - Free Monitor — 1 Pack / No EcoFlow Adapter Needed",
+        "sourceUrl": "https://www.wattcycle.com/products/48v-50ah-golf-cart-lifepo4-battery?variant=51899976155432",
+        "category": "batteries",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.wattcycle.com/products/48v-50ah-golf-cart-lifepo4-battery?variant=51899976155432",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-12T01:25:24.405Z",
+    "label": "Original source rows; contextual batch twenty F review",
+    "rows": [
+      [
+        "Nominal Voltage",
+        "51.2V"
+      ],
+      [
+        "Size",
+        "10.4 x 7.2 x 13.02 inch"
+      ],
+      [
+        "Weight",
+        "44.42±1.10 lb"
+      ],
+      [
+        "Terminal",
+        "M8"
+      ],
+      [
+        "Nominal Capacity",
+        "50Ah"
+      ],
+      [
+        "Energy",
+        "2560Wh"
+      ],
+      [
+        "Max. Charge Current",
+        "100A"
+      ],
+      [
+        "Max. Continuous Discharge Current",
+        "100A"
+      ],
+      [
+        "Charge Temperature",
+        "32°F~131°F/0°C~55°C"
+      ],
+      [
+        "Discharge Temperature",
+        "-4°F~140°F/-20°C~60°C"
+      ]
+    ],
+    "reviewStatus": "contextually_reviewed_pending_independent_review",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\206fd7fb50a5e382.html",
+    "sha256": "04b44e8b061036d746e5e80362d025b2623a566573e353bc4198517bc3d7ee7e",
+    "sourceScope": "WattCycle1Pack NoAdapter WT48V50AH100GCBTGC2 dedicated50Ah table, not105Ah comparison.2560Wh/100A continuous/100A maxcharge per battery.150A30s300A0.5s are overcurrent thresholds held. Chemistry/format/BT not relabeled.",
+    "selectedOfferProof": [
+      {
+        "id": "wattcycle-51899976155432",
+        "retailerId": "wattcycle",
+        "retailer": "WattCycle",
+        "url": "https://www.wattcycle.com/products/48v-50ah-golf-cart-lifepo4-battery?variant=51899976155432",
+        "price": 479.99,
+        "referencePrice": 679.99,
+        "currency": "USD",
+        "packQuantity": 1,
+        "stock": "in_stock",
+        "observedAt": "2026-10-12T23:46:29.733Z",
+        "sku": "51899976155432",
+        "condition": "new"
+      }
+    ],
+    "variantBindingQuote": "\"id\":51899976155432,\"title\":\"1 Pack \\/ No EcoFlow Adapter Needed\",\"option1\":\"1 Pack\",\"option2\":\"No EcoFlow Adapter Needed\",\"option3\":null,\"sku\":\"WT48V50AH100GCBTGC2\",\"requires_shipping\":true,\"taxable\":true,\"featured_image\":{\"id\":56888491704616,\"product_id\":10298063978792,\"position\":1,\"created_at\":\"2026-06-01T23:02:04+08:00\",\"updated_at\":\"2026-06-01T23:02:06+08:00\",\"alt\":null,\"width\":1600,\"height\":1600,\"src\":\"\\/\\/www.wattcycle.com\\/cdn\\/shop\\/files\\/1600x1600_861bec47-fb8e-447f-be03-80d03e9bc2f1.webp?v=1780326126\",\"variant_ids\":[51899976155432,52147207766312]},\"available\":true,\"name\":\"WattCycle 48V 50Ah GC2 Bluetooth Lithium Battery for Golf Cart \\u0026 Lawn Mower - Free Monitor - 1 Pack \\/ No EcoFlow Adapter Needed\",\"public_title\":\"1 Pack \\/ No EcoFl"
+  },
+  {
+    "productIds": [
+      "shopsolar-62340926931084"
+    ],
+    "expected": {
+      "shopsolar-62340926931084": {
+        "name": "ChikoUSA Lawn Lizard 20°-45° Adjustable Ground Mount [Standard] Silver — ZnShine 440W Bifacial Solar Panel / CHIKOUSA | Lawn Lizard | 26-IN Ground Screw w/ Attachment Bracket",
+        "sourceUrl": "https://shopsolarkits.com/products/chikousa-lawn-lizard-adjustable-ground-mount-standard?variant=62340926931084",
+        "category": "mounting",
+        "anchors": {}
+      }
+    },
+    "url": "https://shopsolarkits.com/products/chikousa-lawn-lizard-adjustable-ground-mount-standard?variant=62340926931084",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:40:00.524Z",
+    "label": "Original source rows; contextual batch twenty F review",
+    "rows": [
+      [
+        "Tilt Positions",
+        "20°, 25°, 30°, 35°, 40°, 45°"
+      ]
+    ],
+    "reviewStatus": "contextually_reviewed_pending_independent_review",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\14c665430a863e23.html",
+    "sha256": "01c1dc42c928255c023e12641c33378e79b979da713c1ec4840ca1c1e1f8bfd4",
+    "sourceScope": "Chiko standard SKU1615100 ZnShine440W/26inch screw exactvariant. Panels not included; soldindividualleg, twolegsperpanel. Tilt Positions appliesmount. PanelCompatibility94in omits prose up-to/portrait so held.120mph30psf conditionalsystem not imported.",
+    "selectedOfferProof": [
+      {
+        "id": "shopsolar-62340926931084",
+        "retailerId": "shopsolar",
+        "retailer": "ShopSolar",
+        "url": "https://shopsolarkits.com/products/chikousa-lawn-lizard-adjustable-ground-mount-standard?variant=62340926931084",
+        "price": 169,
+        "currency": "USD",
+        "packQuantity": 1,
+        "stock": "in_stock",
+        "observedAt": "2026-10-12T21:17:57.868Z",
+        "sku": "62340926931084",
+        "condition": "new"
+      }
+    ],
+    "variantBindingQuote": "\"id\":62340926931084,\"price\":16900,\"name\":\"ChikoUSA Lawn Lizard 20°-45° Adjustable Ground Mount [Standard] Silver - ZnShine 440W Bifacial Solar Panel \\/ CHIKOUSA | Lawn Lizard | 26-IN Ground Screw w\\/ Attachment Bracket\",\"public_title\":\"ZnShine 440W Bifacial Solar Panel \\/ CHIKOUSA | Lawn Lizard | 26-IN Ground Screw w\\/ Attachment Bracket\",\"sku\":\"1615100\"},{\"id\":62340926963852,\"price\":16900,\"name\":\"ChikoUSA Lawn Lizard 20°-45° Adjustable Ground Mount [Standard] Silver - ZnShine 440W Bifacial Solar Panel \\/ CHIKOUSA | Lawn Lizard | 36-IN Ground Screw w\\/ Attachment Bracket\",\"public_title\":\"ZnShine 440W Bifacial Solar Panel \\/ CHIKOUSA | Lawn Lizard | 36-IN Ground Screw w\\/ Attachment Bracket\",\"sku\":\"1615100\"},{\"id\":62340926996620,\"price\":16900,\"name\":\""
+  },
+  {
+    "productIds": [
+      "shopsolar-62340929519756"
+    ],
+    "expected": {
+      "shopsolar-62340929519756": {
+        "name": "ChikoUSA Lawn Lizard 20°-45° Adjustable Ground Mount [Extreme Weather] Silver — ZnShine 440W Bifacial Solar Panel / CHIKOUSA | Lawn Lizard | 26-IN Ground Screw w/ Attachment Bracket",
+        "sourceUrl": "https://shopsolarkits.com/products/chikousa-lawn-lizard-adjustable-ground-mount-extreme-weather?variant=62340929519756",
+        "category": "mounting",
+        "anchors": {}
+      }
+    },
+    "url": "https://shopsolarkits.com/products/chikousa-lawn-lizard-adjustable-ground-mount-extreme-weather?variant=62340929519756",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:40:02.801Z",
+    "label": "Original source rows; contextual batch twenty F review",
+    "rows": [
+      [
+        "Tilt Positions",
+        "20°, 25°, 30°, 35°, 40°, 45°"
+      ]
+    ],
+    "reviewStatus": "contextually_reviewed_pending_independent_review",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\ab507b0622452d8a.html",
+    "sha256": "1e88410dcd89881783613b83de3d9810eb62f4fb835d0c6b4084da27ba0db022",
+    "sourceScope": "Chiko extreme SKU1615102 ZnShine440W/26inch screw exactvariant. Panelsnotincluded andindividualleg. Tilt Positions appliesmount.185mph100psf conditionalsystem not imported. Wholepackage material/size not inferred.",
+    "selectedOfferProof": [
+      {
+        "id": "shopsolar-62340929519756",
+        "retailerId": "shopsolar",
+        "retailer": "ShopSolar",
+        "url": "https://shopsolarkits.com/products/chikousa-lawn-lizard-adjustable-ground-mount-extreme-weather?variant=62340929519756",
+        "price": 192,
+        "currency": "USD",
+        "packQuantity": 1,
+        "stock": "in_stock",
+        "observedAt": "2026-10-12T21:17:57.842Z",
+        "sku": "62340929519756",
+        "condition": "new"
+      }
+    ],
+    "variantBindingQuote": "\"id\":62340929519756,\"price\":19200,\"name\":\"ChikoUSA Lawn Lizard 20°-45° Adjustable Ground Mount [Extreme Weather] Silver - ZnShine 440W Bifacial Solar Panel \\/ CHIKOUSA | Lawn Lizard | 26-IN Ground Screw w\\/ Attachment Bracket\",\"public_title\":\"ZnShine 440W Bifacial Solar Panel \\/ CHIKOUSA | Lawn Lizard | 26-IN Ground Screw w\\/ Attachment Bracket\",\"sku\":\"1615102\"},{\"id\":62340929552524,\"price\":19200,\"name\":\"ChikoUSA Lawn Lizard 20°-45° Adjustable Ground Mount [Extreme Weather] Silver - ZnShine 440W Bifacial Solar Panel \\/ CHIKOUSA | Lawn Lizard | 36-IN Ground Screw w\\/ Attachment Bracket\",\"public_title\":\"ZnShine 440W Bifacial Solar Panel \\/ CHIKOUSA | Lawn Lizard | 36-IN Ground Screw w\\/ Attachment Bracket\",\"sku\":\"1615102\"},{\"id\":62340929585292,\"price\":"
+  },
+  {
+    "productIds": [
+      "shopsolar-40237468221580"
+    ],
+    "expected": {
+      "shopsolar-40237468221580": {
+        "name": "EcoFlow DELTA Pro to Smart Generator Adapter",
+        "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro-to-smart-generator-adapter?variant=40237468221580",
+        "category": "accessories",
+        "anchors": {}
+      }
+    },
+    "url": "https://shopsolarkits.com/products/ecoflow-delta-pro-to-smart-generator-adapter?variant=40237468221580",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:27:06.941Z",
+    "label": "Original source rows; contextual batch twenty F review",
+    "rows": [
+      [
+        "Weight",
+        "0.16kg 0.35lb"
+      ]
+    ],
+    "reviewStatus": "contextually_reviewed_pending_independent_review",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d45bd3ae12010092.html",
+    "sha256": "6f829a7ae554e5a772e1fd39023b2a87f3b67bfecb6efcdbd9e041e313ae34b3",
+    "sourceScope": "EcoFlowDELTAProTG exactsinglevariant:Specs Dimension andWeight prose rows retained verbatim. Adapterbody notstation.42-58.8Vrange notcurrent. No material/IPpublished.",
+    "selectedOfferProof": [
+      {
+        "id": "shopsolar-40237468221580",
+        "retailerId": "shopsolar",
+        "retailer": "ShopSolar",
+        "url": "https://shopsolarkits.com/products/ecoflow-delta-pro-to-smart-generator-adapter?variant=40237468221580",
+        "price": 69,
+        "referencePrice": 99,
+        "currency": "USD",
+        "packQuantity": 1,
+        "stock": "out_of_stock",
+        "observedAt": "2026-10-12T22:30:06.328Z",
+        "sku": "40237468221580",
+        "condition": "new"
+      }
+    ],
+    "variantBindingQuote": "\"id\":40237468221580,\"price\":6900,\"name\":\"EcoFlow DELTA Pro to Smart Generator Adapter\",\"public_title\":null,\"sku\":\"DELTAProTG\"}],\"remote\":false,\"collective\":false},\"page\":{\"pageType\":\"product\",\"resourceType\":\"product\",\"resourceId\":6912938016908,\"requestId\":\"47d92d44-3fdd-4e06-bd81-1cd4e67dc804-1791768426\"}};\n  for (var attr in meta) {\n    window.ShopifyAnalytics.meta[attr] = meta[attr];\n  }\n</script>\n<script class=\"analytics\">\n  (function () {\n    var customDocumentWrite = function(content) {\n      var jquery = null;\n\n      if (window.jQuery) {\n        jquery = window.jQuery;\n      } else if (window.Checkout && window.Checkout.$) {\n        jquery = window.Checkout.$;\n      }\n\n      if (jquery) {\n        jquery('body').append(content);\n      }\n    };\n\n"
+  },
+  {
+    "productIds": [
+      "santan-solar-fp-envy8"
+    ],
+    "expected": {
+      "santan-solar-fp-envy8": {
+        "name": "Fortress Power Envy True 8KW Hybrid Inverter",
+        "sourceUrl": "https://www.santansolar.com/product/fortress-power-envy-true-12kw-hybrid-solar-inverter-48v-3-mppt/",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/fortress-power-envy-true-12kw-hybrid-solar-inverter-48v-3-mppt/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-05T03:15:51.047Z",
+    "label": "Batch twenty-g exact model contextual source review",
+    "rows": [
+      [
+        "Continuous AC output power",
+        "8 kW continuous"
+      ],
+      [
+        "Peak power",
+        "16 kW peak for 500 ms"
+      ],
+      [
+        "AC output voltage",
+        "120/240V (AC)"
+      ],
+      [
+        "Rated voltage",
+        "48V (DC battery)"
+      ],
+      [
+        "Maximum PV input power",
+        "13000 W"
+      ],
+      [
+        "Maximum efficiency",
+        "97.5% (PV to Grid)"
+      ],
+      [
+        "Operating voltage range",
+        "48–56 V (battery)"
+      ],
+      [
+        "Dimensions",
+        "580 × 490 × 265 mm (H×W×D)"
+      ],
+      [
+        "Weight",
+        "44 kg (97 lb)"
+      ],
+      [
+        "Protection rating",
+        "NEMA 4X / IP65"
+      ],
+      [
+        "Operating temperature",
+        "-25°C to 60°C (derating >40°C)"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\de7e768b79a9ba6f.html",
+      "htmlSha256": "77c988c734e9b70f0ae52134b91f362cdf72dada193d4847baabe664fcaf57fb",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\de7e768b79a9ba6f.json",
+      "metadataSha256": "1428eb8b054a9e4acebd7f24eb4dba605a89706b8ffb78e5d423606391efab6b",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Fortress Power Envy True 8KW Hybrid Inverter"
+        ],
+        "ogTitle": "Fortress Power Envy True 8KW Hybrid Inverter | SanTan Solar",
+        "selectedSku": "FP-ENVY8",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/fortress-power-envy-true-12kw-hybrid-solar-inverter-48v-3-mppt/",
+        "visibleSku": "FP-ENVY8"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact FP-ENVY8 selected8kW model. Technical block explicitly8kW matches selected SKU;10kW mode and multi-inverter threephase descriptions excluded. Battery voltage separated from AC.",
+      "quotes": [
+        {
+          "row": [
+            "Continuous AC output power",
+            "8 kW continuous"
+          ],
+          "quote": "Nominal Power: 8 kW continuous (16 kW peak for 500 ms)"
+        },
+        {
+          "row": [
+            "Peak power",
+            "16 kW peak for 500 ms"
+          ],
+          "quote": "Nominal Power: 8 kW continuous (16 kW peak for 500 ms)"
+        },
+        {
+          "row": [
+            "AC output voltage",
+            "120/240V (AC)"
+          ],
+          "quote": "Nominal Voltage: 120/240V (AC), 48V (DC battery)"
+        },
+        {
+          "row": [
+            "Rated voltage",
+            "48V (DC battery)"
+          ],
+          "quote": "Nominal Voltage: 120/240V (AC), 48V (DC battery)"
+        },
+        {
+          "row": [
+            "Maximum PV input power",
+            "13000 W"
+          ],
+          "quote": "Max PV Input Power: 13,000 W"
+        },
+        {
+          "row": [
+            "Maximum efficiency",
+            "97.5% (PV to Grid)"
+          ],
+          "quote": "Max Efficiency (PV to Grid): 97.5%"
+        },
+        {
+          "row": [
+            "Operating voltage range",
+            "48–56 V (battery)"
+          ],
+          "quote": "Operating Voltage Range (Battery): 48–56 V"
+        },
+        {
+          "row": [
+            "Dimensions",
+            "580 × 490 × 265 mm (H×W×D)"
+          ],
+          "quote": "Dimensions (H×W×D): 580 × 490 × 265 mm"
+        },
+        {
+          "row": [
+            "Weight",
+            "44 kg (97 lb)"
+          ],
+          "quote": "Weight: 44 kg (97 lb)"
+        },
+        {
+          "row": [
+            "Protection rating",
+            "NEMA 4X / IP65"
+          ],
+          "quote": "Protection Rating: NEMA 4X / IP65"
+        },
+        {
+          "row": [
+            "Operating temperature",
+            "-25°C to 60°C (derating >40°C)"
+          ],
+          "quote": "Operating Temperature: -25°C to 60°C (derating >40°C)"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "maxPvWatts",
+        "label": "Maximum PV input power",
+        "value": "13000 W",
+        "source": "https://www.santansolar.com/product/fortress-power-envy-true-12kw-hybrid-solar-inverter-48v-3-mppt/",
+        "kind": "retailer"
+      },
+      {
+        "key": "outputWatts",
+        "label": "Rated AC output power",
+        "value": "8 kW continuous",
+        "source": "https://www.santansolar.com/product/fortress-power-envy-true-12kw-hybrid-solar-inverter-48v-3-mppt/",
+        "kind": "retailer"
+      },
+      {
+        "key": "surgeWatts",
+        "label": "Surge output (duration as published)",
+        "value": "16 kW peak for 500 ms",
+        "source": "https://www.santansolar.com/product/fortress-power-envy-true-12kw-hybrid-solar-inverter-48v-3-mppt/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-fp-duo21"
+    ],
+    "expected": {
+      "santan-solar-fp-duo21": {
+        "name": "Fortress Power Envy Duo 21 Inverter",
+        "sourceUrl": "https://www.santansolar.com/product/fortress-power-envy-duo-21-inverter/",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/fortress-power-envy-duo-21-inverter/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-05T03:15:53.037Z",
+    "label": "Batch twenty-g exact model contextual source review",
+    "rows": [
+      [
+        "Continuous AC output power",
+        "12 kW continuous"
+      ],
+      [
+        "AC output voltage",
+        "120/240V (AC)"
+      ],
+      [
+        "Rated voltage",
+        "48V (DC battery)"
+      ],
+      [
+        "Maximum PV input power",
+        "25000 W"
+      ],
+      [
+        "Maximum efficiency",
+        "97.5% (PV to Grid)"
+      ],
+      [
+        "Operating voltage range",
+        "40–60 V (battery)"
+      ],
+      [
+        "Dimensions",
+        "893×566×285 mm (H×W×D)"
+      ],
+      [
+        "Protection rating",
+        "NEMA 4X / IP66"
+      ],
+      [
+        "Operating temperature",
+        "-25°C to 60°C (derating >40°C)"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6ea0389e0d833f7a.html",
+      "htmlSha256": "74c1f0c751a60687f9d455206296507528b70f51702cdb73f00c6f6f27d78e9a",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6ea0389e0d833f7a.json",
+      "metadataSha256": "0862ea3f0b34ffa30bd189c67d3e6714e02618ce1b3266f61ab60e48b33c4b81",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Fortress Power Envy Duo 21 Inverter"
+        ],
+        "ogTitle": "Fortress Power Envy Duo 21 Inverter | SanTan Solar",
+        "selectedSku": "FP-DUO21",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/fortress-power-envy-duo-21-inverter/",
+        "visibleSku": "FP-DUO21"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact FP-DUO21 model.12kW continuous backup distinguished from16kW export orPVassistedpeak. All perdevice conditions retained.",
+      "quotes": [
+        {
+          "row": [
+            "Continuous AC output power",
+            "12 kW continuous"
+          ],
+          "quote": "Nominal Power: 12 kW continuous (16 kW peak with PV)"
+        },
+        {
+          "row": [
+            "AC output voltage",
+            "120/240V (AC)"
+          ],
+          "quote": "Nominal Voltage: 120/240V (AC), 48V (DC battery)"
+        },
+        {
+          "row": [
+            "Rated voltage",
+            "48V (DC battery)"
+          ],
+          "quote": "Nominal Voltage: 120/240V (AC), 48V (DC battery)"
+        },
+        {
+          "row": [
+            "Maximum PV input power",
+            "25000 W"
+          ],
+          "quote": "Max PV Input Power: 25,000 W"
+        },
+        {
+          "row": [
+            "Maximum efficiency",
+            "97.5% (PV to Grid)"
+          ],
+          "quote": "Max Efficiency (PV to Grid): 97.5%"
+        },
+        {
+          "row": [
+            "Operating voltage range",
+            "40–60 V (battery)"
+          ],
+          "quote": "Operating Voltage Range (Battery): 40–60 V"
+        },
+        {
+          "row": [
+            "Dimensions",
+            "893×566×285 mm (H×W×D)"
+          ],
+          "quote": "Dimensions (H×W×D): 893×566×285 mm"
+        },
+        {
+          "row": [
+            "Protection rating",
+            "NEMA 4X / IP66"
+          ],
+          "quote": "Protection Rating: NEMA 4X / IP66"
+        },
+        {
+          "row": [
+            "Operating temperature",
+            "-25°C to 60°C (derating >40°C)"
+          ],
+          "quote": "Operating Temperature: -25°C to 60°C (derating >40°C)"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "maxPvWatts",
+        "label": "Maximum PV input power",
+        "value": "25000 W",
+        "source": "https://www.santansolar.com/product/fortress-power-envy-duo-21-inverter/",
+        "kind": "retailer"
+      },
+      {
+        "key": "outputWatts",
+        "label": "Rated AC output power",
+        "value": "12 kW continuous",
+        "source": "https://www.santansolar.com/product/fortress-power-envy-duo-21-inverter/",
+        "kind": "retailer"
+      },
+      {
+        "key": "acOutput",
+        "label": "AC output voltage",
+        "value": "120/240V (AC)",
+        "source": "https://www.santansolar.com/product/fortress-power-envy-duo-21-inverter/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-iq8amicro"
+    ],
+    "expected": {
+      "santan-solar-iq8amicro": {
+        "name": "Enphase IQ8AC Microinverter",
+        "sourceUrl": "https://www.santansolar.com/product/enphase-iq8a-microinverter/",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/enphase-iq8a-microinverter/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-05T03:14:21.939Z",
+    "label": "Batch twenty-g exact model contextual source review",
+    "rows": [
+      [
+        "Maximum input voltage",
+        "60V"
+      ],
+      [
+        "MPPT voltage range",
+        "28-45V"
+      ],
+      [
+        "Enclosure rating",
+        "NEMA Type 6"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\413ce353436648e8.html",
+      "htmlSha256": "6c6bcaecb0b84ec1fb796f2190839a64b02608ece5c7a04eef5cd44a93d74cf7",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\413ce353436648e8.json",
+      "metadataSha256": "6508a19f25481ff0b79c148fc0706d043abaa7ae04f88c804bff1b9bc3608dc5",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Enphase IQ8AC Microinverter"
+        ],
+        "ogTitle": "Enphase IQ8AC Microinverter | SanTan Solar",
+        "selectedSku": "IQ8AMICRO",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/enphase-iq8a-microinverter/",
+        "visibleSku": "IQ8AMICRO"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact selected visible Enphase retailerSKU and modelheading. Short technical block reviewed separately from generic series narrative. No maximum watts or apparentVA converted into continuousW.",
+      "quotes": [
+        {
+          "row": [
+            "Maximum input voltage",
+            "60V"
+          ],
+          "quote": "Maximum Input Voltage: 60V"
+        },
+        {
+          "row": [
+            "MPPT voltage range",
+            "28-45V"
+          ],
+          "quote": "MPPT Voltage Range: 28-45V"
+        },
+        {
+          "row": [
+            "Enclosure rating",
+            "NEMA Type 6"
+          ],
+          "quote": "Enclosure Rating: NEMA Type 6"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "ipRating",
+        "label": "Ingress protection",
+        "value": "NEMA Type 6",
+        "source": "https://www.santansolar.com/product/enphase-iq8a-microinverter/",
+        "kind": "retailer"
+      },
+      {
+        "key": "maxPvVoltage",
+        "label": "Maximum PV input voltage",
+        "value": "60V",
+        "source": "https://www.santansolar.com/product/enphase-iq8a-microinverter/",
+        "kind": "retailer"
+      },
+      {
+        "key": "mpptVoltageRange",
+        "label": "MPPT voltage range",
+        "value": "28-45V",
+        "source": "https://www.santansolar.com/product/enphase-iq8a-microinverter/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-iq8mc"
+    ],
+    "expected": {
+      "santan-solar-iq8mc": {
+        "name": "Enphase IQ8MC Microinverter Integrated MC4",
+        "sourceUrl": "https://www.santansolar.com/product/enphase-iq8m-microinverter-integrated-mc4/",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/enphase-iq8m-microinverter-integrated-mc4/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-05T03:14:23.952Z",
+    "label": "Batch twenty-g exact model contextual source review",
+    "rows": [
+      [
+        "Maximum input voltage",
+        "60V"
+      ],
+      [
+        "MPPT voltage range",
+        "25-45V"
+      ],
+      [
+        "Enclosure rating",
+        "NEMA Type 6; Outdoor"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\1e3e2123ba8b4b16.html",
+      "htmlSha256": "d88ff84afe7aa5b9463f660b70a6f7a0d488e24ea572400c1db9089dfca3cb79",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\1e3e2123ba8b4b16.json",
+      "metadataSha256": "079ba98c476ad026954ec06e3b8bdbce7c90dd9034aa0ea0747dd81b69c28556",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Enphase IQ8MC Microinverter Integrated MC4"
+        ],
+        "ogTitle": "Enphase IQ8MC Microinverter Integrated MC4 | SanTan Solar",
+        "selectedSku": "IQ8MC",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/enphase-iq8m-microinverter-integrated-mc4/",
+        "visibleSku": "IQ8MC"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact selected visible Enphase retailerSKU and modelheading. Short technical block reviewed separately from generic series narrative. No maximum watts or apparentVA converted into continuousW.",
+      "quotes": [
+        {
+          "row": [
+            "Maximum input voltage",
+            "60V"
+          ],
+          "quote": "Maximum Input Voltage: 60V"
+        },
+        {
+          "row": [
+            "MPPT voltage range",
+            "25-45V"
+          ],
+          "quote": "MPPT Voltage Range: 25-45V"
+        },
+        {
+          "row": [
+            "Enclosure rating",
+            "NEMA Type 6; Outdoor"
+          ],
+          "quote": "Enclosure Rating: NEMA Type 6; Outdoor"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "maxPvVoltage",
+        "label": "Maximum PV input voltage",
+        "value": "60V",
+        "source": "https://www.santansolar.com/product/enphase-iq8m-microinverter-integrated-mc4/",
+        "kind": "retailer"
+      },
+      {
+        "key": "mpptVoltageRange",
+        "label": "MPPT voltage range",
+        "value": "25-45V",
+        "source": "https://www.santansolar.com/product/enphase-iq8m-microinverter-integrated-mc4/",
+        "kind": "retailer"
+      },
+      {
+        "key": "ipRating",
+        "label": "Ingress protection",
+        "value": "NEMA Type 6; Outdoor",
+        "source": "https://www.santansolar.com/product/enphase-iq8m-microinverter-integrated-mc4/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-iq8hc"
+    ],
+    "expected": {
+      "santan-solar-iq8hc": {
+        "name": "Enphase IQ8HC Microinverter Integrated MC4",
+        "sourceUrl": "https://www.santansolar.com/product/enphase-iq8hc-microinverter-integrated-mc4/",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/enphase-iq8hc-microinverter-integrated-mc4/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-05T03:14:25.934Z",
+    "label": "Batch twenty-g exact model contextual source review",
+    "rows": [
+      [
+        "Maximum input voltage",
+        "60V"
+      ],
+      [
+        "MPPT voltage range",
+        "29.5–45V"
+      ],
+      [
+        "Enclosure rating",
+        "NEMA Type 6; outdoor"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\03720b695c102793.html",
+      "htmlSha256": "14d3f6f2224e87493ad72e84457a0645700ea443eca012d331bbaa4ec27b923b",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\03720b695c102793.json",
+      "metadataSha256": "5a161352b2a7adc6e459758a2acaaa8450f93406037be95148523392f4510851",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Enphase IQ8HC Microinverter Integrated MC4"
+        ],
+        "ogTitle": "Enphase IQ8HC Microinverter Integrated MC4 | SanTan Solar",
+        "selectedSku": "IQ8HC",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/enphase-iq8hc-microinverter-integrated-mc4/",
+        "visibleSku": "IQ8HC"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact selected visible Enphase retailerSKU and modelheading. Short technical block reviewed separately from generic series narrative. No maximum watts or apparentVA converted into continuousW.",
+      "quotes": [
+        {
+          "row": [
+            "Maximum input voltage",
+            "60V"
+          ],
+          "quote": "Maximum Input Voltage: 60V"
+        },
+        {
+          "row": [
+            "MPPT voltage range",
+            "29.5–45V"
+          ],
+          "quote": "MPPT Voltage Range: 29.5–45V"
+        },
+        {
+          "row": [
+            "Enclosure rating",
+            "NEMA Type 6; outdoor"
+          ],
+          "quote": "Enclosure Rating: NEMA Type 6; outdoor"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "maxPvVoltage",
+        "label": "Maximum PV input voltage",
+        "value": "60V",
+        "source": "https://www.santansolar.com/product/enphase-iq8hc-microinverter-integrated-mc4/",
+        "kind": "retailer"
+      },
+      {
+        "key": "mpptVoltageRange",
+        "label": "MPPT voltage range",
+        "value": "29.5–45V",
+        "source": "https://www.santansolar.com/product/enphase-iq8hc-microinverter-integrated-mc4/",
+        "kind": "retailer"
+      },
+      {
+        "key": "ipRating",
+        "label": "Ingress protection",
+        "value": "NEMA Type 6; outdoor",
+        "source": "https://www.santansolar.com/product/enphase-iq8hc-microinverter-integrated-mc4/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-iq8"
+    ],
+    "expected": {
+      "santan-solar-iq8": {
+        "name": "Enphase IQ8+ Microinverter",
+        "sourceUrl": "https://www.santansolar.com/product/enphase-iq8-microinverter-2/",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/enphase-iq8-microinverter-2/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-05T03:14:27.942Z",
+    "label": "Batch twenty-g exact model contextual source review",
+    "rows": [
+      [
+        "Maximum input voltage",
+        "60V"
+      ],
+      [
+        "MPPT voltage range",
+        "27-45V"
+      ],
+      [
+        "Enclosure rating",
+        "NEMA Type 6/outdoor"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\aae30c770ab0f0f6.html",
+      "htmlSha256": "e46e20f27930a631a9916da5cee03b3ea6c37bae7c98920a182c79c662209a31",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\aae30c770ab0f0f6.json",
+      "metadataSha256": "ca6d44227b50eb6d9677529ffa432947089c1cdca28a56ebcca769731a92f976",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Enphase IQ8+ Microinverter"
+        ],
+        "ogTitle": "Enphase IQ8+ Microinverter | SanTan Solar",
+        "selectedSku": "IQ8+",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/enphase-iq8-microinverter-2/",
+        "visibleSku": "IQ8+"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact selected visible Enphase retailerSKU and modelheading. Short technical block reviewed separately from generic series narrative. No maximum watts or apparentVA converted into continuousW.",
+      "quotes": [
+        {
+          "row": [
+            "Maximum input voltage",
+            "60V"
+          ],
+          "quote": "Maximum Input Voltage: 60V"
+        },
+        {
+          "row": [
+            "MPPT voltage range",
+            "27-45V"
+          ],
+          "quote": "MPPT Voltage Range: 27-45V"
+        },
+        {
+          "row": [
+            "Enclosure rating",
+            "NEMA Type 6/outdoor"
+          ],
+          "quote": "Enclosure Rating: NEMA Type 6/outdoor"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "maxPvVoltage",
+        "label": "Maximum PV input voltage",
+        "value": "60V",
+        "source": "https://www.santansolar.com/product/enphase-iq8-microinverter-2/",
+        "kind": "retailer"
+      },
+      {
+        "key": "mpptVoltageRange",
+        "label": "MPPT voltage range",
+        "value": "27-45V",
+        "source": "https://www.santansolar.com/product/enphase-iq8-microinverter-2/",
+        "kind": "retailer"
+      },
+      {
+        "key": "ipRating",
+        "label": "Ingress protection",
+        "value": "NEMA Type 6/outdoor",
+        "source": "https://www.santansolar.com/product/enphase-iq8-microinverter-2/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-qua483150000"
+    ],
+    "expected": {
+      "santan-solar-qua483150000": {
+        "name": "Victron Quattro 48/15000/200-100/100 230V",
+        "sourceUrl": "https://www.santansolar.com/product/victron-quattro-48-15000-200-100-100-230v/",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/victron-quattro-48-15000-200-100-100-230v/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:28:16.776Z",
+    "label": "Batch twenty-g exact model contextual source review",
+    "rows": [
+      [
+        "Operating voltage range",
+        "38 to 66 Volt DC"
+      ],
+      [
+        "Warranty",
+        "5 year warranty"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6fc86cba9ddd5525.html",
+      "htmlSha256": "3d115ba434ad7bd4e7cad33dff397344731e73b93e73a9e6ac04b5aa44465ac7",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6fc86cba9ddd5525.json",
+      "metadataSha256": "bbf566351ef9885f665d94bfe15468499e5f9d7f250f9eefcd2d31b72584293d",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "Victron Quattro 48/15000/200-100/100 230V"
+        ],
+        "ogTitle": "Victron Quattro 48/15000/200-100/100 230V | SanTan Solar",
+        "selectedSku": "QUA483150000",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/victron-quattro-48-15000-200-100-100-230v/",
+        "visibleSku": "QUA483150000"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact QUA483150000230V model, single-unit default230V50Hz vs programmed240V60Hz explicitly distinguished. Battery/DCinputrange stated.",
+      "quotes": [
+        {
+          "row": [
+            "Operating voltage range",
+            "38 to 66 Volt DC"
+          ],
+          "quote": "Input Voltage range: 38 to 66 Volt DC"
+        },
+        {
+          "row": [
+            "Warranty",
+            "5 year warranty"
+          ],
+          "quote": "5 year warranty"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "operatingVoltage",
+        "label": "Operating voltage range",
+        "value": "38 to 66 Volt DC",
+        "source": "https://www.santansolar.com/product/victron-quattro-48-15000-200-100-100-230v/",
+        "kind": "retailer"
+      },
+      {
+        "key": "warranty",
+        "label": "Product warranty",
+        "value": "5 year warranty",
+        "source": "https://www.santansolar.com/product/victron-quattro-48-15000-200-100-100-230v/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-rx-12k"
+    ],
+    "expected": {
+      "santan-solar-rx-12k": {
+        "name": "RUiXU Split Phase Hybrid Inverter | 11.4KW Output | 17.1KW PV INPUT | RX-12K | UL1741",
+        "sourceUrl": "https://www.santansolar.com/product/ruixu-split-phase-hybrid-inverter-11-4kw-output-17-1kw-pv-input-rx-12k-ul1741/",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/ruixu-split-phase-hybrid-inverter-11-4kw-output-17-1kw-pv-input-rx-12k-ul1741/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-05T03:16:07.267Z",
+    "label": "Batch twenty-g exact model contextual source review",
+    "rows": [
+      [
+        "Nominal battery voltage",
+        "48V"
+      ],
+      [
+        "AC output voltage",
+        "120/240V single unit or120/208 service operation"
+      ],
+      [
+        "Protection rating",
+        "IP65 (indoor and outdoor installation)"
+      ],
+      [
+        "Battery support",
+        "Lithium battery and lead acid battery"
+      ],
+      [
+        "Protection functions",
+        "Rapid shutdown function"
+      ],
+      [
+        "Warranty",
+        "10 Year Warranty"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\078420e654ccbc64.html",
+      "htmlSha256": "8f652f2ed9a82cf2412baed12d639d174ffbb8687c32a6dd1cb2497106522287",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\078420e654ccbc64.json",
+      "metadataSha256": "055d25b006d5de7397f9e9427de6be47027409e9d559f6f3d9c847f402cc7316",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "RUiXU Split Phase Hybrid Inverter | 11.4KW Output | 17.1KW PV INPUT | RX-12K | UL1741"
+        ],
+        "ogTitle": "RUiXU Split Phase Hybrid Inverter | 11.4KW Output | 17.1KW PV INPUT | RX-12K | UL1741 | SanTan Solar",
+        "selectedSku": "RX-12K",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/ruixu-split-phase-hybrid-inverter-11-4kw-output-17-1kw-pv-input-rx-12k-ul1741/",
+        "visibleSku": "RX-12K"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact RX-12K single inverter; model-specific body distinguished from10kW teaser. No includedbattery assumed.",
+      "quotes": [
+        {
+          "row": [
+            "Nominal battery voltage",
+            "48V"
+          ],
+          "quote": "battery input 48V flexible battery configuration"
+        },
+        {
+          "row": [
+            "AC output voltage",
+            "120/240V single unit or120/208 service operation"
+          ],
+          "quote": "Allows for 120/240V single unit or 120/208 service operation"
+        },
+        {
+          "row": [
+            "Protection rating",
+            "IP65 (indoor and outdoor installation)"
+          ],
+          "quote": "IP65 protection,support indoor and outdoor installlation."
+        },
+        {
+          "row": [
+            "Battery support",
+            "Lithium battery and lead acid battery"
+          ],
+          "quote": "Lithium battery and lead acid battery compatibility"
+        },
+        {
+          "row": [
+            "Protection functions",
+            "Rapid shutdown function"
+          ],
+          "quote": "RAPID SHUTDOWN FUNCTION"
+        },
+        {
+          "row": [
+            "Warranty",
+            "10 Year Warranty"
+          ],
+          "quote": "10 Year Warranty"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "voltage",
+        "label": "Nominal voltage",
+        "value": "48V",
+        "source": "https://www.santansolar.com/product/ruixu-split-phase-hybrid-inverter-11-4kw-output-17-1kw-pv-input-rx-12k-ul1741/",
+        "kind": "retailer"
+      },
+      {
+        "key": "protections",
+        "label": "Protection functions",
+        "value": "Rapid shutdown function",
+        "source": "https://www.santansolar.com/product/ruixu-split-phase-hybrid-inverter-11-4kw-output-17-1kw-pv-input-rx-12k-ul1741/",
+        "kind": "retailer"
+      },
+      {
+        "key": "acOutput",
+        "label": "AC output voltage",
+        "value": "120/240V single unit or120/208 service operation",
+        "source": "https://www.santansolar.com/product/ruixu-split-phase-hybrid-inverter-11-4kw-output-17-1kw-pv-input-rx-12k-ul1741/",
+        "kind": "retailer"
+      },
+      {
+        "key": "compatibility",
+        "label": "Supported equipment / fit",
+        "value": "Lithium battery and lead acid battery",
+        "source": "https://www.santansolar.com/product/ruixu-split-phase-hybrid-inverter-11-4kw-output-17-1kw-pv-input-rx-12k-ul1741/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-cs6w-535mb-ag-t6-n-b"
+    ],
+    "expected": {
+      "santan-solar-cs6w-535mb-ag-t6-n-b": {
+        "name": "New Grade B Canadian Solar 535W Bifacial Solar Panel",
+        "sourceUrl": "https://www.santansolar.com/product/new-grade-b-canadian-solar-535w-bifacial-solar-panel/",
+        "category": "panels",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/new-grade-b-canadian-solar-535w-bifacial-solar-panel/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-05T03:12:59.234Z",
+    "label": "Batch twenty-g exact model contextual source review",
+    "rows": [
+      [
+        "Manufacturer warranty",
+        "10 year MFG Warranty"
+      ],
+      [
+        "Connector",
+        "T6"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d0dadd941bf196bf.html",
+      "htmlSha256": "8e93ab7886818f86c0ba1db22faf1856929ab7aac23f6e278f9de9dc4da054a5",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d0dadd941bf196bf.json",
+      "metadataSha256": "e527e8390f587e8852e8a69fe5531fb12f7fa4311bd26025fb9df33dee22ddaa",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "New Grade B Canadian Solar 535W Bifacial Solar Panel"
+        ],
+        "ogTitle": "New Grade B Canadian Solar 535W Bifacial Solar Panel | SanTan Solar",
+        "selectedSku": "CS6W-535MB-AG-T6-N-B",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/new-grade-b-canadian-solar-535w-bifacial-solar-panel/",
+        "visibleSku": "CS6W-535MB-AG-T6-N-B"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact GradeB Canadian Solar selected wattage/revision SKU. Source-body warranty explicitly10years; T6 only where description explicitlystates connector, not inferred fromSKU.",
+      "quotes": [
+        {
+          "row": [
+            "Manufacturer warranty",
+            "10 year MFG Warranty"
+          ],
+          "quote": "10 year MFG Warranty"
+        },
+        {
+          "row": [
+            "Connector",
+            "T6"
+          ],
+          "quote": "10 year MFG Warranty, T6 connectors"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "connector",
+        "label": "Connector / terminal",
+        "value": "T6",
+        "source": "https://www.santansolar.com/product/new-grade-b-canadian-solar-535w-bifacial-solar-panel/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-cs6w-525mb-ag-t6-n-b"
+    ],
+    "expected": {
+      "santan-solar-cs6w-525mb-ag-t6-n-b": {
+        "name": "New Grade B Canadian Solar 525W Bifacial Solar Panel",
+        "sourceUrl": "https://www.santansolar.com/product/new-grade-b-canadian-solar-525w-bifacial-solar-panel/",
+        "category": "panels",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/new-grade-b-canadian-solar-525w-bifacial-solar-panel/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-05T03:13:01.253Z",
+    "label": "Batch twenty-g exact model contextual source review",
+    "rows": [
+      [
+        "Manufacturer warranty",
+        "10 year MFG Warranty"
+      ],
+      [
+        "Connector",
+        "T6"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\f78fc1047c58d881.html",
+      "htmlSha256": "6e606fe9003f3e46c1943cbd389773822424851bf0681b9cee973cf8238699a5",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\f78fc1047c58d881.json",
+      "metadataSha256": "9e731e65b24ab3742de45d9253dfc6f7b414e2dac3a2a428000920d5dfcbe442",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "New Grade B Canadian Solar 525W Bifacial Solar Panel"
+        ],
+        "ogTitle": "New Grade B Canadian Solar 525W Bifacial Solar Panel | SanTan Solar",
+        "selectedSku": "CS6W-525MB-AG-T6-N-B",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/new-grade-b-canadian-solar-525w-bifacial-solar-panel/",
+        "visibleSku": "CS6W-525MB-AG-T6-N-B"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact GradeB Canadian Solar selected wattage/revision SKU. Source-body warranty explicitly10years; T6 only where description explicitlystates connector, not inferred fromSKU.",
+      "quotes": [
+        {
+          "row": [
+            "Manufacturer warranty",
+            "10 year MFG Warranty"
+          ],
+          "quote": "10 year MFG Warranty"
+        },
+        {
+          "row": [
+            "Connector",
+            "T6"
+          ],
+          "quote": "10 year MFG Warranty – T6 Connectors"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "connector",
+        "label": "Connector / terminal",
+        "value": "T6",
+        "source": "https://www.santansolar.com/product/new-grade-b-canadian-solar-525w-bifacial-solar-panel/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "santan-solar-tmr500-mr500-rc-us"
+    ],
+    "expected": {
+      "santan-solar-tmr500-mr500-rc-us": {
+        "name": "EcoFlow DELTA Pro + 1*Remote Control",
+        "sourceUrl": "https://www.santansolar.com/product/delta-pro-1remote-control/",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://www.santansolar.com/product/delta-pro-1remote-control/",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:29:39.366Z",
+    "label": "Batch twenty-g exact model contextual source review",
+    "rows": [
+      [
+        "Capacity",
+        "3600Wh"
+      ],
+      [
+        "Battery Chemistry",
+        "LFP"
+      ],
+      [
+        "AC Charging Input",
+        "1800W Max, 120V~15A; 3000W Max, 240V~12.5A"
+      ],
+      [
+        "Communications",
+        "Wi-Fi, Bluetooth"
+      ],
+      [
+        "Dimension",
+        "25*11.2*16.4 in/63.5*28.4*42cm"
+      ],
+      [
+        "Manufacturer warranty",
+        "2-year MFG Warranty"
+      ]
+    ],
+    "reviewStatus": "author_context_review_complete_pending_independent_review",
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d792596869547b97.html",
+      "htmlSha256": "f4080b5d1d37fb560115369fa29a132462135ffadb7510d085c85b5780ad655b",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d792596869547b97.json",
+      "metadataSha256": "f678ef6f72b9f4384aa3fe9bdcd4e42bfca15d79e44e4abb19578b508255ef7e",
+      "completeSourceInspectionPath": "C:/Users/fahad/OneDrive/Documents/ChatGPT/pvpartpicker/output/specification-research/batch-twenty-full-source-inspection.json",
+      "identity": {
+        "titleMatch": true,
+        "headings": [
+          "EcoFlow DELTA Pro + 1*Remote Control"
+        ],
+        "ogTitle": "EcoFlow DELTA Pro + 1*Remote Control | SanTan Solar",
+        "selectedSku": "TMR500-MR500-RC-US",
+        "selectedPackQuantity": 1,
+        "variant": null,
+        "variantExact": false,
+        "sourceUrl": "https://www.santansolar.com/product/delta-pro-1remote-control/",
+        "visibleSku": "TMR500-MR500-RC-US"
+      },
+      "selectedPackQuantity": 1,
+      "scope": "Exact TMR500-MR500-RC-US single DELTA Pro withoneRemoteControl. Built-in capacity distinctfrom3.6–25kWhexpansion. Detailed charginglimits retain120V and240V inputconditions.",
+      "quotes": [
+        {
+          "row": [
+            "Capacity",
+            "3600Wh"
+          ],
+          "quote": "Capacity: 3600Wh"
+        },
+        {
+          "row": [
+            "Battery Chemistry",
+            "LFP"
+          ],
+          "quote": "Battery Chemistry: LFP"
+        },
+        {
+          "row": [
+            "AC Charging Input",
+            "1800W Max, 120V~15A; 3000W Max, 240V~12.5A"
+          ],
+          "quote": "AC Charging Input: 1800W Max, 120V~15A, 3000W Max, 240V~12.5A"
+        },
+        {
+          "row": [
+            "Communications",
+            "Wi-Fi, Bluetooth"
+          ],
+          "quote": "Connection: Wi-Fi, Bluetooth"
+        },
+        {
+          "row": [
+            "Dimension",
+            "25*11.2*16.4 in/63.5*28.4*42cm"
+          ],
+          "quote": "Dimension: 25*11.2*16.4 in/63.5*28.4*42cm"
+        },
+        {
+          "row": [
+            "Manufacturer warranty",
+            "2-year MFG Warranty"
+          ],
+          "quote": "2-year MFG Warranty"
+        }
+      ],
+      "sourceScriptsExecuted": false,
+      "independentReviewRequired": true
+    },
+    "provisionalNewFields": [
+      {
+        "key": "acChargeWatts",
+        "label": "AC charging input",
+        "value": "1800W Max, 120V~15A; 3000W Max, 240V~12.5A",
+        "source": "https://www.santansolar.com/product/delta-pro-1remote-control/",
+        "kind": "retailer"
+      },
+      {
+        "key": "communications",
+        "label": "Communications",
+        "value": "Wi-Fi, Bluetooth",
+        "source": "https://www.santansolar.com/product/delta-pro-1remote-control/",
+        "kind": "retailer"
+      },
+      {
+        "key": "warranty",
+        "label": "Product warranty",
+        "value": "2-year MFG Warranty",
+        "source": "https://www.santansolar.com/product/delta-pro-1remote-control/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "shopsolar-19937635631215"
+    ],
+    "expected": {
+      "shopsolar-19937635631215": {
+        "name": "Goal Zero Yeti 1400 Lithium Portable Power Station With Wifi | Solar Generator",
+        "sourceUrl": "https://shopsolarkits.com/products/goal-zero-yeti-1400-lithium-portable-power-station-with-wifi?variant=19937635631215",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://shopsolarkits.com/products/goal-zero-yeti-1400-lithium-portable-power-station-with-wifi?variant=19937635631215",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:32.562Z",
+    "label": "Retailer product specifications",
+    "rows": [
+      [
+        "Cycle life",
+        "500 cycles to 80% capacity (Discharge rate: 1C, Full charge/discharge, Temp: 25C)"
+      ],
+      [
+        "Operating temperature",
+        "32-104F (0-40 C)"
+      ],
+      [
+        "Warranty",
+        "12 months"
+      ]
+    ],
+    "reviewStatus": "contextually_reviewed_pending_independent_review",
+    "sourceScope": "Exact single Goal Zero Yeti 38300 listing. AC outputs separated from DC ports and input ratings; cell equivalent Ah excluded. Weight and dimension physical scopes retained. No surge duration inferred.",
+    "selectedOfferProof": [
+      {
+        "id": "shopsolar-19937635631215",
+        "retailerId": "shopsolar",
+        "retailer": "ShopSolar",
+        "url": "https://shopsolarkits.com/products/goal-zero-yeti-1400-lithium-portable-power-station-with-wifi?variant=19937635631215",
+        "price": 1799.99,
+        "currency": "USD",
+        "packQuantity": 1,
+        "stock": "out_of_stock",
+        "observedAt": "2026-10-12T22:49:28.653Z",
+        "sku": "19937635631215",
+        "condition": "new"
+      }
+    ],
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\711cb89e039bf6df.html",
+      "htmlSha256": "359a521b02818c8d741ffca34e905f109ed3cda9e71eda0e0cf2ca48d14ceea3",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\711cb89e039bf6df.json",
+      "metadataSha256": "b493d72a639ca2b4af86d7bdfda94714c28f26b809fa80425cd38d032b3ae69a",
+      "quotes": [
+        {
+          "quote": "Cell Chemistry: Li-ion NMC",
+          "supports": "Battery chemistry"
+        },
+        {
+          "quote": "120V AC inverter (output, pure sine wave): 120VAC, 60hZ, 12.5A (1500W, 3000W surge) Charging Port (input, 8mm): 14-22V, up to 10A (120W max) Power Pole Charging Port (inp",
+          "supports": "AC output/frequency/power"
+        },
+        {
+          "quote": "500 cycles to 80% capacity (Discharge rate: 1C, Full charge/discharge, Temp: 25C)",
+          "supports": "Cycle life"
+        },
+        {
+          "quote": "32-104F (0-40 C)",
+          "supports": "Operating temperature"
+        },
+        {
+          "quote": "43.7 lbs (19.8 kg)",
+          "supports": "Weight"
+        },
+        {
+          "quote": "Warranty: 12 Months",
+          "supports": "Warranty"
+        }
+      ]
+    },
+    "provisionalNewFields": [
+      {
+        "key": "cycleLife",
+        "label": "Cycle life (manufacturer conditions)",
+        "value": "500 cycles to 80% capacity (Discharge rate: 1C, Full charge/discharge, Temp: 25C)",
+        "source": "https://shopsolarkits.com/products/goal-zero-yeti-1400-lithium-portable-power-station-with-wifi?variant=19937635631215",
+        "kind": "retailer"
+      },
+      {
+        "key": "operatingTemperature",
+        "label": "Operating temperature",
+        "value": "32-104F (0-40 C)",
+        "source": "https://shopsolarkits.com/products/goal-zero-yeti-1400-lithium-portable-power-station-with-wifi?variant=19937635631215",
+        "kind": "retailer"
+      },
+      {
+        "key": "warranty",
+        "label": "Product warranty",
+        "value": "12 months",
+        "source": "https://shopsolarkits.com/products/goal-zero-yeti-1400-lithium-portable-power-station-with-wifi?variant=19937635631215",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "shopsolar-19937471922287"
+    ],
+    "expected": {
+      "shopsolar-19937471922287": {
+        "name": "Goal Zero Yeti 1000 Lithium Portable Power Station",
+        "sourceUrl": "https://shopsolarkits.com/products/goal-zero-yeti-1000-lithium-portable-power-station?variant=19937471922287",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://shopsolarkits.com/products/goal-zero-yeti-1000-lithium-portable-power-station?variant=19937471922287",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:30.536Z",
+    "label": "Retailer product specifications",
+    "rows": [
+      [
+        "Cycle life",
+        "500 Cycles to 80% capacity (Discharge: 1C, Full charge/discharge, Temp 25C)"
+      ],
+      [
+        "Operating temperature",
+        "32-104 F (0-40 C)"
+      ],
+      [
+        "Warranty",
+        "12 months"
+      ]
+    ],
+    "reviewStatus": "contextually_reviewed_pending_independent_review",
+    "sourceScope": "Exact single Goal Zero Yeti 38004 listing. AC outputs separated from DC ports and input ratings; cell equivalent Ah excluded. Weight and dimension physical scopes retained. No surge duration inferred.",
+    "selectedOfferProof": [
+      {
+        "id": "shopsolar-19937471922287",
+        "retailerId": "shopsolar",
+        "retailer": "ShopSolar",
+        "url": "https://shopsolarkits.com/products/goal-zero-yeti-1000-lithium-portable-power-station?variant=19937471922287",
+        "price": 1199,
+        "currency": "USD",
+        "packQuantity": 1,
+        "stock": "out_of_stock",
+        "observedAt": "2026-10-12T22:49:28.656Z",
+        "sku": "19937471922287",
+        "condition": "new"
+      }
+    ],
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\41b2f03310595042.html",
+      "htmlSha256": "014d1a93452118c7b2d9bdd4284f0c9aa03b8a25113332070f35ed041bb652fa",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\41b2f03310595042.json",
+      "metadataSha256": "73316e4c5c2a4e628782518ca977e05356fac9343bb0dfae62d574c139cec5a3",
+      "quotes": [
+        {
+          "quote": "Cell Chemistry: Li-ion NMC",
+          "supports": "Battery chemistry"
+        },
+        {
+          "quote": "AC inverter (output, pure sine wave): 120VAC 60Hz, 12.5A (1500W, 3000W surge) Charging port (input, 8mm): 14-22V, up to 10A (120W max) Power Pole Charging port (input): 1",
+          "supports": "AC output/frequency/power"
+        },
+        {
+          "quote": "500 Cycles to 80% capacity (Discharge: 1C, Full charge/discharge, Temp 25C)",
+          "supports": "Cycle life"
+        },
+        {
+          "quote": "32-104 F (0-40 C)",
+          "supports": "Operating temperature"
+        },
+        {
+          "quote": "40 lbs (18.1 kg)",
+          "supports": "Weight"
+        },
+        {
+          "quote": "Warranty: 12 Months",
+          "supports": "Warranty"
+        }
+      ]
+    },
+    "provisionalNewFields": [
+      {
+        "key": "cycleLife",
+        "label": "Cycle life (manufacturer conditions)",
+        "value": "500 Cycles to 80% capacity (Discharge: 1C, Full charge/discharge, Temp 25C)",
+        "source": "https://shopsolarkits.com/products/goal-zero-yeti-1000-lithium-portable-power-station?variant=19937471922287",
+        "kind": "retailer"
+      },
+      {
+        "key": "operatingTemperature",
+        "label": "Operating temperature",
+        "value": "32-104 F (0-40 C)",
+        "source": "https://shopsolarkits.com/products/goal-zero-yeti-1000-lithium-portable-power-station?variant=19937471922287",
+        "kind": "retailer"
+      },
+      {
+        "key": "warranty",
+        "label": "Product warranty",
+        "value": "12 months",
+        "source": "https://shopsolarkits.com/products/goal-zero-yeti-1000-lithium-portable-power-station?variant=19937471922287",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "productIds": [
+      "shopsolar-19937660403823"
+    ],
+    "expected": {
+      "shopsolar-19937660403823": {
+        "name": "Goal Zero Yeti 3000 Lithium Portable Power Station With Wifi",
+        "sourceUrl": "https://shopsolarkits.com/products/goal-zero-yeti-3000-lithium-portable-power-station-with-wifi?variant=19937660403823",
+        "category": "all-in-one",
+        "anchors": {}
+      }
+    },
+    "url": "https://shopsolarkits.com/products/goal-zero-yeti-3000-lithium-portable-power-station-with-wifi?variant=19937660403823",
+    "kind": "retailer",
+    "checkedAt": "2026-10-12T01:24:34.301Z",
+    "label": "Retailer product specifications",
+    "rows": [
+      [
+        "Cycle life",
+        "500 Cycles to 80% capacity (Discharge rate: 1C, Full charge/discharge, Temp: 25C)"
+      ],
+      [
+        "Operating temperature",
+        "32-104 F (0-40 C)"
+      ],
+      [
+        "Warranty",
+        "12 months"
+      ]
+    ],
+    "reviewStatus": "contextually_reviewed_pending_independent_review",
+    "sourceScope": "Exact single Goal Zero Yeti 38400 listing. AC outputs separated from DC ports and input ratings; cell equivalent Ah excluded. Weight and dimension physical scopes retained. No surge duration inferred.",
+    "selectedOfferProof": [
+      {
+        "id": "shopsolar-19937660403823",
+        "retailerId": "shopsolar",
+        "retailer": "ShopSolar",
+        "url": "https://shopsolarkits.com/products/goal-zero-yeti-3000-lithium-portable-power-station-with-wifi?variant=19937660403823",
+        "price": 2999.95,
+        "currency": "USD",
+        "packQuantity": 1,
+        "stock": "out_of_stock",
+        "observedAt": "2026-10-12T22:49:28.556Z",
+        "sku": "19937660403823",
+        "condition": "new"
+      }
+    ],
+    "sourceProof": {
+      "htmlPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\1c14163137be7819.html",
+      "htmlSha256": "9e9374f7528ec3164e6aa545aef80d7c75a609a9e176f801971d8b15b2f01862",
+      "metadataPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\1c14163137be7819.json",
+      "metadataSha256": "6786605875d11bae4d108fdb44141282d3489fbb5c2f4767ea52d90e8626a64b",
+      "quotes": [
+        {
+          "quote": "Cell chemistry: Li-ion NMC",
+          "supports": "Battery chemistry"
+        },
+        {
+          "quote": "120V AC Inverter: 120VAC 60Hz, 12.5A (1500W, 3000W surge) (output, pure sine wave) Charging port (input, 8mm): 14-22V, up to 10A (120W max) Power Pole charging port (inpu",
+          "supports": "AC output/frequency/power"
+        },
+        {
+          "quote": "500 Cycles to 80% capacity (Discharge rate: 1C, Full charge/discharge, Temp: 25C)",
+          "supports": "Cycle life"
+        },
+        {
+          "quote": "32-104 F (0-40 C)",
+          "supports": "Operating temperature"
+        },
+        {
+          "quote": "68.6 lbs (31.1 kg)",
+          "supports": "Weight"
+        },
+        {
+          "quote": "Warranty 12 months",
+          "supports": "Warranty"
+        }
+      ]
+    },
+    "provisionalNewFields": [
+      {
+        "key": "cycleLife",
+        "label": "Cycle life (manufacturer conditions)",
+        "value": "500 Cycles to 80% capacity (Discharge rate: 1C, Full charge/discharge, Temp: 25C)",
+        "source": "https://shopsolarkits.com/products/goal-zero-yeti-3000-lithium-portable-power-station-with-wifi?variant=19937660403823",
+        "kind": "retailer"
+      },
+      {
+        "key": "operatingTemperature",
+        "label": "Operating temperature",
+        "value": "32-104 F (0-40 C)",
+        "source": "https://shopsolarkits.com/products/goal-zero-yeti-3000-lithium-portable-power-station-with-wifi?variant=19937660403823",
+        "kind": "retailer"
+      },
+      {
+        "key": "warranty",
+        "label": "Product warranty",
+        "value": "12 months",
+        "source": "https://shopsolarkits.com/products/goal-zero-yeti-3000-lithium-portable-power-station-with-wifi?variant=19937660403823",
+        "kind": "retailer"
+      }
+    ]
   }
 ]

@@ -1,0 +1,599 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-13T03:32:01.094Z",
+  "reviewSha256": "f0697d73a887625d7b0d90d13993fd33eb2c803ea5fdbed7aa9a7f93ce3d2b15",
+  "baselineSha256": "81e488efc3c05ad5c761c7aa4a73e1fe357c42b07cfd9ef5d182959f14e8e2ad",
+  "outputSha256": "566837b07de1823ea9f0a06c8fbcc3d9ee1201d51e7cfd16761e9381059b79f4",
+  "sourceApprovals": [
+    {
+      "candidateName": "batch-twenty-e-candidates.json",
+      "candidateSha256": "7690e69b2b637b31ad7e57b81b60a91e37dd79abd68abf571ca1daa3604632f5",
+      "reviewName": "review-batch-twenty-e-sources.json",
+      "reviewSha256": "0c37ce26fa6a538c7e2a1e6809559672484c3333d560d79d95b68d139ad6d43a",
+      "approvedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "candidateName": "batch-twenty-f-v2-candidates.json",
+      "candidateSha256": "5c4a3ceb1afe8cf7d1785d28d622d8d9f0a67c0bc53fa76ad6e9ffbbcf3637ac",
+      "reviewName": "review-batch-twenty-f-v2-sources.json",
+      "reviewSha256": "ad08c1a8cffa7af54567ac60ed4035065e37fb95d3e9e680f58e3511ea7b5bc7",
+      "approvedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "candidateName": "batch-twenty-g-candidates.json",
+      "candidateSha256": "ed4d596b31d7dfb2e13931277fc84283c80235b8bd61698a7bb6da742b7ade91",
+      "reviewName": "review-batch-twenty-g-sources.json",
+      "reviewSha256": "c6c6ba3b01a64106117d8ab2b6644e216d7ded69a06bd5a346f527a8721a7f82",
+      "approvedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "candidateName": "batch-twenty-h-candidates.json",
+      "candidateSha256": "37deab1002fcf126523d2e8996d78e006462e55b9467e183272a6875a522e749",
+      "reviewName": "review-batch-twenty-h-sources.json",
+      "reviewSha256": "37a2f56ed666f3eb9edc8bda3bbe35f518a458a940fd2b9c44fc36489a2a39d3",
+      "approvedIndices": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "sourceBindings": [
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\71643f5f6ce89f75.html",
+      "sha256": "cb42fbcde31dbe3f08981e43ecfc9c58ca5a0c8b086260bea9e38b703c2d29d3",
+      "productIds": [
+        "inverters-r-us-e300lfp"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\71643f5f6ce89f75.json",
+      "sha256": "7216476d1aad6ec5ee45569771ae4933e47a7c7b8dedc2fae242409406c0437b",
+      "productIds": [
+        "inverters-r-us-e300lfp"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d636d7b6f2a5c7b8.html",
+      "sha256": "fed2a4bc0c13f97773a9ce95e90da8eae2b1e5312ed2814af4665df839d3aeb9",
+      "productIds": [
+        "inverters-r-us-e500lfp"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d636d7b6f2a5c7b8.json",
+      "sha256": "f65dc9f4b6283abf212241e16d6ecd438557eb26dca9ba2525cd4e3a0411d3ce",
+      "productIds": [
+        "inverters-r-us-e500lfp"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\0ad0b7bc8ea65b58.html",
+      "sha256": "2183d53cb14b9b08c6cb4f308d08c3d9f387e56369ffd56192c5129b5c04e280",
+      "productIds": [
+        "inverters-r-us-e3600lfp"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\0ad0b7bc8ea65b58.json",
+      "sha256": "acbb2049742d51a0d3b80ac8f4d264620871d2c14080d7fb9f62f3885add916c",
+      "productIds": [
+        "inverters-r-us-e3600lfp"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\5465242e3f2eedf0.html",
+      "sha256": "b13cc11f0b1660fdc8d53d083828a37c3eb0e0bace1ef0b15ddec697f6c488d9",
+      "productIds": [
+        "inverters-r-us-f5000lfp"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\5465242e3f2eedf0.json",
+      "sha256": "f29c7bee6318c66b32513a2c04f3aa286e9dcf4acc12a01b7b00093d5bf2d5b1",
+      "productIds": [
+        "inverters-r-us-f5000lfp"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\13b537011efa96ca.html",
+      "sha256": "6b80a108d340246efb4405a7f0ff30c73951e93c190f10074f87db294bc0e3b4",
+      "productIds": [
+        "santan-solar-a1790112"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\13b537011efa96ca.json",
+      "sha256": "246e6557d9885d3cd161be23d1a54eb1d2d4cd44eed5d901f6bf14cb7823d7d1",
+      "productIds": [
+        "santan-solar-a1790112"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\08458e6b7456890e.html",
+      "sha256": "b1facc55bf2f1c2619d0138ad0a6b31b5a82d0297a665cf70a494e484e66f79c",
+      "productIds": [
+        "santan-solar-a1782111"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\08458e6b7456890e.json",
+      "sha256": "c34b4519558723697d4e354bbf1229121e1e3eb2c0a291ffc04eaca10d0d67a4",
+      "productIds": [
+        "santan-solar-a1782111"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\bd6995dfdc346a8b.html",
+      "sha256": "94f5c84c470a70b0a0ac2211417e1afbeb4fc3ce617dc35df505ca38831c0774",
+      "productIds": [
+        "santan-solar-a1772111"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\bd6995dfdc346a8b.json",
+      "sha256": "7e3601c0e02eb783be2b36649500a8d85026535f6bedca49d66c2848a76e86b6",
+      "productIds": [
+        "santan-solar-a1772111"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\70292210cccd228a.html",
+      "sha256": "2c07532a955ec9bcffaf0bfd188c067985ea627fdc31f61bca5b9ca944649d60",
+      "productIds": [
+        "santan-solar-a1781111"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\70292210cccd228a.json",
+      "sha256": "2b110293f18a55b4dea392251881998883b0d2fcfbc10790d5ee652f15b6cadc",
+      "productIds": [
+        "santan-solar-a1781111"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\e5d7e324e1864e21.html",
+      "sha256": "af6dd2476e965e2f8af02e4834bc173d2a51aee30971a81a4eafaab41d2fd7f9",
+      "productIds": [
+        "santan-solar-a1790111"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\e5d7e324e1864e21.json",
+      "sha256": "7fc6f4c7c74ec7e94ea1243aba2a467c8945d41d5dde3fb88874a94eb110379a",
+      "productIds": [
+        "santan-solar-a1790111"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6d994d20cb1f8a94.html",
+      "sha256": "caa6726bf1b042a9f5d924e5db919c8b080d564ca6e4a356fd33558c7aecbc54",
+      "productIds": [
+        "santan-solar-scc110030210"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6d994d20cb1f8a94.json",
+      "sha256": "e4d4730155865db761ed9b91c846e329ebebd9e0cc99f07e4694f661bec7bb46",
+      "productIds": [
+        "santan-solar-scc110030210"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\753810390a5ed563.html",
+      "sha256": "0fd81eac1bf216ccbb3f8091869932dad9a17a32b503721cdfe4832b14f3ffa5",
+      "productIds": [
+        "santan-solar-scc110050210"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\753810390a5ed563.json",
+      "sha256": "d18c53c15a888c394982d1231d5c1b1b92a322f94db44f4079732272ab0c64be",
+      "productIds": [
+        "santan-solar-scc110050210"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\69415598979b9e6f.html",
+      "sha256": "8d490178fb42a92805a18b46f4387e8021cd9450de7bee0693f71578ee44fce2",
+      "productIds": [
+        "santan-solar-scc115070211"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\69415598979b9e6f.json",
+      "sha256": "c0750829d94e27e9cb4c04e65a18340d7f23ecb61514b0acaa04447d36aa361d",
+      "productIds": [
+        "santan-solar-scc115070211"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d9338b89632d0e40.html",
+      "sha256": "9ad4000e97a5f14a1ae84d501db5e7e62d05aaf6c338a8d09244ba7aae965773",
+      "productIds": [
+        "santan-solar-scc145110410"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d9338b89632d0e40.json",
+      "sha256": "ce1b4d98f70bfb7f4c37aa22c8e284eb7664ac234501be11ca95de13a470494e",
+      "productIds": [
+        "santan-solar-scc145110410"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\84567f4cf1842547.html",
+      "sha256": "fada9656d75929f457cb08e32b953aec66cadf70a9957aeb2d16bff227e7c160",
+      "productIds": [
+        "santan-solar-scc145120410"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\84567f4cf1842547.json",
+      "sha256": "2d1721031313e65eb6dc56a1b99e99f90decfcd1da29640b019caf1de7ce9590",
+      "productIds": [
+        "santan-solar-scc145120410"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\24e85a9ea48a1ecf.html",
+      "sha256": "66b3234bba0fd4685aeaeaa69423d6e11669fb76bf3d117f4eb76757668a5e44",
+      "productIds": [
+        "santan-solar-vsun370-120bmh-n"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\24e85a9ea48a1ecf.json",
+      "sha256": "8f0e104a4f675c8ba9e512e8e1dc864449c84a79e7ce95090c2ec0514c0803e5",
+      "productIds": [
+        "santan-solar-vsun370-120bmh-n"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\258abf80fd370df4.html",
+      "sha256": "c7c57bc9513203e624a340fa01f91c3c6d68dd53054d42618a2e87808f151f8d",
+      "productIds": [
+        "santan-solar-mnb108-450w-bf-n-lt37"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\258abf80fd370df4.json",
+      "sha256": "f3b67970a64b730be2c184442699755eb6c45271c31db20628f9a8c2ec38fb2e",
+      "productIds": [
+        "santan-solar-mnb108-450w-bf-n-lt37"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\1bf06c7139153116.html",
+      "sha256": "b64e6e6718ed5f9eb2e0ad9d8a81e33bb46c62cbf13020a0d788af8356af5757",
+      "productIds": [
+        "santan-solar-mnb108-450w-bf-n"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\1bf06c7139153116.json",
+      "sha256": "fcab702875ab075585f05eeb743ae120dc1f65da2d25d5c95e51f66d154838f2",
+      "productIds": [
+        "santan-solar-mnb108-450w-bf-n"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\0140335bb06ae23e.html",
+      "sha256": "9a51e717b11ad50973185d74c18254de248bca66355e37c582d05e8be23d3825",
+      "productIds": [
+        "santan-solar-scc125070221"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\0140335bb06ae23e.json",
+      "sha256": "497eec3cb11ac7193cef6b9c6a1db34eddd69a9d9fd6bbccdf75c3263fe198f8",
+      "productIds": [
+        "santan-solar-scc125070221"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\a736b9722b8f0af0.html",
+      "sha256": "03135430e507025fa3f394b602df837395f7d99c8e4bb6ea884d9189625c439b",
+      "productIds": [
+        "santan-solar-a24371a1"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\a736b9722b8f0af0.json",
+      "sha256": "976b8787cd5c92407a5e7c3cd2cf9705b6103e9e7d151a9407a0aac568ff5759",
+      "productIds": [
+        "santan-solar-a24371a1"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6a9cb3c364beabed.html",
+      "sha256": "400d48446b1df974bb21b64c8195d013a42d6d36addc56282f763646be1768ed",
+      "productIds": [
+        "renogy-45494887153779"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\206fd7fb50a5e382.html",
+      "sha256": "04b44e8b061036d746e5e80362d025b2623a566573e353bc4198517bc3d7ee7e",
+      "productIds": [
+        "wattcycle-51899976155432"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\14c665430a863e23.html",
+      "sha256": "01c1dc42c928255c023e12641c33378e79b979da713c1ec4840ca1c1e1f8bfd4",
+      "productIds": [
+        "shopsolar-62340926931084"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\ab507b0622452d8a.html",
+      "sha256": "1e88410dcd89881783613b83de3d9810eb62f4fb835d0c6b4084da27ba0db022",
+      "productIds": [
+        "shopsolar-62340929519756"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d45bd3ae12010092.html",
+      "sha256": "6f829a7ae554e5a772e1fd39023b2a87f3b67bfecb6efcdbd9e041e313ae34b3",
+      "productIds": [
+        "shopsolar-40237468221580"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\de7e768b79a9ba6f.html",
+      "sha256": "77c988c734e9b70f0ae52134b91f362cdf72dada193d4847baabe664fcaf57fb",
+      "productIds": [
+        "santan-solar-fp-envy8"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\de7e768b79a9ba6f.json",
+      "sha256": "1428eb8b054a9e4acebd7f24eb4dba605a89706b8ffb78e5d423606391efab6b",
+      "productIds": [
+        "santan-solar-fp-envy8"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6ea0389e0d833f7a.html",
+      "sha256": "74c1f0c751a60687f9d455206296507528b70f51702cdb73f00c6f6f27d78e9a",
+      "productIds": [
+        "santan-solar-fp-duo21"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6ea0389e0d833f7a.json",
+      "sha256": "0862ea3f0b34ffa30bd189c67d3e6714e02618ce1b3266f61ab60e48b33c4b81",
+      "productIds": [
+        "santan-solar-fp-duo21"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\413ce353436648e8.html",
+      "sha256": "6c6bcaecb0b84ec1fb796f2190839a64b02608ece5c7a04eef5cd44a93d74cf7",
+      "productIds": [
+        "santan-solar-iq8amicro"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\413ce353436648e8.json",
+      "sha256": "6508a19f25481ff0b79c148fc0706d043abaa7ae04f88c804bff1b9bc3608dc5",
+      "productIds": [
+        "santan-solar-iq8amicro"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\1e3e2123ba8b4b16.html",
+      "sha256": "d88ff84afe7aa5b9463f660b70a6f7a0d488e24ea572400c1db9089dfca3cb79",
+      "productIds": [
+        "santan-solar-iq8mc"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\1e3e2123ba8b4b16.json",
+      "sha256": "079ba98c476ad026954ec06e3b8bdbce7c90dd9034aa0ea0747dd81b69c28556",
+      "productIds": [
+        "santan-solar-iq8mc"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\03720b695c102793.html",
+      "sha256": "14d3f6f2224e87493ad72e84457a0645700ea443eca012d331bbaa4ec27b923b",
+      "productIds": [
+        "santan-solar-iq8hc"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\03720b695c102793.json",
+      "sha256": "5a161352b2a7adc6e459758a2acaaa8450f93406037be95148523392f4510851",
+      "productIds": [
+        "santan-solar-iq8hc"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\aae30c770ab0f0f6.html",
+      "sha256": "e46e20f27930a631a9916da5cee03b3ea6c37bae7c98920a182c79c662209a31",
+      "productIds": [
+        "santan-solar-iq8"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\aae30c770ab0f0f6.json",
+      "sha256": "ca6d44227b50eb6d9677529ffa432947089c1cdca28a56ebcca769731a92f976",
+      "productIds": [
+        "santan-solar-iq8"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6fc86cba9ddd5525.html",
+      "sha256": "3d115ba434ad7bd4e7cad33dff397344731e73b93e73a9e6ac04b5aa44465ac7",
+      "productIds": [
+        "santan-solar-qua483150000"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6fc86cba9ddd5525.json",
+      "sha256": "bbf566351ef9885f665d94bfe15468499e5f9d7f250f9eefcd2d31b72584293d",
+      "productIds": [
+        "santan-solar-qua483150000"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\078420e654ccbc64.html",
+      "sha256": "8f652f2ed9a82cf2412baed12d639d174ffbb8687c32a6dd1cb2497106522287",
+      "productIds": [
+        "santan-solar-rx-12k"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\078420e654ccbc64.json",
+      "sha256": "055d25b006d5de7397f9e9427de6be47027409e9d559f6f3d9c847f402cc7316",
+      "productIds": [
+        "santan-solar-rx-12k"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d0dadd941bf196bf.html",
+      "sha256": "8e93ab7886818f86c0ba1db22faf1856929ab7aac23f6e278f9de9dc4da054a5",
+      "productIds": [
+        "santan-solar-cs6w-535mb-ag-t6-n-b"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d0dadd941bf196bf.json",
+      "sha256": "e527e8390f587e8852e8a69fe5531fb12f7fa4311bd26025fb9df33dee22ddaa",
+      "productIds": [
+        "santan-solar-cs6w-535mb-ag-t6-n-b"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\f78fc1047c58d881.html",
+      "sha256": "6e606fe9003f3e46c1943cbd389773822424851bf0681b9cee973cf8238699a5",
+      "productIds": [
+        "santan-solar-cs6w-525mb-ag-t6-n-b"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\f78fc1047c58d881.json",
+      "sha256": "9e731e65b24ab3742de45d9253dfc6f7b414e2dac3a2a428000920d5dfcbe442",
+      "productIds": [
+        "santan-solar-cs6w-525mb-ag-t6-n-b"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d792596869547b97.html",
+      "sha256": "f4080b5d1d37fb560115369fa29a132462135ffadb7510d085c85b5780ad655b",
+      "productIds": [
+        "santan-solar-tmr500-mr500-rc-us"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d792596869547b97.json",
+      "sha256": "f678ef6f72b9f4384aa3fe9bdcd4e42bfca15d79e44e4abb19578b508255ef7e",
+      "productIds": [
+        "santan-solar-tmr500-mr500-rc-us"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\711cb89e039bf6df.html",
+      "sha256": "359a521b02818c8d741ffca34e905f109ed3cda9e71eda0e0cf2ca48d14ceea3",
+      "productIds": [
+        "shopsolar-19937635631215"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\711cb89e039bf6df.json",
+      "sha256": "b493d72a639ca2b4af86d7bdfda94714c28f26b809fa80425cd38d032b3ae69a",
+      "productIds": [
+        "shopsolar-19937635631215"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\41b2f03310595042.html",
+      "sha256": "014d1a93452118c7b2d9bdd4284f0c9aa03b8a25113332070f35ed041bb652fa",
+      "productIds": [
+        "shopsolar-19937471922287"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\41b2f03310595042.json",
+      "sha256": "73316e4c5c2a4e628782518ca977e05356fac9343bb0dfae62d574c139cec5a3",
+      "productIds": [
+        "shopsolar-19937471922287"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\1c14163137be7819.html",
+      "sha256": "9e9374f7528ec3164e6aa545aef80d7c75a609a9e176f801971d8b15b2f01862",
+      "productIds": [
+        "shopsolar-19937660403823"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\1c14163137be7819.json",
+      "sha256": "6786605875d11bae4d108fdb44141282d3489fbb5c2f4767ea52d90e8626a64b",
+      "productIds": [
+        "shopsolar-19937660403823"
+      ]
+    }
+  ],
+  "counts": {
+    "newTechnicalFields": 114,
+    "newReviewedKeys": 111,
+    "listingUpgrades": 3,
+    "comparisonFills": 32,
+    "sourceRecords": 38,
+    "catalogListings": 8643,
+    "remainingListings": 7310,
+    "remainingFields": 38569
+  },
+  "retainedHolds": [
+    {
+      "productId": "wattcycle-49890690990376",
+      "reason": "Charge-current table conflicts with same-page 1C claim; no import."
+    },
+    {
+      "productId": "shopsolar-40237468221580",
+      "reason": "Dimension units conflict; no import."
+    }
+  ],
+  "publicationStatus": "Pending release verification"
+}
