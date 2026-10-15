@@ -19,7 +19,7 @@ async function sandbox(){
  await symlink(join(root,'node_modules'),join(dir,'node_modules'),'junction');
  await writeFile(join(dir,'package.json'),'{"type":"module"}');
  for(const name of writerScripts)await cp(join(root,'scripts',name),join(dir,'scripts',name));
- for(const name of ['specification-corrections.json','retailer-sources.json'])await cp(join(root,'data',name),join(dir,'data',name));
+ for(const name of ['specification-corrections.json','specification-quarantines.json','retailer-sources.json'])await cp(join(root,'data',name),join(dir,'data',name));
  await writeFile(join(dir,'data/specification-reviewed.json'),'[]');await writeFile(join(dir,'reviewed.json'),'[]');
  await writeFile(join(dir,'cache/sources.json'),'{"sources":{},"failures":[]}');
  await writeFile(join(dir,'data/specifications.json'),JSON.stringify(seededEvidence));
@@ -64,5 +64,18 @@ test('single-record approved additions require raw selection and preserve protec
   assert.equal(next.groups.flatMap(g=>g.fields).find(f=>f.key==='weight')?.value,'12 kg');
   assert.deepEqual(prior,evidence[p.id]);
   for(const q of [{...p,offers:[]},{...p,offers:[{...p.offers[0],recordedPackQuantity:9}]}])assert.deepEqual(importReviewedSpecification(q,records,prior),prior);
+ }
+});
+import quarantineFixture from './fixtures/specification-quarantines.json' with {type:'json'};
+test('wire and connection writers reject restored quarantine tuples before any canonical write',async()=>{
+ for(const script of ['enrich-wire-sources.mjs','update-connection-evidence.mjs']){
+  const dir=await sandbox();try{
+   const {product,before:bad}=quarantineFixture[1];
+   const prior={...seededEvidence,[product.id]:bad},bytes=JSON.stringify(prior),catalog=JSON.stringify({products:[product]});
+   await writeFile(join(dir,'data/specifications.json'),bytes);await writeFile(join(dir,'catalog.json'),catalog);await writeFile(join(dir,'data/catalog.json'),catalog);
+   const audit=await readFile(join(dir,'data/specification-audit.json'),'utf8');
+   const result=run(dir,script);assert.notEqual(result.status,0,script+' accepted restored quarantine');assert.match(result.stderr,/quarantine write boundary/);
+   assert.equal(await readFile(join(dir,'data/specifications.json'),'utf8'),bytes);assert.equal(await readFile(join(dir,'data/catalog.json'),'utf8'),catalog);assert.equal(await readFile(join(dir,'data/specification-audit.json'),'utf8'),audit);
+  }finally{await rm(dir,{recursive:true,force:true});}
  }
 });

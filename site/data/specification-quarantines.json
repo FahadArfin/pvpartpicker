@@ -1,0 +1,275 @@
+{
+  "id": "reviewed-quarantines-twentytwo",
+  "approvedPacketSha256": "f7828b6ca92c351d84b6ccc54a6c7f132b39c97cb05b34885b753d9b37ac4d0d",
+  "independentReviewSha256": "7d1572cd20da384ec8f988b1e30752c86b51021026557c7b2ed684e329ed7a2a",
+  "newFactCredit": 0,
+  "entries": [
+    {
+      "id": "renogy-43178688675955",
+      "expected": {
+        "name": "Rover Li 20/30/40 Amp MPPT Solar Charge Controller — 20A / Controller Only",
+        "sourceUrl": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "MPPT",
+          "chargeCurrentA": 20
+        }
+      },
+      "offer": {
+        "id": "renogy-43178688675955",
+        "sku": "43178688675955",
+        "packQuantity": 1,
+        "condition": "new",
+        "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+        "retailerId": "renogy"
+      },
+      "exactSourceSku": "RNG-CTRL-RVR20-US",
+      "sourceArtifacts": [
+        {
+          "path": "output/spec-research/ef6ccd32086f6a35.html",
+          "sha256": "e453eb48a53ba69f2dd35e4e8422d920b57fc2e03300aa6e6df5cbc56e5df2f9"
+        },
+        {
+          "path": "output/spec-research/ef6ccd32086f6a35.json",
+          "sha256": "e4ea7955c651b2c3a9458e417362608c34331650629a6a66ea76eaeec70a93f8"
+        }
+      ],
+      "quarantineFields": [
+        {
+          "groupTitle": "Protection & environment",
+          "field": {
+            "key": "altitude",
+            "label": "Operating altitude",
+            "value": "≤3000m",
+            "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+            "kind": "manufacturer"
+          },
+          "fieldSha256": "01db9cc76f6d6b3d9ba29ae6e94c18fd1b8514e0664f5a7b49c9e9704234cd7e"
+        }
+      ],
+      "protectedManualFields": [
+        {
+          "key": "chargeCurrentA",
+          "label": "Rated charge current",
+          "value": "20 A",
+          "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+          "kind": "manual"
+        },
+        {
+          "key": "maxPvWatts",
+          "label": "Maximum PV input power",
+          "value": "260 W (12V) / 520 W (24V)",
+          "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+          "kind": "manual"
+        },
+        {
+          "key": "mpptVoltageRange",
+          "label": "MPPT voltage range",
+          "value": "17 to 100 V DC",
+          "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+          "kind": "manual"
+        },
+        {
+          "key": "dimensions",
+          "label": "Dimensions",
+          "value": "210 x 151 x 68 mm",
+          "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+          "kind": "manual"
+        },
+        {
+          "key": "weight",
+          "label": "Weight",
+          "value": "1.4 kg",
+          "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+          "kind": "manual"
+        }
+      ],
+      "reason": "Altitude belongs to the optional communication accessory subsection (RS485 Modbus, RJ12, 67.3 x 35 x 14 mm, 130 g). It is not a controller altitude rating. Selected 20A Controller Only is not the 40A table subject. Prior manual corrections already resolved the five model-dependent fields and must remain intact."
+    },
+    {
+      "id": "renogy-43635963789427",
+      "expected": {
+        "name": "12V 20A/40A DC to DC Battery Charger — 40A",
+        "sourceUrl": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+        "category": "charging",
+        "anchors": {
+          "voltage": 12,
+          "controllerType": "Solar controller",
+          "chargeCurrentA": 40
+        }
+      },
+      "offer": {
+        "id": "renogy-43635963789427",
+        "sku": "43635963789427",
+        "packQuantity": 1,
+        "condition": "new",
+        "url": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+        "retailerId": "renogy"
+      },
+      "exactSourceSku": "RBC40D1U-US",
+      "sourceArtifacts": [
+        {
+          "path": "output/spec-research/00ad6bad3376115e.html",
+          "sha256": "5d9937033a610be03fc0a679e315378f3020d5688e5a98cd4f0a4cf53456aa5f"
+        },
+        {
+          "path": "output/spec-research/00ad6bad3376115e.json",
+          "sha256": "1f798373eb13f810a09e0348dc86a46cca51d30cbd22c1dfcce69384e2de5dc5"
+        }
+      ],
+      "quarantineFields": [
+        {
+          "groupTitle": "Protection & environment",
+          "field": {
+            "key": "operatingTemperature",
+            "label": "Operating temperature",
+            "value": "-4℉ -122℉ /-25 ℃ - 60℃",
+            "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+            "kind": "manufacturer"
+          },
+          "fieldSha256": "b0f4058a22f9ac6e3c48152eab830f49be9d57c7819c729c63a335cd13b84b5d"
+        },
+        {
+          "groupTitle": "Protection & environment",
+          "field": {
+            "key": "storageTemperature",
+            "label": "Storage temperature",
+            "value": "-4℉ -122℉ /-40 ℃ - 85℃",
+            "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+            "kind": "manufacturer"
+          },
+          "fieldSha256": "6749d31b3d546dc91b6a2b2de186d818d8881c11d7c0df07ad9558a99ecae841"
+        },
+        {
+          "groupTitle": "Protection & environment",
+          "field": {
+            "key": "ipRating",
+            "label": "Ingress protection",
+            "value": "0%- 95% ,no condensation",
+            "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+            "kind": "manufacturer"
+          },
+          "fieldSha256": "8dd9203b343a5737360a860a191e9feff35d6abc1ab0385385c466f4735347e4"
+        }
+      ],
+      "protectedManualFields": [],
+      "reason": "Operating -4 to 122 F equals -20 to 50 C, not the stated -25 to 60 C. Storage repeats -4 to 122 F but gives -40 to 85 C. Neither unit pair can be selected without stronger evidence. Enclosure Rating contains a humidity percentage and condensation qualifier, not an ingress protection rating. Preserve the separately valid humidity field."
+    },
+    {
+      "id": "renogy-43178664362099",
+      "expected": {
+        "name": "12V 20A DC to DC Battery Charger — Charger Only",
+        "sourceUrl": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+        "category": "charging",
+        "anchors": {
+          "voltage": 12,
+          "controllerType": "Solar controller",
+          "chargeCurrentA": 20
+        }
+      },
+      "offer": {
+        "id": "renogy-43178664362099",
+        "sku": "43178664362099",
+        "packQuantity": 1,
+        "condition": "new",
+        "url": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+        "retailerId": "renogy"
+      },
+      "exactSourceSku": "RBC20D1U-US",
+      "sourceArtifacts": [
+        {
+          "path": "output/spec-research/9127959b32684970.html",
+          "sha256": "97127f6dba3e2cce41924131e2b050ebc63271b39ea19575ff7f06f794c5593b"
+        },
+        {
+          "path": "output/spec-research/9127959b32684970.json",
+          "sha256": "446da85915eca9bc2e16d0422296da8505ccb15ac271bddab5b3e56a03e9788f"
+        }
+      ],
+      "quarantineFields": [
+        {
+          "groupTitle": "Protection & environment",
+          "field": {
+            "key": "operatingTemperature",
+            "label": "Operating temperature",
+            "value": "-4℉ -122℉ /-25 ℃ - 60℃",
+            "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+            "kind": "manufacturer"
+          },
+          "fieldSha256": "c0a9a0034a51edac19f6b825149944bb88a8453bfdc33346b6be0a4b7a9437d6"
+        },
+        {
+          "groupTitle": "Protection & environment",
+          "field": {
+            "key": "storageTemperature",
+            "label": "Storage temperature",
+            "value": "-4℉ -122℉ /-40 ℃ - 85℃",
+            "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+            "kind": "manufacturer"
+          },
+          "fieldSha256": "be6f4f5565688bbd7e8fa1b444a7980e4bced7f5211b606ebf9d3036e57782c1"
+        },
+        {
+          "groupTitle": "Protection & environment",
+          "field": {
+            "key": "ipRating",
+            "label": "Ingress protection",
+            "value": "0%- 95% , No condensation",
+            "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+            "kind": "manufacturer"
+          },
+          "fieldSha256": "9035c7c42b15b251071bf54ffc674f5ea0cba82027543c151c8006e4ff262320"
+        }
+      ],
+      "protectedManualFields": [],
+      "reason": "Operating -4 to 122 F equals -20 to 50 C, not the stated -25 to 60 C. Storage repeats -4 to 122 F but gives -40 to 85 C. Neither unit pair can be selected without stronger evidence. Enclosure Rating contains a humidity percentage and condensation qualifier, not an ingress protection rating. Preserve the separately valid humidity field."
+    },
+    {
+      "id": "renogy-43178659217523",
+      "expected": {
+        "name": "Rover Lite 12V/ 24V/ 36V/ 48V 60A MPPT Solar Charge Controller — Controller Only",
+        "sourceUrl": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+        "category": "charging",
+        "anchors": {
+          "voltage": 12,
+          "controllerType": "MPPT",
+          "chargeCurrentA": 60
+        }
+      },
+      "offer": {
+        "id": "renogy-43178659217523",
+        "sku": "43178659217523",
+        "packQuantity": 1,
+        "condition": "new",
+        "url": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+        "retailerId": "renogy"
+      },
+      "exactSourceSku": "RCC60RVRE-US",
+      "sourceArtifacts": [
+        {
+          "path": "output/spec-research/8f8e9bd76140a3be.html",
+          "sha256": "8f554605cfb72762cda516052e6ba989925d625f77b3ddbccb9a471b861a6aeb"
+        },
+        {
+          "path": "output/spec-research/8f8e9bd76140a3be.json",
+          "sha256": "4862376849383ff962aa7556598e3b7c44cfb604307916b6e0607044602738a6"
+        }
+      ],
+      "quarantineFields": [
+        {
+          "groupTitle": "Protection & environment",
+          "field": {
+            "key": "operatingTemperature",
+            "label": "Operating temperature",
+            "value": "-31℉~113℉ /-35 ℃ ~65℃",
+            "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+            "kind": "manufacturer"
+          },
+          "fieldSha256": "fb57dd6a3125450fd26c77a73b78a3611291afd40da0b8e803d542081acf9eaa"
+        }
+      ],
+      "protectedManualFields": [],
+      "reason": "Operating maximum 113 F equals 45 C, not 65 C. Prose claims 149 F full-load operation, but this contradicts the table rather than resolving which endpoint is authoritative. Preserve valid storage -40 to 80 C / -40 to 176 F."
+    }
+  ]
+}

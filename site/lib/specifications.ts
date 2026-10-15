@@ -1,3 +1,4 @@
+import {quarantineSpecification,quarantineLedger,quarantineIdentityMatches,quarantineProjectedEvidence} from './specification-quarantine-guard.ts';
 import type {Category,Product,ProductSpecification,SpecificationField} from './types.ts';
 import {applyReviewedStorageRole} from './reviewed-storage-roles.ts';
 
@@ -193,7 +194,7 @@ export function buildSpecification(product:Product,input?:SpecificationEvidence|
  for(const field of fields.values()){const title=groupFor.get(field.key)!;let group=result.groups.find(g=>g.title===title);if(!group){group={title,fields:[]};result.groups.push(group);}group.fields.push(field);}
  if(!result.sources.some(s=>s.kind!=='listing'))result.notes.push('A matching technical specification table is not available in the collected sources yet.');
  if(result.panelRatings&&!Object.keys(result.panelRatings.noct).length)result.notes.push('NOCT electrical ratings are not published in the matched sources. NOCT temperature is a separate specification.');
- return result;
+ return quarantineSpecification(product,result)!;
 }
 
 /** Kit measurements must describe the selected package, never a component's ratings. */
@@ -238,6 +239,7 @@ export function specificationDisplayGroups(product:Product,details:ProductSpecif
   'module-electronics':['ratedCurrent','ratedVoltage','ipRating','dimensions'],
   kits:['compatibility'],accessories:['compatibility','dimensions','material'],
  };
+ details=quarantineSpecification(product,details)!;
  const groups=details.groups.map(g=>({...g,fields:[...g.fields]}));
  const keys=new Set(groups.flatMap(g=>g.fields.map(f=>f.key)));
  const required=product.specs.batteryKind==='Battery cabinets'?['dimensions','material','compatibility']:core[product.category];
@@ -250,7 +252,10 @@ export function specificationDisplayGroups(product:Product,details:ProductSpecif
 
 /** Static evidence applies to both snapshot and database records. Prices remain live. */
 export function applySpecificationEvidence(product:Product,index:Record<string,ProductSpecification>):Product{
- const specification=index[product.id];if(!specification)return product;
+ const entry=quarantineLedger.entries.find(e=>e.id===product.id);
+ if(entry&&!quarantineIdentityMatches(product,entry))return {...product,specification:undefined,connectionSpecs:undefined,comparisonSpecs:undefined};
+ product=quarantineProjectedEvidence(product);
+ const specification=quarantineSpecification(product,index[product.id]||(entry?product.specification:undefined));if(!specification)return product;
  if(specification.identity){const i=specification.identity;if(product.name!==i.name||product.sourceUrl!==i.sourceUrl||product.category!==i.category||Object.entries(i.anchors).some(([key,value])=>product.specs[key]!==value))return product;}
  if(product.specification===specification)return product;
  if(specification.panelRatings?.stc.pmax&&product.specs.watts&&Math.abs(number(specification.panelRatings.stc.pmax)-Number(product.specs.watts))>.5)return product;

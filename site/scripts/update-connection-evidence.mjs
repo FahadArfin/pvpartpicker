@@ -1,3 +1,4 @@
+import {assertQuarantineWriteBoundary} from '../lib/specification-quarantine-guard.ts';
 import {assertWattcycleReviewedRegeneration} from '../lib/wattcycle-reviewed-selection.ts';
 import {assertCorrectionWriteBoundary} from '../lib/specification-correction-guard.ts';
 // Exact-model manufacturer evidence checked 2026-10-06. No prices are changed.
@@ -25,6 +26,7 @@ update('santan-solar-eg4-lifepower4v2-48v-100ah','https://eg4electronics.com/wp-
  voltage:['Nominal voltage','51.2 V'],chemistry:['Battery chemistry','LiFePO4'],capacityKwh:['Nameplate energy','5.12 kWh'],chargeVoltage:['Recommended bulk / absorb voltage','56.8 V'],maxChargeCurrent:['Maximum continuous charging current','100 A'],maxDischargeCurrent:['Maximum continuous discharge current','100 A'],
 },['BMS low/high protection thresholds are not a recommended operating envelope. Connection checks leave the full operating-voltage envelope unverified until an explicit operating range is documented.']);
 assertCorrectionWriteBoundary(catalog.products,index);
+assertQuarantineWriteBoundary(catalog.products,index);
 assertWattcycleReviewedRegeneration(catalog.products,index,prior);
 fs.writeFileSync(file,JSON.stringify(index));
 console.log('Updated exact-model connection evidence for EG4 18kPV, 6000XP and LifePower4 V2.');

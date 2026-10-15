@@ -1,3 +1,4 @@
+import {quarantineSpecification} from './specification-quarantine-guard.ts';
 import {isWattcycleReviewedListing,matchesWattcycleReviewedSelection,assertWattcycleReviewedRecordRegeneration} from './wattcycle-reviewed-selection.ts';
 import {assertCorrectionWriteBoundary} from './specification-correction-guard.ts';
 import {buildSpecification,technicalRows} from './specifications.ts';
@@ -14,6 +15,7 @@ function compatibleRows(p:Product,r:ReviewedSpecification){
  }return true;
 }
 export function importReviewedSpecification(p:Product,records:ReviewedSpecification[],prior?:ProductSpecification):ProductSpecification|undefined{
+ prior=quarantineSpecification(p,prior);
  const protectedPrior=isWattcycleReviewedListing(p)?structuredClone(prior):undefined;
  const finish=(value:ProductSpecification|undefined)=>{assertWattcycleReviewedRecordRegeneration(p,value,protectedPrior);return value;};
  // Changed raw metadata/offers can only preserve a verified prior, never import facts.

@@ -1,3 +1,4 @@
+import {assertQuarantineWriteBoundary} from '../lib/specification-quarantine-guard.ts';
 import {assertWattcycleReviewedRegeneration,isWattcycleReviewedListing,wattcycleReviewedSelections} from '../lib/wattcycle-reviewed-selection.ts';
 import {assertCorrectionWriteBoundary} from '../lib/specification-correction-guard.ts';
 /** Rebuild source-audited detail specs from cached product tables and reviewed sheets.
@@ -74,6 +75,7 @@ for(const original of catalog.products){
 }
 const outputArgument=args.indexOf('--output');const outputPath=outputArgument>=0?resolve(args[outputArgument+1]):new URL('data/specifications.json',root);
 assertCorrectionWriteBoundary(catalog.products.map(categorizeProduct),index);
+assertQuarantineWriteBoundary(catalog.products.map(categorizeProduct),index);
 assertWattcycleReviewedRegeneration(catalog.products,index,prior);
 await writeFile(outputPath,JSON.stringify(index));
 await writeFile(outputArgument>=0?outputPath+'.audit.json':new URL('data/specification-audit.json',root),JSON.stringify(audit,null,2)+'\n');
