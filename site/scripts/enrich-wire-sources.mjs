@@ -1,3 +1,4 @@
+import {assertQuarantineWriteBoundary} from '../lib/specification-quarantine-guard.ts';
 import {assertWattcycleReviewedRegeneration} from '../lib/wattcycle-reviewed-selection.ts';
 import {assertCorrectionWriteBoundary} from '../lib/specification-correction-guard.ts';
 // Reconcile the collected wire variants with explicit source-page facts. No
@@ -39,6 +40,7 @@ for(const p of catalog.products){const d=details[p.id],kinds=new Set(d.groups.fi
  const c=audit.categories[p.category]||{products:0,sheet:0,manual:0,table:0,listingOnly:0};c.products++;c.sheet+=Number(sheet);c.manual+=Number(manual);c.table+=Number(table);c.listingOnly+=Number(listingOnly);audit.categories[p.category]=c;
 }
 assertCorrectionWriteBoundary(catalog.products,details);
+assertQuarantineWriteBoundary(catalog.products,details);
 assertWattcycleReviewedRegeneration(rawProducts,details,prior);
 await writeFile(new URL('catalog.json',data),JSON.stringify(catalog,null,2));
 await writeFile(new URL('specifications.json',data),JSON.stringify(details));

@@ -1,0 +1,636 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-15T05:51:54.361Z",
+  "reviewSha256": "d2c0927a97436f2f321ab692a36e542898221a3558c067deec1d94f7ac29e14f",
+  "baselineSha256": "566837b07de1823ea9f0a06c8fbcc3d9ee1201d51e7cfd16761e9381059b79f4",
+  "outputSha256": "012de63adfe222796ff4ad4fd3927105216db25be362b6805445c3e10e235cd7",
+  "sourceApprovals": [
+    {
+      "candidateName": "batch-twenty-i-v2-candidates.json",
+      "candidateSha256": "f8ae4f71c13b63e024201ed80bdd17d47028390b207fd88a0a1acfc08cfd2c90",
+      "reviewName": "review-batch-twenty-i-v2-sources.json",
+      "reviewSha256": "f55ca5dbf1fc0a393da10c65f468bbd887faac0d4466b3aea36f27d428506517",
+      "approvedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "candidateName": "batch-twenty-j-candidates.json",
+      "candidateSha256": "d919e9dd87bebf3cbec9a794a96d331c058cc693394cb1eecfc140b53f5aa7c8",
+      "reviewName": "review-batch-twenty-j-sources.json",
+      "reviewSha256": "876783b130c96d39c2f096d725bedb944b31a85e93cff39207b2cdec42ec7e39",
+      "approvedIndices": [
+        0,
+        1,
+        2
+      ]
+    },
+    {
+      "candidateName": "batch-twenty-k-candidates.json",
+      "candidateSha256": "af5ffa8ad6c311390903117e86908d5a20aef4220a91ac88e4ebeeee6789159a",
+      "reviewName": "review-batch-twenty-k-sources.json",
+      "reviewSha256": "3836e817d41e7c4ff0b7b6a8f9b7cf2dd0d180c705b30f5952d04754bd1f6ed7",
+      "approvedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "candidateName": "batch-twenty-l-candidates.json",
+      "candidateSha256": "741c92235182634ace54825afa1685f8b03cdac79c2346db8e91131e12961f7c",
+      "reviewName": "review-batch-twenty-l-sources.json",
+      "reviewSha256": "f4d86da3fd56d4abad79c5440589abc916e5b8ec3860a2fe5acb073253d4c15b",
+      "approvedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "candidateName": "batch-twenty-n-candidates.json",
+      "candidateSha256": "d41956a1472a45324a18cba0a35ff053a931236475f0fe6ac90be5b550939280",
+      "reviewName": "review-batch-twenty-n-sources.json",
+      "reviewSha256": "615bd66f44bf7cfd5bcc28228a9b35aa976992fa3fc2f159d7c74a0a92aaa583",
+      "approvedIndices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "candidateName": "batch-twenty-o-candidates.json",
+      "candidateSha256": "145fb15f70f379b6386d8561e7bdae2fe4838303503c53fb515a668ef931bf92",
+      "reviewName": "review-batch-twenty-o-q-sources.json",
+      "reviewSha256": "cb8fcba7324c8ee139bb362c5317eeb079f445f9accc996c2a45286b0d999410",
+      "approvedIndices": [
+        0,
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "candidateName": "batch-twenty-q-candidates.json",
+      "candidateSha256": "954f8d5a1e36125137ad7c80a887a6b277aac120a866f4966b6273f179db9bea",
+      "reviewName": "review-batch-twenty-o-q-sources.json",
+      "reviewSha256": "cb8fcba7324c8ee139bb362c5317eeb079f445f9accc996c2a45286b0d999410",
+      "approvedIndices": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "sourceBindings": [
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\fc90f73381e31490.html",
+      "sha256": "08610d56bd56171169a899f0cde8a4b431dbf6373a2468dd704250c34b984c6a",
+      "productIds": [
+        "hqst-53541336744254"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\fc90f73381e31490.json",
+      "sha256": "10d6557c19799e7d96bb54486a28abaf7abef3a27be37dd031c870b98e7297a4",
+      "productIds": [
+        "hqst-53541336744254"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\64e549ceeb84ee57.html",
+      "sha256": "fa858c373aefc14c25a11116ea98ff8afaf40e0bd7a2a3c5700c678d76e7cd0c",
+      "productIds": [
+        "renogy-43178701783155"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\64e549ceeb84ee57.json",
+      "sha256": "d3800ba31fff6dbbe5b04134fae36d97f9a7a7c159966d06b2b7800f7b39158e",
+      "productIds": [
+        "renogy-43178701783155"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\00ad6bad3376115e.html",
+      "sha256": "5d9937033a610be03fc0a679e315378f3020d5688e5a98cd4f0a4cf53456aa5f",
+      "productIds": [
+        "renogy-43635963789427"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\00ad6bad3376115e.json",
+      "sha256": "1f798373eb13f810a09e0348dc86a46cca51d30cbd22c1dfcce69384e2de5dc5",
+      "productIds": [
+        "renogy-43635963789427"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\9127959b32684970.html",
+      "sha256": "97127f6dba3e2cce41924131e2b050ebc63271b39ea19575ff7f06f794c5593b",
+      "productIds": [
+        "renogy-43178664362099"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\9127959b32684970.json",
+      "sha256": "446da85915eca9bc2e16d0422296da8505ccb15ac271bddab5b3e56a03e9788f",
+      "productIds": [
+        "renogy-43178664362099"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\7fe8061e53219a94.html",
+      "sha256": "294175e8252ec362a4f7e116fce22181130796c74e9e09eecad4d6d41b63f099",
+      "productIds": [
+        "renogy-43178656890995"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\7fe8061e53219a94.json",
+      "sha256": "53622310312091f7f91273fe88203dc24be83c8a472ad7400b784d3d648c079e",
+      "productIds": [
+        "renogy-43178656890995"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\c273ac7dc798fa03.html",
+      "sha256": "365d28d2e2d9db163bb898c193e43a91c9bff867d58d34381f7bf001769e2e6b",
+      "productIds": [
+        "renogy-43178665082995"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\c273ac7dc798fa03.json",
+      "sha256": "8bc8aaa21cdebccd9ebd2f9ab0b227354a01b67b751b373e81545db651af7c3a",
+      "productIds": [
+        "renogy-43178665082995"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\bd3261044cbd20a1.html",
+      "sha256": "4bce0e587fb650f80a0a8fd00f62fb56b687047dffde081ef6877c64ff950651",
+      "productIds": [
+        "hysolis-44400445161770"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\bd3261044cbd20a1.json",
+      "sha256": "1a5dc6a3c2e606a71a02e7a737f2ee974b54bd57eec090a27d0a3b105d361d90",
+      "productIds": [
+        "hysolis-44400445161770"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6dc0755845cbf25b.html",
+      "sha256": "00214fe86c0c49a42417dc7047151c4d82f41aef8a8b332104863fae6865183f",
+      "productIds": [
+        "renogy-43178667147379"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6dc0755845cbf25b.json",
+      "sha256": "4b9224e28d69ee29c41f14d4ce285055aea2e6e3aba225280598f827b280a085",
+      "productIds": [
+        "renogy-43178667147379"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\30fb68a1a5b09991.html",
+      "sha256": "380472b1156416293ff46575b7df8cba83728051e943096b6e45cca7b112869e",
+      "productIds": [
+        "renogy-45234902958195"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\30fb68a1a5b09991.json",
+      "sha256": "f7e99dbcf8141e0440bd8be799c684c7b09f344286ee870c9664ae41900bc732",
+      "productIds": [
+        "renogy-45234902958195"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6122f62f1c0dd7fb.html",
+      "sha256": "9a7c2b5ccb2f6f742ae95d82dc26c69ec6d1b9df0de9918d40b17f20e4e3ed29",
+      "productIds": [
+        "shopsolar-59077978226828"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\6122f62f1c0dd7fb.json",
+      "sha256": "37509fc102cf1474bdf28605edaba9f69a5ace84e06cc3a17ea8c182d7d2ab8f",
+      "productIds": [
+        "shopsolar-59077978226828"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\4bec839b5ca490de.html",
+      "sha256": "2adbf1edb41919f4c2034c50ac82b6b65314426e0e3a5043603025ba5651d856",
+      "productIds": [
+        "wattcycle-52169240740136"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\4bec839b5ca490de.json",
+      "sha256": "dbdd62ebd6a1929ddccce24b8f1bbe1993a42355f0ae91f4dbfe381250a0c6a6",
+      "productIds": [
+        "wattcycle-52169240740136"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\8be3d5cf78283086.html",
+      "sha256": "4430bff44aa6e431bd286fd6d7cea40aab26a3e183fdd154105624c6dd5f008b",
+      "productIds": [
+        "renogy-45371875131507"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\8be3d5cf78283086.json",
+      "sha256": "53d04c9840dfa786abd37f1bcd23e12e6c29163066c7d3bc1880cfe107eb082e",
+      "productIds": [
+        "renogy-45371875131507"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d1186348ffe8cb07.html",
+      "sha256": "57cfd79041a3cfbad005f4106ec5b3f585241934f54ed9df5dd4f0b18422a06c",
+      "productIds": [
+        "watts247-50837"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d1186348ffe8cb07.json",
+      "sha256": "dd6534eb7e47fc1ca75183e5c0a804a49c7fe10d727e487004e65bcdf7194312",
+      "productIds": [
+        "watts247-50837"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\0722338cc7f2e7f2.html",
+      "sha256": "34d067aeeab14a3fed9b6152b12707129a8f3d35e365dda735c099f34779e823",
+      "productIds": [
+        "watts247-51978"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\0722338cc7f2e7f2.json",
+      "sha256": "5818918cc61d255ea2824b4b4012b90257a639c4437f36b4567b192361dec396",
+      "productIds": [
+        "watts247-51978"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\43e012879044e97e.html",
+      "sha256": "48db012adae285f64982f307199cdd90ea877156e7a818da7094411d62444b0f",
+      "productIds": [
+        "watts247-sp11"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\43e012879044e97e.json",
+      "sha256": "1c0ce56ad80cd2d0c87befb8afeb5e4edbd41292f6f40b9b78a5a5734c78c22f",
+      "productIds": [
+        "watts247-sp11"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\30648fb294108ea5.html",
+      "sha256": "49920af7616b7fee2badf680140e4f3c20aaec3020833931c373fec1792f695d",
+      "productIds": [
+        "watts247-sp22ls"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\30648fb294108ea5.json",
+      "sha256": "e957c4e5369670146b34bfb96aa09a8f8dab7109d850c66f95ce6597a2a30b14",
+      "productIds": [
+        "watts247-sp22ls"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\0457e5d87f967c48.html",
+      "sha256": "b820ef71028e116f3157d24bcd93f5659cbead73f2db36bd75f2eb29a7b66214",
+      "productIds": [
+        "watts247-sp75"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\0457e5d87f967c48.json",
+      "sha256": "6e204cd217c96038aff11d1ed38e97a618b8cc50b636a439f3a2655f11932970",
+      "productIds": [
+        "watts247-sp75"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\b186449178abc6c4.html",
+      "sha256": "f0bddd41f099a3c8516520735dbc552efe4418ba7ebfdc086b344bd5d07ea7f9",
+      "productIds": [
+        "inverters-r-us-eg4-1511025"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\b186449178abc6c4.json",
+      "sha256": "9e5c7650d856102075587e6c433e57f150ee34d8b0d03ded7884a025f8632c83",
+      "productIds": [
+        "inverters-r-us-eg4-1511025"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\b3dfbc04f5898844.html",
+      "sha256": "3cdda68c7d4dfb79fce1e4a24c6e08b1032d1e6b0ff4137234989401d2a3c9a3",
+      "productIds": [
+        "sungoldpower-46665605316745"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\b3dfbc04f5898844.json",
+      "sha256": "e1a01c57ace410f9cc9d402246cca059c315f0e2586ae7654bc8b292af4d09f6",
+      "productIds": [
+        "sungoldpower-46665605316745"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\323b7cd7e2278a2c.html",
+      "sha256": "eac4afdb5de2452a8756cd08e57fc51f480c7c149116260f43d027dff36b8a13",
+      "productIds": [
+        "sungoldpower-47064000528521"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\323b7cd7e2278a2c.json",
+      "sha256": "ec5c8b070269e6069bff01786865c8e93fd4312e2ea8e83a43db29fb2aba33b3",
+      "productIds": [
+        "sungoldpower-47064000528521"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\0b0203456bbdd60b.html",
+      "sha256": "7fa88d5c286f10698164bcaf46ce7f9b263045f3282763ee69e4a3d35f5d5b39",
+      "productIds": [
+        "sungoldpower-47407326003337"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\0b0203456bbdd60b.json",
+      "sha256": "855888cc376b0d3dcccd63e2b1ab2cac397c793a5753f0dee625aaf7027402ae",
+      "productIds": [
+        "sungoldpower-47407326003337"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\3005ba17cfb49484.html",
+      "sha256": "bb448aebba340a6f96532fa1d389ad60b11f716123dbdcee2a8dfac2ae541ed5",
+      "productIds": [
+        "sungoldpower-48356907712649"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\3005ba17cfb49484.json",
+      "sha256": "9256635acef2c2d9d841cf62a7e3d86dedc56493101a4fbc56773db233e653a4",
+      "productIds": [
+        "sungoldpower-48356907712649"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\c485df70035d951b.html",
+      "sha256": "2d37952ff724a4bed47c513da3cdb364f1ebe2c9c20077e3c3fe8eede976978d",
+      "productIds": [
+        "inverters-r-us-lk2-rvconbox-12c"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\c485df70035d951b.json",
+      "sha256": "716fb0d91aa7a00024f6e452eaff84d6a9ef4fc5b728fdb765ec6bb2647fbf9d",
+      "productIds": [
+        "inverters-r-us-lk2-rvconbox-12c"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\8233f693549c3f12.html",
+      "sha256": "644f1829722c222feefdfa908fc6d4c1286855ee465b6695502749801d428b3f",
+      "productIds": [
+        "inverters-r-us-eg4b3s1gbbrkr50av1"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\8233f693549c3f12.json",
+      "sha256": "f2ca0e438c8fa5b78308c63dab1e91898852e8b28da24f03a72f0e7b4a94f6e9",
+      "productIds": [
+        "inverters-r-us-eg4b3s1gbbrkr50av1"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\1483777e2fa07a5b.html",
+      "sha256": "4c747f552c90c70c8c2af2772fa37c6e6b065a0a75ec1e440b63b99d4ea12503",
+      "productIds": [
+        "inverters-r-us-eg4b3s1gbbrkr70av1"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\1483777e2fa07a5b.json",
+      "sha256": "49c2b8cb41c81c68e766a8f78caa0f2c3a7e98f222653bef10df0b3de80ddcad",
+      "productIds": [
+        "inverters-r-us-eg4b3s1gbbrkr70av1"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\1f2b9651a9f1ba45.html",
+      "sha256": "cc5b4e2c585f65364a49657b19d7585dad2d20136679f284ddd01e399b226881",
+      "productIds": [
+        "wattcycle-51799290904872"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\1f2b9651a9f1ba45.json",
+      "sha256": "b6838dacc9e59256d29867ba6f2a195a070371ddee869b553c5a6a4c0bf1a527",
+      "productIds": [
+        "wattcycle-51799290904872"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\66092c4ee831619e.html",
+      "sha256": "fff3a9bff95541bafdc3659ea386150fe36f2cea206d7500d11a477ae12452d8",
+      "productIds": [
+        "renogy-43794351226995"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\66092c4ee831619e.json",
+      "sha256": "ff33eaa6170bf5db865ff4a65fde264864d4dbd18db2017bc00896d420049f41",
+      "productIds": [
+        "renogy-43794351226995"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\3d8962480822b1a3.html",
+      "sha256": "def46a8b05c27393f109697a665432d7f0ec951cfb0e80234cd0fecd62eb37c0",
+      "productIds": [
+        "wattcycle-49845675819304"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\3d8962480822b1a3.json",
+      "sha256": "bdfd6e2818389bbd66ff58a7760aa477f342857b5063616ed3754ea595e9175f",
+      "productIds": [
+        "wattcycle-49845675819304"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\f6438cd6e37f7d49.html",
+      "sha256": "1c3bdea8fc598a394f55f4e2ce99780e30e0028a6c6ba079e31720c277e40620",
+      "productIds": [
+        "signature-solar-1600003"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\f6438cd6e37f7d49.json",
+      "sha256": "f702faa06b7a7420b675f6d3bba048ae78b2da32e0a87c91b91539f0d9f106d9",
+      "productIds": [
+        "signature-solar-1600003"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d58ae515b74ff521.html",
+      "sha256": "2939cb7a58c46ac5a3a2f4a419f4249e71ad78318aeea38fc754c071e732575e",
+      "productIds": [
+        "wattcycle-46972243444008"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\spec-research\\d58ae515b74ff521.json",
+      "sha256": "4c0610df75adfc7e2d250affb135e679afceacbe2c47bb0b075f02e8d92da579",
+      "productIds": [
+        "wattcycle-46972243444008"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-n-evidence\\multiplus-ii-120v-datasheet.pdf",
+      "sha256": "cde40c6f166c146cf64dacf3bb700b7730f01326aea0f853263c17540f50037e",
+      "productIds": [
+        "inverters-r-us-used-pmp122305122"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-n-evidence\\multiplus-ii-120v-datasheet.pdf",
+      "sha256": "cde40c6f166c146cf64dacf3bb700b7730f01326aea0f853263c17540f50037e",
+      "productIds": [
+        "inverters-r-us-used-pmp242305100"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-n-evidence\\multiplus-ii-120v-datasheet.pdf",
+      "sha256": "cde40c6f166c146cf64dacf3bb700b7730f01326aea0f853263c17540f50037e",
+      "productIds": [
+        "inverters-r-us-used-pmp242305102"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-n-evidence\\multiplus-ii-120v-datasheet.pdf",
+      "sha256": "cde40c6f166c146cf64dacf3bb700b7730f01326aea0f853263c17540f50037e",
+      "productIds": [
+        "inverters-r-us-used-pmp482305100"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-n-evidence\\multiplus-ii-120v-datasheet.pdf",
+      "sha256": "cde40c6f166c146cf64dacf3bb700b7730f01326aea0f853263c17540f50037e",
+      "productIds": [
+        "inverters-r-us-used-pmp482305102"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-n-evidence\\multiplus-ii-120v-datasheet.pdf",
+      "sha256": "cde40c6f166c146cf64dacf3bb700b7730f01326aea0f853263c17540f50037e",
+      "productIds": [
+        "inverters-r-us-used-pmp482505110"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-o-evidence\\multi-datasheet.pdf",
+      "sha256": "5c10c68267673cefb4def711177e269c5b688329258bdc5ab08f0c31562b2b86",
+      "productIds": [
+        "inverters-r-us-used-pmp122305100"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-o-evidence\\multi-datasheet.pdf",
+      "sha256": "5c10c68267673cefb4def711177e269c5b688329258bdc5ab08f0c31562b2b86",
+      "productIds": [
+        "inverters-r-us-used-pmp122305102"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-o-evidence\\multi-datasheet.pdf",
+      "sha256": "5c10c68267673cefb4def711177e269c5b688329258bdc5ab08f0c31562b2b86",
+      "productIds": [
+        "inverters-r-us-used-pmp242305130"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-o-evidence\\quattro-datasheet.pdf",
+      "sha256": "2cff0deb86d16598daf2f9275c6fa38e900f59b0bdbb3f386a9b52c43304f764",
+      "productIds": [
+        "inverters-r-us-used-qua122305130"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-q-evidence\\quattro-datasheet.pdf",
+      "sha256": "d265bddc77ddcf34c6a2c6c00e0735a36e42499cb842ff1407a19f61814addf1",
+      "productIds": [
+        "inverters-r-us-used-qua125021100"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-q-evidence\\quattro-datasheet.pdf",
+      "sha256": "d265bddc77ddcf34c6a2c6c00e0735a36e42499cb842ff1407a19f61814addf1",
+      "productIds": [
+        "inverters-r-us-used-qua483021100"
+      ]
+    },
+    {
+      "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-q-evidence\\quattro-datasheet.pdf",
+      "sha256": "d265bddc77ddcf34c6a2c6c00e0735a36e42499cb842ff1407a19f61814addf1",
+      "productIds": [
+        "inverters-r-us-used-qua483100100"
+      ]
+    }
+  ],
+  "counts": {
+    "newTechnicalFields": 227,
+    "comparisonFills": 42,
+    "sourceRecords": 43,
+    "quarantinedFields": 8,
+    "catalogListings": 8729,
+    "remainingListings": 7390,
+    "remainingFields": 39103
+  },
+  "retainedHolds": [
+    "Five N operating-temperature rows held because official sources conflict",
+    "Six O/Q dimension rows held because selected used listings and manufacturer dimensions differ"
+  ],
+  "quarantineMigrationReport": "batch-twenty-two-quarantined-base-report.json",
+  "publicationStatus": "Pending release verification"
+}

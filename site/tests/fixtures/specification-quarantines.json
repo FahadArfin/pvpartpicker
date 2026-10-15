@@ -1,0 +1,1354 @@
+[
+  {
+    "product": {
+      "id": "renogy-43178688675955",
+      "name": "Rover Li 20/30/40 Amp MPPT Solar Charge Controller — 20A / Controller Only",
+      "brand": "Renogy",
+      "category": "charging",
+      "description": "- MPPT: tracking efficiency up to 99%, peak conversion efficiency 98% - Automatically detects 12V/24V system (non-lithium batteries) - Comprehensive system protection designed to secure your system. - Safe and efficient charging with the 4-stage charging feature. - Diverse load control & remote monitoring Rover Li 40 Amp MPPT Solar Charge Controller An advanced charge controller that maximizes the performance of your solar system. Effortless Programming Clear Indications Powerful Heat Dissipation Operates at peak performance even in extreme temperatures, ensuring your system is always running smoothly and efficiently. Bring Dead Batteries to Life Operates with 0 Volt batteries by sending small current to get them out of protection mode triggered by the battery management system (BMS). Exceptional Resilience and Long-lasting Performance Designed with materials and coatings that prevent rust and corrosion, ensuring your solar energy system is durable and reliable. Impressive Output Enhanced Safety Multiple Protections Maximize Your System Efficiency The Rover 40A Solar Charge Controller is the ultimate solution for both 12V and 24V systems, offering unparalleled versatility. It harnesses the maximum power from your solar panels, ensuring optimal charging efficiency. Prioritize Safety with Battery Voltage Setting It is essential to set the battery voltage before connecting the Rover Charge Controller. This crucial step ensures enhanced safety and optimal performance. Multiple Protections for Various Battery Types Ensuring the utmost protection for your batteries, safeguarding against overcharging, over-discharging, short-circuiting, overloading, reverse polarity, and reverse current, and providing temperature compensation. Wiring Steps Do not insert the wires into the space below the socket/hatch, which will damage terminals because of loose connections. Step 1 Loosen the screws above the terminals to make the socket/hatch descend. Step 2 Insert the wires into the socket/hatch. The terminals on the Rover 40A can accept up to 8AWG of wires. Step 3 Tighten the screws to elevate the socket/hatch to complete the wiring. Power Your Wild Adventures Designed to excel in a variety of scenarios including RVs, yachts, cabins, and camping. Embrace the freedom of renewable energy wherever your adventures take you. Cabin Yacht RV Camping Learn more Package Includes Rover 40 Amp MPPT Solar Charge Controller 1 x Remote Temperature Sensor 1 x Mounting Brackets 4 X Options: BT-2 Bluetooth Module 1 x Module Performance Operating Voltage 8-60 VDC (5 VDC for USB Type-C) Power Consumption at 12V Operating, WiFi On, 100% illumination: 3.2 WOperating, WiFi On, 50% illumination: 2.4 WOperating, WiFi On, 0% illumination: 1.9 WOff, logger still active: 1.5 W Communication Wi-Fi (IEEE 802.11b/g/n 2.4 GHz)Bluetooth LE and Bluetooth MeshZigbee 3.0 (IEEE 802.15.4)RS-485 Touch Screen 4 inches (480 x 480p) Leveling Range and Accuracy ±89°, 0.1° Warranty Model Operating Temperature -4℉ to 158℉ (-20℃ to 70℃) Operating Humidity 0% to 95% RH Operating Altitude Less than 5000m above sea level Installation Flush mount or place on a table Dimensions 4.17 x 4.17 x 1.05 in (106 x 106 x 26.6 mm) Weight 4.41 lb (2kg) Certification CE, FCC, RoHS, TSCA, BQB, IC-ID Warranty 2 years 1. How should I wire my panels with an MPPT charge controller? The panels can be wired either in series or parallel or a combination of series/parallel. 2. What is the max wattage input on the Rover 40? The Renogy Rover 40A MPPT Solar Charge Controller can accept input of up to 520W for a 12V system, and up to 1040W for a 24V system. 3. Does the Rover 40A MPPT charge controller have a built-in 40A fuse for the rated 40A load output? No. Please always add a fuse between the charge controller and batteries. To determine the fuse size, you can match it to the amperage rating of the charge controller. If you have one of our 40A charge controllers, we recommend using a 40A ANL fuse. 4. What are the advantages of Renogy MPPT technology? Renogy Rover Series solar charge controllers use Power Catcher MPPT algorithm to always ensure the charge controller converts most energy by locking to the most optimal maximum power point. 5. How many watts can Renogy Rover 40 amp charge controller handle? The Rover MPPT charge controller can work with standard off-grid 12/24V solar panels with high voltage or multiple panels with voltage up to 100V. And the maximum combined input solar power is 520W for a 12V battery system or 1040W for a 24V system. In particular, this controller will significantly increase the efficiency of a solar system where the solar panel voltage is much higher than the battery voltage. 6. What is a Solar Charge Controller and what is MPPT? The Charge Controller takes the power made by the solar panels and transform the ‘solar panel power’ into a form of power that the batteries can use. MPPT stands for Maximum Power Point Tracking, and it relates to the solar cell itself. Each solar cell has a point at which the current (I) and voltage (V) output from the cell result in the maximum power output of the cell. MPPT ensures that you get the most power possible from your solar panels at any point in time. It is particularly effective during low light level conditions. 7. What does 40A on MPPT charge controller mean? 40A represents the max amount of amps the controller can output going INTO THE BATTERIES. 8. What are the advantages of Renogy MPPT technology? Renogy Rover series solar charge controller uses the most advanced Maximum Power Point Tracking (MPPT) technology to track solar panels' maximum power voltage point as it varies depending on sunlight exposure and temperature. This technology ensures the maximum efficiency of your solar system and significantly outperforms standard PWM solar controllers. Another benefit of MPPT technology is the wide solar input voltage range. This controller can work with standard off-grid 12/24V solar panels and with high voltage or multiple panels with voltage up to 100V. More questions about your off-grid power system? Learn more from Renogy Learning Center!",
+      "image": "https://cdn.shopify.com/s/files/1/0631/0137/0483/files/RNG-260930-_-_-25.jpg?v=1790765220",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0631/0137/0483/files/RNG-260930-_-_-25.jpg?v=1790765220"
+      ],
+      "sourceUrl": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+      "specs": {
+        "controllerType": "MPPT",
+        "chargeCurrentA": 20
+      },
+      "verifiedAt": "2026-10-13T00:40:13.919Z",
+      "offers": [
+        {
+          "id": "renogy-43178688675955",
+          "retailerId": "renogy",
+          "retailer": "Renogy",
+          "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+          "price": 87.99,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-13T00:40:13.919Z",
+          "sku": "43178688675955",
+          "condition": "new"
+        }
+      ],
+      "specification": {
+        "summary": "Renogy charge controller / charger.",
+        "groups": [
+          {
+            "title": "Electrical ratings",
+            "fields": [
+              {
+                "key": "voltage",
+                "label": "Nominal voltage",
+                "value": "12/24V Auto-Detect",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "chargeCurrentA",
+                "label": "Rated charge current",
+                "value": "20 A",
+                "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+                "kind": "manual"
+              }
+            ]
+          },
+          {
+            "title": "Solar input",
+            "fields": [
+              {
+                "key": "maxPvVoltage",
+                "label": "Maximum PV input voltage",
+                "value": "15VDC~100VDC",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "maxPvWatts",
+                "label": "Maximum PV input power",
+                "value": "260 W (12V) / 520 W (24V)",
+                "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+                "kind": "manual"
+              },
+              {
+                "key": "mpptVoltageRange",
+                "label": "MPPT voltage range",
+                "value": "17 to 100 V DC",
+                "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+                "kind": "manual"
+              }
+            ]
+          },
+          {
+            "title": "Monitoring & control",
+            "fields": [
+              {
+                "key": "communications",
+                "label": "Communications",
+                "value": "G1 Version: RS232, G2 Version: RS485",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Protection & environment",
+            "fields": [
+              {
+                "key": "ipRating",
+                "label": "Ingress protection",
+                "value": "IP32",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "operatingTemperature",
+                "label": "Operating temperature",
+                "value": "-35°C to 45°C; -31°F to 113°F",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "storageTemperature",
+                "label": "Storage temperature",
+                "value": "-35°C to 75°C; -31°F to 167°F",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "altitude",
+                "label": "Operating altitude",
+                "value": "≤3000m",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Physical specifications",
+            "fields": [
+              {
+                "key": "dimensions",
+                "label": "Dimensions",
+                "value": "210 x 151 x 68 mm",
+                "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+                "kind": "manual"
+              },
+              {
+                "key": "weight",
+                "label": "Weight",
+                "value": "1.4 kg",
+                "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+                "kind": "manual"
+              }
+            ]
+          },
+          {
+            "title": "Warranty",
+            "fields": [
+              {
+                "key": "warranty",
+                "label": "Product warranty",
+                "value": "3 Year",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Identity",
+            "fields": [
+              {
+                "key": "controllerType",
+                "label": "Controller type",
+                "value": "MPPT",
+                "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+                "kind": "listing"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+            "kind": "manufacturer",
+            "label": "Product technical table",
+            "checkedAt": "2026-10-05T03:17:23.890Z"
+          },
+          {
+            "url": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+            "kind": "manual",
+            "label": "Exact linked manufacturer PDF table; visual pages 67",
+            "checkedAt": "2026-10-12T09:33:17.904879+00:00"
+          },
+          {
+            "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+            "kind": "listing",
+            "label": "Selected product listing"
+          }
+        ],
+        "notes": [],
+        "identity": {
+          "name": "Rover Li 20/30/40 Amp MPPT Solar Charge Controller — 20A / Controller Only",
+          "sourceUrl": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+          "category": "charging",
+          "anchors": {
+            "controllerType": "MPPT",
+            "chargeCurrentA": 20
+          }
+        }
+      }
+    },
+    "before": {
+      "summary": "Renogy charge controller / charger.",
+      "groups": [
+        {
+          "title": "Electrical ratings",
+          "fields": [
+            {
+              "key": "voltage",
+              "label": "Nominal voltage",
+              "value": "12/24V Auto-Detect",
+              "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "chargeCurrentA",
+              "label": "Rated charge current",
+              "value": "20 A",
+              "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+              "kind": "manual"
+            }
+          ]
+        },
+        {
+          "title": "Solar input",
+          "fields": [
+            {
+              "key": "maxPvVoltage",
+              "label": "Maximum PV input voltage",
+              "value": "15VDC~100VDC",
+              "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "maxPvWatts",
+              "label": "Maximum PV input power",
+              "value": "260 W (12V) / 520 W (24V)",
+              "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+              "kind": "manual"
+            },
+            {
+              "key": "mpptVoltageRange",
+              "label": "MPPT voltage range",
+              "value": "17 to 100 V DC",
+              "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+              "kind": "manual"
+            }
+          ]
+        },
+        {
+          "title": "Monitoring & control",
+          "fields": [
+            {
+              "key": "communications",
+              "label": "Communications",
+              "value": "G1 Version: RS232, G2 Version: RS485",
+              "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+              "kind": "manufacturer"
+            }
+          ]
+        },
+        {
+          "title": "Protection & environment",
+          "fields": [
+            {
+              "key": "ipRating",
+              "label": "Ingress protection",
+              "value": "IP32",
+              "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "operatingTemperature",
+              "label": "Operating temperature",
+              "value": "-35°C to 45°C; -31°F to 113°F",
+              "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "storageTemperature",
+              "label": "Storage temperature",
+              "value": "-35°C to 75°C; -31°F to 167°F",
+              "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "altitude",
+              "label": "Operating altitude",
+              "value": "≤3000m",
+              "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+              "kind": "manufacturer"
+            }
+          ]
+        },
+        {
+          "title": "Physical specifications",
+          "fields": [
+            {
+              "key": "dimensions",
+              "label": "Dimensions",
+              "value": "210 x 151 x 68 mm",
+              "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+              "kind": "manual"
+            },
+            {
+              "key": "weight",
+              "label": "Weight",
+              "value": "1.4 kg",
+              "source": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+              "kind": "manual"
+            }
+          ]
+        },
+        {
+          "title": "Warranty",
+          "fields": [
+            {
+              "key": "warranty",
+              "label": "Product warranty",
+              "value": "3 Year",
+              "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+              "kind": "manufacturer"
+            }
+          ]
+        },
+        {
+          "title": "Identity",
+          "fields": [
+            {
+              "key": "controllerType",
+              "label": "Controller type",
+              "value": "MPPT",
+              "source": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+              "kind": "listing"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+          "kind": "manufacturer",
+          "label": "Product technical table",
+          "checkedAt": "2026-10-05T03:17:23.890Z"
+        },
+        {
+          "url": "https://www.renogy.com/cdn/shop/files/RVR203040-Manual.pdf?v=13539027784924340996",
+          "kind": "manual",
+          "label": "Exact linked manufacturer PDF table; visual pages 67",
+          "checkedAt": "2026-10-12T09:33:17.904879+00:00"
+        },
+        {
+          "url": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+          "kind": "listing",
+          "label": "Selected product listing"
+        }
+      ],
+      "notes": [],
+      "identity": {
+        "name": "Rover Li 20/30/40 Amp MPPT Solar Charge Controller — 20A / Controller Only",
+        "sourceUrl": "https://www.renogy.com/products/rover-li-40-amp-mppt-solar-charge-controller?variant=43178688675955",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "MPPT",
+          "chargeCurrentA": 20
+        }
+      }
+    },
+    "rows": [
+      [
+        "Operating Altitude",
+        "≤3000m"
+      ]
+    ]
+  },
+  {
+    "product": {
+      "id": "renogy-43635963789427",
+      "name": "12V 20A/40A DC to DC Battery Charger — 40A",
+      "brand": "Renogy",
+      "category": "charging",
+      "description": "-Alternator running detection safeguards the starter battery. -Simple and compact layout ensures easy installation. -BT-2 Bluetooth enables remote monitoring, records 365-day data. -Advanced protections ensure efficient & safe charging. -Li Battery Activation On/Off offers customizable performance. Meet the Renogy 12V 40A DC to DC Battery Charger, the second generation of the DCC series. Built for the ultimate on-the-go charging experience, this state-of-the-art charger combines efficient energy utilization with smart control. It is compatible with both traditional and smart generators, safeguarding the batteries of your vehicle while reaching up to 94% charging efficiency. With advanced charging logic, the charger improves performance for better energy management. Stay on top of things through remote monitoring with the Renogy app to check system status at any time and from anywhere. Whether one is venturing out into the great outdoors or simply embracing the van life, the Renogy 12V 40A DC to DC Battery Charger is a reliable companion for efficient and effective charging. Renogy 12V 40A DC to DC Battery Charger Elevate your driving charging experience with smart control. Advanced High-Temperature Performance The second-generation DCC charger intelligently reduces output power in high-temperature environments, ensuring safe and efficient charging without compromising system performance. Optimize Battery Health Enable or disable lithium battery activation based on battery status via the DC Home app, extending battery lifespan directly from your phone! Smart Control for Simplicity and Efficiency Effortless remote monitoring and control of charging parameters. Comprehensive Accessories for Easy Installation The included battery temperature sensor delivers real-time data to the charger, enabling precise adjustments to charging parameters for optimal performance and battery longevity. Quieter Cooling Solution Corrosion-Proof for Long-Term Use Quieter Cooling Solution Experience enhanced performance with natural heat dissipation and reduced 30dB noise levels. Corrosion-Proof for Long-Term Use This compact, corrosion-resistant charger is perfect for installation in small boat cabins and humid marine environments, ensuring reliable performance in challenging conditions. Learn more Connect with Renogy customers. Go to Power Plus Community Still have questions? Ask our specialist 1. When installing the DC-DC battery charger, are there any precautions I need to be aware of? First, installing the charger horizontal will improve venting and heat dissipation of the charger. Additionally, positioning the DC-DC charger nearer the service battery is advised. 2. What types of batteries can the charger be used for? \"Our charger is compatible with the following 12V battery types by default: AGM (Absorbent Glass Mat) FLD (Flooded Lead-acid) GEL (Gelled Electrolyte) SLD (Sealed Lead-acid) In addition, our charger also features a custom mode, which can be adjusted according to the specific needs of different batteries to ensure optimal charging performance.\" 3. How does the charger have communication functionality? To enable communication, purchase the RENOGY BT-2 Bluetooth module and connect it to the charger's communication port. This will establish communication with mobile terminals like DC Home and Core, granting access to crucial data. 4. What stages of charging logic do smart chargers typically include? Smart chargers typically feature a four-stage charging logic design, encompassing the bulk charge stage, constant voltage stage, float charge stage, and equalization stage. These stages ensure that batteries can be charged safely and efficiently. More questions about your off-grid power system? Learn more from Renogy Learning Center!",
+      "image": "https://cdn.shopify.com/s/files/1/0631/0137/0483/files/RNG-260930-_-_-23.jpg?v=1791541018",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0631/0137/0483/files/RNG-260930-_-_-23.jpg?v=1791541018"
+      ],
+      "sourceUrl": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+      "specs": {
+        "voltage": 12,
+        "controllerType": "Solar controller",
+        "chargeCurrentA": 40
+      },
+      "verifiedAt": "2026-10-13T00:40:13.569Z",
+      "offers": [
+        {
+          "id": "renogy-43635963789427",
+          "retailerId": "renogy",
+          "retailer": "Renogy",
+          "url": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+          "price": 186.99,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-13T00:40:13.569Z",
+          "sku": "43635963789427",
+          "condition": "new"
+        }
+      ],
+      "specification": {
+        "summary": "Renogy RBC40D1U equipment accessory.",
+        "groups": [
+          {
+            "title": "Identity",
+            "fields": [
+              {
+                "key": "model",
+                "label": "Model",
+                "value": "RBC40D1U",
+                "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Monitoring & control",
+            "fields": [
+              {
+                "key": "communications",
+                "label": "Communications",
+                "value": "RS485 Communication",
+                "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Protection & environment",
+            "fields": [
+              {
+                "key": "operatingTemperature",
+                "label": "Operating temperature",
+                "value": "-4℉ -122℉ /-25 ℃ - 60℃",
+                "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "storageTemperature",
+                "label": "Storage temperature",
+                "value": "-4℉ -122℉ /-40 ℃ - 85℃",
+                "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "humidity",
+                "label": "Humidity",
+                "value": "0%-95%, No Condensation",
+                "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "ipRating",
+                "label": "Ingress protection",
+                "value": "0%- 95% ,no condensation",
+                "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "certifications",
+                "label": "Listed certifications",
+                "value": "CE/RoHS/FCC",
+                "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Physical specifications",
+            "fields": [
+              {
+                "key": "dimensions",
+                "label": "Dimensions",
+                "value": "9.31 in (236.5 mm)x6.00 in (152.5 mm)x2.30 in(58.4 mm)",
+                "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "weight",
+                "label": "Weight",
+                "value": "4.14 lb (1.88 kg)",
+                "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Electrical ratings",
+            "fields": [
+              {
+                "key": "systemVoltage",
+                "label": "System voltage class",
+                "value": "12V-12V",
+                "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "voltage",
+                "label": "Nominal system voltage",
+                "value": "12 V",
+                "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+                "kind": "listing"
+              }
+            ]
+          },
+          {
+            "title": "Warranty",
+            "fields": [
+              {
+                "key": "warranty",
+                "label": "Product warranty",
+                "value": "2-year",
+                "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+                "kind": "manufacturer"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+            "kind": "manufacturer",
+            "label": "Product technical table",
+            "checkedAt": "2026-10-05T03:14:55.911Z"
+          }
+        ],
+        "notes": []
+      }
+    },
+    "before": {
+      "summary": "Renogy RBC40D1U equipment accessory.",
+      "groups": [
+        {
+          "title": "Identity",
+          "fields": [
+            {
+              "key": "model",
+              "label": "Model",
+              "value": "RBC40D1U",
+              "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+              "kind": "manufacturer"
+            }
+          ]
+        },
+        {
+          "title": "Monitoring & control",
+          "fields": [
+            {
+              "key": "communications",
+              "label": "Communications",
+              "value": "RS485 Communication",
+              "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+              "kind": "manufacturer"
+            }
+          ]
+        },
+        {
+          "title": "Protection & environment",
+          "fields": [
+            {
+              "key": "operatingTemperature",
+              "label": "Operating temperature",
+              "value": "-4℉ -122℉ /-25 ℃ - 60℃",
+              "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "storageTemperature",
+              "label": "Storage temperature",
+              "value": "-4℉ -122℉ /-40 ℃ - 85℃",
+              "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "humidity",
+              "label": "Humidity",
+              "value": "0%-95%, No Condensation",
+              "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "ipRating",
+              "label": "Ingress protection",
+              "value": "0%- 95% ,no condensation",
+              "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "certifications",
+              "label": "Listed certifications",
+              "value": "CE/RoHS/FCC",
+              "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+              "kind": "manufacturer"
+            }
+          ]
+        },
+        {
+          "title": "Physical specifications",
+          "fields": [
+            {
+              "key": "dimensions",
+              "label": "Dimensions",
+              "value": "9.31 in (236.5 mm)x6.00 in (152.5 mm)x2.30 in(58.4 mm)",
+              "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "weight",
+              "label": "Weight",
+              "value": "4.14 lb (1.88 kg)",
+              "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+              "kind": "manufacturer"
+            }
+          ]
+        },
+        {
+          "title": "Electrical ratings",
+          "fields": [
+            {
+              "key": "systemVoltage",
+              "label": "System voltage class",
+              "value": "12V-12V",
+              "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "voltage",
+              "label": "Nominal system voltage",
+              "value": "12 V",
+              "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+              "kind": "listing"
+            }
+          ]
+        },
+        {
+          "title": "Warranty",
+          "fields": [
+            {
+              "key": "warranty",
+              "label": "Product warranty",
+              "value": "2-year",
+              "source": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+              "kind": "manufacturer"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.renogy.com/products/12v-40a-dc-to-dc-battery-charger?variant=43635963789427",
+          "kind": "manufacturer",
+          "label": "Product technical table",
+          "checkedAt": "2026-10-05T03:14:55.911Z"
+        }
+      ],
+      "notes": []
+    },
+    "rows": [
+      [
+        "Operating Temperature Range",
+        "-4℉ -122℉ /-25 ℃ - 60℃"
+      ],
+      [
+        "Storage Temperature Range",
+        "-4℉ -122℉ /-40 ℃ - 85℃"
+      ],
+      [
+        "Enclosure Rating",
+        "0%- 95% ,no condensation"
+      ]
+    ]
+  },
+  {
+    "product": {
+      "id": "renogy-43178664362099",
+      "name": "12V 20A DC to DC Battery Charger — Charger Only",
+      "brand": "Renogy",
+      "category": "charging",
+      "description": "",
+      "image": "https://cdn.shopify.com/s/files/1/0631/0137/0483/files/01__46833.1751961866.1280.1280.jpg?v=1764222474",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0631/0137/0483/files/01__46833.1751961866.1280.1280.jpg?v=1764222474"
+      ],
+      "sourceUrl": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+      "specs": {
+        "voltage": 12,
+        "controllerType": "Solar controller",
+        "chargeCurrentA": 20
+      },
+      "verifiedAt": "2026-10-13T00:40:13.314Z",
+      "offers": [
+        {
+          "id": "renogy-43178664362099",
+          "retailerId": "renogy",
+          "retailer": "Renogy",
+          "url": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+          "price": 140.99,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-13T00:40:13.314Z",
+          "sku": "43178664362099",
+          "condition": "new"
+        }
+      ],
+      "specification": {
+        "summary": "Renogy equipment accessory.",
+        "groups": [
+          {
+            "title": "Monitoring & control",
+            "fields": [
+              {
+                "key": "communications",
+                "label": "Communications",
+                "value": "RS485 Communication",
+                "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Protection & environment",
+            "fields": [
+              {
+                "key": "humidity",
+                "label": "Humidity",
+                "value": "0%-95%, No Condensation",
+                "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "operatingTemperature",
+                "label": "Operating temperature",
+                "value": "-4℉ -122℉ /-25 ℃ - 60℃",
+                "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "storageTemperature",
+                "label": "Storage temperature",
+                "value": "-4℉ -122℉ /-40 ℃ - 85℃",
+                "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "ipRating",
+                "label": "Ingress protection",
+                "value": "0%- 95% , No condensation",
+                "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "certifications",
+                "label": "Listed certifications",
+                "value": "CE/RoHS/FCC",
+                "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Physical specifications",
+            "fields": [
+              {
+                "key": "dimensions",
+                "label": "Dimensions",
+                "value": "9.31 in (236.5 mm)x5.17 in (131.5 mm)x2.36 in(60.5 mm)",
+                "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "weight",
+                "label": "Weight",
+                "value": "3.3 lb / 1.5 kg",
+                "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Electrical ratings",
+            "fields": [
+              {
+                "key": "systemVoltage",
+                "label": "System voltage class",
+                "value": "12V-12V",
+                "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "voltage",
+                "label": "Nominal system voltage",
+                "value": "12 V",
+                "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+                "kind": "listing"
+              }
+            ]
+          },
+          {
+            "title": "Warranty",
+            "fields": [
+              {
+                "key": "warranty",
+                "label": "Product warranty",
+                "value": "2-year",
+                "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+                "kind": "manufacturer"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+            "kind": "manufacturer",
+            "label": "Product technical table",
+            "checkedAt": "2026-10-05T03:14:17.366Z"
+          }
+        ],
+        "notes": []
+      }
+    },
+    "before": {
+      "summary": "Renogy equipment accessory.",
+      "groups": [
+        {
+          "title": "Monitoring & control",
+          "fields": [
+            {
+              "key": "communications",
+              "label": "Communications",
+              "value": "RS485 Communication",
+              "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+              "kind": "manufacturer"
+            }
+          ]
+        },
+        {
+          "title": "Protection & environment",
+          "fields": [
+            {
+              "key": "humidity",
+              "label": "Humidity",
+              "value": "0%-95%, No Condensation",
+              "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "operatingTemperature",
+              "label": "Operating temperature",
+              "value": "-4℉ -122℉ /-25 ℃ - 60℃",
+              "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "storageTemperature",
+              "label": "Storage temperature",
+              "value": "-4℉ -122℉ /-40 ℃ - 85℃",
+              "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "ipRating",
+              "label": "Ingress protection",
+              "value": "0%- 95% , No condensation",
+              "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "certifications",
+              "label": "Listed certifications",
+              "value": "CE/RoHS/FCC",
+              "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+              "kind": "manufacturer"
+            }
+          ]
+        },
+        {
+          "title": "Physical specifications",
+          "fields": [
+            {
+              "key": "dimensions",
+              "label": "Dimensions",
+              "value": "9.31 in (236.5 mm)x5.17 in (131.5 mm)x2.36 in(60.5 mm)",
+              "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "weight",
+              "label": "Weight",
+              "value": "3.3 lb / 1.5 kg",
+              "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+              "kind": "manufacturer"
+            }
+          ]
+        },
+        {
+          "title": "Electrical ratings",
+          "fields": [
+            {
+              "key": "systemVoltage",
+              "label": "System voltage class",
+              "value": "12V-12V",
+              "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "voltage",
+              "label": "Nominal system voltage",
+              "value": "12 V",
+              "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+              "kind": "listing"
+            }
+          ]
+        },
+        {
+          "title": "Warranty",
+          "fields": [
+            {
+              "key": "warranty",
+              "label": "Product warranty",
+              "value": "2-year",
+              "source": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+              "kind": "manufacturer"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.renogy.com/products/12v-20a-dc-to-dc-battery-charger?variant=43178664362099",
+          "kind": "manufacturer",
+          "label": "Product technical table",
+          "checkedAt": "2026-10-05T03:14:17.366Z"
+        }
+      ],
+      "notes": []
+    },
+    "rows": [
+      [
+        "Operating Temperature Range",
+        "-4℉ -122℉ /-25 ℃ - 60℃"
+      ],
+      [
+        "Storage Temperature Range",
+        "-4℉ -122℉ /-40 ℃ - 85℃"
+      ],
+      [
+        "Enclosure Rating",
+        "0%- 95% , No condensation"
+      ]
+    ]
+  },
+  {
+    "product": {
+      "id": "renogy-43178659217523",
+      "name": "Rover Lite 12V/ 24V/ 36V/ 48V 60A MPPT Solar Charge Controller — Controller Only",
+      "brand": "Renogy",
+      "category": "charging",
+      "description": "",
+      "image": "https://cdn.shopify.com/s/files/1/0631/0137/0483/files/RNG-260930-_-_-26.jpg?v=1791540673",
+      "images": [
+        "https://cdn.shopify.com/s/files/1/0631/0137/0483/files/RNG-260930-_-_-26.jpg?v=1791540673"
+      ],
+      "sourceUrl": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+      "specs": {
+        "voltage": 12,
+        "controllerType": "MPPT",
+        "chargeCurrentA": 60,
+        "maxPvVoltage": 150
+      },
+      "verifiedAt": "2026-10-13T00:40:13.646Z",
+      "offers": [
+        {
+          "id": "renogy-43178659217523",
+          "retailerId": "renogy",
+          "retailer": "Renogy",
+          "url": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+          "price": 249.99,
+          "currency": "USD",
+          "packQuantity": 1,
+          "stock": "in_stock",
+          "observedAt": "2026-10-13T00:40:13.646Z",
+          "sku": "43178659217523",
+          "condition": "new"
+        }
+      ],
+      "specification": {
+        "summary": "Renogy charge controller / charger.",
+        "groups": [
+          {
+            "title": "Monitoring & control",
+            "fields": [
+              {
+                "key": "communications",
+                "label": "Communications",
+                "value": "RS485",
+                "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Protection & environment",
+            "fields": [
+              {
+                "key": "operatingTemperature",
+                "label": "Operating temperature",
+                "value": "-31℉~113℉ /-35 ℃ ~65℃",
+                "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "storageTemperature",
+                "label": "Storage temperature",
+                "value": "-40℉~176℉ /-40 ℃~ 80℃",
+                "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "humidity",
+                "label": "Humidity",
+                "value": "0%~95% RH",
+                "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "ipRating",
+                "label": "Ingress protection",
+                "value": "IP32",
+                "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Physical specifications",
+            "fields": [
+              {
+                "key": "dimensions",
+                "label": "Dimensions",
+                "value": "305 x 205 x 99 mm / 12.01 x 8.07 x 3.90 inch",
+                "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "weight",
+                "label": "Weight",
+                "value": "3.5 kg /7.71 lb",
+                "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Electrical ratings",
+            "fields": [
+              {
+                "key": "systemVoltage",
+                "label": "System voltage class",
+                "value": "Non-Lithium: 12VDC / 24 VDC / 36 VDC /48 VDC (Auto Recognition)",
+                "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "chargeCurrentA",
+                "label": "Rated charge current",
+                "value": "60A",
+                "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "voltage",
+                "label": "Nominal system voltage",
+                "value": "12 V",
+                "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+                "kind": "listing"
+              },
+              {
+                "key": "operatingVoltage",
+                "label": "Operating voltage range",
+                "value": "9VDC~64VDC",
+                "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Solar input",
+            "fields": [
+              {
+                "key": "maxPvWatts",
+                "label": "Maximum PV input power",
+                "value": "900 W (12V Battery);1800W (24V Battery);2000 W (36V Battery);3200W (48V Battery)",
+                "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+                "kind": "manufacturer"
+              },
+              {
+                "key": "maxPvVoltage",
+                "label": "Maximum PV input voltage",
+                "value": "150VDC",
+                "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Warranty",
+            "fields": [
+              {
+                "key": "warranty",
+                "label": "Product warranty",
+                "value": "2-year",
+                "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+                "kind": "manufacturer"
+              }
+            ]
+          },
+          {
+            "title": "Identity",
+            "fields": [
+              {
+                "key": "controllerType",
+                "label": "Controller type",
+                "value": "MPPT",
+                "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+                "kind": "listing"
+              }
+            ]
+          }
+        ],
+        "sources": [
+          {
+            "url": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+            "kind": "manufacturer",
+            "label": "Product technical table",
+            "checkedAt": "2026-10-05T03:15:36.816Z"
+          },
+          {
+            "url": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller",
+            "kind": "manufacturer",
+            "label": "Exact variant subject table; retained inert primary HTML reviewed",
+            "checkedAt": "2026-10-05T03:15:36.816Z"
+          },
+          {
+            "url": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+            "kind": "listing",
+            "label": "Selected product listing"
+          }
+        ],
+        "notes": [],
+        "identity": {
+          "name": "Rover Lite 12V/ 24V/ 36V/ 48V 60A MPPT Solar Charge Controller — Controller Only",
+          "sourceUrl": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+          "category": "charging",
+          "anchors": {
+            "voltage": 12,
+            "controllerType": "MPPT",
+            "chargeCurrentA": 60
+          }
+        }
+      }
+    },
+    "before": {
+      "summary": "Renogy charge controller / charger.",
+      "groups": [
+        {
+          "title": "Monitoring & control",
+          "fields": [
+            {
+              "key": "communications",
+              "label": "Communications",
+              "value": "RS485",
+              "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+              "kind": "manufacturer"
+            }
+          ]
+        },
+        {
+          "title": "Protection & environment",
+          "fields": [
+            {
+              "key": "operatingTemperature",
+              "label": "Operating temperature",
+              "value": "-31℉~113℉ /-35 ℃ ~65℃",
+              "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "storageTemperature",
+              "label": "Storage temperature",
+              "value": "-40℉~176℉ /-40 ℃~ 80℃",
+              "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "humidity",
+              "label": "Humidity",
+              "value": "0%~95% RH",
+              "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "ipRating",
+              "label": "Ingress protection",
+              "value": "IP32",
+              "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+              "kind": "manufacturer"
+            }
+          ]
+        },
+        {
+          "title": "Physical specifications",
+          "fields": [
+            {
+              "key": "dimensions",
+              "label": "Dimensions",
+              "value": "305 x 205 x 99 mm / 12.01 x 8.07 x 3.90 inch",
+              "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "weight",
+              "label": "Weight",
+              "value": "3.5 kg /7.71 lb",
+              "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+              "kind": "manufacturer"
+            }
+          ]
+        },
+        {
+          "title": "Electrical ratings",
+          "fields": [
+            {
+              "key": "systemVoltage",
+              "label": "System voltage class",
+              "value": "Non-Lithium: 12VDC / 24 VDC / 36 VDC /48 VDC (Auto Recognition)",
+              "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "chargeCurrentA",
+              "label": "Rated charge current",
+              "value": "60A",
+              "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "voltage",
+              "label": "Nominal system voltage",
+              "value": "12 V",
+              "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+              "kind": "listing"
+            },
+            {
+              "key": "operatingVoltage",
+              "label": "Operating voltage range",
+              "value": "9VDC~64VDC",
+              "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller",
+              "kind": "manufacturer"
+            }
+          ]
+        },
+        {
+          "title": "Solar input",
+          "fields": [
+            {
+              "key": "maxPvWatts",
+              "label": "Maximum PV input power",
+              "value": "900 W (12V Battery);1800W (24V Battery);2000 W (36V Battery);3200W (48V Battery)",
+              "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+              "kind": "manufacturer"
+            },
+            {
+              "key": "maxPvVoltage",
+              "label": "Maximum PV input voltage",
+              "value": "150VDC",
+              "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+              "kind": "manufacturer"
+            }
+          ]
+        },
+        {
+          "title": "Warranty",
+          "fields": [
+            {
+              "key": "warranty",
+              "label": "Product warranty",
+              "value": "2-year",
+              "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+              "kind": "manufacturer"
+            }
+          ]
+        },
+        {
+          "title": "Identity",
+          "fields": [
+            {
+              "key": "controllerType",
+              "label": "Controller type",
+              "value": "MPPT",
+              "source": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+              "kind": "listing"
+            }
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "url": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+          "kind": "manufacturer",
+          "label": "Product technical table",
+          "checkedAt": "2026-10-05T03:15:36.816Z"
+        },
+        {
+          "url": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller",
+          "kind": "manufacturer",
+          "label": "Exact variant subject table; retained inert primary HTML reviewed",
+          "checkedAt": "2026-10-05T03:15:36.816Z"
+        },
+        {
+          "url": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+          "kind": "listing",
+          "label": "Selected product listing"
+        }
+      ],
+      "notes": [],
+      "identity": {
+        "name": "Rover Lite 12V/ 24V/ 36V/ 48V 60A MPPT Solar Charge Controller — Controller Only",
+        "sourceUrl": "https://www.renogy.com/products/rover-lite-12v-24v-36v-48v-60a-mppt-solar-charge-controller?variant=43178659217523",
+        "category": "charging",
+        "anchors": {
+          "voltage": 12,
+          "controllerType": "MPPT",
+          "chargeCurrentA": 60
+        }
+      }
+    },
+    "rows": [
+      [
+        "Operating Temperature",
+        "-31℉~113℉ /-35 ℃ ~65℃"
+      ]
+    ]
+  }
+]

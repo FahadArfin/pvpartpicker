@@ -1,3 +1,4 @@
+import {assertQuarantineWriteBoundary} from '../lib/specification-quarantine-guard.ts';
 import {assertWattcycleReviewedRegeneration,isWattcycleReviewedListing} from '../lib/wattcycle-reviewed-selection.ts';
 import {assertCorrectionWriteBoundary} from '../lib/specification-correction-guard.ts';
 /** Import only explicitly reviewed, exact-identity source transcriptions. No network or price writes. */
@@ -20,6 +21,7 @@ for(const raw of catalog.products){const p=categorizeProduct(raw),before=applySp
  const c=categories[row.category]??={listings:0,reviewedListings:0,newTechnicalFields:0,resolvedComparisonFields:0,remainingListings:0};c.listings++;c.reviewedListings+=Number(row.status==='reviewed-imported');c.newTechnicalFields+=newTechnical.length;c.resolvedComparisonFields+=resolved.length;c.remainingListings+=Number(row.missing.length>0);
 }
 assertCorrectionWriteBoundary(catalog.products.map(categorizeProduct),index);
+assertQuarantineWriteBoundary(catalog.products.map(categorizeProduct),index);
 assertWattcycleReviewedRegeneration(catalog.products,index,prior);
 await mkdir(directory,{recursive:true});
 const report={checkedAt:new Date().toISOString(),catalogListings:catalog.products.length,reviewedSources:records.length,categories,rows};

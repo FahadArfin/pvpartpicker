@@ -1,3 +1,4 @@
+import {quarantineLedger} from './specification-quarantine-guard.ts';
 import {isWattcycleReviewedListing,matchesWattcycleReviewedMetadata,canAttachWattcycleReviewedEvidence} from './wattcycle-reviewed-selection.ts';
 import {normalizeCatalogProduct} from './catalog-cleanup.ts';
 import {applyOverride} from './overrides.ts';
@@ -14,7 +15,9 @@ export interface Catalog extends CatalogSnapshot {storage:string;}
 
 // Offers hydrate separately from metadata; preserve reviewed evidence and owner overrides.
 function normalizeHydratedProduct(product:Product,skipReviewedStorageRole=false,evidence:Record<string,ProductSpecification>={}):Product{
- skipReviewedStorageRole ||= isPackageGuardedReviewedRoleListing(product)&&!isReviewedStorageRoleCandidate(product);
+ // Quarantine identity includes the selected offer, available only after D1 hydration.
+ if(quarantineLedger.entries.some(e=>e.id===product.id))product=skipReviewedStorageRole?{...product,specification:undefined,connectionSpecs:undefined,comparisonSpecs:undefined}:applySpecificationEvidence(product,evidence);
+ skipReviewedStorageRole ||=  isPackageGuardedReviewedRoleListing(product)&&!isReviewedStorageRoleCandidate(product);
  const hydrated=(isWattcycleReviewedListing(product)||isReviewedStorageRoleCandidate(product))?product:{...product,offers:product.offers.map(o=>normalizeSelectedBatteryPackOffer(product,o))};
  const normalized=normalizeCatalogProduct(hydrated,{skipReviewedStorageRole});
  if(isWattcycleReviewedListing(product)){const held={...normalized,offers:product.offers,specification:undefined};return !skipReviewedStorageRole&&canAttachWattcycleReviewedEvidence(held,evidence[held.id])?applySpecificationEvidence(held,evidence):held;}
@@ -31,7 +34,7 @@ function duplicateIds(products:{id:string}[]):Set<string>{
 }
 
 function applyPreProjectionEvidence(product:Product,evidence:Record<string,ProductSpecification>):Product{
- if(isWattcycleReviewedListing(product))return {...product,specification:undefined};
+ if(isWattcycleReviewedListing(product)||quarantineLedger.entries.some(e=>e.id===product.id))return {...product,specification:undefined};
  const identity=evidence[product.id]?.identity;
  // Reviewed kit/accessory evidence waits for the final selected-offer guard,
  // even when saved metadata already carries its precisely corrected category.
