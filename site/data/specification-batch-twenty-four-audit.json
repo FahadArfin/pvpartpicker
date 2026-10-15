@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "batch": "twenty-four-storage-v3",
+  "phase": "canonical_promotion_pre_release",
+  "recordedAt": "2026-10-15T10:51:54.420456+00:00",
+  "independentReview": {
+    "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\review-batch24-v3-root.json",
+    "sha256": "FEF530DCDB987298FB5ACB2E0AB961F6FFE96851B6FB0D04FDF0A54020C51DCE",
+    "verdict": "approved_exact_frozen_output"
+  },
+  "candidate": {
+    "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-four-storage-final-composed-v3\\batch-twenty-four-composed-candidates-v3.json",
+    "sha256": "362767A918FFEF041BD31501004D92F80C082D0D568C5A147A1B2C265C2EEDD0",
+    "records": 47,
+    "rows": 363,
+    "uniqueProductIds": 44
+  },
+  "manifest": {
+    "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-four-storage-final-composed-v3\\input-manifest-v3.json",
+    "sha256": "EC6851F6AD5AF783652B83B41E6AE122F06392BA9CC9D16B4CCDAF3AA84B6102"
+  },
+  "approvedRowLedger": {
+    "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-four-storage-final-composed-v3\\batch-twenty-four-approved-row-ledger-v3.json",
+    "sha256": "92C9C5E610C3CC987150685445D73272F6B6C81F5D167410F999AC978D1F2A44"
+  },
+  "validationProof": {
+    "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-four-storage-final-composed-v3\\batch-twenty-four-v3-final-validation-proof.json",
+    "sha256": "F3D87A711F1641EA445E96A6D5E5BE5DA76E64C2A0B91A94E00AAA8E519BF67C"
+  },
+  "freshLiveIdentityGate": {
+    "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-four-storage-final-composed-v3\\batch-twenty-four-fresh-live-identity-gate-v1.json",
+    "sha256": "E0BA06AA475F387AB0581178EAFB7805F8BDBB769B86713E2AEDCFDD42284B83",
+    "passedRows": 47,
+    "totalRows": 47,
+    "catalogSnapshotSha256": "AA0A9324839B5B6E5F0D8A0ACC80E769ED6B175DCD165602F1E734D5218ABD07",
+    "catalogProducts": 8742
+  },
+  "canonicalIndex": {
+    "baselineSha256": "4F3E111DEBDC73467ACA8C11D8451498FBEE0155CAA6F496299C7A126AB06D13",
+    "promotedSha256": "695135FCE4DAF07CBE04533D17A01E17B8667B61C99620DA0DEDC686BAB4AEF3",
+    "expectedSha256": "695135FCE4DAF07CBE04533D17A01E17B8667B61C99620DA0DEDC686BAB4AEF3"
+  },
+  "reviewedSourceRegistry": {
+    "beforeRecords": 4598,
+    "appendedRecords": 47,
+    "afterRecords": 4645,
+    "beforeSha256": "7BB695EB1940E46E4AA3239D3B755DB1A00CFB56530BE13FBBDAA1EDA91C3094",
+    "afterSha256": "A3043066E3F4B957C331C9091E26EF1A775BF0B75F1153EE10A0D16F3850407E"
+  },
+  "importResults": {
+    "reviewedListings": 43,
+    "newTechnicalFields": 156,
+    "comparisonFills": 78,
+    "replayTechnicalFields": 0,
+    "replayComparisonFills": 0
+  },
+  "preservedLimitations": [
+    "LG legacy 400 V baseline issue remains unchanged and excluded from candidate",
+    "Anker composite-capacity row excluded",
+    "EP Cube unmapped source fact receives no fill credit",
+    "Identity guard remains exact; no broader matching used"
+  ],
+  "priceAndWorkflowChanges": false,
+  "releaseStatus": "pending validation, CI and publication"
+}
