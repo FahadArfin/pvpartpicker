@@ -253244,5 +253244,4192 @@
     },
     "reviewState": "provisional_independent_review_required",
     "comparisonImpact": "Rows address captured comparison gaps; independent review required."
+  },
+  {
+    "kind": "retailer",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-r\\canadian_ep_cube.html",
+    "expected": {
+      "signature-solar-1579010": {
+        "anchors": {
+          "batteryKind": "Battery modules"
+        },
+        "sourceUrl": "https://signaturesolar.com/canadian-solar-ep-cube-battery-module/",
+        "category": "batteries",
+        "name": "Canadian Solar |  EP Cube Battery Module"
+      }
+    },
+    "checkedAt": "2026-10-15T07:45:49Z",
+    "url": "https://signaturesolar.com/canadian-solar-ep-cube-battery-module/",
+    "rows": [
+      [
+        "Energy capacity",
+        "3.3 kWh per EP Cube battery module"
+      ],
+      [
+        "Chemistry",
+        "Lithium iron phosphate (LFP)"
+      ],
+      [
+        "Weight",
+        "70 lb (32 kg) per battery module"
+      ]
+    ],
+    "productIds": [
+      "signature-solar-1579010"
+    ],
+    "label": "Exact Signature Solar product page SKU 1579010; linked Canadian Solar EP Cube datasheet v2.2 confirms model-family battery module mass and system configurations.",
+    "sha256": "56d42c8023240c443aa34060ebd0907cc8bfede8b0693c7c4e2f4c0715bf1427",
+    "sourceScope": "Exact Signature Solar product page SKU 1579010; linked Canadian Solar EP Cube datasheet v2.2 confirms model-family battery module mass and system configurations.",
+    "evidenceRows": [
+      [
+        "Retailer SKU",
+        "1579010"
+      ],
+      [
+        "Retailer product role",
+        "Canadian Solar EP Cube battery module"
+      ],
+      [
+        "Retailer-published module capacity",
+        "3.3 kWh"
+      ],
+      [
+        "Datasheet system configurations",
+        "3, 4, 5, or 6 battery modules; system total energy 9.9, 13.3, 16.6, or 19.9 kWh respectively"
+      ],
+      [
+        "Battery module weight",
+        "70 lb (32 kg)"
+      ],
+      [
+        "System warranty",
+        ">80% capacity; up to 10 years or 6,000 cycles, whichever first (system-level datasheet statement)"
+      ],
+      [
+        "System dimensions",
+        "Stack dimensions vary by 3–6-module system; not module dimensions"
+      ]
+    ],
+    "candidateDerivations": [
+      "3.3kWh is the exact module capacity stated on the retailer item; system totals corroborate 3 modules=9.9kWh but other totals are rounded. No aggregate dimensions mapped."
+    ],
+    "unmappedSourceFacts": [
+      "No individual battery-module dimensions, nominal voltage, Ah capacity, charge current, or discharge-current limit found in the captured retailer page, datasheet, installation manual, or warranty.",
+      "System-level output/current and aggregate size/weight are not applied to the exact individual module.",
+      "System warranty statement is evidence only; not mapped as module cycle-life or product warranty."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "1579010",
+      "url": "https://signaturesolar.com/canadian-solar-ep-cube-battery-module/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-r\\canadian_epcube_datasheet.pdf",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-r\\canadian_epcube_install.pdf",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-r\\canadian_epcube_warranty.pdf"
+    ]
+  },
+  {
+    "kind": "manufacturer",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-r\\enphase_iq5p_datasheet.pdf",
+    "expected": {
+      "signature-solar-1647032": {
+        "anchors": {
+          "batteryKind": "Battery modules"
+        },
+        "sourceUrl": "https://signaturesolar.com/enphase-iq-battery-5p-domestic-content/",
+        "category": "batteries",
+        "name": "Enphase | IQ Battery 5P | Domestic Content"
+      }
+    },
+    "checkedAt": "2026-10-15T07:46:08Z",
+    "url": "https://signaturesolar.com/content/documents/Enphase/Battery/IQ%20Battery-5P-DSH-00010-2.0-EN-US-2023-07-26%20(1).pdf",
+    "rows": [
+      [
+        "Model number",
+        "IQBATTERY-5P-1P-NA"
+      ],
+      [
+        "Nominal voltage",
+        "76.8 V DC"
+      ],
+      [
+        "Energy capacity",
+        "5.0 kWh usable (total capacity also 5.0 kWh)"
+      ],
+      [
+        "Chemistry",
+        "Lithium iron phosphate (LFP)"
+      ],
+      [
+        "Dimensions",
+        "980 × 550 × 188 mm (H × W × D)"
+      ],
+      [
+        "Weight",
+        "66.3 kg lifting weight; 78.9 kg total installed weight"
+      ],
+      [
+        "Warranty",
+        ">60% capacity; up to 15 years or 6,000 cycles, whichever occurs first (restrictions apply)"
+      ],
+      [
+        "Communications",
+        "Wired control communication"
+      ]
+    ],
+    "productIds": [
+      "signature-solar-1647032"
+    ],
+    "label": "Exact Signature Solar Domestic Content page identifies SKU 1647032 and the IQ Battery 5P; linked Enphase data sheet identifies base platform IQBATTERY-5P-1P-NA. Technical fields are manufacturer platform values; no request was sent to paused enphase.com.",
+    "sha256": "8408b9b3b5fe204e30b319ab2447be8fa4cd0e3db4c3c58846532f332237cb5d",
+    "sourceScope": "Exact Signature Solar Domestic Content page identifies SKU 1647032 and the IQ Battery 5P; linked Enphase data sheet identifies base platform IQBATTERY-5P-1P-NA. Technical fields are manufacturer platform values; no request was sent to paused enphase.com.",
+    "evidenceRows": [
+      [
+        "Retailer SKU / variant",
+        "1647032; “Enphase | IQ Battery 5P | Domestic Content” (Signature Solar exact retailer page)"
+      ],
+      [
+        "Rated continuous AC output",
+        "3.84 kVA at 240 VAC"
+      ],
+      [
+        "Peak AC output",
+        "7.68 kVA for 3 seconds; 6.14 kVA for 10 seconds"
+      ],
+      [
+        "Rated AC output current",
+        "16 A @240 VAC; peak 32 A (3 sec), 25.6 A (10 sec)"
+      ],
+      [
+        "Nominal AC voltage/range",
+        "240 VAC / 211–264 VAC"
+      ],
+      [
+        "Nominal frequency/range",
+        "60 Hz / 57–63 Hz"
+      ],
+      [
+        "Battery nominal DC voltage",
+        "76.8 V; maximum 86.4 V"
+      ],
+      [
+        "Battery capacity",
+        "5.0 kWh total and usable"
+      ],
+      [
+        "Thermal range",
+        "Charging −20 to 50 °C; discharging −20 to 55 °C, non-condensing"
+      ],
+      [
+        "Round-trip efficiency",
+        "AC 90%; DC 96% (source measurement bases differ)"
+      ],
+      [
+        "Mounting",
+        "Wall or optional pedestal; floor-mounted with pedestal"
+      ],
+      [
+        "Enclosure",
+        "Outdoor NEMA 3R; embedded IQ8D-BAT enclosure NEMA type 6"
+      ],
+      [
+        "Altitude",
+        "Up to 2,500 m"
+      ],
+      [
+        "Warranty wording",
+        ">60% capacity; up to 15-year or 6,000-cycle limited warranty, whichever occurs first"
+      ]
+    ],
+    "candidateDerivations": [
+      "No conversion. Distinct lifting and total-installed weights are kept together with their published qualifiers. Warranty remains a warranty field and is not relabeled as cycle life."
+    ],
+    "unmappedSourceFacts": [
+      "AC power/current and peak AC output belong to the integrated inverter system; not mapped as battery discharge current or battery surge.",
+      "Manufacturer data sheet is for IQ Battery 5P platform IQBATTERY-5P-1P-NA, not a separately named domestic-content part number; domestic-content identification is verified only on the exact retailer page. Reviewer should confirm platform equivalence for this retail variant."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "1647032",
+      "url": "https://signaturesolar.com/enphase-iq-battery-5p-domestic-content/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-r\\enphase_iq5p.html",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-r\\enphase_safety_datasheet.pdf"
+    ]
+  },
+  {
+    "kind": "datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\aims_200_datasheet.pdf",
+    "expected": {
+      "inverters-r-us-agm12v200a": {
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 200,
+          "batteryKind": "Battery modules"
+        },
+        "sourceUrl": "https://invertersrus.com/product/aims-power-agm-12v-200ah/",
+        "category": "batteries",
+        "name": "AIMS Power AGM 12V 200Ah Deep Cycle Battery Heavy Duty"
+      }
+    },
+    "checkedAt": "2026-10-15T08:01:12Z",
+    "url": "https://www.aimscorp.net/documents/AGM12V200A.pdf",
+    "rows": [
+      [
+        "Nominal voltage",
+        "12 V"
+      ],
+      [
+        "Rated capacity",
+        "200 Ah at 20-hour rate (10.0 A, 10.8 V end voltage)"
+      ],
+      [
+        "Battery chemistry",
+        "AGM; manufacturer identifies lead–lead dioxide technology"
+      ],
+      [
+        "Maximum charge current",
+        "60 A under constant-voltage cycle use at 77°F (25°C)"
+      ],
+      [
+        "Charging voltage",
+        "Cycle use 2.40–2.45 V per cell; standby use 2.20–2.30 V per cell"
+      ],
+      [
+        "Peak discharge current",
+        "1,000 A for 5 seconds at 77°F (25°C)"
+      ],
+      [
+        "Dimensions",
+        "522 × 238 × 218 mm; total height 223 mm"
+      ],
+      [
+        "Weight",
+        "63 kg / 138.9 lb; manufacturer states ±3% weight deviation"
+      ],
+      [
+        "Operating temperature",
+        "Discharge −20 to 60°C; charge −10 to 60°C; storage −20 to 60°C"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-agm12v200a"
+    ],
+    "label": "Official manufacturer source for AIMS Power AGM 12V 200Ah Deep Cycle Battery Heavy Duty; offer identity is frozen from batch22 because Inverters R Us is paused.",
+    "sha256": "b3d66f844196a656e9aeec18220b9cf7499fc58198db30bddee5942136b95661",
+    "sourceScope": "Manufacturer source for AIMS Power AGM 12V 200Ah Deep Cycle Battery Heavy Duty.",
+    "evidenceRows": [
+      [
+        "Model printed on sheet",
+        "AGM12V200AH; selected offer SKU AGM12V200A (final H suffix differs)"
+      ],
+      [
+        "Capacity by rate",
+        "20h 200Ah at 10.0A/10.8V; 10h 187Ah at 18.7A/10.8V; 5h 179Ah at 35.8A/10.5V; 1h 126Ah at 126A/9.6V"
+      ],
+      [
+        "Short-circuit current",
+        "3,300 A; not a continuous-discharge or surge rating"
+      ],
+      [
+        "Design life",
+        "10 years; not a product warranty or cycle life"
+      ],
+      [
+        "Datasheet caveat",
+        "Performance characteristics are average values from three charge/discharge cycles, not minimum values"
+      ]
+    ],
+    "candidateDerivations": [
+      "No capacity conversion; retain 20-hour rating and end-voltage conditions. Peak current keeps the stated 5-second condition. Total height includes terminal height."
+    ],
+    "unmappedSourceFacts": [
+      "Manufacturer sheet identifier is AGM12V200AH but selected offer SKU is AGM12V200A. Reviewer must confirm exact suffix crosswalk. Official 100Ah sheet and flyer returned HTTP 403, so no alternate AIMS source was used.",
+      "Design life is not mapped as warranty/cycle life; short-circuit current is not discharge current."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "AGM12V200A",
+      "url": "https://invertersrus.com/product/aims-power-agm-12v-200ah/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\aims_200_datasheet.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\aims_200_datasheet-p1.png",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\aims_200_datasheet-p2.png"
+    ]
+  },
+  {
+    "kind": "manufacturer",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\dakota_135.html",
+    "expected": {
+      "inverters-r-us-dl-12v-135ah": {
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 135,
+          "batteryKind": "Battery modules"
+        },
+        "sourceUrl": "https://invertersrus.com/product/dl-plus-12v-135ah/",
+        "category": "batteries",
+        "name": "DL+ 12V 135Ah Dual Purpose 1000CCA Starter Battery Plus Deep Cycle Performance"
+      }
+    },
+    "checkedAt": "2026-10-15T08:01:12Z",
+    "url": "https://dakotalithium.com/product/dl-plus-12v-135ah-dual-purpose-1000cca-starter-car-truck-battery-plus-deep-cycle-performance/",
+    "rows": [
+      [
+        "Rated capacity",
+        "135 Ah"
+      ],
+      [
+        "Nominal voltage",
+        "12.8 V"
+      ],
+      [
+        "Energy capacity",
+        "1,620 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Dimensions",
+        "9.5 × 6.9 × 8.22 in (242.5 × 176 × 209 mm); Group 24 equivalent"
+      ],
+      [
+        "Weight",
+        "27.2 lb (12.3 kg)"
+      ],
+      [
+        "Cycle life",
+        "Up to 5,000 cycles to 80% capacity in recommended conditions"
+      ],
+      [
+        "Maximum charge current",
+        "135 A max continuous (1C)"
+      ],
+      [
+        "Charging voltage",
+        "14.4 V recommended; 15 V maximum; BMS overcharge cutoff at 15 V"
+      ],
+      [
+        "Product warranty",
+        "11 years"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-dl-12v-135ah"
+    ],
+    "label": "Official manufacturer source for DL+ 12V 135Ah Dual Purpose 1000CCA Starter Battery Plus Deep Cycle Performance; offer identity is frozen from batch22 because Inverters R Us is paused.",
+    "sha256": "a03437184e1ae4b236416e84598964f301330d05e70daa4623f421c564ae7cb9",
+    "sourceScope": "Manufacturer source for DL+ 12V 135Ah Dual Purpose 1000CCA Starter Battery Plus Deep Cycle Performance.",
+    "evidenceRows": [
+      [
+        "Engine-starting rating",
+        "1,000 CCA; distinct from continuous discharge current"
+      ],
+      [
+        "Current page discharge limits",
+        "135A max continuous; pulses 1,000A for 2s and 900A for 5s"
+      ],
+      [
+        "Charge qualifiers",
+        "70A or less recommended for longest life (0.5C); peak acceptance 165A max for 1 min; 200A BMS cutoff"
+      ],
+      [
+        "Alternator limit",
+        "150A or less per battery"
+      ],
+      [
+        "Cold charging",
+        "Internal even-heat enables charging below 32°F; product page says operation to −20°F/−20°C and up to 158°F/70°C"
+      ]
+    ],
+    "candidateDerivations": [
+      "CCA is evidence only. Pulse limits are not continuous discharge current."
+    ],
+    "unmappedSourceFacts": [
+      "Official 2022 DL+ 135Ah instruction guide says 270A max continuous discharge while current product page says 135A max continuous; discharge-current field held."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "DL+ 12V 135Ah",
+      "url": "https://invertersrus.com/product/dl-plus-12v-135ah/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\dakota_manual.pdf",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\dakota_manual.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\dakota_135.txt"
+    ]
+  },
+  {
+    "kind": "manufacturer",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\dakota_320.html",
+    "expected": {
+      "inverters-r-us-dl-12v-320ah": {
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 320,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "sourceUrl": "https://invertersrus.com/product/dl-plus-12v-320ah/",
+        "category": "batteries",
+        "name": "DL+ 12V 320Ah LiFePO4 Dual Purpose Battery"
+      }
+    },
+    "checkedAt": "2026-10-15T08:01:12Z",
+    "url": "https://dakotalithium.com/product/dakota-lithium-277-ah-12v-lifepo4-deep-cycle-battery-dakota-lithium-277-ah-12v-lifepo4-deep-cycle-battery/",
+    "rows": [
+      [
+        "Rated capacity",
+        "320 Ah"
+      ],
+      [
+        "Nominal voltage",
+        "12.8 V"
+      ],
+      [
+        "Energy capacity",
+        "3,840 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Weight",
+        "65 lb (29.5 kg)"
+      ],
+      [
+        "Product warranty",
+        "11 years"
+      ],
+      [
+        "Maximum charge current",
+        "300 A maximum for less than 60 seconds; standard charge stated as less than 200 A"
+      ],
+      [
+        "Charging voltage",
+        "14.4 V recommended; 14.6 V maximum"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-dl-12v-320ah"
+    ],
+    "label": "Official manufacturer source for DL+ 12V 320Ah LiFePO4 Dual Purpose Battery; offer identity is frozen from batch22 because Inverters R Us is paused.",
+    "sha256": "9eef1d78b474115555672bc70767fb5a89e93896d29d590bf13143b4df4dea42",
+    "sourceScope": "Manufacturer source for DL+ 12V 320Ah LiFePO4 Dual Purpose Battery.",
+    "evidenceRows": [
+      [
+        "Cold cranking rating",
+        "1,000 CCA; not continuous discharge current"
+      ],
+      [
+        "Current page dimensions",
+        "15.04 × 7.60 × 9.96 in (382 × 193 × 253 mm), top-terminal measurement including side handles"
+      ],
+      [
+        "Current page discharge ratings",
+        "200A max continuous; 300A for 60s; 1,000A for 1s"
+      ],
+      [
+        "Charging restriction",
+        "Do not charge below 32°F"
+      ],
+      [
+        "Group fit",
+        "Group 31 and marine 8D compatible"
+      ]
+    ],
+    "candidateDerivations": [
+      "No discharge-current rows mapped because the official 2024 catalog gives different pulse durations. Capacity, voltage, energy and weight agree across current page and 2024/2025 catalog."
+    ],
+    "unmappedSourceFacts": [
+      "Dimensions conflict: current page 382×193×253mm; 2024/25 catalog says 385×202×252mm. Held.",
+      "Discharge pulse values/durations differ from catalog; held."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "DL+ 12V 320Ah",
+      "url": "https://invertersrus.com/product/dl-plus-12v-320ah/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\dakota_2024_catalog.pdf",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\dakota_2024_catalog.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\dakota_2024_catalog-p27.png",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\dakota_320.txt"
+    ]
+  },
+  {
+    "kind": "manufacturer",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\dakota_100_exact.html",
+    "expected": {
+      "inverters-r-us-dl-12v100ah": {
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 100,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "sourceUrl": "https://invertersrus.com/product/dakota-lithium-12v-100ah-battery/",
+        "category": "batteries",
+        "name": "Dakota Lithium 12v 100Ah Deep Cycle LiFePO4 Battery"
+      }
+    },
+    "checkedAt": "2026-10-15T08:01:12Z",
+    "url": "https://dakotalithium.com/product/dakota-lithium-12v-100ah-deep-cycle-lifepo4-marine-solar-battery/",
+    "rows": [
+      [
+        "Rated capacity",
+        "100 Ah"
+      ],
+      [
+        "Nominal voltage",
+        "12.8 V"
+      ],
+      [
+        "Energy capacity",
+        "1,280 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-dl-12v100ah"
+    ],
+    "label": "Official manufacturer source for Dakota Lithium 12v 100Ah Deep Cycle LiFePO4 Battery; offer identity is frozen from batch22 because Inverters R Us is paused.",
+    "sha256": "a040f6f736863b4a52289737432afca3f6b53b64ca8efd0a8834230cf5ba6060",
+    "sourceScope": "Manufacturer source for Dakota Lithium 12v 100Ah Deep Cycle LiFePO4 Battery.",
+    "evidenceRows": [
+      [
+        "Selected offer",
+        "SKU DL-12V100AH; title does not identify heating"
+      ],
+      [
+        "Current official product page",
+        "Dakota 12V100Ah Deep Cycle Heated LiFePO4 Battery; says it “now features internal heating”"
+      ],
+      [
+        "Current page only physical values",
+        "10.23×6.60×8.66in (260×169×215mm), 220mm to terminal top; 27.55lb"
+      ],
+      [
+        "Older 2023 official catalog",
+        "12V 100Ah 1280Wh; 12.99×6.77×8.66in (330×172×220mm), 31.9lb; cycle claim 2,000 recommended / up to5,000 ideal"
+      ],
+      [
+        "Current page only limits",
+        "100A max continuous, 200A 10s pulse; charge max50A; 14.4V recommended/15V max"
+      ]
+    ],
+    "candidateDerivations": [
+      "Only capacity, voltage, energy and chemistry are mapped because these agree across 100Ah catalog identity and current product page."
+    ],
+    "unmappedSourceFacts": [
+      "Dimensions, mass, lifecycle, temperature, current limits, terminal and heating held: present page is a heated redesign while selected offer title/SKU omits heat; historical dimensions/mass differ."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "DL-12V100AH",
+      "url": "https://invertersrus.com/product/dakota-lithium-12v-100ah-battery/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\dakota_2023_catalog.pdf",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\dakota_2023_catalog.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\dakota_100_exact.txt"
+    ]
+  },
+  {
+    "kind": "manufacturer",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\battleborn_5012_faq.html",
+    "expected": {
+      "inverters-r-us-bb5012": {
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 50,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "sourceUrl": "https://invertersrus.com/product/battleborn-bb1250/",
+        "category": "batteries",
+        "name": "Battle Born 50Ah 12V Group 24 LiFePO4 Deep Cycle Battery"
+      }
+    },
+    "checkedAt": "2026-10-15T08:01:12Z",
+    "url": "https://battlebornbatteries.com/blogs/articles/faq-why-choose-battle-born-batteries",
+    "rows": [
+      [
+        "Rated capacity",
+        "50 Ah"
+      ],
+      [
+        "Nominal voltage",
+        "12 V"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "60 A continuous"
+      ],
+      [
+        "Weight",
+        "17.6 lb"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-bb5012"
+    ],
+    "label": "Official manufacturer source for Battle Born 50Ah 12V Group 24 LiFePO4 Deep Cycle Battery; offer identity is frozen from batch22 because Inverters R Us is paused.",
+    "sha256": "596b8926763269ec34b8204641c7bd1027af4b9465b9c740e5416027258c6f5f",
+    "sourceScope": "Manufacturer source for Battle Born 50Ah 12V Group 24 LiFePO4 Deep Cycle Battery.",
+    "evidenceRows": [
+      [
+        "Exact-model claim",
+        "Official FAQ labels 50Ah 12V LiFePO4 deep cycle battery and names BB5012; states 60A continuous and 17.6lb"
+      ],
+      [
+        "Document access",
+        "Official 2021 BB5012 datasheet and current product route both returned HTTP404; current resource hub omits BB5012"
+      ]
+    ],
+    "candidateDerivations": [
+      "Only explicit BB5012 facts in current official FAQ are included."
+    ],
+    "unmappedSourceFacts": [
+      "Cycle life, dimensions, charge conditions, temperature and warranty unknown from retained exact-model source."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "BB5012",
+      "url": "https://invertersrus.com/product/battleborn-bb1250/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\battleborn_resources.html",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\battleborn_5012_faq.txt"
+    ]
+  },
+  {
+    "kind": "datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\battleborn_gc2.pdf",
+    "expected": {
+      "inverters-r-us-bbgc2": {
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 100,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "sourceUrl": "https://invertersrus.com/product/battle-born-100ah-12v-gc2-lifepo4-battery-bbgc2/",
+        "category": "batteries",
+        "name": "Battle Born 100Ah 12V GC2 LiFePO4 Battery"
+      }
+    },
+    "checkedAt": "2026-10-15T08:01:12Z",
+    "url": "https://battlebornbatteries.com/wp-content/uploads/2022/11/BBGC2-Standard-Datasheet_V1-12.26.2024-compressed.pdf",
+    "rows": [
+      [
+        "Rated capacity",
+        "100 Ah"
+      ],
+      [
+        "Nominal voltage",
+        "12 V"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Cycle life",
+        "3,000–5,000 deep-discharge cycles; depth-of-discharge test point not specified"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "100 A"
+      ],
+      [
+        "Peak discharge current",
+        "200 A for 30 seconds"
+      ],
+      [
+        "Maximum charge current",
+        "50 A"
+      ],
+      [
+        "Charging voltage",
+        "Absorption 14.2–14.6 V; float 13.4–13.8 V"
+      ],
+      [
+        "Dimensions",
+        "10.31 × 7.28 × 11.02 in (L × W × H)"
+      ],
+      [
+        "Weight",
+        "31 lb"
+      ],
+      [
+        "Operating temperature",
+        "−4°F to 135°F (−20°C to 57.2°C)"
+      ],
+      [
+        "Charge temperature",
+        "25°F to 135°F"
+      ],
+      [
+        "Self-discharge",
+        "2–3% per month"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-bbgc2"
+    ],
+    "label": "Official manufacturer source for Battle Born 100Ah 12V GC2 LiFePO4 Battery; offer identity is frozen from batch22 because Inverters R Us is paused.",
+    "sha256": "b3ef939772e3cec43bcbf4c7a87b7558b9065ce28dd954c65926a3e8c0e4782f",
+    "sourceScope": "Manufacturer source for Battle Born 100Ah 12V GC2 LiFePO4 Battery.",
+    "evidenceRows": [
+      [
+        "BMS",
+        "Internal; cold charging protection and automatic cell balancing at top of charge"
+      ],
+      [
+        "Usable depth of discharge",
+        "100%"
+      ],
+      [
+        "Maximum series voltage",
+        "48 V"
+      ],
+      [
+        "Over-500A row",
+        "Source states 0.5 seconds for loads over 500A, without exact current threshold; not mapped as rated peak current"
+      ],
+      [
+        "Product variant",
+        "Standard BBGC2 only; GC2H heating excluded"
+      ]
+    ],
+    "candidateDerivations": [],
+    "unmappedSourceFacts": [
+      "Cycle-life row has no explicit test depth/conditions beyond deep-discharge wording. Over-500A surge has duration but not exact current."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "BBGC2",
+      "url": "https://invertersrus.com/product/battle-born-100ah-12v-gc2-lifepo4-battery-bbgc2/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\battleborn_gc2_product.html",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\battleborn_gc2.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\battleborn_gc2-p1.png"
+    ]
+  },
+  {
+    "kind": "manual",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\battleborn_gc3.pdf",
+    "expected": {
+      "inverters-r-us-bbgc3": {
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 270,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "sourceUrl": "https://invertersrus.com/product/battle-born-gc3-battery/",
+        "category": "batteries",
+        "name": "Battle Born BBGC3 270Ah 12V LiFePO4 Deep Cycle GC3 Battery"
+      }
+    },
+    "checkedAt": "2026-10-15T08:01:12Z",
+    "url": "https://battlebornbatteries.com/wp-content/uploads/2022/10/270Ah-12V-Standard-Battery-Manual_Rev025_1.29.26.pdf",
+    "rows": [
+      [
+        "Rated capacity",
+        "270 Ah"
+      ],
+      [
+        "Nominal voltage",
+        "12 V"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Cycle life",
+        "3,000–5,000 deep-discharge cycles; depth-of-discharge test point not specified"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "300 A"
+      ],
+      [
+        "Peak discharge current",
+        "500 A for 30 seconds"
+      ],
+      [
+        "Maximum charge current",
+        "135 A"
+      ],
+      [
+        "Charging voltage",
+        "Absorption 14.2–14.6 V; float 13.4–13.8 V"
+      ],
+      [
+        "Dimensions",
+        "22.83 × 7.09 × 13.15 in (L × W × H)"
+      ],
+      [
+        "Weight",
+        "80.8 lb"
+      ],
+      [
+        "Operating temperature",
+        "−4°F to 135°F (−20°C to 57.2°C)"
+      ],
+      [
+        "Charge temperature",
+        "25°F to 135°F"
+      ],
+      [
+        "Self-discharge",
+        "2–3% per month"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-bbgc3"
+    ],
+    "label": "Official manufacturer source for Battle Born BBGC3 270Ah 12V LiFePO4 Deep Cycle GC3 Battery; offer identity is frozen from batch22 because Inverters R Us is paused.",
+    "sha256": "5639e70a1b82229b689a893a45755383b825344d2a56b29a0b01347fb371886c",
+    "sourceScope": "Manufacturer source for Battle Born BBGC3 270Ah 12V LiFePO4 Deep Cycle GC3 Battery.",
+    "evidenceRows": [
+      [
+        "Models covered",
+        "Manual identifies BBGC3 and BBGC3H; selected SKU is standard BBGC3"
+      ],
+      [
+        "Usable depth of discharge",
+        "100%"
+      ],
+      [
+        "Maximum series voltage",
+        "48 V"
+      ],
+      [
+        "BMS cutoff",
+        "10 V; protection cutoff, not nominal voltage"
+      ],
+      [
+        "Inverter note",
+        "Current surge limiter required for inverters rated 3,500W or higher"
+      ],
+      [
+        "Heating",
+        "28W heat data apply to BBGC3H only; excluded"
+      ]
+    ],
+    "candidateDerivations": [],
+    "unmappedSourceFacts": [
+      "Cycle-life row lacks an explicit test depth/condition. The .5-second surge row has no exact current value and is not mapped."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "BBGC3",
+      "url": "https://invertersrus.com/product/battle-born-gc3-battery/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\battleborn_gc3.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\battleborn_gc3-p7.png"
+    ]
+  },
+  {
+    "kind": "datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_telecom_datasheet.pdf",
+    "expected": {
+      "inverters-r-us-bat412105164": {
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 115,
+          "batteryKind": "Battery modules"
+        },
+        "sourceUrl": "https://invertersrus.com/product/ve-12v-115ah-agm-telecom-m8/",
+        "category": "batteries",
+        "name": "Victron Energy 12V/115Ah AGM Telecom Battery (M8)"
+      }
+    },
+    "checkedAt": "2026-10-15T08:01:12Z",
+    "url": "https://www.victronenergy.com/upload/documents/Datasheet-Telecom-batteries-EN.pdf",
+    "rows": [
+      [
+        "Nominal voltage",
+        "12 V"
+      ],
+      [
+        "Rated capacity",
+        "115 Ah nominal capacity at 77°F (25°C), 10.5V end-of-discharge"
+      ],
+      [
+        "Battery chemistry",
+        "AGM (absorbent glass mat)"
+      ],
+      [
+        "Charging voltage",
+        "Absorption 14.4–14.7V; float 13.6–13.8V; storage 13.2V at 70°F (20°C)"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-bat412105164"
+    ],
+    "label": "Official manufacturer source for Victron Energy 12V/115Ah AGM Telecom Battery (M8); offer identity is frozen from batch22 because Inverters R Us is paused.",
+    "sha256": "6860f6bb5d16a931ea51625e4642d7dc3779d05bf1d1ca25e611e91111ba2963",
+    "sourceScope": "Manufacturer source for Victron Energy 12V/115Ah AGM Telecom Battery (M8).",
+    "evidenceRows": [
+      [
+        "Cycle life",
+        "Table says 750 cycles at 50% discharge; narrative separately says more than 500 cycles at 50% DOD; conflict, held"
+      ],
+      [
+        "Cold cranking amps",
+        "1,000A at 0°F (−18°C); not continuous discharge current"
+      ],
+      [
+        "DIN cold-start current",
+        "600A at 0°F (−18°C); not continuous discharge"
+      ],
+      [
+        "Reserve capacity",
+        "200 minutes"
+      ],
+      [
+        "Float design life",
+        "12 years at 70°F (20°C); not product warranty"
+      ],
+      [
+        "Manufacturer dimensions",
+        "395 × 110 × 293 mm"
+      ],
+      [
+        "Manufacturer weight",
+        "35 kg / 77 lb"
+      ]
+    ],
+    "candidateDerivations": [
+      "Multi-model data split to the selected capacity column. CCA/DIN-start/reserve remain evidence only."
+    ],
+    "unmappedSourceFacts": [
+      "Cycles held: >500 narrative versus 750 table at50% DOD. 165Ah mass 49kg/88lb contains a unit conflict; 200Ah 60kg/132lb conflicts with newer official price listing 59kg/130lb. 115Ah mass agrees at35kg/77lb. Float design life is not warranty."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "BAT412105164",
+      "url": "https://invertersrus.com/product/ve-12v-115ah-agm-telecom-m8/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_telecom.html",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_telecom.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_telecom_datasheet.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_telecom_datasheet-p1.png"
+    ]
+  },
+  {
+    "kind": "datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_telecom_datasheet.pdf",
+    "expected": {
+      "inverters-r-us-bat412151164": {
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 165,
+          "batteryKind": "Battery modules"
+        },
+        "sourceUrl": "https://invertersrus.com/product/ve-12v-165ah-agm-telecom-m8/",
+        "category": "batteries",
+        "name": "Victron Energy 12V/165Ah AGM Telecom Battery (M8)"
+      }
+    },
+    "checkedAt": "2026-10-15T08:01:12Z",
+    "url": "https://www.victronenergy.com/upload/documents/Datasheet-Telecom-batteries-EN.pdf",
+    "rows": [
+      [
+        "Nominal voltage",
+        "12 V"
+      ],
+      [
+        "Rated capacity",
+        "165 Ah nominal capacity at 77°F (25°C), 10.5V end-of-discharge"
+      ],
+      [
+        "Battery chemistry",
+        "AGM (absorbent glass mat)"
+      ],
+      [
+        "Charging voltage",
+        "Absorption 14.4–14.7V; float 13.6–13.8V; storage 13.2V at 70°F (20°C)"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-bat412151164"
+    ],
+    "label": "Official manufacturer source for Victron Energy 12V/165Ah AGM Telecom Battery (M8); offer identity is frozen from batch22 because Inverters R Us is paused.",
+    "sha256": "6860f6bb5d16a931ea51625e4642d7dc3779d05bf1d1ca25e611e91111ba2963",
+    "sourceScope": "Manufacturer source for Victron Energy 12V/165Ah AGM Telecom Battery (M8).",
+    "evidenceRows": [
+      [
+        "Cycle life",
+        "Table says 750 cycles at 50% discharge; narrative separately says more than 500 cycles at 50% DOD; conflict, held"
+      ],
+      [
+        "Cold cranking amps",
+        "1,500A at 0°F (−18°C); not continuous discharge current"
+      ],
+      [
+        "DIN cold-start current",
+        "900A at 0°F (−18°C); not continuous discharge"
+      ],
+      [
+        "Reserve capacity",
+        "320 minutes"
+      ],
+      [
+        "Float design life",
+        "12 years at 70°F (20°C); not product warranty"
+      ],
+      [
+        "Manufacturer dimensions",
+        "548 × 105 × 316 mm"
+      ],
+      [
+        "Manufacturer weight",
+        "49 kg / 88 lb"
+      ]
+    ],
+    "candidateDerivations": [
+      "Multi-model data split to the selected capacity column. CCA/DIN-start/reserve remain evidence only."
+    ],
+    "unmappedSourceFacts": [
+      "Cycles held: >500 narrative versus 750 table at50% DOD. 165Ah mass 49kg/88lb contains a unit conflict; 200Ah 60kg/132lb conflicts with newer official price listing 59kg/130lb. 115Ah mass agrees at35kg/77lb. Float design life is not warranty."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "BAT412151164",
+      "url": "https://invertersrus.com/product/ve-12v-165ah-agm-telecom-m8/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_telecom.html",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_telecom.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_telecom_datasheet.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_telecom_datasheet-p1.png"
+    ]
+  },
+  {
+    "kind": "datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_telecom_datasheet.pdf",
+    "expected": {
+      "inverters-r-us-bat412181164": {
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 200,
+          "batteryKind": "Battery modules"
+        },
+        "sourceUrl": "https://invertersrus.com/product/ve-12v-200ah-agm-telecom-m8/",
+        "category": "batteries",
+        "name": "Victron Energy 12V/200Ah AGM Telecom Battery (M8)"
+      }
+    },
+    "checkedAt": "2026-10-15T08:01:12Z",
+    "url": "https://www.victronenergy.com/upload/documents/Datasheet-Telecom-batteries-EN.pdf",
+    "rows": [
+      [
+        "Nominal voltage",
+        "12 V"
+      ],
+      [
+        "Rated capacity",
+        "200 Ah nominal capacity at 77°F (25°C), 10.5V end-of-discharge"
+      ],
+      [
+        "Battery chemistry",
+        "AGM (absorbent glass mat)"
+      ],
+      [
+        "Charging voltage",
+        "Absorption 14.4–14.7V; float 13.6–13.8V; storage 13.2V at 70°F (20°C)"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-bat412181164"
+    ],
+    "label": "Official manufacturer source for Victron Energy 12V/200Ah AGM Telecom Battery (M8); offer identity is frozen from batch22 because Inverters R Us is paused.",
+    "sha256": "6860f6bb5d16a931ea51625e4642d7dc3779d05bf1d1ca25e611e91111ba2963",
+    "sourceScope": "Manufacturer source for Victron Energy 12V/200Ah AGM Telecom Battery (M8).",
+    "evidenceRows": [
+      [
+        "Cycle life",
+        "Table says 750 cycles at 50% discharge; narrative separately says more than 500 cycles at 50% DOD; conflict, held"
+      ],
+      [
+        "Cold cranking amps",
+        "1,800A at 0°F (−18°C); not continuous discharge current"
+      ],
+      [
+        "DIN cold-start current",
+        "1,000A at 0°F (−18°C); not continuous discharge"
+      ],
+      [
+        "Reserve capacity",
+        "400 minutes"
+      ],
+      [
+        "Float design life",
+        "12 years at 70°F (20°C); not product warranty"
+      ],
+      [
+        "Manufacturer dimensions",
+        "546 × 125 × 323 mm"
+      ],
+      [
+        "Manufacturer weight",
+        "60 kg / 132 lb"
+      ]
+    ],
+    "candidateDerivations": [
+      "Multi-model data split to the selected capacity column. CCA/DIN-start/reserve remain evidence only."
+    ],
+    "unmappedSourceFacts": [
+      "Cycles held: >500 narrative versus 750 table at50% DOD. 165Ah mass 49kg/88lb contains a unit conflict; 200Ah 60kg/132lb conflicts with newer official price listing 59kg/130lb. 115Ah mass agrees at35kg/77lb. Float design life is not warranty."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "BAT412181164",
+      "url": "https://invertersrus.com/product/ve-12v-200ah-agm-telecom-m8/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_telecom.html",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_telecom.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_telecom_datasheet.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_telecom_datasheet-p1.png"
+    ]
+  },
+  {
+    "kind": "datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_115.pdf",
+    "expected": {
+      "inverters-r-us-bat412105164": {
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 115,
+          "batteryKind": "Battery modules"
+        },
+        "sourceUrl": "https://invertersrus.com/product/ve-12v-115ah-agm-telecom-m8/",
+        "category": "batteries",
+        "name": "Victron Energy 12V/115Ah AGM Telecom Battery (M8)"
+      }
+    },
+    "checkedAt": "2026-10-15T08:01:12Z",
+    "url": "https://www.victronenergy.com/upload/documents/BAT412105164-12V115Ah-AGM-Telecom-Batt.-%28M8%29.pdf",
+    "rows": [
+      [
+        "Dimensions",
+        "395 × 110 × 293 mm (drawing tolerances ±2 mm)"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-bat412105164"
+    ],
+    "label": "Official manufacturer source for Victron Energy 12V/115Ah AGM Telecom Battery (M8); offer identity is frozen from batch22 because Inverters R Us is paused.",
+    "sha256": "400e531ee92f35b323189b89046550e04371d8a70e196f2138ae801f132c337e",
+    "sourceScope": "Manufacturer source for Victron Energy 12V/115Ah AGM Telecom Battery (M8).",
+    "evidenceRows": [
+      [
+        "Exact drawing identity",
+        "Official PDF filename and title identify this exact Victron telecom capacity variant"
+      ]
+    ],
+    "candidateDerivations": [
+      "Exact SKU/capacity in drawing and offer agree; dimension order is L×W×H and tolerance retained."
+    ],
+    "unmappedSourceFacts": [],
+    "selectedOfferIdentity": {
+      "sku": "BAT412105164",
+      "url": "https://invertersrus.com/product/ve-12v-115ah-agm-telecom-m8/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_115.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_115-p1.png"
+    ]
+  },
+  {
+    "kind": "datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_165.pdf",
+    "expected": {
+      "inverters-r-us-bat412151164": {
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 165,
+          "batteryKind": "Battery modules"
+        },
+        "sourceUrl": "https://invertersrus.com/product/ve-12v-165ah-agm-telecom-m8/",
+        "category": "batteries",
+        "name": "Victron Energy 12V/165Ah AGM Telecom Battery (M8)"
+      }
+    },
+    "checkedAt": "2026-10-15T08:01:12Z",
+    "url": "https://www.victronenergy.com/upload/documents/BAT412151164-12V165Ah-AGM-Telecom-Batt.-%28M8%29.pdf",
+    "rows": [
+      [
+        "Dimensions",
+        "548 × 105 × 316 mm (drawing tolerances ±2 mm)"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-bat412151164"
+    ],
+    "label": "Official manufacturer source for Victron Energy 12V/165Ah AGM Telecom Battery (M8); offer identity is frozen from batch22 because Inverters R Us is paused.",
+    "sha256": "7d4f1915ecc83f5cdf7e4130c83e1f01bea549a7c75cf3f849be11d5dcc7b056",
+    "sourceScope": "Manufacturer source for Victron Energy 12V/165Ah AGM Telecom Battery (M8).",
+    "evidenceRows": [
+      [
+        "Exact drawing identity",
+        "Official PDF filename and title identify this exact Victron telecom capacity variant"
+      ]
+    ],
+    "candidateDerivations": [
+      "Exact SKU/capacity in drawing and offer agree; dimension order is L×W×H and tolerance retained."
+    ],
+    "unmappedSourceFacts": [],
+    "selectedOfferIdentity": {
+      "sku": "BAT412151164",
+      "url": "https://invertersrus.com/product/ve-12v-165ah-agm-telecom-m8/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_165.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_165-p1.png"
+    ]
+  },
+  {
+    "kind": "datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_200.pdf",
+    "expected": {
+      "inverters-r-us-bat412181164": {
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 200,
+          "batteryKind": "Battery modules"
+        },
+        "sourceUrl": "https://invertersrus.com/product/ve-12v-200ah-agm-telecom-m8/",
+        "category": "batteries",
+        "name": "Victron Energy 12V/200Ah AGM Telecom Battery (M8)"
+      }
+    },
+    "checkedAt": "2026-10-15T08:01:12Z",
+    "url": "https://www.victronenergy.com/upload/documents/BAT412181164-12V200Ah-AGM-Telecom-Batt.-%28M8%29.pdf",
+    "rows": [
+      [
+        "Dimensions",
+        "546 × 125 × 323 mm (drawing tolerances ±2 mm)"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-bat412181164"
+    ],
+    "label": "Official manufacturer source for Victron Energy 12V/200Ah AGM Telecom Battery (M8); offer identity is frozen from batch22 because Inverters R Us is paused.",
+    "sha256": "0e21b1fdc2e8cc3f4109d4d8e2a74cfc6cd79610317385d5be0c983dac6517dc",
+    "sourceScope": "Manufacturer source for Victron Energy 12V/200Ah AGM Telecom Battery (M8).",
+    "evidenceRows": [
+      [
+        "Exact drawing identity",
+        "Official PDF filename and title identify this exact Victron telecom capacity variant"
+      ]
+    ],
+    "candidateDerivations": [
+      "Exact SKU/capacity in drawing and offer agree; dimension order is L×W×H and tolerance retained."
+    ],
+    "unmappedSourceFacts": [],
+    "selectedOfferIdentity": {
+      "sku": "BAT412181164",
+      "url": "https://invertersrus.com/product/ve-12v-200ah-agm-telecom-m8/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_200.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-s\\victron_200-p1.png"
+    ]
+  },
+  {
+    "kind": "manual",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-t\\raw\\bluetti_b4810_manual.pdf",
+    "expected": {
+      "shopsolar-44734771232908": {
+        "anchors": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "sourceUrl": "https://shopsolarkits.com/products/bluetti-b4810-lifepo4-battery?variant=44734771232908",
+        "category": "batteries",
+        "name": "BLUETTI B4810 LiFePO4 Battery | 5,120Wh (51.2V, 100Ah) | Modular, Self-Heating, IP65 Rated | 5-Year Warranty"
+      }
+    },
+    "checkedAt": "2026-10-15T08:15:24Z",
+    "url": "https://s4.bluettipower.com/bluetti/purchasePageBiz/2025/09/B4810%20User%20Manual%20EU%20EN-FR-DE-1759129303592-ae61.pdf",
+    "rows": [
+      [
+        "Energy capacity",
+        "5.12 kWh (51.2 V × 100 Ah)"
+      ],
+      [
+        "Cycle life",
+        "6,000 cycles to 70% remaining capacity; 0.5C charge/discharge at 25°C"
+      ],
+      [
+        "Maximum charge current",
+        "100 A maximum; recommended 50 A"
+      ],
+      [
+        "Maximum discharge current",
+        "100 A maximum; peak 200 A for 30 seconds"
+      ],
+      [
+        "Dimensions",
+        "608 × 380 × 145 mm (23.94 × 14.96 × 5.71 in)"
+      ],
+      [
+        "Weight",
+        "Approximately 46 kg / 101.4 lb"
+      ],
+      [
+        "Operating temperature",
+        "Charge −20 to 55°C; discharge −20 to 55°C"
+      ],
+      [
+        "Ingress protection",
+        "IP65"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-44734771232908"
+    ],
+    "label": "Official manufacturer source for BLUETTI B4810 LiFePO4 Battery | 5,120Wh (51.2V, 100Ah) | Modular, Self-Heating, IP65 Rated | 5-Year Warranty; selected offer identity is bound from the frozen batch22 catalog snapshot.",
+    "sha256": "80f5e21dc46c8c0ce3661b51116e3281964589e5c8a201e5a6144a9ed4d866d3",
+    "sourceScope": "Exact selected product/model; source covers only listed ratings and qualifiers.",
+    "evidenceRows": [
+      [
+        "Selected model",
+        "B4810; manual EU EN/FR/DE edition"
+      ],
+      [
+        "Peak discharge",
+        "200 A for 30 seconds; kept distinct from maximum continuous rating"
+      ]
+    ],
+    "candidateDerivations": [
+      "Energy is stated by manufacturer as 5.12kWh and 51.2V/100Ah; no conversion applied."
+    ],
+    "unmappedSourceFacts": [
+      "Warranty term appears in selected seller title but was not mapped from this manufacturer manual edition."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "44734771232908",
+      "url": "https://shopsolarkits.com/products/bluetti-b4810-lifepo4-battery?variant=44734771232908",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-t\\raw\\bluetti_b4810_manual.txt"
+    ]
+  },
+  {
+    "kind": "manufacturer",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-t\\raw\\anker_bp2000_product_page.html",
+    "expected": {
+      "shopsolar-44720428318860": {
+        "anchors": {
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "sourceUrl": "https://shopsolarkits.com/products/anker-solix-bp2000-expansion-battery-gen-2?variant=44720428318860",
+        "category": "batteries",
+        "name": "Anker SOLIX BP2000 Expansion Battery Gen 2 | 2,048Wh LiFePO4 | Doubles C2000 Gen 2 Capacity to 4,096Wh | 10-Year Lifespan | 5-Year Warranty"
+      }
+    },
+    "checkedAt": "2026-10-15T08:15:24Z",
+    "url": "https://www.ankersolix.com/products/c2000-gen2-expansion-battery",
+    "rows": [
+      [
+        "Rated capacity",
+        "51.2 V, 40,000 mAh, 2,048 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LFP / LiFePO4"
+      ],
+      [
+        "Cycle life",
+        "Up to 4,000 cycles at 80% capacity; stated 10-year lifespan"
+      ],
+      [
+        "Product warranty",
+        "5-year full-device warranty"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-44720428318860"
+    ],
+    "label": "Official manufacturer source for Anker SOLIX BP2000 Expansion Battery Gen 2 | 2,048Wh LiFePO4 | Doubles C2000 Gen 2 Capacity to 4,096Wh | 10-Year Lifespan | 5-Year Warranty; selected offer identity is bound from the frozen batch22 catalog snapshot.",
+    "sha256": "2cca80e98ef53eefd10b2e73218ed19764cc4cd7851255dbafec52c8efd48b62",
+    "sourceScope": "Exact selected product/model; source covers only listed ratings and qualifiers.",
+    "evidenceRows": [
+      [
+        "Compatibility",
+        "Designed for Anker SOLIX C2000 Gen 2; product page says not compatible with F2000"
+      ],
+      [
+        "AC power",
+        "Host station AC output is not this expansion battery discharge rating"
+      ]
+    ],
+    "candidateDerivations": [
+      "mAh and Wh are retained exactly as manufacturer presents them; 40,000mAh is not converted into Ah without cell voltage context."
+    ],
+    "unmappedSourceFacts": [
+      "Manual article raw HTML is a JavaScript shell; manual technical table content was visible through official support article reading but is not present in captured HTML. Dimensions, mass and port currents omitted from this record pending a reviewable text source."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "44720428318860",
+      "url": "https://shopsolarkits.com/products/anker-solix-bp2000-expansion-battery-gen-2?variant=44720428318860",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-t\\raw\\anker_bp2000_manual_page.html"
+    ]
+  },
+  {
+    "kind": "manual",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-t\\raw\\jackery_3600_manual.pdf",
+    "expected": {
+      "shopsolar-44472170250380": {
+        "anchors": {
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "sourceUrl": "https://shopsolarkits.com/products/jackery-battery-pack-3600-plus?variant=44472170250380",
+        "category": "batteries",
+        "name": "Jackery HP3600 Plus Expansion Battery Pack | 3,584Wh Expandable LiFePO4 Battery | Add-On for Jackery Explorer 3000 Pro & 2000 Plus | 5-Year Warranty"
+      }
+    },
+    "checkedAt": "2026-10-15T08:15:24Z",
+    "url": "https://cdn.shopify.com/s/files/1/0970/9262/files/Jackery_Battery_Pack_3600_User_Manual.pdf?v=1756780054",
+    "rows": [
+      [
+        "Rated capacity",
+        "80 Ah at 44.8 Vdc (3,584 Wh)"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Cycle life",
+        "6,000 cycles to 70% or more remaining capacity"
+      ],
+      [
+        "Dimensions",
+        "37.5 × 31.7 × 22.9 cm (14.8 × 12.5 × 9.0 in)"
+      ],
+      [
+        "Weight",
+        "About 25 kg / 55.1 lb"
+      ],
+      [
+        "Charge temperature",
+        "−20 to 45°C"
+      ],
+      [
+        "Expansion-port input current",
+        "60 A maximum"
+      ],
+      [
+        "Expansion-port output current",
+        "100 A maximum"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-44472170250380"
+    ],
+    "label": "Official manufacturer source for Jackery HP3600 Plus Expansion Battery Pack | 3,584Wh Expandable LiFePO4 Battery | Add-On for Jackery Explorer 3000 Pro & 2000 Plus | 5-Year Warranty; selected offer identity is bound from the frozen batch22 catalog snapshot.",
+    "sha256": "98b84f6a87f6b1fd424c4bc909cd0b47f7438910b59df37d1b8d1d157cbb9945",
+    "sourceScope": "Exact selected product/model; source covers only listed ratings and qualifiers.",
+    "evidenceRows": [
+      [
+        "Model",
+        "JBP-3600A / Battery Pack 3600 Plus"
+      ],
+      [
+        "Compatibility",
+        "Manual names HomePower 3600 Plus and HomePower 3600 Pro Max; selected listing title also claims Explorer 3000 Pro and 2000 Plus, which are not mapped"
+      ]
+    ],
+    "candidateDerivations": [
+      "No conversion of the 3,584Wh rating. Current limits are expansion-port limits, not standalone inverter output."
+    ],
+    "unmappedSourceFacts": [
+      "Listing title compatibility claims beyond the two systems explicitly named in the manual remain unverified."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "44472170250380",
+      "url": "https://shopsolarkits.com/products/jackery-battery-pack-3600-plus?variant=44472170250380",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-t\\raw\\jackery_3600_manual.txt"
+    ]
+  },
+  {
+    "kind": "datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-t\\raw\\pytes_v16_datasheet.pdf",
+    "expected": {
+      "shopsolar-46980566188172": {
+        "anchors": {
+          "voltage": 48,
+          "capacityKwh": 16,
+          "capacityAh": 314,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "sourceUrl": "https://shopsolarkits.com/products/pytes-v16?variant=46980566188172",
+        "category": "batteries",
+        "name": "Pytes V16 48V 314Ah LiFePO4 Lithium Battery | 16kWh | 8,000+ Cycles | IP66 Rated | 10-Year Warranty"
+      }
+    },
+    "checkedAt": "2026-10-15T08:15:24Z",
+    "url": "https://www.pytesusa.com/public/upload/20260131/a9ae1d99e46a3b65f6ce37f1df4f2a3a.pdf",
+    "rows": [
+      [
+        "Rated capacity",
+        "314 Ah"
+      ],
+      [
+        "Nominal voltage",
+        "51.2 V"
+      ],
+      [
+        "Energy capacity",
+        "16 kWh"
+      ],
+      [
+        "Dimensions",
+        "688.4 ± 2 × 260 ± 2 × 700 ± 2 mm (W × D × H)"
+      ],
+      [
+        "Weight",
+        "130.5 kg / 288 lb"
+      ],
+      [
+        "Cycle life",
+        "8,000 cycles at 0.5C/0.5C, 90% DoD, 70% EOL; 25°C ± 4°C"
+      ],
+      [
+        "Recommended charge current",
+        "125 A"
+      ],
+      [
+        "Recommended discharge current",
+        "150 A"
+      ],
+      [
+        "Peak discharge current",
+        "300 A for 15 seconds"
+      ],
+      [
+        "Ingress protection",
+        "IP66"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46980566188172"
+    ],
+    "label": "Official manufacturer source for Pytes V16 48V 314Ah LiFePO4 Lithium Battery | 16kWh | 8,000+ Cycles | IP66 Rated | 10-Year Warranty; selected offer identity is bound from the frozen batch22 catalog snapshot.",
+    "sha256": "69fad4355d109aaa2498961a2c8ad113f297dded80b589d2a5c9021fec54852c",
+    "sourceScope": "Exact selected product/model; source covers only listed ratings and qualifiers.",
+    "evidenceRows": [
+      [
+        "Maximum combined current",
+        "200 A maximum charge/discharge, combined rating; not direction-specific"
+      ],
+      [
+        "Warranty",
+        "10 years stated on manufacturer materials"
+      ]
+    ],
+    "candidateDerivations": [
+      "Retained manufacturer dimension tolerances and axis order. Peak discharge duration preserved."
+    ],
+    "unmappedSourceFacts": [
+      "No direction-specific maximum charge or discharge rating mapped from combined 200A."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "46980566188172",
+      "url": "https://shopsolarkits.com/products/pytes-v16?variant=46980566188172",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-t\\raw\\pytes_v16_datasheet.txt"
+    ]
+  },
+  {
+    "kind": "datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-t\\raw\\deye_se_g51_brochure_na.pdf",
+    "expected": {
+      "best-solar-bundle-43680463585322": {
+        "anchors": {
+          "capacityKwh": 5.12,
+          "batteryKind": "Battery modules"
+        },
+        "sourceUrl": "https://bestsolarbundle.com/products/deye-5-1-pro-b-battery?variant=43680463585322",
+        "category": "batteries",
+        "name": "Deye 5.1 PRO B Battery — 5.12kWh"
+      }
+    },
+    "checkedAt": "2026-10-15T08:15:24Z",
+    "url": "https://deyeess.com/wp-content/uploads/2025/12/Deye-SE-G5.1-Pro-B-Series_Brochure_NA_20260907V1.0.pdf",
+    "rows": [
+      [
+        "Energy capacity",
+        "5.12 kWh"
+      ],
+      [
+        "Nominal voltage",
+        "51.2 V"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Dimensions",
+        "440 × 133 × 540 mm (W × H × D)"
+      ],
+      [
+        "Weight",
+        "Approximately 45 kg"
+      ],
+      [
+        "Cycle life",
+        "6,000 cycles at 0.5C/0.5C, 90% DoD, 70% EOL; 25°C ± 2°C"
+      ],
+      [
+        "Depth of discharge",
+        "90%"
+      ]
+    ],
+    "productIds": [
+      "best-solar-bundle-43680463585322"
+    ],
+    "label": "Official manufacturer source for Deye 5.1 PRO B Battery — 5.12kWh; selected offer identity is bound from the frozen batch22 catalog snapshot.",
+    "sha256": "df0bc2825281304777c9a215c4f8e9766343c7e7c4128a2417eefbac4ede8f5a",
+    "sourceScope": "Exact selected product/model; source covers only listed ratings and qualifiers.",
+    "evidenceRows": [
+      [
+        "Current rating",
+        "Recommended 50A, maximum 100A, peak 150A for 2 minutes at 25°C; manufacturer labels this charge/discharge current without direction"
+      ]
+    ],
+    "candidateDerivations": [
+      "NA brochure identifies SE-G5.1 Pro-B; current values are not assigned to a one-way current field."
+    ],
+    "unmappedSourceFacts": [
+      "Combined charge/discharge current rating cannot establish max discharge current. Warranty duration varies by installation site; no region-specific term mapped."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "43680463585322",
+      "url": "https://bestsolarbundle.com/products/deye-5-1-pro-b-battery?variant=43680463585322",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-t\\raw\\deye_se_g51_brochure_na.txt"
+    ]
+  },
+  {
+    "kind": "datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-t\\raw\\deye_rw_f102_datasheet.pdf",
+    "expected": {
+      "best-solar-bundle-43680544194602": {
+        "anchors": {
+          "capacityKwh": 10.2,
+          "batteryKind": "Battery modules"
+        },
+        "sourceUrl": "https://bestsolarbundle.com/products/deye-rw-f10-2-b-battery?variant=43680544194602",
+        "category": "batteries",
+        "name": "Deye RW F10.2 B Battery — 10.2kWh"
+      }
+    },
+    "checkedAt": "2026-10-15T08:15:24Z",
+    "url": "https://deyeess.com/wp-content/uploads/2025/12/Deye-RW-F10.2-B-Datasheet-EN.pdf",
+    "rows": [
+      [
+        "Energy capacity",
+        "10.24 kWh nominal; 9.2 kWh usable at 90% DoD"
+      ],
+      [
+        "Nominal voltage",
+        "51.2 V"
+      ],
+      [
+        "Rated capacity",
+        "200 Ah"
+      ],
+      [
+        "Maximum discharge current",
+        "240 A"
+      ],
+      [
+        "Recommended charge current",
+        "100 A"
+      ],
+      [
+        "Recommended discharge current",
+        "100 A"
+      ],
+      [
+        "Dimensions",
+        "600 × 830 × 200 mm (W × H × D), without hanging board"
+      ],
+      [
+        "Weight",
+        "Approximately 107 kg / 235.9 lb"
+      ],
+      [
+        "Cycle life",
+        "At least 6,000 cycles at 0.5C/0.5C, 90% DoD, 70% EOL; 25°C ± 2°C"
+      ],
+      [
+        "Ingress protection",
+        "IP65; NEMA 3R"
+      ]
+    ],
+    "productIds": [
+      "best-solar-bundle-43680544194602"
+    ],
+    "label": "Official manufacturer source for Deye RW F10.2 B Battery — 10.2kWh; selected offer identity is bound from the frozen batch22 catalog snapshot.",
+    "sha256": "1979daa1106f99c918c5c5f2edb998ed6f0a6dc65f21e1d06cfe1e54d7502eb8",
+    "sourceScope": "Exact selected product/model; source covers only listed ratings and qualifiers.",
+    "evidenceRows": [
+      [
+        "Charge current conflict",
+        "Datasheet/page state max charge 198 A; official manual states 200 A; not mapped"
+      ],
+      [
+        "Operating voltage conflict",
+        "Datasheet/page 43.2–57.6 V; manual 44.8–57.6 V; not mapped"
+      ],
+      [
+        "Peak current",
+        "300 A for 2 minutes at 25°C, direction not specified"
+      ]
+    ],
+    "candidateDerivations": [
+      "Discharge maximum 240A is consistent across datasheet/manual; charge maximum and voltage range conflicts retained as holds."
+    ],
+    "unmappedSourceFacts": [
+      "Maximum charge current conflicts between official sources (198A versus 200A). Operating voltage range conflicts (43.2V versus 44.8V lower bound)."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "43680544194602",
+      "url": "https://bestsolarbundle.com/products/deye-rw-f10-2-b-battery?variant=43680544194602",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-t\\raw\\deye_rw_f102_datasheet.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-t\\raw\\deye_rw_f102_manual.txt"
+    ]
+  },
+  {
+    "kind": "datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-t\\raw\\deye_se_f16_brochure_na.pdf",
+    "expected": {
+      "best-solar-bundle-44946822037546": {
+        "anchors": {
+          "capacityKwh": 16,
+          "batteryKind": "Battery modules"
+        },
+        "sourceUrl": "https://bestsolarbundle.com/products/deye-se-f16-max-6-residential-battery?variant=44946822037546",
+        "category": "batteries",
+        "name": "Deye SE-F16 Max-6 Residential Battery — 16kWh"
+      }
+    },
+    "checkedAt": "2026-10-15T08:15:24Z",
+    "url": "https://deyeess.com/wp-content/uploads/2026/06/Deye-NEPT-F_SE-F16-Max-6-_Brochure-_NA_20260810V1.0.pdf",
+    "rows": [
+      [
+        "Rated capacity",
+        "314 Ah"
+      ],
+      [
+        "Nominal voltage",
+        "51.2 V"
+      ],
+      [
+        "Energy capacity",
+        "16 kWh nominal / 16 kWh usable"
+      ],
+      [
+        "Maximum charge current",
+        "160 A continuous"
+      ],
+      [
+        "Maximum discharge current",
+        "200 A continuous"
+      ],
+      [
+        "Cycle life",
+        "At least 8,000 cycles at 25°C ± 2°C and 70% EOL"
+      ],
+      [
+        "Weight",
+        "120 kg"
+      ],
+      [
+        "Ingress protection",
+        "IP65; NEMA 3R"
+      ]
+    ],
+    "productIds": [
+      "best-solar-bundle-44946822037546"
+    ],
+    "label": "Official manufacturer source for Deye SE-F16 Max-6 Residential Battery — 16kWh; selected offer identity is bound from the frozen batch22 catalog snapshot.",
+    "sha256": "673e831c0452cc532e51098ed64676a62c8e99a76584ee962b0cdbd52ae04b66",
+    "sourceScope": "Exact selected product/model; source covers only listed ratings and qualifiers.",
+    "evidenceRows": [
+      [
+        "Peak current",
+        "Charge 280A for 10 seconds; discharge 240A for 10 seconds"
+      ],
+      [
+        "Peak power",
+        "10.2kW maximum output power; not a battery current rating"
+      ],
+      [
+        "Dimensions",
+        "464 × 914 × 244.5mm; assembly qualifier differs between brochure/manual"
+      ]
+    ],
+    "candidateDerivations": [
+      "Exact NA model SE-F16 Max-6; peak current ratings retain duration and direction."
+    ],
+    "unmappedSourceFacts": [
+      "Dimensions withheld because brochure and manual specify different assembly conditions (without hanging board/terminals versus manual base/assembly)."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "44946822037546",
+      "url": "https://bestsolarbundle.com/products/deye-se-f16-max-6-residential-battery?variant=44946822037546",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-t\\raw\\deye_se_f16_brochure_na.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-t\\raw\\deye_se_f16_manual_na.txt"
+    ]
+  },
+  {
+    "kind": "manufacturer",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-t\\raw\\ecoworthy_280_page.html",
+    "expected": {
+      "shopsolar-51565801734284": {
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 280,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "sourceUrl": "https://shopsolarkits.com/products/eco-worthy-12v-280ah-metal-case-lifepo4-lithium-battery?variant=51565801734284",
+        "category": "batteries",
+        "name": "Eco-Worthy 12V 280Ah Metal Case LiFePO4 Lithium Battery With Bluetooth and low-temp protection"
+      }
+    },
+    "checkedAt": "2026-10-15T08:15:24Z",
+    "url": "https://www.eco-worthy.com/products/eco-worthy-12v-280ah-metal-case-lifepo4-lithium-battery-with-bluetooth-and-low-temp-protection",
+    "rows": [
+      [
+        "Rated capacity",
+        "280 Ah"
+      ],
+      [
+        "Nominal voltage",
+        "12.8 V"
+      ],
+      [
+        "Energy capacity",
+        "3,584 Wh (manufacturer product page)"
+      ],
+      [
+        "Maximum charge current",
+        "200 A continuous"
+      ],
+      [
+        "Maximum discharge current",
+        "200 A continuous"
+      ],
+      [
+        "Dimensions",
+        "420 × 219.3 × 245 mm (16.54 × 8.64 × 9.65 in)"
+      ],
+      [
+        "Weight",
+        "31.05 kg / 68.5 lb"
+      ],
+      [
+        "Charge temperature",
+        "0 to 55°C"
+      ],
+      [
+        "Discharge temperature",
+        "−20 to 55°C"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-51565801734284"
+    ],
+    "label": "Official manufacturer source for Eco-Worthy 12V 280Ah Metal Case LiFePO4 Lithium Battery With Bluetooth and low-temp protection; selected offer identity is bound from the frozen batch22 catalog snapshot.",
+    "sha256": "afeddf6b2f7fe264ed34d9ecee9e7eaa9b718073deeb0b88f88f71090a968f8f",
+    "sourceScope": "Exact selected product/model; source covers only listed ratings and qualifiers.",
+    "evidenceRows": [
+      [
+        "Manufacturer SKU",
+        "GW-L13080202162-1; selected retailer numeric SKU is a listing variant identifier"
+      ],
+      [
+        "Peak current",
+        "220A for 10 seconds; direction not specified"
+      ],
+      [
+        "Charge voltage",
+        "14.6V"
+      ]
+    ],
+    "candidateDerivations": [
+      "Energy is as stated on manufacturer page; continuous charge and discharge are separate values."
+    ],
+    "unmappedSourceFacts": [
+      "Cycle life and product warranty not mapped because manufacturer source set inspected does not give a definite matching rating for this exact metal-case SKU."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "51565801734284",
+      "url": "https://shopsolarkits.com/products/eco-worthy-12v-280ah-metal-case-lifepo4-lithium-battery?variant=51565801734284",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-t\\raw\\ecoworthy_280_manual.txt"
+    ]
+  },
+  {
+    "kind": "manufacturer",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-t\\raw\\gosun_992_page.html",
+    "expected": {
+      "gosun-42512831742046": {
+        "anchors": {
+          "stationType": "Integrated power station"
+        },
+        "sourceUrl": "https://gosun.co/products/power-992-portable-power-station?variant=42512831742046",
+        "category": "all-in-one",
+        "name": "Power 992 Portable Power Station"
+      }
+    },
+    "checkedAt": "2026-10-15T08:15:24Z",
+    "url": "https://gosun.co/products/power-992-portable-power-station",
+    "rows": [
+      [
+        "Energy capacity",
+        "992 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Cycle life",
+        "3,500+ cycles to 80% original capacity"
+      ],
+      [
+        "Dimensions",
+        "13 × 9 × 11 in"
+      ],
+      [
+        "Weight",
+        "23.15 lb"
+      ],
+      [
+        "Product warranty",
+        "5 years"
+      ]
+    ],
+    "productIds": [
+      "gosun-42512831742046"
+    ],
+    "label": "Official manufacturer source for Power 992 Portable Power Station; selected offer identity is bound from the frozen batch22 catalog snapshot.",
+    "sha256": "4423f058506ee78aef37d2f0fc688194d73912391c47a1e19036a7207320eaaf",
+    "sourceScope": "Exact selected product/model; source covers only listed ratings and qualifiers.",
+    "evidenceRows": [
+      [
+        "AC output",
+        "1,200W rated / 1,500W surge; AC inverter output, not battery current"
+      ],
+      [
+        "Solar input",
+        "200W maximum; not battery charge current"
+      ],
+      [
+        "UPS transfer",
+        "Less than 20ms"
+      ]
+    ],
+    "candidateDerivations": [
+      "Capacity kept in manufacturer-stated Wh units; no nominal battery voltage/Ah/current inferred."
+    ],
+    "unmappedSourceFacts": [
+      "Battery nominal voltage, amp-hour capacity, maximum charge/discharge current remain unknown."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "42512831742046",
+      "url": "https://gosun.co/products/power-992-portable-power-station?variant=42512831742046",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": []
+  },
+  {
+    "kind": "manual",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-u\\raw\\bluetti_fridgepower_manual.pdf",
+    "expected": {
+      "shopsolar-54751581536396": {
+        "anchors": {
+          "capacityKwh": 2,
+          "stationType": "Integrated power station"
+        },
+        "sourceUrl": "https://shopsolarkits.com/products/bluetti-fridgepower?variant=54751581536396",
+        "category": "all-in-one",
+        "name": "BLUETTI FridgePower - 2,016Wh Battery / 1,800W Output / LiFePO4 | Phone-Thin, Kicks In the Second Power Fails — 1 x FridgePower [2kWh / 1800W]"
+      }
+    },
+    "checkedAt": "2026-10-15T08:19:58.215579+00:00",
+    "url": "https://s4.bluettipower.com/bluetti/purchasePageBiz/2026/06/FridgePower%C2%A0User%20Manual-1781410555039-a5a5.pdf",
+    "rows": [
+      [
+        "Battery capacity",
+        "2,016 Wh (19.2 V, 105 Ah)"
+      ],
+      [
+        "Battery type",
+        "LiFePO4"
+      ],
+      [
+        "Weight",
+        "Approx. 19.7 kg / 43.43 lb"
+      ],
+      [
+        "Dimensions (L × W × H)",
+        "580 × 350 × 78 mm / 22.83 × 13.78 × 3.07 in"
+      ],
+      [
+        "Charging temperature",
+        "0°C to 40°C"
+      ],
+      [
+        "Discharging temperature",
+        "−20°C to 40°C"
+      ],
+      [
+        "Storage temperature",
+        "−10°C to 35°C at 50% SoC"
+      ],
+      [
+        "Protection rating",
+        "IP20"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-54751581536396"
+    ],
+    "label": "Official manufacturer source for exact selected product/model; offer identity is bound to frozen batch22 catalog.",
+    "sha256": "235def1ad511be39641c8002e435ac23cf3d44fc7e5c8081faf93b32a702591d",
+    "sourceScope": "Exact product/model, limited to listed claims and qualifiers.",
+    "evidenceRows": [
+      [
+        "AC output",
+        "1,800 W continuous; regional surge ratings up to 3,600 W; inverter output, not battery current"
+      ],
+      [
+        "XT60 DC input",
+        "1,000 W max, 12–60 V, 20 A max; input-interface rating"
+      ],
+      [
+        "Expansion port",
+        "1,440 W, 19.2 V, 75 A; port rating"
+      ]
+    ],
+    "candidateDerivations": [],
+    "unmappedSourceFacts": [],
+    "selectedOfferIdentity": {
+      "sku": "54751581536396",
+      "url": "https://shopsolarkits.com/products/bluetti-fridgepower?variant=54751581536396",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": []
+  },
+  {
+    "kind": "datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-u\\raw\\epcube_2_datasheet.pdf",
+    "expected": {
+      "shopsolar-52726482075788": {
+        "anchors": {
+          "capacityKwh": 5,
+          "batteryKind": "Battery modules"
+        },
+        "sourceUrl": "https://shopsolarkits.com/products/canadian-solar-ep-cube-2-0-5kwh-battery-module?variant=52726482075788",
+        "category": "batteries",
+        "name": "Canadian Solar EP Cube 2.0 5kWh Battery Module"
+      }
+    },
+    "checkedAt": "2026-10-15T08:20:59.984848+00:00",
+    "url": "https://s3.epcube.com/official/202609/0C3F477E14B99000/EP%20Cube%202.0%20Datasheet_NA_English_V1.6.pdf",
+    "rows": [
+      [
+        "Battery module count for selected configuration",
+        "1 module (5kWh system configuration)"
+      ],
+      [
+        "Battery module weight",
+        "95 lb / 43 kg"
+      ],
+      [
+        "Charge operating temperature",
+        "−10°C to 50°C"
+      ],
+      [
+        "Discharge operating temperature",
+        "−20°C to 50°C"
+      ],
+      [
+        "Battery capacity warranty",
+        ">80% capacity, up to 10 years or 6,000 cycles, whichever occurs first"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-52726482075788"
+    ],
+    "label": "Official manufacturer source for exact selected product/model; offer identity is bound to frozen batch22 catalog.",
+    "sha256": "261ddfe32cdf8e721c2fb0f0bd8ed3aaa94cafbf460562945c352b875c459f0c",
+    "sourceScope": "Exact product/model, limited to listed claims and qualifiers.",
+    "evidenceRows": [
+      [
+        "System-level ratings excluded",
+        "System power/current, total system weight, and dimensions are not one-module ratings"
+      ]
+    ],
+    "candidateDerivations": [
+      "Selected offer is explicitly 5kWh single-module configuration; no system current assigned to module."
+    ],
+    "unmappedSourceFacts": [],
+    "selectedOfferIdentity": {
+      "sku": "52726482075788",
+      "url": "https://shopsolarkits.com/products/canadian-solar-ep-cube-2-0-5kwh-battery-module?variant=52726482075788",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-u\\raw\\epcube_2_datasheet.txt"
+    ]
+  },
+  {
+    "kind": "manual",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-u\\raw\\sungold_corex_elite_manual.pdf",
+    "expected": {
+      "shopsolar-46817109115020": {
+        "anchors": {
+          "voltage": 48,
+          "capacityAh": 100,
+          "batteryKind": "Battery modules",
+          "formFactor": "Wall mounted"
+        },
+        "sourceUrl": "https://shopsolarkits.com/products/sungold-power-corex-5-elite-48v-100ah-tier-1-eve-battery?variant=46817109115020",
+        "category": "batteries",
+        "name": "Sungold Power CoreX 5 Elite Wall Mounted Battery | 48V 100Ah | Tier-1 EVE Cells | 10-Year Warranty"
+      }
+    },
+    "checkedAt": "2026-10-15T08:21:00.758397+00:00",
+    "url": "https://cdn.shopify.com/s/files/1/0323/4090/2025/files/CoreX_5_Elite_User_Manual.pdf?v=1785379847",
+    "rows": [
+      [
+        "Rated capacity",
+        "100 Ah"
+      ],
+      [
+        "Rated voltage",
+        "51.2 V"
+      ],
+      [
+        "Rated energy",
+        "5.12 kWh"
+      ],
+      [
+        "Voltage range",
+        "43.2–56.8 V"
+      ],
+      [
+        "Standard charge/discharge current",
+        "50 A at 25 ± 2°C"
+      ],
+      [
+        "Maximum discharge current",
+        "100 A at 25 ± 2°C"
+      ],
+      [
+        "Recommended use temperature",
+        "10–45°C"
+      ],
+      [
+        "Operating temperature",
+        "Charge 4–55°C; discharge −20–55°C"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46817109115020"
+    ],
+    "label": "Official manufacturer source for exact selected product/model; offer identity is bound to frozen batch22 catalog.",
+    "sha256": "b5236eb1741abd29deeaea203c38a493506e761474a869c54fa7ddb7c1555a85",
+    "sourceScope": "Exact product/model, limited to listed claims and qualifiers.",
+    "evidenceRows": [
+      [
+        "Current limiting",
+        "Enabled by default; at charging current ≥90A triggers a 20A current limit"
+      ]
+    ],
+    "candidateDerivations": [],
+    "unmappedSourceFacts": [
+      "Manual dimension/weight not mapped in this packet."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "46817109115020",
+      "url": "https://shopsolarkits.com/products/sungold-power-corex-5-elite-48v-100ah-tier-1-eve-battery?variant=46817109115020",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-u\\raw\\sungold_corex_elite_manual.txt"
+    ]
+  },
+  {
+    "kind": "manual",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-u\\raw\\sungold_corex_pro_manual.pdf",
+    "expected": {
+      "shopsolar-46817066582156": {
+        "anchors": {
+          "voltage": 48,
+          "capacityKwh": 5.12,
+          "capacityAh": 100,
+          "batteryKind": "Battery modules",
+          "formFactor": "Server rack"
+        },
+        "sourceUrl": "https://shopsolarkits.com/products/sungold-power-corex-5-pro?variant=46817066582156",
+        "category": "batteries",
+        "name": "Sungold Power CoreX 5 Pro Server Rack Battery | 48V 100Ah / 5.12kWh | Tier-1 EVE Cells | Expandable up to 15 units | 10-Year Warranty"
+      }
+    },
+    "checkedAt": "2026-10-15T08:21:01.219391+00:00",
+    "url": "https://cdn.shopify.com/s/files/1/0323/4090/2025/files/CoreX_5_Pro_User_Manual.pdf?v=1785379662",
+    "rows": [
+      [
+        "Rated capacity",
+        "100 Ah"
+      ],
+      [
+        "Rated voltage",
+        "51.2 V"
+      ],
+      [
+        "Rated energy",
+        "5.12 kWh"
+      ],
+      [
+        "Voltage range",
+        "43.2–56.8 V"
+      ],
+      [
+        "Standard charge/discharge current",
+        "50 A at 25 ± 2°C"
+      ],
+      [
+        "Maximum discharge current",
+        "100 A at 25 ± 2°C"
+      ],
+      [
+        "Recommended use temperature",
+        "10–45°C"
+      ],
+      [
+        "Operating temperature",
+        "Charge 4–55°C; discharge −20–55°C"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46817066582156"
+    ],
+    "label": "Official manufacturer source for exact selected product/model; offer identity is bound to frozen batch22 catalog.",
+    "sha256": "f4d2a5bb8849158058c0183028deb19119139c2dce60ffc03a6f67f324ea671e",
+    "sourceScope": "Exact product/model, limited to listed claims and qualifiers.",
+    "evidenceRows": [
+      [
+        "Current limiting",
+        "Enabled by default; at charging current ≥90A triggers a 20A current limit"
+      ]
+    ],
+    "candidateDerivations": [],
+    "unmappedSourceFacts": [
+      "Manual dimension/weight not mapped in this packet."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "46817066582156",
+      "url": "https://shopsolarkits.com/products/sungold-power-corex-5-pro?variant=46817066582156",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-u\\raw\\sungold_corex_pro_manual.txt"
+    ]
+  },
+  {
+    "kind": "manufacturer",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-u\\raw\\pecron_ep3800_page.html",
+    "expected": {
+      "shopsolar-46524374810764": {
+        "anchors": {
+          "voltage": 48,
+          "capacityAh": 75,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "sourceUrl": "https://shopsolarkits.com/products/pecron-ep3800-48v-3840wh-expansion-battery?variant=46524374810764",
+        "category": "batteries",
+        "name": "PECRON EP3800-48V | 3,840Wh LiFePO4 Expansion Battery | 51.2V 75Ah | For E1000LFP/E1500LFP/E2400LFP/E3600LFP/F3000LFP"
+      }
+    },
+    "checkedAt": "2026-10-15T08:20:15.948909+00:00",
+    "url": "https://eu.pecron.com/products/pecron-ep3800-48v-expansion-battery",
+    "rows": [
+      [
+        "Rated energy",
+        "3,840 Wh"
+      ],
+      [
+        "Rated voltage",
+        "51.2 V"
+      ],
+      [
+        "Rated capacity",
+        "75 Ah"
+      ],
+      [
+        "Cycle life",
+        "At least 3,500 cycles to 80% capacity"
+      ],
+      [
+        "Dimensions",
+        "441 × 312 × 223 mm (L × W × H)"
+      ],
+      [
+        "Weight",
+        "Approx. 30.3 kg"
+      ],
+      [
+        "Warranty",
+        "1 year + 1 year extension"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46524374810764"
+    ],
+    "label": "Official manufacturer source for exact selected product/model; offer identity is bound to frozen batch22 catalog.",
+    "sha256": "de9a5e20d2786996b3f538b715d094430aab57d101da2f652c9f2ab094223bf6",
+    "sourceScope": "Exact product/model, limited to listed claims and qualifiers.",
+    "evidenceRows": [
+      [
+        "Compatibility",
+        "Official page identifies as EP3800-48V expansion battery"
+      ]
+    ],
+    "candidateDerivations": [],
+    "unmappedSourceFacts": [
+      "A separate “120 volts” page field is ambiguous/system-related and excluded."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "46524374810764",
+      "url": "https://shopsolarkits.com/products/pecron-ep3800-48v-3840wh-expansion-battery?variant=46524374810764",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": []
+  },
+  {
+    "kind": "manufacturer",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-u\\raw\\ecoflow_dpu_x_page.html",
+    "expected": {
+      "shopsolar-44760796397708": {
+        "anchors": {
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-pro-ultra-x-smart-extra-battery?variant=44760796397708",
+        "category": "batteries",
+        "name": "EcoFlow DELTA PRO [ULTRA-X] Smart Extra Battery | 6,144Wh Expandable Capacity | Plug-and-Play | EV-Grade LFP Cells | Dual BMS | 5-Year Warranty"
+      }
+    },
+    "checkedAt": "2026-10-15T08:20:01.964365+00:00",
+    "url": "https://us.ecoflow.com/products/delta-pro-ultra-x-smart-extra-battery",
+    "rows": [
+      [
+        "Battery capacity",
+        "6,144 Wh"
+      ],
+      [
+        "Battery chemistry",
+        "LFP"
+      ],
+      [
+        "Weight",
+        "50.5 ± 0.2 kg / 111.3 ± 0.44 lb"
+      ],
+      [
+        "Dimensions",
+        "660 × 455 × 204 mm / 26 × 18 × 8 in"
+      ],
+      [
+        "Warranty",
+        "5 years"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-44760796397708"
+    ],
+    "label": "Official manufacturer source for exact selected product/model; offer identity is bound to frozen batch22 catalog.",
+    "sha256": "4fa9b37fbff4fb4df8cf84f92eb0e9165ca1d4970f3fb2e33284bc4b695bea6f",
+    "sourceScope": "Exact product/model, limited to listed claims and qualifiers.",
+    "evidenceRows": [
+      [
+        "Compatibility",
+        "DELTA Pro Ultra Series Smart Extra Battery; page includes DELTA Pro Ultra / Ultra X"
+      ]
+    ],
+    "candidateDerivations": [],
+    "unmappedSourceFacts": [
+      "Cycle life and battery current limits not specified on reviewed page."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "44760796397708",
+      "url": "https://shopsolarkits.com/products/ecoflow-delta-pro-ultra-x-smart-extra-battery?variant=44760796397708",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": []
+  },
+  {
+    "kind": "manual",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-u\\raw\\bigbattery_nexus_manual.pdf",
+    "expected": {
+      "shopsolar-44497977180300": {
+        "anchors": {
+          "voltage": 48,
+          "capacityKwh": 15,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4",
+          "formFactor": "Floor standing",
+          "formFactorSource": "https://shopsolarkits.com/products/bigbattery-nexus?variant=44497977180300",
+          "maxDischargeCurrent": 140,
+          "maxChargeCurrent": 140
+        },
+        "sourceUrl": "https://shopsolarkits.com/products/bigbattery-nexus?variant=44497977180300",
+        "category": "batteries",
+        "name": "BigBattery 48V 15kWh NEXUS LiFePO4 Battery | Expandable to 225kWh | Built-In BMS, Heater & Fire Suppression | Indoor/Outdoor | 12-Year Limited Warranty"
+      }
+    },
+    "checkedAt": "2026-10-15T08:20:14.818550+00:00",
+    "url": "https://bigbattery.com/wp-content/uploads/2025/12/NEXUS-User-Manual1.2.3.pdf",
+    "rows": [
+      [
+        "Manufacturer SKU",
+        "F-NXUS-48143-G1"
+      ],
+      [
+        "System voltage",
+        "48 V"
+      ],
+      [
+        "Nominal voltage",
+        "51.2 V"
+      ],
+      [
+        "Chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Energy capacity",
+        "15 kWh"
+      ],
+      [
+        "Rated capacity",
+        "300 Ah"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "140 A"
+      ],
+      [
+        "Maximum charge current",
+        "140 A"
+      ],
+      [
+        "Peak discharge current",
+        "270 A for 1 second"
+      ],
+      [
+        "Dimensions (W × H × D)",
+        "19.7 × 30.8 × 15.7 in / 500 × 782 × 400 mm"
+      ],
+      [
+        "Weight",
+        "Approx. 315 lb"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-44497977180300"
+    ],
+    "label": "Official manufacturer source for exact selected product/model; offer identity is bound to frozen batch22 catalog.",
+    "sha256": "6ebd1e098b88614f9cc23ea7c557a56b368b652c72de1ba4e869762a87199aae",
+    "sourceScope": "Exact product/model, limited to listed claims and qualifiers.",
+    "evidenceRows": [
+      [
+        "Source availability",
+        "Manual captured before separate official specs PDF returned HTTP429; refusal retained, not retried"
+      ]
+    ],
+    "candidateDerivations": [],
+    "unmappedSourceFacts": [
+      "Cycle life not stated. No BigBattery requests after 429."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "44497977180300",
+      "url": "https://shopsolarkits.com/products/bigbattery-nexus?variant=44497977180300",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": []
+  },
+  {
+    "kind": "manual",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-u\\raw\\renon_xcellent_manual.pdf",
+    "expected": {
+      "shopsolar-44333417660556": {
+        "anchors": {
+          "capacityKwh": 16,
+          "batteryKind": "Battery modules",
+          "formFactor": "Wall mounted",
+          "chemistry": "LiFePO4",
+          "maxChargeCurrent": 190
+        },
+        "sourceUrl": "https://shopsolarkits.com/products/renon-xcellent-plus-16kwh-lifepo4-wall-mounted-battery?variant=44333417660556",
+        "category": "batteries",
+        "name": "RENON XC PLUS - 16kWh LiFePO4 Wall-Mounted Battery | Expandable to 31 Units | Built-In BMS + Heater Film + Junction Box | -4°F to 122°F | 10-Year Warranty"
+      }
+    },
+    "checkedAt": "2026-10-15T08:20:12.750849+00:00",
+    "url": "https://usa.renonpower.com/uploadfile/2025/0425/Xcellent%20Plus-US%20User%20Manual.pdf",
+    "rows": [
+      [
+        "Chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Nominal energy",
+        "16 kWh"
+      ],
+      [
+        "Nominal capacity",
+        "314 Ah"
+      ],
+      [
+        "Nominal voltage",
+        "51.2 V"
+      ],
+      [
+        "Recommended charging voltage",
+        "56.8 V"
+      ],
+      [
+        "Maximum charging voltage",
+        "58.4 V"
+      ],
+      [
+        "Discharge cut-off voltage",
+        "43.2 V"
+      ],
+      [
+        "Operating temperature",
+        "Discharge −20 to 55°C; charge 0 to 55°C"
+      ],
+      [
+        "Weight",
+        "Approx. 337.31 lb / 153 kg"
+      ],
+      [
+        "Dimensions (W × D × H)",
+        "560 × 210 × 1,225 mm (±2 mm); leveling feet excluded"
+      ],
+      [
+        "Ingress protection",
+        "IP65"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-44333417660556"
+    ],
+    "label": "Official manufacturer source for exact selected product/model; offer identity is bound to frozen batch22 catalog.",
+    "sha256": "56f6ec752cfcb6870f0b7444b28e18f4af13be4800516819af54f6e09f18aa77",
+    "sourceScope": "Exact product/model, limited to listed claims and qualifiers.",
+    "evidenceRows": [
+      [
+        "Maximum combined charge/discharge current",
+        "190 A; not direction-specific"
+      ],
+      [
+        "Heating film",
+        "Starts at 5°C for -H model only"
+      ]
+    ],
+    "candidateDerivations": [],
+    "unmappedSourceFacts": [
+      "Directional maximum current not mapped; heating qualifier is -H model only. EU model dimensions/current excluded."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "44333417660556",
+      "url": "https://shopsolarkits.com/products/renon-xcellent-plus-16kwh-lifepo4-wall-mounted-battery?variant=44333417660556",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": []
+  },
+  {
+    "kind": "manual",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-u\\raw\\anker_bp3000_manual.pdf",
+    "expected": {
+      "shopsolar-44238501347468": {
+        "anchors": {
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3000-expansion-battery?variant=44238501347468",
+        "category": "batteries",
+        "name": "Anker SOLIX F3000 Expansion Battery | 3,072Wh LiFePO4 | Expandable to 12,288Wh | 4,000+ Cycles | 5-Year Warranty"
+      }
+    },
+    "checkedAt": "2026-10-15T08:21:01.557099+00:00",
+    "url": "https://cdn.shopify.com/s/files/1/0854/3820/2186/files/A1782111-85_V1_US_EN_UG_20250527.pdf?v=1760337650",
+    "rows": [
+      [
+        "Voltage range",
+        "40–57.6 V"
+      ],
+      [
+        "Battery type",
+        "LiFePO4"
+      ],
+      [
+        "Charging temperature",
+        "0–40°C / 32–104°F"
+      ],
+      [
+        "Discharging temperature",
+        "−20–40°C / −4–104°F"
+      ],
+      [
+        "Net weight",
+        "25 kg / 55.12 lb"
+      ],
+      [
+        "Dimensions",
+        "584 × 204 × 260 mm / 23 × 8 × 10.2 in"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-44238501347468"
+    ],
+    "label": "Official manufacturer source for exact selected product/model; offer identity is bound to frozen batch22 catalog.",
+    "sha256": "03fb37411b33de5c1d7cefbc4a1425f96445ab4a5a82444087910ffd01bcc78d",
+    "sourceScope": "Exact product/model, limited to listed claims and qualifiers.",
+    "evidenceRows": [
+      [
+        "Expansion port charging",
+        "60A max with Anker SOLIX F3000"
+      ],
+      [
+        "Expansion port discharging",
+        "123A max with Anker SOLIX F3000"
+      ]
+    ],
+    "candidateDerivations": [],
+    "unmappedSourceFacts": [
+      "Port currents are conditional and not standalone battery current. Cycle life claim not confirmed by manual.",
+      "Held from field mapping: combined 51.2 VDC, 60,000 mAh / 3,072 Wh is not a single energy-capacity value and the generic parser maps it as Energy capacity; preserve this source wording only outside imported specification fields pending separate dimensioned mappings."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "44238501347468",
+      "url": "https://shopsolarkits.com/products/anker-solix-f3000-expansion-battery?variant=44238501347468",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-u\\raw\\anker_bp3000_manual.txt"
+    ]
+  },
+  {
+    "kind": "manufacturer",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-u\\raw\\lion_ut3500_page.html",
+    "expected": {
+      "shopsolar-44203349508236": {
+        "anchors": {
+          "voltage": 12,
+          "batteryKind": "Battery modules",
+          "maxChargeCurrent": 140,
+          "maxDischargeCurrent": 150
+        },
+        "sourceUrl": "https://shopsolarkits.com/products/lion-energy-ut-3500-bt-h-lithium-battery?variant=44203349508236",
+        "category": "batteries",
+        "name": "Lion Energy UT 3500-BT-H | 3,584Wh 12V Lithium Battery | Heated + Bluetooth | 150A BMS | 10-Year Warranty"
+      }
+    },
+    "checkedAt": "2026-10-15T08:20:04.695931+00:00",
+    "url": "https://lionenergy.com/products/ut-3500-bt-h",
+    "rows": [
+      [
+        "Manufacturer model",
+        "UT 3500-BT-H"
+      ],
+      [
+        "Rated capacity",
+        "280 Ah"
+      ],
+      [
+        "Nominal voltage",
+        "12.8 V"
+      ],
+      [
+        "Energy capacity",
+        "3,584 Wh"
+      ],
+      [
+        "Chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "150 A"
+      ],
+      [
+        "Maximum charge current",
+        "140 A"
+      ],
+      [
+        "Recommended charge current",
+        "45 A"
+      ],
+      [
+        "Maximum charge voltage",
+        "14.6 V"
+      ],
+      [
+        "Dimensions (L × W × H)",
+        "13.85 × 7.64 × 12.85 in"
+      ],
+      [
+        "Weight",
+        "72.31 lb"
+      ],
+      [
+        "Charging temperature",
+        "32–113°F"
+      ],
+      [
+        "Discharging temperature",
+        "−4–131°F"
+      ],
+      [
+        "Warranty",
+        "Limited lifetime warranty"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-44203349508236"
+    ],
+    "label": "Official manufacturer source for exact selected product/model; offer identity is bound to frozen batch22 catalog.",
+    "sha256": "be3f58b73ebcd046ca5c8b943d65617ccb4b8dd732b09e6f9337f4063c0c446d",
+    "sourceScope": "Exact product/model, limited to listed claims and qualifiers.",
+    "evidenceRows": [
+      [
+        "Overload protection",
+        "280 A for 50 sec; not continuous current"
+      ]
+    ],
+    "candidateDerivations": [],
+    "unmappedSourceFacts": [
+      "Dimensions/weight/warranty should be checked against exact model in page text before import."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "44203349508236",
+      "url": "https://shopsolarkits.com/products/lion-energy-ut-3500-bt-h-lithium-battery?variant=44203349508236",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": []
+  },
+  {
+    "kind": "datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-v\\raw\\rubix_rseries48_datasheet.pdf",
+    "expected": {
+      "practical-preppers-32086": {
+        "anchors": {
+          "voltage": 48,
+          "capacityAh": 280,
+          "batteryKind": "Battery modules",
+          "maxDischargeCurrent": 200
+        },
+        "sourceUrl": "https://practicalpreppers.com/product/rubix-rrs51280-48v-280ah-r-series-battery/",
+        "category": "batteries",
+        "name": "Rubix RRS51280 48V, 280AH, R-Series Battery"
+      }
+    },
+    "checkedAt": "2026-10-15T08:29:04.922898+00:00",
+    "url": "https://rubixbattery.com/wp-content/uploads/2026/03/2026-Rubix-R-Series-48-Spec-Sheet.pdf",
+    "rows": [
+      [
+        "Manufacturer model",
+        "RRS51280"
+      ],
+      [
+        "Nominal voltage",
+        "51.2 V"
+      ],
+      [
+        "Rated capacity",
+        "280 Ah"
+      ],
+      [
+        "Energy rating",
+        "14.336 kWh"
+      ],
+      [
+        "Cell chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Rated cycle life",
+        "4,500 cycles at 80% DoD; 80% retained capacity at end of cycle life"
+      ],
+      [
+        "Dimensions (battery with handles)",
+        "35.94 × 19.53 × 9.45 in"
+      ],
+      [
+        "Battery weight",
+        "271 lb"
+      ],
+      [
+        "Ingress protection",
+        "IP50"
+      ],
+      [
+        "Minimum environment temperature",
+        "32°F"
+      ],
+      [
+        "Maximum environment temperature",
+        "120°F"
+      ],
+      [
+        "Outdoor rated",
+        "No"
+      ],
+      [
+        "Warranty",
+        "10 years"
+      ]
+    ],
+    "productIds": [
+      "practical-preppers-32086"
+    ],
+    "label": "Official manufacturer source for exact model; selected offer identity bound from frozen batch22 catalog.",
+    "sha256": "38c28479b2cccf2da74116fe78c03b83d7e509c60a098a17673cc76e40fedfdc",
+    "sourceScope": "Exact model, only listed ratings and qualifiers.",
+    "evidenceRows": [
+      [
+        "Current/power labeling",
+        "Data sheet labels max continuous charge/discharge power but pairs amp values with kW; directional currents held."
+      ]
+    ],
+    "candidateDerivations": [],
+    "unmappedSourceFacts": [
+      "Breaker rating is not continuous current."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "32086",
+      "url": "https://practicalpreppers.com/product/rubix-rrs51280-48v-280ah-r-series-battery/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-v\\raw\\rubix_rseries_page.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-v\\raw\\rubix_rseries_manual.txt"
+    ]
+  },
+  {
+    "kind": "datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-v\\raw\\rubix_rseries24_datasheet.pdf",
+    "expected": {
+      "practical-preppers-32100": {
+        "anchors": {
+          "voltage": 24,
+          "capacityAh": 560,
+          "batteryKind": "Battery modules",
+          "maxDischargeCurrent": 200
+        },
+        "sourceUrl": "https://practicalpreppers.com/product/rubix-rrs25560-24v-560ah-r-series-battery/",
+        "category": "batteries",
+        "name": "Rubix RRS25560 24V, 560AH, R-Series Battery"
+      }
+    },
+    "checkedAt": "2026-10-15T08:29:04.553601+00:00",
+    "url": "https://rubixbattery.com/wp-content/uploads/2026/03/2026-Rubix-R-Series-24-Spec-Sheet.pdf",
+    "rows": [
+      [
+        "Manufacturer model",
+        "RRS25560"
+      ],
+      [
+        "Nominal voltage",
+        "25.6 V"
+      ],
+      [
+        "Rated capacity",
+        "560 Ah"
+      ],
+      [
+        "Energy rating",
+        "14.336 kWh"
+      ],
+      [
+        "Cell chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Rated cycle life",
+        "4,500 cycles at 80% DoD; 80% retained capacity at end of cycle life"
+      ],
+      [
+        "Dimensions (battery with handles)",
+        "35.94 × 19.53 × 9.45 in"
+      ],
+      [
+        "Battery weight",
+        "271 lb"
+      ],
+      [
+        "Ingress protection",
+        "IP50"
+      ],
+      [
+        "Minimum environment temperature",
+        "32°F"
+      ],
+      [
+        "Maximum environment temperature",
+        "120°F"
+      ],
+      [
+        "Outdoor rated",
+        "No"
+      ],
+      [
+        "Warranty",
+        "10 years"
+      ]
+    ],
+    "productIds": [
+      "practical-preppers-32100"
+    ],
+    "label": "Official manufacturer source for exact model; selected offer identity bound from frozen batch22 catalog.",
+    "sha256": "3ef9d984c100e1e506cce8d1ce761b016e8327f1b1bacd5ab6935ce7de2c2d6a",
+    "sourceScope": "Exact model, only listed ratings and qualifiers.",
+    "evidenceRows": [
+      [
+        "Current/power labeling",
+        "Data sheet labels max continuous charge/discharge power but pairs amp values with kW; directional currents held."
+      ]
+    ],
+    "candidateDerivations": [],
+    "unmappedSourceFacts": [
+      "Catalog nominal voltage 24V and datasheet nominal 25.6V are retained as separate label/nominal terms. Breaker rating is not continuous current."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "32100",
+      "url": "https://practicalpreppers.com/product/rubix-rrs25560-24v-560ah-r-series-battery/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-v\\raw\\rubix_rseries_page.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-v\\raw\\rubix_rseries_manual.txt"
+    ]
+  },
+  {
+    "kind": "datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-v\\raw\\rubix_stack24_datasheet.pdf",
+    "expected": {
+      "practical-preppers-gigastack-2-1": {
+        "anchors": {
+          "voltage": 24,
+          "capacityAh": 200,
+          "batteryKind": "Battery modules",
+          "maxDischargeCurrent": 180
+        },
+        "sourceUrl": "https://practicalpreppers.com/product/rubix-stack-series-battery-24v-200ah/",
+        "category": "batteries",
+        "name": "Rubix Stack Series Battery 24V 200AH"
+      }
+    },
+    "checkedAt": "2026-10-15T08:29:05.242950+00:00",
+    "url": "https://rubixbattery.com/wp-content/uploads/2026/03/2026-Rubix-Stack-24-Spec-Sheet.pdf",
+    "rows": [
+      [
+        "Manufacturer model",
+        "RS25200"
+      ],
+      [
+        "Nominal voltage",
+        "25.6 V"
+      ],
+      [
+        "Rated capacity",
+        "200 Ah"
+      ],
+      [
+        "Energy rating",
+        "5.12 kWh"
+      ],
+      [
+        "Cell chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Rated cycle life",
+        "6,000 cycles at 80% DoD; 80% retained capacity at end of cycle life"
+      ],
+      [
+        "Battery dimensions",
+        "22.6 × 19.3 × 6.2 in"
+      ],
+      [
+        "Battery weight",
+        "108 lb"
+      ],
+      [
+        "Ingress protection",
+        "IP50"
+      ],
+      [
+        "Minimum environment temperature",
+        "32°F"
+      ],
+      [
+        "Maximum environment temperature",
+        "120°F"
+      ],
+      [
+        "Outdoor rated",
+        "No"
+      ],
+      [
+        "Warranty",
+        "10 years"
+      ]
+    ],
+    "productIds": [
+      "practical-preppers-gigastack-2-1"
+    ],
+    "label": "Official manufacturer source for exact model; selected offer identity bound from frozen batch22 catalog.",
+    "sha256": "3d86da02bd77bfd36bffdc71704be8ec38960a09c431ae7ab82dc3b973356d88",
+    "sourceScope": "Exact model, only listed ratings and qualifiers.",
+    "evidenceRows": [
+      [
+        "Discharge limits",
+        "180A/4.6kW “Max Continuous Discharge Power”; 400A/10.2kW “Peak Discharge Power (3 sec)”; held because labels/units conflict."
+      ],
+      [
+        "Charging limit",
+        "140A/3.58kW “Max Continuous Charging Power”; held due label/unit conflict."
+      ]
+    ],
+    "candidateDerivations": [],
+    "unmappedSourceFacts": [
+      "Battery-module dimensions/weight are separate from base/lid accessories."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "Gigastack-2-1",
+      "url": "https://practicalpreppers.com/product/rubix-stack-series-battery-24v-200ah/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-v\\raw\\rubix_stack_page.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-v\\raw\\rubix_stack_manual.txt"
+    ]
+  },
+  {
+    "kind": "manufacturer",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-v\\raw\\dakota_dl100_page.html",
+    "expected": {
+      "shopsolar-39602020024460": {
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 100,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4",
+          "maxChargeCurrent": 50,
+          "maxDischargeCurrent": 100
+        },
+        "sourceUrl": "https://shopsolarkits.com/products/dakota-lithium-12v-100ah-lifepo4-battery?variant=39602020024460",
+        "category": "batteries",
+        "name": "Dakota Lithium 12V 100Ah | Deep Cycle LiFePO4 Battery | Lithium Solar Battery"
+      }
+    },
+    "checkedAt": "2026-10-15T08:29:07.073652+00:00",
+    "url": "https://dakotalithium.com/product/dakota-lithium-12v-100ah-deep-cycle-lifepo4-marine-solar-battery/",
+    "rows": [
+      [
+        "Manufacturer model",
+        "DL 100Ah"
+      ],
+      [
+        "Rated capacity",
+        "100 Ah"
+      ],
+      [
+        "Nominal voltage",
+        "12.8 V"
+      ],
+      [
+        "Energy",
+        "1,280 Wh"
+      ],
+      [
+        "Chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Maximum continuous discharge current",
+        "100 A"
+      ],
+      [
+        "Maximum pulse discharge current",
+        "200 A for 10 seconds"
+      ],
+      [
+        "Maximum charge current",
+        "50 A"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-39602020024460"
+    ],
+    "label": "Official manufacturer source for exact model; selected offer identity bound from frozen batch22 catalog.",
+    "sha256": "2ba30a1a654096d06e6da87bd87dd3369e873dca459a7d4b6b1d65589d8da726",
+    "sourceScope": "Exact model, only listed ratings and qualifiers.",
+    "evidenceRows": [
+      [
+        "Cold-weather feature",
+        "Official current DL100 page describes internal Even-Heat Technology warming cells to 5°C when charging below 0°C."
+      ]
+    ],
+    "candidateDerivations": [],
+    "unmappedSourceFacts": [
+      "Listing title does not identify heated revision; heater-specific behavior held."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "39602020024460",
+      "url": "https://shopsolarkits.com/products/dakota-lithium-12v-100ah-lifepo4-battery?variant=39602020024460",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-v\\raw\\dakota_dl100_page.txt"
+    ]
+  },
+  {
+    "kind": "manufacturer",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-v\\raw\\dakota_dl20usb_page.html",
+    "expected": {
+      "shopsolar-41751301030028": {
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 20,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "sourceUrl": "https://shopsolarkits.com/products/dakota-lithium-12v-20ah-lifepo4-battery?variant=41751301030028",
+        "category": "batteries",
+        "name": "Dakota Lithium 12V 20Ah USB LiFePO4 Battery | Drop-In SLA Replacement | USB-A/C + Voltmeter | 11-Year Warranty"
+      }
+    },
+    "checkedAt": "2026-10-15T08:29:07.641093+00:00",
+    "url": "https://dakotalithium.com/product/dakota-lithium-12v-12ah-20-amp-hour-lifepo4-iron-phosphate-battery/",
+    "rows": [
+      [
+        "Manufacturer model",
+        "12V 20Ah USB Deep Cycle LiFePO4 Battery"
+      ],
+      [
+        "Rated capacity",
+        "20 Ah"
+      ],
+      [
+        "Nominal voltage",
+        "12.8 V"
+      ],
+      [
+        "Energy",
+        "256 Wh"
+      ],
+      [
+        "Chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Dimensions",
+        "5.9 × 3.94 × 3.86 in (151 × 100 × 99 mm)"
+      ],
+      [
+        "Weight",
+        "4.25 lb / 1.93 kg"
+      ],
+      [
+        "Cycle life",
+        "Up to 5,000 cycles to 80% capacity in recommended conditions"
+      ],
+      [
+        "Continuous discharge current",
+        "10 A"
+      ],
+      [
+        "Maximum charge current",
+        "10 A"
+      ],
+      [
+        "Recommended charge voltage",
+        "14.4 V; 15 V maximum"
+      ],
+      [
+        "Charge temperature",
+        "0°C to 45°C; avoid charging below 0°C"
+      ],
+      [
+        "Operating temperature",
+        "−20°C to 60°C optimal operating temps"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-41751301030028"
+    ],
+    "label": "Official manufacturer source for exact model; selected offer identity bound from frozen batch22 catalog.",
+    "sha256": "2d408043b546995606cb94ce2d2eaa28bf6874377345b575b12508826e777f00",
+    "sourceScope": "Exact model, only listed ratings and qualifiers.",
+    "evidenceRows": [
+      [
+        "Terminals/ports",
+        "F2 spade terminals; USB-A, USB-C and voltmeter stated by product page."
+      ]
+    ],
+    "candidateDerivations": [],
+    "unmappedSourceFacts": [
+      "Maximum 20A discharge is not labelled continuous; kept separate."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "41751301030028",
+      "url": "https://shopsolarkits.com/products/dakota-lithium-12v-20ah-lifepo4-battery?variant=41751301030028",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-v\\raw\\dakota_dl20usb_page.txt"
+    ]
+  },
+  {
+    "kind": "manufacturer_manual",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-z\\raw\\fortress_evault_manual.pdf",
+    "expected": {
+      "inverters-r-us-evault-max-18-5": {
+        "anchors": {
+          "capacityKwh": 18.5,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "sourceUrl": "https://invertersrus.com/product/fortress-power-evault-max/",
+        "category": "batteries",
+        "name": "Fortress Power eVault Max 18.5kWh LFP Battery"
+      }
+    },
+    "checkedAt": "2026-10-15T09:25:51Z",
+    "url": "https://www.fortresspower.com/wp-content/uploads/2021/07/Installation-Manual-eVault-Max.pdf",
+    "rows": [
+      [
+        "Manufacturer model",
+        "EVAULT MAX 18.5"
+      ],
+      [
+        "Total energy",
+        "18.5 kWh"
+      ],
+      [
+        "Recommended charge current",
+        "100 A"
+      ],
+      [
+        "Maximum charge current (continuous)",
+        "170 A"
+      ],
+      [
+        "Maximum discharge current (continuous)",
+        "180 A"
+      ],
+      [
+        "Rated capacity",
+        "360 Ah"
+      ],
+      [
+        "Voltage",
+        "51.2 (48) V"
+      ],
+      [
+        "Charge temperature",
+        "32–113°F"
+      ],
+      [
+        "Discharge temperature",
+        "32–140°F"
+      ],
+      [
+        "Dimensions (W×D×H)",
+        "20.3 × 20.3 × 42.2 in"
+      ],
+      [
+        "Packaging dimensions",
+        "45 × 24 × 31 in (package, not product)"
+      ],
+      [
+        "Weight",
+        "496 lb"
+      ],
+      [
+        "Enclosure protection rating",
+        "IP54 (indoor unit)"
+      ],
+      [
+        "Scalability",
+        "Up to 20 units"
+      ],
+      [
+        "High current circuit breaker",
+        "250 A (breaker, not continuous current)"
+      ],
+      [
+        "Communications",
+        "RS485, CAN, MODBUS, CANBUS; USB logging port also mentioned"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-evault-max-18-5"
+    ],
+    "label": "Official manufacturer evidence for exact frozen catalog listing inverters-r-us-evault-max-18-5.",
+    "sha256": "2c00aca2b05f3ab5735f9c72468c38b026ba04bdff9d9709e08f59bb61f1b27f",
+    "sourceScope": "Exact eVault Max 18.5 model; table page 7; model intro page 1; comms pages 10–11.",
+    "evidenceRows": [
+      [
+        "Maximum charge current",
+        "170 A maximum continuous charge current; 100 A is separately the recommended charge current."
+      ],
+      [
+        "Discharge (A)",
+        "180 A maximum continuous discharge current."
+      ],
+      [
+        "Rated capacity",
+        "360 Ah."
+      ],
+      [
+        "Dimensions",
+        "20.3 × 20.3 × 42.2 in W×D×H."
+      ],
+      [
+        "Weight",
+        "496 lb."
+      ],
+      [
+        "Chemistry",
+        "Manufacturer intro identifies Lithium Ferro Phosphate."
+      ],
+      [
+        "Communications",
+        "Manual states RS485/CAN inverter support, MODBUS/CANBUS and USB logging."
+      ]
+    ],
+    "candidateDerivations": [
+      "The rendered p7 table visually confirms 170A charge, 180A discharge, 200A pulse/10sec, 360Ah and product dimensions."
+    ],
+    "unmappedSourceFacts": [
+      "200 A pulse rating has no direction; not mapped as peak discharge. Voltage is given as “51.2 (48)” and kept verbatim. IP54 is qualified “indoor unit”; do not infer outdoor use. Packaging size excluded from product dimensions."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "EVAULT-MAX-18.5",
+      "url": "https://invertersrus.com/product/fortress-power-evault-max/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-z\\raw\\fortress_evault_manual.pdf",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-z\\raw\\fortress_evault_manual.pdf.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-z\\renders\\evault_table.png",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-z\\raw\\fortress_evault_manual.pdf.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-z\\renders\\evault_table.png"
+    ]
+  },
+  {
+    "kind": "manufacturer_manual",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-z\\raw\\sungold_powermax_20260714.pdf",
+    "expected": {
+      "sungoldpower-44573538386057": {
+        "anchors": {
+          "voltage": 51.2,
+          "capacityKwh": 16.07,
+          "capacityAh": 314,
+          "batteryKind": "Battery modules",
+          "maxChargeCurrent": 190
+        },
+        "sourceUrl": "https://sungoldpower.com/products/powermax-51-2v-314ah-outdoor-energy-storage-battery-ul1973-ul9540a?variant=44573538386057",
+        "category": "batteries",
+        "name": "PowerMax 16.07kWh 51.2V 314AH Outdoor Energy Storage Battery UL1973 & UL9540A CEC Listed"
+      }
+    },
+    "checkedAt": "2026-10-15T09:25:51Z",
+    "url": "https://cdn.shopify.com/s/files/1/0323/4090/2025/files/PowerMax_314_Outdoor_20260714.pdf",
+    "rows": [
+      [
+        "Manufacturer model",
+        "PowerMax 314 Outdoor Series"
+      ],
+      [
+        "Rated capacity",
+        "314 Ah"
+      ],
+      [
+        "Rated energy",
+        "16.07 kWh"
+      ],
+      [
+        "Nameplate energy capacity",
+        "16.07 kWh"
+      ],
+      [
+        "Usable energy",
+        "15.42 kWh"
+      ],
+      [
+        "Maximum depth of discharge",
+        ">96%"
+      ],
+      [
+        "Rated DC power",
+        "7.68 kW"
+      ],
+      [
+        "Maximum continuous discharge rate",
+        "7.68 kW"
+      ],
+      [
+        "Weight",
+        "123 kg (271 lb)"
+      ],
+      [
+        "Dimensions (L×W×H)",
+        "1048 × 460 × 271 mm (41.26 × 18.11 × 10.67 in)"
+      ],
+      [
+        "Standard charge/discharge current",
+        "150 A / 150 A"
+      ],
+      [
+        "Maximum charge/discharge current",
+        "190 A / 190 A"
+      ],
+      [
+        "Peak charging current",
+        "220 A (3 s)"
+      ],
+      [
+        "Peak discharging current",
+        "220 A (3 s)"
+      ],
+      [
+        "Breaker current",
+        "240 A (breaker, not current limit)"
+      ],
+      [
+        "Screen",
+        "Touch screen"
+      ],
+      [
+        "Battery type",
+        "LFP"
+      ],
+      [
+        "Cycle life",
+        "8000 cycles (80% DOD, 0.5C, 25°C)"
+      ],
+      [
+        "Maximum charging voltage",
+        "57.6 V"
+      ],
+      [
+        "Over-discharge voltage",
+        "44.8 V"
+      ],
+      [
+        "Maximum number in parallel",
+        "16"
+      ],
+      [
+        "Communication interfaces",
+        "CAN/RS485/USB/WiFi/Bluetooth"
+      ],
+      [
+        "Charging temperature range",
+        "0–55°C (32–131°F)"
+      ],
+      [
+        "Discharging temperature range",
+        "−10–55°C (14–131°F)"
+      ],
+      [
+        "Enclosure protection rating",
+        "IP65"
+      ],
+      [
+        "Operating environment",
+        "Indoor and outdoor"
+      ]
+    ],
+    "productIds": [
+      "sungoldpower-44573538386057"
+    ],
+    "label": "Official manufacturer evidence for exact frozen catalog listing sungoldpower-44573538386057.",
+    "sha256": "abc9d08eab00881854814d0e5d56ef076d622771afac1ca152e2ffd59fb6c7b9",
+    "sourceScope": "PowerMax 314 Outdoor User Manual V3.0; product family title p1, exact engineering table p8; selected offer variant ID 44573538386057.",
+    "evidenceRows": [
+      [
+        "Chemistry",
+        "Exact manual p8 labels type LFP."
+      ],
+      [
+        "Rated capacity",
+        "314 Ah."
+      ],
+      [
+        "Energy capacity",
+        "16.07 kWh rated/nameplate; same as frozen offer anchor."
+      ],
+      [
+        "Usable energy",
+        "15.42 kWh, separate from rated capacity."
+      ],
+      [
+        "Maximum charge current",
+        "190 A maximum charge/discharge pair; source also has separate 220 A peak charge for 3 s."
+      ],
+      [
+        "Discharge (A)",
+        "190 A maximum charge/discharge pair."
+      ],
+      [
+        "Peak discharge current",
+        "220 A for 3 seconds."
+      ],
+      [
+        "Dimensions",
+        "1048 × 460 × 271 mm, L×W×H."
+      ],
+      [
+        "Weight",
+        "123 kg (271 lb)."
+      ],
+      [
+        "Communications",
+        "CAN/RS485/USB/WiFi/Bluetooth."
+      ],
+      [
+        "Cycle life",
+        "8000 cycles at 80% DOD, 0.5C, 25°C."
+      ],
+      [
+        "Maximum charging voltage",
+        "57.6 V."
+      ],
+      [
+        "Ingress protection",
+        "IP65."
+      ]
+    ],
+    "candidateDerivations": [
+      "The official SunGold page was opened at the exact catalog variant and links the July 14 2026 manual; the technical table was visually inspected. Older manual retained only as unused source comparison."
+    ],
+    "unmappedSourceFacts": [
+      "220 A peaks are specified separately for charging and discharging, each for 3 sec. 240A is breaker current. Rated energy 16.07 and usable 15.42 stay separate. Max charging voltage is not generalized to a recommended setpoint."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "44573538386057",
+      "url": "https://sungoldpower.com/products/powermax-51-2v-314ah-outdoor-energy-storage-battery-ul1973-ul9540a?variant=44573538386057",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-z\\raw\\sungold_powermax_20260714.pdf",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-z\\raw\\sungold_powermax_20260714.pdf.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-z\\renders\\powermax_table.png",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-z\\raw\\sungold_powermax_page.html",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-z\\raw\\sungold_powermax_20260714.pdf.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-z\\renders\\powermax_table.png"
+    ]
+  },
+  {
+    "kind": "manufacturer_datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-aa\\raw\\trina_vertex_splus_datasheet.pdf",
+    "expected": {
+      "santan-solar-tsm-ne09rc-05-420-n": {
+        "name": "Trina Vertex S+ 420W Bifacial 144 Half Cell Solar Panels",
+        "sourceUrl": "https://www.santansolar.com/product/trina-vertex-s-420w-bifacial-144-half-cell-solar-panels/",
+        "category": "panels",
+        "anchors": {}
+      }
+    },
+    "checkedAt": "2026-10-15T10:06:08Z",
+    "url": "https://static.trinasolar.com/sites/default/files/VertexS_TSM-NE09RC.05_400-430W_2024_B.pdf",
+    "rows": [
+      [
+        "Cells",
+        "144 cells"
+      ],
+      [
+        "Efficiency",
+        "21.0% at STC for 420 W bin"
+      ],
+      [
+        "Open-circuit voltage (Voc)",
+        "50.9 V at STC for 420 W bin"
+      ],
+      [
+        "Maximum-power voltage (Vmp)",
+        "42.8 V at STC for 420 W bin"
+      ],
+      [
+        "Maximum-power current (Imp)",
+        "9.80 A at STC for 420 W bin"
+      ],
+      [
+        "Short-circuit current (Isc)",
+        "10.43 A at STC for 420 W bin"
+      ],
+      [
+        "Voc temperature coefficient",
+        "-0.24%/°C"
+      ],
+      [
+        "Power temperature coefficient",
+        "-0.29%/°C"
+      ]
+    ],
+    "productIds": [
+      "santan-solar-tsm-ne09rc-05-420-n"
+    ],
+    "label": "Official Trina Solar datasheet evidence matched to frozen listing model TSM-NE09RC.05 420 W.",
+    "sha256": "dbc9a4ebc60711ad24f5fa2a74d5e8669dce1cba66d860bfae68d0b092526830",
+    "sourceScope": "TSM-NE09RC.05 400-430 W North American datasheet, Rev TSM_NA_EN_2024_B, selected 420 W column. STC ratings only; no bin mixing.",
+    "evidenceRows": [
+      [
+        "Cells",
+        "144 cells"
+      ],
+      [
+        "Efficiency",
+        "21.0% at STC for 420 W bin"
+      ],
+      [
+        "Open-circuit voltage (Voc)",
+        "50.9 V at STC for 420 W bin"
+      ],
+      [
+        "Maximum-power voltage (Vmp)",
+        "42.8 V at STC for 420 W bin"
+      ],
+      [
+        "Maximum-power current (Imp)",
+        "9.80 A at STC for 420 W bin"
+      ],
+      [
+        "Short-circuit current (Isc)",
+        "10.43 A at STC for 420 W bin"
+      ],
+      [
+        "Voc temperature coefficient",
+        "-0.24%/°C"
+      ],
+      [
+        "Power temperature coefficient",
+        "-0.29%/°C"
+      ]
+    ],
+    "candidateDerivations": [
+      "Selected values are the 420 W column on datasheet p2; STC values are not mixed with NOCT or backside-gain values."
+    ],
+    "unmappedSourceFacts": [
+      "The datasheet provides no Vmp temperature coefficient; that catalog field stays unknown. The separate bifacial backside-gain table (5%/10%) is not substituted for nameplate STC ratings."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "TSM-NE09RC.05-420-N",
+      "url": "https://www.santansolar.com/product/trina-vertex-s-420w-bifacial-144-half-cell-solar-panels/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "approved_source_rows_pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-aa\\raw\\trina_vertex_splus_datasheet.pdf",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-aa\\raw\\trina_vertex_splus_datasheet.pdf.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-aa\\renders\\trina_vertex_splus_datasheet-p1.png",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-aa\\renders\\trina_vertex_splus_datasheet-p2.png"
+    ],
+    "sourceReviewPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-four-storage-final-composed-v2\\evidence\\aa-independent-review.json",
+    "sourceReviewSha256": "512a290219bec6978a098e2ac5e2b602a1f5580fb58fc0d41f9086076d4a1e8a",
+    "approvedEvidenceRowIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  {
+    "kind": "manufacturer_datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-aa\\raw\\mission_mse365sq9s_datasheet.pdf",
+    "expected": {
+      "santan-solar-mse365sq9s-n": {
+        "name": "New Prism by Mission Solar 365w MSE Mono PERC 72 Cell Solar Panel",
+        "sourceUrl": "https://www.santansolar.com/product/new-mission-solar-365w-mse-mono-perc-72-cell-solar-panel/",
+        "category": "panels",
+        "anchors": {}
+      }
+    },
+    "checkedAt": "2026-10-15T10:06:08Z",
+    "url": "https://www.missionsolar.com/wp-content/uploads/2025/05/C-SA2-MKTG-0015-Data-Sheet-for-SQ9S.pdf",
+    "rows": [
+      [
+        "Cells",
+        "72 cells (6×12), P-type monocrystalline silicon"
+      ],
+      [
+        "Efficiency",
+        "18.39% for MSE365SQ9S at STC"
+      ],
+      [
+        "Open-circuit voltage (Voc)",
+        "48.05 V at STC"
+      ],
+      [
+        "Maximum-power voltage (Vmp)",
+        "39.52 V at STC"
+      ],
+      [
+        "Maximum-power current (Imp)",
+        "9.236 A at STC"
+      ],
+      [
+        "Short-circuit current (Isc)",
+        "9.705 A at STC"
+      ],
+      [
+        "Voc temperature coefficient",
+        "-0.280%/°C"
+      ],
+      [
+        "Power temperature coefficient",
+        "-0.375%/°C"
+      ]
+    ],
+    "productIds": [
+      "santan-solar-mse365sq9s-n"
+    ],
+    "label": "Official Mission Solar MSE365SQ9S datasheet matched to frozen exact SKU family.",
+    "sha256": "c59cf75a5b341fe26dc0d5a99ff7b5709e686a11850dbf0d57aedd70b0e8f62a",
+    "sourceScope": "Mission Solar MSE PERC 72 datasheet document C-SA2-MKTG-0015 Rev R4, exact MSE365SQ9S column, p2.",
+    "evidenceRows": [
+      [
+        "Cells",
+        "72 cells (6×12), P-type monocrystalline silicon"
+      ],
+      [
+        "Efficiency",
+        "18.39% for MSE365SQ9S at STC"
+      ],
+      [
+        "Open-circuit voltage (Voc)",
+        "48.05 V at STC"
+      ],
+      [
+        "Maximum-power voltage (Vmp)",
+        "39.52 V at STC"
+      ],
+      [
+        "Maximum-power current (Imp)",
+        "9.236 A at STC"
+      ],
+      [
+        "Short-circuit current (Isc)",
+        "9.705 A at STC"
+      ],
+      [
+        "Voc temperature coefficient",
+        "-0.280%/°C"
+      ],
+      [
+        "Vmp temperature coefficient",
+        "No Vmp coefficient listed in this datasheet; do not map"
+      ],
+      [
+        "Power temperature coefficient",
+        "-0.375%/°C"
+      ]
+    ],
+    "candidateDerivations": [
+      "Electrical figures are transcribed from the MSE365SQ9S column, not MSE370SQ9S or MSE375SQ9S."
+    ],
+    "unmappedSourceFacts": [
+      "The source has no Vmp temperature coefficient row. Face/monofacial-bifacial classification is not explicitly labelled in the inspected selected-model table and is held."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "MSE365SQ9S-N",
+      "url": "https://www.santansolar.com/product/new-mission-solar-365w-mse-mono-perc-72-cell-solar-panel/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "approved_source_rows_pending_independent_composition_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-aa\\raw\\mission_mse365sq9s_datasheet.pdf",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-aa\\raw\\mission_mse365sq9s_datasheet.pdf.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-aa\\renders\\mission_mse365sq9s_datasheet-p1.png",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-aa\\renders\\mission_mse365sq9s_datasheet-p2.png",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-aa\\raw\\mission_msexxxsq9s_product.html",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-aa\\raw\\mission_msexxxsq9s_product.html.txt"
+    ],
+    "sourceReviewPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-four-storage-final-composed-v2\\evidence\\aa-independent-review.json",
+    "sourceReviewSha256": "512a290219bec6978a098e2ac5e2b602a1f5580fb58fc0d41f9086076d4a1e8a",
+    "approvedEvidenceRowIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      8
+    ]
+  },
+  {
+    "kind": "datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-c\\08-superpack.pdf",
+    "expected": {
+      "inverters-r-us-bat512020705": {
+        "anchors": {},
+        "sourceUrl": "https://invertersrus.com/product/ve-lithium-superpack-12-8v-20ah/",
+        "category": "batteries",
+        "name": "Victron Energy Lithium SuperPack 12.8V 20Ah (M5)"
+      }
+    },
+    "checkedAt": "2026-10-15T06:07:33.805837+00:00",
+    "url": "https://www.victronenergy.com/upload/documents/Datasheet-12%2C8V-%26-25%2C6-Lithium-SuperPack-EN-.pdf",
+    "rows": [
+      [
+        "Energy capacity",
+        "0.256 kWh (converted exactly from 256 Wh nominal energy at 25°C)"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-bat512020705"
+    ],
+    "label": "Victron Lithium SuperPack 12.8/20 official manufacturer datasheet",
+    "sha256": "ce4f34b2c0687e33db9961eec19cc2bb1a6b77ceaeaa4a4b95563bacd8e1704d",
+    "sourceScope": "Victron Lithium SuperPack datasheet p1, exact model column 12.8/20; source row “Nominal energy @ 25°C”. Raw column value retained verbatim in evidenceRows; converted to kWh by dividing Wh by 1000.",
+    "evidenceRows": [
+      [
+        "Nominal energy @ 25°C",
+        "256Wh"
+      ]
+    ],
+    "candidateDerivations": [
+      "Exact conversion: published nominal Wh at 25°C ÷ 1000 = kWh. The model column and original Wh wording are retained in evidenceRows."
+    ],
+    "unmappedSourceFacts": [],
+    "reviewStatus": "approved_exact_source_transformation_root_reviewed",
+    "derivedFromApprovedCandidateRow": {
+      "sourcePacket": "luna-storage-20261015-c",
+      "candidateIndex": 4,
+      "rawRowIndex": 5,
+      "sourceReviewPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-four-storage-final-composed-v2\\evidence\\storage-c-independent-review.json",
+      "sourceReviewSha256": "4c3509a3edc9f57b65b43abb0339f2a26e3496f4bbfeda8d73dbbcbc5f496046",
+      "reviewedDisposition": "approved raw source row; derived unit conversion is separately pending independent composition approval"
+    },
+    "selectedOfferIdentity": {
+      "sku": "BAT512020705",
+      "url": "https://invertersrus.com/product/ve-lithium-superpack-12-8v-20ah/",
+      "packQuantity": 1,
+      "condition": "new"
+    }
+  },
+  {
+    "kind": "datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-c\\08-superpack.pdf",
+    "expected": {
+      "inverters-r-us-bat512060705": {
+        "anchors": {},
+        "sourceUrl": "https://invertersrus.com/product/ve-lithium-superpack-12-8v-60ah/",
+        "category": "batteries",
+        "name": "Victron Energy Lithium SuperPack 12.8V 60Ah (M6)"
+      }
+    },
+    "checkedAt": "2026-10-15T06:07:33.805837+00:00",
+    "url": "https://www.victronenergy.com/upload/documents/Datasheet-12%2C8V-%26-25%2C6-Lithium-SuperPack-EN-.pdf",
+    "rows": [
+      [
+        "Energy capacity",
+        "0.768 kWh (converted exactly from 768 Wh nominal energy at 25°C)"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-bat512060705"
+    ],
+    "label": "Victron Lithium SuperPack 12.8/60 official manufacturer datasheet",
+    "sha256": "ce4f34b2c0687e33db9961eec19cc2bb1a6b77ceaeaa4a4b95563bacd8e1704d",
+    "sourceScope": "Victron Lithium SuperPack datasheet p1, exact model column 12.8/60; source row “Nominal energy @ 25°C”. Raw column value retained verbatim in evidenceRows; converted to kWh by dividing Wh by 1000.",
+    "evidenceRows": [
+      [
+        "Nominal energy @ 25°C",
+        "768Wh"
+      ]
+    ],
+    "candidateDerivations": [
+      "Exact conversion: published nominal Wh at 25°C ÷ 1000 = kWh. The model column and original Wh wording are retained in evidenceRows."
+    ],
+    "unmappedSourceFacts": [],
+    "reviewStatus": "approved_exact_source_transformation_root_reviewed",
+    "derivedFromApprovedCandidateRow": {
+      "sourcePacket": "luna-storage-20261015-c",
+      "candidateIndex": 5,
+      "rawRowIndex": 5,
+      "sourceReviewPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-four-storage-final-composed-v2\\evidence\\storage-c-independent-review.json",
+      "sourceReviewSha256": "4c3509a3edc9f57b65b43abb0339f2a26e3496f4bbfeda8d73dbbcbc5f496046",
+      "reviewedDisposition": "approved raw source row; derived unit conversion is separately pending independent composition approval"
+    },
+    "selectedOfferIdentity": {
+      "sku": "BAT512060705",
+      "url": "https://invertersrus.com/product/ve-lithium-superpack-12-8v-60ah/",
+      "packQuantity": 1,
+      "condition": "new"
+    }
+  },
+  {
+    "kind": "datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-c\\08-superpack.pdf",
+    "expected": {
+      "inverters-r-us-bat512110710": {
+        "anchors": {},
+        "sourceUrl": "https://invertersrus.com/product/ve-lithium-superpack-12-8v-100ah/",
+        "category": "batteries",
+        "name": "Victron Energy Lithium SuperPack 12.8V 100Ah (M8)"
+      }
+    },
+    "checkedAt": "2026-10-15T06:07:33.805837+00:00",
+    "url": "https://www.victronenergy.com/upload/documents/Datasheet-12%2C8V-%26-25%2C6-Lithium-SuperPack-EN-.pdf",
+    "rows": [
+      [
+        "Energy capacity",
+        "1.28 kWh (converted exactly from 1280 Wh nominal energy at 25°C)"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-bat512110710"
+    ],
+    "label": "Victron Lithium SuperPack 12.8/100 official manufacturer datasheet",
+    "sha256": "ce4f34b2c0687e33db9961eec19cc2bb1a6b77ceaeaa4a4b95563bacd8e1704d",
+    "sourceScope": "Victron Lithium SuperPack datasheet p1, exact model column 12.8/100; source row “Nominal energy @ 25°C”. Raw column value retained verbatim in evidenceRows; converted to kWh by dividing Wh by 1000.",
+    "evidenceRows": [
+      [
+        "Nominal energy @ 25°C",
+        "1280Wh"
+      ]
+    ],
+    "candidateDerivations": [
+      "Exact conversion: published nominal Wh at 25°C ÷ 1000 = kWh. The model column and original Wh wording are retained in evidenceRows."
+    ],
+    "unmappedSourceFacts": [],
+    "reviewStatus": "approved_exact_source_transformation_root_reviewed",
+    "derivedFromApprovedCandidateRow": {
+      "sourcePacket": "luna-storage-20261015-c",
+      "candidateIndex": 6,
+      "rawRowIndex": 5,
+      "sourceReviewPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-four-storage-final-composed-v2\\evidence\\storage-c-independent-review.json",
+      "sourceReviewSha256": "4c3509a3edc9f57b65b43abb0339f2a26e3496f4bbfeda8d73dbbcbc5f496046",
+      "reviewedDisposition": "approved raw source row; derived unit conversion is separately pending independent composition approval"
+    },
+    "selectedOfferIdentity": {
+      "sku": "BAT512110710",
+      "url": "https://invertersrus.com/product/ve-lithium-superpack-12-8v-100ah/",
+      "packQuantity": 1,
+      "condition": "new"
+    }
+  },
+  {
+    "kind": "datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-storage-20261015-c\\08-superpack.pdf",
+    "expected": {
+      "inverters-r-us-bat512120705": {
+        "anchors": {},
+        "sourceUrl": "https://invertersrus.com/product/ve-lithium-superpack-12-8v-200ah/",
+        "category": "batteries",
+        "name": "Victron Energy Lithium SuperPack 12.8V 200Ah (M8)"
+      }
+    },
+    "checkedAt": "2026-10-15T06:07:33.805837+00:00",
+    "url": "https://www.victronenergy.com/upload/documents/Datasheet-12%2C8V-%26-25%2C6-Lithium-SuperPack-EN-.pdf",
+    "rows": [
+      [
+        "Energy capacity",
+        "2.56 kWh (converted exactly from 2560 Wh nominal energy at 25°C)"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-bat512120705"
+    ],
+    "label": "Victron Lithium SuperPack 12.8/200 official manufacturer datasheet",
+    "sha256": "ce4f34b2c0687e33db9961eec19cc2bb1a6b77ceaeaa4a4b95563bacd8e1704d",
+    "sourceScope": "Victron Lithium SuperPack datasheet p1, exact model column 12.8/200; source row “Nominal energy @ 25°C”. Raw column value retained verbatim in evidenceRows; converted to kWh by dividing Wh by 1000.",
+    "evidenceRows": [
+      [
+        "Nominal energy @ 25°C",
+        "2560Wh"
+      ]
+    ],
+    "candidateDerivations": [
+      "Exact conversion: published nominal Wh at 25°C ÷ 1000 = kWh. The model column and original Wh wording are retained in evidenceRows."
+    ],
+    "unmappedSourceFacts": [],
+    "reviewStatus": "approved_exact_source_transformation_root_reviewed",
+    "derivedFromApprovedCandidateRow": {
+      "sourcePacket": "luna-storage-20261015-c",
+      "candidateIndex": 7,
+      "rawRowIndex": 5,
+      "sourceReviewPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-four-storage-final-composed-v2\\evidence\\storage-c-independent-review.json",
+      "sourceReviewSha256": "4c3509a3edc9f57b65b43abb0339f2a26e3496f4bbfeda8d73dbbcbc5f496046",
+      "reviewedDisposition": "approved raw source row; derived unit conversion is separately pending independent composition approval"
+    },
+    "selectedOfferIdentity": {
+      "sku": "BAT512120705",
+      "url": "https://invertersrus.com/product/ve-lithium-superpack-12-8v-200ah/",
+      "packQuantity": 1,
+      "condition": "new"
+    }
   }
 ]
