@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {comparisonEvidence,partColumns,partValue,productListName,productListVariant,sortPartsByColumn} from '../lib/part-comparison.ts';
+import {comparisonRows} from '../lib/comparison-view.ts';
 import {serializePageCatalog} from '../lib/catalog-transport.ts';
 import type {Product,Category} from '../lib/types.ts';
 const p=(name:string,category:Category,specs:Product['specs']={}):Product=>({id:name,name,category,specs,brand:'Renogy',description:'',image:'',images:[],sourceUrl:'https://example.com/selected-sku',verifiedAt:'2026-10-05',offers:[]});
@@ -50,6 +51,29 @@ test('matched technical evidence survives catalog transport without the full spe
  assert.equal(partValue(transported,'capacityKwh').value,'5.12 kWh');
  assert.match(partValue(transported,'capacityKwh').note!,/Calculated nominal/);
  assert.equal(battery.specs.voltage,48);
+});
+test('qualified nominal-class evidence blocks raw voltage fallback in full and lightweight comparisons',()=>{
+ const cases=[
+  ['inverters-r-us-sk12v100h','https://us.sokbattery.com/product-page/sk12v100h-12v-100ah-self-heating-lifepo4-battery'],
+  ['inverters-r-us-sk12v100pc','https://us.sokbattery.com/product-page/sk12v100pc-sok-12v100ah-lifepo4-battery-bluetooth-clear-sealed-box'],
+  ['inverters-r-us-sk12v206h','https://us.sokbattery.com/product-page/sk12v206h-12v-206ah-heated-lifepo4-battery'],
+  ['inverters-r-us-sk12v206ph','https://us.sokbattery.com/product-page/sk12v206ph-marine-grade-lifepo4-battery'],
+ ] as const;
+ for(const [id,source] of cases){
+  const battery=p(id,'batteries',{voltage:12}),value='12 V nominal class; exact nominal voltage not published on retrieved product page';
+  battery.specification={summary:'',notes:[],sources:[{kind:'manufacturer',label:'Exact-model manufacturer page',url:source}],groups:[{title:'Electrical',fields:[{key:'voltage',label:'Nominal voltage',value,source,kind:'manufacturer'}]}]};
+  const light=JSON.parse(serializePageCatalog({products:[battery],reports:[]})).products[0] as Product;
+  assert.equal(comparisonRows([battery],true).find(r=>r.key==='voltage')?.values[0].value,'—',id+' full');
+  assert.equal(comparisonRows([light],true).find(r=>r.key==='voltage')?.values[0].value,'—',id+' light');
+  assert.equal(light.comparisonSpecs?.voltage.source,source,id+' source retained in light projection');
+  assert.equal(partValue(battery,'voltage').value,value,id+' qualified full evidence retained');
+  assert.equal(partValue(light,'voltage').value,value,id+' qualified light evidence retained');
+ }
+ const listed=p('Unqualified 12 V listing battery','batteries',{voltage:12});
+ const listedLight=JSON.parse(serializePageCatalog({products:[listed],reports:[]})).products[0] as Product;
+ assert.equal(comparisonRows([listed],true).find(r=>r.key==='voltage')?.values[0].value,'12 V');
+ assert.equal(comparisonRows([listedLight],true).find(r=>r.key==='voltage')?.values[0].value,'12 V');
+ assert.equal(listedLight.comparisonSpecs?.voltage,undefined);
 });
 test('output and PV ratings stay separate; multi-tracker current is never summed or taken from Isc',()=>{
  const inverter=p('18kPV Hybrid Inverter','inverters',{watts:18000,maxPvIsc:31,systemVoltageV:48});

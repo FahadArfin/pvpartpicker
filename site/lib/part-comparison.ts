@@ -24,7 +24,7 @@ const relevantKeys=new Set([...Object.values(partColumns).flat().map(c=>c.key),'
 export function comparisonEvidence(product:Product):Record<string,PartValue>{
  const result:Record<string,PartValue>={};
  for(const field of product.specification?.groups.flatMap(g=>g.fields)??[]){
-  if(relevantKeys.has(field.key)&&field.kind!=='listing'&&product.specification?.sources.some(s=>s.url===field.source&&s.kind!=='listing')&&!/not verified|not published|unknown/i.test(field.value))result[field.key]={value:field.value,source:field.source};
+  if(relevantKeys.has(field.key)&&field.kind!=='listing'&&product.specification?.sources.some(s=>s.url===field.source&&s.kind!=='listing'))result[field.key]={value:field.value,source:field.source};
  }
  return result;
 }
