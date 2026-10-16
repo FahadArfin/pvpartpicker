@@ -52,6 +52,25 @@ test('matched technical evidence survives catalog transport without the full spe
  assert.match(partValue(transported,'capacityKwh').note!,/Calculated nominal/);
  assert.equal(battery.specs.voltage,48);
 });
+test('exact-identity panel STC ratings with datasheet sources survive compact transport and full comparison',()=>{
+ const panel=p('Trina 420 W panel','panels',{model:'TSM-NE09RC.05'});
+ const source='https://manufacturer.example/panel.pdf';
+ panel.sourceUrl='https://manufacturer.example/panel';
+ panel.specification={identity:{name:panel.name,sourceUrl:panel.sourceUrl,category:'panels',anchors:{model:'TSM-NE09RC.05'}},summary:'',notes:[],sources:[{kind:'datasheet',label:'Exact model datasheet',url:source}],groups:[],panelRatings:{stc:{pmax:'420 W at STC',efficiency:'21.0% at STC',voc:'37.2 V at STC',vmp:'31.0 V at STC',imp:'13.55 A at STC',isc:'14.2 A at STC'},noct:{voc:'35.0 V at NOCT'},sources:{'stc.pmax':source,'stc.efficiency':source,'stc.voc':source,'stc.vmp':source,'stc.imp':source,'stc.isc':source,'noct.voc':source}}};
+ const serialized=JSON.parse(serializePageCatalog({products:[panel],reports:[]})).products[0] as Product;
+ for(const key of ['watts','moduleEfficiency','voc','vmp','imp','isc'])assert.equal(serialized.comparisonSpecs?.[key]?.source,source,`${key} retains exact datasheet source`);
+ assert.equal(serialized.comparisonSpecs?.watts?.value,'420 W at STC');
+ assert.equal(serialized.comparisonSpecs?.moduleEfficiency?.value,'21.0% at STC');
+ assert.equal(partValue(serialized,'watts').value,'420 W at STC');
+ assert.equal(partValue(serialized,'moduleEfficiency').value,'21.0% at STC');
+ const full=comparisonRows([panel],true);
+ for(const key of ['voc','vmp','imp','isc'])assert.equal(full.find(row=>row.key===key)?.values[0]?.source,source,`${key} full comparison source`);
+ assert.equal(full.find(row=>row.key==='voc')?.values[0]?.value,'37.2 V at STC');
+ assert.equal(full.find(row=>row.key==='vmp')?.values[0]?.value,'31.0 V at STC');
+ const wrongIdentity={...panel,specification:{...panel.specification,identity:{...panel.specification.identity,name:panel.name,category:panel.category,anchors:panel.specification.identity?.anchors||{},sourceUrl:panel.sourceUrl+'-other'}}};
+ const wrongIdentityTransport=JSON.parse(serializePageCatalog({products:[wrongIdentity],reports:[]})).products[0] as Product;
+ assert.equal(wrongIdentityTransport.comparisonSpecs?.voc,undefined);
+});
 test('detailed manufacturer comparison evidence survives the lightweight catalog projection',()=>{
  const cases:[Product,Record<string,string>][]=[
   [p('Aims SCC60AMPPT','charging'),{mpptVoltageRange:'15–155Vdc@12V; 34–155Vdc@24V; 50–155Vdc@36V; 60–155Vdc@48V.',operatingTemperature:'-25 to 60°C; derating begins from 45°C.'}],

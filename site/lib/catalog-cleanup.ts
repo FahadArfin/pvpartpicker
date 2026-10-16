@@ -1,5 +1,6 @@
 import type {Product,Offer} from './types.ts';
 import {applyReviewedStorageRole,isReviewedStorageRoleCandidate} from './reviewed-storage-roles.ts';
+import {isRichSolarCbk1302Offer,isRichSolarCbk1302Product,richSolarCbk1302Contents,richSolarCbk1302DerivedComparisonKeys,richSolarCbk1302Source} from './exact-kits.ts';
 function sameSelection(a:string,b:string){try{const x=new URL(a),y=new URL(b);return x.origin===y.origin&&x.pathname.replace(/\/$/,'')===y.pathname.replace(/\/$/,'')&&x.searchParams.get('variant')===y.searchParams.get('variant');}catch{return false;}}
 /** Reversible presentation corrections. Never writes offers or historical prices. */
 export function normalizeCatalogProduct(product:Product,options:{skipReviewedStorageRole?:boolean}={}):Product{
@@ -10,7 +11,11 @@ export function normalizeCatalogProduct(product:Product,options:{skipReviewedSto
  // Component counts are not counts of the entire inverter/battery purchase.
  const nova=/\bNOVA\s*6548\s*\+\s*(?:(\d+)\s+pieces?\s+)?ALPHA\s*5\s*PRO\b/i.exec(selected);
  if(nova){const quantity=Number(nova[1]||1);if(quantity>=1&&quantity<=10000)return {...product,category:'kits',specs:{...product.specs,kitType:'Inverter + batteries'},configuration:{kind:'combo',family:'nova6548-alpha5pro',title:'NOVA 6548 + ALPHA 5 PRO Bundle',selection:selected,type:'Inverter + batteries',components:[{type:'inverter',quantity:1,detail:'NOVA 6548'},{type:'batteries',quantity,detail:'ALPHA 5 PRO'}]},offers:product.offers.map(o=>({...o,packQuantity:1,...(o.packQuantity!==1?{recordedPackQuantity:o.packQuantity}:{})}))};}
- if(product.category==='batteries'&&/^Off[ -]Grid System Kit\b/i.test(product.name))return {...product,category:'kits',specs:{...product.specs,kitType:'Solar system kits'},offers:product.offers.map(o=>({...o,packQuantity:1}))};
+ if(isRichSolarCbk1302Product(product)){
+  const specs={...product.specs};for(const key of ['watts','outputWatts','voltage','capacityKwh','capacityAh','batteryKind','formFactor','chemistry','inverterType','acOutput','gridForming'])delete specs[key];
+  const comparisonSpecs=Object.fromEntries(Object.entries(product.comparisonSpecs||{}).filter(([key])=>!richSolarCbk1302DerivedComparisonKeys.includes(key)));
+  return {...product,category:'kits',configuration:undefined,comparisonSpecs:{...comparisonSpecs,contents:{value:richSolarCbk1302Contents,source:richSolarCbk1302Source}},specs:{...specs,kitType:'Solar system kits'},offers:product.offers.map(o=>isRichSolarCbk1302Offer(product,o)?{...o,packQuantity:1}:o)};
+ }
 
  const count=product.category==='batteries'&&!/cabinet/i.test(product.name)?selected.match(/(?:^|\/)\s*(\d+)\s+batter(?:y|ies)(?:\s+only)?\s*$/i):null;
  const units=count?Number(count[1]):undefined;
