@@ -22,7 +22,7 @@ const relevantKeys=new Set([...Object.values(partColumns).flat().map(c=>c.key),'
 // Detailed comparison rows also consume these fields from the compact catalog.
 // Keep the full and lightweight comparison paths aligned without sending every
 // technical field to every catalog page.
-for(const key of ['voc','vmp','imp','isc','vocTemperatureCoefficient','vmpTemperatureCoefficient','pmaxTemperatureCoefficient','dimensions','mpptVoltageRange','maxPvVoltage','mpptCount','maxPvIsc','batteryVoltageRange','frequency','maxChargeCurrent','peakDischargeCurrent','communications','surgeWatts','operatingTemperature','conductor','ratedCurrent','interruptRating','poles','ipRating','compatibility','tilt','accuracy','efficiency','material'])relevantKeys.add(key);
+for(const key of ['voc','vmp','imp','isc','vocTemperatureCoefficient','vmpTemperatureCoefficient','pmaxTemperatureCoefficient','dimensions','mpptVoltageRange','maxPvVoltage','mpptCount','maxPvIsc','batteryVoltageRange','frequency','maxChargeCurrent','peakDischargeCurrent','chargeTemperature','dischargeTemperature','communications','surgeWatts','operatingTemperature','conductor','ratedCurrent','interruptRating','poles','ipRating','compatibility','tilt','accuracy','efficiency','material'])relevantKeys.add(key);
 
 /** Keep only matched technical fields in the lightweight catalog response. */
 export function comparisonEvidence(product:Product):Record<string,PartValue>{

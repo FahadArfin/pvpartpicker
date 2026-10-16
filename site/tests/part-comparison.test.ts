@@ -71,6 +71,29 @@ test('detailed manufacturer comparison evidence survives the lightweight catalog
   assert.equal(comparisonRows([light],true).find(row=>row.key==='maxPvIsc')?.values[0].value,'—');
  }
 });
+test('battery charge and discharge temperature evidence survives lightweight all-spec comparisons',()=>{
+ const battery=p('Canadian Solar EP Cube 2.0 5kWh Battery Module','batteries');
+ const source='https://s3.epcube.com/official/202609/0C3F477E14B99000/EP%20Cube%202.0%20Datasheet_NA_English_V1.6.pdf';
+ battery.specification={summary:'',notes:[],sources:[{kind:'datasheet',label:'EP Cube 2.0 V1.6 datasheet',url:source}],groups:[{title:'Protection & environment',fields:[
+  {key:'chargeTemperature',label:'Charge temperature',value:'−10°C to 50°C',source,kind:'datasheet'},
+  {key:'dischargeTemperature',label:'Discharge temperature',value:'−20°C to 50°C',source,kind:'datasheet'},
+ ]}]};
+ const light=JSON.parse(serializePageCatalog({products:[battery],reports:[]})).products[0] as Product;
+ assert.equal(light.comparisonSpecs?.chargeTemperature.value,'−10°C to 50°C');
+ assert.equal(light.comparisonSpecs?.chargeTemperature.source,source);
+ assert.equal(light.comparisonSpecs?.dischargeTemperature.value,'−20°C to 50°C');
+ assert.equal(light.comparisonSpecs?.dischargeTemperature.source,source);
+ for(const key of ['chargeTemperature','dischargeTemperature']){
+  const fullRow=comparisonRows([battery],true).find(row=>row.key===key);
+  const lightRow=comparisonRows([light],true).find(row=>row.key===key);
+  assert.ok(fullRow,key+' full all-spec row');assert.ok(lightRow,key+' light all-spec row');
+  assert.equal(fullRow.values[0].value,lightRow.values[0].value,key+' full/light value');
+  assert.equal(fullRow.values[0].source,lightRow.values[0].source,key+' full/light source');
+  assert.equal(lightRow.values[0].value,key==='chargeTemperature'?'−10°C to 50°C':'−20°C to 50°C');
+  assert.equal(lightRow.values[0].source,source);
+ }
+ assert.equal(comparisonRows([light]).some(row=>['chargeTemperature','dischargeTemperature'].includes(row.key)),false);
+});
 test('qualified nominal-class evidence blocks raw voltage fallback in full and lightweight comparisons',()=>{
  const cases=[
   ['inverters-r-us-sk12v100h','https://us.sokbattery.com/product-page/sk12v100h-12v-100ah-self-heating-lifepo4-battery'],
