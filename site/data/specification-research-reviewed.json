@@ -257431,5 +257431,257 @@
       "packQuantity": 1,
       "condition": "new"
     }
+  },
+  {
+    "kind": "manufacturer_manual",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-ab\\raw\\aims_scc60-100amppt_manual.pdf",
+    "expected": {
+      "inverters-r-us-aims-scc60amppt": {
+        "name": "Aims 60A MPPT Solar Charge Controller SCC60AMPPT",
+        "sourceUrl": "https://invertersrus.com/product/aims-scc60amppt/",
+        "category": "charging",
+        "anchors": {}
+      }
+    },
+    "checkedAt": "2026-10-15T10:09:20.2223626Z",
+    "url": "https://www.aimscorp.net/documents/SCC60-100AMPPT%207-19.pdf",
+    "rows": [
+      [
+        "Maximum PV open circuit voltage",
+        "155 Vdc"
+      ],
+      [
+        "MPPT operating voltage range",
+        "15–155Vdc@12V; 34–155Vdc@24V; 50–155Vdc@36V; 60–155Vdc@48V."
+      ],
+      [
+        "System voltage",
+        "12V/24V/36V/48V"
+      ],
+      [
+        "Operating temperature",
+        "-25 to 60°C; derating begins from 45°C."
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-aims-scc60amppt"
+    ],
+    "label": "Official AIMS Power manual with exact SCC60 model column, paired with official brochure that names the selected SCC60AMPPT SKU/model.",
+    "sha256": "63e5f7af2f51e39b984fa28d094d071dac92eef961fa06f5f9f2907d7b6a8fcd",
+    "sourceScope": "Official AIMS SCC60-100A installation manual p23 SCC60 column; official AIMS brochure p1 exact model listing SCC60AMPPT. 60A max charge column is not used as a PV input-current limit.",
+    "evidenceRows": [
+      [
+        "PV volts",
+        "Maximum PV open-circuit voltage 155 Vdc; manual warns array Voc must not exceed this value."
+      ],
+      [
+        "PV power",
+        "Rated PV input: 800 W (12V); 1700 W (24V); 2400 W (36V); 3400 W (48V)."
+      ],
+      [
+        "Battery V",
+        "Solar system voltage: 12V/24V/36V/48V."
+      ],
+      [
+        "MPPT operating voltage range",
+        "15–155Vdc@12V; 34–155Vdc@24V; 50–155Vdc@36V; 60–155Vdc@48V."
+      ],
+      [
+        "Operating temperature",
+        "Ambient -25 to 60°C; derating begins from 45°C."
+      ]
+    ],
+    "candidateDerivations": [
+      "SCC60AMPPT exact model is established by the AIMS brochure product model table; manual p23 uses series column SCC60.",
+      "PV voltage/power figures are selected from the SCC60 column only and retained separately by 12/24/36/48V battery system."
+    ],
+    "unmappedSourceFacts": [
+      "Maximum PV short-circuit current limit and maximum MPPT PV input current are absent from these sources; maximum battery charging current 60A is not substituted.",
+      "Independent MPPT count is not specified.",
+      "Ambient operating range includes explicit derating-from-45°C qualifier."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "AIMS-SCC60AMPPT",
+      "url": "https://invertersrus.com/product/aims-scc60amppt/",
+      "packQuantity": 1,
+      "condition": "new"
+    },
+    "reviewStatus": "approved_exact_source_rows_partial_packet_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-ab\\raw\\aims_scc60-100amppt_manual.pdf",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-ab\\raw\\aims_scc60-100amppt_manual.pdf.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-ab\\renders\\aims_scc60-100amppt_manual-p23.png",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-ab\\raw\\aims_charge_controller_brochure.pdf",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-ab\\raw\\aims_charge_controller_brochure.pdf.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-ab\\renders\\aims_charge_controller_brochure-p1.png"
+    ],
+    "sourceReviewPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-ab\\independent-review-ab-v1.json",
+    "sourceReviewSha256": "8887DE4A71CD57E14B70D84B112ABB3746D7CAE4392DBC6F06E366386A6409DF",
+    "approvedEvidenceRowIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "compositionSourcePacket": "AB",
+    "normalizedRowDerivations": [
+      "PV volts: reduced source statement to the numeric maximum 155 Vdc; original warning preserved in evidenceRows/sourceScope.",
+      "Battery V: mapped exact “Solar system voltage” to system voltage; alternatives preserved as list.",
+      "Operating temperature: removed lead-in “Ambient” only; retained range and derating threshold."
+    ]
+  },
+  {
+    "kind": "manufacturer_datasheet",
+    "artifactPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-af\\raw\\solark-5k-2p-n-datasheet.pdf",
+    "expected": {
+      "inverters-r-us-sa-5k-2p": {
+        "name": "Sol-Ark 5K-2P Hybrid Inverter System",
+        "sourceUrl": "https://invertersrus.com/product/sol-ark-5k-2p/",
+        "category": "inverters",
+        "anchors": {}
+      }
+    },
+    "checkedAt": "2026-10-15T10:24:03.674844Z",
+    "url": "https://www.sol-ark.com/wp-content/uploads/2024/05/5K_2P_N_Datasheet.pdf",
+    "rows": [
+      [
+        "Maximum PV input power",
+        "6.5 kW (maximum allowed PV power at STC)"
+      ],
+      [
+        "Maximum MPPT input current",
+        "10 A (self-limiting; maximum operating input current per MPPT)"
+      ],
+      [
+        "Maximum PV input voltage",
+        "500 V"
+      ],
+      [
+        "Number of MPP trackers",
+        "2"
+      ],
+      [
+        "AC output power",
+        "5000 W (maximum continuous real power)"
+      ],
+      [
+        "AC output voltage",
+        "120/240 V; 120/208 V; 220 V (phase assignment not stated)"
+      ],
+      [
+        "AC frequency",
+        "50 / 60 Hz"
+      ],
+      [
+        "Nominal voltage",
+        "48 V"
+      ],
+      [
+        "Battery voltage range",
+        "43–63 V"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-sa-5k-2p"
+    ],
+    "label": "Official Sol-Ark datasheet bound to the exact selected one-unit/new Inverters R Us catalog offer for independent model and row review.",
+    "sha256": "9a8858775090d9b87d96e48b9bd852373d09d0b467388e7ba0789c3595a10e09",
+    "sourceScope": "Official Sol-Ark one-page datasheet, page 1; exact model/SKU text retained.",
+    "evidenceRows": [
+      [
+        "PV max (kW)",
+        "Max. Allowed PV Power (STC): 6,500W (6.5 kW)."
+      ],
+      [
+        "PV A/MPPT",
+        "Max. Operating Input Current per MPPT: 10A (self-limiting)."
+      ],
+      [
+        "MPPT operating voltage range",
+        "Rated MPPT Operating Voltage Range: 175–425V. Distinct separate “MPPT Voltage Range”: 150–500V."
+      ],
+      [
+        "Maximum PV voltage",
+        "Max. Input Voltage: 500V."
+      ],
+      [
+        "Independent MPPT count",
+        "No. of MPP Trackers: 2."
+      ],
+      [
+        "AC out (kW)",
+        "Real Power, max continuous: 5,000W (5.0 kW)."
+      ],
+      [
+        "AC output voltage / phase",
+        "Nominal AC Voltage: 120/240V, 120/208V, 220V; datasheet does not assign phase labels to each entry."
+      ],
+      [
+        "AC frequency",
+        "Grid Frequency: 50 / 60Hz."
+      ],
+      [
+        "Battery V",
+        "Nominal DC Voltage: 48V."
+      ],
+      [
+        "Battery voltage range",
+        "Operating Voltage Range: 43–63V."
+      ]
+    ],
+    "candidateDerivations": [
+      "Datasheet title 5K-2P-N; Inverter Model Sol-Ark-5K-48-ST; explicit manufacturer SKU 5K-2P. Frozen selected offer SKU SA-5K-2P and listing title/description say SA-5K-2P. Manufacturer SKU and retailer SKU strings are not identical; preserve crosswalk basis for independent identity review.",
+      "W-to-kW conversions are exact decimal division by 1000 (10400W→10.4kW; 6500W→6.5kW; 4800W→4.8kW; 5000W→5.0kW). No offer pack multiplier is applied."
+    ],
+    "unmappedSourceFacts": [
+      "PV short-circuit current limit is not published in this datasheet.",
+      "MPPT operating voltage range is 175–425V; separate MPPT voltage range is 150–500V. Do not conflate them.",
+      "AC nominal entries 120/240V,120/208V,220V appear with no phase qualifier in this datasheet.",
+      "The datasheet identifies manufacturer SKU 5K-2P, whereas the selected offer SKU is SA-5K-2P; exact offer binding relies on the frozen listing title and description and needs review."
+    ],
+    "selectedOfferIdentity": {
+      "sku": "SA-5K-2P",
+      "url": "https://invertersrus.com/product/sol-ark-5k-2p/",
+      "packQuantity": 1,
+      "condition": "new",
+      "stock": "out_of_stock",
+      "observedAt": "2026-10-13T02:36:49.223Z"
+    },
+    "reviewStatus": "approved_exact_source_rows_partial_packet_review",
+    "supportingArtifactPaths": [
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-af\\raw\\solark-5k-2p-n-datasheet.pdf",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-af\\raw\\solark-5k-2p-n-datasheet.pdf.txt",
+      "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-af\\renders\\solark-5k-2p-n-1.png"
+    ],
+    "sourceReviewPath": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\luna-nonstorage-20261015-af\\independent-review-af-v1.json",
+    "sourceReviewSha256": "3A4FA5E4DEFB16853C19007FABC02A0183CADC69CE0530E17A9668F5899987AD",
+    "approvedEvidenceRowIndexes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "compositionSourcePacket": "AF",
+    "normalizedRowDerivations": [
+      "PV max (kW): 6500 W normalized to 6.5 kW; maximum-allowed and STC qualifiers retained.",
+      "PV A/MPPT: retained 10 A, self-limiting, and per-MPPT qualifiers.",
+      "Maximum PV voltage: reduced exact 500 V maximum input statement.",
+      "Independent MPPT count: mapped “No. of MPP Trackers” to 2.",
+      "AC out: retained maximum-continuous real-power qualifier.",
+      "AC voltages: retained all listed voltages and explicit absence of phase assignments.",
+      "AC frequency: exact 50/60 Hz.",
+      "Battery nominal DC voltage: removed context label only; retained 48 V.",
+      "Battery operating voltage: retained 43–63 V exact range."
+    ],
+    "heldSourceFacts": [
+      "Rated MPPT Operating Voltage Range is 175–425V, while the distinct field “MPPT Voltage Range” is 150–500V. Because these are separately named ranges with no documented equivalence, neither is mapped into the single catalog MPPT range field; both are retained in evidenceRows."
+    ]
   }
 ]

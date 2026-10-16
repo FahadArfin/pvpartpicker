@@ -52,6 +52,25 @@ test('matched technical evidence survives catalog transport without the full spe
  assert.match(partValue(transported,'capacityKwh').note!,/Calculated nominal/);
  assert.equal(battery.specs.voltage,48);
 });
+test('detailed manufacturer comparison evidence survives the lightweight catalog projection',()=>{
+ const cases:[Product,Record<string,string>][]=[
+  [p('Aims SCC60AMPPT','charging'),{mpptVoltageRange:'15–155Vdc@12V; 34–155Vdc@24V; 50–155Vdc@36V; 60–155Vdc@48V.',operatingTemperature:'-25 to 60°C; derating begins from 45°C.'}],
+  [p('Sol-Ark 5K-2P','inverters'),{maxPvVoltage:'500 V',mpptCount:'2',acOutput:'120/240 V; 120/208 V; 220 V (phase assignment not stated)',frequency:'50 / 60 Hz'}],
+ ];
+ for(const [product,fields] of cases){
+  const url='https://manufacturer.example/datasheet';
+  product.specification={summary:'',notes:[],sources:[{kind:'datasheet',label:'Exact model datasheet',url}],groups:[{title:'Published technical specifications',fields:Object.entries(fields).map(([key,value])=>({key,label:key,value,source:url,kind:'datasheet' as const}))}]};
+  const light=JSON.parse(serializePageCatalog({products:[product],reports:[]})).products[0] as Product;
+  for(const [key,value] of Object.entries(fields)){
+   const fullRow=comparisonRows([product],true).find(row=>row.key===key)?.values[0];
+   const lightRow=comparisonRows([light],true).find(row=>row.key===key)?.values[0];
+   assert.equal(fullRow?.value,value,key+' full value');assert.equal(lightRow?.value,value,key+' light value');
+   assert.equal(lightRow?.source,url,key+' light source');
+  }
+  assert.equal(comparisonRows([product],true).find(row=>row.key==='maxPvIsc')?.values[0].value,'—');
+  assert.equal(comparisonRows([light],true).find(row=>row.key==='maxPvIsc')?.values[0].value,'—');
+ }
+});
 test('qualified nominal-class evidence blocks raw voltage fallback in full and lightweight comparisons',()=>{
  const cases=[
   ['inverters-r-us-sk12v100h','https://us.sokbattery.com/product-page/sk12v100h-12v-100ah-self-heating-lifepo4-battery'],

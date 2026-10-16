@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "batch": "batch-twenty-five-ab-af-final-composed-v3",
+  "phase": "canonical_promotion_pre_release",
+  "recordedAt": "2026-10-16T01:06:58Z",
+  "independentReview": {
+    "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-five-ab-af-final-composed-v3\\independent-review-batch-twenty-five-composed-v3-v3.json",
+    "sha256": "C8982EE5DA82100B1C493EDD39CE53E5000EDFCEFB5B92143E5C5E380A6ADAFD",
+    "verdict": "approved_exact_frozen_output_and_projection_fix"
+  },
+  "registryBindingReview": {
+    "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-five-ab-af-final-composed-v3\\independent-review-batch-twenty-five-composed-v3-v4.json",
+    "sha256": "60D744C30576BFEA3DA1D45C644604F45548E947D67900C4D6D2D4658BBB709E",
+    "verdict": "prior_exact_output_approval_stands_registry_binding_clarified",
+    "currentRegistrySha256": "a3043066e3f4b957c331c9091e26ef1a775bf0b75f1153ee10a0d16f3850407e",
+    "historicalRegistrySha256": "7bb695eb1940e46e4aa3239d3b755db1a00cfb56530be13fbbdaa1eda91c3094"
+  },
+  "candidate": {
+    "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-five-ab-af-final-composed-v3\\batch-twenty-five-approved-candidates-v3.json",
+    "sha256": "DDF441638FE70F06A3B3F6BCFF57A56CDD360FD777B36B10F79FEA57730B5932",
+    "records": 2,
+    "approvedEvidenceRows": 15,
+    "rows": 13,
+    "uniqueProductIds": 2,
+    "productIds": [
+      "inverters-r-us-aims-scc60amppt",
+      "inverters-r-us-sa-5k-2p"
+    ]
+  },
+  "manifest": {
+    "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-five-ab-af-final-composed-v3\\input-manifest-v3.json",
+    "sha256": "1ADCA77327D31A19DA844EE40D6161FDD1A508BA70DC511ADF5F8B46DA929D6C"
+  },
+  "approvedRowLedger": {
+    "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-five-ab-af-final-composed-v3\\batch-twenty-five-approved-row-ledger-v3.json",
+    "sha256": "0E63BDCF5129A77C9629EE05017FF75C6E2FA0CA0D89BAF994956C9CA4956CB5"
+  },
+  "validationProof": {
+    "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-five-ab-af-final-composed-v3\\batch-twenty-five-v3-preparation-proof.json",
+    "sha256": "2BA59D547D54DEBF32BD66B1C55A5B3BEA0173D7045F67F00D240709BFC78963",
+    "runtimeChecksSha256": "18090A857A1595021CC98D154F29363E4D7F8D560AE7CAC735649465B518A8FA",
+    "redBaselineLogSha256": "DAC00072D555CB34F943029A7CD5E91DCEA0CDD961F4F1599C402E336DC76C94"
+  },
+  "freshLiveIdentityGate": {
+    "path": "C:\\Users\\fahad\\OneDrive\\Documents\\ChatGPT\\pvpartpicker\\output\\specification-research\\batch-twenty-five-ab-af-final-composed-v3\\batch-twenty-five-fresh-live-identity-gate-v1.json",
+    "sha256": "4F8800C621220F03CBF17694FBA8E051DACF6BF13F356D163C108FFD1EAB4094",
+    "passedRows": 2,
+    "totalRows": 2,
+    "catalogSnapshotSha256": "102AADD3BB7CD19158E5F56AB0126C1FB99B27E2DFD6517FDC5E97F22EA12EE6",
+    "catalogProducts": 8782,
+    "capturedAtUtc": "2026-10-16T00:59:52.551Z"
+  },
+  "canonicalIndex": {
+    "baselineSha256": "695135FCE4DAF07CBE04533D17A01E17B8667B61C99620DA0DEDC686BAB4AEF3",
+    "promotedSha256": "11BAC648124C0D2BC05BE940EE4B3797A074053739852A8B4AF4163E3B97BEBA",
+    "expectedImporterOutputSha256": "11BAC648124C0D2BC05BE940EE4B3797A074053739852A8B4AF4163E3B97BEBA",
+    "parsedContentMatchesExpectedImporterOutput": true,
+    "beforeProductRecords": 4921,
+    "afterProductRecords": 4923,
+    "appendedProductIds": [
+      "inverters-r-us-aims-scc60amppt",
+      "inverters-r-us-sa-5k-2p"
+    ],
+    "priorRecordsChanged": false,
+    "format": "Exact compact JSON output from the reviewed importer; B24 baseline bytes retained semantically and only two reviewed product IDs appended."
+  },
+  "reviewedSourceRegistry": {
+    "beforeRecords": 4645,
+    "appendedRecords": 2,
+    "afterRecords": 4647,
+    "beforeSha256": "A3043066E3F4B957C331C9091E26EF1A775BF0B75F1153EE10A0D16F3850407E",
+    "afterSha256": "F62CD10ED97EE2FFEB7B656F1A656CD7F5943BE7175B7BE3EC04E977BC57BFE7",
+    "priorRecordsByteSemanticsUnchanged": true,
+    "appendedCandidateIdsAbsentBefore": true
+  },
+  "importResults": {
+    "reviewedListings": 2,
+    "newTechnicalFields": 13,
+    "newTechnicalFieldDetails": [
+      {
+        "productId": "inverters-r-us-aims-scc60amppt",
+        "key": "maxPvVoltage",
+        "label": "Maximum PV input voltage",
+        "value": "155 Vdc",
+        "source": "https://www.aimscorp.net/documents/SCC60-100AMPPT%207-19.pdf",
+        "kind": "manufacturer_manual"
+      },
+      {
+        "productId": "inverters-r-us-aims-scc60amppt",
+        "key": "mpptVoltageRange",
+        "label": "MPPT voltage range",
+        "value": "15–155Vdc@12V; 34–155Vdc@24V; 50–155Vdc@36V; 60–155Vdc@48V.",
+        "source": "https://www.aimscorp.net/documents/SCC60-100AMPPT%207-19.pdf",
+        "kind": "manufacturer_manual"
+      },
+      {
+        "productId": "inverters-r-us-aims-scc60amppt",
+        "key": "systemVoltage",
+        "label": "System voltage class",
+        "value": "12V/24V/36V/48V",
+        "source": "https://www.aimscorp.net/documents/SCC60-100AMPPT%207-19.pdf",
+        "kind": "manufacturer_manual"
+      },
+      {
+        "productId": "inverters-r-us-aims-scc60amppt",
+        "key": "operatingTemperature",
+        "label": "Operating temperature",
+        "value": "-25 to 60°C; derating begins from 45°C.",
+        "source": "https://www.aimscorp.net/documents/SCC60-100AMPPT%207-19.pdf",
+        "kind": "manufacturer_manual"
+      },
+      {
+        "productId": "inverters-r-us-sa-5k-2p",
+        "key": "maxPvWatts",
+        "label": "Maximum PV input power",
+        "value": "6.5 kW (maximum allowed PV power at STC)",
+        "source": "https://www.sol-ark.com/wp-content/uploads/2024/05/5K_2P_N_Datasheet.pdf",
+        "kind": "manufacturer_datasheet"
+      },
+      {
+        "productId": "inverters-r-us-sa-5k-2p",
+        "key": "maxMpptCurrent",
+        "label": "Maximum MPPT input current",
+        "value": "10 A (self-limiting; maximum operating input current per MPPT)",
+        "source": "https://www.sol-ark.com/wp-content/uploads/2024/05/5K_2P_N_Datasheet.pdf",
+        "kind": "manufacturer_datasheet"
+      },
+      {
+        "productId": "inverters-r-us-sa-5k-2p",
+        "key": "maxPvVoltage",
+        "label": "Maximum PV input voltage",
+        "value": "500 V",
+        "source": "https://www.sol-ark.com/wp-content/uploads/2024/05/5K_2P_N_Datasheet.pdf",
+        "kind": "manufacturer_datasheet"
+      },
+      {
+        "productId": "inverters-r-us-sa-5k-2p",
+        "key": "mpptCount",
+        "label": "Independent MPPT trackers",
+        "value": "2",
+        "source": "https://www.sol-ark.com/wp-content/uploads/2024/05/5K_2P_N_Datasheet.pdf",
+        "kind": "manufacturer_datasheet"
+      },
+      {
+        "productId": "inverters-r-us-sa-5k-2p",
+        "key": "outputWatts",
+        "label": "Rated AC output power",
+        "value": "5000 W (maximum continuous real power)",
+        "source": "https://www.sol-ark.com/wp-content/uploads/2024/05/5K_2P_N_Datasheet.pdf",
+        "kind": "manufacturer_datasheet"
+      },
+      {
+        "productId": "inverters-r-us-sa-5k-2p",
+        "key": "acOutput",
+        "label": "AC output voltage",
+        "value": "120/240 V; 120/208 V; 220 V (phase assignment not stated)",
+        "source": "https://www.sol-ark.com/wp-content/uploads/2024/05/5K_2P_N_Datasheet.pdf",
+        "kind": "manufacturer_datasheet"
+      },
+      {
+        "productId": "inverters-r-us-sa-5k-2p",
+        "key": "frequency",
+        "label": "AC frequency",
+        "value": "50 / 60 Hz",
+        "source": "https://www.sol-ark.com/wp-content/uploads/2024/05/5K_2P_N_Datasheet.pdf",
+        "kind": "manufacturer_datasheet"
+      },
+      {
+        "productId": "inverters-r-us-sa-5k-2p",
+        "key": "voltage",
+        "label": "Nominal voltage",
+        "value": "48 V",
+        "source": "https://www.sol-ark.com/wp-content/uploads/2024/05/5K_2P_N_Datasheet.pdf",
+        "kind": "manufacturer_datasheet"
+      },
+      {
+        "productId": "inverters-r-us-sa-5k-2p",
+        "key": "operatingVoltage",
+        "label": "Operating voltage range",
+        "value": "43–63 V",
+        "source": "https://www.sol-ark.com/wp-content/uploads/2024/05/5K_2P_N_Datasheet.pdf",
+        "kind": "manufacturer_datasheet"
+      }
+    ],
+    "automaticallyCopiedListingFields": [
+      {
+        "productId": "inverters-r-us-aims-scc60amppt",
+        "key": "chargeCurrentA",
+        "label": "Listed charge current",
+        "value": "60 A",
+        "source": "https://invertersrus.com/product/aims-scc60amppt/",
+        "kind": "listing"
+      },
+      {
+        "productId": "inverters-r-us-aims-scc60amppt",
+        "key": "controllerType",
+        "label": "Controller type",
+        "value": "MPPT",
+        "source": "https://invertersrus.com/product/aims-scc60amppt/",
+        "kind": "listing"
+      },
+      {
+        "productId": "inverters-r-us-sa-5k-2p",
+        "key": "inverterType",
+        "label": "Inverter type",
+        "value": "Hybrid",
+        "source": "https://invertersrus.com/product/sol-ark-5k-2p/",
+        "kind": "listing"
+      }
+    ],
+    "comparisonFills": 11,
+    "replayTechnicalFields": 0,
+    "replayComparisonFills": 0,
+    "idempotent": true
+  },
+  "projectionFix": {
+    "files": [
+      "site/lib/part-comparison.ts",
+      "site/tests/part-comparison.test.ts"
+    ],
+    "fullSuite": "673 passed, 0 failed, 11 skipped",
+    "typecheck": "passed",
+    "targeted": "11/11 passed",
+    "allSpecsFullLight": "2/2 matched through actual serializePageCatalog; 47 uncertainty controls across 11 categories independently checked"
+  },
+  "preservedLimitations": [
+    "AIMS battery-voltage-conditioned PV power remains non-scalar/unmapped. Unsupported AIMS MPPT count, PV input current and PV Isc remain unknown.",
+    "Sol-Ark separately named MPPT ranges remain unmapped.",
+    "AF 5K-1P whole record excluded for model crosswalk; HQST/quarantined sources excluded.",
+    "Sol-Ark exact matching offer is new, pack 1, but currently out of stock; no availability claim was upgraded."
+  ],
+  "priceAndWorkflowChanges": false,
+  "releaseStatus": "pending build validation, CI and publication"
+}
