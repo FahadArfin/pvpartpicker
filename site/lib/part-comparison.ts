@@ -19,6 +19,10 @@ export const partColumns:Record<Category|'all',PartColumn[]>={
  all:[col('category','Category','Equipment category.'),col('highlights','Key specs','Category-specific ratings. Open a category for aligned spec columns.')],
 };
 const relevantKeys=new Set([...Object.values(partColumns).flat().map(c=>c.key),'model','cellType','technology','capacityAh','outputWatts','acOutput','maxPvWatts','systemVoltage','voltage','ratedVoltage','lengthFt']);
+// Detailed comparison rows also consume these fields from the compact catalog.
+// Keep the full and lightweight comparison paths aligned without sending every
+// technical field to every catalog page.
+for(const key of ['voc','vmp','imp','isc','vocTemperatureCoefficient','vmpTemperatureCoefficient','pmaxTemperatureCoefficient','dimensions','mpptVoltageRange','maxPvVoltage','mpptCount','maxPvIsc','batteryVoltageRange','frequency','maxChargeCurrent','peakDischargeCurrent','communications','surgeWatts','operatingTemperature','conductor','ratedCurrent','interruptRating','poles','ipRating','compatibility','tilt','accuracy','efficiency','material'])relevantKeys.add(key);
 
 /** Keep only matched technical fields in the lightweight catalog response. */
 export function comparisonEvidence(product:Product):Record<string,PartValue>{
