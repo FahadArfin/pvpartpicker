@@ -2,6 +2,7 @@ import { load } from 'cheerio';
 import {applyReviewedStorageRole,isReviewedStorageRoleCandidate} from './reviewed-storage-roles.ts';
 import type { Category, Product, Specs, Offer } from './types.ts';
 import {describeConfiguration,selectedSaleCategory} from './bundles.ts';
+import {isRichSolarCbk1302Offer,isRichSolarCbk1302Product,isRichSolarCbk1302Source,richSolarCbk1302Contents,richSolarCbk1302DerivedComparisonKeys,richSolarCbk1302Source} from './exact-kits.ts';
 import additionalRetailers from '../data/retailer-sources.json' with {type:'json'};
 export interface Retailer { id: string; name: string; origin: string; seeds?: string[]; adapter?:'shopify'|'woocommerce'|'sitemap'|'pages';startPath?:string;urls?:string[];enabled?:boolean;usdConfirmed?:boolean;sourceNotes?:string;frequencyMinutes?:number; }
 export const retailers: Retailer[] = [
@@ -258,19 +259,22 @@ export function categorizeProduct(product: Omit<Product,'offers'> & {offers?:Pro
     if(reviewed)return reviewed;
     if(!hydrated.offers.length||product.specification)return hydrated;
   }
+  const exactRichSolarKit=isRichSolarCbk1302Product({...product,offers:product.offers||[]} as Product);
   const emporiaSensorClamps=/^Emporia(?: Energy)?$/i.test(product.brand)&&/^Spring Clamps \(Set of 2\)$/i.test(product.name)&&/Vue Home Energy Monitor/i.test(product.description||'');
   const ovenTiltAccessory=/^GoSun$/i.test(product.brand)&&/^Fusion Tilt Kit$/i.test(product.name)&&/Fusion Solar Oven/i.test(product.description||'');
-  const category=ovenTiltAccessory?'accessories':emporiaSensorClamps?'monitoring':classify(product.name)||product.category;
+  const category=exactRichSolarKit?'kits':ovenTiltAccessory?'accessories':emporiaSensorClamps?'monitoring':classify(product.name)||product.category;
   const specs={...product.specs};
+  if(exactRichSolarKit)for(const key of ['watts','outputWatts','voltage','capacityKwh','capacityAh','batteryKind','formFactor','chemistry','inverterType','acOutput','gridForming'])delete specs[key];
+  const comparisonSpecs=exactRichSolarKit?Object.fromEntries(Object.entries(product.comparisonSpecs||{}).filter(([key])=>!richSolarCbk1302DerivedComparisonKeys.includes(key))):product.comparisonSpecs;
   // Older substring matching read "bracket" as "rack". Remove only that
   // known title-parser artifact; genuine rack evidence/corrections survive.
   if(category==='batteries'&&specs.formFactor==='Server rack'&&/\bbrackets?\b/i.test(product.name)&&!/\b(?:server|rack)\b|server[ -]?rack/i.test(product.name))delete specs.formFactor;
   if(category!==product.category) for(const key of ['face','cellType','technology','formFactor','chemistry','inverterType','acOutput','gridForming','mountType','gauge','lengthFt','kitType','stationType','watts','voltage','capacityKwh']) delete specs[key];
   if(category!==product.category&&category==='batteries'){delete specs.monitorType;delete specs.accessoryType;}
   if(category!==product.category&&product.category==='batteries')for(const key of ['capacityAh','batteryKind'])delete specs[key];
-  const offers=(product.offers||[]).map(o=>normalizeSelectedBatteryPackOffer({...product,category},o)); // D1 stores metadata separately from offers.
+  const offers=(product.offers||[]).map(o=>exactRichSolarKit?(isRichSolarCbk1302Offer(product as Product,o)?{...o,packQuantity:1}:o):normalizeSelectedBatteryPackOffer({...product,category},o)); // D1 stores metadata separately from offers.
   const panelDetails:Specs={};
-  const extracted=extractSpecs(product.name,category);
+  const extracted=exactRichSolarKit?{kitType:'Solar system kits'}:extractSpecs(product.name,category);
   if(emporiaSensorClamps)extracted.monitorType='Sensor';
   if(category==='batteries'&&/\bcharger\b/i.test(product.name.split(/\s—\s/).slice(1).join(' '))){
    const legacy=product.name.split(/\s—\s/).slice(1).join(' ').match(voltagePattern);
@@ -284,7 +288,7 @@ export function categorizeProduct(product: Omit<Product,'offers'> & {offers?:Pro
    const conductor=Object.entries(specs).find(([key])=>/^conductor material$/i.test(key))?.[1];
    if(/^(?:bare|tinned|pure|uncoated)?\s*copper$/i.test(String(conductor||''))||/\b(?:100%\s*(?:pure\s*)?copper|conductor(?:s| material)?\s*:\s*(?:bare|tinned|uncoated|pure)?\s*copper)\b/i.test(product.description||''))extracted.wireMaterial='Copper';
   }
-  const configuration=ovenTiltAccessory?undefined:describeConfiguration(product.name,category);
+  const configuration=exactRichSolarKit||ovenTiltAccessory?undefined:describeConfiguration(product.name,category);
   if(category==='kits')for(const key of ['watts','voltage','capacityKwh','capacityAh','outputWatts','stationType'])delete specs[key];
   if(category==='panels') {
     // Read labeled product specs only: comparisons in marketing prose describe other modules.
@@ -304,7 +308,7 @@ export function categorizeProduct(product: Omit<Product,'offers'> & {offers?:Pro
       panelDetails.technology='Back contact';panelDetails.technologySource='https://www.sec.gov/Archives/edgar/data/867773/000086777313000012/spwr_12302012x10-k.htm';
     }
   }
-  return {...product,category,configuration,specs:product.specification?{...product.specs}:{...specs,...panelDetails,...extracted},offers:category==='kits'||category==='all-in-one'?offers.map(o=>({...o,packQuantity:1})):offers};
+  return {...product,category,configuration,comparisonSpecs:exactRichSolarKit?{...comparisonSpecs,contents:{value:richSolarCbk1302Contents,source:richSolarCbk1302Source}}:comparisonSpecs,specs:product.specification&&!exactRichSolarKit?{...product.specs}:{...specs,...panelDetails,...extracted},offers:exactRichSolarKit?offers:category==='kits'||category==='all-in-one'?offers.map(o=>({...o,packQuantity:1})):offers};
 }
 function flatten(value: any): any[] { if (Array.isArray(value)) return value.flatMap(flatten); if (!value || typeof value !== 'object') return []; return [value, ...flatten(value['@graph']), ...flatten(value.itemListElement?.map((i: any) => i.item || i)), ...flatten(value.hasVariant)]; }
 export function parseProductPage(html: string, retailer: Retailer, url: string, observedAt: string): Product[] {
@@ -316,22 +320,26 @@ export function parseProductPage(html: string, retailer: Retailer, url: string, 
   }
   for (const n of nodes) {
     if (![].concat(n['@type'] || []).some(t => String(t).toLowerCase() === 'product')) continue;
-    const title = String(n.name || '').trim(); const category = classify(title); if (!category) continue;
+    const title = String(n.name || '').trim();
     const offers = Array.isArray(n.offers) ? n.offers : n.offers ? [n.offers] : [];
     for (const o of offers) {
       if (o['@type'] === 'AggregateOffer' || o.priceCurrency !== 'USD') continue;
       const price = Number(String(o.price ?? o.priceSpecification?.price ?? '').replace(/[$,]/g, '')); if (!Number.isFinite(price) || price <= 0 || price > 1000000) continue;
       let offerUrl: URL; try { offerUrl = new URL(o.url || url, url); } catch { continue; } if (offerUrl.origin !== retailer.origin) continue;
-      const sku = String(o.sku || n.sku || n.productID || slug(title)); const offerId = slug(retailer.id + '-' + sku + (offers.length>1 && !o.sku ? '-'+offerUrl.href : ''));
+      const offerSku = String(o.sku || n.sku || n.productID || slug(title));
+      const exactRichSolarKit=isRichSolarCbk1302Source({retailerId:retailer.id,brand:typeof n.brand==='string'?n.brand:n.brand?.name||'',name:title,sourceUrl:offerUrl.href,sku:offerSku});
+      const category=exactRichSolarKit?'kits':classify(title);if(!category)continue;
+      const offerId = slug(retailer.id + '-' + offerSku + (offers.length>1 && !o.sku ? '-'+offerUrl.href : ''));
       const packQuantity = extractPackQuantity(title,category);
       if (!packQuantity || packQuantity > 10000) continue;
       const rawImages = [n.image].flat().filter(Boolean).map((x: any) => typeof x === 'object' ? x.url : x).filter((x: unknown) => typeof x === 'string' && /^https:\/\//.test(x as string));
       const properties: Record<string, unknown> = {}; for (const p of [n.additionalProperty].flat().filter(Boolean)) if (p.name && p.value !== undefined) properties[String(p.name)] = p.value;
       $('table tr').each((_, e) => { const cells = $(e).find('td,th'); if (cells.length === 2) { const k = $(cells[0]).text().replace(/\s+/g, ' ').trim(), v = $(cells[1]).text().replace(/\s+/g, ' ').trim(); if (k && v && k.length < 70 && v.length < 160) properties[k] = v; } });
       const description = load(String(n.description || ''))('body').text().replace(/\s+/g, ' ').trim().slice(0, 6500);
-      const id = canonicalId(title, category, retailer.id + '-' + sku);
-      const specs = extractSpecs(title, category, properties);
-      const p: Product = { id, name: title, brand: typeof n.brand === 'string' ? n.brand : n.brand?.name || title.match(/^(EG4|Victron|Renogy|Emporia|IronRidge|APsystems|ZNShine|Aptos|Canadian Solar|Growatt|SOK|Pytes|Sol-Ark|TEMCo|WindyNation)/i)?.[0] || 'See manufacturer', category, description, image: rawImages[0] || $('meta[property="og:image"]').attr('content') || '', images: rawImages, sourceUrl: url, specs, offers: [{ id: offerId, retailerId: retailer.id, retailer: retailer.name, url: offerUrl.href, price, ...(Number(o.referencePrice)>price&&Number(o.referencePrice)<=1000000?{referencePrice:Number(o.referencePrice)}:{}), currency: 'USD', packQuantity, stock: /outofstock|soldout|discontinued/i.test(o.availability || '') ? 'out_of_stock' : /instock|limitedavailability/i.test(o.availability || '') ? 'in_stock' : 'unknown', observedAt, sku, condition: /used|refurbished/i.test(n.itemCondition || title) ? 'used' : 'new' }], verifiedAt: observedAt };
+      const id = canonicalId(title, category, retailer.id + '-' + offerSku);
+      const specs = exactRichSolarKit?{kitType:'Solar system kits'}:extractSpecs(title, category, properties);
+      const productUrl=exactRichSolarKit?offerUrl.href:url;
+      const p: Product = { id, name: title, brand: typeof n.brand === 'string' ? n.brand : n.brand?.name || title.match(/^(EG4|Victron|Renogy|Emporia|IronRidge|APsystems|ZNShine|Aptos|Canadian Solar|Growatt|SOK|Pytes|Sol-Ark|TEMCo|WindyNation)/i)?.[0] || 'See manufacturer', category, description, image: rawImages[0] || $('meta[property="og:image"]').attr('content') || '', images: rawImages, sourceUrl: productUrl, specs, ...(exactRichSolarKit?{comparisonSpecs:{contents:{value:richSolarCbk1302Contents,source:richSolarCbk1302Source}}}:{}), offers: [{ id: offerId, retailerId: retailer.id, retailer: retailer.name, url: offerUrl.href, price, ...(Number(o.referencePrice)>price&&Number(o.referencePrice)<=1000000?{referencePrice:Number(o.referencePrice)}:{}), currency: 'USD', packQuantity:exactRichSolarKit?1:packQuantity, stock: /outofstock|soldout|discontinued/i.test(o.availability || '') ? 'out_of_stock' : /instock|limitedavailability/i.test(o.availability || '') ? 'in_stock' : 'unknown', observedAt, sku:offerSku, condition: /used|refurbished/i.test(n.itemCondition || title) ? 'used' : 'new' }], verifiedAt: observedAt };
       if (id === 'eg4-6000xp') { p.documentation = 'https://eg4electronics.com/wp-content/uploads/2024/04/EG4-6000XP-Manual.pdf'; p.specs = { ...specs, batteryMinV: 46.4, batteryMaxV: 60, batteryChemistry: 'Lithium', maxPvVoltage: 500, maxMpptCurrent: 17, inverterType: 'Off-grid', acOutput: '120/240V split-phase', outputWatts: 6000, mpptCount: 2, specificationSource: p.documentation }; }
       output.push(p);
     }

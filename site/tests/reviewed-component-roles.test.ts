@@ -80,5 +80,7 @@ test('source category corrections retire irrelevant gaps without inventing techn
   assert.deepEqual(next.specs,{...row.product.specs,...row.target.specs});assert.deepEqual(next.offers,row.product.offers);
   const display=specificationForDisplay(next);assert.ok(!display.panelRatings,'non-panel role cannot show panel electrical tables');assert.ok(display.groups.flatMap(g=>g.fields).every(f=>f.kind==='listing'),'no technical field transcriptions in this patch');
  }
- assert.deepEqual({before,after,retired,added,persisted},{before:213,after:87,retired:211,added:85,persisted:2});
+ // The Isc TC panel row adds one pre-correction gap for each of 15 Watts247
+ // combiner listings still miscategorized as panels; category repair retires those rows.
+ assert.deepEqual({before,after,retired,added,persisted},{before:228,after:87,retired:226,added:85,persisted:2});
 });

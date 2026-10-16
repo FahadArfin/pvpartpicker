@@ -22,13 +22,26 @@ const relevantKeys=new Set([...Object.values(partColumns).flat().map(c=>c.key),'
 // Detailed comparison rows also consume these fields from the compact catalog.
 // Keep the full and lightweight comparison paths aligned without sending every
 // technical field to every catalog page.
-for(const key of ['voc','vmp','imp','isc','vocTemperatureCoefficient','vmpTemperatureCoefficient','pmaxTemperatureCoefficient','dimensions','mpptVoltageRange','maxPvVoltage','mpptCount','maxPvIsc','batteryVoltageRange','frequency','maxChargeCurrent','peakDischargeCurrent','chargeTemperature','dischargeTemperature','communications','surgeWatts','operatingTemperature','conductor','ratedCurrent','interruptRating','poles','ipRating','compatibility','tilt','accuracy','efficiency','material'])relevantKeys.add(key);
+for(const key of ['voc','vmp','imp','isc','vocTemperatureCoefficient','vmpTemperatureCoefficient','pmaxTemperatureCoefficient','iscTemperatureCoefficient','dimensions','mpptVoltageRange','maxPvVoltage','mpptCount','maxPvIsc','batteryVoltageRange','frequency','maxChargeCurrent','peakDischargeCurrent','chargeTemperature','dischargeTemperature','communications','surgeWatts','operatingTemperature','conductor','ratedCurrent','interruptRating','poles','ipRating','compatibility','tilt','accuracy','efficiency','material'])relevantKeys.add(key);
 
 /** Keep only matched technical fields in the lightweight catalog response. */
+const panelRatingSourceKinds=new Set(['datasheet','manufacturer','manufacturer_datasheet']);
 export function comparisonEvidence(product:Product):Record<string,PartValue>{
  const result:Record<string,PartValue>={};
- for(const field of product.specification?.groups.flatMap(g=>g.fields)??[]){
-  if(relevantKeys.has(field.key)&&field.kind!=='listing'&&product.specification?.sources.some(s=>s.url===field.source&&s.kind!=='listing'))result[field.key]={value:field.value,source:field.source};
+ const specification=product.specification;
+ for(const field of specification?.groups.flatMap(g=>g.fields)??[]){
+  if(relevantKeys.has(field.key)&&field.kind!=='listing'&&specification?.sources.some(s=>s.url===field.source&&s.kind!=='listing'))result[field.key]={value:field.value,source:field.source};
+ }
+ // New panelRatings fallback is limited to panels bound to exact product identity and manufacturer datasheets.
+ // Keep qualifiers and source text intact; only STC values are sent through this display projection.
+ const identity=specification?.identity;
+ const identityMatches=!!identity&&product.name===identity.name&&product.sourceUrl===identity.sourceUrl&&product.category===identity.category&&Object.entries(identity.anchors).every(([key,value])=>product.specs[key]===value);
+ if(product.category==='panels'&&identityMatches&&specification){
+  const ratingKeys:[string,string][]=[['pmax','watts'],['efficiency','moduleEfficiency'],['voc','voc'],['vmp','vmp'],['imp','imp'],['isc','isc']];
+  for(const [ratingKey,comparisonKey] of ratingKeys){
+   const value=specification.panelRatings?.stc[ratingKey],source=specification.panelRatings?.sources?.['stc.'+ratingKey];
+   if(value&&source&&!result[comparisonKey]&&specification.sources.some(s=>s.url===source&&panelRatingSourceKinds.has(s.kind))&&!/not verified|not published|unknown/i.test(value))result[comparisonKey]={value,source};
+  }
  }
  return result;
 }
