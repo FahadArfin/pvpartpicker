@@ -1,0 +1,1362 @@
+{
+  "reviewScope": "Independent review dispositions for the research batch. Only accepted, additive, exact-identity fields appear in the shipped reviewed inputs. Later importer guards can further hold records.",
+  "reviews": {
+    "worker-1/review-wave1.json": {
+      "checkedAt": "2026-10-22T11:31:16Z",
+      "reviewer": "worker-1 independent review",
+      "scope": "Workers 3-6 reviewed records, checked against candidate raw/classified evidence and primary sources. Accepted rows below are the only additions cleared for import; held/rejected rows require no canonical edits.",
+      "accepted": [
+        {
+          "worker": 4,
+          "recordIndex": 1,
+          "productIds": [
+            "shopsolar-44808958967948"
+          ],
+          "rows": [
+            [
+              "Weight",
+              "245.8 lb / 111.5 kg (top cover excluded: 3.7 kg / 8.15 lb)"
+            ]
+          ],
+          "sourceUrl": "https://www.ecoflow.com/us/ocean-pro/specs",
+          "evidence": "Official OCEAN Pro battery specification identifies EF-BP-10 and reports battery module weight 111.5 kg; sale listing is the matching EF-BP-10 battery. Other submitted rows either duplicate candidate evidence, are not recognized importer dimensions, or describe bidirectional current rather than charge/discharge current.",
+          "reviewedAt": "2026-10-22T11:31:16Z"
+        },
+        {
+          "worker": 4,
+          "recordIndex": 2,
+          "productIds": [
+            "shopsolar-44037178425484"
+          ],
+          "rows": [
+            [
+              "Weight",
+              "95 lb (43.1 kg)"
+            ]
+          ],
+          "sourceUrl": "https://bigbattery.com/products/husky-2/",
+          "evidence": "Official product page identifies Husky 2 / FHSKY-12051-G2-INV and states 95 lb. Candidate has prior current/peak values that conflict with the current official page, so no current limits accepted; dimensions are already present / split labels do not map to importer fields.",
+          "reviewedAt": "2026-10-22T11:31:16Z"
+        },
+        {
+          "worker": 4,
+          "recordIndex": 3,
+          "productIds": [
+            "shopsolar-45192132460684"
+          ],
+          "rows": [
+            [
+              "Weight",
+              "293.2 lb (133 kg)"
+            ]
+          ],
+          "sourceUrl": "https://eg4electronics.com/wp-content/uploads/2025/10/EG4-WallMount-314Ah-Indoor-Battery-Spec-Sheet.pdf",
+          "evidence": "Official V1.0.4 PDF identifies model WM 48 314 IN XX / WM48314INXX and states weight 293.2 lb on p.3. ShopSolar candidate lacks a prior weight. The separate Santan candidate has a conflicting existing 320 lb value and is held. PDF table was visually reviewed (p.3).",
+          "reviewedAt": "2026-10-22T11:31:16Z"
+        },
+        {
+          "worker": 4,
+          "recordIndex": 3,
+          "productIds": [
+            "shopsolar-45192132460684",
+            "santan-solar-eg4-16kw-indoor"
+          ],
+          "rows": [
+            [
+              "Cycle Life",
+              "10,000 cycles @ 0.5C, 25\u00b0C, 80% DoD (70% EOL capacity)"
+            ]
+          ],
+          "sourceUrl": "https://eg4electronics.com/wp-content/uploads/2025/10/EG4-WallMount-314Ah-Indoor-Battery-Spec-Sheet.pdf",
+          "evidence": "Official V1.0.4 PDF model matches both listings and states 10,000 cycles at specified conditions, with 70% EOL capacity criterion on p.3. Candidate evidence for both lacks cycle life. PDF table visually reviewed (p.3).",
+          "reviewedAt": "2026-10-22T11:31:16Z"
+        },
+        {
+          "worker": 4,
+          "recordIndex": 4,
+          "productIds": [
+            "shopsolar-51565801734284"
+          ],
+          "rows": [
+            [
+              "Terminal Type",
+              "M8"
+            ],
+            [
+              "Case Material",
+              "Metal case"
+            ]
+          ],
+          "sourceUrl": "https://www.eco-worthy.com/products/12v-280ah-lifepo4-lithium-battery",
+          "evidence": "Manufacturer product details for the selected 12V 280Ah metal-case variant specify M8 terminal and metal case. These are absent from candidate raw evidence and map to connector/material. Electrical, temperature, dimensions, and weight rows are already represented in the candidate.",
+          "reviewedAt": "2026-10-22T11:31:16Z"
+        },
+        {
+          "worker": 5,
+          "recordIndex": 0,
+          "productIds": [
+            "eg4-6000xp"
+          ],
+          "rows": [
+            [
+              "Maximum PV input power",
+              "8000 W utilized"
+            ]
+          ],
+          "sourceUrl": "https://eg4electronics.com/wp-content/uploads/2024/10/EG4-6000XP-Manual.pdf",
+          "evidence": "Manufacturer manual exact model EG4-6000XP-IN-03 distinguishes 8,000 W maximum utilized PV power from 10,000 W recommended PV array. Candidate lacks normalized maxPvWatts; retain the explicit utilized qualifier. Do not accept 500 V as the operating limit: candidate has 480 V operating range, and the manual distinguishes maximum input voltage from operating voltage.",
+          "reviewedAt": "2026-10-22T11:31:16Z"
+        },
+        {
+          "worker": 5,
+          "recordIndex": 2,
+          "productIds": [
+            "eg4-flexboss21"
+          ],
+          "rows": [
+            [
+              "Maximum PV input power",
+              "24 kW max input"
+            ]
+          ],
+          "sourceUrl": "https://eg4electronics.com/products/flexboss21",
+          "evidence": "Current official manufacturer page distinguishes 21 kW maximum usable PV from 24 kW maximum input. The candidate lacks this 24 kW input figure. Listing/model is the FlexBOSS21 inverter family; do not collapse this to the separate 21 kW usable array rating.",
+          "reviewedAt": "2026-10-22T11:31:16Z"
+        },
+        {
+          "worker": 6,
+          "recordIndex": 1,
+          "productIds": [
+            "renogy-43178710302835",
+            "renogy-43178710335603"
+          ],
+          "rows": [
+            [
+              "Charging efficiency",
+              "94%"
+            ]
+          ],
+          "sourceUrl": "https://www.renogy.com/products/dcc30s-12v-30a-dual-input-dc-dc-on-board-battery-charger-with-mppt",
+          "evidence": "Official US page identifies SKU RBC30D1S-US and lists 94% charging efficiency. Same charger is sold in the Bluetooth and Renogy ONE bundles; candidate already contains 94% for Battery Charger Only, but lacks it for these two bundle product IDs. 30 V solar input and 400 W input rows are already present. Source page variants confirm bundled electronics options.",
+          "reviewedAt": "2026-10-22T11:31:16Z"
+        },
+        {
+          "worker": 6,
+          "recordIndex": 3,
+          "productIds": [
+            "renogy-44894241521779",
+            "renogy-44894241554547"
+          ],
+          "rows": [
+            [
+              "Operating temperature",
+              "\u221225 to 45 \u00b0C"
+            ]
+          ],
+          "sourceUrl": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller",
+          "evidence": "Official Wanderer 10A PWM specification table gives operating range \u221225 to 45\u00b0C for this controller. It applies to controller-only and controller-plus-Bluetooth bundle. Candidate already has this operating range for BT1 listing renogy-43178657513587, but not for the two newer variants. Storage temperature is not accepted as operating temperature.",
+          "reviewedAt": "2026-10-22T11:31:16Z"
+        }
+      ],
+      "heldOrRejected": [
+        {
+          "worker": 4,
+          "recordIndex": 1,
+          "productIds": [
+            "shopsolar-44808958967948"
+          ],
+          "reason": "Accepted only weight. Dimension H/W/D rows are not importer-compatible separate fields; remaining proposed values are already present or not safely reducible to a scalar charge/discharge limit (63A bidirectional total / 26.32A per unit)."
+        },
+        {
+          "worker": 4,
+          "recordIndex": 2,
+          "productIds": [
+            "shopsolar-44037178425484"
+          ],
+          "reason": "Accepted only weight. Current official manufacturer values (250A continuous, 500A 3-second peak) conflict with candidate existing 300A and 350A/5s; hold current values pending revision/source reconciliation. Remaining rows are duplicates or non-mapped H/W/D labels."
+        },
+        {
+          "worker": 4,
+          "recordIndex": 3,
+          "productIds": [
+            "santan-solar-eg4-16kw-indoor"
+          ],
+          "reason": "Hold proposed 293.2 lb weight because this candidate already has conflicting 320 lb evidence. Other proposed rows duplicate candidate evidence except cycle life, separately accepted for this ID."
+        },
+        {
+          "worker": 4,
+          "recordIndex": 4,
+          "productIds": [
+            "shopsolar-51565801734284"
+          ],
+          "reason": "Accepted only M8 terminal and metal-case material; all submitted electrical/thermal/mechanical values are already present in the candidate."
+        },
+        {
+          "worker": 5,
+          "recordIndex": 0,
+          "productIds": [
+            "eg4-6000xp"
+          ],
+          "reason": "Accepted only 8,000 W utilized PV input. Hold 500 V maximum-input row due distinction from 480 V operating limit already in candidate; remaining fields duplicate candidate evidence."
+        },
+        {
+          "worker": 5,
+          "recordIndex": 2,
+          "productIds": [
+            "eg4-flexboss21"
+          ],
+          "reason": "Accepted only 24 kW max-input row. AC output voltage and MPPT tracker count duplicate candidate evidence; no further additions."
+        },
+        {
+          "worker": 6,
+          "recordIndex": 1,
+          "productIds": [
+            "renogy-43178710270067",
+            "renogy-43178710302835",
+            "renogy-43178710335603"
+          ],
+          "reason": "Accepted 94% efficiency only for two bundle variants. Other submitted fields already exist in candidate evidence. Official US source (SKU RBC30D1S-US) confirms 30 V upgraded solar input; EU page uses different voltage and was not applied."
+        },
+        {
+          "worker": 6,
+          "recordIndex": 2,
+          "productIds": [
+            "renogy-43178665082995"
+          ],
+          "reason": "Submitted 10\u201330 V solar input range is supported by official page, but its row label is noncanonical and candidate/importer has no solar-input-voltage-range field; do not mis-map to battery voltage range. 40A, 93% efficiency, environment rows duplicate candidate; 616 W charger output is not inverter outputWatts."
+        },
+        {
+          "worker": 6,
+          "recordIndex": 3,
+          "productIds": [
+            "renogy-43178657513587",
+            "renogy-44894241521779",
+            "renogy-44894241554547"
+          ],
+          "reason": "Accepted operating temperature only for two newer variants that lack it. Remaining voltage/current/PV/storage rows already exist in candidate evidence."
+        }
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://www.renogy.com/products/dcc30s-12v-30a-dual-input-dc-dc-on-board-battery-charger-with-mppt",
+          "reviewedAt": "2026-10-22T11:31:16Z",
+          "excerpt": "Page identifies SKU RBC30D1S-US; title identifies DCC30S 12V 30A; key features specify solar panel input voltage upgraded to 30V. Product selection includes Battery Charger Only, Bluetooth and Bluetooth & Renogy ONE Core."
+        },
+        {
+          "url": "https://www.renogy.com/products/renogy-40a-dc-dc-battery-charger-with-mppt",
+          "reviewedAt": "2026-10-22T11:31:16Z",
+          "excerpt": "Page identifies SKU RBC40D1S-US and describes DC input and solar charging. Existing proposed 616 W is charger output; solar input voltage is 10\u201330V."
+        },
+        {
+          "url": "https://eg4electronics.com/wp-content/uploads/2025/10/EG4-WallMount-314Ah-Indoor-Battery-Spec-Sheet.pdf",
+          "reviewedAt": "2026-10-22T11:31:16Z",
+          "excerpt": "V1.0.4, model WM 48 314 IN XX / WM48314INXX. Page 3: weight 293.2 lb; cycle life 10,000 cycles @ 0.5C, 25\u00b0C, 80% DoD; 70% EOL capacity criterion. PDF page visually reviewed."
+        }
+      ]
+    },
+    "worker-2/review-wave2.json": {
+      "reviewedAt": "2026-10-22T11:39:02.577789Z",
+      "reviewer": "independent source review",
+      "scope": [
+        "worker-1",
+        "worker-7",
+        "worker-8",
+        "worker-10"
+      ],
+      "sourceReview": [
+        {
+          "worker": "worker-1",
+          "officialSourcesOpened": [
+            "https://www.renogy.com/products/400w-n-type-portable-solar-panel-blanket-with-4-in-1-extension-cable-for-power-stations",
+            "https://www.renogy.com/products/renogy-400w-solar-panel-blanket"
+          ],
+          "accepted": [
+            {
+              "index": 0,
+              "productIds": [
+                "renogy-45421915504755"
+              ],
+              "rows": [
+                "Cell efficiency"
+              ],
+              "reason": "Official Renogy product page identifies the 400W N-type blanket and says its N-type cells have 25% efficiency. This is cell efficiency, not module efficiency."
+            },
+            {
+              "index": 1,
+              "productIds": [
+                "renogy-43249909530739"
+              ],
+              "rows": [
+                "Cell efficiency"
+              ],
+              "reason": "Official product page has a 400W selected variant and states 25% efficiency for its N-type cells. The raw 400W anchor distinguishes the selected option."
+            }
+          ],
+          "heldRecords": [
+            {
+              "index": 2,
+              "productIds": [
+                "renogy-43249909563507"
+              ],
+              "reason": "The official family page shows a 200W option and a generic 25% N-type cell efficiency claim, but the record labels the model RSP400SB-US while the selected listing is the 200W option. Hold until the model/variant label is corrected or a source ties the efficiency claim to the exact 200W model. No module efficiency should be imported from this claim."
+            }
+          ],
+          "rejectedRows": []
+        },
+        {
+          "worker": "worker-7",
+          "officialSourcesOpened": [
+            "https://learn.mangopower.com/products/mango-power-e/specifications/",
+            "https://www.pecron.com/en-jp/products/pecron-e3800lfp-portable-power-station-4200w-3840wh",
+            "https://www.ecoflow.com/us/delta-3-max-plus-portable-power-station/specs",
+            "https://www.ankersolix.com/products/f3000"
+          ],
+          "accepted": [
+            {
+              "index": 0,
+              "productIds": [
+                "shopsolar-54750743920780"
+              ],
+              "rows": [
+                "Model",
+                "Battery capacity",
+                "Cell chemistry",
+                "Cycle life",
+                "AC charging input",
+                "Maximum PV input power",
+                "MPPT voltage range",
+                "Maximum PV voltage",
+                "Independent MPPT trackers",
+                "Rated AC output power",
+                "AC output voltage",
+                "Frequency",
+                "Ingress protection",
+                "Weight",
+                "Dimensions",
+                "Warranty"
+              ],
+              "reason": "Official Mango Power E specifications page directly identifies the model and lists these values. The 60\u2013150 V row reports the manufacturer's solar charging input interval; it is not treated as an inferred electrical rating beyond its stated interval."
+            },
+            {
+              "index": 1,
+              "productIds": [
+                "shopsolar-46266467025036"
+              ],
+              "rows": [
+                "Model",
+                "Battery capacity",
+                "Cell chemistry",
+                "AC output",
+                "AC output voltage",
+                "Rated AC output power",
+                "Maximum PV input power",
+                "Maximum operating input current (per XT60-M input)",
+                "XT60-M open-circuit voltage input range",
+                "Solar input",
+                "AC charging input",
+                "Weight",
+                "Dimensions",
+                "Warranty"
+              ],
+              "reason": "Official Pecron page identifies E3800LFP and separately reports the two XT60-M inputs and the low-voltage DC5521 input. Battery capacity, single-unit output, dimensions and warranty are also listed on the page. No expansion-battery or paired-station value was applied."
+            },
+            {
+              "index": 2,
+              "productIds": [
+                "shopsolar-44678937837708"
+              ],
+              "rows": [
+                "Model",
+                "Rated capacity",
+                "Cell chemistry",
+                "AC charging input",
+                "Maximum PV input power",
+                "Rated AC output power",
+                "AC output voltage",
+                "Frequency",
+                "Surge output",
+                "Maximum DC output",
+                "Weight",
+                "Dimensions",
+                "Warranty"
+              ],
+              "reason": "Official EcoFlow US specifications page identifies DELTA 3 Max Plus and directly lists the selected station's capacity, 1000 W PV input, 3000 W AC output, 6000 W surge and physical ratings."
+            },
+            {
+              "index": 3,
+              "productIds": [
+                "shopsolar-44220308357260",
+                "santan-solar-a1782111"
+              ],
+              "rows": [
+                "Model",
+                "Battery capacity (Wh)",
+                "Battery voltage",
+                "Battery capacity (Ah)",
+                "Cell chemistry",
+                "AC charging input",
+                "Maximum PV input power",
+                "Maximum PV input voltage",
+                "Maximum operating input current",
+                "Solar input",
+                "Rated AC output power",
+                "AC output voltage",
+                "Surge output",
+                "SurgePad power",
+                "AC output",
+                "DC input",
+                "Dimensions",
+                "Weight",
+                "Warranty"
+              ],
+              "reason": "Official Anker SOLIX page identifies F3000 and distinguishes its main unit from expansion batteries and Double Voltage Hub. It separately lists high-PV, low-PV, and non-PV DC input limits; the 240 V hub output is not assigned to the standalone unit."
+            }
+          ],
+          "heldRecords": [],
+          "rejectedRows": [
+            {
+              "index": 0,
+              "row": "Maximum PV voltage",
+              "reason": "The source states a 60\u2013150 V solar charging interval; the duplicate 150 V maximum is a derived endpoint and duplicates that interval. Keep the interval and do not create a second maximum field from the same wording."
+            }
+          ]
+        },
+        {
+          "worker": "worker-8",
+          "officialSourcesOpened": [
+            "https://www.renogy.com/products/renogy-5ft-3-0awg-anderson-adapter-cable-anderson-sb350-ring-lug",
+            "https://www.renogy.com/products/solar-panel-to-charge-controller-adaptor-kit",
+            "https://www.renogy.com/products/copper-battery-interconnect-cable-for-5-16-in-lugs",
+            "https://www.renogy.com/products/solar-connectors-for-solar-panels-5-pairs-male-female"
+          ],
+          "accepted": [
+            {
+              "index": 0,
+              "productIds": [
+                "renogy-43178645323891"
+              ],
+              "rows": [
+                "Model",
+                "Length",
+                "Wire gauge",
+                "Connector",
+                "Rated voltage",
+                "Operating temperature",
+                "Conductor",
+                "Compatibility",
+                "Terminal"
+              ],
+              "reason": "Official Renogy page SKU RPC0530SR-35 matches the raw 5 ft, 3/0 AWG listing. It specifies the SB350 and 5/16-in lugs, 600 V, temperature range and tinned copper. The page says package includes one pair, so this identity is a pair; do not multiply per-cable ratings."
+            },
+            {
+              "index": 2,
+              "productIds": [
+                "renogy-43178670817395"
+              ],
+              "rows": [
+                "Length",
+                "Wire gauge",
+                "Conductor",
+                "Connector",
+                "Operating temperature"
+              ],
+              "reason": "Official Renogy variant selector and 12 in 1 AWG section match the raw variant; manufacturer specifies one cable, 5/16-in rings, tinned copper and dry/wet temperature limits. No current or voltage row was added."
+            },
+            {
+              "index": 3,
+              "productIds": [
+                "renogy-43178678648947"
+              ],
+              "rows": [
+                "Connector",
+                "Rated current",
+                "Rated voltage",
+                "Wire gauge",
+                "Contact material",
+                "Operating temperature",
+                "IP rating",
+                "Insulation material",
+                "Warranty"
+              ],
+              "reason": "Official Renogy page and spec table identify the exact five-pair product and list these contact, current, voltage, wire-size-range, temperature and enclosure values. Contact material remains distinct from cable conductor material."
+            }
+          ],
+          "heldRecords": [
+            {
+              "index": 1,
+              "productIds": [
+                "renogy-43178671865971"
+              ],
+              "reason": "The official Renogy table supports the selected 10 ft / 12 AWG variant and its ratings. However, expected.anchors adds gauge, lengthFt and wireMaterial that are absent from this candidate's raw specs; the importer identity check will therefore fail. Rebuild expected anchors from raw stable specs only before integration."
+            }
+          ],
+          "rejectedRows": []
+        },
+        {
+          "worker": "worker-10",
+          "officialSourcesOpened": [
+            "https://www.renogy.com/products/solar-panel-mounting-z-bracket-set-of-4",
+            "https://www.renogy.com/products/solar-panel-mounting-curved-z-bracket-set-of-4",
+            "https://tamaracksolar.com/products/pole-mounting-system/side-of-pole-standard-sizes/",
+            "https://tamaracksolar.com/products/pole-mounting-system/top-of-pole-portrait/",
+            "https://tamaracksolar.com/warranty/"
+          ],
+          "accepted": [
+            {
+              "index": 0,
+              "productIds": [
+                "renogy-43178708926579"
+              ],
+              "rows": [
+                "Material",
+                "Product warranty"
+              ],
+              "reason": "Official Renogy page identifies SKU RNG-MTS-ZB-US, a set of four, describes aluminum construction and states a one-year material warranty."
+            },
+            {
+              "index": 1,
+              "productIds": [
+                "renogy-43178708959347"
+              ],
+              "rows": [
+                "Material",
+                "Product warranty"
+              ],
+              "reason": "Same official Z-bracket set; the listing option is two sets. The material and warranty apply to the bracket set; do not conflate the offer's two-set pack with a single set."
+            },
+            {
+              "index": 2,
+              "productIds": [
+                "renogy-43178708992115"
+              ],
+              "rows": [
+                "Material",
+                "Product warranty"
+              ],
+              "reason": "Same official Z-bracket set; the listing option is four sets. The material and warranty apply to the bracket set; do not treat the 16 brackets as a single set."
+            },
+            {
+              "index": 3,
+              "productIds": [
+                "renogy-43178705551475"
+              ],
+              "rows": [
+                "Material",
+                "Product warranty"
+              ],
+              "reason": "Official Renogy page identifies the curved MTS-ACB bracket, states heavy-duty aluminum alloy and one-year material warranty."
+            },
+            {
+              "index": 4,
+              "productIds": [
+                "shopsolar-46347986010252"
+              ],
+              "rows": [
+                "Material",
+                "Product warranty"
+              ],
+              "reason": "Official Tamarack UNI-SA family page specifies 5000-series aluminum and a 10-year structural warranty; the exact candidate is the 14-inch arm variant."
+            },
+            {
+              "index": 5,
+              "productIds": [
+                "shopsolar-46347986043020"
+              ],
+              "rows": [
+                "Material",
+                "Product warranty"
+              ],
+              "reason": "Official Tamarack UNI-SA family page specifies 5000-series aluminum and a 10-year structural warranty; the exact candidate is the 21.5-inch arm variant."
+            },
+            {
+              "index": 6,
+              "productIds": [
+                "shopsolar-46347986075788"
+              ],
+              "rows": [
+                "Material",
+                "Product warranty"
+              ],
+              "reason": "Official Tamarack UNI-SA family page specifies 5000-series aluminum and a 10-year structural warranty; the exact candidate is the 26-inch arm variant."
+            }
+          ],
+          "heldRecords": [
+            {
+              "indices": [
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "productIds": [
+                "shopsolar-46352342450316",
+                "shopsolar-46358273228940",
+                "shopsolar-46358273261708",
+                "shopsolar-46358273294476",
+                "shopsolar-46358273327244",
+                "shopsolar-46358273360012",
+                "shopsolar-46358273392780",
+                "shopsolar-46358273425548",
+                "shopsolar-46358273458316",
+                "shopsolar-46358273491084",
+                "shopsolar-46358273523852",
+                "shopsolar-46358273556620",
+                "shopsolar-46358273589388",
+                "shopsolar-46358273622156"
+              ],
+              "rows": [
+                "Product warranty"
+              ],
+              "reason": "The 10-year warranty is supported by a separate official warranty page that lists UNI-PGRM, but each reviewed record's url points to the PGRM product page. Add warranty evidence as a separate record with the warranty URL so the imported field is attributed to its actual source."
+            }
+          ],
+          "rejectedRows": [
+            {
+              "indices": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20
+              ],
+              "row": "Supported equipment / fit",
+              "reason": "These are broad installation or family-level fit statements. The PGRM statement gives a family maximum of 1\u20136 modules, while the listings are specific module-count/post/frame-size variants. Do not present these generic statements as fit for each selected variant."
+            },
+            {
+              "indices": [
+                4,
+                5,
+                6
+              ],
+              "row": "Wind speed rating",
+              "reason": "The 90 mph claim is on the UNI-SA family page, but the submitted rows do not establish it for each rail-length model. Hold for exact variant datasheet confirmation; do not treat it as a generic structural rating."
+            },
+            {
+              "indices": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "row": "Supported equipment / fit",
+              "reason": "Renogy's broad installation scenarios and panel-wattage guidance are not a product-specific compatibility rating. Omit the generalized fit text."
+            }
+          ]
+        }
+      ],
+      "notes": [
+        "Worker-10 source rows for Tamarack PGRM list only a generic family page. Its page states conflicting tilt ranges (10\u201360\u00b0 in overview and 0\u201390\u00b0 in features); no tilt value was submitted, correctly.",
+        "Worker-10 rows not listed as accepted, held or rejected are not approved implicitly; only the row-level disposition above is supported.",
+        "All inspected sources are official manufacturer pages. No PDF-derived values were reviewed in this wave."
+      ],
+      "timestampNote": "Future-dated agent timestamp corrected to consolidation time; source findings are unchanged."
+    },
+    "worker-4/review-panels.json": {
+      "checkedAt": "2026-10-22T11:32:15Z",
+      "accepted": [
+        {
+          "recordModel": "SunPower SPR-E20-327-COM",
+          "sourceUrl": "https://es-media-prod.s3.amazonaws.com/media/components/panels/spec-sheets/sunpower-e-series-commercial-solar-panels-e20-327-com-datasheet-505701-revh.pdf",
+          "sourceKind": "datasheet",
+          "sourceLabel": "SunPower document 505701 Rev H / LTR_US, September 2017; exact SPR-E20-327-COM electrical table, page 2",
+          "checkedAt": "2026-10-22T11:32:15Z",
+          "productIds": [
+            "santan-solar-spr-e20-327-com-u",
+            "santan-solar-spr-e20-327-com-u-lot20"
+          ],
+          "rows": [
+            [
+              "Model",
+              "SPR-E20-327-COM"
+            ],
+            [
+              "Nominal Power (Pnom)",
+              "327 W"
+            ],
+            [
+              "Rated Voltage (Vmpp)",
+              "54.7V"
+            ],
+            [
+              "Rated Current (Impp)",
+              "5.98A"
+            ],
+            [
+              "Open-Circuit Voltage (Voc)",
+              "64.9V"
+            ],
+            [
+              "Short-Circuit Current (Isc)",
+              "6.46A"
+            ],
+            [
+              "Max. System Voltage",
+              "1000V"
+            ],
+            [
+              "Maximum Series Fuse",
+              "15 A"
+            ]
+          ],
+          "reviewNote": "Accepted exact-module STC ratings only. Manufacturer Rev H visually reviewed on page 2; its 327-COM table reads 54.7 V, 5.98 A, 64.9 V, 6.46 A. Both SanTan listings carry the exact SKU family and their per-module bullets independently show the same values (single listing: https://www.santansolar.com/product/used-sunpower-327w-solar-panel-silver-framed/; pallet: https://www.santansolar.com/product/used-sunpower-327w-solar-panel-com-pallet-of-20/). Baseline pallet panelRatings contain the same numeric values as 54.7V / 5.98A / 64.9V / 6.46A; preliminary-delta conflicts are formatting-only on these rows, so retain baseline source/value strings. Pallet dimensions and 950 lb weight are shipment-level and remain untouched; do not add the datasheet's 41 lb / module and module dimensions over them. Do not add efficiency or Pmax temperature coefficient: Rev H gives 21.4% and \u22120.35%/\u00b0C while the older Rev F sheet gives 20.3% and \u22120.38%/\u00b0C, and the used listings do not identify a sheet revision. The generic voltage/current coefficient rows are not assigned to Voc/Isc. Ratings are per panel, not pallet totals."
+        }
+      ],
+      "held": [
+        {
+          "recordModel": "Canadian Solar CS6X-300P",
+          "sourceUrl": "https://www.mrsolar.com/content/pdf/Canadian/CS6X-300P305P.pdf",
+          "sourceKind": "datasheet",
+          "sourceLabel": "Canadian Solar MaxPower CS6X-P EN Rev 4.12 (March 2014); table page 2 visually checked",
+          "checkedAt": "2026-10-22T11:32:15Z",
+          "productIds": [
+            "santan-solar-cs6x-300p-u",
+            "santan-solar-cs6x-300p-u-lot25"
+          ],
+          "reason": "Hold both identities in full; do not import a hybrid STC record. SanTan's exact CS6X-300P listing and pallet page claim 300P but give Imp 8.41A and Isc 8.97A. The photographed manufacturer table assigns those current ratings to the adjacent 305P row. Its CS6X-300P row is 300W, Vmp 36.1V, Imp 8.30A, Voc 44.6V, Isc 8.87A; the 305P row is 305W, Vmp 36.3V, Imp 8.41A, Voc 44.8V, Isc 8.97A. This is a model-to-rating conflict in both retailer product listings, not a pack/module-unit discrepancy. Because current and power ratings identify incompatible listed variants, do not salvage the apparently matching voltage/other rows into a hybrid identity until the actual panel nameplate/lot is resolved. The same retailer values occur on the single listing (https://www.santansolar.com/product/used-canadian-solar-300w-solar-panel/) and pallet listing (https://www.santansolar.com/product/used-canadian-300w-solar-panel-pallet-of-25/)."
+        }
+      ],
+      "sourceReview": [
+        {
+          "url": "https://es-media-prod.s3.amazonaws.com/media/components/panels/spec-sheets/sunpower-e-series-commercial-solar-panels-e20-327-com-datasheet-505701-revh.pdf",
+          "excerpt": "Rev H identifies SPR-E20-327-COM and lists 327 W; 54.7 V Vmpp; 5.98 A Impp; 64.9 V Voc; 6.46 A Isc; 1000 V UL and IEC; 15 A fuse. The screenshot of page 2 confirmed the table headings and variant column."
+        },
+        {
+          "url": "https://www.santansolar.com/wp-content/uploads/Sunpower-E20-327-COM-Datasheet.pdf",
+          "excerpt": "Older SunPower document 505701 Rev F (March 2016) has the same STC electrical ratings but differs on average panel efficiency (20.3%) and Pmax temperature coefficient (\u22120.38%/\u00b0C). This supports retaining revision uncertainty for those latter fields."
+        },
+        {
+          "url": "https://www.santansolar.com/wp-content/uploads/canadian305w.pdf",
+          "excerpt": "Manufacturer-authored CS6X-P page 2 table lists CS6X-300P at 300 W, 36.1 V, 8.30 A, 44.6 V, 8.87 A; next row CS6X-305P is 305 W, 36.3 V, 8.41 A, 44.8 V, 8.97 A. The PDF screenshot confirmed model headings and values."
+        }
+      ]
+    },
+    "worker-6/review-wave3.json": {
+      "reviewedAt": "2026-10-22T11:31:06Z",
+      "scope": [
+        "worker-9",
+        "worker-11",
+        "worker-12"
+      ],
+      "method": "Independent comparison of submitted rows and notes against official manufacturer product pages, help-center documentation, and exact-model datasheets reachable through the connected web search tool. No shell Internet, canonical edits, or changes to the reviewed workers' files.",
+      "accepted": [
+        {
+          "worker": "worker-9",
+          "recordIndex": 0,
+          "productIds": [
+            "naz-865-1030-01"
+          ],
+          "acceptedRowIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "caveat": "Model 865-1030-01 confirmed against the Schneider Electric two-model table. 160 A is the box/fuse nominal current, not a fuse interrupt rating; the source gives no interrupt rating or pole count."
+        },
+        {
+          "worker": "worker-9",
+          "recordIndex": 1,
+          "productIds": [
+            "naz-865-1031-01"
+          ],
+          "acceptedRowIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ],
+          "caveat": "Model 865-1031-01 confirmed against the Schneider Electric 250 A column. 250 A is nominal current, not a fuse interrupt rating; no interrupt rating or pole count is established."
+        },
+        {
+          "worker": "worker-9",
+          "recordIndex": 2,
+          "productIds": [
+            "renogy-43178656694387"
+          ],
+          "acceptedRowIndices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "caveat": "Renogy US page identifies SKU RPD350BS-US, continuous 350 A, maximum 48 V DC, 3/8-16 stud, up to 4/0 AWG, and a single-circuit battery switch. No AC rating or interrupt capacity is stated."
+        },
+        {
+          "worker": "worker-9",
+          "recordIndex": 3,
+          "productIds": [
+            "renogy-43178656727155"
+          ],
+          "acceptedRowIndices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "caveat": "Renogy US FAQ confirms 12 cable positions per terminal and 400 A current carrying capacity per terminal. This is not an AC or DC voltage rating."
+        },
+        {
+          "worker": "worker-9",
+          "recordIndex": 4,
+          "productIds": [
+            "renogy-43178682515571"
+          ],
+          "acceptedRowIndices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "caveat": "MidNite Solar MNPV6 source confirms 120 A breaker busbar, 80 A fuse busbar, physical dimensions/weight, and supported device arrangements. These are busbar ratings and compatible breaker/fuse-holder ratings, not a 600 VDC enclosure rating or a complete-box interrupt rating."
+        },
+        {
+          "worker": "worker-9",
+          "recordIndex": 5,
+          "productIds": [
+            "santan-solar-enphase-x-iq-am1-240-6c"
+          ],
+          "acceptedRowIndices": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "caveat": "Model X-IQ-AM1-240-6C, 240 VAC split-phase, 60 Hz, 100 A PV busbar, 200 A DER busbar, NEMA 3R, dimensions, and weight are supported by Enphase documentation. Enphase's current DSH-00585-4.0 (2025-08-25) is newer than the submitted DSH-00585-2.0 source; the latest readable summary lists an 80 A maximum PV current but omits the older source's temperature derating. Temperature-conditioned operating-current and breaker-limit rows are held below pending comparison to current revision and exact ordering SKU."
+        },
+        {
+          "worker": "worker-11",
+          "recordIndex": 0,
+          "productIds": [
+            "renogy-43178715283571"
+          ],
+          "acceptedRowIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "caveat": "Renogy US page confirms screen supply/electrical/mechanical values and limits compatibility to Renogy Smart Lithium batteries (including 48 V 50 Ah and 12 V 100 Ah versions). Its page warns that batteries purchased before 2020-04-15 can have compatibility issues; the submitted compatibility list is valid for named battery models, subject to that date caveat."
+        },
+        {
+          "worker": "worker-11",
+          "recordIndex": 1,
+          "productIds": [
+            "renogy-43178696573043"
+          ],
+          "acceptedRowIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "caveat": "SKU RBM500-US page confirms 10\u2013120 V working voltage, 500 A maximum shunt current, accuracies, LCD dimensions/weight, cable lengths, operating range and chemistry support. The 500 A rating is the included shunt/monitor maximum, not an inverter or load rating."
+        },
+        {
+          "worker": "worker-11",
+          "recordIndex": 2,
+          "productIds": [
+            "renogy-43178699128947"
+          ],
+          "acceptedRowIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "caveat": "Renogy US page explicitly limits this RMS-DCDC screen to RBC50D1S-G1 and RBC30D1S, and confirms its 5 VDC supply, RS485/RJ45, accuracy, size, weight, and 5 m wire. Compatibility must stay restricted to those charger models."
+        },
+        {
+          "worker": "worker-11",
+          "recordIndex": 3,
+          "productIds": [
+            "renogy-43178709876851"
+          ],
+          "acceptedRowIndices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "caveat": "Renogy US page confirms RTSCC-G1 temperature range, 300 V maximum voltage rating, probe/cable, and named controllers. The same page explicitly says the sensor is not compatible with lithium batteries; controller compatibility must not be read as lithium-battery compatibility."
+        },
+        {
+          "worker": "worker-12",
+          "recordIndex": 0,
+          "productIds": [
+            "santan-solar-tigo-490-00000-51"
+          ],
+          "acceptedRowIndices": [
+            0,
+            1
+          ],
+          "caveat": "Tigo confirms PLC signaling for TS4-A-F / -2F devices and RSS Transmitter purpose. Exact retailer SKU remains the single-core DIN-rail unit without enclosure; no enclosure/PSU is implied."
+        },
+        {
+          "worker": "worker-12",
+          "recordIndex": 1,
+          "productIds": [
+            "santan-solar-tigo-490-00000-51"
+          ],
+          "acceptedRowIndices": [
+            0
+          ],
+          "caveat": "12 VDC is the RSS Transmitter/RSSx device input. Keep it distinct from any AC input and DC output rating of a separate power supply."
+        },
+        {
+          "worker": "worker-12",
+          "recordIndex": 2,
+          "productIds": [
+            "santan-solar-tigo-ccatap-outdoor"
+          ],
+          "acceptedRowIndices": [
+            0,
+            1
+          ],
+          "caveat": "Tigo Help Center identifies outdoor CCA kit part number 348-00000-52 and the submitted contents. No kit electrical rating or dimensions were asserted."
+        },
+        {
+          "worker": "worker-12",
+          "recordIndex": 3,
+          "productIds": [
+            "santan-solar-ts4-a-o-252-32"
+          ],
+          "acceptedRowIndices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "caveat": "Tigo's current table explicitly lists TS4-A-O 725 as 725 W max power, 22 A max Isc, and 16 A max Imp. These are 725 W generation values; do not transfer to legacy TS4-A-O models rated up to 700 W."
+        },
+        {
+          "worker": "worker-12",
+          "recordIndex": 5,
+          "productIds": [
+            "santan-solar-ts4-a-f"
+          ],
+          "acceptedRowIndices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "caveat": "Tigo's current table explicitly lists TS4-A-F 725 as 725 W max power, 22 A max Isc, and 16 A max Imp. These are 725 W generation values; do not transfer to legacy TS4-A-F models rated up to 700 W."
+        },
+        {
+          "worker": "worker-12",
+          "recordIndex": 6,
+          "productIds": [
+            "santan-solar-ts4-a-f"
+          ],
+          "acceptedRowIndices": [
+            0,
+            1,
+            2
+          ],
+          "caveat": "Tigo 725 W TS4-A-F page confirms 12\u201380 V, 725 W, and PLC. The unqualified 'up to 22 A' marketing row is held as ambiguous between current metrics; use explicit max Isc 22 A / max Imp 16 A from record 5."
+        }
+      ],
+      "heldRows": [
+        {
+          "worker": "worker-9",
+          "recordIndex": 5,
+          "productIds": [
+            "santan-solar-enphase-x-iq-am1-240-6c"
+          ],
+          "rowIndices": [
+            1,
+            7
+          ],
+          "rows": [
+            [
+              "Maximum operating current",
+              "PV combined: 64 A at \u221240 to 46 \u00b0C; 80 A at \u221240 to 38 \u00b0C. Battery: 2 \u00d7 59 A; EV charger: 48 A; DER: 160 A; backfeed: 100 A; integrated load controller: 48 A at \u221240 to 46 \u00b0C, 64 A at \u221240 to 38 \u00b0C."
+            ],
+            [
+              "Maximum breaker rating",
+              "PV branch: 20 A; battery branch: 80 A; EV charger: 60 A; integrated load controller: 80 A; backfeed: 125 A; PV aggregate: 100 A (ships with 60 A pre-installed)"
+            ]
+          ],
+          "reason": "Submitted evidence cites Enphase DSH-00585-2.0 (2025-02-20). Current Enphase DSH-00585-4.0 (2025-08-25) is discoverable and reports 80 A as the key maximum PV current but the accessible summary omits the DSH-2.0 temperature derating. Verify the complete newest table and exact product/order SKU before keeping revision-sensitive derating and breaker data."
+        },
+        {
+          "worker": "worker-12",
+          "recordIndex": 1,
+          "productIds": [
+            "santan-solar-tigo-490-00000-51"
+          ],
+          "rowIndices": [
+            1,
+            2
+          ],
+          "rows": [
+            [
+              "Power supply input",
+              "100-240 VAC, 50/60 Hz, 0.63 A (Meanwell HDR-15-12 bundle supply)"
+            ],
+            [
+              "Power supply output",
+              "12 VDC at 1 A"
+            ]
+          ],
+          "reason": "The reviewed SanTan listing identifies a transmitter unit only with no enclosure. Tigo's general family guidance identifies Meanwell HDR-15-12 supply specifications, but the exact SKU listing does not establish that this specific supply is included."
+        },
+        {
+          "worker": "worker-12",
+          "recordIndex": 4,
+          "productIds": [
+            "santan-solar-ts4-a-o-252-32"
+          ],
+          "rowIndices": [
+            2
+          ],
+          "rows": [
+            [
+              "Supported equipment / fit",
+              "One module per TS4; CCA + TAP required for monitoring and rapid shutdown"
+            ]
+          ],
+          "reason": "The exact 725 W variant\u2019s product page says CCA+TAP is required, while Tigo\u2019s newer help article says supported TS4-A 725W devices can use either RSS Transmitter PLC or CCA+TAP wireless. The retailer record does not provide the Tigo part number needed to reconcile this product-page/help-center conflict. Keep the row held until the exact 725 W part number and current manual clarify; CCA+TAP remains the stated monitoring setup."
+        },
+        {
+          "worker": "worker-12",
+          "recordIndex": 6,
+          "productIds": [
+            "santan-solar-ts4-a-f"
+          ],
+          "rowIndices": [
+            3
+          ],
+          "rows": [
+            [
+              "Maximum current",
+              "Up to 22 A"
+            ]
+          ],
+          "reason": "Tigo's product page uses unqualified marketing text; the exact 725 W rating table distinguishes 22 A maximum Isc and 16 A maximum Imp. Keep only the explicitly typed values."
+        },
+        {
+          "worker": "worker-12",
+          "recordIndex": 7,
+          "productIds": [
+            "shopsolar-45614700855436"
+          ],
+          "rowIndices": [
+            0
+          ],
+          "rows": [
+            [
+              "Included components",
+              "Transmitter; transducer core; DIN-rail mounted power supply"
+            ]
+          ],
+          "reason": "The cited official Tigo troubleshooting page describes a general RSSx PST hardware kit but does not map its contents to this ShopSolar SKU or confirm the listing's outdoor enclosure/selected bundle revision."
+        },
+        {
+          "worker": "worker-12",
+          "recordIndex": 8,
+          "productIds": [
+            "shopsolar-45614700855436"
+          ],
+          "rowIndices": [
+            1,
+            2
+          ],
+          "rows": [
+            [
+              "Power supply input",
+              "100-240 VAC, 50/60 Hz, 0.63 A (Meanwell HDR-15-12 bundle supply)"
+            ],
+            [
+              "Power supply output",
+              "12 VDC at 1 A"
+            ]
+          ],
+          "reason": "The exact ShopSolar listing's bundle model and included AC/DC supply model are not confirmed by the cited Tigo general family article. Do not apply the Meanwell supply ratings as selected-product ratings until included PSU identity is exact."
+        }
+      ],
+      "notSubmittedForReview": [
+        {
+          "worker": "worker-9",
+          "topic": "Renogy MRBF terminal fuse ratings",
+          "finding": "Worker-9 notes list MRBF fuse listings as pending; reviewed.json has no Renogy fuse record, so no record was accepted or rejected. Official Renogy US current page shows 58 V voltage rating and interrupt ratings of 10,000 A @ 14 VDC / 5,000 A @ 32 VDC / 2,000 A @ 58 VDC. Treat these as DC ratings; no AC rating is published."
+        }
+      ],
+      "sourceChecks": [
+        {
+          "url": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+          "checkedAt": "2026-10-22T11:31:06Z",
+          "excerpt": "Exact part-number columns 865-1030-01 and 865-1031-01 show 24/48 V DC, 160/250 A nominal, DIN NH00/NH000 vs NH1, three fuses, cable sizes, terminal sizes, dimensions, weight, wall/flush mounting, \u221220 to 70 \u00b0C and IP20."
+        },
+        {
+          "url": "https://www.renogy.com/products/350abattery-switch",
+          "checkedAt": "2026-10-22T11:31:06Z",
+          "excerpt": "SKU RPD350BS-US, continuous 350 A, max 48 V DC, 3/8-16 terminal studs, accepts 4/0 AWG, single-circuit ON/OFF switch."
+        },
+        {
+          "url": "https://www.renogy.com/products/12-way-battery-terminal-distribution-block-pair",
+          "checkedAt": "2026-10-22T11:31:06Z",
+          "excerpt": "Official product FAQ: one terminal holds up to 12 cables and has 400 A current-carrying capacity; 8 AWG\u20134/0 AWG cable range."
+        },
+        {
+          "url": "https://midnitesolar.com/productPhoto.php?act=p&productCat_ID=61&product_ID=77&sortOrder=1",
+          "checkedAt": "2026-10-22T11:31:06Z",
+          "excerpt": "MNPV6 listing: 120 A breaker busbar and 80 A fuse busbar, 13.5 x 8 x 3.5 in enclosure, 14 x 9 x 4 in box, 4 lb."
+        },
+        {
+          "url": "https://support.tigoenergy.com/hc/en-us/articles/44321771832467-TS4-Compatibility-with-Bifacial-PV-Modules",
+          "checkedAt": "2026-10-22T11:31:06Z",
+          "excerpt": "Current Tigo model table lists TS4-A-O 725 and TS4-A-F 725 separately at 725 W, max Isc 22 A, max Imp 16 A."
+        },
+        {
+          "url": "https://www.tigoenergy.com/product/ts4-a-o",
+          "checkedAt": "2026-10-22T11:31:06Z",
+          "excerpt": "Official product page links a dedicated TS4-A-O 725W datasheet and confirms one module per TS4, CCA/TAP setup for monitoring."
+        },
+        {
+          "url": "https://www.tigoenergy.com/product/ts4-a-f",
+          "checkedAt": "2026-10-22T11:31:06Z",
+          "excerpt": "Official TS4-A-F 725W page states 12\u201380 V, up to 725 W, 12\u201380 V, PLC and 25-year warranty."
+        },
+        {
+          "url": "https://support.tigoenergy.com/hc/en-us/articles/25782325178131-Can-I-mix-different-types-of-TS4s-in-the-same-system",
+          "checkedAt": "2026-10-22T11:31:06Z",
+          "excerpt": "Tigo says all TS4-A 725W and TS4-X products support MFRS; shutdown may use RSS Transmitter PLC or CCA+TAP wireless. Legacy TS4-A models retain their distinct communications behavior."
+        },
+        {
+          "url": "https://enphase.com/download/iq-combiner-6c-data-sheet",
+          "checkedAt": "2026-10-22T11:31:06Z",
+          "excerpt": "Search result identifies current DSH-00585-4.0-EN-2025-08-25. Current official key specifications show 80 A maximum continuous PV current, 2 x 59 A battery current, 48 A EVSE, 64 A ILC, 160 A DER, 100 A backfeed and 100 A PV aggregate breaker. The PDF fetch was blocked, so detailed latest revision rows remain held."
+        },
+        {
+          "url": "https://www.renogy.com/products/mrbf-terminal-fuse-30a-40a-60a-75a-100a-150a-200a-250a-300a-350a-400a",
+          "checkedAt": "2026-10-22T11:31:06Z",
+          "excerpt": "Official US page shows 58 V voltage rating and DC interrupt ratings at 14/32/58 VDC; no AC rating."
+        }
+      ],
+      "regionalAndRevisionNotes": [
+        "Renogy records checked against the submitted US listing SKU/source pages; no non-US product rating was transferred. If a regional source is used later, match its model suffix and voltage/current variant before applying it.",
+        "Schneider EU datasheet is manufacturer-published and explicitly lists the exact two part numbers and DC ratings; its geography does not change the part identity.",
+        "Tigo's 725 W rows must remain separate from legacy up-to-700 W TS4-A series. Tigo's 725 W MFRS requirement also supersedes simplistic legacy monitoring/shutdown compatibility claims.",
+        "Enphase combiner ratings are AC and current-product revision-sensitive. The current v4.0 source was not readable as PDF in the web tool, so only non-conflicting structural/nameplate facts were accepted for this checkpoint."
+      ]
+    },
+    "worker-8/identity-check.json": {
+      "checkedAt": "2026-10-22T11:31:57.125Z",
+      "productId": "renogy-43178671865971",
+      "raw": {
+        "name": "Solar Panel to Charge Controller Adaptor Kit \u2014 10FT / 12AWG",
+        "sourceUrl": "https://www.renogy.com/products/solar-panel-to-charge-controller-adaptor-kit?variant=43178671865971",
+        "category": "charging",
+        "stableSpecs": {
+          "controllerType": "Solar controller"
+        }
+      },
+      "categorized": {
+        "name": "Solar Panel to Charge Controller Adaptor Kit \u2014 10FT / 12AWG",
+        "sourceUrl": "https://www.renogy.com/products/solar-panel-to-charge-controller-adaptor-kit?variant=43178671865971",
+        "category": "wiring",
+        "stableSpecs": {
+          "controllerType": "Solar controller",
+          "gauge": "12 AWG",
+          "lengthFt": 10,
+          "wireMaterial": "Copper"
+        }
+      },
+      "expectedIdentity": {
+        "name": "Solar Panel to Charge Controller Adaptor Kit \u2014 10FT / 12AWG",
+        "sourceUrl": "https://www.renogy.com/products/solar-panel-to-charge-controller-adaptor-kit?variant=43178671865971",
+        "category": "wiring",
+        "anchors": {
+          "gauge": "12 AWG",
+          "lengthFt": 10,
+          "wireMaterial": "Copper"
+        }
+      },
+      "identityMatch": {
+        "againstRaw": false,
+        "againstCategorizedRaw": true
+      },
+      "classificationPath": "site/scripts/import-reviewed-specifications.mjs categorizes each catalog raw product with categorizeProduct(raw), then passes the categorized product to importReviewedSpecification unless it is a Wattcycle reviewed listing. This ID is not Wattcycle.",
+      "officialSource": {
+        "url": "https://www.renogy.com/products/solar-panel-to-charge-controller-adaptor-kit",
+        "modelSku": "RNG-AK-10FT-12-US",
+        "exactSelectedVariant": "10FT / 12AWG",
+        "evidence": {
+          "selector": "Cable Length includes 10FT; Cable Size includes 12AWG; selected product status identifies 10FT / 12AWG.",
+          "tableRows": "Renogy 10ft 12AWG Adaptor Kit; Length 10ft; AWG 12; Rating Voltage 600/1000V; Temperature -40\u00b0F to +185\u00b0F; conductor cross-sectional area 4.0 mm\u00b2; conductor strand count 56; IP 65; conductor tinned copper wire."
+        },
+        "scope": "Exact 10 ft 12 AWG table row only. No voltage conversion, extrapolation, or safety compatibility inference."
+      }
+    },
+    "worker-10/warranty-correction-notes.json": {
+      "worker": "worker-10",
+      "checkedAt": "2026-10-22T11:31:21.809Z",
+      "sourceUrl": "https://tamaracksolar.com/warranty/",
+      "sourceExcerpt": "\u201cPole Mounts (TTP-A, UNI-PGRM, UNI-GR, UNI-SP and UNI-SA products). 10 years\u201d (page states the limited warranty commences on shipment date).",
+      "investigatedIds": [
+        "shopsolar-46352342450316",
+        "shopsolar-46358273228940",
+        "shopsolar-46358273261708",
+        "shopsolar-46358273294476",
+        "shopsolar-46358273327244",
+        "shopsolar-46358273360012",
+        "shopsolar-46358273392780",
+        "shopsolar-46358273425548",
+        "shopsolar-46358273458316",
+        "shopsolar-46358273491084",
+        "shopsolar-46358273523852",
+        "shopsolar-46358273556620",
+        "shopsolar-46358273589388",
+        "shopsolar-46358273622156"
+      ],
+      "unresolvedIds": [],
+      "reason": "Corrects the warranty value attribution: the PGRM product-family page used in the earlier record does not support warranty duration. This official warranty page names UNI-PGRM and directly supports 10 years. No fit or structural rating is included."
+    }
+  },
+  "compiledAt": "2026-10-22T11:39:02.577789Z",
+  "finalIntegrationReview": {
+    "checkedAt": "2026-10-22T11:44:09Z",
+    "scope": {
+      "baseline": "/workspace/pvpartpicker/output/specification-research/resume-2026-10-22/baseline-specifications.json",
+      "final": "/workspace/pvpartpicker-spec-batch28/site/data/specifications.json",
+      "acceptedReviewed": "/workspace/pvpartpicker-spec-batch28/site/data/specification-batch-twenty-eight-reviewed.json",
+      "audit": "/workspace/pvpartpicker-spec-batch28/site/data/specification-batch-twenty-eight-audit.json",
+      "mode": "read-only independent integration review"
+    },
+    "result": "No actionable data integrity issue found in the requested checks.",
+    "integrityChecks": {
+      "baselineRecordCount": 4940,
+      "finalRecordCount": 4940,
+      "removedRecords": 0,
+      "priorNonListingTechnicalFieldLosses": 0,
+      "priorPanelRatingLosses": 0,
+      "priorIdentityOverwrites": 0,
+      "newIdentityRecords": 13,
+      "newPanelRatings": 6,
+      "auditChangedListings": 50,
+      "auditAddedTechnicalFields": 127,
+      "auditFilledComparisonGaps": 37,
+      "finalNewTechnicalFieldOccurrences": 127,
+      "auditAdditionRowsMissingFromFinal": 0,
+      "finalNovelTechnicalFieldsAbsentFromAudit": 0,
+      "addedFieldSourceOrKindNotLinkedToAcceptedReview": 0,
+      "acceptedReviewRecords": 52,
+      "acceptedSelectorFailuresAfterCatalogNormalization": 0
+    },
+    "qualificationChecks": [
+      {
+        "status": "preserved",
+        "detail": "Anker F3000 PV input remains qualified as 2,400 W total; 17 A maximum per PV input is explicit. Its 165 V maximum is distinct from high-PV (11\u2013165 V) and low-PV (11\u201360 V) operating ranges."
+      },
+      {
+        "status": "preserved",
+        "detail": "Renogy distribution-block current remains 400 A current-carrying capacity per terminal."
+      },
+      {
+        "status": "preserved",
+        "detail": "Imported dimensions are sourced as product dimensions from the manufacturer (F3000) or as model-specific datasheet dimensions (Schneider combiner boxes); no shipping/package dimensions were substituted."
+      },
+      {
+        "status": "preserved",
+        "detail": "Per-tracker MPPT currents are not collapsed into one scalar where source ratings differ; the EG4 records remain held."
+      }
+    ],
+    "eg4Disposition": {
+      "status": "held as expected",
+      "heldIds": [
+        "eg4-6000xp",
+        "eg4-flexboss21"
+      ],
+      "evidence": "Both remain in audit holds with the saved-identity-mismatch reason and are absent from accepted-reviewed records and the batch change list. EG4 18kPV has no accepted reviewed record in this batch."
+    },
+    "observations": [
+      "The removed Tigo model proposal is absent from final reviewed inputs and audit changes; its final specification record is deep-equal to baseline.",
+      "Three source-category differences seen in unnormalized catalog metadata resolve under categorizeProduct, the same normalization used by consolidation; all 52 accepted selectors pass identityMatches against normalized raw catalog products.",
+      "Three existing listing-derived fields were upgraded to manufacturer-backed fields. No prior non-listing technical field or its source/value was removed or changed.",
+      "Final counts are 52 accepted reviewed records, 50 changed listings, 127 added technical fields, and 37 filled comparison gaps. The difference between accepted records and changed listings is expected for duplicate/no-op accepted rows."
+    ],
+    "checksRun": [
+      "Compared baseline and final specification maps by record, identity, field key/label/value/source/kind, and panel STC/NOCT ratings.",
+      "Matched every audit added field to the final map and every final novel technical field to the audit.",
+      "Matched every imported field source URL and kind to an accepted reviewed record.",
+      "Validated accepted selectors using categorizeProduct and identityMatches from the repository implementation.",
+      "Inspected qualified PV input, per-terminal current, and product dimension rows in accepted inputs and final audit output.",
+      "Rechecked the final Tigo CCA outdoor record against baseline, exact-count audit diff, selector validation, source/kind matching, and qualified PV/current/dimension values after the publication correction."
+    ],
+    "revertedRecordCheck": {
+      "id": "santan-solar-tigo-ccatap-outdoor",
+      "removedProposedField": "model",
+      "restoredExactlyToBaseline": true,
+      "presentInFinalAuditChanges": false,
+      "presentInFinalReviewedInputs": false,
+      "detail": "Final record is deep-equal to the baseline: prior weight and listing identity fields, prior source metadata, and notes are intact."
+    }
+  }
+}
