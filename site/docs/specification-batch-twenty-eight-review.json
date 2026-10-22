@@ -1280,5 +1280,83 @@
       "reason": "Corrects the warranty value attribution: the PGRM product-family page used in the earlier record does not support warranty duration. This official warranty page names UNI-PGRM and directly supports 10 years. No fit or structural rating is included."
     }
   },
-  "compiledAt": "2026-10-22T11:39:02.577789Z"
+  "compiledAt": "2026-10-22T11:39:02.577789Z",
+  "finalIntegrationReview": {
+    "checkedAt": "2026-10-22T11:44:09Z",
+    "scope": {
+      "baseline": "/workspace/pvpartpicker/output/specification-research/resume-2026-10-22/baseline-specifications.json",
+      "final": "/workspace/pvpartpicker-spec-batch28/site/data/specifications.json",
+      "acceptedReviewed": "/workspace/pvpartpicker-spec-batch28/site/data/specification-batch-twenty-eight-reviewed.json",
+      "audit": "/workspace/pvpartpicker-spec-batch28/site/data/specification-batch-twenty-eight-audit.json",
+      "mode": "read-only independent integration review"
+    },
+    "result": "No actionable data integrity issue found in the requested checks.",
+    "integrityChecks": {
+      "baselineRecordCount": 4940,
+      "finalRecordCount": 4940,
+      "removedRecords": 0,
+      "priorNonListingTechnicalFieldLosses": 0,
+      "priorPanelRatingLosses": 0,
+      "priorIdentityOverwrites": 0,
+      "newIdentityRecords": 13,
+      "newPanelRatings": 6,
+      "auditChangedListings": 50,
+      "auditAddedTechnicalFields": 127,
+      "auditFilledComparisonGaps": 37,
+      "finalNewTechnicalFieldOccurrences": 127,
+      "auditAdditionRowsMissingFromFinal": 0,
+      "finalNovelTechnicalFieldsAbsentFromAudit": 0,
+      "addedFieldSourceOrKindNotLinkedToAcceptedReview": 0,
+      "acceptedReviewRecords": 52,
+      "acceptedSelectorFailuresAfterCatalogNormalization": 0
+    },
+    "qualificationChecks": [
+      {
+        "status": "preserved",
+        "detail": "Anker F3000 PV input remains qualified as 2,400 W total; 17 A maximum per PV input is explicit. Its 165 V maximum is distinct from high-PV (11\u2013165 V) and low-PV (11\u201360 V) operating ranges."
+      },
+      {
+        "status": "preserved",
+        "detail": "Renogy distribution-block current remains 400 A current-carrying capacity per terminal."
+      },
+      {
+        "status": "preserved",
+        "detail": "Imported dimensions are sourced as product dimensions from the manufacturer (F3000) or as model-specific datasheet dimensions (Schneider combiner boxes); no shipping/package dimensions were substituted."
+      },
+      {
+        "status": "preserved",
+        "detail": "Per-tracker MPPT currents are not collapsed into one scalar where source ratings differ; the EG4 records remain held."
+      }
+    ],
+    "eg4Disposition": {
+      "status": "held as expected",
+      "heldIds": [
+        "eg4-6000xp",
+        "eg4-flexboss21"
+      ],
+      "evidence": "Both remain in audit holds with the saved-identity-mismatch reason and are absent from accepted-reviewed records and the batch change list. EG4 18kPV has no accepted reviewed record in this batch."
+    },
+    "observations": [
+      "The removed Tigo model proposal is absent from final reviewed inputs and audit changes; its final specification record is deep-equal to baseline.",
+      "Three source-category differences seen in unnormalized catalog metadata resolve under categorizeProduct, the same normalization used by consolidation; all 52 accepted selectors pass identityMatches against normalized raw catalog products.",
+      "Three existing listing-derived fields were upgraded to manufacturer-backed fields. No prior non-listing technical field or its source/value was removed or changed.",
+      "Final counts are 52 accepted reviewed records, 50 changed listings, 127 added technical fields, and 37 filled comparison gaps. The difference between accepted records and changed listings is expected for duplicate/no-op accepted rows."
+    ],
+    "checksRun": [
+      "Compared baseline and final specification maps by record, identity, field key/label/value/source/kind, and panel STC/NOCT ratings.",
+      "Matched every audit added field to the final map and every final novel technical field to the audit.",
+      "Matched every imported field source URL and kind to an accepted reviewed record.",
+      "Validated accepted selectors using categorizeProduct and identityMatches from the repository implementation.",
+      "Inspected qualified PV input, per-terminal current, and product dimension rows in accepted inputs and final audit output.",
+      "Rechecked the final Tigo CCA outdoor record against baseline, exact-count audit diff, selector validation, source/kind matching, and qualified PV/current/dimension values after the publication correction."
+    ],
+    "revertedRecordCheck": {
+      "id": "santan-solar-tigo-ccatap-outdoor",
+      "removedProposedField": "model",
+      "restoredExactlyToBaseline": true,
+      "presentInFinalAuditChanges": false,
+      "presentInFinalReviewedInputs": false,
+      "detail": "Final record is deep-equal to the baseline: prior weight and listing identity fields, prior source metadata, and notes are intact."
+    }
+  }
 }

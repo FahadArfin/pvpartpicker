@@ -4,7 +4,7 @@
     "model": "EcoFlow OCEAN Pro Battery (EF-BP-10)",
     "label": "Official EcoFlow per-unit battery datasheet, one-page table",
     "kind": "datasheet",
-    "checkedAt": "2026-10-22T11:35:04.381Z",
+    "checkedAt": "2026-10-22T11:43:32.813Z",
     "rows": [
       [
         "Weight",
@@ -29,7 +29,7 @@
     "model": "EG4 WallMount 314Ah Indoor (WM-48-314-IN-XX / WM48314INXX)",
     "label": "Official EG4 spec sheet v1.0.4; electrical table page 2, environment/mechanical page 2-3",
     "kind": "datasheet",
-    "checkedAt": "2026-10-22T11:35:04.381Z",
+    "checkedAt": "2026-10-22T11:43:32.813Z",
     "rows": [
       [
         "Weight",
@@ -58,7 +58,7 @@
     "model": "EG4 WallMount 314Ah Indoor (WM-48-314-IN-XX / WM48314INXX)",
     "label": "Official EG4 spec sheet v1.0.4; electrical table page 2, environment/mechanical page 2-3",
     "kind": "datasheet",
-    "checkedAt": "2026-10-22T11:35:04.381Z",
+    "checkedAt": "2026-10-22T11:43:32.814Z",
     "rows": [
       [
         "Cycle Life",
@@ -87,7 +87,7 @@
     "model": "EG4 WallMount 314Ah Indoor (WM-48-314-IN-XX / WM48314INXX)",
     "label": "Official EG4 spec sheet v1.0.4; electrical table page 2, environment/mechanical page 2-3",
     "kind": "datasheet",
-    "checkedAt": "2026-10-22T11:35:04.381Z",
+    "checkedAt": "2026-10-22T11:43:32.814Z",
     "rows": [
       [
         "Cycle Life",
@@ -116,7 +116,7 @@
     "model": "ECO-WORTHY EnergyRock 12V 280Ah Metal Case",
     "label": "Manufacturer product technical-specifications table, one-battery variant; SKU GW-L13080202162-1",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.381Z",
+    "checkedAt": "2026-10-22T11:43:32.814Z",
     "rows": [
       [
         "Terminal Type",
@@ -146,7 +146,7 @@
     "model": "Wanderer 10A PWM",
     "label": "Wanderer 10A manufacturer table",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.381Z",
+    "checkedAt": "2026-10-22T11:43:32.814Z",
     "rows": [
       [
         "Operating temperature",
@@ -174,7 +174,7 @@
     "model": "Wanderer 10A PWM",
     "label": "Wanderer 10A manufacturer table",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.381Z",
+    "checkedAt": "2026-10-22T11:43:32.814Z",
     "rows": [
       [
         "Operating temperature",
@@ -202,7 +202,7 @@
     "model": "RSP400SB-US",
     "label": "Product technical details",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.382Z",
+    "checkedAt": "2026-10-22T11:43:32.814Z",
     "rows": [
       [
         "Cell efficiency",
@@ -230,7 +230,7 @@
     "model": "RSP400SB-US",
     "label": "Product technical details",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.382Z",
+    "checkedAt": "2026-10-22T11:43:32.814Z",
     "rows": [
       [
         "Cell efficiency",
@@ -258,7 +258,7 @@
     "model": "MANGO POWER E",
     "label": "Manufacturer specifications table: general, battery, input, and inverter/output sections",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.382Z",
+    "checkedAt": "2026-10-22T11:43:32.815Z",
     "rows": [
       [
         "MPPT voltage range",
@@ -290,7 +290,7 @@
     "model": "E3800LFP",
     "label": "Manufacturer product specifications: E3800LFP main unit, battery, AC output, and separate solar input ports",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.382Z",
+    "checkedAt": "2026-10-22T11:43:32.815Z",
     "rows": [
       [
         "Model",
@@ -338,7 +338,7 @@
     "model": "EcoFlow DELTA 3 Max Plus (2048Wh)",
     "label": "Manufacturer specifications page: single DELTA 3 Max Plus station",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.382Z",
+    "checkedAt": "2026-10-22T11:43:32.815Z",
     "rows": [
       [
         "Model",
@@ -390,7 +390,7 @@
     "model": "Anker SOLIX F3000 Portable Power Station",
     "label": "Manufacturer product specifications: F3000 main unit input/output table and FAQ; expansion battery and Double Voltage Hub ratings excluded",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.382Z",
+    "checkedAt": "2026-10-22T11:43:32.815Z",
     "rows": [
       [
         "Model",
@@ -474,7 +474,7 @@
     "model": "Anker SOLIX F3000 Portable Power Station",
     "label": "Manufacturer product specifications: F3000 main unit input/output table and FAQ; expansion battery and Double Voltage Hub ratings excluded",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.382Z",
+    "checkedAt": "2026-10-22T11:43:32.815Z",
     "rows": [
       [
         "Model",
@@ -535,7 +535,7 @@
     "model": "RPC0530SR-35",
     "label": "Renogy 5FT 3/0AWG Anderson Adapter Cable specifications",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.382Z",
+    "checkedAt": "2026-10-22T11:43:32.815Z",
     "rows": [
       [
         "Rated voltage",
@@ -567,7 +567,7 @@
     "model": "RNG-BATTERYCB",
     "label": "Renogy Copper Battery Interconnect Cable listing",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.382Z",
+    "checkedAt": "2026-10-22T11:43:32.815Z",
     "rows": [
       [
         "Wire gauge",
@@ -599,7 +599,7 @@
     "model": "RNG-CONNECTOR",
     "label": "Renogy Solar Connectors for Solar Panels 5 Pairs Male & Female",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.383Z",
+    "checkedAt": "2026-10-22T11:43:32.815Z",
     "rows": [
       [
         "Rated voltage",
@@ -636,7 +636,7 @@
     "model": "RNG-MTS-ACB-US",
     "label": "Manufacturer product specification",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.383Z",
+    "checkedAt": "2026-10-22T11:43:32.816Z",
     "rows": [
       [
         "Product warranty",
@@ -661,7 +661,7 @@
     "model": "Tamarack Solar UNI-SA Single Arm Pole Mount",
     "label": "Manufacturer product specification",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.383Z",
+    "checkedAt": "2026-10-22T11:43:32.816Z",
     "rows": [
       [
         "Product warranty",
@@ -688,7 +688,7 @@
     "model": "Tamarack Solar UNI-SA Single Arm Pole Mount",
     "label": "Manufacturer product specification",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.384Z",
+    "checkedAt": "2026-10-22T11:43:32.816Z",
     "rows": [
       [
         "Product warranty",
@@ -715,7 +715,7 @@
     "model": "Tamarack Solar UNI-SA Single Arm Pole Mount",
     "label": "Manufacturer product specification",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.384Z",
+    "checkedAt": "2026-10-22T11:43:32.817Z",
     "rows": [
       [
         "Product warranty",
@@ -742,7 +742,7 @@
     "model": "RNG-AK",
     "label": "Renogy Solar Adaptor Kit specification table",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.384Z",
+    "checkedAt": "2026-10-22T11:43:32.817Z",
     "rows": [
       [
         "Wire gauge",
@@ -788,7 +788,7 @@
     "model": "865-1030-01",
     "label": "Electrical specifications, fuse specifications and mechanical specifications",
     "kind": "datasheet",
-    "checkedAt": "2026-10-22T11:35:04.385Z",
+    "checkedAt": "2026-10-22T11:43:32.817Z",
     "rows": [
       [
         "Rated voltage",
@@ -844,7 +844,7 @@
     "model": "865-1031-01",
     "label": "Electrical specifications, fuse specifications and mechanical specifications",
     "kind": "datasheet",
-    "checkedAt": "2026-10-22T11:35:04.385Z",
+    "checkedAt": "2026-10-22T11:43:32.818Z",
     "rows": [
       [
         "Rated voltage",
@@ -900,7 +900,7 @@
     "model": "RPD350BS-US",
     "label": "Key features and product description",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.385Z",
+    "checkedAt": "2026-10-22T11:43:32.818Z",
     "rows": [
       [
         "Rated current",
@@ -935,7 +935,7 @@
     "model": "ROA03TB-US",
     "label": "Key features and product specifications",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.386Z",
+    "checkedAt": "2026-10-22T11:43:32.818Z",
     "rows": [
       [
         "Rated current",
@@ -974,7 +974,7 @@
     "model": "510-0006 (MidNite Solar MNPV6)",
     "label": "Description and specifications",
     "kind": "retailer",
-    "checkedAt": "2026-10-22T11:35:04.386Z",
+    "checkedAt": "2026-10-22T11:43:32.819Z",
     "rows": [
       [
         "Rated current",
@@ -1005,7 +1005,7 @@
     "model": "X-IQ-AM1-240-6C",
     "label": "Key specifications, electrical specifications and mechanical data",
     "kind": "datasheet",
-    "checkedAt": "2026-10-22T11:35:04.386Z",
+    "checkedAt": "2026-10-22T11:43:32.819Z",
     "rows": [
       [
         "Rated voltage",
@@ -1040,7 +1040,7 @@
     "model": "Monitoring Screen for Smart Lithium Battery Series",
     "label": "Official manufacturer product specification table",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.387Z",
+    "checkedAt": "2026-10-22T11:43:32.819Z",
     "rows": [
       [
         "Compatibility",
@@ -1067,7 +1067,7 @@
     "model": "500A Battery Monitor With Shunt (RBM500-US)",
     "label": "Official manufacturer product specification table",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.387Z",
+    "checkedAt": "2026-10-22T11:43:32.820Z",
     "rows": [
       [
         "Rated Current",
@@ -1102,7 +1102,7 @@
     "model": "RMS-DCDC Monitoring Screen",
     "label": "Official manufacturer product specification table",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.388Z",
+    "checkedAt": "2026-10-22T11:43:32.820Z",
     "rows": [
       [
         "Communications",
@@ -1133,7 +1133,7 @@
     "model": "RTSCC-G1 Battery Temperature Sensor",
     "label": "Official manufacturer product specification table",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.388Z",
+    "checkedAt": "2026-10-22T11:43:32.821Z",
     "rows": [
       [
         "Warranty",
@@ -1160,7 +1160,7 @@
     "model": "Tigo RSS Transmitter / RSSx with Pure Signal power requirements",
     "label": "Manufacturer technical support",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.388Z",
+    "checkedAt": "2026-10-22T11:43:32.821Z",
     "rows": [
       [
         "Operating voltage",
@@ -1183,39 +1183,11 @@
     "reviewNote": "The manufacturer article explicitly groups RSS Transmitter and RSSx PST for the 12 VDC device input; the listed supply is a bundle offering and is not asserted to be included in this seller SKU. Independent review: 12 VDC is the RSS Transmitter/RSSx device input. Keep it distinct from any AC input and DC output rating of a separate power supply.; research worker 12, record 1."
   },
   {
-    "url": "https://support.tigoenergy.com/hc/en-us/articles/204333388-Description-of-Tigo-CCA-Kits",
-    "model": "348-00000-52 CCA Outdoor Kit with DIN Rail PS",
-    "label": "Manufacturer kit contents",
-    "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.388Z",
-    "rows": [
-      [
-        "Model",
-        "348-00000-52"
-      ]
-    ],
-    "productIds": [
-      "santan-solar-tigo-ccatap-outdoor"
-    ],
-    "expected": {
-      "santan-solar-tigo-ccatap-outdoor": {
-        "name": "Tigo Cloud Connect Advanced – Data Logger Kit: TAP, Din Rail PS, Outdoor box (CCA TAP Kit)",
-        "sourceUrl": "https://www.santansolar.com/product/tigo-cloud-connect-advanced-data-logger-kit-tap-din-rail-ps-outdoor-box-cca-tap-kit/",
-        "category": "module-electronics",
-        "anchors": {
-          "monitorType": "Gateway / communications",
-          "moduleFunction": "Shutdown gateway / access point"
-        }
-      }
-    },
-    "reviewNote": "Tigo lists these exact parts under CCA Outdoor Kit with DIN Rail PS, P/N 348-00000-52; listing title matches the outdoor enclosure, DIN rail supply, CCA and TAP contents. Independent review: Tigo Help Center identifies outdoor CCA kit part number 348-00000-52 and the submitted contents. No kit electrical rating or dimensions were asserted.; research worker 12, record 2."
-  },
-  {
     "url": "https://support.tigoenergy.com/hc/en-us/articles/44321771832467-TS4-Compatibility-with-Bifacial-PV-Modules",
     "model": "Tigo TS4-A-O 725W",
     "label": "Manufacturer current-rating table",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.389Z",
+    "checkedAt": "2026-10-22T11:43:32.821Z",
     "rows": [
       [
         "Model",
@@ -1255,7 +1227,7 @@
     "model": "Tigo TS4-A-F 725W",
     "label": "Manufacturer current-rating table",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.389Z",
+    "checkedAt": "2026-10-22T11:43:32.822Z",
     "rows": [
       [
         "Model",
@@ -1295,7 +1267,7 @@
     "model": "Tigo TS4-A-F 725W",
     "label": "Manufacturer product page",
     "kind": "manufacturer",
-    "checkedAt": "2026-10-22T11:35:04.389Z",
+    "checkedAt": "2026-10-22T11:43:32.822Z",
     "rows": [
       [
         "Operating voltage range",
@@ -1323,7 +1295,7 @@
     "model": "SPR-E20-327-COM",
     "label": "SunPower E-Series Commercial Solar Panels datasheet, document 505701 Rev H (September 2017)",
     "kind": "datasheet",
-    "checkedAt": "2026-10-22T11:35:04.390Z",
+    "checkedAt": "2026-10-22T11:43:32.822Z",
     "rows": [
       [
         "Model",
@@ -1380,7 +1352,7 @@
     "model": "SPR-E20-327-COM",
     "label": "SunPower E-Series Commercial Solar Panels datasheet, document 505701 Rev H (September 2017)",
     "kind": "datasheet",
-    "checkedAt": "2026-10-22T11:35:04.390Z",
+    "checkedAt": "2026-10-22T11:43:32.822Z",
     "rows": [
       [
         "Model",

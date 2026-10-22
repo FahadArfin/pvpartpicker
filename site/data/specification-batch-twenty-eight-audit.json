@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-22T11:35:04.657Z",
+  "checkedAt": "2026-10-22T11:43:33.236Z",
   "scope": "1477-listing saved raw snapshot; not a full live catalog progress estimate",
   "catalogListings": 1477,
   "workers": 12,
-  "acceptedRecords": 53,
-  "changedListings": 51,
-  "addedTechnicalFields": 128,
+  "acceptedRecords": 52,
+  "changedListings": 50,
+  "addedTechnicalFields": 127,
   "filledComparisonFields": 37,
   "changes": [
     {
@@ -67,7 +67,7 @@
     },
     {
       "id": "shopsolar-46352342450316",
-      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 1 Module / 1 Post / 38 - 72 in",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1\u20136 Modules | 0\u00b0\u201390\u00b0 Adjustable Tilt | 1.18\u20132 in Frames | 110 MPH Rated \u2014 1 Module / 1 Post / 38 - 72 in",
       "category": "mounting",
       "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46352342450316",
       "added": [
@@ -86,7 +86,7 @@
     },
     {
       "id": "shopsolar-46358273228940",
-      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 1 Module / 1 Post / 72 - 96 in",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1\u20136 Modules | 0\u00b0\u201390\u00b0 Adjustable Tilt | 1.18\u20132 in Frames | 110 MPH Rated \u2014 1 Module / 1 Post / 72 - 96 in",
       "category": "mounting",
       "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273228940",
       "added": [
@@ -105,7 +105,7 @@
     },
     {
       "id": "shopsolar-46358273261708",
-      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 2 Module / 1 Post / 38 - 72 in",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1\u20136 Modules | 0\u00b0\u201390\u00b0 Adjustable Tilt | 1.18\u20132 in Frames | 110 MPH Rated \u2014 2 Module / 1 Post / 38 - 72 in",
       "category": "mounting",
       "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273261708",
       "added": [
@@ -124,7 +124,7 @@
     },
     {
       "id": "shopsolar-46358273294476",
-      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 2 Module / 1 Post / 72 - 96 in",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1\u20136 Modules | 0\u00b0\u201390\u00b0 Adjustable Tilt | 1.18\u20132 in Frames | 110 MPH Rated \u2014 2 Module / 1 Post / 72 - 96 in",
       "category": "mounting",
       "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273294476",
       "added": [
@@ -143,7 +143,7 @@
     },
     {
       "id": "shopsolar-46358273327244",
-      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 3 Module / 1 Post / 38 - 72 in",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1\u20136 Modules | 0\u00b0\u201390\u00b0 Adjustable Tilt | 1.18\u20132 in Frames | 110 MPH Rated \u2014 3 Module / 1 Post / 38 - 72 in",
       "category": "mounting",
       "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273327244",
       "added": [
@@ -162,7 +162,7 @@
     },
     {
       "id": "shopsolar-46358273360012",
-      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 3 Module / 1 Post / 72 - 96 in",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1\u20136 Modules | 0\u00b0\u201390\u00b0 Adjustable Tilt | 1.18\u20132 in Frames | 110 MPH Rated \u2014 3 Module / 1 Post / 72 - 96 in",
       "category": "mounting",
       "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273360012",
       "added": [
@@ -181,7 +181,7 @@
     },
     {
       "id": "shopsolar-46358273392780",
-      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 4 Module / 1 Post / 38 - 72 in",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1\u20136 Modules | 0\u00b0\u201390\u00b0 Adjustable Tilt | 1.18\u20132 in Frames | 110 MPH Rated \u2014 4 Module / 1 Post / 38 - 72 in",
       "category": "mounting",
       "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273392780",
       "added": [
@@ -200,7 +200,7 @@
     },
     {
       "id": "shopsolar-46358273425548",
-      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 4 Module / 1 Post / 72 - 96 in",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1\u20136 Modules | 0\u00b0\u201390\u00b0 Adjustable Tilt | 1.18\u20132 in Frames | 110 MPH Rated \u2014 4 Module / 1 Post / 72 - 96 in",
       "category": "mounting",
       "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273425548",
       "added": [
@@ -219,7 +219,7 @@
     },
     {
       "id": "shopsolar-46358273458316",
-      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 4 Module / 2 Post / 38 - 72 in",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1\u20136 Modules | 0\u00b0\u201390\u00b0 Adjustable Tilt | 1.18\u20132 in Frames | 110 MPH Rated \u2014 4 Module / 2 Post / 38 - 72 in",
       "category": "mounting",
       "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273458316",
       "added": [
@@ -238,7 +238,7 @@
     },
     {
       "id": "shopsolar-46358273491084",
-      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 4 Module / 2 Post / 72 - 96 in",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1\u20136 Modules | 0\u00b0\u201390\u00b0 Adjustable Tilt | 1.18\u20132 in Frames | 110 MPH Rated \u2014 4 Module / 2 Post / 72 - 96 in",
       "category": "mounting",
       "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273491084",
       "added": [
@@ -257,7 +257,7 @@
     },
     {
       "id": "shopsolar-46358273523852",
-      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 5 Module / 2 Post / 38 - 72 in",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1\u20136 Modules | 0\u00b0\u201390\u00b0 Adjustable Tilt | 1.18\u20132 in Frames | 110 MPH Rated \u2014 5 Module / 2 Post / 38 - 72 in",
       "category": "mounting",
       "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273523852",
       "added": [
@@ -276,7 +276,7 @@
     },
     {
       "id": "shopsolar-46358273556620",
-      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 5 Module / 2 Post / 72 - 96 in",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1\u20136 Modules | 0\u00b0\u201390\u00b0 Adjustable Tilt | 1.18\u20132 in Frames | 110 MPH Rated \u2014 5 Module / 2 Post / 72 - 96 in",
       "category": "mounting",
       "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273556620",
       "added": [
@@ -295,7 +295,7 @@
     },
     {
       "id": "shopsolar-46358273589388",
-      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 6 Module / 2 Post / 38 - 72 in",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1\u20136 Modules | 0\u00b0\u201390\u00b0 Adjustable Tilt | 1.18\u20132 in Frames | 110 MPH Rated \u2014 6 Module / 2 Post / 38 - 72 in",
       "category": "mounting",
       "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273589388",
       "added": [
@@ -314,7 +314,7 @@
     },
     {
       "id": "shopsolar-46358273622156",
-      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 6 Module / 2 Post / 72 - 96 in",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1\u20136 Modules | 0\u00b0\u201390\u00b0 Adjustable Tilt | 1.18\u20132 in Frames | 110 MPH Rated \u2014 6 Module / 2 Post / 72 - 96 in",
       "category": "mounting",
       "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273622156",
       "added": [
@@ -333,7 +333,7 @@
     },
     {
       "id": "shopsolar-46347986010252",
-      "name": "Tamarack Solar UNI-SA Single-Arm Side-of-Pole Mount | 2\"–4\" Sch 40 Poles | 90 MPH Rated | 5000-Series Aluminum | 10-Year Warranty — 14\" Single-Arm",
+      "name": "Tamarack Solar UNI-SA Single-Arm Side-of-Pole Mount | 2\"\u20134\" Sch 40 Poles | 90 MPH Rated | 5000-Series Aluminum | 10-Year Warranty \u2014 14\" Single-Arm",
       "category": "mounting",
       "sourceUrl": "https://shopsolarkits.com/products/tamarack-uni-sa-single-arm-side-pole-mount?variant=46347986010252",
       "added": [
@@ -352,7 +352,7 @@
     },
     {
       "id": "shopsolar-46347986043020",
-      "name": "Tamarack Solar UNI-SA Single-Arm Side-of-Pole Mount | 2\"–4\" Sch 40 Poles | 90 MPH Rated | 5000-Series Aluminum | 10-Year Warranty — 21.5\" Single-Arm",
+      "name": "Tamarack Solar UNI-SA Single-Arm Side-of-Pole Mount | 2\"\u20134\" Sch 40 Poles | 90 MPH Rated | 5000-Series Aluminum | 10-Year Warranty \u2014 21.5\" Single-Arm",
       "category": "mounting",
       "sourceUrl": "https://shopsolarkits.com/products/tamarack-uni-sa-single-arm-side-pole-mount?variant=46347986043020",
       "added": [
@@ -371,7 +371,7 @@
     },
     {
       "id": "shopsolar-46347986075788",
-      "name": "Tamarack Solar UNI-SA Single-Arm Side-of-Pole Mount | 2\"–4\" Sch 40 Poles | 90 MPH Rated | 5000-Series Aluminum | 10-Year Warranty — 26\" Single-Arm",
+      "name": "Tamarack Solar UNI-SA Single-Arm Side-of-Pole Mount | 2\"\u20134\" Sch 40 Poles | 90 MPH Rated | 5000-Series Aluminum | 10-Year Warranty \u2014 26\" Single-Arm",
       "category": "mounting",
       "sourceUrl": "https://shopsolarkits.com/products/tamarack-uni-sa-single-arm-side-pole-mount?variant=46347986075788",
       "added": [
@@ -390,7 +390,7 @@
     },
     {
       "id": "shopsolar-46266467025036",
-      "name": "Pecron E3800LFP Portable Power Station | 4,200W 3,840Wh LiFePO4 | 3,000W Solar + 3,200W AC Fast Charging | UPS | Expandable | 5-Year Warranty — Pecron E3800LFP [Main Unit Only]",
+      "name": "Pecron E3800LFP Portable Power Station | 4,200W 3,840Wh LiFePO4 | 3,000W Solar + 3,200W AC Fast Charging | UPS | Expandable | 5-Year Warranty \u2014 Pecron E3800LFP [Main Unit Only]",
       "category": "all-in-one",
       "sourceUrl": "https://shopsolarkits.com/products/pecron-e3800lfp-power-station?variant=46266467025036",
       "added": [
@@ -459,7 +459,7 @@
         {
           "key": "cycleLife",
           "label": "Cycle life (manufacturer conditions)",
-          "value": "10,000 cycles @ 0.5C, 25°C, 80% DoD (70% EOL capacity)",
+          "value": "10,000 cycles @ 0.5C, 25\u00b0C, 80% DoD (70% EOL capacity)",
           "source": "https://eg4electronics.com/wp-content/uploads/2025/10/EG4-WallMount-314Ah-Indoor-Battery-Spec-Sheet.pdf",
           "kind": "datasheet"
         },
@@ -655,7 +655,7 @@
     },
     {
       "id": "renogy-43249909530739",
-      "name": "200/400W N-Type Portable Solar Panel Blanket — 🔥400W",
+      "name": "200/400W N-Type Portable Solar Panel Blanket \u2014 \ud83d\udd25400W",
       "category": "panels",
       "sourceUrl": "https://www.renogy.com/products/renogy-400w-solar-panel-blanket?variant=43249909530739",
       "added": [
@@ -679,7 +679,7 @@
     },
     {
       "id": "renogy-43178670817395",
-      "name": "Copper Battery Interconnect Cable for 5/16 in Lugs — 12In 1AWG",
+      "name": "Copper Battery Interconnect Cable for 5/16 in Lugs \u2014 12In 1AWG",
       "category": "wiring",
       "sourceUrl": "https://www.renogy.com/products/copper-battery-interconnect-cable-for-5-16-in-lugs?variant=43178670817395",
       "added": [
@@ -693,7 +693,7 @@
         {
           "key": "operatingTemperature",
           "label": "Operating temperature",
-          "value": "221°F dry; 167°F wet",
+          "value": "221\u00b0F dry; 167\u00b0F wet",
           "source": "https://www.renogy.com/products/copper-battery-interconnect-cable-for-5-16-in-lugs",
           "kind": "manufacturer"
         }
@@ -705,7 +705,7 @@
     },
     {
       "id": "renogy-43178671865971",
-      "name": "Solar Panel to Charge Controller Adaptor Kit — 10FT / 12AWG",
+      "name": "Solar Panel to Charge Controller Adaptor Kit \u2014 10FT / 12AWG",
       "category": "wiring",
       "sourceUrl": "https://www.renogy.com/products/solar-panel-to-charge-controller-adaptor-kit?variant=43178671865971",
       "added": [
@@ -733,7 +733,7 @@
         {
           "key": "operatingTemperature",
           "label": "Operating temperature",
-          "value": "-40°F to +185°F",
+          "value": "-40\u00b0F to +185\u00b0F",
           "source": "https://www.renogy.com/products/solar-panel-to-charge-controller-adaptor-kit",
           "kind": "manufacturer"
         },
@@ -774,7 +774,7 @@
         {
           "key": "operatingTemperature",
           "label": "Operating temperature",
-          "value": "-40°F to +194°F",
+          "value": "-40\u00b0F to +194\u00b0F",
           "source": "https://www.renogy.com/products/solar-connectors-for-solar-panels-5-pairs-male-female",
           "kind": "manufacturer"
         },
@@ -919,14 +919,14 @@
     },
     {
       "id": "renogy-44894241521779",
-      "name": "Wanderer 10A PWM Charge Controller — Controller Only",
+      "name": "Wanderer 10A PWM Charge Controller \u2014 Controller Only",
       "category": "charging",
       "sourceUrl": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller?variant=44894241521779",
       "added": [
         {
           "key": "operatingTemperature",
           "label": "Operating temperature",
-          "value": "−25 to 45 °C",
+          "value": "\u221225 to 45 \u00b0C",
           "source": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller",
           "kind": "manufacturer"
         }
@@ -935,7 +935,7 @@
         {
           "key": "operatingTemperature",
           "label": "Operating temperature",
-          "value": "−25 to 45 °C",
+          "value": "\u221225 to 45 \u00b0C",
           "source": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller",
           "note": "Sourced exact-model specification"
         }
@@ -949,14 +949,14 @@
     },
     {
       "id": "renogy-44894241554547",
-      "name": "Wanderer 10A PWM Charge Controller — 🔥 W/ Bluetooth Module",
+      "name": "Wanderer 10A PWM Charge Controller \u2014 \ud83d\udd25 W/ Bluetooth Module",
       "category": "charging",
       "sourceUrl": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller?variant=44894241554547",
       "added": [
         {
           "key": "operatingTemperature",
           "label": "Operating temperature",
-          "value": "−25 to 45 °C",
+          "value": "\u221225 to 45 \u00b0C",
           "source": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller",
           "kind": "manufacturer"
         }
@@ -965,7 +965,7 @@
         {
           "key": "operatingTemperature",
           "label": "Operating temperature",
-          "value": "−25 to 45 °C",
+          "value": "\u221225 to 45 \u00b0C",
           "source": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller",
           "note": "Sourced exact-model specification"
         }
@@ -1041,7 +1041,7 @@
     },
     {
       "id": "santan-solar-spr-e20-327-com-u-lot20",
-      "name": "Used SunPower 327W Solar Panel COM – Pallet of 20",
+      "name": "Used SunPower 327W Solar Panel COM \u2013 Pallet of 20",
       "category": "panels",
       "sourceUrl": "https://www.santansolar.com/product/used-sunpower-327w-solar-panel-com-pallet-of-20/",
       "added": [
@@ -1079,7 +1079,7 @@
         {
           "key": "voltage",
           "label": "Nominal voltage",
-          "value": "240 V AC ±20% line-to-line; split-phase (L1-L2 240 V, L-N 120 V, 180°)",
+          "value": "240 V AC \u00b120% line-to-line; split-phase (L1-L2 240 V, L-N 120 V, 180\u00b0)",
           "source": "https://7534425.app.netsuite.com/core/media/media.nl?_xt=.pdf&c=7534425&h=FhEe93mXw8UrS32ILtnBNGPnF6Gfw-DTZL2OWnGPB7fCIfJp&id=10732925",
           "kind": "datasheet"
         },
@@ -1093,7 +1093,7 @@
         {
           "key": "frequency",
           "label": "AC frequency",
-          "value": "60 Hz (56–63 Hz range)",
+          "value": "60 Hz (56\u201363 Hz range)",
           "source": "https://7534425.app.netsuite.com/core/media/media.nl?_xt=.pdf&c=7534425&h=FhEe93mXw8UrS32ILtnBNGPnF6Gfw-DTZL2OWnGPB7fCIfJp&id=10732925",
           "kind": "datasheet"
         }
@@ -1202,29 +1202,6 @@
         "Rated volts",
         "Maximum PV voltage",
         "Conversion efficiency"
-      ]
-    },
-    {
-      "id": "santan-solar-tigo-ccatap-outdoor",
-      "name": "Tigo Cloud Connect Advanced – Data Logger Kit: TAP, Din Rail PS, Outdoor box (CCA TAP Kit)",
-      "category": "module-electronics",
-      "sourceUrl": "https://www.santansolar.com/product/tigo-cloud-connect-advanced-data-logger-kit-tap-din-rail-ps-outdoor-box-cca-tap-kit/",
-      "added": [
-        {
-          "key": "model",
-          "label": "Model",
-          "value": "348-00000-52",
-          "source": "https://support.tigoenergy.com/hc/en-us/articles/204333388-Description-of-Tigo-CCA-Kits",
-          "kind": "manufacturer"
-        }
-      ],
-      "comparison": [],
-      "remaining": [
-        "Rated amps",
-        "Rated volts",
-        "Maximum PV voltage",
-        "Conversion efficiency",
-        "Communications"
       ]
     },
     {
@@ -1342,7 +1319,7 @@
         {
           "key": "cycleLife",
           "label": "Cycle life (manufacturer conditions)",
-          "value": "10,000 cycles @ 0.5C, 25°C, 80% DoD (70% EOL capacity)",
+          "value": "10,000 cycles @ 0.5C, 25\u00b0C, 80% DoD (70% EOL capacity)",
           "source": "https://eg4electronics.com/wp-content/uploads/2025/10/EG4-WallMount-314Ah-Indoor-Battery-Spec-Sheet.pdf",
           "kind": "datasheet"
         }
@@ -1378,7 +1355,7 @@
         {
           "key": "dimensions",
           "label": "Dimensions",
-          "value": "16.3 × 10.7 × 8.0 cm (6.4 × 4.2 × 3.1 in)",
+          "value": "16.3 \u00d7 10.7 \u00d7 8.0 cm (6.4 \u00d7 4.2 \u00d7 3.1 in)",
           "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
           "kind": "datasheet"
         },
@@ -1399,7 +1376,7 @@
         {
           "key": "operatingTemperature",
           "label": "Operating temperature",
-          "value": "−20 to 70 °C",
+          "value": "\u221220 to 70 \u00b0C",
           "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
           "kind": "datasheet"
         },
@@ -1462,7 +1439,7 @@
         {
           "key": "dimensions",
           "label": "Dimensions",
-          "value": "24.6 × 18.6 × 11.0 cm (9.7 × 7.3 × 4.3 in)",
+          "value": "24.6 \u00d7 18.6 \u00d7 11.0 cm (9.7 \u00d7 7.3 \u00d7 4.3 in)",
           "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
           "kind": "datasheet"
         },
@@ -1483,7 +1460,7 @@
         {
           "key": "operatingTemperature",
           "label": "Operating temperature",
-          "value": "−20 to 70 °C",
+          "value": "\u221220 to 70 \u00b0C",
           "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
           "kind": "datasheet"
         },
@@ -1525,7 +1502,7 @@
     },
     {
       "id": "shopsolar-44678937837708",
-      "name": "EcoFlow DELTA 3 Max Plus – 2,048Wh / 3,000W Portable Power Station + Choose Custom Solar Panel Bundle Option | 5-Year Warranty | Complete Solar Kit — DELTA 3 MAX PLUS [Main Unit Only]",
+      "name": "EcoFlow DELTA 3 Max Plus \u2013 2,048Wh / 3,000W Portable Power Station + Choose Custom Solar Panel Bundle Option | 5-Year Warranty | Complete Solar Kit \u2014 DELTA 3 MAX PLUS [Main Unit Only]",
       "category": "all-in-one",
       "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-max-plus?variant=44678937837708",
       "added": [
@@ -1560,7 +1537,7 @@
         {
           "key": "weight",
           "label": "Weight",
-          "value": "22.1 ± 0.4 kg",
+          "value": "22.1 \u00b1 0.4 kg",
           "source": "https://www.ecoflow.com/us/delta-3-max-plus-portable-power-station/specs",
           "kind": "manufacturer"
         },
@@ -1604,7 +1581,7 @@
     },
     {
       "id": "shopsolar-44220308357260",
-      "name": "Anker SOLIX F3000 Portable Power Station | 3,072Wh / 3,600W | 2,400W Solar Input | Expandable to 12,288Wh | 5-Year Warranty — F3000 [Main Unit Only]",
+      "name": "Anker SOLIX F3000 Portable Power Station | 3,072Wh / 3,600W | 2,400W Solar Input | Expandable to 12,288Wh | 5-Year Warranty \u2014 F3000 [Main Unit Only]",
       "category": "all-in-one",
       "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3000-portable-power-station?variant=44220308357260",
       "added": [
@@ -1653,7 +1630,7 @@
         {
           "key": "maxPvVoltage",
           "label": "Maximum PV input voltage",
-          "value": "165 V max (high-PV input supports 11–165 V; low-PV input supports 11–60 V)",
+          "value": "165 V max (high-PV input supports 11\u2013165 V; low-PV input supports 11\u201360 V)",
           "source": "https://www.ankersolix.com/products/f3000",
           "kind": "manufacturer"
         },
@@ -1688,7 +1665,7 @@
         {
           "key": "dimensions",
           "label": "Dimensions",
-          "value": "25.6 × 11.8 × 14.8 in (651 × 300 × 377 mm)",
+          "value": "25.6 \u00d7 11.8 \u00d7 14.8 in (651 \u00d7 300 \u00d7 377 mm)",
           "source": "https://www.ankersolix.com/products/f3000",
           "kind": "manufacturer"
         },
@@ -1732,7 +1709,7 @@
         {
           "key": "maxPvVoltage",
           "label": "Maximum PV voltage",
-          "value": "165 V max (high-PV input supports 11–165 V; low-PV input supports 11–60 V)",
+          "value": "165 V max (high-PV input supports 11\u2013165 V; low-PV input supports 11\u201360 V)",
           "source": "https://www.ankersolix.com/products/f3000",
           "note": "Sourced exact-model specification"
         },
@@ -1753,7 +1730,7 @@
         {
           "key": "dimensions",
           "label": "Dimensions",
-          "value": "25.6 × 11.8 × 14.8 in (651 × 300 × 377 mm)",
+          "value": "25.6 \u00d7 11.8 \u00d7 14.8 in (651 \u00d7 300 \u00d7 377 mm)",
           "source": "https://www.ankersolix.com/products/f3000",
           "note": "Sourced exact-model specification"
         }
@@ -1766,7 +1743,7 @@
     },
     {
       "id": "santan-solar-a1782111",
-      "name": "Anker SOLIX F3000 Portable Power Station 3,072Wh/3,600W Essential Home Backup – Black",
+      "name": "Anker SOLIX F3000 Portable Power Station 3,072Wh/3,600W Essential Home Backup \u2013 Black",
       "category": "all-in-one",
       "sourceUrl": "https://www.santansolar.com/product/f3000-portable-power-station/",
       "added": [
@@ -1794,7 +1771,7 @@
         {
           "key": "maxPvVoltage",
           "label": "Maximum PV input voltage",
-          "value": "165 V max (high-PV input supports 11–165 V; low-PV input supports 11–60 V)",
+          "value": "165 V max (high-PV input supports 11\u2013165 V; low-PV input supports 11\u201360 V)",
           "source": "https://www.ankersolix.com/products/f3000",
           "kind": "manufacturer"
         },
@@ -1852,7 +1829,7 @@
         {
           "key": "maxPvVoltage",
           "label": "Maximum PV voltage",
-          "value": "165 V max (high-PV input supports 11–165 V; low-PV input supports 11–60 V)",
+          "value": "165 V max (high-PV input supports 11\u2013165 V; low-PV input supports 11\u201360 V)",
           "source": "https://www.ankersolix.com/products/f3000",
           "note": "Sourced exact-model specification"
         },
@@ -1893,6 +1870,220 @@
       "id": "eg4-flexboss21",
       "url": "https://eg4electronics.com/products/flexboss21",
       "reason": "Saved stronger specification identity differs from available raw snapshot; preserve prior intact pending current identity reconciliation"
+    },
+    {
+      "id": "santan-solar-tigo-ccatap-outdoor",
+      "url": "https://support.tigoenergy.com/hc/en-us/articles/204333388-Description-of-Tigo-CCA-Kits",
+      "reason": "Current live database metadata no longer matches reviewed raw selector; preserve baseline pending a reviewed rebind"
     }
-  ]
+  ],
+  "liveReadback": {
+    "capturedAt": "2026-10-22T11:44:19.116Z",
+    "productRows": 9285,
+    "readableProducts": 5399,
+    "truncatedProducts": 3886,
+    "offerRows": 9317,
+    "selectedIdentityChecks": [
+      {
+        "id": "shopsolar-44808958967948",
+        "status": "truncated"
+      },
+      {
+        "id": "shopsolar-45192132460684",
+        "status": "truncated"
+      },
+      {
+        "id": "santan-solar-eg4-16kw-indoor",
+        "status": "truncated"
+      },
+      {
+        "id": "shopsolar-51565801734284",
+        "status": "matched"
+      },
+      {
+        "id": "renogy-44894241521779",
+        "status": "truncated"
+      },
+      {
+        "id": "renogy-44894241554547",
+        "status": "truncated"
+      },
+      {
+        "id": "renogy-45421915504755",
+        "status": "matched"
+      },
+      {
+        "id": "renogy-43249909530739",
+        "status": "matched"
+      },
+      {
+        "id": "shopsolar-54750743920780",
+        "status": "truncated"
+      },
+      {
+        "id": "shopsolar-46266467025036",
+        "status": "truncated"
+      },
+      {
+        "id": "shopsolar-44678937837708",
+        "status": "truncated"
+      },
+      {
+        "id": "shopsolar-44220308357260",
+        "status": "truncated"
+      },
+      {
+        "id": "santan-solar-a1782111",
+        "status": "matched"
+      },
+      {
+        "id": "renogy-43178645323891",
+        "status": "truncated"
+      },
+      {
+        "id": "renogy-43178670817395",
+        "status": "truncated"
+      },
+      {
+        "id": "renogy-43178678648947",
+        "status": "matched"
+      },
+      {
+        "id": "renogy-43178705551475",
+        "status": "matched"
+      },
+      {
+        "id": "shopsolar-46347986010252",
+        "status": "truncated"
+      },
+      {
+        "id": "shopsolar-46347986043020",
+        "status": "truncated"
+      },
+      {
+        "id": "shopsolar-46347986075788",
+        "status": "truncated"
+      },
+      {
+        "id": "renogy-43178671865971",
+        "status": "truncated"
+      },
+      {
+        "id": "naz-865-1030-01",
+        "status": "matched"
+      },
+      {
+        "id": "naz-865-1031-01",
+        "status": "matched"
+      },
+      {
+        "id": "renogy-43178656694387",
+        "status": "matched"
+      },
+      {
+        "id": "renogy-43178656727155",
+        "status": "matched"
+      },
+      {
+        "id": "renogy-43178682515571",
+        "status": "matched"
+      },
+      {
+        "id": "santan-solar-enphase-x-iq-am1-240-6c",
+        "status": "truncated"
+      },
+      {
+        "id": "renogy-43178715283571",
+        "status": "truncated"
+      },
+      {
+        "id": "renogy-43178696573043",
+        "status": "truncated"
+      },
+      {
+        "id": "renogy-43178699128947",
+        "status": "truncated"
+      },
+      {
+        "id": "renogy-43178709876851",
+        "status": "truncated"
+      },
+      {
+        "id": "santan-solar-tigo-490-00000-51",
+        "status": "matched"
+      },
+      {
+        "id": "santan-solar-ts4-a-o-252-32",
+        "status": "matched"
+      },
+      {
+        "id": "santan-solar-ts4-a-f",
+        "status": "matched"
+      },
+      {
+        "id": "santan-solar-spr-e20-327-com-u",
+        "status": "matched"
+      },
+      {
+        "id": "santan-solar-spr-e20-327-com-u-lot20",
+        "status": "matched"
+      },
+      {
+        "id": "shopsolar-46352342450316",
+        "status": "truncated"
+      },
+      {
+        "id": "shopsolar-46358273228940",
+        "status": "truncated"
+      },
+      {
+        "id": "shopsolar-46358273261708",
+        "status": "truncated"
+      },
+      {
+        "id": "shopsolar-46358273294476",
+        "status": "truncated"
+      },
+      {
+        "id": "shopsolar-46358273327244",
+        "status": "truncated"
+      },
+      {
+        "id": "shopsolar-46358273360012",
+        "status": "truncated"
+      },
+      {
+        "id": "shopsolar-46358273392780",
+        "status": "truncated"
+      },
+      {
+        "id": "shopsolar-46358273425548",
+        "status": "truncated"
+      },
+      {
+        "id": "shopsolar-46358273458316",
+        "status": "truncated"
+      },
+      {
+        "id": "shopsolar-46358273491084",
+        "status": "truncated"
+      },
+      {
+        "id": "shopsolar-46358273523852",
+        "status": "truncated"
+      },
+      {
+        "id": "shopsolar-46358273556620",
+        "status": "truncated"
+      },
+      {
+        "id": "shopsolar-46358273589388",
+        "status": "truncated"
+      },
+      {
+        "id": "shopsolar-46358273622156",
+        "status": "truncated"
+      }
+    ]
+  }
 }
