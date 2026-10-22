@@ -1,0 +1,1898 @@
+{
+  "checkedAt": "2026-10-22T11:35:04.657Z",
+  "scope": "1477-listing saved raw snapshot; not a full live catalog progress estimate",
+  "catalogListings": 1477,
+  "workers": 12,
+  "acceptedRecords": 53,
+  "changedListings": 51,
+  "addedTechnicalFields": 128,
+  "filledComparisonFields": 37,
+  "changes": [
+    {
+      "id": "shopsolar-54750743920780",
+      "name": "Mango Power E - 3.5kWh Battery / 3kW Output - Home Backup and Portable Power Station",
+      "category": "all-in-one",
+      "sourceUrl": "https://shopsolarkits.com/products/mango-power-e?variant=54750743920780",
+      "added": [
+        {
+          "key": "mpptVoltageRange",
+          "label": "MPPT voltage range",
+          "value": "60 V to 150 V solar charging input interval",
+          "source": "https://learn.mangopower.com/products/mango-power-e/specifications/",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "frequency",
+          "label": "AC frequency",
+          "value": "60 Hz",
+          "source": "https://learn.mangopower.com/products/mango-power-e/specifications/",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "mpptVoltageRange",
+          "label": "MPPT operating voltage range",
+          "value": "60 V to 150 V solar charging input interval",
+          "source": "https://learn.mangopower.com/products/mango-power-e/specifications/",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "PV amps",
+        "PV short-circuit current limit",
+        "Surge output (published duration)"
+      ]
+    },
+    {
+      "id": "shopsolar-51565801734284",
+      "name": "Eco-Worthy 12V 280Ah Metal Case LiFePO4 Lithium Battery With Bluetooth and low-temp protection",
+      "category": "batteries",
+      "sourceUrl": "https://shopsolarkits.com/products/eco-worthy-12v-280ah-metal-case-lifepo4-lithium-battery?variant=51565801734284",
+      "added": [
+        {
+          "key": "connector",
+          "label": "Connector / terminal",
+          "value": "M8",
+          "source": "https://www.eco-worthy.com/products/12v-280ah-lifepo4-lithium-battery",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Format",
+        "Peak discharge current",
+        "Communications"
+      ]
+    },
+    {
+      "id": "shopsolar-46352342450316",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 1 Module / 1 Post / 38 - 72 in",
+      "category": "mounting",
+      "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46352342450316",
+      "added": [
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "10 years",
+          "source": "https://tamaracksolar.com/warranty/",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Size"
+      ]
+    },
+    {
+      "id": "shopsolar-46358273228940",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 1 Module / 1 Post / 72 - 96 in",
+      "category": "mounting",
+      "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273228940",
+      "added": [
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "10 years",
+          "source": "https://tamaracksolar.com/warranty/",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Size"
+      ]
+    },
+    {
+      "id": "shopsolar-46358273261708",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 2 Module / 1 Post / 38 - 72 in",
+      "category": "mounting",
+      "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273261708",
+      "added": [
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "10 years",
+          "source": "https://tamaracksolar.com/warranty/",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Size"
+      ]
+    },
+    {
+      "id": "shopsolar-46358273294476",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 2 Module / 1 Post / 72 - 96 in",
+      "category": "mounting",
+      "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273294476",
+      "added": [
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "10 years",
+          "source": "https://tamaracksolar.com/warranty/",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Size"
+      ]
+    },
+    {
+      "id": "shopsolar-46358273327244",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 3 Module / 1 Post / 38 - 72 in",
+      "category": "mounting",
+      "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273327244",
+      "added": [
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "10 years",
+          "source": "https://tamaracksolar.com/warranty/",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Size"
+      ]
+    },
+    {
+      "id": "shopsolar-46358273360012",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 3 Module / 1 Post / 72 - 96 in",
+      "category": "mounting",
+      "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273360012",
+      "added": [
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "10 years",
+          "source": "https://tamaracksolar.com/warranty/",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Size"
+      ]
+    },
+    {
+      "id": "shopsolar-46358273392780",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 4 Module / 1 Post / 38 - 72 in",
+      "category": "mounting",
+      "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273392780",
+      "added": [
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "10 years",
+          "source": "https://tamaracksolar.com/warranty/",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Size"
+      ]
+    },
+    {
+      "id": "shopsolar-46358273425548",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 4 Module / 1 Post / 72 - 96 in",
+      "category": "mounting",
+      "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273425548",
+      "added": [
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "10 years",
+          "source": "https://tamaracksolar.com/warranty/",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Size"
+      ]
+    },
+    {
+      "id": "shopsolar-46358273458316",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 4 Module / 2 Post / 38 - 72 in",
+      "category": "mounting",
+      "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273458316",
+      "added": [
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "10 years",
+          "source": "https://tamaracksolar.com/warranty/",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Size"
+      ]
+    },
+    {
+      "id": "shopsolar-46358273491084",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 4 Module / 2 Post / 72 - 96 in",
+      "category": "mounting",
+      "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273491084",
+      "added": [
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "10 years",
+          "source": "https://tamaracksolar.com/warranty/",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Size"
+      ]
+    },
+    {
+      "id": "shopsolar-46358273523852",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 5 Module / 2 Post / 38 - 72 in",
+      "category": "mounting",
+      "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273523852",
+      "added": [
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "10 years",
+          "source": "https://tamaracksolar.com/warranty/",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Size"
+      ]
+    },
+    {
+      "id": "shopsolar-46358273556620",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 5 Module / 2 Post / 72 - 96 in",
+      "category": "mounting",
+      "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273556620",
+      "added": [
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "10 years",
+          "source": "https://tamaracksolar.com/warranty/",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Size"
+      ]
+    },
+    {
+      "id": "shopsolar-46358273589388",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 6 Module / 2 Post / 38 - 72 in",
+      "category": "mounting",
+      "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273589388",
+      "added": [
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "10 years",
+          "source": "https://tamaracksolar.com/warranty/",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Size"
+      ]
+    },
+    {
+      "id": "shopsolar-46358273622156",
+      "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 6 Module / 2 Post / 72 - 96 in",
+      "category": "mounting",
+      "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273622156",
+      "added": [
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "10 years",
+          "source": "https://tamaracksolar.com/warranty/",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Size"
+      ]
+    },
+    {
+      "id": "shopsolar-46347986010252",
+      "name": "Tamarack Solar UNI-SA Single-Arm Side-of-Pole Mount | 2\"–4\" Sch 40 Poles | 90 MPH Rated | 5000-Series Aluminum | 10-Year Warranty — 14\" Single-Arm",
+      "category": "mounting",
+      "sourceUrl": "https://shopsolarkits.com/products/tamarack-uni-sa-single-arm-side-pole-mount?variant=46347986010252",
+      "added": [
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "10 years on structure",
+          "source": "https://tamaracksolar.com/products/pole-mounting-system/side-of-pole-standard-sizes/",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Tilt range"
+      ]
+    },
+    {
+      "id": "shopsolar-46347986043020",
+      "name": "Tamarack Solar UNI-SA Single-Arm Side-of-Pole Mount | 2\"–4\" Sch 40 Poles | 90 MPH Rated | 5000-Series Aluminum | 10-Year Warranty — 21.5\" Single-Arm",
+      "category": "mounting",
+      "sourceUrl": "https://shopsolarkits.com/products/tamarack-uni-sa-single-arm-side-pole-mount?variant=46347986043020",
+      "added": [
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "10 years on structure",
+          "source": "https://tamaracksolar.com/products/pole-mounting-system/side-of-pole-standard-sizes/",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Tilt range"
+      ]
+    },
+    {
+      "id": "shopsolar-46347986075788",
+      "name": "Tamarack Solar UNI-SA Single-Arm Side-of-Pole Mount | 2\"–4\" Sch 40 Poles | 90 MPH Rated | 5000-Series Aluminum | 10-Year Warranty — 26\" Single-Arm",
+      "category": "mounting",
+      "sourceUrl": "https://shopsolarkits.com/products/tamarack-uni-sa-single-arm-side-pole-mount?variant=46347986075788",
+      "added": [
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "10 years on structure",
+          "source": "https://tamaracksolar.com/products/pole-mounting-system/side-of-pole-standard-sizes/",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Tilt range"
+      ]
+    },
+    {
+      "id": "shopsolar-46266467025036",
+      "name": "Pecron E3800LFP Portable Power Station | 4,200W 3,840Wh LiFePO4 | 3,000W Solar + 3,200W AC Fast Charging | UPS | Expandable | 5-Year Warranty — Pecron E3800LFP [Main Unit Only]",
+      "category": "all-in-one",
+      "sourceUrl": "https://shopsolarkits.com/products/pecron-e3800lfp-power-station?variant=46266467025036",
+      "added": [
+        {
+          "key": "model",
+          "label": "Model",
+          "value": "E3800LFP",
+          "source": "https://www.pecron.com/en-jp/products/pecron-e3800lfp-portable-power-station-4200w-3840wh?_fid=7c0ec6243&_pos=4&_ss=c",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "capacityKwh",
+          "label": "Energy capacity",
+          "value": "3840 Wh",
+          "source": "https://www.pecron.com/en-jp/products/pecron-e3800lfp-portable-power-station-4200w-3840wh?_fid=7c0ec6243&_pos=4&_ss=c",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "chemistry",
+          "label": "Battery chemistry",
+          "value": "LiFePO4",
+          "source": "https://www.pecron.com/en-jp/products/pecron-e3800lfp-portable-power-station-4200w-3840wh?_fid=7c0ec6243&_pos=4&_ss=c",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "outputWatts",
+          "label": "Rated AC output power",
+          "value": "4200 W",
+          "source": "https://www.pecron.com/en-jp/products/pecron-e3800lfp-portable-power-station-4200w-3840wh?_fid=7c0ec6243&_pos=4&_ss=c",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "acChargeWatts",
+          "label": "AC charging input",
+          "value": "3200 W max with 30 A cable; 1800 W with 15 A cable",
+          "source": "https://www.pecron.com/en-jp/products/pecron-e3800lfp-portable-power-station-4200w-3840wh?_fid=7c0ec6243&_pos=4&_ss=c",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "3+2 years",
+          "source": "https://www.pecron.com/en-jp/products/pecron-e3800lfp-portable-power-station-4200w-3840wh?_fid=7c0ec6243&_pos=4&_ss=c",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "outputWatts",
+          "label": "AC output",
+          "value": "4.2 kW",
+          "source": "https://www.pecron.com/en-jp/products/pecron-e3800lfp-portable-power-station-4200w-3840wh?_fid=7c0ec6243&_pos=4&_ss=c"
+        }
+      ],
+      "remaining": [
+        "PV short-circuit current limit",
+        "Surge output (published duration)"
+      ]
+    },
+    {
+      "id": "shopsolar-45192132460684",
+      "name": "EG4 314Ah / 16kWh Indoor WallMount Battery - 48V Self-Heating | Smart BMS | UL 1973 | 10-Year Warranty",
+      "category": "batteries",
+      "sourceUrl": "https://shopsolarkits.com/products/eg4-16kwh-indoor-wallmount-battery?variant=45192132460684",
+      "added": [
+        {
+          "key": "cycleLife",
+          "label": "Cycle life (manufacturer conditions)",
+          "value": "10,000 cycles @ 0.5C, 25°C, 80% DoD (70% EOL capacity)",
+          "source": "https://eg4electronics.com/wp-content/uploads/2025/10/EG4-WallMount-314Ah-Indoor-Battery-Spec-Sheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "weight",
+          "label": "Weight",
+          "value": "293.2 lb (133 kg)",
+          "source": "https://eg4electronics.com/wp-content/uploads/2025/10/EG4-WallMount-314Ah-Indoor-Battery-Spec-Sheet.pdf",
+          "kind": "datasheet"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Peak discharge current",
+        "Charge temperature",
+        "Discharge temperature",
+        "Dimensions"
+      ]
+    },
+    {
+      "id": "shopsolar-44808958967948",
+      "name": "EcoFlow OCEAN PRO 10kWh Battery Module | LFP | IP67 Rated | UL 9540A/B | Stackable to 80kWh | Residential & Backup Power",
+      "category": "batteries",
+      "sourceUrl": "https://shopsolarkits.com/products/ecoflow-ocean-pro-10kwh-lfp-solar-battery?variant=44808958967948",
+      "added": [
+        {
+          "key": "weight",
+          "label": "Weight",
+          "value": "245.8 lb / 111.5 kg (top cover excluded: 3.7 kg / 8.15 lb)",
+          "source": "https://www.ecoflow.com/us/ocean-pro/specs",
+          "kind": "datasheet"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Discharge (A)",
+        "Rated capacity (Ah)",
+        "Maximum charge current",
+        "Peak discharge current",
+        "Charge temperature",
+        "Discharge temperature",
+        "Communications",
+        "Dimensions"
+      ]
+    },
+    {
+      "id": "renogy-45421915504755",
+      "name": "400W N-Type Portable Solar Panel Blanket with 4-in-1 Extension Cable for Power Stations",
+      "category": "panels",
+      "sourceUrl": "https://www.renogy.com/products/400w-n-type-portable-solar-panel-blanket-with-4-in-1-extension-cable-for-power-stations?variant=45421915504755",
+      "added": [
+        {
+          "key": "cellEfficiency",
+          "label": "Cell efficiency",
+          "value": "25%",
+          "source": "https://www.renogy.com/products/400w-n-type-portable-solar-panel-blanket-with-4-in-1-extension-cable-for-power-stations",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Face",
+        "Efficiency",
+        "Open-circuit voltage (Voc)",
+        "Maximum-power voltage (Vmp)",
+        "Maximum-power current (Imp)",
+        "Short-circuit current (Isc)",
+        "Voc temperature coefficient",
+        "Vmp temperature coefficient",
+        "Power temperature coefficient",
+        "Isc temperature coefficient",
+        "Dimensions"
+      ]
+    },
+    {
+      "id": "renogy-43178645323891",
+      "name": "Renogy 5FT 3/0AWG Anderson Adapter Cable Anderson SB350 - Ring Lug",
+      "category": "wiring",
+      "sourceUrl": "https://www.renogy.com/products/renogy-5ft-3-0awg-anderson-adapter-cable-anderson-sb350-ring-lug?variant=43178645323891",
+      "added": [
+        {
+          "key": "voltage",
+          "label": "Nominal voltage",
+          "value": "600 V",
+          "source": "https://www.renogy.com/products/renogy-5ft-3-0awg-anderson-adapter-cable-anderson-sb350-ring-lug",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "compatibility",
+          "label": "Supported equipment / fit",
+          "value": "For adding a non-REGO inverter to the REGO system; product description says 2 kW-3 kW",
+          "source": "https://www.renogy.com/products/renogy-5ft-3-0awg-anderson-adapter-cable-anderson-sb350-ring-lug",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Rated current"
+      ]
+    },
+    {
+      "id": "renogy-43178656694387",
+      "name": "350A Battery Switch",
+      "category": "electrical",
+      "sourceUrl": "https://www.renogy.com/products/350abattery-switch?variant=43178656694387",
+      "added": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated current",
+          "value": "350 A continuous",
+          "source": "https://www.renogy.com/products/350abattery-switch",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "connector",
+          "label": "Connector / terminal",
+          "value": "3/8 in-16 terminal studs; accepts battery cables up to 4/0 AWG",
+          "source": "https://www.renogy.com/products/350abattery-switch",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "compatibility",
+          "label": "Supported equipment / fit",
+          "value": "Single battery to a single load group; single-circuit ON/OFF battery switch",
+          "source": "https://www.renogy.com/products/350abattery-switch",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "350 A continuous",
+          "source": "https://www.renogy.com/products/350abattery-switch"
+        }
+      ],
+      "remaining": [
+        "Rated volts",
+        "Interrupt / breaking capacity",
+        "Poles",
+        "Ingress protection"
+      ]
+    },
+    {
+      "id": "renogy-43178656727155",
+      "name": "12-Way Battery Terminal Distribution Block Pair",
+      "category": "electrical",
+      "sourceUrl": "https://www.renogy.com/products/12-way-battery-terminal-distribution-block-pair?variant=43178656727155",
+      "added": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated current",
+          "value": "400 A current-carrying capacity per terminal",
+          "source": "https://www.renogy.com/products/12-way-battery-terminal-distribution-block-pair",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "gauge",
+          "label": "Wire gauge / cross-section",
+          "value": "8 AWG to 4/0 AWG",
+          "source": "https://www.renogy.com/products/12-way-battery-terminal-distribution-block-pair",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "connector",
+          "label": "Connector / terminal",
+          "value": "12 cable positions per terminal: six hole-holders and six threaded studs",
+          "source": "https://www.renogy.com/products/12-way-battery-terminal-distribution-block-pair",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "value": "Zinc alloy",
+          "source": "https://www.renogy.com/products/12-way-battery-terminal-distribution-block-pair",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "400 A current-carrying capacity per terminal",
+          "source": "https://www.renogy.com/products/12-way-battery-terminal-distribution-block-pair"
+        }
+      ],
+      "remaining": [
+        "Rated volts",
+        "Interrupt / breaking capacity",
+        "Poles",
+        "Ingress protection"
+      ]
+    },
+    {
+      "id": "renogy-43249909530739",
+      "name": "200/400W N-Type Portable Solar Panel Blanket — 🔥400W",
+      "category": "panels",
+      "sourceUrl": "https://www.renogy.com/products/renogy-400w-solar-panel-blanket?variant=43249909530739",
+      "added": [
+        {
+          "key": "cellEfficiency",
+          "label": "Cell efficiency",
+          "value": "25%",
+          "source": "https://www.renogy.com/products/renogy-400w-solar-panel-blanket",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Face",
+        "Efficiency",
+        "Voc temperature coefficient",
+        "Vmp temperature coefficient",
+        "Power temperature coefficient",
+        "Isc temperature coefficient"
+      ]
+    },
+    {
+      "id": "renogy-43178670817395",
+      "name": "Copper Battery Interconnect Cable for 5/16 in Lugs — 12In 1AWG",
+      "category": "wiring",
+      "sourceUrl": "https://www.renogy.com/products/copper-battery-interconnect-cable-for-5-16-in-lugs?variant=43178670817395",
+      "added": [
+        {
+          "key": "gauge",
+          "label": "Wire gauge / cross-section",
+          "value": "1 AWG",
+          "source": "https://www.renogy.com/products/copper-battery-interconnect-cable-for-5-16-in-lugs",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "operatingTemperature",
+          "label": "Operating temperature",
+          "value": "221°F dry; 167°F wet",
+          "source": "https://www.renogy.com/products/copper-battery-interconnect-cable-for-5-16-in-lugs",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Rated current"
+      ]
+    },
+    {
+      "id": "renogy-43178671865971",
+      "name": "Solar Panel to Charge Controller Adaptor Kit — 10FT / 12AWG",
+      "category": "wiring",
+      "sourceUrl": "https://www.renogy.com/products/solar-panel-to-charge-controller-adaptor-kit?variant=43178671865971",
+      "added": [
+        {
+          "key": "gauge",
+          "label": "Wire gauge / cross-section",
+          "value": "12 AWG",
+          "source": "https://www.renogy.com/products/solar-panel-to-charge-controller-adaptor-kit",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "connector",
+          "label": "Connector / terminal",
+          "value": "Solar connectors on one end; exposed wire on the other; hard plastic connectors",
+          "source": "https://www.renogy.com/products/solar-panel-to-charge-controller-adaptor-kit",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "voltage",
+          "label": "Nominal voltage",
+          "value": "600/1000 V",
+          "source": "https://www.renogy.com/products/solar-panel-to-charge-controller-adaptor-kit",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "operatingTemperature",
+          "label": "Operating temperature",
+          "value": "-40°F to +185°F",
+          "source": "https://www.renogy.com/products/solar-panel-to-charge-controller-adaptor-kit",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "IP65",
+          "source": "https://www.renogy.com/products/solar-panel-to-charge-controller-adaptor-kit",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "connector",
+          "label": "Connector",
+          "value": "Solar connectors on one end; exposed wire on the other; hard plastic connectors",
+          "source": "https://www.renogy.com/products/solar-panel-to-charge-controller-adaptor-kit"
+        }
+      ],
+      "remaining": [
+        "Rated voltage",
+        "Rated current"
+      ]
+    },
+    {
+      "id": "renogy-43178678648947",
+      "name": "Solar Connectors for Solar Panels 5 Pairs Male & Female",
+      "category": "wiring",
+      "sourceUrl": "https://www.renogy.com/products/solar-connectors-for-solar-panels-5-pairs-male-female?variant=43178678648947",
+      "added": [
+        {
+          "key": "voltage",
+          "label": "Nominal voltage",
+          "value": "1000 VDC",
+          "source": "https://www.renogy.com/products/solar-connectors-for-solar-panels-5-pairs-male-female",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "operatingTemperature",
+          "label": "Operating temperature",
+          "value": "-40°F to +194°F",
+          "source": "https://www.renogy.com/products/solar-connectors-for-solar-panels-5-pairs-male-female",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "gauge",
+          "label": "Wire gauge / cross-section",
+          "value": "10 AWG or 12 AWG",
+          "source": "https://www.renogy.com/products/solar-connectors-for-solar-panels-5-pairs-male-female",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "1-year material warranty",
+          "source": "https://www.renogy.com/products/solar-connectors-for-solar-panels-5-pairs-male-female",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "gauge",
+          "label": "Gauge",
+          "value": "10 AWG or 12 AWG",
+          "source": "https://www.renogy.com/products/solar-connectors-for-solar-panels-5-pairs-male-female"
+        }
+      ],
+      "remaining": [
+        "Length",
+        "Conductor material"
+      ]
+    },
+    {
+      "id": "renogy-43178682515571",
+      "name": "MidNite Solar Combiner Box 510-0006",
+      "category": "electrical",
+      "sourceUrl": "https://www.renogy.com/products/midnite-solar-combiner-box-510-0006?variant=43178682515571",
+      "added": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated current",
+          "value": "120 A plus busbar; separate 80 A fuse busbar",
+          "source": "https://www.renogy.com/products/midnite-solar-combiner-box-510-0006",
+          "kind": "retailer"
+        },
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "NEMA Type 3R rainproof enclosure",
+          "source": "https://www.renogy.com/products/midnite-solar-combiner-box-510-0006",
+          "kind": "retailer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "120 A plus busbar; separate 80 A fuse busbar",
+          "source": "https://www.renogy.com/products/midnite-solar-combiner-box-510-0006"
+        },
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "NEMA Type 3R rainproof enclosure",
+          "source": "https://www.renogy.com/products/midnite-solar-combiner-box-510-0006",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "Rated volts",
+        "Interrupt / breaking capacity",
+        "Poles"
+      ]
+    },
+    {
+      "id": "renogy-43178696573043",
+      "name": "500A Battery Monitor With Shunt",
+      "category": "monitoring",
+      "sourceUrl": "https://www.renogy.com/products/500a-battery-monitor-with-shunt?variant=43178696573043",
+      "added": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated current",
+          "value": "500 A maximum",
+          "source": "https://www.renogy.com/products/500a-battery-monitor-with-shunt",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "compatibility",
+          "label": "Supported equipment / fit",
+          "value": "Lead acid (AGM/GEL), LiFePO4, lithium-ion, nickel-metal hydride",
+          "source": "https://www.renogy.com/products/500a-battery-monitor-with-shunt",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "2 years material and workmanship",
+          "source": "https://www.renogy.com/products/500a-battery-monitor-with-shunt",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Channels",
+        "Connection",
+        "Ingress protection"
+      ]
+    },
+    {
+      "id": "renogy-43178699128947",
+      "name": "Monitoring Screen for DC-DC MPPT Battery Charger Series",
+      "category": "monitoring",
+      "sourceUrl": "https://www.renogy.com/products/monitoring-screen-for-dc-dc-mppt-battery-charger-series?variant=43178699128947",
+      "added": [
+        {
+          "key": "communications",
+          "label": "Communications",
+          "value": "RJ45 (RS485 protocol)",
+          "source": "https://www.renogy.com/products/monitoring-screen-for-dc-dc-mppt-battery-charger-series",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "compatibility",
+          "label": "Supported equipment / fit",
+          "value": "Renogy RBC50D1S-G1 and RBC30D1S DC-DC MPPT onboard battery chargers",
+          "source": "https://www.renogy.com/products/monitoring-screen-for-dc-dc-mppt-battery-charger-series",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "communications",
+          "label": "Connection",
+          "value": "RJ45 (RS485 protocol)",
+          "source": "https://www.renogy.com/products/monitoring-screen-for-dc-dc-mppt-battery-charger-series"
+        }
+      ],
+      "remaining": [
+        "Channels",
+        "Ingress protection"
+      ]
+    },
+    {
+      "id": "renogy-44894241521779",
+      "name": "Wanderer 10A PWM Charge Controller — Controller Only",
+      "category": "charging",
+      "sourceUrl": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller?variant=44894241521779",
+      "added": [
+        {
+          "key": "operatingTemperature",
+          "label": "Operating temperature",
+          "value": "−25 to 45 °C",
+          "source": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "operatingTemperature",
+          "label": "Operating temperature",
+          "value": "−25 to 45 °C",
+          "source": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "MPPT operating voltage range",
+        "Independent MPPT count",
+        "Maximum MPPT input current",
+        "PV short-circuit current limit"
+      ]
+    },
+    {
+      "id": "renogy-44894241554547",
+      "name": "Wanderer 10A PWM Charge Controller — 🔥 W/ Bluetooth Module",
+      "category": "charging",
+      "sourceUrl": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller?variant=44894241554547",
+      "added": [
+        {
+          "key": "operatingTemperature",
+          "label": "Operating temperature",
+          "value": "−25 to 45 °C",
+          "source": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "operatingTemperature",
+          "label": "Operating temperature",
+          "value": "−25 to 45 °C",
+          "source": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "MPPT operating voltage range",
+        "Independent MPPT count",
+        "Maximum MPPT input current",
+        "PV short-circuit current limit"
+      ]
+    },
+    {
+      "id": "renogy-43178705551475",
+      "name": "Solar Panel Mounting Curved Z Bracket -- Set of 4",
+      "category": "mounting",
+      "sourceUrl": "https://www.renogy.com/products/solar-panel-mounting-curved-z-bracket-set-of-4?variant=43178705551475",
+      "added": [
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "1 year material warranty",
+          "source": "https://www.renogy.com/products/solar-panel-mounting-curved-z-bracket-set-of-4",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Size",
+        "Tilt range"
+      ]
+    },
+    {
+      "id": "renogy-43178709876851",
+      "name": "Battery Temperature Sensor for Renogy Solar Charge Controllers",
+      "category": "monitoring",
+      "sourceUrl": "https://www.renogy.com/products/battery-temperature-sensor-for-renogy-solar-charge-controllers?variant=43178709876851",
+      "added": [
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "1 year material and workmanship",
+          "source": "https://www.renogy.com/products/battery-temperature-sensor-for-renogy-solar-charge-controllers",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Channels",
+        "Connection",
+        "Measurement accuracy",
+        "Ingress protection"
+      ]
+    },
+    {
+      "id": "renogy-43178715283571",
+      "name": "Monitoring Screen for Smart Lithium Battery Series",
+      "category": "monitoring",
+      "sourceUrl": "https://www.renogy.com/products/monitoring-screen-for-smart-lithium-battery-series?variant=43178715283571",
+      "added": [
+        {
+          "key": "compatibility",
+          "label": "Supported equipment / fit",
+          "value": "Renogy 48V 50Ah Smart Lithium Battery; 12V 100Ah Smart Lithium Battery; 12V 100Ah Smart Lithium Battery with self-heating; batteries purchased before 2020-04-15 may have compatibility issues",
+          "source": "https://www.renogy.com/products/monitoring-screen-for-smart-lithium-battery-series",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Channels",
+        "Ingress protection"
+      ]
+    },
+    {
+      "id": "santan-solar-spr-e20-327-com-u-lot20",
+      "name": "Used SunPower 327W Solar Panel COM – Pallet of 20",
+      "category": "panels",
+      "sourceUrl": "https://www.santansolar.com/product/used-sunpower-327w-solar-panel-com-pallet-of-20/",
+      "added": [
+        {
+          "key": "maxSeriesFuse",
+          "label": "Maximum series fuse rating",
+          "value": "15 A",
+          "source": "https://es-media-prod.s3.amazonaws.com/media/components/panels/spec-sheets/sunpower-e-series-commercial-solar-panels-e20-327-com-datasheet-505701-revh.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "model",
+          "label": "Model",
+          "value": "SPR-E20-327-COM",
+          "source": "https://es-media-prod.s3.amazonaws.com/media/components/panels/spec-sheets/sunpower-e-series-commercial-solar-panels-e20-327-com-datasheet-505701-revh.pdf",
+          "kind": "datasheet"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Face",
+        "Efficiency",
+        "Voc temperature coefficient",
+        "Vmp temperature coefficient",
+        "Power temperature coefficient",
+        "Isc temperature coefficient"
+      ]
+    },
+    {
+      "id": "santan-solar-enphase-x-iq-am1-240-6c",
+      "name": "Enphase IQ Combiner 6C with IQ Gateway",
+      "category": "electrical",
+      "sourceUrl": "https://www.santansolar.com/product/enphase-iq-combiner-6c-with-iq-gateway/",
+      "added": [
+        {
+          "key": "voltage",
+          "label": "Nominal voltage",
+          "value": "240 V AC ±20% line-to-line; split-phase (L1-L2 240 V, L-N 120 V, 180°)",
+          "source": "https://7534425.app.netsuite.com/core/media/media.nl?_xt=.pdf&c=7534425&h=FhEe93mXw8UrS32ILtnBNGPnF6Gfw-DTZL2OWnGPB7fCIfJp&id=10732925",
+          "kind": "datasheet"
+        },
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "Outdoor NEMA Type 3R",
+          "source": "https://7534425.app.netsuite.com/core/media/media.nl?_xt=.pdf&c=7534425&h=FhEe93mXw8UrS32ILtnBNGPnF6Gfw-DTZL2OWnGPB7fCIfJp&id=10732925",
+          "kind": "datasheet"
+        },
+        {
+          "key": "frequency",
+          "label": "AC frequency",
+          "value": "60 Hz (56–63 Hz range)",
+          "source": "https://7534425.app.netsuite.com/core/media/media.nl?_xt=.pdf&c=7534425&h=FhEe93mXw8UrS32ILtnBNGPnF6Gfw-DTZL2OWnGPB7fCIfJp&id=10732925",
+          "kind": "datasheet"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "Outdoor NEMA Type 3R",
+          "source": "https://7534425.app.netsuite.com/core/media/media.nl?_xt=.pdf&c=7534425&h=FhEe93mXw8UrS32ILtnBNGPnF6Gfw-DTZL2OWnGPB7fCIfJp&id=10732925",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "Rated amps",
+        "Rated volts",
+        "Interrupt / breaking capacity",
+        "Poles"
+      ]
+    },
+    {
+      "id": "santan-solar-spr-e20-327-com-u",
+      "name": "Used SunPower 327W Solar Panel COM",
+      "category": "panels",
+      "sourceUrl": "https://www.santansolar.com/product/used-sunpower-327w-solar-panel-silver-framed/",
+      "added": [
+        {
+          "key": "model",
+          "label": "Model",
+          "value": "SPR-E20-327-COM",
+          "source": "https://es-media-prod.s3.amazonaws.com/media/components/panels/spec-sheets/sunpower-e-series-commercial-solar-panels-e20-327-com-datasheet-505701-revh.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "maxSystemVoltage",
+          "label": "Maximum system voltage",
+          "value": "1000V",
+          "source": "https://es-media-prod.s3.amazonaws.com/media/components/panels/spec-sheets/sunpower-e-series-commercial-solar-panels-e20-327-com-datasheet-505701-revh.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "maxSeriesFuse",
+          "label": "Maximum series fuse rating",
+          "value": "15 A",
+          "source": "https://es-media-prod.s3.amazonaws.com/media/components/panels/spec-sheets/sunpower-e-series-commercial-solar-panels-e20-327-com-datasheet-505701-revh.pdf",
+          "kind": "datasheet"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "voc",
+          "label": "Open-circuit voltage (Voc)",
+          "value": "64.9V",
+          "source": "https://es-media-prod.s3.amazonaws.com/media/components/panels/spec-sheets/sunpower-e-series-commercial-solar-panels-e20-327-com-datasheet-505701-revh.pdf",
+          "note": "Sourced exact-model specification"
+        },
+        {
+          "key": "vmp",
+          "label": "Maximum-power voltage (Vmp)",
+          "value": "54.7V",
+          "source": "https://es-media-prod.s3.amazonaws.com/media/components/panels/spec-sheets/sunpower-e-series-commercial-solar-panels-e20-327-com-datasheet-505701-revh.pdf",
+          "note": "Sourced exact-model specification"
+        },
+        {
+          "key": "imp",
+          "label": "Maximum-power current (Imp)",
+          "value": "5.98A",
+          "source": "https://es-media-prod.s3.amazonaws.com/media/components/panels/spec-sheets/sunpower-e-series-commercial-solar-panels-e20-327-com-datasheet-505701-revh.pdf",
+          "note": "Sourced exact-model specification"
+        },
+        {
+          "key": "isc",
+          "label": "Short-circuit current (Isc)",
+          "value": "6.46A",
+          "source": "https://es-media-prod.s3.amazonaws.com/media/components/panels/spec-sheets/sunpower-e-series-commercial-solar-panels-e20-327-com-datasheet-505701-revh.pdf",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "Face",
+        "Efficiency",
+        "Voc temperature coefficient",
+        "Vmp temperature coefficient",
+        "Power temperature coefficient",
+        "Isc temperature coefficient",
+        "Dimensions"
+      ]
+    },
+    {
+      "id": "santan-solar-tigo-490-00000-51",
+      "name": "Tigo RSS Transmitter Pure Signal Single Core Din Rail (no enclsoure)",
+      "category": "module-electronics",
+      "sourceUrl": "https://www.santansolar.com/product/tigo-rss-transmitter-pure-signal-single-core-din-rail-no-enclsoure/",
+      "added": [
+        {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "12 VDC input operating voltage for RSS Transmitter and RSSx with Pure Signal",
+          "source": "https://support.tigoenergy.com/hc/en-us/articles/4412295681555-Communication-Equipment-Power-Supply-Overview",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Rated amps",
+        "Rated volts",
+        "Maximum PV voltage",
+        "Conversion efficiency"
+      ]
+    },
+    {
+      "id": "santan-solar-tigo-ccatap-outdoor",
+      "name": "Tigo Cloud Connect Advanced – Data Logger Kit: TAP, Din Rail PS, Outdoor box (CCA TAP Kit)",
+      "category": "module-electronics",
+      "sourceUrl": "https://www.santansolar.com/product/tigo-cloud-connect-advanced-data-logger-kit-tap-din-rail-ps-outdoor-box-cca-tap-kit/",
+      "added": [
+        {
+          "key": "model",
+          "label": "Model",
+          "value": "348-00000-52",
+          "source": "https://support.tigoenergy.com/hc/en-us/articles/204333388-Description-of-Tigo-CCA-Kits",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Rated amps",
+        "Rated volts",
+        "Maximum PV voltage",
+        "Conversion efficiency",
+        "Communications"
+      ]
+    },
+    {
+      "id": "santan-solar-ts4-a-o-252-32",
+      "name": "Tigo TS4-A-0 725W 22A Module-level PV Optimizer, Monitoring and Rapid Shutdown",
+      "category": "module-electronics",
+      "sourceUrl": "https://www.santansolar.com/product/tigo-ts4-a-0-725w-22a-module-level-pv-optimizer-monitoring-and-rapid-shutdown/",
+      "added": [
+        {
+          "key": "model",
+          "label": "Model",
+          "value": "TS4-A-O 725",
+          "source": "https://support.tigoenergy.com/hc/en-us/articles/44321771832467-TS4-Compatibility-with-Bifacial-PV-Modules",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "maxPvWatts",
+          "label": "Maximum PV input power",
+          "value": "725 W",
+          "source": "https://support.tigoenergy.com/hc/en-us/articles/44321771832467-TS4-Compatibility-with-Bifacial-PV-Modules",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "maxPvIsc",
+          "label": "Maximum PV short-circuit current",
+          "value": "22 A",
+          "source": "https://support.tigoenergy.com/hc/en-us/articles/44321771832467-TS4-Compatibility-with-Bifacial-PV-Modules",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "ratedCurrent",
+          "label": "Rated current",
+          "value": "16 A",
+          "source": "https://support.tigoenergy.com/hc/en-us/articles/44321771832467-TS4-Compatibility-with-Bifacial-PV-Modules",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "16 A",
+          "source": "https://support.tigoenergy.com/hc/en-us/articles/44321771832467-TS4-Compatibility-with-Bifacial-PV-Modules"
+        }
+      ],
+      "remaining": [
+        "Rated volts",
+        "Maximum PV voltage",
+        "Conversion efficiency",
+        "Communications"
+      ]
+    },
+    {
+      "id": "santan-solar-ts4-a-f",
+      "name": "Tigo Rapid Shutdown TS4-A-F, 22A (Isc), 725W, 0.1m/1.2m Cable, MC4",
+      "category": "module-electronics",
+      "sourceUrl": "https://www.santansolar.com/product/tigo-rapid-shutdown-ts4-a-f-22a-isc-725w-0-1m-1-2m-cable-mc4/",
+      "added": [
+        {
+          "key": "model",
+          "label": "Model",
+          "value": "TS4-A-F 725",
+          "source": "https://support.tigoenergy.com/hc/en-us/articles/44321771832467-TS4-Compatibility-with-Bifacial-PV-Modules",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "maxPvWatts",
+          "label": "Maximum PV input power",
+          "value": "725 W",
+          "source": "https://support.tigoenergy.com/hc/en-us/articles/44321771832467-TS4-Compatibility-with-Bifacial-PV-Modules",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "maxPvIsc",
+          "label": "Maximum PV short-circuit current",
+          "value": "22 A",
+          "source": "https://support.tigoenergy.com/hc/en-us/articles/44321771832467-TS4-Compatibility-with-Bifacial-PV-Modules",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "ratedCurrent",
+          "label": "Rated current",
+          "value": "16 A",
+          "source": "https://support.tigoenergy.com/hc/en-us/articles/44321771832467-TS4-Compatibility-with-Bifacial-PV-Modules",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "12-80 V",
+          "source": "https://www.tigoenergy.com/product/ts4-a-f",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "16 A",
+          "source": "https://support.tigoenergy.com/hc/en-us/articles/44321771832467-TS4-Compatibility-with-Bifacial-PV-Modules"
+        }
+      ],
+      "remaining": [
+        "Rated volts",
+        "Maximum PV voltage",
+        "Conversion efficiency"
+      ]
+    },
+    {
+      "id": "santan-solar-eg4-16kw-indoor",
+      "name": "EG4 16KWH 48V 314Ah Wallmount Indoor LifePO4",
+      "category": "batteries",
+      "sourceUrl": "https://www.santansolar.com/product/eg4-16kwh-48v-314ah-wallmount-indoor-lifepo4/",
+      "added": [
+        {
+          "key": "cycleLife",
+          "label": "Cycle life (manufacturer conditions)",
+          "value": "10,000 cycles @ 0.5C, 25°C, 80% DoD (70% EOL capacity)",
+          "source": "https://eg4electronics.com/wp-content/uploads/2025/10/EG4-WallMount-314Ah-Indoor-Battery-Spec-Sheet.pdf",
+          "kind": "datasheet"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "Peak discharge current",
+        "Charge temperature",
+        "Discharge temperature",
+        "Dimensions"
+      ]
+    },
+    {
+      "id": "naz-865-1030-01",
+      "name": "Conext Battery Fuse Combiner Box 160A Fuses",
+      "category": "electrical",
+      "sourceUrl": "https://www.solar-electric.com/conext-battery-fuse-combiner-box-160a-fuses.html",
+      "added": [
+        {
+          "key": "voltage",
+          "label": "Nominal voltage",
+          "value": "24 / 48 V DC",
+          "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "ratedCurrent",
+          "label": "Rated current",
+          "value": "160 A",
+          "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "dimensions",
+          "label": "Dimensions",
+          "value": "16.3 × 10.7 × 8.0 cm (6.4 × 4.2 × 3.1 in)",
+          "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "weight",
+          "label": "Weight",
+          "value": "1.4 kg (3.1 lb)",
+          "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "mountType",
+          "label": "Mount type",
+          "value": "Wall-mount or flush-mount",
+          "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "operatingTemperature",
+          "label": "Operating temperature",
+          "value": "−20 to 70 °C",
+          "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "IP20 (IEC 60529)",
+          "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "certifications",
+          "label": "Listed certifications",
+          "value": "CE; EN/IEC 60947-1, EN/IEC 60947-3, IEC 60269-2-1",
+          "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+          "kind": "datasheet"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "160 A",
+          "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf"
+        },
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "IP20 (IEC 60529)",
+          "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "Rated volts",
+        "Interrupt / breaking capacity",
+        "Poles"
+      ]
+    },
+    {
+      "id": "naz-865-1031-01",
+      "name": "Conext Battery Fuse Combiner Box 250A Fuses",
+      "category": "electrical",
+      "sourceUrl": "https://www.solar-electric.com/conext-battery-fuse-combiner-box-250a-fuses.html",
+      "added": [
+        {
+          "key": "voltage",
+          "label": "Nominal voltage",
+          "value": "24 / 48 V DC",
+          "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "ratedCurrent",
+          "label": "Rated current",
+          "value": "250 A",
+          "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "dimensions",
+          "label": "Dimensions",
+          "value": "24.6 × 18.6 × 11.0 cm (9.7 × 7.3 × 4.3 in)",
+          "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "weight",
+          "label": "Weight",
+          "value": "3.6 kg (7.9 lb)",
+          "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "mountType",
+          "label": "Mount type",
+          "value": "Wall-mount or flush-mount",
+          "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "operatingTemperature",
+          "label": "Operating temperature",
+          "value": "−20 to 70 °C",
+          "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "IP20 (IEC 60529)",
+          "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "certifications",
+          "label": "Listed certifications",
+          "value": "CE; EN/IEC 60947-1, EN/IEC 60947-3, IEC 60269-2-1",
+          "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+          "kind": "datasheet"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated amps",
+          "value": "250 A",
+          "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf"
+        },
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "IP20 (IEC 60529)",
+          "source": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "Rated volts",
+        "Interrupt / breaking capacity",
+        "Poles"
+      ]
+    },
+    {
+      "id": "shopsolar-44678937837708",
+      "name": "EcoFlow DELTA 3 Max Plus – 2,048Wh / 3,000W Portable Power Station + Choose Custom Solar Panel Bundle Option | 5-Year Warranty | Complete Solar Kit — DELTA 3 MAX PLUS [Main Unit Only]",
+      "category": "all-in-one",
+      "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-max-plus?variant=44678937837708",
+      "added": [
+        {
+          "key": "model",
+          "label": "Model",
+          "value": "DELTA 3 Max Plus (2048Wh)",
+          "source": "https://www.ecoflow.com/us/delta-3-max-plus-portable-power-station/specs",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "chemistry",
+          "label": "Battery chemistry",
+          "value": "LFP (LiFePO4)",
+          "source": "https://www.ecoflow.com/us/delta-3-max-plus-portable-power-station/specs",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "surgeWatts",
+          "label": "Surge output (duration as published)",
+          "value": "6000 W",
+          "source": "https://www.ecoflow.com/us/delta-3-max-plus-portable-power-station/specs",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "maxPvWatts",
+          "label": "Maximum PV input power",
+          "value": "1000 W",
+          "source": "https://www.ecoflow.com/us/delta-3-max-plus-portable-power-station/specs",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "weight",
+          "label": "Weight",
+          "value": "22.1 ± 0.4 kg",
+          "source": "https://www.ecoflow.com/us/delta-3-max-plus-portable-power-station/specs",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "acChargeWatts",
+          "label": "AC charging input",
+          "value": "1800 W",
+          "source": "https://www.ecoflow.com/us/delta-3-max-plus-portable-power-station/specs",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "5 years (3-year standard plus 2-year extension with app registration)",
+          "source": "https://www.ecoflow.com/us/delta-3-max-plus-portable-power-station/specs",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "maxPvWatts",
+          "label": "PV input",
+          "value": "1 kW",
+          "source": "https://www.ecoflow.com/us/delta-3-max-plus-portable-power-station/specs",
+          "note": "Sourced exact-model specification"
+        },
+        {
+          "key": "surgeWatts",
+          "label": "Surge output (published duration)",
+          "value": "6000 W",
+          "source": "https://www.ecoflow.com/us/delta-3-max-plus-portable-power-station/specs",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "MPPT operating voltage range",
+        "Independent MPPT count",
+        "PV short-circuit current limit",
+        "Dimensions"
+      ]
+    },
+    {
+      "id": "shopsolar-44220308357260",
+      "name": "Anker SOLIX F3000 Portable Power Station | 3,072Wh / 3,600W | 2,400W Solar Input | Expandable to 12,288Wh | 5-Year Warranty — F3000 [Main Unit Only]",
+      "category": "all-in-one",
+      "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3000-portable-power-station?variant=44220308357260",
+      "added": [
+        {
+          "key": "model",
+          "label": "Model",
+          "value": "Anker SOLIX F3000",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "capacityKwh",
+          "label": "Energy capacity",
+          "value": "3,072 Wh",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "capacityAh",
+          "label": "Rated capacity",
+          "value": "60 Ah",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "chemistry",
+          "label": "Battery chemistry",
+          "value": "LFP",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "acChargeWatts",
+          "label": "AC charging input",
+          "value": "1800 W max with AC charging cable",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "maxPvWatts",
+          "label": "Maximum PV input power",
+          "value": "2400 W total",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "maxPvVoltage",
+          "label": "Maximum PV input voltage",
+          "value": "165 V max (high-PV input supports 11–165 V; low-PV input supports 11–60 V)",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "maxMpptCurrent",
+          "label": "Maximum MPPT input current",
+          "value": "17 A max per PV input",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "outputWatts",
+          "label": "Rated AC output power",
+          "value": "3600 W total",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "acOutput",
+          "label": "AC output voltage",
+          "value": "120 V",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "surgeWatts",
+          "label": "Surge output (duration as published)",
+          "value": "7200 W AC surge power; no duration stated",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "dimensions",
+          "label": "Dimensions",
+          "value": "25.6 × 11.8 × 14.8 in (651 × 300 × 377 mm)",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "weight",
+          "label": "Weight",
+          "value": "91.5 lb (41.5 kg)",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "warranty",
+          "label": "Product warranty",
+          "value": "5 years",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "outputWatts",
+          "label": "AC output",
+          "value": "3.6 kW",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "note": "3600 W total"
+        },
+        {
+          "key": "maxPvWatts",
+          "label": "PV input",
+          "value": "2.4 kW",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "note": "2400 W total"
+        },
+        {
+          "key": "maxMpptCurrent",
+          "label": "PV amps",
+          "value": "17 A max per PV input",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "note": "Sourced exact-model specification"
+        },
+        {
+          "key": "maxPvVoltage",
+          "label": "Maximum PV voltage",
+          "value": "165 V max (high-PV input supports 11–165 V; low-PV input supports 11–60 V)",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "note": "Sourced exact-model specification"
+        },
+        {
+          "key": "acOutput",
+          "label": "AC output voltage",
+          "value": "120 V",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "note": "Sourced exact-model specification"
+        },
+        {
+          "key": "surgeWatts",
+          "label": "Surge output (published duration)",
+          "value": "7200 W AC surge power; no duration stated",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "note": "Sourced exact-model specification"
+        },
+        {
+          "key": "dimensions",
+          "label": "Dimensions",
+          "value": "25.6 × 11.8 × 14.8 in (651 × 300 × 377 mm)",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "MPPT operating voltage range",
+        "Independent MPPT count",
+        "PV short-circuit current limit"
+      ]
+    },
+    {
+      "id": "santan-solar-a1782111",
+      "name": "Anker SOLIX F3000 Portable Power Station 3,072Wh/3,600W Essential Home Backup – Black",
+      "category": "all-in-one",
+      "sourceUrl": "https://www.santansolar.com/product/f3000-portable-power-station/",
+      "added": [
+        {
+          "key": "model",
+          "label": "Model",
+          "value": "Anker SOLIX F3000",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "acChargeWatts",
+          "label": "AC charging input",
+          "value": "1800 W max with AC charging cable",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "maxPvWatts",
+          "label": "Maximum PV input power",
+          "value": "2400 W total",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "maxPvVoltage",
+          "label": "Maximum PV input voltage",
+          "value": "165 V max (high-PV input supports 11–165 V; low-PV input supports 11–60 V)",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "maxMpptCurrent",
+          "label": "Maximum MPPT input current",
+          "value": "17 A max per PV input",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "outputWatts",
+          "label": "Rated AC output power",
+          "value": "3600 W total",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "acOutput",
+          "label": "AC output voltage",
+          "value": "120 V",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "surgeWatts",
+          "label": "Surge output (duration as published)",
+          "value": "7200 W AC surge power; no duration stated",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "outputWatts",
+          "label": "AC output",
+          "value": "3.6 kW",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "note": "3600 W total"
+        },
+        {
+          "key": "maxPvWatts",
+          "label": "PV input",
+          "value": "2.4 kW",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "note": "2400 W total"
+        },
+        {
+          "key": "maxMpptCurrent",
+          "label": "PV amps",
+          "value": "17 A max per PV input",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "note": "Sourced exact-model specification"
+        },
+        {
+          "key": "maxPvVoltage",
+          "label": "Maximum PV voltage",
+          "value": "165 V max (high-PV input supports 11–165 V; low-PV input supports 11–60 V)",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "note": "Sourced exact-model specification"
+        },
+        {
+          "key": "acOutput",
+          "label": "AC output voltage",
+          "value": "120 V",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "note": "Sourced exact-model specification"
+        },
+        {
+          "key": "surgeWatts",
+          "label": "Surge output (published duration)",
+          "value": "7200 W AC surge power; no duration stated",
+          "source": "https://www.ankersolix.com/products/f3000",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "MPPT operating voltage range",
+        "Independent MPPT count",
+        "PV short-circuit current limit"
+      ]
+    }
+  ],
+  "holds": [
+    {
+      "worker": 4,
+      "recordIndex": 2,
+      "reason": "Prior current limits conflict with current manufacturer; hold whole identity until revision reconciled."
+    },
+    {
+      "id": "eg4-6000xp",
+      "url": "https://eg4electronics.com/wp-content/uploads/2024/10/EG4-6000XP-Manual.pdf",
+      "reason": "Saved stronger specification identity differs from available raw snapshot; preserve prior intact pending current identity reconciliation"
+    },
+    {
+      "id": "eg4-flexboss21",
+      "url": "https://eg4electronics.com/products/flexboss21",
+      "reason": "Saved stronger specification identity differs from available raw snapshot; preserve prior intact pending current identity reconciliation"
+    }
+  ]
+}

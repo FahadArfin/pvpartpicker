@@ -1,0 +1,1793 @@
+[
+  {
+    "url": "https://www.ecoflow.com/us/ocean-pro/specs",
+    "model": "EcoFlow OCEAN Pro Battery (EF-BP-10)",
+    "label": "Official EcoFlow per-unit battery datasheet, one-page table",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-22T11:35:04.381Z",
+    "rows": [
+      [
+        "Weight",
+        "245.8 lb / 111.5 kg (top cover excluded: 3.7 kg / 8.15 lb)"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-44808958967948"
+    ],
+    "expected": {
+      "shopsolar-44808958967948": {
+        "anchors": {},
+        "sourceUrl": "https://shopsolarkits.com/products/ecoflow-ocean-pro-10kwh-lfp-solar-battery?variant=44808958967948",
+        "category": "batteries",
+        "name": "EcoFlow OCEAN PRO 10kWh Battery Module | LFP | IP67 Rated | UL 9540A/B | Stackable to 80kWh | Residential & Backup Power"
+      }
+    },
+    "reviewNote": "Exact EF-BP-10 battery unit; datasheet explicitly labels the technical values per unit. The 63 A value is a combined maximum continuous input/output current (26.32 A maximum per unit); it does not identify standalone charge and discharge current limits, so those remain unfilled. No Ah value is stated on this datasheet. Independent review: Official OCEAN Pro battery specification identifies EF-BP-10 and reports battery module weight 111.5 kg; sale listing is the matching EF-BP-10 battery. Other submitted rows either duplicate candidate evidence, are not recognized importer dimensions, or describe bidirectional current rather than charge/discharge current.; research worker 4, record 1."
+  },
+  {
+    "url": "https://eg4electronics.com/wp-content/uploads/2025/10/EG4-WallMount-314Ah-Indoor-Battery-Spec-Sheet.pdf",
+    "model": "EG4 WallMount 314Ah Indoor (WM-48-314-IN-XX / WM48314INXX)",
+    "label": "Official EG4 spec sheet v1.0.4; electrical table page 2, environment/mechanical page 2-3",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-22T11:35:04.381Z",
+    "rows": [
+      [
+        "Weight",
+        "293.2 lb (133 kg)"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-45192132460684"
+    ],
+    "expected": {
+      "shopsolar-45192132460684": {
+        "name": "EG4 314Ah / 16kWh Indoor WallMount Battery - 48V Self-Heating | Smart BMS | UL 1973 | 10-Year Warranty",
+        "sourceUrl": "https://shopsolarkits.com/products/eg4-16kwh-indoor-wallmount-battery?variant=45192132460684",
+        "category": "batteries",
+        "anchors": {
+          "voltage": 48,
+          "capacityAh": 314,
+          "capacityKwh": 16
+        }
+      }
+    },
+    "reviewNote": "Exact one-unit 314Ah indoor WallMount model; manufacturer model numbers WM-48-314-IN-XX / WM48314INXX. The sheet separates charge and discharge current: max continuous charge 157 A, max continuous discharge 200 A, with 157 A recommended for each. Peak power 12.8 kW is explicitly 3 seconds and is not a peak current. The PDF and official product page identify current model/variant. Independent review: Official V1.0.4 PDF identifies model WM 48 314 IN XX / WM48314INXX and states weight 293.2 lb on p.3. ShopSolar candidate lacks a prior weight. The separate Santan candidate has a conflicting existing 320 lb value and is held. PDF table was visually reviewed (p.3).; research worker 4, record 3."
+  },
+  {
+    "url": "https://eg4electronics.com/wp-content/uploads/2025/10/EG4-WallMount-314Ah-Indoor-Battery-Spec-Sheet.pdf",
+    "model": "EG4 WallMount 314Ah Indoor (WM-48-314-IN-XX / WM48314INXX)",
+    "label": "Official EG4 spec sheet v1.0.4; electrical table page 2, environment/mechanical page 2-3",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-22T11:35:04.381Z",
+    "rows": [
+      [
+        "Cycle Life",
+        "10,000 cycles @ 0.5C, 25°C, 80% DoD (70% EOL capacity)"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-45192132460684"
+    ],
+    "expected": {
+      "shopsolar-45192132460684": {
+        "name": "EG4 314Ah / 16kWh Indoor WallMount Battery - 48V Self-Heating | Smart BMS | UL 1973 | 10-Year Warranty",
+        "sourceUrl": "https://shopsolarkits.com/products/eg4-16kwh-indoor-wallmount-battery?variant=45192132460684",
+        "category": "batteries",
+        "anchors": {
+          "voltage": 48,
+          "capacityAh": 314,
+          "capacityKwh": 16
+        }
+      }
+    },
+    "reviewNote": "Exact one-unit 314Ah indoor WallMount model; manufacturer model numbers WM-48-314-IN-XX / WM48314INXX. The sheet separates charge and discharge current: max continuous charge 157 A, max continuous discharge 200 A, with 157 A recommended for each. Peak power 12.8 kW is explicitly 3 seconds and is not a peak current. The PDF and official product page identify current model/variant. Independent review: Official V1.0.4 PDF model matches both listings and states 10,000 cycles at specified conditions, with 70% EOL capacity criterion on p.3. Candidate evidence for both lacks cycle life. PDF table visually reviewed (p.3).; research worker 4, record 3."
+  },
+  {
+    "url": "https://eg4electronics.com/wp-content/uploads/2025/10/EG4-WallMount-314Ah-Indoor-Battery-Spec-Sheet.pdf",
+    "model": "EG4 WallMount 314Ah Indoor (WM-48-314-IN-XX / WM48314INXX)",
+    "label": "Official EG4 spec sheet v1.0.4; electrical table page 2, environment/mechanical page 2-3",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-22T11:35:04.381Z",
+    "rows": [
+      [
+        "Cycle Life",
+        "10,000 cycles @ 0.5C, 25°C, 80% DoD (70% EOL capacity)"
+      ]
+    ],
+    "productIds": [
+      "santan-solar-eg4-16kw-indoor"
+    ],
+    "expected": {
+      "santan-solar-eg4-16kw-indoor": {
+        "name": "EG4 16KWH 48V 314Ah Wallmount Indoor LifePO4",
+        "sourceUrl": "https://www.santansolar.com/product/eg4-16kwh-48v-314ah-wallmount-indoor-lifepo4/",
+        "category": "batteries",
+        "anchors": {
+          "voltage": 48,
+          "capacityAh": 314,
+          "capacityKwh": 16
+        }
+      }
+    },
+    "reviewNote": "Exact one-unit 314Ah indoor WallMount model; manufacturer model numbers WM-48-314-IN-XX / WM48314INXX. The sheet separates charge and discharge current: max continuous charge 157 A, max continuous discharge 200 A, with 157 A recommended for each. Peak power 12.8 kW is explicitly 3 seconds and is not a peak current. The PDF and official product page identify current model/variant. Independent review: Official V1.0.4 PDF model matches both listings and states 10,000 cycles at specified conditions, with 70% EOL capacity criterion on p.3. Candidate evidence for both lacks cycle life. PDF table visually reviewed (p.3).; research worker 4, record 3."
+  },
+  {
+    "url": "https://www.eco-worthy.com/products/12v-280ah-lifepo4-lithium-battery",
+    "model": "ECO-WORTHY EnergyRock 12V 280Ah Metal Case",
+    "label": "Manufacturer product technical-specifications table, one-battery variant; SKU GW-L13080202162-1",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.381Z",
+    "rows": [
+      [
+        "Terminal Type",
+        "M8"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-51565801734284"
+    ],
+    "expected": {
+      "shopsolar-51565801734284": {
+        "anchors": {
+          "voltage": 12,
+          "capacityAh": 280,
+          "batteryKind": "Battery modules",
+          "chemistry": "LiFePO4"
+        },
+        "sourceUrl": "https://shopsolarkits.com/products/eco-worthy-12v-280ah-metal-case-lifepo4-lithium-battery?variant=51565801734284",
+        "category": "batteries",
+        "name": "Eco-Worthy 12V 280Ah Metal Case LiFePO4 Lithium Battery With Bluetooth and low-temp protection"
+      }
+    },
+    "reviewNote": "Exact 1 Pack variant; manufacturer SKU GW-L13080202162-1. Specifications table says max continuous charge/discharge 200A/200A and standard charge/discharge 140A/140A. Table has a generic “Peak Current 220A/10S” without direction; kept it out of peak discharge current and left peak unclassified. Exact source page identity and single-pack contents checked. Independent review: Manufacturer product details for the selected 12V 280Ah metal-case variant specify M8 terminal and metal case. These are absent from candidate raw evidence and map to connector/material. Electrical, temperature, dimensions, and weight rows are already represented in the candidate.; research worker 4, record 4."
+  },
+  {
+    "url": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller",
+    "model": "Wanderer 10A PWM",
+    "label": "Wanderer 10A manufacturer table",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.381Z",
+    "rows": [
+      [
+        "Operating temperature",
+        "−25 to 45 °C"
+      ]
+    ],
+    "productIds": [
+      "renogy-44894241521779"
+    ],
+    "expected": {
+      "renogy-44894241521779": {
+        "name": "Wanderer 10A PWM Charge Controller — Controller Only",
+        "sourceUrl": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller?variant=44894241521779",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "PWM",
+          "chargeCurrentA": 10
+        }
+      }
+    },
+    "reviewNote": "Exact 10A Wanderer family specification table. PV input ratings stay distinct from rated battery charge current. Independent review: Official Wanderer 10A PWM specification table gives operating range −25 to 45°C for this controller. It applies to controller-only and controller-plus-Bluetooth bundle. Candidate already has this operating range for BT1 listing renogy-43178657513587, but not for the two newer variants. Storage temperature is not accepted as operating temperature.; research worker 6, record 3."
+  },
+  {
+    "url": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller",
+    "model": "Wanderer 10A PWM",
+    "label": "Wanderer 10A manufacturer table",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.381Z",
+    "rows": [
+      [
+        "Operating temperature",
+        "−25 to 45 °C"
+      ]
+    ],
+    "productIds": [
+      "renogy-44894241554547"
+    ],
+    "expected": {
+      "renogy-44894241554547": {
+        "name": "Wanderer 10A PWM Charge Controller — 🔥 W/ Bluetooth Module",
+        "sourceUrl": "https://www.renogy.com/products/wanderer-10a-pwm-charge-controller?variant=44894241554547",
+        "category": "charging",
+        "anchors": {
+          "controllerType": "PWM",
+          "chargeCurrentA": 10
+        }
+      }
+    },
+    "reviewNote": "Exact 10A Wanderer family specification table. PV input ratings stay distinct from rated battery charge current. Independent review: Official Wanderer 10A PWM specification table gives operating range −25 to 45°C for this controller. It applies to controller-only and controller-plus-Bluetooth bundle. Candidate already has this operating range for BT1 listing renogy-43178657513587, but not for the two newer variants. Storage temperature is not accepted as operating temperature.; research worker 6, record 3."
+  },
+  {
+    "url": "https://www.renogy.com/products/400w-n-type-portable-solar-panel-blanket-with-4-in-1-extension-cable-for-power-stations",
+    "model": "RSP400SB-US",
+    "label": "Product technical details",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.382Z",
+    "rows": [
+      [
+        "Cell efficiency",
+        "25%"
+      ]
+    ],
+    "productIds": [
+      "renogy-45421915504755"
+    ],
+    "expected": {
+      "renogy-45421915504755": {
+        "name": "400W N-Type Portable Solar Panel Blanket with 4-in-1 Extension Cable for Power Stations",
+        "sourceUrl": "https://www.renogy.com/products/400w-n-type-portable-solar-panel-blanket-with-4-in-1-extension-cable-for-power-stations?variant=45421915504755",
+        "category": "panels",
+        "anchors": {
+          "watts": 400,
+          "cellType": "N-type"
+        }
+      }
+    },
+    "reviewNote": "Renogy labels the N-type cell efficiency as 25%; treated as cell efficiency, not module efficiency. Independent review: Official Renogy product page identifies the 400W N-type blanket and says its N-type cells have 25% efficiency. This is cell efficiency, not module efficiency.; research worker 1, record 0."
+  },
+  {
+    "url": "https://www.renogy.com/products/renogy-400w-solar-panel-blanket",
+    "model": "RSP400SB-US",
+    "label": "Product technical details",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.382Z",
+    "rows": [
+      [
+        "Cell efficiency",
+        "25%"
+      ]
+    ],
+    "productIds": [
+      "renogy-43249909530739"
+    ],
+    "expected": {
+      "renogy-43249909530739": {
+        "name": "200/400W N-Type Portable Solar Panel Blanket — 🔥400W",
+        "sourceUrl": "https://www.renogy.com/products/renogy-400w-solar-panel-blanket?variant=43249909530739",
+        "category": "panels",
+        "anchors": {
+          "watts": 400,
+          "cellType": "N-type"
+        }
+      }
+    },
+    "reviewNote": "Renogy labels the N-type cell efficiency as 25%; treated as cell efficiency, not module efficiency. Independent review: Official product page has a 400W selected variant and states 25% efficiency for its N-type cells. The raw 400W anchor distinguishes the selected option.; research worker 1, record 1."
+  },
+  {
+    "url": "https://learn.mangopower.com/products/mango-power-e/specifications/",
+    "model": "MANGO POWER E",
+    "label": "Manufacturer specifications table: general, battery, input, and inverter/output sections",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.382Z",
+    "rows": [
+      [
+        "MPPT voltage range",
+        "60 V to 150 V solar charging input interval"
+      ],
+      [
+        "Frequency",
+        "60 Hz"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-54750743920780"
+    ],
+    "expected": {
+      "shopsolar-54750743920780": {
+        "name": "Mango Power E - 3.5kWh Battery / 3kW Output - Home Backup and Portable Power Station",
+        "sourceUrl": "https://shopsolarkits.com/products/mango-power-e?variant=54750743920780",
+        "category": "all-in-one",
+        "anchors": {
+          "capacityKwh": 3.5,
+          "stationType": "Integrated power station"
+        }
+      }
+    },
+    "reviewNote": "Exact main-unit model confirmed by manufacturer specifications. Battery capacity, AC inverter output, and PV charging limits are transcribed as separate ratings; no expansion-kit or battery-pack ratings are attributed to the station. Independent review: Official Mango Power E specifications page directly identifies the model and lists these values. The 60–150 V row reports the manufacturer's solar charging input interval; it is not treated as an inferred electrical rating beyond its stated interval.; research worker 7, record 0."
+  },
+  {
+    "url": "https://www.pecron.com/en-jp/products/pecron-e3800lfp-portable-power-station-4200w-3840wh?_fid=7c0ec6243&_pos=4&_ss=c",
+    "model": "E3800LFP",
+    "label": "Manufacturer product specifications: E3800LFP main unit, battery, AC output, and separate solar input ports",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.382Z",
+    "rows": [
+      [
+        "Model",
+        "E3800LFP"
+      ],
+      [
+        "Battery capacity",
+        "3840 Wh"
+      ],
+      [
+        "Cell chemistry",
+        "LiFePO4"
+      ],
+      [
+        "Rated AC output power",
+        "4200 W"
+      ],
+      [
+        "AC charging input",
+        "3200 W max with 30 A cable; 1800 W with 15 A cable"
+      ],
+      [
+        "Warranty",
+        "3+2 years"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46266467025036"
+    ],
+    "expected": {
+      "shopsolar-46266467025036": {
+        "name": "Pecron E3800LFP Portable Power Station | 4,200W 3,840Wh LiFePO4 | 3,000W Solar + 3,200W AC Fast Charging | UPS | Expandable | 5-Year Warranty — Pecron E3800LFP [Main Unit Only]",
+        "sourceUrl": "https://shopsolarkits.com/products/pecron-e3800lfp-power-station?variant=46266467025036",
+        "category": "all-in-one",
+        "anchors": {
+          "stationType": "Integrated power station",
+          "capacityKwh": 3.84
+        }
+      }
+    },
+    "reviewNote": "Exact main-unit model confirmed by manufacturer specifications. Battery capacity, AC inverter output, and PV charging limits are transcribed as separate ratings; no expansion-kit or battery-pack ratings are attributed to the station. Independent review: Official Pecron page identifies E3800LFP and separately reports the two XT60-M inputs and the low-voltage DC5521 input. Battery capacity, single-unit output, dimensions and warranty are also listed on the page. No expansion-battery or paired-station value was applied.; research worker 7, record 1."
+  },
+  {
+    "url": "https://www.ecoflow.com/us/delta-3-max-plus-portable-power-station/specs",
+    "model": "EcoFlow DELTA 3 Max Plus (2048Wh)",
+    "label": "Manufacturer specifications page: single DELTA 3 Max Plus station",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.382Z",
+    "rows": [
+      [
+        "Model",
+        "DELTA 3 Max Plus (2048Wh)"
+      ],
+      [
+        "Cell chemistry",
+        "LFP (LiFePO4)"
+      ],
+      [
+        "AC charging input",
+        "1800 W"
+      ],
+      [
+        "Maximum PV input power",
+        "1000 W"
+      ],
+      [
+        "Surge output",
+        "6000 W"
+      ],
+      [
+        "Weight",
+        "22.1 ± 0.4 kg"
+      ],
+      [
+        "Warranty",
+        "5 years (3-year standard plus 2-year extension with app registration)"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-44678937837708"
+    ],
+    "expected": {
+      "shopsolar-44678937837708": {
+        "name": "EcoFlow DELTA 3 Max Plus – 2,048Wh / 3,000W Portable Power Station + Choose Custom Solar Panel Bundle Option | 5-Year Warranty | Complete Solar Kit — DELTA 3 MAX PLUS [Main Unit Only]",
+        "sourceUrl": "https://shopsolarkits.com/products/ecoflow-delta-3-max-plus?variant=44678937837708",
+        "category": "all-in-one",
+        "anchors": {
+          "stationType": "Integrated power station",
+          "capacityKwh": 2.048
+        }
+      }
+    },
+    "reviewNote": "Exact main-unit model confirmed by manufacturer specifications. Battery capacity, AC inverter output, and PV charging limits are transcribed as separate ratings; no expansion-kit or battery-pack ratings are attributed to the station. Independent review: Official EcoFlow US specifications page identifies DELTA 3 Max Plus and directly lists the selected station's capacity, 1000 W PV input, 3000 W AC output, 6000 W surge and physical ratings.; research worker 7, record 2."
+  },
+  {
+    "url": "https://www.ankersolix.com/products/f3000",
+    "model": "Anker SOLIX F3000 Portable Power Station",
+    "label": "Manufacturer product specifications: F3000 main unit input/output table and FAQ; expansion battery and Double Voltage Hub ratings excluded",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.382Z",
+    "rows": [
+      [
+        "Model",
+        "Anker SOLIX F3000"
+      ],
+      [
+        "Battery capacity",
+        "3,072 Wh"
+      ],
+      [
+        "Battery capacity",
+        "60 Ah"
+      ],
+      [
+        "Cell chemistry",
+        "LFP"
+      ],
+      [
+        "AC charging input",
+        "1800 W max with AC charging cable"
+      ],
+      [
+        "Maximum PV input power",
+        "2400 W total"
+      ],
+      [
+        "Maximum PV input voltage",
+        "165 V max (high-PV input supports 11–165 V; low-PV input supports 11–60 V)"
+      ],
+      [
+        "Maximum operating input current",
+        "17 A max per PV input"
+      ],
+      [
+        "Rated AC output power",
+        "3600 W total"
+      ],
+      [
+        "AC output voltage",
+        "120 V"
+      ],
+      [
+        "Surge output",
+        "7200 W AC surge power; no duration stated"
+      ],
+      [
+        "SurgePad power",
+        "4860 W"
+      ],
+      [
+        "Dimensions",
+        "25.6 × 11.8 × 14.8 in (651 × 300 × 377 mm)"
+      ],
+      [
+        "Weight",
+        "91.5 lb (41.5 kg)"
+      ],
+      [
+        "Warranty",
+        "5 years"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-44220308357260"
+    ],
+    "expected": {
+      "shopsolar-44220308357260": {
+        "name": "Anker SOLIX F3000 Portable Power Station | 3,072Wh / 3,600W | 2,400W Solar Input | Expandable to 12,288Wh | 5-Year Warranty — F3000 [Main Unit Only]",
+        "sourceUrl": "https://shopsolarkits.com/products/anker-solix-f3000-portable-power-station?variant=44220308357260",
+        "category": "all-in-one",
+        "anchors": {
+          "stationType": "Integrated power station",
+          "capacityKwh": 3.072
+        }
+      }
+    },
+    "reviewNote": "Exact main-unit model confirmed by manufacturer specifications. Battery capacity, AC inverter output, and PV charging limits are transcribed as separate ratings; no expansion-kit or battery-pack ratings are attributed to the station. Independent review: Official Anker SOLIX page identifies F3000 and distinguishes its main unit from expansion batteries and Double Voltage Hub. It separately lists high-PV, low-PV, and non-PV DC input limits; the 240 V hub output is not assigned to the standalone unit.; research worker 7, record 3."
+  },
+  {
+    "url": "https://www.ankersolix.com/products/f3000",
+    "model": "Anker SOLIX F3000 Portable Power Station",
+    "label": "Manufacturer product specifications: F3000 main unit input/output table and FAQ; expansion battery and Double Voltage Hub ratings excluded",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.382Z",
+    "rows": [
+      [
+        "Model",
+        "Anker SOLIX F3000"
+      ],
+      [
+        "AC charging input",
+        "1800 W max with AC charging cable"
+      ],
+      [
+        "Maximum PV input power",
+        "2400 W total"
+      ],
+      [
+        "Maximum PV input voltage",
+        "165 V max (high-PV input supports 11–165 V; low-PV input supports 11–60 V)"
+      ],
+      [
+        "Maximum operating input current",
+        "17 A max per PV input"
+      ],
+      [
+        "Rated AC output power",
+        "3600 W total"
+      ],
+      [
+        "AC output voltage",
+        "120 V"
+      ],
+      [
+        "Surge output",
+        "7200 W AC surge power; no duration stated"
+      ],
+      [
+        "SurgePad power",
+        "4860 W"
+      ]
+    ],
+    "productIds": [
+      "santan-solar-a1782111"
+    ],
+    "expected": {
+      "santan-solar-a1782111": {
+        "name": "Anker SOLIX F3000 Portable Power Station 3,072Wh/3,600W Essential Home Backup – Black",
+        "sourceUrl": "https://www.santansolar.com/product/f3000-portable-power-station/",
+        "category": "all-in-one",
+        "anchors": {
+          "color": "Black",
+          "stationType": "Integrated power station",
+          "capacityKwh": 3.072
+        }
+      }
+    },
+    "reviewNote": "Exact main-unit model confirmed by manufacturer specifications. Battery capacity, AC inverter output, and PV charging limits are transcribed as separate ratings; no expansion-kit or battery-pack ratings are attributed to the station. Independent review: Official Anker SOLIX page identifies F3000 and distinguishes its main unit from expansion batteries and Double Voltage Hub. It separately lists high-PV, low-PV, and non-PV DC input limits; the 240 V hub output is not assigned to the standalone unit.; research worker 7, record 3."
+  },
+  {
+    "url": "https://www.renogy.com/products/renogy-5ft-3-0awg-anderson-adapter-cable-anderson-sb350-ring-lug",
+    "model": "RPC0530SR-35",
+    "label": "Renogy 5FT 3/0AWG Anderson Adapter Cable specifications",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.382Z",
+    "rows": [
+      [
+        "Rated voltage",
+        "600 V"
+      ],
+      [
+        "Compatibility",
+        "For adding a non-REGO inverter to the REGO system; product description says 2 kW-3 kW"
+      ]
+    ],
+    "productIds": [
+      "renogy-43178645323891"
+    ],
+    "expected": {
+      "renogy-43178645323891": {
+        "name": "Renogy 5FT 3/0AWG Anderson Adapter Cable Anderson SB350 - Ring Lug",
+        "sourceUrl": "https://www.renogy.com/products/renogy-5ft-3-0awg-anderson-adapter-cable-anderson-sb350-ring-lug?variant=43178645323891",
+        "category": "wiring",
+        "anchors": {
+          "gauge": "3/0 AWG",
+          "lengthFt": 5
+        }
+      }
+    },
+    "reviewNote": "Exact manufacturer listing and spec block transcribed; pair is the package quantity. No current rating was listed. Independent review: Official Renogy page SKU RPC0530SR-35 matches the raw 5 ft, 3/0 AWG listing. It specifies the SB350 and 5/16-in lugs, 600 V, temperature range and tinned copper. The page says package includes one pair, so this identity is a pair; do not multiply per-cable ratings.; research worker 8, record 0."
+  },
+  {
+    "url": "https://www.renogy.com/products/copper-battery-interconnect-cable-for-5-16-in-lugs",
+    "model": "RNG-BATTERYCB",
+    "label": "Renogy Copper Battery Interconnect Cable listing",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.382Z",
+    "rows": [
+      [
+        "Wire gauge",
+        "1 AWG"
+      ],
+      [
+        "Operating temperature",
+        "221°F dry; 167°F wet"
+      ]
+    ],
+    "productIds": [
+      "renogy-43178670817395"
+    ],
+    "expected": {
+      "renogy-43178670817395": {
+        "name": "Copper Battery Interconnect Cable for 5/16 in Lugs — 12In 1AWG",
+        "sourceUrl": "https://www.renogy.com/products/copper-battery-interconnect-cable-for-5-16-in-lugs?variant=43178670817395",
+        "category": "wiring",
+        "anchors": {
+          "gauge": "1 AWG",
+          "wireMaterial": "Copper"
+        }
+      }
+    },
+    "reviewNote": "US listing search excerpt confirms product identity/variant and 5/16 in ring terminals; official Renogy listing describes tinned copper and temperature. No voltage/current rating published in evidence reviewed. Independent review: Official Renogy variant selector and 12 in 1 AWG section match the raw variant; manufacturer specifies one cable, 5/16-in rings, tinned copper and dry/wet temperature limits. No current or voltage row was added.; research worker 8, record 2."
+  },
+  {
+    "url": "https://www.renogy.com/products/solar-connectors-for-solar-panels-5-pairs-male-female",
+    "model": "RNG-CONNECTOR",
+    "label": "Renogy Solar Connectors for Solar Panels 5 Pairs Male & Female",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.383Z",
+    "rows": [
+      [
+        "Rated voltage",
+        "1000 VDC"
+      ],
+      [
+        "Wire gauge",
+        "10 AWG or 12 AWG"
+      ],
+      [
+        "Operating temperature",
+        "-40°F to +194°F"
+      ],
+      [
+        "Warranty",
+        "1-year material warranty"
+      ]
+    ],
+    "productIds": [
+      "renogy-43178678648947"
+    ],
+    "expected": {
+      "renogy-43178678648947": {
+        "name": "Solar Connectors for Solar Panels 5 Pairs Male & Female",
+        "sourceUrl": "https://www.renogy.com/products/solar-connectors-for-solar-panels-5-pairs-male-female?variant=43178678648947",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "reviewNote": "Exact manufacturer product spec block. Do not assign connector pair cable lengths or conductor cable material: listing specifies contact material, not cable conductor. Independent review: Official Renogy page and spec table identify the exact five-pair product and list these contact, current, voltage, wire-size-range, temperature and enclosure values. Contact material remains distinct from cable conductor material.; research worker 8, record 3."
+  },
+  {
+    "url": "https://www.renogy.com/products/solar-panel-mounting-curved-z-bracket-set-of-4",
+    "model": "RNG-MTS-ACB-US",
+    "label": "Manufacturer product specification",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.383Z",
+    "rows": [
+      [
+        "Product warranty",
+        "1 year material warranty"
+      ]
+    ],
+    "productIds": [
+      "renogy-43178705551475"
+    ],
+    "expected": {
+      "renogy-43178705551475": {
+        "name": "Solar Panel Mounting Curved Z Bracket -- Set of 4",
+        "sourceUrl": "https://www.renogy.com/products/solar-panel-mounting-curved-z-bracket-set-of-4?variant=43178705551475",
+        "category": "mounting",
+        "anchors": {}
+      }
+    },
+    "reviewNote": "Manufacturer page identifies curved bracket set and stated panel guidance; the listed variant is a single set of four. No dimensions stated in page text. Independent review: Official Renogy page identifies the curved MTS-ACB bracket, states heavy-duty aluminum alloy and one-year material warranty.; research worker 10, record 3."
+  },
+  {
+    "url": "https://tamaracksolar.com/products/pole-mounting-system/side-of-pole-standard-sizes/",
+    "model": "Tamarack Solar UNI-SA Single Arm Pole Mount",
+    "label": "Manufacturer product specification",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.383Z",
+    "rows": [
+      [
+        "Product warranty",
+        "10 years on structure"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46347986010252"
+    ],
+    "expected": {
+      "shopsolar-46347986010252": {
+        "name": "Tamarack Solar UNI-SA Single-Arm Side-of-Pole Mount | 2\"–4\" Sch 40 Poles | 90 MPH Rated | 5000-Series Aluminum | 10-Year Warranty — 14\" Single-Arm",
+        "sourceUrl": "https://shopsolarkits.com/products/tamarack-uni-sa-single-arm-side-pole-mount?variant=46347986010252",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Ground"
+        }
+      }
+    },
+    "reviewNote": "Manufacturer page covers UNI-SA family. Exact variant rail length is in listing model (14, 21.5 or 26 in); source does not give product overall dimensions. Wind speed is included only as the manufacturer-published product claim, not as structural advice. Independent review: Official Tamarack UNI-SA family page specifies 5000-series aluminum and a 10-year structural warranty; the exact candidate is the 14-inch arm variant.; research worker 10, record 4."
+  },
+  {
+    "url": "https://tamaracksolar.com/products/pole-mounting-system/side-of-pole-standard-sizes/",
+    "model": "Tamarack Solar UNI-SA Single Arm Pole Mount",
+    "label": "Manufacturer product specification",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.384Z",
+    "rows": [
+      [
+        "Product warranty",
+        "10 years on structure"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46347986043020"
+    ],
+    "expected": {
+      "shopsolar-46347986043020": {
+        "name": "Tamarack Solar UNI-SA Single-Arm Side-of-Pole Mount | 2\"–4\" Sch 40 Poles | 90 MPH Rated | 5000-Series Aluminum | 10-Year Warranty — 21.5\" Single-Arm",
+        "sourceUrl": "https://shopsolarkits.com/products/tamarack-uni-sa-single-arm-side-pole-mount?variant=46347986043020",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Ground"
+        }
+      }
+    },
+    "reviewNote": "Manufacturer page covers UNI-SA family. Exact variant rail length is in listing model (14, 21.5 or 26 in); source does not give product overall dimensions. Wind speed is included only as the manufacturer-published product claim, not as structural advice. Independent review: Official Tamarack UNI-SA family page specifies 5000-series aluminum and a 10-year structural warranty; the exact candidate is the 21.5-inch arm variant.; research worker 10, record 5."
+  },
+  {
+    "url": "https://tamaracksolar.com/products/pole-mounting-system/side-of-pole-standard-sizes/",
+    "model": "Tamarack Solar UNI-SA Single Arm Pole Mount",
+    "label": "Manufacturer product specification",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.384Z",
+    "rows": [
+      [
+        "Product warranty",
+        "10 years on structure"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46347986075788"
+    ],
+    "expected": {
+      "shopsolar-46347986075788": {
+        "name": "Tamarack Solar UNI-SA Single-Arm Side-of-Pole Mount | 2\"–4\" Sch 40 Poles | 90 MPH Rated | 5000-Series Aluminum | 10-Year Warranty — 26\" Single-Arm",
+        "sourceUrl": "https://shopsolarkits.com/products/tamarack-uni-sa-single-arm-side-pole-mount?variant=46347986075788",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Ground"
+        }
+      }
+    },
+    "reviewNote": "Manufacturer page covers UNI-SA family. Exact variant rail length is in listing model (14, 21.5 or 26 in); source does not give product overall dimensions. Wind speed is included only as the manufacturer-published product claim, not as structural advice. Independent review: Official Tamarack UNI-SA family page specifies 5000-series aluminum and a 10-year structural warranty; the exact candidate is the 26-inch arm variant.; research worker 10, record 6."
+  },
+  {
+    "url": "https://www.renogy.com/products/solar-panel-to-charge-controller-adaptor-kit",
+    "model": "RNG-AK",
+    "label": "Renogy Solar Adaptor Kit specification table",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.384Z",
+    "rows": [
+      [
+        "Wire gauge",
+        "12 AWG"
+      ],
+      [
+        "Rated voltage",
+        "600/1000 V"
+      ],
+      [
+        "Operating temperature",
+        "-40°F to +185°F"
+      ],
+      [
+        "Connector",
+        "Solar connectors on one end; exposed wire on the other; hard plastic connectors"
+      ],
+      [
+        "IP rating",
+        "IP65"
+      ]
+    ],
+    "productIds": [
+      "renogy-43178671865971"
+    ],
+    "expected": {
+      "renogy-43178671865971": {
+        "name": "Solar Panel to Charge Controller Adaptor Kit — 10FT / 12AWG",
+        "sourceUrl": "https://www.renogy.com/products/solar-panel-to-charge-controller-adaptor-kit?variant=43178671865971",
+        "category": "wiring",
+        "anchors": {
+          "controllerType": "Solar controller",
+          "gauge": "12 AWG",
+          "lengthFt": 10,
+          "wireMaterial": "Copper"
+        }
+      }
+    },
+    "reviewNote": "Source table gives repeated rows for each gauge/length; only transcribed the exact 10 ft 12 AWG variant shared by listed IDs. The 20 ft candidate is not included because rows are variant-specific; omit or add separate record if importing. Independent review: Exact 10 ft / 12 AWG table and categorized raw anchors rechecked in worker-8/identity-check.json.; research worker 8, record 1."
+  },
+  {
+    "url": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+    "model": "865-1030-01",
+    "label": "Electrical specifications, fuse specifications and mechanical specifications",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-22T11:35:04.385Z",
+    "rows": [
+      [
+        "Rated voltage",
+        "24 / 48 V DC"
+      ],
+      [
+        "Rated current",
+        "160 A"
+      ],
+      [
+        "Dimensions",
+        "16.3 × 10.7 × 8.0 cm (6.4 × 4.2 × 3.1 in)"
+      ],
+      [
+        "Weight",
+        "1.4 kg (3.1 lb)"
+      ],
+      [
+        "Mounting type",
+        "Wall-mount or flush-mount"
+      ],
+      [
+        "Operating temperature",
+        "−20 to 70 °C"
+      ],
+      [
+        "Ingress protection",
+        "IP20 (IEC 60529)"
+      ],
+      [
+        "Certifications",
+        "CE; EN/IEC 60947-1, EN/IEC 60947-3, IEC 60269-2-1"
+      ]
+    ],
+    "productIds": [
+      "naz-865-1030-01"
+    ],
+    "expected": {
+      "naz-865-1030-01": {
+        "name": "Conext Battery Fuse Combiner Box 160A Fuses",
+        "sourceUrl": "https://www.solar-electric.com/conext-battery-fuse-combiner-box-160a-fuses.html",
+        "category": "electrical",
+        "anchors": {
+          "SKU:": "865-1030-01",
+          "electricalType": "Boxes & combiners"
+        }
+      }
+    },
+    "reviewNote": "Schneider Electric datasheet table identifies part number 865-1030-01 as Conext Battery Fuse Combiner Box 160. Ratings and fuse configuration are the 160 A column only. The datasheet does not state this model’s pole count or fuse interrupt capacity. Independent review: Model 865-1030-01 confirmed against the Schneider Electric two-model table. 160 A is the box/fuse nominal current, not a fuse interrupt rating; the source gives no interrupt rating or pole count.; research worker 9, record 0."
+  },
+  {
+    "url": "https://solar.se.com/eu/wp-content/uploads/sites/4/2021/10/Conext-Battery-Fuse-Combiner-Box-Datasheet.pdf",
+    "model": "865-1031-01",
+    "label": "Electrical specifications, fuse specifications and mechanical specifications",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-22T11:35:04.385Z",
+    "rows": [
+      [
+        "Rated voltage",
+        "24 / 48 V DC"
+      ],
+      [
+        "Rated current",
+        "250 A"
+      ],
+      [
+        "Dimensions",
+        "24.6 × 18.6 × 11.0 cm (9.7 × 7.3 × 4.3 in)"
+      ],
+      [
+        "Weight",
+        "3.6 kg (7.9 lb)"
+      ],
+      [
+        "Mounting type",
+        "Wall-mount or flush-mount"
+      ],
+      [
+        "Operating temperature",
+        "−20 to 70 °C"
+      ],
+      [
+        "Ingress protection",
+        "IP20 (IEC 60529)"
+      ],
+      [
+        "Certifications",
+        "CE; EN/IEC 60947-1, EN/IEC 60947-3, IEC 60269-2-1"
+      ]
+    ],
+    "productIds": [
+      "naz-865-1031-01"
+    ],
+    "expected": {
+      "naz-865-1031-01": {
+        "name": "Conext Battery Fuse Combiner Box 250A Fuses",
+        "sourceUrl": "https://www.solar-electric.com/conext-battery-fuse-combiner-box-250a-fuses.html",
+        "category": "electrical",
+        "anchors": {
+          "SKU:": "865-1031-01",
+          "electricalType": "Boxes & combiners"
+        }
+      }
+    },
+    "reviewNote": "Schneider Electric datasheet table identifies part number 865-1031-01 as Conext Battery Fuse Combiner Box 250. Ratings and fuse configuration are the 250 A column only. The datasheet does not state fuse interrupt capacity. Independent review: Model 865-1031-01 confirmed against the Schneider Electric 250 A column. 250 A is nominal current, not a fuse interrupt rating; no interrupt rating or pole count is established.; research worker 9, record 1."
+  },
+  {
+    "url": "https://www.renogy.com/products/350abattery-switch",
+    "model": "RPD350BS-US",
+    "label": "Key features and product description",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.385Z",
+    "rows": [
+      [
+        "Rated current",
+        "350 A continuous"
+      ],
+      [
+        "Connector",
+        "3/8 in-16 terminal studs; accepts battery cables up to 4/0 AWG"
+      ],
+      [
+        "Compatibility",
+        "Single battery to a single load group; single-circuit ON/OFF battery switch"
+      ]
+    ],
+    "productIds": [
+      "renogy-43178656694387"
+    ],
+    "expected": {
+      "renogy-43178656694387": {
+        "name": "350A Battery Switch",
+        "sourceUrl": "https://www.renogy.com/products/350abattery-switch?variant=43178656694387",
+        "category": "electrical",
+        "anchors": {
+          "electricalType": "Other electrical"
+        }
+      }
+    },
+    "reviewNote": "Renogy states 350 A continuous and maximum 48 V DC for SKU RPD350BS-US. The source does not publish interrupt capacity, enclosure protection rating, or an explicit pole count. Independent review: Renogy US page identifies SKU RPD350BS-US, continuous 350 A, maximum 48 V DC, 3/8-16 stud, up to 4/0 AWG, and a single-circuit battery switch. No AC rating or interrupt capacity is stated.; research worker 9, record 2."
+  },
+  {
+    "url": "https://www.renogy.com/products/12-way-battery-terminal-distribution-block-pair",
+    "model": "ROA03TB-US",
+    "label": "Key features and product specifications",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.386Z",
+    "rows": [
+      [
+        "Rated current",
+        "400 A current-carrying capacity per terminal"
+      ],
+      [
+        "Wire gauge",
+        "8 AWG to 4/0 AWG"
+      ],
+      [
+        "Connector",
+        "12 cable positions per terminal: six hole-holders and six threaded studs"
+      ],
+      [
+        "Material",
+        "Zinc alloy"
+      ]
+    ],
+    "productIds": [
+      "renogy-43178656727155"
+    ],
+    "expected": {
+      "renogy-43178656727155": {
+        "name": "12-Way Battery Terminal Distribution Block Pair",
+        "sourceUrl": "https://www.renogy.com/products/12-way-battery-terminal-distribution-block-pair?variant=43178656727155",
+        "category": "electrical",
+        "anchors": {
+          "electricalType": "Other electrical"
+        }
+      }
+    },
+    "reviewNote": "Renogy FAQ explicitly gives a 400 A current-carrying capacity for a single terminal and the supported wire range. Voltage, interrupt capacity, pole count, and ingress rating are not published on the matched page. Independent review: Renogy US FAQ confirms 12 cable positions per terminal and 400 A current carrying capacity per terminal. This is not an AC or DC voltage rating.; research worker 9, record 3."
+  },
+  {
+    "url": "https://www.renogy.com/products/midnite-solar-combiner-box-510-0006",
+    "model": "510-0006 (MidNite Solar MNPV6)",
+    "label": "Description and specifications",
+    "kind": "retailer",
+    "checkedAt": "2026-10-22T11:35:04.386Z",
+    "rows": [
+      [
+        "Rated current",
+        "120 A plus busbar; separate 80 A fuse busbar"
+      ],
+      [
+        "Ingress protection",
+        "NEMA Type 3R rainproof enclosure"
+      ]
+    ],
+    "productIds": [
+      "renogy-43178682515571"
+    ],
+    "expected": {
+      "renogy-43178682515571": {
+        "name": "MidNite Solar Combiner Box 510-0006",
+        "sourceUrl": "https://www.renogy.com/products/midnite-solar-combiner-box-510-0006?variant=43178682515571",
+        "category": "electrical",
+        "anchors": {
+          "electricalType": "Boxes & combiners"
+        }
+      }
+    },
+    "reviewNote": "Renogy listing for MidNite model 510-0006 identifies it as an enclosure and separately lists the 120 A plus busbar and 80 A fuse busbar. Supported OCPD voltage describes accepted devices, not a voltage rating for included breakers (none are included). Independent review: MidNite Solar MNPV6 source confirms 120 A breaker busbar, 80 A fuse busbar, physical dimensions/weight, and supported device arrangements. These are busbar ratings and compatible breaker/fuse-holder ratings, not a 600 VDC enclosure rating or a complete-box interrupt rating.; research worker 9, record 4."
+  },
+  {
+    "url": "https://7534425.app.netsuite.com/core/media/media.nl?_xt=.pdf&c=7534425&h=FhEe93mXw8UrS32ILtnBNGPnF6Gfw-DTZL2OWnGPB7fCIfJp&id=10732925",
+    "model": "X-IQ-AM1-240-6C",
+    "label": "Key specifications, electrical specifications and mechanical data",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-22T11:35:04.386Z",
+    "rows": [
+      [
+        "Rated voltage",
+        "240 V AC ±20% line-to-line; split-phase (L1-L2 240 V, L-N 120 V, 180°)"
+      ],
+      [
+        "Ingress protection",
+        "Outdoor NEMA Type 3R"
+      ],
+      [
+        "AC frequency",
+        "60 Hz (56–63 Hz range)"
+      ]
+    ],
+    "productIds": [
+      "santan-solar-enphase-x-iq-am1-240-6c"
+    ],
+    "expected": {
+      "santan-solar-enphase-x-iq-am1-240-6c": {
+        "name": "Enphase IQ Combiner 6C with IQ Gateway",
+        "sourceUrl": "https://www.santansolar.com/product/enphase-iq-combiner-6c-with-iq-gateway/",
+        "category": "electrical",
+        "anchors": {
+          "electricalType": "Boxes & combiners"
+        }
+      }
+    },
+    "reviewNote": "Enphase IQ Combiner 6C datasheet DSH-00585-2.0 names exact model X-IQ-AM1-240-6C. Electrical values retain the datasheet ambient-temperature conditions and distinguish branch, aggregate and internal busbar ratings. The sheet gives maximum short-circuit current (10 kA), not an interrupt rating for the combiner, so no interrupt field is transcribed. Independent review: Model X-IQ-AM1-240-6C, 240 VAC split-phase, 60 Hz, 100 A PV busbar, 200 A DER busbar, NEMA 3R, dimensions, and weight are supported by Enphase documentation. Enphase's current DSH-00585-4.0 (2025-08-25) is newer than the submitted DSH-00585-2.0 source; the latest readable summary lists an 80 A maximum PV current but omits the older source's temperature derating. Temperature-conditioned operating-current and breaker-limit rows are held below pending comparison to current revision and exact ordering SKU.; research worker 9, record 5."
+  },
+  {
+    "url": "https://www.renogy.com/products/monitoring-screen-for-smart-lithium-battery-series",
+    "model": "Monitoring Screen for Smart Lithium Battery Series",
+    "label": "Official manufacturer product specification table",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.387Z",
+    "rows": [
+      [
+        "Compatibility",
+        "Renogy 48V 50Ah Smart Lithium Battery; 12V 100Ah Smart Lithium Battery; 12V 100Ah Smart Lithium Battery with self-heating; batteries purchased before 2020-04-15 may have compatibility issues"
+      ]
+    ],
+    "productIds": [
+      "renogy-43178715283571"
+    ],
+    "expected": {
+      "renogy-43178715283571": {
+        "name": "Monitoring Screen for Smart Lithium Battery Series",
+        "sourceUrl": "https://www.renogy.com/products/monitoring-screen-for-smart-lithium-battery-series?variant=43178715283571",
+        "category": "monitoring",
+        "anchors": {
+          "monitorType": "Energy monitor / meter"
+        }
+      }
+    },
+    "reviewNote": "Exact Renogy screen; manufacturer table and explicit supported Smart Lithium battery variants reviewed. Listing variant has no further hardware distinction. Independent review: Renogy US page confirms screen supply/electrical/mechanical values and limits compatibility to Renogy Smart Lithium batteries (including 48 V 50 Ah and 12 V 100 Ah versions). Its page warns that batteries purchased before 2020-04-15 can have compatibility issues; the submitted compatibility list is valid for named battery models, subject to that date caveat.; research worker 11, record 0."
+  },
+  {
+    "url": "https://www.renogy.com/products/500a-battery-monitor-with-shunt",
+    "model": "500A Battery Monitor With Shunt (RBM500-US)",
+    "label": "Official manufacturer product specification table",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.387Z",
+    "rows": [
+      [
+        "Rated Current",
+        "500 A maximum"
+      ],
+      [
+        "Compatibility",
+        "Lead acid (AGM/GEL), LiFePO4, lithium-ion, nickel-metal hydride"
+      ],
+      [
+        "Warranty",
+        "2 years material and workmanship"
+      ]
+    ],
+    "productIds": [
+      "renogy-43178696573043"
+    ],
+    "expected": {
+      "renogy-43178696573043": {
+        "name": "500A Battery Monitor With Shunt",
+        "sourceUrl": "https://www.renogy.com/products/500a-battery-monitor-with-shunt?variant=43178696573043",
+        "category": "monitoring",
+        "anchors": {
+          "monitorType": "Battery monitor"
+        }
+      }
+    },
+    "reviewNote": "Exact Renogy RBM500-US specification table; mechanical dimensions and mass apply to LCD interface only; 500 A is shunt maximum. Independent review: SKU RBM500-US page confirms 10–120 V working voltage, 500 A maximum shunt current, accuracies, LCD dimensions/weight, cable lengths, operating range and chemistry support. The 500 A rating is the included shunt/monitor maximum, not an inverter or load rating.; research worker 11, record 1."
+  },
+  {
+    "url": "https://www.renogy.com/products/monitoring-screen-for-dc-dc-mppt-battery-charger-series",
+    "model": "RMS-DCDC Monitoring Screen",
+    "label": "Official manufacturer product specification table",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.388Z",
+    "rows": [
+      [
+        "Communications",
+        "RJ45 (RS485 protocol)"
+      ],
+      [
+        "Compatibility",
+        "Renogy RBC50D1S-G1 and RBC30D1S DC-DC MPPT onboard battery chargers"
+      ]
+    ],
+    "productIds": [
+      "renogy-43178699128947"
+    ],
+    "expected": {
+      "renogy-43178699128947": {
+        "name": "Monitoring Screen for DC-DC MPPT Battery Charger Series",
+        "sourceUrl": "https://www.renogy.com/products/monitoring-screen-for-dc-dc-mppt-battery-charger-series?variant=43178699128947",
+        "category": "monitoring",
+        "anchors": {
+          "monitorType": "Energy monitor / meter"
+        }
+      }
+    },
+    "reviewNote": "Exact RMS-DCDC screen; official compatibility list limits it to RBC50D1S-G1 and RBC30D1S; specs transcribed from manufacturer table. Independent review: Renogy US page explicitly limits this RMS-DCDC screen to RBC50D1S-G1 and RBC30D1S, and confirms its 5 VDC supply, RS485/RJ45, accuracy, size, weight, and 5 m wire. Compatibility must stay restricted to those charger models.; research worker 11, record 2."
+  },
+  {
+    "url": "https://www.renogy.com/products/battery-temperature-sensor-for-renogy-solar-charge-controllers",
+    "model": "RTSCC-G1 Battery Temperature Sensor",
+    "label": "Official manufacturer product specification table",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.388Z",
+    "rows": [
+      [
+        "Warranty",
+        "1 year material and workmanship"
+      ]
+    ],
+    "productIds": [
+      "renogy-43178709876851"
+    ],
+    "expected": {
+      "renogy-43178709876851": {
+        "name": "Battery Temperature Sensor for Renogy Solar Charge Controllers",
+        "sourceUrl": "https://www.renogy.com/products/battery-temperature-sensor-for-renogy-solar-charge-controllers?variant=43178709876851",
+        "category": "monitoring",
+        "anchors": {
+          "monitorType": "Sensor"
+        }
+      }
+    },
+    "reviewNote": "The manufacturer explicitly identifies model RTSCC-G1, supported controller variants, and states it is not compatible with lithium batteries. Rated range, probe size, cable, gauge, max voltage, warranty transcribed. Independent review: Renogy US page confirms RTSCC-G1 temperature range, 300 V maximum voltage rating, probe/cable, and named controllers. The same page explicitly says the sensor is not compatible with lithium batteries; controller compatibility must not be read as lithium-battery compatibility.; research worker 11, record 3."
+  },
+  {
+    "url": "https://support.tigoenergy.com/hc/en-us/articles/4412295681555-Communication-Equipment-Power-Supply-Overview",
+    "model": "Tigo RSS Transmitter / RSSx with Pure Signal power requirements",
+    "label": "Manufacturer technical support",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.388Z",
+    "rows": [
+      [
+        "Operating voltage",
+        "12 VDC input operating voltage for RSS Transmitter and RSSx with Pure Signal"
+      ]
+    ],
+    "productIds": [
+      "santan-solar-tigo-490-00000-51"
+    ],
+    "expected": {
+      "santan-solar-tigo-490-00000-51": {
+        "name": "Tigo RSS Transmitter Pure Signal Single Core Din Rail (no enclsoure)",
+        "sourceUrl": "https://www.santansolar.com/product/tigo-rss-transmitter-pure-signal-single-core-din-rail-no-enclsoure/",
+        "category": "module-electronics",
+        "anchors": {
+          "moduleFunction": "Shutdown transmitter"
+        }
+      }
+    },
+    "reviewNote": "The manufacturer article explicitly groups RSS Transmitter and RSSx PST for the 12 VDC device input; the listed supply is a bundle offering and is not asserted to be included in this seller SKU. Independent review: 12 VDC is the RSS Transmitter/RSSx device input. Keep it distinct from any AC input and DC output rating of a separate power supply.; research worker 12, record 1."
+  },
+  {
+    "url": "https://support.tigoenergy.com/hc/en-us/articles/204333388-Description-of-Tigo-CCA-Kits",
+    "model": "348-00000-52 CCA Outdoor Kit with DIN Rail PS",
+    "label": "Manufacturer kit contents",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.388Z",
+    "rows": [
+      [
+        "Model",
+        "348-00000-52"
+      ]
+    ],
+    "productIds": [
+      "santan-solar-tigo-ccatap-outdoor"
+    ],
+    "expected": {
+      "santan-solar-tigo-ccatap-outdoor": {
+        "name": "Tigo Cloud Connect Advanced – Data Logger Kit: TAP, Din Rail PS, Outdoor box (CCA TAP Kit)",
+        "sourceUrl": "https://www.santansolar.com/product/tigo-cloud-connect-advanced-data-logger-kit-tap-din-rail-ps-outdoor-box-cca-tap-kit/",
+        "category": "module-electronics",
+        "anchors": {
+          "monitorType": "Gateway / communications",
+          "moduleFunction": "Shutdown gateway / access point"
+        }
+      }
+    },
+    "reviewNote": "Tigo lists these exact parts under CCA Outdoor Kit with DIN Rail PS, P/N 348-00000-52; listing title matches the outdoor enclosure, DIN rail supply, CCA and TAP contents. Independent review: Tigo Help Center identifies outdoor CCA kit part number 348-00000-52 and the submitted contents. No kit electrical rating or dimensions were asserted.; research worker 12, record 2."
+  },
+  {
+    "url": "https://support.tigoenergy.com/hc/en-us/articles/44321771832467-TS4-Compatibility-with-Bifacial-PV-Modules",
+    "model": "Tigo TS4-A-O 725W",
+    "label": "Manufacturer current-rating table",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.389Z",
+    "rows": [
+      [
+        "Model",
+        "TS4-A-O 725"
+      ],
+      [
+        "Maximum input power",
+        "725 W"
+      ],
+      [
+        "Maximum short circuit current (Isc)",
+        "22 A"
+      ],
+      [
+        "Maximum operating current (Imp)",
+        "16 A"
+      ]
+    ],
+    "productIds": [
+      "santan-solar-ts4-a-o-252-32"
+    ],
+    "expected": {
+      "santan-solar-ts4-a-o-252-32": {
+        "name": "Tigo TS4-A-0 725W 22A Module-level PV Optimizer, Monitoring and Rapid Shutdown",
+        "sourceUrl": "https://www.santansolar.com/product/tigo-ts4-a-0-725w-22a-module-level-pv-optimizer-monitoring-and-rapid-shutdown/",
+        "category": "module-electronics",
+        "anchors": {
+          "watts": 725,
+          "moduleFunction": "Optimizer + rapid shutdown"
+        }
+      }
+    },
+    "reviewNote": "The current-rating table distinguishes TS4-A-O 725 from TS4-A-O legacy 700 W (15 A) and gives maximum Isc/Imp for the 725 W model. No 700 W values were applied. Independent review: Tigo's current table explicitly lists TS4-A-O 725 as 725 W max power, 22 A max Isc, and 16 A max Imp. These are 725 W generation values; do not transfer to legacy TS4-A-O models rated up to 700 W.; research worker 12, record 3."
+  },
+  {
+    "url": "https://support.tigoenergy.com/hc/en-us/articles/44321771832467-TS4-Compatibility-with-Bifacial-PV-Modules",
+    "model": "Tigo TS4-A-F 725W",
+    "label": "Manufacturer current-rating table",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.389Z",
+    "rows": [
+      [
+        "Model",
+        "TS4-A-F 725"
+      ],
+      [
+        "Maximum input power",
+        "725 W"
+      ],
+      [
+        "Maximum short circuit current (Isc)",
+        "22 A"
+      ],
+      [
+        "Maximum operating current (Imp)",
+        "16 A"
+      ]
+    ],
+    "productIds": [
+      "santan-solar-ts4-a-f"
+    ],
+    "expected": {
+      "santan-solar-ts4-a-f": {
+        "name": "Tigo Rapid Shutdown TS4-A-F, 22A (Isc), 725W, 0.1m/1.2m Cable, MC4",
+        "sourceUrl": "https://www.santansolar.com/product/tigo-rapid-shutdown-ts4-a-f-22a-isc-725w-0-1m-1-2m-cable-mc4/",
+        "category": "module-electronics",
+        "anchors": {
+          "watts": 725,
+          "moduleFunction": "Rapid shutdown"
+        }
+      }
+    },
+    "reviewNote": "The Tigo table identifies TS4-A-F 725 separately and lists its maximum power, Isc and Imp. It does not borrow current values from earlier 700 W units. Independent review: Tigo's current table explicitly lists TS4-A-F 725 as 725 W max power, 22 A max Isc, and 16 A max Imp. These are 725 W generation values; do not transfer to legacy TS4-A-F models rated up to 700 W.; research worker 12, record 5."
+  },
+  {
+    "url": "https://www.tigoenergy.com/product/ts4-a-f",
+    "model": "Tigo TS4-A-F 725W",
+    "label": "Manufacturer product page",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:35:04.389Z",
+    "rows": [
+      [
+        "Operating voltage range",
+        "12-80 V"
+      ]
+    ],
+    "productIds": [
+      "santan-solar-ts4-a-f"
+    ],
+    "expected": {
+      "santan-solar-ts4-a-f": {
+        "name": "Tigo Rapid Shutdown TS4-A-F, 22A (Isc), 725W, 0.1m/1.2m Cable, MC4",
+        "sourceUrl": "https://www.santansolar.com/product/tigo-rapid-shutdown-ts4-a-f-22a-isc-725w-0-1m-1-2m-cable-mc4/",
+        "category": "module-electronics",
+        "anchors": {
+          "watts": 725,
+          "moduleFunction": "Rapid shutdown"
+        }
+      }
+    },
+    "reviewNote": "Tigo’s TS4-A-F page states 12–80 V, up to 22 A, up to 725 W, PLC, and 25-year warranty; the 725 W datasheet is separately linked on the product page. Independent review: Tigo 725 W TS4-A-F page confirms 12–80 V, 725 W, and PLC. The unqualified 'up to 22 A' marketing row is held as ambiguous between current metrics; use explicit max Isc 22 A / max Imp 16 A from record 5.; research worker 12, record 6."
+  },
+  {
+    "url": "https://es-media-prod.s3.amazonaws.com/media/components/panels/spec-sheets/sunpower-e-series-commercial-solar-panels-e20-327-com-datasheet-505701-revh.pdf",
+    "model": "SPR-E20-327-COM",
+    "label": "SunPower E-Series Commercial Solar Panels datasheet, document 505701 Rev H (September 2017)",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-22T11:35:04.390Z",
+    "rows": [
+      [
+        "Model",
+        "SPR-E20-327-COM"
+      ],
+      [
+        "Nominal Power (Pnom)",
+        "327 W"
+      ],
+      [
+        "Rated Voltage (Vmpp)",
+        "54.7V"
+      ],
+      [
+        "Rated Current (Impp)",
+        "5.98A"
+      ],
+      [
+        "Open-Circuit Voltage (Voc)",
+        "64.9V"
+      ],
+      [
+        "Short-Circuit Current (Isc)",
+        "6.46A"
+      ],
+      [
+        "Max. System Voltage",
+        "1000V"
+      ],
+      [
+        "Maximum Series Fuse",
+        "15 A"
+      ]
+    ],
+    "productIds": [
+      "santan-solar-spr-e20-327-com-u"
+    ],
+    "expected": {
+      "santan-solar-spr-e20-327-com-u": {
+        "name": "Used SunPower 327W Solar Panel COM",
+        "sourceUrl": "https://www.santansolar.com/product/used-sunpower-327w-solar-panel-silver-framed/",
+        "category": "panels",
+        "anchors": {
+          "watts": 327,
+          "technology": "Back contact",
+          "technologySource": "https://www.sec.gov/Archives/edgar/data/867773/000086777313000012/spwr_12302012x10-k.htm"
+        }
+      }
+    },
+    "reviewNote": "Exact model is identified by each SanTan listing SKU and its linked SunPower E20-327-COM datasheet. Ratings and dimensions are per module; the pallet listing contains 20 modules, so no pack totals were entered. Datasheet page 2 table was visually checked. The product page separately shows 41 lb in electrical bullets and 47 lb in attribute metadata; datasheet says 41 lb, retained as document evidence. The source labels voltage/current temperature coefficients generically, so they were retained verbatim and not mapped to Voc/Isc; no Vmp coefficient or NOCT electrical ratings were found. Independent review: Accepted exact-module STC ratings only. Manufacturer Rev H visually reviewed on page 2; its 327-COM table reads 54.7 V, 5.98 A, 64.9 V, 6.46 A. Both SanTan listings carry the exact SKU family and their per-module bullets independently show the same values (single listing: https://www.santansolar.com/product/used-sunpower-327w-solar-panel-silver-framed/; pallet: https://www.santansolar.com/product/used-sunpower-327w-solar-panel-com-pallet-of-20/). Baseline pallet panelRatings contain the same numeric values as 54.7V / 5.98A / 64.9V / 6.46A; preliminary-delta conflicts are formatting-only on these rows, so retain baseline source/value strings. Pallet dimensions and 950 lb weight are shipment-level and remain untouched; do not add the datasheet's 41 lb / module and module dimensions over them. Do not add efficiency or Pmax temperature coefficient: Rev H gives 21.4% and −0.35%/°C while the older Rev F sheet gives 20.3% and −0.38%/°C, and the used listings do not identify a sheet revision. The generic voltage/current coefficient rows are not assigned to Voc/Isc. Ratings are per panel, not pallet totals.; research worker 2, record 0."
+  },
+  {
+    "url": "https://es-media-prod.s3.amazonaws.com/media/components/panels/spec-sheets/sunpower-e-series-commercial-solar-panels-e20-327-com-datasheet-505701-revh.pdf",
+    "model": "SPR-E20-327-COM",
+    "label": "SunPower E-Series Commercial Solar Panels datasheet, document 505701 Rev H (September 2017)",
+    "kind": "datasheet",
+    "checkedAt": "2026-10-22T11:35:04.390Z",
+    "rows": [
+      [
+        "Model",
+        "SPR-E20-327-COM"
+      ],
+      [
+        "Nominal Power (Pnom)",
+        "327 W"
+      ],
+      [
+        "Maximum Series Fuse",
+        "15 A"
+      ]
+    ],
+    "productIds": [
+      "santan-solar-spr-e20-327-com-u-lot20"
+    ],
+    "expected": {
+      "santan-solar-spr-e20-327-com-u-lot20": {
+        "name": "Used SunPower 327W Solar Panel COM – Pallet of 20",
+        "sourceUrl": "https://www.santansolar.com/product/used-sunpower-327w-solar-panel-com-pallet-of-20/",
+        "category": "panels",
+        "anchors": {
+          "watts": 327,
+          "technology": "Back contact",
+          "technologySource": "https://www.sec.gov/Archives/edgar/data/867773/000086777313000012/spwr_12302012x10-k.htm"
+        }
+      }
+    },
+    "reviewNote": "Exact model is identified by each SanTan listing SKU and its linked SunPower E20-327-COM datasheet. Ratings and dimensions are per module; the pallet listing contains 20 modules, so no pack totals were entered. Datasheet page 2 table was visually checked. The product page separately shows 41 lb in electrical bullets and 47 lb in attribute metadata; datasheet says 41 lb, retained as document evidence. The source labels voltage/current temperature coefficients generically, so they were retained verbatim and not mapped to Voc/Isc; no Vmp coefficient or NOCT electrical ratings were found. Independent review: Accepted exact-module STC ratings only. Manufacturer Rev H visually reviewed on page 2; its 327-COM table reads 54.7 V, 5.98 A, 64.9 V, 6.46 A. Both SanTan listings carry the exact SKU family and their per-module bullets independently show the same values (single listing: https://www.santansolar.com/product/used-sunpower-327w-solar-panel-silver-framed/; pallet: https://www.santansolar.com/product/used-sunpower-327w-solar-panel-com-pallet-of-20/). Baseline pallet panelRatings contain the same numeric values as 54.7V / 5.98A / 64.9V / 6.46A; preliminary-delta conflicts are formatting-only on these rows, so retain baseline source/value strings. Pallet dimensions and 950 lb weight are shipment-level and remain untouched; do not add the datasheet's 41 lb / module and module dimensions over them. Do not add efficiency or Pmax temperature coefficient: Rev H gives 21.4% and −0.35%/°C while the older Rev F sheet gives 20.3% and −0.38%/°C, and the used listings do not identify a sheet revision. The generic voltage/current coefficient rows are not assigned to Voc/Isc. Ratings are per panel, not pallet totals.; research worker 2, record 0."
+  },
+  {
+    "url": "https://tamaracksolar.com/warranty/",
+    "model": "Tamarack Solar UNI-PGRM pole mounts",
+    "label": "Manufacturer limited warranty",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:31:21.809Z",
+    "rows": [
+      [
+        "Product warranty",
+        "10 years"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46352342450316"
+    ],
+    "expected": {
+      "shopsolar-46352342450316": {
+        "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 1 Module / 1 Post / 38 - 72 in",
+        "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46352342450316",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Ground"
+        }
+      }
+    },
+    "reviewNote": "Official Tamarack warranty page explicitly lists UNI-PGRM among pole mount products covered for 10 years."
+  },
+  {
+    "url": "https://tamaracksolar.com/warranty/",
+    "model": "Tamarack Solar UNI-PGRM pole mounts",
+    "label": "Manufacturer limited warranty",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:31:21.809Z",
+    "rows": [
+      [
+        "Product warranty",
+        "10 years"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46358273228940"
+    ],
+    "expected": {
+      "shopsolar-46358273228940": {
+        "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 1 Module / 1 Post / 72 - 96 in",
+        "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273228940",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Ground"
+        }
+      }
+    },
+    "reviewNote": "Official Tamarack warranty page explicitly lists UNI-PGRM among pole mount products covered for 10 years."
+  },
+  {
+    "url": "https://tamaracksolar.com/warranty/",
+    "model": "Tamarack Solar UNI-PGRM pole mounts",
+    "label": "Manufacturer limited warranty",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:31:21.809Z",
+    "rows": [
+      [
+        "Product warranty",
+        "10 years"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46358273261708"
+    ],
+    "expected": {
+      "shopsolar-46358273261708": {
+        "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 2 Module / 1 Post / 38 - 72 in",
+        "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273261708",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Ground"
+        }
+      }
+    },
+    "reviewNote": "Official Tamarack warranty page explicitly lists UNI-PGRM among pole mount products covered for 10 years."
+  },
+  {
+    "url": "https://tamaracksolar.com/warranty/",
+    "model": "Tamarack Solar UNI-PGRM pole mounts",
+    "label": "Manufacturer limited warranty",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:31:21.809Z",
+    "rows": [
+      [
+        "Product warranty",
+        "10 years"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46358273294476"
+    ],
+    "expected": {
+      "shopsolar-46358273294476": {
+        "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 2 Module / 1 Post / 72 - 96 in",
+        "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273294476",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Ground"
+        }
+      }
+    },
+    "reviewNote": "Official Tamarack warranty page explicitly lists UNI-PGRM among pole mount products covered for 10 years."
+  },
+  {
+    "url": "https://tamaracksolar.com/warranty/",
+    "model": "Tamarack Solar UNI-PGRM pole mounts",
+    "label": "Manufacturer limited warranty",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:31:21.809Z",
+    "rows": [
+      [
+        "Product warranty",
+        "10 years"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46358273327244"
+    ],
+    "expected": {
+      "shopsolar-46358273327244": {
+        "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 3 Module / 1 Post / 38 - 72 in",
+        "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273327244",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Ground"
+        }
+      }
+    },
+    "reviewNote": "Official Tamarack warranty page explicitly lists UNI-PGRM among pole mount products covered for 10 years."
+  },
+  {
+    "url": "https://tamaracksolar.com/warranty/",
+    "model": "Tamarack Solar UNI-PGRM pole mounts",
+    "label": "Manufacturer limited warranty",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:31:21.809Z",
+    "rows": [
+      [
+        "Product warranty",
+        "10 years"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46358273360012"
+    ],
+    "expected": {
+      "shopsolar-46358273360012": {
+        "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 3 Module / 1 Post / 72 - 96 in",
+        "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273360012",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Ground"
+        }
+      }
+    },
+    "reviewNote": "Official Tamarack warranty page explicitly lists UNI-PGRM among pole mount products covered for 10 years."
+  },
+  {
+    "url": "https://tamaracksolar.com/warranty/",
+    "model": "Tamarack Solar UNI-PGRM pole mounts",
+    "label": "Manufacturer limited warranty",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:31:21.809Z",
+    "rows": [
+      [
+        "Product warranty",
+        "10 years"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46358273392780"
+    ],
+    "expected": {
+      "shopsolar-46358273392780": {
+        "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 4 Module / 1 Post / 38 - 72 in",
+        "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273392780",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Ground"
+        }
+      }
+    },
+    "reviewNote": "Official Tamarack warranty page explicitly lists UNI-PGRM among pole mount products covered for 10 years."
+  },
+  {
+    "url": "https://tamaracksolar.com/warranty/",
+    "model": "Tamarack Solar UNI-PGRM pole mounts",
+    "label": "Manufacturer limited warranty",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:31:21.809Z",
+    "rows": [
+      [
+        "Product warranty",
+        "10 years"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46358273425548"
+    ],
+    "expected": {
+      "shopsolar-46358273425548": {
+        "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 4 Module / 1 Post / 72 - 96 in",
+        "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273425548",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Ground"
+        }
+      }
+    },
+    "reviewNote": "Official Tamarack warranty page explicitly lists UNI-PGRM among pole mount products covered for 10 years."
+  },
+  {
+    "url": "https://tamaracksolar.com/warranty/",
+    "model": "Tamarack Solar UNI-PGRM pole mounts",
+    "label": "Manufacturer limited warranty",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:31:21.809Z",
+    "rows": [
+      [
+        "Product warranty",
+        "10 years"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46358273458316"
+    ],
+    "expected": {
+      "shopsolar-46358273458316": {
+        "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 4 Module / 2 Post / 38 - 72 in",
+        "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273458316",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Ground"
+        }
+      }
+    },
+    "reviewNote": "Official Tamarack warranty page explicitly lists UNI-PGRM among pole mount products covered for 10 years."
+  },
+  {
+    "url": "https://tamaracksolar.com/warranty/",
+    "model": "Tamarack Solar UNI-PGRM pole mounts",
+    "label": "Manufacturer limited warranty",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:31:21.809Z",
+    "rows": [
+      [
+        "Product warranty",
+        "10 years"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46358273491084"
+    ],
+    "expected": {
+      "shopsolar-46358273491084": {
+        "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 4 Module / 2 Post / 72 - 96 in",
+        "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273491084",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Ground"
+        }
+      }
+    },
+    "reviewNote": "Official Tamarack warranty page explicitly lists UNI-PGRM among pole mount products covered for 10 years."
+  },
+  {
+    "url": "https://tamaracksolar.com/warranty/",
+    "model": "Tamarack Solar UNI-PGRM pole mounts",
+    "label": "Manufacturer limited warranty",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:31:21.809Z",
+    "rows": [
+      [
+        "Product warranty",
+        "10 years"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46358273523852"
+    ],
+    "expected": {
+      "shopsolar-46358273523852": {
+        "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 5 Module / 2 Post / 38 - 72 in",
+        "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273523852",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Ground"
+        }
+      }
+    },
+    "reviewNote": "Official Tamarack warranty page explicitly lists UNI-PGRM among pole mount products covered for 10 years."
+  },
+  {
+    "url": "https://tamaracksolar.com/warranty/",
+    "model": "Tamarack Solar UNI-PGRM pole mounts",
+    "label": "Manufacturer limited warranty",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:31:21.809Z",
+    "rows": [
+      [
+        "Product warranty",
+        "10 years"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46358273556620"
+    ],
+    "expected": {
+      "shopsolar-46358273556620": {
+        "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 5 Module / 2 Post / 72 - 96 in",
+        "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273556620",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Ground"
+        }
+      }
+    },
+    "reviewNote": "Official Tamarack warranty page explicitly lists UNI-PGRM among pole mount products covered for 10 years."
+  },
+  {
+    "url": "https://tamaracksolar.com/warranty/",
+    "model": "Tamarack Solar UNI-PGRM pole mounts",
+    "label": "Manufacturer limited warranty",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:31:21.809Z",
+    "rows": [
+      [
+        "Product warranty",
+        "10 years"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46358273589388"
+    ],
+    "expected": {
+      "shopsolar-46358273589388": {
+        "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 6 Module / 2 Post / 38 - 72 in",
+        "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273589388",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Ground"
+        }
+      }
+    },
+    "reviewNote": "Official Tamarack warranty page explicitly lists UNI-PGRM among pole mount products covered for 10 years."
+  },
+  {
+    "url": "https://tamaracksolar.com/warranty/",
+    "model": "Tamarack Solar UNI-PGRM pole mounts",
+    "label": "Manufacturer limited warranty",
+    "kind": "manufacturer",
+    "checkedAt": "2026-10-22T11:31:21.809Z",
+    "rows": [
+      [
+        "Product warranty",
+        "10 years"
+      ]
+    ],
+    "productIds": [
+      "shopsolar-46358273622156"
+    ],
+    "expected": {
+      "shopsolar-46358273622156": {
+        "name": "Tamarack Solar PGRM Top of Pole Mount | Portrait | 1–6 Modules | 0°–90° Adjustable Tilt | 1.18–2 in Frames | 110 MPH Rated — 6 Module / 2 Post / 72 - 96 in",
+        "sourceUrl": "https://shopsolarkits.com/products/tamarack-pgrm-top-of-pole-portrait-mount?variant=46358273622156",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Ground"
+        }
+      }
+    },
+    "reviewNote": "Official Tamarack warranty page explicitly lists UNI-PGRM among pole mount products covered for 10 years."
+  }
+]
