@@ -22138,7 +22138,11 @@
       "technicalFields": 37934,
       "sources": 11682,
       "identities": 6008,
-      "panelRatings": 5778
+      "panelRatings": 5778,
+      "panelRatingValues": 2885,
+      "panelRatingSourceEntries": 2885,
+      "panelRatingLabelStrings": 2,
+      "panelRatingsCountScope": "The generic checker panelRatings=5778 counts 2885 preserved STC/NOCT rating values, 2885 panel source entries, and eight character properties across two existing NMOT label strings. Explicit independent equality also confirms both complete label strings are unchanged. panelRatingValues=2885 matches the canonical audit numeric-rating scope."
     },
     "delta": {
       "acceptedRecords": 9,
