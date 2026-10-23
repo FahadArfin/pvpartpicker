@@ -1,27 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-23T00:52:32.209Z",
-  "batch": 38,
+  "updatedAt": "2026-10-23T01:51:13.337Z",
+  "batch": 39,
   "scope": "Cumulative family research queue. Current record counts refer only to this full native connector pagination pass; individual truncated JSON values remain excluded. Prior dispositions and identities remain auditable. Not a full-catalog completeness claim.",
   "catalogCaptureDate": "2026-10-23",
   "readableProductCount": 5471,
   "unreadableProductCount": 3886,
   "counts": {
     "families": 3040,
-    "attemptedFamilies": 3033,
+    "attemptedFamilies": 3037,
     "statuses": {
-      "partial": 1507,
+      "partial": 1509,
       "needs-source": 900,
-      "conflict": 460,
+      "conflict": 462,
       "blocked": 125,
-      "complete": 44,
-      "pending": 4
+      "complete": 44
     },
-    "addedTechnicalFields": 604,
-    "filledComparisonFields": 495,
-    "currentBatchAttemptedFamilies": 354
+    "addedTechnicalFields": 10,
+    "filledComparisonFields": 8,
+    "currentBatchAttemptedFamilies": 8,
+    "currentBatchFirstVisitedFamilies": 4,
+    "currentBatchFollowupFamilies": 4,
+    "currentBatchSourceAssignments": 12
   },
-  "nextAction": "Refresh complete current records through the normal API or supported connector. Select pending families before revisiting attempted sources without new evidence. Read full technical sections and exact linked manuals/datasheets before concluding a field is unpublished; a clipped excerpt is insufficient. Preserve exact hardware revision, model, full variant, category, unit/pack scope and prior verified values. Reconcile truncated or held identities only from complete evidence; never replace current records with the old static catalog.",
+  "nextAction": "No unvisited pending family or unreviewed published-source lead remains in this captured queue. Pause source research until new complete catalog records, exact source evidence, or conflict resolution becomes available. Unpublished, conflicted, blocked, truncated and consumer-unsupported gaps remain unresolved; this is not catalog completion.",
   "families": [
     {
       "key": "panels|https://sungoldpower.com/products/415w-mono-black-solar-panel",
@@ -22453,11 +22455,10 @@
         "renogy-43178670063731"
       ],
       "remainingFields": [
-        "Format",
-        "Communications"
+        "Format"
       ],
-      "lastAttemptAt": "2026-10-23T00:52:32.209Z",
-      "lastAttemptBatch": 38,
+      "lastAttemptAt": "2026-10-23T01:51:13.337Z",
+      "lastAttemptBatch": 39,
       "researchDispositions": [
         "partial"
       ],
@@ -22498,8 +22499,35 @@
             "Communications"
           ],
           "recordedAt": "2026-10-23T00:52:32.209Z",
-          "batch": 38
+          "batch": 38,
+          "resolution": {
+            "batch": 39,
+            "checkedAt": "2026-10-23T01:51:13.337Z",
+            "status": "resolved",
+            "requestedLabels": [
+              "Communications"
+            ],
+            "remainingRequestedLabels": [],
+            "reviewedByWorkers": [
+              5
+            ],
+            "reason": "Fresh exact-model transcription passed independent review and the requested comparison labels are populated through the unchanged reviewed importer."
+          }
         }
+      ],
+      "attemptHistory": [
+        {
+          "batch": 38,
+          "lastAttemptAt": "2026-10-23T00:52:32.209Z",
+          "status": "partial",
+          "remainingFields": [
+            "Format",
+            "Communications"
+          ]
+        }
+      ],
+      "lastSourceAssignmentWorkers": [
+        5
       ]
     },
     {
@@ -36412,12 +36440,11 @@
       ],
       "remainingFields": [
         "PV A/MPPT",
-        "Independent MPPT count",
         "PV short-circuit current limit",
         "Battery voltage range"
       ],
-      "lastAttemptAt": "2026-10-23T00:52:32.209Z",
-      "lastAttemptBatch": 38,
+      "lastAttemptAt": "2026-10-23T01:51:13.337Z",
+      "lastAttemptBatch": 39,
       "researchDispositions": [
         "needs-source",
         "partial"
@@ -36444,8 +36471,37 @@
           "disposition": "published-source-followup-deferred",
           "reasonForDeferral": "Concrete source lead found after the bounded primary and supplemental proposals were frozen. Requires a fresh exact-model transcription and independent review; not treated as unpublished or imported from a reviewer observation.",
           "recordedAt": "2026-10-23T00:52:32.209Z",
-          "batch": 38
+          "batch": 38,
+          "resolution": {
+            "batch": 39,
+            "checkedAt": "2026-10-23T01:51:13.337Z",
+            "status": "resolved",
+            "requestedLabels": [
+              "Independent MPPT count"
+            ],
+            "remainingRequestedLabels": [],
+            "reviewedByWorkers": [
+              6
+            ],
+            "reason": "Fresh exact-model transcription passed independent review and the requested comparison labels are populated through the unchanged reviewed importer."
+          }
         }
+      ],
+      "attemptHistory": [
+        {
+          "batch": 38,
+          "lastAttemptAt": "2026-10-23T00:52:32.209Z",
+          "status": "partial",
+          "remainingFields": [
+            "PV A/MPPT",
+            "Independent MPPT count",
+            "PV short-circuit current limit",
+            "Battery voltage range"
+          ]
+        }
+      ],
+      "lastSourceAssignmentWorkers": [
+        6
       ]
     },
     {
@@ -36458,12 +36514,11 @@
       ],
       "remainingFields": [
         "PV A/MPPT",
-        "Independent MPPT count",
         "PV short-circuit current limit",
         "Battery voltage range"
       ],
-      "lastAttemptAt": "2026-10-23T00:52:32.209Z",
-      "lastAttemptBatch": 38,
+      "lastAttemptAt": "2026-10-23T01:51:13.337Z",
+      "lastAttemptBatch": 39,
       "researchDispositions": [
         "needs-source",
         "partial"
@@ -36490,8 +36545,37 @@
           "disposition": "published-source-followup-deferred",
           "reasonForDeferral": "Concrete source lead found after the bounded primary and supplemental proposals were frozen. Requires a fresh exact-model transcription and independent review; not treated as unpublished or imported from a reviewer observation.",
           "recordedAt": "2026-10-23T00:52:32.209Z",
-          "batch": 38
+          "batch": 38,
+          "resolution": {
+            "batch": 39,
+            "checkedAt": "2026-10-23T01:51:13.337Z",
+            "status": "resolved",
+            "requestedLabels": [
+              "Independent MPPT count"
+            ],
+            "remainingRequestedLabels": [],
+            "reviewedByWorkers": [
+              7
+            ],
+            "reason": "Fresh exact-model transcription passed independent review and the requested comparison labels are populated through the unchanged reviewed importer."
+          }
         }
+      ],
+      "attemptHistory": [
+        {
+          "batch": 38,
+          "lastAttemptAt": "2026-10-23T00:52:32.209Z",
+          "status": "partial",
+          "remainingFields": [
+            "PV A/MPPT",
+            "Independent MPPT count",
+            "PV short-circuit current limit",
+            "Battery voltage range"
+          ]
+        }
+      ],
+      "lastSourceAssignmentWorkers": [
+        7
       ]
     },
     {
@@ -36504,12 +36588,11 @@
       ],
       "remainingFields": [
         "PV A/MPPT",
-        "Independent MPPT count",
         "PV short-circuit current limit",
         "Battery voltage range"
       ],
-      "lastAttemptAt": "2026-10-23T00:52:32.209Z",
-      "lastAttemptBatch": 38,
+      "lastAttemptAt": "2026-10-23T01:51:13.337Z",
+      "lastAttemptBatch": 39,
       "researchDispositions": [
         "needs-source",
         "partial"
@@ -36536,8 +36619,37 @@
           "disposition": "published-source-followup-deferred",
           "reasonForDeferral": "Concrete source lead found after the bounded primary and supplemental proposals were frozen. Requires a fresh exact-model transcription and independent review; not treated as unpublished or imported from a reviewer observation.",
           "recordedAt": "2026-10-23T00:52:32.209Z",
-          "batch": 38
+          "batch": 38,
+          "resolution": {
+            "batch": 39,
+            "checkedAt": "2026-10-23T01:51:13.337Z",
+            "status": "resolved",
+            "requestedLabels": [
+              "Independent MPPT count"
+            ],
+            "remainingRequestedLabels": [],
+            "reviewedByWorkers": [
+              8
+            ],
+            "reason": "Fresh exact-model transcription passed independent review and the requested comparison labels are populated through the unchanged reviewed importer."
+          }
         }
+      ],
+      "attemptHistory": [
+        {
+          "batch": 38,
+          "lastAttemptAt": "2026-10-23T00:52:32.209Z",
+          "status": "partial",
+          "remainingFields": [
+            "PV A/MPPT",
+            "Independent MPPT count",
+            "PV short-circuit current limit",
+            "Battery voltage range"
+          ]
+        }
+      ],
+      "lastSourceAssignmentWorkers": [
+        8
       ]
     },
     {
@@ -71150,14 +71262,27 @@
         "Supported equipment / fit",
         "Tilt range"
       ],
-      "newUnvisitedListingIds": [
-        "eco-worthy-43989978939641"
-      ],
+      "newUnvisitedListingIds": [],
       "lastAttemptAt": "2026-10-22T18:46:06.724Z",
       "lastAttemptBatch": 34,
       "researchDispositions": [
         "unpublished",
         "conflict"
+      ],
+      "unvisitedSelectorResolutions": [
+        {
+          "id": "eco-worthy-43989978939641",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-no-current-gaps",
+          "reason": "Exact ID has prior accepted source records and a matching current identity; no comparison-field gaps remain.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/0"
+          }
+        }
       ]
     },
     {
@@ -83545,10 +83670,7 @@
         "Material",
         "Ingress protection"
       ],
-      "newUnvisitedListingIds": [
-        "current-connected-dmc000200010r",
-        "current-connected-rec020005010"
-      ],
+      "newUnvisitedListingIds": [],
       "lastAttemptAt": "2026-10-22T20:14:17.622Z",
       "lastAttemptBatch": 35,
       "researchDispositions": [
@@ -83559,6 +83681,34 @@
         "current-connected-dmc000200010r",
         "current-connected-rec020005010",
         "current-connected-victron-energy-digital-multi-control-200-200a-input-current-limiter-and-remote-on-off-switch-for-victr"
+      ],
+      "unvisitedSelectorResolutions": [
+        {
+          "id": "current-connected-dmc000200010r",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-unresolved-gaps",
+          "reason": "Exact ID already has accepted source records and a matching current identity. Remaining comparison gaps were part of the prior family review/holds; this stale marker is not a new source lead. Keep unresolved fields and source dispositions without counting a fresh visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/1"
+          }
+        },
+        {
+          "id": "current-connected-rec020005010",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-unresolved-gaps",
+          "reason": "Exact ID already has accepted source records and a matching current identity. Remaining comparison gaps were part of the prior family review/holds; this stale marker is not a new source lead. Keep unresolved fields and source dispositions without counting a fresh visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/2"
+          }
+        }
       ]
     },
     {
@@ -85447,10 +85597,7 @@
         "current-connected-bpc122531124"
       ],
       "remainingFields": [],
-      "newUnvisitedListingIds": [
-        "current-connected-bpc121531104r",
-        "current-connected-bpc122531124"
-      ],
+      "newUnvisitedListingIds": [],
       "lastAttemptAt": "2026-10-22T14:18:22.235Z",
       "lastAttemptBatch": 31,
       "researchDispositions": [
@@ -85460,6 +85607,34 @@
         "current-connected-bpc120531104r",
         "current-connected-bpc121531104r",
         "current-connected-bpc122531124"
+      ],
+      "unvisitedSelectorResolutions": [
+        {
+          "id": "current-connected-bpc121531104r",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-identity-hold",
+          "reason": "Exact ID has prior accepted source records, but its saved identity does not match the fresh complete record. Existing identity hold remains; no automatic rebinding or repeat source visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/3"
+          }
+        },
+        {
+          "id": "current-connected-bpc122531124",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-identity-hold",
+          "reason": "Exact ID has prior accepted source records, but its saved identity does not match the fresh complete record. Existing identity hold remains; no automatic rebinding or repeat source visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/4"
+          }
+        }
       ]
     },
     {
@@ -85496,9 +85671,7 @@
       "remainingFields": [
         "Connection"
       ],
-      "newUnvisitedListingIds": [
-        "current-connected-bam030712200r"
-      ],
+      "newUnvisitedListingIds": [],
       "lastAttemptAt": "2026-10-22T20:14:17.622Z",
       "lastAttemptBatch": 35,
       "researchDispositions": [
@@ -85525,6 +85698,21 @@
           "sourceUrl": "https://www.victronenergy.com/media/pg/BMV-712_Smart/en/installation.html",
           "reviewFile": "integration-normalizations.json"
         }
+      ],
+      "unvisitedSelectorResolutions": [
+        {
+          "id": "current-connected-bam030712200r",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-unresolved-gaps",
+          "reason": "Exact ID already has accepted source records and a matching current identity. Remaining comparison gaps were part of the prior family review/holds; this stale marker is not a new source lead. Keep unresolved fields and source dispositions without counting a fresh visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/5"
+          }
+        }
       ]
     },
     {
@@ -85537,9 +85725,7 @@
         "current-connected-bpc241247106"
       ],
       "remainingFields": [],
-      "newUnvisitedListingIds": [
-        "current-connected-bpc241247106"
-      ],
+      "newUnvisitedListingIds": [],
       "lastAttemptAt": "2026-10-22T20:14:17.622Z",
       "lastAttemptBatch": 35,
       "researchDispositions": [
@@ -85549,6 +85735,21 @@
       "updatedListingIds": [
         "current-connected-bpc122547106",
         "current-connected-bpc241247106"
+      ],
+      "unvisitedSelectorResolutions": [
+        {
+          "id": "current-connected-bpc241247106",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-no-current-gaps",
+          "reason": "Exact ID has prior accepted source records and a matching current identity; no comparison-field gaps remain.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/6"
+          }
+        }
       ]
     },
     {
@@ -85576,20 +85777,7 @@
         "Poles",
         "Ingress protection"
       ],
-      "newUnvisitedListingIds": [
-        "current-connected-cip138060020",
-        "current-connected-cip138080020",
-        "current-connected-cip138100020",
-        "current-connected-cip138125020",
-        "current-connected-cip138150020",
-        "current-connected-cip138175020",
-        "current-connected-cip138200020",
-        "current-connected-cip138225020",
-        "current-connected-cip138250020",
-        "current-connected-cip138300020",
-        "current-connected-cip138400020",
-        "current-connected-cip138500020"
-      ],
+      "newUnvisitedListingIds": [],
       "lastAttemptAt": "2026-10-22T20:14:17.622Z",
       "lastAttemptBatch": 35,
       "researchDispositions": [
@@ -85610,6 +85798,164 @@
         "current-connected-cip138300020",
         "current-connected-cip138400020",
         "current-connected-cip138500020"
+      ],
+      "unvisitedSelectorResolutions": [
+        {
+          "id": "current-connected-cip138060020",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-identity-hold",
+          "reason": "Exact ID has prior accepted source records, but its saved identity does not match the fresh complete record. Existing identity hold remains; no automatic rebinding or repeat source visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/7"
+          }
+        },
+        {
+          "id": "current-connected-cip138080020",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-identity-hold",
+          "reason": "Exact ID has prior accepted source records, but its saved identity does not match the fresh complete record. Existing identity hold remains; no automatic rebinding or repeat source visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/8"
+          }
+        },
+        {
+          "id": "current-connected-cip138100020",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-identity-hold",
+          "reason": "Exact ID has prior accepted source records, but its saved identity does not match the fresh complete record. Existing identity hold remains; no automatic rebinding or repeat source visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/9"
+          }
+        },
+        {
+          "id": "current-connected-cip138125020",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-identity-hold",
+          "reason": "Exact ID has prior accepted source records, but its saved identity does not match the fresh complete record. Existing identity hold remains; no automatic rebinding or repeat source visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/10"
+          }
+        },
+        {
+          "id": "current-connected-cip138150020",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-identity-hold",
+          "reason": "Exact ID has prior accepted source records, but its saved identity does not match the fresh complete record. Existing identity hold remains; no automatic rebinding or repeat source visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/11"
+          }
+        },
+        {
+          "id": "current-connected-cip138175020",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-identity-hold",
+          "reason": "Exact ID has prior accepted source records, but its saved identity does not match the fresh complete record. Existing identity hold remains; no automatic rebinding or repeat source visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/12"
+          }
+        },
+        {
+          "id": "current-connected-cip138200020",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-identity-hold",
+          "reason": "Exact ID has prior accepted source records, but its saved identity does not match the fresh complete record. Existing identity hold remains; no automatic rebinding or repeat source visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/13"
+          }
+        },
+        {
+          "id": "current-connected-cip138225020",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-identity-hold",
+          "reason": "Exact ID has prior accepted source records, but its saved identity does not match the fresh complete record. Existing identity hold remains; no automatic rebinding or repeat source visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/14"
+          }
+        },
+        {
+          "id": "current-connected-cip138250020",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-identity-hold",
+          "reason": "Exact ID has prior accepted source records, but its saved identity does not match the fresh complete record. Existing identity hold remains; no automatic rebinding or repeat source visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/15"
+          }
+        },
+        {
+          "id": "current-connected-cip138300020",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-identity-hold",
+          "reason": "Exact ID has prior accepted source records, but its saved identity does not match the fresh complete record. Existing identity hold remains; no automatic rebinding or repeat source visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/16"
+          }
+        },
+        {
+          "id": "current-connected-cip138400020",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-identity-hold",
+          "reason": "Exact ID has prior accepted source records, but its saved identity does not match the fresh complete record. Existing identity hold remains; no automatic rebinding or repeat source visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/17"
+          }
+        },
+        {
+          "id": "current-connected-cip138500020",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-identity-hold",
+          "reason": "Exact ID has prior accepted source records, but its saved identity does not match the fresh complete record. Existing identity hold remains; no automatic rebinding or repeat source visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/18"
+          }
+        }
       ]
     },
     {
@@ -85672,10 +86018,7 @@
         "Battery V",
         "Charge amps"
       ],
-      "newUnvisitedListingIds": [
-        "current-connected-ori121221040",
-        "current-connected-ori242417040"
-      ],
+      "newUnvisitedListingIds": [],
       "lastAttemptAt": "2026-10-22T20:14:17.622Z",
       "lastAttemptBatch": 35,
       "researchDispositions": [
@@ -85737,6 +86080,34 @@
           "sourceUrl": "https://www.victronenergy.com/media/pg/Orion_XS_1400_DC-DC_Battery_Charger/en/technical-data.html",
           "reviewFile": "integration-normalizations.json"
         }
+      ],
+      "unvisitedSelectorResolutions": [
+        {
+          "id": "current-connected-ori121221040",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-unresolved-gaps",
+          "reason": "Exact ID already has accepted source records and a matching current identity. Remaining comparison gaps were part of the prior family review/holds; this stale marker is not a new source lead. Keep unresolved fields and source dispositions without counting a fresh visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/19"
+          }
+        },
+        {
+          "id": "current-connected-ori242417040",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-unresolved-gaps",
+          "reason": "Exact ID already has accepted source records and a matching current identity. Remaining comparison gaps were part of the prior family review/holds; this stale marker is not a new source lead. Keep unresolved fields and source dispositions without counting a fresh visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/20"
+          }
+        }
       ]
     },
     {
@@ -85770,21 +86141,130 @@
         "Communications",
         "Dimensions"
       ],
-      "newUnvisitedListingIds": [
-        "current-connected-ori121236120",
-        "current-connected-ori122436120",
-        "current-connected-ori124838120",
-        "current-connected-ori241236120",
-        "current-connected-ori242440120",
-        "current-connected-ori244840120",
-        "current-connected-ori481238120",
-        "current-connected-ori482438120",
-        "current-connected-ori484838120"
-      ],
+      "newUnvisitedListingIds": [],
       "lastAttemptAt": "2026-10-22T20:14:17.622Z",
       "lastAttemptBatch": 35,
       "researchDispositions": [
         "conflict"
+      ],
+      "unvisitedSelectorResolutions": [
+        {
+          "id": "current-connected-ori121236120",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-reviewed-category-conflict",
+          "reason": "Batch 35 independent source review explicitly reopened the exact retailer and manufacturer manual for all ten named ORI variants. These are DC-DC chargers/converters, not batteries; the nine flagged IDs are explicitly listed in both reviewed records. Battery-field gaps remain inapplicable under the retained category conflict.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/21"
+          }
+        },
+        {
+          "id": "current-connected-ori122436120",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-reviewed-category-conflict",
+          "reason": "Batch 35 independent source review explicitly reopened the exact retailer and manufacturer manual for all ten named ORI variants. These are DC-DC chargers/converters, not batteries; the nine flagged IDs are explicitly listed in both reviewed records. Battery-field gaps remain inapplicable under the retained category conflict.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/22"
+          }
+        },
+        {
+          "id": "current-connected-ori124838120",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-reviewed-category-conflict",
+          "reason": "Batch 35 independent source review explicitly reopened the exact retailer and manufacturer manual for all ten named ORI variants. These are DC-DC chargers/converters, not batteries; the nine flagged IDs are explicitly listed in both reviewed records. Battery-field gaps remain inapplicable under the retained category conflict.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/23"
+          }
+        },
+        {
+          "id": "current-connected-ori241236120",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-reviewed-category-conflict",
+          "reason": "Batch 35 independent source review explicitly reopened the exact retailer and manufacturer manual for all ten named ORI variants. These are DC-DC chargers/converters, not batteries; the nine flagged IDs are explicitly listed in both reviewed records. Battery-field gaps remain inapplicable under the retained category conflict.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/24"
+          }
+        },
+        {
+          "id": "current-connected-ori242440120",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-reviewed-category-conflict",
+          "reason": "Batch 35 independent source review explicitly reopened the exact retailer and manufacturer manual for all ten named ORI variants. These are DC-DC chargers/converters, not batteries; the nine flagged IDs are explicitly listed in both reviewed records. Battery-field gaps remain inapplicable under the retained category conflict.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/25"
+          }
+        },
+        {
+          "id": "current-connected-ori244840120",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-reviewed-category-conflict",
+          "reason": "Batch 35 independent source review explicitly reopened the exact retailer and manufacturer manual for all ten named ORI variants. These are DC-DC chargers/converters, not batteries; the nine flagged IDs are explicitly listed in both reviewed records. Battery-field gaps remain inapplicable under the retained category conflict.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/26"
+          }
+        },
+        {
+          "id": "current-connected-ori481238120",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-reviewed-category-conflict",
+          "reason": "Batch 35 independent source review explicitly reopened the exact retailer and manufacturer manual for all ten named ORI variants. These are DC-DC chargers/converters, not batteries; the nine flagged IDs are explicitly listed in both reviewed records. Battery-field gaps remain inapplicable under the retained category conflict.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/27"
+          }
+        },
+        {
+          "id": "current-connected-ori482438120",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-reviewed-category-conflict",
+          "reason": "Batch 35 independent source review explicitly reopened the exact retailer and manufacturer manual for all ten named ORI variants. These are DC-DC chargers/converters, not batteries; the nine flagged IDs are explicitly listed in both reviewed records. Battery-field gaps remain inapplicable under the retained category conflict.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/28"
+          }
+        },
+        {
+          "id": "current-connected-ori484838120",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-reviewed-category-conflict",
+          "reason": "Batch 35 independent source review explicitly reopened the exact retailer and manufacturer manual for all ten named ORI variants. These are DC-DC chargers/converters, not batteries; the nine flagged IDs are explicitly listed in both reviewed records. Battery-field gaps remain inapplicable under the retained category conflict.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/29"
+          }
+        }
       ]
     },
     {
@@ -85801,11 +86281,7 @@
       "remainingFields": [
         "Connection"
       ],
-      "newUnvisitedListingIds": [
-        "current-connected-shu065150050",
-        "current-connected-shu065210050",
-        "current-connected-shu065220050"
-      ],
+      "newUnvisitedListingIds": [],
       "lastAttemptAt": "2026-10-22T20:14:17.622Z",
       "lastAttemptBatch": 35,
       "researchDispositions": [
@@ -85816,6 +86292,47 @@
         "current-connected-shu065150050",
         "current-connected-shu065210050",
         "current-connected-shu065220050"
+      ],
+      "unvisitedSelectorResolutions": [
+        {
+          "id": "current-connected-shu065150050",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-unresolved-gaps",
+          "reason": "Exact ID already has accepted source records and a matching current identity. Remaining comparison gaps were part of the prior family review/holds; this stale marker is not a new source lead. Keep unresolved fields and source dispositions without counting a fresh visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/30"
+          }
+        },
+        {
+          "id": "current-connected-shu065210050",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-unresolved-gaps",
+          "reason": "Exact ID already has accepted source records and a matching current identity. Remaining comparison gaps were part of the prior family review/holds; this stale marker is not a new source lead. Keep unresolved fields and source dispositions without counting a fresh visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/31"
+          }
+        },
+        {
+          "id": "current-connected-shu065220050",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-unresolved-gaps",
+          "reason": "Exact ID already has accepted source records and a matching current identity. Remaining comparison gaps were part of the prior family review/holds; this stale marker is not a new source lead. Keep unresolved fields and source dispositions without counting a fresh visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/32"
+          }
+        }
       ]
     },
     {
@@ -85834,11 +86351,7 @@
         "Poles",
         "Ingress protection"
       ],
-      "newUnvisitedListingIds": [
-        "current-connected-vbb115022020",
-        "current-connected-vbb115040020",
-        "current-connected-vbb115060020"
-      ],
+      "newUnvisitedListingIds": [],
       "lastAttemptAt": "2026-10-22T20:14:17.622Z",
       "lastAttemptBatch": 35,
       "researchDispositions": [
@@ -85866,6 +86379,47 @@
           "reason": "Datasheet uses 2P in a busbar configuration title but does not establish two electrically separate poles. Terminal count/designation is not sufficient evidence for electrical pole count.",
           "sourceUrl": "https://www.victronenergy.com/upload/documents/Datasheet-Busbar-150-A-2P-with-10-or-20-screws,-with-cover-EN.pdf",
           "reviewFile": "review-5-6.json"
+        }
+      ],
+      "unvisitedSelectorResolutions": [
+        {
+          "id": "current-connected-vbb115022020",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-identity-hold",
+          "reason": "Exact ID has prior accepted source records, but its saved identity does not match the fresh complete record. Existing identity hold remains; no automatic rebinding or repeat source visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/33"
+          }
+        },
+        {
+          "id": "current-connected-vbb115040020",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-identity-hold",
+          "reason": "Exact ID has prior accepted source records, but its saved identity does not match the fresh complete record. Existing identity hold remains; no automatic rebinding or repeat source visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/34"
+          }
+        },
+        {
+          "id": "current-connected-vbb115060020",
+          "previousFlag": "newUnvisitedListingIds",
+          "disposition": "previously-researched-identity-hold",
+          "reason": "Exact ID has prior accepted source records, but its saved identity does not match the fresh complete record. Existing identity hold remains; no automatic rebinding or repeat source visit.",
+          "resolvedAt": "2026-10-23T01:51:13.337Z",
+          "batch": 39,
+          "countsAsNewResearchVisit": false,
+          "evidence": {
+            "file": "docs/specification-batch-thirty-nine-review.json",
+            "jsonPointer": "/unvisitedSelectorTriage/rows/35"
+          }
         }
       ]
     },
@@ -86506,24 +87060,48 @@
       "key": "wiring|https://signaturesolar.com/victron-ve-direct-cable-0-9m/",
       "category": "wiring",
       "sourceUrl": "https://signaturesolar.com/victron-ve-direct-cable-0-9m/",
-      "status": "pending",
+      "status": "partial",
       "listingIds": [
         "signature-solar-1593003"
       ],
       "remainingFields": [
         "Gauge",
-        "Length",
-        "Connector",
         "Conductor material",
         "Rated voltage",
         "Rated current"
+      ],
+      "lastAttemptAt": "2026-10-23T01:51:13.337Z",
+      "lastAttemptBatch": 39,
+      "lastSourceAssignmentWorkers": [
+        1,
+        9
+      ],
+      "researchDispositions": [
+        "partial"
+      ],
+      "updatedListingIds": [
+        "signature-solar-1593003"
+      ],
+      "sourceReviewHolds": [
+        {
+          "productIds": [
+            "signature-solar-1593003"
+          ],
+          "label": "Product length (listing title)",
+          "value": "0.9m",
+          "sourceUrl": "https://signaturesolar.com/victron-ve-direct-cable-0-9m/",
+          "reason": "More complete exact-source qualified row selected first, or identical corroborating row already selected; do not let source priority replace it.",
+          "reviewFile": "integration-normalizations.json",
+          "occurrenceId": "w1:r0:row0",
+          "disposition": "duplicate-or-broader-held"
+        }
       ]
     },
     {
       "key": "inverters|https://signaturesolar.com/phoenix-inverter-48-1200-120v-ve-direct-nema-gfci/",
       "category": "inverters",
       "sourceUrl": "https://signaturesolar.com/phoenix-inverter-48-1200-120v-ve-direct-nema-gfci/",
-      "status": "pending",
+      "status": "conflict",
       "listingIds": [
         "signature-solar-1593080"
       ],
@@ -86536,15 +87114,157 @@
         "Independent MPPT count",
         "PV short-circuit current limit",
         "Battery voltage range",
-        "AC output voltage / phase",
         "AC frequency"
+      ],
+      "lastAttemptAt": "2026-10-23T01:51:13.337Z",
+      "lastAttemptBatch": 39,
+      "lastSourceAssignmentWorkers": [
+        2,
+        10
+      ],
+      "researchDispositions": [
+        "partial",
+        "conflict"
+      ],
+      "updatedListingIds": [
+        "signature-solar-1593080"
+      ],
+      "sourceReviewHolds": [
+        {
+          "productIds": [
+            "signature-solar-1593080"
+          ],
+          "label": "Rated Power",
+          "value": "1200VA",
+          "sourceUrl": "https://signaturesolar.com/phoenix-inverter-48-1200-120v-ve-direct-nema-gfci/",
+          "reason": "The retailer publishes 1200VA apparent power, not watts. Preserve this original source-backed transcription in review; hold from technical import because it must not populate outputWatts/AC out kW or replace separately reviewed manufacturer continuous-W ratings.",
+          "reviewFile": "source-review-a.json"
+        },
+        {
+          "productIds": [
+            "signature-solar-1593080"
+          ],
+          "label": "Retailer SKU",
+          "value": "1593080",
+          "sourceUrl": "https://signaturesolar.com/phoenix-inverter-48-1200-120v-ve-direct-nema-gfci/",
+          "reason": "Source-backed binding metadata retained in review, but not a missing technical rating; no import. Both exact retailer-linked manufacturer documents were opened independently through retailer download links. Their 48/1200 entries disagree on 40 C continuous real power (manual 900 W; datasheet 850 W), and current HW15 specifies different power/weight. Retailer has no manufacturer part number/hardware revision; exact revision is unresolved. ",
+          "reviewFile": "source-review-b.json"
+        },
+        {
+          "productIds": [
+            "signature-solar-1593080"
+          ],
+          "label": "Listing-linked model documentation",
+          "value": "Victron Phoenix Inverter 800VA and 1200VA manual and Phoenix Inverter VE.Direct 250VA-1200VA datasheet",
+          "sourceUrl": "https://signaturesolar.com/phoenix-inverter-48-1200-120v-ve-direct-nema-gfci/",
+          "reason": "Source-backed binding metadata retained in review, but not a missing technical rating; no import. Both exact retailer-linked manufacturer documents were opened independently through retailer download links. Their 48/1200 entries disagree on 40 C continuous real power (manual 900 W; datasheet 850 W), and current HW15 specifies different power/weight. Retailer has no manufacturer part number/hardware revision; exact revision is unresolved. ",
+          "reviewFile": "source-review-b.json"
+        },
+        {
+          "productIds": [
+            "signature-solar-1593080"
+          ],
+          "label": "AC frequency",
+          "value": "50 Hz or 60 Hz +/- 0.1% (adjustable)",
+          "sourceUrl": "https://www.victronenergy.com/upload/documents/Manual-Phoenix-Inverter-VE.Direct-250VA-1200VA-EN-NL-FR-DE-ES-IT.pdf",
+          "reason": "Both exact retailer-linked manufacturer documents were opened independently through retailer download links. Their 48/1200 entries disagree on 40 C continuous real power (manual 900 W; datasheet 850 W), and current HW15 specifies different power/weight. Retailer has no manufacturer part number/hardware revision; exact revision is unresolved. Legacy source publishes adjustable50/60Hz while current120V HW15 technical table specifies60Hz adjustable; exact revision is not confirmed. Retain directly retailer-stated120V60Hz separately in worker2 review, but do not assign the broader manufacturer frequency option here.",
+          "reviewFile": "source-review-b.json"
+        },
+        {
+          "productIds": [
+            "signature-solar-1593080"
+          ],
+          "label": "Continuous AC output apparent power",
+          "value": "1200 VA at 25°C",
+          "sourceUrl": "https://www.victronenergy.com/upload/documents/Manual-Phoenix-Inverter-VE.Direct-250VA-1200VA-EN-NL-FR-DE-ES-IT.pdf",
+          "reason": "Both exact retailer-linked manufacturer documents were opened independently through retailer download links. Their 48/1200 entries disagree on 40 C continuous real power (manual 900 W; datasheet 850 W), and current HW15 specifies different power/weight. Retailer has no manufacturer part number/hardware revision; exact revision is unresolved. 1200VA apparent power is published, but cannot fill requested AC real-power kW. Original row also omitted nonlinear-load crest-factor3:1 footnote. Hold as non-actionable apparent-power detail; never convert VA to W.",
+          "reviewFile": "source-review-b.json"
+        },
+        {
+          "productIds": [
+            "signature-solar-1593080"
+          ],
+          "label": "Continuous AC output real power",
+          "value": "1000 W at 25°C / 900 W at 40°C",
+          "sourceUrl": "https://www.victronenergy.com/upload/documents/Manual-Phoenix-Inverter-VE.Direct-250VA-1200VA-EN-NL-FR-DE-ES-IT.pdf",
+          "reason": "Both exact retailer-linked manufacturer documents were opened independently through retailer download links. Their 48/1200 entries disagree on 40 C continuous real power (manual 900 W; datasheet 850 W), and current HW15 specifies different power/weight. Retailer has no manufacturer part number/hardware revision; exact revision is unresolved. Hold entire temperature-conditioned real-power row; do not cherry-pick one condition to hide the unresolved source/revision conflict.",
+          "reviewFile": "source-review-b.json"
+        },
+        {
+          "productIds": [
+            "signature-solar-1593080"
+          ],
+          "label": "Continuous AC output apparent power",
+          "value": "1200 VA at 25°C",
+          "sourceUrl": "https://www.victronenergy.com/upload/documents/Datasheet-Phoenix-Inverter-VE.Direct-250VA-1200VA-EN.pdf",
+          "reason": "Both exact retailer-linked manufacturer documents were opened independently through retailer download links. Their 48/1200 entries disagree on 40 C continuous real power (manual 900 W; datasheet 850 W), and current HW15 specifies different power/weight. Retailer has no manufacturer part number/hardware revision; exact revision is unresolved. 1200VA apparent power is published, but cannot fill requested AC real-power kW. Original row also omitted nonlinear-load crest-factor3:1 footnote. Hold as non-actionable apparent-power detail; never convert VA to W.",
+          "reviewFile": "source-review-b.json"
+        },
+        {
+          "productIds": [
+            "signature-solar-1593080"
+          ],
+          "label": "Continuous AC output real power",
+          "value": "1000 W at 25°C / 850 W at 40°C",
+          "sourceUrl": "https://www.victronenergy.com/upload/documents/Datasheet-Phoenix-Inverter-VE.Direct-250VA-1200VA-EN.pdf",
+          "reason": "Both exact retailer-linked manufacturer documents were opened independently through retailer download links. Their 48/1200 entries disagree on 40 C continuous real power (manual 900 W; datasheet 850 W), and current HW15 specifies different power/weight. Retailer has no manufacturer part number/hardware revision; exact revision is unresolved. Hold entire temperature-conditioned real-power row; do not cherry-pick one condition to hide the unresolved source/revision conflict.",
+          "reviewFile": "source-review-b.json"
+        },
+        {
+          "productIds": [
+            "signature-solar-1593080"
+          ],
+          "label": "Rated AC Power",
+          "value": "120V",
+          "sourceUrl": "https://signaturesolar.com/phoenix-inverter-48-1200-120v-ve-direct-nema-gfci/",
+          "reason": "More complete exact-source qualified row selected first, or identical corroborating row already selected; do not let source priority replace it.",
+          "reviewFile": "integration-normalizations.json",
+          "occurrenceId": "w2:r0:row2",
+          "disposition": "duplicate-or-broader-held"
+        },
+        {
+          "productIds": [
+            "signature-solar-1593080"
+          ],
+          "label": "Output",
+          "value": "120V 60 Hz",
+          "sourceUrl": "https://signaturesolar.com/phoenix-inverter-48-1200-120v-ve-direct-nema-gfci/",
+          "reason": "The retailer publishes 120V 60Hz under Fully configurable, so the source fact remains valid and frozen. It does not establish the complete supported frequency/voltage options or exact hardware revision. Independently opened legacy datasheet gives adjustable120VAC/50-or-60Hz, while current120V HW15 configuration gives mode-dependent output: default120VAC60Hz, 60Hz mode100–120VAC, 50Hz mode100VAC fixed. Without exact revision, do not normalize the retailer shorthand into fixed60Hz or unrestricted50/60Hz output. Preserve the original row and source decision; hold this combined output/frequency row from technical import. Separately reviewed common nominal120VAC±3% output and DC input range may retain their own bounded source decisions.",
+          "reviewFile": "integration-normalizations.json",
+          "occurrenceId": "w2:r0:row3",
+          "disposition": "formatting-held"
+        },
+        {
+          "productIds": [
+            "signature-solar-1593080"
+          ],
+          "label": "AC output voltage / frequency",
+          "value": "230 VAC or 120 VAC +/- 3%; 50 Hz or 60 Hz +/- 0.1%",
+          "sourceUrl": "https://www.victronenergy.com/upload/documents/Datasheet-Phoenix-Inverter-VE.Direct-250VA-1200VA-EN.pdf",
+          "reason": "More complete exact-source qualified row selected first, or identical corroborating row already selected; do not let source priority replace it.",
+          "reviewFile": "integration-normalizations.json",
+          "occurrenceId": "w10:r2:row2",
+          "disposition": "duplicate-or-broader-held"
+        },
+        {
+          "productIds": [
+            "signature-solar-1593080"
+          ],
+          "label": "Battery voltage range",
+          "value": "36.8–62.0 VDC (48 V model input range)",
+          "sourceUrl": "https://www.victronenergy.com/upload/documents/Datasheet-Phoenix-Inverter-VE.Direct-250VA-1200VA-EN.pdf",
+          "reason": "More complete exact-source qualified row selected first, or identical corroborating row already selected; do not let source priority replace it.",
+          "reviewFile": "integration-normalizations.json",
+          "occurrenceId": "w10:r2:row3",
+          "disposition": "duplicate-or-broader-held"
+        }
       ]
     },
     {
       "key": "module-electronics|https://signaturesolar.com/tigo-tap-din-rail-ps-outdoor-enclosure-kit/",
       "category": "module-electronics",
       "sourceUrl": "https://signaturesolar.com/tigo-tap-din-rail-ps-outdoor-enclosure-kit/",
-      "status": "pending",
+      "status": "partial",
       "listingIds": [
         "signature-solar-1594002"
       ],
@@ -86552,15 +87272,40 @@
         "Rated amps",
         "Rated volts",
         "Maximum PV voltage",
-        "Conversion efficiency",
-        "Communications"
+        "Conversion efficiency"
+      ],
+      "lastAttemptAt": "2026-10-23T01:51:13.337Z",
+      "lastAttemptBatch": 39,
+      "lastSourceAssignmentWorkers": [
+        3,
+        11
+      ],
+      "researchDispositions": [
+        "partial"
+      ],
+      "updatedListingIds": [
+        "signature-solar-1594002"
+      ],
+      "sourceReviewHolds": [
+        {
+          "productIds": [
+            "signature-solar-1594002"
+          ],
+          "label": "Communications",
+          "value": "Supports wired and wireless networks; listing does not specify interfaces. Applies to the CCA in this kit, not a kit-level communications rating.",
+          "sourceUrl": "https://signaturesolar.com/tigo-tap-din-rail-ps-outdoor-enclosure-kit/",
+          "reason": "More complete exact-source qualified row selected first, or identical corroborating row already selected; do not let source priority replace it.",
+          "reviewFile": "integration-normalizations.json",
+          "occurrenceId": "w3:r0:row0",
+          "disposition": "duplicate-or-broader-held"
+        }
       ]
     },
     {
       "key": "inverters|https://signaturesolar.com/top-rack-micro-inverter-racking/",
       "category": "inverters",
       "sourceUrl": "https://signaturesolar.com/top-rack-micro-inverter-racking/",
-      "status": "pending",
+      "status": "conflict",
       "listingIds": [
         "signature-solar-1674009"
       ],
@@ -86576,6 +87321,67 @@
         "Battery voltage range",
         "AC output voltage / phase",
         "AC frequency"
+      ],
+      "lastAttemptAt": "2026-10-23T01:51:13.337Z",
+      "lastAttemptBatch": 39,
+      "lastSourceAssignmentWorkers": [
+        4,
+        12
+      ],
+      "researchDispositions": [
+        "conflict"
+      ],
+      "sourceReviewHolds": [
+        {
+          "productIds": [
+            "signature-solar-1674009"
+          ],
+          "label": "Product type",
+          "value": "Rail based system micro inverter holder",
+          "sourceUrl": "https://topracktech.com/comp-shingle-roof/trt-rail-base-system-trt02/",
+          "reason": "Source-backed mechanical hardware fact, independently corroborated by exact retailer tech specs and Top Rack3010167. Current identity category=inverters conflicts with verified mounting-hardware role. Hold all hardware additions pending explicit category/identity reconciliation; retain exact current identity/category and all11 inverter electrical labels as inapplicable. No inverter rating may be inferred.",
+          "reviewFile": "source-review-b.json"
+        },
+        {
+          "productIds": [
+            "signature-solar-1674009"
+          ],
+          "label": "Manufacturer product number",
+          "value": "3010167",
+          "sourceUrl": "https://topracktech.com/comp-shingle-roof/trt-rail-base-system-trt02/",
+          "reason": "Source-backed mechanical hardware fact, independently corroborated by exact retailer tech specs and Top Rack3010167. Current identity category=inverters conflicts with verified mounting-hardware role. Hold all hardware additions pending explicit category/identity reconciliation; retain exact current identity/category and all11 inverter electrical labels as inapplicable. No inverter rating may be inferred.",
+          "reviewFile": "source-review-b.json"
+        },
+        {
+          "productIds": [
+            "signature-solar-1674009"
+          ],
+          "label": "Material",
+          "value": "Aluminum 6005-T5",
+          "sourceUrl": "https://topracktech.com/all-parts/",
+          "reason": "Source-backed mechanical hardware fact, independently corroborated by exact retailer tech specs and Top Rack3010167. Current identity category=inverters conflicts with verified mounting-hardware role. Hold all hardware additions pending explicit category/identity reconciliation; retain exact current identity/category and all11 inverter electrical labels as inapplicable. No inverter rating may be inferred.",
+          "reviewFile": "source-review-b.json"
+        },
+        {
+          "productIds": [
+            "signature-solar-1674009"
+          ],
+          "label": "Finish",
+          "value": "Mill",
+          "sourceUrl": "https://topracktech.com/all-parts/",
+          "reason": "Source-backed mechanical hardware fact, independently corroborated by exact retailer tech specs and Top Rack3010167. Current identity category=inverters conflicts with verified mounting-hardware role. Hold all hardware additions pending explicit category/identity reconciliation; retain exact current identity/category and all11 inverter electrical labels as inapplicable. No inverter rating may be inferred.",
+          "reviewFile": "source-review-b.json"
+        },
+        {
+          "productIds": [
+            "signature-solar-1674009"
+          ],
+          "label": "Application",
+          "value": "For Rail System on Comp Shingle Roof, Tile Roof",
+          "sourceUrl": "https://topracktech.com/all-parts/",
+          "reason": "Source-backed mechanical hardware fact, independently corroborated by exact retailer tech specs and Top Rack3010167. Current identity category=inverters conflicts with verified mounting-hardware role. Hold all hardware additions pending explicit category/identity reconciliation; retain exact current identity/category and all11 inverter electrical labels as inapplicable. No inverter rating may be inferred.",
+          "reviewFile": "source-review-b.json"
+        }
       ]
     }
   ],
@@ -91100,58 +91906,71 @@
     },
     {
       "id": "current-connected-cip138040020",
-      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
+      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained.",
+      "currentCaptureCheck": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
     },
     {
       "id": "current-connected-cip138060020",
-      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
+      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained.",
+      "currentCaptureCheck": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
     },
     {
       "id": "current-connected-cip138080020",
-      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
+      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained.",
+      "currentCaptureCheck": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
     },
     {
       "id": "current-connected-cip138100020",
-      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
+      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained.",
+      "currentCaptureCheck": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
     },
     {
       "id": "current-connected-cip138125020",
-      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
+      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained.",
+      "currentCaptureCheck": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
     },
     {
       "id": "current-connected-cip138150020",
-      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
+      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained.",
+      "currentCaptureCheck": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
     },
     {
       "id": "current-connected-cip138175020",
-      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
+      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained.",
+      "currentCaptureCheck": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
     },
     {
       "id": "current-connected-cip138200020",
-      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
+      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained.",
+      "currentCaptureCheck": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
     },
     {
       "id": "current-connected-cip138225020",
-      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
+      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained.",
+      "currentCaptureCheck": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
     },
     {
       "id": "current-connected-cip138250020",
-      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
+      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained.",
+      "currentCaptureCheck": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
     },
     {
       "id": "current-connected-cip138300020",
-      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
+      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained.",
+      "currentCaptureCheck": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
     },
     {
       "id": "current-connected-cip138400020",
-      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
+      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained.",
+      "currentCaptureCheck": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
     },
     {
       "id": "current-connected-cip138500020",
-      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
+      "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained.",
+      "currentCaptureCheck": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
     }
   ],
-  "catalogSnapshotGeneratedAt": "2026-10-23T00:33:18.683119Z",
+  "catalogSnapshotGeneratedAt": "2026-10-23T01:47:04.886738Z",
   "captureLimitations": {
     "nonAtomic": true,
     "priorUnreadableCount": 3886,
@@ -91159,22 +91978,22 @@
     "unreadableOffers": 0
   },
   "priorBatchSummary": {
-    "batch": 37,
-    "updatedAt": "2026-10-22T23:30:10.500Z",
+    "batch": 38,
+    "updatedAt": "2026-10-23T00:52:32.209Z",
     "counts": {
-      "families": 3036,
-      "attemptedFamilies": 2679,
+      "families": 3040,
+      "attemptedFamilies": 3033,
       "statuses": {
-        "partial": 1334,
-        "needs-source": 817,
-        "conflict": 390,
-        "blocked": 97,
-        "complete": 41,
-        "pending": 357
+        "partial": 1507,
+        "needs-source": 900,
+        "conflict": 460,
+        "blocked": 125,
+        "complete": 44,
+        "pending": 4
       },
-      "addedTechnicalFields": 602,
-      "filledComparisonFields": 401,
-      "currentBatchAttemptedFamilies": 291
+      "addedTechnicalFields": 604,
+      "filledComparisonFields": 495,
+      "currentBatchAttemptedFamilies": 354
     }
   },
   "queueAdministrativeResolutions": {
@@ -91262,12 +92081,40 @@
         "signature-solar-1678004",
         "sungoldpower-41293881868425",
         "sungoldpower-47407326003337",
-        "watts247-lvx6048wp"
+        "watts247-lvx6048wp",
+        "signature-solar-1593080"
       ],
       "affectedNewFields": 32,
       "comparisonGapsClaimedFilled": 0,
       "disposition": "The unchanged importer emits operatingVoltage, while inverter comparison and compatibility consumers require batteryVoltageRange. All 32 remain unknown in those consumers. No supported row-label alias emits the consumer key. Retain verified evidence and unresolved gaps; a separately authorized runtime change with compatibility validation is required. Do not bypass importer guards or manually rekey fields.",
-      "reviewPath": "docs/specification-batch-thirty-eight-provenance-review.json"
+      "reviewPath": "docs/specification-batch-thirty-eight-provenance-review.json",
+      "additionalRecordedEvidence": [
+        {
+          "key": "inverter-battery-range-consumer-key",
+          "productId": "signature-solar-1593080",
+          "storedFieldKey": "operatingVoltage",
+          "downstreamFieldKey": "batteryVoltageRange",
+          "status": "requires-runtime-support",
+          "reason": "The unchanged specification parser stores this published range as operatingVoltage. Inverter comparison/compatibility consume batteryVoltageRange; the comparison gap remains unresolved. Do not re-research the published source range or change runtime in this data batch.",
+          "batch": 39,
+          "recordedAt": "2026-10-23T01:51:13.337Z"
+        }
+      ]
     }
-  ]
+  ],
+  "researchState": "paused-until-new-source-or-complete-record-evidence",
+  "unvisitedSelectorAdministrativeReview": {
+    "batch": 39,
+    "reviewedAt": "2026-10-23T01:50:24.819450+00:00",
+    "families": 10,
+    "flaggedIds": 36,
+    "dispositionCounts": {
+      "previously-researched-no-current-gaps": 2,
+      "previously-researched-unresolved-gaps": 8,
+      "previously-researched-identity-hold": 17,
+      "previously-reviewed-category-conflict": 9
+    },
+    "countsAsNewResearchVisits": false,
+    "evidence": "docs/specification-batch-thirty-nine-review.json#/unvisitedSelectorTriage"
+  }
 }
