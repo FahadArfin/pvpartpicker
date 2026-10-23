@@ -93573,7 +93573,7 @@
     ]
   },
   "lastEligibilityCheck": {
-    "checkedAt": "2026-10-23T04:48:22.304823+00:00",
+    "checkedAt": "2026-10-23T05:56:24.352827+00:00",
     "captureProductRows": 9368,
     "captureReadableProducts": 5480,
     "captureUnreadableProducts": 3888,
@@ -93582,6 +93582,23 @@
     "comparisonFills": 0,
     "sourceVisits": 0,
     "state": "paused-until-new-source-or-complete-record-evidence",
-    "reportPath": "site/data/specification-resume-forty-one-audit.json"
+    "reportPath": "site/data/specification-resume-forty-two-audit.json",
+    "priorEligibilityReceipt": {
+      "batch": 41,
+      "path": "site/data/specification-resume-forty-one-audit.json",
+      "sha256": "6cea38dd8ef4786aa5e340e2930bcb98b131eb9bfdb97f782eda1ca6e9e69a45",
+      "checkpointReceipt": {
+        "checkedAt": "2026-10-23T04:48:22.304823+00:00",
+        "captureProductRows": 9368,
+        "captureReadableProducts": 5480,
+        "captureUnreadableProducts": 3888,
+        "captureOfferRows": 9400,
+        "technicalAdditions": 0,
+        "comparisonFills": 0,
+        "sourceVisits": 0,
+        "state": "paused-until-new-source-or-complete-record-evidence",
+        "reportPath": "site/data/specification-resume-forty-one-audit.json"
+      }
+    }
   }
 }
