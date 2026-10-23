@@ -1,0 +1,715 @@
+{
+  "baselineCommit": "f6b4a36bc27ba311c646f3bce0647fd14f926be4",
+  "baselineGitPath": "site/data/specifications.json",
+  "baselineGitBlobSha256": "dfba519581f5904d9d7522f264726c64f3ae11203790efd7e2e6bd503a53216d",
+  "baselineSnapshotSha256": "dfba519581f5904d9d7522f264726c64f3ae11203790efd7e2e6bd503a53216d",
+  "baselineSha256": "dfba519581f5904d9d7522f264726c64f3ae11203790efd7e2e6bd503a53216d",
+  "baselineSha256Scope": "Exact bytes of baseline-specifications.json research snapshot; baselineGitBlobSha256 separately identifies the named Git blob bytes.",
+  "baselineSemanticEquality": true,
+  "baselineSnapshotByteEquality": true,
+  "catalogSnapshotGeneratedAt": "2026-10-23T02:47:26.426289+00:00",
+  "checkedAt": "2026-10-23T03:02:59.771Z",
+  "scope": "5480 complete readable current database records; 3888 truncated records excluded. Non-atomic native capture; not full catalog coverage.",
+  "catalogListings": 5480,
+  "acceptedRecords": 13,
+  "changedListings": 9,
+  "addedTechnicalFields": 55,
+  "filledComparisonFields": 21,
+  "readableGapsBefore": 22306,
+  "readableGapsAfter": 22285,
+  "changes": [
+    {
+      "id": "current-connected-a052a795",
+      "name": "Cummins Onan Composite Mounting Pad for RS13A, RS17A, RS20A and RS20AC Home Standby Generators",
+      "category": "mounting",
+      "sourceUrl": "https://www.currentconnected.com/product/cummins-concrete-pad",
+      "added": [
+        {
+          "key": "model",
+          "label": "Model",
+          "value": "A052A795",
+          "source": "https://www.currentconnected.com/product/cummins-concrete-pad",
+          "kind": "retailer"
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "value": "Pre-cast composite construction made from high-strength fibers and cement",
+          "source": "https://www.currentconnected.com/product/cummins-concrete-pad",
+          "kind": "retailer"
+        },
+        {
+          "key": "dimensions",
+          "label": "Dimensions",
+          "value": "3×36.5×38.5in (H×W×D)",
+          "source": "https://www.currentconnected.com/product/cummins-concrete-pad",
+          "kind": "retailer"
+        },
+        {
+          "key": "compatibility",
+          "label": "Supported equipment / fit",
+          "value": "Compatible with Cummins Quiet Connect RS13A, RS17A, RS20A, and RS20AC generators",
+          "source": "https://www.currentconnected.com/product/cummins-concrete-pad",
+          "kind": "retailer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "material",
+          "label": "Material",
+          "value": "Pre-cast composite construction made from high-strength fibers and cement",
+          "source": "https://www.currentconnected.com/product/cummins-concrete-pad"
+        },
+        {
+          "key": "dimensions",
+          "label": "Size",
+          "value": "3×36.5×38.5in (H×W×D)",
+          "source": "https://www.currentconnected.com/product/cummins-concrete-pad"
+        },
+        {
+          "key": "compatibility",
+          "label": "Supported equipment / fit",
+          "value": "Compatible with Cummins Quiet Connect RS13A, RS17A, RS20A, and RS20AC generators",
+          "source": "https://www.currentconnected.com/product/cummins-concrete-pad",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "Tilt range"
+      ]
+    },
+    {
+      "id": "current-connected-emv3a-2p-16",
+      "name": "Emporia Vue 3 Smart Home Energy Monitor for Tracking Whole Home Energy Use, Monitors 16 Circuits, Real-Time Remote Energy Monitoring, UL Listed",
+      "category": "monitoring",
+      "sourceUrl": "https://www.currentconnected.com/product/vue-energy-monitor-gen-3",
+      "added": [
+        {
+          "key": "channels",
+          "label": "Measurement channels",
+          "value": "3 voltage measurement channels; maximum voltage sensing 264 VAC line-to-neutral per voltage channel. Current measurement capacity: up to 3 × 200 A main CT channels and up to 16 × 50 A branch CT channels; 200 A and 50 A are ratings per CT/channel, not summed current.",
+          "source": "https://link.emporiaenergy.com/sell-sheets/vue3",
+          "kind": "datasheet"
+        },
+        {
+          "key": "communications",
+          "label": "Communications",
+          "value": "Wi-Fi 2.4 GHz (IEEE 802.11b/g/n); Ethernet 10/100Base-T (IEEE 802.3).",
+          "source": "https://link.emporiaenergy.com/sell-sheets/vue3",
+          "kind": "datasheet"
+        },
+        {
+          "key": "accuracy",
+          "label": "Measurement accuracy",
+          "value": "±2% (published device measurement accuracy; no measurement range, current band, or test conditions stated)",
+          "source": "https://link.emporiaenergy.com/sell-sheets/vue3",
+          "kind": "datasheet"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "channels",
+          "label": "Channels",
+          "value": "3 voltage measurement channels; maximum voltage sensing 264 VAC line-to-neutral per voltage channel. Current measurement capacity: up to 3 × 200 A main CT channels and up to 16 × 50 A branch CT channels; 200 A and 50 A are ratings per CT/channel, not summed current.",
+          "source": "https://link.emporiaenergy.com/sell-sheets/vue3"
+        },
+        {
+          "key": "communications",
+          "label": "Connection",
+          "value": "Wi-Fi 2.4 GHz (IEEE 802.11b/g/n); Ethernet 10/100Base-T (IEEE 802.3).",
+          "source": "https://link.emporiaenergy.com/sell-sheets/vue3"
+        },
+        {
+          "key": "accuracy",
+          "label": "Measurement accuracy",
+          "value": "±2% (published device measurement accuracy; no measurement range, current band, or test conditions stated)",
+          "source": "https://link.emporiaenergy.com/sell-sheets/vue3",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "Ingress protection"
+      ]
+    },
+    {
+      "id": "current-connected-emv3a-2p-8",
+      "name": "Emporia Vue 3 Smart Home Energy Monitor for Tracking Whole Home Energy Use, Monitors 8 Circuits, Real-Time Remote Energy Monitoring, UL Listed",
+      "category": "monitoring",
+      "sourceUrl": "https://www.currentconnected.com/product/vue-energy-monitor-gen-3",
+      "added": [
+        {
+          "key": "channels",
+          "label": "Measurement channels",
+          "value": "3 voltage measurement channels; maximum voltage sensing 264 VAC line-to-neutral per voltage channel. Current measurement capacity: up to 3 × 200 A main CT channels and up to 16 × 50 A branch CT channels; 200 A and 50 A are ratings per CT/channel, not summed current.",
+          "source": "https://link.emporiaenergy.com/sell-sheets/vue3",
+          "kind": "datasheet"
+        },
+        {
+          "key": "communications",
+          "label": "Communications",
+          "value": "Wi-Fi 2.4 GHz (IEEE 802.11b/g/n); Ethernet 10/100Base-T (IEEE 802.3).",
+          "source": "https://link.emporiaenergy.com/sell-sheets/vue3",
+          "kind": "datasheet"
+        },
+        {
+          "key": "accuracy",
+          "label": "Measurement accuracy",
+          "value": "±2% (published device measurement accuracy; no measurement range, current band, or test conditions stated)",
+          "source": "https://link.emporiaenergy.com/sell-sheets/vue3",
+          "kind": "datasheet"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "channels",
+          "label": "Channels",
+          "value": "3 voltage measurement channels; maximum voltage sensing 264 VAC line-to-neutral per voltage channel. Current measurement capacity: up to 3 × 200 A main CT channels and up to 16 × 50 A branch CT channels; 200 A and 50 A are ratings per CT/channel, not summed current.",
+          "source": "https://link.emporiaenergy.com/sell-sheets/vue3"
+        },
+        {
+          "key": "communications",
+          "label": "Connection",
+          "value": "Wi-Fi 2.4 GHz (IEEE 802.11b/g/n); Ethernet 10/100Base-T (IEEE 802.3).",
+          "source": "https://link.emporiaenergy.com/sell-sheets/vue3"
+        },
+        {
+          "key": "accuracy",
+          "label": "Measurement accuracy",
+          "value": "±2% (published device measurement accuracy; no measurement range, current band, or test conditions stated)",
+          "source": "https://link.emporiaenergy.com/sell-sheets/vue3",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "Ingress protection"
+      ]
+    },
+    {
+      "id": "inverters-r-us-aps600-24",
+      "name": "Power Bright 600 Watt 24V Pure Sine Inverter APS600-24",
+      "category": "inverters",
+      "sourceUrl": "https://invertersrus.com/product/powerbright-aps600-24/",
+      "added": [
+        {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "20-30V (Input DC Voltage Range)",
+          "source": "https://invertersrus.com/product/powerbright-aps600-24/",
+          "kind": "retailer"
+        }
+      ],
+      "comparison": [],
+      "remaining": [
+        "PV max (kW)",
+        "PV A/MPPT",
+        "MPPT operating voltage range",
+        "Maximum PV voltage",
+        "Independent MPPT count",
+        "PV short-circuit current limit",
+        "Battery voltage range",
+        "AC output voltage / phase"
+      ]
+    },
+    {
+      "id": "santan-solar-ssm-560-bf-144-n-b",
+      "name": "SSM 560W Mono Bifacial Solar Panel Grade B",
+      "category": "panels",
+      "sourceUrl": "https://www.santansolar.com/product/santan-solar-ssm-560w-mono-bifacial-solar-panel-grade-b/",
+      "added": [
+        {
+          "key": "cellCount",
+          "label": "Cell count / arrangement",
+          "value": "144 half-cells, mono n-Si, HJT with SWCT® bifacial cell technology",
+          "source": "https://www.santansolar.com/wp-content/uploads/SSM-540-2.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "technology",
+          "label": "Cell technology",
+          "value": "HJT with SWCT® bifacial cell technology (published cell specification: 144 half-cells, mono n-Si, HJT with SWCT® bifacial cell technology)",
+          "source": "https://www.santansolar.com/wp-content/uploads/SSM-540-2.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "moduleEfficiency",
+          "label": "Module efficiency",
+          "value": "20.8% for the 560 Wp STC module bin (front side; no BiFi135/BiFi300 rear gain)",
+          "source": "https://www.santansolar.com/wp-content/uploads/SSM-540-2.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "vocTemperatureCoefficient",
+          "label": "Voc temperature coefficient",
+          "value": "−0.234 %/K (linear)",
+          "source": "https://www.santansolar.com/wp-content/uploads/SSM-540-2.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "pmaxTemperatureCoefficient",
+          "label": "Pmax temperature coefficient",
+          "value": "−0.259 %/K (linear)",
+          "source": "https://www.santansolar.com/wp-content/uploads/SSM-540-2.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "iscTemperatureCoefficient",
+          "label": "Isc temperature coefficient",
+          "value": "+0.033 %/K (linear)",
+          "source": "https://www.santansolar.com/wp-content/uploads/SSM-540-2.pdf",
+          "kind": "datasheet"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "cell",
+          "label": "Cells",
+          "value": "HJT with SWCT® bifacial cell technology (published cell specification: 144 half-cells, mono n-Si, HJT with SWCT® bifacial cell technology)"
+        },
+        {
+          "key": "moduleEfficiency",
+          "label": "Efficiency",
+          "value": "20.8% for the 560 Wp STC module bin (front side; no BiFi135/BiFi300 rear gain)",
+          "source": "https://www.santansolar.com/wp-content/uploads/SSM-540-2.pdf"
+        },
+        {
+          "key": "vocTemperatureCoefficient",
+          "label": "Voc temperature coefficient",
+          "value": "−0.234 %/K (linear)",
+          "source": "https://www.santansolar.com/wp-content/uploads/SSM-540-2.pdf",
+          "note": "Sourced exact-model specification"
+        },
+        {
+          "key": "pmaxTemperatureCoefficient",
+          "label": "Power temperature coefficient",
+          "value": "−0.259 %/K (linear)",
+          "source": "https://www.santansolar.com/wp-content/uploads/SSM-540-2.pdf",
+          "note": "Sourced exact-model specification"
+        },
+        {
+          "key": "iscTemperatureCoefficient",
+          "label": "Isc temperature coefficient",
+          "value": "+0.033 %/K (linear)",
+          "source": "https://www.santansolar.com/wp-content/uploads/SSM-540-2.pdf",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "Vmp temperature coefficient"
+      ]
+    },
+    {
+      "id": "signature-solar-1593135",
+      "name": "Victron Quattro 48/10000/140-100/100 120V VE.Bus UL",
+      "category": "inverters",
+      "sourceUrl": "https://signaturesolar.com/victron-quattro-48-10000-140-100-100-120v-ve-bus-ul/",
+      "added": [
+        {
+          "key": "model",
+          "label": "Model",
+          "value": "48/10000/140-100/100 120V",
+          "source": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "38–66 V DC (inverter battery input)",
+          "source": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "maxChargeCurrent",
+          "label": "Maximum charge current",
+          "value": "140 A (house battery; up to 25°C ambient)",
+          "source": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "efficiency",
+          "label": "Conversion efficiency",
+          "value": "96% maximum",
+          "source": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "chargeVoltage",
+          "label": "Charging voltage",
+          "value": "57.6 V DC absorption; 55.2 V DC float; 52.8 V DC storage mode",
+          "source": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "acOutput",
+          "label": "AC output voltage",
+          "value": "120 VAC ±2%",
+          "source": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "frequency",
+          "label": "AC frequency",
+          "value": "60 Hz ±0.1% (AC output)",
+          "source": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "outputWatts",
+          "label": "Rated AC output power",
+          "value": "8000 W at 25°C; 6500 W at 40°C; 4500 W at 65°C",
+          "source": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "surgeWatts",
+          "label": "Surge output (duration as published)",
+          "value": "20000 W (duration not stated)",
+          "source": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "weight",
+          "label": "Weight",
+          "value": "128 lb / 58 kg",
+          "source": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "dimensions",
+          "label": "Dimensions",
+          "value": "22.6 × 19.2 × 13.6 in / 572 × 488 × 344 mm",
+          "source": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "value": "Aluminium (blue RAL 5012)",
+          "source": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "ipRating",
+          "label": "Ingress protection",
+          "value": "IP21",
+          "source": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "operatingTemperature",
+          "label": "Operating temperature",
+          "value": "-40 to +65°C",
+          "source": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "humidity",
+          "label": "Humidity",
+          "value": "95% maximum (non-condensing)",
+          "source": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "communications",
+          "label": "Communications",
+          "value": "VE.Bus (parallel, split-phase and three-phase operation, remote monitoring and system integration)",
+          "source": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "kind": "datasheet"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "outputWatts",
+          "label": "AC out (kW)",
+          "value": "8000 W at 25°C; 6500 W at 40°C; 4500 W at 65°C",
+          "source": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf"
+        },
+        {
+          "key": "acOutput",
+          "label": "AC output voltage / phase",
+          "value": "120 VAC ±2%",
+          "source": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "note": "Sourced exact-model specification"
+        },
+        {
+          "key": "frequency",
+          "label": "AC frequency",
+          "value": "60 Hz ±0.1% (AC output)",
+          "source": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "PV max (kW)",
+        "PV A/MPPT",
+        "Battery V",
+        "MPPT operating voltage range",
+        "Maximum PV voltage",
+        "Independent MPPT count",
+        "PV short-circuit current limit",
+        "Battery voltage range"
+      ]
+    },
+    {
+      "id": "signature-solar-1647023",
+      "name": "Enphase IQ System Controller 3G | Generator Integration",
+      "category": "monitoring",
+      "sourceUrl": "https://signaturesolar.com/iq-system-controller-3g-generator-integration/",
+      "added": [
+        {
+          "key": "model",
+          "label": "Model",
+          "value": "SC200G111C240US01 (IQ System Controller 3G; generator integration supported)",
+          "source": "https://signaturesolar.com/content/documents/Enphase/system-controller/IQ%20System%20Controller%203-3G%20data%20sheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "ratedCurrent",
+          "label": "Rated current",
+          "value": "160 A (maximum continuous current rating of the IQ System Controller 3G; controller rating, not measured load current or generator output)",
+          "source": "https://signaturesolar.com/content/documents/Enphase/system-controller/IQ%20System%20Controller%203-3G%20data%20sheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "ratedVoltage",
+          "label": "Voltage rating",
+          "value": "240 V AC line-to-line, nominal range ±20% (System Controller 3/3G)",
+          "source": "https://signaturesolar.com/content/documents/Enphase/system-controller/IQ%20System%20Controller%203-3G%20data%20sheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "dimensions",
+          "label": "Dimensions",
+          "value": "50 cm × 91.6 cm × 24.6 cm (19.7 in × 36 in × 9.7 in; W × H × D)",
+          "source": "https://signaturesolar.com/content/documents/Enphase/system-controller/IQ%20System%20Controller%203-3G%20data%20sheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "weight",
+          "label": "Weight",
+          "value": "39.4 kg (87 lb)",
+          "source": "https://signaturesolar.com/content/documents/Enphase/system-controller/IQ%20System%20Controller%203-3G%20data%20sheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "material",
+          "label": "Material",
+          "value": "Polycarbonate enclosure",
+          "source": "https://signaturesolar.com/content/documents/Enphase/system-controller/IQ%20System%20Controller%203-3G%20data%20sheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "compatibility",
+          "label": "Supported equipment / fit",
+          "value": "Select Enphase-supported AC standby generators; IQ System Controller 3G supports generator integration. IQ System Controller 3 (SC200D111C240US01) does not. Use Enphase generator compatibility guidance; compatibility is not universal.",
+          "source": "https://signaturesolar.com/content/documents/Enphase/system-controller/IQ%20System%20Controller%203-3G%20data%20sheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "phase",
+          "label": "AC phase / wiring",
+          "value": "120/240 V single-phase split-phase AC system (Enphase-described IQ System Controller 3G topology)",
+          "source": "https://investor.enphase.com/news-releases/news-release-details/enphase-energy-announces-complete-grid-solar-and-battery",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "frequency",
+          "label": "AC frequency",
+          "value": "60 Hz nominal (range 56–63 Hz)",
+          "source": "https://signaturesolar.com/content/documents/Enphase/system-controller/IQ%20System%20Controller%203-3G%20data%20sheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "accuracy",
+          "label": "Measurement accuracy",
+          "value": "±1% of nominal voltage (±1.2 V line-to-neutral; ±2.4 V line-to-line; voltage measurement only)",
+          "source": "https://signaturesolar.com/content/documents/Enphase/system-controller/IQ%20System%20Controller%203-3G%20data%20sheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "operatingTemperature",
+          "label": "Operating temperature",
+          "value": "-40°C to 50°C (-40°F to 122°F; ambient)",
+          "source": "https://signaturesolar.com/content/documents/Enphase/system-controller/IQ%20System%20Controller%203-3G%20data%20sheet.pdf",
+          "kind": "datasheet"
+        },
+        {
+          "key": "altitude",
+          "label": "Operating altitude",
+          "value": "2500 m (8200 ft) maximum",
+          "source": "https://signaturesolar.com/content/documents/Enphase/system-controller/IQ%20System%20Controller%203-3G%20data%20sheet.pdf",
+          "kind": "datasheet"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "accuracy",
+          "label": "Measurement accuracy",
+          "value": "±1% of nominal voltage (±1.2 V line-to-neutral; ±2.4 V line-to-line; voltage measurement only)",
+          "source": "https://signaturesolar.com/content/documents/Enphase/system-controller/IQ%20System%20Controller%203-3G%20data%20sheet.pdf",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "Channels",
+        "Connection",
+        "Ingress protection"
+      ]
+    },
+    {
+      "id": "signature-solar-1650039",
+      "name": "Pytes HV48100 SE High Voltage Battery Module| 51.2V 100Ah 5.12kWh",
+      "category": "batteries",
+      "sourceUrl": "https://signaturesolar.com/pytes-hv48100-se-high-voltage-battery-module-51-2v-100ah-5-12kwh/",
+      "added": [
+        {
+          "key": "ratedCurrent",
+          "label": "Rated current",
+          "value": "50 A (rated charge/discharge current of the module; retailer specification)",
+          "source": "https://signaturesolar.com/pytes-hv48100-se-high-voltage-battery-module-51-2v-100ah-5-12kwh/",
+          "kind": "retailer"
+        },
+        {
+          "key": "voltage",
+          "label": "Nominal voltage",
+          "value": "51.2 V",
+          "source": "https://www.pytesusa.com/public/upload/20260131/173d3afdcc82d6a16f11b7d96d713d36.pdf",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "47.5 V ~ 57.6 V",
+          "source": "https://www.pytesusa.com/public/upload/20260131/173d3afdcc82d6a16f11b7d96d713d36.pdf",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "operatingTemperature",
+          "label": "Operating temperature",
+          "value": "-4°F to 131°F (module installed in battery cabinet; retailer specification)",
+          "source": "https://signaturesolar.com/pytes-hv48100-se-high-voltage-battery-module-51-2v-100ah-5-12kwh/",
+          "kind": "retailer"
+        },
+        {
+          "key": "compatibility",
+          "label": "Supported equipment / fit",
+          "value": "Pytes HV48100 SE systems with 3–15 battery modules (system configuration; not package quantity)",
+          "source": "https://signaturesolar.com/pytes-hv48100-se-high-voltage-battery-module-51-2v-100ah-5-12kwh/",
+          "kind": "retailer"
+        },
+        {
+          "key": "capacityKwh",
+          "label": "Energy capacity",
+          "value": "5.12 kWh",
+          "source": "https://www.pytesusa.com/public/upload/20260131/173d3afdcc82d6a16f11b7d96d713d36.pdf",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "capacityAh",
+          "label": "Rated capacity",
+          "value": "100 Ah",
+          "source": "https://www.pytesusa.com/public/upload/20260131/173d3afdcc82d6a16f11b7d96d713d36.pdf",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "chemistry",
+          "label": "Battery chemistry",
+          "value": "Lithium Iron Phosphate (LFP)",
+          "source": "https://www.pytesusa.com/public/upload/20260131/173d3afdcc82d6a16f11b7d96d713d36.pdf",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "weight",
+          "label": "Weight",
+          "value": "99 lb / 45 kg",
+          "source": "https://www.pytesusa.com/public/upload/20260131/173d3afdcc82d6a16f11b7d96d713d36.pdf",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "chemistry",
+          "label": "Chemistry",
+          "value": "Lithium Iron Phosphate (LFP)",
+          "source": "https://www.pytesusa.com/public/upload/20260131/173d3afdcc82d6a16f11b7d96d713d36.pdf",
+          "note": "Sourced exact-model specification"
+        },
+        {
+          "key": "capacityAh",
+          "label": "Rated capacity (Ah)",
+          "value": "100 Ah",
+          "source": "https://www.pytesusa.com/public/upload/20260131/173d3afdcc82d6a16f11b7d96d713d36.pdf",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "Format",
+        "Discharge (A)",
+        "Maximum charge current",
+        "Peak discharge current",
+        "Charge temperature",
+        "Discharge temperature",
+        "Communications",
+        "Dimensions"
+      ]
+    },
+    {
+      "id": "signature-solar-1658037",
+      "name": "S5! RIB BRACKET 3",
+      "category": "mounting",
+      "sourceUrl": "https://signaturesolar.com/s5-rib-bracket-3/",
+      "added": [
+        {
+          "key": "material",
+          "label": "Material",
+          "value": "6005A T61 bracket; factory-applied EPDM; stainless-steel screws (nut material not stated)",
+          "source": "https://f.hubspotusercontent00.net/hubfs/3482954/Resources/Product%20Documents/Brackets/RibBracket%20III/ribbracket-iii-ccd.pdf",
+          "kind": "datasheet"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "material",
+          "label": "Material",
+          "value": "6005A T61 bracket; factory-applied EPDM; stainless-steel screws (nut material not stated)",
+          "source": "https://f.hubspotusercontent00.net/hubfs/3482954/Resources/Product%20Documents/Brackets/RibBracket%20III/ribbracket-iii-ccd.pdf"
+        }
+      ],
+      "remaining": [
+        "Size",
+        "Supported equipment / fit",
+        "Tilt range"
+      ]
+    }
+  ],
+  "holds": [],
+  "priorEvidencePreservation": {
+    "priorRecords": 6515,
+    "technicalFieldObjects": 37944,
+    "sourceObjects": 11689,
+    "identities": 6011,
+    "panelRatingValues": 2885
+  },
+  "newConsumerLimitations": [
+    {
+      "key": "inverter-battery-range-consumer-key",
+      "productId": "inverters-r-us-aps600-24",
+      "storedFieldKey": "operatingVoltage",
+      "downstreamFieldKey": "batteryVoltageRange",
+      "status": "requires-runtime-support",
+      "reason": "The unchanged specification parser stores this published range as operatingVoltage. Inverter comparison/compatibility consume batteryVoltageRange; the comparison gap remains unresolved. Do not re-research the published source range or change runtime in this data batch."
+    },
+    {
+      "key": "inverter-battery-range-consumer-key",
+      "productId": "signature-solar-1593135",
+      "storedFieldKey": "operatingVoltage",
+      "downstreamFieldKey": "batteryVoltageRange",
+      "status": "requires-runtime-support",
+      "reason": "The unchanged specification parser stores this published range as operatingVoltage. Inverter comparison/compatibility consume batteryVoltageRange; the comparison gap remains unresolved. Do not re-research the published source range or change runtime in this data batch."
+    }
+  ],
+  "renderedComparisonPreservation": {
+    "lostValues": [],
+    "changedRowStructures": [],
+    "sourceBackedRefinements": []
+  }
+}

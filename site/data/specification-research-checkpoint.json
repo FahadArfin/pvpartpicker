@@ -1,29 +1,32 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-23T01:51:13.337Z",
-  "batch": 39,
+  "updatedAt": "2026-10-23T03:03:24.013Z",
+  "batch": 40,
   "scope": "Cumulative family research queue. Current record counts refer only to this full native connector pagination pass; individual truncated JSON values remain excluded. Prior dispositions and identities remain auditable. Not a full-catalog completeness claim.",
   "catalogCaptureDate": "2026-10-23",
-  "readableProductCount": 5471,
-  "unreadableProductCount": 3886,
+  "readableProductCount": 5480,
+  "unreadableProductCount": 3888,
   "counts": {
-    "families": 3040,
-    "attemptedFamilies": 3037,
+    "families": 3049,
+    "attemptedFamilies": 3046,
     "statuses": {
-      "partial": 1509,
+      "partial": 1517,
       "needs-source": 900,
-      "conflict": 462,
+      "conflict": 463,
       "blocked": 125,
       "complete": 44
     },
-    "addedTechnicalFields": 10,
-    "filledComparisonFields": 8,
-    "currentBatchAttemptedFamilies": 8,
-    "currentBatchFirstVisitedFamilies": 4,
-    "currentBatchFollowupFamilies": 4,
-    "currentBatchSourceAssignments": 12
+    "addedTechnicalFields": 55,
+    "filledComparisonFields": 21,
+    "currentBatchQueueAuditWorkers": 12,
+    "currentBatchQueueAuditFamilies": 3040,
+    "currentBatchQueueAuditSourceVisits": 0,
+    "currentBatchAttemptedFamilies": 11,
+    "currentBatchFirstVisitedFamilies": 9,
+    "currentBatchFollowupFamilies": 2,
+    "currentBatchSourceAssignments": 11
   },
-  "nextAction": "No unvisited pending family or unreviewed published-source lead remains in this captured queue. Pause source research until new complete catalog records, exact source evidence, or conflict resolution becomes available. Unpublished, conflicted, blocked, truncated and consumer-unsupported gaps remain unresolved; this is not catalog completion.",
+  "nextAction": "No pending families or unresolved historical source leads remain in the captured queue. Pause until new complete records or exact-source evidence arrive. Unpublished, conflicted, blocked, identity-held, truncated, and consumer-unsupported gaps remain unresolved; this is not catalog completion.",
   "families": [
     {
       "key": "panels|https://sungoldpower.com/products/415w-mono-black-solar-panel",
@@ -1045,12 +1048,84 @@
         "Power temperature coefficient",
         "Isc temperature coefficient"
       ],
-      "lastAttemptAt": "2026-10-22T12:20:30.604Z",
+      "lastAttemptAt": "2026-10-23T03:02:57.928724+00:00",
       "researchDispositions": [
         "partial"
       ],
       "updatedListingIds": [
         "santan-solar-ssm-560-b-n"
+      ],
+      "attemptHistory": [
+        {
+          "batch": 39,
+          "lastAttemptAt": "2026-10-22T12:20:30.604Z",
+          "status": "partial",
+          "remainingFields": [
+            "Cells",
+            "Efficiency",
+            "Voc temperature coefficient",
+            "Vmp temperature coefficient",
+            "Power temperature coefficient",
+            "Isc temperature coefficient"
+          ]
+        }
+      ],
+      "sourceReviewHolds": [
+        {
+          "field": "Cell construction",
+          "value": "mono n-Si (published cell specification: 144 half-cells, mono n-Si, HJT with SWCT® bifacial cell technology)",
+          "reason": "Prior verified cellConstruction is Mono; preserve prior value and hold replacement wording. Complete source cell construction remains in cellCount/technology qualifiers.",
+          "sourceUrl": "https://www.santansolar.com/wp-content/uploads/SSM-540-2.pdf",
+          "reviewEvidence": "independent-new-source-review-12.json#/rowDecisions/1",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Vmp temperature coefficient",
+          "status": "not published; no inference made.",
+          "kind": "notes-only-limit",
+          "reviewEvidence": "worker-12/new-notes.json#/nonproposalsAndLimits/0"
+        },
+        {
+          "field": "Bifacial rear-side gain / BiFi135 / BiFi300 values",
+          "status": "not proposed as module efficiency; 20.8% is the 560 Wp STC front-side column.",
+          "kind": "notes-only-limit",
+          "reviewEvidence": "worker-12/new-notes.json#/nonproposalsAndLimits/1"
+        },
+        {
+          "field": "Pack/pallet quantity and packaging dimensions",
+          "status": "excluded; target is the single-panel listing. No pallet facts transferred.",
+          "kind": "notes-only-limit",
+          "reviewEvidence": "worker-12/new-notes.json#/nonproposalsAndLimits/2"
+        },
+        {
+          "field": "Document revision",
+          "status": "sheet has no explicit revision identifier; direct current target-page attachment establishes the target source relationship, but the missing revision label is retained as a limit.",
+          "kind": "notes-only-limit",
+          "reviewEvidence": "worker-12/new-notes.json#/nonproposalsAndLimits/3"
+        }
+      ],
+      "lastAttemptBatch": 40,
+      "lastSourceAssignmentWorkers": [
+        "12"
+      ],
+      "sourceAssignments": [
+        {
+          "worker": 12,
+          "phase": "new",
+          "status": "partial",
+          "finalStatus": "partial",
+          "summary": "Submit the five previously proposed missing facts for exact target as reviewed-spec rows. The exact page attachment, SKU, exact 560 Wp bin and complete module identity support binding. No canonical files modified.",
+          "notesFile": "worker-12/new-notes.json",
+          "notesSha256": "4f74215d734b125f675457b23296bc15937439d7c2b42fad0191dd84e5357f36",
+          "proposalFile": "worker-12/new-reviewed.json",
+          "previouslyAttemptedFamily": true,
+          "countsAsSourceResearch": true,
+          "assignedProductIds": [
+            "santan-solar-ssm-560-bf-144-n-b"
+          ],
+          "recordedAt": "2026-10-23T03:02:57.928724+00:00",
+          "finalDispositionReason": "Direct exact single-panel page attachment binds560Wpbin and six missing source fields. PriorMono construction and all stored ratings/dimensions preserved; unpublishedVmpcoefficient remains unknown."
+        }
       ]
     },
     {
@@ -30268,7 +30343,7 @@
       "key": "inverters|https://invertersrus.com/product/powerbright-aps600-24/",
       "category": "inverters",
       "sourceUrl": "https://invertersrus.com/product/powerbright-aps600-24/",
-      "status": "conflict",
+      "status": "partial",
       "listingIds": [
         "inverters-r-us-aps600-24"
       ],
@@ -30282,8 +30357,8 @@
         "Battery voltage range",
         "AC output voltage / phase"
       ],
-      "lastAttemptAt": "2026-10-22T20:14:17.622Z",
-      "lastAttemptBatch": 35,
+      "lastAttemptAt": "2026-10-23T03:02:57.928724+00:00",
+      "lastAttemptBatch": 40,
       "researchDispositions": [
         "needs-source",
         "partial",
@@ -30291,6 +30366,46 @@
       ],
       "updatedListingIds": [
         "inverters-r-us-aps600-24"
+      ],
+      "attemptHistory": [
+        {
+          "batch": 35,
+          "lastAttemptAt": "2026-10-22T20:14:17.622Z",
+          "status": "conflict",
+          "remainingFields": [
+            "PV max (kW)",
+            "PV A/MPPT",
+            "MPPT operating voltage range",
+            "Maximum PV voltage",
+            "Independent MPPT count",
+            "PV short-circuit current limit",
+            "Battery voltage range",
+            "AC output voltage / phase"
+          ]
+        }
+      ],
+      "sourceReviewHolds": [],
+      "lastSourceAssignmentWorkers": [
+        "independent-source-followup"
+      ],
+      "sourceAssignments": [
+        {
+          "worker": "independent-source-followup",
+          "phase": "missed-proposal",
+          "status": "partial",
+          "finalStatus": "partial",
+          "summary": "Previously recorded exact 20–30 V DC input range was never proposed. Bounded exact-retailer followup independently confirms range, stored as operatingVoltage; downstream inverter batteryVoltageRange remains unsupported. Preserve all prior fields.",
+          "notesFile": "aps600-followup/source-evidence.json",
+          "notesSha256": "993222ffb464da5fa627169b9f5547c118c2a48ae1c2e1cae5cbfc2ad21c1b2f",
+          "proposalFile": "aps600-followup/proposed-reviewed.json",
+          "previouslyAttemptedFamily": true,
+          "countsAsSourceResearch": true,
+          "assignedProductIds": [
+            "inverters-r-us-aps600-24"
+          ],
+          "recordedAt": "2026-10-23T03:02:57.928724+00:00",
+          "finalDispositionReason": "Previously omitted20–30V DC input proposal confirmed at exact current retailer; imported only as operatingVoltage/detail field. Prior AC and other source conflicts remain unchanged."
+        }
       ]
     },
     {
@@ -87383,6 +87498,895 @@
           "reviewFile": "source-review-b.json"
         }
       ]
+    },
+    {
+      "key": "kits|https://www.currentconnected.com/product/aptos-grid-tie-microinverter-solar-panel-kit",
+      "category": "kits",
+      "sourceUrl": "https://www.currentconnected.com/product/aptos-grid-tie-microinverter-solar-panel-kit",
+      "status": "partial",
+      "listingIds": [
+        "current-connected-aptos-grid-tie-microinverter-solar-panel-kit"
+      ],
+      "remainingFields": [],
+      "researchDispositions": [
+        "partial"
+      ],
+      "sourceReviewHolds": [
+        {
+          "field": "Required configuration components",
+          "value": "Solar Panels; Aptos Microinverters; Trunk Cable",
+          "reason": "Configuration selector or option content is supported, but the native generic kit identity contains no selected package. Kit Summary selections are blank and total $0; some option cards are selected separately. No schema field for required/optional options; relabeling to Included components would falsely assert a supplied package.",
+          "sourceUrl": "https://www.currentconnected.com/product/aptos-grid-tie-microinverter-solar-panel-kit",
+          "reviewEvidence": "independent-new-source-review-1.json#/rowDecisions/0",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Optional configuration components",
+          "value": "AC Disconnect Tool; Trunk Connector Unlock Tool; Trunk End Cap; Data Transfer / Monitoring Unit",
+          "reason": "Configuration selector or option content is supported, but the native generic kit identity contains no selected package. Kit Summary selections are blank and total $0; some option cards are selected separately. No schema field for required/optional options; relabeling to Included components would falsely assert a supplied package.",
+          "sourceUrl": "https://www.currentconnected.com/product/aptos-grid-tie-microinverter-solar-panel-kit",
+          "reviewEvidence": "independent-new-source-review-1.json#/rowDecisions/1",
+          "kind": "original-proposal-held"
+        }
+      ],
+      "lastAttemptAt": "2026-10-23T03:02:57.928724+00:00",
+      "lastAttemptBatch": 40,
+      "lastSourceAssignmentWorkers": [
+        "1"
+      ],
+      "sourceAssignments": [
+        {
+          "worker": 1,
+          "phase": "new",
+          "status": "partial",
+          "finalStatus": "partial",
+          "summary": "The exact retailer page publishes required component categories (panels, Aptos microinverters, trunk cable) and optional accessories/monitoring options. The kit summary has no configured selections, so no selected panel or inverter model is established; no component engineering ratings or price are attributed to the kit. Remaining aggregate ratings and final contents are unresolved until a selected configuration is identified.",
+          "notesFile": "worker-1/new-notes.json",
+          "notesSha256": "eb52e5fe2aa00212e1f5bf58ac4d76b5d7eeab7c01ab17386ec4ecda9368e8c0",
+          "proposalFile": "worker-1/new-reviewed.json",
+          "previouslyAttemptedFamily": false,
+          "countsAsSourceResearch": true,
+          "assignedProductIds": [
+            "current-connected-aptos-grid-tie-microinverter-solar-panel-kit"
+          ],
+          "recordedAt": "2026-10-23T03:02:57.928724+00:00",
+          "finalDispositionReason": "Exact configurable-kit sources reviewed; no selected package is bound to the native generic identity. Required/optional options cannot be imported as included contents; no current-schema row approved."
+        }
+      ]
+    },
+    {
+      "key": "kits|https://www.currentconnected.com/product/customizable-bigbattery-home-inverter-and-battery-kit-for-grid-tied-or-off-grid-renewable-energy-systems",
+      "category": "kits",
+      "sourceUrl": "https://www.currentconnected.com/product/customizable-bigbattery-home-inverter-and-battery-kit-for-grid-tied-or-off-grid-renewable-energy-systems",
+      "status": "partial",
+      "listingIds": [
+        "current-connected-customizable-bigbattery-home-inverter-and-battery-kit-for-grid-tied-or-off-grid-renewable-energy-syste"
+      ],
+      "remainingFields": [],
+      "researchDispositions": [
+        "partial"
+      ],
+      "sourceReviewHolds": [
+        {
+          "field": "Required configuration components",
+          "value": "Inverter; Batteries",
+          "reason": "Configuration selector or option content is supported, but the native generic kit identity contains no selected package. Kit Summary selections are blank and total $0; some option cards are selected separately. No schema field for required/optional options; relabeling to Included components would falsely assert a supplied package.",
+          "sourceUrl": "https://www.currentconnected.com/product/customizable-bigbattery-home-inverter-and-battery-kit-for-grid-tied-or-off-grid-renewable-energy-systems",
+          "reviewEvidence": "independent-new-source-review-1.json#/rowDecisions/2",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Optional configuration components",
+          "value": "Solar Panels",
+          "reason": "Configuration selector or option content is supported, but the native generic kit identity contains no selected package. Kit Summary selections are blank and total $0; some option cards are selected separately. No schema field for required/optional options; relabeling to Included components would falsely assert a supplied package.",
+          "sourceUrl": "https://www.currentconnected.com/product/customizable-bigbattery-home-inverter-and-battery-kit-for-grid-tied-or-off-grid-renewable-energy-systems",
+          "reviewEvidence": "independent-new-source-review-1.json#/rowDecisions/3",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Inverter options",
+          "value": "BigBattery APEX-6.5K Off-Grid Inverter, 48V All-in-One Inverter with 10kW Solar Input, UL 1741; BigBattery APEX-10K Off-Grid Inverter, 48V All-in-One Inverter with 11kW Solar Input and up to 200A Battery Charging, UL 1741",
+          "reason": "Configuration selector or option content is supported, but the native generic kit identity contains no selected package. Kit Summary selections are blank and total $0; some option cards are selected separately. No schema field for required/optional options; relabeling to Included components would falsely assert a supplied package.",
+          "sourceUrl": "https://www.currentconnected.com/product/customizable-bigbattery-home-inverter-and-battery-kit-for-grid-tied-or-off-grid-renewable-energy-systems",
+          "reviewEvidence": "independent-new-source-review-1.json#/rowDecisions/4",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Battery options",
+          "value": "BigBattery ETHOS 48V 10.24kWh 200Ah Stackable Lithium Battery System, 2x Battery Modules and Control Box, Includes Interconnecting Wires; BigBattery NEXUS 48V 15kWh LiFePO4 Battery, 300Ah Energy Storage for Solar and Backup; BigBattery 48V HUSKY 2 INV 100Ah 5.12kWh Lithium Battery, Mobile Friendly LiFePO4 Energy Storage",
+          "reason": "Configuration selector or option content is supported, but the native generic kit identity contains no selected package. Kit Summary selections are blank and total $0; some option cards are selected separately. No schema field for required/optional options; relabeling to Included components would falsely assert a supplied package.",
+          "sourceUrl": "https://www.currentconnected.com/product/customizable-bigbattery-home-inverter-and-battery-kit-for-grid-tied-or-off-grid-renewable-energy-systems",
+          "reviewEvidence": "independent-new-source-review-1.json#/rowDecisions/5",
+          "kind": "original-proposal-held"
+        }
+      ],
+      "lastAttemptAt": "2026-10-23T03:02:57.928724+00:00",
+      "lastAttemptBatch": 40,
+      "lastSourceAssignmentWorkers": [
+        "1"
+      ],
+      "sourceAssignments": [
+        {
+          "worker": 1,
+          "phase": "new",
+          "status": "partial",
+          "finalStatus": "partial",
+          "summary": "The exact retailer page publishes required inverter and battery categories, optional solar panels, and listed model choices. The kit summary has no configured selections; the displayed component ratings are not proposed as aggregate kit specifications and no selected inverter/battery configuration is established. Remaining aggregate ratings and final contents are unresolved until a selected configuration is identified.",
+          "notesFile": "worker-1/new-notes.json",
+          "notesSha256": "eb52e5fe2aa00212e1f5bf58ac4d76b5d7eeab7c01ab17386ec4ecda9368e8c0",
+          "proposalFile": "worker-1/new-reviewed.json",
+          "previouslyAttemptedFamily": false,
+          "countsAsSourceResearch": true,
+          "assignedProductIds": [
+            "current-connected-customizable-bigbattery-home-inverter-and-battery-kit-for-grid-tied-or-off-grid-renewable-energy-syste"
+          ],
+          "recordedAt": "2026-10-23T03:02:57.928724+00:00",
+          "finalDispositionReason": "Exact configurable-kit sources reviewed; no selected package is bound to the native generic identity. Required/optional options cannot be imported as included contents; no current-schema row approved."
+        }
+      ]
+    },
+    {
+      "key": "inverters|https://signaturesolar.com/victron-quattro-48-10000-140-100-100-120v-ve-bus-ul/",
+      "category": "inverters",
+      "sourceUrl": "https://signaturesolar.com/victron-quattro-48-10000-140-100-100-120v-ve-bus-ul/",
+      "status": "partial",
+      "listingIds": [
+        "signature-solar-1593135"
+      ],
+      "remainingFields": [
+        "PV max (kW)",
+        "PV A/MPPT",
+        "Battery V",
+        "MPPT operating voltage range",
+        "Maximum PV voltage",
+        "Independent MPPT count",
+        "PV short-circuit current limit",
+        "Battery voltage range"
+      ],
+      "researchDispositions": [
+        "partial"
+      ],
+      "sourceReviewHolds": [
+        {
+          "field": "SKU",
+          "value": "1593135",
+          "reason": "Retailer SKU is corroborating identity; preserve the manufacturer model as the one model field, not a conflicting SKU-valued model.",
+          "sourceUrl": "https://signaturesolar.com/victron-quattro-48-10000-140-100-100-120v-ve-bus-ul/",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/0",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Retailer model name",
+          "value": "Victron Quattro 48/10000/140-100/100 120V Inverter/Charger (UL Listed)",
+          "reason": "Retailer model title and UL claim are identity evidence; manufacturer model row retained. UL listing is not independently established by this linked generic120V datasheet.",
+          "sourceUrl": "https://signaturesolar.com/victron-quattro-48-10000-140-100-100-120v-ve-bus-ul/",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/1",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Rated Power",
+          "value": "10000VA",
+          "reason": "10000VA is apparent power. outputWatts requires real watts; preserve separate temperature-conditioned real-power row.",
+          "sourceUrl": "https://signaturesolar.com/victron-quattro-48-10000-140-100-100-120v-ve-bus-ul/",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/2",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Rated Voltage",
+          "value": "48V",
+          "reason": "Nominal48V DC is valid source evidence but raw captured voltage anchor is120. Unchanged compatibleRows would reject this discrepancy; do not rename or weaken guard to import48V.",
+          "sourceUrl": "https://signaturesolar.com/victron-quattro-48-10000-140-100-100-120v-ve-bus-ul/",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/3",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Maximum charging current",
+          "value": "140A",
+          "reason": "Unqualified retailer140A is superseded by exact manufacturer house-battery charge current with up-to25°C ambient qualifier.",
+          "sourceUrl": "https://signaturesolar.com/victron-quattro-48-10000-140-100-100-120v-ve-bus-ul/",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/4",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Rated AC Output",
+          "value": "120V",
+          "reason": "Retailer120V corroborates more precise exact manufacturer AC-output row.",
+          "sourceUrl": "https://signaturesolar.com/victron-quattro-48-10000-140-100-100-120v-ve-bus-ul/",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/5",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Weight",
+          "value": "128 lb",
+          "reason": "Retailer weight corroborates manufacturer128lb/58kg row.",
+          "sourceUrl": "https://signaturesolar.com/victron-quattro-48-10000-140-100-100-120v-ve-bus-ul/",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/6",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "AC inputs",
+          "value": "2",
+          "reason": "Source fact is retained in evidence but has no equivalent current schema field without changing its electrical/component scope.",
+          "sourceUrl": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/8",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "AC input voltage range",
+          "value": "90–140 VAC",
+          "reason": "Source fact is retained in evidence but has no equivalent current schema field without changing its electrical/component scope.",
+          "sourceUrl": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/9",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "AC input frequency",
+          "value": "45–65 Hz",
+          "reason": "Source fact is retained in evidence but has no equivalent current schema field without changing its electrical/component scope.",
+          "sourceUrl": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/10",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Maximum feed-through current",
+          "value": "AC-in-1: 100 A; AC-in-2: 100 A",
+          "reason": "Source fact is retained in evidence but has no equivalent current schema field without changing its electrical/component scope.",
+          "sourceUrl": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/11",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Nominal DC battery input voltage",
+          "value": "48 V DC",
+          "reason": "Nominal48V DC field conflicts with raw120V anchor under current compatibleRows; hold instead of using an alias to bypass validation.",
+          "sourceUrl": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/13",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Continuous apparent output power",
+          "value": "10,000 VA at 25°C",
+          "reason": "Apparent10000VA at25°C has no apparent-power field; do not store as real watts.",
+          "sourceUrl": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/16",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "No-load power",
+          "value": "55 W",
+          "reason": "Incorrect for cited linked datasheet: exact48/10000 column gives60W, not55W. Manual variant gives55W; unresolved document/revision conflict and no idle-power key.",
+          "sourceUrl": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/19",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "No-load power in AES mode",
+          "value": "35 W",
+          "reason": "Incorrect for cited linked datasheet: AES40W, not35W. Manual variant gives35W; unresolved document/revision conflict and no idle-power key.",
+          "sourceUrl": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/20",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "No-load power in Search mode",
+          "value": "20 W",
+          "reason": "Incorrect for cited linked datasheet: Search15W, not20W. Manual variant gives20W; unresolved document/revision conflict and no idle-power key.",
+          "sourceUrl": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/21",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Model / firmware applicability",
+          "value": "Quattro 48/10000/140-100/100 120V; manual covers firmware xxxx400 or higher",
+          "reason": "Manual retained as corroborating evidence only; installed firmware xxxx400+ is not established. Equivalent safe fields use exact linked datasheet; no duplicate or unsupported-scope field imported.",
+          "sourceUrl": "https://signaturesolar.com/content/documents/Victron/Manual-Quattro-5k-10k-120V-%28firmware-xxxx4xx%29-EN-ES.pdf",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/25",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "AC input selection",
+          "value": "Two independent AC input sources; automatically selects an input where voltage is present; selects AC-in-1 if voltage is present on both",
+          "reason": "Manual retained as corroborating evidence only; installed firmware xxxx400+ is not established. Equivalent safe fields use exact linked datasheet; no duplicate or unsupported-scope field imported.",
+          "sourceUrl": "https://signaturesolar.com/content/documents/Victron/Manual-Quattro-5k-10k-120V-%28firmware-xxxx4xx%29-EN-ES.pdf",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/26",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "AC outputs",
+          "value": "Two: AC-out-1 uninterruptible output and AC-out-2 auxiliary output that disconnects its load during battery operation",
+          "reason": "Manual retained as corroborating evidence only; installed firmware xxxx400+ is not established. Equivalent safe fields use exact linked datasheet; no duplicate or unsupported-scope field imported.",
+          "sourceUrl": "https://signaturesolar.com/content/documents/Victron/Manual-Quattro-5k-10k-120V-%28firmware-xxxx4xx%29-EN-ES.pdf",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/27",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Maximum feed-through current",
+          "value": "AC-in-1: 100 A; AC-in-2: 100 A",
+          "reason": "Manual retained as corroborating evidence only; installed firmware xxxx400+ is not established. Equivalent safe fields use exact linked datasheet; no duplicate or unsupported-scope field imported.",
+          "sourceUrl": "https://signaturesolar.com/content/documents/Victron/Manual-Quattro-5k-10k-120V-%28firmware-xxxx4xx%29-EN-ES.pdf",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/28",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "DC input voltage range",
+          "value": "38–66 V DC",
+          "reason": "Manual retained as corroborating evidence only; installed firmware xxxx400+ is not established. Equivalent safe fields use exact linked datasheet; no duplicate or unsupported-scope field imported.",
+          "sourceUrl": "https://signaturesolar.com/content/documents/Victron/Manual-Quattro-5k-10k-120V-%28firmware-xxxx4xx%29-EN-ES.pdf",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/29",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Continuous apparent and real output power",
+          "value": "10,000 VA; 8,000 W at 25°C; 6,500 W at 40°C; 4,500 W at 65°C",
+          "reason": "Manual retained as corroborating evidence only; installed firmware xxxx400+ is not established. Equivalent safe fields use exact linked datasheet; no duplicate or unsupported-scope field imported.",
+          "sourceUrl": "https://signaturesolar.com/content/documents/Victron/Manual-Quattro-5k-10k-120V-%28firmware-xxxx4xx%29-EN-ES.pdf",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/30",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "House battery charge current",
+          "value": "140 A; at 25°C ambient",
+          "reason": "Manual retained as corroborating evidence only; installed firmware xxxx400+ is not established. Equivalent safe fields use exact linked datasheet; no duplicate or unsupported-scope field imported.",
+          "sourceUrl": "https://signaturesolar.com/content/documents/Victron/Manual-Quattro-5k-10k-120V-%28firmware-xxxx4xx%29-EN-ES.pdf",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/31",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "No-load power",
+          "value": "55 W; AES mode 35 W; Search mode 20 W",
+          "reason": "Manual idle55/35/20W conflicts with linked datasheet60/40/15W; retain both with unresolved revision applicability, no idle import.",
+          "sourceUrl": "https://signaturesolar.com/content/documents/Victron/Manual-Quattro-5k-10k-120V-%28firmware-xxxx4xx%29-EN-ES.pdf",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/32",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Weight",
+          "value": "128 lb / 58 kg",
+          "reason": "Manual retained as corroborating evidence only; installed firmware xxxx400+ is not established. Equivalent safe fields use exact linked datasheet; no duplicate or unsupported-scope field imported.",
+          "sourceUrl": "https://signaturesolar.com/content/documents/Victron/Manual-Quattro-5k-10k-120V-%28firmware-xxxx4xx%29-EN-ES.pdf",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/33",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Dimensions (H × W × D)",
+          "value": "22.6 × 19.2 × 13.6 in / 572 × 488 × 344 mm",
+          "reason": "Manual retained as corroborating evidence only; installed firmware xxxx400+ is not established. Equivalent safe fields use exact linked datasheet; no duplicate or unsupported-scope field imported.",
+          "sourceUrl": "https://signaturesolar.com/content/documents/Victron/Manual-Quattro-5k-10k-120V-%28firmware-xxxx4xx%29-EN-ES.pdf",
+          "reviewEvidence": "independent-additional-source-review-1.json#/rowDecisions/34",
+          "kind": "original-proposal-held"
+        }
+      ],
+      "lastAttemptAt": "2026-10-23T03:02:57.928724+00:00",
+      "lastAttemptBatch": 40,
+      "lastSourceAssignmentWorkers": [
+        "1"
+      ],
+      "sourceAssignments": [
+        {
+          "worker": 1,
+          "phase": "additional",
+          "status": "partial",
+          "finalStatus": "partial",
+          "summary": "Exact linked 120V retailer and manufacturer documents support the listed inverter/charger facts. Preserve raw identity anchor voltage=120; 48 V DC is the nominal battery input and 38–66 V DC its operating range, not a rewrite of that anchor. Keep 10 kVA separate from temperature-conditioned real watts. Feed-through current is 100 A per input and is not an independent transfer-switch rating. No PV/MPPT is reported for this standalone inverter. Manual covers firmware xxxx400 and higher, while installed firmware is not supplied.",
+          "notesFile": "worker-1/additional-notes.json",
+          "notesSha256": "879aec16238b87e1704beebb276ca3ca6f9b51daf71baca96f4033e26f37d7bc",
+          "proposalFile": "worker-1/additional-reviewed.json",
+          "previouslyAttemptedFamily": false,
+          "countsAsSourceResearch": true,
+          "assignedProductIds": [
+            "signature-solar-1593135"
+          ],
+          "recordedAt": "2026-10-23T03:02:57.928724+00:00",
+          "finalDispositionReason": "Exact120V Quattro source column accepted with qualifiers. Raw120V anchor preserved; nominal48V held under unchanged compatibleRows. Idle60/40/15W vs55/35/20W remains unresolved. ApparentVA, feed-through and unsupported scopes remain separate."
+        }
+      ]
+    },
+    {
+      "key": "wiring|https://signaturesolar.com/power-center-bus-cable-tool/",
+      "category": "wiring",
+      "sourceUrl": "https://signaturesolar.com/power-center-bus-cable-tool/",
+      "status": "conflict",
+      "listingIds": [
+        "signature-solar-1669010"
+      ],
+      "remainingFields": [
+        "Gauge",
+        "Length",
+        "Connector",
+        "Conductor material",
+        "Rated voltage",
+        "Rated current"
+      ],
+      "researchDispositions": [
+        "conflict"
+      ],
+      "sourceReviewHolds": [
+        {
+          "field": "Identity/category",
+          "reason": "Identity/category hold: the full native row is categorized as wiring, but the exact retailer page identifies a Duracell Power Center AC trunk/bus connector unlocking hand tool (PC-BUS TOOL, offer SKU 1669010), and the manufacturer manual describes the bus connector unlock tool. The inspected sources publish no tool dimensions, material, or measured weight. Do not import this offer as wiring while the category/identity binding is unsafe; do not transfer bus-cable ratings or labels to the tool. Preserve the source disposition until category mapping is resolved.",
+          "kind": "identity-hold",
+          "reviewEvidence": "worker-1/additional-notes.json#/families/1"
+        }
+      ],
+      "lastAttemptAt": "2026-10-23T03:02:57.928724+00:00",
+      "lastAttemptBatch": 40,
+      "lastSourceAssignmentWorkers": [
+        "1"
+      ],
+      "sourceAssignments": [
+        {
+          "worker": 1,
+          "phase": "additional",
+          "status": "conflict",
+          "finalStatus": "conflict",
+          "summary": "Identity/category hold: the full native row is categorized as wiring, but the exact retailer page identifies a Duracell Power Center AC trunk/bus connector unlocking hand tool (PC-BUS TOOL, offer SKU 1669010), and the manufacturer manual describes the bus connector unlock tool. The inspected sources publish no tool dimensions, material, or measured weight. Do not import this offer as wiring while the category/identity binding is unsafe; do not transfer bus-cable ratings or labels to the tool. Preserve the source disposition until category mapping is resolved.",
+          "notesFile": "worker-1/additional-notes.json",
+          "notesSha256": "879aec16238b87e1704beebb276ca3ca6f9b51daf71baca96f4033e26f37d7bc",
+          "proposalFile": "worker-1/additional-reviewed.json",
+          "previouslyAttemptedFamily": false,
+          "countsAsSourceResearch": true,
+          "assignedProductIds": [
+            "signature-solar-1669010"
+          ],
+          "recordedAt": "2026-10-23T03:02:57.928724+00:00",
+          "finalDispositionReason": "Identity/category hold: the full native row is categorized as wiring, but the exact retailer page identifies a Duracell Power Center AC trunk/bus connector unlocking hand tool (PC-BUS TOOL, offer SKU 1669010), and the manufacturer manual describes the bus connector unlock tool. The inspected sources publish no tool dimensions, material, or measured weight. Do not import this offer as wiring while the category/identity binding is unsafe; do not transfer bus-cable ratings or labels to the tool. Preserve the source disposition until category mapping is resolved."
+        }
+      ]
+    },
+    {
+      "key": "mounting|https://www.currentconnected.com/product/cummins-concrete-pad",
+      "category": "mounting",
+      "sourceUrl": "https://www.currentconnected.com/product/cummins-concrete-pad",
+      "status": "partial",
+      "listingIds": [
+        "current-connected-a052a795"
+      ],
+      "remainingFields": [
+        "Tilt range"
+      ],
+      "researchDispositions": [
+        "partial"
+      ],
+      "sourceReviewHolds": [
+        {
+          "field": "Included hardware",
+          "value": "Includes mounting hardware for securing the generator",
+          "reason": "Published fact has no equivalent current mounting-category field; keep as evidence, do not force into model/material/dimensions/compatibility.",
+          "sourceUrl": "https://www.currentconnected.com/product/cummins-concrete-pad",
+          "reviewEvidence": "independent-new-source-review-2.json#/rowDecisions/3",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Overhang",
+          "value": "This 3-inch-thick pad features a 1-inch overhang around the perimeter of the generator",
+          "reason": "Published fact has no equivalent current mounting-category field; keep as evidence, do not force into model/material/dimensions/compatibility.",
+          "sourceUrl": "https://www.currentconnected.com/product/cummins-concrete-pad",
+          "reviewEvidence": "independent-new-source-review-2.json#/rowDecisions/5",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Generator inclusion",
+          "value": "Generator sold separately",
+          "reason": "Published fact has no equivalent current mounting-category field; keep as evidence, do not force into model/material/dimensions/compatibility.",
+          "sourceUrl": "https://www.currentconnected.com/product/cummins-concrete-pad",
+          "reviewEvidence": "independent-new-source-review-2.json#/rowDecisions/6",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Pack quantity",
+          "value": "Part Number Pads per pack — A052A795 1",
+          "reason": "Published fact has no equivalent current mounting-category field; keep as evidence, do not force into model/material/dimensions/compatibility.",
+          "sourceUrl": "https://mart.cummins.com/imagelibrary/data/assetfiles/0056768.pdf",
+          "reviewEvidence": "independent-new-source-review-2.json#/rowDecisions/7",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Construction / thickness / overhang",
+          "value": "Pre-cast concrete composite pad that is 3 inches think and a 1-inch overhang around generator.",
+          "reason": "Combined construction/thickness/overhang sentence is corroborating evidence. Material and full dimensions already retained from exact retailer; no separate thickness/overhang field exists and no mixed-measurement alias is permitted.",
+          "sourceUrl": "https://mart.cummins.com/imagelibrary/data/assetfiles/0056768.pdf",
+          "reviewEvidence": "independent-new-source-review-2.json#/rowDecisions/8",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Included hardware",
+          "value": "Pad comes with mounting hardware for securing the generator.",
+          "reason": "Published fact has no equivalent current mounting-category field; keep as evidence, do not force into model/material/dimensions/compatibility.",
+          "sourceUrl": "https://mart.cummins.com/imagelibrary/data/assetfiles/0056768.pdf",
+          "reviewEvidence": "independent-new-source-review-2.json#/rowDecisions/9",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Compatibility",
+          "value": "A052A795 1 — RS13A, RS17A, RS20A, RS20AC",
+          "reason": "Exact manufacturer table independently corroborates retailer compatibility. No second field is needed; keep as supporting evidence rather than duplicate differently worded compatibility.",
+          "sourceUrl": "https://mart.cummins.com/imagelibrary/data/assetfiles/0056768.pdf",
+          "reviewEvidence": "independent-new-source-review-2.json#/rowDecisions/10",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Weight",
+          "retailerQuote": "Weight: 317lbs",
+          "retailerUrl": "https://www.currentconnected.com/product/cummins-concrete-pad",
+          "reason": "Conflicts materially with other exact-part sources: Lowe’s exact model A052A795 page reports 135 lbs (https://www.lowes.com/pd/Cummins-Home-Standby-Generators/5014758051), while an exact generator outline linked through Cummins-related source reports accessory mounting pad A052A795 approximate weight 70 kg (155 lb) (https://device.report/m/5ef8b0bd42a1cc15387f95b18bafb09dc19dfae20ac05d45a5969b8691da4fe9). No weight value promoted pending resolution; retailer source discrepancy retained.",
+          "kind": "notes-only-limit",
+          "reviewEvidence": "worker-2/new-notes.json#/heldRows/0"
+        }
+      ],
+      "lastAttemptAt": "2026-10-23T03:02:57.928724+00:00",
+      "lastAttemptBatch": 40,
+      "lastSourceAssignmentWorkers": [
+        "2"
+      ],
+      "sourceAssignments": [
+        {
+          "worker": 2,
+          "phase": "new",
+          "status": "partial",
+          "finalStatus": "partial",
+          "summary": "Exact-source-supported review records saved for independent review and downstream importer. No canonical catalog edit or import performed.",
+          "notesFile": "worker-2/new-notes.json",
+          "notesSha256": "09149424473dfe57b3338082d5f915f3be7c2550afd30d4d5bca0f3695d77444",
+          "proposalFile": "worker-2/new-reviewed.json",
+          "previouslyAttemptedFamily": false,
+          "countsAsSourceResearch": true,
+          "assignedProductIds": [
+            "current-connected-a052a795"
+          ],
+          "recordedAt": "2026-10-23T03:02:57.928724+00:00",
+          "finalDispositionReason": "ExactA052A795 model/material/H×W×D/compatibility accepted.317lb/135lb/approximately155lb weight conflict remains unresolved; unsupported package facts retained."
+        }
+      ]
+    },
+    {
+      "key": "batteries|https://signaturesolar.com/pytes-hv48100-se-high-voltage-battery-module-51-2v-100ah-5-12kwh/",
+      "category": "batteries",
+      "sourceUrl": "https://signaturesolar.com/pytes-hv48100-se-high-voltage-battery-module-51-2v-100ah-5-12kwh/",
+      "status": "partial",
+      "listingIds": [
+        "signature-solar-1650039"
+      ],
+      "remainingFields": [
+        "Format",
+        "Discharge (A)",
+        "Maximum charge current",
+        "Peak discharge current",
+        "Charge temperature",
+        "Discharge temperature",
+        "Communications",
+        "Dimensions"
+      ],
+      "researchDispositions": [
+        "partial"
+      ],
+      "sourceReviewHolds": [
+        {
+          "field": "Nominal energy",
+          "value": "Nominal Energy: 5.12kWh",
+          "reason": "Retailer nominal energy duplicates exact manufacturer BMU table; manufacturer retained.",
+          "sourceUrl": "https://signaturesolar.com/pytes-hv48100-se-high-voltage-battery-module-51-2v-100ah-5-12kwh/",
+          "reviewEvidence": "independent-additional-source-review-2.json#/rowDecisions/0",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Nominal capacity",
+          "value": "Nominal Capacity: 100 Ah",
+          "reason": "Retailer nominal capacity duplicates exact manufacturer BMU table; manufacturer retained.",
+          "sourceUrl": "https://signaturesolar.com/pytes-hv48100-se-high-voltage-battery-module-51-2v-100ah-5-12kwh/",
+          "reviewEvidence": "independent-additional-source-review-2.json#/rowDecisions/1",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Maximum cabinet configuration",
+          "value": "15S1P / 7S2P",
+          "reason": "Maximum cabinet15S1P/7S2P is system configuration; no scalar module expansion count inferred.",
+          "sourceUrl": "https://www.pytesusa.com/public/upload/20260131/173d3afdcc82d6a16f11b7d96d713d36.pdf",
+          "reviewEvidence": "independent-additional-source-review-2.json#/rowDecisions/8",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "System charge/discharge current",
+          "value": "50 A*2; 50 A",
+          "reason": "System50A×2/50A belongs to differing cabinet configurations; do not promote to module maximum current or import ambiguous association.",
+          "sourceUrl": "https://www.pytesusa.com/public/upload/20260131/173d3afdcc82d6a16f11b7d96d713d36.pdf",
+          "reviewEvidence": "independent-additional-source-review-2.json#/rowDecisions/9",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "maximum continuous charge/discharge current",
+          "disposition": "held / not established",
+          "reason": "Retailer publishes only “Rated Charge/Discharge Current: 50A.” Do not relabel it maximum continuous. Manufacturer SE datasheet current row is under system configurations and lacks unambiguous config mapping in extracted table.",
+          "kind": "notes-only-limit",
+          "reviewEvidence": "worker-2/additional-notes.json#/heldRows/0"
+        },
+        {
+          "field": "module dimensions",
+          "disposition": "unpublished in accessible exact SE source",
+          "reason": "Current accessible manufacturer SE datasheet exposes system/cabinet dimensions (43 × 47 × 79 in / 1100 × 1193 × 2015 mm), not module dimensions. Do not attach cabinet dimensions to this Battery Module.",
+          "kind": "notes-only-limit",
+          "reviewEvidence": "worker-2/additional-notes.json#/heldRows/1"
+        },
+        {
+          "field": "module communications",
+          "disposition": "unpublished in accessible exact SE source",
+          "reason": "Manufacturer global system page lists system external protocols CAN, RS485, Dry Contact, WiFi; exact SE module-level protocol is not established. Older non-SE HV48100 module data must not be transferred.",
+          "kind": "notes-only-limit",
+          "reviewEvidence": "worker-2/additional-notes.json#/heldRows/2"
+        },
+        {
+          "field": "pack quantity",
+          "disposition": "not explicitly specified",
+          "reason": "Exact listing is for a singularly named Battery Module but page does not provide a package-count statement; retain unconfirmed rather than infer from title or quantity selector.",
+          "kind": "notes-only-limit",
+          "reviewEvidence": "worker-2/additional-notes.json#/heldRows/3"
+        },
+        {
+          "field": "cabinet/system dimensions and weight",
+          "disposition": "held as wrong component level",
+          "reason": "Datasheet General/system table dimensions and stack weight describe HV48100 SE cabinet/stack; they do not describe one BMU.",
+          "kind": "notes-only-limit",
+          "reviewEvidence": "worker-2/additional-notes.json#/heldRows/4"
+        },
+        {
+          "field": "Signature Solar linked spec sheet",
+          "disposition": "rejected as wrong identity binding",
+          "reason": "The exact SKU 1650039 retailer page’s Spec Sheet link resolves to a file titled Pytes-HV48100-SE Battery Control Unit Spec Sheet and ImageRelay metadata SKU 1650038, the BCU. Excluded.",
+          "kind": "notes-only-limit",
+          "reviewEvidence": "worker-2/additional-notes.json#/heldRows/5"
+        },
+        {
+          "field": "manufacturer newer linked sheet",
+          "disposition": "unavailable; no retry",
+          "reason": "Current Pytes SE product page points to a newer May 2026 PDF but connected open timed out once. Accessible manufacturer V20260120 datasheet used; no repeated fetch.",
+          "kind": "notes-only-limit",
+          "reviewEvidence": "worker-2/additional-notes.json#/heldRows/6"
+        },
+        {
+          "field": "load/wind/snow ratings",
+          "disposition": "unpublished/not inferred",
+          "reason": "No such module ratings found.",
+          "kind": "notes-only-limit",
+          "reviewEvidence": "worker-2/additional-notes.json#/heldRows/7"
+        }
+      ],
+      "lastAttemptAt": "2026-10-23T03:02:57.928724+00:00",
+      "lastAttemptBatch": 40,
+      "lastSourceAssignmentWorkers": [
+        "2"
+      ],
+      "sourceAssignments": [
+        {
+          "worker": 2,
+          "phase": "additional",
+          "status": "partial",
+          "finalStatus": "partial",
+          "summary": "Exact native product identity is complete and records bind to it. Ready for independent review; no canonical edits or import performed.",
+          "notesFile": "worker-2/additional-notes.json",
+          "notesSha256": "b63d4f6b1abe9c5ee6366c4803fcb691d484c78984bc266805239187762e51d2",
+          "proposalFile": "worker-2/additional-reviewed.json",
+          "previouslyAttemptedFamily": false,
+          "countsAsSourceResearch": true,
+          "assignedProductIds": [
+            "signature-solar-1650039"
+          ],
+          "recordedAt": "2026-10-23T03:02:57.928724+00:00",
+          "finalDispositionReason": "Reviewed exact current source; only independently approved fields are importable. All other published claims retain explicit dispositions."
+        }
+      ]
+    },
+    {
+      "key": "monitoring|https://www.currentconnected.com/product/vue-energy-monitor-gen-3",
+      "category": "monitoring",
+      "sourceUrl": "https://www.currentconnected.com/product/vue-energy-monitor-gen-3",
+      "status": "partial",
+      "listingIds": [
+        "current-connected-emv3a-2p-16",
+        "current-connected-emv3a-2p-8"
+      ],
+      "remainingFields": [
+        "Ingress protection"
+      ],
+      "researchDispositions": [
+        "partial"
+      ],
+      "sourceReviewHolds": [
+        {
+          "field": "Included sensor counts",
+          "reason": "2mainCT plus8or16branchCT is package content, not maximum channels. No package-content field in monitoring schema; do not substitute for hardware capacity.",
+          "kind": "unsupported-source-scope",
+          "reviewEvidence": "worker-9/new-notes.json#/notes/families/0/variantBindings"
+        },
+        {
+          "field": "Ingress protection",
+          "reason": "No IP code established. Indoor/dry conditions do not imply an IP rating.",
+          "kind": "unpublished",
+          "reviewEvidence": "worker-9/new-notes.json#/notes/families/0"
+        },
+        {
+          "field": "Active internet requirement",
+          "reason": "Removed from proposed communications values: cited sell sheet establishes protocols but not full monitoring/cloud-storage/update requirement clause.",
+          "kind": "unsupported-clause",
+          "reviewEvidence": "independent-new-source-review-9.json#/rowDecisions"
+        }
+      ],
+      "lastAttemptAt": "2026-10-23T03:02:57.928724+00:00",
+      "lastAttemptBatch": 40,
+      "lastSourceAssignmentWorkers": [
+        "9"
+      ],
+      "sourceAssignments": [
+        {
+          "worker": 9,
+          "phase": "new",
+          "status": "partial",
+          "finalStatus": "partial",
+          "summary": "Reviewed the exact Current Connected Vue Gen 3 page and the linked Emporia Vue 3 technical sell sheet. The exact captured Current Connected offers distinguish SKU EMV3A-2P-16 / Sixteen from EMV3A-2P-8 / Eight. The seller's page supports the 2×200 A main-CT and 8/16×50 A branch-CT package distinction; the manufacturer sheet supports device capacity of 3 voltage channels, up to 3×200 A main CT channels and up to 16×50 A branch CT channels, the 264 VAC line-to-neutral maximum sensing voltage per voltage channel, Wi-Fi/Ethernet, and ±2% accuracy. Do not treat included CT counts as device channel capacity, do not sum current ratings across CTs, and do not transfer branch-sensor count into maximum capability. Batch 34's review of the same EMV3-A technical sheet corrected Channels and Communications aliases and accepted ±2%; it separately held the retailer's two-main/eight-branch included-package row as not equivalent to device channel capacity. I followed that distinction: package counts are recorded as exact variant identity/source context, while the reviewed Channels value is the manufacturer's maximum device capacity. The source states ±2% but does not give measurement conditions. No IP code was found; indoor/dry operating conditions are not an IP rating. No generic Emporia Vue sibling facts or identity anchors were transferred.",
+          "notesFile": "worker-9/new-notes.json",
+          "notesSha256": "452ad65595a13f1c43d381bd936181d894e1cd07039ba1aad24326dcf31af314",
+          "proposalFile": "worker-9/new-reviewed.json",
+          "previouslyAttemptedFamily": false,
+          "countsAsSourceResearch": true,
+          "assignedProductIds": [
+            "current-connected-emv3a-2p-16",
+            "current-connected-emv3a-2p-8"
+          ],
+          "recordedAt": "2026-10-23T03:02:57.928724+00:00",
+          "finalDispositionReason": "Reviewed exact current source; only independently approved fields are importable. All other published claims retain explicit dispositions."
+        }
+      ]
+    },
+    {
+      "key": "mounting|https://signaturesolar.com/s5-rib-bracket-3/",
+      "category": "mounting",
+      "sourceUrl": "https://signaturesolar.com/s5-rib-bracket-3/",
+      "status": "conflict",
+      "listingIds": [
+        "signature-solar-1658037"
+      ],
+      "remainingFields": [
+        "Size",
+        "Supported equipment / fit",
+        "Tilt range"
+      ],
+      "researchDispositions": [
+        "partial",
+        "conflict"
+      ],
+      "sourceReviewHolds": [
+        {
+          "field": "Supported equipment / fit",
+          "value": "For exposed-fastened trapezoidal metal roof profiles; RibBracket III is specified for top ribs 1 in ± to 1 3/8 in (25 mm to 35 mm), with PBR Panel, R-Panel, Kirby Roof (KR) and similarly dimensioned profiles named as examples. Lapped-rib installation is generally not recommended.",
+          "reason": "Conflicting upper fit bound: native captured description1–1.125in vs current retailer/manufacturerIII1in± to1⅜in. Exact model is bound, but no source-revision evidence resolves this dimensional conflict; do not silently prefer one bound.",
+          "sourceUrl": "https://www.s-5.com/products/ribbracket-i-v/",
+          "reviewEvidence": "independent-additional-source-review-9.json#/rowDecisions/0",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Dimensions",
+          "value": "RibBracket III drawing callouts (not a complete three-axis envelope): height 1.68 in (42.7 mm), width 1.05 in (26.8 mm); additional feature callouts include 1.11 in (28.1 mm), 2.52 in (64.1 mm), and 2.61 in (66.3 mm). Do not interpret these feature lengths as one overall bounding box.",
+          "reason": "Multiple drawing feature callouts are not a complete envelope; current numeric-leading Dimensions field would require promoting/repackaging feature dimensions. Retain exact drawing evidence without an inferred overall dimension.",
+          "sourceUrl": "https://www.s-5.com/products/ribbracket-i-v/",
+          "reviewEvidence": "independent-additional-source-review-9.json#/rowDecisions/2",
+          "kind": "original-proposal-held"
+        },
+        {
+          "field": "Included hardware",
+          "value": "Per single-bracket listing: four 1/4 in × 1 in stainless-capped self-piercing screws and one M8 nut. The RibBracket III manufacturer drawing specifies the screws as 1/4 in × 1 in stainless-steel self-tapping screws with 5/16 in hex head and the nut as M8-1.25 flange nut.",
+          "reason": "Per-package hardware source fact has no mounting-category included-hardware key; do not force it into material/model/overall dimensions.",
+          "sourceUrl": "https://signaturesolar.com/s5-rib-bracket-3/",
+          "reviewEvidence": "independent-additional-source-review-9.json#/rowDecisions/3",
+          "kind": "original-proposal-held"
+        }
+      ],
+      "lastAttemptAt": "2026-10-23T03:02:57.928724+00:00",
+      "lastAttemptBatch": 40,
+      "lastSourceAssignmentWorkers": [
+        "9"
+      ],
+      "sourceAssignments": [
+        {
+          "worker": 9,
+          "phase": "additional",
+          "status": "partial",
+          "finalStatus": "conflict",
+          "summary": "Exact native product record is now available and binds name S5! RIB BRACKET 3, category mounting, and mountType Hardware. The exact Signature Solar page identifies SKU 1658037 and names RibBracket III. Official S-5! III-specific page, III-specific CCD and installation instructions support profile fit, material, drawing dimensions, and per-bracket included hardware. Signature Solar's captured native description's stated 1–1.125 in roof range conflicts with the live detail text and S-5!'s manufacturer III-specific range of 1 in ± to 1 3/8 in; that discrepancy is disclosed for independent resolution. No aggregate wind/snow/structural load rating or full three-axis dimension is proposed.",
+          "notesFile": "worker-9/additional-notes.json",
+          "notesSha256": "6119f4b49999b9aa598c434ff26a62e9d50ff855c1ff3cc164657efd4ddbdc98",
+          "proposalFile": "worker-9/additional-reviewed.json",
+          "previouslyAttemptedFamily": false,
+          "countsAsSourceResearch": true,
+          "assignedProductIds": [
+            "signature-solar-1658037"
+          ],
+          "recordedAt": "2026-10-23T03:02:57.928724+00:00",
+          "finalDispositionReason": "ExactIII identity/material accepted; fit bound conflicts between captured native description and current manufacturer/retailer detail. Feature dimensions and package hardware remain held."
+        }
+      ]
+    },
+    {
+      "key": "monitoring|https://signaturesolar.com/iq-system-controller-3g-generator-integration/",
+      "category": "monitoring",
+      "sourceUrl": "https://signaturesolar.com/iq-system-controller-3g-generator-integration/",
+      "status": "partial",
+      "listingIds": [
+        "signature-solar-1647023"
+      ],
+      "remainingFields": [
+        "Channels",
+        "Connection",
+        "Ingress protection"
+      ],
+      "researchDispositions": [
+        "partial"
+      ],
+      "sourceReviewHolds": [
+        {
+          "field": "Input/OCP limits: 200 A max input and max output OCP devices",
+          "reason": "No schema key represents maximum input/output OCP device while preserving its protection-device scope. Do not encode as ratedCurrent or interruptRating.",
+          "kind": "notes-only-limit",
+          "reviewEvidence": "worker-12/additional-notes.json#/heldFromCanonicalRows/0"
+        },
+        {
+          "field": "Generator circuit 80 A maximum OCP device",
+          "reason": "No schema key represents generator-branch OCP limit. It is not generator current; do not map to ratedCurrent/maxDischargeCurrent.",
+          "kind": "notes-only-limit",
+          "reviewEvidence": "worker-12/additional-notes.json#/heldFromCanonicalRows/1"
+        },
+        {
+          "field": "NFT branch breaker ratings and NFT capacity (40 A per leg, 3,600 VA; transient current/power items omitted)",
+          "reason": "Component-specific values have no safe field for this category. Do not map them to whole-controller ratedCurrent, ratedVoltage, or outputWatts.",
+          "kind": "notes-only-limit",
+          "reviewEvidence": "worker-12/additional-notes.json#/heldFromCanonicalRows/2"
+        },
+        {
+          "field": "Auxiliary generator/load-control dry contact, 24 V / 1 A",
+          "reason": "No field distinguishes the low-voltage dry control contact from system power ratings.",
+          "kind": "notes-only-limit",
+          "reviewEvidence": "worker-12/additional-notes.json#/heldFromCanonicalRows/3"
+        },
+        {
+          "field": "NEMA Type 3R ingress/environmental rating",
+          "reason": "Existing ipRating field denotes an IP rating. NEMA Type 3R is not an IP code; keep as sourced note rather than mislabel.",
+          "kind": "notes-only-limit",
+          "reviewEvidence": "worker-12/additional-notes.json#/heldFromCanonicalRows/4"
+        },
+        {
+          "field": "Automatic transfer behavior",
+          "reason": "No transfer behavior or transfer-time field for monitoring/control category. Transition behavior documented; numeric transfer time not published in the linked sheet.",
+          "kind": "notes-only-limit",
+          "reviewEvidence": "worker-12/additional-notes.json#/heldFromCanonicalRows/5"
+        },
+        {
+          "field": "UL/certification/service-equipment use",
+          "reason": "Generic certifications key exists, but target-linked2024sheet labels broad compliance under progress. Newer exact2025certification and mark/service-equipment applicability was not independently approved for import; preserve source notes and do not convert broad pending compliance into certification.",
+          "kind": "notes-only-limit",
+          "reviewEvidence": "worker-12/additional-notes.json#/heldFromCanonicalRows/6"
+        }
+      ],
+      "lastAttemptAt": "2026-10-23T03:02:57.928724+00:00",
+      "lastAttemptBatch": 40,
+      "lastSourceAssignmentWorkers": [
+        "12"
+      ],
+      "sourceAssignments": [
+        {
+          "worker": 12,
+          "phase": "additional",
+          "status": "partial",
+          "finalStatus": "partial",
+          "summary": "Exact source reviewed; see complete original notes and final independent row decisions.",
+          "notesFile": "worker-12/additional-notes.json",
+          "notesSha256": "17904d9a9f2470fb513e7c5a767f5c4164d16d17142f566fb501e2a03916e1a2",
+          "proposalFile": "worker-12/additional-reviewed.json",
+          "previouslyAttemptedFamily": false,
+          "countsAsSourceResearch": true,
+          "assignedProductIds": [
+            "signature-solar-1647023"
+          ],
+          "recordedAt": "2026-10-23T03:02:57.928724+00:00",
+          "finalDispositionReason": "Reviewed exact current source; only independently approved fields are importable. All other published claims retain explicit dispositions."
+        }
+      ]
     }
   ],
   "unreadableProductIds": [
@@ -91271,7 +92275,9 @@
     "watts247-w-emp-220300",
     "watts247-w-emp-220300-2",
     "watts247-w-emp-600vdcx1",
-    "watts247-w-emp-600vdcx2"
+    "watts247-w-emp-600vdcx2",
+    "current-connected-a058m290",
+    "eg4-flexboss21"
   ],
   "identityHolds": [
     {
@@ -91968,32 +92974,277 @@
       "id": "current-connected-cip138500020",
       "reason": "Previously verified identity differs from refreshed complete metadata; existing evidence retained.",
       "currentCaptureCheck": "Previously verified identity differs from refreshed complete metadata; existing evidence retained."
+    },
+    {
+      "id": "current-connected-ori121222120",
+      "familyKey": "batteries|https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+      "reason": "Current full variant URL changed from prior research selector and now selects a single option shared across distinct model/variant IDs. Preserve previous evidence and selector; do not automatically rebind.",
+      "currentName": "Victron Energy Orion-TR Smart 12/12-18 Isolated DC-DC Converter, Provides up to 18A of Power to Secondary Batteries",
+      "priorSourceUrl": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+      "currentSourceUrl": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger?attribute_model-input-output-capacity=48V+%2F+48V+%2F+8A+%28380W%29",
+      "captureChanges": {
+        "sourceUrl": {
+          "prior": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+          "current": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger?attribute_model-input-output-capacity=48V+%2F+48V+%2F+8A+%28380W%29"
+        }
+      },
+      "batch": 40
+    },
+    {
+      "id": "current-connected-ori121236120",
+      "familyKey": "batteries|https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+      "reason": "Current full variant URL changed from prior research selector and now selects a single option shared across distinct model/variant IDs. Preserve previous evidence and selector; do not automatically rebind.",
+      "currentName": "Victron Energy Orion-TR Smart 12/12-30 Isolated DC-DC Converter, Provides up to 30A of Power to Secondary Batteries",
+      "priorSourceUrl": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+      "currentSourceUrl": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger?attribute_model-input-output-capacity=48V+%2F+48V+%2F+8A+%28380W%29",
+      "captureChanges": {
+        "sourceUrl": {
+          "prior": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+          "current": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger?attribute_model-input-output-capacity=48V+%2F+48V+%2F+8A+%28380W%29"
+        }
+      },
+      "batch": 40
+    },
+    {
+      "id": "current-connected-ori122436120",
+      "familyKey": "batteries|https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+      "reason": "Current full variant URL changed from prior research selector and now selects a single option shared across distinct model/variant IDs. Preserve previous evidence and selector; do not automatically rebind.",
+      "currentName": "Victron Energy Orion-TR Smart 12/24-15 Isolated DC-DC Converter, Provides up to 15A of Power to Secondary Batteries",
+      "priorSourceUrl": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+      "currentSourceUrl": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger?attribute_model-input-output-capacity=48V+%2F+48V+%2F+8A+%28380W%29",
+      "captureChanges": {
+        "sourceUrl": {
+          "prior": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+          "current": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger?attribute_model-input-output-capacity=48V+%2F+48V+%2F+8A+%28380W%29"
+        }
+      },
+      "batch": 40
+    },
+    {
+      "id": "current-connected-ori124838120",
+      "familyKey": "batteries|https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+      "reason": "Current full variant URL changed from prior research selector and now selects a single option shared across distinct model/variant IDs. Preserve previous evidence and selector; do not automatically rebind.",
+      "currentName": "Victron Energy Orion-TR Smart 12/48-8 Isolated DC-DC Converter, Provides up to 8A of Power to Secondary Batteries",
+      "priorSourceUrl": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+      "currentSourceUrl": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger?attribute_model-input-output-capacity=48V+%2F+48V+%2F+8A+%28380W%29",
+      "captureChanges": {
+        "sourceUrl": {
+          "prior": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+          "current": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger?attribute_model-input-output-capacity=48V+%2F+48V+%2F+8A+%28380W%29"
+        }
+      },
+      "batch": 40
+    },
+    {
+      "id": "current-connected-ori241236120",
+      "familyKey": "batteries|https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+      "reason": "Current full variant URL changed from prior research selector and now selects a single option shared across distinct model/variant IDs. Preserve previous evidence and selector; do not automatically rebind.",
+      "currentName": "Victron Energy Orion-TR Smart 24/12-30 Isolated DC-DC Converter, Provides up to 30A of Power to Secondary Batteries",
+      "priorSourceUrl": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+      "currentSourceUrl": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger?attribute_model-input-output-capacity=48V+%2F+48V+%2F+8A+%28380W%29",
+      "captureChanges": {
+        "sourceUrl": {
+          "prior": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+          "current": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger?attribute_model-input-output-capacity=48V+%2F+48V+%2F+8A+%28380W%29"
+        }
+      },
+      "batch": 40
+    },
+    {
+      "id": "current-connected-ori242440120",
+      "familyKey": "batteries|https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+      "reason": "Current full variant URL changed from prior research selector and now selects a single option shared across distinct model/variant IDs. Preserve previous evidence and selector; do not automatically rebind.",
+      "currentName": "Victron Energy Orion-TR Smart 24/24-17 Isolated DC-DC Converter, Provides up to 17A of Power to Secondary Batteries",
+      "priorSourceUrl": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+      "currentSourceUrl": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger?attribute_model-input-output-capacity=48V+%2F+48V+%2F+8A+%28380W%29",
+      "captureChanges": {
+        "sourceUrl": {
+          "prior": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+          "current": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger?attribute_model-input-output-capacity=48V+%2F+48V+%2F+8A+%28380W%29"
+        }
+      },
+      "batch": 40
+    },
+    {
+      "id": "current-connected-ori244840120",
+      "familyKey": "batteries|https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+      "reason": "Current full variant URL changed from prior research selector and now selects a single option shared across distinct model/variant IDs. Preserve previous evidence and selector; do not automatically rebind.",
+      "currentName": "Victron Energy Orion-TR Smart 24/48-8.5 Isolated DC-DC Converter, Provides up to 8.5A of Power to Secondary Batteries",
+      "priorSourceUrl": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+      "currentSourceUrl": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger?attribute_model-input-output-capacity=48V+%2F+48V+%2F+8A+%28380W%29",
+      "captureChanges": {
+        "sourceUrl": {
+          "prior": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+          "current": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger?attribute_model-input-output-capacity=48V+%2F+48V+%2F+8A+%28380W%29"
+        }
+      },
+      "batch": 40
+    },
+    {
+      "id": "current-connected-ori481238120",
+      "familyKey": "batteries|https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+      "reason": "Current full variant URL changed from prior research selector and now selects a single option shared across distinct model/variant IDs. Preserve previous evidence and selector; do not automatically rebind.",
+      "currentName": "Victron Energy Orion-TR Smart 48/12-30 Isolated DC-DC Converter, Provides up to 30A of Power to Secondary Batteries",
+      "priorSourceUrl": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+      "currentSourceUrl": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger?attribute_model-input-output-capacity=48V+%2F+48V+%2F+8A+%28380W%29",
+      "captureChanges": {
+        "sourceUrl": {
+          "prior": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+          "current": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger?attribute_model-input-output-capacity=48V+%2F+48V+%2F+8A+%28380W%29"
+        }
+      },
+      "batch": 40
+    },
+    {
+      "id": "current-connected-ori482438120",
+      "familyKey": "batteries|https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+      "reason": "Current full variant URL changed from prior research selector and now selects a single option shared across distinct model/variant IDs. Preserve previous evidence and selector; do not automatically rebind.",
+      "currentName": "Victron Energy Orion-TR Smart 48/24-16 Isolated DC-DC Converter, Provides up to 16A of Power to Secondary Batteries",
+      "priorSourceUrl": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+      "currentSourceUrl": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger?attribute_model-input-output-capacity=48V+%2F+48V+%2F+8A+%28380W%29",
+      "captureChanges": {
+        "sourceUrl": {
+          "prior": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+          "current": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger?attribute_model-input-output-capacity=48V+%2F+48V+%2F+8A+%28380W%29"
+        }
+      },
+      "batch": 40
+    },
+    {
+      "id": "current-connected-ori484838120",
+      "familyKey": "batteries|https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+      "reason": "Current full variant URL changed from prior research selector and now selects a single option shared across distinct model/variant IDs. Preserve previous evidence and selector; do not automatically rebind.",
+      "currentName": "Victron Energy Orion-TR Smart 48/48-8 Isolated DC-DC Converter, Provides up to 8A of Power to Secondary Batteries",
+      "priorSourceUrl": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+      "currentSourceUrl": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger?attribute_model-input-output-capacity=48V+%2F+48V+%2F+8A+%28380W%29",
+      "captureChanges": {
+        "sourceUrl": {
+          "prior": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger",
+          "current": "https://www.currentconnected.com/product/victron-orion-smart-tr-dc-dc-charger?attribute_model-input-output-capacity=48V+%2F+48V+%2F+8A+%28380W%29"
+        }
+      },
+      "batch": 40
+    },
+    {
+      "id": "current-connected-scc900650010",
+      "familyKey": "accessories|https://www.currentconnected.com/product/victron-smartsolar-control-display/",
+      "reason": "Current URL differs only by trailing slash, but the unchanged identityMatches guard rejects the prior exact identity. Preserve historical selector and evidence; no automatic rebind or new source visit.",
+      "priorSourceUrl": "https://www.currentconnected.com/product/victron-smartsolar-control-display/",
+      "currentSourceUrl": "https://www.currentconnected.com/product/victron-smartsolar-control-display",
+      "batch": 40
+    },
+    {
+      "id": "current-connected-shu050130050",
+      "familyKey": "monitoring|https://www.currentconnected.com/product/victron-smartshunt",
+      "reason": "Current full variant URL changed from prior research selector and now selects a single option shared across distinct model/variant IDs. Preserve previous evidence and selector; do not automatically rebind.",
+      "currentName": "Victron Energy SmartShunt IP21, 300A Rated Shunt for Measuring Current Flow and Calculating State of Charge",
+      "priorSourceUrl": "https://www.currentconnected.com/product/victron-smartshunt",
+      "currentSourceUrl": "https://www.currentconnected.com/product/victron-smartshunt?attribute_pa_maximum-current-rating=1000a",
+      "captureChanges": {
+        "sourceUrl": {
+          "prior": "https://www.currentconnected.com/product/victron-smartshunt",
+          "current": "https://www.currentconnected.com/product/victron-smartshunt?attribute_pa_maximum-current-rating=1000a"
+        }
+      },
+      "batch": 40
+    },
+    {
+      "id": "current-connected-shu050150050",
+      "familyKey": "monitoring|https://www.currentconnected.com/product/victron-smartshunt",
+      "reason": "Current full variant URL changed from prior research selector and now selects a single option shared across distinct model/variant IDs. Preserve previous evidence and selector; do not automatically rebind.",
+      "currentName": "Victron Energy SmartShunt IP21, 500A Rated Shunt for Measuring Current Flow and Calculating State of Charge",
+      "priorSourceUrl": "https://www.currentconnected.com/product/victron-smartshunt",
+      "currentSourceUrl": "https://www.currentconnected.com/product/victron-smartshunt?attribute_pa_maximum-current-rating=1000a",
+      "captureChanges": {
+        "sourceUrl": {
+          "prior": "https://www.currentconnected.com/product/victron-smartshunt",
+          "current": "https://www.currentconnected.com/product/victron-smartshunt?attribute_pa_maximum-current-rating=1000a"
+        }
+      },
+      "batch": 40
+    },
+    {
+      "id": "current-connected-shu050210050",
+      "familyKey": "monitoring|https://www.currentconnected.com/product/victron-smartshunt",
+      "reason": "Current full variant URL changed from prior research selector and now selects a single option shared across distinct model/variant IDs. Preserve previous evidence and selector; do not automatically rebind.",
+      "currentName": "Victron Energy SmartShunt IP21, 1000A Rated Shunt for Measuring Current Flow and Calculating State of Charge",
+      "priorSourceUrl": "https://www.currentconnected.com/product/victron-smartshunt",
+      "currentSourceUrl": "https://www.currentconnected.com/product/victron-smartshunt?attribute_pa_maximum-current-rating=1000a",
+      "captureChanges": {
+        "sourceUrl": {
+          "prior": "https://www.currentconnected.com/product/victron-smartshunt",
+          "current": "https://www.currentconnected.com/product/victron-smartshunt?attribute_pa_maximum-current-rating=1000a"
+        }
+      },
+      "batch": 40
+    },
+    {
+      "id": "current-connected-shu050220050",
+      "familyKey": "monitoring|https://www.currentconnected.com/product/victron-smartshunt",
+      "reason": "Current full variant URL changed from prior research selector and now selects a single option shared across distinct model/variant IDs. Preserve previous evidence and selector; do not automatically rebind.",
+      "currentName": "Victron Energy SmartShunt IP21, 2000A Rated Shunt for Measuring Current Flow and Calculating State of Charge",
+      "priorSourceUrl": "https://www.currentconnected.com/product/victron-smartshunt",
+      "currentSourceUrl": "https://www.currentconnected.com/product/victron-smartshunt?attribute_pa_maximum-current-rating=1000a",
+      "captureChanges": {
+        "sourceUrl": {
+          "prior": "https://www.currentconnected.com/product/victron-smartshunt",
+          "current": "https://www.currentconnected.com/product/victron-smartshunt?attribute_pa_maximum-current-rating=1000a"
+        }
+      },
+      "batch": 40
+    },
+    {
+      "id": "signature-solar-1669010",
+      "familyKey": "wiring|https://signaturesolar.com/power-center-bus-cable-tool/",
+      "reason": "Current category wiring conflicts with the exact sourced mechanical AC trunk connector unlocking tool. Hold all technical imports pending category reconciliation; no cable voltage/current transferred.",
+      "currentName": "Power Center Bus Cable Tool",
+      "currentSourceUrl": "https://signaturesolar.com/power-center-bus-cable-tool/",
+      "batch": 40
     }
   ],
-  "catalogSnapshotGeneratedAt": "2026-10-23T01:47:04.886738Z",
+  "catalogSnapshotGeneratedAt": "2026-10-23T02:47:26.426289+00:00",
   "captureLimitations": {
     "nonAtomic": true,
     "priorUnreadableCount": 3886,
-    "offersRead": 9389,
-    "unreadableOffers": 0
+    "productsRead": 9368,
+    "offersRead": 9400,
+    "unreadableOffers": 0,
+    "newlyReadableProductIds": [
+      "current-connected-a052a795",
+      "current-connected-aptos-grid-tie-microinverter-solar-panel-kit",
+      "current-connected-customizable-bigbattery-home-inverter-and-battery-kit-for-grid-tied-or-off-grid-renewable-energy-syste",
+      "current-connected-emv3a-2p-16",
+      "current-connected-emv3a-2p-8",
+      "signature-solar-1593135",
+      "signature-solar-1647023",
+      "signature-solar-1650039",
+      "signature-solar-1658037",
+      "signature-solar-1669010"
+    ],
+    "newlyUnreadableProductIds": [
+      "current-connected-a058m290",
+      "eg4-flexboss21"
+    ]
   },
   "priorBatchSummary": {
-    "batch": 38,
-    "updatedAt": "2026-10-23T00:52:32.209Z",
+    "batch": 39,
+    "updatedAt": "2026-10-23T01:51:13.337Z",
     "counts": {
       "families": 3040,
-      "attemptedFamilies": 3033,
+      "attemptedFamilies": 3037,
       "statuses": {
-        "partial": 1507,
+        "partial": 1509,
         "needs-source": 900,
-        "conflict": 460,
+        "conflict": 462,
         "blocked": 125,
-        "complete": 44,
-        "pending": 4
+        "complete": 44
       },
-      "addedTechnicalFields": 604,
-      "filledComparisonFields": 495,
-      "currentBatchAttemptedFamilies": 354
+      "addedTechnicalFields": 10,
+      "filledComparisonFields": 8,
+      "currentBatchAttemptedFamilies": 8,
+      "currentBatchFirstVisitedFamilies": 4,
+      "currentBatchFollowupFamilies": 4,
+      "currentBatchSourceAssignments": 12
     }
   },
   "queueAdministrativeResolutions": {
@@ -92082,7 +93333,9 @@
         "sungoldpower-41293881868425",
         "sungoldpower-47407326003337",
         "watts247-lvx6048wp",
-        "signature-solar-1593080"
+        "signature-solar-1593080",
+        "inverters-r-us-aps600-24",
+        "signature-solar-1593135"
       ],
       "affectedNewFields": 32,
       "comparisonGapsClaimedFilled": 0,
@@ -92098,6 +93351,26 @@
           "reason": "The unchanged specification parser stores this published range as operatingVoltage. Inverter comparison/compatibility consume batteryVoltageRange; the comparison gap remains unresolved. Do not re-research the published source range or change runtime in this data batch.",
           "batch": 39,
           "recordedAt": "2026-10-23T01:51:13.337Z"
+        },
+        {
+          "key": "inverter-battery-range-consumer-key",
+          "productId": "inverters-r-us-aps600-24",
+          "storedFieldKey": "operatingVoltage",
+          "downstreamFieldKey": "batteryVoltageRange",
+          "status": "requires-runtime-support",
+          "reason": "The unchanged specification parser stores this published range as operatingVoltage. Inverter comparison/compatibility consume batteryVoltageRange; the comparison gap remains unresolved. Do not re-research the published source range or change runtime in this data batch.",
+          "batch": 40,
+          "recordedAt": "2026-10-23T03:03:24.013Z"
+        },
+        {
+          "key": "inverter-battery-range-consumer-key",
+          "productId": "signature-solar-1593135",
+          "storedFieldKey": "operatingVoltage",
+          "downstreamFieldKey": "batteryVoltageRange",
+          "status": "requires-runtime-support",
+          "reason": "The unchanged specification parser stores this published range as operatingVoltage. Inverter comparison/compatibility consume batteryVoltageRange; the comparison gap remains unresolved. Do not re-research the published source range or change runtime in this data batch.",
+          "batch": 40,
+          "recordedAt": "2026-10-23T03:03:24.013Z"
         }
       ]
     }
@@ -92116,5 +93389,187 @@
     },
     "countsAsNewResearchVisits": false,
     "evidence": "docs/specification-batch-thirty-nine-review.json#/unvisitedSelectorTriage"
+  },
+  "administrativeAliases": [],
+  "identityUrlChangeResolution": {
+    "changedSourceUrlIds": 15,
+    "variantQueryHolds": 14,
+    "smartSolarTrailingSlash": "held-exact-identity-match-rejected",
+    "newIdentityHolds": 16,
+    "countsAsSourceResearch": 0
+  },
+  "sourceAssignmentLedger": {
+    "checkedAt": "2026-10-23T03:02:57.928724+00:00",
+    "queueAuditWorkers": 12,
+    "queueAuditFamilies": 3040,
+    "assignmentCount": 11,
+    "assignments": [
+      {
+        "familyKey": "kits|https://www.currentconnected.com/product/aptos-grid-tie-microinverter-solar-panel-kit",
+        "productIds": [
+          "current-connected-aptos-grid-tie-microinverter-solar-panel-kit"
+        ],
+        "worker": 1,
+        "phase": "new",
+        "status": "partial",
+        "summary": "The exact retailer page publishes required component categories (panels, Aptos microinverters, trunk cable) and optional accessories/monitoring options. The kit summary has no configured selections, so no selected panel or inverter model is established; no component engineering ratings or price are attributed to the kit. Remaining aggregate ratings and final contents are unresolved until a selected configuration is identified.",
+        "notesFile": "worker-1/new-notes.json",
+        "notesSha256": "eb52e5fe2aa00212e1f5bf58ac4d76b5d7eeab7c01ab17386ec4ecda9368e8c0",
+        "proposalFile": "worker-1/new-reviewed.json",
+        "previouslyAttemptedFamily": false,
+        "countsAsSourceResearch": true
+      },
+      {
+        "familyKey": "kits|https://www.currentconnected.com/product/customizable-bigbattery-home-inverter-and-battery-kit-for-grid-tied-or-off-grid-renewable-energy-systems",
+        "productIds": [
+          "current-connected-customizable-bigbattery-home-inverter-and-battery-kit-for-grid-tied-or-off-grid-renewable-energy-syste"
+        ],
+        "worker": 1,
+        "phase": "new",
+        "status": "partial",
+        "summary": "The exact retailer page publishes required inverter and battery categories, optional solar panels, and listed model choices. The kit summary has no configured selections; the displayed component ratings are not proposed as aggregate kit specifications and no selected inverter/battery configuration is established. Remaining aggregate ratings and final contents are unresolved until a selected configuration is identified.",
+        "notesFile": "worker-1/new-notes.json",
+        "notesSha256": "eb52e5fe2aa00212e1f5bf58ac4d76b5d7eeab7c01ab17386ec4ecda9368e8c0",
+        "proposalFile": "worker-1/new-reviewed.json",
+        "previouslyAttemptedFamily": false,
+        "countsAsSourceResearch": true
+      },
+      {
+        "familyKey": "inverters|https://signaturesolar.com/victron-quattro-48-10000-140-100-100-120v-ve-bus-ul/",
+        "productIds": [
+          "signature-solar-1593135"
+        ],
+        "worker": 1,
+        "phase": "additional",
+        "status": "partial",
+        "summary": "Exact linked 120V retailer and manufacturer documents support the listed inverter/charger facts. Preserve raw identity anchor voltage=120; 48 V DC is the nominal battery input and 38–66 V DC its operating range, not a rewrite of that anchor. Keep 10 kVA separate from temperature-conditioned real watts. Feed-through current is 100 A per input and is not an independent transfer-switch rating. No PV/MPPT is reported for this standalone inverter. Manual covers firmware xxxx400 and higher, while installed firmware is not supplied.",
+        "notesFile": "worker-1/additional-notes.json",
+        "notesSha256": "879aec16238b87e1704beebb276ca3ca6f9b51daf71baca96f4033e26f37d7bc",
+        "proposalFile": "worker-1/additional-reviewed.json",
+        "previouslyAttemptedFamily": false,
+        "countsAsSourceResearch": true
+      },
+      {
+        "familyKey": "wiring|https://signaturesolar.com/power-center-bus-cable-tool/",
+        "productIds": [
+          "signature-solar-1669010"
+        ],
+        "worker": 1,
+        "phase": "additional",
+        "status": "conflict",
+        "summary": "Identity/category hold: the full native row is categorized as wiring, but the exact retailer page identifies a Duracell Power Center AC trunk/bus connector unlocking hand tool (PC-BUS TOOL, offer SKU 1669010), and the manufacturer manual describes the bus connector unlock tool. The inspected sources publish no tool dimensions, material, or measured weight. Do not import this offer as wiring while the category/identity binding is unsafe; do not transfer bus-cable ratings or labels to the tool. Preserve the source disposition until category mapping is resolved.",
+        "notesFile": "worker-1/additional-notes.json",
+        "notesSha256": "879aec16238b87e1704beebb276ca3ca6f9b51daf71baca96f4033e26f37d7bc",
+        "proposalFile": "worker-1/additional-reviewed.json",
+        "previouslyAttemptedFamily": false,
+        "countsAsSourceResearch": true
+      },
+      {
+        "familyKey": "mounting|https://www.currentconnected.com/product/cummins-concrete-pad",
+        "productIds": [
+          "current-connected-a052a795"
+        ],
+        "worker": 2,
+        "phase": "new",
+        "status": "partial",
+        "summary": "Exact-source-supported review records saved for independent review and downstream importer. No canonical catalog edit or import performed.",
+        "notesFile": "worker-2/new-notes.json",
+        "notesSha256": "09149424473dfe57b3338082d5f915f3be7c2550afd30d4d5bca0f3695d77444",
+        "proposalFile": "worker-2/new-reviewed.json",
+        "previouslyAttemptedFamily": false,
+        "countsAsSourceResearch": true
+      },
+      {
+        "familyKey": "batteries|https://signaturesolar.com/pytes-hv48100-se-high-voltage-battery-module-51-2v-100ah-5-12kwh/",
+        "productIds": [
+          "signature-solar-1650039"
+        ],
+        "worker": 2,
+        "phase": "additional",
+        "status": "partial",
+        "summary": "Exact native product identity is complete and records bind to it. Ready for independent review; no canonical edits or import performed.",
+        "notesFile": "worker-2/additional-notes.json",
+        "notesSha256": "b63d4f6b1abe9c5ee6366c4803fcb691d484c78984bc266805239187762e51d2",
+        "proposalFile": "worker-2/additional-reviewed.json",
+        "previouslyAttemptedFamily": false,
+        "countsAsSourceResearch": true
+      },
+      {
+        "familyKey": "monitoring|https://www.currentconnected.com/product/vue-energy-monitor-gen-3",
+        "productIds": [
+          "current-connected-emv3a-2p-16",
+          "current-connected-emv3a-2p-8"
+        ],
+        "worker": 9,
+        "phase": "new",
+        "status": "partial",
+        "summary": "Reviewed the exact Current Connected Vue Gen 3 page and the linked Emporia Vue 3 technical sell sheet. The exact captured Current Connected offers distinguish SKU EMV3A-2P-16 / Sixteen from EMV3A-2P-8 / Eight. The seller's page supports the 2×200 A main-CT and 8/16×50 A branch-CT package distinction; the manufacturer sheet supports device capacity of 3 voltage channels, up to 3×200 A main CT channels and up to 16×50 A branch CT channels, the 264 VAC line-to-neutral maximum sensing voltage per voltage channel, Wi-Fi/Ethernet, and ±2% accuracy. Do not treat included CT counts as device channel capacity, do not sum current ratings across CTs, and do not transfer branch-sensor count into maximum capability. Batch 34's review of the same EMV3-A technical sheet corrected Channels and Communications aliases and accepted ±2%; it separately held the retailer's two-main/eight-branch included-package row as not equivalent to device channel capacity. I followed that distinction: package counts are recorded as exact variant identity/source context, while the reviewed Channels value is the manufacturer's maximum device capacity. The source states ±2% but does not give measurement conditions. No IP code was found; indoor/dry operating conditions are not an IP rating. No generic Emporia Vue sibling facts or identity anchors were transferred.",
+        "notesFile": "worker-9/new-notes.json",
+        "notesSha256": "452ad65595a13f1c43d381bd936181d894e1cd07039ba1aad24326dcf31af314",
+        "proposalFile": "worker-9/new-reviewed.json",
+        "previouslyAttemptedFamily": false,
+        "countsAsSourceResearch": true
+      },
+      {
+        "familyKey": "mounting|https://signaturesolar.com/s5-rib-bracket-3/",
+        "productIds": [
+          "signature-solar-1658037"
+        ],
+        "worker": 9,
+        "phase": "additional",
+        "status": "partial",
+        "summary": "Exact native product record is now available and binds name S5! RIB BRACKET 3, category mounting, and mountType Hardware. The exact Signature Solar page identifies SKU 1658037 and names RibBracket III. Official S-5! III-specific page, III-specific CCD and installation instructions support profile fit, material, drawing dimensions, and per-bracket included hardware. Signature Solar's captured native description's stated 1–1.125 in roof range conflicts with the live detail text and S-5!'s manufacturer III-specific range of 1 in ± to 1 3/8 in; that discrepancy is disclosed for independent resolution. No aggregate wind/snow/structural load rating or full three-axis dimension is proposed.",
+        "notesFile": "worker-9/additional-notes.json",
+        "notesSha256": "6119f4b49999b9aa598c434ff26a62e9d50ff855c1ff3cc164657efd4ddbdc98",
+        "proposalFile": "worker-9/additional-reviewed.json",
+        "previouslyAttemptedFamily": false,
+        "countsAsSourceResearch": true
+      },
+      {
+        "familyKey": "panels|https://www.santansolar.com/product/santan-solar-ssm-560w-mono-bifacial-solar-panel-grade-b/",
+        "productIds": [
+          "santan-solar-ssm-560-bf-144-n-b"
+        ],
+        "worker": 12,
+        "phase": "new",
+        "status": "partial",
+        "summary": "Submit the five previously proposed missing facts for exact target as reviewed-spec rows. The exact page attachment, SKU, exact 560 Wp bin and complete module identity support binding. No canonical files modified.",
+        "notesFile": "worker-12/new-notes.json",
+        "notesSha256": "4f74215d734b125f675457b23296bc15937439d7c2b42fad0191dd84e5357f36",
+        "proposalFile": "worker-12/new-reviewed.json",
+        "previouslyAttemptedFamily": true,
+        "countsAsSourceResearch": true
+      },
+      {
+        "familyKey": "monitoring|https://signaturesolar.com/iq-system-controller-3g-generator-integration/",
+        "productIds": [
+          "signature-solar-1647023"
+        ],
+        "worker": 12,
+        "phase": "additional",
+        "status": "partial",
+        "summary": "Exact source reviewed; see complete original notes and final independent row decisions.",
+        "notesFile": "worker-12/additional-notes.json",
+        "notesSha256": "17904d9a9f2470fb513e7c5a767f5c4164d16d17142f566fb501e2a03916e1a2",
+        "proposalFile": "worker-12/additional-reviewed.json",
+        "previouslyAttemptedFamily": false,
+        "countsAsSourceResearch": true
+      },
+      {
+        "familyKey": "inverters|https://invertersrus.com/product/powerbright-aps600-24/",
+        "productIds": [
+          "inverters-r-us-aps600-24"
+        ],
+        "worker": "independent-source-followup",
+        "phase": "missed-proposal",
+        "status": "partial",
+        "summary": "Previously recorded exact 20–30 V DC input range was never proposed. Bounded exact-retailer followup independently confirms range, stored as operatingVoltage; downstream inverter batteryVoltageRange remains unsupported. Preserve all prior fields.",
+        "notesFile": "aps600-followup/source-evidence.json",
+        "notesSha256": "993222ffb464da5fa627169b9f5547c118c2a48ae1c2e1cae5cbfc2ad21c1b2f",
+        "proposalFile": "aps600-followup/proposed-reviewed.json",
+        "previouslyAttemptedFamily": true,
+        "countsAsSourceResearch": true
+      }
+    ]
   }
 }

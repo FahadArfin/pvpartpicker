@@ -1,0 +1,543 @@
+[
+  {
+    "url": "https://invertersrus.com/product/powerbright-aps600-24/",
+    "kind": "retailer",
+    "model": "APS600-24",
+    "label": "Exact APS600-24 retailer specifications: DC input range",
+    "checkedAt": "2026-10-23T02:38:56.816036+00:00",
+    "rows": [
+      [
+        "Operating voltage range",
+        "20-30V (Input DC Voltage Range)"
+      ]
+    ],
+    "productIds": [
+      "inverters-r-us-aps600-24"
+    ],
+    "expected": {
+      "inverters-r-us-aps600-24": {
+        "name": "Power Bright 600 Watt 24V Pure Sine Inverter APS600-24",
+        "sourceUrl": "https://invertersrus.com/product/powerbright-aps600-24/",
+        "category": "inverters",
+        "anchors": {
+          "watts": 600,
+          "voltage": 24,
+          "outputWatts": 600
+        }
+      }
+    },
+    "reviewNote": "New bounded transcription of the previously omitted Input DC Voltage Range row. Verbatim source label/value: Input DC Voltage Range: 20-30V. Exact SKU APS600-24; operating-range label aliases the published DC input range for the unchanged parser. Historical batch35 review explicitly states this input range agrees across exact sources but was not proposed. AC output/revision and timed/peak-power holds are retained. This adds only a missing operatingVoltage technical-detail field, never batteryVoltageRange or comparison/compatibility coverage. Pending independent source review and fresh capture identity gate.",
+    "researchWorker": "resume40-source-review"
+  },
+  {
+    "url": "https://www.currentconnected.com/product/cummins-concrete-pad",
+    "kind": "retailer",
+    "model": "Cummins A052A795 Composite Mounting Pad",
+    "label": "Cummins Onan Composite Mounting Pad",
+    "checkedAt": "2026-10-23T02:40:45Z",
+    "rows": [
+      [
+        "SKU",
+        "A052A795"
+      ],
+      [
+        "Material",
+        "Pre-cast composite construction made from high-strength fibers and cement"
+      ],
+      [
+        "Compatibility",
+        "Compatible with Cummins Quiet Connect RS13A, RS17A, RS20A, and RS20AC generators"
+      ],
+      [
+        "Dimensions",
+        "3×36.5×38.5in (H×W×D)"
+      ]
+    ],
+    "productIds": [
+      "current-connected-a052a795"
+    ],
+    "expected": {
+      "current-connected-a052a795": {
+        "name": "Cummins Onan Composite Mounting Pad for RS13A, RS17A, RS20A and RS20AC Home Standby Generators",
+        "sourceUrl": "https://www.currentconnected.com/product/cummins-concrete-pad",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Hardware"
+        }
+      }
+    },
+    "reviewNote": "Independently opened exact A052A795 retailer and official Cummins accessories catalog; all four retained rows have exact part binding. Construction→Material is a same-meaning parser alias; SKU duplicate prefix removed only. Manufacturer table corroborates named RS13A/RS17A/RS20A/RS20AC compatibility. H×W×D order and inches retained. Weight remains held for conflicting published values. Package quantity, included hardware, overhang and generator exclusion remain documented unsupported fields; no semantic relabeling into compatible ratings.",
+    "researchWorker": 2
+  },
+  {
+    "url": "https://link.emporiaenergy.com/sell-sheets/vue3",
+    "kind": "datasheet",
+    "model": "Emporia Vue 3 shared monitor hardware; Current Connected package EMV3A-2P-16",
+    "label": "Emporia Vue 3 technical specifications",
+    "checkedAt": "2026-10-23T02:42:33Z",
+    "rows": [
+      [
+        "Channels",
+        "3 voltage measurement channels; maximum voltage sensing 264 VAC line-to-neutral per voltage channel. Current measurement capacity: up to 3 × 200 A main CT channels and up to 16 × 50 A branch CT channels; 200 A and 50 A are ratings per CT/channel, not summed current."
+      ],
+      [
+        "Communications",
+        "Wi-Fi 2.4 GHz (IEEE 802.11b/g/n); Ethernet 10/100Base-T (IEEE 802.3)."
+      ],
+      [
+        "Measurement accuracy",
+        "±2% (published device measurement accuracy; no measurement range, current band, or test conditions stated)"
+      ]
+    ],
+    "productIds": [
+      "current-connected-emv3a-2p-16"
+    ],
+    "expected": {
+      "current-connected-emv3a-2p-16": {
+        "name": "Emporia Vue 3 Smart Home Energy Monitor for Tracking Whole Home Energy Use, Monitors 16 Circuits, Real-Time Remote Energy Monitoring, UL Listed",
+        "sourceUrl": "https://www.currentconnected.com/product/vue-energy-monitor-gen-3",
+        "category": "monitoring",
+        "anchors": {
+          "monitorType": "Energy monitor / meter"
+        }
+      }
+    },
+    "reviewNote": "Emporia's Vue 3 sell sheet specifies shared Vue 3 monitor hardware. Exact EMV3A-2P package identity is established by the current retailer product and offer records; the manufacturer product page offers the shared monitor with 8 or 16 branch sensors. The exact Current Connected selected offer record binds this product ID to SKU EMV3A-2P-16 and the Sixteen option; the retailer page was opened and shows that selected SKU and says the kit has two 200 A main CTs plus the selected 16 branch CTs rated 50 A each. Keep package contents separate from device capacity: this Channels row reports maximum hardware channel capacity, not the number of supplied CTs. Main and branch ratings are per CT, never added into a combined current rating. The 3 voltage channels and 264 VAC line-to-neutral sensing limit are separate from CT channels. The ±2% source gives no measurement conditions. No ingress-protection code was found; indoor/dry-location operating conditions do not establish an IP rating.",
+    "researchWorker": 9
+  },
+  {
+    "url": "https://link.emporiaenergy.com/sell-sheets/vue3",
+    "kind": "datasheet",
+    "model": "Emporia Vue 3 shared monitor hardware; Current Connected package EMV3A-2P-8",
+    "label": "Emporia Vue 3 technical specifications",
+    "checkedAt": "2026-10-23T02:42:33Z",
+    "rows": [
+      [
+        "Channels",
+        "3 voltage measurement channels; maximum voltage sensing 264 VAC line-to-neutral per voltage channel. Current measurement capacity: up to 3 × 200 A main CT channels and up to 16 × 50 A branch CT channels; 200 A and 50 A are ratings per CT/channel, not summed current."
+      ],
+      [
+        "Communications",
+        "Wi-Fi 2.4 GHz (IEEE 802.11b/g/n); Ethernet 10/100Base-T (IEEE 802.3)."
+      ],
+      [
+        "Measurement accuracy",
+        "±2% (published device measurement accuracy; no measurement range, current band, or test conditions stated)"
+      ]
+    ],
+    "productIds": [
+      "current-connected-emv3a-2p-8"
+    ],
+    "expected": {
+      "current-connected-emv3a-2p-8": {
+        "name": "Emporia Vue 3 Smart Home Energy Monitor for Tracking Whole Home Energy Use, Monitors 8 Circuits, Real-Time Remote Energy Monitoring, UL Listed",
+        "sourceUrl": "https://www.currentconnected.com/product/vue-energy-monitor-gen-3",
+        "category": "monitoring",
+        "anchors": {
+          "monitorType": "Energy monitor / meter"
+        }
+      }
+    },
+    "reviewNote": "Emporia's Vue 3 sell sheet specifies shared Vue 3 monitor hardware. Exact EMV3A-2P package identity is established by the current retailer product and offer records; the manufacturer product page offers the shared monitor with 8 or 16 branch sensors. The exact Current Connected selected offer record binds this product ID to SKU EMV3A-2P-8 and the Eight option; the retailer page exposes the Eight and Sixteen choices and says the selected 8-sensor package has eight 50 A branch CTs plus two 200 A main CTs. The connected web reader returned the default Sixteen variant when opening the seller page, so the SKU-8 binding relies on the exact captured variant offer URL and SKU together with the seller's Eight option text; the external capture records this variant URL: https://www.currentconnected.com/product/vue-energy-monitor-gen-3?attribute_number-of-sensors=Eight. Keep package contents separate from device capacity: this Channels row reports maximum hardware channel capacity, not the number of supplied CTs. Main and branch ratings are per CT, never added into a combined current rating. The 3 voltage channels and 264 VAC line-to-neutral sensing limit are separate from CT channels. The ±2% source gives no measurement conditions. No ingress-protection code was found; indoor/dry-location operating conditions do not establish an IP rating.",
+    "researchWorker": 9
+  },
+  {
+    "url": "https://www.santansolar.com/wp-content/uploads/SSM-540-2.pdf",
+    "kind": "datasheet",
+    "model": "SanTan Solar SSM 560W Bifacial Solar Panel Grade B, SKU SSM-560-B-N; SSM-540 540–570 Wp family sheet, 560 Wp bin",
+    "label": "SSM 560W Bifacial Solar Panel Grade B (individual module)",
+    "checkedAt": "2026-10-23T02:40:00+00:00",
+    "rows": [
+      [
+        "Number of cells",
+        "144 half-cells, mono n-Si, HJT with SWCT® bifacial cell technology"
+      ],
+      [
+        "Cell technology",
+        "HJT with SWCT® bifacial cell technology (published cell specification: 144 half-cells, mono n-Si, HJT with SWCT® bifacial cell technology)"
+      ],
+      [
+        "Module efficiency",
+        "20.8% for the 560 Wp STC module bin (front side; no BiFi135/BiFi300 rear gain)"
+      ],
+      [
+        "Voc temperature coefficient",
+        "−0.234 %/K (linear)"
+      ],
+      [
+        "Pmax temperature coefficient",
+        "−0.259 %/K (linear)"
+      ],
+      [
+        "Isc temperature coefficient",
+        "+0.033 %/K (linear)"
+      ]
+    ],
+    "productIds": [
+      "santan-solar-ssm-560-bf-144-n-b"
+    ],
+    "expected": {
+      "santan-solar-ssm-560-bf-144-n-b": {
+        "name": "SSM 560W Mono Bifacial Solar Panel Grade B",
+        "sourceUrl": "https://www.santansolar.com/product/santan-solar-ssm-560w-mono-bifacial-solar-panel-grade-b/",
+        "category": "panels",
+        "anchors": {
+          "watts": 560,
+          "face": "Bifacial"
+        }
+      }
+    },
+    "reviewNote": "Independent exact-target listing open and datasheet attachment click verified the single-panel SKU SSM-560-B-N→SSM-540-2.pdf relationship. PDF page2 screenshot confirms560Wp row,20.8% STC/front-side efficiency,144 half-cells/mono n-Si/HJT with SWCT and linear Isc+0.033,Voc−0.234,Pmax−0.259%/K coefficients. Existing verified Mono construction remains immutable and its differently worded proposal is held. Module source dimensions and four IV ratings corroborate binding, but existing stored dimensions are94×47×6in; this batch does not replace them. No Vmp coefficient/rear gain/revision identifier is inferred.",
+    "researchWorker": 12
+  },
+  {
+    "url": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+    "kind": "datasheet",
+    "model": "Quattro 48/10000/140-100/100 120V",
+    "label": "Linked Quattro 3–10kVA 120V datasheet",
+    "checkedAt": "2026-10-23T02:44:10Z",
+    "rows": [
+      [
+        "Model",
+        "48/10000/140-100/100 120V"
+      ],
+      [
+        "Operating voltage range",
+        "38–66 V DC (inverter battery input)"
+      ],
+      [
+        "AC output voltage",
+        "120 VAC ±2%"
+      ],
+      [
+        "AC frequency",
+        "60 Hz ±0.1% (AC output)"
+      ],
+      [
+        "Continuous output power",
+        "8000 W at 25°C; 6500 W at 40°C; 4500 W at 65°C"
+      ],
+      [
+        "Peak power",
+        "20000 W (duration not stated)"
+      ],
+      [
+        "Maximum charge current",
+        "140 A (house battery; up to 25°C ambient)"
+      ],
+      [
+        "Weight",
+        "128 lb / 58 kg"
+      ],
+      [
+        "Dimensions (H × W × D)",
+        "22.6 × 19.2 × 13.6 in / 572 × 488 × 344 mm"
+      ]
+    ],
+    "productIds": [
+      "signature-solar-1593135"
+    ],
+    "expected": {
+      "signature-solar-1593135": {
+        "name": "Victron Quattro 48/10000/140-100/100 120V VE.Bus UL",
+        "sourceUrl": "https://signaturesolar.com/victron-quattro-48-10000-140-100-100-120v-ve-bus-ul/",
+        "category": "inverters",
+        "anchors": {
+          "voltage": 120
+        }
+      }
+    },
+    "reviewNote": "Exact Signature Solar listing title and SKU 1593135 bind the offer to Quattro 48/10000/140-100/100 120V VE.Bus UL. The exact offer links to the 120V manufacturer datasheet and manual; the datasheet table’s 48/10000/140-100/100 120V column was visually checked. The raw current identity anchor voltage=120 is retained exactly and is not rewritten: the retailer’s 48V label and manufacturer’s 38–66 V DC range describe the nominal DC battery input, while 120 VAC is the AC output. 10,000 VA is apparent power; real output is 8,000 W at 25°C, 6,500 W at 40°C, and 4,500 W at 65°C. Manufacturer table gives maximum feed-through current per AC input, not a distinct transfer-switch current rating. House-battery charge current is limited by the source’s up-to-25°C ambient qualifier. The product is a standalone inverter/charger; no PV/MPPT rating is proposed. This new Signature Solar product is not rebound to prior open-box/used listings even though the same exact model family was previously reviewed. This is the exact 120V document linked by the retailer; its table column matches the retailer model. The official Victron-hosted equivalent URL was reviewed previously for different open-box/used listings; this fresh offer uses the exact linked Signature Solar copy. Independent review holds nominal48V under unchanged raw120V compatibility guard; it is not imported through a renamed bypass. Source idle consumption differs between linked datasheet60/40/15W and manual55/35/20W; no idle field imported.",
+    "researchWorker": 1
+  },
+  {
+    "url": "https://signaturesolar.com/content/documents/Victron/Datasheet-Quattro-3-10kVA-120V-EN-.pdf",
+    "kind": "datasheet",
+    "model": "Quattro 48/10000/140-100/100 120V",
+    "label": "Linked Quattro 3–10kVA 120V datasheet — independent supplemental mapped fields",
+    "checkedAt": "2026-10-23T02:44:10Z",
+    "rows": [
+      [
+        "Maximum efficiency",
+        "96% maximum"
+      ],
+      [
+        "Material",
+        "Aluminium (blue RAL 5012)"
+      ],
+      [
+        "IP rating",
+        "IP21"
+      ],
+      [
+        "Operating temperature",
+        "-40 to +65°C"
+      ],
+      [
+        "Humidity",
+        "95% maximum (non-condensing)"
+      ],
+      [
+        "Communications",
+        "VE.Bus (parallel, split-phase and three-phase operation, remote monitoring and system integration)"
+      ],
+      [
+        "Charging voltage",
+        "57.6 V DC absorption; 55.2 V DC float; 52.8 V DC storage mode"
+      ]
+    ],
+    "productIds": [
+      "signature-solar-1593135"
+    ],
+    "expected": {
+      "signature-solar-1593135": {
+        "name": "Victron Quattro 48/10000/140-100/100 120V VE.Bus UL",
+        "sourceUrl": "https://signaturesolar.com/victron-quattro-48-10000-140-100-100-120v-ve-bus-ul/",
+        "category": "inverters",
+        "anchors": {
+          "voltage": 120
+        }
+      }
+    },
+    "reviewNote": "Exact Signature Solar listing title and SKU 1593135 bind the offer to Quattro 48/10000/140-100/100 120V VE.Bus UL. The exact offer links to the 120V manufacturer datasheet and manual; the datasheet table’s 48/10000/140-100/100 120V column was visually checked. The raw current identity anchor voltage=120 is retained exactly and is not rewritten: the retailer’s 48V label and manufacturer’s 38–66 V DC range describe the nominal DC battery input, while 120 VAC is the AC output. 10,000 VA is apparent power; real output is 8,000 W at 25°C, 6,500 W at 40°C, and 4,500 W at 65°C. Manufacturer table gives maximum feed-through current per AC input, not a distinct transfer-switch current rating. House-battery charge current is limited by the source’s up-to-25°C ambient qualifier. The product is a standalone inverter/charger; no PV/MPPT rating is proposed. This new Signature Solar product is not rebound to prior open-box/used listings even though the same exact model family was previously reviewed. This is the exact 120V document linked by the retailer; its table column matches the retailer model. The official Victron-hosted equivalent URL was reviewed previously for different open-box/used listings; this fresh offer uses the exact linked Signature Solar copy. These additional rows were independently found in the same exact-model datasheet; they were absent from the worker proposal and have separate supplemental accounting.",
+    "researchWorker": 1
+  },
+  {
+    "url": "https://signaturesolar.com/pytes-hv48100-se-high-voltage-battery-module-51-2v-100ah-5-12kwh/",
+    "kind": "retailer",
+    "model": "Pytes HV48100 SE Battery Module (BMU), SKU 1650039",
+    "label": "Pytes HV48100 SE High Voltage Battery Module",
+    "checkedAt": "2026-10-23T02:44:14Z",
+    "rows": [
+      [
+        "Current rating",
+        "50 A (rated charge/discharge current of the module; retailer specification)"
+      ],
+      [
+        "Operating temperature",
+        "-4°F to 131°F (module installed in battery cabinet; retailer specification)"
+      ],
+      [
+        "Compatibility",
+        "Pytes HV48100 SE systems with 3–15 battery modules (system configuration; not package quantity)"
+      ]
+    ],
+    "productIds": [
+      "signature-solar-1650039"
+    ],
+    "expected": {
+      "signature-solar-1650039": {
+        "name": "Pytes HV48100 SE High Voltage Battery Module| 51.2V 100Ah 5.12kWh",
+        "sourceUrl": "https://signaturesolar.com/pytes-hv48100-se-high-voltage-battery-module-51-2v-100ah-5-12kwh/",
+        "category": "batteries",
+        "anchors": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "capacityKwh": 5.12,
+          "batteryKind": "Battery modules"
+        }
+      }
+    },
+    "reviewNote": "Exact retailer page, exact SKU 1650039 and module title. Current field is recorded exactly as “rated charge/discharge current”; neither the page nor this record promotes it to “maximum continuous” current. The 3–15 count is system stack configuration, not a pack count for this listing. Retailer Tech Specs temperature is associated with this module page; manufacturer datasheet separately gives the same range as the cabinet/system environmental range.",
+    "researchWorker": 2
+  },
+  {
+    "url": "https://www.pytesusa.com/public/upload/20260131/173d3afdcc82d6a16f11b7d96d713d36.pdf",
+    "kind": "manufacturer",
+    "model": "Pytes HV48100 SE Battery Module / BMU",
+    "label": "HV48100 SE Datasheet EN V20260120",
+    "checkedAt": "2026-10-23T02:44:14Z",
+    "rows": [
+      [
+        "Chemistry",
+        "Lithium Iron Phosphate (LFP)"
+      ],
+      [
+        "Nominal energy",
+        "5.12 kWh"
+      ],
+      [
+        "Nominal voltage",
+        "51.2 V"
+      ],
+      [
+        "Operating voltage range",
+        "47.5 V ~ 57.6 V"
+      ],
+      [
+        "Nominal capacity",
+        "100 Ah"
+      ],
+      [
+        "Weight",
+        "99 lb / 45 kg"
+      ]
+    ],
+    "productIds": [
+      "signature-solar-1650039"
+    ],
+    "expected": {
+      "signature-solar-1650039": {
+        "name": "Pytes HV48100 SE High Voltage Battery Module| 51.2V 100Ah 5.12kWh",
+        "sourceUrl": "https://signaturesolar.com/pytes-hv48100-se-high-voltage-battery-module-51-2v-100ah-5-12kwh/",
+        "category": "batteries",
+        "anchors": {
+          "voltage": 51.2,
+          "capacityAh": 100,
+          "capacityKwh": 5.12,
+          "batteryKind": "Battery modules"
+        }
+      }
+    },
+    "reviewNote": "Official manufacturer datasheet separates “Battery Module (BMU)” from “System.” The first three rows are BMU/module fields. The 3–15 BMU count, 15S1P/7S2P configurations, and 50 A*2 / 50 A values belong to system configuration; the extracted table does not preserve a reliable current-to-configuration mapping, so no mapping or module-current normalization is made. Datasheet reports environmental operating temperature -4°F to 131°F, but as a system field. It does not publish BMU dimensions or a BMU communications protocol in the accessible current SE datasheet.",
+    "researchWorker": 2
+  },
+  {
+    "url": "https://f.hubspotusercontent00.net/hubfs/3482954/Resources/Product%20Documents/Brackets/RibBracket%20III/ribbracket-iii-ccd.pdf",
+    "kind": "datasheet",
+    "model": "S-5! RibBracket III",
+    "label": "RibBracket III drawing, PBR-A-0-A, 2019-07-01",
+    "checkedAt": "2026-10-23T02:45:22Z",
+    "rows": [
+      [
+        "Material",
+        "6005A T61 bracket; factory-applied EPDM; stainless-steel screws (nut material not stated)"
+      ]
+    ],
+    "productIds": [
+      "signature-solar-1658037"
+    ],
+    "expected": {
+      "signature-solar-1658037": {
+        "name": "S5! RIB BRACKET 3",
+        "sourceUrl": "https://signaturesolar.com/s5-rib-bracket-3/",
+        "category": "mounting",
+        "anchors": {
+          "mountType": "Hardware"
+        }
+      }
+    },
+    "reviewNote": "The official S-5! I-V page has an explicit RibBracket III-specific section, exact fit range and named profiles, and links the RibBracket III-specific CCD. The CCD labels material 6005A T61 and has multiple feature dimensions, so the Dimensions text preserves feature-callout scope rather than asserting a full three-axis envelope. Sibling II/IV ranges are not transferred. Signature Solar's captured native description says 1 to 1.125 in while its current exact listing detail and S-5!'s III-specific specification state 1 in ± to 1 3/8 in; this source discrepancy is disclosed for independent review, and this row follows the manufacturer-specific III document. No generic wind, snow, or assembly load rating is proposed. Independent review holds conflicting fit range, feature-only dimensions and unsupported hardware row. Only bracket/seal/screw material is imported; nut material is not established.",
+    "researchWorker": 9
+  },
+  {
+    "url": "https://signaturesolar.com/content/documents/Enphase/system-controller/IQ%20System%20Controller%203-3G%20data%20sheet.pdf",
+    "kind": "datasheet",
+    "model": "Enphase IQ System Controller 3G; SC200G111C240US01; datasheet revision IQSC-3-DSH-00021-4.0-EN-US-2024-05-17",
+    "label": "IQ System Controller 3/3G manufacturer datasheet directly linked from exact Signature Solar 3G offer",
+    "checkedAt": "2026-10-23T02:50:51Z",
+    "rows": [
+      [
+        "Model number",
+        "SC200G111C240US01 (IQ System Controller 3G; generator integration supported)"
+      ],
+      [
+        "Current rating",
+        "160 A (maximum continuous current rating of the IQ System Controller 3G; controller rating, not measured load current or generator output)"
+      ],
+      [
+        "Voltage rating",
+        "240 V AC line-to-line, nominal range ±20% (System Controller 3/3G)"
+      ],
+      [
+        "Dimensions",
+        "50 cm × 91.6 cm × 24.6 cm (19.7 in × 36 in × 9.7 in; W × H × D)"
+      ],
+      [
+        "Weight",
+        "39.4 kg (87 lb)"
+      ],
+      [
+        "Compatibility",
+        "Select Enphase-supported AC standby generators; IQ System Controller 3G supports generator integration. IQ System Controller 3 (SC200D111C240US01) does not. Use Enphase generator compatibility guidance; compatibility is not universal."
+      ]
+    ],
+    "productIds": [
+      "signature-solar-1647023"
+    ],
+    "expected": {
+      "signature-solar-1647023": {
+        "name": "Enphase IQ System Controller 3G | Generator Integration",
+        "sourceUrl": "https://signaturesolar.com/iq-system-controller-3g-generator-integration/",
+        "category": "monitoring",
+        "anchors": {
+          "monitorType": "System / load control"
+        }
+      }
+    },
+    "reviewNote": "Exact target Signature Solar listing title/SKU 1647023 links this data sheet directly; the target identity is Enphase IQ System Controller 3G | Generator Integration. The datasheet model table binds SC200G111C240US01 to 3G and distinguishes SC200D111C240US01 (Controller 3, no generator integration). Current rating is explicitly the controller continuous-current rating and must not be displayed as measured current or generator output. Voltage is line-to-line, not an AC-output inverter spec. Compatibility is restricted to Enphase-supported generators. Only rows with schema mappings are included here; OCP-device, NFT, dry-contact, transfer, enclosure, ingress and compliance distinctions are held in additional-notes.json because the current monitoring schema has no safe field for them. No wattage is inferred. Exact retailer title and SKU plus linked sheet establish model binding; prior stored product image depicts the older EP200G101-M240US00 and was not used.",
+    "researchWorker": 12
+  },
+  {
+    "url": "https://investor.enphase.com/news-releases/news-release-details/enphase-energy-announces-complete-grid-solar-and-battery",
+    "kind": "manufacturer",
+    "model": "Enphase IQ System Controller 3G; SC200G111C240US01",
+    "label": "Enphase product release: split-phase AC topology for the IQ System Controller 3G",
+    "checkedAt": "2026-10-23T02:50:51Z",
+    "rows": [
+      [
+        "Phase configuration",
+        "120/240 V single-phase split-phase AC system (Enphase-described IQ System Controller 3G topology)"
+      ]
+    ],
+    "productIds": [
+      "signature-solar-1647023"
+    ],
+    "expected": {
+      "signature-solar-1647023": {
+        "name": "Enphase IQ System Controller 3G | Generator Integration",
+        "sourceUrl": "https://signaturesolar.com/iq-system-controller-3g-generator-integration/",
+        "category": "monitoring",
+        "anchors": {
+          "monitorType": "System / load control"
+        }
+      }
+    },
+    "reviewNote": "Enphase product release describes the System Controller 3G split-phase AC topology. This is the system wiring/topology, not an inverter output-power rating. Exact 3G model binding is established by the target-linked Enphase datasheet, which explicitly identifies SC200G111C240US01.",
+    "researchWorker": 12
+  },
+  {
+    "url": "https://signaturesolar.com/content/documents/Enphase/system-controller/IQ%20System%20Controller%203-3G%20data%20sheet.pdf",
+    "kind": "datasheet",
+    "model": "Enphase IQ System Controller 3G; SC200G111C240US01; datasheet revision IQSC-3-DSH-00021-4.0-EN-US-2024-05-17",
+    "label": "IQ System Controller 3/3G manufacturer datasheet directly linked from exact Signature Solar 3G offer — independent supplemental mapped fields",
+    "checkedAt": "2026-10-23T02:50:51Z",
+    "rows": [
+      [
+        "AC frequency",
+        "60 Hz nominal (range 56–63 Hz)"
+      ],
+      [
+        "Measurement accuracy",
+        "±1% of nominal voltage (±1.2 V line-to-neutral; ±2.4 V line-to-line; voltage measurement only)"
+      ],
+      [
+        "Operating temperature",
+        "-40°C to 50°C (-40°F to 122°F; ambient)"
+      ],
+      [
+        "Material",
+        "Polycarbonate enclosure"
+      ],
+      [
+        "Operating altitude",
+        "2500 m (8200 ft) maximum"
+      ]
+    ],
+    "productIds": [
+      "signature-solar-1647023"
+    ],
+    "expected": {
+      "signature-solar-1647023": {
+        "name": "Enphase IQ System Controller 3G | Generator Integration",
+        "sourceUrl": "https://signaturesolar.com/iq-system-controller-3g-generator-integration/",
+        "category": "monitoring",
+        "anchors": {
+          "monitorType": "System / load control"
+        }
+      }
+    },
+    "reviewNote": "Exact target Signature Solar listing title/SKU 1647023 links this data sheet directly; the target identity is Enphase IQ System Controller 3G | Generator Integration. The datasheet model table binds SC200G111C240US01 to 3G and distinguishes SC200D111C240US01 (Controller 3, no generator integration). Current rating is explicitly the controller continuous-current rating and must not be displayed as measured current or generator output. Voltage is line-to-line, not an AC-output inverter spec. Compatibility is restricted to Enphase-supported generators. Only rows with schema mappings are included here; OCP-device, NFT, dry-contact, transfer, enclosure, ingress and compliance distinctions are held in additional-notes.json because the current monitoring schema has no safe field for them. No wattage is inferred. Exact retailer title and SKU plus linked sheet establish model binding; prior stored product image depicts the older EP200G101-M240US00 and was not used. These additional rows were independently found in the same exact-model datasheet; they were absent from the worker proposal and have separate supplemental accounting.",
+    "researchWorker": 12
+  }
+]
