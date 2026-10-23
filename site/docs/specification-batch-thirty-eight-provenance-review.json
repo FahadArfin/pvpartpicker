@@ -1,0 +1,1937 @@
+{
+  "schemaVersion": 1,
+  "batch": 38,
+  "kind": "post-publication-provenance-and-consumer-limitation-metadata",
+  "parentCommit": "0feb1a98a8bdd1dfe04438a6a14a31ebe8ade7d2",
+  "originalPublicationVersion": 139,
+  "checkedAt": "2026-10-23T01:08:33.303202+00:00",
+  "scope": "Additive audit and continuation metadata only. All technical/source/identity/runtime data remain unchanged. Original review and approval hashes refer to the exact original version139 artifacts and are preserved as historical evidence.",
+  "hashTriage": {
+    "schemaVersion": 1,
+    "checkedAt": "2026-10-23T01:04:02.237445+00:00",
+    "reviewer": "Independent integration reviewer; read-only post-release provenance triage",
+    "result": "confirmed-audit-provenance-ambiguity-no-baseline-data-mismatch",
+    "releaseContext": {
+      "batch": 38,
+      "baselineCommit": "f4bce62a4eb92bfc9fdc2a8859b3b62887bf0072",
+      "reviewedMerge": "0feb1a98a8bdd1dfe04438a6a14a31ebe8ade7d2",
+      "publicationVersionReportedByRoot": 139,
+      "publicationReverifiedByThisTask": false
+    },
+    "finding": {
+      "severity": "P2 audit reproducibility / metadata clarity",
+      "path": "site/data/specification-batch-thirty-eight-audit.json:3",
+      "claimVerified": true,
+      "description": "baselineSha256 hashes the pretty-serialized local research snapshot. Adjacent baselineCommit identifies a compact committed JSON blob whose byte hash differs. The audit does not currently distinguish those two representations, so a reviewer hashing the named baseline commit file cannot reproduce the unqualified baselineSha256 value.",
+      "impact": "Provenance ambiguity only. Independent parsed-object equality confirms that the research baseline and committed baseline contain identical data; the fixed-baseline delta and preservation approval are not invalidated by this serialization difference.",
+      "committedBaselineContentSha256": "749871fff9a888d3cb70fca78a58196172f465a785ce5c5f4b83330332919bd1",
+      "retainedResearchSnapshotSha256": "6710fb438208be54edabadbbf1a752121e743f0d561f3d6fdbe690dd8512ab4f",
+      "auditBaselineSha256": "6710fb438208be54edabadbbf1a752121e743f0d561f3d6fdbe690dd8512ab4f",
+      "parsedJsonDeepEqual": true,
+      "snapshotCreationEvidence": "prepare.mjs writes baseline-specifications.json using JSON.stringify(data,null,2); integrate.mjs hashes the retained snapshot bytes."
+    },
+    "recommendedBoundedCorrection": {
+      "preserveExistingFields": true,
+      "retainLegacyBaselineSha256": "6710fb438208be54edabadbbf1a752121e743f0d561f3d6fdbe690dd8512ab4f",
+      "addAuditMetadata": {
+        "baselineGitPath": "site/data/specifications.json",
+        "baselineGitBlobSha256": "749871fff9a888d3cb70fca78a58196172f465a785ce5c5f4b83330332919bd1",
+        "baselineSnapshotSha256": "6710fb438208be54edabadbbf1a752121e743f0d561f3d6fdbe690dd8512ab4f",
+        "baselineSha256Scope": "Legacy field: SHA-256 of the retained research snapshot baseline-specifications.json bytes; not the baseline Git blob bytes.",
+        "baselineSemanticEquality": "The parsed retained research snapshot is deeply equal to the JSON at baselineCommit:baselineGitPath. Serialization differs; no baseline technical values differ."
+      },
+      "appendNarrative": "Clarify that legacy baselineSha256 identifies the retained formatted research snapshot, while baselineGitBlobSha256 identifies the exact committed baseline file bytes. Both parsed objects are equal. Record this as a post-publication metadata clarification.",
+      "historicalEvidenceTreatment": "Do not regenerate or overwrite batch38 scratch artifacts, embedded normalization inputs, original integration approval, validation receipts or release approval. Their old canonical audit hash correctly identifies the exact artifact approved and published in version139. Record the new audit hash and exact follow-up commit in a separate follow-up verification/receipt; explicitly describe the original approval hashes as historical.",
+      "allowedScope": [
+        "Add provenance metadata to batch38 audit",
+        "Append a short follow-up provenance clarification and separate follow-up verification record"
+      ],
+      "excludedScope": [
+        "No specifications.json content changes",
+        "No source transcriptions or normalization changes",
+        "No runtime/UI/API changes",
+        "No alteration of original approval/evidence hashes to pretend they covered the metadata revision"
+      ]
+    },
+    "validationRequired": [
+      "Compute SHA-256 from git show baselineCommit:baselineGitPath and compare baselineGitBlobSha256",
+      "Compute retained snapshot hash and compare both legacy baselineSha256 and baselineSnapshotSha256",
+      "Assert parsed snapshot deeply equals parsed committed baseline",
+      "Remove only newly added provenance keys and assert corrected audit deeply equals exact version139 audit",
+      "Assert specifications.json and all technical/identity/source/queue objects are unchanged by the provenance follow-up",
+      "Bind a separate follow-up review to the amended audit hash and retain original approved audit hash as historical"
+    ],
+    "historicalEvidenceSha256": {
+      "publishedBatch38Audit": "62b3a7e73c9864ca3f21b196f14a5c1e3e7671eb0439e0e9f7219562990c6170",
+      "independent-review.json": "c78e917fc11b8429d9d0a51dc5cc6cb86a37ae63ffd06019b04ac42ea947ea98",
+      "release-review.json": "0191e57b327caff1ead80241d5f3cef8755df2b658b8fb6b179d4f289ec8754a",
+      "baseline-specifications.json": "6710fb438208be54edabadbbf1a752121e743f0d561f3d6fdbe690dd8512ab4f"
+    },
+    "canonicalWritesPerformed": false
+  },
+  "consumerKeyTriage": {
+    "schemaVersion": 1,
+    "batch": 38,
+    "checkedAt": "2026-10-23T01:04:21.202Z",
+    "status": "confirmed-preexisting-consumer-key-gap-no-safe-data-only-rekey",
+    "scope": "Read-only postrelease investigation; no source/canonical/runtime edits.",
+    "binding": {
+      "baseline": "6710fb438208be54edabadbbf1a752121e743f0d561f3d6fdbe690dd8512ab4f",
+      "acceptedSpecifications": "6b4b54531c8432543fafbe74da74a0aa13d9dbe426b93ce3ce8d38ea89191abb",
+      "acceptedReviewed": "69e9462df688a295fcbdd7b21da01f3eb9f27ff610c985ff37d1298e00689f99",
+      "normalizations": "ecc9fbf8f1c2c1499d0ffa641cad72ed700a35222a922824efe354ae6b0ef728",
+      "runtime": {
+        "specifications.ts": "72534ef1c03d8e4637c6bc8ea4110f08260d3421679cf7c9adbf20d759e59903",
+        "connection-map.ts": "26f3afd493cf77f5f1ee2ccdcef0fa6a41e805fdf4840550b6655c595462272d",
+        "comparison-view.ts": "15b12781d0c12d07571643fe46866ebd6a8061c64b5325172394a983f3aac743",
+        "part-comparison.ts": "d298d91cc33d00c0c9a1711dbf40af350adc10bd57c7f8af1832093b2ab650b7"
+      }
+    },
+    "counts": {
+      "affectedNewFields": 32,
+      "affectedListings": 32,
+      "batteryRangeComparisonStillMissing": 32,
+      "claimedBatteryRangeGapFills": 0,
+      "receiverRangeUnavailableBefore": 32,
+      "receiverRangeUnavailableAfter": 32,
+      "knownPriorInverterOperatingVoltageInReadableCurrentCatalog": 274,
+      "publishedTotalNewFields": 604,
+      "publishedTotalComparisonGapFills": 495
+    },
+    "aliasTests": [
+      {
+        "label": "Battery voltage range",
+        "mappedKeys": [
+          "operatingVoltage"
+        ]
+      },
+      {
+        "label": "Battery input voltage range",
+        "mappedKeys": []
+      },
+      {
+        "label": "Operating voltage range",
+        "mappedKeys": [
+          "operatingVoltage"
+        ]
+      },
+      {
+        "label": "Battery operating range",
+        "mappedKeys": [
+          "operatingVoltage"
+        ]
+      },
+      {
+        "label": "Voltage range",
+        "mappedKeys": [
+          "operatingVoltage"
+        ]
+      },
+      {
+        "label": "Battery voltage range lithium",
+        "mappedKeys": [
+          "operatingVoltage"
+        ]
+      },
+      {
+        "label": "Battery voltage range lead acid",
+        "mappedKeys": [
+          "operatingVoltage"
+        ]
+      },
+      {
+        "label": "batteryVoltageRange",
+        "mappedKeys": []
+      }
+    ],
+    "affected": [
+      {
+        "id": "eco-worthy-48909970112761",
+        "name": "ECO-WORTHY Liber 18KT Off-grid Three-phase Inverter | 18KW 120/208Y Vac Output | 28.8KW PV Input | 360A Charge/Discharge Current",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "40-60 Vdc (48V system)",
+          "source": "https://www.eco-worthy.com/products/eco-worthy-liber-18kt-off-grid-three-phase-inverter-18kw-120-208y-vac-output-28-8kw-pv-input-360a-charge-discharge-current-for-farm-workshop-factory",
+          "kind": "manufacturer"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 67,
+            "acceptedRowIndex": 0,
+            "normalizedRow": [
+              "Battery voltage range",
+              "40-60 Vdc (48V system)"
+            ],
+            "url": "https://www.eco-worthy.com/products/eco-worthy-liber-18kt-off-grid-three-phase-inverter-18kw-120-208y-vac-output-28-8kw-pv-input-360a-charge-discharge-current-for-farm-workshop-factory",
+            "kind": "manufacturer"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 118,
+            "rowIndex": 0,
+            "originalRow": [
+              "Battery voltage range",
+              "40-60 Vdc (48V system)"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "40-60 Vdc (48V system)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "inverters-r-us-xp400i",
+        "name": "Whistler 400 Watt 12V Power Inverter XP400i",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "11\u201315.5 \u00b10.5 V DC input voltage range (not low-voltage protection cutoff)",
+          "source": "https://device.report/m/47f084adf5848f66af7889dfbe3dc57b10c0f9c1ce2cd1d27d606b09dbdc0294",
+          "kind": "manual"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 163,
+            "acceptedRowIndex": 0,
+            "normalizedRow": [
+              "Battery voltage range",
+              "11\u201315.5 \u00b10.5 V DC input voltage range (not low-voltage protection cutoff)"
+            ],
+            "url": "https://device.report/m/47f084adf5848f66af7889dfbe3dc57b10c0f9c1ce2cd1d27d606b09dbdc0294",
+            "kind": "manual"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 241,
+            "rowIndex": 0,
+            "originalRow": [
+              "Battery voltage range",
+              "11\u201315.5 \u00b10.5 V DC input voltage range (not low-voltage protection cutoff)"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "11\u201315.5 \u00b10.5 V DC input voltage range (not low-voltage protection cutoff)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "inverters-r-us-xp800i",
+        "name": "Whistler 800 Watt 12V Power Inverter XP800i",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "11\u201315.5 \u00b10.5 V DC input voltage range (not low-voltage protection cutoff)",
+          "source": "https://files.bbystatic.com/Gz4NTdtOWozVNVv0E5d%2FIg==/727e8089-612e-4c91-b1c4-b49e8669745c.pdf",
+          "kind": "manual"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 164,
+            "acceptedRowIndex": 0,
+            "normalizedRow": [
+              "Battery voltage range",
+              "11\u201315.5 \u00b10.5 V DC input voltage range (not low-voltage protection cutoff)"
+            ],
+            "url": "https://files.bbystatic.com/Gz4NTdtOWozVNVv0E5d%2FIg==/727e8089-612e-4c91-b1c4-b49e8669745c.pdf",
+            "kind": "manual"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 242,
+            "rowIndex": 0,
+            "originalRow": [
+              "Battery voltage range",
+              "11\u201315.5 \u00b10.5 V DC input voltage range (not low-voltage protection cutoff)"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "11\u201315.5 \u00b10.5 V DC input voltage range (not low-voltage protection cutoff)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "litime-47240783790300",
+        "name": "LiTime 2000 Watt 12V Pure Sine Wave Inverter \u2014 1 Pack",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "10.5V-16.0V DC (Battery input voltage range)",
+          "source": "https://www.litime.com/products/litime-2000-watt-12v-pure-sine-wave-inverter",
+          "kind": "manufacturer"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 74,
+            "acceptedRowIndex": 0,
+            "normalizedRow": [
+              "Battery voltage range",
+              "10.5V-16.0V DC (Battery input voltage range)"
+            ],
+            "url": "https://www.litime.com/products/litime-2000-watt-12v-pure-sine-wave-inverter",
+            "kind": "manufacturer"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 136,
+            "rowIndex": 0,
+            "originalRow": [
+              "Battery input voltage range",
+              "10.5V-16.0V DC"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "10.5V-16.0V DC (Battery input voltage range)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "powmr-46990590804263",
+        "name": "SOLXPOW X3 Series 20KW Three-Phase HV Battery 2 MPPTs Commercial Storage Inverter",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "135\u2013750 V DC",
+          "source": "https://eu.powmr.com/products/solxpow-20kw-three-phase-2-mppt-hv-battery-supported-hybrid-inverter",
+          "kind": "manufacturer"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 154,
+            "acceptedRowIndex": 1,
+            "normalizedRow": [
+              "Battery voltage range",
+              "135\u2013750 V DC"
+            ],
+            "url": "https://eu.powmr.com/products/solxpow-20kw-three-phase-2-mppt-hv-battery-supported-hybrid-inverter",
+            "kind": "manufacturer"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 231,
+            "rowIndex": 1,
+            "originalRow": [
+              "Battery voltage range",
+              "135\u2013750 V DC"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "135\u2013750 V DC"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "powmr-46990726594855",
+        "name": "SOLXPOW X4 Series 50KW Three-Phase HV Battery 4 MPPTs Commercial Storage Inverter",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "144\u2013750 V DC (manufacturer page label: Battery Voltage)",
+          "source": "https://eu.powmr.com/products/solxpow-50kw-three-phase-4-mppt-hv-battery-supported-hybrid-inverter",
+          "kind": "manufacturer"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 170,
+            "acceptedRowIndex": 0,
+            "normalizedRow": [
+              "Battery voltage range",
+              "144\u2013750 V DC (manufacturer page label: Battery Voltage)"
+            ],
+            "url": "https://eu.powmr.com/products/solxpow-50kw-three-phase-4-mppt-hv-battery-supported-hybrid-inverter",
+            "kind": "manufacturer"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 249,
+            "rowIndex": 0,
+            "originalRow": [
+              "Battery voltage range",
+              "144\u2013750 V DC (manufacturer page label: Battery Voltage)"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "144\u2013750 V DC (manufacturer page label: Battery Voltage)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "powmr-47174363480359",
+        "name": "SOLXPOW X3 Series 12KW Three-Phase HV Battery 2 MPPTs Commercial Storage Inverter",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "135\u2013750 V DC",
+          "source": "https://eu.powmr.com/products/solxpow-x3-series-12kw-three-phase-hv-battery-2-mppts-commercial-storage-inverter",
+          "kind": "manufacturer"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 156,
+            "acceptedRowIndex": 1,
+            "normalizedRow": [
+              "Battery voltage range",
+              "135\u2013750 V DC"
+            ],
+            "url": "https://eu.powmr.com/products/solxpow-x3-series-12kw-three-phase-hv-battery-2-mppts-commercial-storage-inverter",
+            "kind": "manufacturer"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 233,
+            "rowIndex": 1,
+            "originalRow": [
+              "Battery voltage range",
+              "135\u2013750 V DC"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "135\u2013750 V DC"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "practical-preppers-sku-sa30k",
+        "name": "Sol-Ark 30k 3 Phase Solar Inverter",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "160\u2013500 V DC operating range",
+          "source": "https://practicalpreppers.com/wp-content/uploads/2022/12/30K-3P-208V-datasheet.pdf",
+          "kind": "datasheet"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 157,
+            "acceptedRowIndex": 5,
+            "normalizedRow": [
+              "Battery voltage range",
+              "160\u2013500 V DC operating range"
+            ],
+            "url": "https://practicalpreppers.com/wp-content/uploads/2022/12/30K-3P-208V-datasheet.pdf",
+            "kind": "datasheet"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 234,
+            "rowIndex": 7,
+            "originalRow": [
+              "Battery voltage range",
+              "160\u2013500 V DC operating range"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "160\u2013500 V DC operating range"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "practical-preppers-sku-sa60k",
+        "name": "Sol-Ark 60k 3 Phase Solar Inverter",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "160\u2013800 V DC operating range",
+          "source": "https://practicalpreppers.com/wp-content/uploads/2022/12/60K-3P-480V-datasheet-2.pdf",
+          "kind": "datasheet"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 158,
+            "acceptedRowIndex": 5,
+            "normalizedRow": [
+              "Battery voltage range",
+              "160\u2013800 V DC operating range"
+            ],
+            "url": "https://practicalpreppers.com/wp-content/uploads/2022/12/60K-3P-480V-datasheet-2.pdf",
+            "kind": "datasheet"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 235,
+            "rowIndex": 7,
+            "originalRow": [
+              "Battery voltage range",
+              "160\u2013800 V DC operating range"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "160\u2013800 V DC operating range"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "redodo-40291482927194",
+        "name": "Redodo 1000W Pure Sine Wave Inverter with Digital LCD Screen",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "10.0V-15.5V DC (Battery input voltage range)",
+          "source": "https://www.redodopower.com/products/1000w-pure-sine-wave-inverter",
+          "kind": "manufacturer"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 76,
+            "acceptedRowIndex": 0,
+            "normalizedRow": [
+              "Battery voltage range",
+              "10.0V-15.5V DC (Battery input voltage range)"
+            ],
+            "url": "https://www.redodopower.com/products/1000w-pure-sine-wave-inverter",
+            "kind": "manufacturer"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 138,
+            "rowIndex": 0,
+            "originalRow": [
+              "Battery input voltage range",
+              "10.0V-15.5V DC"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "10.0V-15.5V DC (Battery input voltage range)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "shopsolar-18926781268079",
+        "name": "Victron Energy - Phoenix Inverter 12V/1200VA/120V NEMA 5-15R Socket",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "9.2\u201317.3 V DC (Input voltage range)",
+          "source": "https://www.victronenergy.com/upload/documents/Manual-Phoenix-Inverter-800VA-and-1200VA-EN-NL-FR-DE-ES.pdf",
+          "kind": "manual"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 121,
+            "acceptedRowIndex": 2,
+            "normalizedRow": [
+              "Battery voltage range",
+              "9.2\u201317.3 V DC (Input voltage range)"
+            ],
+            "url": "https://www.victronenergy.com/upload/documents/Manual-Phoenix-Inverter-800VA-and-1200VA-EN-NL-FR-DE-ES.pdf",
+            "kind": "manual"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 197,
+            "rowIndex": 3,
+            "originalRow": [
+              "Input voltage range",
+              "9.2\u201317.3 V DC"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "9.2\u201317.3 V DC (Input voltage range)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "shopsolar-18951484801135",
+        "name": "Victron Energy - Phoenix Inverter 24V/1200VA/120V NEMA 5-15R Socket",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "18.4\u201334.0 V DC (Input voltage range)",
+          "source": "https://www.victronenergy.com/upload/documents/Manual-Phoenix-Inverter-800VA-and-1200VA-EN-NL-FR-DE-ES.pdf",
+          "kind": "manual"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 122,
+            "acceptedRowIndex": 2,
+            "normalizedRow": [
+              "Battery voltage range",
+              "18.4\u201334.0 V DC (Input voltage range)"
+            ],
+            "url": "https://www.victronenergy.com/upload/documents/Manual-Phoenix-Inverter-800VA-and-1200VA-EN-NL-FR-DE-ES.pdf",
+            "kind": "manual"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 198,
+            "rowIndex": 3,
+            "originalRow": [
+              "Input voltage range",
+              "18.4\u201334.0 V DC"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "18.4\u201334.0 V DC (Input voltage range)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "shopsolar-18951711850607",
+        "name": "Victron Energy - Phoenix Inverter 48V/800VA/120V NEMA 5-15R Socket",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "36.8\u201368.0 V DC (Input voltage range)",
+          "source": "https://www.victronenergy.com/upload/documents/Manual-Phoenix-Inverter-800VA-and-1200VA-EN-NL-FR-DE-ES.pdf",
+          "kind": "manual"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 123,
+            "acceptedRowIndex": 2,
+            "normalizedRow": [
+              "Battery voltage range",
+              "36.8\u201368.0 V DC (Input voltage range)"
+            ],
+            "url": "https://www.victronenergy.com/upload/documents/Manual-Phoenix-Inverter-800VA-and-1200VA-EN-NL-FR-DE-ES.pdf",
+            "kind": "manual"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 199,
+            "rowIndex": 3,
+            "originalRow": [
+              "Input voltage range",
+              "36.8\u201368.0 V DC"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "36.8\u201368.0 V DC (Input voltage range)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "shopsolar-41919788351628",
+        "name": "Simpliphi ESS 6kw Inverter",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "40\u201362 V DC (Battery DC voltage range)",
+          "source": "https://www.briggsandstratton.com/content/dam/briggsandstratton/na/en_us/Files/ess-pdp-assets/SimpliPhi%20Power%20SimpliPHI%20Inverter%206K%20Installation%20Guide_2023.7.16.pdf",
+          "kind": "manual"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 127,
+            "acceptedRowIndex": 0,
+            "normalizedRow": [
+              "Battery voltage range",
+              "40\u201362 V DC (Battery DC voltage range)"
+            ],
+            "url": "https://www.briggsandstratton.com/content/dam/briggsandstratton/na/en_us/Files/ess-pdp-assets/SimpliPhi%20Power%20SimpliPHI%20Inverter%206K%20Installation%20Guide_2023.7.16.pdf",
+            "kind": "manual"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 203,
+            "rowIndex": 1,
+            "originalRow": [
+              "Battery DC voltage range",
+              "40\u201362 V DC"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "40\u201362 V DC (Battery DC voltage range)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "shopsolar-43663378153612",
+        "name": "RUiXU Split Phase Hybrid Inverter | RX-12K | UL1741",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "40\u201360 V",
+          "source": "https://5a86532e-b162-4979-ab7f-d52a14e08072.usrfiles.com/ugd/5a8653_6d8b3b8b35d44bcb80b9db568408c086.pdf",
+          "kind": "datasheet"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 128,
+            "acceptedRowIndex": 2,
+            "normalizedRow": [
+              "Battery voltage range",
+              "40\u201360 V"
+            ],
+            "url": "https://5a86532e-b162-4979-ab7f-d52a14e08072.usrfiles.com/ugd/5a8653_6d8b3b8b35d44bcb80b9db568408c086.pdf",
+            "kind": "datasheet"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 204,
+            "rowIndex": 3,
+            "originalRow": [
+              "Battery voltage range",
+              "40\u201360 V"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "40\u201360 V"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "signature-solar-1593035",
+        "name": "Victron MultiPlus-II 48/8000 | 48v Input | 8000VA Output 230V | 110A Charger | Transfer Switch",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "38\u201366 V (DC input voltage range)",
+          "source": "https://www.victronenergy.com/media/pg/MultiPlus-II_230V/en/technical-specifications-mp-ii-230v.html",
+          "kind": "manual"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 239,
+            "acceptedRowIndex": 1,
+            "normalizedRow": [
+              "Battery voltage range",
+              "38\u201366 V (DC input voltage range)"
+            ],
+            "url": "https://www.victronenergy.com/media/pg/MultiPlus-II_230V/en/technical-specifications-mp-ii-230v.html",
+            "kind": "manual"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 344,
+            "rowIndex": 1,
+            "originalRow": [
+              "DC input voltage range",
+              "38\u201366 V"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "38\u201366 V (DC input voltage range)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "signature-solar-1593044",
+        "name": "Victron Energy MultiPlus-II 24/3000 | 24V Input | 3000VA Output 120V VE.Bus | 70A Charger | Transfer Switch | UL 1741",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "19\u201333 V (DC input voltage range)",
+          "source": "https://www.victronenergy.com/media/pg/MultiPlus-II_120V/en/technical-specifications-mp-ii-120v.html",
+          "kind": "manual"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 233,
+            "acceptedRowIndex": 1,
+            "normalizedRow": [
+              "Battery voltage range",
+              "19\u201333 V (DC input voltage range)"
+            ],
+            "url": "https://www.victronenergy.com/media/pg/MultiPlus-II_120V/en/technical-specifications-mp-ii-120v.html",
+            "kind": "manual"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 332,
+            "rowIndex": 1,
+            "originalRow": [
+              "DC input voltage range",
+              "19\u201333 V"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "19\u201333 V (DC input voltage range)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "signature-solar-1593057",
+        "name": "Victron MultiPlus-II 48/5000/70-95 120V",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "38\u201366 V (DC input voltage range)",
+          "source": "https://signaturesolar.com/content/documents/Victron/Datasheet-MultiPlus-II-120V-EN.pdf",
+          "kind": "datasheet"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 238,
+            "acceptedRowIndex": 0,
+            "normalizedRow": [
+              "Battery voltage range",
+              "38\u201366 V (DC input voltage range)"
+            ],
+            "url": "https://signaturesolar.com/content/documents/Victron/Datasheet-MultiPlus-II-120V-EN.pdf",
+            "kind": "datasheet"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 342,
+            "rowIndex": 1,
+            "originalRow": [
+              "DC input voltage range",
+              "38\u201366 V"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "38\u201366 V (DC input voltage range)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "signature-solar-1593082",
+        "name": "Victron Phoenix Inverter 24/1200 | VE.Direct | 1200VA Output| 24VDC Input | 120VAC Output",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "18.4\u201334.0 V DC (Input voltage range)",
+          "source": "https://www.victronenergy.com/upload/documents/Datasheet-Phoenix-Inverter-VE.Direct-250VA-1200VA-EN.pdf",
+          "kind": "datasheet"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 124,
+            "acceptedRowIndex": 1,
+            "normalizedRow": [
+              "Battery voltage range",
+              "18.4\u201334.0 V DC (Input voltage range)"
+            ],
+            "url": "https://www.victronenergy.com/upload/documents/Datasheet-Phoenix-Inverter-VE.Direct-250VA-1200VA-EN.pdf",
+            "kind": "datasheet"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 200,
+            "rowIndex": 2,
+            "originalRow": [
+              "Input voltage range",
+              "18.4\u201334.0 V DC"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "18.4\u201334.0 V DC (Input voltage range)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "signature-solar-1593121",
+        "name": "Victron Phoenix Inverter 12/500 120V VE.Direct NEMA 5-15R",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "9.2\u201317 V (DC input voltage range)",
+          "source": "https://signaturesolar.com/content/documents/Victron/12-500%20spec%20sheet.pdf",
+          "kind": "datasheet"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 240,
+            "acceptedRowIndex": 0,
+            "normalizedRow": [
+              "Battery voltage range",
+              "9.2\u201317 V (DC input voltage range)"
+            ],
+            "url": "https://signaturesolar.com/content/documents/Victron/12-500%20spec%20sheet.pdf",
+            "kind": "datasheet"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 346,
+            "rowIndex": 1,
+            "originalRow": [
+              "DC input voltage range",
+              "9.2\u201317 V"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "9.2\u201317 V (DC input voltage range)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "signature-solar-1593139",
+        "name": "Victron MultiPlus 12/3000/120-50 120V VE.Bus (UL 1741 & 458)",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "9.5\u201317 V (DC input voltage range)",
+          "source": "https://www.victronenergy.com/upload/documents/Certificate-of-Compliance%2C-UL-1741-and-CSA-C22.2%2C-MultiPlus-12-3000-120-50-120V-%26-MultiPlus-24-3000-70-50-120V.pdf",
+          "kind": "manufacturer"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 234,
+            "acceptedRowIndex": 0,
+            "normalizedRow": [
+              "Battery voltage range",
+              "9.5\u201317 V (DC input voltage range)"
+            ],
+            "url": "https://www.victronenergy.com/upload/documents/Certificate-of-Compliance%2C-UL-1741-and-CSA-C22.2%2C-MultiPlus-12-3000-120-50-120V-%26-MultiPlus-24-3000-70-50-120V.pdf",
+            "kind": "manufacturer"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 334,
+            "rowIndex": 1,
+            "originalRow": [
+              "DC input voltage range",
+              "9.5\u201317 V"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "9.5\u201317 V (DC input voltage range)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "signature-solar-1600008",
+        "name": "OutBack Power | Radian A-Series | 8kW Hybrid Inverter",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "40\u201364 VDC (exact GS8048A model column) (DC input voltage range)",
+          "source": "https://outbackpower.com/downloads/documents/inverter_chargers/radian_8048a_4048a/radianseries_8048a_4048a_specsheet.pdf",
+          "kind": "datasheet"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 168,
+            "acceptedRowIndex": 0,
+            "normalizedRow": [
+              "Battery voltage range",
+              "40\u201364 VDC (exact GS8048A model column) (DC input voltage range)"
+            ],
+            "url": "https://outbackpower.com/downloads/documents/inverter_chargers/radian_8048a_4048a/radianseries_8048a_4048a_specsheet.pdf",
+            "kind": "datasheet"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 246,
+            "rowIndex": 0,
+            "originalRow": [
+              "DC input voltage range",
+              "40\u201364 VDC (exact GS8048A model column)"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "40\u201364 VDC (exact GS8048A model column) (DC input voltage range)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "signature-solar-1600014",
+        "name": "OutBack Power | FXR A-Series 3.6kW | Inverter Charger 45A",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "42\u201368 VDC (exact VFXR3648A model column) (DC input voltage range)",
+          "source": "https://outbackpower.com/downloads/documents/inverter_chargers/fxr_vfxr_a/FXR_A_specsheet.pdf",
+          "kind": "datasheet"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 166,
+            "acceptedRowIndex": 0,
+            "normalizedRow": [
+              "Battery voltage range",
+              "42\u201368 VDC (exact VFXR3648A model column) (DC input voltage range)"
+            ],
+            "url": "https://outbackpower.com/downloads/documents/inverter_chargers/fxr_vfxr_a/FXR_A_specsheet.pdf",
+            "kind": "datasheet"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 244,
+            "rowIndex": 0,
+            "originalRow": [
+              "DC input voltage range",
+              "42\u201368 VDC (exact VFXR3648A model column)"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "42\u201368 VDC (exact VFXR3648A model column) (DC input voltage range)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "signature-solar-1600017",
+        "name": "Outback Power | M Series | 2.5kW Inverter Charger | 55A",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "21\u201334 VDC (exact FX2524MT model column) (DC input voltage range)",
+          "source": "https://outbackpower.com/downloads/documents/inverter_chargers/m_series/m_series_mobile_marine_specsheet.pdf",
+          "kind": "datasheet"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 167,
+            "acceptedRowIndex": 0,
+            "normalizedRow": [
+              "Battery voltage range",
+              "21\u201334 VDC (exact FX2524MT model column) (DC input voltage range)"
+            ],
+            "url": "https://outbackpower.com/downloads/documents/inverter_chargers/m_series/m_series_mobile_marine_specsheet.pdf",
+            "kind": "datasheet"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 245,
+            "rowIndex": 0,
+            "originalRow": [
+              "DC input voltage range",
+              "21\u201334 VDC (exact FX2524MT model column)"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "21\u201334 VDC (exact FX2524MT model column) (DC input voltage range)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "signature-solar-1651009",
+        "name": "Solis S6 11.4kW Single Phase High Voltage Energy Storage Hybrid Inverter | S6-EH1P11.4K-H-US-RSS-RGM",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "120\u2013500 V (lithium-ion)",
+          "source": "https://signaturesolar.com/content/Solis%20Inverters/Series%206%20Hybrid/Spec%20Sheet%20Solis%20S6-EH1P(3.8-11.4)K-H-US.pdf",
+          "kind": "datasheet"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 230,
+            "acceptedRowIndex": 5,
+            "normalizedRow": [
+              "Battery voltage range",
+              "120\u2013500 V (lithium-ion)"
+            ],
+            "url": "https://signaturesolar.com/content/Solis%20Inverters/Series%206%20Hybrid/Spec%20Sheet%20Solis%20S6-EH1P(3.8-11.4)K-H-US.pdf",
+            "kind": "datasheet"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 323,
+            "rowIndex": 5,
+            "originalRow": [
+              "Battery voltage range",
+              "120\u2013500 V (lithium-ion)"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "120\u2013500 V (lithium-ion)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "signature-solar-1651012",
+        "name": "Solis S6 7.6kW Single Phase High Voltage Hybrid Inverter",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "120\u2013500 V (lithium-ion)",
+          "source": "https://signaturesolar.com/content/Solis%20Inverters/Series%206%20Hybrid/Spec%20Sheet%20Solis%20S6-EH1P(3.8-11.4)K-H-US.pdf",
+          "kind": "datasheet"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 231,
+            "acceptedRowIndex": 4,
+            "normalizedRow": [
+              "Battery voltage range",
+              "120\u2013500 V (lithium-ion)"
+            ],
+            "url": "https://signaturesolar.com/content/Solis%20Inverters/Series%206%20Hybrid/Spec%20Sheet%20Solis%20S6-EH1P(3.8-11.4)K-H-US.pdf",
+            "kind": "datasheet"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 327,
+            "rowIndex": 4,
+            "originalRow": [
+              "Battery voltage range",
+              "120\u2013500 V (lithium-ion)"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "120\u2013500 V (lithium-ion)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "signature-solar-1669001",
+        "name": "Duracell Power Center 15kW Hybrid Inverter",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "43\u201363 V (manual says other battery chemistries must stay within this range); separate from the manual\u2019s 48 V nominal system requirement and 45\u201360 V power-up measurement check (Battery voltage range for other battery chemistries)",
+          "source": "https://duracellpowercenter.com/wp-content/uploads/2024/05/DPC-Max-Hybrid-15-Manual-524.pdf",
+          "kind": "manual"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 165,
+            "acceptedRowIndex": 0,
+            "normalizedRow": [
+              "Battery voltage range",
+              "43\u201363 V (manual says other battery chemistries must stay within this range); separate from the manual\u2019s 48 V nominal system requirement and 45\u201360 V power-up measurement check (Battery voltage range for other battery chemistries)"
+            ],
+            "url": "https://duracellpowercenter.com/wp-content/uploads/2024/05/DPC-Max-Hybrid-15-Manual-524.pdf",
+            "kind": "manual"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 243,
+            "rowIndex": 0,
+            "originalRow": [
+              "Battery voltage range for other battery chemistries",
+              "43\u201363 V (manual says other battery chemistries must stay within this range); separate from the manual\u2019s 48 V nominal system requirement and 45\u201360 V power-up measurement check"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "43\u201363 V (manual says other battery chemistries must stay within this range); separate from the manual\u2019s 48 V nominal system requirement and 45\u201360 V power-up measurement check (Battery voltage range for other battery chemistries)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "signature-solar-1671001",
+        "name": "GoodWe 11.4kW Hybrid Inverter",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "80\u2013495 V; battery charge/discharge power limited by voltage",
+          "source": "https://en.goodwe.com/Ftp/EN/Downloads/Datasheet/GW_ES-US_Datasheet-EN.pdf",
+          "kind": "datasheet"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 129,
+            "acceptedRowIndex": 7,
+            "normalizedRow": [
+              "Battery voltage range",
+              "80\u2013495 V; battery charge/discharge power limited by voltage"
+            ],
+            "url": "https://en.goodwe.com/Ftp/EN/Downloads/Datasheet/GW_ES-US_Datasheet-EN.pdf",
+            "kind": "datasheet"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 205,
+            "rowIndex": 10,
+            "originalRow": [
+              "Battery voltage range",
+              "80\u2013495 V; battery charge/discharge power limited by voltage"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "80\u2013495 V; battery charge/discharge power limited by voltage"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "signature-solar-1678004",
+        "name": "Lion Energy | Sanctuary 3 Inverter | 18kW",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "40\u201358 V",
+          "source": "https://support.lionenergy.com/files/sales-sheets/sanctuary-3-spec-sheet.pdf",
+          "kind": "datasheet"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 134,
+            "acceptedRowIndex": 7,
+            "normalizedRow": [
+              "Battery voltage range",
+              "40\u201358 V"
+            ],
+            "url": "https://support.lionenergy.com/files/sales-sheets/sanctuary-3-spec-sheet.pdf",
+            "kind": "datasheet"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 210,
+            "rowIndex": 8,
+            "originalRow": [
+              "Battery voltage range",
+              "40\u201358 V"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "40\u201358 V"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "sungoldpower-41293881868425",
+        "name": "10000W 48V Solar Charger Inverter (2 Units Parallel)",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "40\u201360 Vdc (published Battery nominal/range: 48 V nominal battery input (minimum starting voltage 44 V); PV charging battery voltage range 40\u201360 Vdc)",
+          "source": "https://cdn.shopify.com/s/files/1/0323/4090/2025/files/SPH5048P_User_Manual_V2.7_20250611.pdf",
+          "kind": "manual"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 242,
+            "acceptedRowIndex": 4,
+            "normalizedRow": [
+              "Battery voltage range",
+              "40\u201360 Vdc (published Battery nominal/range: 48 V nominal battery input (minimum starting voltage 44 V); PV charging battery voltage range 40\u201360 Vdc)"
+            ],
+            "url": "https://cdn.shopify.com/s/files/1/0323/4090/2025/files/SPH5048P_User_Manual_V2.7_20250611.pdf",
+            "kind": "manual"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 350,
+            "rowIndex": 5,
+            "originalRow": [
+              "Battery nominal/range",
+              "48 V nominal battery input (minimum starting voltage 44 V); PV charging battery voltage range 40\u201360 Vdc"
+            ],
+            "normalizedRows": [
+              [
+                "Nominal battery voltage",
+                "48 V (published Battery nominal/range: 48 V nominal battery input (minimum starting voltage 44 V); PV charging battery voltage range 40\u201360 Vdc)"
+              ],
+              [
+                "Battery voltage range",
+                "40\u201360 Vdc (published Battery nominal/range: 48 V nominal battery input (minimum starting voltage 44 V); PV charging battery voltage range 40\u201360 Vdc)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "sungoldpower-47407326003337",
+        "name": "7.6KW Hybrid Inverter 48V Split Phase SGN7.6K1HB-48",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "40\u201364 V (published Battery: 48 V nominal (full load); battery voltage range 40\u201364 V)",
+          "source": "https://cdn.shopify.com/s/files/1/0323/4090/2025/files/SGN7.6K1HB-48_User_Manual_20260529.pdf",
+          "kind": "manual"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 244,
+            "acceptedRowIndex": 2,
+            "normalizedRow": [
+              "Battery voltage range",
+              "40\u201364 V (published Battery: 48 V nominal (full load); battery voltage range 40\u201364 V)"
+            ],
+            "url": "https://cdn.shopify.com/s/files/1/0323/4090/2025/files/SGN7.6K1HB-48_User_Manual_20260529.pdf",
+            "kind": "manual"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 356,
+            "rowIndex": 4,
+            "originalRow": [
+              "Battery",
+              "48 V nominal (full load); battery voltage range 40\u201364 V"
+            ],
+            "normalizedRows": [
+              [
+                "Nominal battery voltage",
+                "48 V (published Battery: 48 V nominal (full load); battery voltage range 40\u201364 V)"
+              ],
+              [
+                "Battery voltage range",
+                "40\u201364 V (published Battery: 48 V nominal (full load); battery voltage range 40\u201364 V)"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      },
+      {
+        "id": "watts247-lvx6048wp",
+        "name": "Below Cost Clearance \u2013 6kW Outdoor Rated Humless On/Off Grid Hybrid UL1741 120V/240v Split phase inverter 48V, dual MPPTs 8kw input",
+        "category": "inverters",
+        "field": {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "40-62 VDC; 48 VDC nominal",
+          "source": "https://www.mppsolar.com/manual/SPLIT%20PHASE%20LV/LVX6048WP%20manual-20231020.pdf",
+          "kind": "manual"
+        },
+        "acceptedInstances": [
+          {
+            "acceptedRecordIndex": 91,
+            "acceptedRowIndex": 0,
+            "normalizedRow": [
+              "Battery voltage range",
+              "40-62 VDC; 48 VDC nominal"
+            ],
+            "url": "https://www.mppsolar.com/manual/SPLIT%20PHASE%20LV/LVX6048WP%20manual-20231020.pdf",
+            "kind": "manual"
+          }
+        ],
+        "lineage": [
+          {
+            "recordIndex": 157,
+            "rowIndex": 0,
+            "originalRow": [
+              "Battery voltage range",
+              "40-62 VDC; 48 VDC nominal"
+            ],
+            "normalizedRows": [
+              [
+                "Battery voltage range",
+                "40-62 VDC; 48 VDC nominal"
+              ]
+            ]
+          }
+        ],
+        "comparisonBefore": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "comparisonAfter": {
+          "value": "\u2014",
+          "note": "Not listed in sourced exact-model specifications."
+        },
+        "receiverBatteryRangeBefore": null,
+        "receiverBatteryRangeAfter": null,
+        "batteryRangeGapClaimedFilled": false,
+        "technicalFieldRetained": true
+      }
+    ]
+  },
+  "beforeSha256": {
+    "site/data/specification-batch-thirty-eight-audit.json": "62b3a7e73c9864ca3f21b196f14a5c1e3e7671eb0439e0e9f7219562990c6170",
+    "site/data/specification-research-checkpoint.json": "29ae99fad76b9d7b9319f71e7a579e9db30062b522ba3e5272e42751db2be561",
+    "site/docs/specification-batch-thirty-eight.md": "2a529f4081b9f337761c33d36e1887c228d53d03d6bc8285957d3ea406990e6a"
+  },
+  "afterDataSha256": {
+    "site/data/specification-batch-thirty-eight-audit.json": "937f0ca43f64accb816b4d1b782ad583466c0b072933d39008a24ac2123ec980",
+    "site/data/specification-research-checkpoint.json": "f123291199dd2e564caed4348156fc7a4fad76f1572c7d26c2826846a2aa0c81"
+  },
+  "canonicalPaths": [
+    "site/data/specification-batch-thirty-eight-audit.json",
+    "site/data/specification-research-checkpoint.json",
+    "site/docs/specification-batch-thirty-eight.md",
+    "site/docs/specification-batch-thirty-eight-provenance-review.json"
+  ],
+  "validation": {
+    "checkedAt": "2026-10-23T01:09:16.609979+00:00",
+    "summary": "681 tests passed, 11 skipped, zero failures; typecheck, production build and git diff --check passed. Final metadata-only serialization and prose corrections preserve all tested source and technical values.",
+    "commands": [
+      {
+        "command": [
+          "npm",
+          "test"
+        ],
+        "exitCode": 0,
+        "completedAt": "2026-10-23T01:07:42.117255+00:00",
+        "logFile": "/workspace/pvpartpicker/output/specification-research/batch38/provenance-followup/tests.log",
+        "logSha256": "746b2eddbfee35b10ace882b2fef04a62f8e23ba496ca99f777f18267cf15e8f"
+      },
+      {
+        "command": [
+          "npm",
+          "run",
+          "typecheck"
+        ],
+        "exitCode": 0,
+        "completedAt": "2026-10-23T01:07:48.819395+00:00",
+        "logFile": "/workspace/pvpartpicker/output/specification-research/batch38/provenance-followup/typecheck.log",
+        "logSha256": "eb616a08256ec80d6338ad3574ea49134ce8e4fc45084a9de67d3d1b983cd936"
+      },
+      {
+        "command": [
+          "npm",
+          "run",
+          "build"
+        ],
+        "exitCode": 0,
+        "completedAt": "2026-10-23T01:08:48.561669+00:00",
+        "logFile": "/workspace/pvpartpicker/output/specification-research/batch38/provenance-followup/build.log",
+        "logSha256": "54eefa94c7cf8150c3b873a6fa5ab047285bf26c6c23fc09dc6d971a3672356c"
+      }
+    ],
+    "canonicalDataSha256": {
+      "site/data/specification-batch-thirty-eight-audit.json": "937f0ca43f64accb816b4d1b782ad583466c0b072933d39008a24ac2123ec980",
+      "site/data/specification-research-checkpoint.json": "f123291199dd2e564caed4348156fc7a4fad76f1572c7d26c2826846a2aa0c81"
+    },
+    "gitDiffCheckExitCode": 0,
+    "browserVerification": "Not performed; no runtime or UI change."
+  },
+  "independentReview": {
+    "schemaVersion": 1,
+    "checkedAt": "2026-10-23T01:09:46.634911+00:00",
+    "reviewer": "Independent batch38 provenance follow-up reviewer",
+    "result": "approved-no-blocking-findings",
+    "parentCommit": "0feb1a98a8bdd1dfe04438a6a14a31ebe8ade7d2",
+    "scope": "Exactly four metadata/documentation paths. Publication and CI merge provenance require a separate later verification.",
+    "canonicalPaths": [
+      "site/data/specification-batch-thirty-eight-audit.json",
+      "site/data/specification-research-checkpoint.json",
+      "site/docs/specification-batch-thirty-eight-provenance-review.json",
+      "site/docs/specification-batch-thirty-eight.md"
+    ],
+    "canonicalDataSha256": {
+      "site/data/specification-batch-thirty-eight-audit.json": "937f0ca43f64accb816b4d1b782ad583466c0b072933d39008a24ac2123ec980",
+      "site/data/specification-research-checkpoint.json": "f123291199dd2e564caed4348156fc7a4fad76f1572c7d26c2826846a2aa0c81"
+    },
+    "narrativeSha256": "fdba3dc694f6307a99cbebb9f9f2f7ba801cf81bc7dd3957612846ae4bfd5ea0",
+    "checks": {
+      "baselineGitBlobHashReproduced": true,
+      "retainedSnapshotHashReproduced": true,
+      "baselineParsedObjectsIdentical": true,
+      "auditExistingObjectsUnchanged": true,
+      "checkpointExistingObjectsUnchanged": true,
+      "allOtherTrackedFilesByteUnchanged": true,
+      "originalReviewAndApprovalsRetainedHistorical": true,
+      "triageEmbeddingsExact": true,
+      "all32AcceptedSourceRowsAndNormalizationLineagesVerified": true,
+      "all32ComparisonAndReceiverGapsRemainUnknown": true,
+      "noBatteryRangeGapFillsClaimed": true,
+      "all604AddedFieldsAnd495FilledGapsIndependentlyRecounted": true,
+      "validationLogsHashVerified": true,
+      "testsPass": 681,
+      "testsSkip": 11,
+      "testsFail": 0,
+      "typecheckPassed": true,
+      "productionBuildPassed": true,
+      "gitDiffCheckPassed": true
+    },
+    "preservedPriorObjects": {
+      "oldFields": 37330,
+      "oldSources": 11458,
+      "oldIdentities": 5891
+    },
+    "evidenceSha256": {
+      "independent-review/consumer-check.json": "3367b952565531de0329ca88f3806e1df5a119d483dd976b929ac0a149dc3bc2",
+      "independent-review/metadata-check.json": "40a01c69df86ca3afe5b9bc558060ed29a451e057153de4f4cda2a9bb13e418b",
+      "validation.json": "02514b9fe87427ae750edf63a7ffaf4dd2a814179fa11016f262efd9110261ca"
+    },
+    "limitations": [
+      "No browser/live route verification; runtime and UI unchanged.",
+      "No direct source refetch; unchanged accepted transcriptions/source lineage and original reviews preserved.",
+      "No commit/merge/CI/provider/package/publication validation yet."
+    ],
+    "selfReferenceTreatment": "This receipt binds the two canonical data hashes and narrative hash; no self-recursive hash of the canonical review embedding this receipt."
+  }
+}

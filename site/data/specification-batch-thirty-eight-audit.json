@@ -10958,5 +10958,10 @@
         }
       }
     ]
-  }
+  },
+  "baselineGitPath": "site/data/specifications.json",
+  "baselineGitBlobSha256": "749871fff9a888d3cb70fca78a58196172f465a785ce5c5f4b83330332919bd1",
+  "baselineSnapshotSha256": "6710fb438208be54edabadbbf1a752121e743f0d561f3d6fdbe690dd8512ab4f",
+  "baselineSha256Scope": "Legacy field: SHA-256 of the retained research snapshot baseline-specifications.json bytes; not the baseline Git blob bytes.",
+  "baselineSemanticEquality": "The parsed retained research snapshot is deeply equal to the JSON at baselineCommit:baselineGitPath. Serialization differs; no baseline technical values differ."
 }
