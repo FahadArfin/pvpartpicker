@@ -93571,5 +93571,17 @@
         "countsAsSourceResearch": true
       }
     ]
+  },
+  "lastEligibilityCheck": {
+    "checkedAt": "2026-10-23T04:48:22.304823+00:00",
+    "captureProductRows": 9368,
+    "captureReadableProducts": 5480,
+    "captureUnreadableProducts": 3888,
+    "captureOfferRows": 9400,
+    "technicalAdditions": 0,
+    "comparisonFills": 0,
+    "sourceVisits": 0,
+    "state": "paused-until-new-source-or-complete-record-evidence",
+    "reportPath": "site/data/specification-resume-forty-one-audit.json"
   }
 }
