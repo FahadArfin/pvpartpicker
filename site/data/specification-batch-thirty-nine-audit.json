@@ -1,0 +1,295 @@
+{
+  "baselineCommit": "a0588878d6169a9b9658d47061b43813335ffac3",
+  "baselineGitPath": "site/data/specifications.json",
+  "baselineGitBlobSha256": "0ffa4b67e9b08848bdad4de2d4e2d0cdda93d24dd254b5cc470cd9e949818965",
+  "baselineSnapshotSha256": "0ffa4b67e9b08848bdad4de2d4e2d0cdda93d24dd254b5cc470cd9e949818965",
+  "baselineSha256": "0ffa4b67e9b08848bdad4de2d4e2d0cdda93d24dd254b5cc470cd9e949818965",
+  "baselineSha256Scope": "Exact bytes of baseline-specifications.json research snapshot; baselineGitBlobSha256 separately identifies the named Git blob bytes.",
+  "baselineSemanticEquality": true,
+  "baselineSnapshotByteEquality": true,
+  "catalogSnapshotGeneratedAt": "2026-10-23T01:47:04.886738Z",
+  "checkedAt": "2026-10-23T01:47:07.370Z",
+  "scope": "5471 complete readable current database records; 3886 truncated records excluded. Non-atomic native capture; not full catalog coverage.",
+  "catalogListings": 5471,
+  "acceptedRecords": 9,
+  "changedListings": 7,
+  "addedTechnicalFields": 10,
+  "filledComparisonFields": 8,
+  "readableGapsBefore": 22259,
+  "readableGapsAfter": 22251,
+  "changes": [
+    {
+      "id": "powmr-51372617597223",
+      "name": "12KW 48Vdc All in One Inverter 110/240Vac Split Phase Supports 6 Units in Parallel",
+      "category": "inverters",
+      "sourceUrl": "https://powmr.com/products/12kw-48vdc-all-in-one-inverter-110-240vac-split-phase-supports-6-units-in-parallel?variant=51372617597223",
+      "added": [
+        {
+          "key": "mpptCount",
+          "label": "Independent MPPT trackers",
+          "value": "2",
+          "source": "https://powmr.com/products/12kw-48vdc-all-in-one-inverter-110-240vac-split-phase-supports-6-units-in-parallel",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "mpptCount",
+          "label": "Independent MPPT count",
+          "value": "2",
+          "source": "https://powmr.com/products/12kw-48vdc-all-in-one-inverter-110-240vac-split-phase-supports-6-units-in-parallel",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "PV A/MPPT",
+        "PV short-circuit current limit",
+        "Battery voltage range"
+      ]
+    },
+    {
+      "id": "powmr-51768102224167",
+      "name": "10KW 48Vdc All in One Inverter 110/240Vac Split Phase Supports 6 Units in Parallel",
+      "category": "inverters",
+      "sourceUrl": "https://powmr.com/products/10kw-48vdc-all-in-one-inverter-110-240vac-split-phase-supports-6-units-in-parallel?variant=51768102224167",
+      "added": [
+        {
+          "key": "mpptCount",
+          "label": "Independent MPPT trackers",
+          "value": "2",
+          "source": "https://powmr.com/products/10kw-48vdc-all-in-one-inverter-110-240vac-split-phase-supports-6-units-in-parallel",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "mpptCount",
+          "label": "Independent MPPT count",
+          "value": "2",
+          "source": "https://powmr.com/products/10kw-48vdc-all-in-one-inverter-110-240vac-split-phase-supports-6-units-in-parallel",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "PV A/MPPT",
+        "PV short-circuit current limit",
+        "Battery voltage range"
+      ]
+    },
+    {
+      "id": "powmr-51856147611943",
+      "name": "16KW 48Vdc All in One Inverter 110/240Vac Split Phase Supports 6 Units in Parallel",
+      "category": "inverters",
+      "sourceUrl": "https://powmr.com/products/16kw-48vdc-all-in-one-inverter-110-240vac-split-phase-supports-6-units-in-parallel?variant=51856147611943",
+      "added": [
+        {
+          "key": "mpptCount",
+          "label": "Independent MPPT trackers",
+          "value": "2",
+          "source": "https://powmr.com/products/16kw-48vdc-all-in-one-inverter-110-240vac-split-phase-supports-6-units-in-parallel",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "mpptCount",
+          "label": "Independent MPPT count",
+          "value": "2",
+          "source": "https://powmr.com/products/16kw-48vdc-all-in-one-inverter-110-240vac-split-phase-supports-6-units-in-parallel",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "PV A/MPPT",
+        "PV short-circuit current limit",
+        "Battery voltage range"
+      ]
+    },
+    {
+      "id": "renogy-43178670063731",
+      "name": "Golf Cart 48V 105Ah Lithium Iron Phosphate Battery",
+      "category": "batteries",
+      "sourceUrl": "https://www.renogy.com/products/48v-105ah-golf-cart-lithium-iron-phosphate-battery?variant=43178670063731",
+      "added": [
+        {
+          "key": "communications",
+          "label": "Communications",
+          "value": "Integrated Bluetooth Module; add the battery in the Renogy app to monitor battery status in real time. The included Battery Indicator displays basic information including current and voltage.",
+          "source": "https://www.renogy.com/products/48v-105ah-golf-cart-lithium-iron-phosphate-battery?variant=43178670063731",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "communications",
+          "label": "Communications",
+          "value": "Integrated Bluetooth Module; add the battery in the Renogy app to monitor battery status in real time. The included Battery Indicator displays basic information including current and voltage.",
+          "source": "https://www.renogy.com/products/48v-105ah-golf-cart-lithium-iron-phosphate-battery?variant=43178670063731",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "Format"
+      ]
+    },
+    {
+      "id": "signature-solar-1593003",
+      "name": "Victron VE.Direct Cable 0.9m",
+      "category": "wiring",
+      "sourceUrl": "https://signaturesolar.com/victron-ve-direct-cable-0-9m/",
+      "added": [
+        {
+          "key": "connector",
+          "label": "Connector / terminal",
+          "value": "VE.Direct",
+          "source": "https://www.victronenergy.com/cables/ve.direct.cable",
+          "kind": "manufacturer"
+        },
+        {
+          "key": "length",
+          "label": "Length",
+          "value": "0.9 m",
+          "source": "https://www.victronenergy.com/upload/documents/Network-Cables-0826.pdf",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "length",
+          "label": "Length",
+          "value": "0.9 m",
+          "source": "https://www.victronenergy.com/upload/documents/Network-Cables-0826.pdf"
+        },
+        {
+          "key": "connector",
+          "label": "Connector",
+          "value": "VE.Direct",
+          "source": "https://www.victronenergy.com/cables/ve.direct.cable"
+        }
+      ],
+      "remaining": [
+        "Gauge",
+        "Conductor material",
+        "Rated voltage",
+        "Rated current"
+      ]
+    },
+    {
+      "id": "signature-solar-1593080",
+      "name": "Victron Phoenix Inverter 48/1200 | VE.Direct | 1200VA Output| 48VDC Input | 120VAC Output",
+      "category": "inverters",
+      "sourceUrl": "https://signaturesolar.com/phoenix-inverter-48-1200-120v-ve-direct-nema-gfci/",
+      "added": [
+        {
+          "key": "voltage",
+          "label": "Nominal voltage",
+          "value": "48V",
+          "source": "https://signaturesolar.com/phoenix-inverter-48-1200-120v-ve-direct-nema-gfci/",
+          "kind": "retailer"
+        },
+        {
+          "key": "operatingVoltage",
+          "label": "Operating voltage range",
+          "value": "36.8 - 62.0 VDC (48 V model DC input) (Input voltage range)",
+          "source": "https://www.victronenergy.com/upload/documents/Manual-Phoenix-Inverter-VE.Direct-250VA-1200VA-EN-NL-FR-DE-ES-IT.pdf",
+          "kind": "manual"
+        },
+        {
+          "key": "acOutput",
+          "label": "AC output voltage",
+          "value": "120 VAC +/- 3% (adjustable; exact listing is the 120 VAC regional variant)",
+          "source": "https://www.victronenergy.com/upload/documents/Manual-Phoenix-Inverter-VE.Direct-250VA-1200VA-EN-NL-FR-DE-ES-IT.pdf",
+          "kind": "manual"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "acOutput",
+          "label": "AC output voltage / phase",
+          "value": "120 VAC +/- 3% (adjustable; exact listing is the 120 VAC regional variant)",
+          "source": "https://www.victronenergy.com/upload/documents/Manual-Phoenix-Inverter-VE.Direct-250VA-1200VA-EN-NL-FR-DE-ES-IT.pdf",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "AC out (kW)",
+        "PV max (kW)",
+        "PV A/MPPT",
+        "MPPT operating voltage range",
+        "Maximum PV voltage",
+        "Independent MPPT count",
+        "PV short-circuit current limit",
+        "Battery voltage range",
+        "AC frequency"
+      ]
+    },
+    {
+      "id": "signature-solar-1594002",
+      "name": "Tigo Cloud Connect Advanced - Data Logger Kit: TAP, Din Rail PS, Outdoor box",
+      "category": "module-electronics",
+      "sourceUrl": "https://signaturesolar.com/tigo-tap-din-rail-ps-outdoor-enclosure-kit/",
+      "added": [
+        {
+          "key": "communications",
+          "label": "Communications",
+          "value": "CCA internet connection: Ethernet, Wi-Fi, or optional cellular; CCA connects to TAP by RS485; TAP communicates wirelessly with Tigo TS4 units.",
+          "source": "https://www.tigoenergy.com/product/cloud-connect-advanced",
+          "kind": "manufacturer"
+        }
+      ],
+      "comparison": [
+        {
+          "key": "communications",
+          "label": "Communications",
+          "value": "CCA internet connection: Ethernet, Wi-Fi, or optional cellular; CCA connects to TAP by RS485; TAP communicates wirelessly with Tigo TS4 units.",
+          "source": "https://www.tigoenergy.com/product/cloud-connect-advanced",
+          "note": "Sourced exact-model specification"
+        }
+      ],
+      "remaining": [
+        "Rated amps",
+        "Rated volts",
+        "Maximum PV voltage",
+        "Conversion efficiency"
+      ]
+    }
+  ],
+  "holds": [],
+  "priorEvidencePreservation": {
+    "priorRecords": 6512,
+    "technicalFieldObjects": 37934,
+    "sourceObjects": 11682,
+    "identities": 6008,
+    "panelRatingValues": 2885
+  },
+  "newConsumerLimitations": [
+    {
+      "key": "inverter-battery-range-consumer-key",
+      "productId": "signature-solar-1593080",
+      "storedFieldKey": "operatingVoltage",
+      "downstreamFieldKey": "batteryVoltageRange",
+      "status": "requires-runtime-support",
+      "reason": "The unchanged specification parser stores this published range as operatingVoltage. Inverter comparison/compatibility consume batteryVoltageRange; the comparison gap remains unresolved. Do not re-research the published source range or change runtime in this data batch."
+    }
+  ],
+  "renderedComparisonPreservation": {
+    "lostValues": [],
+    "changedRowStructures": [],
+    "sourceBackedRefinements": [
+      {
+        "id": "signature-solar-1593080",
+        "key": "systemVoltage",
+        "before": {
+          "value": "48 V",
+          "source": "https://signaturesolar.com/phoenix-inverter-48-1200-120v-ve-direct-nema-gfci/",
+          "note": "Listed product specification"
+        },
+        "after": {
+          "value": "48V",
+          "source": "https://signaturesolar.com/phoenix-inverter-48-1200-120v-ve-direct-nema-gfci/",
+          "note": "Sourced exact-model specification"
+        }
+      }
+    ]
+  }
+}

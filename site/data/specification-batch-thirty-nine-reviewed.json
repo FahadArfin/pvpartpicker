@@ -1,0 +1,668 @@
+[
+  {
+    "url": "https://signaturesolar.com/phoenix-inverter-48-1200-120v-ve-direct-nema-gfci/",
+    "kind": "retailer",
+    "model": "Victron Phoenix Inverter 48/1200 | VE.Direct | 1200VA Output | 48VDC Input | 120VAC Output (Signature Solar SKU 1593080)",
+    "label": "Retailer product specifications and key features",
+    "checkedAt": "2026-10-23T01:29:22Z",
+    "rows": [
+      [
+        "Nominal battery voltage",
+        "48V"
+      ]
+    ],
+    "productIds": [
+      "signature-solar-1593080"
+    ],
+    "expected": {
+      "signature-solar-1593080": {
+        "name": "Victron Phoenix Inverter 48/1200 | VE.Direct | 1200VA Output| 48VDC Input | 120VAC Output",
+        "sourceUrl": "https://signaturesolar.com/phoenix-inverter-48-1200-120v-ve-direct-nema-gfci/",
+        "category": "inverters",
+        "anchors": {
+          "voltage": 48
+        }
+      }
+    },
+    "reviewNote": "The exact Signature Solar listing title and SKU 1593080 identify the 48/1200 model with 48VDC input and 120VAC output. Its technical-specification block states Rated Power 1200VA, Battery Voltage 48V, and Rated AC Power 120V; its key-features block states Output: 120V 60 Hz. Preserve the rating as VA; this retailer page does not publish a kW or W output rating, so 1200VA must not be converted or treated as continuous watts. The page does not publish PV input/controller specifications, battery operating-voltage range, or output phase. The 48V listing value is the named battery-voltage rating, not a stated operating range. Independent review retained fully configurable output scope; the apparent-power row is held from import. The retailer label Rated AC Power describes volts and must not be interpreted as watts.",
+    "researchWorker": 2,
+    "independentSourceReview": {
+      "reviewer": "source39_a",
+      "checkedAt": "2026-10-23T01:33:53.811114+00:00",
+      "decisionFile": "source-review-a.json"
+    },
+    "originalSourceRows": [
+      [
+        "Battery Voltage",
+        "48V"
+      ]
+    ],
+    "originalProposedSourceRows": [
+      [
+        "Battery Voltage",
+        "48V"
+      ]
+    ],
+    "normalizationLineage": [
+      {
+        "occurrenceId": "w2:r0:row1",
+        "original": [
+          "Battery Voltage",
+          "48V"
+        ],
+        "sourceApproved": [
+          "Battery Voltage",
+          "48V"
+        ],
+        "normalized": [
+          "Nominal battery voltage",
+          "48V"
+        ],
+        "fieldKey": "voltage",
+        "reason": "Exact retailer battery-system rating is nominal voltage, never PV input or operating range. Keep value verbatim and retain original label in source-row provenance; appending redundant label text would hide existing Battery V comparison under the unchanged numeric consumer."
+      }
+    ]
+  },
+  {
+    "url": "https://www.renogy.com/products/48v-105ah-golf-cart-lithium-iron-phosphate-battery?variant=43178670063731",
+    "kind": "manufacturer",
+    "model": "Golf Cart 48V 105Ah Lithium Iron Phosphate Battery",
+    "label": "Communications",
+    "checkedAt": "2026-10-23T01:29:26Z",
+    "rows": [
+      [
+        "Communications",
+        "Integrated Bluetooth Module; add the battery in the Renogy app to monitor battery status in real time. The included Battery Indicator displays basic information including current and voltage."
+      ]
+    ],
+    "productIds": [
+      "renogy-43178670063731"
+    ],
+    "expected": {
+      "renogy-43178670063731": {
+        "name": "Golf Cart 48V 105Ah Lithium Iron Phosphate Battery",
+        "sourceUrl": "https://www.renogy.com/products/48v-105ah-golf-cart-lithium-iron-phosphate-battery?variant=43178670063731",
+        "category": "batteries",
+        "anchors": {
+          "capacityAh": 105,
+          "voltage": 48
+        }
+      }
+    },
+    "reviewNote": "The exact selected product listing identifies the battery as Golf Cart 48V 105Ah Lithium Iron Phosphate Battery, SKU RBT48105LFP-GC-US, and its technical section identifies the 48V/105Ah golf-cart battery. Its FAQ explicitly says this battery integrates a Bluetooth Module and supports Renogy app status monitoring; the included Battery Indicator is a separate basic display for current, voltage, etc. This proposes only the requested communications fact and preserves the monitor/accessory distinction.",
+    "researchWorker": 5,
+    "independentSourceReview": {
+      "reviewer": "source39_a",
+      "checkedAt": "2026-10-23T01:33:53.811114+00:00",
+      "decisionFile": "source-review-a.json"
+    },
+    "originalSourceRows": [
+      [
+        "Communications",
+        "Integrated Bluetooth Module; add the battery in the Renogy app to monitor battery status in real time. The included Battery Indicator displays basic information including current and voltage."
+      ]
+    ],
+    "originalProposedSourceRows": [
+      [
+        "Communications",
+        "Integrated Bluetooth Module; add the battery in the Renogy app to monitor battery status in real time. The included Battery Indicator displays basic information including current and voltage."
+      ]
+    ],
+    "normalizationLineage": [
+      {
+        "occurrenceId": "w5:r0:row0",
+        "original": [
+          "Communications",
+          "Integrated Bluetooth Module; add the battery in the Renogy app to monitor battery status in real time. The included Battery Indicator displays basic information including current and voltage."
+        ],
+        "sourceApproved": [
+          "Communications",
+          "Integrated Bluetooth Module; add the battery in the Renogy app to monitor battery status in real time. The included Battery Indicator displays basic information including current and voltage."
+        ],
+        "normalized": [
+          "Communications",
+          "Integrated Bluetooth Module; add the battery in the Renogy app to monitor battery status in real time. The included Battery Indicator displays basic information including current and voltage."
+        ],
+        "fieldKey": "communications",
+        "reason": "Source-approved label and complete value pass unchanged parser."
+      }
+    ]
+  },
+  {
+    "url": "https://powmr.com/products/10kw-48vdc-all-in-one-inverter-110-240vac-split-phase-supports-6-units-in-parallel",
+    "kind": "manufacturer",
+    "model": "FU10-248P",
+    "label": "PowMr FU10-248P product page — dual MPPT statement",
+    "checkedAt": "2026-10-23T01:29:34Z",
+    "rows": [
+      [
+        "MPPT count",
+        "2"
+      ]
+    ],
+    "productIds": [
+      "powmr-51768102224167"
+    ],
+    "expected": {
+      "powmr-51768102224167": {
+        "name": "10KW 48Vdc All in One Inverter 110/240Vac Split Phase Supports 6 Units in Parallel",
+        "sourceUrl": "https://powmr.com/products/10kw-48vdc-all-in-one-inverter-110-240vac-split-phase-supports-6-units-in-parallel?variant=51768102224167",
+        "category": "inverters",
+        "anchors": {
+          "voltage": 48,
+          "acOutput": "120/240V split-phase",
+          "outputWatts": 10000
+        }
+      }
+    },
+    "reviewNote": "The official PowMr listing opened at the canonical product URL identifies SKU FU10-248P and its Overview says the inverter combines “dual MPPT solar controllers,” directly supporting two independent MPPT controllers for the queued exact variant. This count comes from the explicit dual-controller wording, not from the two 6000 W PV power entries; those entries state power and are not interpreted as separate PV input strings. The opened page's displayed model and 10 kW / 48 V / 120/240 V split-phase identity align with the queued variant. Other previously missing labels are outside this source-followup lead. Cardinality normalization approved independently: the exact model overview says \"dual MPPT solar controllers\"; dual is exactly two controllers per individual bound inverter. The scalar MPPT count is 2. This is not a PV string count and does not assert a current, operating range, tolerance, duty cycle, or quantity across a multi-inverter parallel installation. Full source-approved and original proposed rows remain attached as provenance.",
+    "researchWorker": 6,
+    "independentSourceReview": {
+      "reviewer": "source39_a",
+      "checkedAt": "2026-10-23T01:33:53.811114+00:00",
+      "decisionFile": "source-review-a.json"
+    },
+    "originalSourceRows": [
+      [
+        "Independent MPPT count",
+        "2 (dual MPPT solar controllers; per inverter)"
+      ]
+    ],
+    "originalProposedSourceRows": [
+      [
+        "Independent MPPT count",
+        "2"
+      ]
+    ],
+    "normalizationLineage": [
+      {
+        "occurrenceId": "w6:r0:row0",
+        "original": [
+          "Independent MPPT count",
+          "2"
+        ],
+        "sourceApproved": [
+          "Independent MPPT count",
+          "2 (dual MPPT solar controllers; per inverter)"
+        ],
+        "normalized": [
+          "MPPT count",
+          "2"
+        ],
+        "fieldKey": "mpptCount",
+        "reason": "Dual expresses an exact cardinality of two. The exact model is the grammatical subject of the source statement; the record is bound to one inverter identity, so per-inverter scope is inherent in this MPPT-count field. The removed parenthesis repeats that cardinality/type/scope; it contains no numerical qualification such as range, tolerance, operating temperature, selectable mode, duration, or system-total multiplier. Preserving the phrase and scope in reviewNote and originalSourceRows therefore loses no material engineering condition."
+      }
+    ],
+    "independentFormattingApproval": "supplemental-formatting-approval-a.json"
+  },
+  {
+    "url": "https://powmr.com/products/12kw-48vdc-all-in-one-inverter-110-240vac-split-phase-supports-6-units-in-parallel",
+    "kind": "manufacturer",
+    "model": "FU12-248P",
+    "label": "PowMr exact product listing and overview",
+    "checkedAt": "2026-10-23T01:29:52Z",
+    "rows": [
+      [
+        "MPPT count",
+        "2"
+      ]
+    ],
+    "productIds": [
+      "powmr-51372617597223"
+    ],
+    "expected": {
+      "powmr-51372617597223": {
+        "name": "12KW 48Vdc All in One Inverter 110/240Vac Split Phase Supports 6 Units in Parallel",
+        "sourceUrl": "https://powmr.com/products/12kw-48vdc-all-in-one-inverter-110-240vac-split-phase-supports-6-units-in-parallel?variant=51372617597223",
+        "category": "inverters",
+        "anchors": {
+          "voltage": 48,
+          "acOutput": "120/240V split-phase",
+          "outputWatts": 12000
+        }
+      }
+    },
+    "reviewNote": "The opened exact PowMr listing displays SKU FU12-248P and the Specifications section identifies model FU12-248P. In its Overview, PowMr describes this model as combining a pure sine wave inverter, dual MPPT solar controllers, and an AC battery charger. This explicitly supports two MPPT controllers; it does not state PV string count. The queried variant URL is the exact frozen listing identity, while the canonical base product page was accessible and shows the same exact product title/SKU/model. No other fields are proposed from this follow-up. Cardinality normalization approved independently: the exact model overview says \"dual MPPT solar controllers\"; dual is exactly two controllers per individual bound inverter. The scalar MPPT count is 2. This is not a PV string count and does not assert a current, operating range, tolerance, duty cycle, or quantity across a multi-inverter parallel installation. Full source-approved and original proposed rows remain attached as provenance.",
+    "researchWorker": 7,
+    "independentSourceReview": {
+      "reviewer": "source39_a",
+      "checkedAt": "2026-10-23T01:33:53.811114+00:00",
+      "decisionFile": "source-review-a.json"
+    },
+    "originalSourceRows": [
+      [
+        "Independent MPPT count",
+        "2 (dual MPPT solar controllers)"
+      ]
+    ],
+    "originalProposedSourceRows": [
+      [
+        "Independent MPPT count",
+        "2 (dual MPPT solar controllers)"
+      ]
+    ],
+    "normalizationLineage": [
+      {
+        "occurrenceId": "w7:r0:row0",
+        "original": [
+          "Independent MPPT count",
+          "2 (dual MPPT solar controllers)"
+        ],
+        "sourceApproved": [
+          "Independent MPPT count",
+          "2 (dual MPPT solar controllers)"
+        ],
+        "normalized": [
+          "MPPT count",
+          "2"
+        ],
+        "fieldKey": "mpptCount",
+        "reason": "Dual expresses an exact cardinality of two. The exact model is the grammatical subject of the source statement; the record is bound to one inverter identity, so per-inverter scope is inherent in this MPPT-count field. The removed parenthesis repeats that cardinality/type/scope; it contains no numerical qualification such as range, tolerance, operating temperature, selectable mode, duration, or system-total multiplier. Preserving the phrase and scope in reviewNote and originalSourceRows therefore loses no material engineering condition."
+      }
+    ],
+    "independentFormattingApproval": "supplemental-formatting-approval-a.json"
+  },
+  {
+    "url": "https://powmr.com/products/16kw-48vdc-all-in-one-inverter-110-240vac-split-phase-supports-6-units-in-parallel",
+    "kind": "manufacturer",
+    "model": "POW-SunSmart 16KP",
+    "label": "Independent MPPT count",
+    "checkedAt": "2026-10-23T01:30:02Z",
+    "rows": [
+      [
+        "MPPT count",
+        "2"
+      ]
+    ],
+    "productIds": [
+      "powmr-51856147611943"
+    ],
+    "expected": {
+      "powmr-51856147611943": {
+        "name": "16KW 48Vdc All in One Inverter 110/240Vac Split Phase Supports 6 Units in Parallel",
+        "sourceUrl": "https://powmr.com/products/16kw-48vdc-all-in-one-inverter-110-240vac-split-phase-supports-6-units-in-parallel?variant=51856147611943",
+        "category": "inverters",
+        "anchors": {
+          "voltage": 48,
+          "acOutput": "120/240V split-phase",
+          "outputWatts": 16000
+        }
+      }
+    },
+    "reviewNote": "The PowMr exact-model product page identifies SKU POW-SunSmart 16KP, repeats this model in its specifications, and describes that inverter as combining dual MPPT solar controllers. This directly supports two MPPT controllers in one inverter; count is not inferred from the separate 12000 + 12000 W PV input figures. The selected variant URL with variant=51856147611943 was inaccessible to web open, so identity binding uses the official single-model listing and the queued variant identity (48 V, 120/240 V split-phase, 16000 W), corroborated by the page specifications and comparison row. No claim is made about PV current or controller independence beyond the explicit dual-controller wording. Cardinality normalization approved independently: the exact model overview says \"dual MPPT solar controllers\"; dual is exactly two controllers per individual bound inverter. The scalar MPPT count is 2. This is not a PV string count and does not assert a current, operating range, tolerance, duty cycle, or quantity across a multi-inverter parallel installation. Full source-approved and original proposed rows remain attached as provenance.",
+    "researchWorker": 8,
+    "independentSourceReview": {
+      "reviewer": "source39_a",
+      "checkedAt": "2026-10-23T01:33:53.811114+00:00",
+      "decisionFile": "source-review-a.json"
+    },
+    "originalSourceRows": [
+      [
+        "Independent MPPT count",
+        "Dual MPPT solar controllers (2; per inverter)"
+      ]
+    ],
+    "originalProposedSourceRows": [
+      [
+        "Independent MPPT count",
+        "Dual MPPT solar controllers (2; per inverter)"
+      ]
+    ],
+    "normalizationLineage": [
+      {
+        "occurrenceId": "w8:r0:row0",
+        "original": [
+          "Independent MPPT count",
+          "Dual MPPT solar controllers (2; per inverter)"
+        ],
+        "sourceApproved": [
+          "Independent MPPT count",
+          "Dual MPPT solar controllers (2; per inverter)"
+        ],
+        "normalized": [
+          "MPPT count",
+          "2"
+        ],
+        "fieldKey": "mpptCount",
+        "reason": "Dual expresses an exact cardinality of two. The exact model is the grammatical subject of the source statement; the record is bound to one inverter identity, so per-inverter scope is inherent in this MPPT-count field. The removed parenthesis repeats that cardinality/type/scope; it contains no numerical qualification such as range, tolerance, operating temperature, selectable mode, duration, or system-total multiplier. Preserving the phrase and scope in reviewNote and originalSourceRows therefore loses no material engineering condition."
+      }
+    ],
+    "independentFormattingApproval": "supplemental-formatting-approval-a.json"
+  },
+  {
+    "url": "https://www.victronenergy.com/cables/ve.direct.cable",
+    "kind": "manufacturer",
+    "model": "Victron VE.Direct Cable 0.9m",
+    "label": "Connector",
+    "checkedAt": "2026-10-23T01:35:28.048734+00:00",
+    "rows": [
+      [
+        "Connector",
+        "VE.Direct"
+      ]
+    ],
+    "productIds": [
+      "signature-solar-1593003"
+    ],
+    "expected": {
+      "signature-solar-1593003": {
+        "name": "Victron VE.Direct Cable 0.9m",
+        "sourceUrl": "https://signaturesolar.com/victron-ve-direct-cable-0-9m/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "reviewNote": "Exact retailer SKU 1593003 names Victron VE.Direct Cable 0.9m. Independently opened Victron product page and linked declaration list the VE.Direct cable family and 0.9m models. Straight versus right-angle construction is not explicitly bound by a manufacturer part number on the retailer page; do not assert a geometry. Both listed 0.9m models share the proposed length and VE.Direct interface. No conductor, gauge, current or voltage inferred.",
+    "researchWorker": 9,
+    "independentSourceReview": "source-review-b.json",
+    "sourceLineage": [
+      {
+        "worker": 9,
+        "recordIndex": 0,
+        "rowIndex": 0,
+        "originalRow": [
+          "Connector",
+          "VE.Direct"
+        ],
+        "approvedRow": [
+          "Connector",
+          "VE.Direct"
+        ]
+      }
+    ],
+    "originalSourceRows": [
+      [
+        "Connector",
+        "VE.Direct"
+      ]
+    ],
+    "originalProposedSourceRows": [
+      [
+        "Connector",
+        "VE.Direct"
+      ]
+    ],
+    "normalizationLineage": [
+      {
+        "occurrenceId": "w9:r0:row0",
+        "original": [
+          "Connector",
+          "VE.Direct"
+        ],
+        "sourceApproved": [
+          "Connector",
+          "VE.Direct"
+        ],
+        "normalized": [
+          "Connector",
+          "VE.Direct"
+        ],
+        "fieldKey": "connector",
+        "reason": "Source-approved label and complete value pass unchanged parser."
+      }
+    ]
+  },
+  {
+    "url": "https://www.victronenergy.com/upload/documents/Network-Cables-0826.pdf",
+    "kind": "manufacturer",
+    "model": "Victron VE.Direct Cable 0.9m",
+    "label": "Length",
+    "checkedAt": "2026-10-23T01:35:28.048734+00:00",
+    "rows": [
+      [
+        "Length",
+        "0.9 m"
+      ]
+    ],
+    "productIds": [
+      "signature-solar-1593003"
+    ],
+    "expected": {
+      "signature-solar-1593003": {
+        "name": "Victron VE.Direct Cable 0.9m",
+        "sourceUrl": "https://signaturesolar.com/victron-ve-direct-cable-0-9m/",
+        "category": "wiring",
+        "anchors": {}
+      }
+    },
+    "reviewNote": "Exact retailer SKU 1593003 names Victron VE.Direct Cable 0.9m. Independently opened Victron product page and linked declaration list the VE.Direct cable family and 0.9m models. Straight versus right-angle construction is not explicitly bound by a manufacturer part number on the retailer page; do not assert a geometry. Both listed 0.9m models share the proposed length and VE.Direct interface. No conductor, gauge, current or voltage inferred.",
+    "researchWorker": 9,
+    "independentSourceReview": "source-review-b.json",
+    "sourceLineage": [
+      {
+        "worker": 9,
+        "recordIndex": 1,
+        "rowIndex": 0,
+        "originalRow": [
+          "Length",
+          "0.9 m"
+        ],
+        "approvedRow": [
+          "Length",
+          "0.9 m"
+        ]
+      }
+    ],
+    "originalSourceRows": [
+      [
+        "Length",
+        "0.9 m"
+      ]
+    ],
+    "originalProposedSourceRows": [
+      [
+        "Length",
+        "0.9 m"
+      ]
+    ],
+    "normalizationLineage": [
+      {
+        "occurrenceId": "w9:r1:row0",
+        "original": [
+          "Length",
+          "0.9 m"
+        ],
+        "sourceApproved": [
+          "Length",
+          "0.9 m"
+        ],
+        "normalized": [
+          "Length",
+          "0.9 m"
+        ],
+        "fieldKey": "length",
+        "reason": "Source-approved label and complete value pass unchanged parser."
+      }
+    ]
+  },
+  {
+    "url": "https://www.victronenergy.com/upload/documents/Manual-Phoenix-Inverter-VE.Direct-250VA-1200VA-EN-NL-FR-DE-ES-IT.pdf",
+    "kind": "manual",
+    "model": "Victron Phoenix Inverter 48/1200, 120 VAC listing; hardware revision unresolved",
+    "label": "Technical data table, 48/1200 column",
+    "checkedAt": "2026-10-23T01:35:28.048734+00:00",
+    "rows": [
+      [
+        "Operating voltage range (DC battery input; Input voltage range)",
+        "36.8 - 62.0 VDC (48 V model DC input) (Input voltage range)"
+      ],
+      [
+        "AC output voltage",
+        "120 VAC +/- 3% (adjustable; exact listing is the 120 VAC regional variant)"
+      ]
+    ],
+    "productIds": [
+      "signature-solar-1593080"
+    ],
+    "expected": {
+      "signature-solar-1593080": {
+        "name": "Victron Phoenix Inverter 48/1200 | VE.Direct | 1200VA Output| 48VDC Input | 120VAC Output",
+        "sourceUrl": "https://signaturesolar.com/phoenix-inverter-48-1200-120v-ve-direct-nema-gfci/",
+        "category": "inverters",
+        "anchors": {
+          "voltage": 48
+        }
+      }
+    },
+    "reviewNote": "Both exact retailer-linked manufacturer documents were opened independently through retailer download links. Their 48/1200 entries disagree on 40 C continuous real power (manual 900 W; datasheet 850 W), and current HW15 specifies different power/weight. Retailer has no manufacturer part number/hardware revision; exact revision is unresolved. Only the 48V-model DC input range and the 120VAC output tolerance, identical in both linked documents and independently inspected HW15 documentation, are retained. The 230VAC regional alternative is excluded by the exact retailer identity. Output remains adjustable; no phase, frequency option, apparent-to-real power conversion, or revision-sensitive power is inferred. Input range remains technical evidence only under existing operatingVoltage parser behavior; it does not fill batteryVoltageRange consumers. HW15 source was used solely to check agreement, not to assign its revision to this listing.",
+    "researchWorker": 10,
+    "independentSourceReview": "source-review-b.json",
+    "sourceLineage": [
+      {
+        "worker": 10,
+        "recordIndex": 1,
+        "rowIndex": 0,
+        "originalRow": [
+          "Battery voltage range",
+          "36.8–62.0 VDC (48 V model input range)"
+        ],
+        "approvedRow": [
+          "Input voltage range",
+          "36.8 - 62.0 VDC (48 V model DC input)"
+        ]
+      },
+      {
+        "worker": 10,
+        "recordIndex": 1,
+        "rowIndex": 1,
+        "originalRow": [
+          "AC output voltage",
+          "120 VAC +/- 3% or 230 VAC +/- 3% (manual table lists both regional variants); exact listing identifies the 120 VAC variant"
+        ],
+        "approvedRow": [
+          "AC output voltage",
+          "120 VAC +/- 3% (adjustable; exact listing is the 120 VAC regional variant)"
+        ]
+      }
+    ],
+    "originalSourceRows": [
+      [
+        "Input voltage range",
+        "36.8 - 62.0 VDC (48 V model DC input)"
+      ],
+      [
+        "AC output voltage",
+        "120 VAC +/- 3% (adjustable; exact listing is the 120 VAC regional variant)"
+      ]
+    ],
+    "originalProposedSourceRows": [
+      [
+        "Battery voltage range",
+        "36.8–62.0 VDC (48 V model input range)"
+      ],
+      [
+        "AC output voltage",
+        "120 VAC +/- 3% or 230 VAC +/- 3% (manual table lists both regional variants); exact listing identifies the 120 VAC variant"
+      ]
+    ],
+    "normalizationLineage": [
+      {
+        "occurrenceId": "w10:r1:row0",
+        "original": [
+          "Battery voltage range",
+          "36.8–62.0 VDC (48 V model input range)"
+        ],
+        "sourceApproved": [
+          "Input voltage range",
+          "36.8 - 62.0 VDC (48 V model DC input)"
+        ],
+        "normalized": [
+          "Operating voltage range (DC battery input; Input voltage range)",
+          "36.8 - 62.0 VDC (48 V model DC input) (Input voltage range)"
+        ],
+        "fieldKey": "operatingVoltage",
+        "reason": "Retain literal input-range label and complete 48V-model DC scope. Existing parser emits operatingVoltage only; batteryVoltageRange comparison/compatibility gap remains open. Never PV input."
+      },
+      {
+        "occurrenceId": "w10:r1:row1",
+        "original": [
+          "AC output voltage",
+          "120 VAC +/- 3% or 230 VAC +/- 3% (manual table lists both regional variants); exact listing identifies the 120 VAC variant"
+        ],
+        "sourceApproved": [
+          "AC output voltage",
+          "120 VAC +/- 3% (adjustable; exact listing is the 120 VAC regional variant)"
+        ],
+        "normalized": [
+          "AC output voltage",
+          "120 VAC +/- 3% (adjustable; exact listing is the 120 VAC regional variant)"
+        ],
+        "fieldKey": "acOutput",
+        "reason": "Source-approved label and complete value pass unchanged parser."
+      }
+    ]
+  },
+  {
+    "url": "https://www.tigoenergy.com/product/cloud-connect-advanced",
+    "kind": "manufacturer",
+    "model": "Cloud Connect Advanced (CCA) and Tigo Access Point (TAP)",
+    "label": "Communications",
+    "checkedAt": "2026-10-23T01:35:28.048734+00:00",
+    "rows": [
+      [
+        "Communications",
+        "CCA internet connection: Ethernet, Wi-Fi, or optional cellular; CCA connects to TAP by RS485; TAP communicates wirelessly with Tigo TS4 units."
+      ]
+    ],
+    "productIds": [
+      "signature-solar-1594002"
+    ],
+    "expected": {
+      "signature-solar-1594002": {
+        "name": "Tigo Cloud Connect Advanced - Data Logger Kit: TAP, Din Rail PS, Outdoor box",
+        "sourceUrl": "https://signaturesolar.com/tigo-tap-din-rail-ps-outdoor-enclosure-kit/",
+        "category": "module-electronics",
+        "anchors": {}
+      }
+    },
+    "reviewNote": "Tigo identifies the CCA as the system data hub and describes its connections to the TAP and TS4 units; its product page also states Ethernet, Wi-Fi, and optional cellular internet connectivity. The exact retailer listing names the CCA/TAP/DIN rail power supply/outdoor-box kit; Tigo's kit guide identifies the matching CCA Outdoor Kit w/DIN Rail PS (P/N 348-00000-52) as containing the CCA, TAP, DIN rail supply, and outdoor-rated enclosure. Communications here describes the CCA/TAP components explicitly, not PV electrical limits for the assembly.",
+    "researchWorker": 11,
+    "independentSourceReview": "source-review-b.json",
+    "sourceLineage": [
+      {
+        "worker": 11,
+        "recordIndex": 0,
+        "rowIndex": 0,
+        "originalRow": [
+          "Communications",
+          "CCA internet connection: Ethernet, Wi-Fi, or optional cellular; CCA connects to TAP by RS485; TAP communicates wirelessly with Tigo TS4 units."
+        ],
+        "approvedRow": [
+          "Communications",
+          "CCA internet connection: Ethernet, Wi-Fi, or optional cellular; CCA connects to TAP by RS485; TAP communicates wirelessly with Tigo TS4 units."
+        ]
+      }
+    ],
+    "originalSourceRows": [
+      [
+        "Communications",
+        "CCA internet connection: Ethernet, Wi-Fi, or optional cellular; CCA connects to TAP by RS485; TAP communicates wirelessly with Tigo TS4 units."
+      ]
+    ],
+    "originalProposedSourceRows": [
+      [
+        "Communications",
+        "CCA internet connection: Ethernet, Wi-Fi, or optional cellular; CCA connects to TAP by RS485; TAP communicates wirelessly with Tigo TS4 units."
+      ]
+    ],
+    "normalizationLineage": [
+      {
+        "occurrenceId": "w11:r0:row0",
+        "original": [
+          "Communications",
+          "CCA internet connection: Ethernet, Wi-Fi, or optional cellular; CCA connects to TAP by RS485; TAP communicates wirelessly with Tigo TS4 units."
+        ],
+        "sourceApproved": [
+          "Communications",
+          "CCA internet connection: Ethernet, Wi-Fi, or optional cellular; CCA connects to TAP by RS485; TAP communicates wirelessly with Tigo TS4 units."
+        ],
+        "normalized": [
+          "Communications",
+          "CCA internet connection: Ethernet, Wi-Fi, or optional cellular; CCA connects to TAP by RS485; TAP communicates wirelessly with Tigo TS4 units."
+        ],
+        "fieldKey": "communications",
+        "reason": "Source-approved label and complete value pass unchanged parser."
+      }
+    ]
+  }
+]
