@@ -91219,5 +91219,55 @@
         "reason": "Trailing-slash historical family duplicates current exact listing ID and current URL family; research only once and preserve both durable family records with explicit linkage."
       }
     ]
-  }
+  },
+  "metadataReviewedAt": "2026-10-23T01:08:33.303202+00:00",
+  "consumerLimitations": [
+    {
+      "key": "inverter-battery-range-consumer-key",
+      "recordedAt": "2026-10-23T01:08:33.303202+00:00",
+      "batch": 38,
+      "status": "requires-runtime-support",
+      "sourceEvidence": "Verified exact-model source ranges are retained in specifications.json and batch38 transcriptions. No new source research is required for these recorded values.",
+      "storedFieldKey": "operatingVoltage",
+      "downstreamFieldKey": "batteryVoltageRange",
+      "affectedListingIds": [
+        "eco-worthy-48909970112761",
+        "inverters-r-us-xp400i",
+        "inverters-r-us-xp800i",
+        "litime-47240783790300",
+        "powmr-46990590804263",
+        "powmr-46990726594855",
+        "powmr-47174363480359",
+        "practical-preppers-sku-sa30k",
+        "practical-preppers-sku-sa60k",
+        "redodo-40291482927194",
+        "shopsolar-18926781268079",
+        "shopsolar-18951484801135",
+        "shopsolar-18951711850607",
+        "shopsolar-41919788351628",
+        "shopsolar-43663378153612",
+        "signature-solar-1593035",
+        "signature-solar-1593044",
+        "signature-solar-1593057",
+        "signature-solar-1593082",
+        "signature-solar-1593121",
+        "signature-solar-1593139",
+        "signature-solar-1600008",
+        "signature-solar-1600014",
+        "signature-solar-1600017",
+        "signature-solar-1651009",
+        "signature-solar-1651012",
+        "signature-solar-1669001",
+        "signature-solar-1671001",
+        "signature-solar-1678004",
+        "sungoldpower-41293881868425",
+        "sungoldpower-47407326003337",
+        "watts247-lvx6048wp"
+      ],
+      "affectedNewFields": 32,
+      "comparisonGapsClaimedFilled": 0,
+      "disposition": "The unchanged importer emits operatingVoltage, while inverter comparison and compatibility consumers require batteryVoltageRange. All 32 remain unknown in those consumers. No supported row-label alias emits the consumer key. Retain verified evidence and unresolved gaps; a separately authorized runtime change with compatibility validation is required. Do not bypass importer guards or manually rekey fields.",
+      "reviewPath": "docs/specification-batch-thirty-eight-provenance-review.json"
+    }
+  ]
 }
